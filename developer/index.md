@@ -1,5 +1,5 @@
 ---
-title: developers guide
+title: Developers guide
 author: AndreiMaz
 uid: developer-index
 ---
