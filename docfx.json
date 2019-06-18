@@ -8,11 +8,6 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/sample/**",
-          "**/samples/**",
-          "aspnet/**",
-          "**/includes/**",
-          "**/aspnet-core-conceptual/**",
           "_site/**",
           "***/readme.md",
           "***/license.md"
@@ -32,8 +27,6 @@
         ],
         "exclude": [
           "**/obj/**",
-          "aspnet/core/**",
-          "**/includes/**",
           "_site/**"
         ],
         "group": "group1",
@@ -48,14 +41,11 @@
     "globalMetadata": {
       "_navPath": "/foo",
       "_navRel": "/foo",
-      "breadcrumb_path": "/aspnet/breadcrumb/toc.json",
-      "feedback_github_repo": "aspnet/AspNetCore.Docs",
-      "feedback_product_url": "https://github.com/aspnet/Home/blob/master/CONTRIBUTING.md",
+      "feedback_github_repo": "nopSolutions/nopCommerce-Docs",
+      "feedback_product_url": "https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md",
       "feedback_system": "GitHub",
-      "ms.prod": "aspnet-core",
-      "uhfHeaderId": "MSDocsHeader-DotNet",
       "searchScope": [
-        "ASP.NET Core"
+        "nopCommerce-Docs"
       ]
     },
     "template": [],
