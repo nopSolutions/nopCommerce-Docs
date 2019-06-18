@@ -8,7 +8,7 @@ uid: developer/tutorials
 The following is a list of common questions asked by developers working with nopCommerce. It also describes some of the architectural choices the nopCommerce team made.
 
 
-* [Source code organization. Architecture of nopCommerce.](/developer/tutorials/source-code-organization)
+* [Source code organization. Architecture of nopCommerce.](xref:developer/tutorials/source-code-organization)
 * [Updating an existing entity. How to add a new property.](/developer/tutorials/update-existing-entity)
 * [The nopCommerce Data Access Layer](/developer/tutorials/data-access-layer)
 * [Inversion of Control and Dependency Injection](/developer/tutorials/inversion-of-control-dependency-injection)
