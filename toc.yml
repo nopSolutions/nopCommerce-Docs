@@ -3,19 +3,18 @@
 - name: Installing nopCommerce
   uid: installing-nopcommerce
 - name: User guide
+  uid: user-guide
   items:
-    - name: Overview
-      uid: user-guide/overview
     - name: Getting started
       uid: user-guide/getting-started
 - name: Developer guide
+  uid: developer-documentation
   items:
     - name: Developer tutorials
-      uid: developer-documentation
+      uid: developer/tutorials
     - name: Creating a nopCommerce plugin
-      uid: developer-documentation
+      uid: developer-documentation2
     - name: Designer's Guide
-      uid: developer-documentation
-  uid: developer-documentation
+      uid: developer-documentation3
 - name: Contribute
   href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md
