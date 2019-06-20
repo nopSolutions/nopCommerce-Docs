@@ -1,12 +1,12 @@
 - name: nopCommerce documentation
   href: /
-- name: Installing nopCommerce
-  uid: installing-nopcommerce
 - name: User guide
   uid: user-guide
   items:
     - name: Getting started
       uid: user-guide/getting-started
+    - name: Installing nopCommerce
+      uid: user-guide/installing/index
 - name: Developer guide
   uid: developer-documentation
   items:
