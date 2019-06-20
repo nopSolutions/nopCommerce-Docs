@@ -12,9 +12,12 @@
   items:
     - name: Developer tutorials
       uid: developer/tutorials
+      items:
+        - name: Source code organization. Architecture of nopCommerce.
+          uid: developer/tutorials/source-code-organization
     - name: Creating a nopCommerce plugin
-      uid: developer-documentation2
+      uid: developer/plugins/index
     - name: Designer's Guide
-      uid: developer-documentation3
+      uid: developer/design/index
 - name: Contribute
   href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md

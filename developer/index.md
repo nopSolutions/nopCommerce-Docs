@@ -7,5 +7,5 @@ uid: developer-documentation
 
 The nopCommerce developer documentation is here to help you through the process of nopCommerce customization. Here you will several sections:
 * [Developer tutorials](xref:developer/tutorials)
-* [Creating a nopCommerce plugin](/developer/plugin-development)
-* [Designer's Guide](/developer/designer-guide)
+* [Creating a nopCommerce plugin](xref:developer/plugins/index)
+* [Designer's Guide](xref:developer/design/index)
