@@ -7,6 +7,155 @@
       uid: user-guide/getting-started
     - name: Installing nopCommerce
       uid: user-guide/installing/index
+      items:
+        - name: Technology & System Requirements
+          uid: user-guide/installing/technology-system-requirements
+        - name: Installation guide
+          uid: user-guide/installing/installation-guide
+        - name: Installing on Windows Azure
+          uid: user-guide/installing/azure
+        - name: Upgrading nopCommerce
+          uid: user-guide/installing/upgrading
+        - name: Help
+          uid: user-guide/installing/help
+        - name: FAQ
+          uid: user-guide/installing/faq
+    - name: Configuring your store
+      uid: user-guide/configuring/index
+      items:
+        - name: nopCommerce Interface
+          uid: user-guide/configuring/nopcommerce-interface
+        - name: Setting up your store
+          uid: user-guide/configuring/settingup/index            
+          items:
+            - name: Setting up Main Store
+              uid: user-guide/configuring/settingup/mainstore/index
+              items:
+                - name: Setting up Multiple-Store
+                  uid: user-guide/configuring/settingup/mainstore/multiple-store
+                - name: Countries
+                  uid: user-guide/configuring/settingup/mainstore/counties
+                - name: Languages
+                  uid: user-guide/configuring/settingup/mainstore/languages
+                - name: Security settings
+                  uid: user-guide/configuring/settingup/mainstore/security-settings
+                - name: PDF settings
+                  uid: user-guide/configuring/settingup/mainstore/pdf-settings
+                - name: GDPR settings
+                  uid: user-guide/configuring/settingup/mainstore/gdpr-settings
+            - name: Setting up Payments
+              uid: user-guide/configuring/settingup/payments/index
+              items:
+                - name: Payment Methods
+                  uid: user-guide/configuring/settingup/payments/payment-methods
+                  items:
+                    - name: Manual Processing (Credit Card)
+                      uid: user-guide/configuring/settingup/payments/methods/manual-processing
+                    - name: PayPal Standard
+                      uid: user-guide/configuring/settingup/payments/methods/paypal-standard
+                    - name: Purchase order
+                      uid: user-guide/configuring/settingup/payments/methods/purchase-order
+                    - name: Square
+                      uid: user-guide/configuring/settingup/payments/methods/square
+                    - name: Qualpay
+                      uid: user-guide/configuring/settingup/payments/methods/qualpay
+                - name: Payment statuses
+                  uid: user-guide/configuring/settingup/payments/payment-statuses
+                - name: Payment Method Restrictions
+                  uid: user-guide/configuring/settingup/payments/payment-method-restrictions
+                - name: Currencies
+                  uid: user-guide/configuring/settingup/payments/currencies
+            - name: Setting up Tax
+              uid: user-guide/configuring/settingup/tax/index            
+              items:
+                - name: Tax Settings
+                  uid: user-guide/configuring/settingup/tax/tax-settings
+                - name: Tax
+                  uid: user-guide/configuring/settingup/tax/tax
+                  items:
+                    - name: Avalara tax provider
+                      uid: user-guide/configuring/settingup/taxes/methods/avalara
+                    - name: Manual (Fixed or By Country/State/Zip)
+                      uid: user-guide/configuring/settingup/taxes/methods/manual
+                - name: EU VAT configuration guide
+                  uid: user-guide/configuring/settingup/tax/eu-vat
+            - name: Setting up Shipping
+              uid: user-guide/configuring/settingup/shipping/index
+              items:
+                - name: Shipping Settings
+                  uid: user-guide/configuring/settingup/shipping/settings
+                - name: Shipping Providers
+                  uid: user-guide/configuring/settingup/shipping/providers
+                  items:
+                    - name: Manual (Fixed or By Weight and By Total)
+                      uid: user-guide/configuring/settingup/shipping/providers/manual
+                    - name: UPS
+                      uid: user-guide/configuring/settingup/shipping/providers/ups
+                - name: Warehouses
+                  uid: user-guide/configuring/settingup/shipping/warehouses
+                - name: Dates and ranges
+                  uid: user-guide/configuring/settingup/shipping/dates-ranges
+                - name: Measures
+                  uid: user-guide/configuring/settingup/shipping/measures
+                - name: Pickup Points
+                  uid: user-guide/configuring/settingup/shipping/pickup-Points
+            - name: Setting up Customers
+              uid: user-guide/configuring/settingup/customers/index
+              items: 
+                - name: Customer settings
+                  uid: user-guide/configuring/settingup/customers/settings
+                - name: Customer roles
+                  uid: user-guide/configuring/settingup/customers/customer-roles
+                - name: Access Control List
+                  uid: user-guide/configuring/settingup/customers/acl
+                - name: Vendors
+                  uid: user-guide/configuring/settingup/customers/vendors
+            - name: All Settings (advanced)
+              uid: user-guide/configuring/settingup/all-settings
+        - name: System Administration
+          uid: user-guide/configuring/system/index          
+          items:
+            - name: Plugins
+              uid: user-guide/configuring/system/plugins
+            - name: Email accounts
+              uid: user-guide/configuring/system/email-accounts
+            - name: Widgets
+              uid: user-guide/configuring/system/widgets
+              items:
+                - name: Google Analytics
+                  uid: user-guide/configuring/system/widgets/google-analytics
+                - name: Nivo Slider
+                  uid: user-guide/configuring/system/widgets/nivo-slider
+            - name: Localization
+              uid: user-guide/configuring/system/localization
+            - name: External Authentication Method
+              uid: user-guide/configuring/system/external-authentication-method
+              items:
+                - name: Facebook
+                  uid: user-guide/configuring/system/external-authentication/facebook
+            - name: Message Queue
+              uid: user-guide/configuring/system/message-queue
+            - name: Schedule Tasks
+              uid: user-guide/configuring/system/schedule-tasks
+            - name: System Information
+              uid: user-guide/configuring/system/system-information
+            - name: Deleting Old Exported Files
+              uid: user-guide/configuring/system/deleting-old-exported-files
+            - name: Deleting Abandoned Shopping Carts
+              uid: user-guide/configuring/system/deleting-abandoned-shopping-carts
+            - name: Deleting Guests
+              uid: user-guide/configuring/system/deleting-guests
+            - name: Warnings
+              uid: user-guide/configuring/system/warnings
+            - name: Log
+              uid: user-guide/configuring/system/log
+        - name: Design
+          uid: user-guide/configuring/design/index          
+          items:
+            - name: Installing a theme
+              uid: user-guide/configuring/design/installing-theme
+            - name: Media Settings
+              uid: user-guide/configuring/design/media-settings
 - name: Developer guide
   uid: developer-documentation
   items:
