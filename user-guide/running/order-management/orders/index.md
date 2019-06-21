@@ -1,7 +1,7 @@
 ---
 title: Order management
 author: AndreiMaz
-uid: user-guide/running/order-management/index
+uid: user-guide/running/order-management/orders/index
 ---
 # Order management
 
