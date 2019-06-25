@@ -49,7 +49,7 @@
       ]
     },
     "template": [],
-    "dest": "_site",
+    "dest": "C:/inetpub/wwwroot",
     "markdownEngineName": "markdig"
   }
 }
