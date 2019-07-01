@@ -1,6 +1,5 @@
 # nopCommerce Documentation
 
-The nopCommerce documentation portal 
 This repository was created in order to help set up and configure your store, fill it with content, and run an online business more easily. Here you will find all the needed information on dealing with nopCommerce features.
 
 User guides describe the step-by-step process of the online store deployment from installing nopCommerce to promoting your shop, with examples on how all the features can be used in real business issues.
