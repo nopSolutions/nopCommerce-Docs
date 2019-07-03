@@ -7,12 +7,12 @@ uid: user-guide/running/product-management/categories
 
 Prior to adding new products, a store manager should create categories, to which the products will later be assigned. To manage categories, go to **Catalog → Categories.**
 
-![](user-guide/running/_static/categories.png)
+![](/user-guide/running/_static/categories.png)
 
 **Search for a category** in the Manage categories window by **entering the Category name **(or a part of the name), or among all the categories of a certain **Store**.
 
 #### Adding new category
-![](user-guide/running/_static/category_info.png)
+![](/user-guide/running/_static/category_info.png)
 
 In the **Category Info panel**, define the following category information:
 
@@ -29,7 +29,7 @@ When this option is disabled, customers will not be able to select a page size o
 - **Select the Limited to stores** option to make this category limited to one or more stores. Note that this checkbox is only used when you have several stores configured. For further details refer to Multi-store support.
 
 #### Display
-![](user-guide/running/_static/display.png)
+![](/user-guide/running/_static/display.png)
 
 In the Category Display panel, define the following category information:
 
@@ -41,7 +41,7 @@ In the Category Display panel, define the following category information:
 - **Display Order** - the order number for displaying the category. This display number is used to sort categories in the public store (ascending). The category with the display order 1 will be placed at the top of the list.
 
 #### Setting up SEO
-![](user-guide/running/_static/setting-up-seo.png)
+![](/user-guide/running/_static/setting-up-seo.png)
 In the **SEO tab**, define the **following details**:
 
 **Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like:
@@ -59,7 +59,7 @@ In the **SEO tab**, define the **following details**:
 **Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog. **The store owner can add new products to this category. Note that you need to Save the category before you can add products.
 Click **Add a new **product to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
 
-![](user-guide/running/_static/products.png)
+![](/user-guide/running/_static/products.png)
 
 Select a product you would like to add to the category and click the Save button. The product will be displayed under the selected category.
 
