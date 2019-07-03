@@ -5,5 +5,6 @@ uid: user-guide/installing/installation-guide
 ---
 # Installation guide
 
-Once you open the site for the first time, you’ll be redirected to the installation page, as follows:
-![installation](/user-guide/installing/_static/installation.jpg)
+This topic hasn’t been written yet! You're more than welcome to help us with that.
+
+Learn more about how you can contribute on GitHub
