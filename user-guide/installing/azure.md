@@ -6,7 +6,7 @@ uid: user-guide/installing/azure
 # Installing on Windows Azure
 
 
-### There are three ways to deploy nopCommerce on Windows Azure
+#### There are three ways to deploy nopCommerce on Windows Azure
 
 
 **1. FTP.** Use this method if you already have a package ready to deploy (no source code). You can publish to a local File System then upload the published files through ftp. How to get FTP credentials for azure? you go [Azure.com](https://azure.microsoft.com/en-us/) - > My Account -> Management portal -> Choose your website -> go Dashboard -> quick glance. From here you can find the FTP credentials or you can 'Reset your deployment credentials' or 'Download the publish profile'. For new azure portal go [portal.azure.com](http://portal.azure.com/) -> browse websites -> navigate to your website -> Properties. From here you can find the FTP credentials or you can 'Reset your deployment credentials' or 'Download the publish profile'.
