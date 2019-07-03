@@ -161,6 +161,8 @@
       items:
         - name: Product management
           uid: user-guide/running/product-management/index
+            - name: Categories
+              uid: user-guide/running/product-management/categories
 - name: Developer guide
   uid: developer-documentation
   items:
