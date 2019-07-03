@@ -156,6 +156,11 @@
               uid: user-guide/configuring/design/installing-theme
             - name: Media Settings
               uid: user-guide/configuring/design/media-settings
+    - name: Running your store
+      uid: user-guide/running/index
+      items:
+        - name: Product management
+          uid: user-guide/running/product-management/index
 - name: Developer guide
   uid: developer-documentation
   items:
