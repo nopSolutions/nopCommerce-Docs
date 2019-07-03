@@ -31,7 +31,3 @@ Azure has support for multiple instances since version 3.70. It's great for any 
     * For versions 3.90 (and below) we also have to enable Redis as our distributed session management. Please open web.config file. Find and uncomment "sessionState" element. Specify its attributes (host, accessKey, etc) pointing to your Redis server. Please find more about distributed session support in Azure here.
 * **Ensure that our schedule tasks are run on one farm node at a time.**
     * *How to configure (for versions 3.90 and below):* In order to enable this functionality open web.config file, find "WebFarms" element, and set its "MultipleInstancesEnabled" attribute to "True". If you use Windows Azure Websites (not cloud services), then also set "RunOnAzureWebsites" attribute to "True".
-
-
-
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
