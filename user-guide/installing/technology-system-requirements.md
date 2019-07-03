@@ -28,4 +28,4 @@ In order to run nopCommerce, you will need the **following installed on your ser
 **For nopCommerce 4.00 or below. MS Visual Studio 2017 (version 15.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
 
 > [!NOTE]
-> If you're going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because SNI (Server Name Indication) support.
+> :tw-26a0: If you're going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because SNI (Server Name Indication) support.
