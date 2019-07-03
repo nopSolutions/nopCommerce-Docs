@@ -170,6 +170,8 @@
     - name: Developer tutorials
       uid: developer/tutorials
       items:
+        - name: Configuring code style
+          uid: developer/tutorials/code-style
         - name: Source code organization. Architecture of nopCommerce.
           uid: developer/tutorials/source-code-organization
         - name: Updating an existing entity. How to add a new property
