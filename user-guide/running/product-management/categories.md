@@ -11,7 +11,7 @@ Prior to adding new products, a store manager should create categories, to which
 
 **Search for a category** in the Manage categories window by **entering the Category name **(or a part of the name), or among all the categories of a certain **Store**.
 
-#### Adding new category
+### Adding new category
 ![](/user-guide/running/_static/category_info.png)
 
 In the **Category Info panel**, define the following category information:
@@ -29,7 +29,7 @@ When this option is disabled, customers will not be able to select a page size o
 - **Limited to customer roles** option allows showing this category only to selected customer roles. Choose the required customer roles from the list that can be created/edited on the Customer roles page of the Customers menu. If you want it to be visible to all - leave the field empty.
 - **Select the Limited to stores** option to make this category limited to one or more stores. Note that this checkbox is only used when you have several stores configured. For further details refer to Multi-store support.
 
-#### Display
+### Display
 ![](/user-guide/running/_static/display.png)
 
 In the Category Display panel, define the following category information:
@@ -41,12 +41,13 @@ In the Category Display panel, define the following category information:
 - **Price ranges** - allow defining ranges of price by which customers can filter the products. The ranges are set in the currency that was defined in the Currencies window. Separate the ranges by a semicolon, for example, 0-999; 1000-1200; 1201 - (1201 means 1201 and over).
 - **Display Order** - the order number for displaying the category. This display number is used to sort categories in the public store (ascending). The category with the display order 1 will be placed at the top of the list.
 
-#### Setting up SEO
+### Setting up SEO
 ![](/user-guide/running/_static/setting-up-seo.png)
 In the **SEO tab**, define the **following details**:
 
 **Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like:
 <meta name="keywords" content="keyword, keyword, keyword phrase, etc.">
+
 **Meta description** - a description of the category. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows
 <meta name="description" content="Brief description of the contents of your page">
 **Meta title** specifies the title of your Web page. It is a code which is inserted into the header of your web page:
@@ -55,7 +56,7 @@ In the **SEO tab**, define the **following details**:
 </head>
 **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: http://www.yourStore.com/custom-seo-page-name
 
-#### Adding products to certain category
+### Adding products to certain category
 
 **Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog. **The store owner can add new products to this category. Note that you need to Save the category before you can add products.
 Click **Add a new **product to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
