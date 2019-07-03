@@ -7,14 +7,14 @@ uid: user-guide/installing/technology-system-requirements
 
 In order to run nopCommerce, you will need the **following installed on your server/computer**:
 
-**Supported operation systems:**
+### Supported operation systems
 * Windows 7 or above
 * Windows Server 2008R2 or above
 
-**Supported databases:**
+### Supported databases
 * MS SQL Server 2012 or above
 
-**Supported browsers**
+### Supported browsers
 
 * Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was support in versions prior 4.10)
 * Mozilla Firefox 2.0 and above
