@@ -164,6 +164,24 @@
       items:
         - name: Source code organization. Architecture of nopCommerce.
           uid: developer/tutorials/source-code-organization
+        - name: Updating an existing entity. How to add a new property
+          uid: developer/tutorials/update-existing-entity
+        - name: The nopCommerce Data Access Layer
+          uid: developer/tutorials/data-access-layer
+        - name: Inversion of Control and Dependency Injection
+          uid: developer/tutorials/inversion-of-control
+        - name: How do I register new routes?
+          uid: developer/tutorials/register-new-routes
+        - name: Data Validation
+          uid: developer/tutorials/data-validation
+        - name: Scheduled Tasks
+          uid: developer/tutorials/scheduled-tasks
+        - name: Exposing and Handling Events
+          uid: developer/tutorials/events
+        - name: Settings API
+          uid: developer/tutorials/settings
+        - name: Step by step to deploy on Azure with GIT and automatic builds
+          uid: developer/tutorials/azure-deploy
     - name: Creating a nopCommerce plugin
       uid: developer/plugins/index
     - name: Designer's Guide
