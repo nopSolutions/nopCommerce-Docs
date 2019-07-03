@@ -46,20 +46,27 @@ In the Category Display panel, define the following category information:
 In the **SEO tab**, define the **following details**:
 
 **Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like:
-<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">
+`<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+
 
 **Meta description** - a description of the category. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows
-<meta name="description" content="Brief description of the contents of your page">
+`<meta name="description" content="Brief description of the contents of your page">`
+
+
 **Meta title** specifies the title of your Web page. It is a code which is inserted into the header of your web page:
+
+````html
 <head>
 <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
-</head>
+</head>````
+
+
 **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: http://www.yourStore.com/custom-seo-page-name
 
 ### Adding products to certain category
 
-**Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog. **The store owner can add new products to this category. Note that you need to Save the category before you can add products.
-Click **Add a new **product to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
+**Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog.** The store owner can add new products to this category. Note that you need to Save the category before you can add products.
+Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
 
 ![](/user-guide/running/_static/products.png)
 
