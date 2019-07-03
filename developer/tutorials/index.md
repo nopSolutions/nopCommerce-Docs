@@ -17,3 +17,4 @@ The following is a list of common questions asked by developers working with nop
 * [Exposing and Handling Events](xref:developer/tutorials/events)
 * [Settings API](xref:developer/tutorials/settings)
 * [Step by step to deploy on Azure with GIT and automatic builds](xref:developer/tutorials/azure-deploy)
+* [Docker](xref:developer/tutorials/docker)
