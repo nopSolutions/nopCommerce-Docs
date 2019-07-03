@@ -194,6 +194,8 @@
           uid: developer/tutorials/azure-deploy
         - name: Docker
           uid: developer/tutorials/docker
+        - name: How to deploy nopCommerce to Azure
+          uid: developer/tutorials/azure-publish
     - name: Creating a nopCommerce plugin
       uid: developer/plugins/index
     - name: Designer's Guide
