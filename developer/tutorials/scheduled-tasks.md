@@ -5,6 +5,8 @@ uid: developer/tutorials/scheduled-tasks
 ---
 # Scheduled Tasks
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+With Scheduled tasks, you can schedule a task to run at certain periods. For example, nopCommerce sends queued emails periodically. The basic steps to create a new task are:
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+1. Define a class which implements **IScheduleTask** interface. It has only one method that takes no arguments; **Execute**. As you guessed this method is invoked when the task should be run.
+
+1. To schedule a task the developer should insert a new **ScheduleTask** record into the appropriate database table. You can use **IScheduleTaskService** for inserting such a record.

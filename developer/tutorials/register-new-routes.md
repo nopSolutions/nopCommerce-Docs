@@ -5,6 +5,17 @@ uid: developer/tutorials/register-new-routes
 ---
 # How do I register new routes?
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+ASP.<span></span>NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing here. NopCommerce has an IRouteProvider interface which is used for route registration during application startup. All core routes are registered in the RouteProvider class located in the `Nop.Web` project.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+```csharp
+    public partial class RouteProvider : IRouteProvider
+    {
+        public void RegisterRoutes(IRouteBuilder routeBuilder)
+        {
+            //home page
+            routeBuilder.MapLocalizedRoute("HomePage", "", new { controller = "Home", action = "Index" });
+        }
+    }
+```
+
+You can create as many RouteProvider classes as you need. For example, if your plugin has some custom routes which you want to register, then create a new class implementing the IRouteProvider interface and register the routes specific to your new plugin.

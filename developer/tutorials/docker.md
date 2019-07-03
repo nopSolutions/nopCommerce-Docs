@@ -1,9 +1,10 @@
 ---
-title: Customizing nopCommerce Themes
-author: AndreiMaz
-uid: developer/design/customizing-theme
+title: Docker
+author: exileDev
+uid: developer/tutorials/docker
 ---
-# Customizing nopCommerce Themes
+
+# Docker
 
 This topic hasn’t been written yet! You're more than welcome to help us with that.
 
