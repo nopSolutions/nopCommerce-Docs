@@ -15,6 +15,7 @@ Click the **Edit** button to edit the manufacturer’s details.
 
 ### Adding new manufacturers
 ![](/user-guide/running/_static/add_a_new_manufacturer.png)
+
 In the **Manufacturer Info panel**, define the following **details**:
 
 - **Name**.
@@ -23,6 +24,7 @@ In the **Manufacturer Info panel**, define the following **details**:
 
 ### Display
 ![](/user-guide/running/_static/display2.png)
+
 In the **Manufacturer Display panel**, define the following **details**:
 
 - Select the **Published** checkbox, to enable the manufacturer to be visible in the public store.
@@ -37,6 +39,7 @@ In the **Manufacturer Display panel**, define the following **details**:
 
 ### Mappings
 ![](/user-guide/running/_static/mappings.png)
+
 In the **Manufacturer Mappings panel**, define the following **details**:
 
 - **Discounts** - select all discounts associated with this manufacturer. Discounts can be created in the [Promotions](xref:/user-guide/marketing/promotional/index) menu. Note that only discounts with Assigned to categories type are visible here. After discounts are mapped to the manufacturer, they are applied to all products of this manufacturer.
@@ -45,6 +48,7 @@ In the **Manufacturer Mappings panel**, define the following **details**:
 
 ### Setting up SEO
 ![](/user-guide/running/_static/SEO.png)
+
 In the **SEO panel**, define the following **details**:
 
 - **Meta keywords** - manufacturer keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like: `<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
@@ -64,7 +68,9 @@ In the **SEO panel**, define the following **details**:
 **Products panel** contains a list of products related to the selected manufacturer. The store owner can add new products to this manufacturer. Note that you need to Save the manufacturer before you can add products.
 
 Click **Add a new** product to find a product you want to add to this manufacturer. You can search by the product Name, by a Store, or a Product Type.
+
 ![](/user-guide/running/_static/products2.png)
+
 Select a product you would like to add to the manufacturer and click the **Save** button. The product will be displayed under the selected manufacturer.
 
 After the product was added to the manufacturer, define the following information in the Products panel:
