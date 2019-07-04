@@ -35,10 +35,9 @@ Configure your **main store details**, as follows:
 
 * In the **Company VAT field**, enter VAT of your company (used in EU)
 
-
-* [Setting up Multiple-Store](xref:user-guide/configuring/settingup/mainstore/multiple-stores)
-* [Countries](xref:user-guide/configuring/settingup/mainstore/countries)
-* [Languages](xref:user-guide/configuring/settingup/mainstore/languages)
-* [Security Settings](xref:user-guide/configuring/settingup/mainstore/security-settings)
-* [PDF settings](xref:user-guide/configuring/settingup/mainstore/pdf-settings)
-* [GDPR settings](xref:user-guide/configuring/settingup/mainstore/gdpr-settings)
+- [x] [Setting up Multiple-Store](xref:user-guide/configuring/settingup/mainstore/multiple-stores)
+- [x] [Countries](xref:user-guide/configuring/settingup/mainstore/countries)
+- [x] [Languages](xref:user-guide/configuring/settingup/mainstore/languages)
+- [x] [Security Settings](xref:user-guide/configuring/settingup/mainstore/security-settings)
+- [x] [PDF settings](xref:user-guide/configuring/settingup/mainstore/pdf-settings)
+- [x] [GDPR settings](xref:user-guide/configuring/settingup/mainstore/gdpr-settings)
