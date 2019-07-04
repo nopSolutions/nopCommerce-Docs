@@ -205,6 +205,8 @@
       items:
       - name: How to write a plugin for nopCommerce 4.20
         uid: developer/plugins/how-to-write-plugin_4.20
+      - name: How to write a plugin for nopCommerce 4.10
+        uid: developer/plugins/how-to-write-plugin_4.10
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
