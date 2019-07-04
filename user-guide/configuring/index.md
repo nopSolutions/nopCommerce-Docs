@@ -5,6 +5,7 @@ uid: user-guide/configuring/index
 ---
 # Configuring your store
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
-
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+* [nopCommerce Interface](xref:user-guide/configuring/nopcommerce-interface)
+* [Setting up your store](xref:user-guide/configuring/settingup/index.md)
+* [System Administration](xref:user-guide/configuring/system/index.md)
+* [Design](xref:user-guide/configuring/design/index.md)
