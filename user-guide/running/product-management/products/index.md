@@ -5,6 +5,13 @@ uid: user-guide/running/product-management/products/index
 ---
 # Products
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Adding and setting up products is one of the most important tasks for a shop owner. You need to define product types, sort your products into categories, add different products options and appealing product images, define product tags and other SEO parameters. All this will help you make the product search and comparison easy for customers, resulting in more purchases.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+Adding products also includes some important internal settings, such as inventory and shipping parameters.
+
+Learn how to create products in nopCommerce in our **Adding products chapter**.
+
+- [Adding products](xref:user-guide/running/product-management/products/adding-products)
+- [Import/Export](xref:user-guide/running/product-management/products/import-export).
+- [Product tags](xref:user-guide/running/product-management/products/product-tags)
+- [Product reviews](xref:user-guide/running/product-management/products/product-reviews.md)

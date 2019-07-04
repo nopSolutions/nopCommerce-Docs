@@ -5,4 +5,4 @@ uid: developer/plugins/index
 ---
 # Creating a nopCommerce plugin
 
-* [How to write a plugin for nopCommerce 4.20 (and above)](xref:developer/plugins/how-to-write-plugin)
+* [How to write a plugin for nopCommerce 4.20 (and above)](xref:developer/plugins/how-to-write-plugin_4.20)

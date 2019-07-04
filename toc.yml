@@ -164,8 +164,14 @@
           items:
               - name: Categories
                 uid: user-guide/running/product-management/categories
-                name: Manufacturers
+              - name: Manufacturers
                 uid: user-guide/running/product-management/manufacturers
+                - name: Attributes
+                uid: user-guide/running/product-management/attributes
+                - name: Products
+                uid: user-guide/running/product-management/products
+              - name: Catalog settings
+                uid: user-guide/running/product-management/catalog-settings
 - name: Developer guide
   uid: developer-documentation
   items:
@@ -202,7 +208,7 @@
       uid: developer/plugins/index
       items:
       - name: How to write a plugin for nopCommerce 4.20
-        uid: developer/plugins/how-to-write-plugin
+        uid: developer/plugins/how-to-write-plugin_4.20
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute

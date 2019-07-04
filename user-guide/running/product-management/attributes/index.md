@@ -5,6 +5,10 @@ uid: user-guide/running/product-management/attributes/index
 ---
 # Attributes
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Attributes are used to define **specific characteristics of your products**. They provide additional information on product details pages, can be used for product comparison, or as search parameters. You can create an unlimited number of attributes to describe the products in your catalog. Learn more about [product attributes](xref:user-guide/running/product-management/attributes/product-attributes) and [specification attributes](xref:user-guide/running/product-management/attributes/specification-attributes).
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+There are also [checkout attributes](xref:user-guide/running/product-management/attributes/checkout-attributes.md) in nopCommerce. They are used to gather additional order information during the final stage of the shopping process.
+
+- [Product attributes](xref:user-guide/running/product-management/attributes/product-attributes)
+- [Specification attributes](xref:user-guide/running/product-management/attributes/specification-attributes).
+- [Checkout attributes](xref:user-guide/running/product-management/attributes/checkout-attributes.md)
