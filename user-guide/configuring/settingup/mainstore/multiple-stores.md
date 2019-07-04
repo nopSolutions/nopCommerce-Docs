@@ -17,11 +17,11 @@ This example describes the setup of two sample stores, as follows:
 
 * www.store2.com
 
-a. Upload and install the site on www.store1.com. This is the only place where nopCommerce files and DLLs are stored.
+1. Upload and install the site on www.store1.com. This is the only place where nopCommerce files and DLLs are stored.
 
-b. From the control panel of www.store2.com ( Your hosting control panel, not nopCommerce Administration area) ensure that all requests to www.store2.com are forwarded (not redirected) to www.store1.com. Perform this using CNAME records. This step is crucial.
+2. From the control panel of www.store2.com ( Your hosting control panel, not nopCommerce Administration area) ensure that all requests to www.store2.com are forwarded (not redirected) to www.store1.com. Perform this using CNAME records. This step is crucial.
 
-c. From the control panel of www.store1.com, configure a domain alias for www.store2.com. This step can be complicated for some users (ask your administrator to perform this step if you have issues).
+3. From the control panel of www.store1.com, configure a domain alias for www.store2.com. This step can be complicated for some users (ask your administrator to perform this step if you have issues).
 
 After completing the steps above, when accessing www.store2.com from your browser, the content of www.store1.com will be displayed. The next step is to configure the stores in the administration area; you can then start uploading content for both stores.
 
