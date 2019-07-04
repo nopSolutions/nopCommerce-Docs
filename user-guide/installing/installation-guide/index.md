@@ -1,7 +1,7 @@
 ---
 title: Installation guide
 author: AndreiMaz
-uid: user-guide/getting-started
+uid: user-guide/installing/installation-guide/index
 ---
 # Getting started
 
