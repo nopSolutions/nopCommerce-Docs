@@ -15,6 +15,8 @@
           items:
             - name: Hosting providers
               uid: user-guide/installing/installation-guide/hosting-provider
+            - name: Installing Internet Information Services (IIS)
+              uid: user-guide/installing/installation-guide/installing-IIS
         - name: Installing on Windows Azure
           uid: user-guide/installing/azure
         - name: Upgrading nopCommerce
