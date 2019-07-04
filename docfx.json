@@ -8,8 +8,6 @@
         ],
         "exclude": [
           "**/obj/**",
-          "_exported_templates/**",
-          "templates/**",
           "_site/**",
           "***/readme.md",
           "***/license.md"
@@ -29,7 +27,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "_site/**"
+          "_site/**",
+          "_exported_templates/**"
         ],
         "group": "group1",
         "src": "."
