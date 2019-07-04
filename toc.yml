@@ -200,7 +200,7 @@
       uid: developer/plugins/index
       items:
       - name: How to write a plugin for nopCommerce 4.20
-        uid: developer/plugins/how-to-write-plugin
+        uid: developer/plugins/how-to-write-plugin_4.20
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
