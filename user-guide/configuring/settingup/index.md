@@ -5,6 +5,11 @@ uid: user-guide/configuring/settingup/index
 ---
 # Setting up your store
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+This chapter describes how to set up your store(s). It includes several basiс settings:
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+* [Setting up Main Store](xref:user-guide/configuring/settingup/mainstore/index)
+* [Setting up Payments](xref:user-guide/configuring/settingup/payments/index)
+* [Setting up Tax](xref:user-guide/configuring/settingup/taxes/index)
+* [Setting up Shipping](xref:user-guide/configuring/settingup/shipping/index)
+* [Setting up Customers](xref:user-guide/configuring/settingup/customers/index)
+* [All Settings (advanced)](xref:user-guide/configuring/settingup/all-settings)

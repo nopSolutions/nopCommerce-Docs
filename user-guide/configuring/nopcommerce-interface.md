@@ -9,7 +9,7 @@ This chapter covers the basics of nopCommerce interface.
 
 The first screen that is displayed after logging in the nopCommerce administration area is a Dashboard.
 
-![dashboard](_static/dashboard.jpeg)
+![dashboard](_static/dashboard.png)
 
 The dashboard has following sections:
 
@@ -31,19 +31,19 @@ The sidebar can be easily collapsed by clicking the “hamburger” icon next to
 
 **Search field**
 
-![dashboard3](/user-guide/configuring/_static/dashboard3.jpeg)
+![dashboard3](/user-guide/configuring/_static/dashboard3.png)
 
 On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line auto-suggests the options, proceed directly to the required one.
 
 **System menu**
 
-![dashboard4](/user-guide/configuring/_static/dashboard4.jpeg)
+![dashboard4](/user-guide/configuring/_static/dashboard4.png)
 
 This part of the interface shows the name of a logged-in user, logout button, and a small menu from which a user can select to clear cache or restart application.
 
 ##### Basic and Advanced models
 
-On some pages in the administration area you will see the following switch: ![dashboard5](/user-guide/configuring/_static/dashboard5.jpeg)
+On some pages in the administration area you will see the following switch: ![dashboard5](/user-guide/configuring/_static/dashboard5.png)
 
 This two-position Basic-Advanced switch allows you to switch between page display modes.
 
@@ -53,8 +53,8 @@ If you cannot find a required setting on a page, switch to the “Advanced” mo
 
 On some pages, the switch has a **Settings** button beside. You can use it to set up the basic mode according to your needs by adding/removing the required settings.
 
-![dashboard6](/user-guide/configuring/_static/dashboard6.jpeg)
+![dashboard6](/user-guide/configuring/_static/dashboard6.png)
 
 Click **“Settings”** to see a list of the available settings. Tick the checkboxes of the **desired setting**. The added settings will then be displayed in the **Basic** mode.
 
-![dashboard7](/user-guide/configuring/_static/dashboard7.jpeg)
+![dashboard7](/user-guide/configuring/_static/dashboard7.png)
