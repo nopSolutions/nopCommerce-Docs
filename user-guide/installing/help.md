@@ -5,6 +5,7 @@ uid: user-guide/installing/help
 ---
 # Help
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+The nopCommerce **forums** provide you with an opportunity to discuss nopCommerce related issues with other community members. The forums are available at [https://www.nopCommerce.com/boards/](https://www.nopCommerce.com/boards/)
+![nopCommerce Forums](/user-guide/installing/_static/forums.jpg)
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+And you may also use our **Premium support services** provided by nopCommerce team available at [https://www.nopcommerce.com/p/541/nopcommerce-premium-support-services.aspx](https://www.nopcommerce.com/p/541/nopcommerce-premium-support-services.aspx)

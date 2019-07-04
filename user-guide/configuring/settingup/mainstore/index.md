@@ -9,11 +9,11 @@ By default nopcommerce installation, only one store is created and needs to be c
 
 To set up the default store, go to **Configuration → Stores.**
 
-![setting up main store](/user-guide/configuring/settingup/mainstore/_static/setting up main store 1.png)
+![mainstore](/user-guide/configuring/settingup/mainstore/_static/mainstore.png)
 
 Click **Edit** beside a default store to configure it.
 
-![edit store](/user-guide/configuring/settingup/mainstore/_static/Store-Edit.png)
+![editstore](/user-guide/configuring/settingup/mainstore/_static/Store-Edit.png)
 
 Configure your **main store details**, as follows:
 

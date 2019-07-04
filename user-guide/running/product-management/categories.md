@@ -85,3 +85,10 @@ Click **Save**. The new category will be displayed in the public store under its
 You can click **Delete** to remove the category.
 
 You can **Export the categories settings** to an external file for backup purposes, by clicking the Export button.
+
+#### Related resources:
+
+* [Adding products user](xref:guide/running/product-management/products/adding-products/index)
+
+* [SEO](xref:user-guide/marketing/content/seo.md/index)
+

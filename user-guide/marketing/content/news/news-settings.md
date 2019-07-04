@@ -1,5 +1,5 @@
 ---
-title: News
+title: News settings
 author: AndreiMaz
 uid: user-guide/marketing/promotional/content/news
 ---

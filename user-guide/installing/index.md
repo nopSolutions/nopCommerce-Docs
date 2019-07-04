@@ -5,6 +5,11 @@ uid: user-guide/installing/index
 ---
 # Installing nopCommerce
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+nopCommerce can be downloaded as a ready to install e-commerce engine or as full source code ready to be modified. This chapter will cover everything you need to know for downloading and installing nopCommerce.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+- [Technology & System Requirements](xref:user-guide/installing/technology-system-requirements)
+- [Installation guide](xref:user-guide/installing/installation-guide)
+- [Installing on Windows Azure](xref:user-guide/installing/azure)
+- [Upgrading nopCommerce](xref:user-guide/installing/upgrading)
+- [Help](xref:user-guide/installing/help)
+- [FAQ](xref:user-guide/installing/faq)
