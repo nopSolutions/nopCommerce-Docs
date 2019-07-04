@@ -1,7 +1,7 @@
 ---
 title: Installing Internet Information Services (IIS)
 author: AndreiMaz
-uid: user-guide/installing/installation-guide/hosting-provider/installing-IIS
+uid: user-guide/installing/installation-guide/installing-IIS
 ---
 # Installing Internet Information Services (IIS)
 
