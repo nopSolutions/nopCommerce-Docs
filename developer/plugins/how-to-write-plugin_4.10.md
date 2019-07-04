@@ -104,13 +104,13 @@ So let's start:
 
 Then for each plugin which has a configuration page you should specify a configuration url. Base class named BasePlugin has GetConfigurationPageUrl method which returns a configuration url:
 
-	```csharp
-	return $"{_webHelper.GetStoreLocation()}Admin/ControllerName/ActionName";
-	```
+```csharp
+return $"{_webHelper.GetStoreLocation()}Admin/ControllerName/ActionName";
+```
 
-	Where ControllerName is a name of your controller and ActionName is a name of action (usually it's "Configure").
+Where ControllerName is a name of your controller and ActionName is a name of action (usually it's "Configure").
 
-	Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin > Configuration > Plugins.
+Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin > Configuration > Plugins.
 
 > [!TIP]
 > The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
