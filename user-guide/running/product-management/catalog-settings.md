@@ -61,7 +61,7 @@ Also on this page you can see the left feedback of all customers (if this settin
 
 The next block sets up **Performance**. Having the following settings enabled can significantly improve the store performance:
 
-- **Ignore ACL rules** (sitewide) turns off the ACL rules configured for entities.
+- **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:user-guide/configuring/settingup/customers/acl) configured for entities.
 - **Ignore limit per store** (sitewide), to ignore limit per stores rules configured for entities (sitewide). It is recommended to enable this setting if you have only one store or do not have any store-specific limitations.
 - **Ignore discounts **(sitewide) 
 - **Ignore featured products** (sitewide)
@@ -149,3 +149,4 @@ Tick the **Export/Import products with attributes** checkbox if you need product
 
 Tick the **Allow product sorting** checkbox, to enable a product sorting option on the categories and manufacturers pages. You can activate/deactivate sorting by Position, Name, Price and Date of Creation.
 
+![](/user-guide/running/_static/product_sorting.png)
