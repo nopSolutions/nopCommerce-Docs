@@ -5,6 +5,6 @@ uid: user-guide/installing/installation-guide/installing-IIS
 ---
 # Installing Internet Information Services (IIS)
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Your development system can utilize any of the supported operating systems. However, you will most likely need to install the Internet Information Services (IIS). IIS is a web server that is used by hosting providers to run websites. It is part of Windows and you can use it to run your nopCommerce website on your PC to help develop and customize it away from your public storefront.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+To install IIS, follow this [link](https://www.microsoft.com/en-us/download/details.aspx?id=48264)
