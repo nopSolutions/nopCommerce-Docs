@@ -47,16 +47,11 @@ In the **Manufacturer Mappings panel**, define the following **details**:
 ![](/user-guide/running/_static/SEO.png)
 In the **SEO panel**, define the following **details**:
 
-- **Meta keywords** - manufacturer keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like:
+- **Meta keywords** - manufacturer keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like: `<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
 
-`<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
-
-- **Meta description** - a description of the manufacturer. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows:
-
-`<meta name="description" content="Brief description of the contents of your page">`
+- **Meta description** - a description of the manufacturer. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows: `<meta name="description" content="Brief description of the contents of your page">`
 
 - **Meta title** specifies the title of your Web page. It is a code which is inserted into the header of your web page:
-
 ````HTML
 <head>
 <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
@@ -87,7 +82,5 @@ You can **export** the manufacturer settings to an external file for backup purp
 #### Related resources:
 
 * [Adding products user](xref:guide/running/product-management/products/adding-products/index)
-
 * [SEO](xref:user-guide/marketing/content/seo.md/index)
-
 * [Video tutorial: managing](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
