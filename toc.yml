@@ -198,6 +198,8 @@
           uid: developer/tutorials/azure-publish
     - name: Creating a nopCommerce plugin
       uid: developer/plugins/index
+      - name: How to write a plugin for nopCommerce 4.20
+        uid: developer/plugins/how-to-write-plugin
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
