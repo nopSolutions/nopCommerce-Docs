@@ -166,9 +166,9 @@
                 uid: user-guide/running/product-management/categories
               - name: Manufacturers
                 uid: user-guide/running/product-management/manufacturers
-                - name: Attributes
+              - name: Attributes
                 uid: user-guide/running/product-management/attributes
-                - name: Products
+              - name: Products
                 uid: user-guide/running/product-management/products
               - name: Catalog settings
                 uid: user-guide/running/product-management/catalog-settings
