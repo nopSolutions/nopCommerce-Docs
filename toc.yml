@@ -11,7 +11,10 @@
         - name: Technology & System Requirements
           uid: user-guide/installing/technology-system-requirements
         - name: Installation guide
-          uid: user-guide/installing/installation-guide
+          uid: user-guide/installing/installation-guide/index
+          items:
+            - name: Hosting providers
+              uid: user-guide/installing/installation-guide/hosting-provider
         - name: Installing on Windows Azure
           uid: user-guide/installing/azure
         - name: Upgrading nopCommerce
@@ -209,8 +212,6 @@
       items:
       - name: How to write a plugin for nopCommerce 4.20
         uid: developer/plugins/how-to-write-plugin_4.20
-      - name: How to write a plugin for nopCommerce 4.10
-        uid: developer/plugins/how-to-write-plugin_4.10
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
