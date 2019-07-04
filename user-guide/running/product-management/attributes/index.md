@@ -9,6 +9,6 @@ Attributes are used to define **specific characteristics of your products**. The
 
 There are also [checkout attributes](xref:user-guide/running/product-management/attributes/checkout-attributes.md) in nopCommerce. They are used to gather additional order information during the final stage of the shopping process.
 
-- [product attributes](xref:user-guide/running/product-management/attributes/product-attributes)
-- [specification attributes](xref:user-guide/running/product-management/attributes/specification-attributes).
-- [checkout attributes](xref:user-guide/running/product-management/attributes/checkout-attributes.md)
+- [Product attributes](xref:user-guide/running/product-management/attributes/product-attributes)
+- [Specification attributes](xref:user-guide/running/product-management/attributes/specification-attributes).
+- [Checkout attributes](xref:user-guide/running/product-management/attributes/checkout-attributes.md)
