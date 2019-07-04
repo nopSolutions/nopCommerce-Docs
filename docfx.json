@@ -8,6 +8,8 @@
         ],
         "exclude": [
           "**/obj/**",
+          "_exported_templates/**",
+          "templates/**",
           "_site/**",
           "***/readme.md",
           "***/license.md"
@@ -39,8 +41,9 @@
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
     "globalMetadata": {
-      "_navPath": "/foo",
-      "_navRel": "/foo",
+      "_navPath": "/",
+      "_navRel": "/",
+      "_appLogoPath": "/logo.png",
       "feedback_github_repo": "nopSolutions/nopCommerce-Docs",
       "feedback_product_url": "https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md",
       "feedback_system": "GitHub",
@@ -48,7 +51,10 @@
         "nopCommerce-Docs"
       ]
     },
-    "template": [],
+    "template": [
+      "default",
+      "templates/nopcommerce"
+    ],
     "dest": "_site",
     "markdownEngineName": "markdig"
   }
