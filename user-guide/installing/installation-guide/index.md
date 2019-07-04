@@ -10,7 +10,7 @@ This chapter describes how to download nopCommerce software, upload it to your s
 Before you begin the install, ensure that you and your web host have the [minimum requirements to run nopCommerce.](xref:user-guide/installing/technology-system-requirements)
 
 > [!TIP]
-> <For more information on hosting selection guidelines, visit [this page.](xref:user-guide/installing/installation-guide/hosting-provider)>
+> For more information on hosting selection guidelines, visit [this page.](xref:user-guide/installing/installation-guide/hosting-provider)
 
 There are several options available when downloading nopCommerce. In order to determine which option to download, you need to decide how you will use it. The following options are available:
 
@@ -28,7 +28,7 @@ To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virt
 If you are're using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above
 
 > [!TIP]
-> <For more information on IIS, visit [this page.](xref:user-guide/installing/installation-guide/hosting-provider/installing-IIS)>
+> For more information on IIS, visit [this page.](xref:user-guide/installing/installation-guide/hosting-provider/installing-IIS)
 
 **Running the site using Visual Studio (package with source code)**
 This step describes how to launch a site in Visual Studio. To run the site in Visual Studio, extract the full source code archive (.rar) to a local folder. Launch Visual Studio and select **File →  Open →  Project/Solution**. Navigate to the folder where you extracted the archive and open **NopCommerce.sln** solution file. Run **Nop.Web** project.
@@ -92,8 +92,8 @@ Once you open the site for the first time, you’ll be redirected to the install
 ![nopCommerce installation](/user-guide/installing/installation-guide/_static/installation.jpg)
 
 
-!> [!NOTE]
-> <**Admin user e-mail**: This is the e-mail address for the first admin of the site.
+> [!NOTE]
+> **Admin user e-mail**: This is the e-mail address for the first admin of the site.
 
 **Admin password**: You will need to supply a password for the admin account.
 
@@ -127,13 +127,13 @@ Specify Custom SQL Server collation: This is an advanced setting and should be l
 - Click **Install** to order to start the installation process. When the setup process is complete, your new site's home page is displayed.
 
 > [!NOTE]
-> <The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.>
+> The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
 
 > [!NOTE]
-> <Ensure that your application pool is set to Integrated mode>
+> Ensure that your application pool is set to Integrated mode
   
 > [!NOTE]
-> <If you want to completely reset a nopCommerce site to its default settings, you can delete the Settings.txt file from App_Data directory. When using IIS you might want to read this article.>
+> If you want to completely reset a nopCommerce site to its default settings, you can delete the Settings.txt file from App_Data directory. When using IIS you might want to read this article.
 
 - [Hosting providers](xref:user-guide/installing/installation-guide/hosting-provider)
 - [Installing Internet Information Services (IIS)](xref:user-guide/installing/installation-guide/installing-IIS)
