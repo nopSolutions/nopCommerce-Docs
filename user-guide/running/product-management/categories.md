@@ -86,7 +86,7 @@ You can click **Delete** to remove the category.
 
 You can **Export the categories settings** to an external file for backup purposes, by clicking the Export button.
 
-##### Related resources:
+#### Related resources:
 
 * [Adding products user](xref:guide/running/product-management/products/adding-products/index)
 
