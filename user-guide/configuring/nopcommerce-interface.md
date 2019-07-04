@@ -9,7 +9,7 @@ This chapter covers the basics of nopCommerce interface.
 
 The first screen that is displayed after logging in the nopCommerce administration area is a Dashboard.
 
-![Dashboard](/user-guide/configuring/_static/dashboard.jpeg)
+![dashboard](_static/dashboard.jpeg)
 
 The dashboard has following sections:
 
