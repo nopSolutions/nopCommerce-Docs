@@ -164,6 +164,8 @@
           items:
               - name: Categories
                 uid: user-guide/running/product-management/categories
+                name: Manufacturers
+                uid: user-guide/running/product-management/manufacturers
 - name: Developer guide
   uid: developer-documentation
   items:
