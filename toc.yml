@@ -226,6 +226,8 @@
         uid: developer/plugins/shippng-plugin
       - name: Plugin with data access
         uid: developer/plugins/plugin-with-data-access
+      - name: How to add a menu item into the administration area from a plugin
+        uid: developer/plugins/menu-item
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute

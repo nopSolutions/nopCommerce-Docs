@@ -12,3 +12,4 @@ uid: developer/plugins/index
 * [How to code my own payment method](xref:developer/plugins/payment-method)
 * [How to code my own shipping rate computation method](xref:developer/plugins/shippng-plugin)
 * [Plugin with data access](xref:developer/plugins/plugin-with-data-access)
+* [How to add a menu item into the administration area from a plugin](xref:developer/plugins/menu-item)
