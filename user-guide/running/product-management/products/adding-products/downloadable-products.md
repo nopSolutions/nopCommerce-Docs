@@ -1,7 +1,7 @@
 ---
 title: Downloadable product
 author: AndreiMaz
-uid: user-guide/running/product-management/products/downloadable-products
+uid: user-guide/running/product-management/products/adding-products/downloadable-products
 ---
 # Downloadable product
 
