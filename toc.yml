@@ -220,6 +220,8 @@
         uid: developer/plugins/how-to-write-plugin_4.00
       - name: How to write a plugin for nopCommerce 3.90 (and previous versions)
         uid: developer/plugins/how-to-write-plugin_3.90
+      - name: How to code my own payment method
+        uid: developer/plugins/payment-method
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
