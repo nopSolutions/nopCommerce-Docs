@@ -1,7 +1,7 @@
 ---
 title: Understanding Layout / Design
 author: AndreiMaz
-uid: developer/tutorials/designers-guide/understanding-layout
+uid: developer/design/understanding-layout
 ---
 
 # Understanding Layout / Design

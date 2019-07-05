@@ -1,7 +1,7 @@
 ---
 title: Contributing a Theme
 author: AndreiMaz
-uid: developer/tutorials/designers-guide/contributing-theme
+uid: developer/design/contributing-theme
 ---
 
 # Contributing a Theme
