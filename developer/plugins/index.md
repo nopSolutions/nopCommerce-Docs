@@ -14,3 +14,4 @@ uid: developer/plugins/index
 * [Plugin with data access](xref:developer/plugins/plugin-with-data-access)
 * [How to add a menu item into the administration area from a plugin](xref:developer/plugins/menu-item)
 * [Adding CSS and JS resource files into nopCommerce Plugin](xref:developer/plugins/resource-files)
+* [Video tutorials for creating a plugin](xref:developer/plugins/video-tutorials)
