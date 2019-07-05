@@ -17,6 +17,8 @@
               uid: user-guide/installing/installation-guide/hosting-provider
             - name: Installing Internet Information Services (IIS)
               uid: user-guide/installing/installation-guide/installing-IIS
+            - name: Known Issues and Solutions
+              uid: user-guide/installing/installation-guide/known-issues-and-solutions
         - name: Installing on Windows Azure
           uid: user-guide/installing/azure
         - name: Upgrading nopCommerce
@@ -167,16 +169,30 @@
         - name: Product management
           uid: user-guide/running/product-management/index
           items:
-              - name: Categories
-                uid: user-guide/running/product-management/categories
-              - name: Manufacturers
-                uid: user-guide/running/product-management/manufacturers
-              - name: Attributes
-                uid: user-guide/running/product-management/attributes/index
+            - name: Categories
+              uid: user-guide/running/product-management/categories
+            - name: Manufacturers
+              uid: user-guide/running/product-management/manufacturers
+            - name: Attributes
+              uid: user-guide/running/product-management/attributes/index
+              items:
+                - name: Product attributes
+                  uid: user-guide/running/product-management/attributes/product-attributes
+                - name: Specification attributes
+                  uid: user-guide/running/product-management/attributes/specification-attributes
+                - name: Checkout attributes
+                  uid: user-guide/running/product-management/attributes/checkout-attributes  
               - name: Products
                 uid: user-guide/running/product-management/products/index
               - name: Catalog settings
                 uid: user-guide/running/product-management/catalog-settings
+    - name: Marketing your store
+      uid: user-guide/marketing/index
+      items:
+        - name: Promotional tools
+          uid: user-guide/marketing/promotional/index
+        - name: Content Management
+          udi: user-guide/marketing/promotional/content/index      
 - name: Developer guide
   uid: developer-documentation
   items:
@@ -220,6 +236,18 @@
         uid: developer/plugins/how-to-write-plugin_4.00
       - name: How to write a plugin for nopCommerce 3.90 (and previous versions)
         uid: developer/plugins/how-to-write-plugin_3.90
+      - name: How to code my own payment method
+        uid: developer/plugins/payment-method
+      - name: How to code my own shipping rate computation method
+        uid: developer/plugins/shippng-plugin
+      - name: Plugin with data access
+        uid: developer/plugins/plugin-with-data-access
+      - name: How to add a menu item into the administration area from a plugin
+        uid: developer/plugins/menu-item
+      - name: Adding CSS and JS resource files into nopCommerce Plugin
+        uid: developer/plugins/resource-files
+      - name: Video tutorials for creating a plugin
+        uid: developer/plugins/video-tutorials
     - name: Designer's Guide
       uid: developer/design/index
       items:
