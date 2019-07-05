@@ -44,7 +44,7 @@ Start by filling up General Information on the **Product info panel**:
 
 Define whether the product is a
 
-- [Gift Carduser](xref:user-guide/marketing/promotional/gift-cards)
+- [Gift Card](xref:user-guide/marketing/promotional/gift-cards)
 - [Downloadable Product](xref:user-guide/running/product-management/products/downloadable-products)
 - [Recurring Product](xref:user-guide/running/product-management/products/recurring-products)
 - [Rental Product](xref:user-guide/running/product-management/products/rental-products)
