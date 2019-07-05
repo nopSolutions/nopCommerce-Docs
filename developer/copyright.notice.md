@@ -10,7 +10,7 @@ Information in this document, including URL and other Internet Web site referenc
 
  
 
-Joint Copyright © 2010, Nop Solutions, Inc and Andrei Mazoulnitsyn. All Rights Reserved.
+Joint Copyright &copy; 2010, Nop Solutions, Inc and Andrei Mazoulnitsyn. All Rights Reserved.
 
  
 
