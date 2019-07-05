@@ -11,7 +11,12 @@
         - name: Technology & System Requirements
           uid: user-guide/installing/technology-system-requirements
         - name: Installation guide
-          uid: user-guide/installing/installation-guide
+          uid: user-guide/installing/installation-guide/index
+          items:
+            - name: Hosting providers
+              uid: user-guide/installing/installation-guide/hosting-provider
+            - name: Installing Internet Information Services (IIS)
+              uid: user-guide/installing/installation-guide/installing-IIS
         - name: Installing on Windows Azure
           uid: user-guide/installing/azure
         - name: Upgrading nopCommerce
@@ -167,9 +172,9 @@
               - name: Manufacturers
                 uid: user-guide/running/product-management/manufacturers
               - name: Attributes
-                uid: user-guide/running/product-management/attributes
+                uid: user-guide/running/product-management/attributes/index
               - name: Products
-                uid: user-guide/running/product-management/products
+                uid: user-guide/running/product-management/products/index
               - name: Catalog settings
                 uid: user-guide/running/product-management/catalog-settings
 - name: Developer guide
@@ -207,8 +212,14 @@
     - name: Creating a nopCommerce plugin
       uid: developer/plugins/index
       items:
-      - name: How to write a plugin for nopCommerce 4.20
+      - name: How to write a plugin for nopCommerce 4.20 (and above)
         uid: developer/plugins/how-to-write-plugin_4.20
+      - name: How to write a plugin for nopCommerce 4.10
+        uid: developer/plugins/how-to-write-plugin_4.10
+      - name: How to write a plugin for nopCommerce 4.00
+        uid: developer/plugins/how-to-write-plugin_4.00
+      - name: How to write a plugin for nopCommerce 3.90 (and previous versions)
+        uid: developer/plugins/how-to-write-plugin_3.90
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
