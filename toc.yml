@@ -192,7 +192,7 @@
         - name: Promotional tools
           uid: user-guide/marketing/promotional/index
         - name: Content Management
-          udi: user-guide/marketing/promotional/content/index      
+          uid: user-guide/marketing/promotional/content/index      
 - name: Developer guide
   uid: developer-documentation
   items:
@@ -248,6 +248,8 @@
         uid: developer/plugins/resource-files
       - name: Video tutorials for creating a plugin
         uid: developer/plugins/video-tutorials
+      - name: Introduction to NopCommerce Plugin Development (Pluralsight video course)
+        uid: developer/plugins/introduction
     - name: Designer's Guide
       uid: developer/design/index
       items:
