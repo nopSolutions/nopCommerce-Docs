@@ -248,6 +248,8 @@
         uid: developer/plugins/resource-files
       - name: Video tutorials for creating a plugin
         uid: developer/plugins/video-tutorials
+      - name: Introduction to NopCommerce Plugin Development (Pluralsight video course)
+        uid: developer/plugins/introduction
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
