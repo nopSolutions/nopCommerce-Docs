@@ -171,7 +171,7 @@ To view a list of orders in which the product was purchased, go to the **Purchas
 
 ![](/user-guide/running/_static/puchased_with_orders.png)
 
-### SEOSEO
+### SEO
 
 Define the following SEO parameters for the product page:
 
