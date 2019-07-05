@@ -182,10 +182,6 @@
                   uid: user-guide/running/product-management/attributes/specification-attributes
                 - name: Checkout attributes
                   uid: user-guide/running/product-management/attributes/checkout-attributes  
-            - name: Products
-              uid: user-guide/running/product-management/products/index
-            - name: Catalog settings
-              uid: user-guide/running/product-management/catalog-settings
               - name: Products
                 uid: user-guide/running/product-management/products/index
               - name: Catalog settings
