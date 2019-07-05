@@ -173,6 +173,13 @@
                 uid: user-guide/running/product-management/manufacturers
               - name: Attributes
                 uid: user-guide/running/product-management/attributes/index
+                items:
+                - name: Product attributes
+                  uid: user-guide/running/product-management/attributes/product-attributes
+                - name: Specification attributes
+                  uid: user-guide/running/product-management/attributes/specification-attributes
+                - name: Checkout attributes
+                  uid: user-guide/running/product-management/attributes/checkout-attributes  
               - name: Products
                 uid: user-guide/running/product-management/products/index
               - name: Catalog settings
