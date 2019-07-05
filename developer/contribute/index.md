@@ -9,6 +9,6 @@ You are more than welcome to contribute to the success of nopCommerce by helping
 
 nopCommerce has a young but growing community of contributors. It is a very active community that is passionate about developing a very robust .NET Core open source ecommerce application. nopCommerce has had over 30,000 downloads in the last month, so it's pretty popular. So join the community and see what you can learn and what you can share!
 
-* [Possible ways to contribute](possible-ways.md)
-* [Sharing your plugins, themes, and language packs](sharing.md)
-* [Working with source code and contributions](source-code.md)
+* [Possible ways to contribute](xref:developer/contribute/possible-ways)
+* [Sharing your plugins, themes, and language packs](xref:developer/contribute/sharing)
+* [Working with source code and contributions](xref:developer/contribute/source-code)

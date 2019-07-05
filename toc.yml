@@ -273,6 +273,15 @@
           uid: developer/design/tips-and-tricks
         - name: Contributing a Theme
           uid: developer/design/contributing-theme
+    - name: Contribute
+      uid: developer/contribute/index
+      items:
+        - name: Possible ways to contribute
+          uid: developer/contribute/possible-ways
+        - name: Sharing your plugins, themes, and language packs
+          uid: developer/contribute/sharing
+        - name: Working with source code and contributions
+          uid: developer/contribute/source-code
     - name: Copyright notice
       uid: developer/copyright-notice
     - name: FAQs

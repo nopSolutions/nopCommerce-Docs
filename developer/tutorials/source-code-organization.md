@@ -8,7 +8,7 @@ uid: developer/tutorials/source-code-organization
 
 This document is a guide for developers to the solution structure of nopCommerce. It is a document for a new nopCommerce developer to start learning about the nopCommerce code base. First of all, nopCommerce source code is quite easy to get. It's an open source application, so all you have to do to get the code is simply download it from the web site. The projects and folders are listed in the order they appear in Visual Studio. We recommend that you open the nopCommerce solution in Visual Studio and browse through the projects and files as you read this document.
 
-![Visual Studio](/developer/tutorials/_static/visual_studio.jpg)
+![Visual Studio](_static/source-code-organization/visual_studio.jpg)
 
 Most of the projects, directories, and files are named so that you can get a rough idea of their purpose. For example, I don't even have to look inside the project called Nop.Plugin.Payments.PayPalStandard to guess what it does.
 

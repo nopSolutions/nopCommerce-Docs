@@ -14,7 +14,7 @@ This document describes a step-by-step guide to building and running a Docker co
 
 1. **Run the command shell** to the Docker via the [Kitematic](https://kitematic.com/)  interface. To do this, simply click on the inconspicuous button in the interface.
    
-	![docker_1](_static/docker_1.png)
+	![docker_1](_static/docker/docker_1.png)
 
 	All further work will take place in the familiar PowerShell window.
 
@@ -36,7 +36,7 @@ This document describes a step-by-step guide to building and running a Docker co
 	```
 	We should see something similar to this:	
 
-	![docker_2](_static/docker_2.png)
+	![docker_2](_static/docker/docker_2.png)
 
 	This is a list of all loaded containers, among which we can easily see our container, it is created and ready to go.
 
@@ -64,7 +64,7 @@ This document describes a step-by-step guide to building and running a Docker co
 
 	Having clicked on this address, we should see the page with the installation of nopCommerce.
 
-	![docker_3](_static/docker_3.png)
+	![docker_3](_static/docker/docker_3.png)
 
 	This will be our verification that the container is being created, launched and successfully operating.
 
