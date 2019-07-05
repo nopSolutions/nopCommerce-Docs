@@ -10,3 +10,4 @@ uid: developer/plugins/index
 * [How to write a plugin for nopCommerce 4.00](xref:developer/plugins/how-to-write-plugin_4.00)
 * [How to write a plugin for nopCommerce 3.90 (and previous versions)](xref:developer/plugins/how-to-write-plugin_3.90)
 * [How to code my own payment method](xref:developer/plugins/payment-method)
+* [How to code my own shipping rate computation method](xref:developer/plugins/shippng-plugin)

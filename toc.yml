@@ -222,6 +222,8 @@
         uid: developer/plugins/how-to-write-plugin_3.90
       - name: How to code my own payment method
         uid: developer/plugins/payment-method
+      - name:How to code my own shipping rate computation method
+        uid: developer/plugins/shippng-plugin
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
