@@ -5,6 +5,17 @@ uid: user-guide/installing/installation-guide/known-issues-and-solutions
 ---
 # Known Issues and Solutions
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+**Issue: Installation isuues - 500 Internal Error**
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+Server Error 
+500 - Internal server error. 
+There is a problem with the resource you are looking for, and it cannot be displayed.
+
+
+**Solution** 
+
+Select the server in IIS Manager.
+Select Feature Delegation.
+Set Modules to Read/Write
+
+And also, the nopCommerce required to give access to the application pool’s identity.
