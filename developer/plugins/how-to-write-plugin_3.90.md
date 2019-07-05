@@ -15,11 +15,11 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 	A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 
-	![p1](_static/write_plugin_4.10_1.jpg)
+	![p1](_static/write_plugin_3.90/write_plugin_3.90_4.jpg)
 
 1. Once the plugin project is created update the project build output path. Set it to "..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}\". For example, Authorize.NET payment plugin has the following output path: "..\..\Presentation\Nop.Web\Plugins\Payments.AuthorizeNet\". After it's done, appropriate plugin DLLs will be automatically copied to the \Presentation\Nop.Web\Plugins\ directory which is searched by the nopCommerce core for valid plugins. But please note that it's also not a requirement. And you can choose any output directory name for a plugin.
 
-	![p1](_static/write_plugin_3.90_1.jpg)
+	![p1](_static/write_plugin_3.90/write_plugin_3.90_1.jpg)
 
     - On the Project menu, click Properties.
     - Click the Build tab.
@@ -42,7 +42,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 	```
 	Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format *Nop.Plugin.{Group}.{Name}.dll* (it is your plugin assembly filename). Ensure that "Copy to Output Directory" property of this file is set to "Copy if newer".
 
-	![p2](_static/write_plugin_3.90_2.jpg)
+	![p2](_static/write_plugin_3.90/write_plugin_3.90_2.jpg)
 
 1. You should also created a web.config file and ensure that it's copied to output. Just copy it from any existing plugin.
 
@@ -90,7 +90,7 @@ So let's start:
 
 	For example, the project structure of Authorize.NET plugin looks like the image below
 
-	![p3](_static/write_plugin_3.90_3.jpg)
+	![p3](_static/write_plugin_3.90/write_plugin_3.90_3.jpg)
 
 ## Routes.
 
