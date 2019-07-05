@@ -192,7 +192,7 @@
         - name: Promotional tools
           uid: user-guide/marketing/promotional/index
         - name: Content Management
-          udi: user-guide/marketing/promotional/content/index      
+          uid: user-guide/marketing/promotional/content/index      
 - name: Developer guide
   uid: developer-documentation
   items:
