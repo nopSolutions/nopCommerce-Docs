@@ -1,7 +1,7 @@
 ---
 title: Recurring product
 author: AndreiMaz
-uid: user-guide/running/product-management/products/recurring-products
+uid: user-guide/running/product-management/products/adding-products/recurring-products
 ---
 # Recurring product
 
