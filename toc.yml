@@ -184,17 +184,15 @@
                   uid: user-guide/running/product-management/attributes/checkout-attributes  
               - name: Products
                 uid: user-guide/running/product-management/products/index
-                items:
-                - name: Adding products
-                uid: user-guide/running/product-management/products/adding-products
-                - name: Import/Export
-                uid: user-guide/running/product-management/products/import-export
-                - name: Product tags
-                uid: user-guide/running/product-management/products/product-tags
-                - name: Product reviews
-                uid: user-guide/running/product-management/products/product-reviews
               - name: Catalog settings
                 uid: user-guide/running/product-management/catalog-settings
+    - name: Marketing your store
+      uid: user-guide/marketing/index
+      items:
+        - name: Promotional tools
+          uid: user-guide/marketing/promotional/index
+        - name: Content Management
+          udi: user-guide/marketing/promotional/content/index      
 - name: Developer guide
   uid: developer-documentation
   items:
