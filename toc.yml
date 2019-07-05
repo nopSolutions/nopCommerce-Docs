@@ -182,10 +182,10 @@
                   uid: user-guide/running/product-management/attributes/specification-attributes
                 - name: Checkout attributes
                   uid: user-guide/running/product-management/attributes/checkout-attributes  
-              - name: Products
-                uid: user-guide/running/product-management/products/index
-              - name: Catalog settings
-                uid: user-guide/running/product-management/catalog-settings
+                - name: Products
+                  uid: user-guide/running/product-management/products/index
+                - name: Catalog settings
+                  uid: user-guide/running/product-management/catalog-settings
     - name: Marketing your store
       uid: user-guide/marketing/index
       items:
@@ -252,5 +252,26 @@
         uid: developer/plugins/introduction
     - name: Designer's Guide
       uid: developer/design/index
+      items:
+        - name: Overview (Designer's Guide)
+          uid: developer/design/overview
+        - name: Installing / Applying theme in nopCommerce
+          uid: developer/design/installing-theme
+        - name: Creating / Writing your own theme (using current / default theme)
+          uid: developer/design/new-theme
+        - name: Understanding Layout / Design
+          uid: developer/design/understanding-layout
+        - name: Customizing nopCommerce Themes
+          uid: developer/design/customizing-theme
+        - name: Right To Left Theme
+          uid: developer/design/right-to-left-theme
+        - name: Widgets (Designer's Guide)
+          uid: developer/design/widgets
+        - name: Responsive Design
+          uid: developer/design/responsive
+        - name: Tips and Tricks
+          uid: developer/design/tips-and-tricks
+        - name: Contributing a Theme
+          uid: developer/design/contributing-theme
 - name: Contribute
   href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md
