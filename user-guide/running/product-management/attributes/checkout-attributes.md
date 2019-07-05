@@ -6,7 +6,6 @@ uid: user-guide/running/product-management/attributes/checkout-attributes
 # Checkout attributes
 
 Checkout Attributes is an additional order information that is gathered during the final stage of the shopping process.
-
 > [!NOTE] 
 > Here shop owners can specify, for example, whether a bought product requires gift-wrapping or careful handling as in a case of fragile goods.
 
@@ -31,7 +30,6 @@ In the **Attribute Info panel**, define the following information:
 - Ticked **Tax exempt** checkbox indicates that tax will not be applied to this checkout attribute.
 - In case the tax is applied, from the Tax category dropdown list, select the **tax category** that the checkout attribute is applied to.
 - From the **Control Type dropdown list**, select the required method for displaying the attribute value: Dropdown List, Radio List, Checkboxes, Textbox, etc.
-
 > [!NOTE] 
 > Dropdown lists, radio lists, checkboxes and color squares require the store owner to define values (such as Green, Blue, Red and so on). Textbox and Date picker control types do not require the store owner to define values since customers will be required to fill these textbox fields. In addition, for some control types, you can specify validation rules. For example: For the Textbox attribute, you can define the Minimum length, Maximum length and Default Value. For File Upload, you can define Maximum file size and Allowed file extension.
 
@@ -66,12 +64,6 @@ On the Condition tab of the Edit checkout attribute details window, a store owne
 ![](/user-guide/running/_static/condition.png)
 
 Click **Save**. The new attribute will be displayed in the public store.
-
-#### Related resources:
-
-* [Adding products user](xref:user-guide/running/product-management/products/adding-products)
-
-* [SEO](xref:user-guide/marketing/content/seo)
 
 #### Related resources:
 
