@@ -1,7 +1,7 @@
 ---
 title: News settings
 author: AndreiMaz
-uid: user-guide/marketing/promotional/content/news
+uid: user-guide/marketing/content/news/news-settings
 ---
 # News
 

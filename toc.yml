@@ -39,7 +39,7 @@
                 - name: Setting up Multiple-Store
                   uid: user-guide/configuring/settingup/mainstore/multiple-store
                 - name: Countries
-                  uid: user-guide/configuring/settingup/mainstore/counties
+                  uid: user-guide/configuring/settingup/mainstore/countries
                 - name: Languages
                   uid: user-guide/configuring/settingup/mainstore/languages
                 - name: Security settings
@@ -71,7 +71,7 @@
                 - name: Currencies
                   uid: user-guide/configuring/settingup/payments/currencies
             - name: Setting up Tax
-              uid: user-guide/configuring/settingup/tax/index            
+              uid: user-guide/configuring/settingup/taxes/index            
               items:
                 - name: Tax Settings
                   uid: user-guide/configuring/settingup/tax/tax-settings

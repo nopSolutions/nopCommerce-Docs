@@ -1,7 +1,7 @@
 ---
 title: Message templates
 author: AndreiMaz
-uid: user-guide/marketing/promotional/content/message-templates
+uid: user-guide/marketing/content/message-templates
 ---
 # Message templates
 

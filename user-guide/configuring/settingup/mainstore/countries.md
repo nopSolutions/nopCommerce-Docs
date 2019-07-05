@@ -1,7 +1,7 @@
 ---
 title: Countries
 author: AndreiMaz
-uid: user-guide/configuring/settingup/mainstore/counties
+uid: user-guide/configuring/settingup/mainstore/countries
 ---
 # Countries
 

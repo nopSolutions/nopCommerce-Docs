@@ -166,14 +166,7 @@ a {
 
 /* CODE HIGHLIGHT */
 pre {
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #fffaef;
-  border-radius: 4px;
-  box-shadow: 0px 1px 4px 1px rgba(100, 100, 100, 0.4);
+  border-radius: 0px;
 }
 
 .breadcrumb {

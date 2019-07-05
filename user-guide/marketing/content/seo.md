@@ -1,7 +1,7 @@
 ---
 title: SEO
 author: AndreiMaz
-uid: user-guide/marketing/promotional/content/seo
+uid: user-guide/marketing/content/seo
 ---
 # SEO
 

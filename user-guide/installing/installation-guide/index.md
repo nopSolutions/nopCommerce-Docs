@@ -28,7 +28,7 @@ To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virt
 If you are're using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above
 
 > [!TIP]
-> For more information on IIS, visit [this page.](xref:user-guide/installing/installation-guide/hosting-provider/installing-IIS)
+> For more information on IIS, visit [this page.](xref:user-guide/installing/installation-guide/installing-IIS)
 
 **Running the site using Visual Studio (package with source code)**
 This step describes how to launch a site in Visual Studio. To run the site in Visual Studio, extract the full source code archive (.rar) to a local folder. Launch Visual Studio and select **File →  Open →  Project/Solution**. Navigate to the folder where you extracted the archive and open **NopCommerce.sln** solution file. Run **Nop.Web** project.
