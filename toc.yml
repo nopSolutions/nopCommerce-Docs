@@ -186,6 +186,17 @@
               uid: user-guide/running/product-management/products/index
             - name: Catalog settings
               uid: user-guide/running/product-management/catalog-settings
+              - name: Products
+                uid: user-guide/running/product-management/products/index
+              - name: Catalog settings
+                uid: user-guide/running/product-management/catalog-settings
+    - name: Marketing your store
+      uid: user-guide/marketing/index
+      items:
+        - name: Promotional tools
+          uid: user-guide/marketing/promotional/index
+        - name: Content Management
+          udi: user-guide/marketing/promotional/content/index      
 - name: Developer guide
   uid: developer-documentation
   items:
