@@ -73,3 +73,127 @@ In the **Prices** section define:
 - The product as **Telecommunications, broadcasting, and electronic services**, to apply special tax rules used in the European Union. Find more info here.
 - Set up [tier prices](xref:user-guide/marketing/promotional/tier-prices) if required.
 
+### Inventory settings
+
+Define the inventory settings for the product as described [here](xref:user-guide/running/order-management/inventory-management).
+
+### Shipping details
+
+Define product-specific shipping details:
+
+- Tick **Shipping enabled** if the product can be shipped. The section then expands for more details.
+- Set the product parameters which will be used for the shipping calculation: **Weight, Length, Width, Height**. Note that you can change predefined measures in Configuration → Shipping → Measures.
+- **Free shipping** if the product is shipped for free
+- **Ship separately** if the product should be shipped separately from other products. If the order includes several items of the product, all of them will be shipped separately.
+- **Additional shipping charge** 
+- **Delivery date** which will be displayed in the public store. Note that you can manage delivery date options in **Configuration → Shipping → Delivery Dates**.
+
+### Mappings
+
+In the Mappings section define:
+
+- **Categories**. You can assign a product to as many categories as you want in nopCommerce. Note that you can manage [product categories](xref:user-guide/running/product-management/categories) in **Catalog → Categories**.
+- **Manufacturer**. You can assign a product to as many manufacturers as you want in nopCommerce. Note that you can manage [manufacturers](xref:user-guide/running/product-management/manufacturers) in **Catalog → Manufacturers**.
+- **Limited to stores**, if the product is sold in specific stores. Leave the field empty in case this functionality is not required. Note that in order to use this functionality you have to disable the following setting: **Configuration → Catalog Settings → Ignore** **“Limit per store” rules **(sitewide). Learn how to set up several stores [here](xref:user-guide/configuring/settingup/mainstore/multiple-store).
+- **Vendor**. You can manage [vendors](xref:user-guide/configuring/settingup/customers/vendors) in **Customers → Vendors**
+
+### Customer roles
+
+Choose customer roles, who will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. Note that in order to use this functionality you have to disable the following setting: **Configuration → Catalog Settings → Ignore ACL rules** (sitewide).
+
+![](/user-guide/running/_static/access_control_list.png)
+
+### Require other products
+
+Define whether the product **Requires other product**. In this case select the Required product IDs entering them by comma, ensure that there are no circular references, e.g. A requires B, B requires A. Chose to **Automatically add these products to the cart** if required.
+
+![](/user-guide/running/_static/require_other_products.png)
+
+### Related products and Cross-sells
+
+Set up Related products and Cross-sells as described [here](xref:user-guide/marketing/promotional/crosssells-related-products)
+
+### Product pictures
+
+Go to **Pictures** tab on Edit product details page to add product pictures.
+- In the **Add a new** picture area, click Upload to select a new picture you want to upload to your product page.
+- In the **Alt** field, enter a value for the "alt" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
+- In the **Title** field, enter a value for the "alt" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
+- Define the **Display order** of the image on a product page.
+
+### Attributes
+
+On the **Product attributes** tab, add Product attributes. Learn more about product attributes and how to create them [here](xref:user-guide/running/product-management/attributes/product-attributes). Once you have a list of the attributes created, click **Add new record** on the Attributes tab. The grid is expanded, as follows:
+
+![](/user-guide/running/_static/product_attributes2.png)
+
+- From the **Attribute** dropdown list select an attribute.
+- Fill the **Text Prompted** field, if you want some text to be shown in front of this attribute in a public store.
+- Tick **Is required** to set this attribute as required for customers.
+- Define the **Control type** for this attribute (e.g. dropdown list, radio button list, etc.).
+> [!NOTE]
+> For the «Date picker» control type, it is possible to set a number of years to be displayed by using «catalogsettings.countdisplayedyearsdatepicker» parameter in All Settings (advanced). For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed.
+
+- Define the **Display Order** for this attribute.
+- Click **Update**.
+- The **Values** field now displays a number of predefined values for this attribute. **View/Edit values**, if required.
+> [!NOTE]
+> There are two Attribute value types, Simple and Associated to product. Choose the Associated to product type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use Bundled products functionality allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes. (“Customer enters quantity” option).
+- If required, define Conditions for this attribute, i.e. this attribute becomes visible when other attributes have certain values.
+
+On the **Attribute Combinations** tab, define different attribute combinations and the following information for each of them:
+
+![](/user-guide/running/_static/product_attributes3.png)
+
+- **Stock quantity**
+- **Allow out of stock**, if you want your customers to be able to purchase products with certain attributes, when out of stock
+- **SKU, Manufacturer part number, GTIN**
+- **Overridden price**, if the price for products with certain attributes is different from the product regular price
+- Product combination **quantity under which the admin will be notified**
+
+On the **Specification Attributes tab**, add Specification attributes. Learn more about specification attributes and how to create them [here](xref:user-guide/running/product-management/attributes/specification-attributes)
+
+ To add a new attribute, fill the **Add a new product specification attribute** section:
+
+![](/user-guide/running/_static/add_a_new_specification_attribute2.png)
+
+- Select an **Attribute type** from a drop down list.
+- Choose the **Attribute** from a list of pre-created attributes.
+- Choose the **Attribute option**.
+- **Allow filtering** by this option on a category page, if required.
+- Tick **Show on product page**, to make the attribute visible on a product page.
+- Set the attribute **Display order**. 1 represents the top of the list.
+- Click **Add attribute**.
+
+### List of orders with the product
+
+To view a list of orders in which the product was purchased, go to the **Purchased with orders** tab. Here you can check an order's status and click to view the order in details.
+
+![](/user-guide/running/_static/puchased_with_orders.png)
+
+### SEOSEO
+
+Define the following SEO parameters for the product page:
+
+- **Meta keywords** - a brief and concise list of the most important themes (keywords and key phrases) related to the product. These words will be added to the product page header.
+- **Meta description** - a brief description of the product that will be added to the product page header.
+- **Meta title** - a title for the Web page.
+- **Search engine friendly page name** - a name of the page used by search engines. If you enter nothing then the product page URL is formed using the product name. If you enter custom-seo-page-name, then the following custom the URL will be used: http://www.yourStore.com/custom-seo-page-name.
+
+Read more about SEO [here](xref:user-guide/marketing/content/seo).
+
+### Stock quantity history
+
+On this tab you can view all the product quantity changes, orders with the product.
+
+![](/user-guide/running/_static/stock_quantity_history.png)
+
+#### Related resources:
+
+* [Product categories](xref:user-guide/running/product-management/categories)
+
+* [Order management](xref:user-guide/running/order-management/index)
+
+* [Webinar. First steps in nopCommerce](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
+
+* [Video tutorial: Adding a new product](https://www.youtube.com/watch?v=wVgTgdQVWPQ&index=2&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
