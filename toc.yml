@@ -228,6 +228,8 @@
         uid: developer/plugins/plugin-with-data-access
       - name: How to add a menu item into the administration area from a plugin
         uid: developer/plugins/menu-item
+      - name: Adding CSS and JS resource files into nopCommerce Plugin
+        uid: developer/plugins/resource-files
     - name: Designer's Guide
       uid: developer/design/index
 - name: Contribute
