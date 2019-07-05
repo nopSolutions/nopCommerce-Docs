@@ -15,7 +15,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 	A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 
-	![p1](_static/write_plugin_4.10_1.jpg)
+	![p1](_static/write_plugin_4.00/write_plugin_4.00_1.jpg)
 
 1. Once the plugin project is created you have to open its .csproj file in any text editor and replace its content with the following one:
 
@@ -60,7 +60,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 	```
 	Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format *Nop.Plugin.{Group}.{Name}.dll* (it is your plugin assembly filename). Ensure that "Copy to Output Directory" property of this file is set to "Copy if newer".
 
-	![p2](_static/write_plugin_4.10_2.jpg)
+	![p2](_static/write_plugin_4.00/write_plugin_4.00_2.jpg)
 
 1. The last required step is to create a class which implements IPlugin interface (Nop.Core.Plugins namespace). nopCommerce has BasePlugin class which already implements some IPlugin methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from IPlugin. For example, we have "IPaymentMethod" interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as ProcessPayment() or GetAdditionalHandlingFee(). Currently nopCommerce has the following specific plugin interfaces:
 
@@ -117,7 +117,7 @@ Once you have installed your plugin and added the configuration method you will 
 
 For example, the project structure of PayPalStandard plugin looks like the image below:
 
-![p3](_static/write_plugin_4.10_3.jpg)
+![p3](_static/write_plugin_4.00/write_plugin_4.00_3.jpg)
 
 ## Handling "Install" and "Uninstall" methods.
 

@@ -11,7 +11,7 @@ If customers have some shippable products, they can choose a shipping option dur
 
 Add a controller and an appropriate **Configure** action method and a view. These will define how a store owner sees configuration options in admin panel (System > Configuration > Shipping > Shipping providers). This article does not explain how to configure plugins, but you can find more info about it [here]().
 
-![shippng-plugin_1](_static/shippng-plugin_1.png)
+![shippng-plugin_1](_static/shippng-plugin/shippng-plugin_1.png)
 
 Once this step is complete, you can start adding required business logic for getting shipping options.
 

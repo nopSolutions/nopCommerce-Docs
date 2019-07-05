@@ -20,15 +20,15 @@ We will start coding with the data access layer, move on to the service layer, a
 
 Create a new class library project "Nop.Plugin.Other.ProductViewTracker".
 
-![plugin-with-data-access_1](_static/plugin-with-data-access_1.jpg)
+![plugin-with-data-access_1](_static/plugin-with-data-access/plugin-with-data-access_1.jpg)
 
 Add the following folders and plugin.json file.
 
-![plugin-with-data-access_2](_static/plugin-with-data-access_2.jpg)
+![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
 
 You can view the plugin.json file in the image below.
 
-![plugin-with-data-access_3](_static/plugin-with-data-access_3.jpg)
+![plugin-with-data-access_3](_static/plugin-with-data-access/plugin-with-data-access_3.jpg)
 
 Then add references to the following projects: Nop.Core, Nop.Data, Nop.Web.Framework
 
