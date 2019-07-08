@@ -6,6 +6,7 @@ uid: user-guide/running/product-management/attributes/checkout-attributes
 # Checkout attributes
 
 Checkout Attributes is an additional order information that is gathered during the final stage of the shopping process.
+
 > [!NOTE] 
 > Here shop owners can specify, for example, whether a bought product requires gift-wrapping or careful handling as in a case of fragile goods.
 
@@ -13,13 +14,13 @@ Checkout attributes are displayed on the Shopping Cart page and enable users to 
 
 To set up or edit checkout attributes, go to **Catalog → Attributes → Checkout attributes.**
 
-![](/user-guide/running/_static/checkout_attributes.png)
+![](_static/checkout-attributes/checkout_attributes.png)
 
 ### Adding new checkout attributes
 
 To create a new checkout attribute, click **Add new**.
 
-![](/user-guide/running/_static/add_a_new_checkout_attributes.png)
+![](_static/checkout-attributes/add_a_new_checkout_attributes.png)
 
 In the **Attribute Info panel**, define the following information:
 
@@ -41,7 +42,7 @@ In the **Attribute Info panel**, define the following information:
 
 On the **Attribute values panel**, click Add a new checkout value to create a new attribute value.
 
-![](/user-guide/running/_static/add_a_new_checkout_value.png)
+![](_static/checkout-attributes/add_a_new_checkout_value.png)
 
 In the **Add a new checkout value** window, define the following information:
 
@@ -55,13 +56,13 @@ In the **Add a new checkout value** window, define the following information:
 
 You can **edit** and **remove** attribute values by clicking the corresponding buttons beside the attributes on the Attribute values panel.
 
-![](/user-guide/running/_static/attribute_values.png)
+![](_static/checkout-attributes/attribute_values.png)
 
 ### Adding conditions
 
 On the Condition tab of the Edit checkout attribute details window, a store owner can specify a condition for the checkout attribute to be visible (depending on other attributes). Conditional attribute only appears if a previous attribute is selected.
 
-![](/user-guide/running/_static/condition.png)
+![](_static/checkout-attributes/condition.png)
 
 Click **Save**. The new attribute will be displayed in the public store.
 
