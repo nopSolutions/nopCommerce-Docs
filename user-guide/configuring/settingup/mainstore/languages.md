@@ -3,6 +3,7 @@ title: Languages
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/languages
 ---
+
 # Languages
 
 ##### Languages
@@ -12,16 +13,16 @@ In nopCommerce, your store can have several languages installed. However, the cu
 > [!TIP]
 > **By default**, the English language is installed.
 
-![language](/user-guide/configuring/settingup/mainstore/_static/Language.png)
+![language](_static/languages/Language.png)
 
->[!NOTE]
+> [!NOTE]
 > You can download new language packs from the official [Marketplace](http://www.nopcommerce.com/marketplace.aspx).
 
 ##### Adding new language
 
 Click **Add new**. In the Add a new language window, **define the following settings:**
 
-![addlanguage](/user-guide/configuring/settingup/mainstore/_static/addlanguage.png)
+![addlanguage](_static/languages/addlanguage.png)
 
 * **Name** of the new language
 
