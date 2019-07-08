@@ -7,14 +7,15 @@ uid: user-guide/running/product-management/manufacturers
 
 To manage manufacturers go to **Catalog → Manufacturers.**
 
-![](/user-guide/running/_static/manufactures.png)
+![](_static/manufacturers/manufactures.png)
 
 **Search** for a manufacturer in the Manufacturers window by **entering the Manufacturer name** (or a part of the name), or among all the manufacturers of a certain Store.
 
 Click the **Edit** button to edit the manufacturer’s details.
 
 ### Adding new manufacturers
-![](/user-guide/running/_static/add_a_new_manufacturer.png)
+
+![](_static/manufacturers/add_a_new_manufacturer.png)
 
 In the **Manufacturer Info panel**, define the following **details**:
 
@@ -23,7 +24,8 @@ In the **Manufacturer Info panel**, define the following **details**:
 - **Picture** - an image, or a logo, representing the manufacturer. Upload the image from your device.
 
 ### Display
-![](/user-guide/running/_static/display2.png)
+
+![](_static/manufacturers/display2.png)
 
 In the **Manufacturer Display panel**, define the following **details**:
 
@@ -38,7 +40,8 @@ In the **Manufacturer Display panel**, define the following **details**:
 - **Display Order** - the order number for displaying the manufacturer. This display number is used to sort manufacturers in the public store (ascending). The manufacturer with the display order 1 will be placed at the top of the list.
 
 ### Mappings
-![](/user-guide/running/_static/mappings.png)
+
+![](_static/manufacturers/mappings.png)
 
 In the **Manufacturer Mappings panel**, define the following **details**:
 
@@ -47,7 +50,8 @@ In the **Manufacturer Mappings panel**, define the following **details**:
 - Select the **Limited to stores** option to make this manufacturer limited to one or more stores. Note that this checkbox is only used when you have several stores configured. For further details refer to [Multi-store support](xref:user-guide/configuring/settingup/mainstore/multiple-store).
 
 ### Setting up SEO
-![](/user-guide/running/_static/SEO.png)
+
+![](_static/manufacturers/SEO.png)
 
 In the **SEO panel**, define the following **details**:
 
@@ -56,6 +60,7 @@ In the **SEO panel**, define the following **details**:
 - **Meta description** - a description of the manufacturer. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows: `<meta name="description" content="Brief description of the contents of your page">`
 
 - **Meta title** specifies the title of your Web page. It is a code which is inserted into the header of your web page:
+
 ````HTML
 <head>
 <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
@@ -65,11 +70,12 @@ In the **SEO panel**, define the following **details**:
 - **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the manufacturer name. If you enter custom-seo-page-name, then the following custom URL will be used: http://www.yourStore.com/custom-seo-page-name
 
 ### Adding products to certain manufacturer
+
 **Products panel** contains a list of products related to the selected manufacturer. The store owner can add new products to this manufacturer. Note that you need to Save the manufacturer before you can add products.
 
 Click **Add a new** product to find a product you want to add to this manufacturer. You can search by the product Name, by a Store, or a Product Type.
 
-![](/user-guide/running/_static/products2.png)
+![](_static/manufacturers/products2.png)
 
 Select a product you would like to add to the manufacturer and click the **Save** button. The product will be displayed under the selected manufacturer.
 
