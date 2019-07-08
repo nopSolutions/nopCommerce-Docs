@@ -5,6 +5,14 @@ uid: user-guide/running/customer-management/index
 ---
 # Customer management
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Customers in nopCommerce is a broad group including all users.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+This chapter describes how to manage customer profiles, track the activities done in the system and view online users.
+
+#### Learn how to get the best out of the customer management in your nopCommerce store in the following chapters:
+
+* [Customer list](xref:user-guide/running/customer-management/customer-list)
+
+* [Online Customers](xref:user-guide/running/customer-management/online-customers)
+
+* [Activity Log](xref:user-guide/running/customer-management/activity-log)
