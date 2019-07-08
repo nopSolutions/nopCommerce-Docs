@@ -1,7 +1,7 @@
 ---
 title: Vendors
 author: AndreiMaz
-uid: user-guide/configuring/settingup/customers/vendors
+uid: user-guide/configuring/settingup/customers/vendors/index
 ---
 # Vendors
 

@@ -116,7 +116,7 @@
                 - name: Access Control List
                   uid: user-guide/configuring/settingup/customers/acl
                 - name: Vendors
-                  uid: user-guide/configuring/settingup/customers/vendors
+                  uid: user-guide/configuring/settingup/customers/vendors/index
                   items:
                     - name: Vendor settings
                     - uid: user-guide/configuring/settingup/customers/vendors/settings
