@@ -5,6 +5,12 @@ uid: user-guide/running/order-management/index
 ---
 # Order management
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Order Management functionality is the “hub” of your store: all operational data, such as orders, payments, and shipment processing, inventory updates, return requests, is collected and managed here.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+## Learn how to get the best out of the order management in your nopCommerce store in the following chapters
+
+* [Orders](xref:user-guide/running/order-management/orders/index)
+* [Shipments](xref:user-guide/running/order-management/shipments)
+* [Return Requests](xref:user-guide/running/order-management/return-requests/index)
+* [Shopping carts and wishlists](xref:user-guide/running/order-management/shopping-carts-wishlists)
+* [Inventory management](xref:user-guide/running/order-management/inventory-management)
