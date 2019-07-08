@@ -13,7 +13,7 @@ The top block on the page sets up **Search**:
 
 - Tick the **Search autocomplete enabled** checkbox, to display the autocomplete search box in the public store, as follows:
 
-![](/user-guide/running/_static/search.png)
+![](_static/catalog-settings/search.png)
 
 When this option is enabled the following additional fields are displayed:
 
@@ -37,11 +37,11 @@ The **second block** sets up **Product reviews**. Define the following:
 
 The next block sets up **Review types**.  You can configure a list of review types if you think that a basic review is not enough.
 
-![](/user-guide/running/_static/review_types.png)
+![](_static/catalog-settings/review_types.png)
 
 Click **Add new button** for create new review type.
 
-![](/user-guide/running/_static/quality_rating.PNG)
+![](_static/catalog-settings/quality_rating.PNG)
 
 **Define the following:**
 - Enter your  review type **Name**.
@@ -53,11 +53,11 @@ Click **Save** button,to add a new review type.
 
 Now in the public store will be able to fill additional ratings on the product review page.
 
-![](/user-guide/running/_static/product_reviews.PNG)
+![](_static/catalog-settings/product_reviews.PNG)
 
 Also on this page you can see the left feedback of all customers (if this setting is active).In the customer personal account page there is also an opportunity to see all the reviews left on the products.
 
-![](/user-guide/running/_static/my_account.PNG)
+![](_static/catalog-settings/my_account.PNG)
 
 The next block sets up **Performance**. Having the following settings enabled can significantly improve the store performance:
 
@@ -70,11 +70,12 @@ The next block sets up **Performance**. Having the following settings enabled ca
 **Sharing options** allow to set up an opportunity for shoppers to share the products across their social media network. The options will appear as small icons on product pages. To set up the sharing options:
 
 - Tick the **Show a share button**, to display a share button on the product details page. When this field is selected the Share button code field is displayed.
-- The **Share button code** field displays the pages button code. 
->[!NOTE]
->By default, AddThis service is used (http://www.addthis.com/). 
+- The **Share button code** field displays the pages button code.
 
-![](/user-guide/running/_static/zzz.png)
+> [!NOTE]
+> By default, AddThis service is used (http://www.addthis.com/). 
+
+![](_static/catalog-settings/zzz.png)
 
 - Tick the 'Email a friend' enabled, to allow customers to use the 'Email a friend' option.
 - Allow anonymous users to email a friend
@@ -85,10 +86,9 @@ The next block sets up **Performance**. Having the following settings enabled ca
 - Tick the **Include short description in compare products** checkbox, to display short product descriptions on the compare products page.
 - Tick the **Include full description in compare products** checkbox, to display full product descriptions on the compare products page.
 
-![](/user-guide/running/_static/compare_product.png)
+![](_static/catalog-settings/compare_product.png)
 
 In general **catalog settings** you can define:
-
 
 - To **Show best sellers on home page**.
 
@@ -149,4 +149,4 @@ Tick the **Export/Import products with attributes** checkbox if you need product
 
 Tick the **Allow product sorting** checkbox, to enable a product sorting option on the categories and manufacturers pages. You can activate/deactivate sorting by Position, Name, Price and Date of Creation.
 
-![](/user-guide/running/_static/product_sorting.png)
+![](_static/catalog-settings/product_sorting.png)
