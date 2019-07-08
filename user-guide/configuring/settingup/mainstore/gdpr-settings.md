@@ -3,6 +3,7 @@ title: GDPR settings
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/gdpr-settings
 ---
+
 # GDPR settings
 
 *GDPR* (General Data Protection Regulation) is a revised European Union’s new data privacy law which impacts how all companies collect, use and share personal data of their European customers. The regulation entered into force on May 24, 2016 and applies since May 25, 2018. The regulation is an essential step to strengthen individuals' fundamental rights in the digital age and facilitate business by clarifying rules for companies and public bodies in the digital single market.
@@ -13,7 +14,7 @@ For more information (please refer to this source):
 
 You can enable GDPR settings on your nopCommerce by going to **Administration → Configuration → Settings → GDPR settings**
 
-![gdpr](/user-guide/configuring/settingup/mainstore/_static/gdpr.png)
+![gdpr](_static/gdpr-settings/gdpr.png)
 
 Additional settings will allow you to capture a log of the following activities:
 
@@ -23,7 +24,7 @@ Additional settings will allow you to capture a log of the following activities:
 
 You can add consents on your nopCommerce site by clicking on **“Add consent”** button:
 
-![consent](/user-guide/configuring/settingup/mainstore/_static/consent.PNG)
+![consent](_static/gdpr-settings/consent.PNG)
 
 While adding consents, you can define different options such as: 
 
@@ -33,19 +34,19 @@ While adding consents, you can define different options such as:
 
 Here is an example of a consent option on customer info page:
 
-![agreement](/user-guide/configuring/settingup/mainstore/_static/agreement.PNG)
+![agreement](_static/gdpr-settings/agreement.PNG)
 
 If you have enabled the consent log settings then you can see the log activity by going to:
 
 **Administration → Customers → GDPR requests (log)**
 
-![log](/user-guide/configuring/settingup/mainstore/_static/log.PNG)
+![log](_static/gdpr-settings/log.PNG)
 
 When GDPR setting is *ENABLED*, store owner can also perform actions like: 
 
 * **Permanent delete** for deletion of customer record.
 * **Export data** for exporting customer data.
 
-![customerdetails](/user-guide/configuring/settingup/mainstore/_static/customerdetails.png)
+![customerdetails](_static/gdpr-settings/customerdetails.png)
 
 Here is a video tutorial to show how to configure GDPR settings on your nopCommerce site: [Managing GDPR settings in nopCommerce](https://www.youtube.com/watch?v=6bLc_TDqD18&feature=youtu.be)
