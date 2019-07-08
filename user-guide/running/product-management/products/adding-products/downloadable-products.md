@@ -22,4 +22,4 @@ Define the **following details**:
 
 #### Related resources:
 
-* [Orders](xref:user-guide/running/order-management/orders/index.md)
+* [Orders](xref:user-guide/running/order-management/orders/index)

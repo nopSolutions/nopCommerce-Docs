@@ -20,8 +20,8 @@ In the Mark as primary provider column, click **Mark as primary provider** to se
 
 The configuration of Tax providers is described in **following chapters**:
 
-* Manual (Fixed or By Country/State/Zip)
-* Avalara tax provider
+* [Avalara tax provider](xref:user-guide/configuring/settingup/taxes/tax/methods/avalara)
+* [Manual (Fixed or By Country/State/Zip)](xref:user-guide/configuring/settingup/taxes/tax/methods/manual)
 
 ## Tax Categories
 
