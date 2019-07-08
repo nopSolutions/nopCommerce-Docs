@@ -5,6 +5,15 @@ uid: user-guide/configuring/settingup/payments/payment-method-restrictions
 ---
 # Payment Method Restrictions
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Payment method restrictions allow you to **restrict payments coming from certain countries.**
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+To restrict payment method go to **Configuration → Payment restrictions.**
+
+![paymentmethodrestrictions](_static/payment-method-restrictions/paymentmethodrestrictions.png)
+
+Select the checkbox(es) for the **country or countries** in which you want the payment method(s) to **not be available.**
+
+Click **Save.**
+
+> [!NOTE]
+> If required, you can select the entire restriction column for all countries.
