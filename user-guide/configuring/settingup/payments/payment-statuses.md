@@ -5,7 +5,7 @@ uid: user-guide/configuring/settingup/payments/payment-statuses
 ---
 # Payment statuses
 
-You can check payment statuses in **Sales → Orders :**
+You can check **payment statuses in Sales → Orders :**
 
  * **Pending:** when a transaction is not approved yet.
 
