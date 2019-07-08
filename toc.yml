@@ -219,6 +219,15 @@
               uid: user-guide/running/order-management/shopping-carts-wishlists
             - name: Inventory management
               uid: user-guide/running/order-management/inventory-management
+        - name: Customer management
+          uid: user-guide/running/customer-management/index
+          items:
+            - name: Customer list
+              uid: user-guide/running/customer-management/customer-list
+            - name: Online Customers
+              uid: user-guide/running/customer-management/online-customers
+            - name: Activity Log
+              uid: user-guide/running/customer-management/activity-log
         - name: Reports
           uid: user-guide/running/reports/index
           items:
@@ -240,6 +249,11 @@
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:
+            - name: News
+              uid: user-guide/marketing/content/news/index
+              items:
+                - name: News settings
+                  uid: user-guide/marketing/content/news/news-settings
             - name: Forums
               uid: user-guide/marketing/promotional/content/forums/index
               items:
