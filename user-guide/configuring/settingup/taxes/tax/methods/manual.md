@@ -1,9 +1,9 @@
 ---
-title: Avalara tax provider
+title: Manual (Fixed or By Country/State/Zip)
 author: AndreiMaz
-uid: user-guide/configuring/settingup/taxes/methods/avalara
+uid: user-guide/configuring/settingup/taxes/tax/methods/manual
 ---
-# Avalara tax provider
+# Manual (Fixed or By Country/State/Zip)
 
 This topic hasn’t been written yet! You're more than welcome to help us with that.
 
