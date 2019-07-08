@@ -20,7 +20,6 @@ There are several options available when downloading nopCommerce. In order to de
 
 With each of these options, excluding the upgrade script, you can deploy nopCommerce to your development environment and your hosting provider. Choose the option that you would like to [download](https://www.nopcommerce.com/downloads.aspx) and click on the appropriate download link to begin your download. It is recommended that you create a new folder on your desktop to store your downloaded files for easy access.
 
-
 **Running the site using IIS (package without source code)**
 
 To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virtual directory (or site root), and then view the site using a browser.
@@ -45,7 +44,6 @@ If you're using **nopCommerce 2.00-3.10**, then please note that publishing thes
 - Run the Deploy.bat file to perform the same procedure as the Prepare.bat file, but also move all the websites and files to the \Deployable\Nop_{Version} directory.
 - Select all the files in \Deployable\Nop_{Version} directory and upload them to your web server.
 - Note for HP (Hewlett Packard) users: HP machines come preloaded with a registry key that will interfere when running the deploy batch file. If you have an HP laptop and get the following error: "the OutputPath property is not set for project Nop.Web.csproj", then using regedit.exe navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment. Delete the complete key (Key and value) Platform (your value is MCD). Restart your computer.
-
 
 **Installation process**
 
@@ -89,8 +87,7 @@ You can use any of the following authentication methods to connect to the server
 - **Integrated Windows Authentication:** When connecting using this method, the SQL Server validates the account name and password using the Windows principal token in the operating system. This means the user identity is confirmed by Windows. The SQL Server does not request a password and does not perform the identity validation. Windows Authentication is the default authentication mode and is much more secure than SQL Server Authentication. Windows Authentication uses Kerberos security protocol, provides password policy enforcement with regard to complexity validation for strong passwords, provides support for account lockout, and supports password expiration. A connection made using Windows Authentication is sometimes called a trusted connection, because SQL Server trusts the credentials provided by Windows.
 
 Once you open the site for the first time, you’ll be redirected to the installation page, as follows:
-![nopCommerce installation](/user-guide/installing/installation-guide/_static/installation.jpg)
-
+![nopCommerce installation](_static/index/installation.jpg)
 
 > [!NOTE]
 > **Admin user e-mail**: This is the e-mail address for the first admin of the site.
