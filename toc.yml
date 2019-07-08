@@ -119,7 +119,7 @@
                   uid: user-guide/configuring/settingup/customers/vendors
                   items:
                     - name: Vendor settings
-                    - uid: user-guide/configuring/settingup/customers/vendors/settings
+                      uid: user-guide/configuring/settingup/customers/vendors/settings
             - name: All Settings (advanced)
               uid: user-guide/configuring/settingup/all-settings
         - name: System Administration
