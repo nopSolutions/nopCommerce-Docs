@@ -20,18 +20,13 @@ To create a grouped product, go to **Catalog → Products**. There are several *
 
 1. Create several products with a Simple product type and the corresponding simple product template. These are the variants of the main product. Define whether you want them to be visible separately in catalog and search results, or be shown only on a product page of the main product.
 
-![](_static/grouped-product/vvv.png)
+    ![](_static/grouped-product/vvv.png)
+1. Create a **Grouped (product with variants) product**, with the corresponding product template, and assigns these Simple products in the **Associated products (variants) section.**
 
-2. Create a **Grouped (product with variants) product**, with the corresponding product template, and assigns these Simple products in the **Associated products (variants) section.**
-
-![](__static/grouped-product/variants.png)
+![](_static/grouped-product/variants.png)
 
 >[!NOTE]
->- In the public store, a customer sees a separate **Add to cart** button for each associated product on the **Grouped product** details page.
-- A **Simple** product can be associated with only one **Grouped** product.
-- Grouped products are **not orderable directly**. However, associated with them Simple products are. For example, a customer cannot order the **Creative Sound Card** product directly. The customer must order an **OEM** or **Retail version** of the Creative Sound Card. In this case, the Grouped product is a Creative Sound Card, and there are two associated Simple products for this Grouped product: OEM and Retail, each with potentially different prices.
-
-
-
-
-
+>
+> - In the public store, a customer sees a separate **Add to cart** button for each associated product on the **Grouped product** details page.
+> - A **Simple** product can be associated with only one **Grouped** product.
+> - Grouped products are **not orderable directly**. However, associated with them Simple products are. For example, a customer cannot order the **Creative Sound Card** product directly. The customer must order an **OEM** or **Retail version** of the Creative Sound Card. In this case, the Grouped product is a Creative Sound Card, and there are two associated Simple products for this Grouped product: OEM and Retail, each with potentially different prices.
