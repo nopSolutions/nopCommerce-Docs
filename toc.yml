@@ -231,6 +231,8 @@
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:
+            - name: Topics (pages)
+              uid: user-guide/marketing/content/topics
             - name: Message templates
               uid: user-guide/marketing/content/message-templates
             - name: SEO
