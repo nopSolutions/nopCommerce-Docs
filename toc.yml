@@ -231,6 +231,11 @@
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:
+            - name: Forums
+              uid: user-guide/marketing/promotional/content/forums/index
+              items:
+                - name: Forum settings
+                  uid: user-guide/marketing/promotional/content/forums/settings
             - name: Pools
               uid: user-guide/marketing/promotional/content/polls
             - name: Topics (pages)
