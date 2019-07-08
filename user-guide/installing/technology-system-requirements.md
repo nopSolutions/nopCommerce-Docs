@@ -8,10 +8,12 @@ uid: user-guide/installing/technology-system-requirements
 In order to run nopCommerce, you will need the **following installed on your server/computer**:
 
 ### Supported operation systems
+
 * Windows 7 or above
 * Windows Server 2008R2 or above
 
 ### Supported web servers
+
 * Internet Information Service (IIS) 7.0 or above
 * For nopCommerce 4.20. Install .NET Core 2.2 runtime ([download](https://dotnet.microsoft.com/download)).
 * For nopCommerce 4.10. Install .NET Core 2.1 runtime ([download](https://dotnet.microsoft.com/download)).
@@ -19,6 +21,7 @@ In order to run nopCommerce, you will need the **following installed on your ser
 * For nopCommerce 3.90 or below. ASP.NET 4.5 (MVC 5.0) and Microsoft .NET Framework 4.5.1 or above
 
 ### Supported databases
+
 * MS SQL Server 2012 or above
 
 ### Supported browsers
