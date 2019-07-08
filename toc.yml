@@ -232,9 +232,9 @@
           uid: user-guide/marketing/promotional/content/index
           items:
             - name: Message templates
-            - uid: user-guide/marketing/content/message-templates
+              uid: user-guide/marketing/content/message-templates
             - name: SEO
-            - uid: user-guide/marketing/content/seo
+              uid: user-guide/marketing/content/seo
 - name: Developer guide
   uid: developer-documentation
   items:
