@@ -3,11 +3,12 @@ title: Security Settings
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/security-settings
 ---
+
 # Security Settings
 
 To manage Security Settings go to **Configuration → Settings → General Settings.** The Security Settings block is displayed on the General Settings page:
 
-![security](/user-guide/configuring/settingup/mainstore/_static/security.png)
+![security](_static/security-settings/security.png)
 
 Define the **Security Settings,** as follows:
 
@@ -23,7 +24,7 @@ Define the **Security Settings,** as follows:
 
 The next panel will reveal following settings when **CAPTCHA enabled** is ticked:
 
-![captcha](/user-guide/configuring/settingup/mainstore/_static/captcha.png)
+![captcha](_static/security-settings/captcha.png)
 
 * Show CAPTCHA on the **login page.**
 * Show CAPTCHA on the **registration page.**
