@@ -8,14 +8,15 @@ uid: user-guide/running/product-management/products/adding-products/index
 Setting up products in the best way possible is highly important for a store. Make sure to not miss any detail, such displaying different size and color options, giving a thorough product description, adding appealing pictures, etc.
 
 To add a new product, go to **Catalog → Products**. Click **Add new** button in the right top corner.
+
 > [!NOTE] 
 > you can import a product from an external file by clicking Import from Excel. Once you have a list of products, you can export it to an external file for backup purposes, by clicking Export to XML(all) or Export to Excel (all). You can export selected products by clicking Export to XML (selected) and Export to Excel (selected). Additionally, it is possible to Download catalog as PDF to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the Delete (selected) button.
 
-![](/user-guide/running/_static/products_page.png)
+![](_static/index/products_page.png)
 
 Adding New Product page are available in two modes: **advanced** and **basic** (in Advanced mode by default). You can switch to the Basic mode and select the required fields in Settings.
 
-![](/user-guide/running/_static/add_a_new_product.png)
+![](_static/index/add_a_new_product.png)
 
 ### General information
 
@@ -30,7 +31,7 @@ Start by filling up General Information on the **Product info panel**:
 - Tick **Published**, to make the product visible in your store.
 - Enter **Product Tags**, the keywords for product identification. Enter tags separating them by comma. The more products are associated with a particular tag, the larger it will look in the Popular Tags area, displayed in the sidebar of the Catalog page
 
-![](/user-guide/running/_static/popular_tags.png)
+![](_static/index/popular_tags.png)
 
 - Enter **GTIN** (global trade item number). These identifiers include UPC (in North America), EAN (in Europe), JAN (in Japan), and ISBN (for Books).
 - Enter **Manufacturer part number** - a part number provided by a manufacturer for the product.
@@ -101,13 +102,13 @@ In the Mappings section define:
 
 Choose customer roles, who will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. Note that in order to use this functionality you have to disable the following setting: **Configuration → Catalog Settings → Ignore ACL rules** (sitewide).
 
-![](/user-guide/running/_static/access_control_list.png)
+![](_static/index/access_control_list.png)
 
 ### Require other products
 
 Define whether the product **Requires other product**. In this case select the Required product IDs entering them by comma, ensure that there are no circular references, e.g. A requires B, B requires A. Chose to **Automatically add these products to the cart** if required.
 
-![](/user-guide/running/_static/require_other_products.png)
+![](_static/index/require_other_products.png)
 
 ### Related products and Cross-sells
 
@@ -125,7 +126,7 @@ Go to **Pictures** tab on Edit product details page to add product pictures.
 
 On the **Product attributes** tab, add Product attributes. Learn more about product attributes and how to create them [here](xref:user-guide/running/product-management/attributes/product-attributes). Once you have a list of the attributes created, click **Add new record** on the Attributes tab. The grid is expanded, as follows:
 
-![](/user-guide/running/_static/product_attributes2.png)
+![](_static/index/product_attributes2.png)
 
 - From the **Attribute** dropdown list select an attribute.
 - Fill the **Text Prompted** field, if you want some text to be shown in front of this attribute in a public store.
@@ -143,7 +144,7 @@ On the **Product attributes** tab, add Product attributes. Learn more about prod
 
 On the **Attribute Combinations** tab, define different attribute combinations and the following information for each of them:
 
-![](/user-guide/running/_static/product_attributes3.png)
+![](_static/index/product_attributes3.png)
 
 - **Stock quantity**
 - **Allow out of stock**, if you want your customers to be able to purchase products with certain attributes, when out of stock
@@ -155,7 +156,7 @@ On the **Specification Attributes tab**, add Specification attributes. Learn mor
 
  To add a new attribute, fill the **Add a new product specification attribute** section:
 
-![](/user-guide/running/_static/add_a_new_specification_attribute2.png)
+![](_static/index/add_a_new_specification_attribute2.png)
 
 - Select an **Attribute type** from a drop down list.
 - Choose the **Attribute** from a list of pre-created attributes.
@@ -169,7 +170,7 @@ On the **Specification Attributes tab**, add Specification attributes. Learn mor
 
 To view a list of orders in which the product was purchased, go to the **Purchased with orders** tab. Here you can check an order's status and click to view the order in details.
 
-![](/user-guide/running/_static/puchased_with_orders.png)
+![](_static/index/puchased_with_orders.png)
 
 ### SEO
 
@@ -186,7 +187,7 @@ Read more about SEO [here](xref:user-guide/marketing/content/seo).
 
 On this tab you can view all the product quantity changes, orders with the product.
 
-![](/user-guide/running/_static/stock_quantity_history.png)
+![](_static/index/stock_quantity_history.png)
 
 ## Related resources
 
