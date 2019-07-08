@@ -9,12 +9,12 @@ A payment method is how a customer pays for the order. nopCommerce supports both
 
 To define payment methods go to **Configuration →  Payment Methods.**
 
->[!TIP]
+> [!TIP]
 > By default, there are several payment methods available in nopCommerce, but you can find needed more payment plugins in nopCommerce [Marketplace](https://www.nopcommerce.com/marketplace.aspx). 
 
 For further details, refer to the [document](xref:developer/plugins/payment-method) (recommended to be used only by developers).
 
-![methods](/user-guide/configuring/settingup/payments/_static/methods.png)
+![methods](_static/index/methods.png)
 
 To activate a payment method, Click **Edit** beside the required method, tick the **Is active** checkbox and click Update. The Is active option changes from false to true.
 
