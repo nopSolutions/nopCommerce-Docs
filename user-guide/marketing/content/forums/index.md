@@ -11,6 +11,7 @@ A forum is an online discussion site where people can hold conversations in the 
 > in nopCommerce forums are disabled by default. To enable forums, go to Configuration → Settings → Forum Settings. Ensure that Forums enabled is checked. The Forums link should be displayed in the menu in the public store.
 
 To manage forum groups and forums (inside forum groups) go to **Content management → Forums**.
+
 ![p1](forums/_static/index/forums1.png)
 
 ## Adding new forum group
