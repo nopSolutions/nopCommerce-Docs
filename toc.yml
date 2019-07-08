@@ -229,7 +229,12 @@
         - name: Promotional tools
           uid: user-guide/marketing/promotional/index
         - name: Content Management
-          uid: user-guide/marketing/promotional/content/index      
+          uid: user-guide/marketing/promotional/content/index
+          items:
+            - Message templates
+            - uid: user-guide/marketing/content/message-templates
+            - name: SEO
+            - uid: user-guide/marketing/content/seo
 - name: Developer guide
   uid: developer-documentation
   items:
