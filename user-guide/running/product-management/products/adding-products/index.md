@@ -188,12 +188,9 @@ On this tab you can view all the product quantity changes, orders with the produ
 
 ![](/user-guide/running/_static/stock_quantity_history.png)
 
-#### Related resources:
+## Related resources
 
 * [Product categories](xref:user-guide/running/product-management/categories)
-
 * [Order management](xref:user-guide/running/order-management/index)
-
 * [Webinar. First steps in nopCommerce](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
-
 * [Video tutorial: Adding a new product](https://www.youtube.com/watch?v=wVgTgdQVWPQ&index=2&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

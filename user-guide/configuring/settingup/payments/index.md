@@ -15,7 +15,7 @@ uid: user-guide/configuring/settingup/payments/index
 
 ## See also:
 
-- [Payment Methods](xref:user-guide/configuring/settingup/payments/methods/index)
+- [Payment Methods](xref:user-guide/configuring/settingup/payments/payment-methods)
 - [Payment statuses](xref:user-guide/configuring/settingup/payments/payment-statuses)
 - [Payment Method Restrictions](xref:user-guide/configuring/settingup/payments/payment-method-restrictions)
 - [Currencies](xref:user-guide/configuring/settingup/payments/currencies)

@@ -68,7 +68,7 @@ In the **SEO tab**, define the **following details**:
 **Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog.** The store owner can add new products to this category. Note that you need to Save the category before you can add products.
 Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
 
-![](/user-guide/running/_static/products.png)
+![](/user-guide/running/_static/products.png/user-guide/running/_static/products.png)
 
 Select a product you would like to add to the category and click the Save button. The product will be displayed under the selected category.
 
@@ -88,7 +88,7 @@ You can **Export the categories settings** to an external file for backup purpos
 
 #### Related resources:
 
-* [Adding products](xref:user-guide/running/product-management/products/adding-products)
+* [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
 
 * [SEO](xref:user-guide/marketing/content/seo)
 

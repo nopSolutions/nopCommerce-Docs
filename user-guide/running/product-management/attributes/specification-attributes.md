@@ -36,7 +36,7 @@ Click **Edit** beside the attribute option to update it or Delete to remove it f
 
 #### Related resources:
 
-* [Adding new products](xref:user-guide/running/product-management/products/adding-products)
+* [Adding new products](xref:user-guide/running/product-management/products/adding-products/index)
 
 * [Product attributes](xref:user-guide/running/product-management/attributes/product-attributes)
 
