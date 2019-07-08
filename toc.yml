@@ -119,7 +119,7 @@
                   uid: user-guide/configuring/settingup/customers/vendors/index
                   items:
                     - name: Vendor settings
-                    - uid: user-guide/configuring/settingup/customers/vendors/settings
+                      uid: user-guide/configuring/settingup/customers/vendors/settings
             - name: All Settings (advanced)
               uid: user-guide/configuring/settingup/all-settings
         - name: System Administration
@@ -189,6 +189,27 @@
                   uid: user-guide/running/product-management/products/index
                 - name: Catalog settings
                   uid: user-guide/running/product-management/catalog-settings
+        - name: Order management
+          uid: user-guide/running/order-management/index
+          items:
+            - name: Orders
+              uid: user-guide/running/order-management/orders/index
+              items:
+                - name: Order Settings
+                  uid: user-guide/running/order-management/orders/order-settings
+                - name: Shopping cart settings
+                  uid: user-guide/running/order-management/orders/shopping-cart-settings
+            - name: Shipments
+              uid: user-guide/running/order-management/shipments
+            - name: Return Requests
+              uid: user-guide/running/order-management/return-requests/index
+              items:
+                - name: Return request settings
+                  uid: user-guide/running/order-management/return-requests/return-requests-settings
+            - name: Shopping carts and wishlists
+              uid: user-guide/running/order-management/shopping-carts-wishlists
+            - name: Inventory management
+              uid: user-guide/running/order-management/inventory-management
         - name: Reports
           uid: user-guide/running/reports/index
           items:

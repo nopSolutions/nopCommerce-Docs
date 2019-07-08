@@ -50,7 +50,7 @@ Catalog → Low stock report
 ## Related resources
 
 * [Orders](xref:user-guide/running/order-management/orders/index)
-* [Return requests](xref:user-guide/running/order-management/return-requests)
+* [Return requests](xref:user-guide/running/order-management/return-requests/index)
 * [Bestsellers](xref:user-guide/running/reports/bestsellers-never-purchased)
 * [Customers](xref:user-guide/running/customer-management/index)
 * [Country report](xref:user-guide/running/reports/country-report)

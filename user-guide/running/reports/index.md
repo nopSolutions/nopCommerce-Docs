@@ -9,8 +9,8 @@ Reports are important for management, they allow to monitor store performance, t
 
 Learn more in following chapters:
 
-1. [Dashboard](xref:user-guide/running/reports/dashboard)
-1. [Bestsellers and products never purchased](xref:user-guide/running/reports/bestsellers-never-purchased)
-1. [Country report](xref:user-guide/running/reports/country-report)
-1. [Customer reports](xref:user-guide/running/reports/customer-reports)
-1. [Low Stock Reports](xref:user-guide/running/reports/low-stock-reports)
+* [Dashboard](xref:user-guide/running/reports/dashboard)
+* [Bestsellers and products never purchased](xref:user-guide/running/reports/bestsellers-never-purchased)
+* [Country report](xref:user-guide/running/reports/country-report)
+* [Customer reports](xref:user-guide/running/reports/customer-reports)
+* [Low Stock Reports](xref:user-guide/running/reports/low-stock-reports)
