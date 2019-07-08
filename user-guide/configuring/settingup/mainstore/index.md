@@ -3,17 +3,18 @@ title: Setting up Main Store
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/index
 ---
+
 # Setting up Main Store
 
 By default nopcommerce installation, only one store is created and needs to be configured, as described below.
 
 To set up the default store, go to **Configuration → Stores.**
 
-![mainstore](/user-guide/configuring/settingup/mainstore/_static/mainstore.png)
+![mainstore](_static/index/mainstore.png)
 
 Click **Edit** beside a default store to configure it.
 
-![editstore](/user-guide/configuring/settingup/mainstore/_static/Store-Edit.png)
+![editstore](_static/index/Store-Edit.png)
 
 Configure your **main store details**, as follows:
 
