@@ -7,7 +7,7 @@ uid: user-guide/configuring/settingup/payments/methods/purchase-order
 
 Purchase orders are **often used by government agencies or large businesses.** Rather than paying directly through your site, shoppers will request that you send them a **Purchase order (PO),** and they will send the payment back. Most of the order processing is handled outside of the software.
 
-![purchaseorder](/user-guide/configuring/settingup/payments/_static/purchaseorder.png)
+![purchaseorder](_static/purchase-order/purchaseorder.png)
 
 Define the **following information:**
 
