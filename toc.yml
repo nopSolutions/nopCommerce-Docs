@@ -76,16 +76,16 @@
               uid: user-guide/configuring/settingup/taxes/index            
               items:
                 - name: Tax Settings
-                  uid: user-guide/configuring/settingup/tax/tax-settings
+                  uid: user-guide/configuring/settingup/taxes/tax-settings
                 - name: Tax
-                  uid: user-guide/configuring/settingup/tax/tax
+                  uid: user-guide/configuring/settingup/taxes/tax/index
                   items:
                     - name: Avalara tax provider
-                      uid: user-guide/configuring/settingup/taxes/methods/avalara
+                      uid: user-guide/configuring/settingup/taxes/tax/methods/avalara
                     - name: Manual (Fixed or By Country/State/Zip)
-                      uid: user-guide/configuring/settingup/taxes/methods/manual
+                      uid: user-guide/configuring/settingup/taxes/tax/methods/manual
                 - name: EU VAT configuration guide
-                  uid: user-guide/configuring/settingup/tax/eu-vat
+                  uid: user-guide/configuring/settingup/taxes/eu-vat
             - name: Setting up Shipping
               uid: user-guide/configuring/settingup/shipping/index
               items:
