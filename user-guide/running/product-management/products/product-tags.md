@@ -11,7 +11,7 @@ uid: user-guide/running/product-management/products/product-tags
 
 To edit product tags that are displayed in a public store, go to **Catalog → Product tags.**
 
-![](/user-guide/running/_static/product_tags.png)
+![](_static/product-tags/product_tags.png)
 
 On the Product tags page, you can see how many products have a **certain tag**, and edit the tag by clicking the **Edit** button beside it.
 
@@ -19,14 +19,13 @@ On the Product tags page, you can see how many products have a **certain tag**, 
 
 You can **add tags** on the Edit product details page when adding or editing a product.
 
-![](/user-guide/running/_static/product_tags2.png)
+![](_static/product-tags/product_tags2.png)
 
 Enter tags separating them by comma. Once the tags are created, they can be used for other products as well. The more products are associated with a particular tag, the larger it will look in the **Popular Tags** area, displayed in the sidebar of the Catalog page:
 
-![](/user-guide/running/_static/popular_tags.png)
+![](_static/product-tags/popular_tags.png)
 
 #### Related resources:
 
 * [Product categories ](xref:user-guide/running/product-management/categories)
-
 * [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
