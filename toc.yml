@@ -186,6 +186,19 @@
                   uid: user-guide/running/product-management/products/index
                 - name: Catalog settings
                   uid: user-guide/running/product-management/catalog-settings
+        - name: Reports
+          uid: user-guide/running/reports/index
+          items:
+            - name: Dashboard
+              uid: user-guide/running/reports/dashboard
+            - name: Bestsellers and products never purchased
+              uid: user-guide/running/reports/bestsellers-never-purchased
+            - name: Country report
+              uid: user-guide/running/reports/country-report
+            - name: Customer reports
+              uid: user-guide/running/reports/customer-reports
+            - name: Low Stock Reports
+              uid: user-guide/running/reports/low-stock-reports
     - name: Marketing your store
       uid: user-guide/marketing/index
       items:

@@ -5,6 +5,21 @@ uid: user-guide/running/reports/country-report
 ---
 # Country report
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+Country report contains a list of orders that includes the number of orders and the total order sum in each country. This enables store owners to view the orders per country.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+To view country reports, go to **Reports → Country Report**.
+
+![country-report](_static/country-report/country-report.jpeg)
+
+To search for the report, enter one or more of the following search criteria:
+
+* **Start date**
+* **End date**
+* **Order status**, such as All, Pending, Processing, Complete, or Cancelled
+* **Payment status**, such as All, Pending, Authorized, Paid, Refunded, Partially Refunded, or Voided
+
+## Related resources
+
+* [Customer reports](xref:user-guide/running/reports/customer-reports)
+* [Countries](xref:user-guide/configuring/settingup/mainstore/countries)
+* [Orders](xref:user-guide/running/order-management/orders/index)
