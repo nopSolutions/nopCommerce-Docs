@@ -7,7 +7,7 @@ uid: user-guide/running/product-management/products/adding-products/downloadable
 
 To create a **Downloadable product**, on the **product info tab** tick the corresponding checkbox.
 
-![](/_static/downloadable-product/DownloadableProduct.png)
+![](_static/downloadable-product/DownloadableProduct.png)
 
 Define the **following details**:
 
