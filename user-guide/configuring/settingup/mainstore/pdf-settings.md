@@ -3,13 +3,14 @@ title: PDF settings
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/pdf-settings
 ---
+
 # PDF settings
 
 When running a store you might need automatically generated PDF files, like invoices and terms of agreement.
 
 To define PDF settings go to **Configuration → Settings → General Settings** and find PDF settings panel:
 
-![pdf](/user-guide/configuring/settingup/mainstore/_static/pdf.png)
+![pdf](_static/pdf-settings/pdf.png)
 
 * In the **PDF logo area**, drag and drop the logo file to be uploaded. This image file will be displayed on the PDF order invoices. It is recommended to use a small image.
 * In the **Invoice footer text** (left column) field, enter the text that will appear at the bottom of the generated invoices (left column).
