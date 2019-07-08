@@ -33,7 +33,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 
 5. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
 
-![PDTtoken](/user-guide/configuring/settingup/payments/_static/PDT Token.png)
+![PDTtoken](/user-guide/configuring/settingup/payments/_static/PDTtoken.png)
 
 6. To configure the plugin in the admin panel of nopCommerce go to **Configuration  -> Payment methods,** in the **PayPal Standard** line click on **Configuration**
 
@@ -83,9 +83,3 @@ Step 3: Scroll down to "Encrypted Website Payments" section, and select "Off" fr
 ![encryptedwebsitepayments](/user-guide/configuring/settingup/payments/_static/file-c2yKWw2xMN.png)
 
 After saving the change you may go back to your site and try the button/forms again and they should work.
-
-
-
-
-
-
