@@ -11,26 +11,27 @@ Specification attributes are similar to [product attributes](xref:user-guide/run
 
 To see and edit a list of specification attributes, go to **Catalog → Attributes → Specification Attributes.**
 
-![](/user-guide/running/_static/specification_attributes.png)
+![](_static/specification-attributes/specification_attributes.png)
 
 - Click **Add new** to add a new attribute.
 - On the **Attribute info panel**, enter the **Name** of the specification attribute, and define its **Display order number**.
 - Click **Save and Continue Edit** to proceed to the options editing window.
 
-![](/user-guide/running/_static/add_a_new_specification_attributes.png)
+![](_static/specification-attributes/add_a_new_specification_attributes.png)
 
 - On the **Options panel**, click **Add a new** option to add an attribute option.
 - Enter the option **Name** and **Display order** number.
 > [!NOTE] 
 > for a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
 
-![](/user-guide/running/_static/add_a_new_option.jpg)
+![](_static/specification-attributes/add_a_new_option.jpg)
+
 > [!NOTE] 
 > for a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
 
 The **complete list of options** will look as follows.
 
-![](/user-guide/running/_static/options.png)
+![](_static/specification-attributes/options.png)
 
 Click **Edit** beside the attribute option to update it or Delete to remove it from the system.
 
