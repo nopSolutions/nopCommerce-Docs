@@ -16,7 +16,7 @@ In the public store, reviews are displayed on the **product details page**. Cust
 
 To manage product reviews go to **Catalog → Product reviews**. The Product Reviews window will be displayed.
 
-![](/user-guide/running/_static/product_reviews2.png)
+![](_static/product-reviews/product_reviews2.png)
 
 ### You can search for reviews by:
 
@@ -32,7 +32,7 @@ To manage product reviews go to **Catalog → Product reviews**. The Product Rev
 
 To **edit** the product review click Edit beside the review. The Edit product review details window will be displayed.
 
-![](/user-guide/running/_static/edit_product_review_details.png)
+![](_static/product-reviews/edit_product_review_details.png)
 
 On this page, you can edit the review **Title** as well as the **Text**.
 
@@ -52,7 +52,7 @@ On this area, you can view the all addition reviews on current product. **Rating
 
 For more information on setting up and adding rating values, [click here](xref:user-guide/running/product-management/catalog-settings)
 
-![](/user-guide/running/_static/review_types.png)
+![r1](_static/product-reviews/review_types.png)
 
 > [!TIP] 
 > [Tutorial on managing product reviews](https://www.youtube.com/watch?v=TBOpCoEAMnU&feature=youtu.be)
