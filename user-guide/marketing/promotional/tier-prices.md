@@ -11,7 +11,8 @@ Tier prices is a promotional tool that allows a store owner **to offer special p
 > **You need to save the product before you can add tier prices for the product page.**
 
 **Adding tier prices**
-![Tier_prices](/user-guide/marketing/promotional/_statics/tier.png)
+
+![Tier_prices](_static/tier-prices/tier.png)
 
 To add tier prices, go to **Catalog → Products**, select a product you want to add a tier price to and click **Edit**. On the Edit product details page, find the Tier Prices section at the bottom left and click **Add new record** and fill out the details:
 
@@ -31,4 +32,4 @@ Click **Save** on the Edit product details page.
 You can now view the **updated product details page in the public store**
 
 > [!NOTE]
-> When a customer adds a certain quantity of a product to their cart, the price is being automatically changed to reflect the discount. ![Tier_price_example](/user-guide/marketing/promotional/_statics/TierPriceExample.JPG)
+> When a customer adds a certain quantity of a product to their cart, the price is being automatically changed to reflect the discount. ![Tier_price_example](_static/tier-prices/TierPriceExample.JPG)
