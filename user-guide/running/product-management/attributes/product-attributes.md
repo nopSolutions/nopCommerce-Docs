@@ -13,7 +13,8 @@ In nopCommerce, product attributes are used in **inventory tracking**, and can a
 
 To define product attributes go to **Catalog → Attributes → Product Attributes.**
 
-![](/user-guide/running/_static/product_attributes.png)
+![](_static/product-attributes/product_attributes.png)
+
 > [!NOTE] 
 > **By default**, there are **no product attributes precreated** in nopCommerce.
 
@@ -21,7 +22,7 @@ To define product attributes go to **Catalog → Attributes → Product Attribut
 
 Click **Add new** to add the attribute.
 
-![](/user-guide/running/_static/add_a_new_product_attribute.png)
+![](_static/product-attributes/add_a_new_product_attribute.png)
 
 In the Add a new product attribute window fill the fields **Name** and **Description**.
 
@@ -29,7 +30,7 @@ Click **Save and Continue Edit** to proceed to the **values** editing window.
 
 ### Adding predefined values
 
-![](/user-guide/running/_static/add_a_new_value.png)
+![](_static/product-attributes/add_a_new_value.png)
 
 On the **Predefined Values panel** click Add a new value, an Add a new value window will be opened.
 
