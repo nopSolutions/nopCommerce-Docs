@@ -11,7 +11,7 @@ This is a special gateway that allows all orders to be successfully entered on t
 * Process them manually via another back-office system
 * Test the site end-to-end before going live
 
-![manualprocessing](/user-guide/configuring/settingup/payments/_static/manualprocessing.png)
+![manualprocessing](_static/manual-processing/manualprocessing.png)
 
 * Define how the payment will be displayed in the after **checkout mark of payment** as field
 * Define **the additional fee** for using this method
