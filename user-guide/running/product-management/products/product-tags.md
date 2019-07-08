@@ -29,4 +29,4 @@ Enter tags separating them by comma. Once the tags are created, they can be used
 
 * [Product categories ](xref:user-guide/running/product-management/categories)
 
-* [Adding products](xref:user-guide/running/product-management/products/adding-products)
+* [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
