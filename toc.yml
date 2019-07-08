@@ -189,13 +189,13 @@
               uid: user-guide/running/product-management/products/index
               items:
                 - name: Adding products
-               uid: user-guide/running/product-management/products/adding-products
+                  uid: user-guide/running/product-management/products/adding-products
                 - name: Import/Export
-               uid: user-guide/running/product-management/products/import-export
+                  uid: user-guide/running/product-management/products/import-export
                 - name: Product tags
-               uid: user-guide/running/product-management/products/product-tags
+                  uid: user-guide/running/product-management/products/product-tags
                 - name: Product reviews
-               uid: user-guide/running/product-management/products/product-reviews
+                  uid: user-guide/running/product-management/products/product-reviews
             - name: Catalog settings
               uid: user-guide/running/product-management/catalog-settings
         - name: Order management
