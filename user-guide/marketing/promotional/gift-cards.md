@@ -62,5 +62,5 @@ A gift card is performed in the public store by entering the serial number in th
 
 
 **Related resources:**
-[Adding product](xref:user-guide/running/product-management/products/adding-products/index)
-[YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+- [Adding product](xref:user-guide/running/product-management/products/adding-products/index)
+- [YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
