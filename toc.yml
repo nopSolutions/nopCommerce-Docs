@@ -246,6 +246,22 @@
       items:
         - name: Promotional tools
           uid: user-guide/marketing/promotional/index
+          items:
+            - name: Discounts
+              uid: user-guide/marketing/promotional/discounts/index
+              items:
+                - name: Common type of discounts
+                  uid: user-guide/marketing/promotional/discounts/common-type-of-discounts
+            - name: Gift cards
+              uid: user-guide/marketing/promotional/gift-cards
+            - name: Reward points
+              uid: user-guide/marketing/promotional/reward-points
+            -name: Affiliates
+              uid: user-guide/marketing/promotional/affiliates
+            - name: Cross-sells and Related products
+              uid: user-guide/marketing/promotional/crosssells-related-products
+            - name: Tier prices
+              uid: user-guide/marketing/promotional/tier-prices
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:
