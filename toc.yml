@@ -92,10 +92,19 @@
                 - name: Shipping Settings
                   uid: user-guide/configuring/settingup/shipping/settings
                 - name: Shipping Providers
-                  uid: user-guide/configuring/settingup/shipping/providers
+                  uid: user-guide/configuring/settingup/shipping/providers/index
                   items:
                     - name: Manual (Fixed or By Weight and By Total)
-                      uid: user-guide/configuring/settingup/shipping/providers/manual
+                      uid: user-guide/configuring/settingup/shipping/providers/manual/index
+                      items:
+                        - name: Shipping Methods (Fixed Rate Shipping)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/fixed-rate-methods
+                        - name: Shipping Method Restrictions (Fixed Rate Shipping)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/fixed-rate-restrictions
+                        - name: Shipping Methods (Shipping by Weight and By Total)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/methods
+                        - name: Shipping Method Restrictions (Shipping by Weight and by Total)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/restrictions
                     - name: UPS
                       uid: user-guide/configuring/settingup/shipping/providers/ups
                 - name: Warehouses
