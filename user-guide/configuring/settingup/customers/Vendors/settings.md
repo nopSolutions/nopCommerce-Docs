@@ -75,7 +75,7 @@ You can **edit** and **remove** attribute values by clicking the corresponding b
 
 Click **Save.** The new attribute will be displayed in the public store.
 
-#### See also:
+## See also
 
-- [Vendors](xref:user-guide/configuring/settingup/customers/Vendors/index)
-- [Setting up Customers](xref:user-guide/configuring/settingup/customers/index)
+* [Vendors](xref:user-guide/configuring/settingup/customers/vendors/index)
+* [Setting up Customers](xref:user-guide/configuring/settingup/customers/index)

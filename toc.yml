@@ -198,7 +198,16 @@
               uid: user-guide/running/product-management/products/index
               items:
                 - name: Adding products
-                  uid: user-guide/running/product-management/products/adding-products
+                  uid: user-guide/running/product-management/products/adding-products/index
+                  items:
+                    - name: Downloadable product
+                      uid: user-guide/running/product-management/products/adding-products/downloadable-products
+                    - name: Grouped product
+                      uid: user-guide/running/product-management/products/adding-products/grouped-products
+                    - name: Recurring product
+                      uid: user-guide/running/product-management/products/adding-products/recurring-products
+                    - name: Rental product
+                      uid: user-guide/running/product-management/products/adding-products/rental-products
                 - name: Import/Export
                   uid: user-guide/running/product-management/products/import-export
                 - name: Product tags

@@ -5,7 +5,7 @@ uid: user-guide/configuring/settingup/customers/customer-roles
 ---
 # Customer roles
 
-The customer roles in nopCommerce enable you to form groups of your web-store users. You can create various groups such as store admins, shoppers, [vendors](xref:user-guide/configuring/settingup/customers/Vendors/index), and other. You can also grant these groups certain rights such as discounted pricing, and other special statuses (such as tax exemption, free shipping, and more) using Access Control List.
+The customer roles in nopCommerce enable you to form groups of your web-store users. You can create various groups such as store admins, shoppers, [vendors](xref:user-guide/configuring/settingup/customers/vendors/index), and other. You can also grant these groups certain rights such as discounted pricing, and other special statuses (such as tax exemption, free shipping, and more) using Access Control List.
 
 **To add customer roles:**
 

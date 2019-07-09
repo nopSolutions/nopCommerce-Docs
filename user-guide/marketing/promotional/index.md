@@ -14,4 +14,4 @@ nopCommerce allows you to use a lot of promotional tools to market your store. T
 - [Reward points](xref:user-guide/marketing/promotional/reward-points)
 - [Affiliates](xref:user-guide/marketing/promotional/affiliates)
 - [Cross-sells and Related products](xref:user-guide/marketing/promotional/crosssells-related-products)
-- [Tier prices](user-guide/marketing/promotional/tier-prices)
+- [Tier prices](xref:user-guide/marketing/promotional/tier-prices)

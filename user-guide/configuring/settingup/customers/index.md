@@ -12,9 +12,9 @@ This chapter describes the process of setting up customers in nopCommerce: how t
 
 Customers can have different rights and access certain administrative zones of a nopCommerce site.
 
-#### See also:
+## See also
 
- - [Customer settings](xref:user-guide/configuring/settingup/customers/settings)
- - [Customer roles](xref:user-guide/configuring/settingup/customers/customer-roles)
- - [Access Control List](xref:user-guide/configuring/settingup/customers/acl)
- - [Vendors](xref:user-guide/configuring/settingup/customers/Vendors/index)
+- [Customer settings](xref:user-guide/configuring/settingup/customers/settings)
+- [Customer roles](xref:user-guide/configuring/settingup/customers/customer-roles)
+- [Access Control List](xref:user-guide/configuring/settingup/customers/acl)
+- [Vendors](xref:user-guide/configuring/settingup/customers/vendors/index)
