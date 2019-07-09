@@ -5,6 +5,14 @@ uid: user-guide/configuring/design/installing-theme
 ---
 # Installing a theme
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+After downloading a new theme which is in a zip file, extract the contents of your zip file and copy it in **"Themes" folder** like shown on the picture below:
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+![p1](_static/installing-theme/instal_theme1.jpg)
+
+1. Go to the admin section (http://www.yourdomain.com/admin).
+1. Go to **Configuration → Settings → General settings**.
+
+	![p2](_static/installing-theme/instal_theme2.png)
+
+1. Select **New theme** from the **Default Store Theme** and click Save.
+1. Go to the public store. You should be able to see the new theme on your website.

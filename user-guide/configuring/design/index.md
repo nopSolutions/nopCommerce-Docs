@@ -5,6 +5,9 @@ uid: user-guide/configuring/design/index
 ---
 # Design
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+This chapter covers the basics of your store design configuration. There is a separate guide on this topic. In this chapter, we examine the theme installation process and media settings. If you need further information on graphic theme customization, refer to the [Designer’s Guide](xref:developer/design/index).
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+## Learn more in following chapters
+
+- [Installing a theme](xref:user-guide/configuring/design/installing-theme)
+- [Media Settings](xref:user-guide/configuring/design/media-settings)
