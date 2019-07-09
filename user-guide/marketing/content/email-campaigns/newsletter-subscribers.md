@@ -6,6 +6,7 @@ uid: user-guide/marketing/content/email-campaigns/newsletter-subscribers
 # Newsletter subscribers
 
 During customer registration, a customer can select the **Newsletters option** to receive nopCommerce newsletters.
+
 ![customers-subscribing](_static/newsletter-subscribers/customer-subs.png)
 
 The other way of filling in email subscribers is to **export the list of subscribers** to an external CSV file as well **import list of subscribers from an external CSV** file into nopCommerce.
