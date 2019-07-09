@@ -17,14 +17,16 @@ There are several examples of email marketing campaigns you can use for your sto
 There **no campaigns available by default**, so you can create them from scratch in order to follow your own marketing strategy.
 
 To manage campaigns go to **Promotions → Campaigns**
+
 ![manage-campaigns](_static/all-campaigns/manage-campaigns.png)
 
-**Adding new email campaign**
+## Adding new email campaign
 
 To create a new campaign go to **Promotions → Campaigns → Add new.**
+
 ![edit-campaign](_static/all-campaigns/Campaign-Create.png)
 
-**Define the campaign details:***
+## Define the campaign details:
 
 - In the **Allowed message tokens field**, enter the allowed list of message tokens you can use in your campaign email. You can see all of them if choose Show
 
@@ -40,8 +42,8 @@ To create a new campaign go to **Promotions → Campaigns → Add new.**
 After the campaign is saved you can send a test email to check if everything is done properly. Click Edit campaign and you will see one more field on the top if the screen **Send test email to** and fill in the email address.
 ![test-email](_static/all-campaigns/send-test-email.png)
 
+## Related resources
 
-**Related resources:**
 - [Newsletter subscribers](xref:user-guide/marketing/content/email-campaigns/newsletter-subscribers)
 - [Email marketing automation (nopCommerce Days 2016 video)](https://www.youtube.com/watch?v=Y6hytFXk5p0&index=23&list=PLnL_aDfmRHwt_6bP-8bd1rNPNIwWz86K2)
 - [Managing campaigns tutorial video](https://www.youtube.com/watch?v=k2wCM0u2gmo&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=13)
