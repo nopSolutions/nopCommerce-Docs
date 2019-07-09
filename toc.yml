@@ -274,6 +274,11 @@
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:
+            - name: Blog
+              uid: user-guide/marketing/content/blog/index
+              items:
+                - name: Blog settings
+                  uid: user-guide/marketing/content/blog/blog-settings
             - name: News
               uid: user-guide/marketing/content/news/index
               items:
