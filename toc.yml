@@ -139,7 +139,7 @@
             - name: Email accounts
               uid: user-guide/configuring/system/email-accounts
             - name: Widgets
-              uid: user-guide/configuring/system/widgets
+              uid: user-guide/configuring/system/widgets/index
               items:
                 - name: Google Analytics
                   uid: user-guide/configuring/system/widgets/google-analytics
@@ -148,7 +148,7 @@
             - name: Localization
               uid: user-guide/configuring/system/localization
             - name: External Authentication Method
-              uid: user-guide/configuring/system/external-authentication-method
+              uid: user-guide/configuring/system/external-authentication-method/index
               items:
                 - name: Facebook
                   uid: user-guide/configuring/system/external-authentication/facebook

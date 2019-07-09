@@ -3,8 +3,16 @@ title: Facebook authentification
 author: AndreiMaz
 uid: user-guide/configuring/system/external-authentication/facebook
 ---
-# Facebook authentification
+# Facebook authentication
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+You can configure Facebook authentication, in the Configure Facebook window, as described below.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+## Configure facebook authentication
+
+1. Activate Facebook by clicking the **Edit** button beside the **Facebook external authentication** method, check the **Is active** checkbox and click **Update**. The Is active option changes from false to true.
+1. Click **Configure**. The Configure - Facebook window is displayed:
+
+    ![Facebook](_static/facebook/facebook-auth.png)
+1. In the **App ID/API Key** field, enter your Facebook client key identifier. You can find it on your Facebook application page.
+1. In the **App secret** field, enter your Facebook application secret. You can find it on your Facebook application page.
+1. Click **Save**.

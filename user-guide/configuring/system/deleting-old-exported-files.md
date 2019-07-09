@@ -5,6 +5,11 @@ uid: user-guide/configuring/system/deleting-old-exported-files
 ---
 # Deleting Old Exported Files
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+The following procedure describes how to delete old exported files.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+## Delete old exported files
+
+1. From the **System** menu, select **Maintenance**. The **Maintenance** window is displayed, as follows:
+
+    ![Maintenance](_static/deleting-old-exported-files/deleting-old-exported-files.png)
+1. From the **Deleting old exported files** area, click the **Delete** button. All the exported and generated files (such as, PDF and Excel files for example) will be deleted and removed from the database.

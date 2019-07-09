@@ -5,6 +5,8 @@ uid: user-guide/configuring/system/warnings
 ---
 # Warnings
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+The following procedure describes how to view any current warnings that current exist in the public store.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+To view store warnings go to **System** menu, select **Warnings**.
+
+![Warnings](_static/warnings/warnings.jpg)
