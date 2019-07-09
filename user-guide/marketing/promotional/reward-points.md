@@ -44,7 +44,7 @@ When a customer uses reward points when checkout it looks like that:
 
 ![reward_points_checkout](_static/reward/reward_pints_checkout.png)
 
-**Related resources:**
+## Related resources
 
 - [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
 - [Managing reward points tutorial](https://www.youtube.com/watch?v=lE4-xDUKkd0&index=14&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

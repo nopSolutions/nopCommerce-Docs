@@ -40,4 +40,4 @@ To view an example of how forums should work go to http://www.nopcommerce.com/bo
 
 ## Related resources
 
- - [Forum settings](xref:user-guide/marketing/content/forums/settings)
+- [Forum settings](xref:user-guide/marketing/content/forums/settings)

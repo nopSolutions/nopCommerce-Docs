@@ -83,12 +83,9 @@ When customers apply a discount while proceeding to the checkout, it is displaye
 ![discount-in-shopping-cart](_static/discount-in-shopping-cart.png)
 ![coupone-code](_static/coupone-code.png)
 
-**Related resources:**
+## Related resources
+
 - More plugins on discount types and discount requirement types on [nopCommerce marketplace](http://www.nopcommerce.com/marketplace.aspx)
 - How to [install plugins](xref:user-guide/configuring/system/plugins)
 - YouTube tutorial on [using discounts in nopCommerce](https://www.youtube.com/watch?v=cAXxnV79dzw&index=7&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
-
-
-
-- [Common types of discounts](xref:user-guide/marketing/promotional/discounts/common-type-of-discounts
-)
+- [Common types of discounts](xref:user-guide/marketing/promotional/discounts/common-type-of-discounts)

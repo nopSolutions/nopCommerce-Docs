@@ -35,10 +35,8 @@ The **complete list of options** will look as follows.
 
 Click **Edit** beside the attribute option to update it or Delete to remove it from the system.
 
-#### Related resources:
+## Related resources
 
 * [Adding new products](xref:user-guide/running/product-management/products/adding-products/index)
-
 * [Product attributes](xref:user-guide/running/product-management/attributes/product-attributes)
-
 * [YouTube tutorial: Managing Specification Attributes](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

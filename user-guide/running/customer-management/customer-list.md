@@ -71,10 +71,8 @@ Customer list contains details of all existing customers, as well as allows to a
 
 ![](_static/customer-list/reward-points.PNG)
 
-#### Related resources:
+## Related resources
 
 * [YouTube tutorial on customer management](https://www.youtube.com/watch?v=DOl-g-NNFEM&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=1)
-
 * [Customer roles](xref:user-guide/configuring/settingup/customers/customer-roles)
-
 * [Vendors](xref:user-guide/configuring/settingup/customers/vendors/index)

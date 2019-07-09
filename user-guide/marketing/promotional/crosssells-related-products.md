@@ -48,7 +48,7 @@ After you have chosen related product and saved it, **you can check how related 
 
 ![related-products-on-the-product-details-page](_static/crosssells-related-products/rel-product-on-the-prod-det-page.png)
 
-**Related resources:**
+## Related resources
 
 - [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
 - [Tier prices](xref:user-guide/marketing/promotional/tier-prices)

@@ -91,7 +91,7 @@ You can click **Delete** to remove the manufacturer.
 
 You can **export** the manufacturer settings to an external file for backup purposes, by clicking the Export button.
 
-#### Related resources:
+## Related resources
 
 * [Adding products user](xref:user-guide/running/product-management/products/adding-products/index)
 * [SEO](xref:user-guide/marketing/content/seo)

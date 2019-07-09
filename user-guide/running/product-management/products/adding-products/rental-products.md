@@ -18,6 +18,6 @@ When buying rental products, customers have to specify the rental period in the 
 
 ![](_static/rental-product/rental1.png)
 
-#### Related resources:
+## Related resources
 
 * [Video tutorial: managing rental products](https://www.youtube.com/watch?v=tOaC6hOILZY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=24)

@@ -66,7 +66,7 @@ On the Condition tab of the Edit checkout attribute details window, a store owne
 
 Click **Save**. The new attribute will be displayed in the public store.
 
-#### Related resources:
+## Related resources
 
 * [YouTube tutorial: Adding checkout attributes](https://www.youtube.com/watch?v=sJcZP1qjHmY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=3)
 
