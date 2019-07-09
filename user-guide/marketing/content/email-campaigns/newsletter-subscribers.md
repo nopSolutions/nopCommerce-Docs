@@ -1,7 +1,7 @@
 ---
 title: Newsletter subscribers
 author: AndreiMaz
-uid: user-guide/marketing/promotional/content/email-campaigns/newsletter-subscribers
+uid: user-guide/marketing/content/email-campaigns/newsletter-subscribers
 ---
 # Newsletter subscribers
 
@@ -25,4 +25,4 @@ On the **Newsletter subscribers page** you can find certain subscribers using fo
 - From the **Customer roles** dropdown list, select the customer role in which a user subscribed to newsletters
 
 **Related resources:**
-- [Campaigns](xref:user-guide/marketing/promotional/content/email-campaigns/all-campaigns)
+- [Campaigns](xref:user-guide/marketing/content/email-campaigns/all-campaigns)
