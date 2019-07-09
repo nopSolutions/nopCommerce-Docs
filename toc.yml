@@ -274,7 +274,14 @@
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:
-            - name: Blog
+			- name: Email campaigns
+			  uid: user-guide/marketing/promotional/content/email-campaigns/index
+			  items:
+				- name: All campaigns
+				  uid: user-guide/marketing/promotional/content/email-campaigns/all-campaigns
+				- name: Newsletter subscribers
+				  uid: user-guide/marketing/promotional/content/email-campaigns/newsletter-subscribers
+			- name: Blog
               uid: user-guide/marketing/content/blog/index
               items:
                 - name: Blog settings
