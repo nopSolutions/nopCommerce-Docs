@@ -92,10 +92,19 @@
                 - name: Shipping Settings
                   uid: user-guide/configuring/settingup/shipping/settings
                 - name: Shipping Providers
-                  uid: user-guide/configuring/settingup/shipping/providers
+                  uid: user-guide/configuring/settingup/shipping/providers/index
                   items:
                     - name: Manual (Fixed or By Weight and By Total)
-                      uid: user-guide/configuring/settingup/shipping/providers/manual
+                      uid: user-guide/configuring/settingup/shipping/providers/manual/index
+                      items:
+                        - name: Shipping Methods (Fixed Rate Shipping)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/fixed-rate-methods
+                        - name: Shipping Method Restrictions (Fixed Rate Shipping)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/fixed-rate-restrictions
+                        - name: Shipping Methods (Shipping by Weight and By Total)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/methods
+                        - name: Shipping Method Restrictions (Shipping by Weight and by Total)
+                          uid: user-guide/configuring/settingup/shipping/providers/manual/restrictions
                     - name: UPS
                       uid: user-guide/configuring/settingup/shipping/providers/ups
                 - name: Warehouses
@@ -246,6 +255,22 @@
       items:
         - name: Promotional tools
           uid: user-guide/marketing/promotional/index
+          items:
+            - name: Discounts
+              uid: user-guide/marketing/promotional/discounts/index
+              items:
+                - name: Common type of discounts
+                  uid: user-guide/marketing/promotional/discounts/common-type-of-discounts
+            - name: Gift cards
+              uid: user-guide/marketing/promotional/gift-cards
+            - name: Reward points
+              uid: user-guide/marketing/promotional/reward-points
+            - name: Affiliates
+              uid: user-guide/marketing/promotional/affiliates
+            - name: Cross-sells and Related products
+              uid: user-guide/marketing/promotional/crosssells-related-products
+            - name: Tier prices
+              uid: user-guide/marketing/promotional/tier-prices
         - name: Content Management
           uid: user-guide/marketing/promotional/content/index
           items:

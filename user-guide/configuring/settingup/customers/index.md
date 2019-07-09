@@ -5,6 +5,16 @@ uid: user-guide/configuring/settingup/customers/index
 ---
 # Setting up Customers
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+This chapter describes the process of setting up customers in nopCommerce: how to assign roles, create groups of customers and edit their details.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+> [!NOTE]
+> In nopCommerce customers is a broad category that describes all users present on your site.
+
+Customers can have different rights and access certain administrative zones of a nopCommerce site.
+
+#### See also:
+
+ - [Customer settings](xref:user-guide/configuring/settingup/customers/settings)
+ - [Customer roles](xref:user-guide/configuring/settingup/customers/customer-roles)
+ - [Access Control List](xref:user-guide/configuring/settingup/customers/acl)
+ - [Vendors](xref:user-guide/configuring/settingup/customers/Vendors/index)
