@@ -47,7 +47,7 @@ A store owner able to create attributes for a vendor much like they can for a pr
 
 On the **Vendor attributes** section, select Vendor attributes. Learn more about vendor attributes and how to create them [here](xref:user-guide/configuring/settingup/customers/Vendors/settings).
 
-![vendorattributes](_static/index/vendor3.png)
+![vendorattributes](_static/index/vendor3.PNG)
 
 ##### Display 
 
