@@ -256,7 +256,7 @@
               uid: user-guide/marketing/promotional/gift-cards
             - name: Reward points
               uid: user-guide/marketing/promotional/reward-points
-            -name: Affiliates
+            - name: Affiliates
               uid: user-guide/marketing/promotional/affiliates
             - name: Cross-sells and Related products
               uid: user-guide/marketing/promotional/crosssells-related-products
