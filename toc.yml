@@ -285,12 +285,12 @@
                 - name: News settings
                   uid: user-guide/marketing/content/news/news-settings
             - name: Forums
-              uid: user-guide/marketing/promotional/content/forums/index
+              uid: user-guide/marketing/content/forums/index
               items:
                 - name: Forum settings
-                  uid: user-guide/marketing/promotional/content/forums/settings
+                  uid: user-guide/marketing/content/forums/settings
             - name: Pools
-              uid: user-guide/marketing/promotional/content/polls
+              uid: user-guide/marketing/content/polls
             - name: Topics (pages)
               uid: user-guide/marketing/content/topics
             - name: Message templates

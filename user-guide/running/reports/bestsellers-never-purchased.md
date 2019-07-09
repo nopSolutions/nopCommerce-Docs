@@ -28,6 +28,6 @@ To view products never purchased, go to Reports → Products Never Purchased. En
 
 ## Related resources
 
-* [Polls](xref:user-guide/marketing/promotional/content/polls)
+* [Polls](xref:user-guide/marketing/content/polls)
 * [Dashboard](xref:user-guide/running/reports/dashboard)
 * [Cross-Sells and Related products](xref:user-guide/marketing/promotional/crosssells-related-products)

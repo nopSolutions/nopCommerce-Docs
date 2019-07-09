@@ -9,11 +9,11 @@ Content management is a set of processes and technologies that support the colle
 
 ## Learn more
 
-- [Email campaigns](xref:user-guide/marketing/promotional/content/email-campaigns/index)
+- [Email campaigns](xref:user-guide/marketing/content/email-campaigns/index)
 - [Blog](xref:user-guide/marketing/content/blog/index)
 - [News](xref:user-guide/marketing/content/news/index)
-- [Forums](xref:user-guide/marketing/promotional/content/forums/index)
-- [Polls](xref:user-guide/marketing/promotional/content/polls)
+- [Forums](xref:user-guide/marketing/content/forums/index)
+- [Polls](xref:user-guide/marketing/content/polls)
 - [Topics (pages)](xref:user-guide/marketing/content/topics)
 - [Message templates](xref:user-guide/marketing/content/message-templates)
 - [SEO](xref:user-guide/marketing/content/seo)

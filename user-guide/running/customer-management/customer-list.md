@@ -45,7 +45,7 @@ Customer list contains details of all existing customers, as well as allows to a
 ![](_static/customer-list/edit_customer_details.png)
 
 >[!NOTE]
->After clicking the Send email button, the Send email window is displayed enabling a store owner to send an email to the customer. After clicking the Send private message button the Send private message window is displayed enabling to send a message to the customer. To use private messaging, allow private messages in [Forum settings](xref:user-guide/marketing/promotional/content/forums/settings).
+>After clicking the Send email button, the Send email window is displayed enabling a store owner to send an email to the customer. After clicking the Send private message button the Send private message window is displayed enabling to send a message to the customer. To use private messaging, allow private messages in [Forum settings](xref:user-guide/marketing/content/forums/settings).
 
 ![](_static/customer-list/44661870.png)
 

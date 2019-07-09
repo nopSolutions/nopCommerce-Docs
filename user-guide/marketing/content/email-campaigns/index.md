@@ -1,7 +1,7 @@
 ---
 title: Email campaigns
 author: AndreiMaz
-uid: user-guide/marketing/promotional/content/email-campaigns/index
+uid: user-guide/marketing/content/email-campaigns/index
 ---
 # Email campaigns
 

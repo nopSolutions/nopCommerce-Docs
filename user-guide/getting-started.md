@@ -62,7 +62,7 @@ If you are a novice in nopCommerce, follow the steps below to set your store up 
 
     * **Email campaigns**
 
-    Create [email campaigns](xref:xref:user-guide/marketing/promotional/content/email-campaigns/index) to easily and quickly reach your target audience with special offers, news, educational content, and so on.
+    Create [email campaigns](xref:xref:user-guide/marketing/content/email-campaigns/index) to easily and quickly reach your target audience with special offers, news, educational content, and so on.
 
 1. **nopCommerce special features for stores of any kind**
 
