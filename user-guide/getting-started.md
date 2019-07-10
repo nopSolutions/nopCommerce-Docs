@@ -19,7 +19,7 @@ If you are a novice in nopCommerce, follow the steps below to set your store up 
 A catalog is what your customers constantly deal with. That is why it is crucial to make it easy to browse and find needed products.
 
 ### Create categories and manufacturers
-    
+
 Categories and manufacturers  will be used in your catalog for product filtering. Learn how to deal with them and make the site navigation easier.
 
 ### Add products
@@ -32,7 +32,7 @@ What if your products are variable, for example, you sell sneakers in different 
 
 ## 3. Improve customer experience in your store
 
-Now when your catalog is filled with products, ensure that your customers are able to get all the needed support on their journey to a purchase. 
+Now when your catalog is filled with products, ensure that your customers are able to get all the needed support on their journey to a purchase.
 
 ### Product reviews
 
