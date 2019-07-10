@@ -126,7 +126,7 @@ Publishing the NopCommerce application is no different from publishing any other
     ![azure-publish_12](_static/azure-publish/azure-publish_12.png)
 
 1. To view and modify the publish profile settings, select **Configure**. Use the **Validate Connection** button to confirm that you have entered the right information.
-    
+
     ![azure-publish_13](_static/azure-publish/azure-publish_13.png)
 
 1. If you want to ensure that the web server has a clean copy of the web application after each upload (and that no other files are left hanging around from a previous deployment), you can check the **Remove additional files at destination** checkbox in the **Settings** tab. Warning: Publishing with this setting deletes all files that exist on the web server (wwwroot directory). Be sure you know the state of the machine before publishing with this option enabled.
@@ -138,9 +138,9 @@ Publishing the NopCommerce application is no different from publishing any other
 
 You have now published your web app to an Azure virtual machine.
 
-# Potential problems and solutions
+## Potential problems and solutions
 
-To [more](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.0) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in web.config: 
+To [more](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.0) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in web.config:
 
 ```sh
 stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
@@ -148,4 +148,4 @@ stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
 
 ## IIS not able to locate the web.config
 
-Solution:  [support.microsoft.com](http://support.microsoft.com/kb/942055) 
+Solution:  [support.microsoft.com](http://support.microsoft.com/kb/942055)

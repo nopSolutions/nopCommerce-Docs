@@ -30,7 +30,7 @@ Learn more about how you can contribute on [GitHub](https://github.com/nopSoluti
 1. **Generate deployment scripts locally**
     - Open the "Microsoft Azure Command Prompt"
     - Navigate to the src folder of your project as you normally would in a shell window
-    - Execute the azure script generator (found this nice tutorial: [http://blog.amitapple.com/post/38418009331/azurewebsitecustomdeploymentpart2/#.VWyO3qikLjQ](http://blog.amitapple.com/post/38418009331/azurewebsitecustomdeploymentpart2/#.VWyO3qikLjQ)). 
+    - Execute the azure script generator (found this nice tutorial: [http://blog.amitapple.com/post/38418009331/azurewebsitecustomdeploymentpart2/#.VWyO3qikLjQ](http://blog.amitapple.com/post/38418009331/azurewebsitecustomdeploymentpart2/#.VWyO3qikLjQ)).
 
         So you would write something like:
 
@@ -44,6 +44,7 @@ Learn more about how you can contribute on [GitHub](https://github.com/nopSoluti
     - Run deploy.cmd to see if the default deploy script works locally. It should create an \artifact folder just outside of your git repository.
 
 1. **Customize the deployment script** So now we are at the final part :smile:. This is where all that work pays off :smile:. We want to alter the following piece:
+
     ```sh
     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     :: Deployment
