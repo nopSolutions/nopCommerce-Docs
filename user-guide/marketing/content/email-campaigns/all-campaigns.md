@@ -42,7 +42,7 @@ To create a new campaign go to **Promotions → Campaigns → Add new.**
 After the campaign is saved you can send a test email to check if everything is done properly. Click Edit campaign and you will see one more field on the top if the screen **Send test email to** and fill in the email address.
 ![test-email](_static/all-campaigns/send-test-email.png)
 
-## Related resources
+## See also
 
 - [Newsletter subscribers](xref:user-guide/marketing/content/email-campaigns/newsletter-subscribers)
 - [Email marketing automation (nopCommerce Days 2016 video)](https://www.youtube.com/watch?v=Y6hytFXk5p0&index=23&list=PLnL_aDfmRHwt_6bP-8bd1rNPNIwWz86K2)

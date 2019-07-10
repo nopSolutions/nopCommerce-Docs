@@ -38,6 +38,6 @@ To view an example of how forums should work go to <http://www.nopcommerce.com/b
 
 ![nopCommerce forums](_static/index/forums4.png)
 
-## Related resources
+## See also
 
 - [Forum settings](xref:user-guide/marketing/content/forums/settings)

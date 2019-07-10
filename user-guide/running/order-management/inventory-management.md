@@ -63,7 +63,7 @@ The low stock report contains a list of products that are currently under stock,
 
 Click **Edit** to view the **Product info panel**, where these stock settings can be changed.
 
-## Related resources
+## See also
 
 * [Product Attributes](xref:user-guide/running/product-management/attributes/product-attributes)
 * [Warehouses](xref:user-guide/configuring/settingup/shipping/warehouses)

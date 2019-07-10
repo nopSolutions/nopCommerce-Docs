@@ -7,7 +7,7 @@ uid: user-guide/marketing/content/seo
 
 SEO stands for search engine optimization, it is a process of getting traffic from “free,” “organic,” “editorial” or “natural” search results on search engines. All major search engines have primary search results, where web pages and other content such as videos or local listings are shown and ranked based on what a search engine considers most relevant to users.
 
-nopCommerce supports **SEO techniques for different types of pages** in your store, find a list of them in **Related resources.**
+nopCommerce supports **SEO techniques for different types of pages** in your store, find a list of them in **See also.**
 
 ## SEO settings
 
@@ -61,7 +61,7 @@ There are several types of pages in nopCommerce for which you can set up individ
 
 - In the **Search engine friendly page name** field, enter the name of the page used by search engines. If you enter nothing then the web page URL is formed using the page name. If you enter custom-seo-page-name, then the following custom the URL will be used: `http://www.yourStore.com/custom-seo-page-name`
 
-## Related resources
+## See also
 
 - [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
 - [Product categories](xref:user-guide/running/product-management/categories)

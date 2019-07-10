@@ -38,7 +38,7 @@ In this window you can:
 
 ![Shipment Details](_static/shipments/order-shipment-details.png)
 
-## Related resources
+## See also
 
 * [Setting up Shipping](xref:user-guide/configuring/settingup/shipping/index)
 * [Orders](xref:user-guide/running/order-management/orders/index)

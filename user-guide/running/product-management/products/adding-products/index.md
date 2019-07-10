@@ -192,7 +192,7 @@ On this tab you can view all the product quantity changes, orders with the produ
 
 ![stock_quantity_history](_static/index/stock_quantity_history.png)
 
-## Related resources
+## See also
 
 - [Product categories](xref:user-guide/running/product-management/categories)
 - [Order management](xref:user-guide/running/order-management/index)

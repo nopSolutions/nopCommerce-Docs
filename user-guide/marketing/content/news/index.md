@@ -54,6 +54,6 @@ Select tab: **News comments**.
 
 Here you can **delete** a news comment, it will be removed from the system.
 
-## Related resources
+## See also
 
 - [News settings](xref:user-guide/marketing/content/news/news-settings)

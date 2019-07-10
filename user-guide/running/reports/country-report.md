@@ -18,7 +18,7 @@ To search for the report, enter one or more of the following search criteria:
 * **Order status**, such as All, Pending, Processing, Complete, or Cancelled
 * **Payment status**, such as All, Pending, Authorized, Paid, Refunded, Partially Refunded, or Voided
 
-## Related resources
+## See also
 
 * [Customer reports](xref:user-guide/running/reports/customer-reports)
 * [Countries](xref:user-guide/configuring/settingup/mainstore/countries)

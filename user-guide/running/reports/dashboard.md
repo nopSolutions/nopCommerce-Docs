@@ -47,7 +47,7 @@ Catalog → Low stock report
 
 ![bestsellers](_static/dashboard/bestsellers.png)
 
-## Related resources
+## See also
 
 * [Orders](xref:user-guide/running/order-management/orders/index)
 * [Return requests](xref:user-guide/running/order-management/return-requests/index)

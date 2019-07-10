@@ -22,7 +22,7 @@ In return request settings you can define:
 
 This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
 
-## Related resources
+## See also
 
 * [Return Requests](xref:user-guide/running/order-management/return-requests/index)
 * [Order Settings](xref:user-guide/running/order-management/orders/order-settings)

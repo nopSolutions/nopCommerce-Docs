@@ -55,7 +55,7 @@ The store owner can now manage this return request in the Administration Area.
 > Click the Notify customer about status change button to send an email to the customer informing him/her on the return request status change.
 > ![Control buttons](_static/index/control-elements.png)
 
-## Related resources
+## See also
 
 * [Return request settings](xref:user-guide/running/order-management/return-requests/return-requests-settings)
 * [Orders](xref:user-guide/running/order-management/orders/index)

@@ -42,7 +42,7 @@ Edit **message details as follows**:
 > [!NOTE]
 > To create a full copy of the message template, click Copy template. This is useful if you have several stores configured and want to create distinct templates for each of your stores.
 
-## Related resources
+## See also
 
 - [Video Tutorial on conditions in message templates](https://www.youtube.com/watch?v=5chrb1yH1v4&feature=youtu.be)
 - [Email accounts](xref:user-guide/configuring/system/email-accounts)

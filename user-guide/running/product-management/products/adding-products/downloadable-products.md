@@ -20,6 +20,6 @@ Define the **following details**:
 - **Has user agreement** - if a customer must agree with the user agree in order to be able to download the product. The User agreement text editor is then displayed enabling you to enter/edit the user agreement text.
 - **Has sample download file**. If this is applicable, download the sample by uploading it or entering an URL. Note that if a store owner uploads a sample, it will be shown on the product details page and can be downloaded by any customer without any charge.
 
-## Related resources
+## See also
 
 - [Orders](xref:user-guide/running/order-management/orders/index)

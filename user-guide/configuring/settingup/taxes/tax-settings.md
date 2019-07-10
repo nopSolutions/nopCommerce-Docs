@@ -56,6 +56,6 @@ Tick the **EU VAT enabled** checkbox, to indicate European Union Value Added Tax
 
 Click **Save**.
 
-## Related resources
+## See also
 
 * [Video tutorial: Tax settings](https://www.youtube.com/watch?v=8iF5nQvIoLs&feature=youtu.be)

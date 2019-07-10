@@ -26,7 +26,7 @@ This page enables **multi-store configuration**, it means that the same settings
 
 ![p2](_static/news-settings/Setting-News%202.png)
 
-## Related resources
+## See also
 
 - [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
 - [News](xref:user-guide/marketing/content/news/index)

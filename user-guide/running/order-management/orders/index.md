@@ -75,7 +75,7 @@ Add Product. In the **Add a New Product to the Order** window find the required 
 
 On the **Order Notes** tab, a store owner can **view** notes that were added to each order for information purposes, **delete** notes, and **add new** notes, which may contain an attached file and be Displayed to a customer in a public store.
 
-## Related resources
+## See also
 
 * [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
 * [Shipments](xref:user-guide/running/order-management/shipments)

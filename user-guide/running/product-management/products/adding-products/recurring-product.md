@@ -19,6 +19,6 @@ You can define a **recurring cycle** to any product in order to enable the syste
 >[!NOTE]
 >at least one of the active payment modules should support recurring payments.
 
-## Related resources
+## See also
 
 - [Payment Methods](xref:user-guide/configuring/settingup/payments/payment-methods)

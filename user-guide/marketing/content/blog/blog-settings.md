@@ -25,7 +25,7 @@ This page enables **multi-store configuration**, it means that the same settings
 
  ![p2](_static/blog-settings/Setting-Blog%202.png)
 
-## Related resources
+## See also
 
 - [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
 - [Blog](xref:user-guide/marketing/content/blog/index)

@@ -26,7 +26,7 @@ To view products never purchased, go to Reports → Products Never Purchased. En
 
 ![never-purchased](_static/bestsellers-never-purchased/never-purchased.jpeg)
 
-## Related resources
+## See also
 
 * [Polls](xref:user-guide/marketing/content/polls)
 * [Dashboard](xref:user-guide/running/reports/dashboard)

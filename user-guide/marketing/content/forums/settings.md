@@ -40,7 +40,7 @@ This page enables **multi-store configuration**, it means that the same settings
 
 To change a setting for a certain store, tick a checkbox on the left side of it. All other settings remain the same as for all stores.
 
-## Related resources
+## See also
 
 - [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
 - [Forums](xref:user-guide/marketing/content/forums/index)

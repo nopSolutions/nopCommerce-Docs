@@ -60,7 +60,7 @@ Select tab: **Blog comments**.
 
 Here you can **delete** a blog comment, it will then be removed from the system.
 
-## Related resources
+## See also
 
 - [Managing blog tutorial](https://www.youtube.com/watch?v=wKMKUF7VfW0&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=12)
 - [Blog settings](xref:user-guide/marketing/content/blog/blog-settings)

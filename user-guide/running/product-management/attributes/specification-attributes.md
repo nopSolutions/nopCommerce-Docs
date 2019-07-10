@@ -36,7 +36,7 @@ The **complete list of options** will look as follows.
 
 Click **Edit** beside the attribute option to update it or Delete to remove it from the system.
 
-## Related resources
+## See also
 
 - [Adding new products](xref:user-guide/running/product-management/products/adding-products/index)
 - [Product attributes](xref:user-guide/running/product-management/attributes/product-attributes)

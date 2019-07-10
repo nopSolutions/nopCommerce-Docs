@@ -33,7 +33,7 @@ The third tab shows the number of **Registered customers** for a certain period.
 
 ![customer-registered](_static/customer-reports/customer-registered.png)
 
-## Related resources
+## See also
 
 * [Country report](xref:user-guide/running/reports/country-report)
 * [Customer list](xref:user-guide/running/customer-management/customer-list)

@@ -27,6 +27,6 @@ On the **Newsletter subscribers page** you can find certain subscribers using fo
 - From the **Active** dropdown list, choose between active and inactive subscribers
 - From the **Customer roles** dropdown list, select the customer role in which a user subscribed to newsletters
 
-## Related resources
+## See also
 
 - [Campaigns](xref:user-guide/marketing/content/email-campaigns/all-campaigns)
