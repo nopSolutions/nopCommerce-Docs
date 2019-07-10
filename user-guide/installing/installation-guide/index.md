@@ -90,21 +90,14 @@ You can use any of the following authentication methods to connect to the server
 Once you open the site for the first time, you’ll be redirected to the installation page, as follows:
 ![nopCommerce installation](_static/index/installation.jpg)
 
-> **Admin user e-mail**: This is the e-mail address for the first admin of the site.
->
-> **Admin password**: You will need to supply a password for the admin account.
->
-> **Create sample data**: Check this box if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
->
-> **Database Information**: Here you can select either SQL Server Compact or SQL Server. It is recommended to use a full SQL Server product, not the Compact edition.
->
-> **Create database if doesn't exist**: It is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
->
-> **SQL Server name**: This is the IP, URL, or server name for your database. You will get your SQL Server name from your hosting provider.
->
-> **Database name**: This is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
->
-> **Use SQL Server account/Use integrated Windows authentication**: If you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. If you are using a development environment, you can select Windows authentication. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.>
+- **Admin user e-mail**: This is the e-mail address for the first admin of the site.
+- **Admin password**: You will need to supply a password for the admin account.
+- **Create sample data**: Check this box if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
+- **Database Information**: Here you can select either SQL Server Compact or SQL Server. It is recommended to use a full SQL Server product, not the Compact edition.
+- **Create database if doesn't exist**: It is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
+- **SQL Server name**: This is the IP, URL, or server name for your database. You will get your SQL Server name from your hosting provider.
+- **Database name**: This is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
+- **Use SQL Server account/Use integrated Windows authentication**: If you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. If you are using a development environment, you can select Windows authentication. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.>
 
 Specify Custom SQL Server collation: This is an advanced setting and should be left unchecked.
 
