@@ -34,4 +34,3 @@ To add a new tax category, click **Add new record**, the window is expanded. Ent
 Set up the **rates** for each class in **Tax Providers** section in **Configuration → Tax providers**.
 
 Tax categories are assigned to products on [product editing pages](xref:user-guide/running/product-management/products/adding-products/index). Taxes can also be applied to **shipping fees** and **payment method** additional fees.
-

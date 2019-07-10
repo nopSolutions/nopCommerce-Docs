@@ -5,7 +5,7 @@ uid: user-guide/configuring/settingup/shipping/settings
 ---
 # Shipping Settings
 
-This chapter describes how to **set up the shipping details of a store**. Besides the location and warehouses set, there are other things which comprise good logistics. 
+This chapter describes how to **set up the shipping details of a store**. Besides the location and warehouses set, there are other things which comprise good logistics.
 
 To manage shipping settings go to **Configuration → Settings → Shipping Settings**.
 

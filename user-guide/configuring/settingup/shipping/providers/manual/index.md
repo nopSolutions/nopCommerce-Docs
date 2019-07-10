@@ -7,7 +7,7 @@ uid: user-guide/configuring/settingup/shipping/providers/manual/index
 
 Manual (Fixed or By Weight and By Total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
 
-## Define Manual (Fixed or By Weight and By Total) shipping:
+## Define Manual (Fixed or By Weight and By Total) shipping
 
 Go to **Configuration → Shipping → Shipping Providers**. The Shipping providers window is displayed:
 
@@ -19,7 +19,7 @@ Enable manual shipping rate computation method, as follows:
 * In the **Is active** column, check the checkmark
 * Click **Update**. The false option becomes true
 
-Click **Configure** beside the Manual (Fixed or By Weight and By Total) option in the list. 
+Click **Configure** beside the Manual (Fixed or By Weight and By Total) option in the list.
 
 You can switch Fixed rate shipping fee calculation to Shipping by weight and by total calculation by clicking button at the top of the page.
 
@@ -91,10 +91,11 @@ To add a new shipping rule, click **Add record**. The Add new record window is d
 Click **Save**.
 
 > [!NOTE]
-> make sure that you settings "**Configuration → Settings → Shipping Srttings → Consider associated products dimensions and weigh**" is true.
+> make sure that you settings "**Configuration → Settings → Shipping Settings → Consider associated products dimensions and weigh**" is true.
 
 > [!NOTE]
 > you can add/remove shipping methods in the Shipping methods window, accessed by clicking ![button](_static/index/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/index/manual-shipping-restrictions.png)
+>
 > If you wish to limit your customers only to methods configured on that screen tick this checkbox on the bottom of the page.
 
 ## See also

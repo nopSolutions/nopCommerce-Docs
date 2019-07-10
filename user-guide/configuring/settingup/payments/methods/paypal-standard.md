@@ -7,43 +7,41 @@ uid: user-guide/configuring/settingup/payments/methods/paypal-standard
 
 To use **PayPal Standard** plugin as a payment method please follow these steps:
 
-1. Register a Business account on www.paypal.com. Following the link https://www.paypal.com/bizsignup/. Then fill in the information about yourself and your business:
+1. Register a Business account on www.paypal.com. Following the link [https://www.paypal.com/bizsignup/](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
 
-* Email (if you already have an account you will be redirected to the authorization)
+    ![step1](_static/paypal-standard/signUp1step.png)
 
-![step1](_static/paypal-standard/signUp1step.png)
+    > [!NOTE]
+    > If you already have an account you will be redirected to the authorization
 
-![step2](_static/paypal-standard/signUp2step.png)
+    ![step2](_static/paypal-standard/signUp2step.png)
 
-![step3](_static/paypal-standard/signUp3step.png)
+    ![step3](_static/paypal-standard/signUp3step.png)
 
-![step4](_static/paypal-standard/signUp4step.png)
+    ![step4](_static/paypal-standard/signUp4step.png)
 
-![step5](_static/paypal-standard/signUp5step.png)
+    ![step5](_static/paypal-standard/signUp5step.png)
 
-2. In the top navigation bar, click on the **Settings** icon ![settings](_static/paypal-standard/settings icon.png)
+1. In the top navigation bar, click on the **Settings** icon ![settings](_static/paypal-standard/settings icon.png)
 
-3. Select **Website payments** in the left panel and click on **Update** in the **Website preferences** line
+1. Select **Website payments** in the left panel and click on **Update** in the **Website preferences** line
 
-![websitepayments](_static/paypal-standard/websitepaymentsppal.png)
+    ![websitepayments](_static/paypal-standard/websitepaymentsppal.png)
+1. In the **Auto return for website payments** section set the switch to **On.** As the **Return URL** enter the URL of your site, which will be receiving ID transactions sending by PayPal after customer payment.
 
-4. In the **Auto return for website payments** section set the switch to **On.** As the **Return URL** enter the URL of your site, which will be receiving ID transactions sending by PayPal after customer payment.
+    ![autoreturnURLPP](_static/paypal-standard/autoreturnURLPP.png)
+1. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
 
-![autoreturnURLPP](_static/paypal-standard/autoreturnURLPP.png)
-
-5. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
-
-![PDTtoken](_static/paypal-standard/PDTtoken.png)
-
-6. To configure the plugin in the admin panel of nopCommerce go to **Configuration  -> Payment methods,** in the **PayPal Standard** line click on **Configuration**
+    ![PDTtoken](_static/paypal-standard/PDTtoken.png)
+1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  -> Payment methods,** in the **PayPal Standard** line click on **Configuration**
 
 ![nopconfig](_static/paypal-standard/nopConfigPP.png)
 
-7. In the **Business Email** field enter an email specified when registering a Business account on paypal.com.
+1. In the **Business Email** field enter an email specified when registering a Business account on paypal.com.
 
-8. In the **PDT Identity Token** field enter the copied **Identity Token** from clause #5.
+1. In the **PDT Identity Token** field enter the copied **Identity Token** from clause #5.
 
-9. Click **Save**
+1. Click **Save**
 
 For the **IPN** (Instant Payment Notification) activation:
 
@@ -51,34 +49,34 @@ For the **IPN** (Instant Payment Notification) activation:
 
 ![notifications](_static/paypal-standard/notificationsPP.png)
 
-2. Familiarize yourself with the information regarding **IPN** and click **Choose IPN Settings**
+1. Familiarize yourself with the information regarding **IPN** and click **Choose IPN Settings**
 
 ![chooseIPN](_static/paypal-standard/chooseIPNSettings.png)
 
-3. Select **Receive IPN messages (Enabled)**. As **Notification URL** enter URL of your IPN handler
+1. Select **Receive IPN messages (Enabled)**. As **Notification URL** enter URL of your IPN handler
 
 ![editIPN](_static/paypal-standard/editIPN.png)
 
-4. Click **Save.** You should get a message that you have successfully activated IPN.
+1. Click **Save.** You should get a message that you have successfully activated IPN.
 
 > [!NOTE]
 > Instant Payment Notification (IPN) is PayPal's message service that sends a notification when a transaction is affected. Once IPN is integrated, sellers can automate their back office so they are not required to wait for payments to come in to trigger order fulfillment.
 
-#### Known Issues
+## Known Issues
 
-##### Error: Things don't appear to be working at the moment (Paypal)
+### Error: Things don't appear to be working at the moment (Paypal)
 
 If you see the above error "Things don't appear to be working at the moment. Please try again later"
 
 ![paypalerror](_static/paypal-standard/file-6jjW2AH7yT.png)
 
-The error is caused by a setting within your PayPal Account. 
+The error is caused by a setting within your PayPal Account.
 
-Step 1: On the left sidebar under "Products & Services" click "Website Payments"
+**Step 1**: On the left sidebar under "Products & Services" click "Website Payments"
 
-Step 2: Click "Update" next to the "Website Preferences" section
+**Step 2**: Click "Update" next to the "Website Preferences" section
 
-Step 3: Scroll down to "Encrypted Website Payments" section, and select "Off" from the right side and then save your changes.
+**Step 3**: Scroll down to "Encrypted Website Payments" section, and select "Off" from the right side and then save your changes.
 
 ![encryptedwebsitepayments](_static/paypal-standard/file-c2yKWw2xMN.png)
 

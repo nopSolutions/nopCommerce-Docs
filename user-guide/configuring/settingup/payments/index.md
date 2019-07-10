@@ -13,7 +13,7 @@ uid: user-guide/configuring/settingup/payments/index
 > [!TIP]
 > How to install the payment (or any other) plugin is covered in [Plugins](xref:user-guide/configuring/system/plugins) chapter.
 
-## See also:
+## See also
 
 - [Payment Methods](xref:user-guide/configuring/settingup/payments/payment-methods)
 - [Payment statuses](xref:user-guide/configuring/settingup/payments/payment-statuses)

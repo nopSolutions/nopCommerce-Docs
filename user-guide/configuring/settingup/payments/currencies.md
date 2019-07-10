@@ -34,37 +34,35 @@ From the Current exchange rate provider dropdown list, select the exchange rate 
 ![currencies2](_static/currencies/currencies2.png)
 
  Click **Save.**
- 
- ##### Adding new currency
+
+## Adding new currency
 
 Click **Add new** button.
 
 ![currencies3](_static/currencies/currencies3.png)
 
-Define the **currency settings:** 
+Define the **currency settings:**
 
- * Currency **Name.**
- * Currency **code.**
- * Enter the **exchange Rate** against the primary exchange rate of the currency.
- * From the **Display locale** dropdown list, select the display locale for currency values.
- * Enter **Custom Formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in public store, number of decimal places and so on.
- * In the **Limited to Stores** select a pre-created store from drop-down list
- * From the **Rounding type** drop-down list сhoose one of the types of rounding:
- 
-    * Default rounding
-    * Rounding up with 0.05 intervals (0.06 round to 0.10)
-    * Rounding down with 0.05 intervals (0.06 round to 0.05)
-    * Rounding up with 0.10 intervals (1.05 round to 1.10)
-    * Rounding down with 0.10 intervals (1.05 round to 1.00)
-    * Rounding with 0.50 intervals
-    * Rounding with 1.00 intervals (1.01-1.49 round to 1.00, 1.50-1.99 round to 2.00)
-    * Rounding up with 1.00 intervals (1.01–1.99 round to 2.00)
-    
- * Select the **Published** checkbox, to enable this currency to be visible and selected by visitors in your store. nopCommerce supports a multi-currency pricing display. If you have several published currencies, customers will be able to select the currency they want.
- * In the **Display order** field, enter the display order of this currency. A value of 1 represents the top of the list.
- * Click **Save.**
- 
- Click **Get live rates** in the Currencies window. The window is expanded as follows:
+* Currency **Name.**
+* Currency **code.**
+* Enter the **exchange Rate** against the primary exchange rate of the currency.
+* From the **Display locale** dropdown list, select the display locale for currency values.
+* Enter **Custom Formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in public store, number of decimal places and so on.
+* In the **Limited to Stores** select a pre-created store from drop-down list
+* From the **Rounding type** drop-down list choose one of the types of rounding:
+  * Default rounding
+  * Rounding up with 0.05 intervals (0.06 round to 0.10)
+  * Rounding down with 0.05 intervals (0.06 round to 0.05)
+  * Rounding up with 0.10 intervals (1.05 round to 1.10)
+  * Rounding down with 0.10 intervals (1.05 round to 1.00)
+  * Rounding with 0.50 intervals
+  * Rounding with 1.00 intervals (1.01-1.49 round to 1.00, 1.50-1.99 round to 2.00)
+  * Rounding up with 1.00 intervals (1.01–1.99 round to 2.00)
+* Select the **Published** checkbox, to enable this currency to be visible and selected by visitors in your store. nopCommerce supports a multi-currency pricing display. If you have several published currencies, customers will be able to select the currency they want.
+* In the **Display order** field, enter the display order of this currency. A value of 1 represents the top of the list.
+* Click **Save.**
+
+Click **Get live rates** in the Currencies window. The window is expanded as follows:
 
 ![currencies4](_static/currencies/currencies4.png)
 

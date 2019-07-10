@@ -9,10 +9,10 @@ After downloading a new theme which is in a zip file, extract the contents of yo
 
 ![p1](_static/installing-theme/instal_theme1.jpg)
 
-1. Go to the admin section (http://www.yourdomain.com/admin).
+1. Go to the admin section (http<span>://www.</span>yourdo<span>main.</span>com/admin).
 1. Go to **Configuration → Settings → General settings**.
 
-	![p2](_static/installing-theme/instal_theme2.png)
+    ![p2](_static/installing-theme/instal_theme2.png)
 
 1. Select **New theme** from the **Default Store Theme** and click Save.
 1. Go to the public store. You should be able to see the new theme on your website.

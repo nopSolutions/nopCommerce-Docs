@@ -10,7 +10,7 @@ A payment method is how a customer pays for the order. nopCommerce supports both
 To define payment methods go to **Configuration →  Payment Methods.**
 
 > [!TIP]
-> By default, there are several payment methods available in nopCommerce, but you can find needed more payment plugins in nopCommerce [Marketplace](https://www.nopcommerce.com/marketplace.aspx). 
+> By default, there are several payment methods available in nopCommerce, but you can find needed more payment plugins in nopCommerce [Marketplace](https://www.nopcommerce.com/marketplace.aspx).
 
 For further details, refer to the [document](xref:developer/plugins/payment-method) (recommended to be used only by developers).
 
@@ -18,7 +18,7 @@ For further details, refer to the [document](xref:developer/plugins/payment-meth
 
 To activate a payment method, Click **Edit** beside the required method, tick the **Is active** checkbox and click Update. The Is active option changes from false to true.
 
- Different payment metods support different options. There are **4 payment options** you can tick as active or not (supported or not):
+ Different payment methods support different options. There are **4 payment options** you can tick as active or not (supported or not):
 
 * **Supports capture**, whether this method allows processing money transfer after the amount was charged.
 * **Refund**, whether this method allows making a money refund after the amount was charged and captured already.
@@ -27,7 +27,7 @@ To activate a payment method, Click **Edit** beside the required method, tick th
 
 Click **configure** beside a payment method to set it up.
 
-## See also:
+## See also
 
 * [Square](xref:user-guide/configuring/settingup/payments/methods/square)
 * [Qualpay](xref:user-guide/configuring/settingup/payments/methods/qualpay)

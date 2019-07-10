@@ -7,7 +7,7 @@ uid: user-guide/configuring/settingup/payments/payment-statuses
 
 You can check **payment statuses in Sales → Orders :**
 
- * **Pending:** when a transaction is not approved yet.
+* **Pending:** when a transaction is not approved yet.
 
 * **Authorized:** when the amount was charged, but not captured or transferred, just the credit card was verified.
 
@@ -16,7 +16,7 @@ You can check **payment statuses in Sales → Orders :**
 
 * **Partially refunded:** when order paid and partially refunded.
 
-* **Voided:** when an order was cancelled before get paid. 
+* **Voided:** when an order was cancelled before get paid.
 
 > [!WARNING]
 > This mode is available only when its payment status is Authorized.
@@ -26,9 +26,9 @@ You can check **payment statuses in Sales → Orders :**
 > [!WARNING]
 > This mode is available only when its payment status is Paid (meaning, captured).
 
-* **Partially refunded:** when an order partially was cancelled and the amount needs to be refunded after get paid. 
+* **Partially refunded:** when an order partially was cancelled and the amount needs to be refunded after get paid.
 
 > [!WARNING]
 > This mode is available only when its payment status is Paid (meaning, captured).
 
-* **Paid:** when the order was Paid. 
+* **Paid:** when the order was Paid.
