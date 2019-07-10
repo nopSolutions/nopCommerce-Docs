@@ -5,9 +5,10 @@ uid: user-guide/marketing/promotional/discounts/common-type-of-discounts
 ---
 # Common type of discounts
 
-**Black Friday sale**
+## Black Friday sale
 
 Black Friday is always the day after Thanksgiving. It'quite common discount campaign, almost every online store has a Black Friday sale.
+
 ![black-friday](_static/common-discounts/Black-friday.png)
 
 **Name** - you can enter any name, it’s only internal
@@ -29,11 +30,13 @@ Frequently discounts are time-based. Here we entered Black Friday weekend dates.
 The last setting is for limitation discount usage. For instance, this discount can be applied once per customer.
 
 Often you need to sell more items of the certain product. In this case, to encourage your customers to buy several items of that, you can offer them a discount.  Let’s consider how to use the discount - Buy one item and get 50% on the second in your nopCommerce store.
+
 ![edit-discount-details](_static/common-discounts/buy_1.png)
 
 The type of the discount is Assigned to products. In Applied to products tab you can add them, here will be an oversized T-shirt. We want our customers to get 50% discount on the 2nd t-shirt. This discount can be used once per customer, so the maximum quantity is 1.
 
 You can set up requirements to the product quantity in Requirements tab. Add requirements type Customer has all of these products and add T-shirt with a quantity 2.
+
 ![buy-1-get-discount](_static/common-discounts/buy _2.png)
 
- You can use this scenario to set up other popular discount buy one and get the second for free if you set up a 100% discount. 
+ You can use this scenario to set up other popular discount buy one and get the second for free if you set up a 100% discount.
