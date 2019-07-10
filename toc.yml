@@ -359,7 +359,7 @@
       - name: How to code my own payment method
         uid: developer/plugins/payment-method
       - name: How to code my own shipping rate computation method
-        uid: developer/plugins/shippng-plugin
+        uid: developer/plugins/shipping-plugin
       - name: Plugin with data access
         uid: developer/plugins/plugin-with-data-access
       - name: How to add a menu item into the administration area from a plugin

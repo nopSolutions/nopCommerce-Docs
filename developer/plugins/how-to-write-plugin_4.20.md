@@ -80,7 +80,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 - **ITaxProvider**. Tax providers are used for getting tax rates.
 - **IMiscPlugin**. If your plugin doesn't fit any of these interfaces
 
-> [!MPORTANT]
+> [!IMPORTANT]
 > Important note: After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
 ## Handling requests. Controllers, models and views

@@ -28,7 +28,8 @@ In order to upload your store logo in a nopCommerce website, there are basically
 
     You can mention the path of your custom logo here.
 
-    >In the above mentioned css code: logo.gif is the name of the store logo image file
+    > [!NOTE]
+    > In the above mentioned css code: logo.gif is the name of the store logo image file
 
 1. Change logo.gif with `YourLogo.gif/jpg/png`
 1. Save changes to the `Header.cshtml` file
@@ -109,4 +110,4 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
 1. If you would like to customize/make changes in a footer (or footer links) of your nopCommerce website, please go to the following location:
 
     Go to nopCommerce root folder `/Views/Shared/Components/Footer/Default.cshtml`
-1. Open file `Default.cshtml` - You can add or remove links in `<li>` or comlpete `<ul>` according to your requirements.
+1. Open file `Default.cshtml` - You can add or remove links in `<li>` or complete `<ul>` according to your requirements.

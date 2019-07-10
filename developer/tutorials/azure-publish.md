@@ -1,9 +1,8 @@
 ---
 title: How to deploy nopCommerce to Azure
-author: DmitriyKulagin
+author: AndreiMaz
 uid: developer/tutorials/azure-publish
 ---
-
 # How to deploy nopCommerce to Azure
 
 ## Create a VM on Azure

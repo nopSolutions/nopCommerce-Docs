@@ -9,7 +9,7 @@ uid: developer/design/responsive
 
 * The number of mobile devices is increasing at a very fast pace and due to different screen sizes/screen resolution, a responsive design approach is used by web developers in order to keep the user experience same or similar across the website.
 
-* Yes, nopCommerce default layout/theme does support a responsive design that is optimized for all screen sizes and this approach is handled via media-queries in the CSS. This allows your online ecommerce store layout to display the content of your website by automatically adjusting the viewing area depending on the size of the screen.
+* Yes, nopCommerce default layout/theme does support a responsive design that is optimized for all screen sizes and this approach is handled via media-queries in the CSS. This allows your online eCommerce store layout to display the content of your website by automatically adjusting the viewing area depending on the size of the screen.
 
 **Viewing the responsive design.** Just re-size your browser windows and keep decreasing its size. As the size of the browser windows will decrease, you will see the nopCommerce site will adjust the content accordingly.
 

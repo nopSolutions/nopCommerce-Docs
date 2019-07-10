@@ -32,7 +32,7 @@ Then you have to create a view component for displaying plugin in public store. 
  }
 ```
 
-Invoke method returns an apporopriate PaymentInfo view from */Views* folder of your plugin. Note that we use our custom NopViewComponent class as a base class instead of existing built-in ViewComponent.
+Invoke method returns an appropriate PaymentInfo view from */Views* folder of your plugin. Note that we use our custom NopViewComponent class as a base class instead of existing built-in ViewComponent.
 
 Than let's create PaymentInfo view which shows payment information. For PayPalStandard plugin this view is pretty simple. There we just render text saying that a customer will be redirected to the payment page. But it's possible to create a more complex view component if need. For example if you want to collect customer's information on the payment information page look how it's already done in PayPalDirect payment plugin.
 
@@ -79,7 +79,7 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
     ```csharp
     public override string GetConfigurationPageUrl()
     {
-            return $"{_webHelper.GetStoreLocation()}Admin/PaymentCheckMoneyOrder/Configure";
+        return $"{_webHelper.GetStoreLocation()}Admin/PaymentCheckMoneyOrder/Configure";
     }
     ```
 
@@ -88,7 +88,7 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
     ```csharp
     public string GetPublicViewComponent()
     {
-            viewComponentName = "CheckMoneyOrder";
+        viewComponentName = "CheckMoneyOrder";
     }
     ```
 

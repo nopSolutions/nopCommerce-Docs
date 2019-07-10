@@ -1,6 +1,6 @@
 ---
 title: Creating / Writing your own theme (using current / default theme)
-author: andreimaz
+author: AndreiMaz
 uid: developer/design/new-theme
 ---
 # Creating / Writing your own theme (using current / default theme)
