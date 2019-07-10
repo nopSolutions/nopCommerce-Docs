@@ -21,10 +21,10 @@ To edit SEO settings, go to **Configuration → Settings → General Settings.**
 - From the **Page Title SEO adjustment** field, select the required page title SEO adjustment, as follows:
 
     A page name comes after the store name in the title:
-    YOURSTORE.COM | PAGENAME
+    `YOURSTORE.COM` | PAGENAME
 
     The store name comes after a page name in the title:
-    PAGENAME | YOURSTORE.COM
+    PAGENAME | `YOURSTORE.COM`
 
 - Specify the **Page Title separator**.
 - Enter the **Default meta keywords description** for the pages in your store. This can be overridden for individual **categories, manufacturers, and products**.
@@ -59,7 +59,7 @@ There are several types of pages in nopCommerce for which you can set up individ
     </head>
     ```
 
-- In the **Search engine friendly page name** field, enter the name of the page used by search engines. If you enter nothing then the web page URL is formed using the page name. If you enter custom-seo-page-name, then the following custom the URL will be used: <http://www.yourStore.com/custom-seo-page-name>
+- In the **Search engine friendly page name** field, enter the name of the page used by search engines. If you enter nothing then the web page URL is formed using the page name. If you enter custom-seo-page-name, then the following custom the URL will be used: `http://www.yourStore.com/custom-seo-page-name`
 
 ## Related resources
 
