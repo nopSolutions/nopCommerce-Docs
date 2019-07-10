@@ -11,19 +11,19 @@ This tutorial covers how to add a property to the "Category" entity that ships w
 
 Entities will have two classes that are used to map records to a table. The first class defines the properties, fields, and methods consumed by the web application.
 
-**File System Location:** [Project Root]\Libraries\Nop.Core\Domain\Catalog\Category.cs
-
-**Assembly:** Nop.Core
-
-**Solution Location:** Nop.Core.Domain.Catalog.Category.cs
+```sh
+File System Location: [Project Root]\Libraries\Nop.Core\Domain\Catalog\Category.cs
+Assembly: Nop.Core
+Solution Location: Nop.Core.Domain.Catalog.Category.cs
+```
 
 The second class is used to map the properties defined in the class above to their respective SQL columns. The mapping class is also responsible for mapping relationships between different SQL tables.
 
-**File System Location:** [Project Root]\Libraries\Nop.Data\Mapping\Catalog\CategoryMap.cs
-
-**Assembly:** Nop.Data
-
-**Solution Location:** Nop.Data.Mapping.Catalog.CategoryMap.cs
+```sh
+File System Location: [Project Root]\Libraries\Nop.Data\Mapping\Catalog\CategoryMap.cs
+Assembly: Nop.Data
+Solution Location: Nop.Data.Mapping.Catalog.CategoryMap.cs
+```
 
 Add the following property to the Category class.
 
