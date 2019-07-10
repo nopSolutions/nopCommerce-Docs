@@ -201,7 +201,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
         private readonly IRepository<ProductViewTrackerRecord> _productViewTrackerRecordRepository;
         public ViewTrackingService(IRepository<ProductViewTrackingRecord> productViewTrackerRecordRepository)
         {
-                 _productViewTrackerRecordRepository = productViewTrackerRecordRepository;
+            _productViewTrackerRecordRepository = productViewTrackerRecordRepository;
         }
 
         /// <summary>
@@ -220,7 +220,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 
 ## Dependency Injection
 
-Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article here. Dependency injection manages the lifecycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
+Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article here. Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
@@ -274,7 +274,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
         public IViewComponentResult Invoke(int productId)
         {
             //Read from the product service
-            roduct productById = _productService.GetProductById(productId);
+            Product productById = _productService.GetProductById(productId);
             //If the product exists we will log it
             if (productById != null)
             {

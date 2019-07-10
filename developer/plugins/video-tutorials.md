@@ -3,10 +3,9 @@ title: Video tutorials for creating a plugin
 author: AndreiMaz
 uid: developer/plugins/video-tutorials
 ---
-
 # Video tutorials for creating a plugin
 
-Please watch the following tutorial on our Youtube channel:
+Please watch the following tutorial on our YouTube channel:
 
 - [Advanced nopCommerce plugin tutorial (part 1)](https://youtu.be/hApasYO1hhQ)
 - [Advanced nopCommerce plugin tutorial (part 2)](https://youtu.be/dd4lnUtKZ4Q)

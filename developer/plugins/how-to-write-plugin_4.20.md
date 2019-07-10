@@ -80,7 +80,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 - **ITaxProvider**. Tax providers are used for getting tax rates.
 - **IMiscPlugin**. If your plugin doesn't fit any of these interfaces
 
-> [!MPORTANT]
+> [!IMPORTANT]
 > Important note: After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
 ## Handling requests. Controllers, models and views
@@ -162,7 +162,7 @@ public override void Install()
 
 Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing). So follow the next steps:
 
-1. If you need to add some custom route, then create RouteProvider.cs file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to http:<span>//www.</span>yourStore<span>.com/Plugins</span>/PaymentPayPalStandard/PDTHandler URL (used by PayPal plugin):
+1. If you need to add some custom route, then create RouteProvider.cs file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to [http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler]('') URL (used by PayPal plugin):
 
 ```csharp
 public partial class RouteProvider : IRouteProvider

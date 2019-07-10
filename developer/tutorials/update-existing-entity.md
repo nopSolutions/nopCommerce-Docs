@@ -90,8 +90,8 @@ Views contain the html for displaying model data. Place this html under the "act
         <nop-label asp-for="" />
      </div>
      <div class="col-md-9">
-         <nop-editor asp-for="SomeNewProperty" />
-         <span asp-validation-for="SomeNewProperty"></span>
+        <nop-editor asp-for="SomeNewProperty" />
+        <span asp-validation-for="SomeNewProperty"></span>
      </div>
  </div>
 ```

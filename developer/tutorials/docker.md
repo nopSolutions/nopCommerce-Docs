@@ -1,9 +1,8 @@
 ---
 title: Docker
-author: exileDev
+author: AndreiMaz
 uid: developer/tutorials/docker
 ---
-
 # Docker
 
 This document describes a step-by-step guide to building and running a Docker container.

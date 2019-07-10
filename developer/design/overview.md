@@ -1,11 +1,11 @@
 ---
 title: Overview (Designer's Guide)
-author: andreimaz
+author: AndreiMaz
 uid: developer/design/overview
 ---
 # Overview (Designer's Guide)
 
-## What is a theme?
+## What is a theme
 
 A theme is a collection of property settings that allow you to define the look of pages and controls, and then apply the look consistently across pages in a Web application, across an entire Web application, or across all Web applications on a server.
 

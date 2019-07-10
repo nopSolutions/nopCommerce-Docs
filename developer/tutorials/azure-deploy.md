@@ -20,12 +20,12 @@ uid: developer/tutorials/azure-deploy
 
     - Install Azure CLI: [https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/)
 
-1. **Get nuget to work at command line level.** The default behavior of the KUDO script is to check for Nuget packages.
+1. **Get NuGet to work at command line level.** The default behavior of the KUDO script is to check for NuGet packages.
 Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
-   - To get access to the Nuget.exe file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of nuget packages" in you Visual Studio 2017, and it will be added to your project automatically.
+   - To get access to the Nuget.exe file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of NuGet packages" in you Visual Studio 2017, and it will be added to your project automatically.
 
-   - Ensure that Nuget is in the path. Copy the nuget.exe file to preferred location (I use c:/Program Files/Nuget/Nuget.exe). Add it to path environment variable.
-   - Confirm that Nuget is in your path by starting cmd.exe and write nuget. you should see the command options.
+   - Ensure that NuGet is in the path. Copy the nuget.exe file to preferred location (I use c:/Program Files/Nuget/Nuget.exe). Add it to path environment variable.
+   - Confirm that NuGet is in your path by starting cmd.exe and write *nuget*. you should see the command options.
 
 1. **Generate deployment scripts locally**
     - Open the "Microsoft Azure Command Prompt"
