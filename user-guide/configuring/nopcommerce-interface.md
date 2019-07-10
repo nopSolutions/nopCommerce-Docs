@@ -19,9 +19,9 @@ The dashboard has following sections:
 
 The dashboard sections are easily collapsed by clicking ![item](_static/nopcommerce-interface/item.png) item.
 
-Common nopCommerce page elements include:
+## Common nopCommerce page elements
 
-**Sidebar**
+### Sidebar
 
 ![Sidebar](_static/nopcommerce-interface/Sidebar.png)
 
@@ -29,21 +29,23 @@ The sidebar is placed on the left of each page in the administration area. It al
 
 The sidebar can be easily collapsed by clicking the “hamburger” icon next to the logo ![dashboard2](_static/nopcommerce-interface/dashboard2.png)
 
-**Search field**
+### Search field
 
 ![dashboard3](_static/nopcommerce-interface/dashboard3.png)
 
 On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line auto-suggests the options, proceed directly to the required one.
 
-**System menu**
+### System menu
 
 ![dashboard4](_static/nopcommerce-interface/dashboard4.png)
 
 This part of the interface shows the name of a logged-in user, logout button, and a small menu from which a user can select to clear cache or restart application.
 
-##### Basic and Advanced models
+## Basic and Advanced models
 
-On some pages in the administration area you will see the following switch: ![dashboard5](_static/nopcommerce-interface/dashboard5.png)
+On some pages in the administration area you will see the following switch:
+
+![dashboard5](_static/nopcommerce-interface/dashboard5.png)
 
 This two-position Basic-Advanced switch allows you to switch between page display modes.
 
