@@ -15,13 +15,11 @@ This chapter describes how to upgrade nopCommerce to the [latest](https://www.no
 1. Upload the new site files (get the latest version [here](https://www.nopcommerce.com/downloads.aspx)). As you deploy, make sure that the target **App_Data\Settings.txt** and **App_Data\InstalledPlugins.txt** files aren't overwritten, so that the production site continues to point to the production database.
 1. Ensure that everything is OK
 
-> [!Note]
+> [!NOTE]
 > As you deploy, make sure that the target Settings.txt and InstalledPlugins.txt files aren't overwritten, so that the production site continues to point to the production database.
-
-> [!Note]
+>
 > If you stored your pictures on the file system, then also backup them (\wwwroot\Images\) and copy back after the upgrade.
-
-> [!Note]
+>
 > **(upgrading from 1.X to 2.X):**  If you want to upgrade from a version 1.90 to the latest version, you would need to install 2.00 first (over the existing database), run the 1.90 to 2.00 migration SQL script, and then upgrade to 2.10, 2.20, 2.30, etc
 
 ## Troubleshooting

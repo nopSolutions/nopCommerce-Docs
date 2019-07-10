@@ -73,10 +73,10 @@
                 - name: Currencies
                   uid: user-guide/configuring/settingup/payments/currencies
             - name: Setting up Tax
-              uid: user-guide/configuring/settingup/taxes/index            
+              uid: user-guide/configuring/setting-up/taxes/index            
               items:
                 - name: Tax Settings
-                  uid: user-guide/configuring/settingup/taxes/tax-settings
+                  uid: user-guide/configuring/setting-up/taxes/tax-settings
                 - name: Tax
                   uid: user-guide/configuring/settingup/taxes/tax/index
                   items:
@@ -130,7 +130,7 @@
                     - name: Vendor settings
                       uid: user-guide/configuring/settingup/customers/vendors/settings
             - name: All Settings (advanced)
-              uid: user-guide/configuring/settingup/all-settings
+              uid: user-guide/configuring/setting-up/all-settings
         - name: System Administration
           uid: user-guide/configuring/system/index          
           items:
@@ -277,7 +277,7 @@
             - name: Affiliates
               uid: user-guide/marketing/promotional/affiliates
             - name: Cross-sells and Related products
-              uid: user-guide/marketing/promotional/crosssells-related-products
+              uid: user-guide/marketing/promotional/cross-sells-related-products
             - name: Tier prices
               uid: user-guide/marketing/promotional/tier-prices
         - name: Content Management

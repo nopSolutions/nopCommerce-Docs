@@ -96,18 +96,18 @@ On the **Customer form fields** panel, define the whether the following form fie
 ![customerformfields](_static/customer-settings/customersettings5.png)
 
 * **‘Gender’ enabled**
-* **‘Date of Birth’enabled.** When enabled, you can also decide whether this field should be required and enter a minimum allowed age (for example, to ensure that a customer is above 18)
-* **‘Company’enabled.** When enabled, you can also decide whether this field should be required.
+* **‘Date of Birth’ enabled.** When enabled, you can also decide whether this field should be required and enter a minimum allowed age (for example, to ensure that a customer is above 18)
+* **‘Company’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘Street address’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘Street address 2’ enabled**, if the second street address is enabled. When enabled, you can also decide whether this field should be required.
-* **‘Zip/postal code’enabled**. When enabled, you can also decide whether this field should be required.
+* **‘Zip/postal code’ enabled**. When enabled, you can also decide whether this field should be required.
 * **‘City’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘Country’ enabled.** When enabled, you can also decide whether this field should be required.
-* **‘State/province’enabled.** When enabled, you can also decide whether this field should be required. Note: This field is visible only when the Country enabled checkbox is ticked.
-* **‘Phone number’enabled.** When enabled, you can also decide whether this field should be required.
-* **‘Fax number’enabled.** When enabled, you can also decide whether this field should be required.
+* **‘State/province’ enabled.** When enabled, you can also decide whether this field should be required. Note: This field is visible only when the Country enabled checkbox is ticked.
+* **‘Phone number’ enabled.** When enabled, you can also decide whether this field should be required.
+* **‘Fax number’ enabled.** When enabled, you can also decide whether this field should be required.
 * Tick the **Accept Privacy policy enabled** checkbox, to request customers to accept the privacy policy during the registration.
-* Tick the **‘Newsletter’enabled** checkbox to offer customers a newsletter subscription during the registration. When the ‘Newsletter’ enabled checkbox is selected, the Newsletter ticked by default checkbox is displayed, which automatically sets the 'Newsletter' checkbox on the registration page as ticked.
+* Tick the **‘Newsletter’ enabled** checkbox to offer customers a newsletter subscription during the registration. When the ‘Newsletter’ enabled checkbox is selected, the Newsletter ticked by default checkbox is displayed, which automatically sets the 'Newsletter' checkbox on the registration page as ticked.
 
 > [!NOTE]
 > If the default form fields are not enough for your requirements, you can manage additional customer attributes using this table. Customer attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout Attributes](xref:user-guide/running/product-management/attributes/checkout-attributes).

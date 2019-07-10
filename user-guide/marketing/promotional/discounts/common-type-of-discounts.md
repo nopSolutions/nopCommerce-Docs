@@ -7,7 +7,7 @@ uid: user-guide/marketing/promotional/discounts/common-type-of-discounts
 
 ## Black Friday sale
 
-Black Friday is always the day after Thanksgiving. It'quite common discount campaign, almost every online store has a Black Friday sale.
+Black Friday is always the day after Thanksgiving. It's quite common discount campaign, almost every online store has a Black Friday sale.
 
 ![black-friday](_static/common-discounts/Black-friday.png)
 
@@ -39,4 +39,4 @@ You can set up requirements to the product quantity in Requirements tab. Add req
 
 ![buy-1-get-discount](_static/common-discounts/buy _2.png)
 
- You can use this scenario to set up other popular discount buy one and get the second for free if you set up a 100% discount.
+You can use this scenario to set up other popular discount buy one and get the second for free if you set up a 100% discount.

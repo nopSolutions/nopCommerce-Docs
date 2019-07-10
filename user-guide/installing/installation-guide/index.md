@@ -24,7 +24,7 @@ With each of these options, excluding the upgrade script, you can deploy nopComm
 
 To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virtual directory (or site root), and then view the site using a browser.
 
-If you are're using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above
+If you are using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above
 
 > [!TIP]
 > For more information on IIS, visit [this page.](xref:user-guide/installing/installation-guide/installing-IIS)
@@ -44,7 +44,13 @@ If you're using **nopCommerce 2.00-3.10**, then please note that publishing thes
 - Run the Prepare.bat file to build the project in release mode and move the plugins to the correct directory.
 - Run the Deploy.bat file to perform the same procedure as the Prepare.bat file, but also move all the websites and files to the \Deployable\Nop_{Version} directory.
 - Select all the files in \Deployable\Nop_{Version} directory and upload them to your web server.
-- Note for HP (Hewlett Packard) users: HP machines come preloaded with a registry key that will interfere when running the deploy batch file. If you have an HP laptop and get the following error: "the OutputPath property is not set for project Nop.Web.csproj", then using regedit.exe navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment. Delete the complete key (Key and value) Platform (your value is MCD). Restart your computer.
+- Note for HP (Hewlett Packard) users: HP machines come preloaded with a registry key that will interfere when running the deploy batch file. If you have an HP laptop and get the following error: "the OutputPath property is not set for project Nop.Web.csproj", then using regedit.exe navigate to
+
+  ```sh
+  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SessionManager\Environment
+  ```
+
+  Delete the complete key (Key and value) Platform (your value is MCD). Restart your computer.
 
 ## Installation process
 

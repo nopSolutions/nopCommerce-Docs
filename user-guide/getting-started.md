@@ -60,7 +60,7 @@ The Reward Points functionality in nopCommerce allows customers to earn points f
 
 ### Cross-marketing
 
-In nopCommerce, you can offer your customers [additional products](xref:user-guide/marketing/promotional/crosssells-related-products) they may like based on their shopping behavior. It is also a good opportunity for you to up-sell some products.
+In nopCommerce, you can offer your customers [additional products](xref:user-guide/marketing/promotional/cross-sells-related-products) they may like based on their shopping behavior. It is also a good opportunity for you to up-sell some products.
 
 ### Email campaigns
 

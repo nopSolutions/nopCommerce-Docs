@@ -40,7 +40,7 @@ Click **Update**.
 
 The **shipping by weight and by total** option allows setting different shipping fees based on a shipment weight and total. The ability to charge different fees depending on the weight and total of the shipment helps to keep the company's shipping costs down when heavy items are shipped, yet offer reasonable shipping costs to customers who purchase light products.
 
-Use formula `[additional fixed cost] + ([order total weight] - [lower weight limit]) * [rate per weight unit] + [order subtotal] * [charge percentage]` to calculate the fees, where:
+Use formula **[additional fixed cost] + ([order total weight] - [lower weight limit]) &times; [rate per weight unit] + [order subtotal] &times; [charge percentage]** to calculate the fees, where:
 
 * **additional fixed cost** - is the cost of shipment in case the weight is under a certain level (lower weight limit)
 * **rate per weight unit** - is the cost of each weight unit above the lower weight limit
@@ -88,10 +88,10 @@ To add a new shipping rule, click **Add record**. The Add new record window is d
 * Create your weight configuration by filling **Order weight** from and Order weight to first. If the customer’s shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
 * Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage of subtotal**.
 
-Click **Save**.
-
 > [!NOTE]
 > make sure that you settings "**Configuration → Settings → Shipping Settings → Consider associated products dimensions and weigh**" is true.
+
+Click **Save**.
 
 > [!NOTE]
 > you can add/remove shipping methods in the Shipping methods window, accessed by clicking ![button](_static/index/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/index/manual-shipping-restrictions.png)

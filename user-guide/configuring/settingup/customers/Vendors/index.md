@@ -87,7 +87,7 @@ On the **SEO** panel, define the following SEO parameters:
     </head>
     ```
 
-* **Search engine friendly page name** - the name of the page used by search engines. If you enter nothing then the vendor page URL is formed using the vendor name. If you enter custom-seo-page-name, then the following custom the URL will be used: [http://www.yourStore.com/custom-seo-page-name](http://www.yourStore.com/custom-seo-page-name)
+* **Search engine friendly page name** - the name of the page used by search engines. If you enter nothing then the vendor page URL is formed using the vendor name. If you enter custom-seo-page-name, then the following custom the URL will be used: `http://www.yourStore.com/custom-seo-page-name`
 
 ## Assigning a Vendor to a Customer Record
 

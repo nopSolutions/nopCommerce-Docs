@@ -33,7 +33,7 @@ Define the **following details for news item**:
 
 While editing existing news or after clicking **Save and Continue Edit** button for a new one, you can click on **Preview** button to see how the news will appear on the site.
 
-## etting up SEO for news items
+## Setting up SEO for news items
 
 To set up SEO for the blog post go to **SEO tab**
 
@@ -42,7 +42,7 @@ To set up SEO for the blog post go to **SEO tab**
 - Enter **Meta keywords** to be added to a news item header
 - Enter **Meta description** to be added to a news item header
 - Override the page title in the **Meta title field** (the default is the title of the blog post)
-- Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL <http://yourStore.com/the-best-news>. Leave this field empty to generate it automatically based on the title of the news item.
+- Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the news item.
 
 ## Managing news comments
 

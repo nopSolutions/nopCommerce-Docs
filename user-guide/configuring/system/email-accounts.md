@@ -21,7 +21,7 @@ Click **Add new**. The Add Email Account window is displayed:
 
 Define the following email account information:
 
-* In the **Email Address** field enter the from email address for all outgoing emails of your store. Example, sales@yourstore.com.
+* In the **Email Address** field enter the from email address for all outgoing emails of your store. Example, `sales@yourstore.com`.
 * In the **Email Display** Name field, enter the displayed name for outgoing emails of your store. Example, Your Store Sales Department.
 * In the **Host** field, enter the host name of IP address of your email server.
 * In the **Port** field, enter the SMTP port of your email server.

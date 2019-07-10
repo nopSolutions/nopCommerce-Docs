@@ -63,7 +63,7 @@ In the **SEO panel**, define the following **details**:
 
 ````HTML
 <head>
-<title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
+    <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
 </head>
 ````
 

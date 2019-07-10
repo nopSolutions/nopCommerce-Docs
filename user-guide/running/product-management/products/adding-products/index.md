@@ -111,7 +111,7 @@ Define whether the product **Requires other product**. In this case select the R
 
 ## Related products and Cross-sells
 
-Set up Related products and Cross-sells as described [here](xref:user-guide/marketing/promotional/crosssells-related-products)
+Set up Related products and Cross-sells as described [here](xref:user-guide/marketing/promotional/cross-sells-related-products)
 
 ## Product pictures
 
