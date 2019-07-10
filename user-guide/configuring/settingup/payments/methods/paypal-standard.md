@@ -33,7 +33,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 1. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
 
     ![PDTtoken](_static/paypal-standard/PDTtoken.png)
-1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  -> Payment methods,** in the **PayPal Standard** line click on **Configuration**
+1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods,** in the **PayPal Standard** line click on **Configuration**
 
 ![nopconfig](_static/paypal-standard/nopConfigPP.png)
 

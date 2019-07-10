@@ -81,7 +81,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 ## Handling requests. Controllers, models and views
 
-Now you can see the plugin by going to **Admin area > Configuration > Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
+Now you can see the plugin by going to **Admin area → Configuration → Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
 
 What we need to do now is create a controller, a model, and a view.
 
@@ -113,7 +113,7 @@ return $"{_webHelper.GetStoreLocation()}Admin/ControllerName/ActionName";
 
 Where ControllerName is a name of your controller and ActionName is a name of action (usually it's "Configure").
 
-Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin > Configuration > Plugins.
+Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin → Configuration → Plugins.
 
 > [!TIP]
 > The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.

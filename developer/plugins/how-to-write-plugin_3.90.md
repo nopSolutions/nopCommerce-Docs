@@ -67,7 +67,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 ## Handling requests. Controllers, models and views
 
-Now you can see the plugin by going to **Admin area > Configuration > Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
+Now you can see the plugin by going to **Admin area → Configuration → Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
 
 What we need to do now is create a controller, a model, and a view.
 
@@ -136,7 +136,7 @@ Now we need to register appropriate plugin routes. ASP.NET routing is responsibl
     }
     ```
 
-    Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin > Configuration > Plugins.
+    Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin → Configuration → Plugins.
 
 ## Handling "Install" and "Uninstall" methods
 

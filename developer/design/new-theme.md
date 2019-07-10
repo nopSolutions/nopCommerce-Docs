@@ -14,11 +14,11 @@ Open your nopCommerce solution or website (web version) in Visual Studio - Go to
 
     ![step-1](_static/new-theme/new-theme-step-1.jpg)
 
-1. Now, Right click on the theme > select COPY
+1. Now, Right click on the theme → select COPY
 
     ![step-2](_static/new-theme/new-theme-step-2.jpg)
 
-1. Now select "Theme" folder > right click > PASTE
+1. Now select "Theme" folder → right click → PASTE
 
     ![step-3](_static/new-theme/new-theme-step-3.jpg)
 
@@ -30,7 +30,7 @@ Open your nopCommerce solution or website (web version) in Visual Studio - Go to
 
     ![step-5](_static/new-theme/new-theme-step-5.jpg)
 
-1. Now inside your New theme folder "MyFirstTheme" > open "theme.config"
+1. Now inside your New theme folder "MyFirstTheme" → open "theme.config"
 
     ![step-6](_static/new-theme/new-theme-step-6.jpg)
 
@@ -38,8 +38,8 @@ Open your nopCommerce solution or website (web version) in Visual Studio - Go to
 
     ![step-7](_static/new-theme/new-theme-step-7.jpg)
 
-1. Now, inside your new theme folder "MyFirstTheme" > Content > Images add your new images in "images” directory and start updating / customizing your style.css according to your requirements.
+1. Now, inside your new theme folder "MyFirstTheme" → Content → Images add your new images in "images” directory and start updating / customizing your style.css according to your requirements.
 
-    If you would like to test the changes > Go to Admin section > Apply your new theme > Save change and preview your public store.
+    If you would like to test the changes → Go to Admin section → Apply your new theme → Save change and preview your public store.
 
     ![step-8](_static/new-theme/new-theme-step-8.jpg)

@@ -18,7 +18,7 @@ For versions 4.00 and above to find out what went wrong you need to turn off the
 1. Replace it with "DisplayFullErrorStack": true
 1. Restart the site
 
-Also, check Admin > System > Log for any errors.
+Also, check Admin → System → Log for any errors.
 
 Also, you can enable "stdoutLogEnabled" (set to "true") in your web.config. Then you'll see a detailed error at the \logs\ directory
 
@@ -27,11 +27,11 @@ For versions before 4.00 to find out what went wrong you need to turn off the cu
 1. Open web.config file
 2. Find out the following line `<customErrors defaultRedirect="errorpage.htm" mode="RemoteOnly">`
 3. Replace it with `<customErrors defaultRedirect="errorpage.htm" mode="Off">`
-Also, check Admin > System > Log for any errors.
+Also, check Admin → System → Log for any errors.
 
 ## Why does my home page take so long to load?
 
-Large ASP.NET apps take a while to initially load into memory.  Once loaded, the ASP app pool will unload your app if it goes idle (20 minutes by default).  Check that the KeepAlive scheduled task is running (Admin > System > Scheduled Tasks) and consider using a 3rd party monitor, and keep alive. Alternatively, to see what is causing delay in loading pages you can enable Mini-Profiler available in the nopCommerce. To enable the same, You can go into the admin area > Configuration > Advanced Setting, and search for the Setting with name "DisplayMiniProfilerInPublicStore". Enable this setting. This will turn on a Mini Profiler, which will display time it took to generate page with information on which operation is taking what time.
+Large ASP.NET apps take a while to initially load into memory.  Once loaded, the ASP app pool will unload your app if it goes idle (20 minutes by default).  Check that the KeepAlive scheduled task is running (Admin → System → Scheduled Tasks) and consider using a 3rd party monitor, and keep alive. Alternatively, to see what is causing delay in loading pages you can enable Mini-Profiler available in the nopCommerce. To enable the same, You can go into the admin area → Configuration → Advanced Setting, and search for the Setting with name "DisplayMiniProfilerInPublicStore". Enable this setting. This will turn on a Mini Profiler, which will display time it took to generate page with information on which operation is taking what time.
 
 ## Users are logged out frequently
 
@@ -43,7 +43,7 @@ Please see [Upgrading nopCommerce](xref:user-guide/installing/upgrading)
 
 ## How to change texts strings in the store
 
-Go to admin area > configuration > languages > "view strings resources" [of your language], with the help of filters (funnel tools) you can find and edit the texts whose value you want to change.
+Go to admin area → configuration → languages → "view strings resources" [of your language], with the help of filters (funnel tools) you can find and edit the texts whose value you want to change.
 
 ## Getting "A generic error occurred in GDI+" error
 
@@ -92,7 +92,7 @@ where Id = 1
 
 Change to false...
 
-Admin Site > Configuration > Settings > All Settings >> commonsettings.log404errors
+Admin Site → Configuration → Settings → All Settings →  commonsettings.log404errors
 
 ## What are the best practices to apply change sets?
 

@@ -17,7 +17,7 @@ To configure **Square** plugin as a payment method follow these steps:
 1. Create business location
 
     * Sign in to Square merchant portal.
-    * In the Square merchant admin go to **Account & Settings -> Locations** tab.
+    * In the Square merchant admin go to **Account & Settings → Locations** tab.
 
         ![SquareSignUp3](_static/square/squareSignUp3.png)
     * Create new location. Your merchant account must have at least one location with enabled credit card processing. Please refer to the Square customer support if you have any questions about how to set this up.

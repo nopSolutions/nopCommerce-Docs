@@ -9,7 +9,7 @@ If customers have some shippable products, they can choose a shipping option dur
 
 ## Controllers, views, models
 
-Add a controller and an appropriate **Configure** action method and a view. These will define how a store owner sees configuration options in admin panel (System > Configuration > Shipping > Shipping providers). This article does not explain how to configure plugins, but you can find more info about it [here](xref:user-guide/configuring/settingup/shipping/providers/index).
+Add a controller and an appropriate **Configure** action method and a view. These will define how a store owner sees configuration options in admin panel (System → Configuration → Shipping → Shipping providers). This article does not explain how to configure plugins, but you can find more info about it [here](xref:user-guide/configuring/settingup/shipping/providers/index).
 
 ![shipping-plugin_1](_static/shippng-plugin/shippng-plugin_1.png)
 

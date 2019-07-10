@@ -5,7 +5,7 @@ uid: user-guide/marketing/content/forums/settings
 ---
 # Forum settings
 
-To access forum settings go to **Configuration -> Settings -> Forum Settings**. This page is available in 2 modes: **advanced** and **basic**.
+To access forum settings go to **Configuration → Settings → Forum Settings**. This page is available in 2 modes: **advanced** and **basic**.
 
 ![p1](_static/settings/Setting-Forum1.png)
 

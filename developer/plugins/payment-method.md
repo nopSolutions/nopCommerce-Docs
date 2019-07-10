@@ -15,7 +15,7 @@ First thing you need to do is create a controller. This controller is responsibl
 
 1. When implementing a new payment method, this controller should be derived from a special **BasePaymentController** abstract class.
 
-1. Then implement **Configure** action methods used for plugin configuration (by a store owner in admin area). This method and an appropriate view will define how a store owner sees configuration options in admin panel (System > Configuration > Payment methods).
+1. Then implement **Configure** action methods used for plugin configuration (by a store owner in admin area). This method and an appropriate view will define how a store owner sees configuration options in admin panel (System → Configuration → Payment methods).
 
 ## Public view component.GetPublicViewComponent
 
