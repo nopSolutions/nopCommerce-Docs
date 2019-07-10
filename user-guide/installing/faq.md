@@ -13,7 +13,7 @@ uid: user-guide/installing/faq
 
 For versions 4.00 and above to find out what went wrong you need to turn off the custom errors mode.
 
-1. Open *appsettings.json* file
+1. Open `appsettings.json` file
 1. Find out the following line "DisplayFullErrorStack": false,
 1. Replace it with "DisplayFullErrorStack": true
 1. Restart the site

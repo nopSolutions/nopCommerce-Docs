@@ -49,7 +49,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     >
     > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it’s not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
 
-1. The next step is creating a plugin.json file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For example, PayPal Standard payment plugin has the following plugin.json file:
+1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For example, PayPal Standard payment plugin has the following `plugin.json` file:
 
     ```json
     {
@@ -156,7 +156,7 @@ public override void Install()
 ```
 
 > [!TIP]
-> Tip: The list of installed plugins is located in \App_Data\Plugins.json. The list is created during installation.
+> Tip: The list of installed plugins is located in `\App_Data\Plugins.json`. The list is created during installation.
 
 ## Routes
 
@@ -178,7 +178,7 @@ public partial class RouteProvider : IRouteProvider
 
 ## Upgrading nopCommerce may break plugins
 
-Some plugins may become outdated and no longer work with the newer version of nopCommerce. If you have issues after upgrading to the newer version, delete the plugin and visit the official nopCommerce website to see if a newer version is available. Many plugin authors will upgrade their plugins to accommodate the newer version, however, some will not and their plugin will become obsolete with the improvements in nopCommerce. But in most cases, you can simply open an appropriate plugin.json file and update **SupportedVersions** field.
+Some plugins may become outdated and no longer work with the newer version of nopCommerce. If you have issues after upgrading to the newer version, delete the plugin and visit the official nopCommerce website to see if a newer version is available. Many plugin authors will upgrade their plugins to accommodate the newer version, however, some will not and their plugin will become obsolete with the improvements in nopCommerce. But in most cases, you can simply open an appropriate `plugin.json` file and update **SupportedVersions** field.
 
 ## Conclusion
 

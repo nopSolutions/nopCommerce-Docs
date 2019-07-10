@@ -95,7 +95,7 @@ On a new Azure VM, default security rules prevent executables from being downloa
 
 ![azure-publish_9](_static/azure-publish/azure-publish_9.png)
 
-IIS is used to host ASP.NET Core web applications, its role will be reduced to a proxy server. Hosting of ASP.NET Core applications on IIS occurs using the native AspNetCoreModule, which is configured to redirect requests to the Kestrel web server. This module controls the start of the external process dotnet.exe, within which the application is hosted, and forwards all requests from IIS to this host process.
+IIS is used to host ASP.NET Core web applications, its role will be reduced to a proxy server. Hosting of ASP.NET Core applications on IIS occurs using the native AspNetCoreModule, which is configured to redirect requests to the Kestrel web server. This module controls the start of the external process `dotnet.exe`, within which the application is hosted, and forwards all requests from IIS to this host process.
 
 After installing this package, run the **iisreset** command on the command line or manually restart IIS so that the server applies the changes.
 

@@ -22,11 +22,11 @@ Create a new class library project "Nop.Plugin.Other.ProductViewTracker".
 
 ![plugin-with-data-access_1](_static/plugin-with-data-access/plugin-with-data-access_1.jpg)
 
-Add the following folders and plugin.json file.
+Add the following folders and `plugin.json` file.
 
 ![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
 
-You can view the plugin.json file in the image below.
+You can view the `plugin.json` file in the image below.
 
 ![plugin-with-data-access_3](_static/plugin-with-data-access/plugin-with-data-access_3.jpg)
 
