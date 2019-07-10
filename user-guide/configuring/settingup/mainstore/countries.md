@@ -12,9 +12,9 @@ To define the country setting go to **Configuration → Countries.**
 ![countries](_static/countries/countries1_1.png)
 
 > [!TIP]
-> By default, all the countries are uploaded.You can Publish and Unpublish countries by selecting them and clicking the corresponding button.
+> By default, all the countries are uploaded. You can Publish and Unpublish countries by selecting them and clicking the corresponding button.
 
-##### Adding new countries
+## Adding new countries
 
 You can **Export** a list of states of all the countries, which were added to the system, or Import the additional.
 
@@ -34,7 +34,7 @@ On the **country info** panel define the **following country settings:**
 * Enter **Two letter ISO** code of this country.
 * Enter **Three letter ISO** code of this country.
 * Enter **Numeric letter ISO** code of this country.
-* Select the **Subject to VAT** checkbox, to indicate customers in this country are charged EU VAT (the European Union Value Added Tax). 
+* Select the **Subject to VAT** checkbox, to indicate customers in this country are charged EU VAT (the European Union Value Added Tax).
 
 > [!NOTE]
 > This field is used only when the EU VAT option is enabled on the Tax Settings page (Configuration → Tax → Tax Settings).
@@ -43,16 +43,16 @@ On the **country info** panel define the **following country settings:**
 * Enter the **Display order** of this country. A value of 1 represents the top of the list.
 * Click **Save.**
 
-##### Adding new states and provinces
+## Adding new states and provinces
 
 On the **State and Provinces** panel, you can add states and provinces of the country.
 
 > [!TIP]
->  By default, the states of the USA are added.
+> By default, the states of the USA are added.
 
 ![addcountry2](_static/countries/addcountry2.png)
 
-Click the **Add new record** button to add a new state or province. 
+Click the **Add new record** button to add a new state or province.
 
 ![countries3](_static/countries/countries3.png)
 

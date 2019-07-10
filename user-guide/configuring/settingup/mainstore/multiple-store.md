@@ -3,7 +3,6 @@ title: Setting up Multiple-Store
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/multiple-store
 ---
-
 # Setting up Multiple-Store
 
 nopCommerce enables you to run more than one store using one interface from a single nopCommerce installation.
@@ -30,20 +29,20 @@ _____________________________________
 
 * Optional (sample): This step can be performed from the Plesk control panel below, as follows:
 
-    * When www.store2.com is redirected to www.store1.com, the web server for Plesk does not know how to display www.store2.com since it uses Name-Based Virtual Hosting. Therefore, you must create a domain alias for www.store2.com, as described below:
+  * When www.store2.com is redirected to www.store1.com, the web server for Plesk does not know how to display www.store2.com since it uses Name-Based Virtual Hosting. Therefore, you must create a domain alias for www.store2.com, as described below:
 
-    * Log in to the domain panel of www.store1.com, either directly or via the Open in Control Panel link from the server administration panel.
+  * Log in to the domain panel of www.store1.com, either directly or via the Open in Control Panel link from the server administration panel.
 
-    * From the Websites & Domains tab, select the Add New Domain Alias link near the bottom of the tab.
+  * From the Websites & Domains tab, select the Add New Domain Alias link near the bottom of the tab.
 
-    * Enter the full alias. For example - store2.com.
+  * Enter the full alias. For example - store2.com.
 
-    * Ensure the Web service option is selected.
+  * Ensure the Web service option is selected.
 
-    * The Mail service is optional. Check this option if you want emails from www.store2.com to be redirected in a similar way.
+  * The Mail service is optional. Check this option if you want emails from www.store2.com to be redirected in a similar way.
 
-    * Ensure the Synchronize DNS zone with the primary domain option is unchecked.
-    
+  * Ensure the Synchronize DNS zone with the primary domain option is unchecked.
+
     Once the installation and technical setup are done, you can manage your stores from the administration area. Go to **Configuration → Stores.** The Stores window is displayed:
 
 ![store window](_static/multiple-store/36381788.png)
@@ -73,7 +72,7 @@ The two stores have now been configured using a single nopCommerce installation,
 > [!NOTE]
 > The Multi-store solution (distinction of stores by HTTP_HOST) does not work for sites in virtual directories on the same domain.
 
-For example, you cannot have one store on http://www.site.com/store1 and the second store on http://www.site.com/store2, since the HTTP_HOST value for both of these sites is the same (www.site.com).
+For example, you cannot have one store on <http://www.site.com/store1> and the second store on <http://www.site.com/store2>, since the HTTP_HOST value for both of these sites is the same (www.site.com).
 
 Once the stores have been setup and configured, you can define your entities for each store. This is done in the Stores section of the details pages for each of the following: [Products](xref:user-guide/running/product-management/products/index), [Categories](xref:user-guide/running/product-management/categories), [Manufacturers](xref:user-guide/running/product-management/manufacturers), [Languages](xref:user-guide/configuring/settingup/mainstore/languages), [Currencies](xref:user-guide/configuring/settingup/payments/currencies), [Message templates](xref:user-guide/marketing/content/message-templates), [Blogs](xref:user-guide/marketing/content/blog/index), [News](xref:user-guide/marketing/content/news/index), [Topics](xref:user-guide/marketing/content/topics).
 
