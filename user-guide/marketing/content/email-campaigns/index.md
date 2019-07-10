@@ -11,7 +11,7 @@ Use your subscribers list to create email campaigns to easily and quickly reach 
 
 There are several examples of email marketing campaigns you can use for your store: start with a welcome email that thanks for the subscription,  regularly send out announcements,  news regarding your company, coupons for future purchasing and much more.
 
-## Learn more in following chapters:
+## Learn more in following chapters
 
 - **[All campaigns](xref:user-guide/marketing/content/email-campaigns/all-campaigns)**
 - **[Newsletter subscribers](xref:user-guide/marketing/content/email-campaigns/newsletter-subscribers)**

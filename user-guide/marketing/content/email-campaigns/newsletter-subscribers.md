@@ -21,6 +21,7 @@ To Export/Import Newsletter subscribers go to **Promotions  → Newsletter Subsc
 ## Searching for the subscribers
 
 On the **Newsletter subscribers page** you can find certain subscribers using following fields for **search:**
+
 - Specify **Start date** and **End date** for the search
 - Enter the **email** of the subscriber to find, or leave this field empty and click Search to load all the newsletter subscribers registered in the system
 - From the **Active** dropdown list, choose between active and inactive subscribers

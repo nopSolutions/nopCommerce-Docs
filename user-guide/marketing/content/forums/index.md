@@ -20,21 +20,21 @@ Click the **Add New Forum Group** button.
 
 ![Add New Forum Group](_static/index/forums2.png)
 
- - Define a new forum group **Name**
- - In the **Display orde**r field, enter the display order of the forum group. A value of 1 represents the top of the list
- - Click **Save**
- 
+- Define a new forum group **Name**
+- In the **Display order** field, enter the display order of the forum group. A value of 1 represents the top of the list
+- Click **Save**
+
 ## Adding new forum
 
 ![Adding new forum](_static/index/forums3.png)
 
- - From the **Forum group** dropdown list, select the required forum group
- - Enter the **Name** of the new forum
- - Enter a **Description** for the new forum
- - Select the **Display order** for the forum group. A value of 1 represents the top of the list
- - Click **Save**
+- From the **Forum group** dropdown list, select the required forum group
+- Enter the **Name** of the new forum
+- Enter a **Description** for the new forum
+- Select the **Display order** for the forum group. A value of 1 represents the top of the list
+- Click **Save**
 
-To view an example of how forums should work go to http://www.nopcommerce.com/boards/
+To view an example of how forums should work go to <http://www.nopcommerce.com/boards/>
 
 ![nopCommerce forums](_static/index/forums4.png)
 

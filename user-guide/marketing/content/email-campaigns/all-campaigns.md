@@ -26,7 +26,7 @@ To create a new campaign go to **Promotions → Campaigns → Add new.**
 
 ![edit-campaign](_static/all-campaigns/Campaign-Create.png)
 
-## Define the campaign details:
+## Define the campaign details
 
 - In the **Allowed message tokens field**, enter the allowed list of message tokens you can use in your campaign email. You can see all of them if choose Show
 
