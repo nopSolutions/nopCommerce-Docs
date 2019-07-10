@@ -1,0 +1,9 @@
+{
+    "default": true,
+
+    "line-length": false,
+    "single-title": true,
+    "MD025": {
+      "front_matter_title": ""
+    }
+}
