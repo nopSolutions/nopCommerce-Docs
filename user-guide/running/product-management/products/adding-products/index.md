@@ -9,14 +9,14 @@ Setting up products in the best way possible is highly important for a store. Ma
 
 To add a new product, go to **Catalog → Products**. Click **Add new** button in the right top corner.
 
-> [!NOTE] 
+> [!NOTE]
 > you can import a product from an external file by clicking Import from Excel. Once you have a list of products, you can export it to an external file for backup purposes, by clicking Export to XML(all) or Export to Excel (all). You can export selected products by clicking Export to XML (selected) and Export to Excel (selected). Additionally, it is possible to Download catalog as PDF to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the Delete (selected) button.
 
-![](_static/index/products_page.png)
+![products_page](_static/index/products_page.png)
 
 Adding New Product page are available in two modes: **advanced** and **basic** (in Advanced mode by default). You can switch to the Basic mode and select the required fields in Settings.
 
-![](_static/index/add_a_new_product.png)
+![add_a_new_product](_static/index/add_a_new_product.png)
 
 ## General information
 
@@ -31,7 +31,7 @@ Start by filling up General Information on the **Product info panel**:
 - Tick **Published**, to make the product visible in your store.
 - Enter **Product Tags**, the keywords for product identification. Enter tags separating them by comma. The more products are associated with a particular tag, the larger it will look in the Popular Tags area, displayed in the sidebar of the Catalog page
 
-    ![](_static/index/popular_tags.png)
+    ![popular_tags](_static/index/popular_tags.png)
 - Enter **GTIN** (global trade item number). These identifiers include UPC (in North America), EAN (in Europe), JAN (in Japan), and ISBN (for Books).
 - Enter **Manufacturer part number** - a part number provided by a manufacturer for the product.
 - **Show on homepage**. If this checkbox is selected, the store owner can also specify the Display Order.
@@ -55,7 +55,7 @@ In the **Prices** section define:
 
 - **Price**, in a predefined currency. Note that you can change the store currency in **Configuration → Currencies**.
 - **Old price**. If it is larger than zero it becomes visible in the public store and is displayed beside the new price for comparison purposes.
-- **Product cost**, the sum of all costs associated with the production of the product or service. This cost is not displayed to customers. 
+- **Product cost**, the sum of all costs associated with the production of the product or service. This cost is not displayed to customers.
 - To **Disable buy button**. This can be useful for products “upon request”.
 - To **Disable wishlist button**.
 - **Available for pre-order** if the product is not in the store yet, but you want the customers to be able to order it. The **Pre-ordered** button will be displayed to replace the standard **Add to cart** button. When this option is selected, the **Pre-order availability start date** field is displayed. Enter the availability start date of the product in UTC. The Pre-order button will be changed to Add to cart when this date is reached.
@@ -101,13 +101,13 @@ In the Mappings section define:
 
 Choose customer roles, who will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. Note that in order to use this functionality you have to disable the following setting: **Configuration → Catalog Settings → Ignore ACL rules** (sitewide).
 
-![](_static/index/access_control_list.png)
+![access_control_list](_static/index/access_control_list.png)
 
 ## Require other products
 
 Define whether the product **Requires other product**. In this case select the Required product IDs entering them by comma, ensure that there are no circular references, e.g. A requires B, B requires A. Chose to **Automatically add these products to the cart** if required.
 
-![](_static/index/require_other_products.png)
+![require_other_products](_static/index/require_other_products.png)
 
 ## Related products and Cross-sells
 
@@ -126,7 +126,7 @@ Go to **Pictures** tab on Edit product details page to add product pictures.
 
 On the **Product attributes** tab, add Product attributes. Learn more about product attributes and how to create them [here](xref:user-guide/running/product-management/attributes/product-attributes). Once you have a list of the attributes created, click **Add new record** on the Attributes tab. The grid is expanded, as follows:
 
-![](_static/index/product_attributes2.png)
+![product_attributes2](_static/index/product_attributes2.png)
 
 - From the **Attribute** dropdown list select an attribute.
 - Fill the **Text Prompted** field, if you want some text to be shown in front of this attribute in a public store.
@@ -142,11 +142,12 @@ On the **Product attributes** tab, add Product attributes. Learn more about prod
 
 > [!NOTE]
 > There are two Attribute value types, Simple and Associated to product. Choose the Associated to product type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use Bundled products functionality allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes. (“Customer enters quantity” option).
+
 - If required, define Conditions for this attribute, i.e. this attribute becomes visible when other attributes have certain values.
 
 On the **Attribute Combinations** tab, define different attribute combinations and the following information for each of them:
 
-![](_static/index/product_attributes3.png)
+![product_attributes3](_static/index/product_attributes3.png)
 
 - **Stock quantity**
 - **Allow out of stock**, if you want your customers to be able to purchase products with certain attributes, when out of stock
@@ -158,7 +159,7 @@ On the **Specification Attributes tab**, add Specification attributes. Learn mor
 
  To add a new attribute, fill the **Add a new product specification attribute** section:
 
-![](_static/index/add_a_new_specification_attribute2.png)
+![add_a_new_specification_attribute2](_static/index/add_a_new_specification_attribute2.png)
 
 - Select an **Attribute type** from a drop down list.
 - Choose the **Attribute** from a list of pre-created attributes.
@@ -172,7 +173,7 @@ On the **Specification Attributes tab**, add Specification attributes. Learn mor
 
 To view a list of orders in which the product was purchased, go to the **Purchased with orders** tab. Here you can check an order's status and click to view the order in details.
 
-![](_static/index/puchased_with_orders.png)
+![puchased_with_orders](_static/index/puchased_with_orders.png)
 
 ## SEO
 
@@ -181,7 +182,7 @@ Define the following SEO parameters for the product page:
 - **Meta keywords** - a brief and concise list of the most important themes (keywords and key phrases) related to the product. These words will be added to the product page header.
 - **Meta description** - a brief description of the product that will be added to the product page header.
 - **Meta title** - a title for the Web page.
-- **Search engine friendly page name** - a name of the page used by search engines. If you enter nothing then the product page URL is formed using the product name. If you enter custom-seo-page-name, then the following custom the URL will be used: http://www.yourStore.com/custom-seo-page-name.
+- **Search engine friendly page name** - a name of the page used by search engines. If you enter nothing then the product page URL is formed using the product name. If you enter custom-seo-page-name, then the following custom the URL will be used: http<span>://www.yourStor</span>e.c<span>om/custom-s</span>eo-page-name.
 
 Read more about SEO [here](xref:user-guide/marketing/content/seo).
 
@@ -189,7 +190,7 @@ Read more about SEO [here](xref:user-guide/marketing/content/seo).
 
 On this tab you can view all the product quantity changes, orders with the product.
 
-![](_static/index/stock_quantity_history.png)
+![stock_quantity_history](_static/index/stock_quantity_history.png)
 
 ## Related resources
 
