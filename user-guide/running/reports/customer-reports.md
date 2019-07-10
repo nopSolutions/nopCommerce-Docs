@@ -26,7 +26,7 @@ Enter one or several search criteria to compile a report:
 * **Start date** for the search
 * **End date** for the search
 * **OrderStatus** as All, Pending, Processing, Complete, Cancelled
-* **Payment Status** as All, Pending, Authorized, Paid, Refunded, Partially Refunded, Voided 
+* **Payment Status** as All, Pending, Authorized, Paid, Refunded, Partially Refunded, Voided
 * **hipping Status** as All, Shipping not Required, Not Yet Shipped, Partially shipped, Shipped, Delivered
 
 The third tab shows the number of **Registered customers** for a certain period. You can track the number of users registered within the last day, week, two weeks, month and year.
