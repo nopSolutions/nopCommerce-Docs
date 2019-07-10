@@ -7,9 +7,9 @@ uid: developer/plugins/plugin-with-data-access
 
 In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
 
- - [Developer tutorials](/developer/tutorials)
- - [Updating an existing entity. How to add a new property.](/developer/tutorials/update-existing-entity)
- - [How to write a plugin for nopCommerce 4.20](/developer/plugins/how-to-write-plugin_4.20)
+- [Developer tutorials](/developer/tutorials)
+- [Updating an existing entity. How to add a new property.](/developer/tutorials/update-existing-entity)
+- [How to write a plugin for nopCommerce 4.20](/developer/plugins/how-to-write-plugin_4.20)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
@@ -90,33 +90,33 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
     {
         public ProductViewTrackerRecordObjectContext(DbContextOptions<ProductViewTrackerRecordObjectContext> options) : base(nameOrConnectionString)
         {
-        }       
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ProductViewTrackerRecordMap());
             base.OnModelCreating(modelBuilder);
-        }          
-         
+        }
+
         public new virtual DbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity
         {
             return base.Set<TEntity>();
         }
-         
+
         public virtual string GenerateCreateScript()
         {
             return Database.GenerateCreateScript();
         }
-         
+
         public virtual IQueryable<TQuery> QueryFromSql<TQuery>(string sql) where TQuery : class
         {
             throw new NotImplementedException();
         }
-         
+
         public virtual IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BaseEntity
         {
             throw new NotImplementedException();
         }
-         
+
         public virtual int ExecuteSqlCommand(RawSqlString sql, bool doNotEnsureTransaction = false, int? timeout = null, params object[] parameters)
         {
             using (var transaction = Database.BeginTransaction())
@@ -126,7 +126,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
                 return result;
             }
         }
-         
+
         public void Install()
         {
                //create the table
@@ -135,14 +135,14 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
         public void Uninstall()
         {
                //drop the table
-               this.DropPluginTable(nameof(ProductViewTrackerRecord));              
+               this.DropPluginTable(nameof(ProductViewTrackerRecord));
         }
-       
+
         public IList<TEntity> ExecuteStoredProcedureList<TEntity>(string commandText, params object[] parameters) where TEntity : BaseEntity, new()
         {
             throw new NotImplementedException();
         }
-         
+
         public IEnumerable<TElement> SqlQuery<TElement>(string sql, params object[] parameters)
         {
             throw new NotImplementedException();
@@ -151,16 +151,16 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
         {
             throw new NotImplementedException();
         }
-             
+
         public virtual void Detach<TEntity>(TEntity entity) where TEntity : BaseEntity
         {
             throw new NotImplementedException();
         }
-         
+
         public IQueryable<TQuery> QueryFromSql<TQuery>(string sql, params object[] parameters) where TQuery : class
         {
             throw new NotImplementedException();
-        }      
+        }
   
         public virtual bool ProxyCreationEnabled
         {
@@ -193,7 +193,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
         void Log(ProductViewTrackerRecord record);
     }
 }
- 
+
 namespace Nop.Plugin.Other.ProductViewTracker.Services
 {
     public class ProductViewTrackerService : IProductViewTrackerService
@@ -228,21 +228,21 @@ namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
     public class DependencyRegistrar : IDependencyRegistrar
     {
         private const string CONTEXT_NAME = "nop_object_context_product_view_tracker";
-     
+
         public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
         {
             builder.RegisterType<ProductViewTrackerService>().As<IProductViewTrackerService>().InstancePerLifetimeScope();
-             
-            //data context         
+
+            //data context
             builder.RegisterPluginDataContext<ProductViewTrackerRecordObjectContext>(CONTEXT_NAME);
-             
+
             //override required repository with our custom context
             builder.RegisterType<EfRepository<ProductViewTrackerRecord>>()
             .As<IRepository<ProductViewTrackerRecord>>()
             .WithParameter(ResolvedParameter.ForNamed<IDbContext>(CONTEXT_NAME))
             .InstancePerLifetimeScope();
         }
-         
+
         public int Order => 1;
     }
 }
@@ -319,10 +319,10 @@ namespace Nop.Plugin.Other.ProductViewTracker
     }
 }
 ```
- 
+
 ## The usage
 
-The tracking code should be added to ProductTemplate.Simple.cshtml and ProductTemplate.Grouped.cshtml files. These ones are product templates. 
+The tracking code should be added to ProductTemplate.Simple.cshtml and ProductTemplate.Grouped.cshtml files. These ones are product templates.
 
 ```csharp
 @await Component.InvokeAsync("ProductViewTrackerIndex", new { productId = Model.Id })
@@ -331,6 +331,3 @@ The tracking code should be added to ProductTemplate.Simple.cshtml and ProductTe
 P.S. You can also implement it as a widget. In this case you won't need to edit a cshtml file.
 
 Author: [Skyler Severns](http://www.nopcommerce.com/profile.aspx?userid=52152)
-
-
-

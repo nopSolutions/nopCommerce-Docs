@@ -42,7 +42,7 @@ public bool Authenticate()
 public  SiteMapNode BuildMenuItem() // SiteMapNode is Class in Nop.Web.Framework.Menu
 {
    var menuItemBuilder = new SiteMapNode()
-   { 
+   {
        Title = "Title For Menu item",   // Title for your Custom Menu Item
        Url = "Path of action link", // Path of the action link
        Visible = true,
@@ -58,7 +58,7 @@ public  SiteMapNode BuildMenuItem() // SiteMapNode is Class in Nop.Web.Framework
    };
    menuItemBuilder.ChildNodes.Add(SubMenuItem);
   
-   return menuItemBuilder;    
+   return menuItemBuilder;
 }
 ```
 

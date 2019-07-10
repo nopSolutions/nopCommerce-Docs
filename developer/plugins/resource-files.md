@@ -8,10 +8,10 @@ uid: developer/plugins/resource-files
 
 To load resource files correctly you need to add its references into your plugin's view files.
 
-You can use Html.AddScriptParts() or Html.AddCssFileParts() helper methods.
+You can use `Html.AddScriptParts()` or `Html.AddCssFileParts()` helper methods.
 
- - Html.AddCssFileParts()
- - Html.AddScriptParts()
+- `Html.AddCssFileParts()`
+- `Html.AddScriptParts()`
 
 You can check into more details about this methods by going to its definition in your nopCommerce projects.
 
