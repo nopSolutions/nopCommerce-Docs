@@ -19,7 +19,7 @@ __To search for orders__, enter one or more of the following search criteria:
 * **Payment status** - select a specific payment status to search by: All, Pending, Authorized, Paid, Refunded, Partially Refunded, Voided
 * **Shipping status** - select a specific shipping status to search by: All, Shipping not required, Not yet shipped, Partially shipped, Shipped, Delivered
 * **Store** - set a specific store in which orders were placed
-* **Vendor** 
+* **Vendor**
 * **Billing phone number** - customer’s phone number
 * **Billing email address** - customer’s email address
 * **Billing last name** - customer’s last name

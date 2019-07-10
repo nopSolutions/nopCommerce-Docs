@@ -18,10 +18,6 @@ You can also delete shopping carts by clicking on **Delete** button.
 > [!NOTE]
 > check out our [marketplace](http://www.nopcommerce.com/marketplace.aspx) for plugins that help you manage abandoned carts and recover lost sales.
 
-### Related resources
-
-* [Orders](xref:user-guide/running/order-management/orders/index)
-
 ## Wishlists
 
 A wishlist is a list of products that a customer can share with friends, or save to transfer to the cart later. If a wishlist adding is enabled for a product, the **Add to Wishlist** button appears on the product details page in the public store. When a product of different variants is added to a wish list, all of the variants chosen by a customer are included in the wishlist.
@@ -37,7 +33,7 @@ From the list, you can proceed to the **Edit Product** window by clicking on the
 
 You can also delete wishlist by clicking on **Delete** button.
 
-### Related resources
+## See also
 
 * [Orders](xref:user-guide/running/order-management/orders/index)
 * [Promotional tools](xref:user-guide/marketing/promotional/index)

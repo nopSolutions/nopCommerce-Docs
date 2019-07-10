@@ -12,7 +12,7 @@ To define the return request settings, go to **Configuration → Settings → Or
 In return request settings you can define:
 
 * To **Enable Returns System**, to enable your customers to submit return requests for purchased items.
-* In the field **Return request number mask** specify custom return request number if needed. 
+* In the field **Return request number mask** specify custom return request number if needed.
 * **Number of days that the return request is available**, to set the number of days that the return request link will be available in the customer area.
   > [!TIP]
   > For example, if the store owner allows returns within 30 days after the purchase, this field will be set to 30. When the customer logs into the website and looks at My Account, orders completed earlier than 30 days will not have a Return Request button.

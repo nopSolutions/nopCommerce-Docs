@@ -19,7 +19,7 @@ In the public store, go to the My Account window and click Orders, as follows:
     * **Qty. to return** dropdown list allows selecting the number of items to be returned.
     * **Return Reason** dropdown list allows selecting the reason for requesting a return. For example, wrong product ordered, wrong product received and more. These reasons are defined by the store owner in the Return Request Settings.
     * **Return Action** dropdown list allows selecting the required return action to take. For example, repair product, replace product, issue credit and so on. These actions are defined by the store owner in the Return Request Settings.
-    * Choose the **Upload a file** option if you want to attach some additional documents, pictures to your request. 
+    * Choose the **Upload a file** option if you want to attach some additional documents, pictures to your request.
       > [!NOTE]
       > this option is available only when the checkbox **Allow file uploads** in **Configuration → Settings → Order Settings** on the **Return Request settings tab** is ticked.
     * In the **Comments** field, a customer can enter an optional comment for information purposes.
