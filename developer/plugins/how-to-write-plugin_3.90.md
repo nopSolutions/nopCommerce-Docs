@@ -112,7 +112,7 @@ Now we need to register appropriate plugin routes. ASP.NET routing is responsibl
     }
     ```
 
-- (optional) If you need to add some custom route, then create RouteProvider.cs file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to [http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler]('') URL (used by PayPal plugin):
+- (optional) If you need to add some custom route, then create RouteProvider.cs file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by PayPal plugin):
 
     ```csharp
     public partial class RouteProvider : IRouteProvider
