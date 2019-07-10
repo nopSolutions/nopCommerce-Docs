@@ -5,5 +5,8 @@
     "single-title": true,
     "MD025": {
       "front_matter_title": ""
+    },
+    "no-trailing-punctuation": {
+      "punctuation": ".,;:!。，；：！"
     }
 }
