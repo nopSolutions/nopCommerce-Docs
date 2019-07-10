@@ -7,13 +7,13 @@ uid: user-guide/running/product-management/categories
 
 Prior to adding new products, a store manager should create categories, to which the products will later be assigned. To manage categories, go to **Catalog → Categories.**
 
-![](_static/categories/categories.png)
+![categories](_static/categories/categories.png)
 
 **Search for a category** in the Manage categories window by **entering the Category name **(or a part of the name), or among all the categories of a certain **Store**.
 
-### Adding new category
+## Adding new category
 
-![](_static/categories/category_info.png)
+![category_info](_static/categories/category_info.png)
 
 In the **Category Info panel**, define the following category information:
 
@@ -22,7 +22,7 @@ In the **Category Info panel**, define the following category information:
 - **Picture** - an image representing the category. Upload the image from your device.
 - If this category will be a subcategory, select a **Parent category** from the Parent Category drop-down list. The new category will be placed under this category in the public store.
 
-> [!NOTE] 
+> [!NOTE]
 > For example, when you add seven products to a category and you set its page size to three. Three products per page will be displayed on this category details page in the public store, and the total amount of pages will be three.
 
 When this option is disabled, customers will not be able to select a page size on the Category Details page and the store owner enters a certain page size. In this case, the Page size field becomes visible in the Administration area.
@@ -31,9 +31,9 @@ When this option is disabled, customers will not be able to select a page size o
 - **Limited to customer roles** option allows showing this category only to selected customer roles. Choose the required customer roles from the list that can be created/edited on the Customer roles page of the Customers menu. If you want it to be visible to all - leave the field empty.
 - **Select the Limited to stores** option to make this category limited to one or more stores. Note that this checkbox is only used when you have several stores configured. For further details refer to Multi-store support.
 
-### Display
+## Display
 
-![](_static/categories/display.png)
+![display](_static/categories/display.png)
 
 In the Category Display panel, define the following category information:
 
@@ -46,7 +46,8 @@ In the Category Display panel, define the following category information:
 
 ### Setting up SEO
 
-![](_static/categories/setting-up-seo.png)
+![Setting up SEO](_static/categories/setting-up-seo.png)
+
 In the **SEO tab**, define the **following details**:
 
 **Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like:
@@ -59,27 +60,27 @@ In the **SEO tab**, define the **following details**:
 
 ````HTML
 <head>
-<title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
+    <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
 </head>
 ````
 
-**Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: http://www.yourStore.com/custom-seo-page-name
+**Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: http<span>://www.yourStore.</span>com/custom-seo-page-name
 
 ### Adding products to certain category
 
 **Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog.** The store owner can add new products to this category. Note that you need to Save the category before you can add products.
 Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
 
-![](_static/categories/products.png)
+![products](_static/categories/products.png)
 
 Select a product you would like to add to the category and click the Save button. The product will be displayed under the selected category.
 
 After the product was added to the category, define the following information in the **Products panel**:
 
 - Is featured product
-- Display order 
+- Display order
 
-> [!NOTE] 
+> [!NOTE]
 > By clicking **View**, you will be transferred to the Edit Product Details page.
 
 Click **Save**. The new category will be displayed in the public store under its parent category.
@@ -88,8 +89,7 @@ You can click **Delete** to remove the category.
 
 You can **Export the categories settings** to an external file for backup purposes, by clicking the Export button.
 
-## Related resources
+## See also
 
-* [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
-* [SEO](xref:user-guide/marketing/content/seo)
-
+- [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
+- [SEO](xref:user-guide/marketing/content/seo)

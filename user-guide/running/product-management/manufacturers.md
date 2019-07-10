@@ -7,15 +7,15 @@ uid: user-guide/running/product-management/manufacturers
 
 To manage manufacturers go to **Catalog → Manufacturers.**
 
-![](_static/manufacturers/manufactures.png)
+![manufactures](_static/manufacturers/manufactures.png)
 
 **Search** for a manufacturer in the Manufacturers window by **entering the Manufacturer name** (or a part of the name), or among all the manufacturers of a certain Store.
 
 Click the **Edit** button to edit the manufacturer’s details.
 
-### Adding new manufacturers
+## Adding new manufacturers
 
-![](_static/manufacturers/add_a_new_manufacturer.png)
+![add_a_new_manufacturer](_static/manufacturers/add_a_new_manufacturer.png)
 
 In the **Manufacturer Info panel**, define the following **details**:
 
@@ -25,7 +25,7 @@ In the **Manufacturer Info panel**, define the following **details**:
 
 ### Display
 
-![](_static/manufacturers/display2.png)
+![display2](_static/manufacturers/display2.png)
 
 In the **Manufacturer Display panel**, define the following **details**:
 
@@ -33,7 +33,7 @@ In the **Manufacturer Display panel**, define the following **details**:
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the Manufacturer Details page. The page size can be selected by customers from the page sizes list entered by the store owner in the Page size options field.
 - When this option is disabled, customers will not be able to select a page size on the Manufacturer Details page and the store owner enters a certain page size. In this case, the Page size field becomes visible in the Administration area.
 
-> [!TIP] 
+> [!TIP]
 > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
 
 - **Price ranges** - allow defining ranges of price by which customers can filter the manufacturers. Enter a price range in the currency that you defined in the Currencies window. Separate the ranges by a semicolon, for example, 0-999; 1000-1200; 1201 - (1201 means 1201 and over).
@@ -41,7 +41,7 @@ In the **Manufacturer Display panel**, define the following **details**:
 
 ### Mappings
 
-![](_static/manufacturers/mappings.png)
+![mappings](_static/manufacturers/mappings.png)
 
 In the **Manufacturer Mappings panel**, define the following **details**:
 
@@ -51,7 +51,7 @@ In the **Manufacturer Mappings panel**, define the following **details**:
 
 ### Setting up SEO
 
-![](_static/manufacturers/SEO.png)
+![SEO](_static/manufacturers/SEO.png)
 
 In the **SEO panel**, define the following **details**:
 
@@ -67,7 +67,7 @@ In the **SEO panel**, define the following **details**:
 </head>
 ````
 
-- **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the manufacturer name. If you enter custom-seo-page-name, then the following custom URL will be used: http://www.yourStore.com/custom-seo-page-name
+- **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the manufacturer name. If you enter custom-seo-page-name, then the following custom URL will be used: http<span>://www.yourStore.</span>com/custom-seo-page-name
 
 ### Adding products to certain manufacturer
 
@@ -75,7 +75,7 @@ In the **SEO panel**, define the following **details**:
 
 Click **Add a new** product to find a product you want to add to this manufacturer. You can search by the product Name, by a Store, or a Product Type.
 
-![](_static/manufacturers/products2.png)
+![products2](_static/manufacturers/products2.png)
 
 Select a product you would like to add to the manufacturer and click the **Save** button. The product will be displayed under the selected manufacturer.
 
@@ -87,12 +87,12 @@ After the product was added to the manufacturer, define the following informatio
 
 Click **Save**. The new manufacturer will be displayed in the public store.
 
-You can click **Delete** to remove the manufacturer. 
+You can click **Delete** to remove the manufacturer.
 
 You can **export** the manufacturer settings to an external file for backup purposes, by clicking the Export button.
 
-## Related resources
+## See also
 
-* [Adding products user](xref:user-guide/running/product-management/products/adding-products/index)
-* [SEO](xref:user-guide/marketing/content/seo)
-* [Video tutorial: managing](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
+- [Adding products user](xref:user-guide/running/product-management/products/adding-products/index)
+- [SEO](xref:user-guide/marketing/content/seo)
+- [Video tutorial: managing](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)

@@ -13,7 +13,7 @@ The top block on the page sets up **Search**:
 
 - Tick the **Search autocomplete enabled** checkbox, to display the autocomplete search box in the public store, as follows:
 
-![](_static/catalog-settings/search.png)
+![search](_static/catalog-settings/search.png)
 
 When this option is enabled the following additional fields are displayed:
 
@@ -26,7 +26,7 @@ When this option is enabled the following additional fields are displayed:
 The **second block** sets up **Product reviews**. Define the following:
 
 - **Product reviews must be approved**, to enforce product reviews to be approved by a store administrator prior to being published
-- **Allow anonymous users to write product reviews **
+- **Allow anonymous users to write product reviews**
 - **Product review possible only after product purchasing**, to allow reviewing the product only by customers who have already ordered it
 - **Notify about new product reviews**, to notify the store owner about new public reviews
 - **Notify customer about product review reply**, to notify customer about product review reply
@@ -37,13 +37,14 @@ The **second block** sets up **Product reviews**. Define the following:
 
 The next block sets up **Review types**.  You can configure a list of review types if you think that a basic review is not enough.
 
-![](_static/catalog-settings/review_types.png)
+![review_types](_static/catalog-settings/review_types.png)
 
 Click **Add new button** for create new review type.
 
-![](_static/catalog-settings/quality_rating.PNG)
+![quality_rating](_static/catalog-settings/quality_rating.PNG)
 
 **Define the following:**
+
 - Enter your  review type **Name**.
 - Enter the review type **Description**.
 - **Display order**.
@@ -53,17 +54,17 @@ Click **Save** button,to add a new review type.
 
 Now in the public store will be able to fill additional ratings on the product review page.
 
-![](_static/catalog-settings/product_reviews.PNG)
+![product_reviews](_static/catalog-settings/product_reviews.PNG)
 
 Also on this page you can see the left feedback of all customers (if this setting is active).In the customer personal account page there is also an opportunity to see all the reviews left on the products.
 
-![](_static/catalog-settings/my_account.PNG)
+![my_account](_static/catalog-settings/my_account.PNG)
 
 The next block sets up **Performance**. Having the following settings enabled can significantly improve the store performance:
 
 - **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:user-guide/configuring/settingup/customers/acl) configured for entities.
 - **Ignore limit per store** (sitewide), to ignore limit per stores rules configured for entities (sitewide). It is recommended to enable this setting if you have only one store or do not have any store-specific limitations.
-- **Ignore discounts **(sitewide) 
+- **Ignore discounts **(sitewide)
 - **Ignore featured products** (sitewide)
 - **Cache Product Prices**. You should not enable it if you use some complex discounts, discount requirement rules, or coupon codes.
 
@@ -72,68 +73,46 @@ The next block sets up **Performance**. Having the following settings enabled ca
 - Tick the **Show a share button**, to display a share button on the product details page. When this field is selected the Share button code field is displayed.
 - The **Share button code** field displays the pages button code.
 
-> [!NOTE]
-> By default, AddThis service is used (http://www.addthis.com/). 
+> [!TIP]
+> By default, AddThis service is used ([http://www.addthis.com/](http://www.addthis.com/)).
 
-![](_static/catalog-settings/zzz.png)
+![Share](_static/catalog-settings/zzz.png)
 
 - Tick the 'Email a friend' enabled, to allow customers to use the 'Email a friend' option.
 - Allow anonymous users to email a friend
- 
+
 **Compare products option** enables consumers to compare different offers based on their characteristics and price so they can make the best shopping decisions. Set up the block, as follows:
 
 - Tick the '**Compare Products**' enabled checkbox, to make customers be able to compare product options in your public store. The button Add to Compare list will appear on product pages.
 - Tick the **Include short description in compare products** checkbox, to display short product descriptions on the compare products page.
 - Tick the **Include full description in compare products** checkbox, to display full product descriptions on the compare products page.
 
-![](_static/catalog-settings/compare_product.png)
+![compare_product](_static/catalog-settings/compare_product.png)
 
 In general **catalog settings** you can define:
 
 - To **Show best sellers on home page**.
-
 - When the Products also purchased option is enabled, the **Number of also purchased products to display** field appears, in which the store owner can set the number of products to be displayed.
-
 - **"Products also purchased” enabled** checkbox, to enable customers to view a list of products purchased by others who also purchased the above.
-
 - “**Email a friend**” to enable registered customers to recommend specific products to friends by email.
-
 - Tick the **Allow anonymous users to email a friend** checkbox, to enable anonymous users to email friends.
-
 - To **Show SKU** in the public store.
-
 - To **Show GTIN** in the public store.
-
 - To **Show manufacturer part number** in the public store.
-
 - “**Recently viewed products**” **enabled** checkbox, to enable customers to see products recently viewed in your store.
-
 - In the **Number of “Recently viewed products”** field, enter the number of recently viewed products to be displayed when the Recently viewed products checkbox is enabled.
-
--  **Recently added products” enabled** checkbox, to enable customers to see products recently added in your store.
-
+- **Recently added products” enabled** checkbox, to enable customers to see products recently added in your store.
 - **In the Number of “Recently added products”** field, enter the number of recently added products to display when the recently added products checkbox is enabled.
-
 - To **Show free shipping icon** for products with this option enabled.
-
 - To **Allow view mode changing** on the Category and Manufacturers pages.
-
 - To **Allow viewing of unpublished product details page**. In this case, SEO will not be affected, and search crawlers will index the page, even though a product is temporary unpublished and invisible for the customers. Note that a store owner always has access to unpublished products.
-
 - Tick the **Discontinued message for unpublished products** checkbox, to display "a product has been discontinued" message when customers try to access the product details page.
-
 - **To Include products from subcategories** when viewing a category details page.
-
 - To **Show number of distinct products beside each category** in the category navigation area located in the left column in the public store.
-
 - **Category breadcrumb enabled.**
-
--  **New products” page enabled** in the store.
-
+- **New products” page enabled** in the store.
 - Modify the **Number of products** on **New products” page** to set the number of products on the “New products page”
-
 - **Number of product tags (cloud)** - the number of tags that appear in a tag cloud.
-
 - **To Allow customers to select 'Products by tag' page size** on the product tag page from a predefined list of options defined by the store owner. **The Page size options** field becomes visible in this case in the administration area. When disabled, customers will not be able to select a page size and the store owner enters it. The **“Products by tag” page**. Products per page field becomes visible in this case, in which the store owner enters the number of products.
 - **Number of manufacturers to display** in the manufacturer navigation block.
 
@@ -149,4 +128,4 @@ Tick the **Export/Import products with attributes** checkbox if you need product
 
 Tick the **Allow product sorting** checkbox, to enable a product sorting option on the categories and manufacturers pages. You can activate/deactivate sorting by Position, Name, Price and Date of Creation.
 
-![](_static/catalog-settings/product_sorting.png)
+![product_sorting](_static/catalog-settings/product_sorting.png)
