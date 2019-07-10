@@ -21,7 +21,7 @@ Google Analytics is a free website stats tool from Google. It keeps track of sta
 * HTML Header tag
 * After `<body>` end HTML tag.
 
-To configure Google Analytics Widget, go to `Administration > Configuration > Widgets`, click on **Configure** against **Google Analytics** and add your Google Analytics code.
+To configure Google Analytics Widget, go to `Administration → Configuration → Widgets`, click on **Configure** against **Google Analytics** and add your Google Analytics code.
 
 ## Nivo Slider
 

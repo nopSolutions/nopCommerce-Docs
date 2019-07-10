@@ -40,7 +40,7 @@ Avalara tax plugin commits transactions to US addresses only) and click **Test T
 
 ## Assign Avalara AvaTax Code
 
-Navigate to **Configuration -> Tax Categories**
+Navigate to **Configuration → Tax Categories**
 
 At the top left right of the page you will see the branded Avalara Tax Codes button. Clicking it the drop-down menu will
 show the following menu
@@ -53,7 +53,7 @@ show the following menu
 
 ## Assign an Avalara tax exempt category to a customer
 
-1. Click **Customers -> Customer Details**
+1. Click **Customers → Customer Details**
 1. Find the highlighted **Entity use code** field and select the field, select the appropriate customer type
 code.
 
@@ -65,7 +65,7 @@ code.
 
 ## Assign an AvaTax System Tax Code to an item
 
-1. Go to **Catalog -> Products**
+1. Go to **Catalog → Products**
 1. Select a Product to open the Product details screen.
 1. Click **Edit**
 1. On the Product details screen, in Prices group assign appropriate code from drop-down list in **Tax Category** field.

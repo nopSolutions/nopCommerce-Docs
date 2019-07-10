@@ -112,9 +112,9 @@ Nop.Web.Areas.Admin.Controllers.CategoryController.cs
 
 We're going to make three updates to the CategoryController class.
 
-* Data Model -> View Model
-* Create View Model -> Data Model
-* Edit View Model -> Data Model
+* Data Model → View Model
+* Create View Model → Data Model
+* Edit View Model → Data Model
 
 Normally I would write tests for the following code and verify that model mapping is working correctly, but I'll skip unit testing to keep it simple.
 
@@ -123,7 +123,7 @@ In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the cod
 In the public method to save entity (usually: "Create" or "Edit" methods with [HttpPost] attribute)
 
 ```csharp
-// Edit View Model -> Data Model
+// Edit View Model → Data Model
 category.SomeNewProperty = model.SomeNewProperty;
 ```
 
