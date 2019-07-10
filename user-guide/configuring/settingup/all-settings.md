@@ -16,7 +16,7 @@ Go to **Configuration → Settings → All Settings (Advanced).** The All settin
 
 ![allsettings](_static/all-settings/allsettings.png)
 
-Click **Add new record** to add a new setting. 
+Click **Add new record** to add a new setting.
 
 Add a new setting, as follows:
 

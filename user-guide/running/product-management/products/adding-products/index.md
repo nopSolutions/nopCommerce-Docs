@@ -182,7 +182,7 @@ Define the following SEO parameters for the product page:
 - **Meta keywords** - a brief and concise list of the most important themes (keywords and key phrases) related to the product. These words will be added to the product page header.
 - **Meta description** - a brief description of the product that will be added to the product page header.
 - **Meta title** - a title for the Web page.
-- **Search engine friendly page name** - a name of the page used by search engines. If you enter nothing then the product page URL is formed using the product name. If you enter custom-seo-page-name, then the following custom the URL will be used: http<span>://www.yourStor</span>e.c<span>om/custom-s</span>eo-page-name.
+- **Search engine friendly page name** - a name of the page used by search engines. If you enter nothing then the product page URL is formed using the product name. If you enter custom-seo-page-name, then the following custom the URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
 
 Read more about SEO [here](xref:user-guide/marketing/content/seo).
 

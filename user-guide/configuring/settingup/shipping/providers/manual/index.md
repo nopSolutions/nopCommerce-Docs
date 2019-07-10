@@ -40,7 +40,7 @@ Click **Update**.
 
 The **shipping by weight and by total** option allows setting different shipping fees based on a shipment weight and total. The ability to charge different fees depending on the weight and total of the shipment helps to keep the company's shipping costs down when heavy items are shipped, yet offer reasonable shipping costs to customers who purchase light products.
 
-Use formula **[additional fixed cost] + ([order total weight] - [lower weight limit]) * [rate per weight unit] + [order subtotal] * [charge percentage]** to calculate the fees, where:
+Use formula `[additional fixed cost] + ([order total weight] - [lower weight limit]) * [rate per weight unit] + [order subtotal] * [charge percentage]` to calculate the fees, where:
 
 * **additional fixed cost** - is the cost of shipment in case the weight is under a certain level (lower weight limit)
 * **rate per weight unit** - is the cost of each weight unit above the lower weight limit
