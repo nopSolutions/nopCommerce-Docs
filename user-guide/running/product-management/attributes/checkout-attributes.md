@@ -47,8 +47,8 @@ On the **Attribute values panel**, click Add a new checkout value to create a ne
 In the **Add a new checkout value** window, define the following information:
 
 - **Name** - the attribute value name. 
-	> [!NOTE] 
-	> For example, Yes or No, for questions such as Do you require fragile care handling?
+    > [!NOTE] 
+    > For example, Yes or No, for questions such as Do you require fragile care handling?
 - **Price adjustment** will add the entered amount to a purchase total sum in case the attribute value is selected.
 - **Weight adjustment** will change an order weight by the entered amount in case the attribute value is selected.
 - Tick the **Pre-selected** checkbox, to indicate the attribute value is pre-selected for a customer.

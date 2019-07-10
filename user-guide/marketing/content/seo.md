@@ -20,12 +20,12 @@ To edit SEO settings, go to **Configuration → Settings → General Settings.**
  - In the **Default title** field, enter the default title for the pages in your store
  - From the **Page Title SEO adjustment** field, select the required page title SEO adjustment, as follows:
 
-	A page name comes after the store name in the title:
-	YOURSTORE.COM | PAGENAME
+    A page name comes after the store name in the title:
+    YOURSTORE.COM | PAGENAME
 
-	The store name comes after a page name in the title:
+    The store name comes after a page name in the title:
 
-	PAGENAME | YOURSTORE.COM
+    PAGENAME | YOURSTORE.COM
 
  - Specify the **Page Title separator**.
  - Enter the **Default meta keywords description** for the pages in your store. This can be overridden for individual **categories, manufacturers, and products**.
@@ -42,23 +42,23 @@ There are several types of pages in nopCommerce for which you can set up individ
 
  - Enter the required **Meta keywords**, which are a brief and concise list of keyword and phrases for the page. The meta keywords tag takes the following format:
 
-	```html
-	<meta name="keywords" content="keywords, keyword, keyword phrase, etc." >
-	```
+    ```html
+    <meta name="keywords" content="keywords, keyword, keyword phrase, etc." >
+    ```
 
  - In the **Meta description** field, enter a description of the page. The meta description tag is a brief and concise summary of your page's content. The meta description tag is in the following format:
 
-	```html
-	<meta name="description" content="Brief description of the contents of your page." >
-	```
+    ```html
+    <meta name="description" content="Brief description of the contents of your page." >
+    ```
 
  - In the **Meta title** field, enter the required title. The title tag specifies the title of your Web page. It is a code which is inserted into the header of your web page and is in the following format:
 
-	```html
-	<head>
-	  <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
-	</head>
-	```
+    ```html
+    <head>
+      <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
+    </head>
+    ```
 
  - In the **Search engine friendly page name** field, enter the name of the page used by search engines. If you enter nothing then the web page URL is formed using the page name. If you enter custom-seo-page-name, then the following custom the URL will be used:  http://www.yourStore.com/custom-seo-page-name
 

@@ -24,7 +24,7 @@ Define the **following details for the new poll**:
  - Enter the descriptive **Name** of this poll. This is the text the customers will see. *For example, What do you think of our store?*
  - In a **System keyword**, you can specify where the poll will be displayed. *For example, if you enter LeftColumnPoll your poll will be displayed like that:*
 
-	![p3](_static/polls/polls_3.png)
+    ![p3](_static/polls/polls_3.png)
 
   > [!NOTE]
   > if you use clear default nopCommerce theme the polls will be displayed in the left column by default. In case you use another theme please check these details from the theme provider.

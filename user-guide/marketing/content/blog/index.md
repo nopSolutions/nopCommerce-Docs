@@ -28,7 +28,7 @@ Define **new blog post details**:
  - You can specify the **Body overview** if you want only part of the whole text to be visible on the main blog page
  - Enter **Tags** to be displayed on the Blog page in the public store. The more blog posts are associated with a particular tag, the larger size it has in the Popular Tags area, displayed in the sidebar on the Blog page
  
-	![p3](_static/index/Blog3.PNG)
+    ![p3](_static/index/Blog3.PNG)
 
  - Select the Allow comments checkbox, to enable customers to add comments to your blog post
  - Enter **Start and End date** for displaying this blog post in Coordinated Universal Time (UTC) 
