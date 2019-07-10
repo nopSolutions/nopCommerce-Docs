@@ -12,6 +12,7 @@ nopCommerce manages a repository at GitHub ([https://github.com/nopSolutions/nop
 ## Branch Descriptions and Naming
 
 Recently we started using Vincent Driessen's branching model (seen here: [http://nvie.com/posts/a-successful-git-branching-model/](https://nvie.com/posts/a-successful-git-branching-model/)) including the use of feature branches, a development branch (for integration) and a master branch (for publishing/production). Previously we had "master" branch only (till January 2016)
+
 * Production branch: master
 * Development branch: develop
 * Feature and issue branches: Should start with "feature" or "issue". It should be followed by issue ID (according to our Github issue list) and some friendly name (example, "multistore"). Finally, it should look like "feature-34-multistore" or "issue-35-paypal-redirection-bug"
@@ -21,7 +22,7 @@ Recently we started using Vincent Driessen's branching model (seen here: [http:/
 
 If you want to contribute some source code to nopCommerce core (issue fix or some new feature), then you should follow the next approach. Here is a short list of steps to contribute:
 
-* First of all, you have to create a fork. Please find more about repository forking on GitHub at https://help.github.com/articles/fork-a-repo/.
+* First of all, you have to create a fork. Please find more about repository forking on GitHub at [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/).
 * Clone it locally.
 * Create a new branch from "develop". Please always create a new branch for each contribution. You should create it from our "develop" branch only. Do not use "master".
 * Write the code and push back to your GitHub fork.
