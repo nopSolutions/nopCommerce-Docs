@@ -9,7 +9,7 @@ Online Customers section enables store owners to view customers that were online
 
 To access this window, go to **Customers → Online Customers**.
 
-![](_static/online-customers/online-customers.jpeg)
+![online-customers](_static/online-customers/online-customers.jpeg)
 
 The Online Customers window includes the following columns:
 
@@ -18,4 +18,4 @@ The Online Customers window includes the following columns:
 - **Customer Location**
 - **Last Activity** - date and time the online customer last logged in
 - **Last Visited Page** - you can enable or disable this feature in customer settings
-This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com
+This product includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
