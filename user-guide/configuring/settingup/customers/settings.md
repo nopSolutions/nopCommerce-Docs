@@ -21,59 +21,58 @@ To define customer settings, go to **Configuration → Settings → Customer Set
 
 **Address Form Fields** panel contains fields for detailing the customer’s address during checkout.
 
-##### Common
+## Common
 
 ![common](_static/customer-settings/customersettings1.png)
 
 Define the **customer settings,** as follows:
 
- * Select the **Registration method,** as follows: 
-    * **Standard:** users are enabled to register, no approval is required.
-    * **Email Validation:** users are enabled to register, however, they must accept the confirmation email sent to them before their account is approved.
-    * **Admin Approval:** users are enabled to register, administrator approval is required.
-    * **Disabled:** select this option to disable registration.
- * Tick **Notify about new customer registration** checkbox, to enable a store owner to get an email notification each time when a new customer is registered.
- * Tick the **Require registration for downloadable products** checkbox if customers have to complete registration in order to purchase downloadable products.
- * Choose whether to **Allow customers to select time zone** in the public store on the accounts page. Otherwise, the default time zone is used.
- * Select the **Default store time zone** from a dropdown list. 
- 
+* Select the **Registration method,** as follows:
+  * **Standard:** users are enabled to register, no approval is required.
+  * **Email Validation:** users are enabled to register, however, they must accept the confirmation email sent to them before their account is approved.
+  * **Admin Approval:** users are enabled to register, administrator approval is required.
+  * **Disabled:** select this option to disable registration.
+* Tick **Notify about new customer registration** checkbox, to enable a store owner to get an email notification each time when a new customer is registered.
+* Tick the **Require registration for downloadable products** checkbox if customers have to complete registration in order to purchase downloadable products.
+* Choose whether to **Allow customers to select time zone** in the public store on the accounts page. Otherwise, the default time zone is used.
+* Select the **Default store time zone** from a dropdown list.
+
  > [!NOTE]
  > The current time zone is displayed automatically.
- 
-##### Password and security
+
+## Password and security
 
 ![password](_static/customer-settings/customersettings2.png)
 
 * Set the **Password minimum length, Password must have at least one lowercase, Password must have at least one uppercase, Password must have at least one non alphanumeric character, Password must have at least one digit** to change password complexity
-* **Unduplicated passwords number** - number of passwods that musn't be the same as previous one.
+* **Unduplicated passwords number** - number of passwords that mustn't be the same as previous one.
 * Select the **Default Password format**, as follows:
-    * Clear
-    * Hashed
-    * Encrypted
+  * Clear
+  * Hashed
+  * Encrypted
 
 > [!NOTE]
 > This setting is for storing customers’ passwords and will be applied only to newly registered customers.
 
- * In the **Password lifetime** enter the number of days for password expiration.
- * In the **Password recovery link.Days valid** field, enter the number of days for password recovery link. Set it to 0 if you don’t want the link to expire.
- * Enter **Maximum login failures**
- * In the **Lockout time** (login failures) enter number of minutes to lockout users.
- * Tick the checkbox **Force entering email twice** if you want your customerce entering password twice during the registration. 
- 
- ##### Account
- 
- ![account](_static/customer-settings/customersettings3.png)
- 
+* In the **Password lifetime** enter the number of days for password expiration.
+* In the **Password recovery link.Days valid** field, enter the number of days for password recovery link. Set it to 0 if you don’t want the link to expire.
+* Enter **Maximum login failures**
+* In the **Lockout time** (login failures) enter number of minutes to lockout users.
+* Tick the checkbox **Force entering email twice** if you want your customers entering password twice during the registration.
+
+## Account
+
+![account](_static/customer-settings/customersettings3.png)
+
 * Tick the **'Usernames' enabled** checkbox, to enable using usernames for login and registration instead of emails. Note: it is not recommended to change the option in the Product environment. When this checkbox is selected, the following options are displayed:
-    * **Allow customers to change their usernames:** select this option if customers are allowed to change their usernames.
+  * **Allow customers to change their usernames:** select this option if customers are allowed to change their usernames.
     * **Allow customers to check the availability of usernames:** select this option to enable customers to check the username availability before clicking Save on My Account - Customer Info page. The Check Availability button is displayed in this case, see the example above.
-    
 * Select the **Customer name format,** as follows:
-    * Show Emails
-    * Show Usernames
-    * Show Full Names
-    * Show First Name
-    
+  * Show Emails
+  * Show Usernames
+  * Show Full Names
+  * Show First Name
+
     The customer name will be shown in the store next to news and blog comments, on forums and more.
 
 * **Allow customers to upload avatars.** The customers’ avatars will be shown in the store next to their news and blog comments, on forums and more. If this option is selected, the next checkbox is displayed. Tick the **Default avatar enabled** checkbox, to display the default user avatars.
@@ -84,10 +83,10 @@ Define the **customer settings,** as follows:
 * Tick the **Store last visited page** checkbox, to store the last visited page. You can then view the last visited by different customers pages on the Online customers page (Customers → Online customers). You can untick this checkbox, to improve the site performance.
 * Tick the **Store IP address** checkbox, to store the last IP address of customers, when disabled, it can improve performance.
 
-##### Profile
+## Profile
 
 ![profile](_static/customer-settings/customersettings4.png)
- 
+
 * **Allow viewing of customer profiles.** This enables the role to see the details of other customers.
 * Tick the **Show customers location** checkbox if required
 * Tick the **Show customers join date** checkbox if required

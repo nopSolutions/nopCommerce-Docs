@@ -3,7 +3,6 @@ title: Security Settings
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/security-settings
 ---
-
 # Security Settings
 
 To manage Security Settings go to **Configuration → Settings → General Settings.** The Security Settings block is displayed on the General Settings page:

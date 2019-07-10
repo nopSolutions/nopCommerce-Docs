@@ -3,10 +3,7 @@ title: Languages
 author: AndreiMaz
 uid: user-guide/configuring/settingup/mainstore/languages
 ---
-
 # Languages
-
-##### Languages
 
 In nopCommerce, your store can have several languages installed. However, the customers will only see the data that has been defined in their selected language.
 
@@ -18,7 +15,7 @@ In nopCommerce, your store can have several languages installed. However, the cu
 > [!NOTE]
 > You can download new language packs from the official [Marketplace](http://www.nopcommerce.com/marketplace.aspx).
 
-##### Adding new language
+## Adding new language
 
 Click **Add new**. In the Add a new language window, **define the following settings:**
 
@@ -28,7 +25,7 @@ Click **Add new**. In the Add a new language window, **define the following sett
 
 * **Language culture** - a specific language code (for example, de-AT for Austrian German)
 
-* **Unique SEO code** - a two letter language SEO code used to generate URLs like http://www.yourstore.com/en/ when you have more than one published language. Note: “SEO friendly URLs with multiple languages” option should be enabled in Configuration → Settings → General Settings → Localization settings panel.
+* **Unique SEO code** - a two letter language SEO code used to generate URLs like <http://www.yourstore.com/en/> when you have more than one published language. Note: “SEO friendly URLs with multiple languages” option should be enabled in Configuration → Settings → General Settings → Localization settings panel.
 
 * **Flag image file name** - enter the flag image file name. The image should be saved under the …/images/flags directory. You can also choose an image from a predefined list.
 
@@ -40,7 +37,7 @@ Click **Add new**. In the Add a new language window, **define the following sett
 
 * **Publish** the language, to enable this language to be visible and selected by visitors in your store.
 
-* **Display order** of the language. 1 represents the top of the list. 
+* **Display order** of the language. 1 represents the top of the list.
 
 * Click **Save.**
 
