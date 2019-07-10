@@ -33,7 +33,7 @@
         - name: nopCommerce Interface
           uid: user-guide/configuring/nopcommerce-interface
         - name: Setting up your store
-          uid: user-guide/configuring/settingup/index            
+          uid: user-guide/configuring/setting-up/index            
           items:
             - name: Setting up Main Store
               uid: user-guide/configuring/settingup/mainstore/index
