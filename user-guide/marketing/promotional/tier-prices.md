@@ -5,7 +5,7 @@ uid: user-guide/marketing/promotional/tier-prices
 ---
 # Tier prices
 
-Tier prices is a promotional tool that allows a store owner **to offer special prices when customers buy bigger amounts of a particular product**. This tool is typically used in wholesales, but retailers can apply it as well to incentivise buyers and drive more sales.
+Tier prices is a promotional tool that allows a store owner **to offer special prices when customers buy bigger amounts of a particular product**. This tool is typically used in wholesales, but retailers can apply it as well to incentivize buyers and drive more sales.
 
 > [!NOTE]
 > **You need to save the product before you can add tier prices for the product page.**

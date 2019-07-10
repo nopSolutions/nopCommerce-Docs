@@ -24,7 +24,6 @@ To edit SEO settings, go to **Configuration → Settings → General Settings.**
     YOURSTORE.COM | PAGENAME
 
     The store name comes after a page name in the title:
-
     PAGENAME | YOURSTORE.COM
 
 - Specify the **Page Title separator**.

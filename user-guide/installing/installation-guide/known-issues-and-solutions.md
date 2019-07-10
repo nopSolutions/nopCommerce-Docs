@@ -5,7 +5,7 @@ uid: user-guide/installing/installation-guide/known-issues-and-solutions
 ---
 # Known Issues and Solutions
 
-## Issue: Installation isuues - 500 Internal Error
+## Issue: Installation issues - 500 Internal Error
 
 Server Error
 500 - Internal server error.

@@ -42,8 +42,7 @@ Customer list contains details of all existing customers, as well as allows to a
 
 >[!NOTE]
 >You can export the customer data to an external file by clicking **Export to XML(all)** or **Export to Excel (all).** You can export selected customer data to an external file by clicking **Export to XML(selected)** or **Export to Excel (selected)**
-
-> [!NOTE]
+>
 > After clicking the Send email button, the Send email window is displayed enabling a store owner to send an email to the customer. After clicking the Send private message button the Send private message window is displayed enabling to send a message to the customer. To use private messaging, allow private messages in [Forum settings](xref:user-guide/marketing/content/forums/settings).
 > ![edit_customer_details](_static/customer-list/edit_customer_details.png)
 >

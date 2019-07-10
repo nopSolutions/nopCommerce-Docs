@@ -1,7 +1,7 @@
 ---
 title: Tax Settings
 author: AndreiMaz
-uid: user-guide/configuring/settingup/taxes/tax-settings
+uid: user-guide/configuring/setting-up/taxes/tax-settings
 ---
 # Tax Settings
 

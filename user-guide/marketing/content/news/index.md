@@ -33,7 +33,7 @@ Define the **following details for news item**:
 
 While editing existing news or after clicking **Save and Continue Edit** button for a new one, you can click on **Preview** button to see how the news will appear on the site.
 
-## etting up SEO for news items
+## Setting up SEO for news items
 
 To set up SEO for the blog post go to **SEO tab**
 
