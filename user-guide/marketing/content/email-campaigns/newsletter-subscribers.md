@@ -16,7 +16,7 @@ To Export/Import Newsletter subscribers go to **Promotions  → Newsletter Subsc
 ![newsletter-subscribers](_static/newsletter-subscribers/NewsLetterSubscription.png)
 
 > [!NOTE]
-> You can click **Import from CSV** to import subscriber lists in CSV format. Ensure that each line of the CSV file is in the following format: email_address,is_active,store_id (store_id parameter is optional). For example, test@test.com, true. You can click **Export to CSV**  to export subscriber lists.
+> You can click **Import from CSV** to import subscriber lists in CSV format. Ensure that each line of the CSV file is in the following format: email_address,is_active,store_id (store_id parameter is optional). For example, `test@test.com`, true. You can click **Export to CSV**  to export subscriber lists.
 
 ## Searching for the subscribers
 

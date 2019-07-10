@@ -48,17 +48,19 @@ The presentation model is used to transport information from a controller to the
 
 We configured our database to only store 255 characters for the SomeNewProperty. If we try and save an SomeNewProperty with 300 characters the application will break (or truncate the text). We want the application to protect users from failures the best we can, and our view models help enforce requirements like string length.
 
+```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Models\Catalog\CategoryModel.cs
 Assembly: Nop.Admin
 Solution Location: Nop.Web.Areas.Admin.Models.Catalog.CategoryModel.cs
+```
 
 The validator class is used to validate the data stored inside of the model class (e.g. required fields, max length, and required ranges).
 
-**File System Location:** [Project Root]\Presentation\Nop.Web\Areas\Admin\Validators\Catalog\CategoryValidator.cs
-
-**Assembly:** Nop.Web
-
-**Solution Location:** Nop.Web.Areas.Admin.Validators.Catalog.CategoryValidator.cs
+```sh
+File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Validators\Catalog\CategoryValidator.cs
+Assembly: Nop.Web
+Solution Location: Nop.Web.Areas.Admin.Validators.Catalog.CategoryValidator.cs
+```
 
 Add the property to our view model.
 
@@ -78,9 +80,10 @@ RuleFor(m => m.SomeNewProperty).Length(0, 255);
 
 ## The view
 
-**File System Location:** [Project Root]\Presentation\Nop.Web\Administration\Views\Category\ _CreateOrUpdate.cshtml
-
-**Assembly:** Nop.Admin
+```sh
+File System Location: [Project Root]\Presentation\Nop.Web\Administration\Views\Category\ _CreateOrUpdate.cshtml
+Assembly: Nop.Admin
+```
 
 Views contain the html for displaying model data. Place this html under the "active" section.
 
@@ -100,11 +103,12 @@ Views contain the html for displaying model data. Place this html under the "act
 
 In this case the controller is responsible for mapping the domain data model to our view model and vice versa. The reason I choose the category model to update is because of the simplicity. I want this to be an introduction to the nopCommerce platform and I would like to keep it as simple as possible.
 
-**File System Location:** [Project Root]\Presentation\Nop.Web\Areas\Admin\Controllers\CategoryController.cs
-
-**Assembly:** Nop.Admin
-
-**Solution Location:** Nop.Web.Areas.Admin.Controllers.CategoryController.cs
+```sh
+File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Controllers\CategoryController.cs
+Assembly: Nop.Admin
+Solution Location:
+Nop.Web.Areas.Admin.Controllers.CategoryController.cs
+```
 
 We're going to make three updates to the CategoryController class.
 

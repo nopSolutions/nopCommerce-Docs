@@ -15,7 +15,7 @@ uid: developer/tutorials/azure-deploy
 
     - There's a great video here: [http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo](http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo)
 
-1. **Prepare for local deploy** When you ensured that the automatic build works, we are ready to customize our deployment scripts. This is needed because the default automatic build only builds nop.web projects. The problem with this is that it does not build the admin website, and none of the plugins are build. You cannot refer to the plugins as it would create circular references. So now we need to get the custom build working, these are the install steps (also mention other places)
+1. **Prepare for local deploy** When you ensured that the automatic build works, we are ready to customize our deployment scripts. This is needed because the default automatic build only builds `nop.web` projects. The problem with this is that it does not build the admin website, and none of the plugins are build. You cannot refer to the plugins as it would create circular references. So now we need to get the custom build working, these are the install steps (also mention other places)
     - Install NodeJs: [https://nodejs.org](https://nodejs.org)
 
     - Install Azure CLI: [https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/)

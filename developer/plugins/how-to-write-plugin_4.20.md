@@ -9,7 +9,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 ## The plugin structure, required files, and locations
 
-1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into \Plugins directory in the root of your solution (do not mix up with \Plugins subdirectory located in \Nop.Web directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/en-us/library/sx2027y2.aspx)).
+1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into \Plugins directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/en-us/library/sx2027y2.aspx)).
 
     A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 

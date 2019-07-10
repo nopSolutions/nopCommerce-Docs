@@ -11,13 +11,13 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 ## The plugin structure, required files, and locations
 
-1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into \Plugins directory in the root of your solution (do not mix up with \Plugins subdirectory located in \Nop.Web directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/en-us/library/sx2027y2.aspx)).
+1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into \Plugins directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/en-us/library/sx2027y2.aspx)).
 
     A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 
     ![p1](_static/write_plugin_3.90/write_plugin_3.90_4.jpg)
 
-1. Once the plugin project is created update the project build output path. Set it to "..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}\". For example, Authorize.NET payment plugin has the following output path: "..\..\Presentation\Nop.Web\Plugins\Payments.AuthorizeNet\". After it's done, appropriate plugin DLLs will be automatically copied to the \Presentation\Nop.Web\Plugins\ directory which is searched by the nopCommerce core for valid plugins. But please note that it's also not a requirement. And you can choose any output directory name for a plugin.
+1. Once the plugin project is created update the project build output path. Set it to `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}\`. For example, Authorize.NET payment plugin has the following output path: `..\..\Presentation\Nop.Web\Plugins\Payments.AuthorizeNet\`. After it's done, appropriate plugin DLLs will be automatically copied to the `\Presentation\Nop.Web\Plugins\` directory which is searched by the nopCommerce core for valid plugins. But please note that it's also not a requirement. And you can choose any output directory name for a plugin.
 
     ![p1](_static/write_plugin_3.90/write_plugin_3.90_1.jpg)
 

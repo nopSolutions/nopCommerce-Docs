@@ -7,7 +7,7 @@ uid: developer/design/new-theme
 
 Open your nopCommerce solution or website (web version) in Visual Studio - Go to this location:
 
-* If using sourcecode: `\Nop.Web\Themes\`
+* If using source code: `\Nop.Web\Themes\`
 * If using web version: `\[Project Root]\Themes\`
 
 1. Select any default / current theme

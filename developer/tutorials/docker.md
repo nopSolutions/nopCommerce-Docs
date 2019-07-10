@@ -27,7 +27,7 @@ This document describes a step-by-step guide to building and running a Docker co
 
     This command builds the container according to the instructions described in the “Dockerfile” file. The first launch of the assembly will take a lot of time, since it will require downloading two basic images for .Net Core applications.
 
-    The first image containing the SDK is required for the intermediate container, which will assemble the application by repairing all the dependencies, and then execute the process of publishing the Nop.Web application to a separate directory, from which you will create the resulting container with the name *nopcommerce* later (you can create an image without name, but the name is more convenient. To specify the name of the container during assembly, you must specify the flag [–t], as was done in our case).
+    The first image containing the SDK is required for the intermediate container, which will assemble the application by repairing all the dependencies, and then execute the process of publishing the `Nop.Web` application to a separate directory, from which you will create the resulting container with the name *nopcommerce* later (you can create an image without name, but the name is more convenient. To specify the name of the container during assembly, you must specify the flag [–t], as was done in our case).
 
     After installation, if everything went well, executing the next command:
 
