@@ -5,6 +5,14 @@ uid: user-guide
 ---
 # User guide
 
-This topic hasn’t been written yet! You're more than welcome to help us with that.
+**nopCommerce User Guide** helps you get started with the **nopCommerce** e-commerce platform. It explains how to install, configure, build, maintain, and develop an online store using the platform.
 
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
+In case you have questions that are not covered in this guide, please refer to our forum support: [http://www.nopcommerce.com/boards/](http://www.nopcommerce.com/boards/)
+
+## See also
+
+* [Getting started](xref:user-guide/getting-started)
+* [Installing nopCommerce](xref:user-guide/installing/index)
+* [Configuring your store](xref:user-guide/configuring/index)
+* [Running your store](xref:user-guide/running/index)
+* [Marketing your store](xref:user-guide/marketing/index)
