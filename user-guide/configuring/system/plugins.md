@@ -25,7 +25,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 1. The plugin is displayed in the Plugins windows (Configuration → Local Plugins).
 
     > [!NOTE]
-    > If you're running nopCommerce in medium trust, then it's recommended to clear your \Plugins\bin\ directory
+    > If you're running nopCommerce in medium trust, then it's recommended to clear your `\Plugins\bin\` directory
 
 You can download more nopCommerce plugins on our [extensions directory](https://www.nopcommerce.com/marketplace.aspx).
 

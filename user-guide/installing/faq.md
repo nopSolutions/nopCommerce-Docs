@@ -20,7 +20,7 @@ For versions 4.00 and above to find out what went wrong you need to turn off the
 
 Also, check Admin → System → Log for any errors.
 
-Also, you can enable "stdoutLogEnabled" (set to "true") in your web.config. Then you'll see a detailed error at the \logs\ directory
+Also, you can enable "stdoutLogEnabled" (set to "true") in your web.config. Then you'll see a detailed error at the `\logs\` directory
 
 For versions before 4.00 to find out what went wrong you need to turn off the custom errors mode.
 
@@ -47,7 +47,7 @@ Go to admin area → configuration → languages → "view strings resources" [o
 
 ## Getting "A generic error occurred in GDI+" error
 
-Give write permissions to \Content\Images\ and \Content\Images\Thumbs\ directories
+Give write permissions to `\Content\Images\ and \Content\Images\Thumbs\` directories
 
 ## How to configure Multi-Vendor feature
 

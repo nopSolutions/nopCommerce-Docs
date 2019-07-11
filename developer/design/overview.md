@@ -11,7 +11,7 @@ A theme is a collection of property settings that allow you to define the look o
 
 Themes are made up of a set of elements: skins, cascading style sheets (CSS), images, and other resources. At a minimum, a theme will contain skins. Themes are defined in special directories on your Web site or on your Web server.
 
-A theme can also include a cascading style sheet (.CSS file). When you put a .CSS file in the theme folder, the style sheet is applied automatically as part of the theme. You define a style sheet using the file name extension .CSS in the theme folder. (Source: [msdn.microsoft.com](https://msdn.microsoft.com))
+A theme can also include a cascading style sheet (`.CSS` file). When you put a `.CSS` file in the theme folder, the style sheet is applied automatically as part of the theme. You define a style sheet using the file name extension `.CSS` in the theme folder. (Source: [msdn.microsoft.com](https://msdn.microsoft.com))
 
 ## Definition of a nopCommerce theme
 

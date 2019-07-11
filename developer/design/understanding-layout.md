@@ -20,15 +20,15 @@ All these 2 layouts are inherited from one main layout called: `_Root.cshtml`. T
 
     ![root-layout](_static/understanding-layout/root-layout.jpg)
 
-* **Layout of _Root.cshtml (in respect of css class)**
+* **Layout of `_Root.cshtml` (in respect of css class)**
 
     ![root-layout-css](_static/understanding-layout/root-layout-css.jpg)
 
-Now the following 2 layouts override the body of _Root.cshtml:
+Now the following 2 layouts override the body of `_Root.cshtml`:
 
 * `_ColumnsOne.cshtml`
 
-    In this case, there is no change in the layout of the body, so the structure remains pretty much the same as _Root.cshtml:
+    In this case, there is no change in the layout of the body, so the structure remains pretty much the same as `_Root.cshtml`:
 
     ![columns-one](_static/understanding-layout/column-one.jpg)
 

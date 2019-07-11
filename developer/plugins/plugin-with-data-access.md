@@ -322,7 +322,7 @@ namespace Nop.Plugin.Other.ProductViewTracker
 
 ## The usage
 
-The tracking code should be added to ProductTemplate.Simple.cshtml and ProductTemplate.Grouped.cshtml files. These ones are product templates.
+The tracking code should be added to `ProductTemplate.Simple.cshtml` and `ProductTemplate.Grouped.cshtml` files. These ones are product templates.
 
 ```csharp
 @await Component.InvokeAsync("ProductViewTrackerIndex", new { productId = Model.Id })

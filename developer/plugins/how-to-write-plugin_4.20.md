@@ -9,13 +9,13 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 ## The plugin structure, required files, and locations
 
-1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into \Plugins directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/en-us/library/sx2027y2.aspx)).
+1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into `\Plugins` directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/en-us/library/sx2027y2.aspx)).
 
     A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 
     ![p1](_static/write_plugin_4.20/write_plugin_4.20_1.jpg)
 
-1. Once the plugin project is created you have to open its .csproj file in any text editor and replace its content with the following one:
+1. Once the plugin project is created you have to open its `.csproj` file in any text editor and replace its content with the following one:
 
     ```html
     <Project Sdk="Microsoft.NET.Sdk">
@@ -97,11 +97,11 @@ You can find more information about the MVC pattern [here](http://www.asp.net/mv
 
 So let's start:
 
-1. **Create the model**. Add a **Models** folder in the new plugin, and then add a new model class which fits your need.
-1. **Create the view**. Add a **Views** folder in the new plugin, and then add a cshtml file named Configure.cshtml. Set **"Build Action"** property of the view file is set to **"Content"**, and the **"Copy to Output Directory"** property is set to **"Copy always"**. Note that configuration page should use "_ConfigurePlugin" layout.
-1. Also make sure that you have **_ViewImports.cshtml** file into your \Views directory. You can just copy it from any other existing plugin.
-1. **Create the controller**. Add a **Controllers** folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers {Group}{Name}Controller.cs. For example, PaymentPayPalStandardController. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it *"Configure"*. Prepare a model class and pass it to the following view using a physical view path: - *"~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml"*.
-Use the following attributes for your action method:
+- **Create the model**. Add a **Models** folder in the new plugin, and then add a new model class which fits your need.
+- **Create the view**. Add a **Views** folder in the new plugin, and then add a cshtml file named `Configure.cshtml`. Set **"Build Action"** property of the view file is set to **"Content"**, and the **"Copy to Output Directory"** property is set to **"Copy always"**. Note that configuration page should use "_ConfigurePlugin" layout.
+- Also make sure that you have `_ViewImports.cshtml` file into your \Views directory. You can just copy it from any other existing plugin.
+- **Create the controller**. Add a **Controllers** folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers `{Group}{Name}Controller.cs`. For example, PaymentPayPalStandardController. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it *"Configure"*. Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
+- Use the following attributes for your action method:
 
     ```csharp
     [AuthorizeAdmin] //confirms access to the admin panel
@@ -162,7 +162,7 @@ public override void Install()
 
 Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing). So follow the next steps:
 
-1. If you need to add some custom route, then create RouteProvider.cs file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by PayPal plugin):
+1. If you need to add some custom route, then create `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by PayPal plugin):
 
 ```csharp
 public partial class RouteProvider : IRouteProvider
