@@ -17,7 +17,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 1. Once the plugin project is created you have to open its `.csproj` file in any text editor and replace its content with the following one:
 
-    ```html
+    ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <TargetFramework>netcoreapp2.2</TargetFramework>

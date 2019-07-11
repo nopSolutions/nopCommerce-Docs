@@ -80,7 +80,7 @@ This document describes a step-by-step guide to building and running a Docker co
 
     To deploy container composition, use the command:
 
-    ```<language>
+    ```csharp
     [docker-compose up -d]
     ```
 

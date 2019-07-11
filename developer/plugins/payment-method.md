@@ -23,13 +23,13 @@ Then you have to create a view component for displaying plugin in public store. 
 
 ```csharp
 [ViewComponent(Name = "PaymentPayPalStandard")]
- public class PaymentPayPalStandardViewComponent : NopViewComponent
- {
-        public IViewComponentResult Invoke()
-        {
-            return View("~/Plugins/Payments.PayPalStandard/Views/PaymentInfo.cshtml");
-        }
- }
+public class PaymentPayPalStandardViewComponent : NopViewComponent
+{
+    public IViewComponentResult Invoke()
+    {
+        return View("~/Plugins/Payments.PayPalStandard/Views/PaymentInfo.cshtml");
+    }
+}
 ```
 
 Invoke method returns an appropriate PaymentInfo view from */Views* folder of your plugin. Note that we use our custom NopViewComponent class as a base class instead of existing built-in ViewComponent.
