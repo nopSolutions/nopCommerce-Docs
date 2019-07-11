@@ -184,11 +184,11 @@ pre {
       font-size: 11px;
       line-height: 32px;
       color: #41afef;
-      text-transform: uppercase
+      text-transform: uppercase;
   }
 
   .breadcrumb a {
       color: #41afef;
       text-transform: uppercase;
-      font-size: 11px
+      font-size: 11px;
   }
