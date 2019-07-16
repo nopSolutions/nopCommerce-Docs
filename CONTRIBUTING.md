@@ -72,4 +72,4 @@ The [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welco
 
 ## Redirects
 
-If you delete an article, change its file name, or move it to a different folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [master redirect file](https://github.com/nopSolutions/nopCommerce-Docs/master/.openpublishing.redirection.json).
+If you delete an article, change its file name, or move it to a different folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [master redirect file](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/.openpublishing.redirection.json).
