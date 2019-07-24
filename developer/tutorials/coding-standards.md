@@ -673,7 +673,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
   
-  - Place else statements on a new line.
+- Place else statements on a new line.
   
   ```csharp
   //Right
@@ -715,7 +715,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
   
-  - Require finally statements to be on a new line after the closing brace.
+- Require finally statements to be on a new line after the closing brace.
   
   ```csharp
   //Right
@@ -741,7 +741,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
   
-  - Require members of object initializers to be on separate lines
+- Require members of object initializers to be on separate lines
   
   ```csharp
   //Right
@@ -760,7 +760,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
   
-  - Require members of anonymous types to be on separate lines
+- Require members of anonymous types to be on separate lines
   
   ```csharp
   //Right

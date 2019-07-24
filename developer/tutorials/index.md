@@ -8,6 +8,7 @@ uid: developer/tutorials
 The following is a list of common questions asked by developers working with nopCommerce. It also describes some of the architectural choices the nopCommerce team made.
 
 * [Configuring code style](xref:developer/tutorials/code-style)
+* [Coding Standards](xref:developer/tutorials/coding-standards)
 * [Source code organization. Architecture of nopCommerce.](xref:developer/tutorials/source-code-organization)
 * [Updating an existing entity. How to add a new property.](xref:developer/tutorials/update-existing-entity)
 * [The nopCommerce Data Access Layer](xref:developer/tutorials/data-access-layer)
