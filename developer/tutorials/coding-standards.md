@@ -407,7 +407,7 @@ The style rules in this section concern the use of the var keyword versus an exp
 
 #### Expression-bodied members
 
-The style rules in this section concern the use of [expression-bodied members](xref:https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) when the logic consists of a single expression. This rule can be applied to methods, constructors, operators, properties, indexers, and accessors.
+The style rules in this section concern the use of [expression-bodied members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) when the logic consists of a single expression. This rule can be applied to methods, constructors, operators, properties, indexers, and accessors.
 
 - Prefer block bodies for methods
 
@@ -497,7 +497,7 @@ The style rules in this section concern the use of [expression-bodied members](x
 
 #### Pattern matching
 
-The style rules in this section concern the use of [pattern matching](xref:https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching) in C#.
+The style rules in this section concern the use of [pattern matching](https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching) in C#.
 
 - Prefer pattern matching instead of is expressions with type casts
 
@@ -526,7 +526,7 @@ The style rules in this section concern the use of [pattern matching](xref:https
 
 #### Inlined variable declarations
 
-This style rule concerns whether out variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](xref:https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
+This style rule concerns whether out variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
 
 - Prefer *`out`* variables to be declared inline in the argument list of a method call when possible
 
@@ -543,7 +543,7 @@ This style rule concerns whether out variables are declared inline or not. Start
 
 #### C# expression-level preferences
 
-This style rule concerns using the [default literal for default value expressions](xref:https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) when the compiler can infer the type of the expression.
+This style rule concerns using the [default literal for default value expressions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) when the compiler can infer the type of the expression.
 
 - Prefer *`default`* over *`default(T)`*
 
@@ -559,7 +559,7 @@ This style rule concerns using the [default literal for default value expression
 
 #### C# null-checking preferences
 
-These style rules concern the syntax around null checking, including using throw expressions or throw statements, and whether to perform a null check or use the conditional coalescing operator (?.) when invoking a [lambda expression](xref:https://docs.microsoft.com/en-us/dotnet/csharp/lambda-expressions).
+These style rules concern the syntax around null checking, including using throw expressions or throw statements, and whether to perform a null check or use the conditional coalescing operator (?.) when invoking a [lambda expression](https://docs.microsoft.com/en-us/dotnet/csharp/lambda-expressions).
 
 - Prefer to use throw expressions instead of throw statements
 
