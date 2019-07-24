@@ -38,9 +38,6 @@
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
-    "postProcessors": [
-      "ExtractSearchIndex"
-    ],
     "globalMetadata": {      
       "_navPath": "/",
       "_navRel": "/",
