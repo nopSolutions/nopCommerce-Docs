@@ -7,7 +7,7 @@ $(function () {
   var show = 'show';
   var hide = 'hide';
   var util = new utility();
-
+  
   workAroundFixedHeaderForAnchors();
   highlight();
   enableSearch();
@@ -15,11 +15,11 @@ $(function () {
   renderTables();
   renderAlerts();
   renderLinks();
-  //renderNavbar();
+  renderNavbar();
   renderSidebar();
   renderAffix();
   renderFooter();
-  renderLogo();
+  //renderLogo();
 
   breakText();
   renderTabs();
@@ -359,7 +359,8 @@ $(function () {
 
     function loadNavbar() {
       var navbarPath = $("meta[property='docfx\\:navrel']").attr("content");
-      if (!navbarPath) {
+      if (!navbarPath || navbarPath === "/") {
+        showSearch();
         return;
       }
       navbarPath = navbarPath.replace(/\\/g, '/');

@@ -1,3 +1,12 @@
-<div id="header" class="header">
-  {{>partials/logo}}
+<div class="container">
+  <div id="header" class="header navbar-header">
+    {{>partials/logo}}
+  </div>
+  <div class="navbar-collapse collapse in">
+    <form class="navbar-form navbar-right" role="search" id="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+            </div>
+    </form>
+  </div>  
 </div>

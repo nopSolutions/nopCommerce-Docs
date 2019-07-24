@@ -12,7 +12,6 @@
           "***/readme.md",
           "***/license.md"
         ],
-        "group": "group1",
         "src": "."
       }
     ],
@@ -31,7 +30,6 @@
           "_site/**",
           "_exported_templates/**"
         ],
-        "group": "group1",
         "src": "."
       }
     ],
@@ -40,11 +38,17 @@
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
-    "globalMetadata": {
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
+    "globalMetadata": {      
       "_navPath": "/",
       "_navRel": "/",
       "_appLogoPath": "/logo.png",
+      "_enableSearch": true,
       "_gitContribute": {
+        "orgName": "nopSolutions",
+        "repoName": "nopCommerce-Docs",
         "repo": "https://github.com/nopSolutions/nopCommerce-Docs.git",
         "branch": "master"
       },
