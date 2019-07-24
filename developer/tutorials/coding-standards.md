@@ -694,7 +694,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
   
-  - Place catch statements on a new line.
+- Place catch statements on a new line.
   
   ```csharp
   //Right
