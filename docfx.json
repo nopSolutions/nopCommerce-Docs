@@ -33,6 +33,7 @@
         "src": "."
       }
     ],
+    "postProcessors": [ "ExtractSearchIndex" ],
     "overwrite": [],
     "externalReference": [],
     "xrefService": [
