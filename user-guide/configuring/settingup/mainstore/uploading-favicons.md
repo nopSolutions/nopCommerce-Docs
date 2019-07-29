@@ -25,7 +25,7 @@ Here you need to remember or write down the path to your icons (it will vary dep
       1. Go to this generator main page where we are invited to choose a picture for the favicon
 ![realfavicongenerator](_static/uploading-favicons/realfavicongenerator.png)
 
-      1.  After selecting a picture and pressing a button, go to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. The service will automatically show display examples. You can customize them to your need or leave the default.
+      1. After selecting a picture and pressing a button, go to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. The service will automatically show display examples. You can customize them to your need or leave the default.
 
       1. At the bottom of the same page we find an important part of the settings **Favicon Generator Options**.
 ![favicon_generator_options](_static/uploading-favicons/favicon_generator_options.png)
@@ -53,7 +53,7 @@ Here you need to remember or write down the path to your icons (it will vary dep
 
       1. Replace in this package the file **favicon.ico** with your new favicon.
 
-      1. Edit the **html_code.html** file, leave only one line there 
+      1. Edit the **html_code.html** file, leave only one line there
  `<link rel="shortcut icon" href="icons/icons_0/favicon.ico">` assuming that **icons/icons_0** it is the path that was saved from step 2.
 
       1. Save these two files into package. Your favicon package is ready.
