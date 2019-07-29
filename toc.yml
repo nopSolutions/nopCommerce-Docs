@@ -50,6 +50,8 @@
                   uid: user-guide/configuring/settingup/mainstore/pdf-settings
                 - name: GDPR settings
                   uid: user-guide/configuring/settingup/mainstore/gdpr-settings
+                - name: Uploading favicons
+                  uid: user-guide/configuring/settingup/mainstore/uploading-favicons
             - name: Setting up Payments
               uid: user-guide/configuring/settingup/payments/index
               items:
