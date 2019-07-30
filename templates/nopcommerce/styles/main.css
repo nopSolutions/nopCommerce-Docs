@@ -192,11 +192,6 @@ header {
   top: 150px;
 }
 
-.sidefilter {
-  background-color: #fff;
-  border-left: none;
-  border-right: none;
-}
 
 .toc-filter {
   padding: 10px;
@@ -223,13 +218,7 @@ header {
   top: 240px;
 }
 
-@media only screen and (max-width: 768px){
-.toc li:after {
-    margin-left: -3px;
-    margin-right: 5px;
-    color: #666666;
-}
-}
+
 /* CODE HIGHLIGHT */
 pre {
   border-radius: 0px;
@@ -264,6 +253,26 @@ pre {
 .article {
   margin-top: 175px;
   margin-bottom: 115px;
+}
+
+.article {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
 }
 
 /* ARTICLE */
@@ -339,4 +348,27 @@ pre {
   margin-right: auto;
   line-height: 1.8;
   display: none;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 768px){
+  .sidefilter, .toc-filter, .sidetoc, .sidetoc > .toc {
+    background: none;
+  }
+
+  .toc {    
+    text-align: left;
+  }
+
+  .toc li:after {
+    content: none;
+    margin-left: -3px;
+    margin-right: 5px;
+    color: #666666;
+  }
+
+  .toc .nav > li, .toc .nav > li >a {
+    display: block;
+  }
 }
