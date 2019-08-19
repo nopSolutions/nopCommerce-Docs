@@ -7,9 +7,9 @@ uid: developer/plugins/plugin-with-data-access
 
 In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
 
-- [Developer tutorials](/developer/tutorials)
-- [Updating an existing entity. How to add a new property.](/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.20](/developer/plugins/how-to-write-plugin_4.20)
+- [Developer tutorials](xref:developer/tutorials)
+- [Updating an existing entity. How to add a new property.](xref:developer/tutorials/update-existing-entity)
+- [How to write a plugin for nopCommerce 4.20](xref:developer/plugins/how-to-write-plugin_4.20)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
