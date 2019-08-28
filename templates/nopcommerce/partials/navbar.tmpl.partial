@@ -4,9 +4,15 @@
   </div>
   <div class="navbar-collapse collapse in">
     <form class="navbar-form navbar-right" role="search" id="search">
-            <div class="form-group">
-              <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-            </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+      </div>
+
+      <div class="form-group lang-container">
+          {{#_nav}}
+            {{>partials/langswitcher}}
+          {{/_nav}}
+        </div>
     </form>
   </div>  
 </div>
