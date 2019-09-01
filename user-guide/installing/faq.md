@@ -22,7 +22,7 @@ Also, check Admin → System → Log for any errors.
 
 Also, you can enable "stdoutLogEnabled" (set to "true") in your web.config. Then you'll see a detailed error at the `\logs\` directory
 
-For versions before 4.00 to find out what went wrong you need to turn off the custom errors mode.
+For versions below 4.00 to find out what went wrong you need to turn off the custom errors mode.
 
 1. Open web.config file
 2. Find out the following line `<customErrors defaultRedirect="errorpage.htm" mode="RemoteOnly">`
@@ -43,11 +43,11 @@ Please see [Upgrading nopCommerce](xref:user-guide/installing/upgrading)
 
 ## How to change texts strings in the store
 
-Go to admin area → configuration → languages → "view strings resources" [of your language], with the help of filters (funnel tools) you can find and edit the texts whose value you want to change.
+Go to admin area → configuration → languages → "view strings resources" [of your language], with the help of filters you can find and edit the texts whose value you want to change.
 
 ## Getting "A generic error occurred in GDI+" error
 
-Give write permissions to `\Content\Images\ and \Content\Images\Thumbs\` directories
+Give write permissions to `\wwwroot\Images\ and \wwwroot\Images\Thumbs\` (for nopCommerce 3.90 or below version  `\Content\Images\ and \Content\Images\Thumbs\`) directories
 
 ## How to configure Multi-Vendor feature
 
