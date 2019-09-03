@@ -1,7 +1,6 @@
 ---
 title: SEO
-author: AndreiMaz
-uid: user-guide/marketing/content/seo
+uid: en/user-guide/marketing/content/seo
 ---
 # SEO
 
@@ -63,10 +62,10 @@ There are several types of pages in nopCommerce for which you can set up individ
 
 ## See also
 
-- [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
-- [Product categories](xref:user-guide/running/product-management/categories)
-- [Manufacturers](xref:user-guide/running/product-management/manufacturers)
-- [Vendors](xref:user-guide/configuring/settingup/customers/vendors/index)
-- [Topics (pages)](xref:user-guide/marketing/content/topics)
-- [News](xref:user-guide/marketing/content/news/index)
-- [Blog](xref:user-guide/marketing/content/blog/index)
+- [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
+- [Product categories](xref:en/user-guide/running/product-management/categories)
+- [Manufacturers](xref:en/user-guide/running/product-management/manufacturers)
+- [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index)
+- [Topics (pages)](xref:en/user-guide/marketing/content/topics)
+- [News](xref:en/user-guide/marketing/content/news/index)
+- [Blog](xref:en/user-guide/marketing/content/blog/index)

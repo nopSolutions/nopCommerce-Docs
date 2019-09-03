@@ -1,7 +1,6 @@
 ---
 title: Updating an existing entity. How to add a new property.
-author: AndreiMaz
-uid: developer/tutorials/update-existing-entity
+uid: en/developer/tutorials/update-existing-entity
 ---
 # Updating an existing entity. How to add a new property
 

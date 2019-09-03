@@ -1,7 +1,6 @@
 ---
 title: Return request settings
-author: AndreiMaz
-uid: user-guide/running/order-management/return-requests/return-requests-settings
+uid: en/user-guide/running/order-management/return-requests/return-requests-settings
 ---
 # Return request settings
 
@@ -24,5 +23,5 @@ This page enables **multi-store configuration**, it means that the same settings
 
 ## See also
 
-* [Return Requests](xref:user-guide/running/order-management/return-requests/index)
-* [Order Settings](xref:user-guide/running/order-management/orders/order-settings)
+* [Return Requests](xref:en/user-guide/running/order-management/return-requests/index)
+* [Order Settings](xref:en/user-guide/running/order-management/orders/order-settings)

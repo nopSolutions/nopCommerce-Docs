@@ -1,7 +1,6 @@
 ---
 title: Return Requests
-author: AndreiMaz
-uid: user-guide/running/order-management/return-requests/index
+uid: en/user-guide/running/order-management/return-requests/index
 ---
 # Return Requests
 
@@ -57,6 +56,6 @@ The store owner can now manage this return request in the Administration Area.
 
 ## See also
 
-* [Return request settings](xref:user-guide/running/order-management/return-requests/return-requests-settings)
-* [Orders](xref:user-guide/running/order-management/orders/index)
+* [Return request settings](xref:en/user-guide/running/order-management/return-requests/return-requests-settings)
+* [Orders](xref:en/user-guide/running/order-management/orders/index)
 * [YouTube Tutorial: Managing Return Requests](https://www.youtube.com/watch?v=VqF2GZ2ip_0&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=17)

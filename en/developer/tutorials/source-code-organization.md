@@ -1,7 +1,6 @@
 ---
 title: Source code organization. Architecture of nopCommerce.
-author: AndreiMaz
-uid: developer/tutorials/source-code-organization
+uid: en/developer/tutorials/source-code-organization
 ---
 # Source code organization. Architecture of nopCommerce
 

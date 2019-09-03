@@ -1,7 +1,6 @@
 ---
 title: Facebook authentication
-author: AndreiMaz
-uid: user-guide/configuring/system/external-authentication/facebook
+uid: en/user-guide/configuring/system/external-authentication/facebook
 ---
 # Facebook authentication
 

@@ -10,7 +10,8 @@
           "**/obj/**",
           "_site/**",
           "***/readme.md",
-          "***/license.md"
+          "***/license.md",
+          "***/crowdin_nopcommerce.yml"
         ],
         "src": "."
       }
@@ -23,7 +24,8 @@
           "**/*.jpeg",
           "**/*.gif",
           "**/*.svg",
-          "**/*.pdf"
+          "**/*.pdf",
+          "***/web.config"
         ],
         "exclude": [
           "**/obj/**",
@@ -39,16 +41,16 @@
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
-    "globalMetadata": {      
+    "globalMetadata": {
       "_navPath": "/",
       "_navRel": "/",
-      "_appLogoPath": "/logo.png",
+      "_appLogoPath": "logo.png",
       "_enableSearch": true,
       "_gitContribute": {
         "orgName": "nopSolutions",
         "repoName": "nopCommerce-Docs",
         "repo": "https://github.com/nopSolutions/nopCommerce-Docs.git",
-        "branch": "master"
+        "branch": "nopCommerce-4.20"
       },
       "searchScope": [
         "nopCommerce-Docs"

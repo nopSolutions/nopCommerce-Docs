@@ -1,7 +1,6 @@
 ---
 title: Checkout attributes
-author: AndreiMaz
-uid: user-guide/running/product-management/attributes/checkout-attributes
+uid: en/user-guide/running/product-management/attributes/checkout-attributes
 ---
 # Checkout attributes
 

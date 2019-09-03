@@ -1,7 +1,6 @@
 ---
 title: Localization
-author: AndreiMaz
-uid: user-guide/configuring/system/localization
+uid: en/user-guide/configuring/system/localization
 ---
 # Localization
 

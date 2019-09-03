@@ -1,7 +1,6 @@
 ---
 title: System Information
-author: AndreiMaz
-uid: user-guide/configuring/system/system-information
+uid: en/user-guide/configuring/system/system-information
 ---
 # System Information
 

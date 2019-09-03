@@ -1,7 +1,6 @@
 ---
 title: nopCommerce Data Access Layer
-author: AndreiMaz
-uid: developer/tutorials/data-access-layer
+uid: en/developer/tutorials/data-access-layer
 ---
 # nopCommerce Data Access Layer
 

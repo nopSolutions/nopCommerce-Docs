@@ -1,7 +1,6 @@
 ---
 title: Message templates
-author: AndreiMaz
-uid: user-guide/marketing/content/message-templates
+uid: en/user-guide/marketing/content/message-templates
 ---
 # Message templates
 
@@ -45,5 +44,5 @@ Edit **message details as follows**:
 ## See also
 
 - [Video Tutorial on conditions in message templates](https://www.youtube.com/watch?v=5chrb1yH1v4&feature=youtu.be)
-- [Email accounts](xref:user-guide/configuring/system/email-accounts)
-- [Languages](xref:user-guide/configuring/settingup/mainstore/languages)
+- [Email accounts](xref:en/user-guide/configuring/system/email-accounts)
+- [Languages](xref:en/user-guide/configuring/setting-up/main-store/languages)

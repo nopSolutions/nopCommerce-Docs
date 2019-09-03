@@ -1,7 +1,6 @@
 ---
 title: Email campaigns
-author: AndreiMaz
-uid: user-guide/marketing/content/email-campaigns/index
+uid: en/user-guide/marketing/content/email-campaigns/index
 ---
 # Email campaigns
 
@@ -13,5 +12,5 @@ There are several examples of email marketing campaigns you can use for your sto
 
 ## Learn more in following chapters
 
-- **[All campaigns](xref:user-guide/marketing/content/email-campaigns/all-campaigns)**
-- **[Newsletter subscribers](xref:user-guide/marketing/content/email-campaigns/newsletter-subscribers)**
+- **[All campaigns](xref:en/user-guide/marketing/content/email-campaigns/all-campaigns)**
+- **[Newsletter subscribers](xref:en/user-guide/marketing/content/email-campaigns/newsletter-subscribers)**

@@ -1,16 +1,15 @@
 ---
 title: Installation guide
-author: AndreiMaz
-uid: user-guide/installing/installation-guide/index
+uid: en/user-guide/installing/installation-guide/index
 ---
 # Installation guide
 
 This chapter describes how to download nopCommerce software, upload it to your server, define the file permissions, and install it on your system. You may also watch the screencast about nopCommerce installation on our [YouTube channel.](https://www.youtube.com/watch?v=L7NGodeB9sQ)
 
-Before you begin the install, ensure that you and your web host have the [minimum requirements to run nopCommerce.](xref:user-guide/installing/technology-system-requirements)
+Before you begin the install, ensure that you and your web host have the [minimum requirements to run nopCommerce.](xref:en/user-guide/installing/technology-system-requirements)
 
 > [!TIP]
-> For more information on hosting selection guidelines, visit [this page.](xref:user-guide/installing/installation-guide/hosting-provider)
+> For more information on hosting selection guidelines, visit [this page.](xref:en/user-guide/installing/installation-guide/hosting-provider)
 
 There are several options available when downloading nopCommerce. In order to determine which option to download, you need to decide how you will use it. The following options are available:
 
@@ -27,7 +26,7 @@ To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virt
 If you are using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above
 
 > [!TIP]
-> For more information on IIS, visit [this page.](xref:user-guide/installing/installation-guide/installing-IIS)
+> For more information on IIS, visit [this page.](xref:en/user-guide/installing/installation-guide/installing-IIS)
 
 **Running the site using Visual Studio (package with source code)**
 This step describes how to launch a site in Visual Studio. To run the site in Visual Studio, extract the full source code archive (.rar) to a local folder. Launch Visual Studio and select **File →  Open →  Project/Solution**. Navigate to the folder where you extracted the archive and open **NopCommerce.sln** solution file. Run **`Nop.Web`** project.
@@ -127,6 +126,6 @@ Specify Custom SQL Server collation: This is an advanced setting and should be l
 
 ## See also
 
-- [Hosting providers](xref:user-guide/installing/installation-guide/hosting-provider)
-- [Installing Internet Information Services (IIS)](xref:user-guide/installing/installation-guide/installing-IIS)
-- [Known Issues and Solutions](xref:user-guide/installing/installation-guide/known-issues-and-solutions)
+- [Hosting providers](xref:en/user-guide/installing/installation-guide/hosting-provider)
+- [Installing Internet Information Services (IIS)](xref:en/user-guide/installing/installation-guide/installing-IIS)
+- [Known Issues and Solutions](xref:en/user-guide/installing/installation-guide/known-issues-and-solutions)

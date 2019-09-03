@@ -1,7 +1,6 @@
 ---
 title: Country report
-author: AndreiMaz
-uid: user-guide/running/reports/country-report
+uid: en/user-guide/running/reports/country-report
 ---
 # Country report
 
@@ -20,6 +19,6 @@ To search for the report, enter one or more of the following search criteria:
 
 ## See also
 
-* [Customer reports](xref:user-guide/running/reports/customer-reports)
-* [Countries](xref:user-guide/configuring/settingup/mainstore/countries)
-* [Orders](xref:user-guide/running/order-management/orders/index)
+* [Customer reports](xref:en/user-guide/running/reports/customer-reports)
+* [Countries](xref:en/user-guide/configuring/setting-up/main-store/countries)
+* [Orders](xref:en/user-guide/running/order-management/orders/index)

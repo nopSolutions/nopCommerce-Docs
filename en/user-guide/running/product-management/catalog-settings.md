@@ -1,7 +1,6 @@
 ---
 title: Catalog settings
-author: AndreiMaz
-uid: user-guide/running/product-management/catalog-settings
+uid: en/user-guide/running/product-management/catalog-settings
 ---
 # Catalog settings
 
@@ -62,7 +61,7 @@ Also on this page you can see the left feedback of all customers (if this settin
 
 The next block sets up **Performance**. Having the following settings enabled can significantly improve the store performance:
 
-- **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:user-guide/configuring/settingup/customers/acl) configured for entities.
+- **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:en/user-guide/configuring/setting-up/customers/acl) configured for entities.
 - **Ignore limit per store** (sitewide), to ignore limit per stores rules configured for entities (sitewide). It is recommended to enable this setting if you have only one store or do not have any store-specific limitations.
 - **Ignore discounts **(sitewide)
 - **Ignore featured products** (sitewide)

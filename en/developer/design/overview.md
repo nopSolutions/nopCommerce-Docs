@@ -1,7 +1,6 @@
 ---
 title: Overview (Designer's Guide)
-author: AndreiMaz
-uid: developer/design/overview
+uid: en/developer/design/overview
 ---
 # Overview (Designer's Guide)
 

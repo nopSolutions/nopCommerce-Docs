@@ -1,7 +1,6 @@
 ---
 title: Right To Left Theme
-author: AndreiMaz
-uid: developer/design/right-to-left-theme
+uid: en/developer/design/right-to-left-theme
 ---
 # Right To Left Theme
 

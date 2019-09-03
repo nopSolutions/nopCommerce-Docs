@@ -1,7 +1,6 @@
 ---
 title: Responsive Design
-author: AndreiMaz
-uid: developer/design/responsive
+uid: en/developer/design/responsive
 ---
 # Responsive Design
 

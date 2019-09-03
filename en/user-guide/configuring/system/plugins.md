@@ -1,7 +1,6 @@
 ---
 title: Plugins
-author: AndreiMaz
-uid: user-guide/configuring/system/plugins
+uid: en/user-guide/configuring/system/plugins
 ---
 # Plugins
 

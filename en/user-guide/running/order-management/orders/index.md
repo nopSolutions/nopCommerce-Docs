@@ -1,7 +1,6 @@
 ---
 title: Order management
-author: AndreiMaz
-uid: user-guide/running/order-management/orders/index
+uid: en/user-guide/running/order-management/orders/index
 ---
 # Order management
 
@@ -9,7 +8,7 @@ uid: user-guide/running/order-management/orders/index
 
 Top area of the page enables a store owner to search for orders. Enter specific search criteria and use a variety of filters to find any order placed in the store. When any search is performed, the results of the search are displayed in the lower half of the screen.  You can click View to view the order details.
 
-![order-list](_static/Admin-Order-List.png)
+![order-list](_static/index/Admin-Order-List.png)
 
 __To search for orders__, enter one or more of the following search criteria:
 
@@ -45,7 +44,7 @@ On the **Order Info** tab a store owner can perform the following:
 
 If the payment status is **Authorized** the relevant buttons will be available to **Void** and **Capture** the order. Capture is used to collect the funds from the customer. Void cancels an order that has not been captured. If the Payment status is **Pending**, the owner can click **Mark as paid** to indicate a payment has been issued for the order. If the payment status is **Paid** a **Partial Refund** button will be available. Clicking this button displays the Partial Refund window, enabling the owner to refund part of the total order, as follows:
 
-![refund](_static/refund.png)
+![refund](_static/index/refund.png)
 
 On the **Billing & Shipping panel**, view and edit the billing and shipping information, if needed. On the **Shipping Info panel**, a store owner can:
 
@@ -53,15 +52,15 @@ On the **Billing & Shipping panel**, view and edit the billing and shipping info
 * View and Edit a **shipping method**
 * View a **shipping status**. Note: Store owners can create several shipments per order. If you create a shipment but do not ship all products, then the shipping status of an order is **Partially shipped**. Once all the products are shipped, the status changes to **Shipped**. Once all the shipments are delivered, the status changes to **Delivered**.
 * View the **list of shipments**. Click **View** beside the shipment to view its details. The shipment information window will be displayed:
-    ![shipment-details](_static/shipment-details.jpeg)
+    ![shipment-details](_static/index/shipment-details.jpeg)
 
 **Add Shipment** - enables creating several shipments per order and is visible when there is at least one non-shipped product in the order. Add a new shipment in the Add a new shipment to order window. In the Quantity to ship column, enter the required quantity of the specific order to ship. Once a shipment is created, you can set it to shipped and then delivered, by clicking the Set as shipped and Set as delivered buttons accordingly.
 
-![Add Shipment](_static/add-shipment.jpeg)
+![Add Shipment](_static/index/add-shipment.jpeg)
 
 In the **Tracking number** field, enter the tracking number of the current order and click the Set tracking number button. Tracking numbers enables your customers and you to check up on the progress of a shipment via a telephone or online system, operated by your shipping agent (the Post Office, or a private courier service such as FedEx or UPS). When a shipment passes certain points along its route, it is identified by the shipping agents system, and the tracking database is updated with the new location and time information.
 
-![Tracking number](_static/tracking.jpeg)
+![Tracking number](_static/index/tracking.jpeg)
 
 On the *Products* tab a store owner can:
 
@@ -71,12 +70,12 @@ On the *Products* tab a store owner can:
 * **Delete** a product from the system
 Add Product. In the **Add a New Product to the Order** window find the required product, fill the required values and Add Product.
 
-![Order Products](_static/order-products.png)
+![Order Products](_static/index/order-products.png)
 
 On the **Order Notes** tab, a store owner can **view** notes that were added to each order for information purposes, **delete** notes, and **add new** notes, which may contain an attached file and be Displayed to a customer in a public store.
 
 ## See also
 
-* [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
-* [Shipments](xref:user-guide/running/order-management/shipments)
+* [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
+* [Shipments](xref:en/user-guide/running/order-management/shipments)
 * [YouTube tutorial on managing orders](https://www.youtube.com/watch?v=z6TUJOO3gVg&index=5&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
