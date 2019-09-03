@@ -39,6 +39,7 @@ On the **country info** panel define the **following country settings:**
 > [!NOTE]
 > This field is used only when the EU VAT option is enabled on the Tax Settings page (Configuration → Tax → Tax Settings).
 
+* Set store if vendor is **limited to sore**
 * Tick the **Published** checkbox, to enable this country to be visible for new account registrations and for the creation of shipping and billing addresses.
 * Enter the **Display order** of this country. A value of 1 represents the top of the list.
 * Click **Save.**

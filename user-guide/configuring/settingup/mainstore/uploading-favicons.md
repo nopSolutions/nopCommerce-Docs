@@ -69,7 +69,7 @@ Here you need to remember or write down the path to your icons (it will vary dep
       1. Save this package. Your favicon package is ready.
 
 1. Return back to the admin area with a prepared favicon package to upload. Select the desired file and click **Upload icons archive**.
-![upload_package](_static/uploading-favicons/upload_package.png)
+![upload_package](_static/uploading-favicons/file_selection_dialog.png)
 
 1. Ensure your package is successfully uploaded.
 ![success](_static/uploading-favicons/success.png)

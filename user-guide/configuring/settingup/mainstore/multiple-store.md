@@ -44,7 +44,7 @@ _____________________________________
 
     Once the installation and technical setup are done, you can manage your stores from the administration area. Go to **Configuration → Stores.** The Stores window is displayed:
 
-![store window](_static/multiple-store/36381788.png)
+![store window](_static/multiple-store/mainstore.png)
 
 > [!NOTE]
 > By default, only one store is created.
@@ -77,7 +77,7 @@ Once the stores have been setup and configured, you can define your entities for
 
 Scroll down to the "Stores" section and choose the name of the existing store in a "Limited to stores" box, as shown in the Edit Product Details screen below:
 
-![Mappings](_static/multiple-store/15281404.png)
+![Mappings](_static/multiple-store/product-limited-to-store.png)
 
 Different [themes](xref:user-guide/configuring/design/installing-theme) can also be configured for different stores.
 

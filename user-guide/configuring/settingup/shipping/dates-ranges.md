@@ -20,7 +20,7 @@ Delivery dates are time ranges displaying approximate delivery time to a custome
 
 ## Product availability ranges
 
-You can set up product availability ranges in **Configuration → Shipping → Dates** and ranges. This option will be displayed on product editing page.
+You can set up product availability ranges in **Configuration → Shipping → Dates and ranges**. This option will be displayed on product editing page.
 
 ![Availability ranges](_static/dates-ranges/avialability-ranges.png)
 
