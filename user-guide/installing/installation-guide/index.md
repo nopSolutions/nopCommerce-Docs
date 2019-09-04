@@ -52,7 +52,23 @@ If you're using **nopCommerce 2.00-3.10**, then please note that publishing thes
 
 nopCommerce requires write permissions for the directories and files described below
 
-- **For nopCommerce versions 4.00 and above:**
+- **For nopCommerce versions 4.20 and above:**
+  - `\App_Data\`
+  - `\bin\`
+  - `\log\`
+  - `\Plugins\`
+  - `\Plugins\bin\`
+  - `\wwwroot\bin\`
+  - `\wwwroot\bundles\`
+  - `\wwwroot\db_backups\`
+  - `\wwwroot\files\exportimport\`
+  - `\wwwroot\images\`
+  - `\wwwroot\images\thumbs\`
+  - `\wwwroot\images\uploaded`
+  - `\App_Data\Plugins.json` (after installation)
+  - `\App_Data\dataSettings.json` (after installation)
+
+- **For nopCommerce versions 4.00 and 4.10:**
   - `\App_Data\`
   - `\bin\`
   - `\log\`
@@ -67,6 +83,7 @@ nopCommerce requires write permissions for the directories and files described b
   - `\wwwroot\images\uploaded`
   - `\App_Data\installedPlugins.json` (after installation)
   - `\App_Data\dataSettings.json` (after installation)
+
 - **For nopCommerce versions 2.00-3.90:**
   - `\App_Data\`
   - `\bin\`
@@ -123,7 +140,7 @@ Specify Custom SQL Server collation: This is an advanced setting and should be l
 >
 > 1. Ensure that your application pool is set to Integrated mode
 >
-> 1. If you want to completely reset a nopCommerce site to its default settings, you can delete the `Settings.txt` file from App_Data directory. When using IIS you might want to read this article.
+> 1. If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` (`Settings.txt` for  nopCommerce 3.90 or below version) file from App_Data directory. When using IIS you might want to read this article.
 
 ## See also
 

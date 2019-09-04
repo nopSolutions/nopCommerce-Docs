@@ -31,7 +31,7 @@ In order to run nopCommerce, you will need the **following installed on your ser
 * Google Chrome 1.x
 * Apple Safari 2.x
 
-**For nopCommerce 4.20 or above. MS Visual Studio 2019 (version 16.1 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
+**For nopCommerce 4.20 or above. MS Visual Studio 2017 (version 15.9 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
 
 **For nopCommerce 4.10 MS Visual Studio 2017 (version 15.7 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
 
