@@ -1,13 +1,13 @@
 ---
-title: Manual Processing (Credit Card)
-uid: en/user-guide/configuring/setting-up/payments/methods/paypal-standard
+title: PayPal Standard
+uid: ru/user-guide/configuring/setting-up/payments/methods/paypal-standard
 ---
 
 # PayPal Standard
 
-To use **PayPal Standard** plugin as a payment method please follow these steps:
+Для настройки **PayPal Standard** плагина в качестве метода оплаты выполните следующие шаги:
 
-1. Register a Business account on www.paypal.com. Following the link <https://www.paypal.com/bizsignup/>. Then fill in the information about yourself and your business:
+1. Зарегистрируйте Business аккаунт на www.paypal.com. Following the link <https://www.paypal.com/bizsignup/>. Then fill in the information about yourself and your business:
     
     ![step1](_static/paypal-standard/signUp1step.png)
     
