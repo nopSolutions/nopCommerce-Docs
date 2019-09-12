@@ -1,6 +1,6 @@
 ---
 title: Product reviews
-uid: en/user-guide/running/product-management/products/product-reviews
+uid: ja/user-guide/running/product-management/products/product-reviews
 ---
 
 # Product reviews
