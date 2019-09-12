@@ -1,6 +1,6 @@
 ---
 title: Customer reports
-uid: en/user-guide/running/reports/customer-reports
+uid: es/user-guide/running/reports/customer-reports
 ---
 
 # Customer reports
@@ -35,5 +35,5 @@ The third tab shows the number of **Registered customers** for a certain period.
 
 ## See also
 
-* [Country report](xref:en/user-guide/running/reports/country-report)
-* [Customer list](xref:en/user-guide/running/customer-management/customer-list)
+* [Country report](xref:es/user-guide/running/reports/country-report)
+* [Customer list](xref:es/user-guide/running/customer-management/customer-list)
