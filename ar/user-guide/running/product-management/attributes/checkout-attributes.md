@@ -1,6 +1,6 @@
 ---
 title: Checkout attributes
-uid: en/user-guide/running/product-management/attributes/checkout-attributes
+uid: ar/user-guide/running/product-management/attributes/checkout-attributes
 ---
 
 # Checkout attributes
