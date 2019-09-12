@@ -1,6 +1,6 @@
 ---
 title: Документация nopCommerce
-uid: en/index
+uid: ru/index
 ---
 
 # Документация nopCommerce
@@ -11,5 +11,5 @@ The nopCommerce documentation is here to help you through the process of setting
 
 ## Содержание
 
-* [Руководство пользователя](xref:en/user-guide/index)
-* [Руководство разработчика](xref:en/developer/index)
+* [Руководство пользователя](xref:ru/user-guide/index)
+* [Руководство разработчика](xref:ru/developer/index)
