@@ -1,6 +1,6 @@
 ---
 title: Sharing your plugins, themes, and language packs
-uid: en/developer/contribute/sharing
+uid: ar/developer/contribute/sharing
 ---
 
 # Sharing your plugins, themes, and language packs
