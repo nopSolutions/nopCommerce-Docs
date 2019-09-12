@@ -1,6 +1,6 @@
 ---
 title: Logs
-uid: en/user-guide/configuring/system/log
+uid: ja/user-guide/configuring/system/log
 ---
 
 # Logs
