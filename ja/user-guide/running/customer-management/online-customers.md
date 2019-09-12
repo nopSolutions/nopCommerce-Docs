@@ -1,6 +1,6 @@
 ---
 title: Online Customers
-uid: en/user-guide/running/customer-management/online-customers
+uid: ja/user-guide/running/customer-management/online-customers
 ---
 
 # Online Customers
