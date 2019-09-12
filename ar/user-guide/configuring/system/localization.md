@@ -1,6 +1,6 @@
 ---
 title: Localization
-uid: en/user-guide/configuring/system/localization
+uid: ar/user-guide/configuring/system/localization
 ---
 
 # Localization
