@@ -1,6 +1,6 @@
 ---
 title: nopCommerce Interface
-uid: en/user-guide/configuring/nopcommerce-interface
+uid: es/user-guide/configuring/nopcommerce-interface
 ---
 
 # nopCommerce Interface
