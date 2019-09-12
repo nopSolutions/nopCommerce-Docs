@@ -1,6 +1,6 @@
 ---
 title: PayPal Standard
-uid: en/user-guide/configuring/setting-up/payments/methods/paypal-standard
+uid: ru/user-guide/configuring/setting-up/payments/methods/paypal-standard
 ---
 
 # PayPal Standard
