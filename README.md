@@ -11,3 +11,5 @@ The documentation portal is hosted at [docs.nopCommerce.com](https://docs.nopCom
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) with any additional questions or comments.
+
+[![Crowdin](https://badges.crowdin.net/nopcommerce-documentation/localized.svg)](https://crowdin.com/project/nopcommerce-documentation)
