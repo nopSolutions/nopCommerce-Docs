@@ -1,6 +1,6 @@
 ---
 title: Countries
-uid: en/user-guide/configuring/setting-up/main-store/countries
+uid: es/user-guide/configuring/setting-up/main-store/countries
 ---
 
 # Countries
