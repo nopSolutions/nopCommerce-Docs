@@ -1,6 +1,6 @@
 ---
 title: Google Analytics Plugin
-uid: en/user-guide/configuring/system/widgets/google-analytics
+uid: fr/user-guide/configuring/system/widgets/google-analytics
 ---
 
 # Google Analytics Plugin
