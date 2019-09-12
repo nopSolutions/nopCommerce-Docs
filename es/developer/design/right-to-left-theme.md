@@ -1,6 +1,6 @@
 ---
 title: Right To Left Theme
-uid: en/developer/design/right-to-left-theme
+uid: es/developer/design/right-to-left-theme
 ---
 
 # Right To Left Theme
