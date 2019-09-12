@@ -1,6 +1,6 @@
 ---
 title: Pickup Points
-uid: en/user-guide/configuring/setting-up/shipping/pickup-points
+uid: ru/user-guide/configuring/setting-up/shipping/pickup-points
 ---
 
 # Pickup Points
