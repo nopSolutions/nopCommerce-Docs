@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-uid: en/user-guide/running/reports/dashboard
+uid: ja/user-guide/running/reports/dashboard
 ---
 
 # Dashboard
@@ -49,9 +49,9 @@ Catalog → Low stock report
 
 ## See also
 
-* [Orders](xref:en/user-guide/running/order-management/orders/index)
-* [Return requests](xref:en/user-guide/running/order-management/return-requests/index)
-* [Bestsellers](xref:en/user-guide/running/reports/bestsellers-never-purchased)
-* [Customers](xref:en/user-guide/running/customer-management/index)
-* [Country report](xref:en/user-guide/running/reports/country-report)
-* [Customer reports](xref:en/user-guide/running/reports/customer-reports)
+* [Orders](xref:ja/user-guide/running/order-management/orders/index)
+* [Return requests](xref:ja/user-guide/running/order-management/return-requests/index)
+* [Bestsellers](xref:ja/user-guide/running/reports/bestsellers-never-purchased)
+* [Customers](xref:ja/user-guide/running/customer-management/index)
+* [Country report](xref:ja/user-guide/running/reports/country-report)
+* [Customer reports](xref:ja/user-guide/running/reports/customer-reports)
