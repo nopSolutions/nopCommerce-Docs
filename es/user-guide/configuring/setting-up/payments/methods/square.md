@@ -1,6 +1,6 @@
 ---
 title: Square
-uid: en/user-guide/configuring/setting-up/payments/methods/square
+uid: es/user-guide/configuring/setting-up/payments/methods/square
 ---
 
 # Square
