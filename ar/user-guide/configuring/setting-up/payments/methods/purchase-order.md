@@ -1,6 +1,6 @@
 ---
 title: Purchase order
-uid: en/user-guide/configuring/setting-up/payments/methods/purchase-order
+uid: ar/user-guide/configuring/setting-up/payments/methods/purchase-order
 ---
 
 # Purchase order
