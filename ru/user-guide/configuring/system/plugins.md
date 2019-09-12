@@ -1,6 +1,6 @@
 ---
 title: Plugins
-uid: en/user-guide/configuring/system/plugins
+uid: ru/user-guide/configuring/system/plugins
 ---
 
 # Plugins
