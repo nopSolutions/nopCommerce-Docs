@@ -1,6 +1,6 @@
 ---
 title: FAQs
-uid: en/developer/faqs
+uid: de/developer/faqs
 ---
 
 # FAQs
