@@ -1,6 +1,6 @@
 ---
 title: Manual (Fixed or By Country/State/Zip)
-uid: en/user-guide/configuring/setting-up/taxes/tax/methods/manual
+uid: ar/user-guide/configuring/setting-up/taxes/tax/methods/manual
 ---
 
 # Manual (Fixed or By Country/State/Zip)
