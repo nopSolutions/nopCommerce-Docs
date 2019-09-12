@@ -1,6 +1,6 @@
 ---
 title: Topics (pages)
-uid: en/user-guide/marketing/content/topics
+uid: fr/user-guide/marketing/content/topics
 ---
 
 # Topics (pages)
@@ -66,4 +66,4 @@ To set up SEO for Topics go to **SEO tab**
 
 ## See also
 
-- [SEO](xref:en/user-guide/marketing/content/seo)
+- [SEO](xref:fr/user-guide/marketing/content/seo)
