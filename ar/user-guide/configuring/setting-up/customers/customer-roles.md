@@ -1,6 +1,6 @@
 ---
 title: Customer roles
-uid: en/user-guide/configuring/setting-up/customers/customer-roles
+uid: ar/user-guide/configuring/setting-up/customers/customer-roles
 ---
 
 # Customer roles
