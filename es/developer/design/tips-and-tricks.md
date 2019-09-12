@@ -1,6 +1,6 @@
 ---
 title: Tips and Tricks
-uid: en/developer/design/tips-and-tricks
+uid: es/developer/design/tips-and-tricks
 ---
 
 # Tips and Tricks
