@@ -1,6 +1,6 @@
 ---
 title: Content Management
-uid: en/user-guide/marketing/content/index
+uid: ja/user-guide/marketing/content/index
 ---
 
 # Content Management
@@ -9,7 +9,7 @@ Content management is a set of processes and technologies that support the colle
 
 ## Learn more
 
-- [Email campaigns](xref:en/user-guide/marketing/content/email-campaigns/index)
+- [Email campaigns](xref:ja/user-guide/marketing/content/email-campaigns/index)
 - [Blog](xref:ja/user-guide/marketing/content/blog/index)
 - [News](xref:ja/user-guide/marketing/content/news/index)
 - [Forums](xref:ja/user-guide/marketing/content/forums/index)
