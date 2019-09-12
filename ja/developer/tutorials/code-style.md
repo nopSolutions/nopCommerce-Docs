@@ -1,6 +1,6 @@
 ---
 title: Configuring code style
-uid: en/developer/tutorials/code-style
+uid: ja/developer/tutorials/code-style
 ---
 
 # Configuring code style
