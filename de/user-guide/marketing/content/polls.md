@@ -1,6 +1,6 @@
 ---
 title: Polls
-uid: en/user-guide/marketing/content/polls
+uid: de/user-guide/marketing/content/polls
 ---
 
 # Polls
