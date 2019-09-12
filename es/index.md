@@ -1,6 +1,6 @@
 ---
 title: nopCommerce Documentation
-uid: en/index
+uid: es/index
 ---
 
 # nopCommerce Documentation
@@ -11,5 +11,5 @@ The nopCommerce documentation is here to help you through the process of setting
 
 ## Table of content
 
-* [User guide](xref:en/user-guide/index)
-* [Developers guide](xref:en/developer/index)
+* [User guide](xref:es/user-guide/index)
+* [Developers guide](xref:es/developer/index)
