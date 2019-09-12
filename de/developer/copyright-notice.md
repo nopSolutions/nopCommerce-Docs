@@ -1,6 +1,6 @@
 ---
 title: Copyright notice
-uid: en/developer/copyright-notice
+uid: de/developer/copyright-notice
 ---
 
 # Copyright notice
