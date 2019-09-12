@@ -1,6 +1,6 @@
 ---
 title: System Administration
-uid: en/user-guide/configuring/system/deleting-guests
+uid: es/user-guide/configuring/system/deleting-guests
 ---
 
 # System Administration
