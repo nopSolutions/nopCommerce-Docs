@@ -1,6 +1,6 @@
 ---
 title: GDPR settings
-uid: en/user-guide/configuring/setting-up/main-store/gdpr-settings
+uid: ja/user-guide/configuring/setting-up/main-store/gdpr-settings
 ---
 
 # GDPR settings
