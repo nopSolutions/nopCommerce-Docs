@@ -1,6 +1,6 @@
 ---
 title: Vendors
-uid: en/user-guide/configuring/setting-up/customers/vendors/index
+uid: ar/user-guide/configuring/setting-up/customers/vendors/index
 ---
 
 # Vendors
@@ -114,4 +114,4 @@ After the vendor's customer account is set up, the vendor can use this customer 
 
 ## See also
 
-[Vendor settings](xref:en/user-guide/configuring/setting-up/customers/vendors/settings)
+[Vendor settings](xref:ar/user-guide/configuring/setting-up/customers/vendors/settings)
