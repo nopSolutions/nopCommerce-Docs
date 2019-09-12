@@ -1,6 +1,6 @@
 ---
 title: Technology & System Requirements
-uid: en/user-guide/installing/technology-system-requirements
+uid: fr/user-guide/installing/technology-system-requirements
 ---
 
 # Technology & System Requirements
