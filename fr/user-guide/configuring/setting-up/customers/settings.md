@@ -1,6 +1,6 @@
 ---
 title: Customer settings
-uid: en/user-guide/configuring/setting-up/customers/settings
+uid: fr/user-guide/configuring/setting-up/customers/settings
 ---
 
 # Customer settings
