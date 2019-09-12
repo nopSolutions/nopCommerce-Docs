@@ -1,6 +1,6 @@
 ---
 title: Manual (Fixed or By Weight and By Total)
-uid: en/user-guide/configuring/setting-up/shipping/providers/manual/index
+uid: de/user-guide/configuring/setting-up/shipping/providers/manual/index
 ---
 
 # Manual (Fixed or By Weight and By Total)
@@ -94,7 +94,7 @@ Click **Save**.
 
 ## See also
 
-* [Shipping Methods (Shipping by weight and by total)](xref:en/user-guide/configuring/setting-up/shipping/providers/manual/methods)
-* [Shipping Method Restrictions (shipping by weight and by total)](xref:en/user-guide/configuring/setting-up/shipping/providers/manual/restrictions)
-* [Shipping Methods (Fixed rate)](xref:en/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-methods)
-* [Shipping Method Restrictions (Fixed rate)](xref:en/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-restrictions)
+* [Shipping Methods (Shipping by weight and by total)](xref:de/user-guide/configuring/setting-up/shipping/providers/manual/methods)
+* [Shipping Method Restrictions (shipping by weight and by total)](xref:de/user-guide/configuring/setting-up/shipping/providers/manual/restrictions)
+* [Shipping Methods (Fixed rate)](xref:de/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-methods)
+* [Shipping Method Restrictions (Fixed rate)](xref:de/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-restrictions)
