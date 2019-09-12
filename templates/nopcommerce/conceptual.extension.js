@@ -17,7 +17,7 @@ exports.postTransform = function (model) {
 
     var gitInfo = common.getGitInfo(model._gitContribute, model.source.remote);
 
-    model.docurl = model.docurl.replace(gitInfo.path, gitInfo.path.replace(/^[A-Z]{2}\//i, ''));
+    model.docurl = model.docurl.replace(gitInfo.path, gitInfo.path.replace(/^[A-Z]{2}\//i, 'en/'));
   }
 
   return model;
