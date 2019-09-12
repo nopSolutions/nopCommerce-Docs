@@ -1,9 +1,9 @@
 ---
-title: Developers guide
-uid: en/developer/index
+title: Руководство разработчика
+uid: ru/developer/index
 ---
 
-# Developers guide
+# Руководство разработчика
 
 The nopCommerce developer documentation is here to help you through the process of nopCommerce customization. Here you will several sections:
 
