@@ -7,8 +7,8 @@ uid: ru/developer/index
 
 The nopCommerce developer documentation is here to help you through the process of nopCommerce customization. Here you will several sections:
 
-* [Developer tutorials](xref:en/developer/tutorials/index)
-* [Creating a nopCommerce plugin](xref:en/developer/plugins/index)
-* [Designer's Guide](xref:en/developer/design/index)
-* [Copyright notice](xref:en/developer/copyright-notice)
-* [FAQs](xref:en/developer/faqs)
+* [Developer tutorials](xref:ru/developer/tutorials/index)
+* [Creating a nopCommerce plugin](xref:ru/developer/plugins/index)
+* [Designer's Guide](xref:ru/developer/design/index)
+* [Copyright notice](xref:ru/developer/copyright-notice)
+* [FAQs](xref:ru/developer/faqs)
