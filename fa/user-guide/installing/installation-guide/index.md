@@ -1,6 +1,6 @@
 ---
 title: Installation guide
-uid: en/user-guide/installing/installation-guide/index
+uid: fa/user-guide/installing/installation-guide/index
 ---
 
 # Installation guide
@@ -122,6 +122,6 @@ Specify Custom SQL Server collation: This is an advanced setting and should be l
 
 ## See also
 
-- [Hosting providers](xref:en/user-guide/installing/installation-guide/hosting-provider)
-- [Installing Internet Information Services (IIS)](xref:en/user-guide/installing/installation-guide/installing-IIS)
-- [Known Issues and Solutions](xref:en/user-guide/installing/installation-guide/known-issues-and-solutions)
+- [Hosting providers](xref:fa/user-guide/installing/installation-guide/hosting-provider)
+- [Installing Internet Information Services (IIS)](xref:fa/user-guide/installing/installation-guide/installing-IIS)
+- [Known Issues and Solutions](xref:fa/user-guide/installing/installation-guide/known-issues-and-solutions)
