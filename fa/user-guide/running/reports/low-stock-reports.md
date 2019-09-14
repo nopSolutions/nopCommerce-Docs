@@ -1,6 +1,6 @@
 ---
 title: Low Stock Reports
-uid: en/user-guide/running/reports/low-stock-reports
+uid: fa/user-guide/running/reports/low-stock-reports
 ---
 
 # Low Stock Reports
