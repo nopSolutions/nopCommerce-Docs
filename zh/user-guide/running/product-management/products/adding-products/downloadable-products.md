@@ -1,6 +1,6 @@
 ---
 title: Downloadable product
-uid: en/user-guide/running/product-management/products/adding-products/downloadable-products
+uid: zh/user-guide/running/product-management/products/adding-products/downloadable-products
 ---
 
 # Downloadable product
@@ -22,4 +22,4 @@ Define the **following details**:
 
 ## See also
 
-- [Orders](xref:en/user-guide/running/order-management/orders/index)
+- [Orders](xref:zh/user-guide/running/order-management/orders/index)
