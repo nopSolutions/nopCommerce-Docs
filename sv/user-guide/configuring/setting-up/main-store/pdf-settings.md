@@ -1,6 +1,6 @@
 ---
 title: PDF settings
-uid: en/user-guide/configuring/setting-up/main-store/pdf-settings
+uid: sv/user-guide/configuring/setting-up/main-store/pdf-settings
 ---
 
 # PDF settings
