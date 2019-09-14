@@ -1,6 +1,6 @@
 ---
 title: Installing on Windows Azure
-uid: en/user-guide/installing/azure
+uid: sv/user-guide/installing/azure
 ---
 
 # Installing on Windows Azure
