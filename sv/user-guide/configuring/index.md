@@ -1,11 +1,11 @@
 ---
 title: Configuring your store
-uid: en/user-guide/configuring/index
+uid: sv/user-guide/configuring/index
 ---
 
 # Configuring your store
 
-* [nopCommerce Interface](xref:en/user-guide/configuring/nopcommerce-interface)
-* [Setting up your store](xref:en/user-guide/configuring/setting-up/index)
-* [System Administration](xref:en/user-guide/configuring/system/index)
-* [Design](xref:en/user-guide/configuring/design/index)
+* [nopCommerce Interface](xref:sv/user-guide/configuring/nopcommerce-interface)
+* [Setting up your store](xref:sv/user-guide/configuring/setting-up/index)
+* [System Administration](xref:sv/user-guide/configuring/system/index)
+* [Design](xref:sv/user-guide/configuring/design/index)
