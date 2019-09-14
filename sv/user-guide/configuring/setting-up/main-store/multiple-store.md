@@ -1,6 +1,6 @@
 ---
 title: Setting up Multiple-Store
-uid: en/user-guide/configuring/setting-up/main-store/multiple-store
+uid: sv/user-guide/configuring/setting-up/main-store/multiple-store
 ---
 
 # Setting up Multiple-Store
