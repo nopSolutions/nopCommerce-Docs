@@ -1,6 +1,6 @@
 ---
 title: News settings
-uid: en/user-guide/marketing/content/news/news-settings
+uid: zh/user-guide/marketing/content/news/news-settings
 ---
 
 # News settings
@@ -28,5 +28,5 @@ This page enables **multi-store configuration**, it means that the same settings
 
 ## See also
 
-- [Basic and Advanced modes](xref:en/user-guide/configuring/nopcommerce-interface)
-- [News](xref:en/user-guide/marketing/content/news/index)
+- [Basic and Advanced modes](xref:zh/user-guide/configuring/nopcommerce-interface)
+- [News](xref:zh/user-guide/marketing/content/news/index)
