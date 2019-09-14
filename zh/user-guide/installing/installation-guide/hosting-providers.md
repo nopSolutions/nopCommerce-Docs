@@ -1,6 +1,6 @@
 ---
 title: Hosting providers
-uid: en/user-guide/installing/installation-guide/hosting-provider
+uid: zh/user-guide/installing/installation-guide/hosting-provider
 ---
 
 # Hosting providers
