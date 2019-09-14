@@ -1,6 +1,6 @@
 ---
 title: Docker
-uid: en/developer/tutorials/docker
+uid: sv/developer/tutorials/docker
 ---
 
 # Docker
