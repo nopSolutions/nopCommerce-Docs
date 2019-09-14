@@ -1,6 +1,6 @@
 ---
 title: Affiliates
-uid: en/user-guide/marketing/promotional/affiliates
+uid: sv/user-guide/marketing/promotional/affiliates
 ---
 
 # Affiliates
