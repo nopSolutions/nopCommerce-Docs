@@ -1,6 +1,6 @@
 ---
 title: Setting up Main Store
-uid: en/user-guide/configuring/setting-up/main-store/index
+uid: fa/user-guide/configuring/setting-up/main-store/index
 ---
 
 # Setting up Main Store
@@ -29,9 +29,9 @@ Configure your **main store details**, as follows:
 
 ## See also
 
-* [Setting up Multiple-Store](xref:en/user-guide/configuring/setting-up/main-store/multiple-store)
-* [Countries](xref:en/user-guide/configuring/setting-up/main-store/countries)
-* [Languages](xref:en/user-guide/configuring/setting-up/main-store/languages)
-* [Security Settings](xref:en/user-guide/configuring/setting-up/main-store/security-settings)
-* [PDF settings](xref:en/user-guide/configuring/setting-up/main-store/pdf-settings)
-* [GDPR settings](xref:en/user-guide/configuring/setting-up/main-store/gdpr-settings)
+* [Setting up Multiple-Store](xref:fa/user-guide/configuring/setting-up/main-store/multiple-store)
+* [Countries](xref:fa/user-guide/configuring/setting-up/main-store/countries)
+* [Languages](xref:fa/user-guide/configuring/setting-up/main-store/languages)
+* [Security Settings](xref:fa/user-guide/configuring/setting-up/main-store/security-settings)
+* [PDF settings](xref:fa/user-guide/configuring/setting-up/main-store/pdf-settings)
+* [GDPR settings](xref:fa/user-guide/configuring/setting-up/main-store/gdpr-settings)
