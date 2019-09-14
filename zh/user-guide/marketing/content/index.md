@@ -1,6 +1,6 @@
 ---
 title: Content Management
-uid: en/user-guide/marketing/content/index
+uid: zh/user-guide/marketing/content/index
 ---
 
 # Content Management
@@ -9,11 +9,11 @@ Content management is a set of processes and technologies that support the colle
 
 ## Learn more
 
-- [Email campaigns](xref:en/user-guide/marketing/content/email-campaigns/index)
-- [Blog](xref:en/user-guide/marketing/content/blog/index)
-- [News](xref:en/user-guide/marketing/content/news/index)
-- [Forums](xref:en/user-guide/marketing/content/forums/index)
-- [Polls](xref:en/user-guide/marketing/content/polls)
-- [Topics (pages)](xref:en/user-guide/marketing/content/topics)
-- [Message templates](xref:en/user-guide/marketing/content/message-templates)
-- [SEO](xref:en/user-guide/marketing/content/seo)
+- [Email campaigns](xref:zh/user-guide/marketing/content/email-campaigns/index)
+- [Blog](xref:zh/user-guide/marketing/content/blog/index)
+- [News](xref:zh/user-guide/marketing/content/news/index)
+- [Forums](xref:zh/user-guide/marketing/content/forums/index)
+- [Polls](xref:zh/user-guide/marketing/content/polls)
+- [Topics (pages)](xref:zh/user-guide/marketing/content/topics)
+- [Message templates](xref:zh/user-guide/marketing/content/message-templates)
+- [SEO](xref:zh/user-guide/marketing/content/seo)
