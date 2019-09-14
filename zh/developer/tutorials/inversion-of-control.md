@@ -1,6 +1,6 @@
 ---
 title: Inversion of Control and Dependency Injection
-uid: en/developer/tutorials/inversion-of-control
+uid: zh/developer/tutorials/inversion-of-control
 ---
 
 # Inversion of Control and Dependency Injection
