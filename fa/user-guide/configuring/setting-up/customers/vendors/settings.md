@@ -1,6 +1,6 @@
 ---
 title: Vendor settings
-uid: en/user-guide/configuring/setting-up/customers/vendors/settings
+uid: fa/user-guide/configuring/setting-up/customers/vendors/settings
 ---
 
 # Vendor settings
@@ -76,5 +76,5 @@ Click **Save.** The new attribute will be displayed in the public store.
 
 ## See also
 
-* [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index)
-* [Setting up Customers](xref:en/user-guide/configuring/setting-up/customers/index)
+* [Vendors](xref:fa/user-guide/configuring/setting-up/customers/vendors/index)
+* [Setting up Customers](xref:fa/user-guide/configuring/setting-up/customers/index)
