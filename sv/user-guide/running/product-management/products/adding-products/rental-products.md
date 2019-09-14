@@ -1,6 +1,6 @@
 ---
 title: Rental product
-uid: en/user-guide/running/product-management/products/adding-products/rental-products
+uid: sv/user-guide/running/product-management/products/adding-products/rental-products
 ---
 
 # Rental product
