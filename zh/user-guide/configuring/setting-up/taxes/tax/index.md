@@ -1,6 +1,6 @@
 ---
 title: Tax
-uid: en/user-guide/configuring/setting-up/taxes/tax/index
+uid: zh/user-guide/configuring/setting-up/taxes/tax/index
 ---
 
 # Tax
@@ -19,8 +19,8 @@ In the Mark as primary provider column, click **Mark as primary provider** to se
 
 The configuration of Tax providers is described in **following chapters**:
 
-* [Avalara tax provider](xref:en/user-guide/configuring/setting-up/taxes/tax/methods/avalara)
-* [Manual (Fixed or By Country/State/Zip)](xref:en/user-guide/configuring/setting-up/taxes/tax/methods/manual)
+* [Avalara tax provider](xref:zh/user-guide/configuring/setting-up/taxes/tax/methods/avalara)
+* [Manual (Fixed or By Country/State/Zip)](xref:zh/user-guide/configuring/setting-up/taxes/tax/methods/manual)
 
 ## Tax Categories
 
