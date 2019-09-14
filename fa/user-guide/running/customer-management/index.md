@@ -1,6 +1,6 @@
 ---
 title: Customer management
-uid: en/user-guide/running/customer-management/index
+uid: fa/user-guide/running/customer-management/index
 ---
 
 # Customer management
@@ -11,6 +11,6 @@ This chapter describes how to manage customer profiles, track the activities don
 
 ## Learn how to get the best out of the customer management in your nopCommerce store in the following chapters
 
-* [Customer list](xref:en/user-guide/running/customer-management/customer-list)
-* [Online Customers](xref:en/user-guide/running/customer-management/online-customers)
-* [Activity Log](xref:en/user-guide/running/customer-management/activity-log)
+* [Customer list](xref:fa/user-guide/running/customer-management/customer-list)
+* [Online Customers](xref:fa/user-guide/running/customer-management/online-customers)
+* [Activity Log](xref:fa/user-guide/running/customer-management/activity-log)
