@@ -1,6 +1,6 @@
 ---
 title: Data Validation
-uid: en/developer/tutorials/data-validation
+uid: zh/developer/tutorials/data-validation
 ---
 
 # Data Validation
