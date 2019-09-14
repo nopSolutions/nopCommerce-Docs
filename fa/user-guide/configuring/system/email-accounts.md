@@ -1,6 +1,6 @@
 ---
 title: Email accounts
-uid: en/user-guide/configuring/system/email-accounts
+uid: fa/user-guide/configuring/system/email-accounts
 ---
 
 # Email accounts
