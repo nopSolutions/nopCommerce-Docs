@@ -1,6 +1,6 @@
 ---
 title: How to code my own shipping rate computation method
-uid: en/developer/plugins/shipping-plugin
+uid: fa/developer/plugins/shipping-plugin
 ---
 
 # How to code my own shipping rate computation method
