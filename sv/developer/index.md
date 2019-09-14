@@ -1,14 +1,14 @@
 ---
 title: Developers guide
-uid: en/developer/index
+uid: sv/developer/index
 ---
 
 # Developers guide
 
 The nopCommerce developer documentation is here to help you through the process of nopCommerce customization. Here you will several sections:
 
-* [Developer tutorials](xref:en/developer/tutorials/index)
-* [Creating a nopCommerce plugin](xref:en/developer/plugins/index)
-* [Designer's Guide](xref:en/developer/design/index)
-* [Copyright notice](xref:en/developer/copyright-notice)
-* [FAQs](xref:en/developer/faqs)
+* [Developer tutorials](xref:sv/developer/tutorials/index)
+* [Creating a nopCommerce plugin](xref:sv/developer/plugins/index)
+* [Designer's Guide](xref:sv/developer/design/index)
+* [Copyright notice](xref:sv/developer/copyright-notice)
+* [FAQs](xref:sv/developer/faqs)
