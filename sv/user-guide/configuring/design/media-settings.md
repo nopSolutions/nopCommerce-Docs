@@ -1,6 +1,6 @@
 ---
 title: Media Settings
-uid: en/user-guide/configuring/design/media-settings
+uid: sv/user-guide/configuring/design/media-settings
 ---
 
 # Media Settings
