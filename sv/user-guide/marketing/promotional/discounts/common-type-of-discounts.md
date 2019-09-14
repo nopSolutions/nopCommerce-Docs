@@ -1,6 +1,6 @@
 ---
 title: Common type of discounts
-uid: en/user-guide/marketing/promotional/discounts/common-type-of-discounts
+uid: sv/user-guide/marketing/promotional/discounts/common-type-of-discounts
 ---
 
 # Common type of discounts
