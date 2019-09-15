@@ -1,9 +1,9 @@
 ---
 title: Marketing your store
-uid: en/user-guide/marketing/index
+uid: th/user-guide/marketing/index
 ---
 
 # Marketing your store
 
-- [Promotional tools](xref:en/user-guide/marketing/promotional/index)
-- [Content Management](xref:en/user-guide/marketing/content/index)
+- [Promotional tools](xref:th/user-guide/marketing/promotional/index)
+- [Content Management](xref:th/user-guide/marketing/content/index)
