@@ -1,6 +1,6 @@
 ---
 title: Warnings
-uid: en/user-guide/configuring/system/warnings
+uid: pt/user-guide/configuring/system/warnings
 ---
 
 # Warnings
