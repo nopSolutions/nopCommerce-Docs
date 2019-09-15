@@ -1,6 +1,6 @@
 ---
 title: Currencies
-uid: en/user-guide/configuring/setting-up/payments/currencies
+uid: pt/user-guide/configuring/setting-up/payments/currencies
 ---
 
 # Currencies
