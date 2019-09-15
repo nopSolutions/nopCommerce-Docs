@@ -1,6 +1,6 @@
 ---
 title: Measures
-uid: en/user-guide/configuring/setting-up/shipping/measures
+uid: el/user-guide/configuring/setting-up/shipping/measures
 ---
 
 # Measures
