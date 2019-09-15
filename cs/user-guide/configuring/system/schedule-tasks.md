@@ -1,6 +1,6 @@
 ---
 title: Schedule Tasks
-uid: en/user-guide/configuring/system/schedule-tasks
+uid: cs/user-guide/configuring/system/schedule-tasks
 ---
 
 # Schedule Tasks
