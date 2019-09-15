@@ -1,6 +1,6 @@
 ---
 title: Product attributes
-uid: en/user-guide/running/product-management/attributes/product-attributes
+uid: th/user-guide/running/product-management/attributes/product-attributes
 ---
 
 # Product attributes
@@ -47,6 +47,6 @@ In the **Add a new value** window a user has an opportunity to:
 
 ## See also
 
-- [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
-- [Grouped product](xref:en/user-guide/running/product-management/products/adding-products/grouped-products)
+- [Adding products](xref:th/user-guide/running/product-management/products/adding-products/index)
+- [Grouped product](xref:th/user-guide/running/product-management/products/adding-products/grouped-products)
 - [Video tutorial: Overview of conditional product attributes](https://www.youtube.com/watch?v=eIdHVcEdos8&t=55s)
