@@ -1,6 +1,6 @@
 ---
 title: How to write a plugin for nopCommerce
-uid: en/developer/plugins/how-to-write-plugin-4.10
+uid: cs/developer/plugins/how-to-write-plugin-4.10
 ---
 
 # How to write a plugin for nopCommerce 4.10
