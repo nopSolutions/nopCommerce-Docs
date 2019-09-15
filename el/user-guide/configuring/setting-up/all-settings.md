@@ -1,6 +1,6 @@
 ---
 title: All Settings (advanced)
-uid: en/user-guide/configuring/setting-up/all-settings
+uid: el/user-guide/configuring/setting-up/all-settings
 ---
 
 # All Settings (advanced)
