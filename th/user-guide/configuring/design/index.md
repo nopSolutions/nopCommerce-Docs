@@ -1,6 +1,6 @@
 ---
 title: Design
-uid: en/user-guide/configuring/design/index
+uid: th/user-guide/configuring/design/index
 ---
 
 # Design
@@ -9,5 +9,5 @@ This chapter covers the basics of your store design configuration. There is a se
 
 ## Learn more in following chapters
 
-- [Installing a theme](xref:en/user-guide/configuring/design/installing-theme)
-- [Media Settings](xref:en/user-guide/configuring/design/media-settings)
+- [Installing a theme](xref:th/user-guide/configuring/design/installing-theme)
+- [Media Settings](xref:th/user-guide/configuring/design/media-settings)
