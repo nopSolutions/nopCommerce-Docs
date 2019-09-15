@@ -1,6 +1,6 @@
 ---
 title: Access Control List
-uid: en/user-guide/configuring/setting-up/customers/acl
+uid: he/user-guide/configuring/setting-up/customers/acl
 ---
 
 # Access Control List
