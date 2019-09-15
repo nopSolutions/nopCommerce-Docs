@@ -1,6 +1,6 @@
 ---
 title: Languages
-uid: en/user-guide/configuring/setting-up/main-store/languages
+uid: el/user-guide/configuring/setting-up/main-store/languages
 ---
 
 # Languages
