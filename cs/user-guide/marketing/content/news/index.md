@@ -1,6 +1,6 @@
 ---
 title: News
-uid: en/user-guide/marketing/content/news/index
+uid: cs/user-guide/marketing/content/news/index
 ---
 
 # News
@@ -56,4 +56,4 @@ Here you can **delete** a news comment, it will be removed from the system.
 
 ## See also
 
-- [News settings](xref:en/user-guide/marketing/content/news/news-settings)
+- [News settings](xref:cs/user-guide/marketing/content/news/news-settings)
