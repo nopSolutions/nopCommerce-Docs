@@ -1,6 +1,6 @@
 ---
 title: Coding Standards
-uid: en/developer/tutorials/coding-standards
+uid: th/developer/tutorials/coding-standards
 ---
 
 # Coding Standards
