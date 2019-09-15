@@ -1,6 +1,6 @@
 ---
 title: EU VAT configuration guide
-uid: en/user-guide/configuring/setting-up/taxes/eu-vat
+uid: he/user-guide/configuring/setting-up/taxes/eu-vat
 ---
 
 # EU VAT configuration guide
