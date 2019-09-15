@@ -1,6 +1,6 @@
 ---
 title: User guide
-uid: en/user-guide/index
+uid: th/user-guide/index
 ---
 
 # User guide
@@ -11,8 +11,8 @@ In case you have questions that are not covered in this guide, please refer to o
 
 ## See also
 
-* [Getting started](xref:en/user-guide/getting-started)
-* [Installing nopCommerce](xref:en/user-guide/installing/index)
-* [Configuring your store](xref:en/user-guide/configuring/index)
-* [Running your store](xref:en/user-guide/running/index)
-* [Marketing your store](xref:en/user-guide/marketing/index)
+* [Getting started](xref:th/user-guide/getting-started)
+* [Installing nopCommerce](xref:th/user-guide/installing/index)
+* [Configuring your store](xref:th/user-guide/configuring/index)
+* [Running your store](xref:th/user-guide/running/index)
+* [Marketing your store](xref:th/user-guide/marketing/index)
