@@ -1,6 +1,6 @@
 ---
 title: Shipments
-uid: en/user-guide/running/order-management/shipments
+uid: cs/user-guide/running/order-management/shipments
 ---
 
 # Shipments
@@ -40,6 +40,6 @@ In this window you can:
 
 ## See also
 
-* [Setting up Shipping](xref:en/user-guide/configuring/setting-up/shipping/index)
-* [Orders](xref:en/user-guide/running/order-management/orders/index)
-* [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
+* [Setting up Shipping](xref:cs/user-guide/configuring/setting-up/shipping/index)
+* [Orders](xref:cs/user-guide/running/order-management/orders/index)
+* [Adding products](xref:cs/user-guide/running/product-management/products/adding-products/index)
