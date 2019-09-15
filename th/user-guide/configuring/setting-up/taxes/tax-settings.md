@@ -1,6 +1,6 @@
 ---
 title: Tax Settings
-uid: en/user-guide/configuring/setting-up/taxes/tax-settings
+uid: th/user-guide/configuring/setting-up/taxes/tax-settings
 ---
 
 # Tax Settings
