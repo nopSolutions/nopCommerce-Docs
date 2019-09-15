@@ -1,6 +1,6 @@
 ---
 title: Message Queue
-uid: en/user-guide/configuring/system/message-queue
+uid: th/user-guide/configuring/system/message-queue
 ---
 
 # Message Queue
