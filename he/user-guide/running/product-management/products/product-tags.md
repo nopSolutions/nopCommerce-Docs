@@ -1,6 +1,6 @@
 ---
 title: Product tags
-uid: en/user-guide/running/product-management/products/product-tags
+uid: he/user-guide/running/product-management/products/product-tags
 ---
 
 # Product tags
@@ -27,5 +27,5 @@ Enter tags separating them by comma. Once the tags are created, they can be used
 
 ## See also
 
-* [Product categories](xref:en/user-guide/running/product-management/categories)
-* [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
+* [Product categories](xref:he/user-guide/running/product-management/categories)
+* [Adding products](xref:he/user-guide/running/product-management/products/adding-products/index)
