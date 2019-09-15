@@ -1,6 +1,6 @@
 ---
 title: Help
-uid: en/user-guide/installing/help
+uid: pl/user-guide/installing/help
 ---
 
 # Help
