@@ -1,6 +1,6 @@
 ---
 title: How to code my own payment method
-uid: en/developer/plugins/payment-method
+uid: pt/developer/plugins/payment-method
 ---
 
 # How to code my own payment method
