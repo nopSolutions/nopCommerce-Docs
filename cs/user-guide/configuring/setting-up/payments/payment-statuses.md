@@ -1,6 +1,6 @@
 ---
 title: Payment statuses
-uid: en/user-guide/configuring/setting-up/payments/payment-statuses
+uid: cs/user-guide/configuring/setting-up/payments/payment-statuses
 ---
 
 # Payment statuses
