@@ -1,6 +1,6 @@
 ---
 title: All campaigns
-uid: en/user-guide/marketing/content/email-campaigns/all-campaigns
+uid: cs/user-guide/marketing/content/email-campaigns/all-campaigns
 ---
 
 # All campaigns
@@ -42,6 +42,6 @@ After the campaign is saved you can send a test email to check if everything is 
 
 ## See also
 
-- [Newsletter subscribers](xref:en/user-guide/marketing/content/email-campaigns/newsletter-subscribers)
+- [Newsletter subscribers](xref:cs/user-guide/marketing/content/email-campaigns/newsletter-subscribers)
 - [Email marketing automation (nopCommerce Days 2016 video)](https://www.youtube.com/watch?v=Y6hytFXk5p0&index=23&list=PLnL_aDfmRHwt_6bP-8bd1rNPNIwWz86K2)
 - [Managing campaigns tutorial video](https://www.youtube.com/watch?v=k2wCM0u2gmo&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=13)
