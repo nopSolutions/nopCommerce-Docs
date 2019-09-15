@@ -1,6 +1,6 @@
 ---
 title: Setting up Tax
-uid: en/user-guide/configuring/setting-up/taxes/index
+uid: pl/user-guide/configuring/setting-up/taxes/index
 ---
 
 # Setting up Tax
@@ -13,6 +13,6 @@ nopCommerce supports external services as well, but they require plugins from a 
 
 ## See also
 
-* [Tax Settings](xref:en/user-guide/configuring/setting-up/taxes/tax-settings)
-* [Tax](xref:en/user-guide/configuring/setting-up/taxes/tax/index)
-* [EU VAT configuration guide](xref:en/user-guide/configuring/setting-up/taxes/eu-vat)
+* [Tax Settings](xref:pl/user-guide/configuring/setting-up/taxes/tax-settings)
+* [Tax](xref:pl/user-guide/configuring/setting-up/taxes/tax/index)
+* [EU VAT configuration guide](xref:pl/user-guide/configuring/setting-up/taxes/eu-vat)
