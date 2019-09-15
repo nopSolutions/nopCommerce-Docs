@@ -13,4 +13,4 @@ uid: en/developer/plugins/index
 * [How to code my own shipping rate computation method](xref:en/developer/plugins/shipping-plugin)
 * [Plugin with data access](xref:en/developer/plugins/plugin-with-data-access)
 * [How to add a menu item into the administration area from a plugin](xref:en/developer/plugins/menu-item)
-* [Adding CSS and JS resource files into nopCommerce Plugin](xref:en/developer/plugins/resource-files)
+* [Adding CSS and JS resource files into nopCommerce Plugin](xref:th/developer/plugins/resource-files)
