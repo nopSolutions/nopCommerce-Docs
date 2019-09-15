@@ -1,6 +1,6 @@
 ---
 title: FAQ
-uid: en/user-guide/installing/faq
+uid: pl/user-guide/installing/faq
 ---
 
 # FAQ
