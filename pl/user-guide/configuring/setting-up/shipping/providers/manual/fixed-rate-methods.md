@@ -1,6 +1,6 @@
 ---
 title: Shipping Methods (Fixed Rate Shipping)
-uid: en/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-methods
+uid: pl/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-methods
 ---
 
 # Shipping Methods (Fixed Rate Shipping)
