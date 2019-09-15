@@ -1,6 +1,6 @@
 ---
 title: Manual Processing (Credit Card)
-uid: en/user-guide/configuring/setting-up/payments/methods/paypal-standard
+uid: he/user-guide/configuring/setting-up/payments/methods/paypal-standard
 ---
 
 # PayPal Standard
