@@ -1,6 +1,6 @@
 ---
 title: Activity Log
-uid: en/user-guide/running/customer-management/activity-log
+uid: pt/user-guide/running/customer-management/activity-log
 ---
 
 # Activity Log
