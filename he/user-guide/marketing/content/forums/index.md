@@ -1,6 +1,6 @@
 ---
 title: Forums
-uid: en/user-guide/marketing/content/forums/index
+uid: he/user-guide/marketing/content/forums/index
 ---
 
 # Forums
@@ -39,4 +39,4 @@ To view an example of how forums should work go to <http://www.nopcommerce.com/b
 
 ## See also
 
-- [Forum settings](xref:en/user-guide/marketing/content/forums/settings)
+- [Forum settings](xref:he/user-guide/marketing/content/forums/settings)
