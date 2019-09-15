@@ -1,6 +1,6 @@
 ---
 title: Understanding Layout / Design
-uid: en/developer/design/understanding-layout
+uid: el/developer/design/understanding-layout
 ---
 
 # Understanding Layout / Design
