@@ -1,6 +1,6 @@
 ---
 title: Adding products
-uid: en/user-guide/running/product-management/products/adding-products/index
+uid: pl/user-guide/running/product-management/products/adding-products/index
 ---
 
 # Adding products
@@ -45,10 +45,10 @@ Start by filling up General Information on the **Product info panel**:
 
 Define whether the product is a
 
-- [Gift Card](xref:en/user-guide/marketing/promotional/gift-cards)
-- [Downloadable Product](xref:en/user-guide/running/product-management/products/adding-products/downloadable-products)
-- [Recurring Product](xref:en/user-guide/running/product-management/products/adding-products/recurring-products)
-- [Rental Product](xref:en/user-guide/running/product-management/products/adding-products/rental-products)
+- [Gift Card](xref:pl/user-guide/marketing/promotional/gift-cards)
+- [Downloadable Product](xref:pl/user-guide/running/product-management/products/adding-products/downloadable-products)
+- [Recurring Product](xref:pl/user-guide/running/product-management/products/adding-products/recurring-products)
+- [Rental Product](xref:pl/user-guide/running/product-management/products/adding-products/rental-products)
 
 ## Product price
 
@@ -193,7 +193,7 @@ On this tab you can view all the product quantity changes, orders with the produ
 
 ## See also
 
-- [Product categories](xref:en/user-guide/running/product-management/categories)
-- [Order management](xref:en/user-guide/running/order-management/index)
+- [Product categories](xref:pl/user-guide/running/product-management/categories)
+- [Order management](xref:pl/user-guide/running/order-management/index)
 - [Webinar. First steps in nopCommerce](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
 - [Video tutorial: Adding a new product](https://www.youtube.com/watch?v=wVgTgdQVWPQ&index=2&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
