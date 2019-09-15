@@ -1,6 +1,6 @@
 ---
 title: Catalog settings
-uid: en/user-guide/running/product-management/catalog-settings
+uid: pl/user-guide/running/product-management/catalog-settings
 ---
 
 # Catalog settings
