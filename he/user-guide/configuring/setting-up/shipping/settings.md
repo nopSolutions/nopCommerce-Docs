@@ -1,6 +1,6 @@
 ---
 title: Shipping Settings
-uid: en/user-guide/configuring/setting-up/shipping/settings
+uid: he/user-guide/configuring/setting-up/shipping/settings
 ---
 
 # Shipping Settings
