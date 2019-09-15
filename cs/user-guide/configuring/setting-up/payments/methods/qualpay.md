@@ -1,6 +1,6 @@
 ---
 title: Qualpay
-uid: en/user-guide/configuring/setting-up/payments/methods/qualpay
+uid: cs/user-guide/configuring/setting-up/payments/methods/qualpay
 ---
 
 # Qualpay
