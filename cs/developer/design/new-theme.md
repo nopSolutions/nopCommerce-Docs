@@ -1,6 +1,6 @@
 ---
 title: Creating / Writing your own theme (using current / default theme)
-uid: en/developer/design/new-theme
+uid: cs/developer/design/new-theme
 ---
 
 # Creating / Writing your own theme (using current / default theme)
