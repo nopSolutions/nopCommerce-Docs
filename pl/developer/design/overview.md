@@ -1,6 +1,6 @@
 ---
 title: Overview (Designer's Guide)
-uid: en/developer/design/overview
+uid: pl/developer/design/overview
 ---
 
 # Overview (Designer's Guide)
