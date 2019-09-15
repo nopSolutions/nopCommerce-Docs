@@ -1,6 +1,6 @@
 ---
 title: Known Issues and Solutions
-uid: en/user-guide/installing/installation-guide/known-issues-and-solutions
+uid: he/user-guide/installing/installation-guide/known-issues-and-solutions
 ---
 
 # Known Issues and Solutions
