@@ -1,11 +1,11 @@
 ---
 title: Running your store
-uid: en/user-guide/running/index
+uid: el/user-guide/running/index
 ---
 
 # Running your store
 
-* [Product management](xref:en/user-guide/running/product-management/index)
-* [Order management](xref:en/user-guide/running/order-management/index)
-* [Customer management](xref:en/user-guide/running/customer-management/index)
-* [Reports](xref:en/user-guide/running/reports/index)
+* [Product management](xref:el/user-guide/running/product-management/index)
+* [Order management](xref:el/user-guide/running/order-management/index)
+* [Customer management](xref:el/user-guide/running/customer-management/index)
+* [Reports](xref:el/user-guide/running/reports/index)
