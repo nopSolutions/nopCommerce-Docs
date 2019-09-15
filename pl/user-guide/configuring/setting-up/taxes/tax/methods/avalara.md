@@ -1,6 +1,6 @@
 ---
 title: Avalara tax provider
-uid: en/user-guide/configuring/setting-up/taxes/tax/methods/avalara
+uid: pl/user-guide/configuring/setting-up/taxes/tax/methods/avalara
 ---
 
 # Avalara tax provider
