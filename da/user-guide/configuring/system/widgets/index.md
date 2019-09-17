@@ -1,6 +1,6 @@
 ---
 title: Widgets
-uid: en/user-guide/configuring/system/widgets/index
+uid: da/user-guide/configuring/system/widgets/index
 ---
 
 # Widgets
@@ -13,5 +13,5 @@ A widget (or control) is an element of a graphical user interface (GUI) that dis
 
 ## See also
 
-* [Google Analytics Plugin](xref:en/user-guide/configuring/system/widgets/google-analytics)
-* [Nivo Slider Widget Plugin](xref:en/user-guide/configuring/system/widgets/nivo-slider)
+* [Google Analytics Plugin](xref:da/user-guide/configuring/system/widgets/google-analytics)
+* [Nivo Slider Widget Plugin](xref:da/user-guide/configuring/system/widgets/nivo-slider)
