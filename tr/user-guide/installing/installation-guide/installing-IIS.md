@@ -1,6 +1,6 @@
 ---
 title: Installing Internet Information Services (IIS)
-uid: en/user-guide/installing/installation-guide/installing-IIS
+uid: tr/user-guide/installing/installation-guide/installing-IIS
 ---
 
 # Installing Internet Information Services (IIS)
