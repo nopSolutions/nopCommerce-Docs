@@ -1,6 +1,6 @@
 ---
 title: Exposing and Handling Events
-uid: en/developer/tutorials/events
+uid: vi/developer/tutorials/events
 ---
 
 # Exposing and Handling Events
