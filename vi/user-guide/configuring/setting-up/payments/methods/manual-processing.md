@@ -1,6 +1,6 @@
 ---
 title: Manual Processing (Credit Card)
-uid: en/user-guide/configuring/setting-up/payments/methods/manual-processing
+uid: vi/user-guide/configuring/setting-up/payments/methods/manual-processing
 ---
 
 # Manual Processing (Credit Card)
