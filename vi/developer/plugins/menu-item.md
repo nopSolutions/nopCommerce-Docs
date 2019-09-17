@@ -1,6 +1,6 @@
 ---
 title: How to add a menu item into the administration area from a plugin
-uid: en/developer/plugins/menu-item
+uid: vi/developer/plugins/menu-item
 ---
 
 # How to add a menu item into the administration area from a plugin
