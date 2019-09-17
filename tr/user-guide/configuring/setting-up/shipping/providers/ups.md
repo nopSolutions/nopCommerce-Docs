@@ -1,6 +1,6 @@
 ---
 title: UPS
-uid: en/user-guide/configuring/setting-up/shipping/providers/ups
+uid: tr/user-guide/configuring/setting-up/shipping/providers/ups
 ---
 
 # UPS
