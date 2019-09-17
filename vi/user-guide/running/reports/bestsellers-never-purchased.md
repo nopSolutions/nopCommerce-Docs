@@ -1,6 +1,6 @@
 ---
 title: Bestsellers and products never purchased
-uid: en/user-guide/running/reports/bestsellers-never-purchased
+uid: vi/user-guide/running/reports/bestsellers-never-purchased
 ---
 
 # Bestsellers and products never purchased
@@ -28,6 +28,6 @@ To view products never purchased, go to Reports → Products Never Purchased. En
 
 ## See also
 
-* [Polls](xref:en/user-guide/marketing/content/polls)
-* [Dashboard](xref:en/user-guide/running/reports/dashboard)
-* [Cross-Sells and Related products](xref:en/user-guide/marketing/promotional/cross-sells-related-products)
+* [Polls](xref:vi/user-guide/marketing/content/polls)
+* [Dashboard](xref:vi/user-guide/running/reports/dashboard)
+* [Cross-Sells and Related products](xref:vi/user-guide/marketing/promotional/cross-sells-related-products)
