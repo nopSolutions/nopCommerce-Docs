@@ -1,6 +1,6 @@
 ---
 title: Possible ways to contribute
-uid: en/developer/contribute/possible-ways
+uid: da/developer/contribute/possible-ways
 ---
 
 # Possible ways to contribute
