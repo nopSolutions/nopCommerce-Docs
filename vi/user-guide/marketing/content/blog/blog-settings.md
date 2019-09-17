@@ -1,6 +1,6 @@
 ---
 title: Blog settings
-uid: en/user-guide/marketing/content/blog/blog-settings
+uid: vi/user-guide/marketing/content/blog/blog-settings
 ---
 
 # Blog settings
@@ -27,5 +27,5 @@ This page enables **multi-store configuration**, it means that the same settings
 
 ## See also
 
-- [Basic and Advanced modes](xref:en/user-guide/configuring/nopcommerce-interface)
-- [Blog](xref:en/user-guide/marketing/content/blog/index)
+- [Basic and Advanced modes](xref:vi/user-guide/configuring/nopcommerce-interface)
+- [Blog](xref:vi/user-guide/marketing/content/blog/index)
