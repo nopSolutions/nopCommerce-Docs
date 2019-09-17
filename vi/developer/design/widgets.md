@@ -1,6 +1,6 @@
 ---
 title: Widgets (Designer's Guide)
-uid: en/developer/design/widgets
+uid: vi/developer/design/widgets
 ---
 
 # Widgets (Designer's Guide)
