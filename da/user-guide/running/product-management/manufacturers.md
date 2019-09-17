@@ -1,6 +1,6 @@
 ---
 title: Manufacturers
-uid: en/user-guide/running/product-management/manufacturers
+uid: da/user-guide/running/product-management/manufacturers
 ---
 
 # Manufacturers
@@ -92,6 +92,6 @@ You can **export** the manufacturer settings to an external file for backup purp
 
 ## See also
 
-- [Adding products user](xref:en/user-guide/running/product-management/products/adding-products/index)
-- [SEO](xref:en/user-guide/marketing/content/seo)
+- [Adding products user](xref:da/user-guide/running/product-management/products/adding-products/index)
+- [SEO](xref:da/user-guide/marketing/content/seo)
 - [Video tutorial: managing](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
