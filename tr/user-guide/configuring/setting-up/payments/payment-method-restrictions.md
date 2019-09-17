@@ -1,6 +1,6 @@
 ---
 title: Payment Method Restrictions
-uid: en/user-guide/configuring/setting-up/payments/payment-method-restrictions
+uid: tr/user-guide/configuring/setting-up/payments/payment-method-restrictions
 ---
 
 # Payment Method Restrictions
