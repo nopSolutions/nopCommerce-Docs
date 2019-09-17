@@ -1,6 +1,6 @@
 ---
 title: Grouped product
-uid: en/user-guide/running/product-management/products/adding-products/grouped-products
+uid: tr/user-guide/running/product-management/products/adding-products/grouped-products
 ---
 
 # Grouped product
