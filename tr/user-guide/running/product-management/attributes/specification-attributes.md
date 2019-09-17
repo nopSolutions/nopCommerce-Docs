@@ -1,6 +1,6 @@
 ---
 title: Specification attributes
-uid: en/user-guide/running/product-management/attributes/specification-attributes
+uid: tr/user-guide/running/product-management/attributes/specification-attributes
 ---
 
 # Specification attributes
@@ -36,6 +36,6 @@ Click **Edit** beside the attribute option to update it or Delete to remove it f
 
 ## See also
 
-- [Adding new products](xref:en/user-guide/running/product-management/products/adding-products/index)
-- [Product attributes](xref:en/user-guide/running/product-management/attributes/product-attributes)
+- [Adding new products](xref:tr/user-guide/running/product-management/products/adding-products/index)
+- [Product attributes](xref:tr/user-guide/running/product-management/attributes/product-attributes)
 - [YouTube tutorial: Managing Specification Attributes](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
