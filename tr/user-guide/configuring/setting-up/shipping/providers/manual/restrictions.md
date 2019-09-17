@@ -1,6 +1,6 @@
 ---
 title: Shipping Method Restrictions (Shipping by Weight and by Total)
-uid: en/user-guide/configuring/setting-up/shipping/providers/manual/restrictions
+uid: tr/user-guide/configuring/setting-up/shipping/providers/manual/restrictions
 ---
 
 # Shipping Method Restrictions (Shipping by Weight and by Total)
