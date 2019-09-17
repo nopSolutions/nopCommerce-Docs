@@ -1,6 +1,6 @@
 ---
 title: Gift cards
-uid: en/user-guide/marketing/promotional/gift-cards
+uid: it/user-guide/marketing/promotional/gift-cards
 ---
 
 # Gift cards
@@ -55,5 +55,5 @@ A gift card is performed in the public store by entering the serial number in th
 
 ## See also
 
-- [Adding product](xref:en/user-guide/running/product-management/products/adding-products/index)
+- [Adding product](xref:it/user-guide/running/product-management/products/adding-products/index)
 - [YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
