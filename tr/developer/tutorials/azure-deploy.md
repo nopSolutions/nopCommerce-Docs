@@ -1,6 +1,6 @@
 ---
 title: Step by step to deploy on Azure with GIT and automatic builds
-uid: en/developer/tutorials/azure-deploy
+uid: tr/developer/tutorials/azure-deploy
 ---
 
 # Step by step to deploy on Azure with GIT and automatic builds
