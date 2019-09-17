@@ -1,6 +1,6 @@
 ---
 title: Facebook authentication
-uid: en/user-guide/configuring/system/external-authentication/facebook
+uid: it/user-guide/configuring/system/external-authentication/facebook
 ---
 
 # Facebook authentication
