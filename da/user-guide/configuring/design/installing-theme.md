@@ -1,6 +1,6 @@
 ---
 title: Installing a theme
-uid: en/user-guide/configuring/design/installing-theme
+uid: da/user-guide/configuring/design/installing-theme
 ---
 
 # Installing a theme
