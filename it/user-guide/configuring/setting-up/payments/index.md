@@ -1,6 +1,6 @@
 ---
 title: Setting up Payments
-uid: en/user-guide/configuring/setting-up/payments/index
+uid: it/user-guide/configuring/setting-up/payments/index
 ---
 
 # Setting up Payments
@@ -15,7 +15,7 @@ This chapter describes how to set up the payment methods, currency and Payment m
 
 ## See also
 
-- [Payment Methods](xref:en/user-guide/configuring/setting-up/payments/methods/index)
-- [Payment statuses](xref:en/user-guide/configuring/setting-up/payments/payment-statuses)
-- [Payment Method Restrictions](xref:en/user-guide/configuring/setting-up/payments/payment-method-restrictions)
-- [Currencies](xref:en/user-guide/configuring/setting-up/payments/currencies)
+- [Payment Methods](xref:it/user-guide/configuring/setting-up/payments/methods/index)
+- [Payment statuses](xref:it/user-guide/configuring/setting-up/payments/payment-statuses)
+- [Payment Method Restrictions](xref:it/user-guide/configuring/setting-up/payments/payment-method-restrictions)
+- [Currencies](xref:it/user-guide/configuring/setting-up/payments/currencies)
