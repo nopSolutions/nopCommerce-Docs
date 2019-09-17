@@ -1,6 +1,6 @@
 ---
 title: Reports
-uid: en/user-guide/running/reports/index
+uid: vi/user-guide/running/reports/index
 ---
 
 # Reports
@@ -9,8 +9,8 @@ Reports are important for management, they allow to monitor store performance, t
 
 Learn more in following chapters:
 
-* [Dashboard](xref:en/user-guide/running/reports/dashboard)
-* [Bestsellers and products never purchased](xref:en/user-guide/running/reports/bestsellers-never-purchased)
-* [Country report](xref:en/user-guide/running/reports/country-report)
-* [Customer reports](xref:en/user-guide/running/reports/customer-reports)
-* [Low Stock Reports](xref:en/user-guide/running/reports/low-stock-reports)
+* [Dashboard](xref:vi/user-guide/running/reports/dashboard)
+* [Bestsellers and products never purchased](xref:vi/user-guide/running/reports/bestsellers-never-purchased)
+* [Country report](xref:vi/user-guide/running/reports/country-report)
+* [Customer reports](xref:vi/user-guide/running/reports/customer-reports)
+* [Low Stock Reports](xref:vi/user-guide/running/reports/low-stock-reports)
