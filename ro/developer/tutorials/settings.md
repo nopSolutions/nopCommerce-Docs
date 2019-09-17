@@ -1,6 +1,6 @@
 ---
 title: Settings API
-uid: en/developer/tutorials/settings
+uid: ro/developer/tutorials/settings
 ---
 
 # Settings API
