@@ -1,6 +1,6 @@
 ---
 title: Warehouses
-uid: en/user-guide/configuring/setting-up/shipping/warehouses
+uid: ro/user-guide/configuring/setting-up/shipping/warehouses
 ---
 
 # Warehouses
