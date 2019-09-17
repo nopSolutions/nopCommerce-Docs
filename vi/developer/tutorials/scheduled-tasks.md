@@ -1,6 +1,6 @@
 ---
 title: Scheduled Tasks
-uid: en/developer/tutorials/scheduled-tasks
+uid: vi/developer/tutorials/scheduled-tasks
 ---
 
 # Scheduled Tasks
