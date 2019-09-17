@@ -1,6 +1,6 @@
 ---
 title: Country report
-uid: en/user-guide/running/reports/country-report
+uid: vi/user-guide/running/reports/country-report
 ---
 
 # Country report
@@ -20,6 +20,6 @@ To search for the report, enter one or more of the following search criteria:
 
 ## See also
 
-* [Customer reports](xref:en/user-guide/running/reports/customer-reports)
-* [Countries](xref:en/user-guide/configuring/setting-up/main-store/countries)
-* [Orders](xref:en/user-guide/running/order-management/orders/index)
+* [Customer reports](xref:vi/user-guide/running/reports/customer-reports)
+* [Countries](xref:vi/user-guide/configuring/setting-up/main-store/countries)
+* [Orders](xref:vi/user-guide/running/order-management/orders/index)
