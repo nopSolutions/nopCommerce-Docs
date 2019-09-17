@@ -1,6 +1,6 @@
 ---
 title: Upgrading nopCommerce
-uid: en/user-guide/installing/upgrading
+uid: it/user-guide/installing/upgrading
 ---
 
 # Upgrading nopCommerce
