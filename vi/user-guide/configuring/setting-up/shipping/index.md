@@ -1,6 +1,6 @@
 ---
 title: Setting up Shipping
-uid: en/user-guide/configuring/setting-up/shipping/index
+uid: vi/user-guide/configuring/setting-up/shipping/index
 ---
 
 # Setting up Shipping
@@ -11,9 +11,9 @@ Please note that nopCommerce offers integration with third-party shipping servic
 
 ## See also
 
-* [Shipping Settings](xref:en/user-guide/configuring/setting-up/shipping/settings)
-* [Shipping Providers](xref:en/user-guide/configuring/setting-up/shipping/providers/index)
-* [Warehouses](xref:en/user-guide/configuring/setting-up/shipping/warehouses)
-* [Dates and ranges](xref:en/user-guide/configuring/setting-up/shipping/dates-ranges)
-* [Measures](xref:en/user-guide/configuring/setting-up/shipping/measures)
-* [Pickup Points](xref:en/user-guide/configuring/setting-up/shipping/pickup-points)
+* [Shipping Settings](xref:vi/user-guide/configuring/setting-up/shipping/settings)
+* [Shipping Providers](xref:vi/user-guide/configuring/setting-up/shipping/providers/index)
+* [Warehouses](xref:vi/user-guide/configuring/setting-up/shipping/warehouses)
+* [Dates and ranges](xref:vi/user-guide/configuring/setting-up/shipping/dates-ranges)
+* [Measures](xref:vi/user-guide/configuring/setting-up/shipping/measures)
+* [Pickup Points](xref:vi/user-guide/configuring/setting-up/shipping/pickup-points)
