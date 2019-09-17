@@ -1,6 +1,6 @@
 ---
 title: Localization
-uid: en/user-guide/configuring/system/localization
+uid: vi/user-guide/configuring/system/localization
 ---
 
 # Localization
