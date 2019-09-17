@@ -1,6 +1,6 @@
 ---
 title: System Information
-uid: en/user-guide/configuring/system/system-information
+uid: ro/user-guide/configuring/system/system-information
 ---
 
 # System Information
