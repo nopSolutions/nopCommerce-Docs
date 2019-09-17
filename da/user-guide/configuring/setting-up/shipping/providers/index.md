@@ -1,6 +1,6 @@
 ---
 title: Shipping Providers
-uid: en/user-guide/configuring/setting-up/shipping/providers/index
+uid: da/user-guide/configuring/setting-up/shipping/providers/index
 ---
 
 # Shipping Providers
@@ -13,5 +13,5 @@ If you decide to define and use your own shipping methods, the shipping rates fo
 
 Learn how to set up the required shipment options in the following chapters:
 
-* [Manual (Fixed or By Weight and By Total)](xref:en/user-guide/configuring/setting-up/shipping/providers/manual/index)
-* [UPS](xref:en/user-guide/configuring/setting-up/shipping/providers/ups)
+* [Manual (Fixed or By Weight and By Total)](xref:da/user-guide/configuring/setting-up/shipping/providers/manual/index)
+* [UPS](xref:da/user-guide/configuring/setting-up/shipping/providers/ups)
