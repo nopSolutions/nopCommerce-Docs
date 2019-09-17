@@ -1,6 +1,6 @@
 ---
 title: Customer list
-uid: en/user-guide/running/customer-management/customer-list
+uid: vi/user-guide/running/customer-management/customer-list
 ---
 
 # Customer list
@@ -73,5 +73,5 @@ Customer list contains details of all existing customers, as well as allows to a
 ## See also
 
 - [YouTube tutorial on customer management](https://www.youtube.com/watch?v=DOl-g-NNFEM&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=1)
-- [Customer roles](xref:en/user-guide/configuring/setting-up/customers/customer-roles)
-- [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index)
+- [Customer roles](xref:vi/user-guide/configuring/setting-up/customers/customer-roles)
+- [Vendors](xref:vi/user-guide/configuring/setting-up/customers/vendors/index)
