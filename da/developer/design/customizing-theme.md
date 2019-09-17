@@ -1,6 +1,6 @@
 ---
 title: Customizing nopCommerce Themes
-uid: en/developer/design/customizing-theme
+uid: da/developer/design/customizing-theme
 ---
 
 # Customizing nopCommerce Themes
