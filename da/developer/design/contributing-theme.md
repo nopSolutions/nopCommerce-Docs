@@ -1,6 +1,6 @@
 ---
 title: Contributing a Theme
-uid: en/developer/design/contributing-theme
+uid: da/developer/design/contributing-theme
 ---
 
 # Contributing a Theme
