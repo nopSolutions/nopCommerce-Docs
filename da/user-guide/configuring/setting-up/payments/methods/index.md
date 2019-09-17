@@ -1,6 +1,6 @@
 ---
 title: Payment Methods
-uid: en/user-guide/configuring/setting-up/payments/methods/index
+uid: da/user-guide/configuring/setting-up/payments/methods/index
 ---
 
 # Payment Methods
@@ -28,8 +28,8 @@ Click **configure** beside a payment method to set it up.
 
 ## See also
 
-* [Square](xref:en/user-guide/configuring/setting-up/payments/methods/square)
-* [Qualpay](xref:en/user-guide/configuring/setting-up/payments/methods/qualpay)
-* [Manual Processing (Credit Card)](xref:en/user-guide/configuring/setting-up/payments/methods/manual-processing)
-* [Purchase order](xref:en/user-guide/configuring/setting-up/payments/methods/purchase-order)
-* [PayPal Standard](xref:en/user-guide/configuring/setting-up/payments/methods/paypal-standard)
+* [Square](xref:da/user-guide/configuring/setting-up/payments/methods/square)
+* [Qualpay](xref:da/user-guide/configuring/setting-up/payments/methods/qualpay)
+* [Manual Processing (Credit Card)](xref:da/user-guide/configuring/setting-up/payments/methods/manual-processing)
+* [Purchase order](xref:da/user-guide/configuring/setting-up/payments/methods/purchase-order)
+* [PayPal Standard](xref:da/user-guide/configuring/setting-up/payments/methods/paypal-standard)
