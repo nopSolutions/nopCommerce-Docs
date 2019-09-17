@@ -1,6 +1,6 @@
 ---
 title: Responsive Design
-uid: en/developer/design/responsive
+uid: vi/developer/design/responsive
 ---
 
 # Responsive Design
