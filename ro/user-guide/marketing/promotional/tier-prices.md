@@ -1,6 +1,6 @@
 ---
 title: Tier prices
-uid: en/user-guide/marketing/promotional/tier-prices
+uid: ro/user-guide/marketing/promotional/tier-prices
 ---
 
 # Tier prices
