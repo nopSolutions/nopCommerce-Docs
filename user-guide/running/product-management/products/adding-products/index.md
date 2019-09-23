@@ -68,7 +68,7 @@ In the **Prices** section define:
 - **Unit of product** - measure of a previously entered value.
 - **Reference amount** - the base amount.
 - **Reference unit** - measure of a previously entered value.
-- **Discounts**. Learn how to set up discounts here.
+- **Discounts**. Learn how to set up discounts [here](xref:/user-guide/marketing/promotional/discounts/index.html).
 - Whether the product is exempted from tax, by ticking **Tax exempt**. Otherwise, from the Tax category dropdown list, select the required tax classification for this product. Tax categories can be configured by the store owner in  the **Configuration → Tax → Tax Categories.**
 - The product as **Telecommunications, broadcasting, and electronic services**, to apply special tax rules used in the European Union. Find more info here.
 - Set up [tier prices](xref:user-guide/marketing/promotional/tier-prices) if required.
