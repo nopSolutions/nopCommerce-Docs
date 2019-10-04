@@ -26,6 +26,7 @@ Define the **affiliate details:**
 - Email
 - Company name
 - Select the Country from the drop-down list. If the selected country is the USA also specify the State/Province as well
+- County
 - City
 - Address 1 and Address 2
 - Zip/ Postal code

@@ -7,11 +7,11 @@ uid: user-guide/configuring/settingup/shipping/providers/manual/methods
 
 A store owner can define required shipping methods in the shipping by weight section.
 
-To manage shipping methods, go to **Configuration → Shipping → Shipping Providers → click Configure** beside Shipping by weight.
+To manage shipping methods, go to **Configuration → Shipping → Shipping Providers → click Configure** Manual (Fixed or By Weight and By Total).
 
 ![Formula](_static/methods/methods-formula-rates.png)
 
-Click Manage shipping methods, the **Shipping methods window is displayed**:
+Click **Manage shipping methods**, the Shipping methods window is displayed:
 
 ![Methods](_static/methods/methods.png)
 
