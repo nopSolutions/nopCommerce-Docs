@@ -7,7 +7,7 @@ uid: user-guide/marketing/content/blog/blog-settings
 
 You can manage blog settings in **Configuration → Settings → Blog Settings**. This page is available in 2 modes: **advanced** and **basic**.
 
-![P1](_static/blog-settings/Setting-Blog1.png)
+![P1](_static/blog-settings/Blog-Setting.png)
 
 Define the **following settings**:
 
@@ -23,7 +23,7 @@ Define the **following settings**:
 
 This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
 
- ![p2](_static/blog-settings/Setting-Blog%202.png)
+ ![p2](_static/blog-settings/Blog-Multi-Store-Setting.png)
 
 ## See also
 

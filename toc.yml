@@ -20,7 +20,9 @@
             - name: Known Issues and Solutions
               uid: user-guide/installing/installation-guide/known-issues-and-solutions
         - name: Installing on Windows Azure
-          uid: user-guide/installing/azure
+          uid: user-guide/installing/azure          
+        - name: Installing on Linux
+          uid: user-guide/installing/linux
         - name: Upgrading nopCommerce
           uid: user-guide/installing/upgrading
         - name: Help

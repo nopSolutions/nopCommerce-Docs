@@ -39,7 +39,7 @@ On the top of the sidebar, there is a search field. Start typing a name of a sec
 
 ![dashboard4](_static/nopcommerce-interface/dashboard4.png)
 
-This part of the interface shows the name of a logged-in user, logout button, and a small menu from which a user can select to clear cache or restart application.
+This part of the interface shows the name of a logged-in user, logout button,public store link and a small menu from which a user can select to clear cache or restart application.
 
 ## Basic and Advanced models
 
