@@ -17,7 +17,7 @@ The Nop.Core project contains a set of core classes for nopCommerce, such as cac
 
 ## `\Libraries\Nop.Data`
 
-The Nop.Data project contains a set of classes and functions for reading from and writing to a database or other data store. It helps separate data-access logic from your business objects. nopCommerce uses the Entity Framework (EF) Code-First approach. It allows you to define entities in the source code (all core entities are defined into Nop.Core project), and then get EF to generate the database from that. That's why it's called Code-First. You can then query your objects using LINQ, which gets translated to SQL behind the scenes and executed against the database. nopCommerces use a fluent code API to fully customize the persistence mapping.
+The Nop.Data project contains a set of classes and functions for reading from and writing to a database or other data store. It helps separate data-access logic from your business objects. nopCommerce uses the Entity Framework (EF) Code-First approach. It allows you to define entities in the source code (all core entities are defined into Nop.Core project), and then get EF to generate the database from that. That's why it's called Code-First. You can then query your objects using LINQ, which gets translated to SQL behind the scenes and executed against the database. nopCommerces use  [Fluent API](https://www.entityframeworktutorial.net/efcore/fluent-api-in-entity-framework-core.aspx) to fully customize the persistence mapping.
 
 ## `\Libraries\Nop.Services`
 
