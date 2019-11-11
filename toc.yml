@@ -333,6 +333,8 @@
           uid: developer/tutorials/update-existing-entity
         - name: The nopCommerce Data Access Layer
           uid: developer/tutorials/data-access-layer
+        - name: Entity events and how they work
+          uid: developer/tutorials/entity-event
         - name: Inversion of Control and Dependency Injection
           uid: developer/tutorials/inversion-of-control
         - name: How do I register new routes?
