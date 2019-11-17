@@ -5,7 +5,7 @@ uid: user-guide/configuring/settingup/shipping/providers/manual/restrictions
 ---
 # Shipping Method Restrictions (Shipping by Weight and by Total)
 
-![Configure](_static/restrictions/shipping-restrictions-methods.png)
+![Configure](_static/restrictions/shipping-restrictions-configure.png)
 
 Click Shipping method restrictions, the **Shipping method restrictions** window is displayed:
 

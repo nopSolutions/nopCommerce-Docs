@@ -15,3 +15,6 @@ Choosing a hosting provider is an important decision. There are a lot of factors
 1. **Dedicated IP address** - Most nopCommerce installations will require an SSL certificate as you will be processing credit cards. Check with your provider about the cost of a dedicated IP address for your domain, as it should not be a very high cost.
 1. **Backups** - Ensure your provider offers backups of your installation and database. This can either be automated backups or manual, but you will feel safer knowing your data has been backed up.
 1. **Growth options** - As your site gets more users and you make more sales, your site will need to grow as well. A good provider will offer options for growing your site, from more disk space to more database space. This would also include moving from a shared server to a dedicated server.
+
+> [!TIP]
+> You can learn more about the recommended nopCommerce hosting partners here - [Hosting partners](https://www.nopcommerce.com/hosting-partners?utm_source=docs_nopcommerce&utm_medium=link&utm_content=hosting&utm_campaign=parnters_page).

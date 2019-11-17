@@ -12,6 +12,7 @@ The following is a list of common questions asked by developers working with nop
 * [Source code organization. Architecture of nopCommerce.](xref:developer/tutorials/source-code-organization)
 * [Updating an existing entity. How to add a new property.](xref:developer/tutorials/update-existing-entity)
 * [The nopCommerce Data Access Layer](xref:developer/tutorials/data-access-layer)
+* [Entity events and how they work](xref:developer/tutorials/entity-event)
 * [Inversion of Control and Dependency Injection](xref:developer/tutorials/inversion-of-control)
 * [How do I register new routes?](xref:developer/tutorials/register-new-routes)
 * [Data Validation](xref:developer/tutorials/data-validation)
