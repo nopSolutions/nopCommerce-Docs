@@ -129,3 +129,11 @@ Product attributes will do it. Don't forget to set Manage inventory method: Trac
 ## Is nopCommerce PCI compliant?
 
 nopCommerce meets all PCI Compliance requirements, but it hasn't  try to pass any official certification.
+
+## What’s new in nopCommerce 4.20?
+
+Check these links:
+
+* [https://www.nopcommerce.com/whats-new-in-nopcommerce-420](https://www.nopcommerce.com/whats-new-in-nopcommerce-420)
+* [https://www.c-sharpcorner.com/article/nopcommerce-4-20-whats-new-changes-and-how-to-upgrade/](https://www.c-sharpcorner.com/article/nopcommerce-4-20-whats-new-changes-and-how-to-upgrade/)
+
