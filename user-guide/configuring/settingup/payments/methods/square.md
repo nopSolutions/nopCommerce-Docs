@@ -7,46 +7,104 @@ uid: user-guide/configuring/settingup/payments/methods/square
 
 To configure **Square** plugin as a payment method follow these steps:
 
-1. Sign up for a Square merchant account
-    * Go to [https://squareup.com/signup/](https://squareup.com/signup/)
+## Square Account Setup
 
-        ![SquareSignUp1](_static/square/squareSignUp1.png)
-    * Provide information about yourself and your business.
+1. Sign up for a Square Merchant account.
+    - Go to [https://squareup.com/signup/](https://squareup.com/signup/)
 
-        ![SquareSignUp2](_static/square/squareSignUp2.png)
-1. Create business location
+        ![square_sign_up](_static/square/square_sign_up.png)
+    - Provide information about yourself and your business.
 
-    * Sign in to Square merchant portal.
-    * In the Square merchant admin go to **Account & Settings → Locations** tab.
+        ![square_business_information](_static/square/square_business_information.png)
+1. Create business location.
 
-        ![SquareSignUp3](_static/square/squareSignUp3.png)
-    * Create new location. Your merchant account must have at least one location with enabled credit card processing. Please refer to the Square customer support if you have any questions about how to set this up.
+    - Sign in to **Square Merchant Dashboard**.
+    - Go to **Account & Settings → Locations** tab.
 
-1. Create new Square application
+        ![square_locations_page](_static/square/square_locations_page.png)
+    - Create new location.
 
-    * Sign in to Square developer portal at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) using the same sign in credentials as your merchant account.
+    > [!IMPORTANT]
+    > Your merchant account must have at least one location with enabled credit card processing. Please refer to the Square customer support if you have any questions about how to set this up.
 
-        ![SquareSignUp4](_static/square/squareSignUp4.png)
-    * Click on **+New Application** and fill in the application name. This name is for you to recognize the application in the developer portal and is not used by the plugin. Click **Create Application** at the bottom of the page.
+1. Create new Square application.
 
-        ![SquareSignUp5](_static/square/squareSignUp5.png)
+    - Sign in to **Square Developer Dashboard** at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) using the same login credentials as your merchant account.
 
-1. To configure plugin in the nopCommerce admin panel go to **Configuration → Payment methods** → click **Configure** for **Payments.Square.**
+        ![square_sign_in](_static/square/square_sign_in.png)
+    - Click on **Create Your First Application**.
 
-    ![Squareplugin1](_static/square/Squareplugin1.png)
-    * In the Square developer admin go to **Credentials** tab. Copy the **Application ID** and paste it into **Application ID** on the plugin configuration page.
+        ![square_create_app](_static/square/square_create_app.png)
+    - Name your application. This name is for you to recognize the application in the developer portal and is not used by the plugin. Agree to the **Square Developer Terms of Service** and click **Create Application** at the bottom of the page.
 
-        ![Squareplugin2](_static/square/Squareplugin2.png)
-    * In the Square developer admin go to **OAuth** tab. Click **Show Secret.** Copy the **Application Secret** and paste it into **Application Secret** on the plugin configuration page. Click **Save** on this page.
+        ![square_create_app_page](_static/square/square_create_app_page.png)
+    - Now you are on the details page of the previously created application. On the **Credentials** tab click on the **Change Version** button and choose **2019-09-25**.
 
-     ![Squareplugin3](_static/square/Squareplugin3.png)
-    * Copy the displayed URL on the plugin configuration page. Go to the Square developer admin, go to **OAuth** tab, and paste this URL into **Redirect URL.** Click **Save.**
+        ![square_app_credentials_change_api_version](_static/square/square_app_credentials_change_api_version.png)
 
-        ![Squareplugin4](_static/square/Squareplugin4.png)
-    * On the plugin configuration page click **Obtain access token** below; the **Access token** field should populate. Click **Save.**
-    * Choose the previously created business location. Location is a required parameter for payment requests.
-    * Fill in the remaining fields and click **Save** to complete the configuration.
+1. To configure plugin in the NopCommerce admin panel go to **Configuration → Payment methods** → click **Configure** for **Payments.Square**.
 
- If for whatever reason you would like to disable an access to your accounts, simply revoke access tokens from the plugin configuration page.
+## Production application mode
 
- ![Squareplugin5](_static/square/Squareplugin5.png)
+Production application mode is used to accept real payments in a live store.
+
+- On the plugin configuration page make sure you uncheck **Use sandbox** and fill in the related fields.
+
+    ![square_prod_configuration_page](_static/square/square_prod_configuration_page.png)
+- In the **Square Developer Dashboard** go to the details page of the your previously created application:
+  - On the **Credentials** tab make sure the *Application mode* setting value is **Production**.
+
+    ![square_prod_app](_static/square/square_prod_app.png)
+  - On the **Credentials** tab copy the **Application ID** and paste it into **Application ID** on the plugin configuration page.
+
+    ![square_prod_app_credentials](_static/square/square_prod_app_credentials.png)
+  - Go to **OAuth** tab. Click **Show** on the **Application Secret** field. Copy the **Application Secret** and paste it into **Application Secret** on the plugin configuration page.
+  - Copy the displayed URL on the plugin configuration page. On the **OAuth** tab paste this URL into **Redirect URL**. Click **Save**.
+
+    ![square_prod_app_oauth](_static/square/square_prod_app_oauth.png)
+- Click **Save** on the plugin configuration page.
+
+    ![square_prod_configuration_page_save](_static/square/square_prod_configuration_page_save.png)
+- On the plugin configuration page click **Obtain access token**; the **Access token** field should populate.
+
+    ![square_prod_configuration_page_get_access_token](_static/square/square_prod_configuration_page_get_access_token.png)
+
+    > [!NOTE]
+    > If for whatever reason you would like to disable an access to your accounts, simply **Revoke access tokens** from the plugin configuration page.
+
+- Choose the previously created location. **Location** is a required parameter for payment requests.
+
+    ![square_prod_configuration_page_select_location](_static/square/square_prod_configuration_page_select_location.png)
+- Fill in the remaining fields and click **Save** to complete the configuration.
+
+## Sandbox application mode
+
+Sandbox application mode is used to test the Square payment configuration.
+
+- On the plugin configuration page check **Use sandbox** and fill in the related fields
+
+    ![square_sandbox_configuration_page](_static/square/square_sandbox_configuration_page.png)
+- In the **Square Developer Dashboard** go to the details page of the your previously created application:
+  - On the **Credentials** tab make sure the *Application mode* setting value is **Sandbox**.
+
+    ![square_sandbox_app](_static/square/square_sandbox_app.png)
+  - On the **Credentials** tab copy the **Sandbox Application ID** and **Sandbox Access Token** and paste it into same fields on the plugin configuration page.
+
+    ![square_sandbox_app_credentials](_static/square/square_sandbox_app_credentials.png)
+- Click **Save** on the plugin configuration page.
+
+    ![square_sandbox_configuration_page_save](_static/square/square_sandbox_configuration_page_save.png)
+- Choose the location. **Location** is a required parameter for payment requests.
+
+    ![square_sandbox_configuration_page_select_location](_static/square/square_sandbox_configuration_page_select_location.png)
+
+> [!NOTE]
+> By default, you can select the **Default Test Account** location. Learn more about using the Square sandbox environment [here](https://developer.squareup.com/docs/testing/sandbox).
+
+- Fill in the remaining fields and click **Save** to complete the configuration.
+
+## Multi-store support
+
+- To configure plugin for multi-store select the required store and fill in the fields below.
+
+    ![square_prod_configuration_page_multi_store](_static/square/square_prod_configuration_page_multi_store.png)
