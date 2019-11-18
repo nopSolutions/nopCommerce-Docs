@@ -16,5 +16,5 @@ With Scheduled tasks, you can schedule a task to run at certain periods. For exa
 
 ## Troubleshooting
 
-- Make sure your store has a URL.
+- Make sure your store has a valid URL.
 - Restart the application after adding new schedule task.
