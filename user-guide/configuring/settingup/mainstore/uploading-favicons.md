@@ -54,7 +54,7 @@ Here you need to remember or write down the path to your icons (it will vary dep
       1. Replace in this package the file **favicon.ico** with your new favicon.
 
       1. Edit the **html_code.html** file, leave only one line there
- `<link rel="shortcut icon" href="icons/icons_0/favicon.ico">` assuming that **icons/icons_0** it is the path that was saved from step 2.
+ `<link rel="shortcut icon" href="/icons/icons_0/favicon.ico">` assuming that **/icons/icons_0** it is the path that was saved from step 2.
 
       1. Save these two files into package. Your favicon package is ready.
 
@@ -64,7 +64,7 @@ Here you need to remember or write down the path to your icons (it will vary dep
 
       1. Replace the pictures in the new package with your own ones taking into account the original sizes.
 
-      1. Edit the **html_code.html** file, replace all entries **icons/icons_0** with the path that was saved from step 2.
+      1. Edit the **html_code.html** file, replace all entries **/icons/icons_0** with the path that was saved from step 2.
 
       1. Save this package. Your favicon package is ready.
 
