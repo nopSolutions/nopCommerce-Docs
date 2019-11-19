@@ -10,7 +10,7 @@ To configure **Square** plugin as a payment method follow these steps:
 ## Square Account Setup
 
 1. Sign up for a Square Merchant account.
-    - Go to [https://squareup.com/signup/](https://squareup.com/signup/)
+    - Go to [https://squareup.com/signup/](http://squ.re/nopcommerce)
 
         ![square_sign_up](_static/square/square_sign_up.png)
     - Provide information about yourself and your business.
@@ -29,7 +29,7 @@ To configure **Square** plugin as a payment method follow these steps:
 
 1. Create new Square application.
 
-    - Sign in to **Square Developer Dashboard** at [https://connect.squareup.com/apps](https://connect.squareup.com/apps) using the same login credentials as your merchant account.
+    - Sign in to **Square Developer Dashboard** at [https://connect.squareup.com/apps](http://squ.re/nopcommerce1) using the same login credentials as your merchant account.
 
         ![square_sign_in](_static/square/square_sign_in.png)
     - Click on **Create Your First Application**.
