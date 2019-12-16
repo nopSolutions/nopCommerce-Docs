@@ -309,7 +309,7 @@
               items:
                 - name: Forum settings
                   uid: user-guide/marketing/content/forums/settings
-            - name: Pools
+            - name: Polls
               uid: user-guide/marketing/content/polls
             - name: Topics (pages)
               uid: user-guide/marketing/content/topics
