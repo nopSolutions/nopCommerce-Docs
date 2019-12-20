@@ -6,7 +6,6 @@ User guides describe the step-by-step process of the online store deployment fro
 
 The documentation portal is hosted at [docs.nopCommerce.com](https://docs.nopCommerce.com). See the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/nopSolutions/nopCommerce-Docs/issues) if you would like to help out.
 
-
 ## Microsoft Open Source Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
