@@ -7,7 +7,7 @@ uid: developer/plugins/how-to-write-plugin_3.90
 
 > In computing, a plug-in (or plugin) is a set of software components that add specific abilities to a larger software application (Wikipedia).
 
-Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace.aspx) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
+Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
 
 ## The plugin structure, required files, and locations
 
@@ -84,8 +84,8 @@ So let's start:
 - **Create the controller**. Add a Controllers folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers `{Group}{Name}Controller.cs`. For example, PaymentAuthorizeNetController. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it "Configure". Prepare a model class and pass it to the following view. For nopCommerce versions 2.00-3.30 you should pass embedded view path - "Nop.Plugin.{Group}.{Name}.Views. {Group}{Name}.Configure". And starting nopCommerce version 3.40 you should pass physical view path - `~/Plugins/{PluginOutputDirectory}/Views/{ControllerName}/Configure.cshtml`. For example, open Authorize.NET payment plugin and look at its implementation of PaymentAuthorizeNetController.
 
     > [!TIP]
-    > - The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
-    > - If you want to limit access to a certain action method of the controller to administrators (store owners), then just mark it with [AdminAuthorize] attribute.
+    >   - The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
+    >   - If you want to limit access to a certain action method of the controller to administrators (store owners), then just mark it with [AdminAuthorize] attribute.
 
     For example, the project structure of Authorize.NET plugin looks like the image below
 

@@ -379,4 +379,4 @@ The tracking code should be added to `ProductTemplate.Simple.cshtml` and `Produc
 
 P.S. You can also implement it as a widget. In this case you won't need to edit a cshtml file.
 
-Author: [Skyler Severns](http://www.nopcommerce.com/profile.aspx?userid=52152)
+Author: [Skyler Severns](http://www.nopcommerce.com/profile/52152)

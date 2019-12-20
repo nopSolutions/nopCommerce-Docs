@@ -7,7 +7,7 @@ uid: user-guide/installing/faq
 
 ## Why choose nopCommerce?
 
-[https://www.nopcommerce.com/whychoose.aspx](https://www.nopcommerce.com/whychoose.aspx)
+[https://www.nopcommerce.com/features](https://www.nopcommerce.com/features)
 
 ## Error Message: "We're sorry, an internal error occurred. Our supporting staff has been notified of this error and will address the issue shortly..."
 
@@ -58,14 +58,14 @@ Give write permissions to \Content\Images\ and \Content\Images\Thumbs\ directori
 Check these links:
 
 * [https://www.nop-templates.com/whats-new-in-nopcommerce-30-part-1-multi-vendor-support](https://www.nop-templates.com/whats-new-in-nopcommerce-30-part-1-multi-vendor-support)
-* [https://www.nopcommerce.com/boards/t/22403/multi-vendor-roadmap-lets-discuss-update-done.aspx?p=4#92622](https://www.nopcommerce.com/boards/t/22403/multi-vendor-roadmap-lets-discuss-update-done.aspx?p=4#92622)
+* [https://www.nopcommerce.com/boards/topic/22403/multi-vendor-roadmap-lets-discuss-update-done/page/4#92622](https://www.nopcommerce.com/boards/topic/22403/multi-vendor-roadmap-lets-discuss-update-done/page/4#92622)
 
 ## How to configure Multi-Store feature
 
 Check these links:
 
 * [https://www.nop-templates.com/whats-new-in-nopcommerce-30-part-2-multi-store-support](https://www.nop-templates.com/nopcommerce-multi-store)
-* [https://www.nopcommerce.com/boards/t/21356/multi-store-roadmap-lets-discuss-update-done.aspx?p=3#89679](https://www.nopcommerce.com/boards/t/21356/multi-store-roadmap-lets-discuss-update-done.aspx?p=3#89679)
+* [https://www.nopcommerce.com/boards/topic/21356/multi-store-roadmap-lets-discuss-update-done/page/3#89679](https://www.nopcommerce.com/boards/topic/21356/multi-store-roadmap-lets-discuss-update-done/page/3#89679)
 * [https://www.nopaccelerate.com/setup-nopcommerce-multi-store-shared-hosting-environment/](https://www.nopaccelerate.com/setup-nopcommerce-multi-store-shared-hosting-environment/)
 
 ## I accidentally deleted the admin user.  How can I get back in as admin?
@@ -100,7 +100,7 @@ Admin Site → Configuration → Settings → All Settings →  commonsettings.l
 
 ## What are the best practices to apply change sets?
 
-[https://www.nopcommerce.com/boards/t/11806/custom-dev-source-control-changesets-best-practices.aspx](https://www.nopcommerce.com/boards/t/11806/custom-dev-source-control-changesets-best-practices.aspx)
+[https://www.nopcommerce.com/boards/topic/11806/custom-dev-source-control-changesets-best-practices](https://www.nopcommerce.com/boards/topic/11806/custom-dev-source-control-changesets-best-practices)
 
 ## How to add a new custom page in nopCommerce
 
@@ -116,7 +116,7 @@ Out of the box, the setting is FALSE.  If you deleted the customer prior to maki
 
 ## How to create a new language set?
 
-[https://www.nopcommerce.com/boards/t/25984/how-to-create-a-new-language-pack-for-310-based-on-300.aspx](https://www.nopcommerce.com/boards/t/25984/how-to-create-a-new-language-pack-for-310-based-on-300.aspx)
+[https://www.nopcommerce.com/boards/topic/25984/how-to-create-a-new-language-pack-for-310-based-on-300](https://www.nopcommerce.com/boards/topic/25984/how-to-create-a-new-language-pack-for-310-based-on-300)
 
 ## How do I import product pictures?
 

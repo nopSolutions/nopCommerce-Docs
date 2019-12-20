@@ -13,7 +13,7 @@ In nopCommerce, your store can have several languages installed. However, the cu
 ![language](_static/languages/Language.png)
 
 > [!NOTE]
-> You can download new language packs from the official [Marketplace](http://www.nopcommerce.com/marketplace.aspx).
+> You can download new language packs from the official [Marketplace](http://www.nopcommerce.com/marketplace).
 
 ## Adding new language
 

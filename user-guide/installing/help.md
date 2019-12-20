@@ -9,4 +9,4 @@ The nopCommerce **forums** provide you with an opportunity to discuss nopCommerc
 
 ![nopCommerce Forums](_static/help/forums.jpg)
 
-And you may also use our **Premium support services** provided by nopCommerce team available at [https://www.nopcommerce.com/p/541/nopcommerce-premium-support-services.aspx](https://www.nopcommerce.com/p/541/nopcommerce-premium-support-services.aspx)
+And you may also use our **Premium support services** provided by nopCommerce team available at [https://www.nopcommerce.com/nopcommerce-premium-support-services](https://www.nopcommerce.com/nopcommerce-premium-support-services)

@@ -10,7 +10,7 @@ A payment method is how a customer pays for the order. nopCommerce supports both
 To define payment methods go to **Configuration →  Payment Methods.**
 
 > [!TIP]
-> By default, there are several payment methods available in nopCommerce, but you can find needed more payment plugins in nopCommerce [Marketplace](https://www.nopcommerce.com/marketplace.aspx).
+> By default, there are several payment methods available in nopCommerce, but you can find needed more payment plugins in nopCommerce [Marketplace](https://www.nopcommerce.com/marketplace).
 
 For further details, refer to the [document](xref:developer/plugins/payment-method) (recommended to be used only by developers).
 

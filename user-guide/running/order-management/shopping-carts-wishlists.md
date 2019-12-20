@@ -16,7 +16,7 @@ From the list, you can proceed to the **Edit Product** window by clicking on the
 You can also delete shopping carts by clicking on **Delete** button.
 
 > [!NOTE]
-> check out our [marketplace](http://www.nopcommerce.com/marketplace.aspx) for plugins that help you manage abandoned carts and recover lost sales.
+> check out our [marketplace](http://www.nopcommerce.com/marketplace) for plugins that help you manage abandoned carts and recover lost sales.
 
 ## Wishlists
 

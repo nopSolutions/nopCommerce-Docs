@@ -5,7 +5,7 @@ uid: user-guide/marketing/promotional/discounts/index
 ---
 # Discounts
 
-In nopCommerce you can use discounts to enable access to special offers. They can be applied to certain categories, products, to the total amount and so on. You can use different requirements available out of the box and via plugins from [nopCommerce marketplace](http://www.nopcommerce.com/marketplace.aspx) for applying to your discounts.
+In nopCommerce you can use discounts to enable access to special offers. They can be applied to certain categories, products, to the total amount and so on. You can use different requirements available out of the box and via plugins from [nopCommerce marketplace](http://www.nopcommerce.com/marketplace) for applying to your discounts.
 
 Products in nopCommerce can have any number of discounts attached. In case of several discounts applied, nopCommerce will automatically calculate the best possible price for the customer based on all the available discounts and group memberships.
 
@@ -91,7 +91,7 @@ When customers apply a discount while proceeding to the checkout, it is displaye
 
 ## See also
 
-- More plugins on discount types and discount requirement types on [nopCommerce marketplace](http://www.nopcommerce.com/marketplace.aspx)
+- More plugins on discount types and discount requirement types on [nopCommerce marketplace](http://www.nopcommerce.com/marketplace)
 - How to [install plugins](xref:user-guide/configuring/system/plugins)
 - YouTube tutorial on [using discounts in nopCommerce](https://www.youtube.com/watch?v=cAXxnV79dzw&index=7&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
 - [Common types of discounts](xref:user-guide/marketing/promotional/discounts/common-type-of-discounts)
