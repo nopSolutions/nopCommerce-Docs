@@ -22,7 +22,7 @@ This document describes a step-by-step guide to building and running a Docker co
     The command that we need:
 
     ```csharp
-    [docker build -t nopcommerce]
+    [docker build -t nopcommerce .]
     ```
 
     This command builds the container according to the instructions described in the “Dockerfile” file. The first launch of the assembly will take a lot of time, since it will require downloading two basic images for .Net Core applications.
