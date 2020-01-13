@@ -50,7 +50,7 @@ public  SiteMapNode BuildMenuItem() // SiteMapNode is Class in Nop.Web.Framework
    };
     var SubMenuItem = new SiteMapNode()   // add child Custom menu
    {
-       Title =  "Title For Menu Chile menu item", //   Title for your Sub Menu item
+       Title =  "Title For Menu Child menu item", //   Title for your Sub Menu item
        ControllerName = "Your Controller Name", // Your controller Name
        ActionName = "Configure", // Action Name
        Visible = true,
