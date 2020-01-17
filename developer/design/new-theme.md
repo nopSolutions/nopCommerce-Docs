@@ -30,7 +30,7 @@ Open your nopCommerce solution or website (web version) in Visual Studio - Go to
 
     ![step-5](_static/new-theme/new-theme-step-5.jpg)
 
-1. Now inside your New theme folder "MyFirstTheme" → open `theme.config`
+1. Now inside your New theme folder "MyFirstTheme" → open `theme.json`
 
     ![step-6](_static/new-theme/new-theme-step-6.jpg)
 
