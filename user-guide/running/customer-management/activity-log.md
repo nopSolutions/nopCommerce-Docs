@@ -7,14 +7,15 @@ uid: user-guide/running/customer-management/activity-log
 
 Activity log is used to track user activity in the system. By default, all Activity Types are enabled for tracking in nopCommerce. A store owner can disable them by un-ticking the relevant checkbox. Most of the activity types listed are only for the administrator, and record actions in the Administration Area. However, some are for the public store and track actions of shoppers (such as, adding to cart/wishlist, placing an order, etc.).
 
-## Activity Type
+## Customers activity type
+
 **To Enable/Disable activity types**, go to **Customers → Activity Types.**
 
 ![Activity Log](_static/activity-log/activity-type.png)
 
 Tick the **Is Enabled** checkbox beside the activity that you want to be enabled.
 
-## Activity Log
+## Customers activity log
 
 **To search for activity logs**, go to **Customers → Activity Log**
 

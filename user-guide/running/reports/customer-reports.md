@@ -7,7 +7,7 @@ uid: user-guide/running/reports/customer-reports
 
 Customer reports give a store owner general information about registered customers and their orders. To view the reports, go to **Reports → Customer reports**.
 
-## Customers by order total.
+## Customers by order total
 
 ![customer-reports](_static/customer-reports/Customers-by-order-total.png)
 
@@ -20,6 +20,7 @@ Enter one or several search criteria to compile a report:
 * **Shipping Status** as All, Shipping not Required, Not Yet Shipped, Partially shipped, Shipped, Delivered
 
 ## Customers by number of orders
+
 This report displays top 20 customers based on the total number of orders issued.
 
 ![customer-reports](_static/customer-reports/Customers-by-number-of-orders.png)
@@ -33,6 +34,7 @@ Enter one or several search criteria to compile a report:
 * **Shipping Status** as All, Shipping not Required, Not Yet Shipped, Partially shipped, Shipped, Delivered
 
 ## Registered customers
+
 This report displays the number of Registered customers for a certain period.
 You can track the number of users registered within the last day, week, two weeks, month and year.
 
