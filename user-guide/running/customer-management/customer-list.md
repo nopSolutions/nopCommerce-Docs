@@ -46,17 +46,17 @@ Customer list contains details of all existing customers, as well as allows to a
 > After clicking the Send email button, the Send email window is displayed enabling a store owner to send an email to the customer. After clicking the Send private message button the Send private message window is displayed enabling to send a message to the customer. To use private messaging, allow private messages in [Forum settings](xref:user-guide/marketing/content/forums/settings).
 > ![edit_customer_details](_static/customer-list/edit_customer_details.png)
 >
-> ![Inbox](_static/customer-list/44661870.png)
+> ![Inbox](_static/customer-list/customer-message-menu.png)
 
 **To edit customers**, in the Customers window enter the required search criteria and click Search. Click Edit beside the customer to edit. The Edit Customer Details window is displayed.
 
 - On the **Customer info** tab you can edit customers’ personal and account information, e.g. change a password, assign/remove customer roles
 - On the **Orders** tab you can view the customer’s order details
 
-    ![customer_info](_static/customer-list/customer_info.png)
+    ![customer_info](_static/customer-list/customer-orders.png)
 - On the **Addresses** tab you can view, edit and create new addresses of the customer
 
-    ![addresses](_static/customer-list/adresses.png)
+    ![addresses](_static/customer-list/customert-adresses.png)
 - On the **Current Shopping Cart** tab you can view the customer’s shopping cart
 - On the **Current Wishlist** tab you can view the customer’s wish list
 - On the **Activity Log** you can view the customer's activity log. You can manage activity types in the [Activity Log](xref:user-guide/running/customer-management/activity-log) types section
@@ -66,7 +66,7 @@ Customer list contains details of all existing customers, as well as allows to a
 - Tick the checkbox **Activate points immediately** if you want customers will be able to use reward points right after earn them. If you didn't check this checkbox one more option appears:
 - In the **Reward points activation** specify the period (number of days/hours) after which reward points will be activated.
 
-    ![Reward points](_static/customer-list/reward-points.PNG)
+    ![Reward points](_static/customer-list/customer-reward-points.png)
 
 ## See also
 
