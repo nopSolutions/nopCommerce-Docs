@@ -88,7 +88,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 {
     public class ProductViewTrackerRecordObjectContext : DbContext, IDbContext
     {
-        public ProductViewTrackerRecordObjectContext(DbContextOptions<ProductViewTrackerRecordObjectContext> options) : base(nameOrConnectionString)
+        public ProductViewTrackerRecordObjectContext(DbContextOptions<ProductViewTrackerRecordObjectContext> options) : base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
