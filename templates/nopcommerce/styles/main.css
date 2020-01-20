@@ -113,12 +113,6 @@ header {
     padding: 25px 0;
 }
 
-  @media screen and (max-width: 1079px) {
-  .header {
-      width: 100%;
-  }
-}
-
 .header-logo {
   display: table-cell;
   text-align: left;
@@ -136,6 +130,10 @@ header {
           max-width: 100%;
           opacity: 1
       }
+
+.sidenav {
+  overflow: hidden;
+}
 
 /* ALERTS */
 
