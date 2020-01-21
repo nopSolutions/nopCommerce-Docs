@@ -94,7 +94,7 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
 
 - **SupportCapture, SupportPartiallyRefund, SupportRefund, SupportVoid**. These properties indicate whether appropriate methods of your payment method are supported.
 - **RecurringPaymentType**. This property indicates whether recurring payments are supported.
-PaymentMethodType. This property indicates payment method type. Currently there are three types. **Standard** used by payment methods when a customer is not redirected to a third-party site. **Redirection** is used when a customer is redirected to a third-party site. And **Button** is similar to **Redirection** payment methods. The only difference is used that it's displayed as a button on shopping cart page (for example, Google Checkout).
+- **PaymentMethodType**. This property indicates payment method type. Currently there are three types. **Standard** used by payment methods when a customer is not redirected to a third-party site. **Redirection** is used when a customer is redirected to a third-party site. And **Button** is similar to **Redirection** payment methods. The only difference is used that it's displayed as a button on shopping cart page (for example, Google Checkout).
 - **SkipPaymentInfo**. Indicates whether we should display a payment information page for this plugin.
 - **PaymentMethodDescription**. This property gets a payment method description that will be displayed on checkout pages in the public store
 
