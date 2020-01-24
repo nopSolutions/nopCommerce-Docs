@@ -67,3 +67,7 @@ Click **Edit** to view the **Product info panel**, where these stock settings ca
 
 * [Product Attributes](xref:user-guide/running/product-management/attributes/product-attributes)
 * [Warehouses](xref:user-guide/configuring/settingup/shipping/warehouses)
+
+## Tutorials
+
+* [Managing backorders in nopCommerce](https://www.youtube.com/watch?v=CMhQ39clCKM)

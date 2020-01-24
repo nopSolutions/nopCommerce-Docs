@@ -15,3 +15,7 @@ This is a special gateway that allows all orders to be successfully entered on t
 * Define how the payment will be displayed in the after **checkout mark of payment** as field
 * Define **the additional fee** for using this method
 * Define whether **to apply a percentage additional fee** to the order. If not enabled, a fixed value is used.
+
+## Tutorials
+
+* [Configuring Credit Card Manual Payment method](https://www.youtube.com/watch?v=dN2q27dKvUU)

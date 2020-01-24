@@ -23,3 +23,7 @@ Define the **following details**:
 ## See also
 
 - [Orders](xref:user-guide/running/order-management/orders/index)
+
+## Tutorials
+
+- [Managing digital products](https://www.youtube.com/watch?v=om-HKr-B2yA)

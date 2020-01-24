@@ -41,3 +41,7 @@ To view an example of how forums should work go to <http://www.nopcommerce.com/b
 ## See also
 
 - [Forum settings](xref:user-guide/marketing/content/forums/settings)
+
+## Tutorials
+
+- [Managing forums in nopCommerce](https://www.youtube.com/watch?v=wW2QvC4WA_8)

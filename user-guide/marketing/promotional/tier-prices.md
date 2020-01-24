@@ -27,3 +27,7 @@ You can now view the **updated product details page in the public store**
 
 > [!NOTE]
 > When a customer adds a certain quantity of a product to their cart, the price is being automatically changed to reflect the discount. ![Tier_price_example](_static/tier-prices/TierPriceExample.JPG)
+
+## Tutorials
+
+- [Managing tier pricing](https://www.youtube.com/watch?v=ERE08UEDU58&t=10s)

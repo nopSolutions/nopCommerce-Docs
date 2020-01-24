@@ -69,3 +69,7 @@ To set up SEO for Topics go to **SEO tab**
 ## See also
 
 - [SEO](xref:user-guide/marketing/content/seo)
+
+## Tutorials
+
+- [Adding new topic template](https://www.youtube.com/watch?v=M-g4Ux2GCaY)

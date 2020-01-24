@@ -14,3 +14,7 @@ Learn more in following chapters:
 * [Country report](xref:user-guide/running/reports/country-report)
 * [Customer reports](xref:user-guide/running/reports/customer-reports)
 * [Low Stock Reports](xref:user-guide/running/reports/low-stock-reports)
+
+## Tutorials
+
+* [Running reports in nopCommerce](https://www.youtube.com/watch?v=IbfoppTG9tM)

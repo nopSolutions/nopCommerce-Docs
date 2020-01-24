@@ -29,3 +29,7 @@ Click **Add new** to add your own range.
 ![Add new availability ranges](_static/dates-ranges/avialability-ranges-add-new.png)
 
 In the **Name** field enter name of new range, for example, 2 months.
+
+## Tutorials
+
+* [Managing delivery dates and ranges](https://www.youtube.com/watch?v=Xx5gcSxZZ1E)

@@ -30,3 +30,8 @@ To create a grouped product, go to **Catalog → Products**. There are several *
 > - In the public store, a customer sees a separate **Add to cart** button for each associated product on the **Grouped product** details page.
 > - A **Simple** product can be associated with only one **Grouped** product.
 > - Grouped products are **not orderable directly**. However, associated with them Simple products are. For example, a customer cannot order the **Creative Sound Card** product directly. The customer must order an **OEM** or **Retail version** of the Creative Sound Card. In this case, the Grouped product is a Creative Sound Card, and there are two associated Simple products for this Grouped product: OEM and Retail, each with potentially different prices.
+
+## Tutorials
+
+- [Understanding grouped products in nopCommerce](https://www.youtube.com/watch?v=B1UdxXf_jmE)
+- [Creating Bundled products in nopCommerce](https://www.youtube.com/watch?v=sf9jP6KFcko)

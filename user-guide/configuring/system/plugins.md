@@ -54,6 +54,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 1. In the **Limited to stores** field, define the stores in which the plugin will be used.
 1. Click **Save** at the top of the page.
 
-## See also
+## Tutorials
 
-[Video tutorial: Installing a plugin](https://youtu.be/eLDsSm-4gKA)
+- [Installing a plugin (for versions 3.90 - 4.10)](https://youtu.be/eLDsSm-4gKA)
+- [Managing access to plugins per customer role](https://www.youtube.com/watch?v=52lVVpQ3Qag)

@@ -17,3 +17,7 @@ The following procedure describes how to enable store owner to easily delete gue
 
 > [!NOTE]
 > Only guests without orders or written customer content (such as product reviews or news comments) will be deleted
+
+## Tutorials
+
+- [Overview of system maintenance options](https://www.youtube.com/watch?v=CNgTJZoWHTA)

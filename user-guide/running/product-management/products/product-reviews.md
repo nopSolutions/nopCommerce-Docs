@@ -54,5 +54,7 @@ For more information on setting up and adding rating values, [click here](xref:u
 
 ![r1](_static/product-reviews/review_types.png)
 
-> [!TIP]
-> [Tutorial on managing product reviews](https://www.youtube.com/watch?v=TBOpCoEAMnU&feature=youtu.be)
+## Tutorials
+
+- [Managing product reviews](https://www.youtube.com/watch?v=TBOpCoEAMnU&feature=youtu.be)
+- [Managing product review types](https://youtu.be/Ts7_T9sd1Do)

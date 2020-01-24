@@ -35,3 +35,7 @@ Define the media settings, as follows:
 - In the **Avatar image size** field, enter the default size for avatar images.
 
 This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
+
+## Tutorials
+
+- [Managing media settings](https://www.youtube.com/watch?v=3JS4Zj4TBwQ)

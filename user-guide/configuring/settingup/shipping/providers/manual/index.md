@@ -104,3 +104,7 @@ Click **Save**.
 * [Shipping Method Restrictions (shipping by weight and by total)](xref:user-guide/configuring/settingup/shipping/providers/manual/restrictions)
 * [Shipping Methods (Fixed rate)](xref:user-guide/configuring/settingup/shipping/providers/manual/fixed-rate-methods)
 * [Shipping Method Restrictions (Fixed rate)](xref:user-guide/configuring/settingup/shipping/providers/manual/fixed-rate-restrictions)
+
+## Tutorials
+
+* [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)

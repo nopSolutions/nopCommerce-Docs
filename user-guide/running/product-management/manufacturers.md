@@ -95,4 +95,7 @@ You can **export** the manufacturer settings to an external file for backup purp
 
 - [Adding products user](xref:user-guide/running/product-management/products/adding-products/index)
 - [SEO](xref:user-guide/marketing/content/seo)
-- [Video tutorial: managing](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
+
+## Tutorials
+
+- [Managing manufacturers in nopCommerce](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)

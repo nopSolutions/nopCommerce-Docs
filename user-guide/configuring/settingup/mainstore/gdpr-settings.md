@@ -46,4 +46,6 @@ When GDPR setting is *ENABLED*, store owner can also perform actions like:
 
 ![customerdetails](_static/gdpr-settings/customerdetails.png)
 
-Here is a video tutorial to show how to configure GDPR settings on your nopCommerce site: [Managing GDPR settings in nopCommerce](https://www.youtube.com/watch?v=6bLc_TDqD18&feature=youtu.be)
+## Tutorials
+
+* [Managing GDPR settings in nopCommerce](https://www.youtube.com/watch?v=6bLc_TDqD18&feature=youtu.be)

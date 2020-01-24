@@ -122,6 +122,9 @@ Go to **Pictures** tab on Edit product details page to add product pictures.
 - In the **Title** field, enter a value for the "alt" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
 - Define the **Display order** of the image on a product page.
 
+> [!TIP]
+> [YouTube tutorial: Importing mass product images](https://www.youtube.com/watch?v=9BUqR_OGiq4)
+
 ## Attributes
 
 On the **Product attributes** tab, add Product attributes. Learn more about product attributes and how to create them [here](xref:user-guide/running/product-management/attributes/product-attributes). Once you have a list of the attributes created, click **Add new record** on the Attributes tab. The grid is expanded, as follows:
@@ -197,4 +200,7 @@ On this tab you can view all the product quantity changes, orders with the produ
 - [Product categories](xref:user-guide/running/product-management/categories)
 - [Order management](xref:user-guide/running/order-management/index)
 - [Webinar. First steps in nopCommerce](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
+
+## Tutorials
+
 - [Video tutorial: Adding a new product](https://www.youtube.com/watch?v=wVgTgdQVWPQ&index=2&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

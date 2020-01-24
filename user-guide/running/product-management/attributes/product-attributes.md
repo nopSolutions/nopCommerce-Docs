@@ -28,6 +28,9 @@ In the Add a new product attribute window fill the fields **Name** and **Descrip
 
 Click **Save and Continue Edit** to proceed to the **values** editing window.
 
+> [!TIP]
+> [YouTube tutorial: Adding a product with color attributes](https://youtu.be/QihipwQ61YU)
+
 ## Adding predefined values
 
 ![add_a_new_value](_static/product-attributes/add_a_new_value.png)
@@ -53,4 +56,7 @@ Once the attributes and values are set, they can be grouped and managed on the P
 
 - [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
 - [Grouped product](xref:user-guide/running/product-management/products/adding-products/grouped-products)
-- [Video tutorial: Overview of conditional product attributes](https://www.youtube.com/watch?v=eIdHVcEdos8&t=55s)
+
+## Tutorials
+
+- [Overview of conditional product attributes](https://www.youtube.com/watch?v=eIdHVcEdos8&t=55s)

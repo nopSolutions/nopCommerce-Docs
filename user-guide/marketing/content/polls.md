@@ -45,3 +45,7 @@ To add poll answers go to **Poll answers tab**:
 
 - Click **Add new** record to enter a new poll answer and then click **Update**. You can then **Edit** records, if required and **Delete** them.
 - Click **Save**
+
+## Tutorials
+
+- [Managing polls in nopCommerce](https://www.youtube.com/watch?v=RJP45cUhuZQ)

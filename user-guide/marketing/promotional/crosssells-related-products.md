@@ -52,3 +52,8 @@ After you have chosen related product and saved it, **you can check how related 
 
 - [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
 - [Tier prices](xref:user-guide/marketing/promotional/tier-prices)
+
+## Tutorials
+
+- [Understanding cross-sells in nopCommerce](https://www.youtube.com/watch?v=J_6OlVarIFc)
+- [Managing related products](https://www.youtube.com/watch?v=FGuozvhyqYE&t=6s)

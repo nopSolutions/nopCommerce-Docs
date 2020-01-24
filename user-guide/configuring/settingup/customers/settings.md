@@ -134,3 +134,7 @@ On the **Address Form Fields** panel, a store owner can manage the address form 
 ![customaddressattributes](_static/customer-settings/customersettings8.png)
 
 Click **Save.**
+
+## Tutorials
+
+* [Configuring password settings](https://www.youtube.com/watch?v=TwWArXNi0CA)

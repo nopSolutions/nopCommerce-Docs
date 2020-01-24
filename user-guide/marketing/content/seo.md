@@ -70,3 +70,7 @@ There are several types of pages in nopCommerce for which you can set up individ
 - [Topics (pages)](xref:user-guide/marketing/content/topics)
 - [News](xref:user-guide/marketing/content/news/index)
 - [Blog](xref:user-guide/marketing/content/blog/index)
+
+## Tutorials
+
+- [Understanding SEO settings in nopCommerce](https://youtu.be/UxqM_nJyv1Q)

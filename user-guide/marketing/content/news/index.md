@@ -57,3 +57,7 @@ Here you can **delete** a news comment, it will be removed from the system.
 ## See also
 
 - [News settings](xref:user-guide/marketing/content/news/news-settings)
+
+## Tutorials
+
+- [Managing news in nopCommerce](https://www.youtube.com/watch?v=ztLlRXvBQK4)

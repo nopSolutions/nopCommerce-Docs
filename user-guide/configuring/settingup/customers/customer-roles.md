@@ -39,3 +39,8 @@ Define the following information:
 Click **Save.**
 
  To **edit** the **Customer Roles**, click Edit in the row beside it. The Edit Customer Role window is displayed, edit the customer roles as described above.
+
+## Tutorials
+
+* [Overview of customer roles](https://www.youtube.com/watch?v=3vdIDNIYFIQ)
+* [Recovering back a deleted admin user](https://www.youtube.com/watch?v=D45WkrbaA38)

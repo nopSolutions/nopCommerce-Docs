@@ -67,3 +67,7 @@ Click **Get live rates** in the Currencies window. The window is expanded as fol
 ![currencies4](_static/currencies/currencies4.png)
 
 You can **check all the rates** here and **apply manually new rates for all the needed currencies.**
+
+## Tutorials
+
+* [Managing currencies in nopCommerce](https://www.youtube.com/watch?v=2nzVxGyc5-M)

@@ -70,6 +70,11 @@ Customer list contains details of all existing customers, as well as allows to a
 
 ## See also
 
-- [YouTube tutorial on customer management](https://www.youtube.com/watch?v=DOl-g-NNFEM&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=1)
 - [Customer roles](xref:user-guide/configuring/settingup/customers/customer-roles)
 - [Vendors](xref:user-guide/configuring/settingup/customers/vendors/index)
+
+## Tutorials
+
+- [Customer management in nopCommerce](https://www.youtube.com/watch?v=DOl-g-NNFEM&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=1)
+- [Re-assigning a deleted email address](https://www.youtube.com/watch?v=lqmrWJdXZEE&t=1s)
+- [Overview of impersonation mode](https://www.youtube.com/watch?v=KQi-CDVawJ4)
