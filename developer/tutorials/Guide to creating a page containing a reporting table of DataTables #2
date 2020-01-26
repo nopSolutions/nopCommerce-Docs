@@ -1,10 +1,10 @@
-### Guide to creating a page containing a reporting table of DataTables #2
+# Guide to creating a page containing a reporting table of DataTables #2
 In this tutorial we will be learning about how to extend the functionality of the nopCommerce with custom functionality for admin panel, and create a page containing a table with some data as a report. So before starting on this tutorial you need to have some prior knowledge and understanding on some of the topics like.
 nopCommerce architecture. (https://docs.nopcommerce.com/developer/tutorials/source-code-organization.html)
 
-nopCommerce Plugin.
-Entity framework.
-nopCommerce routing.
+**nopCommerce Plugin**.
+**Entity framework**.
+**nopCommerce routing**.
 
 If you are not familiar with the above topics, we highly recommend you to learn about those first. However, if you are comfortable or at least have some basic understanding on the above topic then you are good enough to continue on this tutorial.
 
