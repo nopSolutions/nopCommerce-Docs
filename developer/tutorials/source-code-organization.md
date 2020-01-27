@@ -50,3 +50,7 @@ Nop.Tests is a class library project containing some common test classes and hel
 ## `\Test\Nop.Web.MVC.Tests`
 
 Nop.Web.MVC.Tests is the test project for the presentation layer projects.
+
+## Tutorials
+
+- [The Architecture behind the nopCommerce eCommerce Platform](https://www.youtube.com/watch?v=6gLbizzSA9o&list=PLnL_aDfmRHwtJmzeA7SxrpH3-XDY2ue0a)
