@@ -564,7 +564,7 @@ public class PluginDbStartup : INopStartup
 
 ## Project structure of Tax Plugin
 
-![image8](_static/How-to-write-a-widget-for-nopCommerce/image8.png)
+![image8](_static/How-to-write-a-tax-plugin-for-nopCommerce/image8.png)
  
 ## Handling "Install" and "Uninstall" methods
 This step is optional. Some plugins can require additional logic during its installation. For example, a plugin can insert new locale resources or add necessary tables or settings values. So open your BasePlugin implementation and override the following methods:
