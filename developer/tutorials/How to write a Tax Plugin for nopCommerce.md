@@ -343,7 +343,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
 }
 ```
  
-For tax rates `**CRUD**` operation, services are created. In this case, interface **ICountryStateZipService** and class **CountryStateZipService** is created. It contains method like *InsertTaxRate*, *UpdateTaxRate*, *DeleteTaxRate*, *GetAllTaxRates* and *GetTaxRateById*. These method names are self-explanatory and will be consumed by controllers. Other methods can be introduced/added based according to the requirements.
+For tax rates **`CRUD`** operation, services are created. In this case, interface **ICountryStateZipService** and class **CountryStateZipService** is created. It contains method like *InsertTaxRate*, *UpdateTaxRate*, *DeleteTaxRate*, *GetAllTaxRates* and *GetTaxRateById*. These method names are self-explanatory and will be consumed by controllers. Other methods can be introduced/added based according to the requirements.
 
 ###### ICountryStateZipService.cs
 ```cs
