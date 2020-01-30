@@ -128,3 +128,44 @@ nopCommerce already have several plugins pre built and available to use out of t
 ![image4](_static/Describe-the-plugin-system-of-nopCommerce/image4.png)
 
 Here you can see three tabs. ”All” tab contains all themes and extensions, “Themes” tab contains all nopCommerce themes which is for nopCommerce website skin, and lastly “Extensions” tab where we can find plugins. So go to Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. In the right side you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use plugin, in its download page, so don’t forget to read those descriptions. 
+
+## IPlugin
+IPlugin is an interface that exposes the functionalities used while installing or Uninstalling the plugin. Every plugin project must have a class that inherent form this interface in order for nopCommerce to treat that project as plugin. nopCommerce invokes the install method defined in the class implementing the interface to initiate the "install" process for plugin. And same goes for "Uninstall" process. Except Install and Uninstall it exposes few other properties and methods like:
+### Methods
+#### string GetConfigurationPageUrl() 
+This should return the URL for configuration view. When we install the plugin we will see a "Configuration" button, so if we implement this method in our class then the string value we return form this method will be used as the URL for that configuration button.
+#### void PreparePluginToUninstall()
+This method will be invoked when we click uninstall button for the plugin. Code inside this method will be executed before the nopCommerce uninstalls the plugin from system. In this method we may want to write the logic to validate our plugin from uninstallation. for example here we can check if there are other plugins which are depending on the plugin we are trying to uninstall. If so we may not want users to uninstall the plugin until the plugin depending on the current plugin is uninstalled.
+
+### Properties
+#### PluginDescriptor PluginDescriptor{ get; set; }
+This property is used to get or set the information that describes the current plugin. When we write a new plugin or widget we need to create a Plugin.json file. nopCommerce uses the same file to initialize the value for this property.
+
+## PluginDescriptor
+This class as name implies holds the information that describes about the plugin. If you compare the "properties" from this class to "key" from Plugin.json file, you will see similar structure. That is because this class "PluginDescriptor.cs" is used to map that Plugin.json file to c# class, so that the information provided in Plugin.json can be used by nopCommerce. Except those properties PluginDescriptor class contains some more properties and helper methods like.
+### Properties
+#### bool Installed
+This property is used to verify if plugin is installed in our nopCommerce application or not.
+#### Type PluginType
+It is used to get or set the type of the plugin. This type reference the class that implements the IPlugin interface in the plugin project. 
+#### string OriginalAssemblyFile
+It is used to get or set the original assembly file that a shadow copy was made from.
+#### Assembly ReferencedAssembly
+It is to gets or sets the assembly that has been shadow copied that is active in the application.
+#### bool ShowInPluginsList
+This property is used to indicate whether we want to show the plugin in the plugin list or not.
+
+### Methods
+#### PluginDescriptor GetPluginDescriptorFromText(string text)
+This method takes "json string" as input and parse the json string to type "PluginDescriptor". And returns "PluginDescriptor" parsed from the "json string".
+#### void Save()
+It is to save plugin description from "PluginDescriptor" to Plugin.json file.
+#### bool Equals(object value)
+It checks to determine wether the "SystemName" of the current instance of PluginDescriptor is equels to the "SystemName" of the PluginDescriptor instance supplied as parameter. If matches then returns true else false.
+#### int CompareTo(PluginDescriptor other)
+It compares the current instance of PluginDescriptor with other instance of PluginDescriptor supplied in parameter by comparing the property "FriendlyName" And returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified parameter.
+#### TPlugin Instance<TPlugin>() where TPlugin : class, IPlugin
+This method is used to get the instance of Plugin of type "PluginType" property from the current PluginDescriptor.
+
+## IPluginManager
+IPluginManager is a generic interface of type class. It contains method decelerations used for loading plugins using different filter parameters. We can find the implementation of this interface in PluginManager located under namespace {Nop.Services.Plugins}.
