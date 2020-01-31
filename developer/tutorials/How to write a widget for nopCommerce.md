@@ -177,4 +177,4 @@ public override void Uninstall()
 ```
 
 > [!IMPORTANT] 
-If you override one of these methods, do not hide its base implementation -**base.Install()** and **base.Uninstall()** which has been marked in the above images. 
+If you override one of these methods, do not hide its base implementation - **base.Install()** and **base.Uninstall()** which has been marked in the above images. 
