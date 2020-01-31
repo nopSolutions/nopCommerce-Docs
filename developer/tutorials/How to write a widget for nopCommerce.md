@@ -40,7 +40,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
         </PropertyGroup>
         <ItemGroup>
             <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
-            <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.sproj" />
+            <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.csproj" />
         </ItemGroup>
         <!-- This target execute after "Build" target -->
         <Target Name="NopTarget" AfterTargets="Build">
