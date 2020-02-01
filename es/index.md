@@ -1,6 +1,8 @@
 ---
 title: nopCommerce Documentation
-uid: es/index
+author: git.RomanovM
+contributors: [ ]
+uid: en/index
 ---
 
 # nopCommerce Documentation
