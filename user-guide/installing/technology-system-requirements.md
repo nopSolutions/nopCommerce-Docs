@@ -26,7 +26,7 @@ In order to run nopCommerce, you will need the **following installed on your ser
 
 ## Supported browsers
 
-* Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was support in versions prior 4.10)
+* Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was supported in versions prior 4.10)
 * Mozilla Firefox 2.0 and above
 * Google Chrome 1.x
 * Apple Safari 2.x
