@@ -83,6 +83,9 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 > [!IMPORTANT]
 > Important note: After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
+> [!IMPORTANT]
+> You may need to rebuild your solution after adding your plugin. If you do not see DLLs for your plugin under Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY, you need to rebuild your solution. nopCommerce will not list your plugin in the Local Plugins page if your DLLs do not exist in the correct folder in Nop.Web.
+
 ## Handling requests. Controllers, models and views
 
 Now you can see the plugin by going to **Admin area → Configuration → Local Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
