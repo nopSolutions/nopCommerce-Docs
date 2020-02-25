@@ -1,6 +1,8 @@
 ---
 title: System Administration
 uid: en/user-guide/configuring/system/index
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # System Administration

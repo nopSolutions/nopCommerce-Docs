@@ -1,6 +1,8 @@
 ---
 title: Shopping cart settings
 uid: en/user-guide/running/order-management/orders/shopping-cart-settings
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Shopping cart settings

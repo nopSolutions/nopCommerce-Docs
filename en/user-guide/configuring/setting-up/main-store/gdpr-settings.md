@@ -1,6 +1,8 @@
 ---
 title: GDPR settings
 uid: en/user-guide/configuring/setting-up/main-store/gdpr-settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # GDPR settings

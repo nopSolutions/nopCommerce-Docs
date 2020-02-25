@@ -1,6 +1,8 @@
 ---
 title: Products
 uid: en/user-guide/running/product-management/products/index
+author: git.AndreiMaz
+contributors: git.exileDev, git.dunaenko
 ---
 
 # Products

@@ -1,6 +1,8 @@
 ---
 title: Hosting providers
 uid: en/user-guide/installing/installation-guide/hosting-providers
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.IvanIvanIvanov
 ---
 
 # Hosting providers

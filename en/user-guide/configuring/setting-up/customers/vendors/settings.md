@@ -1,6 +1,8 @@
 ---
 title: Vendor settings
 uid: en/user-guide/configuring/setting-up/customers/vendors/settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # Vendor settings

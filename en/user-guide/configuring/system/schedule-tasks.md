@@ -1,6 +1,8 @@
 ---
 title: Schedule Tasks
 uid: en/user-guide/configuring/system/schedule-tasks
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Schedule Tasks

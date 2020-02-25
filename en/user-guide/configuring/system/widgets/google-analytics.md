@@ -1,6 +1,8 @@
 ---
 title: Google Analytics Plugin
 uid: en/user-guide/configuring/system/widgets/google-analytics
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Google Analytics Plugin

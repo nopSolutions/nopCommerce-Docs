@@ -1,6 +1,8 @@
 ---
 title: How to code my own shipping rate computation method
 uid: en/developer/plugins/shipping-plugin
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # How to code my own shipping rate computation method

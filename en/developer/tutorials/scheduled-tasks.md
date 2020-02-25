@@ -1,6 +1,8 @@
 ---
 title: Scheduled Tasks
 uid: en/developer/tutorials/scheduled-tasks
+author: git.AndreiMaz
+contributors: git.sinaislam, git.DmitriyKulagin, git., git.exileDev
 ---
 
 # Scheduled Tasks

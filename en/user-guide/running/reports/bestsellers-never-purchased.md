@@ -1,6 +1,8 @@
 ---
 title: Bestsellers and products never purchased
 uid: en/user-guide/running/reports/bestsellers-never-purchased
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Bestsellers and products never purchased

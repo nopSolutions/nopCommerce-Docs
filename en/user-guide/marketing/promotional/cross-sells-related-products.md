@@ -1,6 +1,8 @@
 ---
 title: Cross-sells and Related products
 uid: en/user-guide/marketing/promotional/cross-sells-related-products
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov
 ---
 
 # Cross-sells and Related products

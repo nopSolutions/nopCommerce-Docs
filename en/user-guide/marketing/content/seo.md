@@ -1,6 +1,8 @@
 ---
 title: SEO
 uid: en/user-guide/marketing/content/seo
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # SEO

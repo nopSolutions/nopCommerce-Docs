@@ -1,6 +1,8 @@
 ---
 title: Nivo Slider widget plugin
 uid: en/user-guide/configuring/system/widgets/nivo-slider
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Nivo Slider widget plugin

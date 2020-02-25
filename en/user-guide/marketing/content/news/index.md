@@ -1,6 +1,8 @@
 ---
 title: News
 uid: en/user-guide/marketing/content/news/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # News

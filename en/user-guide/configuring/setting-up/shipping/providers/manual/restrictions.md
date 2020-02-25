@@ -1,6 +1,8 @@
 ---
 title: Shipping Method Restrictions (Shipping by Weight and by Total)
 uid: en/user-guide/configuring/setting-up/shipping/providers/manual/restrictions
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.exileDev
 ---
 
 # Shipping Method Restrictions (Shipping by Weight and by Total)

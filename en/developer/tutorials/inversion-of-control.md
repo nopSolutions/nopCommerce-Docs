@@ -1,6 +1,8 @@
 ---
 title: Inversion of Control and Dependency Injection
 uid: en/developer/tutorials/inversion-of-control
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Inversion of Control and Dependency Injection

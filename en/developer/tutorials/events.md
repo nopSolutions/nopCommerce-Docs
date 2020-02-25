@@ -1,6 +1,8 @@
 ---
 title: Exposing and Handling Events
 uid: en/developer/tutorials/events
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Exposing and Handling Events

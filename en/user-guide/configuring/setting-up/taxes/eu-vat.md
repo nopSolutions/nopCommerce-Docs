@@ -1,6 +1,8 @@
 ---
 title: EU VAT configuration guide
 uid: en/user-guide/configuring/setting-up/taxes/eu-vat
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # EU VAT configuration guide

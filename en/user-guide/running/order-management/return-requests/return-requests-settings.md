@@ -1,6 +1,8 @@
 ---
 title: Return request settings
 uid: en/user-guide/running/order-management/return-requests/return-requests-settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Return request settings

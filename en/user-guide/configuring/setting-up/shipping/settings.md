@@ -1,6 +1,8 @@
 ---
 title: Shipping Settings
 uid: en/user-guide/configuring/setting-up/shipping/settings
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.exileDev
 ---
 
 # Shipping Settings

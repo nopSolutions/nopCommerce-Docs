@@ -1,6 +1,8 @@
 ---
 title: Product attributes
 uid: en/user-guide/running/product-management/attributes/product-attributes
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
 
 # Product attributes

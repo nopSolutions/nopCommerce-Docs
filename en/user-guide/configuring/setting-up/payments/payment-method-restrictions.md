@@ -1,6 +1,8 @@
 ---
 title: Payment Method Restrictions
 uid: en/user-guide/configuring/setting-up/payments/payment-method-restrictions
+author: git.AndreiMaz
+contributors: git.ivkadp
 ---
 
 # Payment Method Restrictions

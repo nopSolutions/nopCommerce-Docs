@@ -1,6 +1,8 @@
 ---
 title: Facebook authentication
 uid: en/user-guide/configuring/system/external-authentication/facebook
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Facebook authentication

@@ -1,6 +1,8 @@
 ---
 title: Affiliates
 uid: en/user-guide/marketing/promotional/affiliates
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov
 ---
 
 # Affiliates

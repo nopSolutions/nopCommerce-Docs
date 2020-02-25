@@ -1,6 +1,8 @@
 ---
 title: Manual Processing (Credit Card)
 uid: en/user-guide/configuring/setting-up/payments/methods/manual-processing
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # Manual Processing (Credit Card)

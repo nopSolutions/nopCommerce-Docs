@@ -1,6 +1,8 @@
 ---
 title: System Administration
 uid: en/user-guide/configuring/system/deleting-guests
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # System Administration

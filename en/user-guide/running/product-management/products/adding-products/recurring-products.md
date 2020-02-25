@@ -1,6 +1,8 @@
 ---
 title: Recurring product
 uid: en/user-guide/running/product-management/products/adding-products/recurring-products
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov
 ---
 
 # Recurring product

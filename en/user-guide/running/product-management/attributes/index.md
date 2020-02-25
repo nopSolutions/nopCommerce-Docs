@@ -1,6 +1,8 @@
 ---
 title: Attributes
 uid: en/user-guide/running/product-management/attributes/index
+author: git.AndreiMaz
+contributors: git.exileDev, git.dunaenko
 ---
 
 # Attributes

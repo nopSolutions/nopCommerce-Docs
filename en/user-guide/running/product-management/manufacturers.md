@@ -1,6 +1,8 @@
 ---
 title: Manufacturers
 uid: en/user-guide/running/product-management/manufacturers
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko
 ---
 
 # Manufacturers

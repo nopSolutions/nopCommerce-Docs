@@ -1,6 +1,8 @@
 ---
 title: Polls
 uid: en/user-guide/marketing/content/polls
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Polls

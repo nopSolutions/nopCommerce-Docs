@@ -1,6 +1,8 @@
 ---
 title: Setting up Multiple-Store
 uid: en/user-guide/configuring/setting-up/main-store/multiple-store
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev
 ---
 
 # Setting up Multiple-Store

@@ -1,6 +1,8 @@
 ---
 title: Design
 uid: en/user-guide/configuring/design/index
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Design

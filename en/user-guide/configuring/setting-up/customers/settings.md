@@ -1,6 +1,8 @@
 ---
 title: Customer settings
 uid: en/user-guide/configuring/setting-up/customers/settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # Customer settings

@@ -1,6 +1,8 @@
 ---
 title: Tips and Tricks
 uid: en/developer/design/tips-and-tricks
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.sanju741, git.exileDev
 ---
 
 # Tips and Tricks

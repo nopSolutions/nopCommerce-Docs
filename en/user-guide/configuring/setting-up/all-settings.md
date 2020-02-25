@@ -1,6 +1,8 @@
 ---
 title: All Settings (advanced)
 uid: en/user-guide/configuring/setting-up/all-settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # All Settings (advanced)

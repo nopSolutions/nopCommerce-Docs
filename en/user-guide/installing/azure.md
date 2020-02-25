@@ -1,6 +1,8 @@
 ---
 title: Installing on Windows Azure
 uid: en/user-guide/installing/azure
+author: git.AndreiMaz
+contributors: git.skoshelev, git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # Installing on Windows Azure

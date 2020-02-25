@@ -1,6 +1,8 @@
 ---
 title: Forums
 uid: en/user-guide/marketing/content/forums/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Forums

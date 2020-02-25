@@ -1,6 +1,8 @@
 ---
 title: Message Queue
 uid: en/user-guide/configuring/system/message-queue
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Message Queue

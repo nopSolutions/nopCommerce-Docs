@@ -1,6 +1,8 @@
 ---
 title: Shopping carts and wishlists
 uid: en/user-guide/running/order-management/shopping-carts-wishlists
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Shopping carts and wishlists

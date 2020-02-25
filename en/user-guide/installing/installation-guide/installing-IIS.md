@@ -1,6 +1,8 @@
 ---
 title: Installing Internet Information Services (IIS)
 uid: en/user-guide/installing/installation-guide/installing-IIS
+author: git.AndreiMaz
+contributors: git.IvanIvanIvanov
 ---
 
 # Installing Internet Information Services (IIS)

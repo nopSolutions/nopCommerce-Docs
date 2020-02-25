@@ -1,6 +1,8 @@
 ---
 title: How to write a plugin for nopCommerce
 uid: en/developer/plugins/how-to-write-plugin-4.20
+author: git.AndreiMaz
+contributors: git.Kevat, git.exileDev, git.DmitriyKulagin
 ---
 
 # How to write a plugin for nopCommerce

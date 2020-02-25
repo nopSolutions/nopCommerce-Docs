@@ -1,6 +1,8 @@
 ---
 title: Access Control List
 uid: en/user-guide/configuring/setting-up/customers/acl
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # Access Control List

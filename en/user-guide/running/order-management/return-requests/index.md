@@ -1,6 +1,8 @@
 ---
 title: Return Requests
 uid: en/user-guide/running/order-management/return-requests/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Return Requests

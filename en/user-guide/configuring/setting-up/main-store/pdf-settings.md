@@ -1,6 +1,8 @@
 ---
 title: PDF settings
 uid: en/user-guide/configuring/setting-up/main-store/pdf-settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # PDF settings

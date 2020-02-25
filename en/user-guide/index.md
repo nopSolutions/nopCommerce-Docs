@@ -1,6 +1,8 @@
 ---
 title: User guide
 uid: en/user-guide/index
+author: git.AndreiMaz
+contributors: git.exileDev, git.dunaenko
 ---
 
 # User guide

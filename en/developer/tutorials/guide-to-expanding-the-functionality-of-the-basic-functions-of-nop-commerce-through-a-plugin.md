@@ -1,6 +1,8 @@
 ﻿---
 title: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
 uid: en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
+author: nop.sea
+contributors: git.RomanovM
 ---
 
 # A guide to expanding the functionality of the basic functions of nopCommerce through a plugin

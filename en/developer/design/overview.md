@@ -1,6 +1,8 @@
 ---
 title: Overview (Designer's Guide)
 uid: en/developer/design/overview
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Overview (Designer's Guide)

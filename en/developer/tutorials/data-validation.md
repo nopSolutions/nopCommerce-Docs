@@ -1,6 +1,8 @@
 ---
 title: Data Validation
 uid: en/developer/tutorials/data-validation
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Data Validation

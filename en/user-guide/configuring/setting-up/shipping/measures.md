@@ -1,6 +1,8 @@
 ---
 title: Measures
 uid: en/user-guide/configuring/setting-up/shipping/measures
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Measures

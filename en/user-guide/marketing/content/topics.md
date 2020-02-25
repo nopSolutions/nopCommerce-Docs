@@ -1,6 +1,8 @@
 ---
 title: Topics (pages)
 uid: en/user-guide/marketing/content/topics
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Topics (pages)

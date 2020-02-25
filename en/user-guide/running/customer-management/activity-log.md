@@ -1,6 +1,8 @@
 ---
 title: Activity Log
 uid: en/user-guide/running/customer-management/activity-log
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git., git.exileDev, git.dunaenko
 ---
 
 # Activity Log

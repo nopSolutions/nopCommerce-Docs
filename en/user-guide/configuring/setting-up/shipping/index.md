@@ -1,6 +1,8 @@
 ---
 title: Setting up Shipping
 uid: en/user-guide/configuring/setting-up/shipping/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Setting up Shipping

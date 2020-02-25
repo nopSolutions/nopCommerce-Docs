@@ -1,6 +1,8 @@
 ---
 title: Security Settings
 uid: en/user-guide/configuring/setting-up/main-store/security-settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # Security Settings

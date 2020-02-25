@@ -1,6 +1,8 @@
 ---
 title: Media Settings
 uid: en/user-guide/configuring/design/media-settings
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Media Settings

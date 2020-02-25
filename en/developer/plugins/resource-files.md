@@ -1,6 +1,8 @@
 ---
 title: Adding CSS and JS resource files into nopCommerce Plugin
 uid: en/developer/plugins/resource-files
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Adding CSS and JS resource files into nopCommerce Plugin

@@ -1,6 +1,8 @@
 ---
 title: Manual (Fixed or By Weight and By Total)
 uid: en/user-guide/configuring/setting-up/shipping/providers/manual/index
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev
 ---
 
 # Manual (Fixed or By Weight and By Total)

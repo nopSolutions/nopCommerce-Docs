@@ -1,6 +1,8 @@
 ---
 title: Languages
 uid: en/user-guide/configuring/setting-up/main-store/languages
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
 # Languages

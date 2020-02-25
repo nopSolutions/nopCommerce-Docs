@@ -1,6 +1,8 @@
 ---
 title: Shipping Methods (Fixed Rate Shipping)
 uid: en/user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-methods
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Shipping Methods (Fixed Rate Shipping)

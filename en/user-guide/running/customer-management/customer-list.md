@@ -1,6 +1,8 @@
 ---
 title: Customer list
 uid: en/user-guide/running/customer-management/customer-list
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
 
 # Customer list

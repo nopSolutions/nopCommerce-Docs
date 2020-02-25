@@ -1,6 +1,8 @@
 ---
 title: Specification attributes
 uid: en/user-guide/running/product-management/attributes/specification-attributes
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
 
 # Specification attributes

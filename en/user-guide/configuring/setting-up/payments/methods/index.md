@@ -1,6 +1,8 @@
 ---
 title: Payment Methods
 uid: en/user-guide/configuring/setting-up/payments/methods/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # Payment Methods

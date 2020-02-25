@@ -1,6 +1,8 @@
 ---
 title: Right To Left Theme
 uid: en/developer/design/right-to-left-theme
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Right To Left Theme

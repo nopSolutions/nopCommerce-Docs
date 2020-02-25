@@ -1,6 +1,8 @@
 ---
 title: Localization
 uid: en/user-guide/configuring/system/localization
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Localization

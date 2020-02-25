@@ -1,6 +1,8 @@
 ---
 title: Copyright notice
 uid: en/developer/copyright-notice
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Copyright notice

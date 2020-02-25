@@ -1,6 +1,8 @@
 ---
 title: Known Issues and Solutions
 uid: en/user-guide/installing/installation-guide/known-issues-and-solutions
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov
 ---
 
 # Known Issues and Solutions

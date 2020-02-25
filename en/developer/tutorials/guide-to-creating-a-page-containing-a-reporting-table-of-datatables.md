@@ -1,6 +1,8 @@
 ﻿---
 title: Guide to creating a page containing a reporting table of DataTables
 uid: en/developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables
+author: nop.sea
+contributors: git.RomanovM
 ---
 
 # Guide to creating a page containing a reporting table of DataTables

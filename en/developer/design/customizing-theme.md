@@ -1,6 +1,8 @@
 ---
 title: Customizing nopCommerce Themes
 uid: en/developer/design/customizing-theme
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Customizing nopCommerce Themes

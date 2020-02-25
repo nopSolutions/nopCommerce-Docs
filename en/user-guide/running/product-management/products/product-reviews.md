@@ -1,6 +1,8 @@
 ---
 title: Product reviews
 uid: en/user-guide/running/product-management/products/product-reviews
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko
 ---
 
 # Product reviews

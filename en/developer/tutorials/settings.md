@@ -1,6 +1,8 @@
 ---
 title: Settings API
 uid: en/developer/tutorials/settings
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Settings API

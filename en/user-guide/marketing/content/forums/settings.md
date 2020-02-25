@@ -1,6 +1,8 @@
 ---
 title: Forum settings
 uid: en/user-guide/marketing/content/forums/settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Forum settings

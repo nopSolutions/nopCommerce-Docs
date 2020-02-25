@@ -1,6 +1,8 @@
 ---
 title: Downloadable product
 uid: en/user-guide/running/product-management/products/adding-products/downloadable-products
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.dunaenko
 ---
 
 # Downloadable product

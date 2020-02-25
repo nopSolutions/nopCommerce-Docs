@@ -1,6 +1,8 @@
 ---
 title: Setting up Customers
 uid: en/user-guide/configuring/setting-up/customers/index
+author: git.AndreiMaz
+contributors: git.exileDev, git.ivkadp
 ---
 
 # Setting up Customers

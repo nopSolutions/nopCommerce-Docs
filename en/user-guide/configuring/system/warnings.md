@@ -1,6 +1,8 @@
 ---
 title: Warnings
 uid: en/user-guide/configuring/system/warnings
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Warnings

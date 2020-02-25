@@ -1,6 +1,8 @@
 ---
 title: Manual (Fixed or By Country/State/Zip)
 uid: en/user-guide/configuring/setting-up/taxes/tax/methods/manual
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Manual (Fixed or By Country/State/Zip)

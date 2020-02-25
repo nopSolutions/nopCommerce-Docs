@@ -1,6 +1,8 @@
 ---
 title: Blog settings
 uid: en/user-guide/marketing/content/blog/blog-settings
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.ivkadp
 ---
 
 # Blog settings

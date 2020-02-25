@@ -1,6 +1,8 @@
 ---
 title: Country report
 uid: en/user-guide/running/reports/country-report
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Country report

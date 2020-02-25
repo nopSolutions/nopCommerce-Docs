@@ -1,6 +1,8 @@
 ---
 title: Getting started
 uid: en/user-guide/getting-started
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Getting started

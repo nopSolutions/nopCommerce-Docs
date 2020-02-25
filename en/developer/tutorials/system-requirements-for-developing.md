@@ -1,6 +1,8 @@
 ﻿---
 title: System requirements for developing
 uid: en/developer/tutorials/system-requirements-for-developing
+author: nop.sea
+contributors: git.RomanovM
 ---
 
 # System requirements for developing

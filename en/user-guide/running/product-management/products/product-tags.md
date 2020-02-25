@@ -1,6 +1,8 @@
 ---
 title: Product tags
 uid: en/user-guide/running/product-management/products/product-tags
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
 
 # Product tags

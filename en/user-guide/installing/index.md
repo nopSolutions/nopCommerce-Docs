@@ -1,6 +1,8 @@
 ---
 title: Installing nopCommerce
 uid: en/user-guide/installing/index
+author: git.AndreiMaz
+contributors: git.skoshelev, git.exileDev, git.IvanIvanIvanov
 ---
 
 # Installing nopCommerce

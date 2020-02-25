@@ -1,6 +1,8 @@
 ---
 title: Description of the web.config file in project
 uid: en/developer/tutorials/description-of-the-web-config-file-in-project
+author: nop.sea
+contributors: git.RomanovM
 ---
 
 # Description of the web.config file in project

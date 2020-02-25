@@ -1,6 +1,8 @@
 ---
 title: Possible ways to contribute
 uid: en/developer/contribute/possible-ways
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Possible ways to contribute

@@ -1,6 +1,8 @@
 ---
 title: Dashboard
 uid: en/user-guide/running/reports/dashboard
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Dashboard

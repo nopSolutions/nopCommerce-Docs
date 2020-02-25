@@ -1,6 +1,8 @@
 ---
 title: Email accounts
 uid: en/user-guide/configuring/system/email-accounts
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Email accounts

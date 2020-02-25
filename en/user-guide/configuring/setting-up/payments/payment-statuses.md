@@ -1,6 +1,8 @@
 ---
 title: Payment statuses
 uid: en/user-guide/configuring/setting-up/payments/payment-statuses
+author: git.AndreiMaz
+contributors: git.exileDev, git.ivkadp
 ---
 
 # Payment statuses

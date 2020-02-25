@@ -1,6 +1,8 @@
 ---
 title: Coding Standards
 uid: en/developer/tutorials/coding-standards
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin
 ---
 
 # Coding Standards

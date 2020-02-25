@@ -1,6 +1,8 @@
 ---
 title: Contribute
 uid: en/developer/contribute/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Contribute

@@ -1,6 +1,8 @@
 ---
 title: Countries
 uid: en/user-guide/configuring/setting-up/main-store/countries
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # Countries

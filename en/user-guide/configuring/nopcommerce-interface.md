@@ -1,6 +1,8 @@
 ---
 title: nopCommerce Interface
 uid: en/user-guide/configuring/nopcommerce-interface
+author: git.AndreiMaz
+contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.ivkadp
 ---
 
 # nopCommerce Interface

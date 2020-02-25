@@ -1,6 +1,8 @@
 ---
 title: Plugin with data access
 uid: en/developer/plugins/plugin-with-data-access
+author: nop.52152
+contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev
 ---
 
 # Plugin with data access
@@ -379,5 +381,3 @@ The tracking code should be added to `ProductTemplate.Simple.cshtml` and `Produc
 ```
 
 P.S. You can also implement it as a widget. In this case you won't need to edit a cshtml file.
-
-Author: [Skyler Severns](http://www.nopcommerce.com/profile/52152)

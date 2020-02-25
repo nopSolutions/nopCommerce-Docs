@@ -1,6 +1,8 @@
 ---
 title: Categories
 uid: en/user-guide/running/product-management/categories
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.IvanIvanIvanov
 ---
 
 # Categories

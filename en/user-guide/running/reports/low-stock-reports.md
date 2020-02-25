@@ -1,6 +1,8 @@
 ---
 title: Low Stock Reports
 uid: en/user-guide/running/reports/low-stock-reports
+author: git.AndreiMaz
+contributors: git.exileDev
 ---
 
 # Low Stock Reports

@@ -1,6 +1,8 @@
 ---
 title: How to code my own payment method
 uid: en/developer/plugins/payment-method
+author: git.AndreiMaz
+contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 ---
 
 # How to code my own payment method

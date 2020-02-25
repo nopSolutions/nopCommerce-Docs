@@ -1,6 +1,8 @@
 ---
 title: Order Settings
 uid: en/user-guide/running/order-management/orders/order-settings
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Order Settings

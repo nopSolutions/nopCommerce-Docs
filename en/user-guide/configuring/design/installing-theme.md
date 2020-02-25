@@ -1,6 +1,8 @@
 ---
 title: Installing a theme
 uid: en/user-guide/configuring/design/installing-theme
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Installing a theme

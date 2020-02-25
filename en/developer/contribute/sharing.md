@@ -1,6 +1,8 @@
 ---
 title: Sharing your plugins and themes
 uid: en/developer/contribute/sharing
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Sharing your plugins and themes

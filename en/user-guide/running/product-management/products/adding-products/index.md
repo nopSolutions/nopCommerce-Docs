@@ -1,6 +1,8 @@
 ---
 title: Adding products
 uid: en/user-guide/running/product-management/products/adding-products/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.sanju741, git.exileDev, git.IvanIvanIvanov
 ---
 
 # Adding products

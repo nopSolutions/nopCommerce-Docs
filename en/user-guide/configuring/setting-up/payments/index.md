@@ -1,6 +1,8 @@
 ---
 title: Setting up Payments
 uid: en/user-guide/configuring/setting-up/payments/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
 # Setting up Payments

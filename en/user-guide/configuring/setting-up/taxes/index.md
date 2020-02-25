@@ -1,6 +1,8 @@
 ---
 title: Setting up Tax
 uid: en/user-guide/configuring/setting-up/taxes/index
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.exileDev
 ---
 
 # Setting up Tax

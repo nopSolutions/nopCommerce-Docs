@@ -1,6 +1,8 @@
 ---
 title: Discounts
 uid: en/user-guide/marketing/promotional/discounts/index
+author: git.AndreiMaz
+contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov
 ---
 
 # Discounts
