@@ -1,8 +1,8 @@
 ---
 title: Customizing nopCommerce Themes
-author: AndreiMaz
-uid: developer/design/customizing-theme
+uid: en/developer/design/customizing-theme
 ---
+
 # Customizing nopCommerce Themes
 
 ## Uploading your store logo
@@ -29,12 +29,14 @@ In order to upload your store logo in a nopCommerce website, there are basically
     You can mention the path of your custom logo here.
 
     > [!NOTE]
+    > 
     > In the above mentioned css code: logo.gif is the name of the store logo image file
 
 1. Change logo.gif with `YourLogo.gif/jpg/png`
 1. Save changes to the `Header.cshtml` file
 
 > [!IMPORTANT]
+> 
 > You might have to refresh the browser or delete history or cookies of your browser in order to see the changes (new store logo).
 
 If you wish to make changes in stylesheet in regard to the logo, look for the following code in your `styles.css`:

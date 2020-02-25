@@ -1,13 +1,13 @@
 ---
 title: Downloadable product
-author: AndreiMaz
-uid: user-guide/running/product-management/products/adding-products/downloadable-products
+uid: en/user-guide/running/product-management/products/adding-products/downloadable-products
 ---
+
 # Downloadable product
 
 To create a **Downloadable product**, on the **product info tab** tick the corresponding checkbox.
 
-![DownloadableProduct](_static/downloadable-product/DownloadableProduct.png)
+![DownloadableProduct](_static/downloadable-products/DownloadableProduct.png)
 
 Define the **following details**:
 
@@ -22,7 +22,7 @@ Define the **following details**:
 
 ## See also
 
-- [Orders](xref:user-guide/running/order-management/orders/index)
+- [Orders](xref:en/user-guide/running/order-management/orders/index)
 
 ## Tutorials
 

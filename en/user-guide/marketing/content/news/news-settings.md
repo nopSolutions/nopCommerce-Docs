@@ -1,8 +1,8 @@
 ---
 title: News settings
-author: AndreiMaz
-uid: user-guide/marketing/content/news/news-settings
+uid: en/user-guide/marketing/content/news/news-settings
 ---
+
 # News settings
 
 You can manage news settings in **Configuration → Settings → News Settings**. This page is available in 2 modes: **advanced** and **basic**.
@@ -28,5 +28,5 @@ This page enables **multi-store configuration**, it means that the same settings
 
 ## See also
 
-- [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
-- [News](xref:user-guide/marketing/content/news/index)
+- [Basic and Advanced modes](xref:en/user-guide/configuring/nopcommerce-interface)
+- [News](xref:en/user-guide/marketing/content/news/index)

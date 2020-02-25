@@ -1,8 +1,8 @@
 ---
 title: Installing a theme
-author: AndreiMaz
-uid: user-guide/configuring/design/installing-theme
+uid: en/user-guide/configuring/design/installing-theme
 ---
+
 # Installing a theme
 
 After downloading a new theme which is in a zip file, extract the contents of your zip file and copy it in **"Themes" folder** like shown on the picture below:

@@ -1,8 +1,8 @@
 ---
 title: Forum settings
-author: AndreiMaz
-uid: user-guide/marketing/content/forums/settings
+uid: en/user-guide/marketing/content/forums/settings
 ---
+
 # Forum settings
 
 To access forum settings go to **Configuration → Settings → Forum Settings**. This page is available in 2 modes: **advanced** and **basic**.
@@ -27,6 +27,7 @@ Define following **forum settings**:
 - Set the **size of Topics page, Posts page, Search results, Active discussions page** (e.g. 5 topics per page)
 
   > [!NOTE]
+  > 
   > it is not recommended to change the forum editor type in the production environment
 
 - Select the **Forum feeds enabled** checkbox to enable RSS feeds for each forum
@@ -42,5 +43,5 @@ To change a setting for a certain store, tick a checkbox on the left side of it.
 
 ## See also
 
-- [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
-- [Forums](xref:user-guide/marketing/content/forums/index)
+- [Basic and Advanced modes](xref:en/user-guide/configuring/nopcommerce-interface)
+- [Forums](xref:en/user-guide/marketing/content/forums/index)

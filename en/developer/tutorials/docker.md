@@ -1,8 +1,8 @@
 ---
 title: Docker
-author: AndreiMaz
-uid: developer/tutorials/docker
+uid: en/developer/tutorials/docker
 ---
+
 # Docker
 
 This document describes a step-by-step guide to building and running a Docker container.
@@ -52,8 +52,9 @@ This document describes a step-by-step guide to building and running a Docker co
     This command will launch our container in the background (flag [-d]) and set port 80 from the container to port 80 of the host machine (flag [–p]).
 
     > [!TIP]
+    > 
     > You can view the list of running containers using the next command:
-    >
+    > 
     > ```csharp
     > [docker ps]
     > ```

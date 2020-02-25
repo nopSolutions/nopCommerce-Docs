@@ -1,8 +1,8 @@
 ---
 title: Reward points
-author: AndreiMaz
-uid: user-guide/marketing/promotional/reward-points
+uid: en/user-guide/marketing/promotional/reward-points
 ---
+
 # Reward points
 
 The **Reward Points** functionality enables you to create and implement loyalty program for improving customer experience and increase customer loyalty. The Reward Points Program allows customers to earn points for certain actions they take on the site like registering and making purchases.
@@ -15,7 +15,7 @@ The points can also be canceled if a customer canceled an order or sent a return
 
 To manage the Reward Points program go **Configuration → Settings → Reward points.** This page is available in two modes: **basic and advanced.**
 
-![reward_points](_static/reward/reward_points.PNG)
+![reward_points](_static/reward-points/reward_points.png)
 
 To set up your reward point program, define these settings:
 
@@ -35,15 +35,16 @@ To set up your reward point program, define these settings:
 - Click **Save**
 
 > [!NOTE]
+> 
 > **Reward points are applied only to registered users**
 
 When a customer uses reward points when checkout it looks like that:
 
-![reward_points_checkout](_static/reward/reward_will_earn.png)
+![reward_points_checkout](_static/reward-points/reward_will_earn.png)
 
-![reward_points_checkout](_static/reward/reward_pints_checkout.png)
+![reward_points_checkout](_static/reward-points/reward_pints_checkout.png)
 
 ## See also
 
-- [Basic and Advanced modes](xref:user-guide/configuring/nopcommerce-interface)
+- [Basic and Advanced modes](xref:en/user-guide/configuring/nopcommerce-interface)
 - [Managing reward points tutorial](https://www.youtube.com/watch?v=lE4-xDUKkd0&index=14&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

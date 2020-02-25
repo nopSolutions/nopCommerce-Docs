@@ -1,13 +1,14 @@
 ---
 title: Product tags
-author: AndreiMaz
-uid: user-guide/running/product-management/products/product-tags
+uid: en/user-guide/running/product-management/products/product-tags
 ---
+
 # Product tags
 
 **Product tags** are keywords for product identification. They are used to sort the products by a certain feature and to enable a specific, narrow product search.
 
 > [!NOTE]
+> 
 > **For example**, if you sell apparel, and you want to create tags for T-shirts, it can be “t-shirt”, “cotton”, “polo”, etc.
 
 To edit product tags that are displayed in a public store, go to **Catalog → Product tags.**
@@ -28,5 +29,5 @@ Enter tags separating them by comma. Once the tags are created, they can be used
 
 ## See also
 
-* [Product categories](xref:user-guide/running/product-management/categories)
-* [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
+* [Product categories](xref:en/user-guide/running/product-management/categories)
+* [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)

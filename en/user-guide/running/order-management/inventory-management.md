@@ -1,8 +1,8 @@
 ---
 title: Inventory management
-author: AndreiMaz
-uid: user-guide/running/order-management/inventory-management
+uid: en/user-guide/running/order-management/inventory-management
 ---
+
 # Inventory management
 
 Inventory management is a system of stock level controlling. In nopCommerce it consists of setting up the Inventory and tracking low stocks.
@@ -65,8 +65,8 @@ Click **Edit** to view the **Product info panel**, where these stock settings ca
 
 ## See also
 
-* [Product Attributes](xref:user-guide/running/product-management/attributes/product-attributes)
-* [Warehouses](xref:user-guide/configuring/settingup/shipping/warehouses)
+* [Product Attributes](xref:en/user-guide/running/product-management/attributes/product-attributes)
+* [Warehouses](xref:en/user-guide/configuring/setting-up/shipping/warehouses)
 
 ## Tutorials
 

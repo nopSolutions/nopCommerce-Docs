@@ -1,8 +1,8 @@
 ---
 title: Deleting Old Exported Files
-author: AndreiMaz
-uid: user-guide/configuring/system/deleting-abandoned-shopping-carts
+uid: en/user-guide/configuring/system/deleting-abandoned-shopping-carts
 ---
+
 # Deleting Old Exported Files
 
 The following procedure describes how to delete abandoned shopping carts and wishlists.

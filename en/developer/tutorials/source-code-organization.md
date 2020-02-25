@@ -1,8 +1,8 @@
 ---
 title: Source code organization. Architecture of nopCommerce.
-author: AndreiMaz
-uid: developer/tutorials/source-code-organization
+uid: en/developer/tutorials/source-code-organization
 ---
+
 # Source code organization. Architecture of nopCommerce
 
 This document is a guide for developers to the solution structure of nopCommerce. It is a document for a new nopCommerce developer to start learning about the nopCommerce code base. First of all, nopCommerce source code is quite easy to get. It's an open source application, so all you have to do to get the code is simply download it from the web site. The projects and folders are listed in the order they appear in Visual Studio. We recommend that you open the nopCommerce solution in Visual Studio and browse through the projects and files as you read this document.
@@ -25,7 +25,7 @@ This project contains a set of core services, business logic, validations or cal
 
 ## Projects into `\Plugins\` solution folder
 
-`\Plugins` is a Visual Studio solution folder that contains plugin projects. Physically it's located in the root of your solution. But plugins DLLs are automatically copied in `\Presentation\Nop.Web\Plugins\` directory which is used for already deployed plugins because the build output paths of all plugins are set to `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}\`. This allows plugins to contain some external files, such as static content (CSS or JS files) without having to copy files between projects to be able to run the project.
+`\Plugins` is a Visual Studio solution folder that contains plugin projects. Physically it's located in the root of your solution. But plugins DLLs are automatically copied in `\Presentation\Nop.Web\Plugins` directory which is used for already deployed plugins because the build output paths of all plugins are set to `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}`. This allows plugins to contain some external files, such as static content (CSS or JS files) without having to copy files between projects to be able to run the project.
 
 ## `\Presentation\Nop.Web`
 

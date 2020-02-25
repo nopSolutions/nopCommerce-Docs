@@ -1,8 +1,8 @@
 ---
 title: Facebook authentication
-author: AndreiMaz
-uid: user-guide/configuring/system/external-authentication/facebook
+uid: en/user-guide/configuring/system/external-authentication/facebook
 ---
+
 # Facebook authentication
 
 You can configure Facebook authentication, in the Configure Facebook window, as described below.

@@ -1,8 +1,9 @@
 ---
 title: Entity events and how they work
 author: Sina
-uid: developer/tutorials/entity-event
+uid: en/developer/tutorials/entity-event
 ---
+
 # Entity events and how they work
 
 The **EntityInserted**, **EntityUpdated** and **EntityDeleted** [extension methods](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/extension-methods) with **BaseEntity** [constraint](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters) of **IEventPublisher** interface  are responsible to broadcast the inserted,updated and deleted entity respectively.

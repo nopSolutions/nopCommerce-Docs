@@ -1,8 +1,8 @@
 ---
 title: Google Analytics Plugin
-author: AndreiMaz
-uid: user-guide/configuring/system/widgets/google-analytics
+uid: en/user-guide/configuring/system/widgets/google-analytics
 ---
+
 # Google Analytics Plugin
 
 This section describes how to add and integrate Google Analytics plugin in your store.
@@ -21,7 +21,7 @@ Select the **Is active** checkbox, to enable **Google Analytics plugin**.
 
 Click **Configure**. The Configure – Google Analytics window is displayed, as follows:
 
-![Google analytics - Configure](_static/google-analytics/google-analytics-widgets-configure.PNG)
+![Google analytics - Configure](_static/google-analytics/google-analytics-widgets-configure.png)
 
 Perform the following steps to enable Google Analytics integration:
 
@@ -34,4 +34,5 @@ Perform the following steps to enable Google Analytics integration:
 * Click **Save**. Google Analytics will be integrated into your store.
 
 > [!NOTE]
+> 
 > After a widget has been added, you can click Edit in the Widgets window beside the required widget to display the **Edit Widget Details** window and then edit the widget details, as described above.

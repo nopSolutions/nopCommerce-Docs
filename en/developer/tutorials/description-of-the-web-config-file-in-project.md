@@ -1,12 +1,12 @@
 ---
 title: Description of the web.config file in project
-author: nopsg
-uid: developer/tutorials/description-of-the-web-config-file-in-project
+uid: en/developer/tutorials/description-of-the-web-config-file-in-project
 ---
 
 # Description of the web.config file in project
 ## What is web.config file.
 web.config file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application login from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
+
 The ASP.NET framework uses a hierarchical configuration system. You can place a Web.Config file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
 
 ## web.config for nopCommerce
@@ -53,7 +53,7 @@ nopCommerce uses web.config in Nop.Web project which can be found inside Present
 ```xml
 <configuration>
 ```
-Every configuration rules goes inside "&lt;configuration&gt;" element. 
+Every configuration rules goes inside "&lt;configuration&gt;" element.
 ```xml
 <system.webServer>
     ...
@@ -67,7 +67,9 @@ The &lt;system.webServer&gt; element specifies the root element for many of the 
 </modules>
 ```
 The &lt;modules&gt; element defines the native-code modules and managed-code modules that are registered for an application. We commonly use modules to implement customized functionality.
+
 The &lt;modules> element contains a collection of &lt;add&gt;, &lt;remove&gt; and &lt;clear&gt; elements.
+
 Here nopCommerce is using &lt;remove&gt; element to remove WebDAVModule module form the application.
 ```xml
 <handlers>
@@ -77,6 +79,7 @@ Here nopCommerce is using &lt;remove&gt; element to remove WebDAVModule module f
 </handlers>
 ```
 Handlers are Internet IIS components that are configured to process requests to specific content, typically to generate a response for the request resource. For example, an ASP.NET Web page is one type of handler. You can use handlers to process requests to any resource that needs to return information to users that is not a static file.
+
 The &lt;handlers&gt; element contains a collection of &lt;add&gt;, &lt;remove&gt; and &lt;clear&gt; elements, each of which defines a handler mapping for the application. The &lt;add&gt; element adds a handler to the collection of handlers, &lt;remove&gt; element removes a references of handler from the handlers collection and &lt;clear&gt; element removes all references of handlers from the handlers collection. Here in above code  "WebDAV" handler is removed and handler for module "AspNetCoreModele" is added.
 ```xml
 <aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600">
@@ -112,7 +115,9 @@ HTTP headers are name and value pairs that are returned in responses from a Web 
 We can add other configurations additional to the above configurations. Here we will see how to configure redirect rules in IIS.
 
 A redirect rule enables more than one URL to point to a single Web page. There may be several reasons why you want to redirect request to one server to another. For example, May be your company name is changed and you may want to register a new domain for your company and move your website to new domain, so in that case you may want to redirect all request from your old domain to new domain.
+
 In order for our website to be able to use redirect rules, we need to install URL rewrite module which is an extension to IIS.
+
 For demonstration purpose lets say we have to redirect request to our old site to our new site, for that we need to write following rules in our web.config file.
 ```xml
 <rewrite>

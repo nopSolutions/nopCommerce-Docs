@@ -1,8 +1,8 @@
 ---
 title: Gift cards
-author: AndreiMaz
-uid: user-guide/marketing/promotional/gift-cards
+uid: en/user-guide/marketing/promotional/gift-cards
 ---
+
 # Gift cards
 
 In nopCommerce, you have an opportunity to sell gift cards among other types of products.
@@ -37,7 +37,7 @@ Define Gift card information:
 ![edit-gift-card](_static/gift-cards/gift-card-edit.jpg)
 
 > [!NOTE]
->
+> 
 > - **The sender and recipient emails will not be visible for physical gift cards. These mails are visible only for virtual gift cards**
 > - **The Notify Recipient button is relevant only for virtual gifts card and not physical gift cards**
 
@@ -55,5 +55,5 @@ A gift card is performed in the public store by entering the serial number in th
 
 ## See also
 
-- [Adding product](xref:user-guide/running/product-management/products/adding-products/index)
+- [Adding product](xref:en/user-guide/running/product-management/products/adding-products/index)
 - [YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

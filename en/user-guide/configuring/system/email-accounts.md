@@ -1,13 +1,13 @@
 ---
 title: Email accounts
-author: AndreiMaz
-uid: user-guide/configuring/system/email-accounts
+uid: en/user-guide/configuring/system/email-accounts
 ---
+
 # Email accounts
 
 This chapter describes how to set up email accounts associated with your store: a general contact email, a sales representative email, a customer support email and more.
 
-To manage **Email Accounts**, go to **Configuration → Email Accounts**. The Email Accounts window displays the email accounts of the store owner, as shown below. After the email accounts are configured, the store owner can then select the required email account on the message template details page, as described in the [Message Templates](xref:user-guide/marketing/content/message-templates) chapter.
+To manage **Email Accounts**, go to **Configuration → Email Accounts**. The Email Accounts window displays the email accounts of the store owner, as shown below. After the email accounts are configured, the store owner can then select the required email account on the message template details page, as described in the [Message Templates](xref:en/user-guide/marketing/content/message-templates) chapter.
 
 ## Add a new email account
 

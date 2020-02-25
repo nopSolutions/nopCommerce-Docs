@@ -1,8 +1,8 @@
 ---
 title: nopCommerce Interface
-author: AndreiMaz
-uid: user-guide/configuring/nopcommerce-interface
+uid: en/user-guide/configuring/nopcommerce-interface
 ---
+
 # nopCommerce Interface
 
 This chapter covers the basics of nopCommerce interface.
@@ -15,7 +15,7 @@ The dashboard has following sections:
 
 * **nopCommerce news** this is a section where important news, sales, and promotions information from nopCommerce are shown.
 
-* Other sections show vital statistics of your webstore: **Common statistics, Orders, New customers, Order totals, Incomplete orders, Latest Orders, Popular search keywords, Bestsellers by quantity, Bestsellers by amount.** Learn more about them [here](xref:user-guide/running/reports/dashboard).
+* Other sections show vital statistics of your webstore: **Common statistics, Orders, New customers, Order totals, Incomplete orders, Latest Orders, Popular search keywords, Bestsellers by quantity, Bestsellers by amount.** Learn more about them [here](xref:en/user-guide/running/reports/dashboard).
 
 The dashboard sections are easily collapsed by clicking ![item](_static/nopcommerce-interface/item.png) item.
 

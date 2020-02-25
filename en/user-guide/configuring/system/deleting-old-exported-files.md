@@ -1,8 +1,8 @@
 ---
 title: Deleting Old Exported Files
-author: AndreiMaz
-uid: user-guide/configuring/system/deleting-old-exported-files
+uid: en/user-guide/configuring/system/deleting-old-exported-files
 ---
+
 # Deleting Old Exported Files
 
 The following procedure describes how to delete old exported files.

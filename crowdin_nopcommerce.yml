@@ -1,0 +1,25 @@
+files:
+  - source: /en/**/*.md
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/toc.yml
+    translation: /%two_letters_code%/toc.yml
+  - source: /en/**/*.png
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.PNG
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.jpg
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.JPG
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.jpeg
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.JPEG
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.gif
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.GIF
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.svg
+    translation: /%two_letters_code%/**/%original_file_name%
+  - source: /en/**/*.SVG
+    translation: /%two_letters_code%/**/%original_file_name%

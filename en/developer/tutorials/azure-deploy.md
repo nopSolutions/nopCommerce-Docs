@@ -1,7 +1,6 @@
 ---
 title: Step by step to deploy on Azure with GIT and automatic builds
-author: AndreiMaz
-uid: developer/tutorials/azure-deploy
+uid: en/developer/tutorials/azure-deploy
 ---
 
 # Step by step to deploy on Azure with GIT and automatic builds
@@ -18,10 +17,9 @@ uid: developer/tutorials/azure-deploy
 1. **Prepare for local deploy** When you ensured that the automatic build works, we are ready to customize our deployment scripts. This is needed because the default automatic build only builds `nop.web` projects. The problem with this is that it does not build the admin website, and none of the plugins are build. You cannot refer to the plugins as it would create circular references. So now we need to get the custom build working, these are the install steps (also mention other places)
     - Install NodeJs: [https://nodejs.org](https://nodejs.org)
 
-    - Install Azure CLI: [https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/)
+    - Install Azure CLI: [https://azure.microsoft.com/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/documentation/articles/xplat-cli-install/)
 
 1. **Get NuGet to work at command line level.** The default behavior of the KUDO script is to check for NuGet packages.
-Learn more about how you can contribute on [GitHub](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md)
    - To get access to the `Nuget.exe` file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of NuGet packages" in you Visual Studio 2017, and it will be added to your project automatically.
 
    - Ensure that NuGet is in the path. Copy the `nuget.exe` file to preferred location (I use `c:/Program Files/Nuget/Nuget.exe`). Add it to path environment variable.
@@ -35,9 +33,11 @@ Learn more about how you can contribute on [GitHub](https://github.com/nopSoluti
         So you would write something like:
 
         `azure site deploymentscript --aspWAP Presentation\Nop.Web\Nop.Web.csproj -s NopCommerce.sln`
-    - Verify that it has generated 2 files (in your local repository root):
-    `.deployment`
-    `deploy.cmd`
+    - Verify that it has generated 2 files (in your local repository root): 
+	
+		`.deployment` 
+		`deploy.cmd`
+
 1. **Run generated script**
     - You must keep the .deployment and deploy.cmd file to the root of git repository
     - Edit the deploy.cmd as the `%DEPLOYMENT_SOURCE%` variable contain the root of the git repository. So I would add `%DEPLOYMENT_SOURCE%\src\Presentation\Nop.Web\Nop.Web.csproj` instead of `%DEPLOYMENT_SOURCE%\Presentation\Nop.Web\Nop.Web.csproj`. All paths in the deployment section must be corrected.
@@ -70,7 +70,8 @@ Learn more about how you can contribute on [GitHub](https://github.com/nopSoluti
     ```
 
     So between no ::1 and ::2 that's where we are gonna place our commands for building plugins.
-    An example for the first plugin would be:
+	
+	An example for the first plugin would be:
 
     ```sh
     :: 1.01 Build plugin customer roles to temporary path

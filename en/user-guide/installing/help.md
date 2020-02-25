@@ -1,8 +1,8 @@
 ---
 title: Help
-author: AndreiMaz
-uid: user-guide/installing/help
+uid: en/user-guide/installing/help
 ---
+
 # Help
 
 The nopCommerce **forums** provide you with an opportunity to discuss nopCommerce related issues with other community members. The forums are available at [https://www.nopCommerce.com/boards/](https://www.nopCommerce.com/boards/)

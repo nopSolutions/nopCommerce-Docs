@@ -1,8 +1,8 @@
 ---
 title: Media Settings
-author: AndreiMaz
-uid: user-guide/configuring/design/media-settings
+uid: en/user-guide/configuring/design/media-settings
 ---
+
 # Media Settings
 
 This section describes how to set the media details of your store. This includes defining product, variants and avatar image sizes and more.
@@ -16,7 +16,9 @@ Go to **Configuration → Settings → Media Settings**. The Media Settings wind
 Define the media settings, as follows:
 
 - Click the **Change** button above **Pictures are stored into** option to choose between database or file system.
+
   > [!NOTE]
+  > 
   > It is recommended to make a backup of the database before clicking the Change button.
 - In the **Maximum image size** field, enter the maximumProduct detail image size image size (meaning, the longest side) allowed for image upload (pixels).
 - Tick **Multiple thumb directories** to have multiple thumb directories. Is useful when your hosting company has - limitations on the amount of files per directory.

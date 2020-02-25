@@ -12,7 +12,6 @@ _exported_templates/
 _site/
 Properties/
 
-
 # Use git add -f to force override .sln when required. Not needed in most cases.
 # git add -f myProj.sln
 *.sln

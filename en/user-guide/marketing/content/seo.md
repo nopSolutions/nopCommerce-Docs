@@ -1,8 +1,8 @@
 ---
 title: SEO
-author: AndreiMaz
-uid: user-guide/marketing/content/seo
+uid: en/user-guide/marketing/content/seo
 ---
+
 # SEO
 
 SEO stands for search engine optimization, it is a process of getting traffic from “free,” “organic,” “editorial” or “natural” search results on search engines. All major search engines have primary search results, where web pages and other content such as videos or local listings are shown and ranked based on what a search engine considers most relevant to users.
@@ -20,11 +20,13 @@ To edit SEO settings, go to **Configuration → Settings → General Settings.**
 - In the **Default title** field, enter the default title for the pages in your store
 - From the **Page Title SEO adjustment** field, select the required page title SEO adjustment, as follows:
 
-    A page name comes after the store name in the title:
-    `YOURSTORE.COM` | PAGENAME
+    A page name comes after the store name in the title
+
+		`YOURSTORE.COM` | PAGENAME
 
     The store name comes after a page name in the title:
-    PAGENAME | `YOURSTORE.COM`
+
+		PAGENAME | `YOURSTORE.COM`
 
 - Specify the **Page Title separator**.
 - Enter the **Default meta keywords description** for the pages in your store. This can be overridden for individual **categories, manufacturers, and products**.
@@ -63,13 +65,13 @@ There are several types of pages in nopCommerce for which you can set up individ
 
 ## See also
 
-- [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
-- [Product categories](xref:user-guide/running/product-management/categories)
-- [Manufacturers](xref:user-guide/running/product-management/manufacturers)
-- [Vendors](xref:user-guide/configuring/settingup/customers/vendors/index)
-- [Topics (pages)](xref:user-guide/marketing/content/topics)
-- [News](xref:user-guide/marketing/content/news/index)
-- [Blog](xref:user-guide/marketing/content/blog/index)
+- [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
+- [Product categories](xref:en/user-guide/running/product-management/categories)
+- [Manufacturers](xref:en/user-guide/running/product-management/manufacturers)
+- [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index)
+- [Topics (pages)](xref:en/user-guide/marketing/content/topics)
+- [News](xref:en/user-guide/marketing/content/news/index)
+- [Blog](xref:en/user-guide/marketing/content/blog/index)
 
 ## Tutorials
 

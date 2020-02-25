@@ -1,8 +1,8 @@
 ---
 title: Topics (pages)
-author: AndreiMaz
-uid: user-guide/marketing/content/topics
+uid: en/user-guide/marketing/content/topics
 ---
+
 # Topics (pages)
 
 Topics (pages) are free-form content blocks that can be displayed on your site, either embedded within other pages or on a page of their own. These are often used for FAQ pages, policy pages, special instructions, and so on. To create custom pages, you should create new topics, which you will see in the grid, and then enter your custom page content. Content can be written for each language separately.
@@ -64,11 +64,12 @@ To set up SEO for Topics go to **SEO tab**
 - Click **Save**. The topic will be displayed in the public store.
 
 > [!NOTE]
+> 
 > You can click Edit in the Manage Topics window to display the Edit Topic window and then edit the topic, as described above. In the Topic Info tab, you can click on the URL link at the bottom of the page to view the URL of the topic in the public store.
 
 ## See also
 
-- [SEO](xref:user-guide/marketing/content/seo)
+- [SEO](xref:en/user-guide/marketing/content/seo)
 
 ## Tutorials
 

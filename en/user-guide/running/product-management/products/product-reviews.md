@@ -1,8 +1,8 @@
 ---
 title: Product reviews
-author: AndreiMaz
-uid: user-guide/running/product-management/products/product-reviews
+uid: en/user-guide/running/product-management/products/product-reviews
 ---
+
 # Product reviews
 
 **Product reviews** are customers’ comments on a product. Reviews can also include ratings.
@@ -10,6 +10,7 @@ uid: user-guide/running/product-management/products/product-reviews
 In the public store, reviews are displayed on the **product details page**. Customers can write reviews for different products. After a review has been written and approved by a store owner, other customers can define whether the review was helpful or not by clicking Yes or No beside the review.
 
 > [!NOTE]
+> 
 > **By default**, the reviews must be approved by the store owner before they appear in the public store. However, in case a store owner decides that reviews do not have to be approved, this default behavior can be changed. To opt out of the obligatory product reviews approval, go to **Configuration → Settings → Catalog Settings** from the menu, and **untick the Product reviews must be approved option**.
 
 ## Managing product reviews
@@ -50,7 +51,7 @@ Tick the **Is approved** checkbox, to approve the review.
 
 On this area, you can view the all addition reviews on current product. **Rating** displays the customer rating. All columns in the table cannot be edited.
 
-For more information on setting up and adding rating values, [click here](xref:user-guide/running/product-management/catalog-settings)
+For more information on setting up and adding rating values, [click here](xref:en/user-guide/running/product-management/catalog-settings)
 
 ![r1](_static/product-reviews/review_types.png)
 

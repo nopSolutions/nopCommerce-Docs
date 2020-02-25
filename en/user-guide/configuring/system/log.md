@@ -1,8 +1,8 @@
 ---
 title: Logs
-author: AndreiMaz
-uid: user-guide/configuring/system/log
+uid: en/user-guide/configuring/system/log
 ---
+
 # Logs
 
 The system log report displays a list of all the errors that were created in the system. This information includes, the log type, the customer that created the error, the date, and the description of the error. Clicking View, displays additional details of the error that occurred. You can click **Delete** to remove a log from the system if required.
@@ -26,6 +26,7 @@ The system log report displays a list of all the errors that were created in the
 1. Click **Search**. The log system window is displayed based on the search criteria
 
     > [!NOTE]
+    > 
     > You can click the Clear Log button at any time to remove all log entries from the system.
 1. Click **View** to view additional details of the specific log, as follows:
 

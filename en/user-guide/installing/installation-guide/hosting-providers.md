@@ -1,8 +1,8 @@
 ---
 title: Hosting providers
-author: AndreiMaz
-uid: user-guide/installing/installation-guide/hosting-provider
+uid: en/user-guide/installing/installation-guide/hosting-providers
 ---
+
 # Hosting providers
 
 Whether you intend to use nopCommerce out of the box or you want to make changes to the code, eventually you will need to host your website so that the public can visit your site and buy your products. Hosting providers literally host your website and provide a way for users to get to your site. nopCommerce can be hosted with almost any provider that uses Windows-based servers.
@@ -17,4 +17,5 @@ Choosing a hosting provider is an important decision. There are a lot of factors
 1. **Growth options** - As your site gets more users and you make more sales, your site will need to grow as well. A good provider will offer options for growing your site, from more disk space to more database space. This would also include moving from a shared server to a dedicated server.
 
 > [!TIP]
+> 
 > You can learn more about the recommended nopCommerce hosting partners here - [Hosting partners](https://www.nopcommerce.com/hosting-partners?utm_source=docs_nopcommerce&utm_medium=link&utm_content=hosting&utm_campaign=parnters_page).

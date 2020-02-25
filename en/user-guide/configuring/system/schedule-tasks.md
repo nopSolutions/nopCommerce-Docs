@@ -1,8 +1,8 @@
 ---
 title: Schedule Tasks
-author: AndreiMaz
-uid: user-guide/configuring/system/schedule-tasks
+uid: en/user-guide/configuring/system/schedule-tasks
 ---
+
 # Schedule Tasks
 
 The scheduled tasks window enables the store owner to schedule a task to run during certain periods in the background and to view useful information regarding the task and whether it was completed successfully. For example, nopCommerce sends queued emails periodically. The tasks run on a separate thread coming from the ASP.NET thread pool.

@@ -1,0 +1,620 @@
+---
+- 
+  name: nopCommerce documentation
+  href: /
+  topicHref: index.md
+- 
+  name: User guide
+  href: user-guide/index.md
+  items:
+    - 
+      name: Getting started
+      href: user-guide/getting-started.md
+    - 
+      name: Installing nopCommerce
+      href: user-guide/installing/index.md
+      items:
+        - 
+          name: Technology & System Requirements
+          href: user-guide/installing/technology-system-requirements.md
+        - 
+          name: Installation guide
+          href: user-guide/installing/installation-guide/index.md
+          items:
+            - 
+              name: Hosting providers
+              href: user-guide/installing/installation-guide/hosting-providers.md
+            - 
+              name: Installing Internet Information Services (IIS)
+              href: user-guide/installing/installation-guide/installing-IIS.md
+            - 
+              name: Known Issues and Solutions
+              href: user-guide/installing/installation-guide/known-issues-and-solutions.md
+        - 
+          name: Installing on Windows Azure
+          href: user-guide/installing/azure.md
+        - 
+          name: Installing on Linux
+          href: user-guide/installing/linux.md
+        - 
+          name: Upgrading nopCommerce
+          href: user-guide/installing/upgrading.md
+        - 
+          name: Help
+          href: user-guide/installing/help.md
+        - 
+          name: FAQ
+          href: user-guide/installing/faq.md
+    - 
+      name: Configuring your store
+      href: user-guide/configuring/index.md
+      items:
+        - 
+          name: nopCommerce Interface
+          href: user-guide/configuring/nopcommerce-interface.md
+        - 
+          name: Setting up your store
+          href: user-guide/configuring/setting-up/index.md
+          items:
+            - 
+              name: Setting up Main Store
+              href: user-guide/configuring/setting-up/main-store/index.md
+              items:
+                - 
+                  name: Setting up Multiple-Store
+                  href: user-guide/configuring/setting-up/main-store/multiple-store.md
+                - 
+                  name: Countries
+                  href: user-guide/configuring/setting-up/main-store/countries.md
+                - 
+                  name: Languages
+                  href: user-guide/configuring/setting-up/main-store/languages.md
+                - 
+                  name: Security settings
+                  href: user-guide/configuring/setting-up/main-store/security-settings.md
+                - 
+                  name: PDF settings
+                  href: user-guide/configuring/setting-up/main-store/pdf-settings.md
+                - 
+                  name: GDPR settings
+                  href: user-guide/configuring/setting-up/main-store/gdpr-settings.md
+                - 
+                  name: Uploading favicons
+                  href: user-guide/configuring/setting-up/main-store/uploading-favicons.md
+            - 
+              name: Setting up Payments
+              href: user-guide/configuring/setting-up/payments/index.md
+              items:
+                - 
+                  name: Payment Methods
+                  href: user-guide/configuring/setting-up/payments/methods/index.md
+                  items:
+                    - 
+                      name: Manual Processing (Credit Card)
+                      href: user-guide/configuring/setting-up/payments/methods/manual-processing.md
+                    - 
+                      name: PayPal Standard
+                      href: user-guide/configuring/setting-up/payments/methods/paypal-standard.md
+                    - 
+                      name: Purchase order
+                      href: user-guide/configuring/setting-up/payments/methods/purchase-order.md
+                    - 
+                      name: Square
+                      href: user-guide/configuring/setting-up/payments/methods/square.md
+                    - 
+                      name: Qualpay
+                      href: user-guide/configuring/setting-up/payments/methods/qualpay.md
+                - 
+                  name: Payment statuses
+                  href: user-guide/configuring/setting-up/payments/payment-statuses.md
+                - 
+                  name: Payment Method Restrictions
+                  href: user-guide/configuring/setting-up/payments/payment-method-restrictions.md
+                - 
+                  name: Currencies
+                  href: user-guide/configuring/setting-up/payments/currencies.md
+            - 
+              name: Setting up Tax
+              href: user-guide/configuring/setting-up/taxes/index.md
+              items:
+                - 
+                  name: Tax Settings
+                  href: user-guide/configuring/setting-up/taxes/tax-settings.md
+                - 
+                  name: Tax
+                  href: user-guide/configuring/setting-up/taxes/tax/index.md
+                  items:
+                    - 
+                      name: Avalara tax provider
+                      href: user-guide/configuring/setting-up/taxes/tax/methods/avalara.md
+                    - 
+                      name: Manual (Fixed or By Country/State/Zip)
+                      href: user-guide/configuring/setting-up/taxes/tax/methods/manual.md
+                - 
+                  name: EU VAT configuration guide
+                  href: user-guide/configuring/setting-up/taxes/eu-vat.md
+            - 
+              name: Setting up Shipping
+              href: user-guide/configuring/setting-up/shipping/index.md
+              items:
+                - 
+                  name: Shipping Settings
+                  href: user-guide/configuring/setting-up/shipping/settings.md
+                - 
+                  name: Shipping Providers
+                  href: user-guide/configuring/setting-up/shipping/providers/index.md
+                  items:
+                    - 
+                      name: Manual (Fixed or By Weight and By Total)
+                      href: user-guide/configuring/setting-up/shipping/providers/manual/index.md
+                      items:
+                        - 
+                          name: Shipping Methods (Fixed Rate Shipping)
+                          href: user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-methods.md
+                        - 
+                          name: Shipping Method Restrictions (Fixed Rate Shipping)
+                          href: user-guide/configuring/setting-up/shipping/providers/manual/fixed-rate-restrictions.md
+                        - 
+                          name: Shipping Methods (Shipping by Weight and By Total)
+                          href: user-guide/configuring/setting-up/shipping/providers/manual/methods.md
+                        - 
+                          name: Shipping Method Restrictions (Shipping by Weight and by Total)
+                          href: user-guide/configuring/setting-up/shipping/providers/manual/restrictions.md
+                    - 
+                      name: UPS
+                      href: user-guide/configuring/setting-up/shipping/providers/ups.md
+                - 
+                  name: Warehouses
+                  href: user-guide/configuring/setting-up/shipping/warehouses.md
+                - 
+                  name: Dates and ranges
+                  href: user-guide/configuring/setting-up/shipping/dates-ranges.md
+                - 
+                  name: Measures
+                  href: user-guide/configuring/setting-up/shipping/measures.md
+                - 
+                  name: Pickup Points
+                  href: user-guide/configuring/setting-up/shipping/pickup-points.md
+            - 
+              name: Setting up Customers
+              href: user-guide/configuring/setting-up/customers/index.md
+              items:
+                - 
+                  name: Customer settings
+                  href: user-guide/configuring/setting-up/customers/settings.md
+                - 
+                  name: Customer roles
+                  href: user-guide/configuring/setting-up/customers/customer-roles.md
+                - 
+                  name: Access Control List
+                  href: user-guide/configuring/setting-up/customers/acl.md
+                - 
+                  name: Vendors
+                  href: user-guide/configuring/setting-up/customers/vendors/index.md
+                  items:
+                    - 
+                      name: Vendor settings
+                      href: user-guide/configuring/setting-up/customers/vendors/settings.md
+            - 
+              name: All Settings (advanced)
+              href: user-guide/configuring/setting-up/all-settings.md
+        - 
+          name: System Administration
+          href: user-guide/configuring/system/index.md
+          items:
+            - 
+              name: Plugins
+              href: user-guide/configuring/system/plugins.md
+            - 
+              name: Email accounts
+              href: user-guide/configuring/system/email-accounts.md
+            - 
+              name: Widgets
+              href: user-guide/configuring/system/widgets/index.md
+              items:
+                - 
+                  name: Google Analytics
+                  href: user-guide/configuring/system/widgets/google-analytics.md
+                - 
+                  name: Nivo Slider
+                  href: user-guide/configuring/system/widgets/nivo-slider.md
+            - 
+              name: Localization
+              href: user-guide/configuring/system/localization.md
+            - 
+              name: External Authentication Method
+              href: user-guide/configuring/system/external-authentication/index.md
+              items:
+                - 
+                  name: Facebook
+                  href: user-guide/configuring/system/external-authentication/facebook.md
+            - 
+              name: Message Queue
+              href: user-guide/configuring/system/message-queue.md
+            - 
+              name: Schedule Tasks
+              href: user-guide/configuring/system/schedule-tasks.md
+            - 
+              name: System Information
+              href: user-guide/configuring/system/system-information.md
+            - 
+              name: Deleting Old Exported Files
+              href: user-guide/configuring/system/deleting-old-exported-files.md
+            - 
+              name: Deleting Abandoned Shopping Carts
+              href: user-guide/configuring/system/deleting-abandoned-shopping-carts.md
+            - 
+              name: Deleting Guests
+              href: user-guide/configuring/system/deleting-guests.md
+            - 
+              name: Warnings
+              href: user-guide/configuring/system/warnings.md
+            - 
+              name: Log
+              href: user-guide/configuring/system/log.md
+        - 
+          name: Design
+          href: user-guide/configuring/design/index.md
+          items:
+            - 
+              name: Installing a theme
+              href: user-guide/configuring/design/installing-theme.md
+            - 
+              name: Media Settings
+              href: user-guide/configuring/design/media-settings.md
+    - 
+      name: Running your store
+      href: user-guide/running/index.md
+      items:
+        - 
+          name: Product management
+          href: user-guide/running/product-management/index.md
+          items:
+            - 
+              name: Categories
+              href: user-guide/running/product-management/categories.md
+            - 
+              name: Manufacturers
+              href: user-guide/running/product-management/manufacturers.md
+            - 
+              name: Attributes
+              href: user-guide/running/product-management/attributes/index.md
+              items:
+                - 
+                  name: Product attributes
+                  href: user-guide/running/product-management/attributes/product-attributes.md
+                - 
+                  name: Specification attributes
+                  href: user-guide/running/product-management/attributes/specification-attributes.md
+                - 
+                  name: Checkout attributes
+                  href: user-guide/running/product-management/attributes/checkout-attributes.md
+            - 
+              name: Products
+              href: user-guide/running/product-management/products/index.md
+              items:
+                - 
+                  name: Adding products
+                  href: user-guide/running/product-management/products/adding-products/index.md
+                  items:
+                    - 
+                      name: Downloadable product
+                      href: user-guide/running/product-management/products/adding-products/downloadable-products.md
+                    - 
+                      name: Grouped product
+                      href: user-guide/running/product-management/products/adding-products/grouped-products.md
+                    - 
+                      name: Recurring product
+                      href: user-guide/running/product-management/products/adding-products/recurring-products.md
+                    - 
+                      name: Rental product
+                      href: user-guide/running/product-management/products/adding-products/rental-products.md
+                - 
+                  name: Import/Export
+                  href: user-guide/running/product-management/products/import-export.md
+                - 
+                  name: Product tags
+                  href: user-guide/running/product-management/products/product-tags.md
+                - 
+                  name: Product reviews
+                  href: user-guide/running/product-management/products/product-reviews.md
+            - 
+              name: Catalog settings
+              href: user-guide/running/product-management/catalog-settings.md
+        - 
+          name: Order management
+          href: user-guide/running/order-management/index.md
+          items:
+            - 
+              name: Orders
+              href: user-guide/running/order-management/orders/index.md
+              items:
+                - 
+                  name: Order Settings
+                  href: user-guide/running/order-management/orders/order-settings.md
+                - 
+                  name: Shopping cart settings
+                  href: user-guide/running/order-management/orders/shopping-cart-settings.md
+            - 
+              name: Shipments
+              href: user-guide/running/order-management/shipments.md
+            - 
+              name: Return Requests
+              href: user-guide/running/order-management/return-requests/index.md
+              items:
+                - 
+                  name: Return request settings
+                  href: user-guide/running/order-management/return-requests/return-requests-settings.md
+            - 
+              name: Shopping carts and wishlists
+              href: user-guide/running/order-management/shopping-carts-wishlists.md
+            - 
+              name: Inventory management
+              href: user-guide/running/order-management/inventory-management.md
+        - 
+          name: Customer management
+          href: user-guide/running/customer-management/index.md
+          items:
+            - 
+              name: Customer list
+              href: user-guide/running/customer-management/customer-list.md
+            - 
+              name: Online Customers
+              href: user-guide/running/customer-management/online-customers.md
+            - 
+              name: Activity Log
+              href: user-guide/running/customer-management/activity-log.md
+        - 
+          name: Reports
+          href: user-guide/running/reports/index.md
+          items:
+            - 
+              name: Dashboard
+              href: user-guide/running/reports/dashboard.md
+            - 
+              name: Bestsellers and products never purchased
+              href: user-guide/running/reports/bestsellers-never-purchased.md
+            - 
+              name: Country report
+              href: user-guide/running/reports/country-report.md
+            - 
+              name: Customer reports
+              href: user-guide/running/reports/customer-reports.md
+            - 
+              name: Low Stock Reports
+              href: user-guide/running/reports/low-stock-reports.md
+    - 
+      name: Marketing your store
+      href: user-guide/marketing/index.md
+      items:
+        - 
+          name: Promotional tools
+          href: user-guide/marketing/promotional/index.md
+          items:
+            - 
+              name: Discounts
+              href: user-guide/marketing/promotional/discounts/index.md
+              items:
+                - 
+                  name: Common type of discounts
+                  href: user-guide/marketing/promotional/discounts/common-type-of-discounts.md
+            - 
+              name: Gift cards
+              href: user-guide/marketing/promotional/gift-cards.md
+            - 
+              name: Reward points
+              href: user-guide/marketing/promotional/reward-points.md
+            - 
+              name: Affiliates
+              href: user-guide/marketing/promotional/affiliates.md
+            - 
+              name: Cross-sells and Related products
+              href: user-guide/marketing/promotional/cross-sells-related-products.md
+            - 
+              name: Tier prices
+              href: user-guide/marketing/promotional/tier-prices.md
+        - 
+          name: Content Management
+          href: user-guide/marketing/content/index.md
+          items:
+            - 
+              name: Email campaigns
+              href: user-guide/marketing/content/email-campaigns/index.md
+              items:
+                - 
+                  name: All campaigns
+                  href: user-guide/marketing/content/email-campaigns/all-campaigns.md
+                - 
+                  name: Newsletter subscribers
+                  href: user-guide/marketing/content/email-campaigns/newsletter-subscribers.md
+            - 
+              name: Blog
+              href: user-guide/marketing/content/blog/index.md
+              items:
+                - 
+                  name: Blog settings
+                  href: user-guide/marketing/content/blog/blog-settings.md
+            - 
+              name: News
+              href: user-guide/marketing/content/news/index.md
+              items:
+                - 
+                  name: News settings
+                  href: user-guide/marketing/content/news/news-settings.md
+            - 
+              name: Forums
+              href: user-guide/marketing/content/forums/index.md
+              items:
+                - 
+                  name: Forum settings
+                  href: user-guide/marketing/content/forums/settings.md
+            - 
+              name: Polls
+              href: user-guide/marketing/content/polls.md
+            - 
+              name: Topics (pages)
+              href: user-guide/marketing/content/topics.md
+            - 
+              name: Message templates
+              href: user-guide/marketing/content/message-templates.md
+            - 
+              name: SEO
+              href: user-guide/marketing/content/seo.md
+- 
+  name: Developer guide
+  href: developer/index.md
+  items:
+    - 
+      name: Developer tutorials
+      href: developer/tutorials/index.md
+      items:
+        - 
+          name: System requirements for developing
+          href: developer/tutorials/system-requirements-for-developing.md
+        - 
+          name: Configuring code style
+          href: developer/tutorials/code-style.md
+        - 
+          name: Coding Standards
+          href: developer/tutorials/coding-standards.md
+        - 
+          name: Source code organization. Architecture of nopCommerce.
+          href: developer/tutorials/source-code-organization.md
+        - 
+          name: Instruction on how to start developing on nopCommerce
+          href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
+        - 
+          name: Updating an existing entity. How to add a new property
+          href: developer/tutorials/update-existing-entity.md
+        - 
+          name: The nopCommerce Data Access Layer
+          href: developer/tutorials/data-access-layer.md
+        - 
+          name: Entity events and how they work
+          href: developer/tutorials/entity-event.md
+        - 
+          name: Inversion of Control and Dependency Injection
+          href: developer/tutorials/inversion-of-control.md
+        - 
+          name: How do I register new routes?
+          href: developer/tutorials/register-new-routes.md
+        - 
+          name: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
+          href: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin.md
+        - 
+          name: Data Validation
+          href: developer/tutorials/data-validation.md
+        - 
+          name: Scheduled Tasks
+          href: developer/tutorials/scheduled-tasks.md
+        - 
+          name: Exposing and Handling Events
+          href: developer/tutorials/events.md
+        - 
+          name: Settings API
+          href: developer/tutorials/settings.md
+        - 
+          name: Description of the web.config file in project
+          href: developer/tutorials/description-of-the-web-config-file-in-project.md
+        - 
+          name: Step by step to deploy on Azure with GIT and automatic builds
+          href: developer/tutorials/azure-deploy.md
+        - 
+          name: Docker
+          href: developer/tutorials/docker.md
+        - 
+          name: How to deploy nopCommerce to Azure
+          href: developer/tutorials/azure-publish.md
+        - 
+          name: Guide to creating a page containing a reporting table of DataTables
+          href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
+    - 
+      name: Creating a nopCommerce plugin
+      href: developer/plugins/index.md
+      items:
+        - 
+          name: How to write a plugin for nopCommerce 4.20 (and above)
+          href: developer/plugins/how-to-write-plugin-4.20.md
+        - 
+          name: How to write a plugin for nopCommerce 4.10
+          href: developer/plugins/how-to-write-plugin-4.10.md
+        - 
+          name: How to write a plugin for nopCommerce 4.00
+          href: developer/plugins/how-to-write-plugin-4.00.md
+        - 
+          name: How to write a plugin for nopCommerce 3.90 (and previous versions)
+          href: developer/plugins/how-to-write-plugin-3.90.md
+        - 
+          name: How to code my own payment method
+          href: developer/plugins/payment-method.md
+        - 
+          name: How to code my own shipping rate computation method
+          href: developer/plugins/shipping-plugin.md
+        - 
+          name: Plugin with data access
+          href: developer/plugins/plugin-with-data-access.md
+        - 
+          name: How to add a menu item into the administration area from a plugin
+          href: developer/plugins/menu-item.md
+        - 
+          name: Adding CSS and JS resource files into nopCommerce Plugin
+          href: developer/plugins/resource-files.md
+    - 
+      name: Designer's Guide
+      href: developer/design/index.md
+      items:
+        - 
+          name: Overview (Designer's Guide)
+          href: developer/design/overview.md
+        - 
+          name: Installing / Applying theme in nopCommerce
+          href: developer/design/installing-theme.md
+        - 
+          name: Creating / Writing your own theme (using current / default theme)
+          href: developer/design/new-theme.md
+        - 
+          name: Understanding Layout / Design
+          href: developer/design/understanding-layout.md
+        - 
+          name: Customizing nopCommerce Themes
+          href: developer/design/customizing-theme.md
+        - 
+          name: Right To Left Theme
+          href: developer/design/right-to-left-theme.md
+        - 
+          name: Widgets (Designer's Guide)
+          href: developer/design/widgets.md
+        - 
+          name: Responsive Design
+          href: developer/design/responsive.md
+        - 
+          name: Tips and Tricks
+          href: developer/design/tips-and-tricks.md
+        - 
+          name: Contributing a Theme
+          href: developer/design/contributing-theme.md
+    - 
+      name: Contribute
+      href: developer/contribute/index.md
+      items:
+        - 
+          name: Possible ways to contribute
+          href: developer/contribute/possible-ways.md
+        - 
+          name: Sharing your plugins, themes, and language packs
+          href: developer/contribute/sharing.md
+        - 
+          name: Working with source code and contributions
+          href: developer/contribute/source-code.md
+    - 
+      name: Copyright notice
+      href: developer/copyright-notice.md
+    - 
+      name: FAQs
+      href: developer/faqs.md
+- 
+  name: Contribute
+  href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md
+- 
+  name: Premium support services
+  href: https://www.nopcommerce.com/nopcommerce-premium-support-services?utm_source=documentation&utm_medium=menu&utm_campaign=docs-menu

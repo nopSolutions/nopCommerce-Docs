@@ -1,8 +1,8 @@
 ---
 title: Catalog settings
-author: AndreiMaz
-uid: user-guide/running/product-management/catalog-settings
+uid: en/user-guide/running/product-management/catalog-settings
 ---
+
 # Catalog settings
 
 Catalog settings include enabling options for **product sorting, changing view modes, comparing products** and more.
@@ -41,7 +41,7 @@ The next block sets up **Review types**.  You can configure a list of review typ
 
 Click **Add new button** for create new review type.
 
-![quality_rating](_static/catalog-settings/quality_rating.PNG)
+![quality_rating](_static/catalog-settings/quality_rating.png)
 
 **Define the following:**
 
@@ -50,19 +50,19 @@ Click **Add new button** for create new review type.
 - **Display order**.
 - **Required** - when required, customers have to choose an appropriate rating value before they can continue.
 - **Visible to all customers** - Sets visibility of the review type for all customers.
-Click **Save** button,to add a new review type.
+- Click **Save** button,to add a new review type.
 
 Now in the public store will be able to fill additional ratings on the product review page.
 
-![product_reviews](_static/catalog-settings/product_reviews.PNG)
+![product_reviews](_static/catalog-settings/product_reviews.png)
 
 Also on this page you can see the left feedback of all customers (if this setting is active).In the customer personal account page there is also an opportunity to see all the reviews left on the products.
 
-![my_account](_static/catalog-settings/my_account.PNG)
+![my_account](_static/catalog-settings/my_account.png)
 
 The next block sets up **Performance**. Having the following settings enabled can significantly improve the store performance:
 
-- **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:user-guide/configuring/settingup/customers/acl) configured for entities.
+- **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:en/user-guide/configuring/setting-up/customers/acl) configured for entities.
 - **Ignore limit per store** (sitewide), to ignore limit per stores rules configured for entities (sitewide). It is recommended to enable this setting if you have only one store or do not have any store-specific limitations.
 - **Ignore discounts **(sitewide)
 - **Ignore featured products** (sitewide)
@@ -74,6 +74,7 @@ The next block sets up **Performance**. Having the following settings enabled ca
 - The **Share button code** field displays the pages button code.
 
 > [!TIP]
+> 
 > By default, AddThis service is used ([http://www.addthis.com/](http://www.addthis.com/)).
 
 ![Share](_static/catalog-settings/zzz.png)

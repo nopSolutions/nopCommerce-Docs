@@ -28,10 +28,10 @@ Structuring rules:
 
 - The folder that unites articles into a group should include the root file `index.md`
 
-So, an image in the `developer/tutorials/source-code-organization.md` file is rendered by the following Markdown:
+So, an image in the `en/developer/tutorials/source-code-organization.md` file is rendered by the following Markdown:
 
 ```md
-![description of image for alt attribute](developer/tutorials/_static/source-code-organization/imagename.png)
+![description of image for alt attribute](en/developer/tutorials/_static/source-code-organization/imagename.png)
 ```
 
 All images should have [alternative (alt) text](https://wikipedia.org/wiki/Alt_attribute). For advice on specifying alt text, see online resources, such as [WebAIM: Alternative Text](https://webaim.org/techniques/alttext/).
@@ -82,4 +82,4 @@ The [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welco
 
 ## Redirects
 
-If you delete an article, change its file name, or move it to a different folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [master redirect file](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/.openpublishing.redirection.json).
+If you delete an article, change its file name, or move it to a different folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [web.config file](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/web.config).

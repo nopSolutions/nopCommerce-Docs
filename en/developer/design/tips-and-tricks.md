@@ -1,8 +1,8 @@
 ---
 title: Tips and Tricks
-author: AndreiMaz
-uid: developer/design/tips-and-tricks
+uid: en/developer/design/tips-and-tricks
 ---
+
 # Tips and Tricks
 
 1. One of the major issues in web development/designing is that different browsers use different default values for various CSS properties. While customizing or creating your own them – Always make sure that your styling is compatible with all the browsers. Test your website in major browsers like IE, Mozilla, Opera, Safari and Chrome.
@@ -12,5 +12,7 @@ uid: developer/design/tips-and-tricks
 1. Do not limit yourself to span and div tags only. There are a lot of other / better features offers by CSS to style a page.
 
 > [!TIP]
-> Make use of **Firefox Developer Tools** plug-in offered by Mozilla. It is a very useful tool which allows you to edit, debug, and monitor CSS, HTML, and JavaScript live in any web page. You can learn more about it here: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools)
+> 
+> Make use of **Firefox Developer Tools** plug-in offered by Mozilla. It is a very useful tool which allows you to edit, debug, and monitor CSS, HTML, and JavaScript live in any web page. You can learn more about it here: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools) 
+> 
 > Or you can use the **Chrome DevTools tool**, which is part of the Chrome browser. You can learn more about it here: [Chrome DevTools.](https://developers.google.com/web/tools/chrome-devtools)

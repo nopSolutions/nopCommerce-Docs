@@ -1,18 +1,17 @@
 ---
 title: Designer's Guide
-author: AndreiMaz
-uid: developer/design/index
+uid: en/developer/design/index
 ---
 
 # Designer's Guide
 
-* [Overview (Designer's Guide)](xref:developer/design/overview)
-* [Installing / Applying theme in nopCommerce](xref:developer/design/installing-theme)
-* [Creating / Writing your own theme (using current / default theme)](xref:developer/design/new-theme)
-* [Understanding Layout / Design](xref:developer/design/understanding-layout)
-* [Customizing nopCommerce Themes](xref:developer/design/customizing-theme)
-* [Right To Left Theme](xref:developer/design/right-to-left-theme)
-* [Widgets (Designer's Guide)](xref:developer/design/widgets)
-* [Responsive Design](xref:developer/design/responsive)
-* [Tips and Tricks](xref:developer/design/tips-and-tricks)
-* [Contributing a Theme](xref:developer/design/contributing-theme)
+* [Overview (Designer's Guide)](xref:en/developer/design/overview)
+* [Installing / Applying theme in nopCommerce](xref:en/developer/design/installing-theme)
+* [Creating / Writing your own theme (using current / default theme)](xref:en/developer/design/new-theme)
+* [Understanding Layout / Design](xref:en/developer/design/understanding-layout)
+* [Customizing nopCommerce Themes](xref:en/developer/design/customizing-theme)
+* [Right To Left Theme](xref:en/developer/design/right-to-left-theme)
+* [Widgets (Designer's Guide)](xref:en/developer/design/widgets)
+* [Responsive Design](xref:en/developer/design/responsive)
+* [Tips and Tricks](xref:en/developer/design/tips-and-tricks)
+* [Contributing a Theme](xref:en/developer/design/contributing-theme)

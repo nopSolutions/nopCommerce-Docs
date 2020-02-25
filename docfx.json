@@ -10,7 +10,8 @@
           "**/obj/**",
           "_site/**",
           "***/readme.md",
-          "***/license.md"
+          "***/license.md",
+          "***/crowdin_nopcommerce.yml"
         ],
         "src": "."
       }
@@ -23,7 +24,8 @@
           "**/*.jpeg",
           "**/*.gif",
           "**/*.svg",
-          "**/*.pdf"
+          "**/*.pdf",
+          "***/web.config"
         ],
         "exclude": [
           "**/obj/**",
@@ -39,11 +41,11 @@
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
-    "globalMetadata": {      
+    "globalMetadata": {
       "_navPath": "/",
       "_navRel": "/",
       "_officialSiteUrl": "https://www.nopcommerce.com/",
-      "_appLogoPath": "/logo.png",
+      "_appLogoPath": "logo.png",
       "_enableSearch": true,
       "_gitContribute": {
         "orgName": "nopSolutions",

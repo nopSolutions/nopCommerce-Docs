@@ -1,8 +1,8 @@
 ---
 title: Newsletter subscribers
-author: AndreiMaz
-uid: user-guide/marketing/content/email-campaigns/newsletter-subscribers
+uid: en/user-guide/marketing/content/email-campaigns/newsletter-subscribers
 ---
+
 # Newsletter subscribers
 
 During customer registration, a customer can select the **Newsletters option** to receive nopCommerce newsletters.
@@ -16,6 +16,7 @@ To Export/Import Newsletter subscribers go to **Promotions  → Newsletter Subsc
 ![newsletter-subscribers](_static/newsletter-subscribers/NewsLetterSubscription.png)
 
 > [!NOTE]
+> 
 > You can click **Import from CSV** to import subscriber lists in CSV format. Ensure that each line of the CSV file is in the following format: email_address,is_active,store_id (store_id parameter is optional). For example, `test@test.com`, true. You can click **Export to CSV**  to export subscriber lists.
 
 ## Searching for the subscribers
@@ -29,4 +30,4 @@ On the **Newsletter subscribers page** you can find certain subscribers using fo
 
 ## See also
 
-- [Campaigns](xref:user-guide/marketing/content/email-campaigns/all-campaigns)
+- [Campaigns](xref:en/user-guide/marketing/content/email-campaigns/all-campaigns)

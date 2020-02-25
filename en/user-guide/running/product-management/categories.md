@@ -1,8 +1,8 @@
 ---
 title: Categories
-author: AndreiMaz
-uid: user-guide/running/product-management/categories
+uid: en/user-guide/running/product-management/categories
 ---
+
 # Categories
 
 Prior to adding new products, a store manager should create categories, to which the products will later be assigned. To manage categories, go to **Catalog → Categories.**
@@ -23,6 +23,7 @@ In the **Category Info panel**, define the following category information:
 - If this category will be a subcategory, select a **Parent category** from the Parent Category drop-down list. The new category will be placed under this category in the public store.
 
 > [!NOTE]
+> 
 > For example, when you add seven products to a category and you set its page size to three. Three products per page will be displayed on this category details page in the public store, and the total amount of pages will be three.
 
 When this option is disabled, customers will not be able to select a page size on the Category Details page and the store owner enters a certain page size. In this case, the Page size field becomes visible in the Administration area.
@@ -50,11 +51,13 @@ In the Category Display panel, define the following category information:
 
 In the **SEO tab**, define the **following details**:
 
-**Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like:
-`<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+**Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like: 
 
-**Meta description** - a description of the category. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows
-`<meta name="description" content="Brief description of the contents of your page">`
+	`<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+
+**Meta description** - a description of the category. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows 
+
+	`<meta name="description" content="Brief description of the contents of your page">`
 
 **Meta title** specifies the title of your Web page. It is a code which is inserted into the header of your web page:
 
@@ -69,7 +72,8 @@ In the **SEO tab**, define the **following details**:
 ### Adding products to certain category
 
 **Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog.** The store owner can add new products to this category. Note that you need to Save the category before you can add products.
-Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
+
+	Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
 
 ![products](_static/categories/products.png)
 
@@ -81,6 +85,7 @@ After the product was added to the category, define the following information in
 - Display order
 
 > [!NOTE]
+> 
 > By clicking **View**, you will be transferred to the Edit Product Details page.
 
 Click **Save**. The new category will be displayed in the public store under its parent category.
@@ -91,5 +96,5 @@ You can **Export the categories settings** to an external file for backup purpos
 
 ## See also
 
-- [Adding products](xref:user-guide/running/product-management/products/adding-products/index)
-- [SEO](xref:user-guide/marketing/content/seo)
+- [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
+- [SEO](xref:en/user-guide/marketing/content/seo)

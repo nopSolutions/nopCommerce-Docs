@@ -1,8 +1,8 @@
 ---
 title: Affiliates
-author: AndreiMaz
-uid: user-guide/marketing/promotional/affiliates
+uid: en/user-guide/marketing/promotional/affiliates
 ---
+
 # Affiliates
 
 **Affiliate Marketing** is an Internet-based marketing practice in which affiliates are rewarded for the website traffic generated (each visitor or customer). It is a web-based pay-for-performance program designed to compensate affiliate partners for driving qualified leads or sales from their websites to a merchant website.
@@ -36,6 +36,7 @@ Define the **affiliate details:**
 - You can **specify Friendly affiliate URL link** for marketing purposes or you leave this field empty, then the default URL will be used. By default In nopCommerce, affiliate partners have URL: `http://www.yourstore.com/?AffiliateID=N` (where N is an affiliate ID).
 
 > [!TIP]
+> 
 > **When you fill all the fields Save the changes you’ll see two more tabs Affiliate customers and Affiliate orders, where you can check how effective this affiliate is.**
 
 The store owner can see a list of all affiliated customers on the affiliate details page, which is the Affiliated Customers in nopCommerce. When an affiliated customer places an order, you can see this order on the affiliate details page under the Affiliate orders tab.

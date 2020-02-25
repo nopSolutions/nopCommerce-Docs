@@ -1,8 +1,8 @@
 ---
 title: Installing on Windows Azure
-author: AndreiMaz
-uid: user-guide/installing/azure
+uid: en/user-guide/installing/azure
 ---
+
 # Installing on Windows Azure
 
 ## There are three ways to deploy nopCommerce on Windows Azure
@@ -13,7 +13,7 @@ uid: user-guide/installing/azure
 
 1. **Web platform installer.** nopCommerce is available in Azure Web Sites application gallery. So go to Azure portal, click "start, new site, from gallery".  Select nopCommerce from the list of available applications. After you enter your database connection information and click OK, nopCommerce will be ready to launch.
 
-Once the site is deployed you have to install nopCommerce. Please read more about it [here](xref:user-guide/installing/installation-guide/index) ("Installation process").
+Once the site is deployed you have to install nopCommerce. Please read more about it [here](xref:en/user-guide/installing/installation-guide/index) ("Installation process").
 
 Azure has support for multiple instances since version 3.70. It's great for any application scalability. Now you should not worry whether your site can handle a large number of visitors. So what exactly has been done to support multiple instances in Azure and web farms?
 
