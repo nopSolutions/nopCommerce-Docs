@@ -7,11 +7,11 @@ uid: user-guide/installing/faq
 
 ## Why choose nopCommerce?
 
-nopCommerce is a Free and open-source eCommerce platform. For more features of nopCommerce, please visit [here](https://www.nopcommerce.com/features).
+[https://www.nopcommerce.com/features](https://www.nopcommerce.com/features)
 
 ## Error Message: "We're sorry, an internal error occurred. Our supporting staff has been notified of this error and will address the issue shortly..."
 
-For versions 4.00 and above version to find out what went wrong you need to turn off the custom errors mode.
+For versions 4.00 and above to find out what went wrong you need to turn off the custom errors mode.
 
 1. Open `appsettings.json` file
 1. Find out the following line "DisplayFullErrorStack": false,
@@ -22,7 +22,7 @@ Also, check Admin → System → Log for any errors.
 
 Also, you can enable "stdoutLogEnabled" (set to "true") in your web.config. Then you'll see a detailed error at the `\logs\` directory
 
-For versions below 4.00 version to find out what went wrong you need to turn off the custom errors mode.
+For versions below 4.00 to find out what went wrong you need to turn off the custom errors mode.
 
 1. Open web.config file
 2. Find out the following line `<customErrors defaultRedirect="errorpage.htm" mode="RemoteOnly">`
