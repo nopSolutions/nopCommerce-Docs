@@ -37,6 +37,6 @@ The type of the discount is Assigned to products. In Applied to products tab you
 
 You can set up requirements to the product quantity in Requirements tab. Add requirements type Customer has all of these products and add T-shirt with a quantity 2.
 
-![buy-1-get-discount](_static/common-discounts/buy _2.png)
+![buy-1-get-discount](_static/common-discounts/buy_2.png)
 
 You can use this scenario to set up other popular discount buy one and get the second for free if you set up a 100% discount.
