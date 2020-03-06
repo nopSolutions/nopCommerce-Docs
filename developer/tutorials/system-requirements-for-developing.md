@@ -1,4 +1,10 @@
-﻿# System requirements for developing #8
+﻿---
+title: System requirements for developing
+author: nopsg
+uid: developer/tutorials/system-requirements-for-developing
+---
+
+# System requirements for developing
 ## Operating System
 * Windows
 
@@ -28,7 +34,9 @@ OS | Version
 ---|---
 Mac OS X | 10.12+
 
-Note: For more information about browser support please visit https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md
+> [!NOTE]
+> 
+> For more information about browser support please visit [Supported OS versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
 
 ## 1. Supported Browsers
 * Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was support in versions prior 4.10)

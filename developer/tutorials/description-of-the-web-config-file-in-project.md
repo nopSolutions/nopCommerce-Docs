@@ -1,3 +1,9 @@
+---
+title: Description of the web.config file in project
+author: nopsg
+uid: developer/tutorials/description-of-the-web-config-file-in-project
+---
+
 # Description of the web.config file in project
 ## What is web.config file.
 web.config file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application login from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
@@ -121,9 +127,10 @@ For demonstration purpose lets say we have to redirect request to our old site t
   </rules>
 </rewrite>
 ```
----
-**_NOTE:_** By using this rule we can redirect all pages of an old domain name to the same page on a new domain name.
 
+> [!NOTE]
+> 
+> By using this rule we can redirect all pages of an old domain name to the same page on a new domain name.
 
 Here we need to replacing [RULE NAME], [OLD URL] and [NEW URL] with the appropriate information.
 * [RULE NAME] can be any that thing like describes what this rule is doing

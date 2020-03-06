@@ -1,4 +1,10 @@
-﻿# Instruction on how to start developing on nopCommerce 4.2
+﻿---
+title: Instruction on how to start developing on nopCommerce
+author: nopsg
+uid: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
+---
+
+# Instruction on how to start developing on nopCommerce 4.2
 ## Things covered in this tutorial.
 1. Tools Required for Development.
 2. Stack of technologies used in nopCommerce.
@@ -20,9 +26,11 @@ As we know nopCommerce is based on ‘Microsoft’s Asp.Net framework’ and Vis
 nopCommerce uses Entity Framework as a ORM Framework. Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. But unfortunately out of the box nopCommerce doesn’t support other database than MSSQL. 
 
 ### 1.4 Internet Information Service (IIS) 7.0 or above
-For hosting nopCommerce app/project we can use IIS. Which is Microsoft technology used to host Microsoft web based applications on windows platform. But since nopCommerce 4.2 is built on top of .Net core technology. Which enables .Net developers to create platform in depend applications. So due to which we can deploy nopCommerce on multi platform like: Windows, Linux, MacOs (To learn more about Support operating system please visit https://docs.microsoft.com/en-gb/dotnet/core/install/dependencies) And can host on various hosting tools like: IIS, Apache, NGINX etc.
+For hosting nopCommerce app/project we can use IIS. Which is Microsoft technology used to host Microsoft web based applications on windows platform. But since nopCommerce 4.2 is built on top of .Net core technology. Which enables .Net developers to create platform in depend applications. So due to which we can deploy nopCommerce on multi platform like: Windows, Linux, MacOs (To learn more about Support operating system please visit [this page](https://docs.microsoft.com/en-gb/dotnet/core/install/dependencies)) And can host on various hosting tools like: IIS, Apache, NGINX etc.
 
-> Note: You can learn more about technology and system requirement from https://docs.nopcommerce.com/user-guide/installing/technology-system-requirements.html
+> [!NOTE]
+> 
+> You can learn more about technology and system requirement from [here](https://docs.nopcommerce.com/user-guide/installing/technology-system-requirements.html)
 
 ## 2. Stack of technologies used in nopCommerce.
 The best part of nopCommerce is that its source code is fully customizable and its pluggable architecture makes it easy to develop custom functionality and follow any business requirements by using plugin system. It follows well-known software architectures, patterns and the best security practices. And above all of that it runs on latest technologies to offer the best experience possible to end-users. So, in order to achieve all of this nopCommerce uses a stack of technologies in its architecture.
@@ -54,22 +62,22 @@ The best part of nopCommerce is that its source code is fully customizable and i
 ## 3. How to download the project and run it on the local machine.
 Before we begin to work with nopCommerce we need to ensure that our local machine is configured and need to ensure that all of our tools required to develop in nopCommerce are installed properly and working correctly. Now, let us go to step by step instructions on how to download and run nopCommerce on our local machine.
 ### Step 1: Download nopCommerce source code.
-To download please visit this site https://www.nopcommerce.com/download-nopcommerce. There you can see two download buttons one with a source code and one without source code like shown in the picture below.
+To download please visit [this site](https://www.nopcommerce.com/download-nopcommerce). There you can see two download buttons one with a source code and one without source code like shown in the picture below.
 
-![image1](_static/Instruction-on-how-to-start-developing-on-nopCommerce42/image1.png)
+![image1](_static/instruction-on-how-to-start-developing-on-nopcommerce/image1.png)
 
 Since we are downloading nopCommerce for development purpose so we need to download the one that says “Package with source code” which contains all source code of nopCommerce. In order to download nopCommerce you need to be logged in or register a new account. Now you can download nopCommerce as a RAR file, and extract it to your desired folder location.
 
 ### Step 2: Open nopCommerce solution in Visual Studio.
 Open the folder, Inside that folder you will see a bunch of files and folders which contains all of the sources code for nopCommerce. 
 
-![image2](_static/Instruction-on-how-to-start-developing-on-nopCommerce42/image2.png)
+![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
 
 In there you will also see a solution file with extension of `.sln`, please double click that solution file to open nopCommerce project in you visual studio.
 ### Step 3: Running nopCommerce project using visual studio.
 nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using visual studio by hitting ctrl+f5 or just f5 to run project in debugging mode, or you can run using physical button with play icon in visual studio. After you run the project for the first time you will see a installation page like below:
 
-![image3](_static/Instruction-on-how-to-start-developing-on-nopCommerce42/image3.png)
+![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/image3.png)
 
 Here you need to fill all required information to complete your installation.
 **Store information**
@@ -90,7 +98,7 @@ After you fill all of this information you need to press “install” button, i
 ### 4. How to configure nopCommerce to run on HTTPS.
 In order to set SSL/HTTPS for your nopCommerce you need to go to the property window of Nop.Web project under Presentation folder since it is the startup project for nopCommerce. To open property window right click on Nop.Web project and at the bottom of the context menu you will see a menu named “Properties”, just click on that menu then a property window will appear. In property window navigate to “Debug” tab.
 
-![image4](_static/Instruction-on-how-to-start-developing-on-nopCommerce42/image4.png)
+![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image4.png)
 
 Check the "Enable SSL", and enter the HTTPS URL besides it. Then save this project.
 

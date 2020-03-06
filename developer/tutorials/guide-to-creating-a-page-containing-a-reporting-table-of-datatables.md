@@ -1,9 +1,15 @@
-﻿# Guide to creating a page containing a reporting table of DataTables
+﻿---
+title: Guide to creating a page containing a reporting table of DataTables
+author: nopsg
+uid: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables
+---
+
+# Guide to creating a page containing a reporting table of DataTables
 In this tutorial we will be learning about how to extend the functionality of the nopCommerce with custom functionality for admin panel, 
 and create a page containing a table with some data as a report. So before starting on this tutorial you need to have some prior 
 knowledge and understanding on some of the topics like.
 
-* nopCommerce architecture. (https://docs.nopcommerce.com/developer/tutorials/source-code-organization.html)
+* [nopCommerce architecture](xref:developer/tutorials/source-code-organization).
 * nopCommerce Plugin.
 * Entity framework.
 * nopCommerce routing.
@@ -13,12 +19,11 @@ If you are not familiar with the above topics, we highly recommend you to learn 
 So in this tutorial we will be creating a plugin with a page containing the table displaying information on the distribution of users by country (based on the billing address). Let’s go through the step by step process to create above mentioned functionality.
 
 ## Step 1: Create a nopCommerce plugin project.
-I am assuming that you already know where and how to create nopcommerce plugin project and configure the project according to nopCommerce standard. If you don’t know then you can visit
-https://docs.nopcommerce.com/developer/plugins/how-to-write-plugin_4.20.html link to know how to create and configure nopcommerce plugin project.
+I am assuming that you already know where and how to create nopcommerce plugin project and configure the project according to nopCommerce standard. If you don’t know then you can visit [this page](xref:developer/plugins/how-to-write-plugin_4.20) link to know how to create and configure nopcommerce plugin project.
 
 If you have followed the above provided link to create and configure your plugin project then you may end up with the folder structure like this.
 
-![image1](_static/Guide-to-creating-a-page-containing-a-reporting-table-of-DataTables/image1.png)
+![image1](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image1.png)
 
 And you also know what kinds of files each of these folder/directory holds. Here “DistOfCustBuCountryPlugin.cs” file is the one that inherent from BasePlugin class. Here is the basic code we want in this file for the sake of this tutorial.
 
@@ -239,8 +244,8 @@ public class RouteProvider : IRouteProvider
     public int Priority => 0;
 }
 ```
-To learn more about nopCommerce routing please visit https://docs.nopcommerce.com/developer/tutorials/register-new-routes.html
+To learn more about nopCommerce routing please visit [this page](xref:developer/tutorials/register-new-routes)
 
 Now just build your project and run. Login as Administrative user and go to LocalPlugins menu under Configuration, there you will see your newly created plugin. Install that plugin. After installation completes you will see a configuration button in your plugin. If you have followed correctly through this tutorial then you will see output something like:
 
-![image2](_static/Guide-to-creating-a-page-containing-a-reporting-table-of-DataTables/image2.png)
+![image2](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image2.png)

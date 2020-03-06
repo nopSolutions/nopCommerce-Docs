@@ -1,4 +1,10 @@
-﻿# A guide to expanding the functionality of the basic functions of nopCommerce through a plugin #1
+﻿---
+title: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
+author: nopsg
+uid: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
+---
+
+# A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
 
 ## Overview
 nopCommerce uses the plugins system to extend the functionality of nopCommerce admin panel and uses widget system to extend the functionality of the website. Plugins and Widgets are a set of independent programs or components which can be added to an existing system to extend some specific functionality and also can be removed from system without effecting the main system during the process. So by using the concept of Plugin and widgets we can add more functionality to our system and we can build them without altering or editing the core source code of nopCommerce solution. Which enables us to upgrade or downgrade our nopCommerce solution to the latest version or older version as we desire without having to rewrite plugin and widgets we already created. 
@@ -11,15 +17,15 @@ I think you are bit more clear about what widgets and plugins are, when they can
 ### Step 1: Create a new project
 Go to the nopcommerce official website and download latest nopCommerce source code. Since right now the latest version is 4.2, this documentation is written according to v4.2. Open your nopCommerce solution in your favorite IDE (Visual Studio is recommended). There you will see a bunch of folders, If you want to know all about the folder structure then you may want to visit nopCommerce documentation. In the roof of the solution you will see a “Plugins” folder, expand that folder and you will see a list of plugin projects shipped with nopCommerce by default.
 
-![image1](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image1.png)
+![image1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image1.png)
 
 In order to create new Widget project, Right click on “Plugins” folder: Add=>New Project. After that add new project window will appear.
 
-![image2](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image2.png)
+![image2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2.png)
 
 From left list of project type select “.NetCore” from that choose “Class Library” project Template. nopCommerce follows some standard naming conversion, which you can get more information from nopCommerce documentation. I have choose “Nop.Plugin.Widget.HelloWorld” as my project name by following the naming conversion of nopCommerce. And the location should be inside “/source/Plugins” directory. Now click "OK". This should create a new project inside Plugin directory. And you may see in your solution like this:
 
-![image3](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image3.png)
+![image3](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image3.png)
 
 ### Step 2: Configure your new project to be used as Widget
 We need to configure a couple of things in our project for it to be used as a Plugin or Widget. 
@@ -71,7 +77,7 @@ This file is required for every Plugin or Widget we create in nopCommerce. This 
 
 This file is used by nopCommerce while listing our Plugin/Widget in the plugin list in admin panel and to identify our plugin uniquely among all installed and uninstalled plugins in the entire application. So in order for nopcommerce to be able to read this file we need to copy this file to its output directory while building the project. To do that right click on Plugin.json file and click property. In Property set value for “Copy to output directory” to “copy if newer” 
 
-![image4](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image4.png)
+![image4](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image4.png)
 
 ### Step 4: Create a class that extends from BasePlugin Class
 Actually we need to have a class that inherent from IPlugin interface so that nopCommerce treats our project as plugin. But nopcommerce already has a class “BasePlugin” that inherits  from IPlugin interface and implements all methods form that interface. So, instead of inheriting from IPlugin interface we can extend from BasePlugin class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override “Install” and “Uninstall” method from BasePlugin class to our class. Finally the class should look like this
@@ -97,11 +103,11 @@ public class HelloWorldPlugin: BasePlugin
 
 Now build your Project and run. Navigate to admin panel and under “Configuration” there is a “Local plugins” menu click that menu. Here you will see all plugins listed that are present in out “Nop.Web/Plugins” directory. In there you will see your newly created plugin. If you do not see then click on “Reload list of plugins” button, after that it will restart your application and lists all plugins available. Now you should see your plugin listed in that list. Click the green install button present in your plugins row.
 
-![image5](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image5.png)
+![image5](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image5.png)
 
 Now after you click the install button, click “Restart your application to apply changes” button. It will restart your application and installs your plugin. After installation completes you will see a “Configure” and “Edit” button and a “Uninstall button” like this.
 
-![image6](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image6.png)
+![image6](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png)
 Now your plugin is installed. But the “Configure” button will not work, since we don’t have any configure page in our plugin.
 ## Create a widget to show some UI in our public Site
 As previously mentioned, Widget is same as plugin but with extra features. So we can use this same plugin project to convert it to widget and render some UI to our public site. So lets see how we can extend this plugin to create a widget.
@@ -161,12 +167,12 @@ public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
 ```
 Now if you build your project and navigate to admin panel and go to Configuration => Widgets. You will see your widget listed.
 
-![image7](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image7.png)
+![image7](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
 
 Here you may notice that this widget do not have “Configure” button. That is because we did not created a configuration view file for this  widget and did not override “GetConfigurationPageUrl” method from BasePlugin class. Since we have already installed our plugin we do not have to install it again, but here you can see that widget is not active right now. We can activate this by clicking the edit button. 
 
-![image8](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image8.png)
+![image8](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
 
 Now after we set widget to active now our widget should work as expected. If we go to our home page before category we must see the “Hello World” message as shown in picture highlighted in yellow.
 
-![image9](_static/A-guide-to-expanding-the-functionality-of-the-basic-functions-of-nopCommerce-through-a-plugin/image9.png)
+![image9](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image9.png)

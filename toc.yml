@@ -323,12 +323,16 @@
     - name: Developer tutorials
       uid: developer/tutorials
       items:
+        - name: System requirements for developing
+          uid: developer/tutorials/system-requirements-for-developing
         - name: Configuring code style
           uid: developer/tutorials/code-style
         - name: Coding Standards
           uid: developer/tutorials/coding-standards
         - name: Source code organization. Architecture of nopCommerce.
           uid: developer/tutorials/source-code-organization
+        - name: Instruction on how to start developing on nopCommerce
+          uid: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
         - name: Updating an existing entity. How to add a new property
           uid: developer/tutorials/update-existing-entity
         - name: The nopCommerce Data Access Layer
@@ -339,6 +343,8 @@
           uid: developer/tutorials/inversion-of-control
         - name: How do I register new routes?
           uid: developer/tutorials/register-new-routes
+        - name: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
+          uid: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
         - name: Data Validation
           uid: developer/tutorials/data-validation
         - name: Scheduled Tasks
@@ -347,12 +353,16 @@
           uid: developer/tutorials/events
         - name: Settings API
           uid: developer/tutorials/settings
+        - name: Description of the web.config file in project
+          uid: developer/tutorials/description-of-the-web-config-file-in-project
         - name: Step by step to deploy on Azure with GIT and automatic builds
           uid: developer/tutorials/azure-deploy
         - name: Docker
           uid: developer/tutorials/docker
         - name: How to deploy nopCommerce to Azure
           uid: developer/tutorials/azure-publish
+        - name: Guide to creating a page containing a reporting table of DataTables
+          uid: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables
     - name: Creating a nopCommerce plugin
       uid: developer/plugins/index
       items:
