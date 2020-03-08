@@ -55,11 +55,11 @@ In the **SEO tab**, define the **following details**:
 
 **Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag will look like: 
 
-	`<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+    `<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
 
 **Meta description** - a description of the category. The meta description tag is a brief and concise summary of your page content. The meta description tag looks, as follows 
 
-	`<meta name="description" content="Brief description of the contents of your page">`
+    `<meta name="description" content="Brief description of the contents of your page">`
 
 **Meta title** specifies the title of your Web page. It is a code which is inserted into the header of your web page:
 
@@ -75,7 +75,7 @@ In the **SEO tab**, define the **following details**:
 
 **Products tab** contains a list of products related to the selected category, these products **can be filtered by category in the Catalog.** The store owner can add new products to this category. Note that you need to Save the category before you can add products.
 
-	Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
+    Click **Add a new product** to find a product you want to include in this category. You can search by the product Name, by a Store, or a Product Type.
 
 ![products](_static/categories/products.png)
 
