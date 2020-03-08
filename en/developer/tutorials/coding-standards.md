@@ -118,7 +118,7 @@ The style rules in this section concern modifier preferences, including requirin
 
 - Prefer the specified ordering:
 
-	*`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
+    *`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
 
   ```csharp
   //Right

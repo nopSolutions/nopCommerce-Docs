@@ -94,9 +94,9 @@ Specify Custom SQL Server collation: This is an advanced setting and should be l
 > 
 > 1. The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
 > 
-> 1. Ensure that your application pool is set to Integrated mode
+> 2. Ensure that your application pool is set to Integrated mode
 > 
-> 1. If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` (`Settings.txt` for nopCommerce 3.90 or below version) file from App_Data directory. When using IIS you might want to read this article.
+> 3. If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` (`Settings.txt` for nopCommerce 3.90 or below version) file from App_Data directory. When using IIS you might want to read this article.
 
 ## See also
 

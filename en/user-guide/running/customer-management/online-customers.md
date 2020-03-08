@@ -19,6 +19,6 @@ The Online Customers window includes the following columns:
 - **Customer IP Address** - Current IP address of customer
 - **Customer Location** - IP address wise location of customer
 - **Last Activity** - date and time the online customer last logged in
-- **Last Visited Page** - you can enable or disable this feature in customer settings 
+- **Last Visited Page** - you can enable or disable this feature in customer settings
 
-	This product includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
+    This product includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)

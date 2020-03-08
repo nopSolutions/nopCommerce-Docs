@@ -30,7 +30,7 @@ From left list of project type select “.NetCore” from that choose “Class L
 ![image3](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image3.png)
 
 ### Step 2: Configure your new project to be used as Widget
-We need to configure a couple of things in our project for it to be used as a Plugin or Widget. 
+We need to configure a couple of things in our project for it to be used as a Plugin or Widget.
 
 After you crate your project successfully open its .csproj file, for that right click on your project and click {Yout_Project_Name.csproj} menu from context menu and replace its content with the following code.
 ```xml
@@ -59,7 +59,7 @@ After you crate your project successfully open its .csproj file, for that right 
     </Target>
 </Project>
 ```
-Here replace {Plugin_Output_Directory} by your project name, in my case “Widget.HelloWorld”. 
+Here replace {Plugin_Output_Directory} by your project name, in my case “Widget.HelloWorld”.
 
 What this will do is it copies all dll files related to this project into the `Nop.Web/Plugin/{Plugin_Output_Directory}`, because Plugin directory inside Nop.Web is the location where nopCommerce search from plugins and widgets to display in Plugin or widget list in admin panel.
 

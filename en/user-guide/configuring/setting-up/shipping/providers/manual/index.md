@@ -74,11 +74,10 @@ For example, if you have the following shipping conditions:
   * Additional fixed cost: **15**
   * Lower weight limit: **2**
   * Rate per weight unit: **3**
-  
-	> [!NOTE] 
-	> 
-	> it will charge proportionally for additional weight; 
-	> example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
+
+    > [!NOTE] 
+    > 
+    > it will charge proportionally for additional weight; example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
 
 To add a new shipping rule, click **Add record**. The Add new record window is displayed:
 

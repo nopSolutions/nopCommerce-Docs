@@ -51,8 +51,7 @@ In the **Add a new value** window a user has an opportunity to:
 
 > [!TIP]
 > 
-> **It's not necessary to create attributes values** when adding product attribute, you can create them later when will apply certain product attribute to the product. 
-> Once the attributes and values are set, they can be grouped and managed on the Product Attributes tab.
+> **It's not necessary to create attributes values** when adding product attribute, you can create them later when will apply certain product attribute to the product. Once the attributes and values are set, they can be grouped and managed on the Product Attributes tab.
 
 > [!NOTE]
 > 

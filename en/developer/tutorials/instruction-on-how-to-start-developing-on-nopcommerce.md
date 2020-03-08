@@ -62,13 +62,13 @@ The best part of nopCommerce is that its source code is fully customizable and i
 * Data Layer
     * Microsoft SQL Server
 
-        SQL Server is Microsoft's full-featured relational database management system (RDBMS). 
+        SQL Server is Microsoft's full-featured relational database management system (RDBMS).
     * Redis (cache)
 
         Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cash dataset. Which boosts the speed and performance of application.
     * Microsoft Azure(Optonal)
 
-        Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more. 
+        Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more.
 
 ## 3. How to download the project and run it on the local machine.
 Before we begin to work with nopCommerce we need to ensure that our local machine is configured and need to ensure that all of our tools required to develop in nopCommerce are installed properly and working correctly. Now, let us go to step by step instructions on how to download and run nopCommerce on our local machine.
@@ -110,7 +110,7 @@ You may choose this option to create a database on your file system which will n
 
 You may choose this option to create database in your SQL server installed in your system and get access to it from SSMS (SQL Management Studio).
 
-It is your decision which one you want to use but for the sake of this tutorial we will be using the second option because it is the recommended option by nopCommerce. After choosing a second option you will see the checkbox asking if you want to create a database if not exist, please check the checkbox. 
+It is your decision which one you want to use but for the sake of this tutorial we will be using the second option because it is the recommended option by nopCommerce. After choosing a second option you will see the checkbox asking if you want to create a database if not exist, please check the checkbox.
 
 Moving further you need to set up your connection string. For that, you have two options. One is “Enter SQL Connection Value”. If you choose this option then a form with “SQL Server name” and “Database name” will appear. In SQL Server name you need to provide your SQL server’s name and in Database name you need to provide a database name you want to create or if you already have one then it will not create but use the existing one. However, you also can choose the option “Enter raw connection string” then you need to write whole connection string by yourself. After that you need to provide your SQL server’s credentials for authentication.
 
