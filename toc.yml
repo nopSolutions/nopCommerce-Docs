@@ -353,6 +353,8 @@
           uid: developer/tutorials/docker
         - name: How to deploy nopCommerce to Azure
           uid: developer/tutorials/azure-publish
+        - name: Adding security headers additional directives CSP
+          uid: developer/tutorials/csp-headers
     - name: Creating a nopCommerce plugin
       uid: developer/plugins/index
       items:
