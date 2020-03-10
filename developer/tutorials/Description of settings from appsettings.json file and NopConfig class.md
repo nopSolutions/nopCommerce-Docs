@@ -57,9 +57,10 @@ nopCommerce supports `Redis` out of the box. In order to enable the `Redis` in o
 * **UseRedisToStorePluginsInfo:** This setting expects a boolean value. nopCommerce uses plugin.json file to store plugin info. So, This setting indicating whether we should use Redis server to store the plugins info (instead of default plugin.json file).
 
 #### User Agent
+In computing, a user agent is software (a software agent) that is acting on behalf of a user, such as a web browser that "retrieves, renders and facilitates end user interaction with Web content". For more information please visit [UserAgent](xref:https://en.wikipedia.org/wiki/User_agent)
 
-* **UserAgentStringsPath:**
-* **CrawlerOnlyUserAgentStringsPath:**
+* **UserAgentStringsPath:** This setting stores the loction/path for `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
+* **CrawlerOnlyUserAgentStringsPath:** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly"
 
 #### Installation
 
