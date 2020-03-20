@@ -170,6 +170,12 @@ header {
 }
 
 /* SIDEBAR */
+.toc ul.level1 {
+  margin: 0 0 0 3px;
+}
+.toc ul {
+  margin: 0 0 0 10px;
+}
 
 .toc .level1 > li {
   font-weight: 400;
