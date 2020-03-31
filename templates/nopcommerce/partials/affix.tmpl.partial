@@ -11,9 +11,11 @@
         </li>
         {{/docurl}}
         {{#_nav}}
+        {{#improveTranslationEnabled}}
         <li>
           <a href="https://crowdin.com/project/nopcommerce-documentation" class="contribution-link">Improve translation</a>
         </li>
+        {{/improveTranslationEnabled}}
         {{/_nav}}
         {{#sourceurl}}
         <li>

@@ -44,6 +44,7 @@
     "globalMetadata": {
       "_navPath": "/",
       "_navRel": "/",
+      "improveTranslationEnabled": false,
       "_officialSiteUrl": "https://www.nopcommerce.com/",
       "_appLogoPath": "logo.png",
       "_enableSearch": true,
