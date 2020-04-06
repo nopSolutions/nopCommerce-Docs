@@ -187,11 +187,11 @@ WantedBy=multi-user.target
 
 Start the service
 
-`sudo systemctl start nopCommerce420p.service`
+`sudo systemctl start nopCommerce420.service`
 
 Check the nopCommerce service status
 
-`sudo systemctl status nopCommerce420p.service`
+`sudo systemctl status nopCommerce420.service`
 
 ![nopCommerce installation](_static/linux/status_nopCommerce.jpg)
 
