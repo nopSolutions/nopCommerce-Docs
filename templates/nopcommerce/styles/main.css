@@ -1,16 +1,16 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
+  font: 400 16px 'Mukta', open sans,Myriad Pro Regular,sans-serif;
   background-color: #fff;
-  font: 400 14px open sans,Myriad Pro Regular,sans-serif;
-  color: #777;
+  color: #363e4e;
   line-height: 2em;
 }
 
 /* HEADINGS */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: roboto slab;
+  font-family: 'Arvo';
   font-weight: 400;
   color: #333;
   padding: 15px 0
@@ -26,25 +26,12 @@ h3 {
 
 /* NAVBAR */
 .navbar-default {
-  background-color: #fff;
-  border-color: #e7e7e7;
+  background-color: transparent;
+  border: none;
 }
 
 .navbar-brand>img {
   color: #fff;
-}
-
-.navbar {
-  border: none;
-  /* Both navbars use box-shadow */
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(100, 100, 100, 0.5);
-  -moz-box-shadow: 0px 1px 3px 0px rgba(100, 100, 100, 0.5);
-  box-shadow: 0px 1px 3px 0px rgba(100, 100, 100, 0.5);
-}
-
-.subnav {
-  border-top: 1px solid #ddd;
-  background-color: #fff;
 }
 
 .navbar-inverse {
@@ -76,7 +63,6 @@ h3 {
 }
 
 .navbar-form .form-control {
-  border: none;
   border-radius: 20px;
 }
 
@@ -87,9 +73,7 @@ a:active {
 }
 
 a {
-  font-weight: 400;
-  color: #0856a5;
-  color: #4ab2f1;
+  color: #25c8e0;
   cursor: pointer;
 }
 
@@ -98,10 +82,18 @@ a {
       border: none
   }
 
+  button:hover, button:focus, a:hover, a:focus {
+    color: #25c8e0;
+  }
+
 /* HEADER */
 
 header {
-  background: white
+  background-color: #f3f3f3;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+  
 }
 
 .header {
@@ -175,14 +167,27 @@ header {
 }
 .toc ul {
   margin: 0 0 0 10px;
+  font-size: 16px;
 }
 
 .toc .level1 > li {
-  font-weight: 400;
+  font-size: 18px;
+}
+
+.toc .level2 {
+  font-size: 16px;
 }
 
 .toc .nav > li > a {
-  color: #34393e;
+  color: #363e4e;
+}
+
+.toc .nav > li.active > a {
+  color: #25c8e0;
+}
+
+.toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus {
+  color: #25c8e0;
 }
 
 .sidefilter {
@@ -217,18 +222,49 @@ header {
   top: 240px;
 }
 
+.sideaffix {
+  font-size: 14px;
+  top: 120px;
+}
+
+.affix h5 {
+  font-weight: bold;
+  font-family: 'Mukta';
+  text-transform: uppercase;
+}
+
+.affix > ul > li > a:before {
+  top: 5px;
+}
+
+.affix > ul.level1 {
+  line-height: 1.5em;
+}
+
+.sideaffix > div.contribution > ul > li > a.contribution-link {
+  font-size: 16px;
+}
+
 /* CODE HIGHLIGHT */
 pre {
   border-radius: 0px;
 }
 
 .breadcrumb {
-  padding: 13px 0
+  padding: 13px 0;
+  text-align: center;
 }
   .breadcrumb > li + li:before {
     content: "\003E";
-    color:  #41afef;
+    color:  #363d4e;
     margin: 0 5px;
+  }
+
+  .breadcrumb li * {
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 14px;
+      line-height: 32px;
   }
 
   .breadcrumb span {
@@ -236,14 +272,14 @@ pre {
       margin: 0 5px;
       font-size: 11px;
       line-height: 32px;
-      color: #41afef;
+      color: #25c8e0;
       text-transform: uppercase;
   }
 
   .breadcrumb a {
-      color: #41afef;
-      text-transform: uppercase;
-      font-size: 11px;
+      color: #363d4e;
+      font-size: 16px;
+
   }
 
 /* ARTICLE */
@@ -285,7 +321,7 @@ pre {
 }
 
   .contributorsInfo * {
-    font-family: roboto slab;
+    font-family: 'Arvo';
   }
 
   .contributorsInfo ul, .contributorsInfo ol {
@@ -293,9 +329,9 @@ pre {
     padding: 0;
   }
 
-  .contributorsInfo time {
+  /* .contributorsInfo time {
     font-weight: bold;
-  }
+  } */
 
   .contribution {
     display: flex;
@@ -434,4 +470,31 @@ pre {
 
 .select-css:disabled:hover, .select-css[aria-disabled=true] {
 	border-color: #aaa;
+}
+
+.toc-filter > .clear-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.form-control {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+  color: #363e4e!important;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0!important;
+  width: 100%;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #25c8e0;
+  box-shadow: none;
 }

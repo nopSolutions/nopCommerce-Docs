@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Arvo';
+  src: url('Arvo.woff2') format('woff2'), url('Arvo.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* mukta-200 - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: local('Mukta ExtraLight'), local('Mukta-ExtraLight'), url('mukta-v7-latin-200.woff2') format('woff2'), url('mukta-v7-latin-200.woff') format('woff');
+}
+
+/* mukta-300 - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local('Mukta Light'), local('Mukta-Light'), url('mukta-v7-latin-300.woff2') format('woff2'), url('mukta-v7-latin-300.woff') format('woff');
+}
+
+/* mukta-regular - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Mukta Regular'), local('Mukta-Regular'), url('mukta-v7-latin-regular.woff2') format('woff2'), url('mukta-v7-latin-regular.woff') format('woff');
+}
+
+/* mukta-500 - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local('Mukta Medium'), local('Mukta-Medium'), url('mukta-v7-latin-500.woff2') format('woff2'), url('mukta-v7-latin-500.woff') format('woff');
+}
+
+/* mukta-600 - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local('Mukta SemiBold'), local('Mukta-SemiBold'), url('mukta-v7-latin-600.woff2') format('woff2'), url('mukta-v7-latin-600.woff') format('woff');
+}
+
+/* mukta-700 - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local('Mukta Bold'), local('Mukta-Bold'), url('mukta-v7-latin-700.woff2') format('woff2'), url('mukta-v7-latin-700.woff') format('woff');
+}
+
+/* mukta-800 - latin */
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: local('Mukta ExtraBold'), local('Mukta-ExtraBold'), url('mukta-v7-latin-800.woff2') format('woff2'), url('mukta-v7-latin-800.woff') format('woff');
+}
