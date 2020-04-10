@@ -170,16 +170,26 @@ header {
   font-size: 16px;
 }
 
+.toc li {
+  margin: 0.5em 0;
+}
+
 .toc .level1 > li {
   font-size: 18px;
+  margin-top: 0;
 }
 
 .toc .level2 {
   font-size: 16px;
 }
 
-.toc .nav > li > a {
+.toc .nav > li > a,  .toc .nav > li > span{
   color: #363e4e;
+  line-height: 1.5em;
+}
+
+.toc .nav > li > a:hover, .toc .nav > li > a:focus {
+  color: #25c8e0;
 }
 
 .toc .nav > li.active > a {
