@@ -61,7 +61,7 @@ After you crate your project successfully open its .csproj file, for that right 
     <!-- This target execute after "Build" target -->
     <Target Name="NopTarget" AfterTargets="Build">
         <!-- Delete unnecessary libraries from plugins path -->
-        <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
+        <MSBuild Projects="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
     </Target>
 </Project>
 ```
