@@ -61,6 +61,9 @@
         -
           name: Top menu & footer
           href: 
+        -
+          name: Media settings
+          href: 
     -
       name: Configure payments
       href: 
@@ -70,13 +73,13 @@
           href: 
           items:
             -
-              name: Check / Money Order
+              name: Check/money order
               href: 
             -
-              name: Credit Card (storing into database)
+              name: Credit card (manual processing)
               href: 
             -
-              name: Credit Card (paying with Square)
+              name: Credit card (paying with Square)
               href: 
             -
               name: PayPal Standard
@@ -176,9 +179,6 @@
           name: Configure analytics
           href:
         -
-          name: Access control list
-          href: 
-        -
           name: Plugins in nopCommerce
           href: 
         -
@@ -221,7 +221,7 @@
               name: Rental products
               href:
             -
-              name: Import / export products
+              name: Import/export products
               href: 
             -
               name: Product tags
@@ -317,9 +317,6 @@
       name: Content management
       href:
       items:
-        -
-          name: Email campaigns
-          href:
         -
           name: Blog
           href: 
