@@ -14,23 +14,29 @@ To do the same, you can use following sample code which you need to add in your 
 You can also put any security (ACL) logic to this method. For example, validate whether current customer has "Manage plugins" permission.
 
 ```csharp
-public void ManageSiteMap(SiteMapNode rootNode)
-{
-    var menuItem = new SiteMapNode()
+ public class CustomPlugin : BasePlugin, IAdminMenuPlugin
+ {
+
+    public void ManageSiteMap(SiteMapNode rootNode)
     {
-        SystemName = "YourCustomSystemName",
-        Title = "Plugin Title",
-        ControllerName = "ControllerName",
-        ActionName = "List",
-        Visible = true,
-        RouteValues = new RouteValueDictionary() { { "area", null } },
-    };
-    var pluginNode = rootNode.ChildNodes.FirstOrDefault(x => x.SystemName == "Third party plugins");
-    if(pluginNode != null)
-        pluginNode.ChildNodes.Add(menuItem);
-    else
-        rootNode.ChildNodes.Add(menuItem);
+        var menuItem = new SiteMapNode()
+        {
+            SystemName = "YourCustomSystemName",
+            Title = "Plugin Title",
+            ControllerName = "ControllerName",
+            ActionName = "List",
+            Visible = true,
+            RouteValues = new RouteValueDictionary() { { "area", null } },
+        };
+        var pluginNode = rootNode.ChildNodes.FirstOrDefault(x => x.SystemName == "Third party plugins");
+        if(pluginNode != null)
+            pluginNode.ChildNodes.Add(menuItem);
+        else
+            rootNode.ChildNodes.Add(menuItem);
+    }
+
 }
+
 ```
 
 In version 2.00-3.50 you should do it the following way:
