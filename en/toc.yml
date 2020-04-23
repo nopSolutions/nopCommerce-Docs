@@ -184,6 +184,9 @@
         -
           name: Multi-store
           href:
+        -
+          name: All settings
+          href:
 -
   name: Running your store
   href:
