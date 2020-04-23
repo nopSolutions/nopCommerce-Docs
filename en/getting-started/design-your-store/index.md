@@ -1,6 +1,6 @@
 ---
 title: Design
-uid: en/user-guide/configuring/design/index
+uid: en/getting-started/design-your-store/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---
