@@ -1,6 +1,6 @@
 ---
 title: Google Analytics Plugin
-uid: en/user-guide/configuring/system/widgets/google-analytics
+uid: en/getting-started/advanced-configuration/configure-analytics
 author: git.AndreiMaz
 contributors: git.exileDev
 ---
@@ -13,17 +13,17 @@ To configure the Google Analytics plugin:
 
 Go to **Configuration → Widgets**. The Widgets window is displayed:
 
-![Widgets](_static/google-analytics/google-analytics-widgets.png)
+![Widgets](_static/configure-analytics/google-analytics-widgets.png)
 
 Click **Edit** beside the **Google Analytics**. The window is expanded, as follows:
 
-![Google analytics](_static/google-analytics/google-analytics-widgets-edit.png)
+![Google analytics](_static/configure-analytics/google-analytics-widgets-edit.png)
 
 Select the **Is active** checkbox, to enable **Google Analytics plugin**.
 
 Click **Configure**. The Configure – Google Analytics window is displayed, as follows:
 
-![Google analytics - Configure](_static/google-analytics/google-analytics-widgets-configure.png)
+![Google analytics - Configure](_static/configure-analytics/google-analytics-widgets-configure.png)
 
 Perform the following steps to enable Google Analytics integration:
 

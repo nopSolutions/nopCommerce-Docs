@@ -158,41 +158,41 @@
       href: 
     -
       name: Advanced configuration
-      href: 
+      href: /en/getting-started/advanced-configuration/index.md
       items:
         -
           name: How to install and configure SSL certification
-          href: 
+          href: /en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification.md
         -
           name: Your store information
-          href: 
+          href: /en/getting-started/advanced-configuration/your-store-information.md
         -
           name: GDPR settings
-          href: 
+          href: /en/getting-started/advanced-configuration/gdpr-settings.md
         -
           name: Localization
-          href: 
+          href: /en/getting-started/advanced-configuration/localization.md
         -
           name: External authentication methods
-          href: 
+          href: /en/getting-started/advanced-configuration/external-authentication-methods.md
         -
           name: Configure analytics
-          href:
+          href: /en/getting-started/advanced-configuration/configure-analytics.md
         -
           name: Plugins in nopCommerce
-          href: 
+          href: /en/getting-started/advanced-configuration/plugins-in-nopcommerce.md
         -
           name: Multi-store
-          href:
+          href: /en/getting-started/advanced-configuration/multi-store.md
         -
           name: Security settings
-          href:
+          href: /en/getting-started/advanced-configuration/security-settings.md
         -
           name: PDF settings
-          href:
+          href: /en/getting-started/advanced-configuration/pdf-settings.md
         -
           name: All settings
-          href:
+          href: /en/getting-started/advanced-configuration/all-settings.md
 -
   name: Running your store
   href:

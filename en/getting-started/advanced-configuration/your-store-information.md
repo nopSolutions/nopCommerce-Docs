@@ -1,6 +1,6 @@
 ---
 title: Setting up Main Store
-uid: en/user-guide/configuring/setting-up/main-store/index
+uid: en/getting-started/advanced-configuration/your-store-information
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---

@@ -1,6 +1,6 @@
 ---
 title: Languages
-uid: en/user-guide/configuring/setting-up/main-store/languages
+uid: en/getting-started/advanced-configuration/localization
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---
