@@ -70,33 +70,33 @@
       items:
         -
           name: Payment methods
-          href: 
+          href: en/getting-started/configure-payments/payment-methods/index.md
           items:
             -
               name: Check/money order
-              href: 
+              href: en/getting-started/configure-payments/payment-methods/check-money-order.md
             -
               name: Credit card (manual processing)
-              href: 
+              href: en/getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
             -
               name: Credit card (paying with Square)
-              href: 
+              href: en/getting-started/configure-payments/payment-methods/credit-card-paying-with-square
             -
               name: PayPal Standard
-              href: 
+              href: en/getting-started/configure-payments/payment-methods/paypal-standard.md
             -
               name: PayPal Smart Payment Buttons
-              href: 
+              href: en/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
         -
           name: Advanced configuration
-          href: 
+          href: en/getting-started/configure-payments/advanced-configuration/index.md
           items:
             -
               name: Payment method restrictions
-              href: 
+              href: en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions.md
             -
               name: Currencies
-              href: 
+              href: en/getting-started/configure-payments/advanced-configuration/currencies.md
     -
       name: Configure shipping
       href: 

@@ -1,6 +1,6 @@
 ---
 title: Manual Processing (Credit Card)
-uid: en/user-guide/configuring/setting-up/payments/methods/manual-processing
+uid: en/getting-started/configure-payments/payment-methods/credit-card-manual-processing
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
@@ -13,7 +13,7 @@ This is a special gateway that allows all orders to be successfully entered on t
 * Process them manually via another back-office system
 * Test the site end-to-end before going live
 
-    ![manualprocessing](_static/manual-processing/manualprocessing.png)
+    ![manualprocessing](_static/credit-card-manual-processing/manualprocessing.png)
 * Define how the payment will be displayed in the after **checkout mark of payment** as field
 * Define **the additional fee** for using this method
 * Define whether **to apply a percentage additional fee** to the order. If not enabled, a fixed value is used.
