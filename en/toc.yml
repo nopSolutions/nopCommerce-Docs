@@ -185,6 +185,12 @@
           name: Multi-store
           href:
         -
+          name: Security settings
+          href:
+        -
+          name: PDF settings
+          href:
+        -
           name: All settings
           href:
 -
