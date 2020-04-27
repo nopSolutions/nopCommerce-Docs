@@ -1,6 +1,6 @@
 ---
 title: Installing on Windows
-uid: en/user-guide/installing/installation-guide/windows
+uid: en/installing-and-upgrading/installing-nopcommerce/installing-on-windows
 author: git.mariannk
 ---
 

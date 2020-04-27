@@ -1,6 +1,6 @@
 ---
-title: Installing nopCommerce
-uid: en/user-guide/installing/index
+title: Installing and upgrading
+uid: en/installing-and-upgrading/index
 author: git.AndreiMaz
 contributors: git.skoshelev, git.exileDev, git.IvanIvanIvanov
 ---

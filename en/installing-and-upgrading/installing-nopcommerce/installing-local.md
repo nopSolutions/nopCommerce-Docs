@@ -1,6 +1,6 @@
 ---
-title: Installing Internet Information Services (IIS)
-uid: en/user-guide/installing/installation-guide/installing-IIS
+title: Installing local
+uid: en/installing-and-upgrading/installing-nopcommerce/installing-local
 author: git.AndreiMaz
 contributors: git.IvanIvanIvanov
 ---

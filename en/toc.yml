@@ -9,153 +9,153 @@
   items:
     -
       name: Technology & system requirements
-      href: user-guide/installing/technology-system-requirements.md
+      href: installing-and-upgrading/technology-and-system-requirements.md
     -
-      name: Installing nopCommerce
-      href: user-guide/installing/installation-guide/index.md
-      items:
+      name: Installing and upgrading
+      href: installing-and-upgrading/index.md
+      items: 
         -
           name: Choose a hosting company
-          href: user-guide/installing/installation-guide/hosting-providers.md
+          href: installing-and-upgrading/installing-nopcommerce/choose-a-hosting-company.md
         -
           name: Installing local (for developers only)
-          href: user-guide/installing/installation-guide/installing-IIS.md
+          href: installing-and-upgrading/installing-nopcommerce/installing-local.md
         -
           name: Installing on Windows
-          href: user-guide/installing/installation-guide/windows.md
+          href: installing-and-upgrading/installing-nopcommerce/installing-on-windows
         -
           name: Installing on Windows Azure
-          href: user-guide/installing/azure.md
+          href: installing-and-upgrading/installing-nopcommerce/installing-on-windows-azure.md
         -
           name: Installing on Linux
-          href: user-guide/installing/linux.md
+          href: installing-and-upgrading/installing-nopcommerce/installing-on-linux.md
     - 
       name: Upgrading nopCommerce
-      href: user-guide/installing/upgrading.md
+      href: installing-and-upgrading/upgrading-nopcommerce.md
 - 
   name: Getting started
-  href: en/getting-started/index.md
+  href: getting-started/index.md
   items:
     -
       name: Admin area overview
-      href: en/getting-started/admin-area-overview.md
+      href: getting-started/admin-area-overview.md
     -
       name: Create a catalog and add products
-      href: en/getting-started/create-a-catalog-and-add-products.md
+      href: getting-started/create-a-catalog-and-add-products.md
     -
       name: Design your store
-      href: en/getting-started/design-your-store/index.md
+      href: getting-started/design-your-store/index.md
       items: 
         -
           name: Choose and install a theme 
-          href: en/getting-started/design-your-store/choose-and-install-a-theme.md
+          href: getting-started/design-your-store/choose-and-install-a-theme.md
         -
           name: Uploading your logo
-          href: en/getting-started/design-your-store/uploading-your-logo.md
+          href: getting-started/design-your-store/uploading-your-logo.md
         -
           name: Adding a favicon
-          href: en/getting-started/design-your-store/adding-a-favicon.md
+          href: getting-started/design-your-store/adding-a-favicon.md
         -
           name: Nivo slider
-          href: en/getting-started/design-your-store/nivo-slider.md
+          href: getting-started/design-your-store/nivo-slider.md
         -
           name: Top menu & footer
-          href: en/getting-started/design-your-store/top-menu-and-footer.md
+          href: getting-started/design-your-store/top-menu-and-footer.md
         -
           name: Media settings
-          href: en/getting-started/design-your-store/media-settings.md
+          href: getting-started/design-your-store/media-settings.md
     -
       name: Configure payments
       href: 
       items:
         -
           name: Payment methods
-          href: en/getting-started/configure-payments/payment-methods/index.md
+          href: getting-started/configure-payments/payment-methods/index.md
           items:
             -
               name: Check/money order
-              href: en/getting-started/configure-payments/payment-methods/check-money-order.md
+              href: getting-started/configure-payments/payment-methods/check-money-order.md
             -
               name: Credit card (manual processing)
-              href: en/getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
+              href: getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
             -
               name: Credit card (paying with Square)
-              href: en/getting-started/configure-payments/payment-methods/credit-card-paying-with-square
+              href: getting-started/configure-payments/payment-methods/credit-card-paying-with-square
             -
               name: PayPal Standard
-              href: en/getting-started/configure-payments/payment-methods/paypal-standard.md
+              href: getting-started/configure-payments/payment-methods/paypal-standard.md
             -
               name: PayPal Smart Payment Buttons
-              href: en/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
+              href: getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
         -
           name: Advanced configuration
-          href: en/getting-started/configure-payments/advanced-configuration/index.md
+          href: getting-started/configure-payments/advanced-configuration/index.md
           items:
             -
               name: Payment method restrictions
-              href: en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions.md
+              href: getting-started/configure-payments/advanced-configuration/payment-method-restrictions.md
             -
               name: Currencies
-              href: en/getting-started/configure-payments/advanced-configuration/currencies.md
+              href: getting-started/configure-payments/advanced-configuration/currencies.md
     -
       name: Configure shipping
-      href: en/getting-started/configure-shipping/index.md
+      href: getting-started/configure-shipping/index.md
       items:
         -
           name: Shipping settings
-          href: en/getting-started/configure-shipping/shipping-settings.md
+          href: getting-started/configure-shipping/shipping-settings.md
         -
           name: Shipping providers
-          href: en/getting-started/configure-shipping/shipping-providers/index.md
+          href: getting-started/configure-shipping/shipping-providers/index.md
           items:
             -
               name: Manual (Fixed or by weight and by total)
-              href: en/getting-started/configure-shipping/shipping-providers/manual.md
+              href: getting-started/configure-shipping/shipping-providers/manual.md
             -
               name: ShipStation
-              href: en/getting-started/configure-shipping/shipping-providers/shipstation.md
+              href: getting-started/configure-shipping/shipping-providers/shipstation.md
             -
               name: UPS (United Parcel Service)
-              href: en/getting-started/configure-shipping/shipping-providers/ups.md
+              href: getting-started/configure-shipping/shipping-providers/ups.md
         -
           name: Advanced configuration
-          href: en/getting-started/configure-shipping/advanced-configuration/index.md
+          href: getting-started/configure-shipping/advanced-configuration/index.md
           items:
             -
               name: Countries, states
-              href: en/getting-started/configure-shipping/advanced-configuration/countries-states.md
+              href: getting-started/configure-shipping/advanced-configuration/countries-states.md
             -
               name: Warehouses
-              href: en/getting-started/configure-shipping/advanced-configuration/warehouses.md
+              href: getting-started/configure-shipping/advanced-configuration/warehouses.md
             -
               name: Dates and ranges
-              href: en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges.md
+              href: getting-started/configure-shipping/advanced-configuration/dates-and-ranges.md
             -
               name: Measures
-              href: en/getting-started/configure-shipping/advanced-configuration/measures.md
+              href: getting-started/configure-shipping/advanced-configuration/measures.md
             -
               name: Pickup points
-              href: en/getting-started/configure-shipping/advanced-configuration/pickup-points.md
+              href: getting-started/configure-shipping/advanced-configuration/pickup-points.md
     -
       name: Configure taxes
-      href: en/getting-started/configure-taxes/index.md
+      href: getting-started/configure-taxes/index.md
       items:
         -
           name: Tax settings
-          href: en/getting-started/configure-taxes/tax-settings.md
+          href: getting-started/configure-taxes/tax-settings.md
         -
           name: Tax providers
-          href: en/getting-started/configure-taxes/tax-providers/index.md
+          href: getting-started/configure-taxes/tax-providers/index.md
           items:
             -
               name: Manual (fixed or by country/state/zip)
-              href: en/getting-started/configure-taxes/tax-providers/manual.md
+              href: getting-started/configure-taxes/tax-providers/manual.md
             -
               name: Avalara
-              href: en/getting-started/configure-taxes/tax-providers/avalara.md
+              href: getting-started/configure-taxes/tax-providers/avalara.md
     -
       name: Email accounts
-      href: en/getting-started/email-accounts.md
+      href: getting-started/email-accounts.md
     -
       name: Advanced configuration
       href: /en/getting-started/advanced-configuration/index.md
