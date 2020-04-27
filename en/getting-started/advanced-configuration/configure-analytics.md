@@ -1,5 +1,5 @@
 ---
-title: Google Analytics Plugin
+title: Configure analytics
 uid: en/getting-started/advanced-configuration/configure-analytics
 author: git.AndreiMaz
 contributors: git.exileDev

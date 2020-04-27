@@ -1,6 +1,6 @@
 ---
-title: Tax Settings
-uid: en/user-guide/configuring/setting-up/taxes/tax-settings
+title: Tax settings
+uid: en/getting-started/configure-taxes/tax-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
@@ -11,7 +11,7 @@ This section describes your store tax settings, for example, defining prices inc
 
 To manage your tax settings, go to **Configuration → Settings → Tax Settings**.
 
-![Tax Settings](_static/index/tax-settings.png)
+![Tax Settings](_static/tax-settings/tax-settings.png)
 
 Define the following **tax settings**:
 

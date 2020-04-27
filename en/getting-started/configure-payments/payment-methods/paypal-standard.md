@@ -1,5 +1,5 @@
 ---
-title: Manual Processing (Credit Card)
+title: PayPal Standard
 uid: en/getting-started/configure-payments/payment-methods/paypal-standard
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp

@@ -1,6 +1,6 @@
 ---
-title: Manual (Fixed or By Country/State/Zip)
-uid: en/user-guide/configuring/setting-up/taxes/tax/methods/manual
+title: Manual (Fixed or By Country/state/zip)
+uid: en/getting-started/configure-taxes/tax-providers/manual
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

@@ -1,5 +1,5 @@
 ---
-title: Setting up Main Store
+title: Your store information
 uid: en/getting-started/advanced-configuration/your-store-information
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp

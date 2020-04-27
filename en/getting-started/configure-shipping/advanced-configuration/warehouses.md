@@ -1,6 +1,6 @@
 ---
 title: Warehouses
-uid: en/user-guide/configuring/setting-up/shipping/warehouses
+uid: en/getting-started/configure-shipping/advanced-configuration/warehouses
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

@@ -1,5 +1,5 @@
 ---
-title: Setting up Multiple-Store
+title: Multi-store
 uid: en/getting-started/advanced-configuration/multi-store
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev

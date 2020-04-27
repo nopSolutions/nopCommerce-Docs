@@ -1,5 +1,5 @@
 ---
-title: All Settings (advanced)
+title: All settings
 uid: /en/getting-started/advanced-configuration/all-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp

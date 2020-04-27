@@ -1,6 +1,6 @@
 ---
-title: Shipping Settings
-uid: en/user-guide/configuring/setting-up/shipping/settings
+title: Shipping settings
+uid: en/getting-started/configure-shipping/shipping-settings
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev
 ---
@@ -11,11 +11,11 @@ This chapter describes how to **set up the shipping details of a store**. Beside
 
 To manage shipping settings go to **Configuration → Settings → Shipping Settings**.
 
-![Shipping Settings](_static/settings/shipping-settings.png)
+![Shipping Settings](_static/shipping-settings/shipping-settings.png)
 
 Select the **Pick Up in Store enabled** to display the pickup in store option during checkout at the shipping address step. Users will see the following screen:
 
-![Shipping Address](_static/settings/shipping-address.png) ![Pickup Point Address](_static/settings/Pickup-Point-address.png)
+![Shipping Address](_static/shipping-settings/shipping-address.png) ![Pickup Point Address](_static/shipping-settings/Pickup-Point-address.png)
 
 * Choose to **Display Pickup points on the map** if you want to display them on the Google Maps. Customers should not enter a shipping address and choose a shipping method when this option is selected. Note: You can also specify a fee for the 'Pick Up in Store' option.
 * Tick **Free shipping over ‘x’**, to enable free shipping for orders over a certain total amount. The following field is then displayed, enabling you to define the value of X:
@@ -23,7 +23,7 @@ Select the **Pick Up in Store enabled** to display the pickup in store option du
 * Calculate 'X' including tax. If it is not ticked, the value is calculated excluding tax.
 * Tick **Estimate shipping enabled** to enable customers to see a shipping estimate on the shopping cart page in the public store, as follows:
 
-![Estimate shipping](_static/settings/estimate-shipping.png)
+![Estimate shipping](_static/shipping-settings/estimate-shipping.png)
 
 * Tick **Use warehouse location** to use it when requesting shipping rates. This is useful when you ship from multiple warehouses.
 * Tick **Notify customer about shipping from multiple locations** if required. This is useful when you ship from multiple warehouses.

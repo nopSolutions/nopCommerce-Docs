@@ -1,5 +1,5 @@
 ---
-title: Purchase order
+title: Check/money order
 uid: en/getting-started/configure-payments/payment-methods/check-money-order
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp

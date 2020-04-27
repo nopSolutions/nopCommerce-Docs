@@ -1,6 +1,6 @@
 ---
-title: Tax
-uid: en/user-guide/configuring/setting-up/taxes/tax/index
+title: Tax providers
+uid: en/getting-started/configure-taxes/tax-providers/index
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

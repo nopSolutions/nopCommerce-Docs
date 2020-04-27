@@ -1,6 +1,6 @@
 ---
 title: Getting started
-uid: en/user-guide/getting-started
+uid: en/getting-started/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

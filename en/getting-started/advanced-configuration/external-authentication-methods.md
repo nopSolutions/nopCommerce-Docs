@@ -1,5 +1,5 @@
 ---
-title: External Authentication Method
+title: External authentication methods
 uid: en/getting-started/advanced-configuration/external-authentication-methods
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev

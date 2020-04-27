@@ -1,6 +1,6 @@
 ---
 title: UPS
-uid: en/user-guide/configuring/setting-up/shipping/providers/ups
+uid: en/getting-started/configure-shipping/shipping-providers/ups
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

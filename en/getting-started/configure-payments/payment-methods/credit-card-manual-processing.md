@@ -1,5 +1,5 @@
 ---
-title: Manual Processing (Credit Card)
+title: Credit card (manual processing)
 uid: en/getting-started/configure-payments/payment-methods/credit-card-manual-processing
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp

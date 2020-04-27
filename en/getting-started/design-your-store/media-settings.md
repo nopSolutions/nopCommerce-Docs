@@ -1,6 +1,6 @@
 ---
-title: Media Settings
-uid: en/user-guide/configuring/design/media-settings
+title: Media settings
+uid: en/getting-started/design-your-store/media-settings
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---

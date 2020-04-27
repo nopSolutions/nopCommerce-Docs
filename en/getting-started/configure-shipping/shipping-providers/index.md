@@ -1,6 +1,6 @@
 ---
-title: Shipping Providers
-uid: en/user-guide/configuring/setting-up/shipping/providers/index
+title: Shipping providers
+uid: en/getting-started/configure-shipping/shipping-providers/index
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

@@ -1,5 +1,5 @@
 ---
-title: Payment Methods
+title: Payment methods
 uid: en/getting-started/configure-payments/payment-methods/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp

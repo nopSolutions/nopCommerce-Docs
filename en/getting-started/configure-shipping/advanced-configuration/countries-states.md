@@ -1,6 +1,6 @@
 ﻿---
-title: Countries
-uid: en/user-guide/configuring/setting-up/main-store/countries
+title: Countries, states
+uid: en/getting-started/configure-shipping/advanced-configuration/countries-states
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
@@ -11,7 +11,7 @@ This section describes how to manage countries (where your customers are located
 
 To define the country setting go to **Configuration → Countries.**
 
-![countries](_static/countries/countries1_1.png)
+![countries](_static/countries-states/countries1_1.png)
 
 > [!TIP]
 > 
@@ -27,7 +27,7 @@ You can **Export** a list of states of all the countries, which were added to th
 
 Or you can **add new countries** manually. To add a new country to your list, click **Add new.**
 
-![addcountry](_static/countries/addcountry.png)
+![addcountry](_static/countries-states/addcountry.png)
 
 On the **country info** panel define the **following country settings:**
 
@@ -57,11 +57,11 @@ On the **State and Provinces** panel, you can add states and provinces of the co
 > 
 > By default, the states of the USA are added.
 
-![addcountry2](_static/countries/addcountry2.png)
+![addcountry2](_static/countries-states/addcountry2.png)
 
 Click the **Add new record** button to add a new state or province.
 
-![countries3](_static/countries/countries3.png)
+![countries3](_static/countries-states/countries3.png)
 
 Define the **following state/province details:**
 
@@ -75,7 +75,7 @@ In the **Display order** field, enter the display order of this province or stat
 
 To tie a certain store to a country in the **Limited to stores** field of the Country Info panel select pre-created stores from a list, as follows:
 
-![countries4](_static/countries/countries4.png)
+![countries4](_static/countries-states/countries4.png)
 
 > [!NOTE]
 > 

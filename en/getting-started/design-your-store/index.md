@@ -1,5 +1,5 @@
 ---
-title: Design
+title: Design your store
 uid: en/getting-started/design-your-store/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin

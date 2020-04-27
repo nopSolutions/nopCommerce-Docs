@@ -1,5 +1,5 @@
 ---
-title: Square
+title: Credit card (paying with Square)
 uid: en/getting-started/configure-payments/payment-methods/credit-card-paying-with-square
 author: git.AndreiMaz
 contributors: git.holydk, git.exileDev, git.ivkadp
