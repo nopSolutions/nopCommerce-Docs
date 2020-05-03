@@ -37,7 +37,7 @@ From left list of project type select ".NetCore" from that choose "Class Library
 
 We need to configure a couple of things in our project for it to be used as a Plugin or Widget.
 
-After you crate your project successfully open its .csproj file, for that right click on your project and click {Your_Project_Name.csproj} menu from context menu and replace its content with the following code.
+After you create your project successfully open its .csproj file, for that right click on your project and click {Your_Project_Name.csproj} menu from context menu and replace its content with the following code.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
