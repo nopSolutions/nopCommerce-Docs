@@ -14,7 +14,7 @@ contributors: git.RomanovM, git.DmitriyKulagin
 3. Instructions on how to download the project and run it on the local machine.
 4. How to configure nopCommerce to run on HTTPS.
 
-## Summery
+## Summary
 
 nopCommerce is open-source Microsoft ASP.NET based e-commerce solution. This is a basic guide for developers on how to start developing on nopCommerce.
 
