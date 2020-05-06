@@ -1,6 +1,6 @@
 ---
 title: Vendors
-uid: en/user-guide/configuring/setting-up/customers/vendors/index
+uid: en/running-your-store/vendor-management
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---

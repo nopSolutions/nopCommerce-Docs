@@ -1,6 +1,6 @@
 ---
 title: Shopping carts and wishlists
-uid: en/user-guide/running/order-management/shopping-carts-wishlists
+uid: en/running-your-store/order-management/shopping-carts-and-wishlists
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
@@ -11,7 +11,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 Current Shopping Carts section enables store owners to view all the existing shopping carts of all the customers and from all stores on one page. The list contains all products that were placed in carts, but not purchased. To access the list go to **Sales → Shopping carts and wishlists**.
 
-![Shopping carts wishlists](_static/shopping-carts-wishlists/shopping-cart-type.png)
+![Shopping carts wishlists](_static/shopping-carts-and-wishlists/shopping-cart-type.png)
 
 From the list, you can proceed to the **Edit Product** window by clicking on the required product, or to the **Edit Customer Details** window by clicking on the customer link.
 
@@ -31,7 +31,7 @@ A wishlist is a list of products that a customer can share with friends, or save
 
 A store owner can view all Current Wishlists in **Sales → Current Wishlists**.
 
-![Shopping carts wishlists](_static/shopping-carts-wishlists/shopping-cart-type.png)
+![Shopping carts wishlists](_static/shopping-carts-and-wishlists/shopping-cart-type.png)
 
 From the list, you can proceed to the **Edit Product** window by clicking on the required product, or to the **Edit Customer Details** window by clicking on the customer link.
 

@@ -1,6 +1,6 @@
 ---
 title: Message templates
-uid: en/user-guide/marketing/content/message-templates
+uid: en/running-your-store/content-management/message-templates
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

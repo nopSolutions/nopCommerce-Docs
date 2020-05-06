@@ -1,6 +1,6 @@
 ---
 title: Inventory management
-uid: en/user-guide/running/order-management/inventory-management
+uid: en/running-your-store/order-management/inventory-management
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

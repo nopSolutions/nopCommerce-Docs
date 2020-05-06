@@ -1,6 +1,6 @@
 ---
 title: Logs
-uid: en/user-guide/configuring/system/log
+uid: en/running-your-store/system-administration/log
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

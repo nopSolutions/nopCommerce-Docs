@@ -1,6 +1,6 @@
 ﻿---
 title: Discounts
-uid: en/user-guide/marketing/promotional/discounts/index
+uid: en/running-your-store/promotional-tools/discounts
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov
 ---

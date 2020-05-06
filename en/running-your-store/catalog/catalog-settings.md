@@ -1,6 +1,6 @@
 ---
 title: Catalog settings
-uid: en/user-guide/running/product-management/catalog-settings
+uid: en/running-your-store/catalog/catalog-settings
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko
 ---

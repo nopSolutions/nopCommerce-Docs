@@ -1,6 +1,6 @@
 ---
-title: Schedule Tasks
-uid: en/user-guide/configuring/system/schedule-tasks
+title: Schedule tasks
+uid: en/running-your-store/system-administration/schedule-tasks
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

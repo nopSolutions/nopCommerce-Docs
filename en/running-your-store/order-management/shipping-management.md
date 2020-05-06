@@ -1,6 +1,6 @@
 ---
-title: Shipments
-uid: en/user-guide/running/order-management/shipments
+title: Shipping management
+uid: en/running-your-store/order-management/shipping-management
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

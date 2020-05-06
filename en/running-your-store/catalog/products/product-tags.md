@@ -1,6 +1,6 @@
 ---
 title: Product tags
-uid: en/user-guide/running/product-management/products/product-tags
+uid: en/running-your-store/catalog/products/product-tags
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---

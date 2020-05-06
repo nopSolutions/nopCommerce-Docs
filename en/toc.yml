@@ -195,186 +195,186 @@
           href: /en/getting-started/advanced-configuration/all-settings.md
 -
   name: Running your store
-  href:
+  href: running-your-store/index.md
   items:
     -
       name: Catalog
-      href: 
+      href: running-your-store/catalog/index.md
       items:
         -
           name: Products
-          href:
+          href: running-your-store/catalog/products/index.md
           items:
             -
               name: Add product (for beginners)
-              href:
+              href: running-your-store/catalog/products/add-product-for-beginners.md
             -
               name: Add product (for advanced users)
-              href: 
+              href: running-your-store/catalog/products/add-product-for-advanced-users.md
             -
               name: Product attributes
-              href:
+              href: running-your-store/catalog/products/product-attributes.md
             -
               name: Specification attributes
-              href: 
+              href: running-your-store/catalog/products/specification-attributes.md
             -
               name: Downloadable products
-              href:
+              href: running-your-store/catalog/products/downloadable-products.md
             -
               name: Grouped products (variants)
-              href: 
+              href: running-your-store/catalog/products/grouped-products-variants.md
             -
               name: Recurring products
-              href:
+              href: running-your-store/catalog/products/recurring-products.md
             -
               name: Rental products
-              href:
+              href: running-your-store/catalog/products/rental-products.md
             -
               name: Import/export products
-              href: 
+              href: running-your-store/catalog/products/import-export-products.md
             -
               name: Product tags
-              href:
+              href: running-your-store/catalog/products/product-tags.md
             -
               name: Product reviews
-              href: 
+              href: running-your-store/catalog/products/product-reviews.md
         -
           name: Categories
-          href: 
+          href: running-your-store/catalog/categories.md
         -
           name: Manufacturers
-          href:
+          href: running-your-store/catalog/manufacturers.md
         -
           name: Catalog settings
-          href: 
+          href: running-your-store/catalog/catalog-settings.md
     -
       name: Order management
-      href:
+      href: running-your-store/order-management/index.md
       items:
         -
           name: Orders
-          href:
+          href: running-your-store/order-management/orders.md
         -
           name: Shipping management
-          href: 
+          href: running-your-store/order-management/shipping-management.md
         -
           name: Return requests
-          href:
+          href: running-your-store/order-management/return-requests.md
         -
           name: Shopping carts and wishlists
-          href: 
+          href: running-your-store/order-management/shopping-carts-and-wishlists.md
         -
           name: Inventory management
-          href:
+          href: running-your-store/order-management/inventory-management.md
         -
           name: Checkout attributes
-          href:
+          href: running-your-store/order-management/checkout-attributes.md
         -
           name: Order settings
-          href: 
+          href: running-your-store/order-management/order-settings.md
     -
       name: Customer management
       href: 
       items:
         -
           name: Managing customers
-          href:
+          href: running-your-store/customer-management/managing-customers.md
         -
           name: Customer roles
-          href: 
+          href: running-your-store/customer-management/customer-roles.md
         -
           name: Access control List
-          href:
+          href: running-your-store/customer-management/access-control-list.md
         -
           name: Activity log
-          href: 
+          href: running-your-store/customer-management/activity-log.md
         -
           name: Online customers
-          href:
+          href: running-your-store/customer-management/online-customers.md
         -
           name: Customer settings
-          href: 
+          href: running-your-store/customer-management/customer-settings.md
     -
       name: Vendor management
-      href:
+      href: running-your-store/vendor-management.md
     -
       name: Promotional tools
-      href: 
+      href: running-your-store/promotional-tools/index.md
       items:
         -
           name: Discounts
-          href:
+          href: running-your-store/promotional-tools/discounts.md
         -
           name: Gift cards
-          href: 
+          href: running-your-store/promotional-tools/gift-cards.md
         -
           name: Reward points
-          href:
+          href: running-your-store/promotional-tools/reward-points.md
         -
           name: Affiliates
-          href: 
+          href: running-your-store/promotional-tools/affiliates.md
         -
           name: Tier prices
-          href:
+          href: running-your-store/promotional-tools/tier-prices.md
         -
           name: Cross-sells and related products
-          href: 
+          href: running-your-store/promotional-tools/cross-sells-and-related-products.md
         -
           name: Email campaigns
-          href:
+          href: running-your-store/promotional-tools/email-campaigns.md
     -
       name: Content management
-      href:
+      href: running-your-store/content-management/index.md
       items:
         -
           name: Blog
-          href: 
+          href: running-your-store/content-management/blog.md
         -
           name: News
-          href:
+          href: running-your-store/content-management/news.md
         -
           name: Forums
-          href: 
+          href: running-your-store/content-management/forums.md
         -
           name: Polls
-          href:
+          href: running-your-store/content-management/polls.md
         -
           name: Topics (pages)
-          href: 
+          href: running-your-store/content-management/topics-pages.md
         -
           name: Message templates
-          href:
+          href: running-your-store/content-management/message-templates.md
     -
       name: Search engine optimization
-      href: 
+      href: running-your-store/search-engine-optimization.md
     -
       name: Reports
-      href:
+      href: running-your-store/reports.md
     -
       name: System administration
-      href:
+      href: running-your-store/system-administration/index.md
       items:
         -
           name: System information
-          href:
+          href: running-your-store/system-administration/system-information.md
         -
           name: Log
-          href: 
+          href: running-your-store/system-administration/log.md
         -
           name: Warnings
-          href:
+          href: running-your-store/system-administration/warnings.md
         -
           name: Maintenance
-          href: 
+          href: running-your-store/system-administration/maintenance.md
         -
           name: Message queue
-          href:
+          href: running-your-store/system-administration/message-queue.md
         -
           name: Schedule tasks
-          href: 
+          href: running-your-store/system-administration/schedule-tasks.md
         -
           name: Templates
-          href:
+          href: running-your-store/system-administration/templates.md
 - 
   name: Developer guide
   href: developer/index.md

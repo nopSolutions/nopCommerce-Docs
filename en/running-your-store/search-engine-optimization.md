@@ -1,6 +1,6 @@
 ---
 title: SEO
-uid: en/user-guide/marketing/content/seo
+uid: en/running-your-store/search-engine-optimization
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

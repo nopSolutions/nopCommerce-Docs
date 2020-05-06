@@ -1,6 +1,6 @@
 ---
-title: Customer list
-uid: en/user-guide/running/customer-management/customer-list
+title: Managing customers
+uid: en/running-your-store/customer-management/managing-customers
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---

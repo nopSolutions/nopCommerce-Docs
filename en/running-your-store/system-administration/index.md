@@ -1,6 +1,6 @@
 ---
 title: System Administration
-uid: en/user-guide/configuring/system/index
+uid: en/running-your-store/system-administration/index
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

@@ -1,6 +1,6 @@
 ---
 title: Rental product
-uid: en/user-guide/running/product-management/products/adding-products/rental-products
+uid: en/running-your-store/catalog/products/rental-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov
 ---

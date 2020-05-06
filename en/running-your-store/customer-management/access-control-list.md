@@ -1,6 +1,6 @@
 ---
-title: Access Control List
-uid: en/user-guide/configuring/setting-up/customers/acl
+title: Access control list
+uid: en/running-your-store/customer-management/access-control-list
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---

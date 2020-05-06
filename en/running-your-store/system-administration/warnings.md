@@ -1,6 +1,6 @@
 ---
 title: Warnings
-uid: en/user-guide/configuring/system/warnings
+uid: en/running-your-store/system-administration/warnings
 author: git.AndreiMaz
 contributors: git.exileDev
 ---

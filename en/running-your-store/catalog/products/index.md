@@ -1,6 +1,6 @@
 ---
 title: Products
-uid: en/user-guide/running/product-management/products/index
+uid: en/running-your-store/catalog/products/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko
 ---

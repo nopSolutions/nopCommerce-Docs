@@ -1,6 +1,6 @@
 ---
 title: Promotional tools
-uid: en/user-guide/marketing/promotional/index
+uid: en/running-your-store/promotional-tools/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov
 ---

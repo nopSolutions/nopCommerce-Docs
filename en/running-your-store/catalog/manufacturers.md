@@ -1,6 +1,6 @@
 ---
 title: Manufacturers
-uid: en/user-guide/running/product-management/manufacturers
+uid: en/running-your-store/catalog/manufacturers
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko
 ---

@@ -1,6 +1,6 @@
 ---
 title: Gift cards
-uid: en/user-guide/marketing/promotional/gift-cards
+uid: en/running-your-store/promotional-tools/gift-cards
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov
 ---

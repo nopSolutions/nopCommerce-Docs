@@ -1,6 +1,6 @@
 ---
 title: Forums
-uid: en/user-guide/marketing/content/forums/index
+uid: en/running-your-store/content-management/forums
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

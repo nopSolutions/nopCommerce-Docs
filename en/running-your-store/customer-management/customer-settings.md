@@ -1,6 +1,6 @@
 ---
 title: Customer settings
-uid: en/user-guide/configuring/setting-up/customers/settings
+uid: en/running-your-store/customer-management/customer-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---

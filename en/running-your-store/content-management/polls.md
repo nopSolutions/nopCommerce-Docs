@@ -1,6 +1,6 @@
 ---
 title: Polls
-uid: en/user-guide/marketing/content/polls
+uid: en/running-your-store/content-management/polls
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---

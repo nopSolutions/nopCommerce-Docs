@@ -1,6 +1,6 @@
 ---
-title: System Administration
-uid: en/user-guide/configuring/system/maintenance
+title: Maintenance
+uid: en/running-your-store/system-administration/maintenance
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
@@ -13,7 +13,7 @@ The following procedure describes how to enable store owner to easily delete gue
 
 1. From the **System** menu, select **Maintenance**. The **Maintenance** window is displayed, as follows:
 
-    ![Maintenance](_static/deleting-guests/deleting-guests.png)
+    ![Maintenance](_static/system-administration/deleting-guests.png)
 
 1. From the Deleting guest customers, click the Delete button. This option enables you to delete customer records created for guest visitors.
 

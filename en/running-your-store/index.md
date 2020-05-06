@@ -1,6 +1,6 @@
 ---
 title: Running your store
-uid: en/user-guide/running/index
+uid: en/running-your-store/index
 author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko
 ---

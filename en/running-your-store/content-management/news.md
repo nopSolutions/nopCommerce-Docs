@@ -1,6 +1,6 @@
 ---
 title: News
-uid: en/user-guide/marketing/content/news/index
+uid: en/running-your-store/content-management/news
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---

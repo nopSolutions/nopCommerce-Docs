@@ -1,6 +1,6 @@
 ---
 title: Specification attributes
-uid: en/user-guide/running/product-management/attributes/specification-attributes
+uid: en/running-your-store/catalog/products/specification-attributes
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
