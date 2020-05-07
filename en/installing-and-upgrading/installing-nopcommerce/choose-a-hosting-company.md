@@ -1,6 +1,6 @@
 ---
 title: Choose a hosting company
-uid: en/installing-and-upgrading/installing-nopcommerce/choose-a-hosting-company
+uid: en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.IvanIvanIvanov
 ---

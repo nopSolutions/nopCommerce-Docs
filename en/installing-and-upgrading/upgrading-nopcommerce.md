@@ -1,6 +1,6 @@
 ---
 title: Upgrading nopCommerce
-uid: en/installing-and-upgrading/upgrading-nopcommerce
+uid: en/installation-and-upgrading/upgrading-nopcommerce
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.rajupaladiya, git.exileDev, git.dunaenko
 ---
