@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev
 ---
 
-# Shipping Settings
+# Shipping settings
 
 This chapter describes how to **set up the shipping details of a store**. Besides the location and warehouses set, there are other things which comprise good logistics.
 

@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git., git.exileDev, git.dunaenko
 ---
 
-# Activity Log
+# Activity log
 
 Activity log is used to track user activity in the system. By default, all Activity Types are enabled for tracking in nopCommerce. A store owner can disable them by un-ticking the relevant checkbox. Most of the activity types listed are only for the administrator, and record actions in the Administration Area. However, some are for the public store and track actions of shoppers (such as, adding to cart/wishlist, placing an order, etc.).
 

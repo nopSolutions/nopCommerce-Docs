@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
-# All Settings (advanced)
+# All settings
 
 All Settings is an advanced tool for modifying all settings of the site on one screen. For example, you have got multiple stores and need to create an exact copy of first store setting-wise. Then doing all the changes on one screen with the help of “All Settings” can save you a lot of time.
 

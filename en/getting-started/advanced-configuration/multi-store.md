@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev
 ---
 
-# Setting up Multiple-Store
+# Multi-store
 
 nopCommerce enables you to run more than one store using one interface from a single nopCommerce installation.
 
@@ -46,7 +46,7 @@ _____________________________________
 
     Once the installation and technical setup are done, you can manage your stores from the administration area. Go to **Configuration → Stores.** The Stores window is displayed:
 
-![store window](_static/multiple-store/mainstore.png)
+![store window](_static/multi-store/mainstore.png)
 
 > [!NOTE]
 > 
@@ -81,7 +81,7 @@ Once the stores have been setup and configured, you can define your entities for
 
 Scroll down to the "Stores" section and choose the name of the existing store in a "Limited to stores" box, as shown in the Edit Product Details screen below:
 
-![Mappings](_static/multiple-store/product-limited-to-store.png)
+![Mappings](_static/multi-store/product-limited-to-store.png)
 
 Different [themes](xref:en/user-guide/configuring/design/installing-theme) can also be configured for different stores.
 

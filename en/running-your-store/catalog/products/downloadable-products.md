@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.dunaenko
 ---
 
-# Downloadable product
+# Downloadable products
 
 To create a **Downloadable product**, on the **product info tab** tick the corresponding checkbox.
 

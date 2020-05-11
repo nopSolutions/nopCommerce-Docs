@@ -1,11 +1,11 @@
 ---
-title: System Administration
+title: System administration
 uid: en/running-your-store/system-administration/index
 author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# System Administration
+# System administration
 
 This chapter covers **technical aspects of running a nopCommerce store**. It describes how to expand the store functionality by technical means, such as additional external plugins, external authentication for the easier checkout process, configuration of widgets and setting up the e-mail accounts.
 

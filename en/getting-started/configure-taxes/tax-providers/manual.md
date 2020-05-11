@@ -1,11 +1,11 @@
 ---
-title: Manual (Fixed or By Country/state/zip)
+title: Manual (fixed or by country/state/zip)
 uid: en/getting-started/configure-taxes/tax-providers/manual
 author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Manual (Fixed or By Country/State/Zip)
+# Manual (fixed or by country/state/zip)
 
 To configure Manual (Fixed or By Country/State/Zip) go to **Configuration → Tax Providers**.
 

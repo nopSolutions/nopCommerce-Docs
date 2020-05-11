@@ -24,13 +24,13 @@ The top area of the page enables you to search for a discounts by different sear
 > 
 > **By default, there are no discounts available in nopCommerce, so you can create them from scratch and follow your own marketing strategy**
 
-![discounts](_static/index/discounts.png)
+![discounts](_static/discounts/discounts.png)
 
 ## Adding new discount
 
 To add new discount go to **Promotions → Discounts** and click **Add new**.
 
-![discount-info](_static/index/discount-info.png)
+![discount-info](_static/discounts/discount-info.png)
 
 Enter the **Name** of the discount.
 
@@ -38,7 +38,7 @@ From the **Discount type** dropdown list, assign the discount to the required op
 
 - **Assigned to order total**: These discounts are applied to the entire customer order (order total)
 
-    ![discount-assigned-to-products](_static/index/discount-applied-to-product.png)
+    ![discount-assigned-to-products](_static/discounts/discount-applied-to-product.png)
 - **Assigned to products**: After this discount is created, the store owner has to assign this discount to a product (on the product details page)
 - **Assigned to categories**: After this discount is created, the store owner has to assign this discount to a category appearing in the Discount applied to the category tab (category details page). This enables the discount to be applied to all products in this category
 - **Assigned to manufacturers**: After this discount is created, the store owner has to assign this discount to a manufacturer appearing in the Discount applied to the manufacturer tab (manufacturer details page). This enables the discount to be applied to all products in this manufacturer
@@ -73,7 +73,7 @@ You can also limit the number of times the discount will be used.  From the Disc
 
 After creating the discount it’s allowed to add **discount requirements** if you want some specific rules to be applied to the discount. Select **Requirements tab**.
 
-![requirements](_static/index/Requirements.png)
+![requirements](_static/discounts/Requirements.png)
 
 There are several requirement types available in nopCommerce **out of the box**:
 
@@ -84,15 +84,15 @@ There are several requirement types available in nopCommerce **out of the box**:
 
 Also, you can create a **group of requirements** to deal with complex requirements with multiple rules. The requirements are set using boolean logic. For instance, if you want the discount to be assigned to a particular customer role or in case a customer had spent a certain amount.
 
-![group-requirements](_static/index/discount-requirenents-group.png)
+![group-requirements](_static/discounts/discount-requirenents-group.png)
 
 You can set an unlimited number of requirement groups, **one inside another**. For example, more complex case, when you want you customers get a discount if they are vendors and had spent a certain amount or if they are forum moderators and they put a certain product to the cart at the same time.
 
 When customers apply a discount while proceeding to the checkout, it is displayed, as follows:
 
-![discount-in-shopping-cart](_static/index/discount-in-shopping-cart.png)
+![discount-in-shopping-cart](_static/discounts/discount-in-shopping-cart.png)
 
-![coupone-code](_static/index/coupone-code.png)
+![coupone-code](_static/discounts/coupone-code.png)
 
 ## See also
 
@@ -118,7 +118,7 @@ When customers apply a discount while proceeding to the checkout, it is displaye
 
 Black Friday is always the day after Thanksgiving. It's quite common discount campaign, almost every online store has a Black Friday sale.
 
-![black-friday](_static/common-type-of-discounts/Black-friday.png)
+![black-friday](_static/discounts/Black-friday.png)
 
 **Name** - you can enter any name, it’s only internal
 
@@ -140,12 +140,12 @@ The last setting is for limitation discount usage. For instance, this discount c
 
 Often you need to sell more items of the certain product. In this case, to encourage your customers to buy several items of that, you can offer them a discount.  Let’s consider how to use the discount - Buy one item and get 50% on the second in your nopCommerce store.
 
-![edit-discount-details](_static/common-type-of-discounts/buy_1.png)
+![edit-discount-details](_static/discounts/buy_1.png)
 
 The type of the discount is Assigned to products. In Applied to products tab you can add them, here will be an oversized T-shirt. We want our customers to get 50% discount on the 2nd t-shirt. This discount can be used once per customer, so the maximum quantity is 1.
 
 You can set up requirements to the product quantity in Requirements tab. Add requirements type Customer has all of these products and add T-shirt with a quantity 2.
 
-![buy-1-get-discount](_static/common-type-of-discounts/buy_2.png)
+![buy-1-get-discount](_static/discounts/buy_2.png)
 
 You can use this scenario to set up other popular discount buy one and get the second for free if you set up a 100% discount.

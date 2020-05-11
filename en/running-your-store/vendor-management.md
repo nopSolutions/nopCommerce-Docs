@@ -1,11 +1,11 @@
 ---
-title: Vendors
+title: Vendor management
 uid: en/running-your-store/vendor-management
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
-# Vendors
+# Vendor management
 
 **Vendors** is a special category of customers that should be considered separately.
 
@@ -25,11 +25,11 @@ The following procedure describes how to setup and provide a vendor record with 
 
 Go to **Customers → Vendors.** The Vendors window is displayed:
 
-![vendors](_static/index/vendor1.png)
+![vendors](_static/vendor-management/vendor1.png)
 
 Click **Add New.** The Add a New Vendor window is displayed:
 
-![addvendor](_static/index/vendor2.png)
+![addvendor](_static/vendor-management/vendor2.png)
 
 Define the following vendor’s details:
 
@@ -50,13 +50,13 @@ A store owner able to create attributes for a vendor much like they can for a pr
 
 On the **Vendor attributes** section, select Vendor attributes. Learn more about vendor attributes and how to create them [here](xref:en/user-guide/configuring/setting-up/customers/vendors/settings).
 
-![vendorattributes](_static/index/vendor3.png)
+![vendorattributes](_static/vendor-management/vendor3.png)
 
 ## Display
 
 On the Display panel, define the following Display parameters:
 
-![display](_static/index/vendor4.png)
+![display](_static/vendor-management/vendor4.png)
 
 Define the following vendor’s details:
 
@@ -68,7 +68,7 @@ Define the following vendor’s details:
 
 On the **SEO** panel, define the following SEO parameters:
 
-![SEO](_static/index/vendor6.png)
+![SEO](_static/vendor-management/vendor6.png)
 
 * **Meta keywords** - required vendor meta keywords: a brief and concise list of the most important themes of this vendor’s page. The meta keywords tag takes the following      form:
 
@@ -102,7 +102,7 @@ If you do not want vendors to have access to your site, ignore this step to enab
 
 Go to **Customers → Customers.** The Customers window is displayed:
 
-![customerwindows](_static/index/vendor7.png)
+![customerwindows](_static/vendor-management/vendor7.png)
 
 Click **Edit** beside the customer record you want to assign a vendor to. The Edit Customer window is displayed:
 
@@ -113,7 +113,7 @@ Click **Edit** beside the customer record you want to assign a vendor to. The Ed
 > 
 > A Vendor customer account cannot have Administrators customer role (which is defined as the default).
 
-![customerinfo](_static/index/vendor8.png)
+![customerinfo](_static/vendor-management/vendor8.png)
 
 After the vendor's customer account is set up, the vendor can use this customer account to manage his products, orders, shipments, and view reports. The Administration link at the top of the public store will be displayed after logging in.
 
@@ -135,9 +135,9 @@ This section describes how to define the **vendor settings** of your store. This
 
 Go to **Configuration → Settings → Vendor Settings.** The Vendor Settings window is displayed:
 
-![commonsettings](_static/settings/vendorsettings1.png)
+![commonsettings](_static/vendor-management/vendorsettings1.png)
 
-![catalog](_static/settings/vendorsettings2.png)
+![catalog](_static/vendor-management/vendorsettings2.png)
 
 Define the vendor settings, as follows:
 
@@ -164,7 +164,7 @@ This page enables **multi-store configuration**, it means that the same settings
 
 You can create any number of vendor attributes. Some different attributes that could be created would be business name, website and etc.
 
-![vendorattributes](_static/settings/vendorsettings3.png)
+![vendorattributes](_static/vendor-management/vendorsettings3.png)
 
 ### Adding vendor attributes
 
@@ -172,7 +172,7 @@ Click **Add new** to add the attribute.
 
 In the **Attribute Info** panel, define the following information:
 
-![addvendorattribute](_static/settings/vendorsettings4.png)
+![addvendorattribute](_static/vendor-management/vendorsettings4.png)
 
 * **Name** - the name of the vendor attribute.
 * **Required** - when an attribute is required, vendors must choose an appropriate attribute value before they can continue.
@@ -189,7 +189,7 @@ Click **Save and Continue Edit** to proceed to the **values** editing tab.
 
 On the **Attribute values** panel, click **Add a new attribute value** to create a new attribute value.
 
-![attributevalues](_static/settings/vendorsettings5.png)
+![attributevalues](_static/vendor-management/vendorsettings5.png)
 
 In the Add a new attribute value window, define the following information:
 

@@ -1,17 +1,17 @@
 ---
-title: Import/Export
+title: Import/export products
 uid: en/running-your-store/catalog/products/import-export-products
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
 
-# Import/Export
+# Import/export products
 
 nopCommerce supports **importing** and **exporting** products in **XML** or **Excel** formats.
 
  You can find these options in **Catalog → Products** at the main page top left.
 
-![Products](_static/import-export/products3.png)
+![Products](_static/import-export-products/products3.png)
 
 ## Exporting product
 
@@ -21,9 +21,9 @@ You can download products from your catalog in pdf (**Download catalog as PDF** 
 > 
 > if you use product attributes, an exported table will be grouped by rows, to view attribute details click + next to your product in the table.
 
-![simple product](_static/import-export/simple_product.png)
+![simple product](_static/import-export-products/simple_product.png)
 
-![exporting product](_static/import-export/exporting_product.png)
+![exporting product](_static/import-export-products/exporting_product.png)
 
 ### Importing products
 
@@ -43,11 +43,11 @@ Import requires a lot of memory resources. That's why it's not recommended to im
 > 
 > For example, we want to add Dancing shoes to our catalog. Create a new row in the table.
 
-![product table](_static/import-export/product_table.png)
+![product table](_static/import-export-products/product_table.png)
 
 Then click **import**, upload the table and check, we have a new product in the catalog.
 
-![product catalog](_static/import-export/product_catalog.png)
+![product catalog](_static/import-export-products/product_catalog.png)
 
 ## See also
 

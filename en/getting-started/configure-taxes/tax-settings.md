@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Tax Settings
+# Tax settings
 
 This section describes your store tax settings, for example, defining prices including or excluding tax, defining the tax display type and more.
 

@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 ---
 
-# Customer list
+# Managing customers
 
 Customer list contains details of all existing customers, as well as allows to add new ones. In nopCommerce, customers include all users, such as administrators, vendors, and buyers. To manage customers, go to **Customers → Customers**.
 
@@ -16,7 +16,7 @@ Customer list contains details of all existing customers, as well as allows to a
 - **Customer roles** - one or multiple customer roles. Note that any role that needs to login into the system (e.g. administrator, vendor) should have “Registered” customer role among other. You can set up customer roles in [Customer roles](xref:en/user-guide/configuring/setting-up/customers/customer-roles) section.
 - From the **Manager of vendor** **dropdown list**, if required, select a vendor associated with this customer account. When associated, this customer will be able to login to the selected vendor portal and manage its products and orders. Note that if you have a vendor associated with this customer, ensure this customer record is in the [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index) list.
 
-    ![customer_role](_static/customer-list/customer_role.png)
+    ![customer_role](_static/managing-customers/customer_role.png)
 
 - **Gender**
 - **FirstName**
@@ -30,7 +30,7 @@ Customer list contains details of all existing customers, as well as allows to a
 
 **To search for customers**, in the Customers window enter one or more of the following search criteria:
 
-![customers](_static/customer-list/customers.png)
+![customers](_static/managing-customers/customers.png)
 
 - **Email**
 - **First name**
@@ -46,19 +46,19 @@ Customer list contains details of all existing customers, as well as allows to a
 > 
 > You can export the customer data to an external file by clicking **Export to XML(all)** or **Export to Excel (all).** You can export selected customer data to an external file by clicking **Export to XML(selected)** or **Export to Excel (selected)**
 > 
-> After clicking the Send email button, the Send email window is displayed enabling a store owner to send an email to the customer. After clicking the Send private message button the Send private message window is displayed enabling to send a message to the customer. To use private messaging, allow private messages in [Forum settings](xref:en/user-guide/marketing/content/forums/settings). ![edit_customer_details](_static/customer-list/edit_customer_details.png)
+> After clicking the Send email button, the Send email window is displayed enabling a store owner to send an email to the customer. After clicking the Send private message button the Send private message window is displayed enabling to send a message to the customer. To use private messaging, allow private messages in [Forum settings](xref:en/user-guide/marketing/content/forums/settings). ![edit_customer_details](_static/managing-customers/edit_customer_details.png)
 > 
-> ![Inbox](_static/customer-list/customer-message-menu.png)
+> ![Inbox](_static/managing-customers/customer-message-menu.png)
 
 **To edit customers**, in the Customers window enter the required search criteria and click Search. Click Edit beside the customer to edit. The Edit Customer Details window is displayed.
 
 - On the **Customer info** tab you can edit customers’ personal and account information, e.g. change a password, assign/remove customer roles
 - On the **Orders** tab you can view the customer’s order details
 
-    ![customer_info](_static/customer-list/customer-orders.png)
+    ![customer_info](_static/managing-customers/customer-orders.png)
 - On the **Addresses** tab you can view, edit and create new addresses of the customer
 
-    ![addresses](_static/customer-list/customert-adresses.png)
+    ![addresses](_static/managing-customers/customert-adresses.png)
 - On the **Current Shopping Cart** tab you can view the customer’s shopping cart
 - On the **Current Wishlist** tab you can view the customer’s wish list
 - On the **Activity Log** you can view the customer's activity log. You can manage activity types in the [Activity Log](xref:en/user-guide/running/customer-management/activity-log) types section
@@ -68,7 +68,7 @@ Customer list contains details of all existing customers, as well as allows to a
 - Tick the checkbox **Activate points immediately** if you want customers will be able to use reward points right after earn them. If you didn't check this checkbox one more option appears:
 - In the **Reward points activation** specify the period (number of days/hours) after which reward points will be activated.
 
-    ![Reward points](_static/customer-list/customer-reward-points.png)
+    ![Reward points](_static/managing-customers/customer-reward-points.png)
 
 ## See also
 

@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Google Analytics Plugin
+# Google analytics plugin
 
 This section describes how to add and integrate Google Analytics plugin in your store.
 

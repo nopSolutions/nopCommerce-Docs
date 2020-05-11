@@ -34,13 +34,13 @@ There **no campaigns available by default**, so you can create them from scratch
 
 To manage campaigns go to **Promotions → Campaigns**
 
-![manage-campaigns](_static/all-campaigns/manage-campaigns.png)
+![manage-campaigns](_static/email-campaigns/manage-campaigns.png)
 
 ## Adding new email campaign
 
 To create a new campaign go to **Promotions → Campaigns → Add new.**
 
-![edit-campaign](_static/all-campaigns/Campaign-Create.png)
+![edit-campaign](_static/email-campaigns/Campaign-Create.png)
 
 ## Define the campaign details
 
@@ -52,9 +52,9 @@ To create a new campaign go to **Promotions → Campaigns → Add new.**
 - Choose **Planned date and time** of sending
 - From the **Limited to store** dropdown list, select the store which subscribers will get this email
 - From the **Limited to customer roles** dropdown list, select the roles of subscribers which will get this email
-- Click **Save**. The Campaigns window is displayed, as follows: ![campaign-created](_static/all-campaigns/campaign-list.png)
+- Click **Save**. The Campaigns window is displayed, as follows: ![campaign-created](_static/email-campaigns/campaign-list.png)
 
-After the campaign is saved you can send a test email to check if everything is done properly. Click Edit campaign and you will see one more field on the top if the screen **Send test email to** and fill in the email address. ![test-email](_static/all-campaigns/send-test-email.png)
+After the campaign is saved you can send a test email to check if everything is done properly. Click Edit campaign and you will see one more field on the top if the screen **Send test email to** and fill in the email address. ![test-email](_static/email-campaigns/send-test-email.png)
 
 
 ## Tutorials
@@ -70,13 +70,13 @@ After the campaign is saved you can send a test email to check if everything is 
 
 During customer registration, a customer can select the **Newsletters option** to receive nopCommerce newsletters.
 
-![customers-subscribing](_static/newsletter-subscribers/customer-subs.png)
+![customers-subscribing](_static/email-campaigns/customer-subs.png)
 
 The other way of filling in email subscribers is to **export the list of subscribers** to an external CSV file as well **import list of subscribers from an external CSV** file into nopCommerce.
 
 To Export/Import Newsletter subscribers go to **Promotions  → Newsletter Subscribers.**
 
-![newsletter-subscribers](_static/newsletter-subscribers/NewsLetterSubscription.png)
+![newsletter-subscribers](_static/email-campaigns/NewsLetterSubscription.png)
 
 > [!NOTE]
 > 

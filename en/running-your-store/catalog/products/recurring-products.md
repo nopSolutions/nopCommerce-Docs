@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov
 ---
 
-# Recurring product
+# Recurring products
 
 **Recurring product** type is usually used for **subscriptions** or products with installment payment plans. In case your product is recurring, tick the corresponding checkbox on the **Product info tab**.
 

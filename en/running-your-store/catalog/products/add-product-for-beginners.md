@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.sanju741, git.exileDev, git.IvanIvanIvanov
 ---
 
-# Adding products
+# Add product (for beginners)
 
 Setting up products in the best way possible is highly important for a store. Make sure to not miss any detail, such displaying different size and color options, giving a thorough product description, adding appealing pictures, etc.
 

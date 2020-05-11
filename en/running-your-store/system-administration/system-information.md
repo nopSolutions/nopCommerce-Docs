@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# System Information
+# System information
 
 The following procedure describes how to view the system information of the store and system server.
 

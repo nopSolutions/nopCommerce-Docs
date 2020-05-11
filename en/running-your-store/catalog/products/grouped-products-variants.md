@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko, git.IvanIvanIvanov
 ---
 
-# Grouped product
+# Grouped products (variants)
 
 **Grouped products**, or products **with variants**, is a convenient tool to sell a product that has different supplementary items or different attribute sets. Different combinations of such product **can be sold as separate products**, and the price may vary.
 

@@ -5,17 +5,17 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
-# Setting up Main Store
+# Your store information
 
 By default nopCommerce installation, only one store is created and needs to be configured, as described below.
 
 To set up the default store, go to **Configuration → Stores.**
 
-![mainstore](_static/index/mainstore.png)
+![mainstore](_static/your-store-information/mainstore.png)
 
 Click **Edit** beside a default store to configure it.
 
-![editstore](_static/index/Store-Edit.png)
+![editstore](_static/your-store-information/Store-Edit.png)
 
 Configure your **main store details**, as follows:
 

@@ -15,11 +15,11 @@ To manage blog posts go to **Content management → Blog**
 
 Select tab: **Blog posts**.
 
-![p1](_static/index/Blog1.png)
+![p1](_static/blog/Blog1.png)
 
 Click **Add new** and fill the information about a **new blog post**.
 
-![p2](_static/index/Blog2.png)
+![p2](_static/blog/Blog2.png)
 
 Define **new blog post details**:
 
@@ -29,7 +29,7 @@ Define **new blog post details**:
 - You can specify the **Body overview** if you want only part of the whole text to be visible on the main blog page
 - Enter **Tags** to be displayed on the Blog page in the public store. The more blog posts are associated with a particular tag, the larger size it has in the Popular Tags area, displayed in the sidebar on the Blog page
 
-   ![p3](_static/index/Blog3.png)
+   ![p3](_static/blog/Blog3.png)
 
 - Select the Allow comments checkbox, to enable customers to add comments to your blog post
 - Enter **Start and End date** for displaying this blog post in Coordinated Universal Time (UTC)
@@ -46,7 +46,7 @@ While editing existing blog or after clicking **Save and Continue Edit** button 
 
 To set up SEO for the blog post go to **SEO tab**
 
-![SEO for blog posts](_static/index/Blog4.png)
+![SEO for blog posts](_static/blog/Blog4.png)
 
 - Enter **Meta keywords** to be added to the blog post header
 - Enter **Meta description** to be added to the blog post header
@@ -59,7 +59,7 @@ To manage blog comments select **Content management → Blog**
 
 Select tab: **Blog comments**.
 
-![p5](_static/index/Blog5.png)
+![p5](_static/blog/Blog5.png)
 
 Here you can **delete** a blog comment, it will then be removed from the system.
 
@@ -76,7 +76,7 @@ Here you can **delete** a blog comment, it will then be removed from the system.
 
 You can manage blog settings in **Configuration → Settings → Blog Settings**. This page is available in 2 modes: **advanced** and **basic**.
 
-![P1](_static/blog-settings/Blog-Setting.png)
+![P1](_static/blog/Blog-Setting.png)
 
 Define the **following settings**:
 
@@ -92,4 +92,4 @@ Define the **following settings**:
 
 This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
 
- ![p2](_static/blog-settings/Blog-Multi-Store-Setting.png)
+ ![p2](_static/blog/Blog-Multi-Store-Setting.png)

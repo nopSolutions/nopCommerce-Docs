@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Message Queue
+# Message queue
 
 Emails are not sent immediately in nopCommerce. They are queued. Message queue contains all emails that are already sent or not yet sent.
 

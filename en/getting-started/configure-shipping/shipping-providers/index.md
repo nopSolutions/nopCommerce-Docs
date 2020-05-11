@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Shipping Providers
+# Shipping providers
 
 If you sell shippable products, you will need to set up shipping methods for your store to deliver orders to customers. You can either define your own shipping methods or use the pre-defined shipping methods provided by popular carriers, such as USPS, UPS, and FedEx. nopCommerce has a variety of preinstalled shipment plugins connecting the platform with leading shipping providers, in addition to inbuilt tools for complex shipping calculations, such as shipping by weight and fixed rate shipping.
 

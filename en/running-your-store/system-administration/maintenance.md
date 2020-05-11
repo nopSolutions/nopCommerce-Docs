@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# System Administration
+# Maintenance
 
 The following procedure describes how to enable store owner to easily delete guest customer records.
 
@@ -13,7 +13,7 @@ The following procedure describes how to enable store owner to easily delete gue
 
 1. From the **System** menu, select **Maintenance**. The **Maintenance** window is displayed, as follows:
 
-    ![Maintenance](_static/system-administration/deleting-guests.png)
+    ![Maintenance](_static/maintenance/deleting-guests.png)
 
 1. From the Deleting guest customers, click the Delete button. This option enables you to delete customer records created for guest visitors.
 
@@ -39,7 +39,7 @@ The following procedure describes how to delete abandoned shopping carts and wis
 
 1. From the **System** menu, select **Maintenance**. The **Maintenance** window is displayed, as follows:
 
-    ![Maintenance](_static/deleting-abandoned-shopping-carts/deleting-abandoned-shopping-carts.png)
+    ![Maintenance](_static/maintenance/deleting-abandoned-shopping-carts.png)
 1. From the Deleting abandoned shopping carts area, click the Delete button. All shopping cart items created before the specified date will be deleted.
 
 
@@ -55,5 +55,5 @@ The following procedure describes how to delete old exported files.
 
 1. From the **System** menu, select **Maintenance**. The **Maintenance** window is displayed, as follows:
 
-    ![Maintenance](_static/deleting-old-exported-files/deleting-old-exported-files.png)
+    ![Maintenance](_static/maintenance/deleting-old-exported-files.png)
 1. From the **Deleting old exported files** area, click the **Delete** button. All the exported and generated files (such as, PDF and Excel files for example) will be deleted and removed from the database.

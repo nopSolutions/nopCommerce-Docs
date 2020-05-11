@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
-# Security Settings
+# Security settings
 
 To manage Security Settings go to **Configuration → Settings → General Settings.** The Security Settings block is displayed on the General Settings page:
 

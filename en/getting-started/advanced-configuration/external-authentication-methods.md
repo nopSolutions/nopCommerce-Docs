@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# External Authentication Method
+# External authentication methods
 
 External authentication methods allow users to login to a nopCommerce site without entering their credentials: email and password. Users can be authenticated using an external site (such as  Facebook, Google, and so on). nopCommerce has a built-in external authentication through Facebook. You can set up other methods using plugins from the [marketplace](https://www.nopcommerce.com/marketplace).
 
@@ -19,7 +19,7 @@ After an external authentication method is configured and marked as active, user
 
 Go to **Configuration → External Authentication Methods**. The External Authentication Methods window is displayed:
 
-![External auth](_static/index/external-authentication.png)
+![External auth](_static/external-authentication-methods/external-authentication.png)
 
 Click **Edit** beside an authentication method and tick **Is active** to activate the method. Also, define the method display order.
 

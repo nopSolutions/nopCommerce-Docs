@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Shipments
+# Shipping management
 
 To search for and view Shipments go to **Sales → Shipments**.
 
@@ -19,11 +19,11 @@ The top area of the page enables you to search for a shipment by different searc
 
 Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print all packaging receipts.
 
-![Shipment List](_static/shipments/order-shipment-list.png)
+![Shipment List](_static/shipping-management/order-shipment-list.png)
 
-In the list of shipments, a store owner can view all items of a shipment by clicking on ![expand](_static/shipments/order-shipment-expand.png) in the first column of the shipment.
+In the list of shipments, a store owner can view all items of a shipment by clicking on ![expand](_static/shipping-management/order-shipment-expand.png) in the first column of the shipment.
 
-![Shipment List Details](_static/shipments/order-shipment-list-details.png)
+![Shipment List Details](_static/shipping-management/order-shipment-list-details.png)
 
 If click on View, the **View shipment details** - 2 window will be opened.
 
@@ -38,7 +38,7 @@ In this window you can:
 * Print the **shipment packaging slip**
 * or **Delete** the shipment
 
-![Shipment Details](_static/shipments/order-shipment-details.png)
+![Shipment Details](_static/shipping-management/order-shipment-details.png)
 
 ## See also
 

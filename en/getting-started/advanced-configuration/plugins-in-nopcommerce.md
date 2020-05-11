@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Plugins
+# Plugins in nopCommerce
 
 Plugins are a set of components adding specific capabilities to a nopCommerce store. Examples of plugins include Payment modules, Shipping Rate Computation Methods and more. This section describes how to install plugins manually.
 
@@ -29,7 +29,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
     > 
     > You can download more nopCommerce plugins on our [extensions directory](https://www.nopcommerce.com/marketplace).
 
-    ![Upload plugin](_static/plugins/plugin-upload.png)
+    ![Upload plugin](_static/plugins-in-nopcommerce/plugin-upload.png)
 
 1. Scroll down through the list of plugins to find the newly installed plugin.
 1. Click on the **Install** link to install the plugin.
@@ -43,7 +43,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 
 1. Go to **Configuration → Local Plugins**. The Plugins window is displayed:
 
-    ![Local plugins](_static/plugins/local-plugins.png)
+    ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
 1. Click the **Configure** link beside the plugin to go to the plugin’s configuration page. If the Configure link does not exist beside a plugin, this indicates the plugin does not require any configuration.
 1. Click the **Uninstall** link beside the plugin to uninstall. The plugin is uninstalled. The link in the **Installation column** changes to **Install** enabling you to reinstall the plugin at any time.
 
@@ -52,7 +52,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 1. Go to **Configuration → Local Plugins**. The Plugins window is displayed.
 1. Click **Edit** beside the plugin. The Edit Plugin details, as follows:
 
-    ![Edit plugin](_static/plugins/plugin-edit.png)
+    ![Edit plugin](_static/plugins-in-nopcommerce/plugin-edit.png)
 1. Enter the **Friendly name**
 1. In the **Display order** field, define the required location to display this plugin. 1 represents the top of the list.
 1. From the **Limited to customer roles** drop-down list choose roles you want to be able to use this plugin

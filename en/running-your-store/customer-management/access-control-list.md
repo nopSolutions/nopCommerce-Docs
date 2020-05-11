@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
-# Access Control List
+# Access control list
 
 Access Control List (ACL) restricts or grants users an access to certain areas of the site. This list is managed by administrators. Therefore, the user must have administrator rights to be able to access it. The access list has the following characteristics:
 
@@ -17,7 +17,7 @@ Access Control List (ACL) restricts or grants users an access to certain areas o
 
 Go to **Configuration → Access Control List.** The Access control list window is displayed:
 
-![accesscontrollist](_static/acl/acl.png)
+![accesscontrollist](_static/access-control-list/acl.png)
 
 Select the required roles beside the **Customer action** items. The selected roles will have access to the selected actions accordingly.
 

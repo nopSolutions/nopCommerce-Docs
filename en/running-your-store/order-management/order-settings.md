@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Order Settings
+# Order settings
 
 To define order settings, go to **Configuration → Settings → Order Settings**. The Order Settings window will be displayed:
 

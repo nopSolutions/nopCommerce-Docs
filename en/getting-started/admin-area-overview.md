@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.ivkadp
 ---
 
-# nopCommerce Interface
+# nopCommerce interface
 
 This chapter covers the basics of nopCommerce interface.
 

@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev
 ---
 
-# Manual (Fixed or By Weight and By Total)
+# Manual (Fixed or by weight and by total)
 
 Manual (Fixed or By Weight and By Total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
 
@@ -135,15 +135,15 @@ A store owner can define required shipping methods in the Fixed Rate Shipping se
 
 Go to **Configuration → Shipping → Shipping Providers → click Configure beside Fixed Rate Shipping**. The configuration window is displayed:
 
-![Configure](_static/fixed-rate-methods/fixed-rate-configure.png)
+![Configure](_static/manual/fixed-rate-configure.png)
 
 Click **Manage shipping methods**, the Shipping methods window is displayed:
 
-![Methods](_static/fixed-rate-methods/fixed-rate-methods.png)
+![Methods](_static/manual/fixed-rate-methods.png)
 
 Click **Add new** button, the Add a new shipping method window is displayed, as follows:
 
-![Add new](_static/fixed-rate-methods/fixed-rate-methods-add-new.png)
+![Add new](_static/manual/fixed-rate-methods-add-new.png)
 
 Define the following fields for a new record:
 
@@ -168,11 +168,11 @@ Click **Save**.
 
 A store owner can define restrictions for certain shipping methods in certain countries. To do so, go to **Configuration → Shipping → Shipping Providers → click Configure beside Fixed Rate Shipping**. The configuration window is displayed:
 
-![Configure](_static/fixed-rate-restrictions/fixed-rate-restrictions-configure.png)
+![Configure](_static/manual/fixed-rate-restrictions-configure.png)
 
 Click **Shipping method restrictions**, the Shipping method restrictions window is displayed:
 
-![Methods](_static/fixed-rate-restrictions/fixed-rate-restrictions-methods.png)
+![Methods](_static/manual/fixed-rate-restrictions-methods.png)
 
 Select one or more of your shipping methods, that you want to disable in certain countries.
 

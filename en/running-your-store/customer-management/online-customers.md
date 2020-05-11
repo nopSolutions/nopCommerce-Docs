@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.dunaenko
 ---
 
-# Online Customers
+# Online customers
 
 Online Customers section enables store owners to view customers that were online within the last 20 minutes. This information is useful for the store owners as it shows the last visited page and helps to decide upon actions required to convert visitors into buyers.
 

@@ -17,7 +17,7 @@ There are some general SEO settings in nopCommerce, that can be applied to the e
 
 To edit SEO settings, go to **Configuration → Settings → General Settings.**
 
-![p1](_static/seo/seo1.png)
+![p1](_static/search-engine-optimization/seo1.png)
 
 - In the **Default title** field, enter the default title for the pages in your store
 - From the **Page Title SEO adjustment** field, select the required page title SEO adjustment, as follows:
@@ -41,7 +41,7 @@ To edit SEO settings, go to **Configuration → Settings → General Settings.**
 
 There are several types of pages in nopCommerce for which you can set up individual SEO settings, including Meta keywords, Meta description, Meta title and Search engine friendly page names. This is done on SEO tabs of the corresponding Administration Area sections.
 
-![p2](_static/seo/seo2.png)
+![p2](_static/search-engine-optimization/seo2.png)
 
 - Enter the required **Meta keywords**, which are a brief and concise list of keyword and phrases for the page. The meta keywords tag takes the following format:
 

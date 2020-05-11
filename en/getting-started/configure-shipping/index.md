@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Setting up Shipping
+# Configure shipping
 
 This section will cover the **configuration process of shipping and handling multiple warehouses** in nopCommerce. It will include both **manual shipping configuration** and **setting up shipping via API of individual shipping providers like UPS and USPS**.
 

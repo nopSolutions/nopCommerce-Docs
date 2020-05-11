@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.IvanIvanIvanov, git.rajupaladiya, git.exileDev, git.DmitriyKulagin
 ---
 
-# Technology & System Requirements
+# Technology & system requirements
 
 In order to run nopCommerce, you will need the **following installed on your server/computer**:
 

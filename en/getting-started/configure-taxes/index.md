@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Setting up Tax
+# Setting up tax
 
 This chapter covers the settings of nopCommerce **tax tools**.
 

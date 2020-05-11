@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 Topics (pages) are free-form content blocks that can be displayed on your site, either embedded within other pages or on a page of their own. These are often used for FAQ pages, policy pages, special instructions, and so on. To create custom pages, you should create new topics, which you will see in the grid, and then enter your custom page content. Content can be written for each language separately.
 
-![p1](_static/topicts/Topic1.png)
+![p1](_static/topics-pages/Topic1.png)
 
 **Search** for topics in the Topics window by entering topic text in the **Search keywords** field (or a part of the topic text), or among all the topics of a certain Store.
 
@@ -19,7 +19,7 @@ To add new topic go to **Content management → Topics (pages)**
 
 Click **Add new** and fill the information about a new topic.
 
-![p2](_static/topicts/Topic2.png)
+![p2](_static/topics-pages/Topic2.png)
 
 - Enter the **Title** for the topic
 - Add the **topic content** using the editor provided in the Body field
@@ -37,7 +37,7 @@ While editing existing topic or after clicking **Save and Continue Edit** button
 
 To set up SEO for Topics go to **SEO tab**
 
-![SEO for the topics](_static/topicts/Topic3.png)
+![SEO for the topics](_static/topics-pages/Topic3.png)
 
 - Enter the required category **Meta keywords**, which are a brief and concise list of the most important themes of your page. The meta keywords tag takes the following format:
 

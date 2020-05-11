@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp
 ---
 
-# Languages
+# Localization
 
 In nopCommerce, your store can have several languages installed. However, the customers will only see the data that has been defined in their selected language.
 
@@ -13,7 +13,7 @@ In nopCommerce, your store can have several languages installed. However, the cu
 > 
 > **By default**, the English language is installed.
 
-![language](_static/languages/Language.png)
+![language](_static/localization/Language.png)
 
 > [!NOTE]
 > 
@@ -23,7 +23,7 @@ In nopCommerce, your store can have several languages installed. However, the cu
 
 Click **Add new**. In the Add a new language window, **define the following settings:**
 
-![addlanguage](_static/languages/addlanguage.png)
+![addlanguage](_static/localization/addlanguage.png)
 
 * **Name** of the new language
 

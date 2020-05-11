@@ -11,7 +11,7 @@ nopCommerce allows you to post news in your store. There can be any important ti
 
 News are displayed in your store on the homepage or on the site footer.
 
-![p1](_static/index/news_1.png)
+![p1](_static/news/news_1.png)
 
 ## Adding news
 
@@ -19,7 +19,7 @@ To view all the news and add new ones go to **Content management → News**
 
 Select tab: **News items** and click **Add new**
 
-![Adding news](_static/index/news_2.png)
+![Adding news](_static/news/news_2.png)
 
 Define the **following details for news item**:
 
@@ -40,7 +40,7 @@ While editing existing news or after clicking **Save and Continue Edit** button 
 
 To set up SEO for the blog post go to **SEO tab**
 
-![SEO for news items](_static/index/news_3.png)
+![SEO for news items](_static/news/news_3.png)
 
 - Enter **Meta keywords** to be added to a news item header
 - Enter **Meta description** to be added to a news item header
@@ -53,7 +53,7 @@ To manage news comments, go to **Content management → News**
 
 Select tab: **News comments**.
 
-![pp](_static/index/news_4.png)
+![pp](_static/news/news_4.png)
 
 Here you can **delete** a news comment, it will be removed from the system.
 
@@ -76,7 +76,7 @@ Here you can **delete** a news comment, it will be removed from the system.
 
 You can manage news settings in **Configuration → Settings → News Settings**. This page is available in 2 modes: **advanced** and **basic**.
 
-![p1](_static/news-settings/Setting-News1.png)
+![p1](_static/news/Setting-News1.png)
 
 Define the **following news settings**:
 
@@ -93,4 +93,4 @@ Define the **following news settings**:
 
 This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
 
-![p2](_static/news-settings/Setting-News%202.png)
+![p2](_static/news/Setting-News%202.png)

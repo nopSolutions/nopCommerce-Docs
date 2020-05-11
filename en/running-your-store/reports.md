@@ -21,13 +21,13 @@ Reports are important for management, they allow to monitor store performance, t
 
 The dashboard is the first page you see when accessing the admin area. It enables you to view your store statistics, including the total number of orders that were processed over the period of time you choose (year, month, week), registered customers, low stock products, the most popular products in your store, etc.
 
-![dashboard](_static/dashboard/dashboard.png)
+![dashboard](_static/reports/dashboard.png)
 
 The dashboard consist of several blocks:
 
 **nopCommerce news** Displays general nopCommerce news like new version releases.
 
-![news](_static/dashboard/news.png)
+![news](_static/reports/news.png)
 
 **Common statistics.** Here you can find links to more detailed reports:
 
@@ -39,27 +39,27 @@ Customers → Registered customers
 
 Catalog → Low stock report
 
-![common](_static/dashboard/common.png)
+![common](_static/reports/common.png)
 
 **Order totals.** It enables you to know the number of orders that were processed in the last day, week, month, year and the order total.
 
-![order-totals](_static/dashboard/order-totals.png)
+![order-totals](_static/reports/order-totals.png)
 
 **Incomplete orders.** It enables you to know the number of orders that are currently pending.
 
-![order-incomplete](_static/dashboard/order-incomplete.png)
+![order-incomplete](_static/reports/order-incomplete.png)
 
 **Latest orders.**
 
-![order-latest](_static/dashboard/order-latest.png)
+![order-latest](_static/reports/order-latest.png)
 
 **Popular search keywords.** This block displays most used keywords.
 
-![keywords](_static/dashboard/keywords.png)
+![keywords](_static/reports/keywords.png)
 
 **Bestsellers.**
 
-![bestsellers](_static/dashboard/bestsellers.png)
+![bestsellers](_static/reports/bestsellers.png)
 
 
 
@@ -71,7 +71,7 @@ Country report contains a list of orders that includes the number of orders and 
 
 To view country reports, go to **Reports → Country Report**.
 
-![country-report](_static/country-report/country-report.png)
+![country-report](_static/reports/country-report.png)
 
 To search for the report, enter one or more of the following search criteria:
 
@@ -91,7 +91,7 @@ Customer reports give a store owner general information about registered custome
 
 ## Customers by order total
 
-![customer-reports](_static/customer-reports/Customers-by-order-total.png)
+![customer-reports](_static/reports/Customers-by-order-total.png)
 
 Enter one or several search criteria to compile a report:
 
@@ -105,7 +105,7 @@ Enter one or several search criteria to compile a report:
 
 This report displays top 20 customers based on the total number of orders issued.
 
-![customer-reports](_static/customer-reports/Customers-by-number-of-orders.png)
+![customer-reports](_static/reports/Customers-by-number-of-orders.png)
 
 Enter one or several search criteria to compile a report:
 
@@ -121,7 +121,7 @@ This report displays the number of Registered customers for a certain period.
 
 You can track the number of users registered within the last day, week, two weeks, month and year.
 
-![customer-registered](_static/customer-reports/customer-registered.png)
+![customer-registered](_static/reports/customer-registered.png)
 
 
 
@@ -133,7 +133,7 @@ The low stock report contains a list of products that are currently under stock.
 
 **To view low stock reports:**
 
-1. From the **Reports → Low Stock Report**. The **Product Low Stock** report window is displayed. ![low-stock-reports](_static/low-stock-reports/low-stock-reports.png)
+1. From the **Reports → Low Stock Report**. The **Product Low Stock** report window is displayed. ![low-stock-reports](_static/reports/low-stock-reports.png)
 
     Low stock reports could be filtered by **Published** property,  which represents **Published** property of products
 
@@ -165,10 +165,10 @@ Knowing the **bestselling** and **never purchased products** is very important f
 
 The report will break down your best-selling products based on both units sold and revenue.
 
-![bestsellers](_static/bestsellers-never-purchased/bestsellers.jpeg)
+![bestsellers](_static/reports/bestsellers.jpeg)
 
 ## Products never purchased
 
 To view products never purchased, go to **Reports → Products Never Purchased**. Enter Start date and/or End date for the report search.
 
-![never-purchased](_static/bestsellers-never-purchased/never-purchased.jpg)
+![never-purchased](_static/reports/never-purchased.jpg)

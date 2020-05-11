@@ -15,13 +15,13 @@ A forum is an online discussion site where people can hold conversations in the 
 
 To manage forum groups and forums (inside forum groups) go to **Content management → Forums**.
 
-![Manage Forums](_static/index/forums1.png)
+![Manage Forums](_static/forums/forums1.png)
 
 ## Adding new forum group
 
 Click the **Add New Forum Group** button.
 
-![Add New Forum Group](_static/index/forums2.png)
+![Add New Forum Group](_static/forums/forums2.png)
 
 - Define a new forum group **Name**
 - In the **Display order** field, enter the display order of the forum group. A value of 1 represents the top of the list
@@ -29,7 +29,7 @@ Click the **Add New Forum Group** button.
 
 ## Adding new forum
 
-![Adding new forum](_static/index/forums3.png)
+![Adding new forum](_static/forums/forums3.png)
 
 - From the **Forum group** dropdown list, select the required forum group
 - Enter the **Name** of the new forum
@@ -39,7 +39,7 @@ Click the **Add New Forum Group** button.
 
 To view an example of how forums should work go to <http://www.nopcommerce.com/boards/>
 
-![nopCommerce forums](_static/index/forums4.png)
+![nopCommerce forums](_static/forums/forums4.png)
 
 ## Tutorials
 
@@ -56,7 +56,7 @@ To view an example of how forums should work go to <http://www.nopcommerce.com/b
 
 To access forum settings go to **Configuration → Settings → Forum Settings**. This page is available in 2 modes: **advanced** and **basic**.
 
-![p1](_static/settings/Setting-Forum1.png)
+![p1](_static/forums/Setting-Forum1.png)
 
 Define following **forum settings**:
 
@@ -86,6 +86,6 @@ Define following **forum settings**:
 
 This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
 
-![p](_static/settings/Setting-Forum1.png)
+![p](_static/forums/Setting-Forum1.png)
 
 To change a setting for a certain store, tick a checkbox on the left side of it. All other settings remain the same as for all stores.

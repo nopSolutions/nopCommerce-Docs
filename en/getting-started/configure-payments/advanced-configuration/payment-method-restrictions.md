@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.ivkadp
 ---
 
-# Payment Method Restrictions
+# Payment method restrictions
 
 Payment method restrictions allow you to **restrict payments coming from certain countries.**
 
