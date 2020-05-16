@@ -48,5 +48,5 @@ When a customer uses reward points when checkout it looks like that:
 
 ## See also
 
-- [Basic and Advanced modes](xref:en/user-guide/configuring/nopcommerce-interface)
+- [Basic and Advanced modes](xref:en/getting-started/admin-area-overview)
 - [Managing reward points tutorial](https://www.youtube.com/watch?v=lE4-xDUKkd0&index=14&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
