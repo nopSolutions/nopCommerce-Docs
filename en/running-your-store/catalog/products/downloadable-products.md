@@ -24,7 +24,7 @@ Define the **following details**:
 
 ## See also
 
-- [Orders](xref:en/user-guide/running/order-management/orders/index)
+- [Orders](xref:en/running-your-store/order-management/orders)
 
 ## Tutorials
 
