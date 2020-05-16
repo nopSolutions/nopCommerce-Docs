@@ -79,6 +79,6 @@ To tie a certain store to a country in the **Limited to stores** field of the Co
 
 > [!NOTE]
 > 
-> This list is used only when you have several stores configured. For further details refer to [Stores](xref:en/user-guide/configuring/setting-up/main-store/multiple-store).
+> This list is used only when you have several stores configured. For further details refer to [Stores](xref:en/getting-started/advanced-configuration/multi-store).
 
 Click **Save**
