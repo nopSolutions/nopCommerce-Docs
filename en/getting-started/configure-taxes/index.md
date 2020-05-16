@@ -41,4 +41,4 @@ Go to **Configuration → Tax Providers**. Make the Fixed Rate Provider the defa
 
 Click **Configure** to edit tax rates that are charged by the **Fixed Rate Provider**. You'll see your VAT rate categories on the Configuration tab. Click **Edit** beside each category and enter the percentage rates.
 
-Make sure that all products have a tax category assigned to them on their [product pages](xref:en/user-guide/running/product-management/products/adding-products/index).
+Make sure that all products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-product-for-beginners).
