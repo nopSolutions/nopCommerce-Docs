@@ -67,8 +67,8 @@ Click **Edit** to view the **Product info panel**, where these stock settings ca
 
 ## See also
 
-* [Product Attributes](xref:en/user-guide/running/product-management/attributes/product-attributes)
-* [Warehouses](xref:en/user-guide/configuring/setting-up/shipping/warehouses)
+* [Product Attributes](xref:en/running-your-store/catalog/products/product-attributes)
+* [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses)
 
 ## Tutorials
 
