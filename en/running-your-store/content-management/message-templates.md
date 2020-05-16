@@ -49,8 +49,8 @@ Edit **message details as follows**:
 
 ## See also
 
-- [Email accounts](xref:en/user-guide/configuring/system/email-accounts)
-- [Languages](xref:en/user-guide/configuring/setting-up/main-store/languages)
+- [Email accounts](xref:en/getting-started/email-accounts)
+- [Languages](xref:en/getting-started/advanced-configuration/localization)
 
 ## Tutorials
 

@@ -12,5 +12,5 @@ nopCommerce is an open source ecommerce software that contains both a catalog fr
 The nopCommerce documentation is here to help you through the process of setting up your store. These will allow you to up-and-run your site quickly.
 
 ## Table of content
-* [User guide](xref:en/user-guide/index)
+* [User guide](xref:en/getting-started/index)
 * [Developers guide](xref:en/developer/index)

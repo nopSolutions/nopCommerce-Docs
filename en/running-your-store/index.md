@@ -7,7 +7,7 @@ contributors: git.exileDev, git.dunaenko
 
 # Running your store
 
-* [Product management](xref:en/user-guide/running/product-management/index)
-* [Order management](xref:en/user-guide/running/order-management/index)
-* [Customer management](xref:en/user-guide/running/customer-management/index)
-* [Reports](xref:en/user-guide/running/reports/index)
+* [Product management](xref:en/running-your-store/catalog/index)
+* [Order management](xref:en/running-your-store/order-management/index)
+* [Customer management](xref:en/running-your-store/customer-management/index)
+* [Reports](xref:en/running-your-store/reports)

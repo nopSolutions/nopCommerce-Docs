@@ -97,8 +97,8 @@ When customers apply a discount while proceeding to the checkout, it is displaye
 ## See also
 
 - More plugins on discount types and discount requirement types on [nopCommerce marketplace](http://www.nopcommerce.com/marketplace)
-- How to [install plugins](xref:en/user-guide/configuring/system/plugins)
-- [Common types of discounts](xref:en/user-guide/marketing/promotional/discounts/common-type-of-discounts)
+- How to [install plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
+- [Common types of discounts](xref:en/running-your-store/promotional-tools/discounts)
 
 ## Tutorials
 

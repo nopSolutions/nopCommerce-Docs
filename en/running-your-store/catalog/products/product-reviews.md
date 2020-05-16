@@ -53,7 +53,7 @@ Tick the **Is approved** checkbox, to approve the review.
 
 On this area, you can view the all addition reviews on current product. **Rating** displays the customer rating. All columns in the table cannot be edited.
 
-For more information on setting up and adding rating values, [click here](xref:en/user-guide/running/product-management/catalog-settings)
+For more information on setting up and adding rating values, [click here](xref:en/running-your-store/catalog/catalog-settings)
 
 ![r1](_static/product-reviews/review_types.png)
 

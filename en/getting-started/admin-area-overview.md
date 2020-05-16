@@ -17,7 +17,7 @@ The dashboard has following sections:
 
 * **nopCommerce news** this is a section where important news, sales, and promotions information from nopCommerce are shown.
 
-* Other sections show vital statistics of your webstore: **Common statistics, Orders, New customers, Order totals, Incomplete orders, Latest Orders, Popular search keywords, Bestsellers by quantity, Bestsellers by amount.** Learn more about them [here](xref:en/user-guide/running/reports/dashboard).
+* Other sections show vital statistics of your webstore: **Common statistics, Orders, New customers, Order totals, Incomplete orders, Latest Orders, Popular search keywords, Bestsellers by quantity, Bestsellers by amount.** Learn more about them [here](xref:en/running-your-store/reports).
 
 The dashboard sections are easily collapsed by clicking ![item](_static/admin-area-overview/item.png) item.
 

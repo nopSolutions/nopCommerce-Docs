@@ -17,11 +17,11 @@ This chapter describes how to set up the payment methods, currency and Payment m
 
 > [!TIP]
 > 
-> How to install the payment (or any other) plugin is covered in [Plugins](xref:en/user-guide/configuring/system/plugins) chapter.
+> How to install the payment (or any other) plugin is covered in [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) chapter.
 
 ## See also
 
-- [Payment Methods](xref:en/user-guide/configuring/setting-up/payments/methods/index)
-- [Payment statuses](xref:en/user-guide/configuring/setting-up/payments/payment-statuses)
-- [Payment Method Restrictions](xref:en/user-guide/configuring/setting-up/payments/payment-method-restrictions)
-- [Currencies](xref:en/user-guide/configuring/setting-up/payments/currencies)
+- [Payment Methods](xref:en/getting-started/configure-payments/payment-methods/index)
+- [Payment statuses](xref:en/getting-started/configure-payments/index)
+- [Payment Method Restrictions](xref:en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions)
+- [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies)

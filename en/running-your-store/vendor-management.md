@@ -40,7 +40,7 @@ Define the following vendor’s details:
 
 > [!NOTE]
 > 
-> The appropriate message template is disabled by default, you can change it in [Message Templates](xref:en/user-guide/marketing/content/message-templates) section
+> The appropriate message template is disabled by default, you can change it in [Message Templates](xref:en/running-your-store/content-management/message-templates) section
 
 * **Admin comment**  an optional comment or information for internal use
 
@@ -48,7 +48,7 @@ Define the following vendor’s details:
 
 A store owner able to create attributes for a vendor much like they can for a product. The vendor attributes would then be displayed on the Vendor Detail page in the public store. This would allow for Multi-Vendor stores to be able to collect and display to the customers more information about the vendor without having to try and format it in the Description field that is currently available.
 
-On the **Vendor attributes** section, select Vendor attributes. Learn more about vendor attributes and how to create them [here](xref:en/user-guide/configuring/setting-up/customers/vendors/settings).
+On the **Vendor attributes** section, select Vendor attributes. Learn more about vendor attributes and how to create them [here](xref:en/running-your-store/vendor-management).
 
 ![vendorattributes](_static/vendor-management/vendor3.png)
 
@@ -203,6 +203,6 @@ Click **Save.** The new attribute will be displayed in the public store.
 
 ## See also
 
-* [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index)
-* [Setting up Customers](xref:en/user-guide/configuring/setting-up/customers/index)
+* [Vendors](xref:en/running-your-store/vendor-management)
+* [Setting up Customers](xref:en/running-your-store/customer-management/index)
 

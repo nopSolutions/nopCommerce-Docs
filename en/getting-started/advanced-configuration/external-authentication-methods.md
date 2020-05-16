@@ -27,4 +27,4 @@ Click **Configure** for the method configuration.
 
 ## See also
 
-* [Facebook authentication](xref:en/user-guide/configuring/system/external-authentication/facebook)
+* [Facebook authentication](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)

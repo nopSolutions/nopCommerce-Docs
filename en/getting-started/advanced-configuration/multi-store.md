@@ -77,12 +77,12 @@ The two stores have now been configured using a single nopCommerce installation,
 
 For example, you cannot have one store on <http://www.site.com/store1> and the second store on <http://www.site.com/store2>, since the HTTP_HOST value for both of these sites is the same (www.site.com).
 
-Once the stores have been setup and configured, you can define your entities for each store. This is done in the Stores section of the details pages for each of the following: [Products](xref:en/user-guide/running/product-management/products/index), [Categories](xref:en/user-guide/running/product-management/categories), [Manufacturers](xref:en/user-guide/running/product-management/manufacturers), [Languages](xref:en/user-guide/configuring/setting-up/main-store/languages), [Currencies](xref:en/user-guide/configuring/setting-up/payments/currencies), [Message templates](xref:en/user-guide/marketing/content/message-templates), [Blogs](xref:en/user-guide/marketing/content/blog/index), [News](xref:en/user-guide/marketing/content/news/index), [Topics](xref:en/user-guide/marketing/content/topics).
+Once the stores have been setup and configured, you can define your entities for each store. This is done in the Stores section of the details pages for each of the following: [Products](xref:en/running-your-store/catalog/products/index), [Categories](xref:en/user-guide/running/product-management/categories), [Manufacturers](xref:en/user-guide/running/product-management/manufacturers), [Languages](xref:en/user-guide/configuring/setting-up/main-store/languages), [Currencies](xref:en/user-guide/configuring/setting-up/payments/currencies), [Message templates](xref:en/user-guide/marketing/content/message-templates), [Blogs](xref:en/user-guide/marketing/content/blog/index), [News](xref:en/user-guide/marketing/content/news/index), [Topics](xref:en/user-guide/marketing/content/topics).
 
 Scroll down to the "Stores" section and choose the name of the existing store in a "Limited to stores" box, as shown in the Edit Product Details screen below:
 
 ![Mappings](_static/multi-store/product-limited-to-store.png)
 
-Different [themes](xref:en/user-guide/configuring/design/installing-theme) can also be configured for different stores.
+Different [themes](xref:en/getting-started/design-your-store/choose-and-install-a-theme) can also be configured for different stores.
 
 In addition, you can override any setting value per store.

@@ -11,8 +11,8 @@ Order Management functionality is the “hub” of your store: all operational d
 
 ## Learn how to get the best out of the order management in your nopCommerce store in the following chapters
 
-* [Orders](xref:en/user-guide/running/order-management/orders/index)
-* [Shipments](xref:en/user-guide/running/order-management/shipments)
-* [Return Requests](xref:en/user-guide/running/order-management/return-requests/index)
-* [Shopping carts and wishlists](xref:en/user-guide/running/order-management/shopping-carts-wishlists)
-* [Inventory management](xref:en/user-guide/running/order-management/inventory-management)
+* [Orders](xref:en/running-your-store/order-management/orders)
+* [Shipments](xref:en/running-your-store/order-management/shipping-management)
+* [Return Requests](xref:en/running-your-store/order-management/return-requests)
+* [Shopping carts and wishlists](xref:en/running-your-store/order-management/shopping-carts-and-wishlists)
+* [Inventory management](xref:en/running-your-store/order-management/inventory-management)

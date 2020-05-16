@@ -71,7 +71,7 @@ To set up SEO for Topics go to **SEO tab**
 
 ## See also
 
-- [SEO](xref:en/user-guide/marketing/content/seo)
+- [SEO](xref:en/running-your-store/search-engine-optimization)
 
 ## Tutorials
 
