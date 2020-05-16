@@ -67,13 +67,13 @@ There are several types of pages in nopCommerce for which you can set up individ
 
 ## See also
 
-- [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
-- [Product categories](xref:en/user-guide/running/product-management/categories)
-- [Manufacturers](xref:en/user-guide/running/product-management/manufacturers)
-- [Vendors](xref:en/user-guide/configuring/setting-up/customers/vendors/index)
-- [Topics (pages)](xref:en/user-guide/marketing/content/topics)
-- [News](xref:en/user-guide/marketing/content/news/index)
-- [Blog](xref:en/user-guide/marketing/content/blog/index)
+- [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Product categories](xref:en/running-your-store/catalog/categories)
+- [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
+- [Vendors](xref:en/running-your-store/vendor-management)
+- [Topics (pages)](xref:en/running-your-store/content-management/topics-pages)
+- [News](xref:en/running-your-store/content-management/news)
+- [Blog](xref:en/running-your-store/content-management/blog)
 
 ## Tutorials
 
