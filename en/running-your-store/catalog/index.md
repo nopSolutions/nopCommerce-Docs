@@ -13,8 +13,8 @@ Most important components of the product management in nopCommerce are adding pr
 
 ## See also
 
-* [Categories](xref:en/user-guide/running/product-management/categories)
-* [Manufacturers](xref:en/user-guide/running/product-management/manufacturers)
-* [Attributes](xref:en/user-guide/running/product-management/attributes/index)
-* [Products](xref:en/user-guide/running/product-management/products/index)
-* [Catalog settings](xref:en/user-guide/running/product-management/catalog-settings)
+* [Categories](xref:en/running-your-store/catalog/categories)
+* [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
+* [Attributes](xref:en/running-your-store/catalog/products/product-attributes)
+* [Products](xref:en/running-your-store/catalog/products/index)
+* [Catalog settings](xref:en/running-your-store/catalog/catalog-settings)
