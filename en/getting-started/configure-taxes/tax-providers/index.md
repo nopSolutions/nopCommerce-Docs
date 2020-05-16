@@ -23,8 +23,8 @@ In the Mark as primary provider column, click **Mark as primary provider** to se
 
 The configuration of Tax providers is described in **following chapters**:
 
-* [Avalara tax provider](xref:en/user-guide/configuring/setting-up/taxes/tax/methods/avalara)
-* [Manual (Fixed or By Country/State/Zip)](xref:en/user-guide/configuring/setting-up/taxes/tax/methods/manual)
+* [Avalara tax provider](xref:en/getting-started/configure-taxes/tax-providers/avalara)
+* [Manual (Fixed or By Country/State/Zip)](xref:en/getting-started/configure-taxes/tax-providers/manual)
 
 ## Tax Categories
 
@@ -36,4 +36,4 @@ To add a new tax category, click **Add new record**, the window is expanded. Ent
 
 Set up the **rates** for each class in **Tax Providers** section in **Configuration → Tax providers**.
 
-Tax categories are assigned to products on [product editing pages](xref:en/user-guide/running/product-management/products/adding-products/index). Taxes can also be applied to **shipping fees** and **payment method** additional fees.
+Tax categories are assigned to products on [product editing pages](xref:en/running-your-store/catalog/products/add-product-for-beginners). Taxes can also be applied to **shipping fees** and **payment method** additional fees.
