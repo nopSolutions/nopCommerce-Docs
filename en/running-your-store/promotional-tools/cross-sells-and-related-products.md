@@ -53,8 +53,8 @@ After you have chosen related product and saved it, **you can check how related 
 
 ## See also
 
-- [Adding products](xref:en/user-guide/running/product-management/products/adding-products/index)
-- [Tier prices](xref:en/user-guide/marketing/promotional/tier-prices)
+- [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
 
 ## Tutorials
 
