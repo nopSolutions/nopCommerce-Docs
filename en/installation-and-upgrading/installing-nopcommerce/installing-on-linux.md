@@ -25,7 +25,7 @@ Open a terminal and run the following commands:
 
 `sudo dpkg -i packages-microsoft-prod.deb`
 
-![nopCommerce installation](_static/linux/register_key.jpg)
+![nopCommerce installation](_static/installing-on-linux/register_key.jpg)
 
 ### Install the .NET Core Runtime
 
@@ -35,7 +35,7 @@ Update the products available for installation, then install the .NET runtime:
 
 `sudo apt-get install apt-transport-https aspnetcore-runtime-2.2`
 
-![nopCommerce installation](_static/linux/net_core.jpg)
+![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
 
 *if you have any error see detail information on the https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/runtime-current page*
 
@@ -43,7 +43,7 @@ You may see all installed .Net Core runtimes by the following command:
 
 `dotnet --list-runtimes`
 
-![nopCommerce installation](_static/linux/list_runtimes.jpg)
+![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
 
 ### Install SQL Server
 
@@ -51,7 +51,7 @@ Register the Microsoft SQL Server Ubuntu repository (for ubuntu 16.04 but it wor
 
 `sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)"`
 
-![nopCommerce installation](_static/linux/register_sql_repository.jpg)
+![nopCommerce installation](_static/installing-on-linux/register_sql_repository.jpg)
 
 Then install SQL Server 2017:
 
@@ -59,19 +59,19 @@ Then install SQL Server 2017:
 
 `sudo apt-get install -y mssql-server`
 
-![nopCommerce installation](_static/linux/install_sql.jpg)
+![nopCommerce installation](_static/installing-on-linux/install_sql.jpg)
 
 At last configure SQL Server:
 
 `sudo /opt/mssql/bin/mssql-conf setup`
 
-![nopCommerce installation](_static/linux/configure_sql.jpg)
+![nopCommerce installation](_static/installing-on-linux/configure_sql.jpg)
 
 You may see Microsoft SQL Server status by the following command:
 
 `sudo systemctl status mssql-server`
 
-![nopCommerce installation](_static/linux/sql_status.jpg)
+![nopCommerce installation](_static/installing-on-linux/sql_status.jpg)
 
 ### Install nginx
 
@@ -79,7 +79,7 @@ Install the nginx package:
 
 `sudo apt-get install nginx`
 
-![nopCommerce installation](_static/linux/Install_nginx.jpg)
+![nopCommerce installation](_static/installing-on-linux/Install_nginx.jpg)
 
 Run the nginx service:
 
@@ -89,7 +89,7 @@ and check it status:
 
 `sudo systemctl status nginx`
 
-![nopCommerce installation](_static/linux/status_nginx.jpg)
+![nopCommerce installation](_static/installing-on-linux/status_nginx.jpg)
 
 To configure nginx as a reverse proxy to forward requests to your ASP.NET Core app, modify /etc/nginx/sites-available/default. Open it in a text editor and replace the contents with the following:
 
@@ -193,6 +193,6 @@ Check the nopCommerce service status
 
 `sudo systemctl status nopCommerce420p.service`
 
-![nopCommerce installation](_static/linux/status_nopCommerce.jpg)
+![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
 
 **Now everything is ready, you can proceed to install and configure the store**

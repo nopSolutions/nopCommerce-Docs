@@ -66,7 +66,7 @@
           href: getting-started/design-your-store/media-settings.md
     -
       name: Configure payments
-      href: getting-started/configure-payments/advanced-configuration/index.md
+      href: getting-started/configure-payments/index.md
       items:
         -
           name: Payment methods
