@@ -15,31 +15,31 @@ contributors: git.RomanovM, git.DmitriyKulagin
 | ----------------- | ------------- |
 | Windows Client    | 7 SP1+, 8.1   |
 | Windows 10 Client | Version 1607+ |
-| Windows Server    | 2008 R2 SP1+  |
+| Windows Server    | 2012 R2+      |
 
 * Linux
 
 | OS                           | Version             |
 | ---------------------------- | ------------------- |
-| Red Hat Enterprise Linux     | 6                   |
-| CentOS, Oracle Linux         | 7                   |
-| Fedora                       | 29, 30              |
-| Debian                       | 9                   |
-| Ubuntu                       | 16.04, 18.04, 18.10 |
-| Linux Mint                   | 17, 18              |
+| Red Hat Enterprise Linux     | 6+                  |
+| CentOS, Oracle Linux         | 7+                  |
+| Fedora                       | 30+                 |
+| Debian                       | 9+                  |
+| Ubuntu                       | 18.04, 19.10, 20.04 |
+| Linux Mint                   | 18+                 |
 | OpenSUSE                     | 15+                 |
 | SUSE Enterprise Linux (SLES) | 12 SP2+             |
-| Alpine Linux                 | 3.7+                |
+| Alpine Linux                 | 3.10+               |
 
 * MacOS
 
 | OS       | Version |
 | -------- | ------- |
-| Mac OS X | 10.12+  |
+| Mac OS X | 10.13+  |
 
 > [!NOTE]
 > 
-> For more information about browser support please visit [Supported OS versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
+> For more information about browser support please visit [Supported OS versions](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md)
 
 ## 1. Supported Browsers
 
@@ -52,17 +52,17 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 Since it is based on Microsoft's ASP.NET framework we need to install a few tools before starting developing on top of nopCommerce.
 
-### 2.1 \.Net Core 2.2 runtime & .Net Core SDK
+### 2.1 \.NET Core 3.1 runtime & .NET Core SDK
 
-Since nopCommerce 4.2 is based on .Net Core 2.2 framework. We need to install .Net Core 2.2 runtime and .Net Core SDK before we start development on nopCommerce.
+Since nopCommerce 4.30 is based on .NET Core 3.1 framework. We need to install [.NET Core 3.1 runtime](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer) and [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer) before we start development on nopCommerce.
 
-### 2.2 Visual Studio 2017 or Above / Visual Studio Code
+### 2.2 Visual Studio 2019 or Above / Visual Studio Code
 
-As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual Studio IDE is best for developing Dot Net based Applications. Since .Net Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
+As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual Studio IDE is best for developing Dot Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
 
-### 2.3 Microsoft SQL Server 2012 or Above
+### 2.3 Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above
 
-nopCommerce uses Entity Framework as a ORM Framework. Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. But unfortunately out of the box nopCommerce doesn't support other database than MSSQL.
+Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB  is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. And you may choose between MS SQL Server and MySql server.
 
 ### 2.4 Internet Information Service (IIS) 7.0 or above
 
