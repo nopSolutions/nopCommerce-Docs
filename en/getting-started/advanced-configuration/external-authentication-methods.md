@@ -11,9 +11,6 @@ External authentication methods allow users to login to a nopCommerce site witho
 
 After an external authentication method is configured and marked as active, users will see a new authentication option on the login page.
 
-> [!NOTE]
-> 
-> You can enable an auto registration for users logged-in using external methods. To do so, go to **Configuration → Settings → Customer Settings**. In the **External authentication settings** section of the Customer Settings tab tick the **Auto register enabled** checkbox.
 
 ## Manage the external authentication methods
 
