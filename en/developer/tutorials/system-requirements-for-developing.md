@@ -52,13 +52,13 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 Since it is based on Microsoft's ASP.NET framework we need to install a few tools before starting developing on top of nopCommerce.
 
-### 2.1 \.Net Core 3.1 runtime & .Net Core SDK
+### 2.1 \.NET Core 3.1 runtime & .NET Core SDK
 
-Since nopCommerce 4.30 is based on .Net Core 3.1 framework. We need to install .Net Core 3.1 runtime and .Net Core SDK before we start development on nopCommerce.
+Since nopCommerce 4.30 is based on .NET Core 3.1 framework. We need to install [.NET Core 3.1 runtime](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer) and [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer) before we start development on nopCommerce.
 
 ### 2.2 Visual Studio 2019 or Above / Visual Studio Code
 
-As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual Studio IDE is best for developing Dot Net based Applications. Since .Net Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
+As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual Studio IDE is best for developing Dot Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
 
 ### 2.3 Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above
 
