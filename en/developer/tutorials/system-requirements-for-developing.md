@@ -62,7 +62,7 @@ As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual St
 
 ### 2.3 Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above
 
-Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB  is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. And you may choose between MS SQL Server and MySql server.
+Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB  is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. And you may choose between MS SQL Server and MySql server.
 
 ### 2.4 Internet Information Service (IIS) 7.0 or above
 
