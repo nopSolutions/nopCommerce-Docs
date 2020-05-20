@@ -7,11 +7,12 @@ contributors: git.skoshelev
 
 # Installing on Linux
 
-This chapter describes how to install the nopCommerce software on Linux system on the example of XUbuntu 19.04:
+This chapter describes how to install the nopCommerce software on Linux system on the example of XUbuntu 20.04:
 
 1. Install and configure software
 1. Get nopCommerce
 1. Create and configure the nopCommerce Web service
+1. Trouble shutting
 
 ## 1. Install and configure software
 
@@ -21,7 +22,7 @@ Before installing .NET Core, we'll need to register the Microsoft key and instal
 
 Open a terminal and run the following commands:
 
-`wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
+`wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
 
 `sudo dpkg -i packages-microsoft-prod.deb`
 
@@ -33,11 +34,13 @@ Update the products available for installation, then install the .NET runtime:
 
 `sudo apt-get update`
 
-`sudo apt-get install apt-transport-https aspnetcore-runtime-2.2`
+`sudo apt-get install apt-transport-https aspnetcore-runtime-3.1`
 
 ![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
 
-*if you have any error see detail information on the https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/runtime-current page*
+> [!NOTE]
+> 
+> if you have any error see detail information on the https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page
 
 You may see all installed .Net Core runtimes by the following command:
 
@@ -45,33 +48,23 @@ You may see all installed .Net Core runtimes by the following command:
 
 ![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
 
-### Install SQL Server
+### Install MySql Server
 
-Register the Microsoft SQL Server Ubuntu repository (for ubuntu 16.04 but it work on 19.04)
+Install the MySql server 8.0 version
 
-`sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)"`
+`sudo apt-get install mysql-server`
 
-![nopCommerce installation](_static/installing-on-linux/register_sql_repository.jpg)
+![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
 
-Then install SQL Server 2017:
+By default, the root password is empty, lets set it
 
-`sudo apt-get update`
+`sudo /usr/bin/mysql_secure_installation`
 
-`sudo apt-get install -y mssql-server`
+![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
 
-![nopCommerce installation](_static/installing-on-linux/install_sql.jpg)
-
-At last configure SQL Server:
-
-`sudo /opt/mssql/bin/mssql-conf setup`
-
-![nopCommerce installation](_static/installing-on-linux/configure_sql.jpg)
-
-You may see Microsoft SQL Server status by the following command:
-
-`sudo systemctl status mssql-server`
-
-![nopCommerce installation](_static/installing-on-linux/sql_status.jpg)
+> [!NOTE]
+> 
+> If you have some problem with configuring root password on your MySql server please read the following articles: https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html and https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost
 
 ### Install nginx
 
@@ -79,7 +72,7 @@ Install the nginx package:
 
 `sudo apt-get install nginx`
 
-![nopCommerce installation](_static/installing-on-linux/Install_nginx.jpg)
+![nopCommerce installation](_static/installing-on-linux/install_nginx.jpg)
 
 Run the nginx service:
 
@@ -100,7 +93,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
 
-    server_name   nopCommerce-420.com;
+    server_name   nopCommerce-430.com;
 
     location / {
     proxy_pass         http://localhost:5000;
@@ -135,17 +128,17 @@ server {
 
 Create a directory
 
-`mkdir /var/www/nopCommerce420`
+`mkdir /var/www/nopCommerce430`
 
 Download and unpack the nopCommerce:
 
-`cd /var/www/nopCommerce420`
+`cd /var/www/nopCommerce430`
 
-`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.20/nopCommerce_4.20_NoSource_FrameworkDependent.rar`
+`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.30/nopCommerce_4.30_NoSource_linux_x64.zip`
 
-`sudo apt-get install unrar`
+`sudo apt-get install unzip`
 
-`sudo unrar x nopCommerce_4.20_NoSource_FrameworkDependent.rar`
+`sudo unzip nopCommerce_4.30_NoSource_linux_x64.zip`
 
 Create couple directories to run nopCommerce:
 
@@ -155,28 +148,28 @@ Create couple directories to run nopCommerce:
 
 Change the file permissions
 
-cd ..
+`cd ..`
 
-sudo chgrp -R www-data nopCommerce420/
+`sudo chgrp -R www-data nopCommerce430/`
 
-sudo chown -R www-data nopCommerce420/
+`sudo chown -R www-data nopCommerce430/`
 
 ## 3. Create the nopCommerce service
 
-Create the /etc/systemd/system/nopCommerce420.service file with the following contents:
+Create the /etc/systemd/system/nopCommerce430.service file with the following contents:
 
 ```
 [Unit]
 Description=Example nopCommerce app running on XUbuntu
 
 [Service]
-WorkingDirectory=/var/www/nopCommerce420
-ExecStart=/usr/bin/dotnet /var/www/nopCommerce420/Nop.Web.dll
+WorkingDirectory=/var/www/nopCommerce430
+ExecStart=/usr/bin/dotnet /var/www/nopCommerce430/Nop.Web.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=nopCommerce420-example
+SyslogIdentifier=nopCommerce430-example
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
@@ -187,12 +180,28 @@ WantedBy=multi-user.target
 
 Start the service
 
-`sudo systemctl start nopCommerce420p.service`
+`sudo systemctl start nopCommerce430.service`
 
 Check the nopCommerce service status
 
-`sudo systemctl status nopCommerce420p.service`
+`sudo systemctl status nopCommerce430.service`
 
 ![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
 
+Restart the nginx server
+
+`sudo systemctl restart nginx`
+
 **Now everything is ready, you can proceed to install and configure the store**
+
+## 4. Trouble shutting
+
+### Gdip
+
+*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception) just install the libgdiplus library*
+
+*`sudo apt-get install libgdiplus`*
+
+### SSL
+
+*If you want to use SSL on your site don't forget set to `true` the `UseHttpXForwardedProto` setting in the **appsettings.json** file*
