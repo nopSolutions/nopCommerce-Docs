@@ -5,7 +5,7 @@ author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# Instruction on how to start developing on nopCommerce 4.2
+# Instruction on how to start developing on nopCommerce 4.3
 
 ## Things covered in this tutorial
 
@@ -20,27 +20,7 @@ nopCommerce is open-source Microsoft ASP.NET based e-commerce solution. This is 
 
 ## 1. Tools Required for Development
 
-Since it is based on Microsoft's ASP.NET framework we need to install a few tools before starting developing on top of nopCommerce.
-
-### 1.1 \.Net Core 2.2 runtime & .Net Core SDK
-
-Since nopCommerce 4.2 is based on .Net Core 2.2 framework. We need to install .Net Core 2.2 runtime and .Net Core SDK before we start development on nopCommerce.
-
-### 1.2 Visual Studio 2017 or Above / Visual Studio Code
-
-As we know nopCommerce is based on 'Microsoft's ASP.NET framework' and Visual Studio IDE is best for developing Dot Net based Applications. Since .Net Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
-
-### 1.3 Microsoft SQL Server 2012 or Above
-
-nopCommerce uses Entity Framework as a ORM Framework. Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. But unfortunately out of the box nopCommerce doesn't support other database than MSSQL.
-
-### 1.4 Internet Information Service (IIS) 7.0 or above
-
-For hosting nopCommerce app/project we can use IIS. Which is Microsoft technology used to host Microsoft web based applications on windows platform. But since nopCommerce 4.2 is built on top of .Net core technology. Which enables .Net developers to create platform in depend applications. So due to which we can deploy nopCommerce on multi platform like: Windows, Linux, MacOs (To learn more about Support operating system please visit [this page](https://docs.microsoft.com/dotnet/core/install/dependencies)) And can host on various hosting tools like: IIS, Apache, NGINX etc.
-
-> [!NOTE]
-> 
-> You can learn more about technology and system requirement from [here](https://docs.nopcommerce.com/user-guide/installing/technology-system-requirements.html)
+You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article
 
 ## 2. Stack of technologies used in nopCommerce
 
@@ -67,19 +47,25 @@ The best part of nopCommerce is that its source code is fully customizable and i
   * AutoFac
 
     Autofac is an addictive IoC container for .NET. It manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.
-  * Entity Framework
+  * Linq2DB
 
-    Entity Framework is an open-source ORM framework for .NET applications supported by Microsoft. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. So, it is the bridge between Business Layer and Data Layer.
+    Linq2DB is an open-source ORM framework for .NET applications. It is a .NET Foundation project. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. So, it is the bridge between Business Layer and Data Layer.
+  * FluentMigrator
+
+    Fluent Migrator is a migration framework for .NET. Migrations are a structured way to alter your database schema and are an alternative to creating lots of sql scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, the test database and the production database). Database schema changes are described in classes written in C# that can be checked into a version control system.
 * Data Layer
   * Microsoft SQL Server
 
     SQL Server is Microsoft's full-featured relational database management system (RDBMS).
+  * MySQL Server
+
+    MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications.
   * Redis (cache)
 
     Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cash dataset. Which boosts the speed and performance of application.
   * Microsoft Azure(Optional)
-    
-        Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more.
+
+    Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more.
 
 ## 3. How to download the project and run it on the local machine
 
@@ -105,7 +91,7 @@ In there you will also see a solution file with extension of `.sln`, please doub
 
 nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using visual studio by hitting ctrl+f5 or just f5 to run project in debugging mode, or you can run using physical button with play icon in visual studio. After you run the project for the first time you will see a installation page like below:
 
-![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/image3.png)
+![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/nop_install.jpg)
 
 Here you need to fill all required information to complete your installation.
 
@@ -117,19 +103,13 @@ Here you are required to provide an email address and password which then be use
 
 Here you need to provide your information you want to use for this project.
 
-Here you have two options for your database storage.
+Here you have two choose your database storage. You can use MS SQL Server or MySQL server. It is your decision which one you want to use.
 
-#### Use built-in data storage (SQL Server Compact)
+For the sake of this tutorial we will be using the MS SQL Server.
 
-You may choose this option to create a database on your file system which will not go to create an actual database in your database server.
+Also you will see the checkbox asking if you want to create a database if not exist, please check the checkbox.
 
-#### Use SQL Server (or SQL Express) database [Recommended]
-
-You may choose this option to create database in your SQL server installed in your system and get access to it from SSMS (SQL Management Studio).
-
-It is your decision which one you want to use but for the sake of this tutorial we will be using the second option because it is the recommended option by nopCommerce. After choosing a second option you will see the checkbox asking if you want to create a database if not exist, please check the checkbox.
-
-Moving further you need to set up your connection string. For that, you have two options. One is "Enter SQL Connection Value". If you choose this option then a form with "SQL Server name" and "Database name" will appear. In SQL Server name you need to provide your SQL server's name and in Database name you need to provide a database name you want to create or if you already have one then it will not create but use the existing one. However, you also can choose the option "Enter raw connection string" then you need to write whole connection string by yourself. After that you need to provide your SQL server's credentials for authentication.
+Moving further you need to set up your connection string. For that, you have two options. One is fill form with "SQL Server name" and "Database name". In SQL Server name you need to provide your SQL server's name and in Database name you need to provide a database name you want to create or if you already have one then it will not create but use the existing one. However, you also can choose the option "Enter raw connection string" then you need to write whole connection string by yourself. After that you need to provide your SQL server's credentials for authentication.
 
 After you fill all of this information you need to press "install" button, it will take about 1 minute to complete the installation, then you will be redirected to online shop homepage.
 
