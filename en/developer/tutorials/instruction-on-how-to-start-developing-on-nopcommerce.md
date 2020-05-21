@@ -2,7 +2,7 @@
 title: Instruction on how to start developing on nopCommerce
 uid: en/developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
 author: nop.sea
-contributors: git.RomanovM, git.DmitriyKulagin, git.PRudykIteo
+contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
 # Instruction on how to start developing on nopCommerce 4.3
