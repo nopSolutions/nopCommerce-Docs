@@ -1,4 +1,4 @@
-#nopCommerce docs style guide#
+# nopCommerce docs style guide #
 
 If you are going to contribute to nopCommerce documentation please follow these simple rules to make the docs consistent and easy to read.
 
@@ -21,7 +21,7 @@ If you are going to contribute to nopCommerce documentation please follow these 
 	* 	# this is a huge header #
 		## this is a smaller header ##
 	* 	
-		> [!NOTE or TIP]
+		> [NOTE or TIP]
 		> 
 		> This is a note or tip
 
