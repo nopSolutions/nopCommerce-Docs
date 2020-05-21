@@ -194,7 +194,7 @@ Restart the nginx server
 
 **Now everything is ready, you can proceed to install and configure the store**
 
-## 4. Trouble shutting
+## 4. Troubleshooting
 
 ### Gdip
 
