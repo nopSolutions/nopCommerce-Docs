@@ -1,4 +1,4 @@
-*nopCommerce docs style guide*
+#nopCommerce docs style guide#
 
 If you are going to contribute to nopCommerce documentation please follow these simple rules to make the docs consistent and easy to read.
 
@@ -17,13 +17,13 @@ If you are going to contribute to nopCommerce documentation please follow these 
 	* «Incorrect»
 	* 'Incorrect'
 	
-4. Make articles readable and easy to understand. Use headers, notes, lists, screenshots and other tools to make the article understandable.
+4. Make articles readable and easy to understand. Use headers, notes, tips, lists, screenshots and other tools to make the article understandable.
 	* 	# this is a huge header #
 		## this is a smaller header ##
-		### this is even smaller ###
-	* 	> [!NOTE]
+	* 	
+		> [!NOTE or TIP]
 		> 
-		> This is a note
+		> This is a note or tip
 
 5. Optimize screenshots quality to reduce image size.
 
