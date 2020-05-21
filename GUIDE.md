@@ -8,7 +8,7 @@ If you are going to contribute to nopCommerce documentation please follow these 
 	* Click **Configure** beside the Avalara tax provider option in the list
 	
 2. Write headers, button and field names as it's presented in nopCommerce admin area or public site. Don't use capital letters unnecessarily as well as CAPSLOCK key. For example:
-	* If you are reffering to a message template list page write: **Content management -> Message templates** and not **Content Management -> Message Templates**
+	* If you are reffering to a message template list page write: **Content management → Message templates** and not **Content Management → Message Templates**
 	* Use **Edit** button but not **EDIT** button
 	* Follow correct brand name spelling: **PayPal Smart Payment Buttons**
 
