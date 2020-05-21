@@ -2,7 +2,7 @@
 title: Instruction on how to start developing on nopCommerce
 uid: en/developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
 author: nop.sea
-contributors: git.RomanovM, git.DmitriyKulagin
+contributors: git.RomanovM, git.DmitriyKulagin, git.PRudykIteo
 ---
 
 # Instruction on how to start developing on nopCommerce 4.3
@@ -30,7 +30,7 @@ The best part of nopCommerce is that its source code is fully customizable and i
   * Razor View Engine
 
     It is to render html page on client side. Razor View engine is a markup syntax which helps us to write HTML and server-side code in web pages using C# or VB.NET.
-  * Jquery
+  * JQuery
 
     It is a javascript library used to extend the UI & UX functionality of html pages.
   * Kendo UI
@@ -62,7 +62,7 @@ The best part of nopCommerce is that its source code is fully customizable and i
     MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications.
   * Redis (cache)
 
-    Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cash dataset. Which boosts the speed and performance of application.
+    Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cache dataset. Which boosts the speed and performance of application.
   * Microsoft Azure(Optional)
 
     Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more. 
@@ -85,11 +85,11 @@ Open the folder, Inside that folder you will see a bunch of files and folders wh
 
 ![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
 
-In there you will also see a solution file with extension of `.sln`, please double click that solution file to open nopCommerce project in you visual studio.
+In there you will also see a solution file with extension of `.sln`, please double click that solution file to open nopCommerce project in you Visual Studio.
 
-### Step 3: Running nopCommerce project using visual studio
+### Step 3: Running nopCommerce project using Visual Studio
 
-nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using visual studio by hitting ctrl+f5 or just f5 to run project in debugging mode, or you can run using physical button with play icon in visual studio. After you run the project for the first time you will see a installation page like below:
+nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using Visual Studio by hitting ctrl+F5 or just F5 to run project in debugging mode, or you can run using physical button with play icon in Visual Studio. After you run the project for the first time you will see a installation page like below:
 
 ![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/nop_install.jpg)
 
