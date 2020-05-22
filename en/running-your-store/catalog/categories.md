@@ -36,7 +36,7 @@ When this option is disabled, customers will not be able to select a page size o
 
 ## Display
 
-![display](_static/categories/display.png)
+![display](_static/categories/display-section.png)
 
 In the Category Display panel, define the following category information:
 
