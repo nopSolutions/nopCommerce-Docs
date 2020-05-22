@@ -9,7 +9,7 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 ## What is web.config file
 
-web.config file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application login from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
+web.config file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application logic from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
 
 The ASP.NET framework uses a hierarchical configuration system. You can place a Web.Config file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
 
