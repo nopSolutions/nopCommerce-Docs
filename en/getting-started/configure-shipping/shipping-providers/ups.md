@@ -11,7 +11,7 @@ To access your account at UPS use a username, a password, and an **XML license n
 
 ## Define the UPS Real Time Shipping Calculations
 
-1. Create a UPS account by going to [https://www.ups.com/upsdeveloperkit?loc=en_USto](https://www.ups.com/upsdeveloperkit?loc=en_USto) receive the following:
+1. Create a UPS account by going to [https://www.ups.com/upsdeveloperkit?loc=en_US](https://www.ups.com/upsdeveloperkit?loc=en_US) to receive the following:
     * Username ID
     * Password
     * XML access license number
