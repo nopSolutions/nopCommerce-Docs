@@ -33,6 +33,7 @@ In order settings you can define:
 * To require customers to accept the **Terms of service** before processing the order (**on the confirm order page**).
 * To **Disable “Billing address” step** to disable the billing address step during checkout. The billing address will be pre-filled and saved using the default registration data (cannot be used with guest checkout selected). Ensure the appropriate address fields that cannot be pre-filled are not required (or disabled).
 * To **Disable “Order completed” page**, to automatically redirect a customer to the order details page when he places an order.
+* **Display "Pickup in store" on "Shipping method" page** to display "Pickup in store" options on the shipping method page or on the shipping address page.
 * **Min order sub-total amount**. Orders under this amount will not be issued.
 * To **Calculate “Min order sub-total amount” including tax**. In this case, an order sub-total will be calculated including tax when validating Min order sub-total amount field (specified in the previous step).
 * **Min order total amount**. Orders under this amount will not be issued.
