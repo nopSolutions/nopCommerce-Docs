@@ -2,7 +2,7 @@
 title: Shipping settings
 uid: en/getting-started/configure-shipping/shipping-settings
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev
+contributors: git.rajupaladiya, git.exileDev, git.mariannk
 ---
 
 # Shipping settings
@@ -11,14 +11,16 @@ This chapter describes how to **set up the shipping details of a store**. Beside
 
 To manage shipping settings go to **Configuration → Settings → Shipping Settings**.
 
-![Shipping Settings](_static/shipping-settings/shipping-settings.png)
+![Shipping Settings](_static/shipping-settings/shipping-settings.jpg)
 
-Select the **Pick Up in Store enabled** to display the pickup in store option during checkout at the shipping address step. Users will see the following screen:
+* Check **Estimate shipping enabled (cart page)** to display estimate shipping information based on customer's shipping address on the shopping cart page.
+* Check **Estimate shipping enabled (product page)** to display estimate shipping information based on customer's shipping address on the product details page.
+* Select the **Pick Up in Store enabled** to display the pickup in store option during checkout at the shipping address step. Users will see the following screen:
 
 ![Shipping Address](_static/shipping-settings/shipping-address.png) ![Pickup Point Address](_static/shipping-settings/Pickup-Point-address.png)
 
 * Choose to **Display Pickup points on the map** if you want to display them on the Google Maps. Customers should not enter a shipping address and choose a shipping method when this option is selected. Note: You can also specify a fee for the 'Pick Up in Store' option.
-* Tick **Free shipping over ‘x’**, to enable free shipping for orders over a certain total amount. The following field is then displayed, enabling you to define the value of X:
+* Tick **Free shipping over 'x'**, to enable free shipping for orders over a certain total amount. The following field is then displayed, enabling you to define the value of X:
 * In the **Value of X** field, enter the value over which all orders with a total greater than this will qualify for free shipping.
 * Calculate 'X' including tax. If it is not ticked, the value is calculated excluding tax.
 * Tick **Estimate shipping enabled** to enable customers to see a shipping estimate on the shopping cart page in the public store, as follows:
