@@ -32,7 +32,7 @@ Perform the following steps to enable Google Analytics integration:
 * Check **Enable eCommerce** to pass information about orders to Google eCommerce feature.
 * Check **Use JS to send eCommerce info** to use JS code to send eCommerce info from the order completed page. But in case of redirection payment methods some customers may skip it. Otherwise, e-commerce information will be sent using HTTP request. Information is sent each time an order is paid but UTM is not supported in this mode.
 * Check **Include tax** to include tax when generating tracking code for eCommerce part.
-* Check **Include customer ID**to include customer identifier to script.
+* Check **Include customer ID** to include customer identifier to script.
 * Click **Save**. Google Analytics will be integrated into your store.
 
 > [!NOTE]
