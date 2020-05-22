@@ -1,13 +1,13 @@
 ---
-title: Installing on Windows Azure
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-windows-azure
+title: Installing on Microsoft Azure
+uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure
 author: git.AndreiMaz
 contributors: git.skoshelev, git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
-# Installing on Windows Azure
+# Installing on Microsoft Azure
 
-## There are three ways to deploy nopCommerce on Windows Azure
+## There are three ways to deploy nopCommerce on Microsoft Azure
 
 1. **FTP.** Use this method if you already have a package ready to deploy (no source code). You can publish to a local File System then upload the published files through ftp. How to get FTP credentials for azure? you go [Azure.com](https://azure.microsoft.com/en-us/) → My Account → Management portal → Choose your website → go Dashboard → quick glance. From here you can find the FTP credentials or you can 'Reset your deployment credentials' or 'Download the publish profile'. For new azure portal go [portal.azure.com](http://portal.azure.com/) → browse websites → navigate to your website → Properties. From here you can find the FTP credentials or you can 'Reset your deployment credentials' or 'Download the publish profile'.
 
@@ -19,7 +19,7 @@ Once the site is deployed you have to install nopCommerce. Please read more abou
 
 Azure has support for multiple instances since version 3.70. It's great for any application scalability. Now you should not worry whether your site can handle a large number of visitors. So what exactly has been done to support multiple instances in Azure and web farms?
 
-* **BLOB storage account support in Windows Azure.** Please learn more about storage accounts in Azure [here](https://azure.microsoft.com/en-us/documentation/articles/storage-introduction/). *How to configure:*
+* **BLOB storage account support in Microsoft Azure.** Please learn more about storage accounts in Azure [here](https://azure.microsoft.com/en-us/documentation/articles/storage-introduction/). *How to configure:*
   * Once your BLOB storage is set up in Azure, open your `appsettings.json` (or web.config in previous versions) file, find "AzureBlobStorage" element and specify your BLOB storage connection string, container, endpoint.
 * **Distributed caching and session management support.** [Redis](http://redis.io/) has been chosen as a caching server (already available in Azure, Amazon, other cloud hosting companies). *How to configure:*
   * So first, you have to install and setup Redis. Please find more about how to use Redis in Azure [here](https://azure.microsoft.com/en-us/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache/).
@@ -28,4 +28,4 @@ Azure has support for multiple instances since version 3.70. It's great for any 
 * **Recommended settings on appsettings.json file to improve stability**
   * **UsePluginsShadowCopy** - Set it to "false" to prevent the problem with IIS pool recycle and horizontal scaling
 * **Ensure that our schedule tasks are run on one farm node at a time.** *How to configure (for versions 3.90 and below):*
-  * In order to enable this functionality open web.config file, find "WebFarms" element, and set its "MultipleInstancesEnabled" attribute to "True". If you use Windows Azure Websites (not cloud services), then also set "RunOnAzureWebsites" attribute to "True".
+  * In order to enable this functionality open web.config file, find "WebFarms" element, and set its "MultipleInstancesEnabled" attribute to "True". If you use Microsoft Azure Websites (not cloud services), then also set "RunOnAzureWebsites" attribute to "True".
