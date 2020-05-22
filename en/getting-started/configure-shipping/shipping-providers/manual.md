@@ -94,13 +94,13 @@ To add a new shipping rule, click **Add record**. The Add new record window is d
 
 > [!NOTE]
 > 
-> make sure that you settings "**Configuration → Settings → Shipping Settings → Consider associated products dimensions and weigh**" is true.
+> Make sure that you settings "**Configuration → Settings → Shipping Settings → Consider associated products dimensions and weight**" is true.
 
 Click **Save**.
 
 > [!NOTE]
 > 
-> you can add/remove shipping methods in the Shipping methods window, accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png)
+> You can add/remove shipping methods in the Shipping methods window, accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png)
 > 
 > If you wish to limit your customers only to methods configured on that screen tick this checkbox on the bottom of the page.
 
@@ -108,17 +108,6 @@ Click **Save**.
 ## Tutorials
 
 * [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
