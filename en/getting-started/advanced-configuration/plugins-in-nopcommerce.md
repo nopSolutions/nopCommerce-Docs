@@ -17,7 +17,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 
 > [!NOTE]
 > 
-> plugins labelled “By nopCommerce team” are developed by the nopCommerce team and are distributed freely. Third-party services connectors are developed in the course of the Technology Partnership program, they are subject to nopCommerce [premium support services](http://www.nopcommerce.com/nopcommerce-premium-support-services) and are also distributed freely.
+> Plugins labelled “By nopCommerce team” are developed by the nopCommerce team and are distributed freely. Third-party services connectors are developed in the course of the Technology Partnership program, they are subject to nopCommerce [premium support services](http://www.nopcommerce.com/nopcommerce-premium-support-services) and are also distributed freely.
 
 ## To install a plugin
 

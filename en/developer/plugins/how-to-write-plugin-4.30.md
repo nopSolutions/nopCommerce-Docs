@@ -1,28 +1,28 @@
 ---
 title: How to write a plugin for nopCommerce
-uid: en/developer/plugins/how-to-write-plugin-4.20
+uid: en/developer/plugins/how-to-write-plugin-4.30
 author: git.AndreiMaz
-contributors: git.Kevat, git.exileDev, git.DmitriyKulagin
+contributors: git.skoshelev
 ---
 
-# How to write a plugin for nopCommerce 4.20
+# How to write a plugin for nopCommerce
 
-Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace.aspx) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
+Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
 
 ## The plugin structure, required files, and locations
 
-1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into `\Plugins` directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/library/sx2027y2.aspx)).
+1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into `\Plugins` directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into "Plugins" solution folder.
 
     A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 
-    ![p1](_static/how-to-write-plugin-4.20/write_plugin_4.20_1.jpg)
+    ![p1](_static/how-to-write-plugin-4.30/write_plugin_4.30_1.jpg)
 
 1. Once the plugin project is created you have to open its `.csproj` file in any text editor and replace its content with the following one:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>netcoreapp2.2</TargetFramework>
+            <TargetFramework>netcoreapp3.1</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
@@ -59,8 +59,8 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
         "Group": "Payment methods",
         "FriendlyName": "PayPal Standard",
         "SystemName": "Payments.PayPalStandard",
-        "Version": "1.49",
-        "SupportedVersions": [ "4.20" ],
+        "Version": "1.60",
+        "SupportedVersions": [ "4.30" ],
         "Author": "nopCommerce team",
         "DisplayOrder": 1,
         "FileName": "Nop.Plugin.Payments.PayPalStandard.dll",
@@ -68,9 +68,16 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     }
     ```
 
+    > [!NOTE]
+    > Also, `plugin.json` file may contain the following fields:
+    >
+    > * **LimitedToStores** - The list of store identifiers in which this plugin is available. If empty, then this plugin is available in all stores.
+    > * **LimitedToCustomerRoles** - The list of customer role identifiers for which this plugin is available. If empty, then this plugin is available for all ones.
+    > * **DependsOnSystemNames** - The list of plugins' system name that this plugin depends on
+
     Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format Nop.Plugin.{Group}.{Name}.dll (it is your plugin assembly filename). Ensure that *"Copy to Output Directory"* property of this file is set to *"Copy if newer"*.
 
-    ![p2](_static/how-to-write-plugin-4.20/write_plugin_4.20_2.jpg)
+    ![p2](_static/how-to-write-plugin-4.30/write_plugin_4.30_2.jpg)
 
 1. The last required step is to create a class which implements **IPlugin** interface (Nop.Services.Plugins namespace). nopCommerce has **BasePlugin** class which already implements some IPlugin methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from IPlugin. For example, we have "IPaymentMethod" interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as *ProcessPayment()* or *GetAdditionalHandlingFee()*. Currently nopCommerce has the following specific plugin interfaces:
 
@@ -101,7 +108,7 @@ What we need to do now is create a controller, a model, and a view.
 1. A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an ASP.NET MVC application.
 1. An MVC model contains all of your application logic that is not contained in a view or a controller.
 
-You can find more information about the MVC pattern [here](http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
+You can find more information about the MVC pattern [here](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-3.1).
 
 So let's start:
 
@@ -137,14 +144,15 @@ Once you have installed your plugin and added the configuration method you will 
 
 For example, the project structure of PayPalStandard plugin looks like the image below:
 
-![p3](_static/how-to-write-plugin-4.20/write_plugin_4.20_3.jpg)
+![p3](_static/how-to-write-plugin-4.30/write_plugin_4.30_3.jpg)
 
-## Handling "Install" and "Uninstall" methods
+## Handling "Install", "Uninstall" and "Update" methods
 
 This step is optional. Some plugins can require additional logic during plugin installation. For example, a plugin can insert new locale resources. So open your IPlugin implementation (in most case it'll be derived from BasePlugin class) and override the following methods:
 
 1. **Install**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 1. **Uninstall**. This method will be invoked during plugin uninstallation.
+1. **Update**. This method will be invoked during plugin update.
 
 > [!IMPORTANT]
 > 
@@ -167,7 +175,7 @@ public override void Install()
 
 > [!TIP]
 > 
-> Tip: The list of installed plugins is located in `\App_Data\Plugins.json`. The list is created during installation.
+> Tip: The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
 
 ## Routes
 
@@ -178,10 +186,11 @@ Here we will have a look at how to register plugin routes. ASP.NET Core routing 
 ```csharp
 public partial class RouteProvider : IRouteProvider
 {
-    public void RegisterRoutes(IRouteBuilder routeBuilder)
+    public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
     {
-         routeBuilder.MapRoute("Plugin.Payments.PayPalStandard.PDTHandler", "Plugins/PaymentPayPalStandard/PDTHandler",
-            new { controller = "PaymentPayPalStandard", action = "PDTHandler" });
+        //PDT
+        endpointRouteBuilder.MapControllerRoute("Plugin.Payments.PayPalStandard.PDTHandler", "Plugins/PaymentPayPalStandard/PDTHandler",
+                new { controller = "PaymentPayPalStandard", action = "PDTHandler" });
     }
     public int Priority => -1;
 }
