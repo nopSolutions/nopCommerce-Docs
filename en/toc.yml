@@ -24,8 +24,8 @@
           name: Installing on Windows
           href: installation-and-upgrading/installing-nopcommerce/installing-on-windows.md
         -
-          name: Installing on Windows Azure
-          href: installation-and-upgrading/installing-nopcommerce/installing-on-windows-azure.md
+          name: Installing on Microsoft Azure
+          href: installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.md
         -
           name: Installing on Linux
           href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
