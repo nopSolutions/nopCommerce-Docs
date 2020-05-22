@@ -2,7 +2,7 @@
 title: Add product (for beginners)
 uid: en/running-your-store/catalog/products/add-product-for-beginners
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.sanju741, git.exileDev, git.IvanIvanIvanov
+contributors: git.DmitriyKulagin, git.sanju741, git.exileDev, git.IvanIvanIvanov, git.mariannk
 ---
 
 # Add product (for beginners)
@@ -91,13 +91,19 @@ Define product-specific shipping details:
 - **Additional shipping charge**
 - **Delivery date** which will be displayed in the public store. Note that you can manage delivery date options in **Configuration → Shipping → Delivery Dates**.
 
+> [!NOTE]
+> 
+> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**. 
+> This setting allows to display estimate shipping information based on customer's shipping address in pop-up window on the product details page.
+
+
 ## Mappings
 
 In the Mappings section define:
 
 - **Categories**. You can assign a product to as many categories as you want in nopCommerce. Note that you can manage [product categories](xref:en/running-your-store/catalog/categories) in **Catalog → Categories**.
 - **Manufacturer**. You can assign a product to as many manufacturers as you want in nopCommerce. Note that you can manage [manufacturers](xref:en/running-your-store/catalog/manufacturers) in **Catalog → Manufacturers**.
-- **Limited to stores**, if the product is sold in specific stores. Leave the field empty in case this functionality is not required. Note that in order to use this functionality you have to disable the following setting: **Configuration → Catalog Settings → Ignore** **“Limit per store” rules **(sitewide). Learn how to set up several stores [here](xref:en/getting-started/advanced-configuration/multi-store).
+- **Limited to stores**, if the product is sold in specific stores. Leave the field empty in case this functionality is not required. Note that in order to use this functionality you have to disable the following setting: **Configuration → Catalog Settings → Ignore "Limit per store" rules (sitewide)**. Learn how to set up several stores [here](xref:en/getting-started/advanced-configuration/multi-store).
 - **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**
 
 ## Customer roles
