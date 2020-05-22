@@ -13,7 +13,7 @@ To add a new product, go to **Catalog → Products**. Click **Add new** button i
 
 > [!NOTE]
 > 
-> you can import a product from an external file by clicking Import from Excel. Once you have a list of products, you can export it to an external file for backup purposes, by clicking Export to XML(all) or Export to Excel (all). You can export selected products by clicking Export to XML (selected) and Export to Excel (selected). Additionally, it is possible to Download catalog as PDF to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the Delete (selected) button.
+> You can import a product from an external file by clicking Import from Excel. Once you have a list of products, you can export it to an external file for backup purposes, by clicking Export to XML (all found) or Export to Excel (all found). You can export selected products by clicking Export to XML (selected) and Export to Excel (selected). Additionally, it is possible to Download catalog as PDF to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the Delete (selected) button.
 
 ![products_page](_static/add-product-for-beginners/products_page.png)
 
@@ -25,7 +25,7 @@ Adding New Product page are available in two modes: **advanced** and **basic** (
 
 Start by filling up General Information on the **Product info panel**:
 
-- Set up your product as **Simple** or **Grouped** (read more about it here)
+- Set up your product as **Simple** or **Grouped** (read more about it [here](xref:en/running-your-store/catalog/products/grouped-products-variants))
 - Enter your **Product Name**
 - Tick **Visible individually** if you want the product to be in catalog or search results, otherwise the product will be hidden in the catalog and accessible only from a grouped product details page.
 - Enter the product **Short Description** that will be displayed in the catalog
