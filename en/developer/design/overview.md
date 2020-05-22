@@ -21,4 +21,4 @@ A nopCommerce theme is basically used for having a consistent layout and appeara
 
 ![location-of-themes](_static/overview/location-of-themes.png)
 
-**Location of theme(s) in nopCommerce**: All themes are located under nopCommerce root `folder/Themes/`.
+**Location of theme(s) in nopCommerce**: All themes are located under `[nopCommerce root folder]/Themes/`.
