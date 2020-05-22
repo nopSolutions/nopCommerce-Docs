@@ -9,9 +9,9 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 ## Step by step guide for automatic deployment of nopCommerce with git on azure
 
-1. **Your own git-repository** You need your own repository, you cannot just build nopCommerce. It's designed to be used with "publish" function in Visual Studio 2017 as default. I use bitbucket myself and keep that in sync with official repository.
+1. **Your own git-repository** You need your own repository, you cannot just build nopCommerce. It's designed to be used with "Publish" function in Visual Studio 2017 as default. I use Bitbucket myself and keep that in sync with official repository.
 
-1. Setup git on azure
+1. Setup git on Azure
     - Tutorial: [https://azure.microsoft.com/da-dk/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/da-dk/documentation/articles/web-sites-publish-source-control/)
 
     - There's a great video here: [http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo](http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo)
@@ -24,8 +24,8 @@ contributors: git.DmitriyKulagin, git.exileDev
 1. **Get NuGet to work at command line level.** The default behavior of the KUDO script is to check for NuGet packages.
    - To get access to the `Nuget.exe` file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of NuGet packages" in you Visual Studio 2017, and it will be added to your project automatically.
 
-   - Ensure that NuGet is in the path. Copy the `nuget.exe` file to preferred location (I use `c:/Program Files/Nuget/Nuget.exe`). Add it to path environment variable.
-   - Confirm that NuGet is in your path by starting `cmd.exe` and write *nuget*. you should see the command options.
+   - Ensure that NuGet is in the PATH. Copy the `nuget.exe` file to preferred location (I use `c:/Program Files/Nuget/Nuget.exe`). Add it to PATH environment variable.
+   - Confirm that NuGet is in your PATH by starting `cmd.exe` and write *nuget*. you should see the command options.
 
 1. **Generate deployment scripts locally**
     - Open the "Microsoft Azure Command Prompt"
@@ -79,4 +79,4 @@ contributors: git.DmitriyKulagin, git.exileDev
     call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\src\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\Nop.Plugin.DiscountRules.CustomerRoles.csproj" /nologo /verbosity:m /t:Build /p:AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
     ```
 
-Now the plugin is build when you run the deploy scripts :)
+Now the plugin is built when you run the deploy scripts :)
