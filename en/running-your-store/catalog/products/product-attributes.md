@@ -17,7 +17,7 @@ To define product attributes go to **Catalog → Attributes → Product Attribut
 
 ![product_attributes](_static/product-attributes/product_attributes.png)
 
-> [!TIP]
+> [!NOTE]
 > 
 > **By default**, there are **no product attributes precreated** in nopCommerce.
 
