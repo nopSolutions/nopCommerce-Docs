@@ -62,13 +62,13 @@ Define the **customer settings,** as follows:
 * In the **Password recovery link.Days valid** field, enter the number of days for password recovery link. Set it to 0 if you don’t want the link to expire.
 * Enter **Maximum login failures**
 * In the **Lockout time** (login failures) enter number of minutes to lockout users.
-* Tick the checkbox **Force entering email twice** if you want your customers entering password twice during the registration.
+* Tick the checkbox **Force entering email twice** if you want your customers entering email twice during the registration.
 
 ## Account
 
 ![account](_static/customer-settings/customersettings3.png)
 
-* Tick the **'Usernames' enabled** checkbox, to enable using usernames for login and registration instead of emails. Note: it is not recommended to change the option in the Product environment. When this checkbox is selected, the following options are displayed:
+* Tick the **'Usernames' enabled** checkbox, to enable using usernames for login and registration instead of emails. Note: it is not recommended to change the option in the production environment. When this checkbox is selected, the following options are displayed:
   * **Allow customers to change their usernames:** select this option if customers are allowed to change their usernames.
     * **Allow customers to check the availability of usernames:** select this option to enable customers to check the username availability before clicking Save on My Account - Customer Info page. The Check Availability button is displayed in this case, see the example above.
 * Select the **Customer name format,** as follows:
@@ -106,6 +106,7 @@ On the **Customer form fields** panel, define the whether the following form fie
 * **‘Street address 2’ enabled**, if the second street address is enabled. When enabled, you can also decide whether this field should be required.
 * **‘Zip/postal code’ enabled**. When enabled, you can also decide whether this field should be required.
 * **‘City’ enabled.** When enabled, you can also decide whether this field should be required.
+* **‘County’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘Country’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘State/province’ enabled.** When enabled, you can also decide whether this field should be required. Note: This field is visible only when the Country enabled checkbox is ticked.
 * **‘Phone number’ enabled.** When enabled, you can also decide whether this field should be required.
@@ -128,6 +129,7 @@ On the **Address Form Fields** panel, a store owner can manage the address form 
 * Street address 2
 * Zip/postal code
 * City
+* County
 * Country
 * State/province. Note: This field is visible only when the Country is enabled.
 * Phone number
