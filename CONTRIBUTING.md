@@ -76,10 +76,41 @@ If you want to contribute some changes to nopCommerce documentation (article fix
 - Write the code and push back to your GitHub fork.
 - Create pull request. Please read more about it at [https://help.github.com/articles/using-pull-requests/](https://help.github.com/articles/using-pull-requests/). And please always sync with our repository before doing it.
 
-## Microsoft Writing Style Guide
+## Microsoft writing style guide
 
 The [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome/) provides writing style and terminology guidance for all forms of technology communication, including the nopCommerce documentation.
 
 ## Redirects
 
 If you delete an article, change its file name, or move it to a different folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [web.config file](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/web.config).
+
+## nopCommerce documentation style guide
+
+Please follow these simple rules to make the docs consistent and easy to read.
+
+1. Use bold text style to highlight admin area paths, fields, buttons. For example:
+	* To configure Avalara tax provider go to **Configuration → Tax providers**
+	* Assign appropriate code from drop-down list in **Tax category** field
+	* Click **Configure** beside the Avalara tax provider option in the list
+
+1. Highlight file paths and names the following way: `_ViewImports.cshtml`. 
+	
+1. Write headers, button and field names as it's presented in nopCommerce admin area or public site. Don't use capital letters unnecessarily as well as CAPSLOCK key. For example:
+	* If you are reffering to a message template list page write: **Content management → Message templates** and not **Content Management → Message Templates**
+	* Use **Edit** button but not **EDIT** button
+	* Follow correct brand name spelling: **PayPal Smart Payment Buttons**
+
+1. Use the existing quotes style: "correct" or 'correct'. But these are incorrect:
+	* “Incorrect”
+	* «Incorrect»
+	* ‘Incorrect’
+	
+1. Make articles readable and easy to understand. Use headers, notes, tips, lists, screenshots and other tools to make the article understandable.
+	* 	# this is a huge header #
+		## this is a smaller header ##
+	* 	
+		> [NOTE or TIP or IMPORTANT]
+		> 
+		> This is a note or tip or important text
+
+1. If you have any doubts regarding article styling just see how it's already done on other documentation pages.
