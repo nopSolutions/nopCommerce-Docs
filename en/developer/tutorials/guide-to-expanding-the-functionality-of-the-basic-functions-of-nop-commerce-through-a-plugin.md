@@ -94,7 +94,7 @@ This file is used by nopCommerce while listing our Plugin/Widget in the plugin l
 
 ### Step 4: Create a class that extends from BasePlugin Class
 
-Actually we need to have a class that inherent from IPlugin interface so that nopCommerce treats our project as plugin. But nopCommerce already has a class "BasePlugin" that inherits  from IPlugin interface and implements all methods form that interface. So, instead of inheriting from IPlugin interface we can extend from BasePlugin class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override "Install" and "Uninstall" method from BasePlugin class to our class. Finally the class should look like this
+Actually we need to have a class that inherent from IPlugin interface so that nopCommerce treats our project as plugin. But nopCommerce already has a class "BasePlugin" that inherits  from IPlugin interface and implements all methods from that interface. So, instead of inheriting from IPlugin interface we can extend from BasePlugin class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override "Install" and "Uninstall" method from BasePlugin class to our class. Finally the class should look like this
 
 ```cs
 public class HelloWorldPlugin: BasePlugin
@@ -189,7 +189,7 @@ Now if you build your project and navigate to admin panel and go to Configuratio
 
 ![image7](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
 
-Here you may notice that this widget do not have "Configure" button. That is because we did not created a configuration view file for this  widget and did not override "GetConfigurationPageUrl" method from BasePlugin class. Since we have already installed our plugin we do not have to install it again, but here you can see that widget is not active right now. We can activate this by clicking the edit button.
+Here you may notice that this widget do not have "Configure" button. That is because we did not create a configuration view file for this widget and did not override "GetConfigurationPageUrl" method from BasePlugin class. Since we have already installed our plugin we do not have to install it again, but here you can see that widget is not active right now. We can activate this by clicking the edit button.
 
 ![image8](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
 
