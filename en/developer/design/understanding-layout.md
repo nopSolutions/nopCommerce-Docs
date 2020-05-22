@@ -16,7 +16,7 @@ In nopCommerce, there are 2 different kinds of layouts:
 * `_ColumnsOne.cshtml`
 * `_ColumnsTwo.cshtml`
 
-All these 2 layouts are inherited from one main layout called: `_Root.cshtml`. The `_Root.cshtml` itself is inherited from `_Root.Head.cshtml`. `_Root.Head.cshtml` is the file you need to look into if you are linked css stylesheet and jquery files (you can add/link more `.css` and `.js` files here). The location of all these layouts in nopCommerce is as follows: nopCommerce root `directory/Views/Shared/...`. If you are using source code version then: `\Presentation\Nop.Web\Views\Shared\...`
+All these 2 layouts are inherited from one main layout called: `_Root.cshtml`. The `_Root.cshtml` itself is inherited from `_Root.Head.cshtml`. `_Root.Head.cshtml` is the file you need to look into if you are linked css stylesheet and jquery files (you can add/link more `.css` and `.js` files here). The location of all these layouts in nopCommerce is as follows: `[nopCommerce root directory]/Views/Shared/...`. If you are using source code version then: `\Presentation\Nop.Web\Views\Shared\...`
 
 * **Layout of _Root.cshtml**
 

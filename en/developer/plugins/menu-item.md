@@ -9,9 +9,9 @@ contributors: git.Sandeep911, git.DmitriyKulagin, git.exileDev
 
 In nopCommerce, administration menu is build from the *sitemap.config* file which is located in *~/Areas/Admin folder*.
 
-To do the same, you can use following sample code which you need to add in your plugins’ cs file. First, implement IAdminMenuPlugin interface in your plugin main class. Then,
+To do the same, you can use following sample code which you need to add in your plugins’ cs file. First, implement IAdminMenuPlugin interface in your plugin main class. 
 
-You can also put any security (ACL) logic to this method. For example, validate whether current customer has "Manage plugins" permission.
+Then, You can also put any security (ACL) logic to this method. For example, validate whether current customer has "Manage plugins" permission.
 
 ```csharp
  public class CustomPlugin : BasePlugin, IAdminMenuPlugin
