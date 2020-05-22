@@ -444,7 +444,7 @@
       name: Creating a nopCommerce plugin
       href: developer/plugins/index.md
       items:
-         - 
+        - 
           name: How to write a plugin for nopCommerce 4.30 (and above)
           href: developer/plugins/how-to-write-plugin-4.30.md
         - 
