@@ -28,6 +28,7 @@ The next panel will reveal following settings when **CAPTCHA enabled** is ticked
 
 ![captcha](_static/security-settings/captcha.png)
 
+* **Type of reCAPTCHA**: choose reCAPTCHA v2 or reCAPTCHA v3. The differense between them is that reCAPTCHA v2 shows "I'm not a robot" checkbox but reCAPTCHA v3 is invisible for customers. Read more about [reCAPTCHA v2](https://developers.google.com/recaptcha/docs/display) and [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3).
 * Show CAPTCHA on the **login page.**
 * Show CAPTCHA on the **registration page.**
 * Show CAPTCHA on the **forgot password page.**
