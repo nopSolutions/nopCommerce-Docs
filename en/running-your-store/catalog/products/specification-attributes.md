@@ -25,15 +25,11 @@ To see and edit a list of specification attributes, go to **Catalog → Attribut
 - On the **Options panel**, click **Add a new** option to add an attribute option.
 - Enter the option **Name** and **Display order** number.
 
-> [!NOTE]
-> 
-> for a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
-
 ![add_a_new_option](_static/specification-attributes/add_a_new_option.jpg)
 
 > [!NOTE]
 > 
-> for a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
+> For a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
 
 The **complete list of options** will look as follows.
 
