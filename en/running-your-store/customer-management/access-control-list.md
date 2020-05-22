@@ -25,7 +25,7 @@ Click **Save.**
 
 > [!TIP]
 > 
-> Example: We need a role called Content Manager. The content Manager must have access to new products and manufacturers management, editing of the reviews on site, blogs, campaigns, and have no access to shopping carts.
+> Example: We need a role called Content Manager. The Content Manager must have access to new products and manufacturers management, editing of the reviews on site, blogs, campaigns, and have no access to shopping carts.
 > 
 > 1. Create the Customer role called Content Manager in Customer Roles section (Customers → Customer Roles).
 > 2. In the ACL tick the checkbox next to the following permissions: Access admin area, Admin area. Manage Blog, Admin area. Manage Campaigns, Admin area. Manage Forums, Admin area. Manage News, Admin area. Manage Newsletter Subscribers, Public store. Allow navigation, Public store. Display Prices
