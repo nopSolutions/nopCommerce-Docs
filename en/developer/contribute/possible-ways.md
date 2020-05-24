@@ -17,5 +17,4 @@ contributors: git.exileDev
 * Create a new graphical theme to share with the community.
 * Implement a new plugin (payment gateway module, etc).
 * Tell your friends about nopCommerce.
-* You can also download the sales and marketing materials for nopCommerce businesses to use when selling the benefits of nopCommerce to potential clients (leaflet 1 and leaflet 2).
 * Our logos. PNG: [250x250](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo_250x250-trans.png) and [340x140](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo-340x140-trans.png). PSD: [250x250](http://www.nopcommerce.com/images/nopLogos/250x250.psd) and [340x140](http://www.nopcommerce.com/images/nopLogos/340x140.psd) and [1600x1200](http://www.nopcommerce.com/images/nopLogos/1600x1200.psd)
