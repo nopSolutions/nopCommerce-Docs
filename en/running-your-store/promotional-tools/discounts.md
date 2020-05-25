@@ -22,7 +22,7 @@ The top area of the page enables you to search for a discounts by different sear
 
 > [!NOTE]
 > 
-> **By default, there are no discounts available in nopCommerce, so you can create them from scratch and follow your own marketing strategy**
+> By default, there are no discounts available in nopCommerce, so you can create them from scratch and follow your own marketing strategy.
 
 ![discounts](_static/discounts/discounts.png)
 
@@ -49,11 +49,11 @@ If you want to apply a **Percentage discount** to the order select the Use perce
 
 Or you can apply **Discount amount** to the order or SKU.
 
-If you want to specify the Start date and the End date for your discount, select them in the calendar field in Coordinated Universal Time (UTC).
+If you want to specify the **Start date** and the **End date** for your discount, select them in the calendar field in Coordinated Universal Time (UTC).
 
-Select the Requires coupon code checkbox, to enable a customer to supply a coupon code for the discount to be applied.
+Select the **Requires coupon code** checkbox, to enable a customer to supply a coupon code for the discount to be applied.
 
-After ticking the checkbox the **Coupon code option** appears. You can enter the **required coupon code** in this field. This enables customers to enter this coupon code during checkout to apply the discount.
+After ticking the checkbox the **Coupon code** option appears. You can enter the **required coupon code** in this field. This enables customers to enter this coupon code during checkout to apply the discount.
 
 > [!TIP]
 > 
@@ -106,12 +106,6 @@ When customers apply a discount while proceeding to the checkout, it is displaye
 - [Configuring discounts with boolean logic](https://www.youtube.com/watch?v=gBtZG3OcjnQ)
 
 
-
-
-
-
-
-
 # Common type of discounts
 
 ## Black Friday sale
@@ -124,13 +118,13 @@ Black Friday is always the day after Thanksgiving. It's quite common discount ca
 
 **Discount type** - here it’s Assigned to subtotal type when a discount is applied to the whole order amount before all the fees are added (like shipping fee and taxes). It’s relevant here because we want all the products in the cart to be discounted.
 
-Besides Assigned to subtotal there several other discount types. There can be Assigned to order total - when a discount is applied to the whole order amount after all the fees are added (like shipping fee and taxes). Also, we can apply discounts to certain categories, manufacturers, or shipping.
+Besides Assigned to subtotal there are several other discount types. There can be Assigned to order total - when a discount is applied to the whole order amount after all the fees are added (like shipping fee and taxes). Also, we can apply discounts to certain categories, manufacturers, or shipping.
 
 We can apply the discount in % or just enter the amount in chosen currency. We have 10% here.
 
 The **maximum amount** can be limited as well, so even if the total amount of products in the cart will be 300$ a customer will only have 10$ discount anyway.
 
-This discount will require a coupon code. You can apply discounts without entering coupon codes, but it’s not recommended considering marketing purposes. Coupon codes allow you to check campaigns results campaigns.
+This discount will require a coupon code. You can apply discounts without entering coupon codes, but it’s not recommended considering marketing purposes. Coupon codes allow you to check campaigns results.
 
 Frequently discounts are time-based. Here we entered Black Friday weekend dates.
 
