@@ -12,11 +12,11 @@ This chapter describes how to install the nopCommerce software on Linux system o
 1. Install and configure software
 1. Get nopCommerce
 1. Create and configure the nopCommerce Web service
-1. Trouble shutting
+1. Troubleshooting
 
 ## 1. Install and configure software
 
-Before installing .NET Core, we'll need to register the Microsoft key and install required dependencies. This needs to be done once per each machine.
+Before installing .NET Core, we'll need to register the Microsoft key and install required dependencies. This needs to be done once per machine.
 
 ### Register Microsoft key and feed
 
@@ -56,7 +56,7 @@ Install the MySql server 8.0 version
 
 ![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
 
-By default, the root password is empty, lets set it
+By default, the root password is empty, let's set it
 
 `sudo /usr/bin/mysql_secure_installation`
 
@@ -80,7 +80,7 @@ Run the nginx service:
 
 `sudo systemctl start nginx`
 
-and check it status:
+and check its status:
 
 `sudo systemctl status nginx`
 
