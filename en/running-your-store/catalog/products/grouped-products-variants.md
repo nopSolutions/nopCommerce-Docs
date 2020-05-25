@@ -13,7 +13,7 @@ In nopCommerce, grouped products look like a single product details page display
 
 > [!TIP]
 > 
-> **For example**, a base product, such as a camera body, can be grouped with different sets of lens. Another use case of a grouped product is selling one type of a product with different attribute sets. For example, chocolate with different flavours. In this case, a customer can easily see the main product and all its options on the same page.
+> For example, a base product, such as a camera body, can be grouped with different sets of lens. Another use case of a grouped product is selling one type of a product with different attribute sets. For example, chocolate with different flavours. In this case, a customer can easily see the main product and all its options on the same page.
 
 ![grouped](_static/grouped-products-variants/grouped.png)
 
