@@ -40,8 +40,8 @@ Define Gift card information:
 
 > [!NOTE]
 > 
-> - **The sender and recipient emails will not be visible for physical gift cards. These mails are visible only for virtual gift cards**
-> - **The Notify Recipient button is relevant only for virtual gifts card and not physical gift cards**
+> - The sender and recipient emails will not be visible for physical gift cards. These mails are visible only for virtual gift cards.
+> - The Notify Recipient button is relevant only for virtual gifts card and not physical gift cards.
 
 ## Viewing gift card usage history
 
@@ -51,7 +51,7 @@ Select the **Usage History** tab to display the **Order Details** page for the o
 
 ## Using gift cards
 
-A gift card is performed in the public store by entering the serial number in the box on the shopping cart page.
+A gift card is used in the public store by entering the serial number in the box on the shopping cart page.
 
 ![using-gift-card](_static/gift-cards/using-geft-cards.jpg)
 
