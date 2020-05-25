@@ -152,7 +152,7 @@ This step is optional. Some plugins can require additional logic during plugin i
 
 1. **Install**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 1. **Uninstall**. This method will be invoked during plugin uninstallation.
-1. **Update**. This method will be invoked during plugin update.
+1. **Update**. This method will be invoked during plugin the update (when its version is changed in the `plugin.json` file).
 
 > [!IMPORTANT]
 > 
