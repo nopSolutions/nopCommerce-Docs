@@ -23,12 +23,10 @@ In the public store, go to the My Account window and click Orders, as follows: !
 	
 	  > [!NOTE]
 	  >
-	  > this option is available only when the checkbox **Allow file uploads** in **Configuration → Settings → Order Settings** on the **Return Request settings tab** is ticked.
+	  > This option is available only when the checkbox **Allow file uploads** in **Configuration → Settings → Order Settings** on the **Return Request settings tab** is checked.
 
     * In the **Comments** field, a customer can enter an optional comment for information purposes.
 1. After using the Return Request feature, the customer can manage his/her requests from the **My Account** page in the public store, by clicking **Return Requests**: ![Return Requests](_static/return-requests/return-requests.jpeg)
-
-    The store owner can now manage this return request in the Administration Area.
 
 The store owner can now manage this return request in the Administration Area.
 
