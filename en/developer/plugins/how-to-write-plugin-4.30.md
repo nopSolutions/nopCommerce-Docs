@@ -175,7 +175,7 @@ public override void Install()
 
 > [!TIP]
 > 
-> Tip: The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
+> The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
 
 ## Routes
 
@@ -206,4 +206,4 @@ Hopefully this will get you started with nopCommerce and prepare you to build mo
 
 ## Plugin template
 
-You can use our Visual Studio template for new nopCommerce plugins. It can save a lot of time for developers. Because now they don't have to do manually all initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json etc), configuration, project references, etc). Please find it and installation instructions [here](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+You can use our Visual Studio template for new nopCommerce plugins. It can save a lot of time for developers, because now they don't have to do manually all initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json etc), configuration, project references, etc). Please find it and installation instructions [here](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
