@@ -25,7 +25,7 @@ In the list of shipments, a store owner can view all items of a shipment by clic
 
 ![Shipment List Details](_static/shipping-management/order-shipment-list-details.png)
 
-If click on View, the **View shipment details** - 2 window will be opened.
+If click on View, the **View shipment details** - second window will be opened.
 
 In this window you can:
 
