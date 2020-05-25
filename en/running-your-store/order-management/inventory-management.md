@@ -11,7 +11,7 @@ Inventory management is a system of stock level controlling. In nopCommerce it c
 
 **To set up inventory**, go to **Catalog → Products → Edit a product**. In the Edit product details window, on the **Product info tab** go to **Inventory section**.
 
-Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing Don’t track inventory option in the Inventory method field. In this case, the owner can define a **warehouse**, **minimum** and **maximum cart quantities**, **allowed quantities**, i.e. instead of a quantity text box customers will see a drop down list with predefined quantity options, and set a product as **not returnable**.
+Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing **Don’t track inventory** option in the Inventory method field. In this case, the owner can define a **warehouse**, **minimum** and **maximum cart quantities**, **allowed quantities**, i.e. instead of a quantity text box customers will see a drop down list with predefined quantity options, and set a product as **not returnable**.
 
 ![Inventory](_static/inventory-management/inventory.png)
 
@@ -20,12 +20,12 @@ In case an inventory tracking is required, the shop owner can select an **invent
 Once the **Track inventory** method is chosen, the section expands displaying new fields.
 
 * Tick the **Multiple warehouses** checkbox if you want to support shipping and inventory management from multiple warehouses. This way you can manage inventory per warehouse:
-  * "Stock quantity" is the total quantity. It is reduced every time when an order is shipped.
-  * "Reserved qty" is product quantity that is ordered but not shipped or added to a shipment yet.
-  * "Planned qty" is product quantity that is ordered and already added to a shipment but not shipped yet.
+  * **Stock quantity** is the total quantity. It is reduced every time when an order is shipped.
+  * **Reserved qty** is product quantity that is ordered but not shipped or added to a shipment yet.
+  * **Planned qty** is product quantity that is ordered and already added to a shipment but not shipped yet.
 
   ![Warehouses](_static/inventory-management/warehouses.png)
-* If there is only one warehouse (Multiple warehouses unticked), from the **Warehouse** drop down list, select the warehouse which will be used when calculating shipping rates. For further details refer to the Warehouses page.
+* If there is only one warehouse (Multiple warehouses unticked), from the **Warehouse** drop down list, select the warehouse which will be used when calculating shipping rates. For further details refer to the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) page.
 * To prevent customers from placing orders and finding out that the product is out of stock, you can take certain actions. Tick the **Display availability** checkbox, to display stock availability in the public store, and, if required, the **Display Stock Quantity** checkbox, to enable customers to see a product stock quantity on the product details page (this checkbox is displayed only when the **Display availability** checkbox is ticked).
 
   ![availability](_static/inventory-management/stock-quantity.png)
