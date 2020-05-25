@@ -19,7 +19,7 @@ You can also delete shopping carts by clicking on **Delete** button.
 
 > [!NOTE]
 > 
-> check out our [marketplace](http://www.nopcommerce.com/marketplace) for plugins that help you manage abandoned carts and recover lost sales.
+> Check out our [marketplace](http://www.nopcommerce.com/marketplace) for plugins that help you manage abandoned carts and recover lost sales.
 
 ## Wishlists
 
@@ -70,7 +70,7 @@ In the shopping cart settings you can define:
 * To **Show product images on cart**, to display product images in the store shopping carts.
 * To **Display cart after adding product**, to the display the Shopping Cart page immediately after a product was added to the cart. When this checkbox is unticked, the customer will remain on the page where the product was added to the cart.
 * **Number of Cross-Sells** that you want to display on the checkout page of the shopping cart in the public store. Enter 0, if you do not want to display cross-sells.
-* To **Show mini-shopping cart** - a drop down menu, that appears at the top left-hand corner of the main window, when hovering over the Shopping Cart link, as shown below: ![Cart](_static/shopping-carts-and-wishlists/cart.png)
+* To **Show mini-shopping cart** - a drop down menu, that appears at the top right-hand corner of the main window, when hovering over the Shopping Cart link, as shown below: ![Cart](_static/shopping-carts-and-wishlists/cart.png)
 * When this field is ticked the following fields are displayed:
   * **Number of products in mini-shopping cart** - the maximum number of products displayed in the mini shopping cart dropdown menu, in the public store.
   * **Show product images in mini shopping cart** to determine whether images are displayed in the mini shopping cart dropdown menu.
