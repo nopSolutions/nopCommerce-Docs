@@ -29,14 +29,20 @@ The next panel will reveal following settings when **CAPTCHA enabled** is ticked
 ![captcha](_static/security-settings/captcha.png)
 
 * **Type of reCAPTCHA**: choose reCAPTCHA v2 or reCAPTCHA v3. The differense between them is that reCAPTCHA v2 shows "I'm not a robot" checkbox but reCAPTCHA v3 is invisible for customers. Read more about [reCAPTCHA v2](https://developers.google.com/recaptcha/docs/display) and [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3).
-* Show CAPTCHA on the **login page.**
-* Show CAPTCHA on the **registration page.**
-* Show CAPTCHA on the **forgot password page.**
-* Show CAPTCHA on the **contact us page.**
-* Show CAPTCHA on the **'email wishlist to a friend' page.**
-* Show CAPTCHA on the **'email product to a friend' page.**
-* Enter the reCAPTCHA **public key** if enabled.
-* Enter the reCAPTCHA **private key** if enable.
+* **reCAPTCHA v3 score threshold** is enabled when reCAPTCHA v3 is selected. Read more about score threshold [here](https://developers.google.com/recaptcha/docs/v3).
+* Show CAPTCHA on the **login** page.
+* Show CAPTCHA on the **registration** page.
+* Show CAPTCHA on the **forgot password** page.
+* Show CAPTCHA on the **contact us** page.
+* Show CAPTCHA on the **email wishlist to a friend** page.
+* Show CAPTCHA on the **email product to a friend** page.
+* Show CAPTCHA on the **blog page (comments)**.
+* Show CAPTCHA on the **news page (comments)**.
+* Show CAPTCHA on the **product reviews** page.
+* Show CAPTCHA on the **apply for vendor account** page.
+* Show CAPTCHA on the **forum** page.
+* Enter the reCAPTCHA **public key**.
+* Enter the reCAPTCHA **private key**.
 
 > [!NOTE]
 > 
