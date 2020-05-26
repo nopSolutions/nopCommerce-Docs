@@ -11,16 +11,15 @@ In this tutorial we will be learning about how to extend the functionality of th
 
 * [nopCommerce architecture](xref:en/developer/tutorials/source-code-organization).
 * nopCommerce Plugin.
-* Entity framework.
 * nopCommerce routing.
 
 If you are not familiar with the above topics, we highly recommend you to learn about those first. However, if you are comfortable or at least have some basic understanding on the above topic then you are good enough to continue on this tutorial.
 
 So in this tutorial we will be creating a plugin with a page containing the table displaying information on the distribution of users by country (based on the billing address). Let's go through the step by step process to create above mentioned functionality.
 
-## Step 1: Create a nopCommerce plugin project
+## Create a nopCommerce plugin project
 
-I am assuming that you already know where and how to create nopCommerce plugin project and configure the project according to nopCommerce standard. If you don't know then you can visit [this page](xref:en/developer/plugins/how-to-write-plugin-4.20) link to know how to create and configure nopCommerce plugin project.
+I am assuming that you already know where and how to create nopCommerce plugin project and configure the project according to nopCommerce standard. If you don't know then you can visit [this page](xref:en/developer/plugins/how-to-write-plugin-4.30) link to know how to create and configure nopCommerce plugin project.
 
 If you have followed the above provided link to create and configure your plugin project then you may end up with the folder structure like this.
 
@@ -34,6 +33,11 @@ public class DistOfCustByCountryPlugin: BasePlugin
         public DistOfCustByCountryPlugin()
         {
 
+        }
+
+        public override string GetConfigurationPageUrl()
+        {
+            return $"{_webHelper.GetStoreLocation()}Admin/DistOfCustBuCountryPlugin/Configure";
         }
 
         public override void Install()
@@ -57,16 +61,25 @@ First let's create a model named "CustomersDistribution" inside Models folder/di
 ## #Models/ CustomersDistribution.cs
 
 ```cs
-public class CustomersDistribution
+public class CustomersDistribution : BaseNopModel
 {
     /// <summary>
     /// Country based on the billing address.
     /// </summary>
     public string Country { get; set; }
+
     /// <summary>
     /// Number of customers from specific country.
     /// </summary>
     public int NoOfCustomers { get; set; }
+}
+```
+
+Alse let's add the search model named "CustomersByCountrySearchModel" inside Models folder/directory.
+
+```cs
+public class CustomersByCountrySearchModel : BaseSearchModel
+{
 }
 ```
 
@@ -88,28 +101,31 @@ Here we have only one method description since for the sake of this plugin we do
 ```cs
 public class CustomersByCountry : ICustomersByCountry
 {
-    private readonly CustomerService _customerService;
-    private readonly StoreService _storeService;
-    public CustomersByCountry(CustomerService customerService, StoreService storeService)
+    private readonly IAddressService _addressService;
+    private readonly ICountryService _countryService;
+    private readonly ICustomerService _customerService;
+
+    public CustomersByCountry(IAddressService addressService, 
+        ICountryService countryService,
+        ICustomerService customerService)
     {
+        _addressService = addressService;
+        _countryService = countryService;
         _customerService = customerService;
-        _storeService = storeService;
     }
+
     public List<CustomersDistribution> GetCustomersDistributionByCountry()
     {
-
         return _customerService.GetAllCustomers()
-                    .Where(c => c.ShippingAddress != null)
-                    .Select(c => new {
-                        c.BillingAddress.Country,
-                        c.Username
-                    })
-                    .GroupBy(c => c.Username)
-                    .Select(cbc => new CustomersDistribution()
-                    {
-                        Country = cbc.Key,
-                        NoOfCustomers = cbc.Count()
-                    }).ToList();
+            .Where(c => c.ShippingAddressId != null)
+            .Select(c => new
+            {
+                _countryService.GetCountryByAddress(_addressService.GetAddressById(c.ShippingAddressId ?? 0))
+                    .Name,
+                c.Username
+            })
+            .GroupBy(c => c.Username)
+            .Select(cbc => new CustomersDistribution { Country = cbc.Key, NoOfCustomers = cbc.Count() }).ToList();
     }
 }
 ```
@@ -122,38 +138,38 @@ Now let's create a controller class. A good practice to name plugin controllers 
 
 ```cs
 [AuthorizeAdmin] //confirms access to the admin panel
-[Area(AreaNames.Admin)] //specifies the area containing a controller or action
-public class TutorialCustomersByCountryController: BasePluginController
-{
-    private ICustomersByCountry _service;
-    public TutorialCustomersByCountryController(ICustomersByCountry service)
+    [Area(AreaNames.Admin)] //specifies the area containing a controller or action
+    public class DistOfCustBuCountryPluginController : BasePluginController
     {
-        _service = service;
-    }
-
-    [HttpGet]
-    public IActionResult Configuration()
-    {
-        CustomersByCountrySearchModel customerSearchModel = new CustomersByCountrySearchModel()
+        private readonly ICustomersByCountry _service;
+        public DistOfCustBuCountryPluginController(ICustomersByCountry service)
         {
-            AvailablePageSizes = "10"
-        };
-        return View("~/Plugins/Tutorial.DistOfCustByCountry/Views/Configure.cshtml", customerSearchModel);
-    }
-
-    [HttpPost]
-    public IActionResult GetCustomersCountByCountry ()
-    {
-        try
-        {
-            return Ok(new DataTablesModel{ Data = _service.GetCustomersDistributionByCountry() });
+            _service = service;
         }
-        catch (Exception ex)
+
+        [HttpGet]
+        public IActionResult Configure()
         {
-            return BadRequest(ex);
+            CustomersByCountrySearchModel customerSearchModel = new CustomersByCountrySearchModel
+            {
+                AvailablePageSizes = "10"
+            };
+            return View("~/Plugins/Tutorial.DistOfCustByCountry/Views/Configure.cshtml", customerSearchModel);
+        }
+
+        [HttpPost]
+        public IActionResult GetCustomersCountByCountry()
+        {
+            try
+            {
+                return Ok(new DataTablesModel { Data = _service.GetCustomersDistributionByCountry() });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
     }
-}
 ```
 
 In the controller we are injecting "ICustomersByCountry" service we created previously to get data from database. Here we have created two Actions one is of type "HttpGet" and another of type "HttpPost". The "Configure" HttpGet action is returning a view named "Configure.cshtml" which we haven't created yet. And GetCustomersCountByCountry HttpPost action which is using injected service to retrieve data and returning data in the json format. This action is going to be called by data table which expects response as DataTablesModel object. However, here we are setting the data property which is actually the data which will be rendered in the table.
@@ -163,6 +179,7 @@ Now let's create a view with DataTables where we can display our data which then
 ## #Views/ Configure.cshtml
 
 ```cs
+@using Nop.Web.Framework.Models.DataTables
 @{
     Layout = "_ConfigurePlugin";
 }
@@ -170,21 +187,21 @@ Now let's create a view with DataTables where we can display our data which then
 @await Html.PartialAsync("Table", new DataTablesModel
 {
     Name = "customersDistributionByCountry-grid",
-    UrlRead = new     DataUrl(@Html.Raw(Url.Action("GetCustomersCountByCountry", "TutorialCustomersByCountry")).ToString()),
+    UrlRead = new DataUrl("GetCustomersCountByCountry", "TutorialCustomersByCountry"),
     Paging = false,
     ColumnCollection = new List<ColumnProperty>
-     {
-         new ColumnProperty(nameof(CustomersDistribution.Country))
-         {
-             Title = "Country",
-             Width = "300"
+    {
+        new ColumnProperty(nameof(CustomersDistribution.Country))
+        {
+            Title = "Country",
+            Width = "300"
         },
-         new ColumnProperty(nameof(CustomersDistribution.NoOfCustomers))
-         {
-             Title = "Number Of Customers",
-             Width = "100"
+        new ColumnProperty(nameof(CustomersDistribution.NoOfCustomers))
+        {
+            Title = "Number Of Customers",
+            Width = "100"
         }
-     }
+    }
 })
 ```
 
@@ -243,11 +260,11 @@ public class RouteProvider : IRouteProvider
     /// <summary>
     /// Register routes
     /// </summary>
-    /// <param name="routeBuilder">Route builder</param>
-    public void RegisterRoutes(IRouteBuilder routeBuilder)
+    /// <param name="endpointRouteBuilder">Route builder</param>
+    public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
     {
         //add route for the access token callback
-        routeBuilder.MapRoute("CustomersDistributionByCountry", "Plugins/Tutorial/CustomerDistByCountry/",
+        endpointRouteBuilder.MapControllerRoute("CustomersDistributionByCountry", "Plugins/Tutorial/CustomerDistByCountry/",
             new { controller = "TutorialCustomersByCountry", action = "GetCustomersCountByCountry" });
     }
 
