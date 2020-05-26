@@ -22,10 +22,12 @@ Solution Location: Nop.Core.Domain.Catalog.Category.cs
 The second class is used to map the properties defined in the class above to their respective SQL columns. The mapping class is also responsible for mapping relationships between different SQL tables.
 
 ```sh
-File System Location: [Project Root]\Libraries\Nop.Data\Mapping\Catalog\CategoryMap.cs
+File System Location: [Project Root]\Libraries\Nop.Data\Mapping\Builders\Catalog\CategoryBuilder.cs
 Assembly: Nop.Data
-Solution Location: Nop.Data.Mapping.Catalog.CategoryMap.cs
+Solution Location: Nop.Data.Mapping.Builders.Catalog.CategoryBuilder.cs
 ```
+
+But I recommend you to use it only for your own entity classes. In our case, we'll use the migration mechanism instead of mapping class.
 
 Add the following property to the Category class.
 
@@ -33,16 +35,42 @@ Add the following property to the Category class.
 public string SomeNewProperty { get; set; }
 ```
 
-Add the following code to the constructor of the CategoryMap class.
+Add the new class (Nop.Data.Migrations.AddSomeNewProperty) with following code:
 
 ```csharp
-// This code maps a column in the database to the new property we created above
-// This creates a nullable nvarchar with a length of 255 characters
-// in the Category SQL table
-this.Property(m => m.SomeNewProperty).HasMaxLength(255).IsOptional();
+using FluentMigrator;
+using Nop.Core.Domain.Catalog;
+
+namespace Nop.Data.Migrations
+{
+    [NopMigration("2020/05/25 11:24:16:2551770", "Category. Add some new property")]
+    public class AddSomeNewProperty: AutoReversingMigration
+    {
+        /// <summary>Collect the UP migration expressions</summary>
+        public override void Up()
+        {
+            Create.Column(nameof(Category.SomeNewProperty))
+            .OnTable(nameof(Category))
+            .AsString(255)
+            .Nullable();
+        }
+    }
+}
 ```
 
-Because I’m all about results, at this point I would run the code, re-install the database, and verify that the column was created appropriately.
+> [!NOTE] Since migrations appeared only in the nopCommerce 4.30, it does not implement the update procedure call. Therefore, you need to add the following code to the method **ApplicationBuilderExtensions.StartEngine**
+
+```csharp
+var migrationManager = EngineContext.Current.Resolve<IMigrationManager>();
+migrationManager.ApplyUpMigrations();
+```
+
+> The specified code should be added before the lines:
+
+```csharp
+//update plugins
+pluginService.UpdatePlugins();
+```
 
 ## The presentation model
 
@@ -83,16 +111,16 @@ RuleFor(m => m.SomeNewProperty).Length(0, 255);
 ## The view
 
 ```sh
-File System Location: [Project Root]\Presentation\Nop.Web\Administration\Views\Category\ _CreateOrUpdate.cshtml
-Assembly: Nop.Admin
+File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Views\Category\ _CreateOrUpdate.Info.cshtml
+Assembly: Nop.Web
 ```
 
-Views contain the html for displaying model data. Place this html under the "active" section.
+Views contain the html for displaying model data. Place this html under the "PictureId" section.
 
 ```csharp
 <div class="form-group">
      <div class="col-md-3">
-        <nop-label asp-for="" />
+        <nop-label asp-for="SomeNewProperty" />
      </div>
      <div class="col-md-9">
         <nop-editor asp-for="SomeNewProperty" />
@@ -128,10 +156,6 @@ In the public method to save entity (usually: "Create" or "Edit" methods with [H
 // Edit View Model → Data Model
 category.SomeNewProperty = model.SomeNewProperty;
 ```
-
-## Database
-
-If you're extending the already installed application (with created database), then you also have to manually add the appropriate column ("SomeNewProperty") to the appropriate table ("Category").
 
 ## Troubleshooting
 
