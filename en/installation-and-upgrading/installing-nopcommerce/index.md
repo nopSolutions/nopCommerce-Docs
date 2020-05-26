@@ -101,5 +101,4 @@ Specify Custom SQL Server collation: This is an advanced setting and should be l
 ## See also
 
 - [Hosting providers](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company)
-- [Installing Internet Information Services (IIS)](xref:en/installation-and-upgrading/installing-nopcommerce/installing-local)
 - [Known Issues and Solutions](xref:en/installation-and-upgrading/installing-nopcommerce/index)
