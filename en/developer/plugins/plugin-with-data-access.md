@@ -5,7 +5,7 @@ author: nop.52152
 contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev
 ---
 
-# Plugin with data access
+# Plugin with data access" (4.20 and below)
 
 In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
 

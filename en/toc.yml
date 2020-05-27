@@ -467,6 +467,9 @@
           href: developer/plugins/shipping-plugin.md
         - 
           name: Plugin with data access
+          href: developer/plugins/plugin-with-data-access-4.30.md
+        - 
+          name: Plugin with data access (4.20 and below)
           href: developer/plugins/plugin-with-data-access.md
         - 
           name: How to add a menu item into the administration area from a plugin
