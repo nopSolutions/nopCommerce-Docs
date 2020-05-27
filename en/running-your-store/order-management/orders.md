@@ -2,7 +2,7 @@
 title: Order management
 uid: en/running-your-store/order-management/orders
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
 # Orders
@@ -57,13 +57,18 @@ On the **Billing & Shipping panel**, view and edit the billing and shipping info
 * View a **shipping status**. Note: Store owners can create several shipments per order. If you create a shipment but do not ship all products, then the shipping status of an order is **Partially shipped**. Once all the products are shipped, the status changes to **Shipped**. Once all the shipments are delivered, the status changes to **Delivered**.
 * View the **list of shipments**. Click **View** beside the shipment to view its details. The shipment information window will be displayed: ![shipment-details](_static/orders/shipment-details.jpeg)
 
-**Add Shipment** - enables creating several shipments per order and is visible when there is at least one non-shipped product in the order. Add a new shipment in the Add a new shipment to order window. In the Quantity to ship column, enter the required quantity of the specific order to ship. Once a shipment is created, you can set it to shipped and then delivered, by clicking the Set as shipped and Set as delivered buttons accordingly.
 
-![Add Shipment](_static/orders/add-shipment.jpeg)
+**Add shipment** button enables creating several shipments per order and is visible when there is at least one non-shipped product in the order. Click **Add shipment** button to add a new shipment to the order and you will see the **Add a new shipment to order** window: 
 
-In the **Tracking number** field, enter the tracking number of the current order and click the Set tracking number button. Tracking numbers enables your customers and you to check up on the progress of a shipment via a telephone or online system, operated by your shipping agent (the Post Office, or a private courier service such as FedEx or UPS). When a shipment passes certain points along its route, it is identified by the shipping agents system, and the tracking database is updated with the new location and time information.
+![Add Shipment](_static/orders/add-shipment.jpg)
 
-![Tracking number](_static/orders/tracking.jpeg)
+* In the **Tracking number** field, enter the tracking number of the shipment. Tracking number enables your customers and you to check up on the progress of a shipment via telephone or online system, operated by your shipping agent (the Post Office, or a private courier service such as FedEx or UPS). When a shipment passes certain points along its route, it is identified by the shipping agents system, and the tracking database is updated with the new location and time information.
+* Fill the **Admin comment** field if needed.
+* Check **Shipped** checkbox to mark the shipment as shipped using the current date.
+* Check **Delivered** checkbox to mark the shipment as delivered using the current date.
+* On the **Products shipped** panel: in the **Quantity to ship** column, enter the required quantity of the specific order item to ship.
+
+
 
 On the *Products* tab a store owner can:
 

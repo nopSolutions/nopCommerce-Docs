@@ -170,7 +170,11 @@ On the **Attribute Combinations** tab, define different attribute combinations a
 - **Overridden price**, if the price for products with certain attributes is different from the product regular price
 - Product combination **quantity under which the admin will be notified**
 
-On the **Specification Attributes tab**, add Specification attributes. Learn more about specification attributes and how to create them [here](xref:en/running-your-store/catalog/products/specification-attributes)
+On the **Specification attributes** panel, add specification attributes. Learn more about specification attributes and how to create them [here](xref:en/running-your-store/catalog/products/specification-attributes).
+
+>[!NOTE]
+>
+> You can add an attribute for your product using existing list of attributes, or if you need to create a new one go to **Catalog → Attributes → Specification attributes**.
 
  To add a new attribute, fill the **Add a new product specification attribute** section:
 

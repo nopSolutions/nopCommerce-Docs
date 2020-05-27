@@ -2,7 +2,7 @@
 title: Managing customers
 uid: en/running-your-store/customer-management/managing-customers
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
 
 # Managing customers
@@ -25,7 +25,7 @@ Customer list contains details of all existing customers, as well as allows to a
 - **Company name**
 - **Admin comment** - administrator comments for internal use, if required
 - Is **tax exempt** indicates whether the customer is exempted from taxes
-- Tick the **Newsletter** checkbox, to subscribe to a store newsletter
+- Choose appropriate stores in the **Newsletter** multiselect to subscribe the customer to a store newsletter
 - Tick the **Active** checkbox, to activate the customer
 
 **To search for customers**, in the Customers window enter one or more of the following search criteria:
