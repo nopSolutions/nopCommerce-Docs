@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 # Shipping management
 
-To search for and view Shipments go to **Sales → Shipments**.
+To search for and view shipments go to **Sales → Shipments**.
 
 The top area of the page enables you to search for a shipment by different search criteria:
 
