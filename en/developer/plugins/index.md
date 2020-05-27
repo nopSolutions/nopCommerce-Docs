@@ -17,3 +17,4 @@ contributors: git.exileDev, git.DmitriyKulagin
 * [Plugin with data access](xref:en/developer/plugins/plugin-with-data-access)
 * [How to add a menu item into the administration area from a plugin](xref:en/developer/plugins/menu-item)
 * [Adding CSS and JS resource files into nopCommerce Plugin](xref:en/developer/plugins/resource-files)
+* [How to write a widget for nopCommerce](xref:en/developer/plugins/how-to-write-widget-for-nopCommerce)
