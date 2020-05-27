@@ -35,7 +35,6 @@ Define the following details:
 * **Description** if needed
 * Select a **Country** from the drop-down list
 * Select a **State / Province** from the drop-down list
-* **County**
 * **City**
 * **Address 1**
 * **Zip/Postal code**
