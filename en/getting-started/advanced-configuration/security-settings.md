@@ -7,18 +7,15 @@ contributors: git.DmitriyKulagin, git.ivkadp
 
 # Security settings
 
-To manage Security Settings go to **Configuration → Settings → General Settings.** The Security Settings block is displayed on the General Settings page:
+To manage security settings go to **Configuration → Settings → General settings**. The **Security** panel is displayed on the **General settings** page:
 
-![security](_static/security-settings/security.png)
+![security](_static/security-settings/security.jpg)
 
-Define the **Security Settings,** as follows:
+Define the **Security settings** as follows:
 
-* In the Admin area allowed IP field, enter the **IP addresses** that are allowed to access the backend. Leave this field empty if you do not want to restrict access to the backend. Use commas between the IP addresses (for example, 127.0.0.10, 232.18.204.16).
-* Tick the **Force SSL** for all site Pages to enforce SSL for the entire site. This is useful only when you have SSL enabled on your store details pages.
-* Tick the **Enable XSRF protection for admin area** to enable XSRF security for all pages in the admin area. Cross-site request forgery, also known as a one-click attack or session riding and abbreviated as CSRF (sometimes pronounced sea-surf) or XSRF, is a type of malicious exploit of a website whereby unauthorized commands are transmitted from a user that the website trusts.
-* Tick the **Enable XSRF protection for public store** to enable XSRF security for pages in the public store. Cross-site request forgery, also known as a one-click attack or session riding and abbreviated as CSRF (sometimes pronounced sea-surf) or XSRF, is a type of malicious exploit of a website whereby unauthorized commands are transmitted from a user that the website trusts.
-* Tick the **Enable honeypot to enable [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)).** In computer terminology, a honeypot is a trap set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.
-* In the **Encryption private key** field, enter the encryption private key used for storing sensitive data. Click Change at any time to change this key. All sensitive data is encrypted using this private key.
+* In the **Admin area allowed IP** field, enter the IP addresses that are allowed to access the backend. Leave this field empty if you do not want to restrict access to the backend. Use commas between the IP addresses (for example, 127.0.0.10, 232.18.204.16).
+* Tick the **Enable honeypot** to enable [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)). In computer terminology, a honeypot is a trap set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.
+* In the **Encryption private key** field, enter the encryption private key used for storing sensitive data. Click **Change** at any time to change this key. All sensitive data is encrypted using this private key.
 
 > [!NOTE]
 > 
