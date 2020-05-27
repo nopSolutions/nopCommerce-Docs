@@ -17,3 +17,4 @@ contributors: git.exileDev
 * [Responsive Design](xref:en/developer/design/responsive)
 * [Tips and Tricks](xref:en/developer/design/tips-and-tricks)
 * [Contributing a Theme](xref:en/developer/design/contributing-theme)
+* [Entity events system](xref:en/developer/design/entity-events-system)
