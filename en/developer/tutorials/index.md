@@ -29,3 +29,4 @@ The following is a list of common questions asked by developers working with nop
 * [Docker](xref:en/developer/tutorials/docker)
 * [How to deploy nopCommerce to Azure](xref:en/developer/tutorials/azure-publish)
 * [Guide to creating a page containing a reporting table of DataTables](xref:en/developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables)
+* [Content Security Policy (CSP) Headers](xref:en/developer/tutorials/csp-headers)

@@ -1,3 +1,10 @@
+---
+title: Content Security Policy (CSP) Headers
+uid: en/developer/tutorials/csp-headers
+author: git.nopsg
+contributors: git.nopsg, git.DmitriyKulagin
+---
+
 # Content Security Policy (CSP) Headers
 
 Content-Security-Policy is the name of a HTTP response header that modern browsers use to enhance the security of the document (or web page). The HTTP Content Security Policy response header gives website admins a sense of control by giving them the authority to restrict the resources such as JavaScript and CSS a user is allowed to load within site. In other words, you can whitelist your site's content sources. Although it is primarily used as a HTTP response header, you can also apply it via a meta tag.
@@ -6,7 +13,7 @@ Content-Security-Policy is the name of a HTTP response header that modern browse
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://img.nopcommerce.com; object-src 'none'; script-src 'self'; style-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
 ```
 
-In order to add this custom meta tag, you can go to `www.yourStore.com/Admin/Setting/GeneralCommon` and find **Custom <head> tag** and add this as shown in image below.
+In order to add this custom meta tag, you can go to `www.yourStore.com/Admin/Setting/GeneralCommon` and find **`Custom <head> tag`** and add this as shown in image below.
 
 ![custom CSP head tag image](_static/csp-headers/custom-csp-head-tag.png)
 
