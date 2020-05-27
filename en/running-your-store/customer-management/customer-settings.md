@@ -106,7 +106,7 @@ On the **Customer form fields** panel, define the whether the following form fie
 * **‘Street address 2’ enabled**, if the second street address is enabled. When enabled, you can also decide whether this field should be required.
 * **‘Zip/postal code’ enabled**. When enabled, you can also decide whether this field should be required.
 * **‘City’ enabled.** When enabled, you can also decide whether this field should be required.
-* **‘County’ enabled.** When enabled, you can also decide whether this field should be required.
+* **‘County/region’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘Country’ enabled.** When enabled, you can also decide whether this field should be required.
 * **‘State/province’ enabled.** When enabled, you can also decide whether this field should be required. Note: This field is visible only when the Country enabled checkbox is ticked.
 * **‘Phone number’ enabled.** When enabled, you can also decide whether this field should be required.
@@ -129,7 +129,7 @@ On the **Address Form Fields** panel, a store owner can manage the address form 
 * Street address 2
 * Zip/postal code
 * City
-* County
+* County/region
 * Country
 * State/province. Note: This field is visible only when the Country is enabled.
 * Phone number

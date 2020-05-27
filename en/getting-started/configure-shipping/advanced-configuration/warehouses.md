@@ -21,7 +21,7 @@ The following section describes how to add warehouses. This includes the warehou
     * **Name**
     * **Country** of the warehouse
     * **State/province** of the warehouse
-    * **County** of the warehouse
+    * **County/region** of the warehouse
     * **City** of the warehouse
     * **Address 1** of the warehouse
     * **Zip /Postal code** of the warehouse
