@@ -1,6 +1,6 @@
 ---
 title: Plugin with data access
-uid: en/developer/plugins/plugin-with-data-access.4.30
+uid: en/developer/plugins/plugin-with-data-access-4.30
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.skoshelev
 ---
