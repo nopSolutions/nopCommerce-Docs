@@ -13,4 +13,3 @@ The nopCommerce developer documentation is here to help you through the process 
 * [Creating a nopCommerce plugin](xref:en/developer/plugins/index)
 * [Designer's Guide](xref:en/developer/design/index)
 * [Copyright notice](xref:en/developer/copyright-notice)
-* [FAQs](xref:en/developer/faqs)
