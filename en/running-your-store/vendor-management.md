@@ -203,6 +203,5 @@ Click **Save.** The new attribute will be displayed in the public store.
 
 ## See also
 
-* [Vendors](xref:en/running-your-store/vendor-management)
 * [Setting up Customers](xref:en/running-your-store/customer-management/index)
 
