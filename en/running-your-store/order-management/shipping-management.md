@@ -7,19 +7,20 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 # Shipping management
 
-To search for and view Shipments go to **Sales → Shipments**.
+To search for and view shipments go to **Sales → Shipments**.
 
 The top area of the page enables you to search for a shipment by different search criteria:
 
-* Start date and End date for shipments created between these dates
-* Tracking number
-* **Country, State/province, County, City** to search by a shipment destination
-* **Warehouse** for shipments done from a specific warehouse
-* Click **Load not shipped** checkbox if you do not want to load already shipped or delivered items
+* **Start date** and **End date** for shipments created between these dates.
+* Enter **Tracking number** if you want to find shipments with certain tracking number.
+* Use **Country, State/province, County/region, City** to search by a shipment destination.
+* Select **Warehouse** for shipments sent from a specific warehouse.
+* Click **Load not shipped** checkbox if you do not want to load already shipped items.
+* Click **Load not delivered** checkbox if you do not want to load already delivered items.
 
 Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print all packaging receipts.
 
-![Shipment List](_static/shipping-management/order-shipment-list.png)
+![Shipment List](_static/shipping-management/order-shipment-list.jpg)
 
 In the list of shipments, a store owner can view all items of a shipment by clicking on ![expand](_static/shipping-management/order-shipment-expand.png) in the first column of the shipment.
 
