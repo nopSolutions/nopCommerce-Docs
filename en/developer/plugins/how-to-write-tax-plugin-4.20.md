@@ -1,95 +1,112 @@
+---
+title: How to write a Tax Plugin for nopCommerce 4.20
+uid: en/developer/plugins/how-to-write-tax-plugin-4.20
+author: git.nopsg
+contributors: git.nopsg, git.DmitriyKulagin
+---
+
 # How to write a Tax Plugin for nopCommerce
-To extend nopCommerce functionality, plugins are used. There are various types of plugins like “PickupInStore” and “PayPal Standard” which are already contained in the nopCommerce distro. nopCommerce market place already contains various plugins (both free and paid) which may meet your requirement(s). If you haven’t found one, then you are at the right place because this article will guide you through the process of creating plugin, especially tax plugin, according to your need.
+
+To extend nopCommerce functionality, plugins are used. There are various types of plugins like “PickupInStore” and “PayPal Standard” which are already contained in the nopCommerce distro. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If you haven’t found one, then you are at the right place because this article will guide you through the process of creating plugin, especially tax plugin, according to your need.
 
 ## The plugin structure, required files, and locations
-* Start by creating a new “Class Library” project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already resides.
 
-![image1](_static/How-to-write-a-tax-plugin-for-nopCommerce/image1.png)
+1. Start by creating a new “Class Library” project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already resides.
 
-> Note: Do not get confused this directory with the one which exists in `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugins compiled files.
+    ![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
 
-A recommended name for a plugin project is `Nop.Plugin.{Group}.{Name}`. `{Group}` is your plugin group (for example, `Payment` or `Shipping`). `{Name}` is your plugin name (for example, `FixedOrByCountryStateZip`). For example, `FixedOrByCountryStateZip` tax plugin has the following name: `Nop.Plugin.Tax.FixedOrByCountryStateZip`. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyFirstTaxPlugin`. The Plugins directory structure of a solution looks like following.
+    > [!NOTE]
+    > Do not get confused this directory with the one which exists in `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugins compiled files.
 
-![image2](_static/How-to-write-a-tax-plugin-for-nopCommerce/image2.png)
+    A recommended name for a plugin project is `Nop.Plugin.{Group}.{Name}`. `{Group}` is your plugin group (for example, `Payment` or `Shipping`). `{Name}` is your plugin name (for example, `FixedOrByCountryStateZip`). For example, `FixedOrByCountryStateZip` tax plugin has the following name: `Nop.Plugin.Tax.FixedOrByCountryStateZip`. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyFirstTaxPlugin`. The Plugins directory structure of a solution looks like following.
 
-* Once the plugin project is created, the **.csproj** file content should be updated using any available text editor application. Replace the content with following one:
+    ![image2](_static/how-to-write-a-tax-plugin-4.20/image2.png)
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
- 	      <Copyright>SOME_COPYRIGHT</Copyright>
-        <Company>YOUR_COMPANY</Company>
-        <Authors>SOME_AUTHORS</Authors>
-        <PackageLicenseUrl>PACKAGE_LICENSE_URL</PackageLicenseUrl>
-        <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
-        <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>
-        <RepositoryType>Git</RepositoryType>
-        <OutputPath>..\..\Presentation\Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY</OutputPath>
-        <OutDir>$(OutputPath)</OutDir>
-        <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
-        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    </PropertyGroup>
-    <ItemGroup>
-        <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
-	      <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.sproj" />
-    </ItemGroup>
-    <!-- This target execute after "Build" target -->
-    <Target Name="NopTarget" AfterTargets="Build">
-        <!-- Delete unnecessary libraries from plugins path -->
-        <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
-    </Target>
-</Project>
-```
+1. Once the plugin project is created, the **.csproj** file content should be updated using any available text editor application. Replace the content with following one:
 
-> Note: The **PLUGIN_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, Tax.FixedOrByCountryStateZip.
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+        <PropertyGroup>
+            <TargetFramework>netcoreapp2.2</TargetFramework>
+            <Copyright>SOME_COPYRIGHT</Copyright>
+            <Company>YOUR_COMPANY</Company>
+            <Authors>SOME_AUTHORS</Authors>
+            <PackageLicenseUrl>PACKAGE_LICENSE_URL</PackageLicenseUrl>
+            <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
+            <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>
+            <RepositoryType>Git</RepositoryType>
+            <OutputPath>..\..\Presentation\Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY</OutputPath>
+            <OutDir>$(OutputPath)</OutDir>
+            <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your        project. You need to set this parameter to true if your plugin has a nuget package to ensure that       the dlls copied from the NuGet cache to the output of your project-->
+            <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        </PropertyGroup>
+        <ItemGroup>
+            <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+            <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.sproj" />
+        </ItemGroup>
+        <!-- This target execute after "Build" target -->
+        <Target Name="NopTarget" AfterTargets="Build">
+            <!-- Delete unnecessary libraries from plugins path -->
+            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $    (OutDir)" Targets="NopClear" />
+        </Target>
+    </Project>
+    ```
 
-* After updating the .csproj file, **plugin.json** file should be added which is required for plugin.  This file contains meta information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For example, **FixedOrByCountryStateZip** plugin has the following plugin.json file:
+    > [!NOTE]
+    > The **PLUGIN_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, `Tax.FixedOrByCountryStateZip`.
 
-```json
-{
-    "Group": "Tax Providers",
-    "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
-    "SystemName": "Tax. FixedOrByCountryStateZip",
-    "Version": "1.29",
-    "SupportedVersions": [ "4.20" ],
-    "Author": "nopCommerce team ",
-    "DisplayOrder": 1,
-    "FileName": "Nop.Plugin.Tax. FixedOrByCountryStateZip.dll",
-    "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes "
-}
-```
+1. After updating the **.csproj** file, `plugin.json` file should be added which is required for plugin.  This file contains meta information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For example, **FixedOrByCountryStateZip** plugin has the following `plugin.json` file:
 
-Actually all fields are self-descriptive, but here are some notes. SystemName field should be unique. Version field is a version number of your plugin; you can set it to any value you like. SupportedVersions field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). FileName field has the following format **Nop.Plugin.{Group}.{Name}.dll** (it is your plugin assembly filename). Ensure that `Copy to Output Directory` property of this file is set to `Copy if newer`.
+    ```json
+    {
+        "Group": "Tax Providers",
+        "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
+        "SystemName": "Tax. FixedOrByCountryStateZip",
+        "Version": "1.29",
+        "SupportedVersions": [ "4.20" ],
+        "Author": "nopCommerce team ",
+        "DisplayOrder": 1,
+        "FileName": "Nop.Plugin.Tax. FixedOrByCountryStateZip.dll",
+        "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes "
+    }
+    ```
 
-![image3](_static/How-to-write-a-tax-plugin-for-nopCommerce/image3.png)
+    Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format **Nop.Plugin.{Group}.{Name}.dll** (it is your plugin assembly filename). Ensure that `Copy to Output Directory` property of this file is set to `Copy if newer`.
 
-* The last required step is to create a class which implements *BasePlugin* (Nop.Core.Plugins namespace) and *ITaxProvider* interface (Nop.Services.Tax namespace). **ITaxProvider** implements *GetTaxRate* method which returns type **CalculateTaxResult** (contains tax rate, errors if any and Boolean success status) based on the custom logic, usually based on the customer address.
+    ![image3](_static/how-to-write-a-tax-plugin-4.20/image3.png)
+
+1. The last required step is to create a class which implements `BasePlugin` (`Nop.Core.Plugins` namespace) and `ITaxProvider` interface (`Nop.Services.Tax` namespace). **ITaxProvider** implements `GetTaxRate` method which returns type **CalculateTaxResult** (contains tax rate, errors if any and Boolean success status) based on the custom logic, usually based on the customer address.
 
 ## Handling requests. Controllers, models and views
+
 Now you can see the plugin by going to **Admin area** → **Configuration** → **Local Plugins**.
 
-![image4](_static/How-to-write-a-tax-plugin-for-nopCommerce/image4.png)
+![image4](_static/how-to-write-a-tax-plugin-4.20/image4.png)
 
 When a plugin/widget is installed, you will see **Uninstall** button. It is a good practice that you uninstall plugins/widgets which are not necessary for performance improvement.
 
-![image5](_static/How-to-write-a-tax-plugin-for-nopCommerce/image5.png)
+![image5](_static/how-to-write-a-tax-plugin-4.20/image5.png)
 
-There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled. *Deleting will remove physical files from the server.*
+There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled. 
+
+> [!NOTE]
+> Deleting will remove physical files from the server.
 
 But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
 
 What we need to do now is create a controller, a model, a view and a view component.
-* MVC controllers are responsible for responding to requests made against an ASP.NET MVC website. Each browser request is mapped to a particular controller.
-* A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an ASP.NET MVC application.
+
+* MVC controllers are responsible for responding to requests made against an `ASP.NET MVC` website. Each browser request is mapped to a particular controller.
+* A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an `ASP.NET MVC` application.
 * A view component which implements **NopViewComponent** which contains logic and codes to render a view.
 * An MVC model contains all of your application logic that is not contained in a view or a controller.
 
 So let's start:
-* **Create the model**. Add a **Models** folder in the new plugin, and then add a new model class which fits your need.
-* **Create the view**. Add a **Views** folder in the new plugin, and then add a cshtml file named **Configure.cshtml**. Set **Build Action** property of the view file is set to **Content**, and the **Copy to Output Directory** property is set to **Copy always**. Note that configuration page should use *_ConfigurePlugin* layout.
 
-```cshtml
+* **Create the model**. Add a `Models` folder in the new plugin, and then add a new model class which fits your need.
+* **Create the view**. Add a `Views` folder in the new plugin, and then add a `.cshtml` file named `Configure.cshtml`. Set **Build Action** property of the view file is set to **Content**, and the **Copy to Output Directory** property is set to **Copy always**. Note that configuration page should use *_ConfigurePlugin* layout.
+
+```html
 @model Nop.Plugin.Tax.FixedOrByCountryStateZip.Models.ConfigurationModel
 
 @{
@@ -144,12 +161,12 @@ So let's start:
 @await Html.PartialAsync("~/Plugins/Tax.FixedOrByCountryStateZip/Views/_FixedRate.cshtml")
 @await Html.PartialAsync("~/Plugins/Tax.FixedOrByCountryStateZip/Views/_CountryStateZip.cshtml", Model)
 ```
- 
-* Also make sure that you have **_ViewImports.cshtml** file into your **\Views** directory. You can just copy it from any other existing plugin or widget.
 
-![image6](_static/How-to-write-a-tax-plugin-for-nopCommerce/image6.png)
- 
-* **Create the controller**. Add a **Controllers** folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers **{Group}{Name}Controller.cs**. For example, **FixedOrByCountryStateZipController**. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it "Configure". Prepare a model class and pass it to the following view using a physical view path: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**.
+* Also make sure that you have **_ViewImports.cshtml** file into your `Views` directory. You can just copy it from any other existing plugin or widget.
+
+![image6](_static/how-to-write-a-tax-plugin-4.20/image6.png)
+
+* **Create the controller**. Add a `Controllers` folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers **{Group}{Name}Controller.cs**. For example, `FixedOrByCountryStateZipController`. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it `Configure`. Prepare a model class and pass it to the following view using a physical view path: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**.
 
 ```cs
 public IActionResult Configure()
@@ -187,28 +204,32 @@ public IActionResult Configure()
     return View("~/Plugins/Tax.FixedOrByCountryStateZip/Views/Configure.cshtml", model);
 }
 ```
- 
+
 * Use the following attributes for your action method:
+
 ```cs
 [AuthorizeAdmin] //confirms access to the admin panel
 [Area(AreaNames.Admin)] //specifies the area containing a controller or action
 [AdminAntiForgery] //Helps prevent malicious scripts from submitting forged page requests.
 ```
-For example, open FixedOrByCountryStateZip plugin and look at its implementation of FixedOrByCountryStateZipController.
-Then for each plugin which has a configuration page you should specify a configuration url. Base class named BasePlugin has GetConfigurationPageUrl method which returns a configuration url:
+
+For example, open `FixedOrByCountryStateZip` plugin and look at its implementation of `FixedOrByCountryStateZipController`.
+Then for each plugin which has a configuration page you should specify a configuration url. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration url:
+
 ```cs
 public override string GetConfigurationPageUrl()
 {
     return $"{_webHelper.GetStoreLocation()}Admin/{CONTROLLER_NAME}/{ACTION_NAME}";
 }
 ```
-Where *{CONTROLLER_NAME}* is a name of your controller and *{ACTION_NAME}* is a name of action (usually it's "Configure").
 
-For assigning different tax rate according to the customer address, a new table is required which records all data related to tax. For this purpose, **Domain** folder is added where we add a class which extends **BaseEntity** class. In this case **TaxRate.cs**
+Where *{CONTROLLER_NAME}* is a name of your controller and *{ACTION_NAME}* is a name of action (usually it's `Configure`).
 
-![image7](_static/How-to-write-a-tax-plugin-for-nopCommerce/image7.png)
+For assigning different tax rate according to the customer address, a new table is required which records all data related to tax. For this purpose, `Domain` folder is added where we add a class which extends **BaseEntity** class. In this case `TaxRate.cs`
 
-Another folder **Data** is also added which consists of Map class(es) and Object Context class(es). Mapping class implements **NopEntityTypeConfiguration<T>** (*Nop.Data.Mapping* namespace). Here, the configure method is overridden.
+![image7](_static/how-to-write-a-tax-plugin-4.20/image7.png)
+
+Another folder `Data` is also added which consists of Map class(es) and Object Context class(es). Mapping class implements **`NopEntityTypeConfiguration<T>`** (`Nop.Data.Mapping` namespace). Here, the configure method is overridden.
 
 ```cs
 public override void Configure(EntityTypeBuilder<TaxRate> builder)
@@ -219,8 +240,8 @@ public override void Configure(EntityTypeBuilder<TaxRate> builder)
     builder.Property(rate => rate.Percentage).HasColumnType("decimal(18, 4)");
 }
 ```
- 
-Object Context class implements **DbContext** class (*Microsoft.EntityFrameworkCore* namespace) and **IDbContext** interface (*Nop.Data* namespace). This IDbContext interface consists of methods related to table creation, deletion and other custom actions like executing a raw SQL query according to the model which was previously added in `Domain` folder.
+
+Object Context class implements **DbContext** class (`Microsoft.EntityFrameworkCore` namespace) and **IDbContext** interface (`Nop.Data` namespace). This `IDbContext` interface consists of methods related to table creation, deletion and other custom actions like executing a raw SQL query according to the model which was previously added in `Domain` folder.
 
 ```cs
 public class CountryStateZipObjectContext : DbContext, IDbContext
@@ -342,10 +363,11 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     #endregion
 }
 ```
- 
-For tax rates **`CRUD`** operation, services are created. In this case, interface **ICountryStateZipService** and class **CountryStateZipService** is created. It contains method like *InsertTaxRate*, *UpdateTaxRate*, *DeleteTaxRate*, *GetAllTaxRates* and *GetTaxRateById*. These method names are self-explanatory and will be consumed by controllers. Other methods can be introduced/added based according to the requirements.
 
-###### ICountryStateZipService.cs
+For tax rates **CRUD** operation, services are created. In this case, interface **ICountryStateZipService** and class **CountryStateZipService** is created. It contains method like `InsertTaxRate`, `UpdateTaxRate`, `DeleteTaxRate`, `GetAllTaxRates` and `GetTaxRateById`. These method names are self-explanatory and will be consumed by controllers. Other methods can be introduced/added based according to the requirements.
+
+### ICountryStateZipService.cs
+
 ```cs
 public partial interface ICountryStateZipService
 {
@@ -382,7 +404,8 @@ public partial interface ICountryStateZipService
 }
 ```
 
-###### CountryStateZipService.cs
+#### CountryStateZipService.cs
+
 ```cs
 public partial class CountryStateZipService : ICountryStateZipService
 {
@@ -494,9 +517,9 @@ public partial class CountryStateZipService : ICountryStateZipService
 }
 ```
 
-The last thing, we need is to register the services and configure plugin DB context on application startup. For this, **Infrastructure** folder is added which contains classes – *DependencyRegister* and *PluginDbStartup*.
+The last thing, we need is to register the services and configure plugin DB context on application startup. For this, **Infrastructure** folder is added which contains classes – `DependencyRegister` and `PluginDbStartup`.
 
-**DependencyRegister** class implements `IDependencyRegister` interface (*Nop.Core.Infrastructure.DependencyManagement* namespace) which has Register method.
+**DependencyRegister** class implements `IDependencyRegister` interface (`Nop.Core.Infrastructure.DependencyManagement` namespace) which has `Register` method.
 
 ```cs
 public class DependencyRegistrar : IDependencyRegistrar
@@ -527,8 +550,8 @@ public class DependencyRegistrar : IDependencyRegistrar
     public int Order => 1;
 }
 ```
- 
-Similarly, **PluginDbStartup** class implements `INopStartup` interface (*Nop.Core.Infrastructure* namespace) which has *ConfigureServices* and *Configure* methods. For this example, object context is added in `ConfigureServices` method.
+
+Similarly, **PluginDbStartup** class implements `INopStartup` interface (`Nop.Core.Infrastructure` namespace) which has `ConfigureServices` and `Configure` methods. For this example, object context is added in `ConfigureServices` method.
 
 ```cs
 public class PluginDbStartup : INopStartup
@@ -560,16 +583,17 @@ public class PluginDbStartup : INopStartup
     /// </summary>
     public int Order => 11;
 }
-``` 
+```
 
 ## Project structure of Tax Plugin
 
-![image8](_static/How-to-write-a-tax-plugin-for-nopCommerce/image8.png)
- 
-## Handling "Install" and "Uninstall" methods
-This step is optional. Some plugins can require additional logic during its installation. For example, a plugin can insert new locale resources or add necessary tables or settings values. So open your BasePlugin implementation and override the following methods:
+![image8](_static/how-to-write-a-tax-plugin-4.20/image8.png)
 
-* Install. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
+## Handling "Install" and "Uninstall" methods
+
+This step is optional. Some plugins can require additional logic during its installation. For example, a plugin can insert new locale resources or add necessary tables or settings values. So open your `BasePlugin` implementation and override the following methods:
+
+* `Install`. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 
 ```cs
 public override void Install()
@@ -603,8 +627,8 @@ public override void Install()
     base.Install();
 }
 ```
- 
-* Uninstall. This method will be invoked during plugin uninstallation. You can remove previously initialized settings, locale resources, or database tables by plugin during installation.
+
+* `Uninstall`. This method will be invoked during plugin uninstallation. You can remove previously initialized settings, locale resources, or database tables by plugin during installation.
 
 ```cs
 public override void Uninstall()
@@ -645,5 +669,5 @@ public override void Uninstall()
 }
 ```
 
-> Important note: If you override one of these methods, do not hide its base implementation -base.Install() and base.Uninstall(). 
-
+> [!IMPORTANT]
+> If you override one of these methods, do not hide its base implementation -base.Install() and base.Uninstall().
