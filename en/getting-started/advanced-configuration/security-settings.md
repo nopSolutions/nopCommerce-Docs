@@ -2,7 +2,7 @@
 title: Security settings
 uid: en/getting-started/advanced-configuration/security-settings
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp
+contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
 
 # Security settings

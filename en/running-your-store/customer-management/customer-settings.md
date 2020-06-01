@@ -2,7 +2,7 @@
 title: Customer settings
 uid: en/running-your-store/customer-management/customer-settings
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp
+contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
 
 # Customer settings
