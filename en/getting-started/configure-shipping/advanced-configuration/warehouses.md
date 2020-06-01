@@ -2,7 +2,7 @@
 title: Warehouses
 uid: en/getting-started/configure-shipping/advanced-configuration/warehouses
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.exileDev, git.mariannk
 ---
 
 # Warehouses
