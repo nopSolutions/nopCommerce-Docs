@@ -679,10 +679,12 @@ These formatting rules concern the use of new lines to format code.
 
   ```csharp
   //Right
-  if (...) {
+  if (...) 
+  {
       ...
   }
-  else {
+  else 
+  {
       ...
   }
   ```
@@ -700,10 +702,12 @@ These formatting rules concern the use of new lines to format code.
 
   ```csharp
   //Right
-  try {
+  try 
+  {
       ...
   }
-  catch (Exception e) {
+  catch (Exception e) 
+  {
       ...
   }
   ```
@@ -721,13 +725,16 @@ These formatting rules concern the use of new lines to format code.
 
   ```csharp
   //Right
-  try {
+  try 
+  {
       ...
   }
-  catch (Exception e) {
+  catch (Exception e) 
+  {
       ...
   }
-  finally {
+  finally 
+  {
       ...
   }
   ```
@@ -804,7 +811,8 @@ These formatting rules concern the use of indentation to format code.
 
   ```csharp
   //Right
-  switch(c) {
+  switch(c) 
+  {
       case Color.Red:
           Console.WriteLine("The color is red");
           break;
@@ -836,7 +844,8 @@ These formatting rules concern the use of indentation to format code.
 
   ```csharp
   //Right
-  switch(c) {
+  switch(c) 
+  {
       case Color.Red:
           Console.WriteLine("The color is red");
           break;
@@ -871,8 +880,9 @@ These formatting rules concern the use of indentation to format code.
   class C
   {
       private string MyMethod(...)
-      {
-          if (...) {
+      {          
+          if (...) 
+          {
               goto error;
           }
           error:
