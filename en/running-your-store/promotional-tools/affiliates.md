@@ -2,7 +2,7 @@
 title: Affiliates
 uid: en/running-your-store/promotional-tools/affiliates
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov
+contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov, git.mariannk
 ---
 
 # Affiliates
