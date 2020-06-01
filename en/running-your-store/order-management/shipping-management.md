@@ -2,7 +2,7 @@
 title: Shipping management
 uid: en/running-your-store/order-management/shipping-management
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
 # Shipping management
