@@ -37,6 +37,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
         </PropertyGroup>
         <ItemGroup>
             <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+            <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
         </ItemGroup>
         <!-- This target execute after "Build" target -->
         <Target Name="NopTarget" AfterTargets="Build">
