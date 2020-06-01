@@ -2,7 +2,7 @@
 title: Blog
 uid: en/running-your-store/content-management/blog
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
 
 # Blog
