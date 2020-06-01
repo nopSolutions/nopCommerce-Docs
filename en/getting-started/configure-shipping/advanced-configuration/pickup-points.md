@@ -2,7 +2,7 @@
 title: Pickup points
 uid: en/getting-started/configure-shipping/advanced-configuration/pickup-points
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.exileDev, git.mariannk
 ---
 
 # Pickup Points
