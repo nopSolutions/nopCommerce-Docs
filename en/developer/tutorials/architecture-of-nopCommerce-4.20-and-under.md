@@ -1,4 +1,11 @@
-# Architecture of nopCommerce
+---
+title: Architecture of nopCommerce 4.20 and under
+uid: en/developer/tutorials/architecture-of-nopCommerce-4.20-and-under
+author: git.nopsg
+contributors: git.nopsg, git.DmitriyKulagin
+---
+
+# Architecture of nopCommerce 4.20 and under
 
 ## Introduction
 
@@ -12,7 +19,7 @@ This document provides a comprehensive architectural overview of the nopCommerce
 
 nopCommerce is one of the most popular and successful `Dot NET based` open-source `E-Commerce` solution. Success of nopCommerce is not only because it contains most of the features required by modern E-Commerce solution out of the box and it's UI is highly customizable and User friendly, but also because the nopCommerce solution is equally organized and developer friendly. The main strength of nopCommerce is its flexible, extendable architecture and well organized source code. The nopCommerce architecture is very close to the onion architecture. Which is mainly focused on controlling the code coupling. According to this architecture all code can depend on layers more central, but code cannot depend on layers further out from the core.  In other words, all coupling is toward the center.
 
-![nopCommerceArchitecturalDiagram](_static/Architecture-of-nopCommerce/nopCommerceArchitecture.png)
+![nopCommerceArchitecturalDiagram](_static/architecture-of-nopCommerce-4.20-and-under/nopCommerceArchitecture.png)
 
 Which means projects can only have dependency to the other projects which resides inward from the current project. For example if you see the above diagram `Nop.Data` project can depend on Nop.Core project and can have `Nop.Core` and dependency, but nop.Core cannot depend on Nop.Data similarly Nop.Services can have Nop.Data and Nop.Core and it's dependency but neither Nop.Core nor `Nop.Data` can have Nop.Service as their dependency. Which means projects can only have other project as dependency only if it resides inward or more center from the layer current project resides. Which is the key for code decoupling. The main feature/advantage of this approach/architecture is that, now if we want to test the Application Core then we can do so even if we do not have any `UI` for our application , Because the Application core does not depends on `UI layer`. Or we can change our `UI framework` from `Razor` view engine and `JQuery` to `Angular` or `React` or `Vue` without effecting our Application Core and can use same core to build Mobile Application or Desktop Application. And all of this without changing a bit of code in our Application Core.
 
