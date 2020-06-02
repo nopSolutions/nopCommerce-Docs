@@ -411,6 +411,9 @@
           name: How do I register new routes?
           href: developer/tutorials/register-new-routes.md
         - 
+          name: How do migrations work?
+          href: developer/tutorials/migrations.md
+        - 
           name: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
           href: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin.md
         - 
