@@ -63,6 +63,10 @@ Next you see the list of events. Standard events are predefined visitor actions 
 
 ## Configure custom events
 
+> [!NOTE]
+>
+> You can see this panel only after you already created and saved current configuration!
+
 If the predefined standard events aren't suitable for your needs, you can track your own custom events, which also can be used to define custom audiences for ad optimization.
 You can configure them below. Specify the name and choose widget zones in which the custom event will be tracked. If you don't know which zone to use for your custom event, you can ask about it in our [forums](https://www.nopcommerce.com/boards).
 
