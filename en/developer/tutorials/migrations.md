@@ -41,4 +41,4 @@ The detailed plan of adding your entities is described in the following article:
 1. We also added the **SkipMigrationOnUpdateAttribute** attribute that indicates if a migration should be skipped during the update process.
 1. You can create a table in the database in two ways:
     * Use **Create.Table** method in the **Up** method of your migration class and specify all details using the extension methods.
-    * Use **IMigrationManager.BuildTable\<T\>** method in the **Up** method of your migration class and specify all details, if needed, using the implementation of the **IEntityBuilder** and **INameCompatibility* interfaces (in nopCommerce we use this approach).
+    * Use **IMigrationManager.BuildTable\<T\>** method in the **Up** method of your migration class and specify all details, if needed, using the implementation of the **IEntityBuilder** and **INameCompatibility** interfaces (in nopCommerce we use this approach).
