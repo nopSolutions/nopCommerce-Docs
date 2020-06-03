@@ -61,6 +61,13 @@ Next you see the list of events. Standard events are predefined visitor actions 
 >
 > The General Data Protection Regulation (GDPR) took effect on May 25, 2018, and creates consistent data protection rules across Europe. Businesses who advertise with the Facebook companies can continue to use Facebook platforms and solutions in the same way they do today.
 
+## Configure custom events
+
+If the predefined standard events aren't suitable for your needs, you can track your own custom events, which also can be used to define custom audiences for ad optimization.
+You can configure them below. Specify the name and choose widget zones in which the custom event will be tracked. If you don't know which zone to use for your custom event, you can ask about it in our [forums](https://www.nopcommerce.com/boards).
+
+![Configure custom events](_static/facebook-pixel/custom-events.jpg)
+
 ## See also
 
 [What data does the Facebook pixel collect?](https://developers.facebook.com/docs/facebook-pixel/support#pixelcollect)
