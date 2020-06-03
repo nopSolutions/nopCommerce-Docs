@@ -20,13 +20,13 @@ To access your account at UPS use a username, a password, and an **XML license n
     * In the UPS (United Postal Service) row, click the **Edit** button.
     * In the Is **active** column, check the checkmark.
     * Click **Update**. The false option becomes **true**.
-1. Click **Configure** beside the UPS (United Parcel Service) option in the list. The Configure – UPS (United Parcel Service) window is displayed, as follows: ![Configure page](_static/ups/ups-configure.png)
+1. Click **Configure** beside the UPS (United Parcel Service) option in the list. The Configure – UPS (United Parcel Service) window is displayed, as follows: ![Configure page](_static/ups/ups-configure.jpg)
 1. Enter the following information obtained from the UPS provider:
-    * Tick the **Use sandbox**checkbox for use testing environment
-    * **Account number** of the UPS provider
-    * **Access Key** obtained from the provider
-    * **Username** obtained from the provider
-    * **Password** obtained from the provider
+    * Tick the **Use sandbox** checkbox to use testing environment.
+    * Enter the **Account number** of the UPS provider.
+    * Enter the **Access Key** obtained from the provider.
+    * Enter your **Username** obtained from the provider.
+    * Enter the **Password** obtained from the provider
     * Select your required **UPS Customer Classification**, as follows:
         * Rates Associated With Shipper Number
         * Daily Rates
@@ -54,13 +54,15 @@ To access your account at UPS use a username, a password, and an **XML license n
         * Small Express Box
         * Medium Express Box
         * Large Express Box
-    * Tick the **Insure package** checkbox, to indicate the package will be insured
-    * Enter **Additional handling charge** -  an additional fee to charge your customers
-    * Select the **Carrier Services** you want to offer to your customers
-    * Check to get rates for **Saturday Delivery enabled**
+    * Tick the **Insure package** checkbox, to indicate the package will be insured.
+    * Enter **Additional handling charge**. It is an additional fee to charge your customers.
+    * Select the **Carrier Services** you want to offer to your customers.
+    * Check to get rates for **Saturday Delivery enabled**.
     * Select the **Packing type**, as follows:
         * Pack by dimensions
         * Pack by one item per package
         * Pack by volume
-    * Tick the **Pass dimensions** checkbox, to pass package dimension when requesting for rates.
+    * Tick the **Pass dimensions** checkbox, to pass package dimensions when requesting for rates.
+    * Select the **Weight type** - pounds or kilograms.
+    * Select the **Dimensions type** - inches or centimeters.
     * Tick the **Tracing** checkbox, to record system tracing in the system log. The entire request and response XML will be logged (including AccessKey/Username, Password). Do not leave this enabled in a production environment.
