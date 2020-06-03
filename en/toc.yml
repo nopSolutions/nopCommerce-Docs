@@ -319,6 +319,9 @@
         - 
           name: Email campaigns
           href: running-your-store/promotional-tools/email-campaigns.md
+        - 
+          name: Facebook pixel
+          href: running-your-store/promotional-tools/facebook-pixel.md
     - 
       name: Content management
       href: running-your-store/content-management/index.md
