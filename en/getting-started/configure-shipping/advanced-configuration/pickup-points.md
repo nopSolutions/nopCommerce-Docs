@@ -17,7 +17,7 @@ Pickup point is an option providing customers the flexibility to select a point 
 
 Go to **Configuration → Shipping → Pickup points**, the Pickup point providers page is displayed:
 
-![Pickup point providers](_static/pickup-points/pickup-point-providers.png)
+![Pickup point providers](_static/pickup-points/pickup-point-providers.jpg)
 
 By default, only one Pickup in store option is available.
 
