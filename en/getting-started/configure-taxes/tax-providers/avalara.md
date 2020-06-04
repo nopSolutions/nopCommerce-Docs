@@ -9,11 +9,11 @@ contributors: git.exileDev, git.mariannk
 
 ## Connect to AvaTax
 
-After installing the AvaTax integration you need to configure the integration
+After installing the AvaTax integration you need to configure the integration.
 
 > [!NOTE]
 > 
-> Be sure that the plugin is installed and checked as “Enabled” (**Configuration → Local plugins**). To enable the plugin click **Edit** and check **Is enabled** checkbox.
+> Be sure that the plugin is installed and checked as "Enabled" (**Configuration → Local plugins**). To enable the plugin click **Edit** and check **Is enabled** checkbox.
 
 ![Local plugins](_static/avalara/local-plugins.png)
 
@@ -27,7 +27,7 @@ Click **Configure** beside the Avalara tax provider option in the list.
 
 Follow the instructions on top of the page, each field’s function is annotated when “?” is hovered on.
 
-![Configuration](_static/avalara/avalara-configuration.png)
+![Configuration](_static/avalara/avalara-configuration.jpg)
 
 1. Configure your Avalara Tax credentials:
     * **Account ID**: provided during your AvaTax account activation process.
@@ -39,7 +39,7 @@ Follow the instructions on top of the page, each field’s function is annotated
     * **Tax origin address** is used for tax requests to Avalara services.
     * **Enable logging** enables logging of all requests to Avalara services.
 2. **Save** and click the **Test connection** button to perform test connection.
-3. To perform the *test tax calculation* fill the form on the bottom of the page (please note, that nopCommerce Avalara tax plugin commits transactions to US addresses only) and click **Test tax transaction**.
+3. To perform the *test tax calculation* fill the address form on the bottom of the page (please note, that nopCommerce Avalara tax plugin commits transactions to US addresses only) and click **Test tax transaction**.
 
 ## Assign Avalara AvaTax code
 
@@ -47,7 +47,7 @@ Navigate to **Configuration → Tax categories**.
 
 At the top right of the page you will see the branded **Avalara tax codes** button. Clicking it the drop-down menu will show the following menu:
 
-![Tax categoties](_static/avalara/tax-categories.png)
+![Tax categoties](_static/avalara/tax-categories.jpg)
 
 * **Export tax codes to Avalara** – exports all codes from your store to your Avalara backend.
 * **Import Avalara system tax codes** – imports all Avalara tax codes from Avalara.
@@ -63,13 +63,13 @@ At the top right of the page you will see the branded **Avalara tax codes** butt
 
 > [!NOTE]
 > 
-> It is not necessary to check **Tax exempt** check box: assigning **Entity use code** is enough.
+> It is not necessary to check **Tax exempt** checkbox: assigning **Entity use code** is enough.
 
 ## Assign an AvaTax system tax code to an item
 
 1. Go to **Catalog → Products**.
 1. Select a product to open the product details screen and click **Edit**.
-1. On the product details screen, in *Price* panel assign appropriate code from drop-down list in **Tax category** field.
+1. On the product details screen, in **Price** panel assign appropriate code from drop-down list in **Tax category** field.
 
     ![Product tax category](_static/avalara/product-tax-category.png)
 1. **IMPORTANT:** Ensure that **SKU** is entered, for better navigation in Avalara backend.
