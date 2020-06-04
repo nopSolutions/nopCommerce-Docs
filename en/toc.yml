@@ -76,9 +76,6 @@
               name: Credit card (manual processing)
               href: getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
             -
-              name: Credit card (paying with Square)
-              href: getting-started/configure-payments/payment-methods/credit-card-paying-with-square.md
-            -
               name: PayPal Standard
               href: getting-started/configure-payments/payment-methods/paypal-standard.md
             -

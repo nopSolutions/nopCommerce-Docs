@@ -32,7 +32,6 @@ Click **configure** beside a payment method to set it up.
 
 ## See also
 
-* [Square](xref:en/getting-started/configure-payments/payment-methods/credit-card-paying-with-square)
 * [Manual Processing (Credit Card)](xref:en/getting-started/configure-payments/payment-methods/credit-card-manual-processing)
 * [Purchase order](xref:en/getting-started/configure-payments/payment-methods/check-money-order)
 * [PayPal Standard](xref:en/getting-started/configure-payments/payment-methods/paypal-standard)
