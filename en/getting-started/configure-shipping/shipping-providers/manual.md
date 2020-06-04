@@ -1,43 +1,43 @@
 ﻿---
-title: Manual (Fixed or by weight and by total)
+title: Manual (fixed or by weight and by total)
 uid: en/getting-started/configure-shipping/shipping-providers/manual
 author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev
 ---
 
-# Manual (Fixed or by weight and by total)
+# Manual (fixed or by weight and by total) provider
 
-Manual (Fixed or By Weight and By Total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
+Manual (fixed or by weight and by total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
 
-## Define Manual (Fixed or By Weight and By Total) shipping
+## Define the manual shipping provider
 
-Go to **Configuration → Shipping → Shipping Providers**. The Shipping providers window is displayed:
+Go to **Configuration → Shipping → Shipping providers**. The shipping providers window is displayed:
 
-![manual shipping methods](_static/manual/manual-shipping-rate-methods.png)
+![manual shipping methods](_static/manual/methods.jpg)
 
-Enable manual shipping rate computation method, as follows:
+Enable the manual shipping rate computation method, as follows:
 
-* In the **Manual (Fixed or By Weight and By Total)** row, click the Edit button
-* In the **Is active** column, check the checkmark
-* Click **Update**. The false option becomes true
+* In the **Manual (fixed or by weight and by total)** row, click the **Edit** button.
+* In the **Is active** column, check the checkbox.
+* Click the **Update** button. The *false* option becomes *true*.
 
-Click **Configure** beside the Manual (Fixed or By Weight and By Total) option in the list.
+Click the **Configure** button beside the Manual (fixed or by weight and by total) option in the list.
 
-You can switch Fixed rate shipping fee calculation to Shipping by weight and by total calculation by clicking button at the top of the page.
+You can switch *Fixed rate* shipping fee calculation to shipping *By weight/total* calculation by clicking button at the top of the page.
 
-### Fixed rate
+## Configure fixed rate
 
-![Manual configure](_static/manual/manual-shipping-confugure.png)
+![Manual configure](_static/manual/fixed-rate-configure.jpg)
 
-Click **Edit** beside a shipping method and enter the fixed rate for it.
+Click the **Edit** button beside a shipping method and enter the **Rate** and **Transit days** (if needed) for it.
 
 Click **Update**.
 
 > [!NOTE]
 > 
-> you can add/remove shipping methods in the Shipping methods window, accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png)
+> You can add/remove shipping methods in the *Shipping methods window*, accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png) on the top.
 
-### By weight/Total
+## Configure rate by weight/total
 
 ![by weight](_static/manual/manual-shipping-by-weight-total.png)
 
@@ -45,9 +45,9 @@ The **shipping by weight and by total** option allows setting different shipping
 
 Use formula **[additional fixed cost] + ([order total weight] - [lower weight limit]) &times; [rate per weight unit] + [order subtotal] &times; [charge percentage]** to calculate the fees, where:
 
-* **additional fixed cost** - is the cost of shipment in case the weight is under a certain level (lower weight limit)
-* **rate per weight unit** - is the cost of each weight unit above the lower weight limit
-* **order subtotal and charge percentage** - are parameters for calculating the extra cost based on the order subtotal
+* **additional fixed cost** - is the cost of the shipment in case the weight is under a certain level (lower weight limit).
+* **rate per weight unit** - is the cost of each weight unit above the lower weight limit.
+* **order subtotal and charge percentage** - are parameters for calculating the extra cost based on the order subtotal.
 
 For example, if you have the following shipping conditions:
 
@@ -77,84 +77,71 @@ For example, if you have the following shipping conditions:
 
     > [!NOTE] 
     > 
-    > it will charge proportionally for additional weight; example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
+    > It will charge proportionally for additional weight; example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
 
-To add a new shipping rule, click **Add record**. The Add new record window is displayed:
+To add a new shipping rule, click **Add record**. The *Add new record* window is displayed:
 
-![Add rule](_static/manual/manual-shipping-add-new.png)
+![Add rule](_static/manual/manual-shipping-add-new.jpg)
 
-**Define the following information**:
+Define the following information:
 
 * **Store** in which the calculated fees will be applied. Choose * to apply the rules to all stores.
 * **Warehouse** from which the shipping will be done. Choose * to apply the rules to all warehouses.
-* **Country, State/Province, ZIP** of a shipment destination.
-* Select a **Shipping Method** from the list of precreated options. Learn here how to create shipping methods.
-* Create your weight configuration by filling **Order weight** from and Order weight to first. If the customer’s shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
-* Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage of subtotal**.
+* **Country, State/province, Zip** of a shipment destination.
+* Select a **Shipping method** from the list of precreated options. Use **Manage shipping methods** on the top to add/remove shipping methods.
+* Create your weight configuration by filling **Order weight from** and **Order weight to** fields. If the customer’s shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
+* Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage (of subtotal)** fields.
+* Define the **Transit days** field which defines the number of days of delivery.
 
 > [!NOTE]
 > 
-> Make sure that you settings "**Configuration → Settings → Shipping Settings → Consider associated products dimensions and weight**" is true.
+> Make sure that the setting **Configuration → Settings → Shipping settings → Consider associated products dimensions and weight** is true.
 
 Click **Save**.
 
 > [!NOTE]
 > 
-> You can add/remove shipping methods in the Shipping methods window, accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png)
-> 
-> If you wish to limit your customers only to methods configured on that screen tick this checkbox on the bottom of the page.
+> If you wish to limit your customers only to methods configured on that screen tick the **Limit shipping methods to configured ones** checkbox on the bottom of the page.
 
 
-## Tutorials
+## Configure shipping methods
 
-* [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
+A store owner can define required shipping method list used in *Manual (fixed or by weight and by total)* provider. To manage shipping methods:
 
+Go to **Configuration → Shipping → Shipping providers**. Then click the **Configure** button beside the *Manual (fixed or by weight and by total)* provider. The configuration window is displayed:
 
+![Configure](_static/manual/fixed-rate-configure.jpg)
 
-# Shipping Methods (Fixed Rate Shipping)
+Click **Manage shipping methods**, the *Shipping methods window* is displayed:
 
-A store owner can define required shipping methods in the Fixed Rate Shipping section. To manage shipping methods:
+![Methods](_static/manual/fixed-rate-methods.jpg)
 
-Go to **Configuration → Shipping → Shipping Providers → click Configure beside Fixed Rate Shipping**. The configuration window is displayed:
+Click **Add new** button, the *Add a new shipping method* window is displayed, as follows:
 
-![Configure](_static/manual/fixed-rate-configure.png)
-
-Click **Manage shipping methods**, the Shipping methods window is displayed:
-
-![Methods](_static/manual/fixed-rate-methods.png)
-
-Click **Add new** button, the Add a new shipping method window is displayed, as follows:
-
-![Add new](_static/manual/fixed-rate-methods-add-new.png)
+![Add new](_static/manual/fixed-rate-methods-add-new.jpg)
 
 Define the following fields for a new record:
 
-* **Name** of the shipping method viewed by the customer.
-* **Description** for the shipping method viewed by the customer.
+* **Name** of the shipping method viewed by a customer.
+* **Description** for the shipping method viewed by a customer.
 * **Display order** of the shipping method. A value of 1 represents the top of the list.
 
 Click **Save**.
 
 > [!NOTE]
 > 
-> You can click Edit in the Shipping methods window to edit existing shipping methods, as described above.
+> You can click **Edit** in the *Shipping methods* window to edit existing shipping methods, as described above.
 
 
+## Shipping method restrictions
 
+A store owner can define restrictions for certain shipping methods in certain countries. To do so, go to **Configuration → Shipping → Shipping providers**. Click the **Configure** button beside the *Manual (fixed or by weight and by total)* provider. The configuration window is displayed:
 
+![Configure](_static/manual/fixed-rate-configure.jpg)
 
+Click **Shipping method restrictions**, the *Shipping method restrictions* window is displayed:
 
-
-
-# Shipping Method Restrictions (Fixed Rate Shipping)
-
-A store owner can define restrictions for certain shipping methods in certain countries. To do so, go to **Configuration → Shipping → Shipping Providers → click Configure beside Fixed Rate Shipping**. The configuration window is displayed:
-
-![Configure](_static/manual/fixed-rate-restrictions-configure.png)
-
-Click **Shipping method restrictions**, the Shipping method restrictions window is displayed:
-
-![Methods](_static/manual/fixed-rate-restrictions-methods.png)
+![Methods](_static/manual/fixed-rate-restrictions-methods.jpg)
 
 Select one or more of your shipping methods, that you want to disable in certain countries.
 
@@ -163,7 +150,6 @@ If required, you can select the entire restriction column for all countries.
 Click **Save**.
 
 
+## Tutorials
 
-
-
-
+* [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
