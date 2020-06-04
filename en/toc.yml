@@ -317,6 +317,9 @@
           name: Email campaigns
           href: running-your-store/promotional-tools/email-campaigns.md
         -
+          name: SendinBlue integration
+          href: running-your-store/promotional-tools/sendinblue-integration.md
+        -
           name: Facebook pixel
           href: running-your-store/promotional-tools/facebook-pixel.md
     -
