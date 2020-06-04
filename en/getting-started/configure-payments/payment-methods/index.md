@@ -17,7 +17,7 @@ To define payment methods go to **Configuration →  Payment Methods.**
 
 For further details, refer to the [document](xref:en/developer/plugins/payment-method) (recommended to be used only by developers).
 
-![methods](_static/index/methods.png)
+![methods](_static/index/payment-methods.jpg)
 
 To activate a payment method, Click **Edit** beside the required method, tick the **Is active** checkbox and click Update. The Is active option changes from false to true.
 
