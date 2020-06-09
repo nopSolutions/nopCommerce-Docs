@@ -9,28 +9,19 @@ contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov
 
 During customer registration, a customer can select the **Newsletters option** to receive nopCommerce newsletters.
 
-Use your subscribers list to create email campaigns to easily and quickly reach target audience without any additional marketing activities. Campaigns help to promote trust and loyalty to a company while also increasing sales.
-
-There are several examples of email marketing campaigns you can use for your store: start with a welcome email that thanks for the subscription,  regularly send out announcements,  news regarding your company, coupons for future purchasing and much more.
-
-
-
-
-
-
 # All campaigns
 
 During customer registration, a customer can select the **Newsletters option** to receive nopCommerce newsletters. The other way of filling in email subscribers is to **export the list of subscribers** to an external CSV file as well **import list of subscribers from an external CSV** file into nopCommerce.
 
 > [!TIP]
 > 
-> **You can manage newsletter subscribers on Promotions → Newsletter subscribers.**
+> You can manage newsletter subscribers on Promotions → Newsletter subscribers.
 
 Use your subscribers list to create email campaigns to easily and quickly reach the target audience without any additional marketing activities. Campaigns help to promote trust and loyalty to a company while also increasing sales.
 
 There are several examples of email marketing campaigns you can use for your store: start with a welcome email that thanks for the subscription, regularly send out announcements,  news regarding your company, coupons for future purchasing and much more.
 
-There **no campaigns available by default**, so you can create them from scratch in order to follow your own marketing strategy.
+There are **no campaigns available by default**, so you can create them from scratch in order to follow your own marketing strategy.
 
 To manage campaigns go to **Promotions → Campaigns**
 
@@ -47,7 +38,7 @@ To create a new campaign go to **Promotions → Campaigns → Add new.**
 - In the **Allowed message tokens field**, enter the allowed list of message tokens you can use in your campaign email. You can see all of them if choose Show
 
 - Campaign **Name**
-- **Subject* of the campaign
+- **Subject** of the campaign
 - Enter the **Body text** of the email you want to send out
 - Choose **Planned date and time** of sending
 - From the **Limited to store** dropdown list, select the store which subscribers will get this email
@@ -80,7 +71,7 @@ To Export/Import Newsletter subscribers go to **Promotions  → Newsletter Subsc
 
 > [!NOTE]
 > 
-> You can click **Import from CSV** to import subscriber lists in CSV format. Ensure that each line of the CSV file is in the following format: email_address,is_active,store_id (store_id parameter is optional). For example, `test@test.com`, true. You can click **Export to CSV**  to export subscriber lists.
+> You can click **Import from CSV** to import subscriber lists in CSV format. Ensure that each line of the CSV file is in the following format: email_address,is_active,store_id (store_id parameter is optional). For example, `test@test.com, true`. You can click **Export to CSV**  to export subscriber lists.
 
 ## Searching for the subscribers
 
