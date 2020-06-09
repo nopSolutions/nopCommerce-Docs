@@ -7,17 +7,17 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Orders
 
-**To view and manage Orders**, go to **Sales → Orders**. The Orders page lists all current orders. After a customer completes a transaction, a new order appears on the orders page.
+To **view and manage** Orders, go to **Sales → Orders**. The Orders page lists all current orders. After a customer completes a transaction, a new order appears on the orders page.
 
 Top area of the page enables a store owner to search for orders. Enter specific search criteria and use a variety of filters to find any order placed in the store. When any search is performed, the results of the search are displayed in the lower half of the screen.  You can click View to view the order details.
 
 ![order-list](_static/orders/Admin-Order-List.png)
 
-__To search for orders__, enter one or more of the following search criteria:
+To **search** for orders, enter one or more of the following search criteria:
 
 * **Start date** and **End date** to define a period of orders creation
 * **Product** - enter a product name
-* **Order status** - select one of the follows: All, Pending, Processing, Complete, Cancelled
+* **Order status** - select one of the following: All, Pending, Processing, Complete, Cancelled
 * **Payment status** - select a specific payment status to search by: All, Pending, Authorized, Paid, Refunded, Partially Refunded, Voided
 * **Shipping status** - select a specific shipping status to search by: All, Shipping not required, Not yet shipped, Partially shipped, Shipped, Delivered
 * **Store** - set a specific store in which orders were placed
@@ -32,9 +32,9 @@ __To search for orders__, enter one or more of the following search criteria:
 
 > [!NOTE]
 > 
-> You can export the order data to an external file by clicking Export to XML(all) or Export to Excel (all). You can export selected order data to an external file by clicking Export to XML(selected) or Export to Excel (selected).
+> You can export the order data to an external file by clicking Export to XML (all) or Export to Excel (all). You can export selected order data to an external file by clicking Export to XML (selected) or Export to Excel (selected).
 
-**To view the order full information**, click **View** beside the order in the list.
+To **view the order full information**, click **View** beside the order in the list.
 
 Click the **Invoice (PDF)** button in the right top corner to generate an invoice of the order in PDF form. Click **Delete** if you want to delete the order.
 
@@ -43,8 +43,17 @@ On the **Order Info** tab a store owner can perform the following:
 * View the **Order Status**. The Order Status will be *Completed* only once the payment status is set to *Paid* and the Shipping status is set to *Delivered*. The order status can be changed manually by clicking the **Change status** button. However, this option is recommended only for advanced users, all appropriate actions (such as inventory adjustment, sending notification emails, reward points, gift card activation/deactivation, etc) must be performed manually in this case.
 * **Cancel order**. A confirmation message is displayed, click OK to remove the order from the system.
 * View the order’s ID, GUID, Store, Customer email and IP, payment details (including discounts, taxes, profit and more)
-* **Edit order totals**. Note: when a customer used the Manual Credit Card payment method, which enables storing credit card information in the database, a button Edit credit card becomes visible. If a different payment method is used, this button will not be visible.
-* View the **payment status**. Might be one of the following: Pending, Authorized, Paid (Captured), Refunded, Partially Refunded, or Voided. Note: not all of the gateways support all of these statuses.
+* **Edit order totals**.
+
+> [!NOTE]
+> 
+> When a customer used the Manual Credit Card payment method, which enables storing credit card information in the database, a button Edit credit card becomes visible. If a different payment method is used, this button will not be visible.
+
+* View the **payment status**. Might be one of the following: Pending, Authorized, Paid (Captured), Refunded, Partially Refunded, or Voided.
+
+> [!NOTE]
+> 
+> Not all of the gateways support all of these statuses.
 
 If the payment status is **Authorized** the relevant buttons will be available to **Void** and **Capture** the order. Capture is used to collect the funds from the customer. Void cancels an order that has not been captured. If the Payment status is **Pending**, the owner can click **Mark as paid** to indicate a payment has been issued for the order. If the payment status is **Paid** a **Partial Refund** button will be available. Clicking this button displays the Partial Refund window, enabling the owner to refund part of the total order, as follows:
 
@@ -52,9 +61,14 @@ If the payment status is **Authorized** the relevant buttons will be available t
 
 On the **Billing & Shipping panel**, view and edit the billing and shipping information, if needed. On the **Shipping Info panel**, a store owner can:
 
-* View and Edit a **shipping address**. Optionally you can click the** View address on Google maps** link to locate the required shipping address.
+* View and Edit a **shipping address**. Optionally you can click the **View address on Google maps** link to locate the required shipping address.
 * View and Edit a **shipping method**
-* View a **shipping status**. Note: Store owners can create several shipments per order. If you create a shipment but do not ship all products, then the shipping status of an order is **Partially shipped**. Once all the products are shipped, the status changes to **Shipped**. Once all the shipments are delivered, the status changes to **Delivered**.
+* View a **shipping status**.
+
+> [!NOTE]
+> 
+> Store owners can create several shipments per order. If you create a shipment but do not ship all products, then the shipping status of an order is **Partially shipped**. Once all the products are shipped, the status changes to **Shipped**. Once all the shipments are delivered, the status changes to **Delivered**.
+
 * View the **list of shipments**. Click **View** beside the shipment to view its details. The shipment information window will be displayed: ![shipment-details](_static/orders/shipment-details.jpeg)
 
 
@@ -70,10 +84,10 @@ On the **Billing & Shipping panel**, view and edit the billing and shipping info
 
 
 
-On the *Products* tab a store owner can:
+On the **Products** tab a store owner can:
 
 * **View the product information**, including price, quantity, and total price
-* Click the Product name link to **view a product detail page** or the Download link to **download a product** if it is downloadable, alternatively, a user can upload a file to the downloadable product. In addition, when the Download activation type of a product is set to Manually, an administrator has the option to click **Activate** to enable **downloading** the product from the site or **Deactivate** to disable **downloading** the product from the site
+* Click the Product name link to **view a product detail page** or the Download link to **download a product** if it is downloadable, alternatively, a user can upload a file to the downloadable product. In addition, when the Download activation type of a product is set to Manually, an administrator has the option to click **Activate** to enable downloading the product from the site or **Deactivate** to disable downloading the product from the site
 * **Edit** the product **price**, **quantity**, **discount** and **total**
 * **Delete** a product from the system
 * Add Product. In the **Add a New Product to the Order** window find the required product, fill the required values and Add Product.
