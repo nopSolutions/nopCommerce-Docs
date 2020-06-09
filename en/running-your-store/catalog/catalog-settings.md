@@ -33,7 +33,7 @@ The **second block** sets up **Product reviews**. Define the following:
 - **Notify about new product reviews**, to notify the store owner about new public reviews
 - **Notify customer about product review reply**, to notify customer about product review reply
 - **Reviews per store**, allows displaying only reviews of the current store (on the product details page). Untick this checkbox if you want your customers to see the product’s reviews written in all of your stores.
-- **Show product reviews tab **on 'My account' page to allow customers see all their reviews on ‘My account’ page.
+- **Show product reviews tab** on 'My account' page to allow customers see all their reviews on ‘My account’ page.
 - **Product reviews page size** - the amount of reviews per page.
 - **Sort by ascending**, to sort product reviews by creation date as ascending
 
@@ -52,13 +52,13 @@ Click **Add new button** for create new review type.
 - **Display order**.
 - **Required** - when required, customers have to choose an appropriate rating value before they can continue.
 - **Visible to all customers** - Sets visibility of the review type for all customers.
-- Click **Save** button,to add a new review type.
+- Click **Save** button, to add a new review type.
 
 Now in the public store will be able to fill additional ratings on the product review page.
 
 ![product_reviews](_static/catalog-settings/product_reviews.png)
 
-Also on this page you can see the left feedback of all customers (if this setting is active).In the customer personal account page there is also an opportunity to see all the reviews left on the products.
+Also on this page you can see the left feedback of all customers (if this setting is active). In the customer personal account page there is also an opportunity to see all the reviews left on the products.
 
 ![my_account](_static/catalog-settings/my_account.png)
 
@@ -66,7 +66,7 @@ The next block sets up **Performance**. Having the following settings enabled ca
 
 - **Ignore ACL rules** (sitewide) turns off the [ACL rules](xref:en/running-your-store/customer-management/access-control-list) configured for entities.
 - **Ignore limit per store** (sitewide), to ignore limit per stores rules configured for entities (sitewide). It is recommended to enable this setting if you have only one store or do not have any store-specific limitations.
-- **Ignore discounts **(sitewide)
+- **Ignore discounts** (sitewide)
 - **Ignore featured products** (sitewide)
 - **Cache Product Prices**. You should not enable it if you use some complex discounts, discount requirement rules, or coupon codes.
 
@@ -81,8 +81,8 @@ The next block sets up **Performance**. Having the following settings enabled ca
 
 ![Share](_static/catalog-settings/zzz.png)
 
-- Tick the 'Email a friend' enabled, to allow customers to use the 'Email a friend' option.
-- Allow anonymous users to email a friend
+- Tick the **'Email a friend' enabled**, to allow customers to use the 'Email a friend' option.
+- **Allow anonymous users to email a friend**
 
 **Compare products option** enables consumers to compare different offers based on their characteristics and price so they can make the best shopping decisions. Set up the block, as follows:
 
@@ -92,32 +92,40 @@ The next block sets up **Performance**. Having the following settings enabled ca
 
 ![compare_product](_static/catalog-settings/compare_product.png)
 
-In general **catalog settings** you can define:
-
+In **Additional sections** box allow You to set the following options:
+- **Remove required products** to automatically remove required product from cart when the main product is removed.
 - To **Show best sellers on home page**.
+- **'Products also purchased' enabled** checkbox, to enable customers to view a list of products purchased by others who also purchased the above.
 - When the Products also purchased option is enabled, the **Number of also purchased products to display** field appears, in which the store owner can set the number of products to be displayed.
-- **"Products also purchased” enabled** checkbox, to enable customers to view a list of products purchased by others who also purchased the above.
-- “**Email a friend**” to enable registered customers to recommend specific products to friends by email.
-- Tick the **Allow anonymous users to email a friend** checkbox, to enable anonymous users to email friends.
-- To **Show SKU** in the public store.
+- **'Recently viewed products' enabled** checkbox, to enable customers to see products recently viewed in your store.
+- In the **Number of 'Recently viewed products'** field, enter the number of recently viewed products to be displayed when the Recently viewed products checkbox is enabled.
+- **'New products' page enabled** in the store.
+- In the **Number of products on 'New products' page** field, enter the number of recently added products to display when the recently added products checkbox is enabled.
+- **Display the date for a pre-order availability** checkbox.
+
+In **Product fields** section You can set following options:
+- To **Show SKU on product details page**.
+- To **Show SKU on catalog pages**.
 - To **Show GTIN** in the public store.
 - To **Show manufacturer part number** in the public store.
-- “**Recently viewed products**” **enabled** checkbox, to enable customers to see products recently viewed in your store.
-- In the **Number of “Recently viewed products”** field, enter the number of recently viewed products to be displayed when the Recently viewed products checkbox is enabled.
-- **Recently added products” enabled** checkbox, to enable customers to see products recently added in your store.
-- **In the Number of “Recently added products”** field, enter the number of recently added products to display when the recently added products checkbox is enabled.
+
+In the **Product page** section You can set following options:
 - To **Show free shipping icon** for products with this option enabled.
-- To **Allow view mode changing** on the Category and Manufacturers pages.
 - To **Allow viewing of unpublished product details page**. In this case, SEO will not be affected, and search crawlers will index the page, even though a product is temporary unpublished and invisible for the customers. Note that a store owner always has access to unpublished products.
 - Tick the **Discontinued message for unpublished products** checkbox, to display "a product has been discontinued" message when customers try to access the product details page.
-- **To Include products from subcategories** when viewing a category details page.
+
+**Catalog pages** section enable You set:
+- **Allow view mode changing** on the Category and Manufacturers pages.
+- The **Default view mode** to either Grid or List.
+- **Include products from subcategories** when viewing a category details page.
 - To **Show number of distinct products beside each category** in the category navigation area located in the left column in the public store.
-- **Category breadcrumb enabled.**
-- **New products” page enabled** in the store.
-- Modify the **Number of products** on **New products” page** to set the number of products on the “New products page”
-- **Number of product tags (cloud)** - the number of tags that appear in a tag cloud.
-- **To Allow customers to select 'Products by tag' page size** on the product tag page from a predefined list of options defined by the store owner. **The Page size options** field becomes visible in this case in the administration area. When disabled, customers will not be able to select a page size and the store owner enters it. The **“Products by tag” page**. Products per page field becomes visible in this case, in which the store owner enters the number of products.
+- **Category breadcrumb enabled**.
 - **Number of manufacturers to display** in the manufacturer navigation block.
+
+In the **Tags** section You can define:
+- **Number of product tags (cloud)** - the number of tags that appear in a tag cloud.
+- **To Allow customers to select 'Products by tag' page size** on the product tag page from a predefined list of options defined by the store owner. When disabled, customers will not be able to select a page size and the store owner enters it.
+- If the previous option is checked, **The Page size options** field becomes visible. You can enter values which can be selected by shop users. Numbers should be separated with commas. First value will be the default.
 
 Certain **tax/shipping info** options specific to Germany are available in the next block:
 
