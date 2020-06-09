@@ -44,7 +44,14 @@ On the **country info** panel define the **following country settings:**
 > 
 > This field is used only when the EU VAT option is enabled on the Tax Settings page (Configuration → Tax → Tax Settings).
 
-* Set store if vendor is **limited to sore**
+* To tie a certain store to a country in the **Limited to stores** field of the Country Info panel select pre-created stores from a list, as follows:
+
+![countries4](_static/countries-states/countries4.png)
+
+> [!NOTE]
+> 
+> This list is used only when you have several stores configured. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+
 * Tick the **Published** checkbox, to enable this country to be visible for new account registrations and for the creation of shipping and billing addresses.
 * Enter the **Display order** of this country. A value of 1 represents the top of the list.
 * Click **Save.**
@@ -72,13 +79,5 @@ Define the **following state/province details:**
 * Tick the **Published** checkbox, to publish the state or province on the website.
 
 In the **Display order** field, enter the display order of this province or state. A value of 1 represents the top of the list
-
-To tie a certain store to a country in the **Limited to stores** field of the Country Info panel select pre-created stores from a list, as follows:
-
-![countries4](_static/countries-states/countries4.png)
-
-> [!NOTE]
-> 
-> This list is used only when you have several stores configured. For further details refer to [Stores](xref:en/getting-started/advanced-configuration/multi-store).
 
 Click **Save**
