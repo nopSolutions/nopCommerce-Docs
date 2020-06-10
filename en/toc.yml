@@ -40,6 +40,9 @@
       name: Admin area overview
       href: getting-started/admin-area-overview.md
     -
+      name: Create a catalog and add products
+      href: running-your-store/catalog/index.md
+    -
       name: Design your store
       href: getting-started/design-your-store/index.md
       items: 
