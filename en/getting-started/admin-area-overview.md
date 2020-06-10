@@ -9,6 +9,8 @@ contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIv
 
 This chapter covers the basics of nopCommerce interface.
 
+Once logged in, you should see the "Administration" hyperlink at the top of your website. Or you can simply add /admin/ to the end of your site’s URL to open the admin area. For example: www.example.com/admin.
+
 The first screen that is displayed after logging in the nopCommerce administration area is a Dashboard.
 
 ![dashboard](_static/admin-area-overview/dashboard.png)
