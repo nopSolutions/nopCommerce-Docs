@@ -29,6 +29,9 @@
         - 
           name: Installing on Linux
           href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+        - 
+          name: Pre-installed nopCommerce
+          href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md
     - 
       name: Upgrading nopCommerce
       href: installation-and-upgrading/upgrading-nopcommerce.md
