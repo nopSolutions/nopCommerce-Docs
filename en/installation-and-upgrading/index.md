@@ -14,3 +14,4 @@ nopCommerce can be downloaded as a ready to install e-commerce engine or as full
 - [Installing on Windows Azure](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure)
 - [Installing on Linux](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-linux)
 - [Upgrading nopCommerce](xref:en/installation-and-upgrading/upgrading-nopcommerce)
+- [Pre-installed nopCommerce](xref:en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce)
