@@ -46,11 +46,11 @@ On the *Store information* panel fill the following details:
 * **Confirm the password**: confirm the admin user password.
 * **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
 
-On the *Database information* you need to enter the following info:
+On the *Database information* panel you need to enter the following info:
 * **Database**: here you can select either Microsoft SQL Server or MySQL. Choose the first one if you installing nopCommerce on Windows.
 * **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
 * **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
-* **Server name**: this is the IP, URL, or server name for your database. Get your server name from the hosting control panel.
+* **Server name**: this is the IP, URL, or server name of your database. Get your server name from the hosting control panel.
 * **Database name**: this is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
 * **Use integrated Windows authentication**: if you are installing at a hosting provider, you don't need to use this option.
 * **SQL Username**: enter your database user login.
