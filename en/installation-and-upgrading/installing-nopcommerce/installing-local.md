@@ -22,36 +22,35 @@ There are several options available when downloading nopCommerce. In order to de
 With each of these options, excluding the upgrade script, you can deploy nopCommerce to your development environment and your hosting provider. Choose the option that you would like to [download](https://www.nopcommerce.com/en/download-nopcommerce) and click on the appropriate download link to begin your download. It is recommended that you create a new folder on your desktop to store your downloaded files for easy access.
 
 
-### Running the site using IIS (package without source code) ###
+## Running the site using IIS (package without source code)
 
 To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virtual directory (or site root), and then view the site using a browser.
 
 If you are're using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above.
 
 
-### Running the site using Visual Studio (package with source code) ###
+## Running the site using Visual Studio (package with source code)
 
-This step describes how to launch a site in Visual Studio. To run the site in Visual Studio, extract the full source code archive (.rar) to a local folder. Launch Visual Studio and select **File → Open → Project/Solution**. Navigate to the folder where you extracted the archive and open `NopCommerce.sln` solution file. Run `Nop.Web` project.
+This step describes how to launch a site in Visual Studio. To run the site in Visual Studio, extract the full source code archive to a local folder. Launch Visual Studio and select **File → Open → Project/Solution**. Navigate to the folder where you extracted the archive and open `NopCommerce.sln` solution file. Run `Nop.Web` project.
 
 
-### Getting the "ready to deploy" package (without source code) from a package with source code ###
+## Getting the "ready to deploy" package (without source code) from a package with source code
 
 If you're using nopCommerce **3.20 (or above)**, then follow the next steps:
-* Open the solution in Visual Studio
-* Rebuild the entire solution
-* Publish the **Nop.Web** project from Visual Studio. When publishing ensure that configuration is set to *Release*
+* Open the solution in Visual Studio.
+* Rebuild the entire solution.
+* Publish the **Nop.Web** project from Visual Studio. When publishing ensure that configuration is set to *Release*.
 
 If you're using nopCommerce **2.00-3.10**, then please note that publishing these versions of nopCommerce using Visual Studio is unlike publishing a regular web application. Once you’re ready to deploy the site, follow the next steps:
 * Run the `Prepare.bat` file to build the project in release mode and move the plugins to the correct directory.
-* Run the `Deploy.bat` file to perform the same procedure as the Prepare.bat file, but also move all the websites and files to the \Deployable\Nop_{Version} directory.
-* Select all the files in `\Deployable\Nop_{Version}` directory and upload them to your web server.
+* Run the `Deploy.bat` file to perform the same procedure as the `Prepare.bat` file, but also move all the websites and files to the `\Deployable\Nop_{Version}` directory.
+* Select all the files in the `\Deployable\Nop_{Version}` directory and upload them to your web server.
 * Note for HP (Hewlett Packard) users: HP machines come preloaded with a registry key that will interfere when running the deploy batch file. If you have an HP laptop and get the following error: "the OutputPath property is not set for project Nop.Web.csproj", then using `regedit.exe` navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`. Delete the complete key (Key and value) Platform (your value is MCD). Restart your computer.
 
 
-### Installation process ###
+## Installation process ##
 
-nopCommerce requires write permissions for the directories and files described below.
-
+nopCommerce requires write permissions for the directories and files described below:
 For nopCommerce versions 4.00 and above:
 * \App_Data\
 * \bin\
@@ -82,45 +81,39 @@ For nopCommerce versions 2.00-3.90:
 * \web.config
 
 These permissions are validated during the installation process. If you do not have write permissions, a warning message is displayed, requesting you to configure permissions.
-Before installing nopCommerce, ensure you have SQL Server 2012  databases installed on your system.
+Before installing nopCommerce, ensure you have database server installed on your system.
 
 You can use any of the following authentication methods to connect to the server:
-* **SQL Server Account**: When connecting using this method, logins are created in the SQL Server that is not based on the Windows user accounts. Both the user name and the password are created using the SQL Server and are stored in SQL Server. When using this method you must enter your login and password.
-* **Integrated Windows Authentication**: When connecting using this method, the SQL Server validates the account name and password using the Windows principal token in the operating system. This means the user identity is confirmed by Windows. The SQL Server does not request a password and does not perform the identity validation. Windows Authentication is the default authentication mode and is much more secure than SQL Server Authentication. Windows Authentication uses Kerberos security protocol, provides password policy enforcement with regard to complexity validation for strong passwords, provides support for account lockout, and supports password expiration. A connection made using Windows Authentication is sometimes called a trusted connection, because SQL Server trusts the credentials provided by Windows.
+* **SQL server account**: When connecting using this method, logins are created in the SQL server that is not based on the Windows user accounts. Both the user name and the password are created using the SQL server and are stored in the SQL server. When using this method you must enter your login and password.
+* **Integrated Windows authentication**: When connecting using this method, the SQL Server validates the account name and password using the Windows principal token in the operating system. This means the user identity is confirmed by Windows. The SQL Server does not request a password and does not perform the identity validation. Windows authentication is the default authentication mode and is much more secure than SQL server authentication. Windows authentication uses Kerberos security protocol, provides password policy enforcement with regard to complexity validation for strong passwords, provides support for account lockout, and supports password expiration. A connection made using Windows authentication is sometimes called a trusted connection, because SQL server trusts the credentials provided by Windows.
 
-Once you open the site for the first time, you’ll be redirected to the installation page, as follows:
+Once you open the site for the first time, you will be redirected to the installation page, as follows:
 ![nopCommerce installation](_static/installing-local/installation.jpg)
 
-* **Admin user e-mail**: This is the e-mail address for the first admin of the site.
-* **Admin password**: You will need to supply a password for the admin account.
-* **Create sample data**: Check this box if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
-* **Database Information**: Here you can select either SQL Server Compact or SQL Server. It is recommended to use a full SQL Server product, not the Compact edition.
-* **Create database if doesn't exist**: It is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
-* **SQL Server name**: This is the IP, URL, or server name for your database. You will get your SQL Server name from your hosting provider.
-* **Database name**: This is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
-* **Use SQL Server account/Use integrated Windows authentication**: If you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. If you are using a development environment, you can select Windows authentication. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.
+On the *Store information* panel fill the following details:
+* **Admin user email**: this is the email address for the first admin of the site.
+* **Admin user password**: you will need to supply a password for the admin account.
+* **Confirm the password**: confirm the admin user password.
+* **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
 
-Specify Custom SQL Server collation: This is an advanced setting and should be left unchecked.
+On the *Database information* panel you need to enter the following info:
+* **Database**: here you can select either Microsoft SQL Server or MySQL.
+* **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
+* **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
+* **Server name**: this is the IP, URL, or server name of your database. Get your server name from the database management system or from the hosting control panel.
+* **Database name**: this is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
+* **Use integrated Windows authentication**: if you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. In this case don't chack this option. If you are using a development environment, you can select Windows authentication. In this case tick this checkbox. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.
+* **SQL Username**: enter your database user login.
+* **SQL Password**: ener your database user password.
+* **Specify custom collation**: this is an advanced setting and should be left unchecked.
 
-* In the **Store information** area, define the following:
-  * In the Admin user email field, enter a new email that will be used to enter the admin area of your site.
-  * In the Admin user password field, enter your new password and confirm it.
-  * Check the Create sample data checkbox to include sample data in the database.
-* In the **Database information** area, define the following:
-  * SQL Compact 4.0 or above: Select the Use built-in data storage (SQL Server Compact) checkbox.
-  * SQL Standard 2008 or above: Select the Use an existing SQL Server (or SQL Express) database checkbox and define your SQL server information as follows:
-    * Select the **Create database if it doesn't exist** option, if you want to automatically create a database if it doesn’t exist.
-    * In the **Database name** field, enter your database name.
-    * In the **SQL Server name or IP address** field, enter the required server name or IP address.
-    * **Use SQL Server account**: Select this option when your SQL Server uses SQL Server Authentication. When using this option, you must enter your login and password in the relevant fields.
-    * **Use Integrated Windows authentication**: Select this option when your SQL Server uses Integrated Windows Authentication.
-* Click **Install** to order to start the installation process. When the setup process is complete, your new site's home page is displayed.
+Click **Install** in order to start the installation process. When the setup process is complete, your new site's home page is displayed.
 
 > [!NOTE]
 > The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
 
 > [!NOTE]
-> Ensure that your application pool is set to *Integrated* mode.
+> If you are're using nopCommerce 3.90 and below ensure that your application pool is set to *Integrated* mode.
 
 > [!NOTE]
 > If you want to completely reset a nopCommerce site to its default settings, you can delete the `Settings.txt` file from `App_Data` directory. When using IIS you might want to read this article.
