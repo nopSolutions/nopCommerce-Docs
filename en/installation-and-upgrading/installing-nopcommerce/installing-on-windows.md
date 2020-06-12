@@ -14,7 +14,7 @@ Before you begin the install, ensure that your web host have the [minimum requir
 > For more information on hosting selection guidelines, visit [this page](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
 
 ## Download nopCommerce
-To install nopCommerce on Windows you should download it first. Go to [download page](https://www.nopcommerce.com/en/download-nopcommerce) and choose the **Package without source code** version for Windows. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately.
+To install nopCommerce on Windows you should download it first. Go to [download page](https://www.nopcommerce.com/download-nopcommerce) and choose the **Package without source code** version for Windows. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately.
 
 ## Upload the nopCommerce files
 The next step is to upload the nopCommerce files to your server. To do this you need to use an FTP connection which allows transferring files between computers. Follow the next steps to set this up: 
