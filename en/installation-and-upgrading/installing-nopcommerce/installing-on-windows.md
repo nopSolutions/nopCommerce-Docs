@@ -13,7 +13,7 @@ Before you begin the install, ensure that your web host have the [minimum requir
 > [!NOTE] For more information on hosting selection guidelines, visit [this page](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
 
 ## Download nopCommerce
-To install nopCommerce on Windows you should download it first. Go to [download page](https://www.nopcommerce.com/en/download-nopcommerce) and choose the **Package without source code** version for Windows. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately.
+To install nopCommerce on Windows you should download it first. Go to [download page](https://www.nopcommerce.com/download-nopcommerce) and choose the **Package without source code** version for Windows. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately.
 
 ## Upload the nopCommerce files
 The next step is to upload the nopCommerce files to your server. To do this you need to use an FTP connection which allows transferring files between computers. Follow the next steps to set this up:
@@ -58,4 +58,4 @@ Click **Install** in order to start the installation process. When the setup pro
 
 > [!NOTE] The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
 
-> [!NOTE] If you want to completely reset a nopCommerce site to its default settings, you can delete the `Settings.txt` file from the `App_Data` directory.
+> [!NOTE] If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from the `App_Data` directory.
