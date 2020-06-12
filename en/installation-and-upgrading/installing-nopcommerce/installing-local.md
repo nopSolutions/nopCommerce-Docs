@@ -36,16 +36,10 @@ This step describes how to launch a site in Visual Studio. To run the site in Vi
 
 ## Getting the "ready to deploy" package (without source code) from a package with source code
 
-If you're using nopCommerce **3.20 (or above)**, then follow the next steps:
+If you're using nopCommerce **3.20 (or above)**, then please follow the next steps:
 * Open the solution in Visual Studio.
 * Rebuild the entire solution.
 * Publish the **Nop.Web** project from Visual Studio. When publishing ensure that configuration is set to *Release*.
-
-If you're using nopCommerce **2.00-3.10**, then please note that publishing these versions of nopCommerce using Visual Studio is unlike publishing a regular web application. Once you’re ready to deploy the site, follow the next steps:
-* Run the `Prepare.bat` file to build the project in release mode and move the plugins to the correct directory.
-* Run the `Deploy.bat` file to perform the same procedure as the `Prepare.bat` file, but also move all the websites and files to the `\Deployable\Nop_{Version}` directory.
-* Select all the files in the `\Deployable\Nop_{Version}` directory and upload them to your web server.
-* Note for HP (Hewlett Packard) users: HP machines come preloaded with a registry key that will interfere when running the deploy batch file. If you have an HP laptop and get the following error: "the OutputPath property is not set for project Nop.Web.csproj", then using `regedit.exe` navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`. Delete the complete key (Key and value) Platform (your value is MCD). Restart your computer.
 
 
 ## Installation process ##
