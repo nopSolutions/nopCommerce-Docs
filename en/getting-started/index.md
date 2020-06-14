@@ -7,14 +7,27 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 # Getting started
 
+add here the url and or port that needs to be typed to get to a single screen for admin or starting of this product, this information is MISSING...... without it after going through a linux install I am left with no information as to what to do next !!!!!
+full stop, but I have learnt that 3d cart is a very nice and fully functioning product! THINK
+
 If you are a novice in nopCommerce, follow the steps below to set your store up and running:
 
 ## 1. Configure your store
 
 - [Configure general store settings](xref:en/getting-started/advanced-configuration/your-store-information)
+DOES NOT TELL ME WHAT URLI SHOULD BE USING
+
 - [Configure payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
+DOES NOT TELL ME WHAT URLI SHOULD BE USING
+
 - [Configure shipping options](xref:en/getting-started/configure-shipping/index)
-- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them [separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list), offers and so on.
+DOES NOT TELL ME WHAT URLI SHOULD BE USING
+
+- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them 
+[separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list), offers and so on.
+
+DOES NOT TELL ME WHAT URLI SHOULD BE USING
+
 
 ## 2. Create a catalog and add products
 
@@ -82,4 +95,4 @@ Multi-vendor and drop shipping tools enable you to sell online without having to
 
 > [!TIP]
 > 
-> If you have some issues on configuring your store catalog, don’t hesitate to place questions on [community forums](http://www.nopcommerce.com/boards/forum/5/general-support) or request [premium support](http://www.nopcommerce.com/nopcommerce-premium-support-services) services.
+> If you have some issues on configuring your store catalog, donâ€™t hesitate to place questions on [community forums](http://www.nopcommerce.com/boards/forum/5/general-support) or request [premium support](http://www.nopcommerce.com/nopcommerce-premium-support-services) services.
