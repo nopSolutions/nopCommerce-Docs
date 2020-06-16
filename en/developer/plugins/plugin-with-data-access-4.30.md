@@ -69,6 +69,8 @@ namespace Nop.Plugin.Other.ProductViewTracker.Domain
 
 The next class to create is the FluentMigrator entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
 
+Note - Import the following package into the class (using Nop.Data.Extension) which will fix the error in the code preventing it to compile.
+
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
 {
