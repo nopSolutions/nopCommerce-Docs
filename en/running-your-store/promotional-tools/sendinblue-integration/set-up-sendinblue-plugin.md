@@ -1,33 +1,24 @@
 ---
 title: SendinBlue integration
-uid: en/running-your-store/promotional-tools/sendinblue-integration
+uid: en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin
 author: git.mariannk
 ---
 
-# SendinBlue integration
+# Set up SendinBlue plugin
 
 This section describes how to integrate SendinBlue in your store.
-
-## What SendinBlue is
-
-SendinBlue is an all-in-one digital marketing toolbox that's capable of taking care of the entirety of your marketing needs. SendinBlue empowers to build and grow relationships using email campaigns, SMS messages and sophisticated automation of marketing workflows. 
-
-The SendinBlue integration for nopCommerce allows a store owner to:
-* design clean and professional newsletters
-* build and target the audience
-* automate the marketing (e.g. abandoned cart recovery)
 
 ## Install and enable the plugin
 
 The SendinBlue plugin is an out-of-the-box nopCommerce plugin. You can find it here: **Configuration → Local plugins**. To find the plugin faster use the **Group** field on the search panel to filter the plugins by *Misc* type:
-![Find the plugin](_static/sendinblue-integration/plugin-list.jpg)
+![Find the plugin](_static/set-up-sendinblue-plugin/plugin-list.jpg)
 
 Install the plugin using the **Install** button if it is uninstalled. Then enable it by clicking the **Edit** button. You will see the *Edit plugin details* window in this case. Mark the plugin as enabled using the **Is enabled** checkbox and click the **Save** button.
 
 ## How to configure the plugin
 
 1. Click the **Configure** button. You will see the *Configure - SendinBlue* window:
-![Configure - SendinBlue](_static/sendinblue-integration/configure-window.jpg)
+![Configure - SendinBlue](_static/set-up-sendinblue-plugin/configure-window.jpg)
 
 1. You need to create a free SendinBlue account using [this link](https://app.sendinblue.com/account/login/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
 
@@ -36,10 +27,10 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
 1. Click the **Save** button.
 
 1. Once you have done this you should be able to see your account details.
-![After th first save](_static/sendinblue-integration/general-panel.jpg)
+![After th first save](_static/set-up-sendinblue-plugin/general-panel.jpg)
 
 1. Go to the **Contacts** panel to synchronize your nopCommerce customers with your SendinBlue account.
-![Contacts](_static/sendinblue-integration/contacts-panel.jpg)
+![Contacts](_static/set-up-sendinblue-plugin/contacts-panel.jpg)
 
 * To create a new SendinBlue list, click on the **Create a list** button to be redirected to your SendinBlue account.
 * From the drop-down list, select the list where your nopCommerce subscribers as well as their contact data will be added. Click on the **Save** button.
@@ -86,12 +77,12 @@ After the initial sync, a task is scheduled to run every 6000 seconds to automat
 Click on the **Sync now** button to sync right away.
 
 To change the sync frequency, go to **System → Schedule tasks**.
-![Schedule tasks](_static/sendinblue-integration/configure-task.jpg)
+![Schedule tasks](_static/set-up-sendinblue-plugin/configure-task.jpg)
 
 ## Sending transactional emails
 
 Go to the **Transactional emails** panel to send your transactional emails via SendinBlue SMTP.
-![Sending transactional emails](_static/sendinblue-integration/email-panel.jpg)
+![Sending transactional emails](_static/set-up-sendinblue-plugin/email-panel.jpg)
 
 1. Check the **Use SendinBlue SMTP** checkbox.
 1. Paste your SMTP password that can be found [here](https://account.sendinblue.com/advanced/api).
@@ -99,7 +90,7 @@ Go to the **Transactional emails** panel to send your transactional emails via S
 1. Click on the **Save** button.
 
 You should then be able to see the email notification list. This lists all of the transactional emails (order confirmation, etc.) that you send.
-![Notification list](_static/sendinblue-integration/email-list.jpg)
+![Notification list](_static/set-up-sendinblue-plugin/email-list.jpg)
 
 For each template, you can:
 * Choose if it is active or inactive.
@@ -117,7 +108,7 @@ If you *haven't checked* **SendinBlue email template**, then clicking on **Edit 
 ## Sending SMS
 
 Go to the **SMS** panel to send SMS notifications to your customers in addition to emails.
-![Sms panel](_static/sendinblue-integration/sms-panel.jpg)
+![Sms panel](_static/set-up-sendinblue-plugin/sms-panel.jpg)
 
 1. Check the **Use SMS notifications** checkbox.
 1. Enter an alphanumerical sender (maximum of 11 characters).
@@ -125,7 +116,7 @@ Go to the **SMS** panel to send SMS notifications to your customers in addition 
 1. Click on the **Save** button.
 
 To send an SMS campaign to a SendinBlue list:
-![Sms panel](_static/sendinblue-integration/sma-campaigns.jpg)
+![Sms panel](_static/set-up-sendinblue-plugin/sma-campaigns.jpg)
 
 1. Go to the **SMS campaigns** block.
 1. Choose **List** of contacts to send SMS campaign.
@@ -142,7 +133,7 @@ The plugin is now configured. You can access all of your transactional email sta
 > A customer has to be identified by their email address to trigger a workflow i.e. a customer who has logged into their account on the nopCommerce store or input their email address during checkout.
 
 Go to the **Marketing Automation** panel to install the marketing automation tracking script to track the activity of shoppers on your store. You will be able to automate your marketing by sending a series of emails or SMS once a visitor has signed up, a prospect has abandoned their cart, a customer has made a purchase, etc.
-![Marketing automation](_static/sendinblue-integration/marketing-automation.jpg)
+![Marketing automation](_static/set-up-sendinblue-plugin/marketing-automation.jpg)
 
 1. Check the **Use Marketing Automation** checkbox.
 1. If the *Marketing Automation platform* is enabled on your SendinBlue account, then the plugin will auto-fill your **Tracker ID**.
@@ -161,9 +152,9 @@ The plugin will automatically track the activity of shoppers for you to set up w
 * cart_updated is passed when an item is added to a cart.
 * cart_deleted is passed when a cart is emptied.
 * order_completed is passed when the order has been made. This means that the payment status is "Paid".
-![Logs](_static/sendinblue-integration/logs.png)
+![Logs](_static/set-up-sendinblue-plugin/logs.png)
 
 ## Learn more
 
-* Learn how to [create an abandoned cart email for nopCommerce customers](https://help.sendinblue.com/hc/en-us/articles/360004172899).
-* Learn how to [create an order confirmation email for nopCommerce customers](https://help.sendinblue.com/hc/en-us/articles/360004172939).
+* Learn how to [create an abandoned cart email](xref:en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts).
+* Learn how to [create an order confirmation email](xref:en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email).

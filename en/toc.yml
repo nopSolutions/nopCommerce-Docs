@@ -324,7 +324,17 @@
           href: running-your-store/promotional-tools/email-campaigns.md
         -
           name: SendinBlue integration
-          href: running-your-store/promotional-tools/sendinblue-integration.md
+          href: running-your-store/promotional-tools/sendinblue-integration/index.md
+          items: 
+            -
+              name: Set up SendinBlue plugin
+              href: running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin.md
+            -
+              name: Recover abandoned carts
+              href: running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts.md
+            -
+              name: Send an order confirmation email
+              href: running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email.md
         -
           name: Facebook pixel
           href: running-your-store/promotional-tools/facebook-pixel.md
