@@ -79,7 +79,7 @@ To change the sync frequency, go to **System → Schedule tasks**. ![Schedule ta
 Go to the **Transactional emails** panel to send your transactional emails via SendinBlue SMTP. ![Sending transactional emails](_static/set-up-sendinblue-plugin/email-panel.jpg)
 
 1. Check the **Use SendinBlue SMTP** checkbox.
-1. Paste your SMTP password that can be found [here](https://account.sendinblue.com/advanced/api).
+1. Paste your SMTP password that can be found [here](https://account.sendinblue.com/advanced/api?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
 1. From the drop-down list, select the sender you wish to send your emails from.
 1. Click on the **Save** button.
 
