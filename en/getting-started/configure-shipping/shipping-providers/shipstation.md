@@ -18,9 +18,7 @@ To use **ShipStation** integration plugin please follow these steps:
 1. Enter the following information obtained from the ShipStation provider:
     * The **API Key** and the **API Secret**: this data is used to get a list of available carriers. You may get them on the *Settings - API Settings* page on the ShipStation site.
 
-    > [!Note] If you do not plan to use the automatic determination of the shipping cost, then entering this data is not necessary.
-    > 
-    > But in this case, the plugin will stop working as a provider of shipping methods and you will need to make sure that there is another active plugin the same type.
+    > [!Note] If you do not plan to use the automatic determination of the shipping cost, then entering this data is not necessary. But in this case, the plugin will stop working as a provider of shipping methods and you will need to make sure that there is another active plugin the same type.
 
     * Create a **Username** and **Password**, enter them into the settings form (the ShipStation form and the nopCommerce form). This data is necessary for the safe transfer of data between your server and the ShipStation server. Always keep them secret.
 
