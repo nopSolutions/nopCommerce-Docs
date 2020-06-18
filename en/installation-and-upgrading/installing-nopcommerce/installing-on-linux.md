@@ -9,12 +9,12 @@ contributors: git.skoshelev
 
 This chapter describes how to install the nopCommerce software on Linux system on the example of XUbuntu 20.04:
 
-1. Install and configure software
-1. Get nopCommerce
-1. Create and configure the nopCommerce Web service
-1. Troubleshooting
+1. [Install and configure software](#install-and-configure-software)
+1. [Get nopCommerce](#get-nopcommerce)
+1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
+1. [Troubleshooting](#troubleshooting)
 
-## 1. Install and configure software
+## Install and configure software
 
 Before installing .NET Core, we'll need to register the Microsoft key and install required dependencies. This needs to be done once per machine.
 
@@ -40,7 +40,7 @@ Update the products available for installation, then install the .NET runtime:
 
 > [!NOTE]
 > 
-> if you have any error see detail information on the https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page
+> If you have any error see detail information on the https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
 
 You may see all installed .Net Core runtimes by the following command:
 
@@ -66,7 +66,7 @@ By default, the root password is empty, let's set it
 > 
 > If you have some problem with configuring root password on your MySql server please read the following articles:
 > https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html and
-https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost
+https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost.
 
 ### Install nginx
 
@@ -126,7 +126,7 @@ server {
 }
 ```
 
-## 2. Get nopCommerce
+## Get nopCommerce
 
 Create a directory
 
@@ -156,7 +156,7 @@ Change the file permissions
 
 `sudo chown -R www-data nopCommerce430/`
 
-## 3. Create the nopCommerce service
+## Create the nopCommerce service
 
 Create the /etc/systemd/system/nopCommerce430.service file with the following contents:
 
@@ -196,14 +196,14 @@ Restart the nginx server
 
 **Now everything is ready, you can proceed to install and configure the store**
 
-## 4. Troubleshooting
+## Troubleshooting
 
 ### Gdip
 
-*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception) just install the libgdiplus library*
+*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception) just install the libgdiplus library*:
 
 *`sudo apt-get install libgdiplus`*
 
 ### SSL
 
-*If you want to use SSL on your site don't forget set to `true` the `UseHttpXForwardedProto` setting in the **appsettings.json** file*
+*If you want to use SSL on your site don't forget set to `true` the `UseHttpXForwardedProto` setting in the **appsettings.json** file*.
