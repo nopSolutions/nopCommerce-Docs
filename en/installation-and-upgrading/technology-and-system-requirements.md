@@ -7,7 +7,7 @@ contributors: git.IvanIvanIvanov, git.rajupaladiya, git.exileDev, git.DmitriyKul
 
 # Technology & system requirements
 
-In order to run nopCommerce, you will need the **following installed on your server/computer**:
+In order to run nopCommerce, you will need the following installed on your server/computer:
 
 ## Supported operation systems
 
@@ -57,4 +57,4 @@ In order to run nopCommerce, you will need the **following installed on your ser
 
 > [!NOTE]
 > 
-> If you're going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because SNI (Server Name Indication) support.
+> If you're going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because it supports SNI (Server Name Indication).
