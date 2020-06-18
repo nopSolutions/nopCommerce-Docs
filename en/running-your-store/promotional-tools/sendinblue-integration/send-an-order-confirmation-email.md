@@ -21,9 +21,9 @@ First, log into your SendinBlue account then go to the Automation platform > [Em
 
 The email template can be personalized with several types of data:
 
-* [contact attributes saved in your SendinBlue list](https://help.sendinblue.com/hc/en-us/articles/360004172939-NopCommerce-4-20-3-Send-an-order-confirmation-email?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#attributes)
-* [order details](https://help.sendinblue.com/hc/en-us/articles/360004172939-NopCommerce-4-20-3-Send-an-order-confirmation-email?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#cart)
-* [ordered item details](https://help.sendinblue.com/hc/en-us/articles/360004172939-NopCommerce-4-20-3-Send-an-order-confirmation-email?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#products)
+* [contact attributes saved in your SendinBlue list](#personalize-your-email-with-contact-attributes)
+* [order details](#personalize-your-email-with-the-order-details)
+* [ordered item details](#personalize-your-email-with-the-ordered-items-details)
 
 ### Personalize your email with contact attributes
 
