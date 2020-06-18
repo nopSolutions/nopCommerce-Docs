@@ -43,34 +43,36 @@ If you're using nopCommerce **3.20 (or above)**, then please follow the next ste
 
 ## Installation process
 
-nopCommerce requires write permissions for the directories and files described below: For nopCommerce versions 4.00 and above:
-* \App_Data\
-* \bin\
-* \log\
-* \Plugins\
-* \Plugins\bin\
-* \wwwroot\bin\
-* \wwwroot\bundles\
-* \wwwroot\db_backups\
-* \wwwroot\files\exportimport\
-* \wwwroot\images\
-* \wwwroot\images\thumbs\
-* \wwwroot\images\uploaded
-* \App_Data\installedPlugins.json (after installation)
-* \App_Data\dataSettings.json (after installation)
+nopCommerce requires write permissions for the directories and files described below:
 
-For nopCommerce versions 2.00-3.90:
-* \App_Data\
-* \bin\
-* \Content\
-* \Content\Images\
-* \Content\Images\Thumbs\
-* \Content\Images\Uploaded\
-* \Content\files\ExportImport\
-* \Plugins\
-* \Plugins\bin\
-* \Global.asax
-* \web.config
+- **For nopCommerce versions 4.00 and above:**
+  - `\App_Data\`
+  - `\bin\`
+  - `\log\`
+  - `\Plugins\`
+  - `\Plugins\bin\`
+  - `\wwwroot\bin\`
+  - `\wwwroot\bundles\`
+  - `\wwwroot\db_backups\`
+  - `\wwwroot\files\exportimport\`
+  - `\wwwroot\images\`
+  - `\wwwroot\images\thumbs\`
+  - `\wwwroot\images\uploaded`
+  - `\App_Data\Plugins.json` (after installation)
+  - `\App_Data\dataSettings.json` (after installation)
+
+- **For nopCommerce versions 2.00-3.90:**
+  - `\App_Data\`
+  - `\bin\`
+  - `\Content\`
+  - `\Content\Images\`
+  - `\Content\Images\Thumbs\`
+  - `\Content\Images\Uploaded\`
+  - `\Content\files\ExportImport\`
+  - `\Plugins\`
+  - `\Plugins\bin\`
+  - `\Global.asax`
+  - `\web.config`
 
 These permissions are validated during the installation process. If you do not have write permissions, a warning message is displayed, requesting you to configure permissions. Before installing nopCommerce, ensure you have database server installed on your system.
 
