@@ -36,6 +36,24 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
             <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         </PropertyGroup>
         <ItemGroup>
+		    <None Remove="YOUR_LOGO_PNG" />
+		    <None Remove="plugin.json" />
+            <!--One for each view that should be included in the compiled plugin-->
+		    <None Remove="YOUR_VIEWS" />
+	    </ItemGroup>
+	    <ItemGroup>
+		    <Content Include="YOUR_LOGO_PNG">
+			    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		    </Content>
+		    <Content Include="plugin.json">
+			    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		    </Content>
+             <!--One for each view that should be included in the compiled plugin-->
+		    <Content Include="YOUR_VIEWS">
+			    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		    </Content>
+	    </ItemGroup>
+        <ItemGroup>
             <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
             <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
         </ItemGroup>
