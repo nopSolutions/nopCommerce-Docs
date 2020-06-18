@@ -21,9 +21,9 @@ First, log into your SendinBlue account then go to the Automation platform > [Em
 
 The email template can be personalized with several types of data:
 
-* [contact attributes saved in your SendinBlue list](https://help.sendinblue.com/hc/en-us/articles/360003453779/preview/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzYwMDAzNDUzNzc5LCJleHAiOjE1NTU2OTA4MTV9.wAjoypXyTVASb9KOpr2i72bznc7n8UICzllZ5fv6Mhw?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#attributes)
-* [abandoned item details](https://help.sendinblue.com/hc/en-us/articles/360003453779/preview/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzYwMDAzNDUzNzc5LCJleHAiOjE1NTU2OTA4MTV9.wAjoypXyTVASb9KOpr2i72bznc7n8UICzllZ5fv6Mhw?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#products)
-* [abandoned cart details](https://help.sendinblue.com/hc/en-us/articles/360003453779/preview/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzYwMDAzNDUzNzc5LCJleHAiOjE1NTU2OTA4MTV9.wAjoypXyTVASb9KOpr2i72bznc7n8UICzllZ5fv6Mhw?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#cart)
+* [contact attributes saved in your SendinBlue list](#personalize-your-email-with-contact-attributes)
+* [abandoned item details](#personalize-your-email-with-the-abandoned-items-details)
+* [abandoned cart details](#personalize-your-email-with-the-abandoned-cart-details)
 
 ### Personalize your email with contact attributes
 
