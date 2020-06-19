@@ -80,7 +80,7 @@ Now we need to create a **plugin.json** file inside the root directory of our pl
 }
 ```
 
-Let’s me explain about each property this json file contains.
+Let's me explain about each property this json file contains.
 
 - **Group**. It is used by nopCommerce to identify or search or filter plugin by its group name in the plugin list under `Admin/Configuration/LocalPlugin` menu.
 
@@ -100,7 +100,7 @@ Let’s me explain about each property this json file contains.
 
 - **Description**. It contains a short description about your plugin like what this plugin is all about, what this plugin does. This is shown in the Plugin list under plugin name.
 
-After you edit your **plugin.json** file’s content you need to set its `Copy to Output Directory` property value to `copy if newer`. It is required because we need this file to be copied to compiled directory from where nopCommerce can access this file to display our plugin in the plugin list in admin panel.
+After you edit your **plugin.json** file's content you need to set its `Copy to Output Directory` property value to `copy if newer`. It is required because we need this file to be copied to compiled directory from where nopCommerce can access this file to display our plugin in the plugin list in admin panel.
 
 Now we need to create a class which inherent from **`IPlugin`** interface from `Nop.Services.Plugins` namespace. nopCommerce has `BasePlugin` class which already implements some `IPlugin` methods and allows you to avoid source code duplication. Now if we want to add some logic to our plugin during installation and uninstallation process then we can override two methods `Install` and `Uninstall`. Which looks something like below.
 
@@ -120,19 +120,19 @@ public override void Uninstall()
 
 If you have done all of the above process without any error then your plugin project is initialized and configured successfully. Now you may want to create folders and files containing logic to create a fully functioning plugin for nopCommerce.
 
-Now you need to build your project and run your application for your plugin to take effect. After that login as an administrator and navigate to admin panel  and go to `Configure/LocalPlugins` menu scroll to find your newly created plugin. If you don’t find your plugin listed in the plugin list then you may need to click **Reload list of plugins** button which will restart your application and list all available installed and uninstalled plugins from `Presentation/Nop.Web/Plugins` directory.
+Now you need to build your project and run your application for your plugin to take effect. After that login as an administrator and navigate to admin panel  and go to `Configure/LocalPlugins` menu scroll to find your newly created plugin. If you don't find your plugin listed in the plugin list then you may need to click **Reload list of plugins** button which will restart your application and list all available installed and uninstalled plugins from `Presentation/Nop.Web/Plugins` directory.
 
-After you find your plugin click install button present in your plugin. After that a button with **Restart application to apply changes** will appear, you need to click that button. And that’s it now your plugin is installed. But as you know we don’t have created any functionality in our plugin so, it will not going to do anything. So, now you need to add your logic and create a functional plugin.
+After you find your plugin click install button present in your plugin. After that a button with **Restart application to apply changes** will appear, you need to click that button. And that's it now your plugin is installed. But as you know we don't have created any functionality in our plugin so, it will not going to do anything. So, now you need to add your logic and create a functional plugin.
 
 > [!NOTE] For more information about how to create a plugin you can visit [**this page**.](xref:en/developer/plugins/index)
 
 ## How to Search and use plugins from nopCommerce store
 
-nopCommerce already have several plugins pre built and available to use out of the box. You can also search and find several plugins already available from nopCommerce official store and see if someone has already created a plugin that suits your needs. If not then you always can build your won plugin according to your requirement. But here let’s see how to find and use plugins from nopCommerce store. For that nopCommerce has a market place where we can find different themes and plugins. You can visit to go to the [nopCommerce Marketplace](https://www.nopcommerce.com/marketplace).
+nopCommerce already have several plugins pre built and available to use out of the box. You can also search and find several plugins already available from nopCommerce official store and see if someone has already created a plugin that suits your needs. If not then you always can build your won plugin according to your requirement. But here let's see how to find and use plugins from nopCommerce store. For that nopCommerce has a market place where we can find different themes and plugins. You can visit to go to the [nopCommerce Marketplace](https://www.nopcommerce.com/marketplace).
 
 ![image4](_static/description-of-plugin-system/image4.png)
 
-Here you can see three tabs. **All tab** contains all themes and extensions, **Themes tab** contains all nopCommerce themes which is for nopCommerce website skin, and lastly **Extensions tab** where we can find plugins. So go to Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. In the right side you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use plugin, in its download page, so don’t forget to read those descriptions.
+Here you can see three tabs. **All tab** contains all themes and extensions, **Themes tab** contains all nopCommerce themes which is for nopCommerce website skin, and lastly **Extensions tab** where we can find plugins. So go to Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. In the right side you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use plugin, in its download page, so don't forget to read those descriptions.
 
 ## Interface `IPlugin`
 
