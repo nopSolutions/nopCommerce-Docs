@@ -11,11 +11,11 @@ Inventory management is a system of stock level controlling. In nopCommerce it c
 
 **To set up inventory**, go to **Catalog → Products → Edit a product**. In the Edit product details window, on the **Product info tab** go to **Inventory section**.
 
-Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing **Don’t track inventory** option in the Inventory method field. In this case, the owner can define a **warehouse**, **minimum** and **maximum cart quantities**, **allowed quantities**, i.e. instead of a quantity text box customers will see a drop down list with predefined quantity options, and set a product as **not returnable**.
+Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing **Don't track inventory** option in the Inventory method field. In this case, the owner can define a **warehouse**, **minimum** and **maximum cart quantities**, **allowed quantities**, i.e. instead of a quantity text box customers will see a drop down list with predefined quantity options, and set a product as **not returnable**.
 
 ![Inventory](_static/inventory-management/inventory.png)
 
-In case an inventory tracking is required, the shop owner can select an **inventory method** between two options: **track inventory (by product)** or **track inventory by product attributes**. The first option is for those who don’t have product variants, and simply need to know how many items are left. In case of the tracking by attributes, inventory is managed for product attributes’ combinations.
+In case an inventory tracking is required, the shop owner can select an **inventory method** between two options: **track inventory (by product)** or **track inventory by product attributes**. The first option is for those who don't have product variants, and simply need to know how many items are left. In case of the tracking by attributes, inventory is managed for product attributes' combinations.
 
 Once the **Track inventory** method is chosen, the section expands displaying new fields.
 
@@ -36,7 +36,7 @@ Once the **Track inventory** method is chosen, the section expands displaying ne
   * **Nothing**: Store owners can still choose to not take any action. It means that customers can continue to order products.
 * In the **Notify for quantity below** field, enter a value under which a notification email will be sent to the administrator.
 * Store owners can set up **backorders**, i.e. orders that can not be fulfilled at the moment of purchase. From the Backorders dropdown list, select the required backorder mode, as follows:
-  * **No backorders**: customers can’t purchase this product when there is no stock available
+  * **No backorders**: customers can't purchase this product when there is no stock available
   * **Allow qty below 0**: customers can purchase this product even when there is no stock available
   * **Allow qty below 0 and notify customer**: customers can purchase this product even when there is no stock available. In addition, they get a notification receiving the following message: Out of Stock - on backorder and will be dispatched once in stock (**Display availability** option should be also enabled in this case).
 * Tick **Allow back in stock subscriptions**, to enable customers to subscribe for a notification about product availability
