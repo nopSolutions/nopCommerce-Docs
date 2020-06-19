@@ -15,7 +15,7 @@ To access this window, go to **Customers → Online Customers**.
 
 The Online Customers window includes the following columns:
 
-- **Customer Info**, you can view and edit the customer’s information by clicking on the link
+- **Customer Info**, you can view and edit the customer's information by clicking on the link
 - **Customer IP Address** - Current IP address of customer
 - **Customer Location** - IP address wise location of customer
 - **Last Activity** - date and time the online customer last logged in
