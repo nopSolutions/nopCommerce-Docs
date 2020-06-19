@@ -51,7 +51,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     > 
     > Where PLUGIN_OUTPUT_DIRECTORY should be replaced with the plugin name, for example, Payments.PayPalStandard.
     > 
-    > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it’s not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
+    > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it's not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
 
 1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For example, PayPal Standard payment plugin has the following `plugin.json` file:
 
