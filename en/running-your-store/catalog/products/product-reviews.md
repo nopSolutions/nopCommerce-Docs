@@ -7,7 +7,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko
 
 # Product reviews
 
-**Product reviews** are customers’ comments on a product. Reviews can also include ratings.
+**Product reviews** are customers' comments on a product. Reviews can also include ratings.
 
 In the public store, reviews are displayed on the **product details page**. Customers can write reviews for different products. After a review has been written and approved by a store owner, other customers can define whether the review was helpful or not by clicking Yes or No beside the review.
 
@@ -27,7 +27,7 @@ To manage product reviews go to **Catalog → Product reviews**. The Product Rev
 - **Message**. Can be used to find a review by the title or a part of its text.
 - **Approved**. Can be used to find a review by a "Approved" property.
 - **Product**. Sorts and shows the reviews related to a particular product.
-- **Store**. Allows to view all reviews of a particular store’s products.
+- **Store**. Allows to view all reviews of a particular store's products.
 
 **Select** the reviews you want to approve or disapprove and click the Approve selected button or the **Disapprove selected** button accordingly.
 
