@@ -9,7 +9,7 @@ contributors: git.nopsg, git.DmitriyKulagin
 
 ## OverView
 
-nopCommerce implements event-driven architecture which allows developers to subscribe or consume events broadcast by event publishers or event source when some action/event is performed and also enables us to perform certain business logic when some specific event is triggered. In nopCommerce, we can subscribe or listen to various events published by nopCommerce system event or even we can write a logic which emits/publish an event which then can be listened or subscribed. For example, let’s suppose we want to sync customer details to some other external system, so in that case, we can fire an event when new customer registers to our store or customer changes their profile. We can listen to that event and perform business logic which then can extract that newly created customer and sends to the external service for sync. And the best part is that we can do all these without changing nopCommerce source code.
+nopCommerce implements event-driven architecture which allows developers to subscribe or consume events broadcast by event publishers or event source when some action/event is performed and also enables us to perform certain business logic when some specific event is triggered. In nopCommerce, we can subscribe or listen to various events published by nopCommerce system event or even we can write a logic which emits/publish an event which then can be listened or subscribed. For example, let's suppose we want to sync customer details to some other external system, so in that case, we can fire an event when new customer registers to our store or customer changes their profile. We can listen to that event and perform business logic which then can extract that newly created customer and sends to the external service for sync. And the best part is that we can do all these without changing nopCommerce source code.
 
 Developers can either publish an event or consume an event:
 
@@ -42,7 +42,7 @@ public class MyFirstPublisherClass
 }
 ```
 
-In the above example, we are injecting `IEventPublisher` Interface to get the instance of EventPublisher class using constructor dependency injection mechanism. Here in `MyFirstProductInsertMethod` after completing the logic to insert product we are invoking `EntityInserted` method with a generic type of `Product` (which needs to inherit from BaseEntity class) with newly created product object as a parameter. Now upon invoking this extension method, it will broadcast entity inserted event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let’s see how to consume this event.
+In the above example, we are injecting `IEventPublisher` Interface to get the instance of EventPublisher class using constructor dependency injection mechanism. Here in `MyFirstProductInsertMethod` after completing the logic to insert product we are invoking `EntityInserted` method with a generic type of `Product` (which needs to inherit from BaseEntity class) with newly created product object as a parameter. Now upon invoking this extension method, it will broadcast entity inserted event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let's see how to consume this event.
 
 ### Consumer Implementation for EntityInserted Event
 
@@ -85,7 +85,7 @@ public class MyFirstPublisherClass
 }
 ```
 
-The implementation of this class is moreover the same as the example in the `EntityInserted`. Here in `MyFirstProductInsertMethod` after completing the logic to update product we are invoking `EntityUpdated` method with a generic type of with recently updated product object as a parameter. Now upon invoking this extension method, it will broadcast entity updated event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let’s see how to consume this event.
+The implementation of this class is moreover the same as the example in the `EntityInserted`. Here in `MyFirstProductInsertMethod` after completing the logic to update product we are invoking `EntityUpdated` method with a generic type of with recently updated product object as a parameter. Now upon invoking this extension method, it will broadcast entity updated event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let's see how to consume this event.
 
 ### Consumer Implementation for EntityUpdated Event
 
@@ -128,7 +128,7 @@ public class MyFirstPublisherClass
 }
 ```
 
-The implementation of this class is also the same as in the above example. Here in `MyFirstProductDeleteMethod` after completing the logic to delete product we are invoking `EntityDeleted` method with the product object we recently deleted as of a parameter. Now upon invoking this extension method, it will broadcast entity deleted event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let’s see how to consume this event.
+The implementation of this class is also the same as in the above example. Here in `MyFirstProductDeleteMethod` after completing the logic to delete product we are invoking `EntityDeleted` method with the product object we recently deleted as of a parameter. Now upon invoking this extension method, it will broadcast entity deleted event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let's see how to consume this event.
 
 ### Consumer Implementation for EntityDeleted Event
 
