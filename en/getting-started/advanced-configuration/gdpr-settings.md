@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.ivkadp
 
 # GDPR settings
 
-*GDPR* (General Data Protection Regulation) is a revised European Union’s new data privacy law which impacts how all companies collect, use and share personal data of their European customers. The regulation entered into force on May 24, 2016 and applies since May 25, 2018. The regulation is an essential step to strengthen individuals' fundamental rights in the digital age and facilitate business by clarifying rules for companies and public bodies in the digital single market.
+*GDPR* (General Data Protection Regulation) is a revised European Union's new data privacy law which impacts how all companies collect, use and share personal data of their European customers. The regulation entered into force on May 24, 2016 and applies since May 25, 2018. The regulation is an essential step to strengthen individuals' fundamental rights in the digital age and facilitate business by clarifying rules for companies and public bodies in the digital single market.
 
 For more information (please refer to this source):
 
@@ -23,7 +23,7 @@ Additional settings will allow you to capture a log of the following activities:
 * **Log "newsletter" consent.**
 * **Log user profile changes.**
 
-You can add consents on your nopCommerce site by clicking on **“Add consent”** button:
+You can add consents on your nopCommerce site by clicking on **"Add consent"** button:
 
 ![consent](_static/gdpr-settings/consent.png)
 
