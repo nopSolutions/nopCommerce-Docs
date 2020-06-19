@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 
 # Specification attributes
 
-Specification attributes are similar to [product attributes](xref:en/running-your-store/catalog/products/product-attributes), however, they are **only used for information purposes** (visible on product details page) and **for filtering products** on the category details page. They don’t define a product price as well as can’t be used for the inventory tracking.
+Specification attributes are similar to [product attributes](xref:en/running-your-store/catalog/products/product-attributes), however, they are **only used for information purposes** (visible on product details page) and **for filtering products** on the category details page. They don't define a product price as well as can't be used for the inventory tracking.
 > [!NOTE]
 > 
 > By default, there are no specification attributes precreated in nopCommerce.
@@ -29,7 +29,7 @@ To see and edit a list of specification attributes, go to **Catalog → Attribut
 
 > [!NOTE]
 > 
-> For a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
+> For a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as "color squares" instead of the text names.
 
 The **complete list of options** will look as follows.
 
