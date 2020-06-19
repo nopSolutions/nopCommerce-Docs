@@ -89,7 +89,7 @@ Define the following information:
 * **Warehouse** from which the shipping will be done. Choose * to apply the rules to all warehouses.
 * **Country, State/province, Zip** of a shipment destination.
 * Select a **Shipping method** from the list of precreated options. Use **Manage shipping methods** on the top to add/remove shipping methods.
-* Create your weight configuration by filling **Order weight from** and **Order weight to** fields. If the customer’s shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
+* Create your weight configuration by filling **Order weight from** and **Order weight to** fields. If the customer's shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
 * Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage (of subtotal)** fields.
 * Define the **Transit days** field which defines the number of days of delivery.
 
