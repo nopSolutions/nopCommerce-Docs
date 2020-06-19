@@ -15,7 +15,7 @@ When an order is placed an email is then sent to a vendor of each product in the
 
 Products from multiple independent vendors appear in the common product catalog and your website visitors can shop at one web store even if your products are supplied by hundreds of different vendors from all over the world.
 
-Each vendor could be provided with an administrator panel access to manage their products, review sales reports and order details regarding their products. Vendors can’t see each other's activities.
+Each vendor could be provided with an administrator panel access to manage their products, review sales reports and order details regarding their products. Vendors can't see each other's activities.
 
 The money goes to the merchant account of the store administrator who then manually distributes funds among the vendors according to the order history, which is tracked and managed separately for each provider. In this manner, the customer only sees one charge from the main company.
 
@@ -31,7 +31,7 @@ Click **Add New.** The Add a New Vendor window is displayed:
 
 ![addvendor](_static/vendor-management/vendor2.png)
 
-Define the following vendor’s details:
+Define the following vendor's details:
 
 * **Name** of the vendor
 * **Description** for the vendor
@@ -58,7 +58,7 @@ On the Display panel, define the following Display parameters:
 
 ![display](_static/vendor-management/vendor4.png)
 
-Define the following vendor’s details:
+Define the following vendor's details:
 
 * To **Allow customers to select page size** from a predefined list of options
 * **Page Size** options (comma separated)
@@ -70,7 +70,7 @@ On the **SEO** panel, define the following SEO parameters:
 
 ![SEO](_static/vendor-management/vendor6.png)
 
-* **Meta keywords** - required vendor meta keywords: a brief and concise list of the most important themes of this vendor’s page. The meta keywords tag takes the following      form:
+* **Meta keywords** - required vendor meta keywords: a brief and concise list of the most important themes of this vendor's page. The meta keywords tag takes the following      form:
 
     ```html
     <meta name="keywords" content="keywords, keyword, keyword phrase, etc.">

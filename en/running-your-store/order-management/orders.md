@@ -22,9 +22,9 @@ To **search** for orders, enter one or more of the following search criteria:
 * **Shipping status** - select a specific shipping status to search by: All, Shipping not required, Not yet shipped, Partially shipped, Shipped, Delivered
 * **Store** - set a specific store in which orders were placed
 * **Vendor**
-* **Billing phone number** - customer’s phone number
-* **Billing email address** - customer’s email address
-* **Billing last name** - customer’s last name
+* **Billing phone number** - customer's phone number
+* **Billing email address** - customer's email address
+* **Billing last name** - customer's last name
 * **Billing country**
 * **Payment method**  - set a specific payment method that was used during checkout
 * **Order notes**
@@ -42,7 +42,7 @@ On the **Order Info** tab a store owner can perform the following:
 
 * View the **Order Status**. The Order Status will be *Completed* only once the payment status is set to *Paid* and the Shipping status is set to *Delivered*. The order status can be changed manually by clicking the **Change status** button. However, this option is recommended only for advanced users, all appropriate actions (such as inventory adjustment, sending notification emails, reward points, gift card activation/deactivation, etc) must be performed manually in this case.
 * **Cancel order**. A confirmation message is displayed, click OK to remove the order from the system.
-* View the order’s ID, GUID, Store, Customer email and IP, payment details (including discounts, taxes, profit and more)
+* View the order's ID, GUID, Store, Customer email and IP, payment details (including discounts, taxes, profit and more)
 * **Edit order totals**.
 
 > [!NOTE]

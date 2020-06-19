@@ -52,15 +52,15 @@ Customer list contains details of all existing customers, as well as allows to a
 
 **To edit customers**, in the Customers window enter the required search criteria and click Search. Click Edit beside the customer to edit. The Edit Customer Details window is displayed.
 
-- On the **Customer info** tab you can edit customers’ personal and account information, e.g. change a password, assign/remove customer roles
-- On the **Orders** tab you can view the customer’s order details
+- On the **Customer info** tab you can edit customers' personal and account information, e.g. change a password, assign/remove customer roles
+- On the **Orders** tab you can view the customer's order details
 
     ![customer_info](_static/managing-customers/customer-orders.png)
 - On the **Addresses** tab you can view, edit and create new addresses of the customer
 
     ![addresses](_static/managing-customers/customert-adresses.png)
-- On the **Current Shopping Cart** tab you can view the customer’s shopping cart
-- On the **Current Wishlist** tab you can view the customer’s wish list
+- On the **Current Shopping Cart** tab you can view the customer's shopping cart
+- On the **Current Wishlist** tab you can view the customer's wish list
 - On the **Activity Log** you can view the customer's activity log. You can manage activity types in the [Activity Log](xref:en/running-your-store/customer-management/activity-log) types section
 - On the **Place Order (Impersonate)** tab store owners can create orders for their customers without having to have password information. This is useful for customers who do not want to register, or for large sites using CSRs to place orders over the phone. The tab contains the **Place order** button. The store owner can select the products the customer wants, add them to the cart exactly as the customer would do in the public store, then use the **Checkout** button to proceed through the usual checkout process and then click the **Finish session** link in the header to finish this session
 - **Back in stock subscription** tab

@@ -71,7 +71,7 @@ You can also limit the number of times the discount will be used.  From the Disc
 
 ## Adding discount requirements
 
-After creating the discount it’s allowed to add **discount requirements** if you want some specific rules to be applied to the discount. Select **Requirements tab**.
+After creating the discount it's allowed to add **discount requirements** if you want some specific rules to be applied to the discount. Select **Requirements tab**.
 
 ![requirements](_static/discounts/Requirements.png)
 
@@ -114,9 +114,9 @@ Black Friday is always the day after Thanksgiving. It's quite common discount ca
 
 ![black-friday](_static/discounts/Black-friday.png)
 
-**Name** - you can enter any name, it’s only internal
+**Name** - you can enter any name, it's only internal
 
-**Discount type** - here it’s Assigned to subtotal type when a discount is applied to the whole order amount before all the fees are added (like shipping fee and taxes). It’s relevant here because we want all the products in the cart to be discounted.
+**Discount type** - here it's Assigned to subtotal type when a discount is applied to the whole order amount before all the fees are added (like shipping fee and taxes). It's relevant here because we want all the products in the cart to be discounted.
 
 Besides Assigned to subtotal there are several other discount types. There can be Assigned to order total - when a discount is applied to the whole order amount after all the fees are added (like shipping fee and taxes). Also, we can apply discounts to certain categories, manufacturers, or shipping.
 
@@ -124,7 +124,7 @@ We can apply the discount in % or just enter the amount in chosen currency. We h
 
 The **maximum amount** can be limited as well, so even if the total amount of products in the cart will be 300$ a customer will only have 10$ discount anyway.
 
-This discount will require a coupon code. You can apply discounts without entering coupon codes, but it’s not recommended considering marketing purposes. Coupon codes allow you to check campaigns results.
+This discount will require a coupon code. You can apply discounts without entering coupon codes, but it's not recommended considering marketing purposes. Coupon codes allow you to check campaigns results.
 
 Frequently discounts are time-based. Here we entered Black Friday weekend dates.
 
@@ -132,7 +132,7 @@ Frequently discounts are time-based. Here we entered Black Friday weekend dates.
 
 The last setting is for limitation discount usage. For instance, this discount can be applied once per customer.
 
-Often you need to sell more items of the certain product. In this case, to encourage your customers to buy several items of that, you can offer them a discount.  Let’s consider how to use the discount - Buy one item and get 50% on the second in your nopCommerce store.
+Often you need to sell more items of the certain product. In this case, to encourage your customers to buy several items of that, you can offer them a discount.  Let's consider how to use the discount - Buy one item and get 50% on the second in your nopCommerce store.
 
 ![edit-discount-details](_static/discounts/buy_1.png)
 

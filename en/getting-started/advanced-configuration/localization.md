@@ -37,7 +37,7 @@ Click **Add new**. In the Add a new language window, **define the following sett
 
 * **Default currency** for a specific language. If not specified, then the first found one (with the lowest display order) will be used.
 
-* **Limited to stores option** allowing to set this language for a specific store(s). You can choose the store(s) from a pre-created list. Leave this field empty if you don’t use this option.
+* **Limited to stores option** allowing to set this language for a specific store(s). You can choose the store(s) from a pre-created list. Leave this field empty if you don't use this option.
 
 * **Publish** the language, to enable this language to be visible and selected by visitors in your store.
 

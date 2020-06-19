@@ -75,10 +75,10 @@ In the shopping cart settings you can define:
   * **Number of products in mini-shopping cart** - the maximum number of products displayed in the mini shopping cart dropdown menu, in the public store.
   * **Show product images in mini shopping cart** to determine whether images are displayed in the mini shopping cart dropdown menu.
 * **Maximum wishlist items** - the maximum number of different products allowed to be added to the wishlist.
-* To **Show product images on wishlist**, to display product images on customers’ wishlists.
+* To **Show product images on wishlist**, to display product images on customers' wishlists.
 * To **Allow customers to email their wishlist** to friends. When this field is enabled the following field is displayed:
   * **Allow guests to email their wishlist** to friends.
-* To **Allow ‘out of stock’ items to be added to the wishlist**.
+* To **Allow ‘out of stock' items to be added to the wishlist**.
 * Select the **Move items from wishlist to cart** checkbox to move products from wishlist to the cart when clicking "Add to cart" button. Otherwise, they are copied.
 * To **Display wishlist after adding product**, to display the Wishlist page immediately after a product was added to the wishlist. When this checkbox is unticked, the customer will remain on the page where the product was added to the wishlist.
 

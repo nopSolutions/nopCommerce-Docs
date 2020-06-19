@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.ivkadp
 
 # GDPR settings
 
-*GDPR* (General Data Protection Regulation) is a revised European Union’s new data privacy law which impacts how all companies collect, use and share personal data of their European customers. The regulation entered into force on May 24, 2016 and applies since May 25, 2018. The regulation is an essential step to strengthen individuals' fundamental rights in the digital age and facilitate business by clarifying rules for companies and public bodies in the digital single market.
+*GDPR* (General Data Protection Regulation) is a revised European Union's new data privacy law which impacts how all companies collect, use and share personal data of their European customers. The regulation entered into force on May 24, 2016 and applies since May 25, 2018. The regulation is an essential step to strengthen individuals' fundamental rights in the digital age and facilitate business by clarifying rules for companies and public bodies in the digital single market.
 
 For more information (please refer to this source):
 

@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.rajupaladiya, git.exileDev, git.dunaenko
 
 # Upgrading nopCommerce
 
-This chapter describes how to upgrade nopCommerce to the [latest](https://www.nopcommerce.com/download-nopcommerce) version. You might want to do this because you've seen a message at the nopCommerce news section of your dashboard telling you that a new release is available. nopCommerce doesn’t support automatic upgrades, you have to do it manually.
+This chapter describes how to upgrade nopCommerce to the [latest](https://www.nopcommerce.com/download-nopcommerce) version. You might want to do this because you've seen a message at the nopCommerce news section of your dashboard telling you that a new release is available. nopCommerce doesn't support automatic upgrades, you have to do it manually.
 
 **Follow the next steps:**
 

@@ -25,7 +25,7 @@ Click **Mark as primary provider**.
 
 Click **Configure** beside the Avalara tax provider option in the list.
 
-Follow the instructions on top of the page, each field’s function is annotated when “?” is hovered on.
+Follow the instructions on top of the page, each field's function is annotated when “?” is hovered on.
 
 ![Configuration](_static/avalara/avalara-configuration.jpg)
 

@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 
 # Payment Methods
 
-A payment method is how a customer pays for the order. nopCommerce supports both **online** and **offline transactions.** For the online methods, nopCommerce integrates with third-party payment gateways, so that customer’s credit card information will be automatically sent through the gateway (as either an authorization or an authorization and charge) upon completion of an order. You can have multiple payment methods active at one time. The user can select how he/she wants to pay at the checkout.
+A payment method is how a customer pays for the order. nopCommerce supports both **online** and **offline transactions.** For the online methods, nopCommerce integrates with third-party payment gateways, so that customer's credit card information will be automatically sent through the gateway (as either an authorization or an authorization and charge) upon completion of an order. You can have multiple payment methods active at one time. The user can select how he/she wants to pay at the checkout.
 
 To define payment methods go to **Configuration →  Payment Methods.**
 

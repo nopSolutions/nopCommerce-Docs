@@ -9,7 +9,7 @@ contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIv
 
 This chapter covers the basics of nopCommerce interface.
 
-Once logged in, you should see the "Administration" hyperlink at the top of your website. Or you can simply add /admin/ to the end of your site’s URL to open the admin area. For example: www.example.com/admin.
+Once logged in, you should see the "Administration" hyperlink at the top of your website. Or you can simply add /admin/ to the end of your site's URL to open the admin area. For example: www.example.com/admin.
 
 The first screen that is displayed after logging in the nopCommerce administration area is a Dashboard.
 
@@ -29,7 +29,7 @@ The dashboard sections are easily collapsed by clicking ![item](_static/admin-ar
 
 ![Sidebar](_static/admin-area-overview/Sidebar.png)
 
-The sidebar is placed on the left of each page in the administration area. It allows you to navigate through nopCommerce administrator’s functionality.
+The sidebar is placed on the left of each page in the administration area. It allows you to navigate through nopCommerce administrator's functionality.
 
 The sidebar can be easily collapsed by clicking the “hamburger” icon next to the logo ![dashboard2](_static/admin-area-overview/dashboard2.png)
 

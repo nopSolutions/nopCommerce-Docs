@@ -13,7 +13,7 @@ To manage manufacturers go to **Catalog → Manufacturers.**
 
 **Search** for a manufacturer in the Manufacturers window by **entering the Manufacturer name** (or a part of the name), or among all the manufacturers of a certain Store.
 
-Click the **Edit** button to edit the manufacturer’s details.
+Click the **Edit** button to edit the manufacturer's details.
 
 ## Adding new manufacturers
 

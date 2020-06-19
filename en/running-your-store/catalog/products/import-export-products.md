@@ -15,7 +15,7 @@ nopCommerce supports **importing** and **exporting** products in **XML** or **Ex
 
 ## Exporting product
 
-You can download products from your catalog in PDF (**Download catalog as PDF** button), export in XML or Excel formats (**Export** button). If you don’t need to download all the products you can use **search** to find the required products or/and use checkboxes to select the needed products. Choose to **export all** or only **selected** from the Export dropdown list. A table with products you have chosen will be downloaded. The table consists of all the products characteristics from product editing page tabs (Product info, SEO, Pictures and so on).
+You can download products from your catalog in PDF (**Download catalog as PDF** button), export in XML or Excel formats (**Export** button). If you don't need to download all the products you can use **search** to find the required products or/and use checkboxes to select the needed products. Choose to **export all** or only **selected** from the Export dropdown list. A table with products you have chosen will be downloaded. The table consists of all the products characteristics from product editing page tabs (Product info, SEO, Pictures and so on).
 
 > [!NOTE]
 > 
@@ -31,7 +31,7 @@ If you do not want to add all the products for your catalog manually you can use
 
 > [!NOTE]
 > 
-> Before you choose import on a product page you should download a table template for import in excel format as it was described in Exporting products. For accurate and correct import of your products it’s crucial to name all the columns in the table properly (exactly as in the downloaded table).
+> Before you choose import on a product page you should download a table template for import in excel format as it was described in Exporting products. For accurate and correct import of your products it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
 
 It is not mandatory to fill all the table fields. The product will be created based on the filled fields.
 
