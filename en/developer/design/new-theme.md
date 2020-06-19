@@ -40,7 +40,7 @@ Open your nopCommerce solution or website (web version) in Visual Studio - Go to
 
     ![step-7](_static/new-theme/new-theme-step-7.jpg)
 
-1. Now, inside your new theme folder "MyFirstTheme" → Content → Images add your new images in "images” directory and start updating / customizing your `style.css` according to your requirements.
+1. Now, inside your new theme folder "MyFirstTheme" → Content → Images add your new images in "images" directory and start updating / customizing your `style.css` according to your requirements.
 
     If you would like to test the changes → Go to Admin section → Apply your new theme → Save change and preview your public store.
 
