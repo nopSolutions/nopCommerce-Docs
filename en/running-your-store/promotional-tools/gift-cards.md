@@ -29,7 +29,7 @@ You should tick the checkbox **Is gift card*** activated to activate the card, a
 
 Define Gift card information:
 
-- From the **Gift Card Type** select whether it’s **Virtual or Physical**
+- From the **Gift Card Type** select whether it's **Virtual or Physical**
 - Beside **Order** field, click View to view the order in which the gift card was purchased
 - In the **Initial value** field, edit the initial value of the card
 - If required, edit the **recipients and senders name and email** in the relevant fields.
