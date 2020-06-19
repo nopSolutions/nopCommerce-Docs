@@ -59,7 +59,7 @@ In the **Prices** section define:
 - **Price**, in a predefined currency. Note that you can change the store currency in **Configuration → Currencies**.
 - **Old price**. If it is larger than zero it becomes visible in the public store and is displayed beside the new price for comparison purposes.
 - **Product cost**, the sum of all costs associated with the production of the product or service. This cost is not displayed to customers.
-- To **Disable buy button**. This can be useful for products “upon request”.
+- To **Disable buy button**. This can be useful for products "upon request".
 - To **Disable wishlist button**.
 - **Available for pre-order** if the product is not in the store yet, but you want the customers to be able to order it. The **Pre-ordered** button will be displayed to replace the standard **Add to cart** button. When this option is selected, the **Pre-order availability start date** field is displayed. Enter the availability start date of the product in UTC. The Pre-order button will be changed to Add to cart when this date is reached.
 - **Call for Price**, to show **Call for Pricing** or **Call for Quote** instead of the price. This can help you to establish a contact with your customers and provide with additional information about the product they are interested in.
@@ -155,7 +155,7 @@ On the **Product attributes** tab, add Product attributes. Learn more about prod
 
 > [!NOTE]
 > 
-> There are two Attribute value types, Simple and Associated to product. Choose the Associated to product type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use Bundled products functionality allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes. (“Customer enters quantity” option).
+> There are two Attribute value types, Simple and Associated to product. Choose the Associated to product type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use Bundled products functionality allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes. ("Customer enters quantity" option).
 
 - If required, define Conditions for this attribute, i.e. this attribute becomes visible when other attributes have certain values.
 
