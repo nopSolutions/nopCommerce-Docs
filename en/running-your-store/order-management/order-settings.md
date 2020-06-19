@@ -31,16 +31,16 @@ In order settings you can define:
 * **Order totals on payment info tab** to display a product list and order totals on the payment info tab (one-page checkout).
 * To require customers to accept the **Terms of service** before processing the order (**on the shopping cart page**).
 * To require customers to accept the **Terms of service** before processing the order (**on the confirm order page**).
-* To **Disable “Billing address” step** to disable the billing address step during checkout. The billing address will be pre-filled and saved using the default registration data (cannot be used with guest checkout selected). Ensure the appropriate address fields that cannot be pre-filled are not required (or disabled).
-* To **Disable “Order completed” page**, to automatically redirect a customer to the order details page when he places an order.
+* To **Disable "Billing address" step** to disable the billing address step during checkout. The billing address will be pre-filled and saved using the default registration data (cannot be used with guest checkout selected). Ensure the appropriate address fields that cannot be pre-filled are not required (or disabled).
+* To **Disable "Order completed" page**, to automatically redirect a customer to the order details page when he places an order.
 * **Display "Pickup in store" on "Shipping method" page** to display "Pickup in store" options on the shipping method page or on the shipping address page.
 * **Min order sub-total amount**. Orders under this amount will not be issued.
-* To **Calculate “Min order sub-total amount” including tax**. In this case, an order sub-total will be calculated including tax when validating Min order sub-total amount field (specified in the previous step).
+* To **Calculate "Min order sub-total amount" including tax**. In this case, an order sub-total will be calculated including tax when validating Min order sub-total amount field (specified in the previous step).
 * **Min order total amount**. Orders under this amount will not be issued.
 * To **Auto update order totals** to have the order totals automatically updated on editing an order in admin area (currently in BETA testing).
 * The **Order ID** counter. This is useful if you want your orders to start at a certain number. This affects only orders created after; the value must be greater than the current maximum order ID.
 * In the **Order number mask** you can create custom order number. For example, start with {YYYY} - year of order creation date
-* **“Is re-Order” allowed** to enable customers to re-order. The re-order mechanism automatically adds to the shopping cart all items that were in a previous order.
+* **"Is re-Order" allowed** to enable customers to re-order. The re-order mechanism automatically adds to the shopping cart all items that were in a previous order.
 * **Complete order when delivered**, to set order status to "Complete" only when its shipping status is "Delivered". Otherwise, "Shipped" status will be enough.
 * To **Export orders with products**.
 * **Allow admins to buy "Call for price" products**, to allow administrators (in impersonation mode) to buy products marked as "Call for price".

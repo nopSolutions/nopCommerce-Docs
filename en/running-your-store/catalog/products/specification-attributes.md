@@ -29,7 +29,7 @@ To see and edit a list of specification attributes, go to **Catalog → Attribut
 
 > [!NOTE]
 > 
-> For a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as “color squares” instead of the text names.
+> For a color attribute, you can also tick a Specify color box, in this case, color variants will be displayed as "color squares" instead of the text names.
 
 The **complete list of options** will look as follows.
 

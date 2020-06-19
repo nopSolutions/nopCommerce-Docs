@@ -23,7 +23,7 @@ Additional settings will allow you to capture a log of the following activities:
 * **Log "newsletter" consent.**
 * **Log user profile changes.**
 
-You can add consents on your nopCommerce site by clicking on **“Add consent”** button:
+You can add consents on your nopCommerce site by clicking on **"Add consent"** button:
 
 ![consent](_static/gdpr-settings/consent.png)
 

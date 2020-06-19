@@ -11,7 +11,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
 
 > [!NOTE]
 > 
-> **For example**, if you sell apparel, and you want to create tags for T-shirts, it can be “t-shirt”, “cotton”, “polo”, etc.
+> **For example**, if you sell apparel, and you want to create tags for T-shirts, it can be "t-shirt", "cotton", "polo", etc.
 
 To edit product tags that are displayed in a public store, go to **Catalog → Product tags.**
 

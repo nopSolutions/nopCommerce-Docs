@@ -7,11 +7,11 @@ contributors: git.nopsg, git.DmitriyKulagin
 
 # How to write a Tax Plugin for nopCommerce
 
-To extend nopCommerce functionality, plugins are used. There are various types of plugins like “PickupInStore” and “PayPal Standard” which are already contained in the nopCommerce distro. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If you haven't found one, then you are at the right place because this article will guide you through the process of creating plugin, especially tax plugin, according to your need.
+To extend nopCommerce functionality, plugins are used. There are various types of plugins like "PickupInStore" and "PayPal Standard" which are already contained in the nopCommerce distro. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If you haven't found one, then you are at the right place because this article will guide you through the process of creating plugin, especially tax plugin, according to your need.
 
 ## The plugin structure, required files, and locations
 
-1. Start by creating a new “Class Library” project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already resides.
+1. Start by creating a new "Class Library" project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already resides.
 
     ![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
 

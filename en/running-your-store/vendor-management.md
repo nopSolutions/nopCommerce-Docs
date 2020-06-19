@@ -35,7 +35,7 @@ Define the following vendor's details:
 
 * **Name** of the vendor
 * **Description** for the vendor
-* **Vendor's Email.** “Order placed” notifications will be sent to this email.
+* **Vendor's Email.** "Order placed" notifications will be sent to this email.
 * Tick **Active** checkbox to activate the vendor
 
 > [!NOTE]

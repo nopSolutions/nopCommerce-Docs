@@ -29,7 +29,7 @@ Click **Add new**. In the Add a new language window, **define the following sett
 
 * **Language culture** - a specific language code (for example, de-AT for Austrian German)
 
-* **Unique SEO code** - a two letter language SEO code used to generate URLs like `http://www.yourstore.com/en/` when you have more than one published language. Note: “SEO friendly URLs with multiple languages” option should be enabled in Configuration → Settings → General Settings → Localization settings panel.
+* **Unique SEO code** - a two letter language SEO code used to generate URLs like `http://www.yourstore.com/en/` when you have more than one published language. Note: "SEO friendly URLs with multiple languages" option should be enabled in Configuration → Settings → General Settings → Localization settings panel.
 
 * **Flag image file name** - enter the flag image file name. The image should be saved under the …/images/flags directory. You can also choose an image from a predefined list.
 
@@ -85,7 +85,7 @@ Click Edit, beside the language. In the **Edit Language Details window**, select
 
 > [!TIP]
 > 
-> For example, you want to change the name of a panel on top of the page from “*Administration*” (on the picture below) to “*Control panel*”.
+> For example, you want to change the name of a panel on top of the page from "*Administration*" (on the picture below) to "*Control panel*".
 > 
 > ![Example 1](_static/localization/lang-example-before-change.jpeg)
 > 

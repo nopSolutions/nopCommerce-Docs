@@ -13,7 +13,7 @@ Customer list contains details of all existing customers, as well as allows to a
 
 - **Email address**
 - **Password**
-- **Customer roles** - one or multiple customer roles. Note that any role that needs to login into the system (e.g. administrator, vendor) should have “Registered” customer role among other. You can set up customer roles in [Customer roles](xref:en/running-your-store/customer-management/customer-roles) section.
+- **Customer roles** - one or multiple customer roles. Note that any role that needs to login into the system (e.g. administrator, vendor) should have "Registered" customer role among other. You can set up customer roles in [Customer roles](xref:en/running-your-store/customer-management/customer-roles) section.
 - From the **Manager of vendor** **dropdown list**, if required, select a vendor associated with this customer account. When associated, this customer will be able to login to the selected vendor portal and manage its products and orders. Note that if you have a vendor associated with this customer, ensure this customer record is in the [Vendors](xref:en/running-your-store/vendor-management) list.
 
     ![customer_role](_static/managing-customers/customer_role.png)
