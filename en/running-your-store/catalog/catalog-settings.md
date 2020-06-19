@@ -35,7 +35,7 @@ The second block sets up **Product reviews**. Define the following:
 - **Product review possible only after product purchasing**, to allow reviewing the product only by customers who have already ordered it.
 - **Notify about new product reviews**, to notify the store owner about new public reviews.
 - **Notify customer about product review reply**, to notify customer about product review reply.
-- **Reviews per store**, allows displaying only reviews of the current store (on the product details page). Untick this checkbox if you want your customers to see the product’s reviews written in all of your stores.
+- **Reviews per store**, allows displaying only reviews of the current store (on the product details page). Untick this checkbox if you want your customers to see the product's reviews written in all of your stores.
 - **Show product reviews tab** on 'My account' page, to allow customers see all their reviews on 'My account' page.
 - **Product reviews page size** - the amount of reviews per page.
 - **Sort by ascending**, to sort product reviews by creation date as ascending.
