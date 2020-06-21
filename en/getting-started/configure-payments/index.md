@@ -1,27 +1,27 @@
 ---
-title: Setting up Payments
+title: Configure payments
 uid: en/getting-started/configure-payments/index
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 ---
 
-# Setting up Payments
+# Configure payments
 
 **Payments** is the core of eCommerce. This section will cover global store settings that allow payments to be received.
 
 > [!NOTE]
 > 
-> nopCommerce is partnering with leading payment providers and supports leading payment gateways that can be found in nopCommerce marketplace
+> nopCommerce is partnering with leading payment providers and supports leading payment gateways that can be found in the nopCommerce [marketplace](https://www.nopcommerce.com/en/marketplace).
 
-This chapter describes how to set up the payment methods, currency and Payment method Restrictions.
+This chapter describes how to set up the payment methods, currencies and payment method restrictions.
 
 > [!TIP]
 > 
-> How to install the payment (or any other) plugin is covered in [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) chapter.
+> How to install the payment (or any other) plugin is covered in [Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) chapter.
 
 ## See also
 
-- [Payment Methods](xref:en/getting-started/configure-payments/payment-methods/index)
-- [Payment statuses](xref:en/getting-started/configure-payments/index)
-- [Payment Method Restrictions](xref:en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions)
+- [Payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
+- [Payment method restrictions](xref:en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions)
 - [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies)
+- [Advanced configuration](xref:en/getting-started/configure-payments/advanced-configuration/index)
