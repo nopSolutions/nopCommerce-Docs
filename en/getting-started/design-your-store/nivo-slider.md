@@ -5,32 +5,34 @@ author: git.AndreiMaz
 contributors: git.exileDev
 ---
 
-# Nivo Slider widget plugin
+# Nivo slider plugin
 
-Nivo Slider widget plugin allows you to display a slider on the homepage of your store.
+Nivo slider widget plugin allows you to display a slider on the homepage of your store.
 
-## Configure the Nivo Slider widget plugin
+## Configure the Nivo slider plugin
 
-Go to **Configuration → Widgets**. The Widgets window is displayed:
+Go to **Configuration → Widgets**. The *Widgets* window is displayed:
 
 ![Widgets](_static/nivo-slider/nivo-slider-widgets.png)
 
-Click **Edit** beside the Nivo Slider plugin. The window is expanded, as follows:
+Click **Edit** beside the Nivo slider plugin. The window is expanded, as follows:
 
 ![Nivo Edit](_static/nivo-slider/nivo-slider-edit.png)
 
-Tick the **Is active** checkbox, to enable the Nivo Slider plugin. Click **Configure**. The Configure – Nivo Slider window is displayed, as follows:
+Tick the **Is active** checkbox, to enable the plugin. 
 
-![Nivo - Configure](_static/nivo-slider/nivo-slider-configure.jpeg)
+Click **Configure**. The *Configure – Nivo slider* window is displayed, as follows:
 
-Perform the following for each slider you would like to upload:
+![Nivo - Configure](_static/nivo-slider/nivo-slider-configure.jpg)
 
-* In the **Picture** field, click Upload a file to upload the required picture. Click Remove picture to remove the existing one.
+Perform the following for each slide you would like to upload:
+
+* In the **Picture** field, click **Upload a file** to upload the required picture. Click **Remove picture** to remove the existing one.
 * In the **Comment** field, enter a comment for the picture or leave empty to not display any text.
+* In the **Image alternate text** field, enter alternate text that will be added to image.
 * In the **URL** field, enter the required URL or leave empty if you do not want the picture to be clickable.
 
-Click **Save**. Nivo Slider will be integrated into your store.
+Click **Save**. 
 
-> [!NOTE]
-> 
-> After a widget has been added, you can click Edit in the Widgets window beside the required widget to display the **Edit Widget Details** window and then edit the widget details, as described above.
+Now you can go to the homepage of your public store and the updated image slider:
+![Homepage](_static/nivo-slider/homepage.jpg)
