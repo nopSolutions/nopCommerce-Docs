@@ -4,3 +4,6 @@ uid: en/getting-started/configure-payments/payment-methods/paypal-smart-payment-
 author: git.mariannk
 ---
 
+# PayPal Smart Payment Buttons
+
+The content will be added soon.
