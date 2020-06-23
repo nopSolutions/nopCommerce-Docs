@@ -22,6 +22,6 @@ This chapter describes how to set up the payment methods, currencies and payment
 ## See also
 
 - [Payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
+- [Advanced configuration](xref:en/getting-started/configure-payments/advanced-configuration/index)
 - [Payment method restrictions](xref:en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions)
 - [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies)
-- [Advanced configuration](xref:en/getting-started/configure-payments/advanced-configuration/index)
