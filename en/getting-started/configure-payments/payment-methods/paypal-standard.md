@@ -2,10 +2,18 @@
 title: PayPal Standard
 uid: en/getting-started/configure-payments/payment-methods/paypal-standard
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
 
 # PayPal Standard
+
+PayPal Standard is the easiest way to securely accept credit card and PayPal payments online.
+
+## Activate the method, edit its name and display order
+
+You can edit the payment method name which will be displayed for customers in the public store or its display order. To do this click the **Edit** button in the plugin row on the payment method list page. You will be able to enter **Friendly name** and **Display order**. In this row you can also activate the plugin or make it inactive using the **Is active** field. Click the **Update** button. Your changes will be saved.
+
+## Configure the payment method
 
 To use **PayPal Standard** plugin as a payment method please follow these steps:
 
@@ -15,7 +23,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 
     > [!NOTE]
     > 
-    > If you already have an account you will be redirected to the authorization
+    > If you already have an account you will be redirected to the authorization.
 
     ![step2](_static/paypal-standard/signUp2step.png)
 
@@ -27,7 +35,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 
 1. In the top navigation bar, click on the **Settings** icon ![settings](_static/paypal-standard/settings_icon.png)
 
-1. Select **Website payments** in the left panel and click on **Update** in the **Website preferences** line
+1. Select **Website payments** in the left panel and click on **Update** in the **Website preferences** line.
 
     ![websitepayments](_static/paypal-standard/websitepaymentsppal.png)
 1. In the **Auto return for website payments** section set the switch to **On.** As the **Return URL** enter the URL of your site, which will be receiving ID transactions sending by PayPal after customer payment.
@@ -36,7 +44,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 1. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
 
     ![PDTtoken](_static/paypal-standard/PDTtoken.png)
-1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods,** in the **PayPal Standard** line click on **Configuration**
+1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods**. In the **PayPal Standard** line click on **Confige**.
 
 ![nopconfig](_static/paypal-standard/nopConfigPP.png)
 
@@ -44,19 +52,19 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 
 1. In the **PDT Identity Token** field enter the copied **Identity Token** from clause #5.
 
-1. Click **Save**
+1. Click **Save**.
 
 For the **IPN** (Instant Payment Notification) activation:
 
-1. Select **Notifications** in the left panel and click on **Update in the Instant payment notifications** line
+1. Select **Notifications** in the left panel and click on **Update in the Instant payment notifications** line.
 
 ![notifications](_static/paypal-standard/notificationsPP.png)
 
-1. Familiarize yourself with the information regarding **IPN** and click **Choose IPN Settings**
+1. Familiarize yourself with the information regarding **IPN** and click **Choose IPN Settings**.
 
 ![chooseIPN](_static/paypal-standard/chooseIPNSettings.png)
 
-1. Select **Receive IPN messages (Enabled)**. As **Notification URL** enter URL of your IPN handler
+1. Select **Receive IPN messages (Enabled)**. As **Notification URL** enter URL of your IPN handler.
 
 ![editIPN](_static/paypal-standard/editIPN.png)
 
@@ -65,6 +73,30 @@ For the **IPN** (Instant Payment Notification) activation:
 > [!NOTE]
 > 
 > Instant Payment Notification (IPN) is PayPal's message service that sends a notification when a transaction is affected. Once IPN is integrated, sellers can automate their back office so they are not required to wait for payments to come in to trigger order fulfillment.
+
+## Limit to stores and customer roles
+
+You can limit any payment method to store and customer role. This means that the method will be available to certain stores or customer roles only. You can do this from the *plugin list* page.
+
+1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case it's **PayPal Standard**. To find it faster use the *Search* panel in the top of the page and search by **Plugin name** or by **Group** using the *Payment methods* option.
+
+![Plugins](_static/paypal-standard/plugin.jpg)
+
+1. Click the **Edit** button and the *Edit plugin details* window will be displayed, as follows:
+
+![Plugins](_static/paypal-standard/edit.jpg)
+
+2. You can set the following limits up:
+
+    * In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+
+        > [!Important] In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**.
+
+    * Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
+
+        > [!Important] In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**.
+
+    Click **Save**.
 
 ## Known Issues
 
