@@ -2,51 +2,42 @@
 title: Countries, states
 uid: en/getting-started/configure-shipping/advanced-configuration/countries-states
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.ivkadp
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
 
-# Countries
+# Countries, states
 
-This section describes how to manage countries (where your customers are located).
+This section describes how to manage countries (where your customers are located) and states.
 
-To define the country setting go to **Configuration → Countries.**
+To define the countries and states go to **Configuration → Countries**.
 
 ![countries](_static/countries-states/countries1_1.png)
 
 > [!TIP]
 > 
-> By default, all the countries are uploaded. You can Publish and Unpublish countries by selecting them and clicking the corresponding button.
+> By default, all the countries are uploaded. You can *publish* and *unpublish* countries by selecting them and clicking the corresponding buttons in the top of the page.
 
-## Adding new countries
+## Add a new country
 
-You can **Export** a list of states of all the countries, which were added to the system, or Import the additional.
-
-> [!NOTE]
-> 
-> The format of your file to be imported should be the same as of the exported.
-
-Or you can **add new countries** manually. To add a new country to your list, click **Add new.**
+To add a new country click **Add new**.
 
 ![addcountry](_static/countries-states/addcountry.png)
 
-On the **country info** panel define the **following country settings:**
+On the *country info* panel define the following country settings:
 
-* **Name** of the country.
-* Tick the **Allows registration** checkbox, to enable customers located in this country to register for a store account. By default, all the countries are active. If you need to limit the number of countries from which profile registrations are welcome, deactivate all the countries that you do not want to be included.
+* The **Name** of the country.
 * **Allows billing** to customers located in this country.
 * **Allows shipping** to customers located in this country.
 * Enter **Two letter ISO** code of this country.
 * Enter **Three letter ISO** code of this country.
-* Enter **Numeric letter ISO** code of this country.
-* Select the **Subject to VAT** checkbox, to indicate customers in this country are charged EU VAT (the European Union Value Added Tax).
+* Enter **Numeric ISO code** code of this country.
+* Select the **Subject to VAT** checkbox, to indicate whether customers in this country are charged EU VAT (the European Union Value Added Tax).
 
 > [!NOTE]
 > 
-> This field is used only when the EU VAT option is enabled on the Tax Settings page (Configuration → Tax → Tax Settings).
+> This field is used only when the EU VAT option is enabled on the tax settings page (Configuration → Settings → Tax settings).
 
-* To tie a certain store to a country in the **Limited to stores** field of the Country Info panel select pre-created stores from a list, as follows:
-
-![countries4](_static/countries-states/countries4.png)
+* To tie a certain store to a country select the required stores in the **Limited to stores** field, as follows:
 
 > [!NOTE]
 > 
@@ -54,30 +45,38 @@ On the **country info** panel define the **following country settings:**
 
 * Tick the **Published** checkbox, to enable this country to be visible for new account registrations and for the creation of shipping and billing addresses.
 * Enter the **Display order** of this country. A value of 1 represents the top of the list.
-* Click **Save.**
+
+Click **Save**.
 
 ## Adding new states and provinces
 
-On the **State and Provinces** panel, you can add states and provinces of the country.
+On the *State and provinces* panel, you can add states and provinces of the country.
 
 > [!TIP]
 > 
 > By default, the states of the USA are added.
 
-![addcountry2](_static/countries-states/addcountry2.png)
+![addcountry2](_static/countries-states/states.jpg)
 
-Click the **Add new record** button to add a new state or province.
+Click the **Add a new state/province** button in the bottom of the panel to add a new state or province.
 
 ![countries3](_static/countries-states/countries3.png)
 
-Define the **following state/province details:**
+Define the following state/province details:
 
-* **Name** of a state or a province
-
-* **Abbreviation** for the province or state
-
+* **Name** of a state or a province.
+* **Abbreviation** for the province or state.
 * Tick the **Published** checkbox, to publish the state or province on the website.
-
-In the **Display order** field, enter the display order of this province or state. A value of 1 represents the top of the list
+* In the **Display order** field, enter the display order of this province or state. A value of 1 represents the top of the list.
 
 Click **Save**
+
+## Export/import states
+
+You can export a list of states of all the countries, which were added to the system, or import the additional ones using the corresponding buttons in the top of the **Configuration → Countries** page.
+
+![Export/import](_static/countries-states/export-import.jpg)
+
+> [!NOTE]
+> 
+> The format of your file to be imported should be the same as of the exported one.

@@ -2,7 +2,7 @@
 title: Dates and ranges
 uid: en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev
+contributors: git.rajupaladiya, git.exileDev, git.mariannk
 ---
 
 # Dates and ranges
@@ -11,23 +11,32 @@ contributors: git.rajupaladiya, git.exileDev
 
 Delivery dates are time ranges displaying approximate delivery time to a customer. The delivery dates can be applied to products and displayed on the product details pages.
 
-* Go to **Configuration → Shipping → Dates and ranges**. The Delivery Dates window is displayed:
+* Go to **Configuration → Shipping → Dates and ranges**. The two following panels will be displayed in the *Dates and ranges* window:
 
-    ![Delivery dates](_static/dates-and-ranges/delivery-dates.png)
-* Click **Add new**. The Add a New Delivery Date window is displayed:
+### Delivery dates panel
 
-    ![Add new](_static/dates-and-ranges/delivery-dates-add-new.png)
-* In the **Name** field, enter the name of the new delivery date, usually, it is a date range
+![Delivery dates](_static/dates-and-ranges/delivery-dates.png)
+
+Click **Add new**. The *Add a new delivery date* window is displayed:
+
+![Add new](_static/dates-and-ranges/delivery-dates-add-new.png)
+
+* In the **Name** field, enter the name of the new delivery date, usually, it is a date range.
 * In the **Display order** field, enter the display order of this delivery date. 1 represents the top of the list.
 
-## Product availability ranges
+Click the **Save** button.
 
-You can set up product availability ranges in **Configuration → Shipping → Dates and ranges**. This option will be displayed on product editing page.
+### Product availability ranges panel
+
+Here you can set up product availability ranges. This options will be displayed on the product editing page.
 
 ![Availability ranges](_static/dates-and-ranges/avialability-ranges.png)
 
-Click **Add new** to add your own range.
+Click **Add new** to add your own range. The *Add a new product availability range* window is displayed:
 
 ![Add new availability ranges](_static/dates-and-ranges/avialability-ranges-add-new.png)
 
-In the **Name** field enter name of new range, for example, 2 months.
+* In the **Name** field enter name of new range, for example, 2 months.
+* In the **Display order** field, enter the display order of this availability range. 1 represents the top of the list.
+
+Click the **Save** button.
