@@ -113,7 +113,7 @@ Now everything is ready to publish the project.
 
 ## Publish nopCommerce to an Azure VM from Visual Studio
 
-Publishing the NopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, there will be described the minimum requirements to run the publication. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
+Publishing the nopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, there will be described the minimum requirements to run the publication. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
 
 ## Publish project `Nop.Web`
 
