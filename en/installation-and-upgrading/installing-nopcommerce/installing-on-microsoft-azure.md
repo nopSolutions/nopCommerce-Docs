@@ -15,7 +15,7 @@ There are three ways to deploy nopCommerce on Microsoft Azure:
 
 1. **Visual Studio** - web deploy. You can also deploy directly to azure from visual studio. Download or get the deployment credentials from azure using the above way and setup web deploy profile in visual studio.
 
-1. **Web platform installer.** nopCommerce is available in Azure Web Sites application gallery. So go to Azure portal, click "start, new site, from gallery".  Select nopCommerce from the list of available applications. After you enter your database connection information and click OK, nopCommerce will be ready to launch.
+1. **Web platform installer.** nopCommerce is available in Azure Web Sites application gallery. So go to Azure portal, click "start, new site, from gallery".  Select nopCommerce from the list of available applications. After you enter your database connection information and click OK, nopCommerce will be ready to launch. If you get error "HTTP Error 500.32 - ANCM Failed to Load dll", it might be that the platform has to be changed to 64bit (through Azure: "App Settings" - "Settings" - "Configuration" - tab "General settings" - "Platform settings" - "Platform").
 
 Once the site is deployed you have to install nopCommerce. Please read more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/index).
 
