@@ -2,7 +2,7 @@
 title: Manual (fixed or by weight and by total)
 uid: en/getting-started/configure-shipping/shipping-providers/manual
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev
+contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
 # Manual (fixed or by weight and by total) provider
@@ -68,7 +68,7 @@ For example, if you have the following shipping conditions:
   * Lower weight limit: **0**
   * Rate per weight unit: **0**
 * over 2 pounds the cost is 3$ per each additional 0.5 pounds.You should create the **following shipping rules**:
-  * If your fixed cost is $15 and $6 per pounds over 2 pounds.
+  * If your fixed cost is $15 and $6 per pounds over 2 pounds
   * Order weight from: **2.0001**
   * Order weight to: **99999**
   * Additional fixed cost: **15**
