@@ -17,7 +17,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 * Linux
     * Red Hat 6 / CentOS 7 or above
-    * Fedora 30 or aboveor
+    * Fedora 30 or above or
     * Debian 9 or above / Ubuntu 18.04 or above / Linux Mint 18 or above
     * OpenSUSE 15 or above / SUSE Enterprise SUSE Enterprise or above
     * Alpine Linux 3.10 or above
