@@ -49,7 +49,7 @@ Go to **Configuration → Tax providers**. Make the **Manual (fixed or by countr
 
 ![Tax providers](_static/index/tax-providers.jpg)
 
-Click **Configure** in the **Manual (fixed or by country/state/zip)** provider row to edit tax rates. In the top of the page you will see the switch. Choose **Fixed rate** there. 
+Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. In the top of the page you will see the switch. Choose **Fixed rate** there. 
 
 ![Configure](_static/index/configure.jpg)
 
@@ -58,3 +58,11 @@ On this page you can see your VAT rate categories. Click **Edit** beside each ca
 Make sure that all products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-product-for-beginners).
 
 ![Product](_static/index/product.jpg)
+
+
+# See also
+
+* [Tax settings](xref:en/getting-started/configure-taxes/tax-settings)
+* [Tax providers](xref:en/getting-started/configure-taxes/tax-providers/index)
+
+
