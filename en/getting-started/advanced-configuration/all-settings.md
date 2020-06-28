@@ -3,7 +3,6 @@ title: All settings
 uid: en/getting-started/advanced-configuration/all-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
-contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
 
 # All settings
