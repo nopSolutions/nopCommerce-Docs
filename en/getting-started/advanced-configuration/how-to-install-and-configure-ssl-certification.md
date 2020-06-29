@@ -4,3 +4,6 @@ uid: en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-
 author: git.mariannk
 ---
 
+# How to install and configure SSL certification
+
+The content will be added soon.
