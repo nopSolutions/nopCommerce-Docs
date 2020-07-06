@@ -57,4 +57,4 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 > [!NOTE]
 > 
-> If you're going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because it supports SNI (Server Name Indication).
+> If you're installing nopCommerce on Windows and going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because it supports SNI (Server Name Indication).

@@ -39,7 +39,10 @@ In the **Attribute Info panel**, define the following information:
     > 
     > Dropdown lists, radio lists, checkboxes and color squares require the store owner to define values (such as Green, Blue, Red and so on). Textbox and Date picker control types do not require the store owner to define values since customers will be required to fill these textbox fields. In addition, for some control types, you can specify validation rules. For example: for the Textbox attribute, you can define the Minimum length, Maximum length and Default Value. For File Upload, you can define Maximum file size and Allowed file extension.
 - **Display order** - display order number of the checkout attribute.
-- **Limited to stores** enables you to limit the attribute to one or more stores. In order to use this functionality you have to disable the following setting: Catalog settings → Ignore "limit per store" rules.
+- **Limited to stores** enables you to limit the attribute to one or more stores. 
+    > [!Important]
+		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+
 - Click **Save and Continue Edit** to proceed to the Attribute Values tab.
 
 ## Adding new checkout values
