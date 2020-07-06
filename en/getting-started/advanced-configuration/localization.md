@@ -107,3 +107,12 @@ To configure localization settings go to **Configuration  → Settings  → Gene
 - Tick the checkbox **Use images for language selection** to use images instead of language names.
 - Tick the checkbox **SEO friendly URLs with multiple languages enabled** to allow SEO friendly URLs for all languages. When enabled, your URLs will be `http://www.yourStore.com/en/` or `http://www.yourStore.com/ru/` (SEO friendly).
 - Tick the checkbox **Automatically detect language** for detecting language based on customer browser settings.
+
+## Localize entities
+
+If you have more than one language installed in your store you will be able to enter some fields which are displayed to customers in different languages. For example:
+
+![Fields](_static/localization/fields.jpg)
+
+- On the *Standard tab* enter the text which will be displayed to customers if the localized fields are not specified.
+- On the *tabs with language names* enter the localized text.
