@@ -15,6 +15,7 @@ contributors: git.exileDev, git.DmitriyKulagin
 * [How to code my own payment method](xref:en/developer/plugins/payment-method)
 * [How to code my own shipping rate computation method](xref:en/developer/plugins/shipping-plugin)
 * [Plugin with data access](xref:en/developer/plugins/plugin-with-data-access)
+* [Plugin with data access 4.20 and below](xref:en/developer/plugins/plugin-with-data-access-4.20)
 * [How to add a menu item into the administration area from a plugin](xref:en/developer/plugins/menu-item)
 * [Adding CSS and JS resource files into nopCommerce Plugin](xref:en/developer/plugins/resource-files)
 * [How to write a widget for nopCommerce](xref:en/developer/plugins/how-to-write-widget-for-nopCommerce)
