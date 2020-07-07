@@ -48,6 +48,7 @@ Start by filling up general information on the *Product info* panel:
 - Enter the **Manufacturer part number**. It's a part number provided by a manufacturer for the product.
 - Tick the **Show on homepage** checkbox to display this product on your store's home page. Recommended for your most popular products. If this checkbox is ticked, the store owner can also specify the **Display order** of the product. 1 represents the top of the list.
 - Set up the **Product type** as *Simple* or *Grouped*. Read more about product types in the [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants) chapter.
+- The **Product template** field is visible if you have any custom product templates installed on the **Sysytem → Templates** page.
 - Tick **Visible individually** if you want the product to be in catalog or search results, otherwise the product will be hidden in the catalog and accessible only from a grouped product details page.
 - Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. 
     > [!NOTE]
