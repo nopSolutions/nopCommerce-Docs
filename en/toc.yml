@@ -206,11 +206,8 @@
           href: running-your-store/catalog/products/index.md
           items:
             - 
-              name: Add product (for beginners)
-              href: running-your-store/catalog/products/add-product-for-beginners.md
-            - 
-              name: Add product (for advanced users)
-              href: running-your-store/catalog/products/add-product-for-advanced-users.md
+              name: Add products
+              href: running-your-store/catalog/products/add-products.md
             - 
               name: Product attributes
               href: running-your-store/catalog/products/product-attributes.md
