@@ -45,4 +45,4 @@ In this window you can:
 
 * [Setting up Shipping](xref:en/getting-started/configure-shipping/index)
 * [Orders](xref:en/running-your-store/order-management/orders)
-* [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+* [Adding products](xref:en/running-your-store/catalog/products/add-products)
