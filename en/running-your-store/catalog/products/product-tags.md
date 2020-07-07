@@ -32,4 +32,4 @@ Enter tags separating them by comma. Once the tags are created, they can be used
 ## See also
 
 * [Product categories](xref:en/running-your-store/catalog/categories)
-* [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+* [Adding products](xref:en/running-your-store/catalog/products/add-products)
