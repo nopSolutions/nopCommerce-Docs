@@ -23,7 +23,7 @@ To create a grouped product, go to **Catalog → Products**. There are several s
 
   > [!TIP]
   > 
-  > Learn how to fill up the product fields [here](xref:en/running-your-store/catalog/products/add-product-for-beginners).
+  > Learn how to fill up the product fields [here](xref:en/running-your-store/catalog/products/add-products).
 
 1. Create several products with a *simple* product type. These are the variants of the main product. Define whether you want them to be visible separately in catalog and search results, or be shown only on a product page of the main product using the **Visible individually** checkbox.
 1. Create a **Grouped (product with variants)** product and assign these simple products you created on the previous step on the **Associated products (variants)** panel:
