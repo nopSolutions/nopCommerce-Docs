@@ -57,5 +57,5 @@ A gift card is used in the public store by entering the serial number in the box
 
 ## See also
 
-- [Adding product](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Adding products](xref:en/running-your-store/catalog/products/add-products)
 - [YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
