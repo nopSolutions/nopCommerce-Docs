@@ -98,6 +98,6 @@ On the **Order Notes** tab, a store owner can **view** notes that were added to 
 
 ## See also
 
-* [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+* [Adding products](xref:en/running-your-store/catalog/products/add-products)
 * [Shipments](xref:en/running-your-store/order-management/shipping-management)
 * [YouTube tutorial on managing orders](https://www.youtube.com/watch?v=z6TUJOO3gVg&index=5&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
