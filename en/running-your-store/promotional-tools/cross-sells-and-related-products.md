@@ -53,7 +53,7 @@ After you have chosen related product and saved it, **you can check how related 
 
 ## See also
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Adding products](xref:en/running-your-store/catalog/products/add-products)
 - [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
 
 ## Tutorials

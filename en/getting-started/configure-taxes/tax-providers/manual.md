@@ -22,7 +22,7 @@ Choose **Fixed rate** configuration using the switcher in the top of the page.
 
 On this page you can see the pre-created tax categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
 
-Make sure your products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-product-for-beginners).
+Make sure your products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-products).
 
 ![Product](_static/manual/product.jpg)
 

@@ -39,6 +39,6 @@ Click **Edit** beside the attribute option to update it or Delete to remove it f
 
 ## See also
 
-- [Adding new products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Adding products](xref:en/running-your-store/catalog/products/add-products)
 - [Product attributes](xref:en/running-your-store/catalog/products/product-attributes)
 - [YouTube tutorial: Managing Specification Attributes](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

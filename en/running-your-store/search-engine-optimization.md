@@ -80,7 +80,7 @@ Here you can filter search engine friendly page names by **Name**, **Language** 
 
 ## See also
 
-* [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+* [Adding products](xref:en/running-your-store/catalog/products/add-products)
 * [Product categories](xref:en/running-your-store/catalog/categories)
 * [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
 * [Vendors](xref:en/running-your-store/vendor-management)

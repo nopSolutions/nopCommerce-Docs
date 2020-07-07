@@ -51,4 +51,4 @@ Then click **Import**, choose the file and click the **Import from Excel** butto
 
 ## See also
 
-* [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+* [Adding products](xref:en/running-your-store/catalog/products/add-products)

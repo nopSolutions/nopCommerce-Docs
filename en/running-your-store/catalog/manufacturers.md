@@ -96,7 +96,7 @@ You can **export** the manufacturer settings to an external file for backup purp
 
 ## See also
 
-- [Adding products user](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Adding products](xref:en/running-your-store/catalog/products/add-products)
 - [SEO](xref:en/running-your-store/search-engine-optimization)
 
 ## Tutorials
