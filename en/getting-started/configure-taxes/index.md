@@ -55,7 +55,7 @@ Click **Configure** in the **Manual (fixed or by country/state/zip)** provider l
 
 On this page you can see your VAT rate categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
 
-Make sure that all products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-product-for-beginners).
+Make sure that all products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-products).
 
 ![Product](_static/index/product.jpg)
 
