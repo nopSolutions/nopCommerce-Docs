@@ -59,7 +59,7 @@ In the **Add a new value** window a user has an opportunity to:
 
 ## See also
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+- [Adding products](xref:en/running-your-store/catalog/products/add-products)
 - [Grouped product](xref:en/running-your-store/catalog/products/grouped-products-variants)
 
 ## Tutorials
