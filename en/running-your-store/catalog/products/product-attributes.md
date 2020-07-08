@@ -19,7 +19,7 @@ To define product attributes go to **Catalog → Attributes → Product attribut
 
 > [!NOTE]
 > 
-> By default, there are no product attributes precreated in nopCommerce.
+> By default, there are no product attributes pre-created in nopCommerce.
 
 ## Adding product attributes
 
