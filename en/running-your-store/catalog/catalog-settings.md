@@ -11,7 +11,7 @@ Catalog settings include enabling options for product sorting, changing view mod
 
 To define catalog settings, go to **Configuration → Settings → Catalog settings**. The catalog settings page is available in *advanced* and *basic* modes (in the advanced mode by default).
 
-## Search
+## Set up search
 The top panel on the page sets up *Search*:
 
 - Check the **Search enabled** checkbox if you want the search functionality to be enabled in the public store.
