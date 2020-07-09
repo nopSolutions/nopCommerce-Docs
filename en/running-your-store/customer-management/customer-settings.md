@@ -116,7 +116,7 @@ Define the common customer settings, as follows:
 * Tick the **Show customers join date** checkbox if required.
 
 ## Customer form fields
-On the **Customer form fields** panel, define whether the following form fields are enabled in the system:
+In the **Customer form fields** panel, define whether the following form fields are enabled in the system:
 
 ![customerformfields](_static/customer-settings/customersettings5.png)
 
@@ -145,7 +145,7 @@ On the **Customer form fields** panel, define whether the following form fields 
 ![customercustomattributes](_static/customer-settings/customersettings6.png)
 
 ## Address form fields
-On the **Address form fields** panel, a store owner can manage the address form fields available during the registration. You can select which fields are enabled and required among the following:
+In the **Address form fields** panel, a store owner can manage the address form fields available during the registration. You can select which fields are enabled and required among the following:
 
 ![addressformfields](_static/customer-settings/customersettings7.png)
 
