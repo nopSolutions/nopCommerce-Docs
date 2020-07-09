@@ -47,7 +47,7 @@ In the **Attribute Info panel**, define the following information:
 
 ## Adding new checkout values
 
-On the **Attribute values panel**, click Add a new checkout value to create a new attribute value.
+In the **Attribute values** panel, click Add a new checkout value to create a new attribute value.
 
 ![add_a_new_checkout_value](_static/checkout-attributes/add_a_new_checkout_value.png)
 
@@ -63,7 +63,7 @@ In the **Add a new checkout value** window, define the following information:
 - Tick the **Pre-selected** checkbox, to indicate the attribute value is pre-selected for a customer.
 - **Display order** - display order number of the attribute value.
 
-You can **edit** and **remove** attribute values by clicking the corresponding buttons beside the attributes on the Attribute values panel.
+You can **edit** and **remove** attribute values by clicking the corresponding buttons beside the attributes in the Attribute values panel.
 
 ![attribute_values](_static/checkout-attributes/attribute_values.png)
 
