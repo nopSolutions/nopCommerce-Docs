@@ -19,10 +19,10 @@ nopCommerce supports external services as well, but they require plugins from a 
 
 To set up nopCommerce VAT support for shops in the EU go to **Configuration → Settings → Tax settings**.
 
-On the *Common* panel:
+In the *Common* panel:
 * Set **Tax based on** to **Shipping address**.
 
-On the *VAT* panel:
+In the *VAT* panel:
 * Tick **EU VAT enabled**. This will ensure that tax is charged only for shipments within the EU.
 * Select the **Country** your shop is in.
 * If applicable, tick *Allow VAT exemption*. This will ensure that your VAT registered customers who are shipping within the EU but outside the country in which the store is located will not be charged VAT.
