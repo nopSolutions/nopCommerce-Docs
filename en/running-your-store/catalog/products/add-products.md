@@ -29,7 +29,7 @@ Tick the needed fields and click **Save**. Note that the page will be refreshed 
 
 ## Product info
 
-Start by filling up general information on the *Product info* panel:
+Start by filling up general information in the *Product info* panel:
 
 - Enter the **Product name**.
 - Enter the product **Short description** that will be displayed in the catalog.
@@ -66,7 +66,7 @@ Start by filling up general information on the *Product info* panel:
 
 ## Price
 
-On the *Price* panel define:
+In the *Price* panel define:
 
 - **Price**, in a predefined currency.
 
@@ -92,7 +92,7 @@ On the *Price* panel define:
 
     > [!NOTE]
     > 
-    > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled on the **Configuration → Settings → Catalog settings → Performance panel**.
+    > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
 - Whether the product is exempted from tax, by ticking **Tax exempt**. Otherwise, from the **Tax category** dropdown list, select the required tax classification for this product. Tax categories can be configured by the store owner in  the **Configuration → Tax → Tax categories**.
 - The product as **Telecommunications, broadcasting, and electronic services**, to apply special tax rules used in the European Union.
@@ -100,7 +100,7 @@ On the *Price* panel define:
 
 ## Shipping
 
-Define product-specific shipping details on the *Shipping* panel:
+Define product-specific shipping details in the *Shipping* panel:
 
 - Tick **Shipping enabled** if the product can be shipped. The section then expands for more details.
 - Set the product parameters which will be used for the shipping calculation: **Weight, Length, Width, Height**.
@@ -124,7 +124,7 @@ Define the inventory settings for the product as described [here](xref:en/runnin
 
 ## Pictures
 
-On the *Pictures* panel you can add the product pictures.
+In the *Pictures* panel you can add the product pictures.
 
 - In the *Add a new picture* area, click **Upload a file** to select a new picture you want to upload to your product page.
 - In the **Alt** field, enter a value for the "alt" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
@@ -139,7 +139,7 @@ Click **Add product picture** to save the picture.
 
 ## Product attributes
 
-On the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes).
+In the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes).
 
 ![Product attributes](_static/add-product-for-beginners/product_attributes2.png)
 
@@ -195,7 +195,7 @@ Click **Save**.
 
 ### Attribute conditions
 
-If required, define conditions for this attribute on the *Condition* panel. Conditional attributes appear if a previous attribute is selected, such as having an option for personalizing clothing with a name and only providing the text input box if the "Personalize" radio button is checked.
+If required, define conditions for this attribute in the *Condition* panel. Conditional attributes appear if a previous attribute is selected, such as having an option for personalizing clothing with a name and only providing the text input box if the "Personalize" radio button is checked.
 
 ![Condition](_static/add-product-for-beginners/condition.jpg)
 
@@ -246,7 +246,7 @@ Specification attributes are product features i.e, screen size, number of USB-po
 
 ![Specification attributes](_static/add-product-for-beginners/spec.jpg)
 
-On the *Specification attributes* panel, add specification attributes.
+In the *Specification attributes* panel, add specification attributes.
 > [!NOTE]
 > 
 > You can add an attribute for your product using the existing list of attributes, or if you need to create a new one go to **Catalog → Attributes → Specification attributes**.
