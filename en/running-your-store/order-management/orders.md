@@ -59,7 +59,7 @@ If the payment status is **Authorized** the relevant buttons will be available t
 
 ![refund](_static/orders/refund.png)
 
-On the **Billing & Shipping panel**, view and edit the billing and shipping information, if needed. On the **Shipping Info panel**, a store owner can:
+In the **Billing & Shipping panel**, view and edit the billing and shipping information, if needed. On the **Shipping Info panel**, a store owner can:
 
 * View and Edit a **shipping address**. Optionally you can click the **View address on Google maps** link to locate the required shipping address.
 * View and Edit a **shipping method**
@@ -80,7 +80,7 @@ On the **Billing & Shipping panel**, view and edit the billing and shipping info
 * Fill the **Admin comment** field if needed.
 * Check **Shipped** checkbox to mark the shipment as shipped using the current date.
 * Check **Delivered** checkbox to mark the shipment as delivered using the current date.
-* On the **Products shipped** panel: in the **Quantity to ship** column, enter the required quantity of the specific order item to ship.
+* In the **Products shipped** panel: in the **Quantity to ship** column, enter the required quantity of the specific order item to ship.
 
 
 
