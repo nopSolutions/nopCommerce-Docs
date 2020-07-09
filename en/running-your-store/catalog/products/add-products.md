@@ -300,6 +300,10 @@ On this tab you can view all the product quantity changes, orders with the produ
 
 ![stock_quantity_history](_static/add-product-for-beginners/stock_quantity_history.png)
 
+## Setting up product page
+
+The following sections describes product page settings: [Product fields](xref:en/running-your-store/catalog/catalog-settings#product-fields), [Product page](xref:en/running-your-store/catalog/catalog-settings#product-page) and [Share](xref:en/running-your-store/catalog/catalog-settings#share).
+
 ## See also
 
 - [Product categories](xref:en/running-your-store/catalog/categories)
