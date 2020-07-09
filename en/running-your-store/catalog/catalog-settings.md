@@ -117,14 +117,14 @@ The *Additional sections* panel allows you to set the following options:
 - Tick the **Display the date for a pre-order availability** checkbox if needed.
 
 ## Product fields
-On the *Product fields* panel you can set the following options:
+In the *Product fields* panel you can set the following options:
 - To **Show SKU on product details page**.
 - To **Show SKU on catalog pages**.
 - To **Show GTIN** in the public store.
 - To **Show manufacturer part number** in the public store.
 
 ## Product page
-On the *Product page* panel you can set the following options:
+In the *Product page* panel you can set the following options:
 - To **Show "free shipping" icon** for products with this option enabled.
 - To **Allow viewing of unpublished product details page**. In this case, SEO will not be affected, and search crawlers will index the page, even though a product is temporary unpublished and invisible for the customers. Note that a store owner always has access to unpublished products.
 - Tick the **Discontinued message for unpublished products** checkbox, to display "a product has been discontinued" message when customers try to access details pages of unpublished products.
@@ -139,13 +139,13 @@ The *Catalog pages* panel enables you to set:
 - **Number of manufacturers to display** in the manufacturer navigation block.
 
 ## Tags
-On the *Tags* panel you can define:
+In the *Tags* panel you can define:
 - **Number of product tags (cloud)** - the number of tags that appear in the tag cloud.
 - To **Allow customers to select 'Products by tag' page size** on the product tag page from a predefined list of options defined by the store owner. When disabled, customers will not be able to select a page size and the store owner enters it.
 - If the previous option is checked, the **'Products by tag' page size options** field becomes visible. You can enter values which can be selected by shop users. Numbers should be separated with commas. First value will be the default.
 
 ## Tax
-Certain tax/shipping info options specific to Germany are available on the *Tax* panel:
+Certain tax/shipping info options specific to Germany are available in the *Tax* panel:
 - **Display tax/shipping info (footer)**.
 - **Display tax/shipping info (product details page)**.
 - **Display tax/shipping info (product boxes)**.
@@ -154,7 +154,7 @@ Certain tax/shipping info options specific to Germany are available on the *Tax*
 - **Display tax/shipping info (order details page)**.
 
 ## Export/import
-On the *Export/import* panel you can define:
+In the *Export/import* panel you can define:
 * Tick the **Export/import products with attributes** checkbox if you need product attributes to be exported/imported whenever you export/import the product.
 * Tick the **Export/import products with specification attributes** checkbox if products should be exported/imported with specification attributes.
 * Tick the **Export/import products with category breadcrumb** checkbox if products should be exported/imported with a full category name including names of all its parents.
@@ -165,7 +165,7 @@ On the *Export/import* panel you can define:
 * Tick the **Export/import products with "limited to stores"** checkbox if products should be exported/imported with "limited to stores" property.
 
 ## Product sorting
-On the *Product sorting* panel you can define:
+In the *Product sorting* panel you can define:
 * Tick the **Allow product sorting** checkbox, to enable a product sorting option on the categories and manufacturers pages. You can activate/deactivate sorting by *Position*, *Name*, *Price* and *Date of creation*.
 
 ![product_sorting](_static/catalog-settings/product_sorting.png)
