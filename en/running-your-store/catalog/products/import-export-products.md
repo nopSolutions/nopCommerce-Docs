@@ -47,6 +47,10 @@ Then click **Import**, choose the file and click the **Import from Excel** butto
 
 ![product catalog](_static/import-export-products/product_catalog.png)
 
+## Setting up import/export
+
+The following section describes import/export settings: [Export/import](xref:en/running-your-store/catalog/catalog-settings#exportimport).
+
 ## See also
 
 * [Adding products](xref:en/running-your-store/catalog/products/add-products)
