@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.dunaenko
 
 # Downloadable products
 
-To create a downloadable product, go to **Catalog → Products**. Click **Add new** and tick the corresponding checkbox on the *Downloadable product* panel.
+To create a downloadable product, go to **Catalog → Products**. Click **Add new** and tick the corresponding checkbox in the *Downloadable product* panel.
 
 ![DownloadableProduct](_static/downloadable-products/DownloadableProduct.png)
 
@@ -19,7 +19,7 @@ Define the following details:
 - **Number of days** during which customers keep access to the file. Leave this field empty if you want to enable continuous downloads.
 - **Download activation type**:
   - *When order is paid* - select this option to enable the download only when the order payment status is "Paid".
-  - *Manually* - select this option to give control to the store administrator. When this option is selected, the administrator must manually activate the download. This is performed on the *Products* panel of an *Edit order details* page.
+  - *Manually* - select this option to give control to the store administrator. When this option is selected, the administrator must manually activate the download. This is performed in the *Products* panel of an *Edit order details* page.
 - **Has user agreement** - if a customer must agree with the user agree in order to be able to download the product.
   - **User agreement text** editor is then displayed enabling you to enter/edit the user agreement text.
 - **Has sample download file** allows a customer to download a sample file. 

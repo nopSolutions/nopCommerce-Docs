@@ -27,7 +27,7 @@ Azure has support for multiple instances since version 3.70. It's great for any 
   * First, you have to install and setup Redis. Please find more about how to use Redis in Azure [here](https://azure.microsoft.com/en-us/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache/).
   * Once it's done you have to configure it in nopCommerce. In order to enable caching in Redis open `appsettings.json` (or `web.config` in previous versions) file. Find **RedisEnabled** and **UseRedisForCaching** (**RedisCaching** in previous versions) config elements. Set them to *true* and then specify **RedisConnectionString** pointing your Redis server (configured in the first step).
   * For versions 3.90 (and below) you also have to enable Redis as our distributed session management. Please open the `web.config` file. Find and uncomment **sessionState** element. Specify its attributes (*host*, *accessKey*, etc) pointing to your Redis server.
-* Recommended settings on the `appsettings.json` file to improve stability:
+* Recommended settings of the `appsettings.json` file to improve stability:
   * **UsePluginsShadowCopy** - set it to *false* to prevent the problem with IIS pool recycle and horizontal scaling.
 * Ensure that the nopCommerce schedule tasks are run on one farm node at a time. To configure this (for versions 3.90 and below):
   * In order to enable this functionality open the `web.config` file, find **WebFarms** element, and set its **MultipleInstancesEnabled** attribute to *true*. If you use Microsoft Azure Websites (not cloud services), then also set **RunOnAzureWebsites** attribute to *true*.

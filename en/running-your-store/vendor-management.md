@@ -48,13 +48,13 @@ Define the following vendor's details:
 
 A store owner able to create attributes for a vendor much like they can for a product. The vendor attributes would then be displayed on the Vendor Detail page in the public store. This would allow for Multi-Vendor stores to be able to collect and display to the customers more information about the vendor without having to try and format it in the Description field that is currently available.
 
-On the **Vendor attributes** section, select Vendor attributes. Learn more about vendor attributes and how to create them [here](xref:en/running-your-store/vendor-management).
+In the **Vendor attributes** section, select Vendor attributes. Learn more about vendor attributes and how to create them [here](xref:en/running-your-store/vendor-management).
 
 ![vendorattributes](_static/vendor-management/vendor3.png)
 
 ## Display
 
-On the Display panel, define the following Display parameters:
+In the Display panel, define the following Display parameters:
 
 ![display](_static/vendor-management/vendor4.png)
 
@@ -66,7 +66,7 @@ Define the following vendor's details:
 
 ## SEO
 
-On the **SEO** panel, define the following SEO parameters:
+In the **SEO** panel, define the following SEO parameters:
 
 ![SEO](_static/vendor-management/vendor6.png)
 
@@ -106,7 +106,7 @@ Go to **Customers → Customers.** The Customers window is displayed:
 
 Click **Edit** beside the customer record you want to assign a vendor to. The Edit Customer window is displayed:
 
-* On the **Customer Info panel**, select a vendor record previously created from **Manager of Vendor** dropdown list.
+* In the **Customer Info panel**, select a vendor record previously created from **Manager of Vendor** dropdown list.
 * Ensure the **Vendors** customer role is selected in the **Customer Roles** field.
 
 > [!NOTE]
@@ -187,7 +187,7 @@ Click **Save and Continue Edit** to proceed to the **values** editing tab.
 
 ### Adding new attribute values
 
-On the **Attribute values** panel, click **Add a new attribute value** to create a new attribute value.
+In the **Attribute values** panel, click **Add a new attribute value** to create a new attribute value.
 
 ![attributevalues](_static/vendor-management/vendorsettings5.png)
 
@@ -197,7 +197,7 @@ In the Add a new attribute value window, define the following information:
 * Tick the **Pre-selected** checkbox, to indicate the attribute value is pre-selected for a customer.
 * **Display order** - display order number of the attribute value.
 
-You can **edit** and **remove** attribute values by clicking the corresponding buttons beside the attributes on the Attribute values panel.
+You can **edit** and **remove** attribute values by clicking the corresponding buttons beside the attributes in the Attribute values panel.
 
 Click **Save.** The new attribute will be displayed in the public store.
 

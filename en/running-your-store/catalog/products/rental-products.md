@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov
 
 # Rental product
 
-In case a product is rental, tick the corresponding checkbox on the *Rental* panel.
+In case a product is rental, tick the corresponding checkbox in the *Rental* panel.
 
 ![Rental panel](_static/rental-products/rental.png)
 

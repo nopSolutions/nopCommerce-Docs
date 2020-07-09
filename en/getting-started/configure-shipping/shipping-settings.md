@@ -11,7 +11,7 @@ This chapter describes how to set up the shipping details of a store. Besides th
 
 To manage shipping settings go to **Configuration → Settings → Shipping settings**.
 
-Define your shipping settings on the *Common* panel the following way:
+Define your shipping settings in the *Common* panel the following way:
 
 ![Shipping Settings](_static/shipping-settings/shipping-settings.jpg)
 
@@ -37,7 +37,7 @@ Define your shipping settings on the *Common* panel the following way:
 * Tick **Use warehouse location** to use it when requesting shipping rates. This is useful when you ship from multiple warehouses.
 * Tick **Consider associated products dimensions and weight** to consider associated products dimensions and weight on shipping, uncheck for example if the main product already includes them.
 
-Define your shipping settings on the *Notifications* panel the following way:
+Define your shipping settings in the *Notifications* panel the following way:
 
 * Tick **Notify customer about shipping from multiple locations** if required. This is useful when you ship from multiple warehouses.
 * Tick **Display shipment events (customers)**, to enable customers to view shipment events on their shipment details page. 

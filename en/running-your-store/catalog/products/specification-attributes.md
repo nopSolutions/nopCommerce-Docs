@@ -25,7 +25,7 @@ Click **Add new** to add a new attribute. The *Add a new specification attribute
 
 ![Add new](_static/specification-attributes/new-attribute.jpg)
 
-On the *Attribute info* panel, enter:
+In the *Attribute info* panel, enter:
 - The **Name** of the specification attribute.
 - The **Display order** number.
 
@@ -35,7 +35,7 @@ Click **Save and continue edit** to proceed to the *Options* editing panel. The 
 
 ## Create a new option
 
-Click the **Add a new option** button on the *Options* panel to create a new specification attribute option. The *Add a new option* window will be displayed, as follows:
+Click the **Add a new option** button in the *Options* panel to create a new specification attribute option. The *Add a new option* window will be displayed, as follows:
 
 ![Add a new option](_static/specification-attributes/add_a_new_option.jpg)
 
@@ -49,7 +49,7 @@ Click **Save** to save the changes.
 
 ## Used by products
 
-If you applied the specification attribute to products you can see the list of these products on the *Used by products* panel:
+If you applied the specification attribute to products you can see the list of these products in the *Used by products* panel:
 
 ![Used by products](_static/specification-attributes/used-by.jpg)
 

@@ -73,7 +73,7 @@ If you wish to add a new language to your store, you should:
 1. Click **Import resources**. And specify the path to the language pack file (*.xml) that you downloaded.
   ![LanguageImport](_static/localization/language-import.png)
 
-If you found a mistake in translation or wish to have custom naming, you can edit the string resources on the *String resources* panel.
+If you found a mistake in translation or wish to have custom naming, you can edit the string resources in the *String resources* panel.
 
 ## Manage string resources
 
@@ -122,5 +122,5 @@ If you have more than one language installed in your store you will be able to e
 
 ![Fields](_static/localization/fields.jpg)
 
-- On the *Standard tab* enter the text which will be displayed to customers if the localized fields are not specified.
-- On the *tabs with language names* enter the localized text.
+- In the *Standard tab* enter the text which will be displayed to customers if the localized fields are not specified.
+- In the *tabs with language names* enter the localized text.

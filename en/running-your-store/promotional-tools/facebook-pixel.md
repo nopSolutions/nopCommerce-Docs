@@ -20,7 +20,7 @@ The Facebook pixel plugin for nopCommerce pasts a snippet of JavaScript code tha
 
 ## Install and enable the plugin
 
-The Facebook pixel plugin is an out-of-the-box nopCommerce plugin. You can find it here: **Configuration → Local plugins**. To find the plugin faster use the **Group** field on the search panel to filter the plugins by *Widgets* type:
+The Facebook pixel plugin is an out-of-the-box nopCommerce plugin. You can find it here: **Configuration → Local plugins**. To find the plugin faster use the **Group** field in the search panel to filter the plugins by *Widgets* type:
 ![Find the plugin](_static/facebook-pixel/plugin-list.jpg)
 
 Install the plugin using the **Install** button if it is uninstalled. Then enable it by clicking the **Edit** button. You will see the *Edit plugin details* window in this case. Mark the plugin as enabled using the **Is enabled** checkbox and click the **Save** button.

@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov
 
 # Recurring products
 
-Recurring product type is usually used for subscriptions or products with installment payment plans. In case your product is recurring, tick the corresponding checkbox on the *Recurring product** panel.
+Recurring product type is usually used for subscriptions or products with installment payment plans. In case your product is recurring, tick the corresponding checkbox in the *Recurring product* panel.
 
 ![Recurring](_static/recurring-products/recurring.png)
 

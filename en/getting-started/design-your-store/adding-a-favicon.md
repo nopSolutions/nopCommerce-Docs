@@ -30,11 +30,11 @@ Since the version 4.20 you can automatically upload favicons through the admin a
       * At the bottom of the same page you can find the **Favicon Generator Options** panel. 
       ![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
 
-         - On this section, you must set certain settings. On the **Path** tab, select the option `I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here` and specify the path from the step 2. ![favicon_path](_static/adding-a-favicon/favicon_path.png)
+         - In this section, you must set certain settings. In the **Path** tab, select the option `I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here` and specify the path from the step 2. ![favicon_path](_static/adding-a-favicon/favicon_path.png)
 
-         - On the **Version/Refresh** tab, select the option depending on whether your site is already in production. The setting description will help you with this. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
+         - In the **Version/Refresh** tab, select the option depending on whether your site is already in production. The setting description will help you with this. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
 
-         - On the **Additional fields** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
+         - In the **Additional fields** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
 
       * Now all settings are set, click the button to generate. ![generate_button](_static/adding-a-favicon/generate_button.png)
 
