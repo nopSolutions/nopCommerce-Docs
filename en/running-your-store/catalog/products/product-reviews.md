@@ -58,7 +58,7 @@ If you created custom review types you will see the *Review types* panel:
 
 On this area, you can view the all addition reviews on current product. **Rating** displays the customer rating. All columns in the table cannot be edited.
 
-For more information on setting up reviews, click [here](xref:en/running-your-store/catalog/catalog-settings).
+For more information on setting up reviews, click see the [Product reviews](xref:en/running-your-store/catalog/catalog-settings#product-reviews) and [Review types](xref:en/running-your-store/catalog/catalog-settings#review-types) chapters.
 
 ## Tutorials
 
