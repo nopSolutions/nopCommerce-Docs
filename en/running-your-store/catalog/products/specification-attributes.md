@@ -2,7 +2,7 @@
 title: Specification attributes
 uid: en/running-your-store/catalog/products/specification-attributes
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
 
 # Specification attributes
