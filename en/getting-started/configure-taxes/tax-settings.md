@@ -30,7 +30,7 @@ Then define the **default tax address (used for tax calculation)**, as follows:
 * Define the **Address 1**.
 * Enter **Zip/postal code**.
 
-On the **Tax displaying** panel you can set up how tax will be displayed for customers:
+In the **Tax displaying** panel you can set up how tax will be displayed for customers:
 * Tick the **Allow customers to select tax display type** checkbox, to indicate whether customers are allowed to select the tax display type. When unticked the **Tax display type** dropdown list is displayed:
   * **Excluding tax**: select to enforce excluding tax.
   * **Including tax**: select to enforce including tax.
@@ -40,15 +40,15 @@ On the **Tax displaying** panel you can set up how tax will be displayed for cus
 * Tick the **Hide tax in order summary** checkbox, to hide the tax value in the order summary when prices are shown as tax inclusive.
 * Tick the **Force tax exclusion from order subtotal** checkbox, to always exclude tax from the order subtotal (irrelevant to the selected tax display type). This checkbox affects only pages where the order totals are displayed.
 
-On the *Shipping* panel, tick the **Shipping is taxable** checkbox to indicate that the shipping is taxable. The following fields are then displayed:
+In the *Shipping* panel, tick the **Shipping is taxable** checkbox to indicate that the shipping is taxable. The following fields are then displayed:
 * **Shipping price includes tax**: select to indicate the shipping price includes tax.
 * **Shipping tax category**: select the required tax category used for the shipping tax calculation.
 
-On the *Payment* panel tick the **Payment method additional fee is taxable** checkbox to indicate the payment method additional fee is taxable. The following options are then displayed:
+In the *Payment* panel tick the **Payment method additional fee is taxable** checkbox to indicate the payment method additional fee is taxable. The following options are then displayed:
 * **Payment method additional fee includes tax**: select to indicate that the payment method additional fee is taxable.
 * **Payment method additional fee tax category**: from the dropdown list, select the required tax category used for the payment method additional fee tax calculation.
 
-Then set up VAT on the *VAT* panel:
+Then set up VAT in the *VAT* panel:
 * Tick the **EU VAT enabled** checkbox, to indicate that European Union Value Added Tax is enabled. When this option is selected, customers will be requested for the *Company VAT number* during registration or on the customer account details page. This VAT number can be automatically validated through a web service, if the **Use web service** checkbox is ticked, or manually on the customer details page in the administration area by the store owner.
 * **Your shop country**: from the dropdown list, select the country where your store is located.
 * **Allow VAT exemption**: tick this checkbox, to exempt eligible VAT registered customers from VAT.
