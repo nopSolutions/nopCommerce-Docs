@@ -23,7 +23,7 @@ To add a new country click **Add new**.
 
 ![addcountry](_static/countries-states/addcountry.png)
 
-On the *country info* panel define the following country settings:
+In the *country info* panel define the following country settings:
 
 * The **Name** of the country.
 * **Allows billing** to customers located in this country.
@@ -50,7 +50,7 @@ Click **Save**.
 
 ## Adding new states and provinces
 
-On the *State and provinces* panel, you can add states and provinces of the country.
+In the *State and provinces* panel, you can add states and provinces of the country.
 
 > [!TIP]
 > 
