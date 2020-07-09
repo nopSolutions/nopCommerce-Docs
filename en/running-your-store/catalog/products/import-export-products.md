@@ -25,7 +25,7 @@ nopCommerce supports importing from Excel format and exporting products in XML o
 
 ## Importing products
 
-If you do not want to add all the products for your catalog manually you can use the import option.
+If you do not want to add all the products to your catalog manually you can use the import option.
 
 > [!NOTE]
 > 
