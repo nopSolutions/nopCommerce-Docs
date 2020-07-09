@@ -27,7 +27,7 @@ You can find these options in **Catalog → Products** at the main page top left
 
 ## Importing products
 
-If you do not want to add all the products for your catalog manually you can use the import option.
+If you do not want to add all the products to your catalog manually you can use the import option.
 
 > [!NOTE]
 > 
