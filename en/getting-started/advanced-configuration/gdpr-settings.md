@@ -25,7 +25,7 @@ Then tick the **GDPR enabled** checkbox. Additional settings will allow you to c
 * **Log "newsletter" consent**.
 * **Log user profile changes**.
 
-You can add consents on your nopCommerce site by clicking the **Add consent** button on the *Consents* panel:
+You can add consents on your nopCommerce site by clicking the **Add consent** button in the *Consents* panel:
 
 ![Consents](_static/gdpr-settings/consents.jpg)
 
