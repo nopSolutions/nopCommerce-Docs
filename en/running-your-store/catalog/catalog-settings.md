@@ -154,7 +154,7 @@ Certain tax/shipping info options specific to Germany are available on the *Tax*
 - **Display tax/shipping info (wishlist)**.
 - **Display tax/shipping info (order details page)**.
 
-## Export/Import
+## Export/import
 On the *Export/import* panel you can define:
 * Tick the **Export/import products with attributes** checkbox if you need product attributes to be exported/imported whenever you export/import the product.
 * Tick the **Export/import products with specification attributes** checkbox if products should be exported/imported with specification attributes.

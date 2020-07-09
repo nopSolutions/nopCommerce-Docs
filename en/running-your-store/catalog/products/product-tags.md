@@ -26,6 +26,10 @@ Enter tags separating them by comma. Once the tags are created, they can be used
 
 ![Popular tags](_static/product-tags/popular_tags.png)
 
+## Setting up product tags
+
+The following section describes product tags settings: [Tags](xref:en/running-your-store/catalog/catalog-settings#tags).
+
 ## See also
 
 * [Product categories](xref:en/running-your-store/catalog/categories)
