@@ -37,7 +37,7 @@ Click **Save and continue edit** to proceed to the *Predefined values* editing p
 
 ## Adding predefined values
 
-On the *Predefined values* panel click **Add a new value**, and *Add a new value window* will be opened:
+In the *Predefined values* panel click **Add a new value**, and *Add a new value window* will be opened:
 
 ![Adding predefined values](_static/product-attributes/add_a_new_value.png)
 
@@ -55,7 +55,7 @@ After filling the fields, click **Save**.
 
 > [!TIP]
 > 
-> It's not necessary to create attributes values when adding product attribute, you can create them later when apply certain product attribute to the product. Once the attributes and values are set, they can be grouped and managed on the *Product attributes* panel on the product edit page.
+> It's not necessary to create attributes values when adding product attribute, you can create them later when apply certain product attribute to the product. Once the attributes and values are set, they can be grouped and managed in the *Product attributes* panel on the product edit page.
 
 > [!NOTE]
 > 
@@ -63,7 +63,7 @@ After filling the fields, click **Save**.
 
 ## Used by products panel
 
-On the *Used by products* panel you can which products use this attribute:
+In the *Used by products* panel you can which products use this attribute:
 
 ![Used by products](_static/product-attributes/used-by.jpg)
 
