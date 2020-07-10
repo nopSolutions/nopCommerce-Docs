@@ -7,6 +7,8 @@ contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.dunaenko
 
 # Downloadable products
 
+## Set up a product
+
 To create a downloadable product, go to **Catalog → Products**. Click **Add new** and tick the corresponding checkbox in the *Downloadable product* panel.
 
 ![DownloadableProduct](_static/downloadable-products/DownloadableProduct.png)
@@ -24,6 +26,22 @@ Define the following details:
   - **User agreement text** editor is then displayed enabling you to enter/edit the user agreement text.
 - **Has sample download file** allows a customer to download a sample file. 
   - If this is applicable, upload the **Sample download file** using the **Upload a file** button or **use download URL** by ticking the corresponding checkbox and entering the **Download URL**. It will be shown on the product details page and can be downloaded by any customer without any charge.
+
+ > [!TIP]
+ >
+ > Since downloadable products don't require shipping make sure the **Shipping enabled** field is unticked in the *Shipping* panel.
+
+ > [!TIP]
+ >
+ > Since you don't need to track inventory of downloadable products make sure the **Inventory method** field is set to *Don't track inventory* in the *Inventory* panel.
+
+## Customer registration
+
+Decide whether customer registration is required for downloadable products by ticking the **Require registration for downloadable products** checkbox in the *Common* panel on the **Configuration → Settings → Customer settings** page.
+
+## Downloadable products account page
+
+If you would like to hide the 'Downloadable products' menu item from the customer account page go to the **Configuration → Settings → Customer settings** page and tick the **Hide 'Downloadable products' tab** checkbox.
 
 ## See also
 
