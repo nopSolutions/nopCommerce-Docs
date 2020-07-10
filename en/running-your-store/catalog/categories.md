@@ -24,7 +24,7 @@ To add a new category click the **Add new** button in the top of the page. The *
 
 ![Add a new category](_static/categories/add-new.jpg)
 
-This page is available in two modes: **advanced** and **basic** (in advanced mode by default). You can switch to the basic mode which displays the only main fields.
+This page is available in two modes: **advanced** and **basic**. Switch to the basic mode which displays the only main fields or use the advanced mode displaying all the available fields.
 
 ### Category info
 In the *Category info* panel, define the following category information:
@@ -46,9 +46,13 @@ In the *Display* panel, define the following category information:
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the category details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
 	- In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
 - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this category e.g. '4' products per page. 
+  > [!TIP]
+  > 
+  > For example, when you add seven products to a category and you set its page size to three. Three products per page will be displayed on this category details page in the public store, and the total amount of pages will be three.
+
 - **Price ranges** - allow defining ranges of price by which customers can filter the products. The ranges are set in the currency that is defined on the [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies) page. Separate the ranges by a semicolon, for example, 0-999; 1000-1200; 1201 - (1201 means 1201 and over).
 - **Display order** - the order number for displaying the category. This display number is used to sort categories in the public store (ascending). The category with the display order 1 will be placed at the top of the list.
-- The **Category template** filed is visible if you have any custom category templates installed on the **Sysytem → Templates** page. This template defines how this category (and its products) will be displayed.
+- The **Category template** filed is visible if you have any custom category templates installed on the **System → Templates** page. This template defines how this category (and its products) will be displayed.
 
 ### Mappings
 
@@ -101,7 +105,7 @@ Click the **Save and continue edit** button to proceed to add products to the ca
 
 ### Products
 
-The *Products* panel contains a list of products related to the selected category, these products can be filtered by category in the catalog. The store owner can add new products to the category.
+The *Products* panel contains a list of products related to the selected category, these products can be filtered by category in the catalog. The store owner can add new products to the category. Note that you need to save the category before you can add products.
 
 Click **Add a new product** to find a product you want to include in this category. You can search by the **Product name**, **Categoty**, **Vendor**, **Store**, **Product type** and **Manufacturer**.
 
