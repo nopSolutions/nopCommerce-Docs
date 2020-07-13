@@ -9,6 +9,25 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 
 Specification attributes are similar to [product attributes](xref:en/running-your-store/catalog/products/product-attributes), however, they are only used for information purposes (visible on the product details page) and for filtering products on the category details page. They don't define a product price as well as can't be used for the inventory tracking.
 
+## Example
+Let's say you are running an online computer store. What helps a customer to make a decision?
+
+- Provide a customer full and descriptive information about your products. Despite you fill the short and full description of the certain computer, allow the customer to see the product's characteristic where reflected it's most important details: ![Specification attributes](_static/specification-attributes/specs.jpg)
+
+    This table can be displayed on the product details page if you select the **Show on product page** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes).
+
+- Allow your customers to search computers using the filter functionality. Let's say we can search in your store by color, screensize, CPU type and memory. Then the category page will look the following way: ![Filtering](_static/specification-attributes/filter.jpg)
+
+    Select the **Allow filtering** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes) to allow filtering by this attribute for the certain product.
+
+- Include the "Compare products" functionality in your store. This feature is also uses specification attributes. For your computer store the "Compare products" page will look the following way: ![Compare products](_static/specification-attributes/compare.jpg)
+
+    To enable the "Compare products" functionality go to **Configuration → Settings → Catalog settings**. In the *Compare products* panel tick the **'Compare products' enabled** checkbox.
+
+The next section describes how to create specification attributes. Note that after creating a list of specification attributes you will need to add the specification attributes to the products one by one. Learn how add specification attributes to products in the [Add products - Specification attributes](xref:en/running-your-store/catalog/products/add-products#specification-attributes) section.
+
+## Create a specification attribute
+
 > [!NOTE]
 > 
 > By default, there are no specification attributes pre-created in nopCommerce.
@@ -18,8 +37,6 @@ To see and edit a list of specification attributes, go to **Catalog → Attribut
 ![Specification attributes](_static/specification-attributes/specification_attributes.jpg)
 
 On this page you can delete specification attributes by selecting them and then clicking the **Delete(selected)** button.
-
-## Create a specification attribute
 
 Click **Add new** to add a new attribute. The *Add a new specification attribute* window is displayed, as follows:
 
