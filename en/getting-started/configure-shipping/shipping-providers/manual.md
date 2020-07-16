@@ -182,7 +182,7 @@ Considering all the requirements above we will set up the payment method on the 
 To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way:
 ![Configuration example](_static/manual/restrictions-example.jpg)
 
-### Let's how the shipping options look like in the public store
+### Let's see how the shipping options look like in the public store
 
 1. When a customer from the USA visits the product page (or shopping cart page) the shipping estimation is displayed, as follows:
   ![Estimation](_static/manual/estimate-product-page.jpg)
