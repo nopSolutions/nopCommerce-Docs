@@ -53,7 +53,7 @@ Use formula **[additional fixed cost] + ([order total weight] - [lower weight li
 
 For example, if you have the following shipping conditions:
 
-* from weight 0 to 1 pounds and order subtotal from 1$ and order subtotal to 10$ the cost is 10$. You should create the **following shipping rules**:
+* from weight 0 to 1 pounds and order subtotal from $1 and order subtotal to $10 the cost is $10. You should create the **following shipping rules**:
   * Order weight from: **0**
   * Order weight to: **1**
   * Order subtotal from: **1**
@@ -61,7 +61,7 @@ For example, if you have the following shipping conditions:
   * Additional fixed cost: **10**
   * Lower weight limit: **0**
   * Rate per weight unit: **0**
-* from weight 1.1 pounds to 2 pounds and order subtotal from 11$ and order subtotal to 1000000$ the cost is 15$. You should create the **following shipping rules**:
+* from weight 1.1 pounds to 2 pounds and order subtotal from $11 and order subtotal to $1000000 the cost is $15. You should create the **following shipping rules**:
   * Order weight from: **1.000**
   * Order weight to: **2**
   * Order subtotal from: **11**
@@ -69,7 +69,7 @@ For example, if you have the following shipping conditions:
   * Additional fixed cost: **15**
   * Lower weight limit: **0**
   * Rate per weight unit: **0**
-* over 2 pounds the cost is 3$ per each additional 0.5 pounds.You should create the **following shipping rules**:
+* over 2 pounds the cost is $3 per each additional 0.5 pounds.You should create the **following shipping rules**:
   * If your fixed cost is $15 and $6 per pounds over 2 pounds
   * Order weight from: **2.0001**
   * Order weight to: **99999**
@@ -80,7 +80,7 @@ For example, if you have the following shipping conditions:
 	> [!NOTE] 
 	> 
 	> It will charge proportionally for additional weight; 
-	> example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
+	> example for 2.1 pounds it will charge 15$ + (0.1 * 6)= 15.6$
 
 To add a new shipping rule, click **Add record**. The *Add new record* window is displayed:
 
