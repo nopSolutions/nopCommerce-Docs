@@ -53,7 +53,7 @@ Use formula **[additional fixed cost] + ([order total weight] - [lower weight li
 
 For example, if you have the following shipping conditions:
 
-* from weight 0 to 1 pounds and order subtotal from 1$ and order subtotal to 10$ the cost is 10$. You should create the **following shipping rules**:
+* from weight 0 to 1 pounds and order subtotal from $1 and order subtotal to $10 the cost is $10. You should create the **following shipping rules**:
   * Order weight from: **0**
   * Order weight to: **1**
   * Order subtotal from: **1**
@@ -61,7 +61,7 @@ For example, if you have the following shipping conditions:
   * Additional fixed cost: **10**
   * Lower weight limit: **0**
   * Rate per weight unit: **0**
-* from weight 1.1 pounds to 2 pounds and order subtotal from 11$ and order subtotal to 1000000$ the cost is 15$. You should create the **following shipping rules**:
+* from weight 1.1 pounds to 2 pounds and order subtotal from $11 and order subtotal to $1000000 the cost is $15. You should create the **following shipping rules**:
   * Order weight from: **1.000**
   * Order weight to: **2**
   * Order subtotal from: **11**
@@ -69,7 +69,7 @@ For example, if you have the following shipping conditions:
   * Additional fixed cost: **15**
   * Lower weight limit: **0**
   * Rate per weight unit: **0**
-* over 2 pounds the cost is 3$ per each additional 0.5 pounds.You should create the **following shipping rules**:
+* over 2 pounds the cost is $3 per each additional 0.5 pounds.You should create the **following shipping rules**:
   * If your fixed cost is $15 and $6 per pounds over 2 pounds
   * Order weight from: **2.0001**
   * Order weight to: **99999**
@@ -177,7 +177,7 @@ Considering all the requirements above we will set up the payment method on the 
 
 To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way: ![Configuration example](_static/manual/restrictions-example.jpg)
 
-### Let's how the shipping options look like in the public store
+### Let's see how the shipping options look like in the public store
 
 1. When a customer from the USA visits the product page (or shopping cart page) the shipping estimation is displayed, as follows: ![Estimation](_static/manual/estimate-product-page.jpg)
 
