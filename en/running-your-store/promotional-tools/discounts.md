@@ -122,7 +122,7 @@ Besides Assigned to subtotal there are several other discount types. There can b
 
 We can apply the discount in % or just enter the amount in chosen currency. We have 10% here.
 
-The **maximum amount** can be limited as well, so even if the total amount of products in the cart will be 300$ a customer will only have 10$ discount anyway.
+The **maximum amount** can be limited as well, so even if the total amount of products in the cart will be $300 a customer will only have 10$ discount anyway.
 
 This discount will require a coupon code. You can apply discounts without entering coupon codes, but it's not recommended considering marketing purposes. Coupon codes allow you to check campaigns results.
 
