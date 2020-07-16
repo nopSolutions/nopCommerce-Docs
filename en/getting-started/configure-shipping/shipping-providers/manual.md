@@ -80,7 +80,7 @@ For example, if you have the following shipping conditions:
 	> [!NOTE] 
 	> 
 	> It will charge proportionally for additional weight; 
-	> example for 2.1 pounds it will charge 15$ + (0.1 * 6)= 15.6$
+	> example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
 
 To add a new shipping rule, click **Add record**. The *Add new record* window is displayed:
 
