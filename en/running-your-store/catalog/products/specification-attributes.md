@@ -46,11 +46,9 @@ In the *Attribute info* panel, enter:
 - The **Name** of the specification attribute.
 - The **Display order** number.
 
-Click **Save and continue edit** to proceed to the *Options* editing panel. The following screenshot shows the already added options:
+Click **Save and continue edit** to proceed to the *Options* editing panel.
 
-![Options](_static/specification-attributes/options.jpg)
-
-## Create a new option
+### Add a new option
 
 Click the **Add a new option** button in the *Options* panel to create a new specification attribute option. The *Add a new option* window will be displayed, as follows:
 
@@ -62,9 +60,11 @@ Define the following option settings:
     - Choose the **RGB color** which will be displayed to customers.
 - The **Display order** number.
 
-Click **Save** to save the changes.
+Click **Save** to save the option details.
 
-## Used by products
+The following screenshot shows the already added options: ![Options](_static/specification-attributes/options.jpg)
+
+### Used by products
 
 If you applied the specification attribute to products you can see the list of these products in the *Used by products* panel:
 
