@@ -69,7 +69,7 @@ Define the following settings in the *Gift cards* panel:
 * **Delete gift card usage history after order cancellation**, to to delete gift card usage history after an order is cancelled.
 
 ## Return request settings
-On the *Return request settings* panel you can set up return requests. For more details see the [Return request](xref:en/running-your-store/order-management/return-requests) chapter.
+On the *Return request settings* panel you can set up return requests. For more details see the [Return requests](xref:en/running-your-store/order-management/return-requests) chapter.
 
 ## See also
 
