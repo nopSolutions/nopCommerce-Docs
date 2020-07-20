@@ -1,5 +1,5 @@
 ---
-title: Order Settings
+title: Order settings
 uid: en/running-your-store/order-management/order-settings
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
