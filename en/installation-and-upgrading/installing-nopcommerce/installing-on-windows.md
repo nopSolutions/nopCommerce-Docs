@@ -20,7 +20,7 @@ To install nopCommerce on Windows you should download it first. Go to [download 
 The next step is to upload the nopCommerce files to your server. To do this you need to use an FTP connection which allows transferring files between computers. Follow the next steps to set this up: 
 1. Choose and download one of FTP client applications which you will use for transferring files.
 1. Find your FTP credentials in your hosting control panel.
-1. In your FTP client application, set up the connection between your computer and the server using the FTP credentials you found on the previous step.
+1. In your FTP client application, set up the connection between your computer and the server using the FTP credentials you found in the previous step.
 1. Upload the nopCommerce files to the server.
 
 ## Create a database
