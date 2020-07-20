@@ -85,7 +85,7 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
     }
     ```
 
-- **GetPublicViewComponent**. This method should return the name of the view component which used to display public information for customers. We have created an appropriate view component on the previous step. For example:
+- **GetPublicViewComponent**. This method should return the name of the view component which used to display public information for customers. We have created an appropriate view component in the previous step. For example:
 
     ```csharp
     public string GetPublicViewComponent()
