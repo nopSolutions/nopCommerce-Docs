@@ -7,15 +7,24 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 # Inventory management
 
-Inventory management is a system of stock level controlling. In nopCommerce it consists of setting up the Inventory and tracking low stocks.
+Inventory management is a system of stock level controlling. In nopCommerce it consists of setting up the inventory and tracking low stocks.
 
-**To set up inventory**, go to **Catalog → Products → Edit a product**. In the Edit product details window, on the **Product info tab** go to **Inventory section**.
+To set up inventory, go to **Catalog → Products → Edit a product**. In the *Edit product details* window, go to the *Inventory* panel.
 
-Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing **Don't track inventory** option in the Inventory method field. In this case, the owner can define a **warehouse**, **minimum** and **maximum cart quantities**, **allowed quantities**, i.e. instead of a quantity text box customers will see a drop down list with predefined quantity options, and set a product as **not returnable**.
+## Don't track inventory
+Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing the *Don't track inventory* option in the **Inventory method** field. 
 
-![Inventory](_static/inventory-management/inventory.png)
+![Don't track inventory](_static/inventory-management/inventory.png)
 
-In case an inventory tracking is required, the shop owner can select an **inventory method** between two options: **track inventory (by product)** or **track inventory by product attributes**. The first option is for those who don't have product variants, and simply need to know how many items are left. In case of the tracking by attributes, inventory is managed for product attributes' combinations.
+In this case, the owner can define:
+- **Warehouse** which will be used when calculating shipping rates. Read more in the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) chapter.
+- **Minimum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 3 to only allow customers to purchase 3 or more of this product.
+- **Maximum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 5 to only allow customers to purchase 5 of this product.
+- In the **Allowed quantities** field, enter a comma separated list of quantities you want this product to be restricted to. Instead of a quantity textbox that allows them to enter any quantity, they will receive a dropdown list of the values you enter here.
+- Tick the **Not returnable** checkbox if this product is not returnable. In this case a customer won't be allowed to submit a return request.
+
+## Track inventory
+In case inventory tracking is required, the shop owner can select an **inventory method** between two options: **track inventory (by product)** or **track inventory by product attributes**. The first option is for those who don't have product variants, and simply need to know how many items are left. In case of the tracking by attributes, inventory is managed for product attributes' combinations.
 
 Once the **Track inventory** method is chosen, the section expands displaying new fields.
 
