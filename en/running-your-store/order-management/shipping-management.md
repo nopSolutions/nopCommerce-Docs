@@ -46,5 +46,6 @@ In this window you can:
 
 ## See also
 
+* [Setting up shipping](xref:en/getting-started/configure-shipping/index)
 * [Orders](xref:en/running-your-store/order-management/orders)
 * [Adding products](xref:en/running-your-store/catalog/products/add-products)
