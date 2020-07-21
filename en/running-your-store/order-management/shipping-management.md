@@ -9,6 +9,8 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 To search for and view shipments go to **Sales → Shipments**.
 
+## Shipment list
+
 ![Shipment list](_static/shipping-management/order-shipment-list.jpg)
 
 The top area of the page enables you to search for a shipment by different search criteria:
@@ -43,9 +45,11 @@ In this window you can:
 * **Print packaging slip**.
 * **Delete** the shipment.
 
+## Shipping settings
+
+To set up shipping visit the [Configure shipping](xref:en/getting-started/configure-shipping/index) section.
 
 ## See also
 
-* [Setting up shipping](xref:en/getting-started/configure-shipping/index)
 * [Orders](xref:en/running-your-store/order-management/orders)
 * [Adding products](xref:en/running-your-store/catalog/products/add-products)
