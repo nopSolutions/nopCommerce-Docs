@@ -183,7 +183,7 @@ To disable the **Next day air** option for Canada click the **Shipping method re
 
     > [!TIP]
     > 
-    > By the way, you can disable the estimation info by unticking the **Estimate shipping enabled (cart page)** and **Estimate shipping enabled (product page)** checkboxes on the **Configuration → Settings → Shipping settings** page.
+    > By the way, you can disable shipping estimation by unticking the **Estimate shipping enabled (cart page)** and **Estimate shipping enabled (product page)** checkboxes on the **Configuration → Settings → Shipping settings** page.
 
     When the customer proceeds for the shipping details the following options will be displayed: ![Estimation USA](_static/manual/estimation-popup-usa.jpg)
 
