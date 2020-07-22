@@ -8,9 +8,11 @@ contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 # Security settings
 
 To manage security settings go to **Configuration → Settings → General settings**.
-Define the *Security* settings as follows:
 
-![security](_static/security-settings/security.jpg)
+## Security
+
+Define the *Security* settings as follows:
+![Security](_static/security-settings/security.jpg)
 
 * In the **Admin area allowed IP** field, enter the IP addresses that are allowed to access the backend. Leave this field empty if you do not want to restrict access to the backend. Use commas between the IP addresses (for example, 127.0.0.10, 232.18.204.16).
 * Tick the **Enable honeypot** to enable [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)). In computer terminology, a honeypot is a trap set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.
@@ -20,9 +22,12 @@ Define the *Security* settings as follows:
 > 
 > It is recommended to make a backup of your database before you change the encryption key. Sensitive data includes all credit card information (only when this credit card information is stored in the store database).
 
-Define the *CAPTCHA* settings as follows:
+## CAPTCHA
 
-![captcha](_static/security-settings/captcha.png)
+CAPTCHA is a program that can tell whether it is a human or a computer is trying to access your web site. nopCommerce uses reCAPTCHA by Google. reCAPTCHA is a free service that protects your website from spam and abuse. reCAPTCHA uses an advanced risk analysis engine and adaptive challenges to keep automated software from engaging in abusive activities on your site. It does this while letting your valid users pass through with ease.
+
+Define the *CAPTCHA* settings as follows:
+![CAPTCHA](_static/security-settings/captcha.jpg)
 
 This panel will reveal following settings when **CAPTCHA enabled** is ticked:
 * **Type of reCAPTCHA**: choose reCAPTCHA v2 or reCAPTCHA v3. The differense between them is that reCAPTCHA v2 shows "I'm not a robot" checkbox but reCAPTCHA v3 is invisible for customers. Read more about [reCAPTCHA v2](https://developers.google.com/recaptcha/docs/display) and [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3).
