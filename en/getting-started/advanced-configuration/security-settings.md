@@ -9,6 +9,8 @@ contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 
 To manage security settings go to **Configuration → Settings → General settings**.
 
+This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+
 ## Security
 
 Define the *Security* settings as follows:
