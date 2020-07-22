@@ -11,6 +11,8 @@ Catalog settings include enabling options for product sorting, changing view mod
 
 To define catalog settings, go to **Configuration → Settings → Catalog settings**. The catalog settings page is available in *advanced* and *basic* modes (in the advanced mode by default).
 
+This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+
 ## Set up search
 The top panel on the page sets up *Search*:
 
