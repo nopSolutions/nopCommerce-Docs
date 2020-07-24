@@ -39,7 +39,7 @@ In the *Info* panel define the following blog post details:
   >
 	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
-While editing an existing blog or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the blog post will appear on the site.
+While editing an existing blog post or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the blog post will appear on the site.
 
 ### SEO
 In the *SEO* panel define the following blog post details:
@@ -65,7 +65,7 @@ You can manage blog settings in **Configuration → Settings → Blog settings**
 
 This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
-![P1](_static/blog/Blog-Setting.png)
+![Blog settings](_static/blog/Blog-Setting.png)
 
 ### Common
 
