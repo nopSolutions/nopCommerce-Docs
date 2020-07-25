@@ -16,7 +16,7 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 ## Summary
 
-nopCommerce is open-source Microsoft ASP.NET based e-commerce solution. This is a basic guide for developers on how to start developing on nopCommerce.
+nopCommerce is open-source Microsoft ASP.NET based eCommerce solution. This is a basic guide for developers on how to start developing on nopCommerce.
 
 ## 1. Tools Required for Development
 
