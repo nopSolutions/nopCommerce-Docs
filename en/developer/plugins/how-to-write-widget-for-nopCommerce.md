@@ -67,7 +67,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
         "Author": "nopCommerce team, Nicolas Muniere",
         "DisplayOrder": 1,
         "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",
-        "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about the visitors and e-commerce conversion on your website"
+        "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about the visitors and eCommerce conversion on your website"
     }
     ```
 
