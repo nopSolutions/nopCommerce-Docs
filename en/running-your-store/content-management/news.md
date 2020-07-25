@@ -36,6 +36,11 @@ In the *Info* panel define the following news item details:
  > 
  > You can leave these fields empty if you do not want to define news item start and end dates.
 
+ - Choose the stores in the **Limited to stores** field to enable this news item for specific stores only. Leave the field empty in case this functionality is not required.
+  > [!NOTE]
+  >
+	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+
 - Select the **Published** checkbox, to publish this news item in your store.
 
 While editing an existing news item or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the news item will appear on the site.
