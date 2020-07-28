@@ -394,6 +394,37 @@ pre {
   display: none;
 }
 
+/*QUICK LINKS BLOCK*/
+.click-links-title {
+  text-align: center;
+}
+.quick-links {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.quick-item {
+  width: 48%;
+  float: left;
+  padding: 10px 15px;
+  margin: 0 1%;
+  border: 1px solid #dee5e8;
+}
+.quick-item h3 {
+  color: #9daab5;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.quick-item h3 a {
+  color: #337ab7;
+}
+.quick-item p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #a7a7a7;
+}
+
 /* MEDIA */
 
 @media only screen and (max-width: 768px){
