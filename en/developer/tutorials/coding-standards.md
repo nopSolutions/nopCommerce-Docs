@@ -254,7 +254,7 @@ The style rules in this section concern expression-level preferences, including 
 
   ```csharp
   //Right
-  private int Age { get; }
+  public int Age { get; }
   ```
 
   ```csharp
