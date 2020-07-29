@@ -27,7 +27,7 @@ To activate a payment method, click **Edit** beside the required method, tick th
 * **Refund** indicates  this method allows making a money refund after the amount was charged and captured already.
 * **Partial refund** indicates whether this method allows making a partial money refund after the amount was charged and captured already.
 * **Void** indicates whether this method allows making a money refund before the amount was charged (when the payment status is pending).
-* **Recurring support** indicates whether this method allows reccuring payments.
+* **Recurring support** indicates whether this method allows recurring payments.
 
 Click **Configure** beside a payment method to set it up.
 
