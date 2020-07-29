@@ -2,12 +2,12 @@
 title: nopCommerce Documentation
 uid: en/index
 author: git.AndreiMaz
-contributors: git.AndreiMaz
+contributors: git.AndreiMaz, git.mariannk
 ---
 
 # nopCommerce Documentation
 
-nopCommerce is an open source ecommerce software that contains both a catalog frontend and an administration tool backend. nopCommerce is a fully customizable shopping cart, stable, secure and extendable. From downloads to documentation, [nopCommerce.com](https://www.nopCommerce.com) offers a comprehensive base of information, resources, and support to the nopCommerce community.
+nopCommerce is an open source eCommerce software that contains both a catalog frontend and an administration tool backend. nopCommerce is a fully customizable shopping cart, stable, secure and extendable. From downloads to documentation, [nopCommerce.com](https://www.nopCommerce.com) offers a comprehensive base of information, resources, and support of the nopCommerce community.
 
 The nopCommerce documentation is here to help you through the process of setting up your store. These will allow you to up-and-run your site quickly.
 
@@ -113,7 +113,3 @@ The nopCommerce documentation is here to help you through the process of setting
 		<p>We welcome new questions and discussion so feel free to ask your question on the nopCommerce forums</p>
 	</div>
 </div>
-
-## Table of content
-* [User guide](xref:en/getting-started/index)
-* [Developers guide](xref:en/developer/index)
