@@ -416,9 +416,9 @@ pre {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  box-shadow: 0 0px 11px 5px rgba(0,0,0,.1);
-  -webkit-box-shadow: 0 0px 11px 5px rgba(0,0,0,.1);
-  -moz-box-shadow: 0 0px 11px 5px rgba(0,0,0,.1);
+  box-shadow: 0 0px 10px 4px rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 0px 10px 4px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 0px 10px 4px rgba(0,0,0,.1);
 }
 .quick-item:first-child{
   margin-left: 0;
