@@ -76,7 +76,7 @@ Define following forum settings in the *Permissions* panel:
 - Tick the **Allow users to vote for posts** checkbox to enable voting.
   - The **Maximum votes per day** field sets a number of votes each user can do per day if the previous setting is enabled.
 - Enable private messages by checking **Allow private messages** checkbox. If enabled the following two settings will be visible:
-  - Tick the **Show alert for PM** checkbox to enable the alert popup if new private messages were recieved.
+  - Tick the **Show alert for PM** checkbox to enable the alert popup if new private messages were received.
   - Tick the **Notify about private messages** if a customer should be notified by email about new private messages.
 
 ### Page sizes
