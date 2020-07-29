@@ -14,7 +14,7 @@ The nopCommerce documentation is here to help you through the process of setting
 <h2 class="click-links-title">Install</h2>
 <div class="quick-links">
     <div class="quick-item">
-        <h3><a href="/en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.html">Pre-installed nopCommerce</a></h3>
+        <h3><a href="/en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.html">Pre-installed</a></h3>
         <p>Simple and fast nopCommerce installation solution created by the nopCommerce team and Winhost</p>
     </div>
     <div class="quick-item">
