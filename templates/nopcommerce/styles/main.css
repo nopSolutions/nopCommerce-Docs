@@ -431,14 +431,18 @@ pre {
   font-size: 24px;
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   background-repeat: no-repeat;
   background-size: 22%;
   padding-left: 35px;
 }
+.quick-item h3 .anchorjs-link {
+  display: none;
+}
 .quick-item.pre-installed h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/installation-upgrade.png);
   background-position: 5px 0;
+  background-size: 27%;
 }
 .quick-item.manually h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/customization-services.png);
@@ -517,7 +521,12 @@ pre {
   background-position: 45px 10px;
   padding-left: 28px;
 }
-.quick-item h3 a {
+.quick-item.plugins h3 {
+  background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/integrations.png);
+  background-position: 45px 10px;
+  padding-left: 28px;
+}
+.quick-item a h3 {
   color: #337ab7;
 }
 .quick-item p {
