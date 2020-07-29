@@ -447,12 +447,12 @@ pre {
 }
 .quick-item.admin-panel h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/administration.png);
-  background-position: 13px 4px;
+  background-position: 13px 2px;
   padding-left: 45px;
 }
 .quick-item.design h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/web-design-services.png);
-  background-position: 25px 4px;
+  background-position: 30px 4px;
   padding-left: 10px;
 }
 .quick-item.catalog h3 {
@@ -467,7 +467,7 @@ pre {
 }
 .quick-item.shipping h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/shipping-category.png);
-  background-position: 23px 4px;
+  background-position: 28px 4px;
   padding-left: 28px;
 }
 .quick-item.more h3 {
@@ -477,13 +477,14 @@ pre {
 }
 .quick-item.orders h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/fast.png);
-  background-position: 45px 4px;
+  background-position: 45px 1px;
   padding-left: 28px;
 }
 .quick-item.customers h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/members.png);
-  background-position: 20px 4px;
-  padding-left: 28px;
+  background-position: 15px 4px;
+  padding-left: 40px;
+  background-size: 27%;
 }
 .quick-item.content h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/showcase.png);
@@ -492,8 +493,9 @@ pre {
 }
 .quick-item.promotional h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/marketing.png);
-  background-position: 45px 4px;
-  padding-left: 28px;
+  background-position: 25px 0px;
+  padding-left: 35px;
+  background-size: 27%;
 }
 .quick-item.search-engines h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/Usability.png);
@@ -512,7 +514,7 @@ pre {
 }
 .quick-item.forums h3 {
   background-image: url(https://www.nopcommerce.com/Themes/OfficialSite/Content/images/community-forums.png);
-  background-position: 45px 4px;
+  background-position: 45px 10px;
   padding-left: 28px;
 }
 .quick-item h3 a {
