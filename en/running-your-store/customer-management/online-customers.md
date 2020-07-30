@@ -2,23 +2,27 @@
 title: Online customers
 uid: en/running-your-store/customer-management/online-customers
 author: git.AndreiMaz
-contributors: git.exileDev, git.dunaenko
+contributors: git.exileDev, git.dunaenko, git.mariannk
 ---
 
 # Online customers
 
-Online Customers section enables store owners to view customers that were online within the last 20 minutes. This information is useful for the store owners as it shows the last visited page and helps to decide upon actions required to convert visitors into buyers.
+Online customers section enables store owners to view customers that were online within the last 20 minutes. This information is useful for the store owners as it shows the last visited page and helps to decide upon actions required to convert visitors into buyers.
 
-To access this window, go to **Customers → Online Customers**.
+To access this window, go to **Customers → Online customers**.
 
-![online-customers](_static/online-customers/online-customers.png)
+![Online customers](_static/online-customers/list.jpg)
 
-The Online Customers window includes the following columns:
+The *Online customers* window includes the following columns:
 
-- **Customer Info**, you can view and edit the customer's information by clicking on the link
-- **Customer IP Address** - Current IP address of customer
-- **Customer Location** - IP address wise location of customer
-- **Last Activity** - date and time the online customer last logged in
-- **Last Visited Page** - you can enable or disable this feature in customer settings 
+- **Customer info**, you can view and edit the customer's information by clicking on the link.
+- **IP Address** - current IP address of customer
+- **Location** - IP address wise location of customer.
+- **Last activity** - date and time the online customer last logged in.
+- **Last visited page** - the page the customer visited last time.
 
-	This product includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
+> [!NOTE]
+>
+> To see the last visited page you need to enable the **Store last visited page** setting on the **Configuration → Settings → Customer settings** page (*Account* panel).
+
+This page includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
