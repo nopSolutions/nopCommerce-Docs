@@ -24,6 +24,10 @@ h3 {
   font-size: 20px
 }
 
+blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child, ol ol, ol ul, ul ol, ul ul, ol, ul {
+  margin-bottom: 15px;
+}
+
 /* NAVBAR */
 .navbar-default {
   background-color: transparent;
