@@ -37,7 +37,7 @@ public class DistOfCustByCountryPlugin: BasePlugin
 
         public override string GetConfigurationPageUrl()
         {
-            return $"{_webHelper.GetStoreLocation()}Admin/DistOfCustBuCountryPlugin/Configure";
+            return $"{_webHelper.GetStoreLocation()}Admin/DistOfCustByCountryPlugin/Configure";
         }
 
         public override void Install()
@@ -124,7 +124,7 @@ public class CustomersByCountry : ICustomersByCountry
                     .Name,
                 c.Username
             })
-            .GroupBy(c => c.Username)
+            .GroupBy(c => c.Name)
             .Select(cbc => new CustomersDistribution { Country = cbc.Key, NoOfCustomers = cbc.Count() }).ToList();
     }
 }
