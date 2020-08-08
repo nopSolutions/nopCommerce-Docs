@@ -2,7 +2,7 @@
 title: Creating a nopCommerce plugin
 uid: en/developer/plugins/index
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.exileDev, git.DmitriyKulagin, git.cromatido
 ---
 
 # Creating a nopCommerce plugin
@@ -20,3 +20,5 @@ contributors: git.exileDev, git.DmitriyKulagin
 * [Adding CSS and JS resource files into nopCommerce Plugin](xref:en/developer/plugins/resource-files)
 * [How to write a widget for nopCommerce](xref:en/developer/plugins/how-to-write-widget-for-nopCommerce)
 * [How to write a Tax Plugin for nopCommerce 4.20](xref:en/developer/plugins/how-to-write-tax-plugin-4.20)
+
+* [The plugin.json file](xref:en/developer/plugins/plugin.json)
