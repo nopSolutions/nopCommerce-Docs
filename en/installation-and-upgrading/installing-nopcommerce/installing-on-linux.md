@@ -194,7 +194,8 @@ Restart the nginx server
 
 `sudo systemctl restart nginx`
 
-**Now everything is ready, you can proceed to install and configure the store**
+**Now everything is ready, you can proceed to 
+[install](xref:en/installation-and-upgrading/installing-nopcommerce/index) and [configure](xref:en/getting-started/index) the store**.
 
 ## Troubleshooting
 
