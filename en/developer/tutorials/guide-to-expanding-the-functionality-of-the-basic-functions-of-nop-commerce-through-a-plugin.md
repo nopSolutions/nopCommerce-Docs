@@ -81,7 +81,7 @@ This file is required for every Plugin or Widget we create in nopCommerce. This 
     "FriendlyName": "Hello World", //Friendly Name for your plugin/widget
     "SystemName": "Widget.HelloWorld", //This is unique among all plugins/widgets
     "Version": "1.0", //Version of your Plugin/Widget
-    "SupportedVersions": [ "4.20" ], //Version of nopCommerce this Plugin/Widget is supported for. We can add multiple versions, since it is an array.
+    "SupportedVersions": [ "4.30" ], //Version of nopCommerce this Plugin/Widget is supported for. We can add multiple versions, since it is an array.
     "Author": "nopCommerce team", //This can be your name or your Team Name
     "DisplayOrder": 1,
     "FileName": "Nop.Plugin.Widget.HelloWorld.dll", //Output dll file name
