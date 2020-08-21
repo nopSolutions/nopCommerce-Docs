@@ -19,7 +19,7 @@ From the list, you can proceed to the customer details page by clicking on the c
 
 ## Shopping cart
 
-Select the *Shopping cart* from the **Shopping cart type** dropdown list on the **Sales → Shopping carts and wishlists** and click **Search** to view the shopping cart list. This list ontains all products that were placed in carts, but not purchased.
+Select the *Shopping cart* from the **Shopping cart type** dropdown list on the **Sales → Shopping carts and wishlists** and click **Search** to view the shopping cart list. This list contains all products that were placed in carts, but not purchased.
 
 The following screenshot shows how a customer sees a shopping cart page in the public store:
 ![Shopping carts public](_static/shopping-carts-and-wishlists/shopping-cart-public.jpg)
