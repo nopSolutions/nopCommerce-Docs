@@ -34,7 +34,7 @@ Since the version 4.20 you can automatically upload favicons through the admin a
 
          - In the **Version/Refresh** tab, select the option depending on whether your site is already in production. The setting description will help you with this. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
 
-         - In the **Additional fields** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
+         - In the **Additional files** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
 
       * Now all settings are set, click the button to generate. ![generate_button](_static/adding-a-favicon/generate_button.png)
 
