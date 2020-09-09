@@ -24,7 +24,7 @@ To do this click the **Edit** button in the plugin row on the payment method lis
 
 If you already have a PayPal account just proceed to the [next section](#3-set-up-the-paypal-developer-dashboard).
 
-Register a Business account on [PayPal](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
+Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Then fill in the information about yourself and your business:
 
 ![Step 1](_static/paypal-smart-payment-buttons/signUp1step.png)
 
