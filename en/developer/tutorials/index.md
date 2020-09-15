@@ -32,3 +32,4 @@ The following is a list of common questions asked by developers working with nop
 * [Content Security Policy (CSP) Headers](xref:en/developer/tutorials/csp-headers)
 * [Description settings from appsettings.json file and NopConfig and HostingConfig class](xref:en/developer/tutorials/description-of-settings-from-appsettings-json-file-and-NopConfig-class)
 * [Description of plugin system](xref:en/developer/tutorials/description-of-plugin-system)
+* [Architecture of nopCommerce 4.20 and under](xref:en/developer/tutorials/architecture-of-nopCommerce-4.20-and-under)
