@@ -152,19 +152,19 @@ public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
     public bool HideInWidgetList => false;
 
     /// <summary>
-    /// Gets widget zones where this widget should be rendered
+    /// Gets a name of a view component for displaying widget
     /// </summary>
-    /// <returns>Widget zones</returns>
+    /// <param name="widgetZone">Name of the widget zone</param>
+    /// <returns>View component name</returns>
     public string GetWidgetViewComponentName(string widgetZone)
     {
         return "HelloWorldWidget";
     }
 
     /// <summary>
-    /// Gets a name of a view component for displaying widget
+    /// Gets widget zones where this widget should be rendered
     /// </summary>
-    /// <param name="widgetZone">Name of the widget zone</param>
-    /// <returns>View component name</returns>
+    /// <returns>Widget zones</returns>
     public IList<string> GetWidgetZones()
     {
         return new List<string> { "home_page_before_categories" };
