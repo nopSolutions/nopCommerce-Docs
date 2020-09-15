@@ -2,7 +2,7 @@
 title: How to write a plugin for nopCommerce
 uid: en/developer/plugins/how-to-write-plugin-4.30
 author: git.AndreiMaz
-contributors: git.skoshelev
+contributors: git.skoshelev, git.cromatido
 ---
 
 # How to write a plugin for nopCommerce
@@ -53,32 +53,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     > 
     > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it's not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
 
-1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For example, PayPal Standard payment plugin has the following `plugin.json` file:
-
-    ```json
-    {
-        "Group": "Payment methods",
-        "FriendlyName": "PayPal Standard",
-        "SystemName": "Payments.PayPalStandard",
-        "Version": "1.60",
-        "SupportedVersions": [ "4.30" ],
-        "Author": "nopCommerce team",
-        "DisplayOrder": 1,
-        "FileName": "Nop.Plugin.Payments.PayPalStandard.dll",
-        "Description": "This plugin allows paying with PayPal Standard"
-    }
-    ```
-
-    > [!NOTE]
-    > Also, `plugin.json` file may contain the following fields:
-    >
-    > * **LimitedToStores** - The list of store identifiers in which this plugin is available. If empty, then this plugin is available in all stores.
-    > * **LimitedToCustomerRoles** - The list of customer role identifiers for which this plugin is available. If empty, then this plugin is available for all ones.
-    > * **DependsOnSystemNames** - The list of plugins' system name that this plugin depends on
-
-    Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format Nop.Plugin.{Group}.{Name}.dll (it is your plugin assembly filename). Ensure that *"Copy to Output Directory"* property of this file is set to *"Copy if newer"*.
-
-    ![p2](_static/how-to-write-plugin-4.30/write_plugin_4.30_2.jpg)
+1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json)
 
 1. The last required step is to create a class which implements **IPlugin** interface (Nop.Services.Plugins namespace). nopCommerce has **BasePlugin** class which already implements some IPlugin methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from IPlugin. For example, we have "IPaymentMethod" interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as *ProcessPayment()* or *GetAdditionalHandlingFee()*. Currently nopCommerce has the following specific plugin interfaces:
 

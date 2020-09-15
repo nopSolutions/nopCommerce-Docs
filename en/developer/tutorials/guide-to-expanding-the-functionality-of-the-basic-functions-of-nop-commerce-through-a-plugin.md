@@ -2,7 +2,7 @@
 title: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
 uid: en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
 author: nop.sea
-contributors: git.RomanovM, git.DmitriyKulagin
+contributors: git.RomanovM, git.DmitriyKulagin, git.cromatido
 ---
 
 # A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
@@ -73,25 +73,7 @@ What this will do is it copies all dll files related to this project into the `N
 
 ### Step 3: Create a Plugin.json file
 
-This file is required for every Plugin or Widget we create in nopCommerce. This file contains meta information about our plugin that describes our plugin. It contains information like, Name of our plugin, which version of nopCommerce it is target/built for, some description about our plugin, version of our plugin and so on. After you create "Plugin.json" file, copy this content inside your file and modify according to your requirement.
-
-```json
-{
-    "Group": "Documents Examples", //Group of Project, this may be your company name
-    "FriendlyName": "Hello World", //Friendly Name for your plugin/widget
-    "SystemName": "Widget.HelloWorld", //This is unique among all plugins/widgets
-    "Version": "1.0", //Version of your Plugin/Widget
-    "SupportedVersions": [ "4.20" ], //Version of nopCommerce this Plugin/Widget is supported for. We can add multiple versions, since it is an array.
-    "Author": "nopCommerce team", //This can be your name or your Team Name
-    "DisplayOrder": 1,
-    "FileName": "Nop.Plugin.Widget.HelloWorld.dll", //Output dll file name
-    "Description": "This Plugin/Widget is build as an example for nopCommerce documentation." //Short description about your plugin/widget.
-}
-```
-
-This file is used by nopCommerce while listing our Plugin/Widget in the plugin list in admin panel and to identify our plugin uniquely among all installed and uninstalled plugins in the entire application. So in order for nopCommerce to be able to read this file we need to copy this file to its output directory while building the project. To do that right click on Plugin.json file and click property. In Property set value for "Copy to output directory" to "copy if newer"
-
-![image4](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image4.png)
+This file is required for every Plugin or Widget we create in nopCommerce. This file contains meta information about our plugin that describes our plugin. It contains information like, Name of our plugin, which version of nopCommerce it is target/built for, some description about our plugin, version of our plugin and so on.For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json).
 
 ### Step 4: Create a class that extends from BasePlugin Class
 

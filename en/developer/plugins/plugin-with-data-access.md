@@ -2,7 +2,7 @@
 title: Plugin with data access
 uid: en/developer/plugins/plugin-with-data-access
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.skoshelev
+contributors: git.DmitriyKulagin, git.skoshelev, git.cromatido
 ---
 
 # Plugin with data access
@@ -29,21 +29,7 @@ Add the following folders and `plugin.json` file.
 
 ![plugin-with-data-access.4.30_2](_static/plugin-with-data-access.4.30/plugin-with-data-access.4.30_2.jpg)
 
-You can view the `plugin.json` file content below:
-
-```JSON
-{
-  "Group": "Other",
-  "FriendlyName": "Product view tracker",
-  "SystemName": "Other.ProductViewTracker",
-  "Version": "1.00",
-  "SupportedVersions": [ "4.30" ],
-  "Author": "nopCommerce team",
-  "DisplayOrder": 1,
-  "FileName": "Nop.Plugin.Other.ProductViewTracker.dll",
-  "Description": "My awesome plugin"
-}
-```
+For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json).
 
 Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
 
