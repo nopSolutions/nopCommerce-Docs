@@ -1,6 +1,6 @@
 ---
 title: Description of the structure of the plugin.json file
-uid: en/developer/plugins/plugin.json
+uid: en/developer/plugins/plugin_json
 author: git.cromatido
 contributors: git.cromatido
 ---

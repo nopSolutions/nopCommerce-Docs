@@ -496,6 +496,9 @@
         - 
           name: Adding CSS and JS resource files into nopCommerce plugin
           href: developer/plugins/resource-files.md
+        - 
+          name: Description of the structure of the plugin.json file
+          href: developer/plugins/plugin.json.md
     - 
       name: Designer's guide
       href: developer/design/index.md

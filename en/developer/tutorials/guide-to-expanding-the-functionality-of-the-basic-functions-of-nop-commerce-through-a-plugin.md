@@ -73,7 +73,7 @@ What this will do is it copies all dll files related to this project into the `N
 
 ### Step 3: Create a Plugin.json file
 
-This file is required for every Plugin or Widget we create in nopCommerce. This file contains meta information about our plugin that describes our plugin. It contains information like, Name of our plugin, which version of nopCommerce it is target/built for, some description about our plugin, version of our plugin and so on.For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json).
+This file is required for every Plugin or Widget we create in nopCommerce. This file contains meta information about our plugin that describes our plugin. It contains information like, Name of our plugin, which version of nopCommerce it is target/built for, some description about our plugin, version of our plugin and so on.For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 ### Step 4: Create a class that extends from BasePlugin Class
 

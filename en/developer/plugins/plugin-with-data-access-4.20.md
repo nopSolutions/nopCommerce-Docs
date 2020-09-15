@@ -28,7 +28,7 @@ Add the following folders and `plugin.json` file.
 
 ![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
 
-For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json).
+For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 Then add references to the following projects: Nop.Core, Nop.Data, Nop.Web.Framework
 

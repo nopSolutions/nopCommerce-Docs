@@ -28,7 +28,7 @@ Add the following folders and `plugin.json` file.
 
 ![plugin-with-data-access.4.30_2](_static/plugin-with-data-access.4.30/plugin-with-data-access.4.30_2.jpg)
 
-For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json).
+For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
 
