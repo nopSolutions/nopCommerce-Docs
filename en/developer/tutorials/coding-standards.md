@@ -534,13 +534,13 @@ This style rule concerns whether out variables are declared inline or not. Start
 
   ```csharp
   //Right
-  if (int.TryParse(value, out int i) {...}
+  if (int.TryParse(value, out int i)) {...}
   ```
 
   ```csharp
   //Wrong
   int i;
-  if (int.TryParse(value, out i) {...}
+  if (int.TryParse(value, out i)) {...}
   ```
 
 #### C# expression-level preferences
