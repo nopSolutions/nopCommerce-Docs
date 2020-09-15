@@ -2,7 +2,7 @@
 title: How to write a widget for nopCommerce
 uid: en/developer/plugins/how-to-write-widget-for-nopCommerce
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin
+contributors: git.nopsg, git.DmitriyKulagin, git.cromatido
 ---
 
 # How to write a widget for nopCommerce
@@ -53,30 +53,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
 
     > [!NOTE] The **WIDGET_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, Widgets.GoogleAnalytics.
 
-1. After updating the .csproj file, **plugin.json** file should be added which is required for widget.  This file contains meta information describing your widget. Just copy this file from any other existing plugin/widget and modify it for your needs. For example, **Google Analytics** widget has the following *plugin.json* file:
-
-    ```json
-    {
-        "Group": "Widgets",
-        "FriendlyName": "Google Analytics ",
-        "SystemName": "Widgets.GoogleAnalytics",
-        "Version": "1.62",
-        "SupportedVersions": [ "4.30" ],
-        "Author": "nopCommerce team, Nicolas Muniere",
-        "DisplayOrder": 1,
-        "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",
-        "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about the visitors and eCommerce conversion on your website"
-    }
-    ```
-
-    Actually all fields are self-descriptive, but here are some notes:
-
-      - **SystemName** field should be unique.
-      - **Version** field is a version number of your widget. You can set it to any value you like.
-      - **SupportedVersions** field can contain a list of supported nopCommerce versions separated bycommas (ensure that the current version of nopCommerce is included in this list, otherwise, it willnot be loaded).
-      - **FileName** field has the following format `Nop.Plugin.Widgets.{Name}.dll` (it is your plugin assembly filename). Ensure that **Copy to Output Directory** property of this file is set to **Copy if newer**.
-
-    ![image3](_static/how-to-write-a-widget-for-nopCommerce/image3.png)
+1. After updating the .csproj file, **plugin.json** file should be added which is required for widget.  This file contains meta information describing your widget. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
     The last required step is to create a class which implements **BasePlugin** (*Nop.Core.Plugins* namespace) and **IWidgetPlugin** interface (*Nop.Services.Cms* namespace). IWidgetPlugin allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a live chat block on the bottom right of your site.
 
