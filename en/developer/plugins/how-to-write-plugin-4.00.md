@@ -61,7 +61,6 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     If your plugin doesn't fit any of these interfaces, then use the "IMiscPlugin" interface.
 
 > [!IMPORTANT]
-> 
 > After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
 ## Handling requests. Controllers, models and views
@@ -79,7 +78,7 @@ You can find more information about the MVC pattern [here](http://www.asp.net/mv
 So let's start:
 
 - **Create the model**. Add a Models folder in the new plugin, and then add a new model class which fits your need.
-- **Create the view**. Add a Views folder in the new plugin, and then add a cshtml file named `Configure.cshtml`. Set "Build Action" property of the view file is set to "Content", and the "Copy to Output Directory" property is set to "Copy if newer". Note that configuration page should use "_ConfigurePlugin" layout. Also make sure that you have _ViewImports file into your \Views directory. You can just copy it from any other existing plugin.
+- **Create the view**. Add a Views folder in the new plugin, and then add a cshtml file named `Configure.cshtml`. Set "Build Action" property of the view file is set to "Content", and the "Copy to Output Directory" property is set to "Copy if newer". Note that configuration page should use `_ConfigurePlugin` layout. Also make sure that you have `_ViewImports` file into your `\Views` directory. You can just copy it from any other existing plugin.
 - **Create the controller**. Add a Controllers folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers `{Group}{Name}Controller.cs`. For example, PaymentPayPalStandardController. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it "Configure". Prepare a model class and pass it to the following view using a physical view path: - `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
 - Use the following attributes for your action method:
 
@@ -101,7 +100,6 @@ Where ControllerName is a name of your controller and ActionName is a name of ac
 Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin → Configuration → Plugins.
 
 > [!TIP]
-> 
 > The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
 
 For example, the project structure of PayPalStandard plugin looks like the image below:
@@ -116,7 +114,6 @@ This step is optional. Some plugins can require additional logic during plugin i
 - Uninstall. This method will be invoked during plugin uninstallation.
 
 > [!IMPORTANT]
-> 
 > If you override one of these methods, do not hide its base implementation.
 
 For example, overridden "Install" method should include the following method call: base.Install(). The "Install" method of PayPalStandard plugin looks like the code below
@@ -134,7 +131,6 @@ public override void Install()
 ```
 
 > [!TIP]
-> 
 > The list of installed plugins is located in `\App_Data\installedPlugins.json`. The list is created during installation.
 
 ## Routes

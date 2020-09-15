@@ -48,9 +48,8 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     ```
 
     > [!TIP]
-    > 
     > Where PLUGIN_OUTPUT_DIRECTORY should be replaced with the plugin name, for example, Payments.PayPalStandard.
-    > 
+    >
     > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it's not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
 
 1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin.json)
@@ -67,11 +66,8 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 - **IMiscPlugin**. If your plugin doesn't fit any of these interfaces
 
 > [!IMPORTANT]
-> 
 > Important note: After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
-
-> [!IMPORTANT]
-> 
+>
 > You may need to rebuild your solution after adding your plugin. If you do not see DLLs for your plugin under Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY, you need to rebuild your solution. nopCommerce will not list your plugin in the Local Plugins page if your DLLs do not exist in the correct folder in Nop.Web.
 
 ## Handling requests. Controllers, models and views
@@ -115,8 +111,7 @@ Where *{CONTROLLER_NAME}* is a name of your controller and *{ACTION_NAME}* is a 
 Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under **Admin → Configuration → Local Plugins**.
 
 > [!TIP]
-> 
-> Tip: The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
+> The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
 
 For example, the project structure of PayPalStandard plugin looks like the image below:
 
@@ -131,7 +126,6 @@ This step is optional. Some plugins can require additional logic during plugin i
 1. **Update**. This method will be invoked during plugin the update (when its version is changed in the `plugin.json` file).
 
 > [!IMPORTANT]
-> 
 > Important note: If you override one of these methods, do not hide its base implementation.
 
 For example, overridden "Install" method should include the following method call: *base.Install()*. The "Install" method of PayPalStandard plugin looks like the code below
@@ -150,7 +144,6 @@ public override void Install()
 ```
 
 > [!TIP]
-> 
 > The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
 
 ## Routes

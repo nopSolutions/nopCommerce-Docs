@@ -20,5 +20,4 @@ contributors: git.exileDev, git.DmitriyKulagin, git.cromatido
 * [Adding CSS and JS resource files into nopCommerce Plugin](xref:en/developer/plugins/resource-files)
 * [How to write a widget for nopCommerce](xref:en/developer/plugins/how-to-write-widget-for-nopCommerce)
 * [How to write a Tax Plugin for nopCommerce 4.20](xref:en/developer/plugins/how-to-write-tax-plugin-4.20)
-
-* [The plugin.json file](xref:en/developer/plugins/plugin.json)
+* [Description of the structure of the plugin.json file](xref:en/developer/plugins/plugin.json)

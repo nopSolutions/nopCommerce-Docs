@@ -1,15 +1,15 @@
 ---
-title: The plugin.json file
+title: Description of the structure of the plugin.json file
 uid: en/developer/plugins/plugin.json
 author: git.cromatido
 contributors: git.cromatido
 ---
 
+# Description of the structure of the `plugin.json` file
 
-## The plugin.json file:
  This file contains the Meta information description for a plugin which is used by nopCommerce to determine which group this plugin belongs to,  if the plugin is compatible with the current version of nopCommerce or not, what is the version of the plugin and several other information. Each nopCommerce plugin must have this file.
 
-### File Structure
+## File Structure
 
 ```json
 {
@@ -50,39 +50,40 @@ contributors: git.cromatido
 - **DependsOnSystemNames** - The list of plugins' system name that this plugin depends on
 
 > [!TIP]
-> After you edit your **plugin.json** file's content you need to set its `Copy to Output Directory` property value to `copy if newer`. 
->It is required because we need this file to be copied to compiled directory from where nopCommerce can access this file to display our plugin in the plugin list in admin panel.
+> After you edit your **plugin.json** file's content you need to set its `Copy to Output Directory` property value to `Copy if newer`.
+> ![image3](_static/plugin.json/plugin_json_0.jpg)
+> It is required because we need this file to be copied to compiled directory from where nopCommerce can access this file to display our plugin in the plugin list in admin panel.
 
 ## Examples
 
 - The  **FixedOrByCountryStateZip** plugin has the following `plugin.json` file:
 
-```json
-{
-    "Group": "Tax Providers",
-    "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
-    "SystemName": "Tax. FixedOrByCountryStateZip",
-    "Version": "1.29",
-    "SupportedVersions": [ "4.20" ],
-    "Author": "nopCommerce team ",
-    "DisplayOrder": 1,
-    "FileName": "Nop.Plugin.Tax. FixedOrByCountryStateZip.dll",
-    "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes "
-}
-```
+  ```json
+  {
+      "Group": "Tax Providers",
+      "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
+      "SystemName": "Tax. FixedOrByCountryStateZip",
+      "Version": "1.29",
+      "SupportedVersions": [ "4.20" ],
+      "Author": "nopCommerce team ",
+      "DisplayOrder": 1,
+      "FileName": "Nop.Plugin.Tax. FixedOrByCountryStateZip.dll",
+      "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes "
+  }
+  ```
 
 - The **Google Analytics** widget has the following *plugin.json* file:
 
-```json
-    {
-        "Group": "Widgets",
-        "FriendlyName": "Google Analytics ",
-        "SystemName": "Widgets.GoogleAnalytics",
-        "Version": "1.62",
-        "SupportedVersions": [ "4.30" ],
-        "Author": "nopCommerce team, Nicolas Muniere",
-        "DisplayOrder": 1,
-        "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",
-        "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about the visitors and eCommerce conversion on your website"
-    }
-```
+  ```json
+      {
+          "Group": "Widgets",
+          "FriendlyName": "Google Analytics ",
+          "SystemName": "Widgets.GoogleAnalytics",
+          "Version": "1.62",
+          "SupportedVersions": [ "4.30" ],
+          "Author": "nopCommerce team, Nicolas Muniere",
+          "DisplayOrder": 1,
+          "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",
+          "Description": "This plugin integrates with Google Analytics. It   keeps track of statistics about the visitors and eCommerce conversion   on your website"
+      }
+  ```

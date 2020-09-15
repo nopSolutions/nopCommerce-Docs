@@ -69,7 +69,7 @@ When a plugin/widget is installed, you will see **Uninstall** button. It is a go
 
 ![image5](_static/how-to-write-a-tax-plugin-4.20/image5.png)
 
-There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled. 
+There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled.
 
 > [!NOTE]
 > Deleting will remove physical files from the server.
