@@ -406,7 +406,7 @@
           name: Coding standards
           href: developer/tutorials/coding-standards.md
         - 
-          name: Source code organization.
+          name: Source code organization
           href: developer/tutorials/source-code-organization.md
         - 
           name: Architecture of nopCommerce 4.20 and under
