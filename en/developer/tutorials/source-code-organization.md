@@ -1,11 +1,11 @@
 ---
-title: Source code organization. Architecture of nopCommerce.
+title: Source code organization
 uid: en/developer/tutorials/source-code-organization
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Source code organization. Architecture of nopCommerce
+# Source code organization
 
 This document is a guide for developers to the solution structure of nopCommerce. It is a document for a new nopCommerce developer to start learning about the nopCommerce code base. First of all, nopCommerce source code is quite easy to get. It's an open source application, so all you have to do to get the code is simply download it from the web site. The projects and folders are listed in the order they appear in Visual Studio. We recommend that you open the nopCommerce solution in Visual Studio and browse through the projects and files as you read this document.
 
