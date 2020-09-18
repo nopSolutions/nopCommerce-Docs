@@ -12,6 +12,7 @@ This chapter describes how to install the nopCommerce software on Linux system o
 1. [Install and configure software](#install-and-configure-software)
 1. [Get nopCommerce](#get-nopcommerce)
 1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
+1. [Installation process](#installation-process)
 1. [Troubleshooting](#troubleshooting)
 
 ## Install and configure software
@@ -195,6 +196,10 @@ Restart the nginx server
 `sudo systemctl restart nginx`
 
 **Now everything is ready, you can proceed to install and configure the store**
+
+## Installation process
+
+The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopCommerce)
 
 ## Troubleshooting
 
