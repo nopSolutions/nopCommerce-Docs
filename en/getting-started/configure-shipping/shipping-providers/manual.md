@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
-# Manual (fixed or by weight and by total) provider
+# Manual (fixed or by weight and by total)
 
 Manual (fixed or by weight and by total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
 
