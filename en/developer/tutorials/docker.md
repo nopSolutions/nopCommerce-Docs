@@ -112,3 +112,11 @@ This document describes a step-by-step guide to building and running a Docker co
     ```csharp
     [docker system prune -a]
     ```
+
+
+### Docker Hub
+Starting from version nopCommerce 4.20, we publish the completed image on the github service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
+
+```csharp
+[docker pull nopcommerceteam/nopcommerce:latest]
+```
