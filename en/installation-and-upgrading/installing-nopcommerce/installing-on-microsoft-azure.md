@@ -29,3 +29,7 @@ Azure has support for multiple instances since version 3.70. It's great for any 
   * **UsePluginsShadowCopy** - set it to *false* to prevent the problem with IIS pool recycle and horizontal scaling.
 * Ensure that the nopCommerce schedule tasks are run on one farm node at a time. To configure this (for versions 3.90 and below):
   * In order to enable this functionality open the `web.config` file, find **WebFarms** element, and set its **MultipleInstancesEnabled** attribute to *true*. If you use Microsoft Azure Websites (not cloud services), then also set **RunOnAzureWebsites** attribute to *true*.
+
+## Installation process
+
+The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
