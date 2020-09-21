@@ -13,9 +13,9 @@ To see the example of how this method can be applied to your store please see th
 
 ## Define the manual shipping provider
 
-Go to **Configuration → Shipping → Shipping providers**. The shipping providers window is displayed:
+Go to **Configuration → Shipping → Shipping providers**. The *Shipping providers* window is displayed:
 
-![manual shipping methods](_static/manual/methods.jpg)
+![Manual shipping methods](_static/manual/methods.jpg)
 
 Enable the manual shipping rate computation method, as follows:
 
