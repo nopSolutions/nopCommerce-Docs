@@ -110,19 +110,19 @@ Topics should use standard Markdown and should avoid inline HTML, including styl
 
 #### How to highlight
 
-1. Use **double asterisks** for strong emphasis, which will be rendered as bold. Use this style to highlight admin area paths, fields, buttons. For example:
+1. Use `**double asterisks**` for strong emphasis, which will be rendered as bold. Use this style to highlight admin area paths, fields, buttons. For example:
 
 	* To configure Avalara tax provider go to **Configuration → Tax providers**
 	* Assign appropriate code from drop-down list in **Tax category** field
 	* Click **Configure** beside the Avalara tax provider option in the list
 
-1. Use *surrounding asterisks* for emphasis, which will be rendered as italics. Use this style to highlight page titles, panel names, types. For example:
+1. Use `*surrounding asterisks*` for emphasis, which will be rendered as italics. Use this style to highlight page titles, panel names, types. For example:
 
 	* To search for customers, in the *Customers* window enter one or more of the following search criteria
 	* On the *Orders* panel you can view the customer's orders details
 	* Since we have two product types, *Simple* and *Grouped (product with variants)*, we have two appropriate product templates
 
-1. Highlight file paths and names the following way: `_ViewImports.cshtml`.
+1. Highlight file paths and names the following way: `_ViewImports.cshtml`. You can do this using ``these ticks``. 
 
 1. Make articles readable and easy to understand. Use headers, notes, tips, lists, screenshots and other tools to make the article understandable.
 	* 	# this is a huge header #
