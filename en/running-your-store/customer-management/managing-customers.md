@@ -62,31 +62,31 @@ You will also see the **Send email**, **Send private message** (if [forums](xref
 After clicking the **Send email** button, the *Send email* window will be displayed enabling a store owner to send an email to the customer. After clicking the **Send private message** button the *Send private message* window will be displayed enabling to send a message to the customer. To use private messaging, allow private messages in [forum settings](xref:en/running-your-store/content-management/forums). 
 
 ## Orders
-In the *Orders* panel you can view the customer's orders details.
+On the *Orders* panel you can view the customer's orders details.
 ![customer_info](_static/managing-customers/customer-orders.png)
 
 ## Addresses
-In the *Addresses* panel you can view, edit and create new addresses of the customer.
+On the *Addresses* panel you can view, edit and create new addresses of the customer.
 ![addresses](_static/managing-customers/customert-adresses.png)
 
 Click the **Add new address** button to add a new customer address. Fill the appropriate fields and click **Save**. The new address will added to the customer.
 
 ## Current shopping cart and wishlist
-In the *Current shopping cart and wishlist* panel you can view the customer's shopping cart and wishlist.
+On the *Current shopping cart and wishlist* panel you can view the customer's shopping cart and wishlist.
 
 ## Activity log
-In the *Activity log* panel you can view the customer's activity log. See how to manage activity types in the [Activity log - Activity types](xref:en/running-your-store/customer-management/activity-log#activity-types) section.
+On the *Activity log* panel you can view the customer's activity log. See how to manage activity types in the [Activity log - Activity types](xref:en/running-your-store/customer-management/activity-log#activity-types) section.
 
 ## Place order (impersonate)
-In the *Place order (impersonate)* panel store owners can create orders for their customers without having to have password information. This is useful for customers who do not want to register, or for large sites using CSRs to place orders over the phone. 
+On the *Place order (impersonate)* panel store owners can create orders for their customers without having to have password information. This is useful for customers who do not want to register, or for large sites using CSRs to place orders over the phone. 
 
 The panel contains the **Place order** button. After clicking this button you will be redirected to the public store. Select the products the customer wants, add them to the cart exactly as the customer would do in the public store, then use the **Checkout** button to proceed through the usual checkout process and then click the **Finish session** link in the top of the page to finish this session.
 
 ## Back in stock subscriptions
-In the *Back in stock subscriptions* panel see the products the customer subscribed to.
+On the *Back in stock subscriptions* panel see the products the customer subscribed to.
 
 ## Reward points
-In the *Reward points* panel store owners can add reward points to the customer or view his or her reward points usage history. This panel is visible when the reward points program is enabled. Refer to [Reward points](xref:en/running-your-store/promotional-tools/reward-points) section for more information.
+On the *Reward points* panel store owners can add reward points to the customer or view his or her reward points usage history. This panel is visible when the reward points program is enabled. Refer to [Reward points](xref:en/running-your-store/promotional-tools/reward-points) section for more information.
 
 ### Add (reduce) points
 
