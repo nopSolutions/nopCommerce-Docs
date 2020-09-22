@@ -182,4 +182,4 @@ According to the terms of the nopCommerce license, without purchasing the *Copyr
 
 Upon purchase of a "copyright removal key" you are permitted to remove the "Powered by nopCommerce" statement. Copyright infringement is illegal - please be advised.
 
-For more information please visit the [nopCommerce copyright removal key](https://www.nopcommerce.com/en/nopcommerce-copyright-removal-key) page.
+For more information please visit the [nopCommerce copyright removal key](https://nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=documentation&utm_medium=link&utm_campaign=powered_by_nopcommerce&utm_content=topmenu_footer) page.
