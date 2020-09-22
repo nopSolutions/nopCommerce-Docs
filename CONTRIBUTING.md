@@ -122,7 +122,7 @@ Topics should use standard Markdown and should avoid inline HTML, including styl
 	* On the *Orders* panel you can view the customer's orders details
 	* Since we have two product types, *Simple* and *Grouped (product with variants)*, we have two appropriate product templates
 
-1. Highlight file paths and names the following way: `_ViewImports.cshtml`. You can do this using ``these ticks``. 
+1. Highlight file paths and names the following way: `_ViewImports.cshtml`. You can do this using \`these ticks\`. 
 
 1. Make articles readable and easy to understand. Use headers, notes, tips, lists, screenshots and other tools to make the article understandable.
 	* 	# this is a huge header #
