@@ -112,19 +112,15 @@ Topics should use standard Markdown and should avoid inline HTML, including styl
 
 1. Use **double asterisks** for strong emphasis, which will be rendered as bold. Use this style to highlight admin area paths, fields, buttons. For example:
 
-	```
 	* To configure Avalara tax provider go to **Configuration → Tax providers**
 	* Assign appropriate code from drop-down list in **Tax category** field
 	* Click **Configure** beside the Avalara tax provider option in the list
-	```
 
 1. Use *surrounding asterisks* for emphasis, which will be rendered as italics. Use this style to highlight page titles, panel names, types. For example:
 
-	```
 	* To search for customers, in the *Customers* window enter one or more of the following search criteria
 	* On the *Orders* panel you can view the customer's orders details
 	* Since we have two product types, *Simple* and *Grouped (product with variants)*, we have two appropriate product templates
-	```
 
 1. Highlight file paths and names the following way: `_ViewImports.cshtml`.
 
@@ -135,6 +131,10 @@ Topics should use standard Markdown and should avoid inline HTML, including styl
 		> [NOTE or TIP or IMPORTANT]
 		> 
 		> This is a note or tip or important text
+
+> [!TIP]
+>
+> You can look at the source of this document for many examples of the described features.
 
 #### Code
 
