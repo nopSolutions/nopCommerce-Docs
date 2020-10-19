@@ -52,6 +52,11 @@ We can use `Azure Blob Storage` to store blob data. nopCommerce already have fea
 * **AzureBlobStorageEndPoint:** This setting also expects a string value. Here we need to set the end point for Azure BLOB storage.
 * **AzureBlobStorageAppendContainerName:** This setting expects a boolean value. Set the value to "**true**" or "**false**" on the basis of whether the Container Name is appended to the `AzureBlobStorageEndPoint` when constructing the url.
 
+* **Data Protection Keys**
+    * **UseAzureBlobStorageToStoreDataProtectionKeys:** This setting expects a boolean value. Set the value to "**true** if you want to use the Windows Azure BLOB storage for Data Protection Keys (the UseRedisToStoreDataProtectionKeys option should be disabled)
+    * **AzureBlobStorageContainerNameForDataProtectionKeys:** This setting expects a string value. Here you need to set up a Azure container name for storing Data Prtection Keys (this container should be separate from the container used for media and should be Private)
+    * **AzureKeyVaultIdForDataProtectionKeys:** This **optional** setting also expects a string value. Set the Azure key vault ID if you need to encrypt the Data Protection Keys
+
 #### Redis
 
 nopCommerce supports *Redis* out of the box. In order to enable the `Redis` in our application we must set appropriate value for the following settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
@@ -61,6 +66,7 @@ nopCommerce supports *Redis* out of the box. In order to enable the `Redis` in o
 * **RedisConnectionString:** This setting expects a string value. Default value for this setting is `127.0.0.1:{PORT},ssl=False`. Here we need to set the "Connection String" for `Redis`. It is used when Redis is enabled.
 * **UseRedisToStoreDataProtectionKeys:** This setting expects a boolean value. This setting indicating whether the data protection system should be configured to persist keys in the Redis database.
 * **UseRedisForCaching:** This setting expects a boolean value. The system uses a In-Memory caching, so this setting is used to indicating whether we should use `Redis` server for caching, instead of default `in-memory caching`. So, use this setting if you want to use `Redis` for caching.
+* **IgnoreRedisTimeoutException:** This setting expects a boolean value. This value indicating whether we should ignore Redis timeout exception (Enabling this setting increases cache stability but may decrease site performance)
 * **UseRedisToStorePluginsInfo:** This setting expects a boolean value. nopCommerce uses `plugin.json` file to store plugin info. So, This setting indicating whether we should use Redis server to store the plugins info (instead of default plugin.json file).
 
 #### User Agent
@@ -75,7 +81,6 @@ In computing, a user agent is software (a software agent) that is acting on beha
 It contains settings that used to configure the behavior of nopCommerce during the nopCommerce installation.
 
 * **DisableSampleDataDuringInstallation:** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
-* **UseFastInstallationService:** This setting expects a boolean value. By default the value for this setting is "**false**". this setting indicating whether to use the fast installation or not.
 * **PluginsIgnoredDuringInstallation:** This setting expects a boolean value. By default the value for this setting is "**false**". You might want to set value for this setting to "**true**" if you don't want to `Install` any `Plugin` during nopCommerce installation
 
 #### Plugins
@@ -85,9 +90,9 @@ It contains settings that used to configure the behavior of nopCommerce during t
 * **UsePluginsShadowCopy:** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy plugins library to the `/Plugins/bin` directory on application startup.
 * **UseUnsafeLoadAssembly:** This setting expects a boolean value. You might want to set the value to "**true**" if you want to load an assembly into the load-from context, bypassing some security checks.
 
-#### UseRowNumberForPaging
+#### SQLCommandTimeout
 
-This setting expects a boolean value. Default value for this setting is "**false**". You may want to set the value to "**true**" if you want to configure your nopCommerce application for backwards compatibility with `SQL Server 2008` and `SQL Server 2008R2`.
+This setting expects an integer value or null. Set ``null`` to use default value (30 seconds) or configure the wait time (in seconds) before terminating the attempt to execute a command and generating an error.
 
 #### UseSessionStateTempDataProvider
 
