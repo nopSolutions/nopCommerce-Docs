@@ -8,11 +8,15 @@ author: git.mariannk
 
 PayPal Checkout with Smart Payment Buttons gives your buyers a simplified and secure checkout experience. PayPal intelligently presents the most relevant payment types to your shoppers, automatically, making it easier for them to complete their purchase using methods like Pay with Venmo, PayPal Credit, credit card payments, iDEAL, Bancontact, Sofort, and other payment types.
 
+## Video tutorial
+
+Wath this [video tutorial](https://youtu.be/lJxVqjwUFkY) to learn how to configure PayPal Smart Payment Buttons.
+
+## Configure the payment method
+
 To configure the PayPal Smart Payment Buttons plugin go to **Configuration → Payment methods**. Then find the **PayPal Smart Payment Buttons** payment method in the payment method list:
 
 ![List](_static/paypal-smart-payment-buttons/list.jpg)
-
-## Configure the payment method
 
 Follow the next steps to configure PayPal Smart Payment Buttons:
 
