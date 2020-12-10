@@ -67,7 +67,7 @@ A gift card is used in the public store by entering the serial number in the box
 >
 > You can disable the gift card box on the shopping cart page by unticking the **Show gift card box** checkbox on the **Configuration → Settings → Shopping cart settings** page (*Common* panel).
 
-You can also allow your customers to check the gift card balane. To do this tick the **Allow customers to check gift card balance** checkbox on the **Configuration → Settings → Shopping cart settings** page (*Common* panel).
+You can also allow your customers to check the gift card balane. To do this tick the **Allow customers to check gift card balance** checkbox on the **Configuration → Settings → Customer settings** page (*Common* panel).
 
 > [!NOTE]
 >
