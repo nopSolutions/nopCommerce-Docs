@@ -15,7 +15,6 @@ Follow the next steps:
 1. Then you have to execute SQL upgrade scripts. You have to execute them stepwise. For example, if your current version is 3.90 and the latest available version is 4.20, then you have to upgrade to 4.00, then to 4.10, and then to 4.20. So download the required upgrade scripts from our the [download nopCommerce](https://www.nopcommerce.com/download-nopcommerce) page. Once an upgrade script is downloaded, execute it over your database.
 1. Remove all files from the previous version (all except `App_Data\Settings.txt` and `App_Data\InstalledPlugins.txt`).
 1. Upload the new site files (get the latest version [here](https://www.nopcommerce.com/download-nopcommerce)).
-1. Rename file `setting.txt` to `dataSettings.json` and `InstalledPlugins.txt` to `plugins.json` (for 4.00 and 4.10, rename `InstalledPlugins.txt` to `installedPlugins.json`) and update content with json structure.
 1. Ensure that everything is OK.
 
 > [!NOTE]
