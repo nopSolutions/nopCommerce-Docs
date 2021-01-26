@@ -103,7 +103,7 @@ Here you are required to provide an email address and password which then be use
 
 Here you need to provide your information you want to use for this project.
 
-Here you have two choose your database storage. You can use MS SQL Server or MySQL server. It is your decision which one you want to use.
+Here you have to choose your database storage. You can use MS SQL Server or MySQL server. It is your decision which one you want to use.
 
 For the sake of this tutorial we will be using the MS SQL Server.
 
