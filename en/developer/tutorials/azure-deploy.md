@@ -30,11 +30,11 @@ contributors: git.DmitriyKulagin, git.exileDev
 1. **Generate deployment scripts locally**
     - Open the "Microsoft Azure Command Prompt"
     - Navigate to the src folder of your project as you normally would in a shell window
-    - Execute the azure script generator (found this nice tutorial: [http://blog.amitapple.com/post/38418009331/azurewebsitecustomdeploymentpart2/#.VWyO3qikLjQ](http://blog.amitapple.com/post/38418009331/azurewebsitecustomdeploymentpart2/#.VWyO3qikLjQ)).
+    - Execute the kudu script generator (You may found wiki by [this link](https://github.com/projectkudu/kudu/wiki) or see [this video](https://azure.microsoft.com/en-us/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
 
         So you would write something like:
 
-        `azure site deploymentscript --aspWAP Presentation\Nop.Web\Nop.Web.csproj -s NopCommerce.sln`
+        `kuduscript site deploymentscript --aspNetCore Presentation\Nop.Web\Nop.Web.csproj -s NopCommerce.sln -y`
     - Verify that it has generated 2 files (in your local repository root): 
 	
 		`.deployment` 
@@ -50,24 +50,21 @@ contributors: git.DmitriyKulagin, git.exileDev
     ```sh
     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     :: Deployment
-    :: ----------echo Handling .NET Web Application deployment.
-    :: 1. Restore NuGet packages
-    IF /I "NopCommerce.sln" NEQ "" (
-    call :ExecuteCmd nuget restore "%DEPLOYMENT_SOURCE%\NopCommerce.sln"
+    :: ----------
+
+    echo Handling ASP.NET Core Web Application deployment.
+
+    :: 1. Restore nuget packages
+    call :ExecuteCmd dotnet restore "%DEPLOYMENT_SOURCE%\NopCommerce.sln"
     IF !ERRORLEVEL! NEQ 0 goto error
-    )
-    :: 2. Build to the temporary path
-    IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
-    call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\Presentation\Nop.Web\Nop.Web.csproj" /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="%DEPLOYMENT_TEMP%";AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
-    ) ELSE (
-    call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\Presentation\Nop.Web\Nop.Web.csproj" /nologo /verbosity:m /t:Build /p:AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
-    )
+
+    :: 2. Build and publish
+    call :ExecuteCmd dotnet publish "%DEPLOYMENT_SOURCE%\Presentation\Nop.Web\Nop.Web.csproj" --output "%DEPLOYMENT_TEMP%" --configuration Release
     IF !ERRORLEVEL! NEQ 0 goto error
+
     :: 3. KuduSync
-    IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
     call :ExecuteCmd "%KUDU_SYNC_CMD%" -v 50 -f "%DEPLOYMENT_TEMP%" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i ".git;.hg;.deployment;deploy.cmd"
     IF !ERRORLEVEL! NEQ 0 goto error
-    )
     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     ```
 
@@ -77,7 +74,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
     ```sh
     :: 1.01 Build plugin customer roles to temporary path
-    call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\src\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\Nop.Plugin.DiscountRules.CustomerRoles.csproj" /nologo /verbosity:m /t:Build /p:AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
+    call :ExecuteCmd dotnet build "%DEPLOYMENT_SOURCE%\src\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\Nop.Plugin.DiscountRules.CustomerRoles.csproj" -c Release
     ```
 
 Now the plugin is built when you run the deploy scripts :)
