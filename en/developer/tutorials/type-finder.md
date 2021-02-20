@@ -40,7 +40,7 @@ Without dwelling on the implementation details of the ``FindClassesOfType`` meth
 
 In fact, this class is used in a number of very important aspects of how nopCommerce works:
 
-1. Searching assemblies for configuring the migration mechanism ([How do migrations work?](xref:en/developer/tutorials/migrations/))
+1. Searching assemblies for configuring the migration mechanism ([How do migrations work?](xref:en/developer/tutorials/migrations))
 1. Search for classes of certain interfaces necessary for the correct launch of the site, such as:
     * ``IStartupTask`` - Initial initialization of these modules and plugins 
     * ``INopStartup`` - Configuring services and middleware on application startup

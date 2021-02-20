@@ -18,7 +18,7 @@ I think it will be inpossible to understand such a scheme anyway, so we will spl
     * [Inventory by warehouses](#inventory-by-warehouses)
 * [Orders](#orders)
 * [Shipments](#shipments)
-* [Discounts](#Discounts)
+* [Discounts](#discounts)
 * [Shopping cart](#shopping-cart)
 * [Addresses](#addresses)
 
