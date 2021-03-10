@@ -24,11 +24,14 @@
           name: Installing on Windows
           href: installation-and-upgrading/installing-nopcommerce/installing-on-windows.md
         -
+          name: Installing on Linux
+          href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+        -
           name: Installing on Microsoft Azure
           href: installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.md
         -
-          name: Installing on Linux
-          href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+          name: Load balancing and web farms in nopCommerce
+          href: installation-and-upgrading/installing-nopcommerce/web-farms.md
         -
           name: Pre-installed nopCommerce
           href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md

@@ -1,6 +1,6 @@
 ﻿---
 title: Load balancing and web farms in nopCommerce
-uid: en/developer/tutorials/web-farms
+uid: en/installation-and-upgrading/installing-nopcommerce/web-farms
 author: git.exileDev
 contributors: git.mariannk, git.AndreiMaz
 ---
