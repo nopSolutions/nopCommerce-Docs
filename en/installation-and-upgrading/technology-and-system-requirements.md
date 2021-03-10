@@ -29,6 +29,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 ## Supported web servers
 
 * Internet Information Service (IIS) 7.0 or above
+* * For nopCommerce 4.40. Install .NET 5 runtime ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer)).
 * For nopCommerce 4.30. Install .NET Core 3.1 runtime ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer)).
 * For nopCommerce 4.20. Install .NET Core 2.2 runtime ([download](https://dotnet.microsoft.com/download)).
 * For nopCommerce 4.10. Install .NET Core 2.1 runtime ([download](https://dotnet.microsoft.com/download)).
@@ -38,7 +39,8 @@ In order to run nopCommerce, you will need the following installed on your serve
 ## Supported databases
 
 * MS SQL Server 2012 or above
-* MySql Server 5.7 or above
+* MySql Server 5.7 or above (nopCommerce 4.30 or above)
+* PostgreSQL (nopCommerce 4.40 or above)
 
 ## Supported browsers
 
@@ -46,6 +48,8 @@ In order to run nopCommerce, you will need the following installed on your serve
 * Mozilla Firefox 2.0 and above
 * Google Chrome 1.x
 * Apple Safari 2.x
+
+**For nopCommerce 4.40 or above. MS Visual Studio 2019 (version 16.8 or above). And don't forget to install NET 5 SDK (5.0.200)([download](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.200-windows-x64-installer)). Required for developers who want to edit source code.**
 
 **For nopCommerce 4.30 or above. MS Visual Studio 2019 (version 16.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer)). Required for developers who want to edit source code.**
 
