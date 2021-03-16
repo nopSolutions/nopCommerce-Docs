@@ -551,6 +551,9 @@
         - 
           name: Contributing a theme
           href: developer/design/contributing-theme.md
+        - 
+          name: Entity events system
+          href: developer/design/entity-events-system.md
     - 
       name: Contribute
       href: developer/contribute/index.md
