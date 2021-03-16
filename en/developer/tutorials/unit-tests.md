@@ -55,7 +55,6 @@ As you can see, this is a simple interface, but at the same time, working with s
 > [!NOTE]
 > We do not promote or use **TDD**, the reliability of the functionality is important for us, and not a specific approach to testing. But we are not against this approach.
 
-
 ## ScheduleTaskServiceTests class
 
 Add a new ``ScheduleTaskServiceTests`` class to the tests project (Nop.Tests\Nop.Services.Tests\Tasks), its code is shown below:

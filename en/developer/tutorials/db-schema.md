@@ -7,15 +7,15 @@ contributors: git.skoshelev
 
 In this article, we will look at the database schema that is installed during initial installation and which remains unchanged in 90% cases.
 
-We could try to bring the entire schema as a whole, but the default installation provides for the creation of 126 tables. 
+We could try to bring the entire schema as a whole, but the default installation provides for the creation of 126 tables.
 
 I think it will be inpossible to understand such a scheme anyway, so we will split it into component parts. I will try to group tables in the most natural and understandable way. Then you can see the description of the circuit in the following blocks:
 
 * [Customers info](#customers-info)
 * [Products info](#products-info)
-    * [Product attributes](#product-attributes)
-    * [Tier price](#tier-price)
-    * [Inventory by warehouses](#inventory-by-warehouses)
+  * [Product attributes](#product-attributes)
+  * [Tier price](#tier-price)
+  * [Inventory by warehouses](#inventory-by-warehouses)
 * [Orders](#orders)
 * [Shipments](#shipments)
 * [Discounts](#discounts)
@@ -30,7 +30,7 @@ This diagram shows a set of tables for basic information about the user, indicat
 
 We will not delve into the purpose of tables and fields, since their purpose can be easily read from the name
 
-### Features:
+### Features (Customers info)
 
 * In the **Customer** table we have three fields, which in fact should contain links to external tables, but in practice they are not:
     1. AffiliateId
@@ -40,13 +40,13 @@ We will not delve into the purpose of tables and fields, since their purpose can
     This is done intentionally so as not to overload the system with unnecessary connections, since these fields are not used in every online store
 
 * Not all user data is in this schema, some of the data is in the **GenericAttribute** table. By default, in this table we store the following data:
-    * First name
-    * Last name
-    * Gender
-    * Date of birthday
-    * Company
-    * Customer Address
-    * Phone
+  * First name
+  * Last name
+  * Gender
+  * Date of birthday
+  * Company
+  * Customer Address
+  * Phone
 
     The structure of this table is presented below:
 
@@ -58,17 +58,15 @@ We will not delve into the purpose of tables and fields, since their purpose can
 
     ![attributes](_static/db-schema/attributes.jpg)
 
-
 ## Products info
 
 ![Products info](_static/db-schema/products-info.jpg)
 
 In the diagram you see the base data for the product (the schema of the product information table below), as a rule, this data is used in 99% of cases
 
-
 ![Product table](_static/db-schema/product.png)
 
-### Features:
+### Features (Products info)
 
 Depending on the store settings, additional tables may be connected to this scheme, for example, to distribute the quantity of products among warehouses
 
@@ -79,6 +77,7 @@ or product reviews functions:
 ![Product table](_static/db-schema/product-review.jpg)
 
 ### Product attributes
+
 Separately for products, you should consider the scheme of attributes and their combinations, this scheme is below:
 
 ![Product attributes](_static/db-schema/product-attributes.jpg)
@@ -106,12 +105,12 @@ In this diagram, we can see the main tables involved in the formation of order d
 In this case, there is no need to comment on anything, everything should be clear from the diagram and the names of the fields. It should only be noted that the **RewardPointsHistory** table is not always used, but only if the Reward points system is activated for the store
 
 ## Shipments
+
 ![shipments](_static/db-schema/shipments.jpg)
 
 I think that the purpose of all tables in the diagram, as before, raises no questions. Nevertheless, let us dwell on a few points. The **ShippingMethod** table is used to manage the list of connected plugins, and the specific shipping method is stored in the **ShippingRateComputationMethodSystemName** and **ShippingMethod** fields of the **Order** table.
 
 The OrderItemId field of the ShipmentItem table is essentially a reference to the OrderItem table.
-
 
 ## Discounts
 

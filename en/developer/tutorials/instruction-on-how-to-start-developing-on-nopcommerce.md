@@ -20,7 +20,7 @@ nopCommerce is open-source Microsoft ASP.NET based eCommerce solution. This is a
 
 ## 1. Tools Required for Development
 
-You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article
+You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article.
 
 ## 2. Stack of technologies used in nopCommerce
 
@@ -65,7 +65,7 @@ The best part of nopCommerce is that its source code is fully customizable and i
     Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cache dataset. Which boosts the speed and performance of application.
   * Microsoft Azure(Optional)
 
-    Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more. 
+    Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more.
 
 ## 3. How to download the project and run it on the local machine
 

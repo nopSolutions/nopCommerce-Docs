@@ -42,7 +42,7 @@ In fact, this class is used in a number of very important aspects of how nopComm
 
 1. Searching assemblies for configuring the migration mechanism ([How do migrations work?](xref:en/developer/tutorials/migrations))
 1. Search for classes of certain interfaces necessary for the correct launch of the site, such as:
-    * ``IStartupTask`` - Initial initialization of these modules and plugins 
+    * ``IStartupTask`` - Initial initialization of these modules and plugins
     * ``INopStartup`` - Configuring services and middleware on application startup
     * ``IDependencyRegistrar`` - Dependency registration for IoC
     * ``IOrderedMapperProfile`` - Create **AutoMapper** configuration
