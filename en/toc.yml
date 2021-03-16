@@ -465,6 +465,18 @@
         - 
           name: Guide to creating a page containing a reporting table of DataTables
           href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
+        - 
+          name: Content Security Policy (CSP) Headers
+          href: developer/tutorials/csp-headers.md
+        - 
+          name: Description settings from appsettings.json file and NopConfig and HostingConfig class
+          href: developer/tutorials/description-of-settings-from-appsettings-json-file-and-NopConfig-class.md
+        - 
+          name: Description of plugin system
+          href: developer/tutorials/description-of-plugin-system.md
+        - 
+          name: Architecture of nopCommerce 4.20 and under
+          href: developer/tutorials/architecture-of-nopCommerce-4.20-and-under.md
     - 
       name: Creating a nopCommerce plugin
       href: developer/plugins/index.md
