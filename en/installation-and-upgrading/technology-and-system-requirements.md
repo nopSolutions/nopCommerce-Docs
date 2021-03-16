@@ -12,19 +12,18 @@ In order to run nopCommerce, you will need the following installed on your serve
 ## Supported operation systems
 
 * Windows
-    * Windows 7 SP1 or above
-    * Windows Server 2012 R2 or above
+  * Windows 7 SP1 or above
+  * Windows Server 2012 R2 or above
 
 * Linux
-    * Red Hat 7 / CentOS 7 or above
-    * Fedora 32 or above or
-    * Debian 9 or above / Ubuntu 18.04 or above / Linux Mint 18 or above
-    * OpenSUSE 15 or above / SUSE Enterprise SUSE Enterprise or above
-    * Alpine Linux 3.11 or above
+  * Red Hat 7 / CentOS 7 or above
+  * Fedora 32 or above or
+  * Debian 9 or above / Ubuntu 18.04 or above / Linux Mint 18 or above
+  * OpenSUSE 15 or above / SUSE Enterprise SUSE Enterprise or above
+  * Alpine Linux 3.11 or above
 
 * MacOS
-    * Mac OS X 10.13 or above
-
+  * Mac OS X 10.13 or above
 
 ## Supported web servers
 
@@ -60,5 +59,4 @@ In order to run nopCommerce, you will need the following installed on your serve
 **For nopCommerce 4.00 or below. MS Visual Studio 2017 (version 15.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
 
 > [!NOTE]
-> 
 > If you're installing nopCommerce on Windows and going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because it supports SNI (Server Name Indication).
