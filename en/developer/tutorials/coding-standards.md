@@ -612,7 +612,7 @@ This style rule concerns the use of curly braces { } to surround code blocks.
 
 These formatting rules concern the sorting and display of *`using`* directives and *`Imports`* statements.
 
-- Sort System.* *`using`* directives alphabetically, and place them before other using directives.
+- Sort `System.*` *`using`* directives alphabetically, and place them before other using directives.
 
   ```csharp
   //Right
