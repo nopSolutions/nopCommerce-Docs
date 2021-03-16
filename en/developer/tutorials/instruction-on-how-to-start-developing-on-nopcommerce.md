@@ -20,7 +20,7 @@ nopCommerce is open-source Microsoft ASP.NET based eCommerce solution. This is a
 
 ## 1. Tools Required for Development
 
-You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article
+You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article.
 
 ## 2. Stack of technologies used in nopCommerce
 
