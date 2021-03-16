@@ -12,7 +12,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 1. **Your own git-repository** You need your own repository, you cannot just build nopCommerce. It's designed to be used with "Publish" function in Visual Studio 2017 as default. I use Bitbucket myself and keep that in sync with official repository.
 
 1. Setup git on Azure
-    - Tutorial: [https://azure.microsoft.com/da-dk/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/da-dk/documentation/articles/web-sites-publish-source-control/)
+    - Tutorial: [https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/)
 
     - There's a great video here: [http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo](http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo)
 
@@ -30,14 +30,16 @@ contributors: git.DmitriyKulagin, git.exileDev
 1. **Generate deployment scripts locally**
     - Open the "Microsoft Azure Command Prompt"
     - Navigate to the src folder of your project as you normally would in a shell window
-    - Execute the kudu script generator (You may found wiki by [this link](https://github.com/projectkudu/kudu/wiki) or see [this video](https://azure.microsoft.com/en-us/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
+    - Execute the kudu script generator (You may found wiki by [this link](https://github.com/projectkudu/kudu/wiki) or see [this video](https://azure.microsoft.com/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
 
         So you would write something like:
 
         `kuduscript site deploymentscript --aspNetCore Presentation\Nop.Web\Nop.Web.csproj -s NopCommerce.sln -y`
     - Verify that it has generated 2 files (in your local repository root):
 
-        `.deployment` `deploy.cmd`
+        `.deployment`
+
+        `deploy.cmd`
 
 1. **Run generated script**
     - You must keep the .deployment and deploy.cmd file to the root of git repository
