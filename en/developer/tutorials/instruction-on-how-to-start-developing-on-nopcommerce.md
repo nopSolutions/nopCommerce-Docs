@@ -44,9 +44,9 @@ The best part of nopCommerce is that its source code is fully customizable and i
   * AutoMapper
 
     AutoMapper is a simple library that helps us to transform one object type to another. It is a convention-based object-to-object mapper that requires very little configuration.
-  * AutoFac
+  * ASP.NET Core internal dependency injection
 
-    Autofac is an addictive IoC container for .NET. It manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.
+    ASP IOC manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.
   * Linq2DB
 
     Linq2DB is an open-source ORM framework for .NET applications. It is a .NET Foundation project. It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. So, it is the bridge between Business Layer and Data Layer.
@@ -60,6 +60,9 @@ The best part of nopCommerce is that its source code is fully customizable and i
   * MySQL Server
 
     MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications.
+  * PostgreSQL
+
+    PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
   * Redis (cache)
 
     Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. So, in nopCommerce Redis is used to store old data as in-memory cache dataset. Which boosts the speed and performance of application.
@@ -117,7 +120,7 @@ After you fill all of this information you need to press "install" button, it wi
 
 In order to set SSL/HTTPS for your nopCommerce you need to go to the property window of `Nop.Web` project under Presentation folder since it is the startup project for nopCommerce. To open property window right click on `Nop.Web` project and at the bottom of the context menu you will see a menu named "Properties", just click on that menu then a property window will appear. In property window navigate to "Debug" tab.
 
-![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image4.png)
+![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image3.jpg)
 
 Check the "Enable SSL", and enter the HTTPS URL besides it. Then save this project.
 
