@@ -1,15 +1,17 @@
 ---
 title: Default database schema
 uid: en/developer/tutorials/db-schema
-author: git.AndreiMaz
-contributors: git.skoshelev
+author: git.skoshelev
+contributors: git.mariannk
 ---
+
+# Default database schema
 
 In this article, we will look at the database schema that is installed during initial installation and which remains unchanged in 90% cases.
 
-We could try to bring the entire schema as a whole, but the default installation provides for the creation of 126 tables.
+We won't bring the entire schema as a whole but will describe the default installation that provides for the creation of 126 tables.
 
-I think it will be inpossible to understand such a scheme anyway, so we will split it into component parts. I will try to group tables in the most natural and understandable way. Then you can see the description of the circuit in the following blocks:
+To understand such a scheme easily let's split it into component parts. Below, we grouped the tables in the most natural and understandable way:
 
 * [Customers info](#customers-info)
 * [Products info](#products-info)
@@ -26,20 +28,20 @@ I think it will be inpossible to understand such a scheme anyway, so we will spl
 
 ![Customers info](_static/db-schema/customers-info.jpg)
 
-This diagram shows a set of tables for basic information about the user, indicating the direction of links.
+This diagram shows a set of tables that contain basic customer information. It also indicates the direction of links.
 
-We will not delve into the purpose of tables and fields, since their purpose can be easily read from the name
+We won't delve into the purpose of tables and fields, since their names are self-descriptive enough.
 
 ### Features (Customers info)
 
-* In the **Customer** table we have three fields, which in fact should contain links to external tables, but in practice they are not:
+* In the **Customer** table we have three fields which in fact should be defined as foreign keys but in practice, they are not:
     1. AffiliateId
     1. VendorId
     1. RegisteredInStoreId
 
-    This is done intentionally so as not to overload the system with unnecessary connections, since these fields are not used in every online store
+    This is done intentionally so as not to overload the system with unnecessary connections, since these fields are not used in every online store.
 
-* Not all user data is in this schema, some of the data is in the **GenericAttribute** table. By default, in this table we store the following data:
+* Some of the user data is stored in the **GenericAttribute** table. By default, in this table we store the following data:
   * First name
   * Last name
   * Gender
@@ -52,9 +54,9 @@ We will not delve into the purpose of tables and fields, since their purpose can
 
     ![GenericAttribute](_static/db-schema/generic-attribute.jpg)
 
-    Besides the mentioned data, this table can store any other data. We added this table on purpose so that you could extend any entity without changing the structure of the tables.
+    Besides the mentioned customer data, this table can store any data for other entities as well. We added this table on purpose so that you could extend any entity without changing the structure of the tables.
 
-    additionally, this table stores xml views for two groups of attributes **Vendor attributes** and **Customer attributes**
+    Additionally, this table stores xml for two groups of attributes: **Vendor attributes** and **Customer attributes**.
 
     ![attributes](_static/db-schema/attributes.jpg)
 
