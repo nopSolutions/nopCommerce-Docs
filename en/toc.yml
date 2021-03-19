@@ -472,8 +472,8 @@
           name: Content Security Policy (CSP) Headers
           href: developer/tutorials/csp-headers.md
         - 
-          name: Description settings from appsettings.json file and NopConfig and HostingConfig class
-          href: developer/tutorials/description-of-settings-from-appsettings-json-file-and-NopConfig-class.md
+          name: Description settings from appsettings.json file
+          href: developer/tutorials/appsettings-json-file.md
         - 
           name: Description of plugin system
           href: developer/tutorials/description-of-plugin-system.md
