@@ -412,6 +412,9 @@
           name: Source code organization
           href: developer/tutorials/source-code-organization.md
         - 
+          name: Default database schema
+          href: developer/tutorials/db-schema.md
+        - 
           name: Architecture of nopCommerce 4.20 and under
           href: developer/tutorials/architecture-of-nopCommerce-4.20-and-under.md
         - 
@@ -448,6 +451,9 @@
           name: Settings API
           href: developer/tutorials/settings.md
         - 
+          name: How and when to use the ITypeFinder interface
+          href: developer/tutorials/type-finder.md
+        - 
           name: Description of the web.config file in project
           href: developer/tutorials/description-of-the-web-config-file-in-project.md
         - 
@@ -466,11 +472,14 @@
           name: Content Security Policy (CSP) Headers
           href: developer/tutorials/csp-headers.md
         - 
-          name: Description settings from appsettings.json file and NopConfig and HostingConfig class
-          href: developer/tutorials/description-of-settings-from-appsettings-json-file-and-NopConfig-class.md
+          name: Description settings from appsettings.json file
+          href: developer/tutorials/appsettings-json-file.md
         - 
           name: Description of plugin system
           href: developer/tutorials/description-of-plugin-system.md
+        - 
+          name: UNIT testing
+          href: developer/tutorials/unit-tests.md
         - 
           name: Architecture of nopCommerce 4.20 and under
           href: developer/tutorials/architecture-of-nopCommerce-4.20-and-under.md
