@@ -471,9 +471,6 @@
         - 
           name: Description of plugin system
           href: developer/tutorials/description-of-plugin-system.md
-        - 
-          name: Architecture of nopCommerce 4.20 and under
-          href: developer/tutorials/architecture-of-nopCommerce-4.20-and-under.md
     - 
       name: Creating a nopCommerce plugin
       href: developer/plugins/index.md
