@@ -424,9 +424,6 @@
           name: Updating an existing entity. How to add a new property
           href: developer/tutorials/update-existing-entity.md
         - 
-          name: The nopCommerce data access layer
-          href: developer/tutorials/data-access-layer.md
-        - 
           name: Entity events and how they work
           href: developer/tutorials/entity-event.md
         - 
