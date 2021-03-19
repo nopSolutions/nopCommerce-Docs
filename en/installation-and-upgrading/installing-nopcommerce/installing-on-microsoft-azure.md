@@ -33,3 +33,7 @@ Azure has support for multiple instances since version 3.70. It's great for any 
 ## Installation process
 
 The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
+
+## Web farms
+
+You can also configure load balancing with IIS web farms. Please read more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/web-farms).
