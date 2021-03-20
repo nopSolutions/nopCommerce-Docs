@@ -27,7 +27,7 @@ Define the following email account information:
 * In the **Port** field, enter the SMTP port of your email server.
 * In the **User** field, enter the user name of your email server.
 * In the **Password** field, enter the password of your email server.
-* Select the **SLL** checkbox, to use Security Sockets Layer to encrypt the SMTP connection.
+* Select the **SSL** checkbox, to use Security Sockets Layer to encrypt the SMTP connection.
 * Select the **Use default credentials** checkbox, to use default credentials for the connection.
 
 Click **Save**. The window is expanded, as follows:
