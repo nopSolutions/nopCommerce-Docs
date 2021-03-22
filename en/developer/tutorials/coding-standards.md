@@ -576,7 +576,7 @@ These style rules concern the syntax around null checking, including using throw
   this.s = s;
   ```
 
-- Refer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
+- Prefer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
 
   ```csharp
   //Right
