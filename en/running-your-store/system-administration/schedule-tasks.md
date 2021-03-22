@@ -2,23 +2,29 @@
 title: Schedule tasks
 uid: en/running-your-store/system-administration/schedule-tasks
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.exileDev, git.mariannk
 ---
 
 # Schedule tasks
 
-The scheduled tasks window enables the store owner to schedule a task to run during certain periods in the background and to view useful information regarding the task and whether it was completed successfully. For example, nopCommerce sends queued emails periodically. The tasks run on a separate thread coming from the ASP.NET thread pool.
+The *Schedule tasks* window enables the store owner to schedule a task to run during certain periods in the background and to view useful information regarding the task and whether it was completed successfully. For example, nopCommerce sends queued emails periodically. The tasks run on a separate thread coming from the ASP.NET thread pool.
 
-## Schedule tasks
+To view the scheduled tasks, from the **System** menu, select **Schedule tasks**. The *Schedule tasks* window is displayed, as follows:
+![Schedule tasks](_static/schedule-tasks/schedule-tasks.png)
 
-1. From the **System** menu, select **Schedule Tasks**. The **Schedule Tasks** window is displayed.
+To edit a scheduled task, click the **Edit** button beside the task. The window is expanded, as follows:
+![Schedule tasks - Edit](_static/schedule-tasks/schedule-tasks-edit.png)
 
-    ![Schedule tasks](_static/schedule-tasks/schedule-tasks.png)
-1. Click the **Edit** button besides the task to edit. The window is expanded, as follows:
+You can edit the scheduled task the following way:
+* Edit the **Name**.
+* Edit the number of **Seconds (run period)**. Task period should not exceed 24 days.
+* Tick the **Enabled** checkbox in order to enable the task.
+* Tick the **Stop on error** checkbox in order to stop the task when an error occurs.
 
-    ![Schedule tasks - Edit](_static/schedule-tasks/schedule-tasks-edit.png)
-1. Select the required checkboxes, as follows:
-    * **Enabled**: Select to enable the task.
-    * **Stop on Error**: Select to stop the task when an error occurs.
-1. Click **Update** to save your revisions.
-1. If required, you can click **Run Now**, to run a scheduled task on demand.
+Click **Update** to save your changes.
+
+> [!NOTE]
+>
+> Do not forget to restart the application once a task has been modified.
+
+If required, you can click **Run now**, to run a scheduled task on-demand.

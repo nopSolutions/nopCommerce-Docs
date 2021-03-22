@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
-# Manual (fixed or by weight and by total) provider
+# Manual (fixed or by weight and by total)
 
 Manual (fixed or by weight and by total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
 
@@ -13,9 +13,9 @@ To see the example of how this method can be applied to your store please see th
 
 ## Define the manual shipping provider
 
-Go to **Configuration → Shipping → Shipping providers**. The shipping providers window is displayed:
+Go to **Configuration → Shipping → Shipping providers**. The *Shipping providers* window is displayed:
 
-![manual shipping methods](_static/manual/methods.jpg)
+![Manual shipping methods](_static/manual/methods.jpg)
 
 Enable the manual shipping rate computation method, as follows:
 
@@ -91,7 +91,7 @@ Define the following information:
 * **Store** in which the calculated fees will be applied. Choose * to apply the rules to all stores.
 * **Warehouse** from which the shipping will be done. Choose * to apply the rules to all warehouses.
 * **Country, State/province, Zip** of a shipment destination.
-* Select a **Shipping method** from the list of pre-created options. Use **Manage shipping methods** on the top to add/remove shipping methods.
+* Select a **Shipping method** from the list of pre-created options. Use **Manage shipping methods** on the top to add/remove shipping methods or proceed to the [Configure shipping methods](#configure-shipping-methods) section to learn more.
 * Create your weight configuration by filling **Order weight from** and **Order weight to** fields. If the customer's shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
 * Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage (of subtotal)** fields.
 * Define the **Transit days** field which defines the number of days of delivery.

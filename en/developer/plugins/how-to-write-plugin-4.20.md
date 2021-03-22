@@ -2,12 +2,12 @@
 title: How to write a plugin for nopCommerce
 uid: en/developer/plugins/how-to-write-plugin-4.20
 author: git.AndreiMaz
-contributors: git.Kevat, git.exileDev, git.DmitriyKulagin
+contributors: git.Kevat, git.exileDev, git.DmitriyKulagin, git.cromatido
 ---
 
 # How to write a plugin for nopCommerce 4.20
 
-Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace.aspx) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
+Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
 
 ## The plugin structure, required files, and locations
 
@@ -42,36 +42,17 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
         <!-- This target execute after "Build" target -->
         <Target Name="NopTarget" AfterTargets="Build">
             <!-- Delete unnecessary libraries from plugins path -->
-            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
+            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
         </Target>
     </Project>
     ```
 
     > [!TIP]
-    > 
     > Where PLUGIN_OUTPUT_DIRECTORY should be replaced with the plugin name, for example, Payments.PayPalStandard.
-    > 
+    >
     > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it's not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
 
-1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For example, PayPal Standard payment plugin has the following `plugin.json` file:
-
-    ```json
-    {
-        "Group": "Payment methods",
-        "FriendlyName": "PayPal Standard",
-        "SystemName": "Payments.PayPalStandard",
-        "Version": "1.49",
-        "SupportedVersions": [ "4.20" ],
-        "Author": "nopCommerce team",
-        "DisplayOrder": 1,
-        "FileName": "Nop.Plugin.Payments.PayPalStandard.dll",
-        "Description": "This plugin allows paying with PayPal Standard"
-    }
-    ```
-
-    Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format Nop.Plugin.{Group}.{Name}.dll (it is your plugin assembly filename). Ensure that *"Copy to Output Directory"* property of this file is set to *"Copy if newer"*.
-
-    ![p2](_static/how-to-write-plugin-4.20/write_plugin_4.20_2.jpg)
+1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json)
 
 1. The last required step is to create a class which implements **IPlugin** interface (Nop.Services.Plugins namespace). nopCommerce has **BasePlugin** class which already implements some IPlugin methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from IPlugin. For example, we have "IPaymentMethod" interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as *ProcessPayment()* or *GetAdditionalHandlingFee()*. Currently nopCommerce has the following specific plugin interfaces:
 
@@ -85,11 +66,8 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 - **IMiscPlugin**. If your plugin doesn't fit any of these interfaces
 
 > [!IMPORTANT]
-> 
-> Important note: After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
-
-> [!IMPORTANT]
-> 
+> After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
+>
 > You may need to rebuild your solution after adding your plugin. If you do not see DLLs for your plugin under Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY, you need to rebuild your solution. nopCommerce will not list your plugin in the Local Plugins page if your DLLs do not exist in the correct folder in Nop.Web.
 
 ## Handling requests. Controllers, models and views
@@ -133,8 +111,7 @@ Where *{CONTROLLER_NAME}* is a name of your controller and *{ACTION_NAME}* is a 
 Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under **Admin → Configuration → Local Plugins**.
 
 > [!TIP]
-> 
-> Tip: The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
+> The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
 
 For example, the project structure of PayPalStandard plugin looks like the image below:
 
@@ -148,8 +125,7 @@ This step is optional. Some plugins can require additional logic during plugin i
 1. **Uninstall**. This method will be invoked during plugin uninstallation.
 
 > [!IMPORTANT]
-> 
-> Important note: If you override one of these methods, do not hide its base implementation.
+> If you override one of these methods, do not hide its base implementation.
 
 For example, overridden "Install" method should include the following method call: *base.Install()*. The "Install" method of PayPalStandard plugin looks like the code below
 
@@ -167,8 +143,7 @@ public override void Install()
 ```
 
 > [!TIP]
-> 
-> Tip: The list of installed plugins is located in `\App_Data\Plugins.json`. The list is created during installation.
+> The list of installed plugins is located in `\App_Data\Plugins.json`. The list is created during installation.
 
 ## Routes
 

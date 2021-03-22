@@ -2,7 +2,7 @@
 title: Plugin with data access
 uid: en/developer/plugins/plugin-with-data-access-4.20
 author: nop.52152
-contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev
+contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev, git.cromatido
 ---
 
 # Plugin with data access" (4.20 and below)
@@ -16,7 +16,6 @@ In this tutorial I'll be using the nopCommerce plugin architecture to implement 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
 > [!NOTE]
-> 
 > The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
 
 ## Getting started
@@ -29,9 +28,7 @@ Add the following folders and `plugin.json` file.
 
 ![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
 
-You can view the `plugin.json` file in the image below.
-
-![plugin-with-data-access_3](_static/plugin-with-data-access/plugin-with-data-access_3.jpg)
+For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 Then add references to the following projects: Nop.Core, Nop.Data, Nop.Web.Framework
 

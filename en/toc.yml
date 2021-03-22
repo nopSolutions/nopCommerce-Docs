@@ -24,11 +24,14 @@
           name: Installing on Windows
           href: installation-and-upgrading/installing-nopcommerce/installing-on-windows.md
         -
+          name: Installing on Linux
+          href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+        -
           name: Installing on Microsoft Azure
           href: installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.md
         -
-          name: Installing on Linux
-          href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+          name: Load balancing and web farms in nopCommerce
+          href: installation-and-upgrading/installing-nopcommerce/web-farms.md
         -
           name: Pre-installed nopCommerce
           href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md
@@ -280,7 +283,7 @@
           name: Customer roles
           href: running-your-store/customer-management/customer-roles.md
         -
-          name: Access control List
+          name: Access control list
           href: running-your-store/customer-management/access-control-list.md
         -
           name: Activity log
@@ -333,7 +336,7 @@
               name: Send an order confirmation email
               href: running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email.md
         -
-          name: Facebook pixel
+          name: Facebook Pixel
           href: running-your-store/promotional-tools/facebook-pixel.md
     -
       name: Content management
@@ -406,17 +409,20 @@
           name: Coding standards
           href: developer/tutorials/coding-standards.md
         - 
-          name: Source code organization. Architecture of nopCommerce.
+          name: Source code organization
           href: developer/tutorials/source-code-organization.md
+        - 
+          name: Default database schema
+          href: developer/tutorials/db-schema.md
+        - 
+          name: Architecture of nopCommerce
+          href: developer/tutorials/architecture-of-nopCommerce.md
         - 
           name: Instruction on how to start developing on nopCommerce
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
         - 
           name: Updating an existing entity. How to add a new property
           href: developer/tutorials/update-existing-entity.md
-        - 
-          name: The nopCommerce data access layer
-          href: developer/tutorials/data-access-layer.md
         - 
           name: Entity events and how they work
           href: developer/tutorials/entity-event.md
@@ -445,6 +451,9 @@
           name: Settings API
           href: developer/tutorials/settings.md
         - 
+          name: How and when to use the ITypeFinder interface
+          href: developer/tutorials/type-finder.md
+        - 
           name: Description of the web.config file in project
           href: developer/tutorials/description-of-the-web-config-file-in-project.md
         - 
@@ -459,12 +468,27 @@
         - 
           name: Guide to creating a page containing a reporting table of DataTables
           href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
+        - 
+          name: Content Security Policy (CSP) Headers
+          href: developer/tutorials/csp-headers.md
+        - 
+          name: Description settings from appsettings.json file
+          href: developer/tutorials/appsettings-json-file.md
+        - 
+          name: Description of plugin system
+          href: developer/tutorials/description-of-plugin-system.md
+        - 
+          name: UNIT testing
+          href: developer/tutorials/unit-tests.md
     - 
       name: Creating a nopCommerce plugin
       href: developer/plugins/index.md
       items:
         - 
-          name: How to write a plugin for nopCommerce 4.30 (and above)
+          name: How to write a plugin for nopCommerce 4.40 (and above)
+          href: developer/plugins/how-to-write-plugin-4.40.md
+        - 
+          name: How to write a plugin for nopCommerce 4.30
           href: developer/plugins/how-to-write-plugin-4.30.md
         - 
           name: How to write a plugin for nopCommerce 4.20
@@ -496,6 +520,9 @@
         - 
           name: Adding CSS and JS resource files into nopCommerce plugin
           href: developer/plugins/resource-files.md
+        - 
+          name: Description of the structure of the plugin.json file
+          href: developer/plugins/plugin.json.md
     - 
       name: Designer's guide
       href: developer/design/index.md
@@ -530,6 +557,9 @@
         - 
           name: Contributing a theme
           href: developer/design/contributing-theme.md
+        - 
+          name: Entity events system
+          href: developer/design/entity-events-system.md
     - 
       name: Contribute
       href: developer/contribute/index.md

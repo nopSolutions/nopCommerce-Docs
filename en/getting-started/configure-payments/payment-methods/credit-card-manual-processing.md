@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 # Credit card (manual processing)
 
-This is a special gateway that allows all orders to be successfully entered on the site, but it does NOT charge the customer or make any calls to any live gateway. It is recommended to use this payment method if you want to perform one of the following:
+This is a special payment plugin that allows all orders to be successfully entered on the website, but it does NOT really charge a customer or make any calls to any live payment gateway. It is recommended to use this payment method if you want to perform one of the following:
 
 * Process all orders offline
 * Process them manually via another back-office system

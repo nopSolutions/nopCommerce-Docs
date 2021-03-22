@@ -9,6 +9,10 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 PayPal Standard is the easiest way to securely accept credit card and PayPal payments online.
 
+To configure the PayPal Standard plugin go to **Configuration → Payment methods**. Then find the **PayPal Smart Payment Buttons** payment method in the payment method list:
+
+![List](_static/paypal-standard/list.jpg)
+
 ## Activate the method, edit its name and display order
 
 You can edit the payment method name which will be displayed for customers in the public store or its display order. To do this click the **Edit** button in the plugin row on the payment method list page. You will be able to enter **Friendly name** and **Display order**. In this row you can also activate the plugin or make it inactive using the **Is active** field. Click the **Update** button. Your changes will be saved.
@@ -17,7 +21,7 @@ You can edit the payment method name which will be displayed for customers in th
 
 To use **PayPal Standard** plugin as a payment method please follow these steps:
 
-1. Register a Business account on www.paypal.com. Following the link [https://www.paypal.com/bizsignup/](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
+1. Register a Business account on www.paypal.com. Follow the link [https://www.paypal.com/bizsignup/](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
 
     ![step1](_static/paypal-standard/signUp1step.png)
 
@@ -44,7 +48,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 1. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
 
     ![PDTtoken](_static/paypal-standard/PDTtoken.png)
-1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods**. In the **PayPal Standard** line click on **Confige**.
+1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods**. In the **PayPal Standard** line click on **Configure**.
 
 ![nopconfig](_static/paypal-standard/nopConfigPP.png)
 

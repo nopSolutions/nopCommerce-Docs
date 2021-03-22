@@ -18,7 +18,7 @@ Currently, default nopCommerce installation allows the store admin to embed two 
 
 ## Google Analytics Widget
 
-Google Analytics is a free website stats tool from Google. It keeps track of statistics about the visitors and e-commerce conversion on your website. This widget block can be rendered at:
+Google Analytics is a free website stats tool from Google. It keeps track of statistics about the visitors and eCommerce conversion on your website. This widget block can be rendered at:
 
 * HTML Header tag
 * After `<body>` end HTML tag.

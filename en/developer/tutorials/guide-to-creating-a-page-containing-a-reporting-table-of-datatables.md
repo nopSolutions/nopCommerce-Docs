@@ -10,8 +10,8 @@ contributors: git.RomanovM, git.DmitriyKulagin
 In this tutorial we will be learning about how to extend the functionality of the nopCommerce with custom functionality for admin panel, and create a page containing a table with some data as a report. So before starting on this tutorial you need to have some prior knowledge and understanding on some of the topics like.
 
 * [nopCommerce architecture](xref:en/developer/tutorials/source-code-organization).
-* nopCommerce Plugin.
-* nopCommerce routing.
+* [nopCommerce Plugin](xref:en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin).
+* [nopCommerce routing](xref:en/developer/tutorials/register-new-routes).
 
 If you are not familiar with the above topics, we highly recommend you to learn about those first. However, if you are comfortable or at least have some basic understanding on the above topic then you are good enough to continue on this tutorial.
 
@@ -19,7 +19,7 @@ So in this tutorial we will be creating a plugin with a page containing the tabl
 
 ## Create a nopCommerce plugin project
 
-I am assuming that you already know where and how to create nopCommerce plugin project and configure the project according to nopCommerce standard. If you don't know then you can visit [this page](xref:en/developer/plugins/how-to-write-plugin-4.30) link to know how to create and configure nopCommerce plugin project.
+I am assuming that you already know where and how to create nopCommerce plugin project and configure the project according to nopCommerce standard. If you don't know then you can visit [this page](xref:en/developer/plugins/how-to-write-plugin-4.40) link to know how to create and configure nopCommerce plugin project.
 
 If you have followed the above provided link to create and configure your plugin project then you may end up with the folder structure like this.
 
@@ -40,28 +40,28 @@ public class DistOfCustByCountryPlugin: BasePlugin
             return $"{_webHelper.GetStoreLocation()}Admin/DistOfCustBuCountryPlugin/Configure";
         }
 
-        public override void Install()
+        public override async Task InstallAsync()
         {
             //Code you want to run while installing the plugin goes here.
-            base.Install();
+             await base.InstallAsync();
         }
 
-        public override void Uninstall()
+        public override async Task UninstallAsync()
         {
             //Code you want to run while Uninstalling the plugin goes here.
-            base.Uninstall();
+            await base.UninstallAsync();
         }
     }
 ```
 
-This class has two overridden methods Install and Uninstall from BasePlugin class. If we want to do something before installing and uninstalling our plugin will put that code before calling the install and uninstall method from base class. For example if our plugin may have to create its own table then we will create that table before we call the install method from base class and likewise we may also want to delete our table from database if users want to uninstall our plugin. In this case we may want to run code to delete tables before calling uninstall method from base class.
+This class has two overridden methods `InstallAsync` and `UninstallAsync` from `BasePlugin` class. If we want to do something before installing and uninstalling our plugin will put that code before calling the install and uninstall method from base class. For example if our plugin may have to create its own table then we will create that table before we call the install method from base class and likewise we may also want to delete our table from database if users want to uninstall our plugin. In this case we may want to run code to delete tables before calling uninstall method from base class.
 
-First let's create a model named "CustomersDistribution" inside Models folder/directory.
+First let's create a model named **CustomersDistribution** inside **Models** folder.
 
 ## #Models/ CustomersDistribution.cs
 
 ```cs
-public class CustomersDistribution : BaseNopModel
+public record CustomersDistribution : BaseNopModel
 {
     /// <summary>
     /// Country based on the billing address.
@@ -75,10 +75,10 @@ public class CustomersDistribution : BaseNopModel
 }
 ```
 
-Alse let's add the search model named "CustomersByCountrySearchModel" inside Models folder/directory.
+Also let's add the search model named `CustomersByCountrySearchModel` inside *Models* folder.
 
 ```cs
-public class CustomersByCountrySearchModel : BaseSearchModel
+public record CustomersByCountrySearchModel : BaseSearchModel
 {
 }
 ```
@@ -90,7 +90,7 @@ nopCommerce uses the repository pattern for data access which is ideal for depen
 ```cs
 public interface ICustomersByCountry
 {
-    List<CustomersDistribution> GetCustomersDistributionByCountry();
+    Task<List<CustomersDistribution>> GetCustomersDistributionByCountryAsync()
 }
 ```
 
@@ -114,14 +114,13 @@ public class CustomersByCountry : ICustomersByCountry
         _customerService = customerService;
     }
 
-    public List<CustomersDistribution> GetCustomersDistributionByCountry()
+    public async Task<List<CustomersDistribution>> GetCustomersDistributionByCountryAsync()
     {
-        return _customerService.GetAllCustomers()
+        return await _customerService.GetAllCustomersAsync()
             .Where(c => c.ShippingAddressId != null)
             .Select(c => new
             {
-                _countryService.GetCountryByAddress(_addressService.GetAddressById(c.ShippingAddressId ?? 0))
-                    .Name,
+                await (_countryService.GetCountryByAddressAsync(_addressService.GetAddressById(c.ShippingAddressId ?? 0))).Name,
                 c.Username
             })
             .GroupBy(c => c.Name)
@@ -130,14 +129,15 @@ public class CustomersByCountry : ICustomersByCountry
 }
 ```
 
-Here we are creating a class named "CustomersByCountry" which is inherent from "ICustomersByCountry" interface. Also, we are implementing the method that retrieves data from the database. We used this approach so that we can use dependency injection techniques to inject this service to the controller.
+Here we are creating a class named **CustomersByCountry** which is inherent from **ICustomersByCountry** interface. Also, we are implementing the method that retrieves data from the database. We used this approach so that we can use dependency injection techniques to inject this service to the controller.
 
 Now let's create a controller class. A good practice to name plugin controllers is like {Group}{Name}Controller.cs. For example, TutorialCustomersByCountryController, here {Tutorial}{CustomersByCountry}Controller. But remember that it is not a requirement to name the controller with {Group}{Name} it is just recommended way by nopCommerce for naming convention but the Controller part in the name is the requirement of .Net MVC.
 
 ## #Controllers/CustomersByCountryController.cs
 
 ```cs
-[AuthorizeAdmin] //confirms access to the admin panel
+    [AutoValidateAntiforgeryToken]
+    [AuthorizeAdmin] //confirms access to the admin panel
     [Area(AreaNames.Admin)] //specifies the area containing a controller or action
     public class DistOfCustByCountryPluginController : BasePluginController
     {
@@ -158,11 +158,11 @@ Now let's create a controller class. A good practice to name plugin controllers 
         }
 
         [HttpPost]
-        public IActionResult GetCustomersCountByCountry()
+        public async Task<IActionResult> GetCustomersCountByCountry()
         {
             try
             {
-                return Ok(new DataTablesModel { Data = _service.GetCustomersDistributionByCountry() });
+                return Ok(new DataTablesModel { Data = await _service.GetCustomersDistributionByCountryAsync() });
             }
             catch (Exception ex)
             {
@@ -229,7 +229,7 @@ Now let's create a view with DataTables where we can display our data which then
 
 There are several other properties which you can play around with to understand what each of the properties are used for.
 
-We are almost done but not complete yet. If you have remembered we previously created a service Interface and a service class inheriting that interface and we have injected that service to our controller. But we haven't yet registered that service to any IOC container. nopCommerce uses AutoFac for dependency injection. So, lets create a class to register the service for dependency injection.
+We are almost done but not complete yet. If you have remembered we previously created a service Interface and a service class inheriting that interface and we have injected that service to our controller. But we haven't yet registered that service to any IOC container. So, lets create a class to register the service for dependency injection.
 
 ## #Infrastructure/ DependencyRegistrar.cs
 
@@ -238,9 +238,9 @@ class DependencyRegistrar : IDependencyRegistrar
 {
     public int Order => 1;
 
-    public void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
+    public void Register(IServiceCollection services, ITypeFinder typeFinder, NopConfig config)
     {
-        builder.RegisterType<CustomersByCountry>().As<ICustomersByCountry>().InstancePerLifetimeScope();
+        services.AddScoped<ICustomersByCountry, CustomersByCountry>();
     }
 }
 ```

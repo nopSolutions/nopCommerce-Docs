@@ -12,6 +12,7 @@ This chapter describes how to install the nopCommerce software on Linux system o
 1. [Install and configure software](#install-and-configure-software)
 1. [Get nopCommerce](#get-nopcommerce)
 1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
+1. [Installation process](#installation-process)
 1. [Troubleshooting](#troubleshooting)
 
 ## Install and configure software
@@ -130,17 +131,17 @@ server {
 
 Create a directory
 
-`mkdir /var/www/nopCommerce430`
+`mkdir /var/www/nopCommerce440`
 
 Download and unpack the nopCommerce:
 
-`cd /var/www/nopCommerce430`
+`cd /var/www/nopCommerce440`
 
-`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.30/nopCommerce_4.30_NoSource_linux_x64.zip`
+`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.40.2/nopCommerce_4.40.2_NoSource_linux_x64.zip`
 
 `sudo apt-get install unzip`
 
-`sudo unzip nopCommerce_4.30_NoSource_linux_x64.zip`
+`sudo unzip nopCommerce_4.40.2_NoSource_linux_x64.zip`
 
 Create couple directories to run nopCommerce:
 
@@ -152,26 +153,26 @@ Change the file permissions
 
 `cd ..`
 
-`sudo chgrp -R www-data nopCommerce430/`
+`sudo chgrp -R www-data nopCommerce440/`
 
-`sudo chown -R www-data nopCommerce430/`
+`sudo chown -R www-data nopCommerce440/`
 
 ## Create the nopCommerce service
 
-Create the /etc/systemd/system/nopCommerce430.service file with the following contents:
+Create the /etc/systemd/system/nopCommerce440.service file with the following contents:
 
 ```
 [Unit]
 Description=Example nopCommerce app running on XUbuntu
 
 [Service]
-WorkingDirectory=/var/www/nopCommerce430
-ExecStart=/usr/bin/dotnet /var/www/nopCommerce430/Nop.Web.dll
+WorkingDirectory=/var/www/nopCommerce440
+ExecStart=/usr/bin/dotnet /var/www/nopCommerce440/Nop.Web.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=nopCommerce430-example
+SyslogIdentifier=nopCommerce440-example
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
@@ -182,11 +183,11 @@ WantedBy=multi-user.target
 
 Start the service
 
-`sudo systemctl start nopCommerce430.service`
+`sudo systemctl start nopCommerce440.service`
 
 Check the nopCommerce service status
 
-`sudo systemctl status nopCommerce430.service`
+`sudo systemctl status nopCommerce440.service`
 
 ![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
 
@@ -195,6 +196,10 @@ Restart the nginx server
 `sudo systemctl restart nginx`
 
 **Now everything is ready, you can proceed to install and configure the store**
+
+## Installation process
+
+The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
 
 ## Troubleshooting
 

@@ -2,7 +2,7 @@
 title: How to write a Tax Plugin for nopCommerce 4.20
 uid: en/developer/plugins/how-to-write-tax-plugin-4.20
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin
+contributors: git.nopsg, git.DmitriyKulagin, git.cromatido
 ---
 
 # How to write a Tax Plugin for nopCommerce
@@ -55,25 +55,7 @@ To extend nopCommerce functionality, plugins are used. There are various types o
     > [!NOTE]
     > The **PLUGIN_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, `Tax.FixedOrByCountryStateZip`.
 
-1. After updating the **.csproj** file, `plugin.json` file should be added which is required for plugin.  This file contains meta information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For example, **FixedOrByCountryStateZip** plugin has the following `plugin.json` file:
-
-    ```json
-    {
-        "Group": "Tax Providers",
-        "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
-        "SystemName": "Tax. FixedOrByCountryStateZip",
-        "Version": "1.29",
-        "SupportedVersions": [ "4.20" ],
-        "Author": "nopCommerce team ",
-        "DisplayOrder": 1,
-        "FileName": "Nop.Plugin.Tax. FixedOrByCountryStateZip.dll",
-        "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes "
-    }
-    ```
-
-    Actually all fields are self-descriptive, but here are some notes. **SystemName** field should be unique. **Version** field is a version number of your plugin; you can set it to any value you like. **SupportedVersions** field can contain a list of supported nopCommerce versions separated by commas (ensure that the current version of nopCommerce is included in this list, otherwise, it will not be loaded). **FileName** field has the following format **Nop.Plugin.{Group}.{Name}.dll** (it is your plugin assembly filename). Ensure that `Copy to Output Directory` property of this file is set to `Copy if newer`.
-
-    ![image3](_static/how-to-write-a-tax-plugin-4.20/image3.png)
+1. After updating the **.csproj** file, `plugin.json` file should be added which is required for plugin.  This file contains meta information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 1. The last required step is to create a class which implements `BasePlugin` (`Nop.Core.Plugins` namespace) and `ITaxProvider` interface (`Nop.Services.Tax` namespace). **ITaxProvider** implements `GetTaxRate` method which returns type **CalculateTaxResult** (contains tax rate, errors if any and Boolean success status) based on the custom logic, usually based on the customer address.
 
@@ -87,7 +69,7 @@ When a plugin/widget is installed, you will see **Uninstall** button. It is a go
 
 ![image5](_static/how-to-write-a-tax-plugin-4.20/image5.png)
 
-There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled. 
+There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled.
 
 > [!NOTE]
 > Deleting will remove physical files from the server.
