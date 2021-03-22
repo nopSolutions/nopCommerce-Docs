@@ -308,7 +308,7 @@ The style rules in this section concern expression-level preferences, including 
 
   ```csharp
   //Right
-  return expr ? "hello" : "world"
+  return expr ? "hello" : "world";
   ```
 
   ```csharp
