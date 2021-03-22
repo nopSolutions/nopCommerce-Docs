@@ -12,6 +12,7 @@ The following is a list of common questions asked by developers working with nop
 * [System requirements for developing](xref:en/developer/tutorials/system-requirements-for-developing)
 * [Configuring code style](xref:en/developer/tutorials/code-style)
 * [Coding Standards](xref:en/developer/tutorials/coding-standards)
+* [Architecture of nopCommerce](xref:en/developer/tutorials/architecture-of-nopCommerce)
 * [Source code organization. Architecture of nopCommerce.](xref:en/developer/tutorials/source-code-organization)
 * [Instruction on how to start developing on nopCommerce](xref:en/developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce)
 * [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
@@ -32,4 +33,3 @@ The following is a list of common questions asked by developers working with nop
 * [Content Security Policy (CSP) Headers](xref:en/developer/tutorials/csp-headers)
 * [Description settings from appsettings.json file](xref:en/developer/tutorials/appsettings-json-file)
 * [Description of plugin system](xref:en/developer/tutorials/description-of-plugin-system)
-* [Architecture of nopCommerce 4.20 and under](xref:en/developer/tutorials/architecture-of-nopCommerce-4.20-and-under)
