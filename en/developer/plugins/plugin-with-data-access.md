@@ -13,7 +13,6 @@ In this tutorial I'll be using the nopCommerce plugin architecture to implement 
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
 - [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40)
 
-
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
 > [!NOTE]
@@ -168,7 +167,7 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Services
 Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
 
 ```csharp
-using Autofac;
+using Microsoft.Extensions.DependencyInjection;
 using Nop.Core.Configuration;
 using Nop.Core.Infrastructure;
 using Nop.Core.Infrastructure.DependencyManagement;
