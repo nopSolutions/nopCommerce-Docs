@@ -17,7 +17,7 @@ Then, You can also put any security (ACL) logic to this method. For example, val
  public class CustomPlugin : BasePlugin, IAdminMenuPlugin
  {
 
-    public void ManageSiteMap(SiteMapNode rootNode)
+    public Task ManageSiteMapAsync(SiteMapNode rootNode)
     {
         var menuItem = new SiteMapNode()
         {
@@ -33,6 +33,8 @@ Then, You can also put any security (ACL) logic to this method. For example, val
             pluginNode.ChildNodes.Add(menuItem);
         else
             rootNode.ChildNodes.Add(menuItem);
+
+        return Task.CompletedTask;
     }
 
 }
