@@ -5,16 +5,7 @@ author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# Instruction on how to start developing on nopCommerce 4.30
-
-## Things covered in this tutorial
-
-1. Tools Required for Development.
-2. Stack of technologies used in nopCommerce.
-3. Instructions on how to download the project and run it on the local machine.
-4. How to configure nopCommerce to run on HTTPS.
-
-## Summary
+# Instruction on how to start developing on nopCommerce
 
 nopCommerce is open-source Microsoft ASP.NET based eCommerce solution. This is a basic guide for developers on how to start developing on nopCommerce.
 
@@ -76,23 +67,23 @@ Before we begin to work with nopCommerce we need to ensure that our local machin
 
 ### Step 1: Download nopCommerce source code
 
-To download please visit [this site](https://www.nopcommerce.com/download-nopcommerce). There you can see two download buttons one with a source code and one without source code like shown in the picture below.
+To download please visit [www.nopcommerce.com](https://www.nopcommerce.com/download-nopcommerce). There you can see two download buttons one with a source code and one without source code like shown in the picture below.
 
 ![image1](_static/instruction-on-how-to-start-developing-on-nopcommerce/image1.png)
 
 Since we are downloading nopCommerce for development purpose so we need to download the one that says "Package with source code" which contains all source code of nopCommerce. In order to download nopCommerce you need to be logged in or register a new account. Now you can download nopCommerce as a RAR file, and extract it to your desired folder location.
 
-### Step 2: Open nopCommerce solution in Visual Studio
+### Step 2: Open nopCommerce solution in Microsoft Visual Studio
 
-Open the folder, Inside that folder you will see a bunch of files and folders which contains all of the sources code for nopCommerce.
+Open the folder. Inside that folder you will see a bunch of files and folders which contains all of the sources code for nopCommerce.
 
 ![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
 
-In there you will also see a solution file with extension of `.sln`, please double click that solution file to open nopCommerce project in you Visual Studio.
+In there you will also see a solution file with extension of `.sln`, please double click that solution file to open nopCommerce project in you Microsoft Visual Studio.
 
-### Step 3: Running nopCommerce project using Visual Studio
+### Step 3: Running nopCommerce project using Microsoft Visual Studio
 
-nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using Visual Studio by hitting ctrl+F5 or just F5 to run project in debugging mode, or you can run using physical button with play icon in Visual Studio. After you run the project for the first time you will see a installation page like below:
+nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run project using Microsoft Visual Studio by hitting ctrl+F5 or just F5 to run project in debugging mode, or you can run using physical button with play icon in Microsoft Visual Studio. After you run the project for the first time you will see a installation page like below:
 
 ![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/nop_install.jpg)
 
@@ -106,7 +97,7 @@ Here you are required to provide an email address and password which then be use
 
 Here you need to provide your information you want to use for this project.
 
-Here you have two choose your database storage. You can use MS SQL Server or MySQL server. It is your decision which one you want to use.
+Here you have two choose your database storage. You can use MS SQL Server or MySQL server or PostgreSQL server. It is your decision which one you want to use.
 
 For the sake of this tutorial we will be using the MS SQL Server.
 
@@ -126,4 +117,4 @@ Check the "Enable SSL", and enter the HTTPS URL besides it. Then save this proje
 
 Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in you WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called launchSetting.json. Open that file and you will see bunch of configuration setting already written in that file.
 
-Inside that file you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under "sslPort" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:yourport`.
+Inside that file you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under "sslPort" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:{yourPort}`.
