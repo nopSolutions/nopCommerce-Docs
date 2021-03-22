@@ -25,7 +25,7 @@ If you have followed the above provided link to create and configure your plugin
 
 ![image1](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image1.png)
 
-And you also know what kinds of files each of these folder/directory holds. Here **DistOfCustBuCountryPlugin.cs** file is the one that inherent from `BasePlugin` class. Here is the basic code we want in this file for the sake of this tutorial.
+And you also know what kinds of files each of these folder/directory holds. Here "DistOfCustByCountryPlugin.cs" file is the one that inherent from BasePlugin class. Here is the basic code we want in this file for the sake of this tutorial.
 
 ```cs
 public class DistOfCustByCountryPlugin: BasePlugin
@@ -123,7 +123,7 @@ public class CustomersByCountry : ICustomersByCountry
                 await (_countryService.GetCountryByAddressAsync(_addressService.GetAddressById(c.ShippingAddressId ?? 0))).Name,
                 c.Username
             })
-            .GroupBy(c => c.Username)
+            .GroupBy(c => c.Name)
             .Select(cbc => new CustomersDistribution { Country = cbc.Key, NoOfCustomers = cbc.Count() }).ToList();
     }
 }
@@ -131,7 +131,7 @@ public class CustomersByCountry : ICustomersByCountry
 
 Here we are creating a class named **CustomersByCountry** which is inherent from **ICustomersByCountry** interface. Also, we are implementing the method that retrieves data from the database. We used this approach so that we can use dependency injection techniques to inject this service to the controller.
 
-Now let's create a controller class. A good practice to name plugin controllers is like `{Group}{Name}Controller.cs`. For example, `TutorialCustomersByCountryController`, here `{Tutorial}{CustomersByCountry}Controller`. But remember that it is not a requirement to name the controller with `{Group}{Name}` it is just recommended way by nopCommerce for naming convention but the *`Controller`* part in the is the requirement of .Net MVC.
+Now let's create a controller class. A good practice to name plugin controllers is like {Group}{Name}Controller.cs. For example, TutorialCustomersByCountryController, here {Tutorial}{CustomersByCountry}Controller. But remember that it is not a requirement to name the controller with {Group}{Name} it is just recommended way by nopCommerce for naming convention but the Controller part in the name is the requirement of .Net MVC.
 
 ## #Controllers/CustomersByCountryController.cs
 
@@ -139,10 +139,10 @@ Now let's create a controller class. A good practice to name plugin controllers 
     [AutoValidateAntiforgeryToken]
     [AuthorizeAdmin] //confirms access to the admin panel
     [Area(AreaNames.Admin)] //specifies the area containing a controller or action
-    public class DistOfCustBuCountryPluginController : BasePluginController
+    public class DistOfCustByCountryPluginController : BasePluginController
     {
         private readonly ICustomersByCountry _service;
-        public DistOfCustBuCountryPluginController(ICustomersByCountry service)
+        public DistOfCustByCountryPluginController(ICustomersByCountry service)
         {
             _service = service;
         }
@@ -172,9 +172,9 @@ Now let's create a controller class. A good practice to name plugin controllers 
     }
 ```
 
-In the controller we are injecting `ICustomersByCountry` service we created previously to get data from database. Here we have created two Actions one is of type "HttpGet" and another of type "HttpPost". The `Configure` HttpGet action is returning a view named **Configure.cshtml** which we haven't created yet. And `GetCustomersCountByCountry` HttpPost action which is using injected service to retrieve data and returning data in the json format. This action is going to be called by data table which expects response as DataTablesModel object. However, here we are setting the data property which is actually the data which will be rendered in the table.
+In the controller we are injecting "ICustomersByCountry" service we created previously to get data from database. Here we have created two Actions one is of type "HttpGet" and another of type "HttpPost". The "Configure" HttpGet action is returning a view named "Configure.cshtml" which we haven't created yet. And GetCustomersCountByCountry HttpPost action which is using an injected service to retrieve data and returning data in the json format. This action is going to be called by the data table which expects a response as DataTablesModel object. However, here we are setting the data property which is actually the data which will be rendered in the table.
 
-Now let's create a view with *DataTables* where we can display our data which then can be view by our users. As well as a **_ViewImports.cshtml** file which contains code to import all required references for our view files.
+Now let's create a view with DataTables where we can display our data which then can be viewed by our users. As well as a _ViewImports.cshtml file which contains code to import all required references for our view files.
 
 ## #Views/ Configure.cshtml
 
@@ -221,13 +221,13 @@ Now let's create a view with *DataTables* where we can display our data which th
 @using Microsoft.AspNetCore.Routing;
 ```
 
-* In **Configure.cshtml** we are using a partial view named "Table". This is the nopCommerce implementation of JQuery DataTables. We can find this file under `Nop.Web/Areas/Admin/Views/Shared/Table.cshtml`. There you can see the code for implementation of DataTables. This view model takes DataTablesModel class for configuration of DataTables. Let's explain the property we have set for DataTablesModel class.
-* **Name:** This will be set as a id for DataTables.
-* **UrlRead:** this is the URL from where DataTables is going to fetch data to render in table. Here we are setting URL to "GetCustomersCountByCountry" Action of "TutorialCustomersByCountry" Controller from we are getting data for DataTables.
+* In "Configure.cshtml" we are using a partial view named "Table". This is the nopCommerce implementation of JQuery DataTables. We can find this file under `Nop.Web/Areas/Admin/Views/Shared/Table.cshtml`. There you can see the code for implementation of DataTables. This view model takes a DataTablesModel class for configuration of DataTables. Let's explain the property we have set for the DataTablesModel class.
+* **Name:** This will be set as an id for DataTables.
+* **UrlRead:** this is the URL from where DataTables is going to fetch data to render in table. Here we are setting the URL to "GetCustomersCountByCountry" Action of the "TutorialCustomersByCountry" Controller from where we are getting data for DataTables.
 * **Paging:** This property is used to enable or disable pagination for DataTables.
 * **ColumnCollection:** This property holds the column configuration property.
 
-There are several other properties which you can play around to understand what each properties are used for.
+There are several other properties which you can play around with to understand what each of the properties are used for.
 
 We are almost done but not complete yet. If you have remembered we previously created a service Interface and a service class inheriting that interface and we have injected that service to our controller. But we haven't yet registered that service to any IOC container. So, lets create a class to register the service for dependency injection.
 
@@ -245,9 +245,9 @@ class DependencyRegistrar : IDependencyRegistrar
 }
 ```
 
-Here we are inheriting from `IDependencyRegistrar` interface which is provided by nopCommerce. Here we need to implement a **Register** method and an integer property **Order**. Inside the *Register* method we register all our service for our plugin as shown in the above code.
+Here we are inheriting from the "IDependencyRegistrar" interface which is provided by nopCommerce. Here we need to implement a "Register" Method and an integer property Order. Inside the Register method we must register all of our services for our plugin as shown in the above code. Under the hood it uses AutoFac to register our services. DependencyRegistrar is just the layer created by nopCommerce which we are using to register our dependencies.
 
-Now the last step is to register our route for the Action `GetCustomersCountByCountry` from Controller `TutorialCustomersByCountry`. We do not need to register the route for `Configure` Action because we have already registered that in `DistOfCustByCountryPlugin` class.
+Now the last step is to register our route for the Action "GetCustomersCountByCountry" from Controller "TutorialCustomersByCountry". We do not need to register the route for "Configure" Action because we have already registered that in the `DistOfCustByCountryPlugin` class.
 
 ## #Infrastructure/RouteProvider
 
@@ -275,6 +275,8 @@ public class RouteProvider : IRouteProvider
 }
 ```
 
-Now just build your project and run. Login as *Administrator* and go to **LocalPlugins** menu under **Configuration**, there you will see your newly created plugin. Install that plugin. After installation completes you will see a configuration button in your plugin. If you have followed correctly through this tutorial then you will see output something like:
+To learn more about nopCommerce routing please visit [this page](xref:en/developer/tutorials/register-new-routes)
+
+Now just build your project and run. Login as Administrative user and go to the LocalPlugins menu under Configuration, there you will see your newly created plugin. Install that plugin. After installation is complete you will see a configuration button in your plugin. If you have followed correctly through this tutorial then you will see output something like:
 
 ![image2](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image2.png)
