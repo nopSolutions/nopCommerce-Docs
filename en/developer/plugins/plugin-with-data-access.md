@@ -11,8 +11,9 @@ In this tutorial I'll be using the nopCommerce plugin architecture to implement 
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30)
-- [The Plugin Template](xref:en/developer/plugins/how-to-write-plugin-4.30.html#plugin-template)
+- [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40)
+
+
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
 > [!NOTE]
@@ -20,15 +21,12 @@ We will start coding with the data access layer, move on to the service layer, a
 
 ## Getting started
 
-Create a new class library project "Nop.Plugin.Other.ProductViewTracker".
+Create a new class library project "Nop.Plugin.Misc.ProductViewTracker".
 
-![plugin-with-data-access.4.30_1](_static/plugin-with-data-access.4.30/plugin-with-data-access.4.30_1.jpg)
+Add the  `plugin.json` file.
 
-Add the following folders and `plugin.json` file.
-
-![plugin-with-data-access.4.30_2](_static/plugin-with-data-access.4.30/plugin-with-data-access.4.30_2.jpg)
-
-For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+>[!TIP]
+>For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
 
@@ -37,8 +35,7 @@ Then add references to the **Nop.Web.Framework** projects. This will be enough f
 Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that we do not have navigation properties (relational properties), because Linq2DB framework, which we use to work with databases does not support the navigation properties.
 
 ```csharp
-using Nop.Core;
-namespace Nop.Plugin.Other.ProductViewTracker.Domain
+namespace Nop.Plugin.Misc.ProductViewTracker.Domain
 {
     public class ProductViewTrackerRecord : BaseEntity
     {
@@ -53,7 +50,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Domain
 
 **File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
 
-The next class to create is the FluentMigrator entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
+The next class to create is the *FluentMigrator* entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
 
 ```csharp
 using FluentMigrator.Builders.Create.Table;
@@ -63,6 +60,7 @@ using Nop.Data.Mapping.Builders;
 using Nop.Plugin.Other.ProductViewTracker.Domains;
 using Nop.Data.Extensions;
 using System.Data;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Mapping.Builders
 {
     public class ProductViewTrackerRecordBuilder : NopEntityBuilder<ProductViewTrackerRecord>
@@ -89,12 +87,13 @@ namespace Nop.Plugin.Other.ProductViewTracker.Mapping.Builders
 }
 ```
 
-The next important class for us will be the migration class, which creates our table directly in the database. You can create as many migrations as you like in your plugin, the only thing you need to keep track of is the version of your migration. We specially created our NopMigration attribute to make it easier for you. By indicating here the most complete and accurate file creation date, you practically guarantee the uniqueness of your migration number
+The next important class for us will be the migration class, which creates our table directly in the database. You can create as many migrations as you like in your plugin, the only thing you need to keep track of is the version of your migration. We specially created our **NopMigration** attribute to make it easier for you. By indicating here the most complete and accurate file creation date, you practically guarantee the uniqueness of your migration number.
 
 ```csharp
 using FluentMigrator;
 using Nop.Data.Migrations;
 using Nop.Plugin.Other.ProductViewTracker.Domains;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Migrations
 {
     [SkipMigrationOnUpdate]
@@ -127,6 +126,7 @@ The service layer connects the data access layer and the presentation layer. Sin
 using Nop.Data;
 using Nop.Plugin.Other.ProductViewTracker.Domains;
 using System;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Services
 {
     public interface IProductViewTrackerService
@@ -139,7 +139,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
     }
 }
 
-namespace Nop.Plugin.Other.ProductViewTracker.Services
+namespace Nop.Plugin.Misc.ProductViewTracker.Services
 {
     public class ProductViewTrackerService : IProductViewTrackerService
     {
@@ -173,6 +173,7 @@ using Nop.Core.Configuration;
 using Nop.Core.Infrastructure;
 using Nop.Core.Infrastructure.DependencyManagement;
 using Nop.Plugin.Other.ProductViewTracker.Services;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 {
     /// <summary>
@@ -183,12 +184,12 @@ namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
         /// <summary>
         /// Register services and interfaces
         /// </summary>
-        /// <param name="builder">Container builder</param>
+        /// <param name="services">Collection of service descriptors</param>
         /// <param name="typeFinder">Type finder</param>
-        /// <param name="config">Config</param>
-        public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
+        /// <param name="appSettings">App settings</param>
+        public virtual void Register(IServiceCollection services, ITypeFinder typeFinder, AppSettings appSettings)
         {
-            builder.RegisterType<ProductViewTrackerService>().As<IProductViewTrackerService>().InstancePerLifetimeScope();
+            services.AddScoped<IProductViewTrackerService, ProductViewTrackerService>();
         }
 
         /// <summary>
@@ -236,24 +237,25 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
             _workContext = workContext;
         }
 
-        public IViewComponentResult Invoke(string widgetZone, object additionalData)
+        public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
         {
             if (!(additionalData is ProductDetailsModel model))
                 return Content("");
 
             //Read from the product service
-            var productById = _productService.GetProductById(model.Id);
+            var productById = await _productService.GetProductByIdAsync(model.Id);
             //If the product exists we will log it
             if (productById != null)
             {
+                var currentCustomer = await _workContext.CurrentCustomerAsync();
                 //Setup the product to save
                 var record = new ProductViewTrackerRecord
                 {
                     ProductId = model.Id,
                     ProductName = productById.Name,
-                    CustomerId = _workContext.CurrentCustomer.Id,
-                    IpAddress = _workContext.CurrentCustomer.LastIpAddress,
-                    IsRegistered = _customerService.IsRegistered(_workContext.CurrentCustomer)
+                    CustomerId = currentCustomer.Id,
+                    IpAddress = currentCustomer.LastIpAddress,
+                    IsRegistered = await _customerService.Async(currentCustomer)
                 };
                 //Map the values we're interested in to our new entity
                 _productViewTrackerService.Log(record);
@@ -276,6 +278,7 @@ using Nop.Services.Cms;
 using Nop.Services.Plugins;
 using Nop.Web.Framework.Infrastructure;
 using System.Collections.Generic;
+
 namespace Nop.Plugin.Other.ProductViewTracker
 {
     public class ProductViewTrackerPlugin : BasePlugin, IWidgetPlugin
@@ -299,9 +302,9 @@ namespace Nop.Plugin.Other.ProductViewTracker
         /// Gets widget zones where this widget should be rendered
         /// </summary>
         /// <returns>Widget zones</returns>
-        public IList<string> GetWidgetZones()
+        public Task<IList<string>> GetWidgetZonesAsync()
         {
-            return new List<string>{ PublicWidgetZones.ProductDetailsTop };
+            return Task.FromResult<IList<string>>(new List<string> { PublicWidgetZones.ProductDetailsTop });
         }
     }
 }

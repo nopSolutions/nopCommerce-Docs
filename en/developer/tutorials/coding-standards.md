@@ -118,7 +118,7 @@ The style rules in this section concern modifier preferences, including requirin
 
 - Prefer the specified ordering:
 
-	*`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
+    *`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
 
   ```csharp
   //Right
@@ -612,7 +612,7 @@ This style rule concerns the use of curly braces { } to surround code blocks.
 
 These formatting rules concern the sorting and display of *`using`* directives and *`Imports`* statements.
 
-- Sort System.* *`using`* directives alphabetically, and place them before other using directives.
+- Sort `System.*` *`using`* directives alphabetically, and place them before other using directives.
 
   ```csharp
   //Right

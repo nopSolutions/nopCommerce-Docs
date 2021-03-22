@@ -1,37 +1,43 @@
 ---
 title: UNIT testing
 uid: en/developer/tutorials/unit-tests
-author: git.AndreiMaz
-contributors: git.skoshelev
+author: git.skoshelev
+contributors: git.mariannk
 ---
 
 # UNIT testing
 
-I think everyone cnow about the concept of UNIT tests, we know what they are used for and agree that this is an important part of the process of developing reliable software. In this article, we will not touch on these issues, you can easily find all the necessary information on the Internet, for example, by following the links:
+I think everyone knows about the concept of UNIT tests. We know what UNIT tests are used for and agree that this is an important part of the process of developing reliable software. In this article, we won't discuss these issues. You can easily find all the necessary information on the Internet, for example, by following the links:
 
 * [https://en.wikipedia.org/wiki/Unit_testing](https://en.wikipedia.org/wiki/Unit_testing)
 * [https://docs.microsoft.com/dotnet/core/testing/unit-testing-best-practices](https://docs.microsoft.com/dotnet/core/testing/unit-testing-best-practices)
 * [https://en.wikipedia.org/wiki/Test-driven_development](https://en.wikipedia.org/wiki/Test-driven_development)
 
-In this article, we will get acquainted with the features of testing in the nopCommerce project, learn how to add our tests and check their performance. We will not test an abstract task, but will write a full-fledged test for the existing functionality from scratch (you can see the result in the form of a commit)
+In this article, we will get acquainted with the features of testing in the nopCommerce project and learn how to add new tests and check their performance. We won't test an abstract task but will write a full-fledged test for the existing functionality from scratch. At the end of the article, you will be provided with a reference to the appropriate commit with all described code changes.
 
 ## Features overview
 
 ![tests-project](_static/unit-tests/tests-project.jpg)
 
-In the screenshot, we see the current structure of the test project. It's not difficult to deal with it, the correspond directories we colate tests of specific assemblies of the solutions, the rest of the files are responsible for the auxiliary and base classes. Especially now we will be interested in the ``BaseNopTest`` class, since it will help us in our task.
+On the screenshot, you can see the structure of the Nop.Tests project. The folders such as ``Nop.Core.Tests`` contain tests for the corresponding projects of the solution. The other files are responsible for the auxiliary and base classes. Let's look at the ``BaseNopTest`` class.
 
 ### BaseNopTest
 
-This is the main abstract class that exposes the IoC container for tests, and allows us all the advantages of DI.
+This is the main abstract class that exposes the IoC container for tests and allows us to use all the advantages of DI.
 
 ![base-nop-test](_static/unit-tests/base-nop-test.jpg)
 
-As you can see from the screenshot, this class contains a lot of code (about 500 lines), but few methods are available for child classes. More precisely, two methods are the protected method ``PropertiesShouldEqual`` that compares all fields of the database entity with the fields of the model. And the ``GetService`` method allows us to use the advantages of DI and relieves us of the work of creating the classes necessary for testing. The initialization of the **IoC** container content is carried out in the static constructor of the class; it is this constructor that contains the bulk of the code.
+This class contains two methods available for child classes:
+
+* ``PropertiesShouldEqual`` that compares all fields of the database entity with the fields of the model.
+
+* ``GetService`` that allows using the advantages of DI and relieves of creating the classes necessary for testing.
+
+The initialization of the **IoC** container is carried out in the static constructor of the class; this constructor contains the bulk of the code.
 
 ## IScheduleTaskService
 
-As an example, we will develop tests for a class that implements the ``IScheduleTaskService`` interface.
+As an example, we will create tests for a class that implements the ``IScheduleTaskService`` interface.
 
 ```csharp
 public partial interface IScheduleTaskService
@@ -50,15 +56,14 @@ public partial interface IScheduleTaskService
 }
 ```
 
-As you can see, this is a simple interface, but at the same time, working with scheduled tasks (some of which perform very important tasks, for example, sending email messages to users) depends on its correct operation. Next, we will write tests for each of the methods, stopping, if necessary, on a specific implementation.
+As you can see this is a simple interface. But at the same time, it allows nopCommerce to perform very important tasks such as sending email messages to customers. So we need to be sure that it works properly. Next, we will write tests for each of the interface methods.
 
 > [!NOTE]
-> We do not promote or use **TDD**, the reliability of the functionality is important for us, and not a specific approach to testing. But we are not against this approach.
-
+> We don't use **TDD** but we are not against this approach. The reliability of the functionality is important for us, and not a specific approach to testing.
 
 ## ScheduleTaskServiceTests class
 
-Add a new ``ScheduleTaskServiceTests`` class to the tests project (Nop.Tests\Nop.Services.Tests\Tasks), its code is shown below:
+Add a new ``ScheduleTaskServiceTests`` class to the project (Nop.Tests\Nop.Services.Tests\Tasks). Its code is shown below:
 
 ```csharp
 using NUnit.Framework;
@@ -72,13 +77,13 @@ namespace Nop.Tests.Nop.Services.Tests.Tasks
 }
 ```
 
-This is our class skeleton for testing, from this code we can see that nopCommerce uses the **NUnit framework** to organize tests.
+This is the class template for testing. From this code, we can see that nopCommerce uses the **NUnit framework** for tests.
 There are two points to pay attention to:
 
-1. Our class has the **TestFixture** attribute, which tells the engine that this class is a class with tests
-1. We do not directly inherit the ``BaseNopTest`` class, but another abstract class - ``ServiceTest``, which adds the main plugins to the configuration.
+1. Our class has the **TestFixture** attribute which tells the engine that this class is a class with tests.
+1. We do not directly inherit the ``BaseNopTest`` class but inherit another abstract class - ``ServiceTest`` which adds the main plugins to the configuration.
 
-The next step is to add a method for the initial initialization of our tests. As a rule, such a method is called **SetUp**. In this method, we get an instance of a class that implements the ``IScheduleTaskService`` interface, which we will test.
+The next step is to add a method for the initialization of our tests. As a rule, such a method is called **SetUp**. In this method, we get an instance of a class that implements the ``IScheduleTaskService`` interface, which we will be tested.
 
 ```csharp
 private IScheduleTaskService _scheduleTaskService;
@@ -90,17 +95,17 @@ public void SetUp()
 }
 ```
 
-As you can see, the **SetUp** method should be documented with the **OneTimeSetUp** attribute, also you may use the **SetUp** attribute. The difference between these two attributes is only in the number of calls to the method itself: in the first case, the **SetUp** method is called once for all tests, and in the second, for each test separately.
+As you can see, the **SetUp** method should be declared with the **OneTimeSetUp** attribute as well as you may use the **SetUp** attribute. The difference between these two attributes is only the number of calls to the method itself: in the first case, the **SetUp** method is called once for all tests, and in the second, for each test separately.
 
-Next, let's add tests for CRUD methods, in this service these are methods such as: **InsertTaskAsync**, **GetTaskByIdAsync**, **UpdateTaskAsync**, **DeleteTaskAsync**
+Next, let's add tests for CRUD methods. In this service these are methods such as: **InsertTaskAsync**, **GetTaskByIdAsync**, **UpdateTaskAsync**, **DeleteTaskAsync**.
 
-But first, let's add one more field to the class, this will be an instance of the ``ScheduleTask`` class with which we will conduct testing.
+But first, let's add one more field to the class. This will be an instance of the ``ScheduleTask`` class which will be used for testing:
 
 ```csharp
  private ScheduleTask _task;
  ```
 
-New code of **SetUp** method:
+Update the **SetUp** method the following way:
 
  ```csharp
  [OneTimeSetUp]
@@ -112,7 +117,7 @@ public void SetUp()
 }
 ```
 
-All CRUD testing methods are given below, and as you can see, there is nothing complicated in them:
+All CRUD testing methods are given below and as you can see there is nothing complicated in them:
 
 ```csharp
 #region CRUD tests
@@ -192,7 +197,7 @@ public void DeleteTaskShouldRaiseExceptionIfTaskIsNull()
 #endregion
 ```
 
-In addition, the list of connected namespaces has changed, the new list is given below:
+In addition, the list of connected namespaces has been changed. The updated list is provided below:
 
 ```csharp
 using System;
@@ -203,9 +208,9 @@ using NUnit.Framework;
 ```
 
 > [!NOTE]
-> Please note that we delete all changes from the database before testing, because if the test fails, the database will contain data that can affect testing in other parts of the project or in other test methods.
+> We have to delete all changes made by a test from the database. In our case, we use the `DeleteTaskAsync` method for this purpose. Also, note that it should be done just before we call test methods such as `task.Should().BeNull();`, `task2.Name.Should().NotBe(_task.Name);` etc. because if the test fails, the database will contain data that can affect other testing processes.
 
-Now let's add testing the remaining two methods:
+Then let's test the two remaining methods:
 
 ```csharp
 [Test]
@@ -264,7 +269,7 @@ public async System.Threading.Tasks.Task CanGetAllTasks()
 }
 ```
 
-Finally, let's add one more standard method for many tests, which is usually called **TearDown**. In it, we will carry out the final cleaning of the database from possible changes made by us during the testing process. This method must have an **OneTimeTearDown** or **TearDown** attribute, similar to the attributes of the SetUp method.
+Finally, let's add one more standard method for many tests which is usually called **TearDown**. In this method, we will carry out the final cleaning of the database from possible changes made by us during the testing process. This method must have the **OneTimeTearDown** or **TearDown** attribute, similar to the attributes of the SetUp method.
 
 ```csharp
 [OneTimeTearDown]
