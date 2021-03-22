@@ -21,7 +21,6 @@ In this article, we will get acquainted with the features of testing in the nopC
 
 On the screenshot, you can see the structure of the Nop.Tests project. The folders such as `Nop.Core.Tests` contain tests for the corresponding projects of the solution. The other files are responsible for the auxiliary and base classes. Let's look at the `BaseNopTest` class.
 
-
 ### BaseNopTest
 
 This is the main abstract class that exposes the IoC container for tests and allows us to use all the advantages of DI.
@@ -29,7 +28,9 @@ This is the main abstract class that exposes the IoC container for tests and all
 ![base-nop-test](_static/unit-tests/base-nop-test.jpg)
 
 This class contains two methods available for child classes:
+
 * `PropertiesShouldEqual` that compares all fields of the database entity with the fields of the model.
+
 * `GetService` that allows using the advantages of DI and relieves of creating the classes necessary for testing.
 
 The initialization of the **IoC** container is carried out in the static constructor of the class; this constructor contains the bulk of the code.
