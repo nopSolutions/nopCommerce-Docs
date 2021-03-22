@@ -415,8 +415,8 @@
           name: Default database schema
           href: developer/tutorials/db-schema.md
         - 
-          name: Architecture of nopCommerce 4.20 and under
-          href: developer/tutorials/architecture-of-nopCommerce-4.20-and-under.md
+          name: Architecture of nopCommerce
+          href: developer/tutorials/architecture-of-nopCommerce.md
         - 
           name: Instruction on how to start developing on nopCommerce
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
