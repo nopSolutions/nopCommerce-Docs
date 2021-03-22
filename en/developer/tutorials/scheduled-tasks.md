@@ -14,7 +14,6 @@ With Scheduled tasks, you can schedule a task to run at certain periods. For exa
 1. To schedule a task the developer should insert a new **ScheduleTask** record into the appropriate database table. You can use **IScheduleTaskService** for inserting such a record.
 
 > [!IMPORTANT]
-> 
 > When insert the new record into **ScheduleTask** database table for new **ScheduleTask**, it is important to keep **Type** column  format **Namespace.TaskClassName, AssemblyName**.
 
 ## Troubleshooting

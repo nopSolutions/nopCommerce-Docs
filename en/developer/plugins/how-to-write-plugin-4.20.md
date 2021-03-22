@@ -7,7 +7,7 @@ contributors: git.Kevat, git.exileDev, git.DmitriyKulagin, git.cromatido
 
 # How to write a plugin for nopCommerce 4.20
 
-Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace.aspx) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
+Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
 
 ## The plugin structure, required files, and locations
 
@@ -42,7 +42,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
         <!-- This target execute after "Build" target -->
         <Target Name="NopTarget" AfterTargets="Build">
             <!-- Delete unnecessary libraries from plugins path -->
-            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
+            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
         </Target>
     </Project>
     ```

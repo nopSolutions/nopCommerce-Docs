@@ -7,7 +7,7 @@ contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 
 # How to code my own payment method
 
-Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
+Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
 
 So actually a payment method is an ordinary plugin which implements an IPaymentMethod interface (Nop.Services.Payments namespace). As you already guessed IPaymentMethod interface is used for creating payment method plugins. It contains some methods which are specific only for payment methods such as ProcessPayment() or GetAdditionalHandlingFee(). So add a new payment plugin project (class library) to solution and let's get started.
 
@@ -51,18 +51,18 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
 - **ValidatePaymentForm** is used in the public store to validate customer input. It returns a list of warnings (for example, a customer did not enter his credit card name). If your payment method does not ask the customer to enter additional information, then the ValidatePaymentForm should return an empty list:
 
     ```csharp
-    public IList<string> ValidatePaymentForm(IFormCollection form)
+    public Task<IList<string>> ValidatePaymentFormAsync(IFormCollection form)
     {
-        return new List<string>();
+        return Task.FromResult<IList<string>>(new List<string>());
     }
     ```
 
 - **GetPaymentInfo** method is used in the public store to parse customer input, such as credit card information. This method returns a ProcessPaymentRequest object with parsed customer input (for example, credit card information). If your payment method does not ask the customer to enter additional information, then GetPaymentInfo will return an empty ProcessPaymentRequest object:
 
     ```csharp
-    public ProcessPaymentRequest GetPaymentInfo(IFormCollection form)
+    public Task<ProcessPaymentRequest> GetPaymentInfoAsync(IFormCollection form)
     {
-        return new ProcessPaymentRequest();
+        return Task.FromResult(new ProcessPaymentRequest());
     }
     ```
 
@@ -85,10 +85,10 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
     }
     ```
 
-- **GetPublicViewComponent**. This method should return the name of the view component which used to display public information for customers. We have created an appropriate view component in the previous step. For example:
+- **GetPublicViewComponentName**. This method should return the name of the view component which used to display public information for customers. We have created an appropriate view component in the previous step. For example:
 
     ```csharp
-    public string GetPublicViewComponent()
+    public string GetPublicViewComponentName()
     {
         viewComponentName = "CheckMoneyOrder";
     }

@@ -14,7 +14,6 @@ contributors: git.DmitriyKulagin, git.sanju741, git.exileDev
 1. Do not limit yourself to span and div tags only. There are a lot of other / better features offered by CSS to style a page.
 
 > [!TIP]
-> 
-> Make use of **Firefox Developer Tools** plug-in offered by Mozilla. It is a very useful tool which allows you to edit, debug, and monitor CSS, HTML, and JavaScript live in any web page. You can learn more about it here: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools) 
-> 
+> Make use of **Firefox Developer Tools** plug-in offered by Mozilla. It is a very useful tool which allows you to edit, debug, and monitor CSS, HTML, and JavaScript live in any web page. You can learn more about it here: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools)
+>
 > Or you can use the **Chrome DevTools tool**, which is part of the Chrome browser. You can learn more about it here: [Chrome DevTools.](https://developers.google.com/web/tools/chrome-devtools)

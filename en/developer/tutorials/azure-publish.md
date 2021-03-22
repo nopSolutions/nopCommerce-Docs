@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 ## Create a VM on Azure
 
-This instruction of the steps required to set up an Azure virtual machine to host nopCommerce web applications, and to allow to be published using WebDeploy.
+This instruction of the steps required to set up an Azure virtual machine to host nopCommerce web applications, and to allow to be published using **WebDeploy**.
 
 ### Create a new VM
 
@@ -40,7 +40,7 @@ This instruction of the steps required to set up an Azure virtual machine to hos
 
     ![azure-publish_2](_static/azure-publish/azure-publish_2.png)
 
-2. Configure outbound firewall rules in the Azure portal. On the Networking section add outbound port rule to create new firewall entries:
+2. Configure outbound firewall rules in the Azure portal. On the *Networking* section add outbound port rule to create new firewall entries:
     - RDP - Port 3389 (Priority 100)
 
 ### Connect to the VM (RDP) using login and password
@@ -97,7 +97,7 @@ On a new Azure VM, default security rules prevent executables from being downloa
 
 ![azure-publish_9](_static/azure-publish/azure-publish_9.png)
 
-IIS is used to host ASP.NET Core web applications, its role will be reduced to a proxy server. Hosting of ASP.NET Core applications on IIS occurs using the native AspNetCoreModule, which is configured to redirect requests to the Kestrel web server. This module controls the start of the external process `dotnet.exe`, within which the application is hosted, and forwards all requests from IIS to this host process.
+IIS is used to host ASP.NET Core web applications, its role will be reduced to a proxy server. Hosting of ASP.NET Core applications on IIS occurs using the native *AspNetCoreModuleV2*, which is configured to redirect requests to the *Kestrel* web server. This module controls the start of the external process `dotnet.exe`, within which the application is hosted, and forwards all requests from IIS to this host process.
 
 After installing this package, run the **iisreset** command on the command line or manually restart IIS so that the server applies the changes.
 
@@ -111,13 +111,13 @@ After installing this package, run the **iisreset** command on the command line 
 
 Now everything is ready to publish the project.
 
-## Publish nopCommerce to an Azure VM from Visual Studio
+## Publish nopCommerce to an Azure VM from Microsoft Visual Studio
 
 Publishing the nopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, there will be described the minimum requirements to run the publication. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
 
 ## Publish project `Nop.Web`
 
-1. Open your web app solution in Visual Studio 2017. Right-click the project in Solution Explorer and choose *Publish*.
+1. Open your web app solution in Microsoft Visual Studio. Right-click the project in *Solution Explorer* and choose **Publish**.
 
     ![azure-publish_11](_static/azure-publish/azure-publish_11.png)
 
@@ -130,7 +130,7 @@ Publishing the nopCommerce application is no different from publishing any other
 
     ![azure-publish_13](_static/azure-publish/azure-publish_13.png)
 
-1. If you want to ensure that the web server has a clean copy of the web application after each upload (and that no other files are left hanging around from a previous deployment), you can check the **Remove additional files at destination** checkbox in the **Settings** tab. Warning: Publishing with this setting deletes all files that exist on the web server (wwwroot directory). Be sure you know the state of the machine before publishing with this option enabled.
+1. If you want to ensure that the web server has a clean copy of the web application after each upload (and that no other files are left hanging around from a previous deployment), you can check the **Remove additional files at destination** checkbox in the **Settings** tab. Warning: Publishing with this setting deletes all files that exist on the web server (*wwwroot* directory). Be sure you know the state of the machine before publishing with this option enabled.
 
     ![azure-publish_14](_static/azure-publish/azure-publish_14.png)
 
@@ -141,7 +141,7 @@ You have now published your web app to an Azure virtual machine.
 
 ## Potential problems and solutions
 
-To [more](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.0) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in web.config:
+To [more](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in web.config:
 
 ```sh
 stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
