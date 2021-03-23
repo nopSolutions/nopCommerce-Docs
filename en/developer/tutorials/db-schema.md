@@ -65,12 +65,12 @@ We won't delve into the purpose of tables and fields, since their names are self
       ```csharp
     <Attributes><VendorAttribute ID="2"><VendorAttributeValue><Value>1</Value></VendorAttributeValue></VendorAttribute></Attributes>
       ```
-    As you can see the vendor with ID 1 has only one vendor attribute filled. This attribute has ID 2 and its value is 1. 
+
+    As you can see the vendor with ID 1 has only one vendor attribute filled. This attribute has ID 2 and its value is 1.
 
     Custom customer attributes have the same structure as vendor attributes. The following screenshot represents the relationships between **Customer attributes** and **Vendor attributes** and their values:
 
     ![Xml](_static/db-schema/attributes.jpg)
-
 
 ## Products info
 
