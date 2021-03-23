@@ -9,9 +9,9 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 ## What is web.config file
 
-web.config file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application logic from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
+`web.config` file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application logic from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
 
-The ASP.NET framework uses a hierarchical configuration system. You can place a Web.Config file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
+The ASP.NET framework uses a hierarchical configuration system. You can place a `web.config file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
 
 ## web.config for nopCommerce
 
@@ -28,11 +28,10 @@ nopCommerce uses web.config in `Nop.Web` project which can be found inside Prese
     <handlers>
         <!-- Remove WebDAV module so that we can make DELETE requests -->
         <remove name="WebDAV" />
-        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModule" resourceType="Unspecified" />
+        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
     </handlers>
     <!-- When deploying on Azure, make sure that "dotnet" is installed and the path to it is registered in the PATH environment variable or specify the full path to it -->
-    <aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600">
-        <environmentVariables />
+    <aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600" hostingModel="InProcess">
     </aspNetCore>
     <httpProtocol>
         <customHeaders>
@@ -46,12 +45,12 @@ nopCommerce uses web.config in `Nop.Web` project which can be found inside Prese
         <!-- Protects against Clickjacking attacks. ref.: https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet -->
         <add name="Strict-Transport-Security" value="max-age=31536000; includeSubDomains" />
         <!-- CSP modern XSS directive-based defence, used since 2014. ref.: http://content-security-policy.com/ -->
-        <add name="Content-Security-Policy" value="default-src 'self'; connect-src *; font-src *; frame-src *; img-src * data:; media-src *; object-src *; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
+        <add name="Content-Security-Policy" value="default-src 'self'; connect-src *; font-src * data:; frame-src *; img-src * data:; media-src *; object-src *; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
         <!-- Prevents from leaking referrer data over insecure connections. ref.: https://scotthelme.co.uk/a-new-security-header-referrer-policy/ -->
-        <add name="Referrer-Policy" value="strict-origin" />
-        <!--Feature-Policy is a new header that allows a site to control which features and APIs can be used in the browser. ref.: https://wicg.github.io/feature-policy/ -->
-        <add name="Feature-Policy" value="accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment *; usb 'none'" />
-        </customHeaders>
+        <add name="Referrer-Policy" value="same-origin" />
+        <!-- Permissions-Policy is a new header that allows a site to control which features and APIs can be used in the browser. ref.: https://w3c.github.io/webappsec-permissions-policy/ -->
+        <add name="Permissions-Policy" value="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=*, usb=()" />
+      </customHeaders>
     </httpProtocol>
     </system.webServer>
 </configuration>
@@ -90,23 +89,21 @@ Here nopCommerce is using `<remove>` element to remove WebDAVModule module form 
 <handlers>
     <!-- Remove WebDAV module so that we can make DELETE requests -->
     <remove name="WebDAV" />
-    <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModule" resourceType="Unspecified" />
+    <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
 </handlers>
 ```
 
 Handlers are Internet IIS components that are configured to process requests to specific content, typically to generate a response for the request resource. For example, an ASP.NET Web page is one type of handler. You can use handlers to process requests to any resource that needs to return information to users that is not a static file.
 
-The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clear>` elements, each of which defines a handler mapping for the application. The `<add>` element adds a handler to the collection of handlers, `<remove>` element removes a references of handler from the handlers collection and `<clear>` element removes all references of handlers from the handlers collection. Here in above code  "WebDAV" handler is removed and handler for module "AspNetCoreModele" is added.
+The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clear>` elements, each of which defines a handler mapping for the application. The `<add>` element adds a handler to the collection of handlers, `<remove>` element removes a references of handler from the handlers collection and `<clear>` element removes all references of handlers from the handlers collection. Here in above code  "WebDAV" handler is removed and handler for module `AspNetCoreModuleV2` is added.
 
 ```xml
-<aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600">
-    <environmentVariables />
-</aspNetCore>
+<aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600" hostingModel="InProcess"/>
 ```
 
 ```xml
 <httpProtocol>
-    <customHeaders>
+        <customHeaders>
         <remove name="X-Powered-By" />
         <!-- Protects against XSS injections. ref.: https://www.veracode.com/blog/2014/03/guidelines-for-setting-security-headers/ -->
         <add name="X-XSS-Protection" value="1; mode=block" />
@@ -117,13 +114,13 @@ The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clea
         <!-- Protects against Clickjacking attacks. ref.: https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet -->
         <add name="Strict-Transport-Security" value="max-age=31536000; includeSubDomains" />
         <!-- CSP modern XSS directive-based defence, used since 2014. ref.: http://content-security-policy.com/ -->
-        <add name="Content-Security-Policy" value="default-src 'self'; connect-src *; font-src *; frame-src *; img-src * data:; media-src *; object-src *; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
+        <add name="Content-Security-Policy" value="default-src 'self'; connect-src *; font-src * data:; frame-src *; img-src * data:; media-src *; object-src *; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
         <!-- Prevents from leaking referrer data over insecure connections. ref.: https://scotthelme.co.uk/a-new-security-header-referrer-policy/ -->
-        <add name="Referrer-Policy" value="strict-origin" />
-        <!--Feature-Policy is a new header that allows a site to control which features and APIs can be used in the browser. ref.: https://wicg.github.io/feature-policy/ -->
-        <add name="Feature-Policy" value="accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment *; usb 'none'" />
-    </customHeaders>
-</httpProtocol>
+        <add name="Referrer-Policy" value="same-origin" />
+        <!-- Permissions-Policy is a new header that allows a site to control which features and APIs can be used in the browser. ref.: https://w3c.github.io/webappsec-permissions-policy/ -->
+        <add name="Permissions-Policy" value="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=*, usb=()" />
+      </customHeaders>
+    </httpProtocol>
 ```
 
 The `<customHeaders>` element of the `<httpProtocol>` element specifies custom HTTP headers that IIS will return in HTTP responses from the Web server.
@@ -155,7 +152,6 @@ For demonstration purpose lets say we have to redirect request to our old site t
 ```
 
 > [!NOTE]
->
 > By using this rule we can redirect all pages of an old domain name to the same page on a new domain name.
 
 Here we need to replacing [RULE NAME], [OLD URL] and [NEW URL] with the appropriate information.

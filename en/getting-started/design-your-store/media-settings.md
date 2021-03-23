@@ -13,7 +13,7 @@ To define the media settings go to **Configuration → Settings → Media settin
 
 ![p1](_static/media-settings/media_sett_1.png)
 
-On the *Common* panel define the settings, as follows:
+In the *Common* panel define the settings, as follows:
 - Click the **Change** button above **Pictures are stored into** option to choose between database or file system.
 
   > [!NOTE]
@@ -25,13 +25,13 @@ On the *Common* panel define the settings, as follows:
 - Tick **Import product images using hash** to use HASHBYTES to compare pictures with uploaded products. Please note that this functionality is not supported by some databases.
 - Tick **Picture zoom** to enable picture zoom on the product details page.
 
-On the *Product* panel define the settings, as follows:
+In the *Product* panel define the settings, as follows:
 - In the **Product detail image size** field, enter the default size for the product detail images in pixels.
 - In the **Product thumbnail image size (catalog)** field, enter the default size for the product thumbnail images  displayed on the category or manufacturer pages in pixels.
 - In the **Product thumbnail image size (product page)** field, enter the default size for the product thumbnail images (in pixels) displayed on the product details page (used when you have more than one product image).
 - In the **Associated product image size** field, enter the default size for the associated product images in pixels. Associated products are part of grouped products.
 
-On the *Other pages* panel define the settings, as follows:
+In the *Other pages* panel define the settings, as follows:
 - In the **Category thumbnail image size** field, enter the default size for the product thumbnail images on the category pages in pixels.
 - In the **Manufacturer thumbnail image size** field, enter the default size for the product thumbnail images on the manufacturer pages in pixels.
 - In the **Vendor thumbnail image size** field, enter the default size for the product thumbnail images on the vendor pages in pixels.

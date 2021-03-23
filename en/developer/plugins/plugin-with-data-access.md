@@ -1,239 +1,131 @@
 ---
 title: Plugin with data access
 uid: en/developer/plugins/plugin-with-data-access
-author: nop.52152
-contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev
+author: git.AndreiMaz
+contributors: git.DmitriyKulagin, git.skoshelev, git.cromatido
 ---
 
-# Plugin with data access" (4.20 and below)
+# Plugin with data access
 
 In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.20](xref:en/developer/plugins/how-to-write-plugin-4.20)
+- [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
 > [!NOTE]
-> 
 > The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
 
 ## Getting started
 
-Create a new class library project "Nop.Plugin.Other.ProductViewTracker".
+Create a new class library project "Nop.Plugin.Misc.ProductViewTracker".
 
-![plugin-with-data-access_1](_static/plugin-with-data-access/plugin-with-data-access_1.jpg)
+Add the  `plugin.json` file.
 
-Add the following folders and `plugin.json` file.
+>[!TIP]
+>For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
-![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
-
-You can view the `plugin.json` file in the image below.
-
-![plugin-with-data-access_3](_static/plugin-with-data-access/plugin-with-data-access_3.jpg)
-
-Then add references to the following projects: Nop.Core, Nop.Data, Nop.Web.Framework
+Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
 
 ## The Data Access Layer (A.K.A. Creating new entities in nopCommerce)
 
-Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that all properties are marked as virtual and it isn't just for fun. Virtual properties are required on database entities because of how Entity Framework instantiates and tracks classes. One other thing to note is that we do not have navigation properties (relational properties), and I'll cover those in more detail later.
+Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that we do not have navigation properties (relational properties), because Linq2DB framework, which we use to work with databases does not support the navigation properties.
 
 ```csharp
-namespace Nop.Plugin.Other.ProductViewTracker.Domain
+namespace Nop.Plugin.Misc.ProductViewTracker.Domain
 {
     public class ProductViewTrackerRecord : BaseEntity
     {
-        public virtual int ProductId { get; set; }
-        public virtual string ProductName { get; set; }
-        public virtual int CustomerId { get; set; }
-        public virtual string IpAddress { get; set; }
-        public virtual bool IsRegistered { get; set; }
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public int CustomerId { get; set; }
+        public string IpAddress { get; set; }
+        public bool IsRegistered { get; set; }
     }
 }
 ```
 
 **File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
 
-The next class to create is the Entity Framework mapping class. Inside of the mapping class we map the columns, table relationships, and the database table.
+The next class to create is the *FluentMigrator* entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
 
 ```csharp
-namespace Nop.Plugin.Other.ProductViewTracker.Data
+using FluentMigrator.Builders.Create.Table;
+using Nop.Core.Domain.Catalog;
+using Nop.Core.Domain.Customers;
+using Nop.Data.Mapping.Builders;
+using Nop.Plugin.Other.ProductViewTracker.Domains;
+using Nop.Data.Extensions;
+using System.Data;
+
+namespace Nop.Plugin.Other.ProductViewTracker.Mapping.Builders
 {
-    public class ProductViewTrackerRecordMap : NopEntityTypeConfiguration<ProductViewTrackerRecord>
+    public class ProductViewTrackerRecordBuilder : NopEntityBuilder<ProductViewTrackerRecord>
     {
         /// <summary>
-        /// Configures the entity
+        /// Apply entity configuration
         /// </summary>
-        /// <param name="builder">The builder to be used to configure the entity</param>
-        public override void Configure(EntityTypeBuilder<ProductViewTrackerRecord> builder)
+        /// <param name="table">Create table expression builder</param>
+        public override void MapEntity(CreateTableExpressionBuilder table)
         {
-            builder.ToTable(nameof(ProductViewTrackerRecord));
-            //Map the primary key
-            builder.HasKey(record => record.Id);
-            //Map the additional properties
-            builder.Property(record => record.ProductId);
-            //Avoiding truncation/failure
-            //so we set the same max length used in the product tame
-            builder.Property(record => record.ProductName).HasMaxLength(400);
-            builder.Property(record => record.IpAddress);
-            builder.Property(record => record.CustomerId);
-            builder.Property(record => record.IsRegistered);
+            //map the primary key (not necessary if it is Id field)
+            table.WithColumn(nameof(ProductViewTrackerRecord.Id)).AsInt32().PrimaryKey()
+            //map the additional properties as foreign keys
+            .WithColumn(nameof(ProductViewTrackerRecord.ProductId)).AsInt32().ForeignKey<Product>(onDelete: Rule.Cascade)
+            .WithColumn(nameof(ProductViewTrackerRecord.CustomerId)).AsInt32().ForeignKey<Customer>(onDelete: Rule.Cascade)
+            //avoiding truncation/failure
+            //so we set the same max length used in the product name
+            .WithColumn(nameof(ProductViewTrackerRecord.ProductName)).AsString(400)
+            //not necessary if we don't specify any rules
+            .WithColumn(nameof(ProductViewTrackerRecord.IpAddress)).AsString()
+            .WithColumn(nameof(ProductViewTrackerRecord.IsRegistered)).AsInt32();
         }
     }
 }
 ```
 
-The next class is the most complicated and the most important class in the data access layer. The Entity Framework Object Context is a pass-through class that gives us database access and helps track entity state (e.g. add, update, delete). The context is also used to generate the database schema or update an existing schema. In custom context classes we cannot reference previously existing entities because those types are already associated to another object context. That is also why we do not have complex navigation properties in our tracking record.
+The next important class for us will be the migration class, which creates our table directly in the database. You can create as many migrations as you like in your plugin, the only thing you need to keep track of is the version of your migration. We specially created our **NopMigration** attribute to make it easier for you. By indicating here the most complete and accurate file creation date, you practically guarantee the uniqueness of your migration number.
 
 ```csharp
-namespace Nop.Plugin.Other.ProductViewTracker.Data
+using FluentMigrator;
+using Nop.Data.Migrations;
+using Nop.Plugin.Other.ProductViewTracker.Domains;
+
+namespace Nop.Plugin.Other.ProductViewTracker.Migrations
 {
-    public class ProductViewTrackerRecordObjectContext : DbContext, IDbContext
+    [SkipMigrationOnUpdate]
+    [NopMigration("2020/05/27 08:40:55:1687541", "Other.ProductViewTracker base schema")]
+    public class SchemaMigration : AutoReversingMigration
     {
-        public ProductViewTrackerRecordObjectContext(DbContextOptions<ProductViewTrackerRecordObjectContext> options) : base(options)
+        protected IMigrationManager _migrationManager;
+
+        public SchemaMigration(IMigrationManager migrationManager)
         {
-        }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new ProductViewTrackerRecordMap());
-            base.OnModelCreating(modelBuilder);
+            _migrationManager = migrationManager;
         }
 
-        public new virtual DbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity
+        public override void Up()
         {
-            return base.Set<TEntity>();
-        }
-
-        public virtual string GenerateCreateScript()
-        {
-            return Database.GenerateCreateScript();
-        }
-
-        public virtual IQueryable<TQuery> QueryFromSql<TQuery>(string sql) where TQuery : class
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BaseEntity
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual int ExecuteSqlCommand(RawSqlString sql, bool doNotEnsureTransaction = false, int? timeout = null, params object[] parameters)
-        {
-            using (var transaction = Database.BeginTransaction())
-            {
-                var result = Database.ExecuteSqlCommand(sql, parameters);
-                transaction.Commit();
-                return result;
-            }
-        }
-
-        public void Install()
-        {
-               //create the table
-               this.ExecuteSqlScript(GenerateCreateScript());
-        }
-        public void Uninstall()
-        {
-               //drop the table
-               this.DropPluginTable(nameof(ProductViewTrackerRecord));
-        }
-
-        public IList<TEntity> ExecuteStoredProcedureList<TEntity>(string commandText, params object[] parameters) where TEntity : BaseEntity, new()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<TElement> SqlQuery<TElement>(string sql, params object[] parameters)
-        {
-            throw new NotImplementedException();
-        }
-        public int ExecuteSqlCommand(string sql, bool doNotEnsureTransaction = false, int? timeout = null, params object[] parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual void Detach<TEntity>(TEntity entity) where TEntity : BaseEntity
-        {
-            throw new NotImplementedException();
-        }
-
-        public IQueryable<TQuery> QueryFromSql<TQuery>(string sql, params object[] parameters) where TQuery : class
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual bool ProxyCreationEnabled
-        {
-            get => ProxyCreationEnabled;
-            set => ProxyCreationEnabled = value;
-        }
-
-        public virtual bool AutoDetectChangesEnabled
-        {
-            get => AutoDetectChangesEnabled;
-            set => AutoDetectChangesEnabled = value;
+            _migrationManager.BuildTable<ProductViewTrackerRecord>(Create);
         }
     }
 }
 ```
 
-## Application Startup
-
-This part registers the record object context we created in the previous step.
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Nop.Core.Infrastructure;
-using Nop.Plugin.Other.ProductViewTracker.Data;
-using Nop.Web.Framework.Infrastructure.Extensions;
-
-namespace Nop.Plugin.Misc.RepCred.Infrastructure
-{
-    /// <summary>
-    /// Represents object for the configuring plugin DB context on application startup
-    /// </summary>
-    public class PluginDbStartup : INopStartup
-    {
-        /// <summary>
-        /// Add and configure any of the middleware
-        /// </summary>
-        /// <param name="services">Collection of service descriptors</param>
-        /// <param name="configuration">Configuration of the application</param>
-        public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
-        {
-            //add object context
-            services.AddDbContext<ProductViewTrackerRecordObjectContext>(optionsBuilder =>
-            {
-                optionsBuilder.UseSqlServerWithLazyLoading(services);
-            });
-        }
-
-        /// <summary>
-        /// Configure the using of added middleware
-        /// </summary>
-        /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public void Configure(IApplicationBuilder application)
-        {
-        }
-
-        /// <summary>
-        /// Gets order of this startup configuration implementation
-        /// </summary>
-        public int Order => 11;
-    }
-}
-```
+>[!NOTE]
+>Pay attention to the **SkipMigrationOnUpdate** attribute, its purpose is described by the name. This attribute allows you to skip migrations when performing the plugin update procedure.
 
 ## Service layer
 
 The service layer connects the data access layer and the presentation layer. Since it is bad form to share any type of responsibility in code each layer needs to be isolated. The service layer wraps the data layer with business logic and the presentation layer depends on the service layer. Because our task is very small our service layer does nothing but communicate with the repository (the repository in nopCommerce acts as a facade to the object context).
 
 ```csharp
+using Nop.Data;
+using Nop.Plugin.Other.ProductViewTracker.Domains;
+using System;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Services
 {
     public interface IProductViewTrackerService
@@ -246,12 +138,12 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
     }
 }
 
-namespace Nop.Plugin.Other.ProductViewTracker.Services
+namespace Nop.Plugin.Misc.ProductViewTracker.Services
 {
     public class ProductViewTrackerService : IProductViewTrackerService
     {
         private readonly IRepository<ProductViewTrackerRecord> _productViewTrackerRecordRepository;
-        public ViewTrackingService(IRepository<ProductViewTrackingRecord> productViewTrackerRecordRepository)
+        public ProductViewTrackerService(IRepository<ProductViewTrackerRecord> productViewTrackerRecordRepository)
         {
             _productViewTrackerRecordRepository = productViewTrackerRecordRepository;
         }
@@ -272,29 +164,36 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 
 ## Dependency Injection
 
-Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article here. Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
+Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
 
 ```csharp
+using Microsoft.Extensions.DependencyInjection;
+using Nop.Core.Configuration;
+using Nop.Core.Infrastructure;
+using Nop.Core.Infrastructure.DependencyManagement;
+using Nop.Plugin.Other.ProductViewTracker.Services;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 {
+    /// <summary>
+    /// Dependency registrar
+    /// </summary>
     public class DependencyRegistrar : IDependencyRegistrar
     {
-        private const string CONTEXT_NAME = "nop_object_context_product_view_tracker";
-
-        public virtual void Register(ContainerBuilder builder, ITypeFinder typeFinder, NopConfig config)
+        /// <summary>
+        /// Register services and interfaces
+        /// </summary>
+        /// <param name="services">Collection of service descriptors</param>
+        /// <param name="typeFinder">Type finder</param>
+        /// <param name="appSettings">App settings</param>
+        public virtual void Register(IServiceCollection services, ITypeFinder typeFinder, AppSettings appSettings)
         {
-            builder.RegisterType<ProductViewTrackerService>().As<IProductViewTrackerService>().InstancePerLifetimeScope();
-
-            //data context
-            builder.RegisterPluginDataContext<ProductViewTrackerRecordObjectContext>(CONTEXT_NAME);
-
-            //override required repository with our custom context
-            builder.RegisterType<EfRepository<ProductViewTrackerRecord>>()
-            .As<IRepository<ProductViewTrackerRecord>>()
-            .WithParameter(ResolvedParameter.ForNamed<IDbContext>(CONTEXT_NAME))
-            .InstancePerLifetimeScope();
+            services.AddScoped<IProductViewTrackerService, ProductViewTrackerService>();
         }
 
+        /// <summary>
+        /// Order of this dependency registrar implementation
+        /// </summary>
         public int Order => 1;
     }
 }
@@ -307,77 +206,105 @@ In the code above we register different types of objects so they can later be in
 Let's create a view component:
 
 ```csharp
+using Microsoft.AspNetCore.Mvc;
+using Nop.Core;
+using Nop.Plugin.Other.ProductViewTracker.Domains;
+using Nop.Plugin.Other.ProductViewTracker.Services;
+using Nop.Services.Catalog;
+using Nop.Services.Customers;
+using Nop.Web.Framework.Components;
+using Nop.Web.Models.Catalog;
+
 namespace Nop.Plugin.Other.ProductViewTracker.Components
 {
     [ViewComponent(Name = "ProductViewTracker")]
     public class ProductViewTrackerViewComponent : NopViewComponent
     {
+        private readonly ICustomerService _customerService;
         private readonly IProductService _productService;
         private readonly IProductViewTrackerService _productViewTrackerService;
         private readonly IWorkContext _workContext;
-        public ProductViewTrackerViewComponent(IWorkContext workContext,
-        IProductViewTrackerService productViewTrackerService,
-        IProductService productService)
+
+        public ProductViewTrackerViewComponent(ICustomerService customerService,
+            IProductService productService,
+            IProductViewTrackerService productViewTrackerService,
+            IWorkContext workContext)
         {
-            _workContext = workContext;
-            _productViewTrackerService = productViewTrackerService;
+            _customerService = customerService;
             _productService = productService;
+            _productViewTrackerService = productViewTrackerService;
+            _workContext = workContext;
         }
-        public IViewComponentResult Invoke(int productId)
+
+        public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
         {
+            if (!(additionalData is ProductDetailsModel model))
+                return Content("");
+
             //Read from the product service
-            Product productById = _productService.GetProductById(productId);
+            var productById = await _productService.GetProductByIdAsync(model.Id);
             //If the product exists we will log it
             if (productById != null)
             {
+                var currentCustomer = await _workContext.CurrentCustomerAsync();
                 //Setup the product to save
-                var record = new ProductViewTrackerRecord();
-                record.ProductId = productId;
-                record.ProductName = productById.Name;
-                record.CustomerId = _workContext.CurrentCustomer.Id;
-                record.IpAddress = _workContext.CurrentCustomer.LastIpAddress;
-                record.IsRegistered = _workContext.CurrentCustomer.IsRegistered();
+                var record = new ProductViewTrackerRecord
+                {
+                    ProductId = model.Id,
+                    ProductName = productById.Name,
+                    CustomerId = currentCustomer.Id,
+                    IpAddress = currentCustomer.LastIpAddress,
+                    IsRegistered = await _customerService.Async(currentCustomer)
+                };
                 //Map the values we're interested in to our new entity
                 _productViewTrackerService.Log(record);
             }
+
             return Content("");
         }
     }
 }
 ```
 
-## Plugin installer
+## The main plugin class
+
+> [!IMPORTANT]
+>
+> We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
 
 ```csharp
+using Nop.Services.Cms;
+using Nop.Services.Plugins;
+using Nop.Web.Framework.Infrastructure;
+using System.Collections.Generic;
+
 namespace Nop.Plugin.Other.ProductViewTracker
 {
-    public class ProductViewTrackerPlugin : BasePlugin
+    public class ProductViewTrackerPlugin : BasePlugin, IWidgetPlugin
     {
-        private readonly ProductViewTrackerRecordObjectContext _context;
-        public ProductViewTrackerPlugin(ProductViewTrackerRecordObjectContext context)
+        /// <summary>
+        /// Gets a value indicating whether to hide this plugin on the widget list page in the admin area
+        /// </summary>
+        public bool HideInWidgetList => true;
+
+        /// <summary>
+        /// Gets a name of a view component for displaying widget
+        /// </summary>
+        /// <param name="widgetZone">Name of the widget zone</param>
+        /// <returns>View component name</returns>
+        public string GetWidgetViewComponentName(string widgetZone)
         {
-            _context = context;
+            return "ProductViewTracker";
         }
-        public override void Install()
+
+        /// <summary>
+        /// Gets widget zones where this widget should be rendered
+        /// </summary>
+        /// <returns>Widget zones</returns>
+        public Task<IList<string>> GetWidgetZonesAsync()
         {
-            _context.Install();
-            base.Install();
-        }
-        public override void Uninstall()
-        {
-            _context.Uninstall();
-            base.Uninstall();
+            return Task.FromResult<IList<string>>(new List<string> { PublicWidgetZones.ProductDetailsTop });
         }
     }
 }
 ```
-
-## The usage
-
-The tracking code should be added to `ProductTemplate.Simple.cshtml` and `ProductTemplate.Grouped.cshtml` files. These ones are product templates.
-
-```csharp
-@await Component.InvokeAsync("ProductViewTrackerIndex", new { productId = Model.Id })
-```
-
-P.S. You can also implement it as a widget. In this case you won't need to edit a cshtml file.

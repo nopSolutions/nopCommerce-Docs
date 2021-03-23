@@ -20,7 +20,7 @@ To install nopCommerce on Windows you should download it first. Go to [download 
 The next step is to upload the nopCommerce files to your server. To do this you need to use an FTP connection which allows transferring files between computers. Follow the next steps to set this up: 
 1. Choose and download one of FTP client applications which you will use for transferring files.
 1. Find your FTP credentials in your hosting control panel.
-1. In your FTP client application, set up the connection between your computer and the server using the FTP credentials you found on the previous step.
+1. In your FTP client application, set up the connection between your computer and the server using the FTP credentials you found in the previous step.
 1. Upload the nopCommerce files to the server.
 
 ## Create a database
@@ -40,13 +40,13 @@ Using the url from the previous step access the website from your browser.
 Once you open the site for the first time, you will be redirected to the installation page, as follows:
 ![nopCommerce installation](_static/installing-local/installation.jpg)
 
-On the *Store information* panel fill the following details:
+In the *Store information* panel fill the following details:
 * **Admin user email**: this is the email address for the first admin of the site.
 * **Admin user password**: you will need to supply a password for the admin account.
 * **Confirm the password**: confirm the admin user password.
 * **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
 
-On the *Database information* panel you need to enter the following info:
+In the *Database information* panel you need to enter the following info:
 * **Database**: here you can select either Microsoft SQL Server or MySQL. Choose the first one if you installing nopCommerce on Windows.
 * **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
 * **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.

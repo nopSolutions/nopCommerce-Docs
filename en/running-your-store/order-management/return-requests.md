@@ -2,89 +2,112 @@
 title: Return requests
 uid: en/running-your-store/order-management/return-requests
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 ---
 
 # Return requests
 
-Return Request feature enables customers to request a return on items previously purchased. This option is only available for completed orders. Return requests settings are managed in **Configuration → Settings → Order Settings on the Return Request settings tab**.
+Return request feature enables customers to request a return on items previously purchased. These are also known as RMA requests. This option is only available for completed orders. Return requests settings are managed in **Configuration → Settings → Order settings** in the *Return request settings* panel.
 
+To enable return requests tick the **Enable returns system** checkbox.
 When this option is enabled, a **Return item(s)** button is displayed for completed orders on the order details page in the public store.
 
-**To submit a return request**, a customer would need to take the following steps:
+To proceed to the return request settings section click [here](#return-request-settings).
 
-In the public store, go to the My Account window and click Orders, as follows: ![My Account Orders](_static/return-requests/my-account-orders.png)
+In the next sections we will describe how the return request functionality can be used by your customers and how to manage return requests in admin area.
 
-1. Click the **Return Item(s)** button beside the complete order that is to be returned. The **Return Item(s) from Order #** is displayed, as shown in the following example: ![Return Items](_static/return-requests/return-items.png)
-    * **Qty. to return** dropdown list allows selecting the number of items to be returned.
-    * **Return Reason** dropdown list allows selecting the reason for requesting a return. For example, wrong product ordered, wrong product received and more. These reasons are defined by the store owner in the Return Request Settings.
-    * **Return Action** dropdown list allows selecting the required return action to take. For example, repair product, replace product, issue credit and so on. These actions are defined by the store owner in the Return Request Settings.
-    * Choose the **Upload a file** option if you want to attach some additional documents, pictures to your request. 
-	
-	  > [!NOTE]
-	  >
-	  > This option is available only when the checkbox **Allow file uploads** in **Configuration → Settings → Order Settings** on the **Return Request settings tab** is checked.
+## Submit a return request
+To submit a return request, a customer would need to take the following steps:
+
+1. In the public store, go to the *My account* window and click **Orders**. The following page will be displayed: 
+![My account - Orders](_static/return-requests/my-account-orders.jpg)
+
+1. Click the **Return Item(s)** button beside the completed order that is to be returned. The *Return item(s) from order #* window is displayed, as shown in the following example: 
+  ![Return items](_static/return-requests/return-items.jpg)
+    * **Qty to return** dropdown list allows selecting the number of items to be returned.
+    * **Return reason** dropdown list allows selecting the reason for requesting a return. For example, wrong product ordered, wrong product received and more. Read [below](#return-request-settings) how to manage return reasons.
+    * **Return action** dropdown list allows selecting the required return action to take. For example, repair product, replace product, issue credit and so on. Read [below](#return-request-settings) how to manage return actions.
+    * Use the **Upload a file** option if you want to attach some additional documents or pictures to your request. 
+	    > [!NOTE]
+	    >
+	    > This option is available only when the **Allow file uploads** checkbox is checked. Read [below](#return-request-settings) how to set this up.
 
     * In the **Comments** field, a customer can enter an optional comment for information purposes.
-1. After using the Return Request feature, the customer can manage his/her requests from the **My Account** page in the public store, by clicking **Return Requests**: ![Return Requests](_static/return-requests/return-requests.jpeg)
+1. After using the return request feature, the customer can see the created return requests and its' statuses from the *My Account* page in the public store, by clicking **Return requests**: 
+  ![Return requests public](_static/return-requests/return-requests.jpg)
 
-The store owner can now manage this return request in the Administration Area.
+## Manage return requests
+The store owner can now manage this return request in the administration area.
 
-**To view and edit return requests**, go to **Sales → Return requests**. Click Edit beside the return request, the Edit Return Request window is displayed.
+To view and edit return requests, go to **Sales → Return requests**. All return requests will be displayed, as follows:
+![Return requests admin](_static/return-requests/return-requests-admin.jpg)
 
-![Edit return request](_static/return-requests/edit-return-requests.jpeg)
+Click **Edit** beside the return request, the *Edit return request details* window is displayed:
+![Edit return request](_static/return-requests/edit-return-request.jpg)
+
+The store administrator is allowed to:
+* View the return request **ID**.
+* View the **Order #**. Clicking on the order number redirects to the associated order details page.
+* View the **Customer**. Clicking on the customer email redirects to the associated customer details page.
+* View the **Product**. Clicking on the product name redirects to the associated product details page.
+* Enter the **Quantity** of the returned product.
+* Select the **Return request status**:  
+  * *Pending*
+  * *Received*
+  * *Return authorized*
+  * *Item(s) repaired*
+  * *Item(s) refunded*
+  * *Request rejected*
+  * *Cancelled*
+
+* In the **Reason for return** field, edit the reason for return, if necessary.
+* In the **Requested action** field, edit the requested action, if necessary.
+* In the **Customer comments** field, edit the comment entered by the customer, if necessary.
+* In the **Staff notes** field, enter an optional note for information purposes. These notes will not be displayed to a customer.
+* View the **Date** when the return request was submitted.
 
 > [!NOTE]
 > 
-> The Request ID, Product, and Date fields are read-only and cannot be edited.
+> Click the **Notify customer about status change** button to send an email to the customer informing on the return request status change. ![Control buttons](_static/return-requests/control-elements.png)
 
-* **Order link** allows viewing the associated order details page.
-* **Customer link** allows viewing the customer details page.
-* **Status** dropdown list allows to select the request status: In the **Reason for Return** field, edit the reason for return, if necessary.
-  * Pending
-  * Received
-  * Return Authorized
-  * Item(s) Repaired
-  * Item(s) Refunded
-  * Request rejected
-  * Cancelled
-* In the **Requested Action** field, edit the requested action, if necessary.
-* In the **Customer Comments** field, edit the comment entered by the customer, if necessary.
-* In the **Staff Notes** field, enter an optional note for information purposes.
+## Return request settings
+To define the return request settings, go to **Configuration → Settings → Order settings**. 
 
-> [!NOTE]
-> 
-> Click the Notify customer about status change button to send an email to the customer informing him/her on the return request status change. ![Control buttons](_static/return-requests/control-elements.png)
+This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
-## See also
+Go to the *Return request settings* panel:
+![Return request settings](_static/return-requests/return-request-settings.jpg)
 
-* [Return request settings](xref:en/running-your-store/order-management/return-requests)
-* [Orders](xref:en/running-your-store/order-management/orders)
-* [YouTube Tutorial: Managing Return Requests](https://www.youtube.com/watch?v=VqF2GZ2ip_0&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=17)
-
-
-# Return request settings
-
-To define the return request settings, go to **Configuration → Settings → Order Settings**. The Order Settings window will be displayed, in the advanced mode by default. Switch to the **Return request settings panel**.
-
-![Return Requests Settings](_static/return-requests/return-requests-settings.png)
-
-In return request settings you can define:
-
-* To **Enable Returns System**, to enable your customers to submit return requests for purchased items.
+In this panel you can define:
+* To **Enable returns system**, to enable your customers to submit return requests for purchased items.
 * In the field **Return request number mask** specify custom return request number if needed.
 * **Number of days that the return request is available**, to set the number of days that the return request link will be available in the customer area.
-
   > [!TIP]
   > 
-  > For example, if the store owner allows returns within 30 days after the purchase, this field will be set to 30. When the customer logs into the website and looks at My Account, orders completed earlier than 30 days will not have a Return Request button.
-* Tick the **Allow file uploads** checkbox if you want to allow uploading files (pictures for example) when submitting a return request. This option is especially useful for customers who faced some problems with their orders, such as receiving damaged items or wrong product, etc.
-* **Return request reasons.** Enter a list of reasons that a customer can choose from when submitting a return request.
-* **Return request actions.** Enter a list of actions that a customer can choose from when submitting a return request.
+  > For example, if the store owner allows returns within 30 days after the purchase, this field will be set to 30. When the customer logs into the website and looks at "My account", orders completed earlier than 30 days ago will not have a **Return item(s)** button.
 
-This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
+* Tick the **Allow file uploads** checkbox if you want to allow uploading files (pictures, for example) when submitting a return request. This option is especially useful for customers who faced some problems with their orders, such as receiving damaged items or wrong products, etc.
+
+### Return request reasons
+This panel represents a list of reasons a customer can choose from when submitting a return request.
+![Return request reasons](_static/return-requests/return-request-reasons.jpg)
+
+Click **Add new** to add a new request reason. The *Add new return request reason* window will be displayed, as follows:
+![Add a return request reason](_static/return-requests/add-reason.jpg)
+
+Enter the return request reason **Name** and **Display order** number (1 represents the first item in the list). Click **Save** to save the changes.
+
+### Return request actions
+This panel represents a list of actions a customer can choose from when submitting a return request.
+![Return request actions](_static/return-requests/return-request-actions.jpg)
+
+Click **Add new** to add a new request action. The *Add new return request action* window will be displayed, as follows:
+![Add a return request action](_static/return-requests/add-action.jpg)
+
+Enter the return request action **Name** and **Display order** number (1 represents the first item in the list). Click **Save** to save the changes.
 
 ## See also
 
-* [Return Requests](xref:en/running-your-store/order-management/return-requests)
-* [Order Settings](xref:en/running-your-store/order-management/order-settings)
+* [YouTube tutorial: managing return requests](https://www.youtube.com/watch?v=VqF2GZ2ip_0&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=17)
+* [Order settings](xref:en/running-your-store/order-management/order-settings)
+* [Orders](xref:en/running-your-store/order-management/orders)

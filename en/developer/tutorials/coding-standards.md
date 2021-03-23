@@ -118,7 +118,7 @@ The style rules in this section concern modifier preferences, including requirin
 
 - Prefer the specified ordering:
 
-	*`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
+    *`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
 
   ```csharp
   //Right
@@ -308,7 +308,7 @@ The style rules in this section concern expression-level preferences, including 
 
   ```csharp
   //Right
-  return expr ? "hello" : "world"
+  return expr ? "hello" : "world";
   ```
 
   ```csharp
@@ -534,13 +534,13 @@ This style rule concerns whether out variables are declared inline or not. Start
 
   ```csharp
   //Right
-  if (int.TryParse(value, out int i) {...}
+  if (int.TryParse(value, out int i)) {...}
   ```
 
   ```csharp
   //Wrong
   int i;
-  if (int.TryParse(value, out i) {...}
+  if (int.TryParse(value, out i)) {...}
   ```
 
 #### C# expression-level preferences
@@ -576,7 +576,7 @@ These style rules concern the syntax around null checking, including using throw
   this.s = s;
   ```
 
-- Refer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
+- Prefer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
 
   ```csharp
   //Right
@@ -612,7 +612,7 @@ This style rule concerns the use of curly braces { } to surround code blocks.
 
 These formatting rules concern the sorting and display of *`using`* directives and *`Imports`* statements.
 
-- Sort System.* *`using`* directives alphabetically, and place them before other using directives.
+- Sort `System.*` *`using`* directives alphabetically, and place them before other using directives.
 
   ```csharp
   //Right

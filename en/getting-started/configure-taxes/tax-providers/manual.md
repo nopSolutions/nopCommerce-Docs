@@ -7,39 +7,56 @@ contributors: git.exileDev
 
 # Manual (fixed or by country/state/zip)
 
-To configure Manual (Fixed or By Country/State/Zip) go to **Configuration → Tax Providers**.
+To configure the Manual (fixed or by country/state/zip) tax provider go to **Configuration → Tax providers**.
 
 ![Tax providers](_static/manual/tax-providers.png)
 
-Click **Configure** beside the Manual (Fixed or By Country/State/Zip) option in the list.
-
-You can switch Fixed rate tax calculation to Country/State/Zip tax calculation by clicking button at the top of the page.
+Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates.
+You can switch *Fixed rate* tax calculation to *Country/state/zip* tax calculation by clicking button at the top of the page.
 
 ## Fixed rate
 
-![Fixed rate](_static/manual/tax-fixed-rate.png)
+Choose **Fixed rate** configuration using the switcher in the top of the page. 
+
+![Configure](_static/manual/configure.jpg)
+
+On this page you can see the pre-created tax categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
+
+Make sure your products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-products).
+
+![Product](_static/manual/product.jpg)
 
 > [!NOTE]
 > 
-> this section shows only pre-created tax categories. To create new, go to Configure → Tax Categories.
-> 
-> * Click **Edit** beside the tax category for which to define a fixed rate.
-> * Enter the required rate in the **Rate** column.
-> * Click **Update**.
+> This section shows only pre-created tax categories. Read how to create new categories below: [configure tax categories](#configure-tax-categories).
 
 ## By country
 
+Choose **By country** configuration using the switcher in the top of the page. 
+
 ![By country](_static/manual/tax-by-country.png)
 
-Define the **new tax rate**, as follows:
+Define the new tax rate, as follows:
 
 * Select the **Store** for which the rate is defined. Select an * to apply this rate to all stores.
 * Select the **Country** for which the tax rate is defined.
 * Select the **State/province** for which the tax rate is defined. If an asterisk (*) is selected, this tax rate will apply to all customers from the selected country regardless of the state.
-* Enter **Zip code** of an area for which the tax rate is defined. If this field is empty, then this tax rate will apply to all customers from the selected country or state regardless of the zip code.
+* Enter **Zip** code of an area for which the tax rate is defined. If this field is empty, then this tax rate will apply to all customers from the selected country or state regardless of the zip code.
 * Select the **Tax category** for which to apply the tax rate.
 * In the **Percentage** field, enter the required percentage.
 
 Click **Add tax rate**. The new tax rate is displayed, as follows:
 
 ![Add tax rate](_static/manual/add-tax-rate.png)
+
+> [!NOTE]
+> 
+> This section shows only pre-created tax categories. Read how to create new categories below: [configure tax categories](#configure-tax-categories).
+
+## Configure tax categories
+
+To define tax categories go to **Configuration → Tax categories**. The *Tax categories* window is displayed:
+
+![Tax categories](_static/manual/tax-categories.jpg)
+
+To add a new tax category, enter the category **Name**, and the **Display order** of this tax classification in the bottom of the panel. In the **Display order** field, value of 1 represents the top of the list. Then click **Add new record** to save the new tax category.

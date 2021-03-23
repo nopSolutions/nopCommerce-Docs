@@ -17,9 +17,9 @@ Developers can either publish an event or consume an event:
 
 - To listen for an event the developer will want to create a new implementation of the generic **IConsumer** interface. Once a new consumer implementation has been created nopCommerce uses reflection to find and register the implementation for event handling.
 
-There are three event publisher extension methods which are used for data modification events named `EntityInserted`, `EntityUpdated` and `EntityDeleted` with **BaseEntity** inherit of **IEventPublisher** interface which is responsible to broadcast the insert, update and deleting entity events respectively.
+There are three event publisher extension methods which are used for data modification events named `EntityInsertedAsync`, `EntityUpdatedAsync` and `EntityDeletedAsync` with **BaseEntity** inherit of **IEventPublisher** interface which is responsible to broadcast the insert, update and deleting entity events respectively.
 
-## EntityInserted
+## EntityInsertedAsync
 
 This extension method takes the model entity of type `BaseEntity` as a parameter. This extension method is used to publish/broadcast the entity inserted event of type `BaseEntity` when a new data is inserted. This extension method then invokes the parameterized constructor of the EntityInsertedEvent generic class and expose the inserted entity by its Entity property. Which then can be subscribed/handled by the developer by implementing IConsumer interface of type EntityInsertedEvent of type Entity we recently inserted eg: `IConsumer<EntyInsertedEvent<BaseEntity>>`. Here `BaseEntity` can be any model class that inherits from `BaseEntity` class.
 
@@ -34,10 +34,10 @@ public class MyFirstPublisherClass
         this._eventPublisher = eventPublisher;
     }
 
-    public void MyFirstProductInsertMethod(Product product)
+    public async Task MyFirstProductInsertMethod(Product product)
     {
         //Logic to insert goes here
-        _eventPublisher.EntityInserted<Product>(product);
+        await _eventPublisher.EntityInsertedAsync(product);
     }
 }
 ```
@@ -49,7 +49,7 @@ In the above example, we are injecting `IEventPublisher` Interface to get the in
 ```cs
 public class MyFirstConsumerClass : IConsumer<EntityInsertedEvent<Product>>
 {
-    public void HandleEvent(EntityInsertedEvent<Product> insertEvent)
+    public async Task HandleEventAsync(EntityInsertedEvent<Product> insertEvent)
     {
         //you can access entity using insertEvent.Entity
         var insertedEntity = insertEvent.Entity;
@@ -62,9 +62,9 @@ public class MyFirstConsumerClass : IConsumer<EntityInsertedEvent<Product>>
 
 Here we are creating a class that is inherent from `IConsumer<EntityInsertedEvent<Product>>`. `IConsumer` interface has only one method that needs to be implemented i.e. `HandleEvent` method. Now whenever the EntityInserted event of type Product is fired this `HandleEvent` method will be invoked with `EntityInsertedEvent` of type product entity object. And here inside this class, we can perform our business logic for further processing of that data.
 
-## EntityUpdated
+## EntityUpdatedAsync
 
-This extension method of `IEventPublisher` interface is also implemented in the same way as EntityInserted.  This extension method also takes the model entity of type `BaseEntity` as an argument/parameter. This extension method is used to publish/broadcast the entity updated event of type `BaseEntity` when an existing entity is updated. This extension method invokes the parameterized constructor of the `EntityUpdatedEvent` generic class and exposes the updated entity by its Entity property. Which then can be subscribed/handled by the developer by implementing IConsumer interface of type `EntityUpdatedEvent` of type `Entity` we recently inserted eg: `IConsumer<EntyUpdatedEvent<BaseEntity>>`.
+This extension method of `IEventPublisher` interface is also implemented in the same way as EntityInserted.  This extension method also takes the model entity of type `BaseEntity` as an argument/parameter. This extension method is used to publish/broadcast the entity updated event of type `BaseEntity` when an existing entity is updated. This extension method invokes the parameterized constructor of the `EntityUpdatedEvent` generic class and exposes the updated entity by its Entity property. Which then can be subscribed/handled by the developer by implementing IConsumer interface of type `EntityUpdatedEvent` of type `Entity` we recently inserted eg: `IConsumer<EntityUpdatedEvent<BaseEntity>>`.
 
 ### Publisher Implementation for EntityUpdated Event
 
@@ -77,15 +77,15 @@ public class MyFirstPublisherClass
         this._eventPublisher = eventPublisher;
     }
 
-    public void MyFirstProductUpdateMethod(Product product)
+    public async Task MyFirstProductUpdateMethod(Product product)
     {
         //Logic to insert goes here
-        _eventPublisher.EntityUpdated<Product>(product);
+        await _eventPublisher.EntityUpdatedAsync(product);
     }
 }
 ```
 
-The implementation of this class is moreover the same as the example in the `EntityInserted`. Here in `MyFirstProductInsertMethod` after completing the logic to update product we are invoking `EntityUpdated` method with a generic type of with recently updated product object as a parameter. Now upon invoking this extension method, it will broadcast entity updated event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let's see how to consume this event.
+The implementation of this class is moreover the same as the example in the `EntityInserted`. Here in `MyFirstProductInsertMethod` after completing the logic to update product we are invoking `EntityUpdatedAsync` method with a generic type of with recently updated product object as a parameter. Now upon invoking this extension method, it will broadcast entity updated event for product type and now whoever is subscribing/listening for this event will receive this product object as an event parameter. Now let's see how to consume this event.
 
 ### Consumer Implementation for EntityUpdated Event
 
@@ -105,9 +105,9 @@ public class MyFirstConsumerClass : IConsumer<EntityUpdatedEvent<Product>>
 
 Again this is also same as the consumer class for entity inserted event. Here we are creating a class that inherits from `IConsumer<EntityUpdatedEvent<Product>>`. Now, whenever the `EntityUpdated` event of type `Product` is fired the `HandleEvent` method of this class will be invoked with the parameter of type `EntityUpdatedEvent` product entity object. And here inside this class, we can perform our business logic for further processing of that data.
 
-## EntityDeleted
+## EntityDeletedAsync
 
-The logic to implement this extension method is also the same as the `EntityInserted` and `EntityUpdated` extension method of `IEventPublisher`. This extension method also takes model entity of type `BaseEntity` as an argument. This extension method is used to publish/broadcast the entity deleted event of `BaseEntity` when an existing entity is deleted. This extension method invokes the constructor of `EntityDeletedEvent` generic class and exposes the deleted entity by its Entity property. Which then can be subscribed/handled by the developer by implementing `IConsumer<EntityDeletedEvent<BaseEntity>>`.
+The logic to implement this extension method is also the same as the `EntityInsertedAsync` and `EntityUpdatedAsync` extension method of `IEventPublisher`. This extension method also takes model entity of type `BaseEntity` as an argument. This extension method is used to publish/broadcast the entity deleted event of `BaseEntity` when an existing entity is deleted. This extension method invokes the constructor of `EntityDeletedEvent` generic class and exposes the deleted entity by its Entity property. Which then can be subscribed/handled by the developer by implementing `IConsumer<EntityDeletedEvent<BaseEntity>>`.
 
 ### Publisher Implementation for EntityDeleted Event
 
@@ -120,10 +120,10 @@ public class MyFirstPublisherClass
         this._eventPublisher = eventPublisher;
     }
 
-    public void MyFirstProductDeleteMethod(Product product)
+    public async Task MyFirstProductDeleteMethod(Product product)
     {
         //Logic to insert goes here
-        _eventPublisher.EntityDeleted<Product>(product);
+        await _eventPublisher.EntityDeletedAsync(product);
     }
 }
 ```
@@ -148,4 +148,4 @@ public class MyFirstConsumerClass : IConsumer<EntityDeletedEvent<Product>>
 
 Again this is also same as the consumer class for entity inserted event or entity updated event. Here we are creating a class that inherits from `IConsumer<EntityDeletedEvent<Product>>`.
 
-Now, whenever the `EntityDeleted` event of type Product is fired the `HandleEvent` method of this class will be invoked with the parameter of type `EntityDeletedEvent` product entity object. And here inside this class, we can perform our business logic for further processing of that data.
+Now, whenever the `EntityDeleted` event of type `Product` is fired the `HandleEvent` method of this class will be invoked with the parameter of type `EntityDeletedEvent` product entity object. And here inside this class, we can perform our business logic for further processing of that data.

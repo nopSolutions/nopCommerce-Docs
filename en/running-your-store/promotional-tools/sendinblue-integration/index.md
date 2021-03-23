@@ -8,7 +8,7 @@ author: git.mariannk
 
 ## What SendinBlue is
 
-SendinBlue is an all-in-one digital marketing toolbox that's capable of taking care of the entirety of your marketing needs. SendinBlue empowers to build and grow relationships using email campaigns, SMS messages and sophisticated automation of marketing workflows. 
+[SendinBlue](https://www.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) is an all-in-one digital marketing toolbox that's capable of taking care of the entirety of your marketing needs. SendinBlue empowers to build and grow relationships using email campaigns, SMS messages and sophisticated automation of marketing workflows. 
 
 The SendinBlue integration for nopCommerce allows a store owner to:
 * design clean and professional newsletters

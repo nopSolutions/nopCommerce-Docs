@@ -2,53 +2,57 @@
 title: Import/export products
 uid: en/running-your-store/catalog/products/import-export-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko
+contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 ---
 
 # Import/export products
 
-nopCommerce supports **importing** and **exporting** products in **XML** or **Excel** formats.
+nopCommerce supports importing from Excel format and exporting products in XML or Excel. You can download products from your catalog in PDF.
+You can find these options in **Catalog → Products** at the main page top left.
 
- You can find these options in **Catalog → Products** at the main page top left.
+![Products](_static/import-export-products/buttons.jpg)
 
-![Products](_static/import-export-products/products3.png)
+## Exporting products
 
-## Exporting product
+ You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. 
+ 
+![Exporting product](_static/import-export-products/exporting_product.png)
 
-You can download products from your catalog in PDF (**Download catalog as PDF** button), export in XML or Excel formats (**Export** button). If you don't need to download all the products you can use **search** to find the required products or/and use checkboxes to select the needed products. Choose to **export all** or only **selected** from the Export dropdown list. A table with products you have chosen will be downloaded. The table consists of all the products characteristics from product editing page tabs (Product info, SEO, Pictures and so on).
-
-> [!NOTE]
-> 
-> If you use product attributes, an exported table will be grouped by rows, to view attribute details click + next to your product in the table.
-
-![simple product](_static/import-export-products/simple_product.png)
-
-![exporting product](_static/import-export-products/exporting_product.png)
-
-### Importing products
-
-If you do not want to add all the products for your catalog manually you can use import option.
+ If you don't need to download all the products use the *Search* panel to find the required products or/and use checkboxes to select the needed products. A file with products you have chosen will be downloaded. The file consists of all the products characteristics from product editing page panels (Product info, SEO, Pictures and so on).
 
 > [!NOTE]
 > 
-> Before you choose import on a product page you should download a table template for import in excel format as it was described in Exporting products. For accurate and correct import of your products it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
+> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details click + next to your product in the table. 
+> ![Simple product](_static/import-export-products/simple_product.png)
+
+## Importing products
+
+If you do not want to add all the products to your catalog manually you can use the import option.
+
+> [!NOTE]
+> 
+> Before you start import you should download a table template for import in Excel format as it was described in the [exporting products](#exporting-products) section. For accurate and correct import of your products it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
 
 It is not mandatory to fill all the table fields. The product will be created based on the filled fields.
 
 Imported products are distinguished by SKU. If the SKU already exists, then its corresponding product will be updated.
 
-Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1,000 records at once. If you have more records, it's better to split them into multiple Excel files and import separately.
+Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1000 records at once. If you have more records, it's better to split them into multiple Excel files and import separately.
 
-> [!NOTE]
-> 
-> For example, we want to add Dancing shoes to our catalog. Create a new row in the table.
+### Example
+
+For example, we want to add Dancing shoes to our catalog. Let's create a new row in the table:
 
 ![product table](_static/import-export-products/product_table.png)
 
-Then click **import**, upload the table and check, we have a new product in the catalog.
+Then click **Import**, choose the file and click the **Import from Excel** button. Then check if you have a new product in the catalog.
 
 ![product catalog](_static/import-export-products/product_catalog.png)
 
+## Setting up import/export
+
+The following section describes import/export settings: [Export/import](xref:en/running-your-store/catalog/catalog-settings#exportimport).
+
 ## See also
 
-* [Adding products](xref:en/running-your-store/catalog/products/add-product-for-beginners)
+* [Adding products](xref:en/running-your-store/catalog/products/add-products)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Credit card (manual processing)
 uid: en/getting-started/configure-payments/payment-methods/credit-card-manual-processing
 author: git.AndreiMaz
@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 # Credit card (manual processing)
 
-This is a special gateway that allows all orders to be successfully entered on the site, but it does NOT charge the customer or make any calls to any live gateway. It is recommended to use this payment method if you want to perform one of the following:
+This is a special payment plugin that allows all orders to be successfully entered on the website, but it does NOT really charge a customer or make any calls to any live payment gateway. It is recommended to use this payment method if you want to perform one of the following:
 
 * Process all orders offline
 * Process them manually via another back-office system
@@ -47,17 +47,17 @@ You can limit any payment method to store and customer role. This means that the
 
 ![Plugins](_static/credit-card-manual-processing/edit.jpg)
 
-2. You can set the following limits up:
+2. You can set up the following limits:
 
 	* In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
 		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**.
+		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
 	* Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
 
 		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**.
+		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 	Click **Save**.
 

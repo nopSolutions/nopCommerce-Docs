@@ -85,13 +85,13 @@ You can use any of the following authentication methods to connect to the server
 Once you open the site for the first time, you will be redirected to the installation page, as follows:
 ![nopCommerce installation](_static/installing-local/installation.jpg)
 
-On the *Store information* panel fill the following details:
+In the *Store information* panel fill the following details:
 * **Admin user email**: this is the email address for the first admin of the site.
 * **Admin user password**: you will need to supply a password for the admin account.
 * **Confirm the password**: confirm the admin user password.
 * **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
 
-On the *Database information* panel you need to enter the following info:
+In the *Database information* panel you need to enter the following info:
 * **Database**: here you can select either Microsoft SQL Server or MySQL.
 * **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
 * **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
@@ -111,7 +111,7 @@ Click **Install** in order to start the installation process. When the setup pro
 > If you are're using nopCommerce 3.90 and below ensure that your application pool is set to *Integrated* mode.
 
 > [!NOTE]
-> If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from `App_Data` directory. When using IIS you might want to read this article.
+> If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from `App_Data` directory.
 
 
 

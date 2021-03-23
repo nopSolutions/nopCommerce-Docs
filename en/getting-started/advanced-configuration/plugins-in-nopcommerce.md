@@ -22,8 +22,8 @@ The plugins available on the marketplace are developed either by the nopCommerce
 ## To install a plugin
 
 1. The user has two options for uploading the plugin. You can use any that seems most convenient:
-    1. Upload the plugin to the `/plugins` folder in your nopCommerce directory. And restart your application (or click **Reload list of plugins** button).
-    1. Upload the plugin or theme using the **Upload plugin or theme** button indicating the path to the location of the archive with the plugin in your local storage.
+    * Upload the plugin to the `/plugins` folder in your nopCommerce directory. And restart your application (or click **Reload list of plugins** button).
+    * Upload the plugin or theme using the **Upload plugin or theme** button indicating the path to the location of the archive with the plugin in your local storage.
 
     > [!TIP]
     > 
@@ -44,7 +44,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 
 1. Go to **Configuration → Local plugins**. The plugins list is displayed:
     ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
-1. Click the **Configure** link beside the plugin to go to the plugin's configuration page. If the **Configure** link does not exist beside a plugin, this indicates the plugin does not require any configuration.
+1. Click the **Configure** link beside the plugin to go to the plugin's configuration page. If the **Configure** button does not exist beside a plugin, this indicates the plugin does not require any configuration.
 
 ## To change the plugin's friendly name, display order and limitations
 

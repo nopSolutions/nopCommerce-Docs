@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.exileDev, git.mariannk
 ---
 
-# Pickup Points
+# Pickup points
 
 Pickup point is an option providing customers the flexibility to select a point where they can receive parcels.
 

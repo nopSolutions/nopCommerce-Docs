@@ -2,27 +2,21 @@
 title: System administration
 uid: en/running-your-store/system-administration/index
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.exileDev, git.mariannk
 ---
 
 # System administration
 
-This chapter covers **technical aspects of running a nopCommerce store**. It describes how to expand the store functionality by technical means, such as additional external plugins, external authentication for the easier checkout process, configuration of widgets and setting up the e-mail accounts.
+This chapter covers technical aspects of running a nopCommerce store. It describes how to expand the store functionality by technical means, such as additional external plugins, external authentication for the easier checkout process, configuration of widgets and setting up the e-mail accounts.
 
-This chapter concentrates more on the back-end, the front-end is covered in chapter Design.
+This chapter concentrates more on the back-end, the front-end is covered in the [Design](xref:en/getting-started/design-your-store/index) chapter.
 
-## See also
+## See here
 
-* [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
-* [Email accounts](xref:en/getting-started/email-accounts)
-* [Widgets](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
-* [Localization](xref:en/getting-started/advanced-configuration/localization)
-* [External Authentication Method](xref:en/getting-started/advanced-configuration/external-authentication-methods)
-* [Message Queue](xref:en/running-your-store/system-administration/message-queue)
-* [Schedule Tasks](xref:en/running-your-store/system-administration/schedule-tasks)
-* [System Information](xref:en/running-your-store/system-administration/system-information)
-* [Deleting Old Exported Files](xref:en/running-your-store/system-administration/maintenance)
-* [Deleting Abandoned Shopping Carts](xref:en/running-your-store/system-administration/maintenance)
-* [Deleting Guests](xref:en/running-your-store/system-administration/maintenance)
+* [System information](xref:en/running-your-store/system-administration/system-information)
+* [Log](xref:en/running-your-store/system-administration/log)
 * [Warnings](xref:en/running-your-store/system-administration/warnings)
-* [Logs](xref:en/running-your-store/system-administration/log)
+* [Maintenance](xref:en/running-your-store/system-administration/maintenance)
+* [Message queue](xref:en/running-your-store/system-administration/message-queue)
+* [Schedule tasks](xref:en/running-your-store/system-administration/schedule-tasks)
+* [Templates](xref:en/running-your-store/system-administration/templates)

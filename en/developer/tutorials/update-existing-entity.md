@@ -59,18 +59,11 @@ namespace Nop.Data.Migrations
 ```
 
 > [!NOTE]
-> Since migrations appeared only in the nopCommerce 4.30, it does not implement the update procedure call. Therefore, you need to add the following code to the method **ApplicationBuilderExtensions.StartEngine**
+> The procedure for updating migrations is carried out during the initialization of the database.
 
 ```csharp
 var migrationManager = EngineContext.Current.Resolve<IMigrationManager>();
-migrationManager.ApplyUpMigrations();
-```
-
-> The specified code should be added before the lines:
-
-```csharp
-//update plugins
-pluginService.UpdatePlugins();
+migrationManager.ApplyUpMigrations(typeof(NopDbStartup).Assembly);
 ```
 
 ## The presentation model

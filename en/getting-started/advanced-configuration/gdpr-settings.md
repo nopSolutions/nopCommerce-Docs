@@ -2,7 +2,7 @@
 title: GDPR settings
 uid: en/getting-started/advanced-configuration/gdpr-settings
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp
+contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
 ---
 
 # GDPR settings
@@ -13,38 +13,48 @@ For more information (please refer to this source):
 
 [https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en)
 
-You can enable GDPR settings on your nopCommerce by going to **Administration → Configuration → Settings → GDPR settings**
+## Configure GDPR
 
-![gdpr](_static/gdpr-settings/gdpr.png)
+To enable GDPR settings on your nopCommerce store go to **Administration → Configuration → Settings → GDPR settings**.
 
-Additional settings will allow you to capture a log of the following activities:
+![Configure](_static/gdpr-settings/configure.jpg)
 
-* **Log "accept privacy policy" consent.**
-* **Log "newsletter" consent.**
-* **Log user profile changes.**
+Then tick the **GDPR enabled** checkbox. Additional settings will allow you to capture a log of the following activities:
 
-You can add consents on your nopCommerce site by clicking on **"Add consent"** button:
+* **Log "accept privacy policy" consent**.
+* **Log "newsletter" consent**.
+* **Log user profile changes**.
 
-![consent](_static/gdpr-settings/consent.png)
+You can add consents on your nopCommerce site by clicking the **Add consent** button in the *Consents* panel:
 
-While adding consents, you can define different options such as:
+![Consents](_static/gdpr-settings/consents.jpg)
 
-* If consent is required.
-* If consent will be displayed during registration.
-* If consent will be displayed on customer info page in my account.
+To add a new consent you will be redirected to the *Add consent* window:
+
+![Add consent](_static/gdpr-settings/add-consent.jpg)
+
+Define the following consent settings:
+
+* **Message** or question which will be displayed to customers.
+* If the consent **Is required**.
+* If the consent will be **Displayed during registration**.
+* If thes consent will be **Displayed on "customer info" page** in the "My account" section.
+* **Display order** is the consent display order. 1 represents the first item in the list.
 
 Here is an example of a consent option on customer info page:
 
 ![agreement](_static/gdpr-settings/agreement.png)
 
-If you have enabled the consent log settings then you can see the log activity by going to: **Administration → Customers → GDPR requests (log)**
+If you have enabled the consent log settings then you can see the log activity by going to: **Administration → Customers → GDPR requests (log)**.
 
 ![log](_static/gdpr-settings/log.png)
 
-When GDPR setting is *ENABLED*, store owner can also perform actions like:
+When GDPR setting is enabled, store owner can also perform actions like:
 
 * **Permanent delete** for deletion of customer record.
 * **Export data** for exporting customer data.
+
+To do this go to **Administration → Customers → Edit customer** page.
 
 ![customerdetails](_static/gdpr-settings/customerdetails.png)
 

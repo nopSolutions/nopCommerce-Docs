@@ -7,13 +7,13 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Maintenance
 
-From the **System** menu, select **Maintenance**. The **Maintenance** window is displayed, as follows:
+From the **System** menu, select **Maintenance**. The *Maintenance* window is displayed, as follows:
 
 ![Maintenance](_static/maintenance/maintenance.jpg)
 
 ## Delete guest customer records
 
-From the **Deleting guest customers** panel, click the **Delete** button. This option enables you to delete customer records created for guest visitors.
+From the *Deleting guest customers* panel, click the **Delete** button. This option enables you to delete customer records created for guest visitors.
 
 > [!NOTE]
 > 
@@ -21,19 +21,19 @@ From the **Deleting guest customers** panel, click the **Delete** button. This o
 
 ## Deleting old exported files
 
-From the **Deleting old exported files** panel, click the **Delete** button. All the exported and generated files (such as, PDF and Excel files for example) will be deleted and removed from the database.
+From the *Deleting old exported files* panel, click the **Delete** button. All the exported and generated files (such as, PDF and Excel files for example) will be deleted and removed from the database.
 
 ## Delete abandoned shopping carts and wishlists
 
-From the **Deleting abandoned shopping carts** panel, click the **Delete** button. All shopping cart items created before the specified date will be deleted.
+From the *Deleting abandoned shopping carts* panel, click the **Delete** button. All shopping cart and wishlist items created before the specified date will be deleted.
 
 ## Re-index database tables
 
-From the **Re-index database tables** panel, click the **Re-index** button. This procedure modifies existing tables by rebuilding the index. When you execute re-indexing in a table, only the statistics associated with the indexes are updated. Automatic or manual statistics created in the table (instead of an index) are not updated.
+From the *Re-index database tables* panel, click the **Re-index** button. This procedure modifies existing tables by rebuilding the index. When you execute re-indexing in a table, only the statistics associated with the indexes are updated. Automatic or manual statistics created in the table (instead of an index) are not updated.
 
 ## Database backups 
 
-From the **Database backups** panel, click the **Backup now** button to create a database backup. 
+From the *Database backups* panel, click the **Backup now** button to create a database backup. 
 
 > [!NOTE]
 >

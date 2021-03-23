@@ -2,95 +2,94 @@
 title: News
 uid: en/running-your-store/content-management/news
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
+contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 ---
 
 # News
 
 nopCommerce allows you to post news in your store. There can be any important tidings like nopCommerce latest release information, your company updates and so on.
 
-News are displayed in your store on the homepage or on the site footer.
+News are displayed in your store on the homepage or on the site footer menu.
 
 ![p1](_static/news/news_1.png)
 
+To manage news go to **Content management → News itmes**. The list of all news is displayed, as follows:
+![News](_static/news/list.jpg)
+
 ## Adding news
 
-To view all the news and add new ones go to **Content management → News**
+To add a new news item click the **Edit** button and fill the information about the news item. 
 
-Select tab: **News items** and click **Add new**
+![Adding news](_static/news/add-new.jpg)
 
-![Adding news](_static/news/news_2.png)
+### Info
 
-Define the **following details for news item**:
+In the *Info* panel define the following news item details:
+- If more than one language is enabled, from the **Language** dropdown list, select the language of this news item. Customers will only see news for their selected language.
+- Enter the **Title** of this news item. For example: "The launch of our new nopCommerce store".
+- In the **Short description** field, enter an abstract of this news item. This is the text your visitors will see on the news list in the public store.
+- In the **Full description** field, enter the text of this news item.
+- Select the **Allow comments** checkbox, to enable customers to add comments to the news item.
+* Enter **Start date** and **End date** for displaying this news item in Coordinated Universal Time (UTC).
 
-- Enter the **Title** of this news item. For example: The Launch of our new nopCommerce Store
-- In the **Short Description** field, enter an abstract of this news item. This is the text your visitors will see on news  - items list
-- In the **Full Description** field, enter the body text of this news item
-- Select the **Allow comments** checkbox, to enable customers to add comments to the news items
-- Select **Start and End date of a news** item in Coordinated Universal Time (UTC).
+ > [!NOTE]
+ > 
+ > You can leave these fields empty if you do not want to define news item start and end dates.
 
+ - Choose the stores in the **Limited to stores** field to enable this news item for specific stores only. Leave the field empty in case this functionality is not required.
   > [!NOTE]
-  > 
-  > You can leave these fields empty if you do not want to define news item start and end dates
-- Select the Published checkbox, to publish this news item in your store
+  >
+	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
-While editing existing news or after clicking **Save and Continue Edit** button for a new one, you can click on **Preview** button to see how the news will appear on the site.
+- Select the **Published** checkbox, to publish this news item in your store.
 
-## Setting up SEO for news items
+While editing an existing news item or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the news item will appear on the site.
 
-To set up SEO for the blog post go to **SEO tab**
+### SEO
+In the *SEO* panel define the following news item details:
+![SEO for news item](_static/news/seo.jpg)
 
-![SEO for news items](_static/news/news_3.png)
-
-- Enter **Meta keywords** to be added to a news item header
-- Enter **Meta description** to be added to a news item header
-- Override the page title in the **Meta title field** (the default is the title of the blog post)
 - Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the news item.
+- Override the page title in the **Meta title** field (the default title is the title of the news item).
+- Enter **Meta keywords** - news item meta keywords to be added to the news item header. It is a brief and concise list of the most important themes for the page.
+- Enter **Meta description** to be added to the news item header. The meta description tag is a brief and concise summary of the page content.
 
 ## Managing news comments
 
-To manage news comments, go to **Content management → News**
+To manage news comments, go to **Content management → News comments**.
 
-Select tab: **News comments**.
+![News comments](_static/news/news-comments.jpg)
 
-![pp](_static/news/news_4.png)
+Use the **Approve selected** to approve the selected comments and the **Disapprove selected** button to disapprove ones.
+You can also edit or delete a comment. If delete this comment will be removed from the system.
 
-Here you can **delete** a news comment, it will be removed from the system.
+## News settings
 
+You can manage news settings in **Configuration → Settings → News settings**. This page is available in 2 modes: *advanced* and *basic*.
+
+This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+
+![News settings](_static/news/news-settings.jpg)
+
+### Common
+
+Define the following *Common* settings:
+* Select the **News enabled** checkbox, to enable the news functionality in your store.
+* Tick the **Show on home page** to display your news items on your store home page.
+* Enter the **Number of items to display** on the home page.
+* Enter the **News archive page size**. It's a number of news displayed on one page.
+* Tick the **Display news RSS feed link in the browser address bar** to enable the news RSS feed link in customers browser address bar.
+
+### News comments
+
+Define the following *News comments* settings:
+- Select the **Allow guests to leave comments** checkbox, to enable non-registered users to add comments to the news.
+- Select the **News comments must be approved** checkbox if news comments must be approved by administrator.
+- Select the **Notify about new news comments** checkbox, to notify the store owner about new news comments.
+- Select the **News comments per store** checkbox, to display news comments written in the current store only.
+
+Click **Save**.
 
 ## Tutorials
 
 - [Managing news in nopCommerce](https://www.youtube.com/watch?v=ztLlRXvBQK4)
-
-
-
-
-
-
-
-
-
-
-
-# News settings
-
-You can manage news settings in **Configuration → Settings → News Settings**. This page is available in 2 modes: **advanced** and **basic**.
-
-![p1](_static/news/Setting-News1.png)
-
-Define the **following news settings**:
-
-- Select the **News Enabled** checkbox, to enable the news
-- Select **Show on home page** to display the news item on your store homepage
-- Enter the **Number of news items to display**
-- In the **News archive page size** field, set the number of news items to display per page
-- Select the **Display blog RSS fee**d link in the browser address bar checkbox, to show the news RSS feed link in the  - browser address bar
-- Select the **Allow guests to leave comments** checkbox, to enable non-registered users to add comments to the news
-- Select the **News comments must be approved** checkbox if news comments must be approved by administrator
-- Select the **Notify about new news comments** checkbox, to notify the store owner about new news comments
-- Select the **News comments per store** checkbox, to display news comments written in the current store only
-- Click **Save**
-
-This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from Multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them.
-
-![p2](_static/news/Setting-News%202.png)
