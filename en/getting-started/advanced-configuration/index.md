@@ -11,6 +11,7 @@ author: git.mariannk
 * [GDPR settings](xref:en/getting-started/advanced-configuration/gdpr-settings)
 * [Localization](xref:en/getting-started/advanced-configuration/localization)
 * [External authentication methods](xref:en/getting-started/advanced-configuration/external-authentication-methods)
+* [Multi-factor authentication](xref:en/getting-started/advanced-configuration/multi-factor-authentication)
 * [Configure analytics](xref:en/getting-started/advanced-configuration/configure-analytics)
 * [Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
 * [Multi-store](xref:en/getting-started/advanced-configuration/multi-store)
