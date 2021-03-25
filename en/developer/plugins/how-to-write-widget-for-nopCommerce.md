@@ -26,7 +26,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>netcoreapp3.1</TargetFramework>
+            <TargetFramework>net5.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
@@ -51,9 +51,9 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     </Project>
     ```
 
-    > [!NOTE] The **WIDGET_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, Widgets.GoogleAnalytics.
+    > [!NOTE] The **WIDGET_OUTPUT_DIRECTORY** should be replace by the plugin name, for example *Widgets.GoogleAnalytics*.
 
-1. After updating the .csproj file, **plugin.json** file should be added which is required for widget.  This file contains meta information describing your widget. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+1. After updating the *.csproj* file, **plugin.json** file should be added which is required for widget.  This file contains meta information describing your widget. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
     The last required step is to create a class which implements **BasePlugin** (*Nop.Core.Plugins* namespace) and **IWidgetPlugin** interface (*Nop.Services.Cms* namespace). IWidgetPlugin allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a live chat block on the bottom right of your site.
 
@@ -95,14 +95,14 @@ So let's start:
 1. Create the controller. Add a `Controllers` folder in the new widget, and then add a new controller class. A good practice is to name plugin controllers `Widgets{Name}Controller.cs`. For example, **WidgetsGoogleAnalyticsController**. Of course it's not a requirement to name controllers this way, but just a recommendation. Then create an appropriate action method for configuration page (in admin area). Let's name it "`Configure`". Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
 
     ```cs
-    public IActionResult Configure()
+    public async Task<IActionResult> Configure()
     {
-        if (!_permissionService.Authorize(StandardPermissionProvider.ManageWidgets))
+        if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.ManageWidgets))
             return AccessDeniedView();
 
         //load settings for a chosen store scope
-        var storeScope = _storeContext.ActiveStoreScopeConfiguration;
-        var myWidgetSettings = _settingService.LoadSetting<MyWidgetSettings>(storeScope);
+        var storeScope = await _storeContext.GetActiveStoreScopeConfigurationAsync();
+        var myWidgetSettings = await _settingService.LoadSettingAsync<MyWidgetSettings>(storeScope);
 
         var model = new ConfigurationModel
         {
@@ -121,6 +121,7 @@ So let's start:
 1. Use the following attributes for your action method:
 
     ```cs
+    [AutoValidateAntiforgeryToken]
     [AuthorizeAdmin] //confirms access to the admin panel
     [Area(AreaNames.Admin)] //specifies the area containing a controller or action
     [AdminAntiForgery] //Helps prevent malicious scripts from submitting forged page requests.
@@ -138,13 +139,13 @@ So let's start:
     Where `{CONTROLLER_NAME}` is a name of your controller and `{ACTION_NAME}` is a name of action (usually it's "Configure"). Each widget should specify a list of widget zones. Base class named **IWidgetPlugin** has `GetWidgetZones` method which returns a list of widget zones where it will be rendered.
 
     ```cs
-    public IList<string> GetWidgetZones()
+    public Task<IList<string>> GetWidgetZonesAsync()
     {
-        return new List<string> { PublicWidgetZones.HeadHtmlTag };
+        return Task.FromResult<IList<string>>(new List<string> {PublicWidgetZones.HeadHtmlTag });
     }
     ```
 
-    You can find a list of public widget zones from this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) and admin widget zones following this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs). In addition to `GetWidgetZones`, **IWidgetPlugin** has `GetWidgetViewComponentName` method which returns ViewComponent name. It accepts "*widgetZone*" name as parameter and can be used to render different view based on the selected widget zone.
+    You can find a list of public widget zones from this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) and admin widget zones following this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs). In addition to `GetWidgetZonesAsync`, **IWidgetPlugin** has `GetWidgetViewComponentName` method which returns ViewComponent name. It accepts "*widgetZone*" name as parameter and can be used to render different view based on the selected widget zone.
 
     ```cs
     public string GetWidgetViewComponentName(string widgetZone)
@@ -157,30 +158,30 @@ So let's start:
 
 ![image11](_static/how-to-write-a-widget-for-nopCommerce/image11.png)
 
-## Handling "Install" and "Uninstall" methods
+## Handling "InstallAsync" and "UninstallAsync" methods
 
 This step is optional. Some widgets can require additional logic during its installation. For example, a widget can insert new locale resources or settings values. So open your **IWidgetPlugin** implementation (in most case it'll be derived from **BasePlugin** class) and override the following methods:
 
-1. **Install**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
+1. **InstallAsync**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 
     ```cs
-    public override void Install()
+    public override async Task InstallAsync()
     {
         // custom logic like adding settings, locale resources and database table(s) here
 
-        base.Install();
+        await base.InstallAsync();
     }
     ```
 
-1. **Uninstall**. This method will be invoked during plugin uninstallation. You can remove previously initialized settings, locale resources, or database tables by widget during installation.
+1. **UninstallAsync**. This method will be invoked during plugin uninstallation. You can remove previously initialized settings, locale resources, or database tables by widget during installation.
 
     ```cs
-    public override void Uninstall()
+    public override async Task UninstallAsync()
     {
         // custom logic like removing settings, locale resources and database table(s) which was created during widget installation
 
-        base.Uninstall();
+        await base.UninstallAsync();
     }
     ```
 
-    > [!IMPORTANT] If you override one of these methods, do not hide its base implementation - **base.Install()** and **base.Uninstall()** which has been marked in the above images.
+    > [!IMPORTANT] If you override one of these methods, do not hide its base implementation - **base.InstallAsync()** and **base.UninstallAsync()** which has been marked in the above images.
