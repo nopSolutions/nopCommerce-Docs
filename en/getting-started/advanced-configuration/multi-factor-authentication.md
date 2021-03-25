@@ -6,7 +6,7 @@ author: git.mariannk
 
 # Multi-factor authentication
 
-Multi-factor Authentication (MFA) is an authentication method that requires a user to provide two or more verification factors to gain access to a resource. MFA is a core component of a strong identity and access management (IAM) policy. Rather than just asking for a username and password, MFA requires one or more additional verification factors, which decreases the likelihood of a successful cyber attack.
+Multi-factor Authentication (MFA) (in our case, it is Two-Factor Authentication - 2FA) is an authentication method that requires a user to provide two or more verification factors to gain access to a resource. MFA is a core component of a strong identity and access management (IAM) policy. Rather than just asking for a username and password, MFA requires one or more additional verification factors, which decreases the likelihood of a successful cyber attack.
 
 nopCommerce implements a built-in multi-factor authentication through Google Authenticator. You can set up other methods using plugins from the [marketplace](https://www.nopcommerce.com/marketplace).
 
@@ -40,6 +40,26 @@ On this page, you can also search customers by email using the *Search* panel.
 
 ## How it works
 
-To understand how the multi-factor authentication works in nopCommerce see the following diagram:
+To understand how the multi-factor authentication works in nopCommerce see the diagram above.
+
+- The **2FA configured** scheme represents the process when 2FA is already configured by a customer.
+- The **2FA setup** scheme represents the process when 2FA setup is needed to be done by a customer.
 
 ![How it works](_static/multi-factor-authentication/diagram.jpg)
+
+## Multi-factor authentication page in public store
+
+To configure multi-factor authentication a customer should visit the **My account - Multi-factor authentication** page which is displayed as follows:
+
+![How it works](_static/multi-factor-authentication/my-account.jpg)
+
+Steps to activate MFA:
+
+1. Activate the **Is enabled** setting.
+1. Choose one of the multi-factor authentication providers (by default, there is the only one).
+1. Save.
+1. Configure the selected multi-factor authentication provider by following the instructions on the individual settings page of the selected provider.
+
+> [!WARNING]
+>
+> After saving the selected provider, be sure to configure it, otherwise, you will be denied access the next time you try to enter your account.
