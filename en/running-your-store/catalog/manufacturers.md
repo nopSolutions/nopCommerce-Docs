@@ -14,7 +14,7 @@ To manage manufacturers go to **Catalog → Manufacturers**.
 Search for a manufacturer in the *Search* panel by entering the **Manufacturer name** or a part of the name, by the **Published** property or among all the manufacturers of a certain **Store** (if more than one store enabled).
 
 > [!NOTE]
-> 
+>
 > To remove manufacturers from the list, select the items to be deleted and click the **Delete (selected)** button.
 > You can export the manufacturers to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML** or **Export to Excel**.
 
@@ -27,6 +27,7 @@ To add a new manufacturer click the **Add new** button in the top of the page. T
 This page is available in two modes: **advanced** and **basic**. Switch to the basic mode which displays the only main fields or use the advanced mode displaying all the available fields.
 
 ### Manufacturer info
+
 In the *Manufacturer info* panel, define the following details:
 
 - **Name** - this is the name of the manufacturer displayed in the catalog.
@@ -41,13 +42,16 @@ In the *Display* panel, define the following details:
 
 - Select the **Published** checkbox, to enable the manufacturer to be visible in the public store.
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the manufacturer details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
-	- In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-- The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page. 
-	> [!TIP]
-	> 
-	> For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
+  - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
+- The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page.
+  > [!TIP]
+  >
+  > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
 
-- **Price ranges** - allow defining ranges of price by which customers can filter the manufacturers. Enter a price range in the currency that you defined in the Currencies window. Separate the ranges by a semicolon, for example, 0-999; 1000-1200; 1201 - (1201 means 1201 and over).
+- Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
+  - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
+    - If the setting above is enabled enter the **Price 'from'**.
+    - As well as the **Price 'to'**.
 - **Display Order** - the order number for displaying the manufacturer. This display number is used to sort manufacturers in the public store (ascending). The manufacturer with the display order 1 will be placed at the top of the list.
 - The **Manufacturer template** filed is visible if you have any custom manufacturer templates installed on the **System → Templates** page. This template defines how this manufacturer (and its products) will be displayed.
 
