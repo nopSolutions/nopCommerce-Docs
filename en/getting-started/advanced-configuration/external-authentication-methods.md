@@ -13,7 +13,7 @@ After an external authentication method is configured and marked as active, user
 
 ## Manage the external authentication methods
 
-Go to **Configuration → External authentication**. The *External authentication* window is displayed:
+Go to **Configuration → Authentication → External authentication**. The *External authentication* window is displayed:
 
 ![External auth](_static/external-authentication-methods/external-authentication.png)
 
@@ -25,9 +25,9 @@ Click **Configure** for the method configuration.
 
 The Facebook authentication method is a built-in external authentication plugin. To configure authentication with Facebook, please follow these steps:
 
-1. On the **Configuration → External authentication** page click **Configure** beside the **Facebook authentication**. The *Configure - Facebook authentication* window is displayed:
+1. On the **Configuration → Authentication → External authentication** page click **Configure** beside the **Facebook authentication**. The *Configure - Facebook authentication* window is displayed:
 
-	![Facebook](_static/external-authentication-methods/facebook.jpg)
+   ![Facebook](_static/external-authentication-methods/facebook.jpg)
 
 1. Navigate to the [Facebook for Developers](https://developers.facebook.com/apps) page and sign in. If you don't already have a Facebook account, use the Sign up for Facebook link on the login page to create one.
 1. Tap the **+ Add a New App button** in the upper right corner to create a new App ID. (If this is your first app with Facebook, the text of the button will be **Create a New App**.)
