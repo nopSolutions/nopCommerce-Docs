@@ -59,7 +59,7 @@ In nopCommerce it belongs in the same layer as the `Nop.Web` project. Actually t
 
 ### Test Layer
 
-This layer resides in the same layer as "Presentation Layer", right outside the "Application Core" This layer is all about testing the different parts of application. Testing in nopCommerce is easy and more reliable due the the architecture it follows for it's system design. In nopCommerce solution we can find all of the directories for this layer inside "Tests" directory. nopCommerce uses *NUnit* package for "Unite Testing"
+This layer resides in the same layer as "Presentation Layer", right outside the "Application Core" This layer is all about testing the different parts of application. Testing in nopCommerce is easy and more reliable due the the architecture it follows for it's system design. In nopCommerce solution we can find all of the directories for this layer inside "Tests" directory. nopCommerce uses *NUnit* package for "Unit Testing"
 
 #### Nop.Tests
 
@@ -67,11 +67,11 @@ This layer is the inner layer of "Test layer" this layer has dependency to the "
 
 #### Nop.Services.Tests
 
-This project lives in the outermost layer in the "Test Layer". This project is build for "Unite Testing" the `Nop.Service` project. This project contains logic to test every service classes for every operations.
+This project lives in the outermost layer in the "Test Layer". This project is build for "Unit Testing" the `Nop.Service` project. This project contains logic to test every service classes for every operations.
 
 #### Nop.Core.Tests
 
-This project lives in the same layer as `Nop.Service.Test`. This project is build for "Unite Testing" the `Nop.Core` project, it tests for cashing, domain entities and so on.
+This project lives in the same layer as `Nop.Service.Test`. This project is build for "Unit Testing" the `Nop.Core` project, it tests for cashing, domain entities and so on.
 
 #### Nop.Web.Tests
 
