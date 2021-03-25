@@ -26,6 +26,7 @@ To add a new category click the **Add new** button in the top of the page. The *
 This page is available in two modes: **advanced** and **basic**. Switch to the basic mode which displays the only main fields or use the advanced mode displaying all the available fields.
 
 ### Category info
+
 In the *Category info* panel, define the following category information:
 
 - **Name** - this is the name of the category displayed in the catalog.
@@ -43,14 +44,13 @@ In the *Display* panel, define the following category information:
 - Select the **Show on home page** checkbox, to display the category on the home page.
 - Select the **Include in top menu** checkbox, to include the category in the top menu on the home page.
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the category details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
-    - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-- The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this category e.g. '4' products per page.
+  - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
+  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this category e.g. '4' products per page. > [!TIP] > > For example, when you add seven products to a category and you set its page size to three. Three products per page will be displayed on this category details page in the public store, and the total amount of pages will be three.
 
-  > [!TIP]
-  > 
-  > For example, when you add seven products to a category and you set its page size to three. Three products per page will be displayed on this category details page in the public store, and the total amount of pages will be three.
-
-- **Price ranges** - allow defining ranges of price by which customers can filter the products. The ranges are set in the currency that is defined on the [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies) page. Separate the ranges by a semicolon, for example, 0-999; 1000-1200; 1201 - (1201 means 1201 and over).
+- Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
+  - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
+    - If the setting above is enabled enter the **Price 'from'**.
+    - As well as the **Price 'to'**.
 - **Display order** - the order number for displaying the category. This display number is used to sort categories in the public store (ascending). The category with the display order 1 will be placed at the top of the list.
 - The **Category template** filed is visible if you have any custom category templates installed on the **System → Templates** page. This template defines how this category (and its products) will be displayed.
 
@@ -91,6 +91,7 @@ In the *SEO* panel, define the following details:
 - **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
 
 - **Meta title** specifies the title of the web page. It is a code which is inserted into the header of your web page:
+
     ```html
     <head>
         <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
