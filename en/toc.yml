@@ -179,6 +179,9 @@
           name: External authentication methods
           href: getting-started/advanced-configuration/external-authentication-methods.md
         - 
+          name: Multi-factor authentication
+          href: getting-started/advanced-configuration/multi-factor-authentication.md
+        - 
           name: Configure analytics
           href: getting-started/advanced-configuration/configure-analytics.md
         - 
