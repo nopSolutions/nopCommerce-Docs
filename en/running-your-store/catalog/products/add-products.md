@@ -14,7 +14,7 @@ To add a new product, go to **Catalog → Products**. Click **Add new** button i
 ![Products](_static/add-product-for-beginners/products.jpg)
 
 > [!NOTE]
-> 
+>
 > You can import products from an external file by clicking the **Import** button. Once you have a list of products, you can export it to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. Additionally, it is possible to **Download catalog as PDF** to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the **Delete (selected)** button.
 
 *Add a new product* page is available in two modes: **advanced** and **basic** (in advanced mode by default). You can switch to the basic mode which displays the only required fields.
@@ -50,14 +50,14 @@ Start by filling up general information in the *Product info* panel:
 - Set up the **Product type** as *Simple* or *Grouped*. Read more about product types in the [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants) chapter.
 - The **Product template** field is visible if you have any custom product templates installed on the **Sysytem → Templates** page.
 - Tick **Visible individually** if you want the product to be in catalog or search results, otherwise the product will be hidden in the catalog and accessible only from a grouped product details page.
-- Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. 
+- Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone.
     > [!NOTE]
     >
     > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 - Choose the stores in the **Limited to stores** field if the product is sold in specific stores. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 - **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**.
 - Define whether the product **Require other products**. In this case select the **Required product IDs** entering them separated by comma, ensure that there are no circular references, e.g. A requires B, B requires A. Chose to **Automatically add these products to the cart** if required.
@@ -103,7 +103,7 @@ In the *Price* panel define:
 Define product-specific shipping details in the *Shipping* panel:
 
 - Tick **Shipping enabled** if the product can be shipped. The section then expands for more details.
-- Set the product parameters which will be used for the shipping calculation: **Weight, Length, Width, Height**. 
+- Set the product parameters which will be used for the shipping calculation: **Weight, Length, Width, Height**.
     > [!NOTE]
     >
     > You can change predefined measures in **Configuration → Shipping → Measures**.
@@ -117,8 +117,8 @@ Define product-specific shipping details in the *Shipping* panel:
     > You can manage delivery date options in **Configuration → Shipping → Delivery dates**.
 
 > [!NOTE]
-> 
-> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**. 
+>
+> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**.
 > This setting allows to display estimate shipping information based on customer's shipping address in pop-up window on the product details page.
 
 ## Inventory
@@ -137,12 +137,12 @@ In the *Pictures* panel you can add the product pictures.
 Click **Add product picture** to save the picture.
 
 > [!TIP]
-> 
+>
 > [YouTube tutorial: Importing mass product images](https://www.youtube.com/watch?v=9BUqR_OGiq4)
 
-## Product attributes 
+## Product attributes
 
-In the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes). 
+In the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes).
 
 ![Product attributes](_static/add-product-for-beginners/product_attributes2.png)
 
@@ -159,8 +159,8 @@ Set up a new attribute:
 - Tick **Is required** to set this attribute as required for customers.
 - Define the **Control type** for this attribute (e.g. dropdown list, radio button list, etc.).
     > [!NOTE]
-    > 
-    > For the "Date picker" control type, it is possible to set a number of years to be displayed by using **catalogsettings.countdisplayedyearsdatepicker** parameter on the *All settings (advanced)* page. For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed. Read how to set this up on the [All settings](xref:en/getting-started/advanced-configuration/all-settings) page. 
+    >
+    > For the "Date picker" control type, it is possible to set a number of years to be displayed by using **catalogsettings.countdisplayedyearsdatepicker** parameter on the *All settings (advanced)* page. For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed. Read how to set this up on the [All settings](xref:en/getting-started/advanced-configuration/all-settings) page.
 
 - Define the **Display order** of the attribute on a product page. 1 represents the top of the list.
 
@@ -176,6 +176,7 @@ Edit the attribute value details, as follows:
 - Select the **Attribute value type**. There are two attribute value types, *Simple* and *Associated to product*. Choose the *associated to product* type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use *bundled products functionality* allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes using the **Customer enters quantity** field described below.
 
 If the previous setting set to *Associated to product* the following fields will be displayed:
+
 - **Associated product** allows you to choose the product which will be assotiated to this attribute. Use the **Associate a product** button to choose a product.
 
 > [!NOTE]
