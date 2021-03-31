@@ -221,6 +221,7 @@ For each combination define:
 
 - The attributes which the combination contains.
 - The current **Stock quantity** of this combination.
+- If you have enabled 'Manage stock by attributes' on the product details page you can perform a number of different actions when the current stock quantity falls below (reaches) the **Minimum stock quantity** (e.g. Low stock report).
 - **Allow out of stock**, if you want your customers to be able to purchase product with certain attributes, when out of stock.
 - **SKU**.
 - **Manufacturer part number**.

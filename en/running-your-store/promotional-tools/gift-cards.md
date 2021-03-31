@@ -21,7 +21,7 @@ You can create gift card products, defining a product as a gift card by ticking 
 
 In this panel you also need to specify the **Gift card type**: *Virtual* or *Physical*.
 
-> [!WARNING] 
+> [!WARNING]
 >
 > It is not recommended to change the gift card type from one to another in a "live" store.
 
@@ -47,6 +47,9 @@ You can also define the following gift card information:
 - From the **Gift card type** select whether it's *Virtual* or *Physical*.
 - Beside **Order** field, click **View** to view the order in which the gift card was purchased.
 - In the **Initial value** field, edit the initial value of the card if needed.
+- The **Remaining amount** field allows to see the remaining amount of this gift card.
+- The **Is gift card activated** field determines whether gift this card is activated and can be used.
+- The **Coupon code** field represents the gift card coupon code (used during checkout).
 - If required, edit the **Recipients name**, **Recipient's email** (if the gift card type is *Virtual*), **Sender's name** and **Sender's email** (if the gift card type is *Virtual*) in the relevant fields.
 - Enter an optional message in the **Message** area.
 - Click **Notify recipient**. An email containing the gift card details will be sent to the recipient's email. This button is relevant only for virtual gift cards card and not physical gift cards.

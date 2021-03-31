@@ -43,10 +43,10 @@ In the *Display* panel, define the following details:
 - Select the **Published** checkbox, to enable the manufacturer to be visible in the public store.
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the manufacturer details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
   - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-- The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page.
-  > [!TIP]
-  >
-  > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
+  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page.
+    > [!TIP]
+    >
+    > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
 
 - Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
   - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
@@ -71,7 +71,7 @@ In the *Mappings* panel, define the following details:
     >
     > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
-- In the **Limited to customer roles** field choose the customer roles which will be able to see the manufacturer in the catalog. Leave this field empty if this option is not required and the manufacturer can be seen by everyone. 
+- In the **Limited to customer roles** field choose the customer roles which will be able to see the manufacturer in the catalog. Leave this field empty if this option is not required and the manufacturer can be seen by everyone.
     > [!NOTE]
     >
     > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
@@ -79,7 +79,7 @@ In the *Mappings* panel, define the following details:
 - Choose the stores in the **Limited to stores** field if the manufacturer is sold in specific stores. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 ### SEO
 
@@ -90,17 +90,16 @@ In the *SEO* panel, define the following details:
 - **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the manufacturer page URL would be formed using the manufacturer name. If you enter custom-seo-page-name, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
 
 - **Meta title** specifies the title of the web page. It is a code which is inserted into the header of your web page:
+
     ```html
     <head>
         <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
     </head>
     ```
 
-- **Meta keywords** - manufacturer meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag looks like: 
-	`<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+- **Meta keywords** - manufacturer meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag looks like: `<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
 
-- **Meta description** - a description of the manufacturer. The meta description tag is a brief and concise summary of the page content. The meta description tag looks like:
-	`<meta name="description" content="Brief description of the contents of your page">`
+- **Meta description** - a description of the manufacturer. The meta description tag is a brief and concise summary of the page content. The meta description tag looks like: `<meta name="description" content="Brief description of the contents of your page">`
 
 Click the **Save and continue edit** button to proceed to add products to the manufacturer.
 
@@ -122,7 +121,7 @@ After the product was added to the manufacturer, define the following informatio
 - **Display order**.
 
 > [!NOTE]
-> 
+>
 > By clicking **View**, you will be redirected to the *Edit product details* page.
 
 Click **Save**.
@@ -132,7 +131,7 @@ Click **Save**.
 If you do not want to add all the manufacturers to your catalog manually you can use the import option.
 
 > [!NOTE]
-> 
+>
 > Before you start import you should download a table template for import in Excel format. For accurate and correct import of your manufacturers it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
 
 It is not mandatory to fill all the table fields. The manufacturer will be created based on the filled fields.

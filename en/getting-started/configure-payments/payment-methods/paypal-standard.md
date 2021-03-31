@@ -26,7 +26,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
     ![step1](_static/paypal-standard/signUp1step.png)
 
     > [!NOTE]
-    > 
+    >
     > If you already have an account you will be redirected to the authorization.
 
     ![step2](_static/paypal-standard/signUp2step.png)
@@ -42,7 +42,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
 1. Select **Website payments** in the left panel and click on **Update** in the **Website preferences** line.
 
     ![websitepayments](_static/paypal-standard/websitepaymentsppal.png)
-1. In the **Auto return for website payments** section set the switch to **On.** As the **Return URL** enter the URL of your site, which will be receiving ID transactions sending by PayPal after customer payment.
+1. In the **Auto return for website payments** section set the switch to **On.** As the **Return URL** enter the URL of your site, which will be receiving ID transactions sending by PayPal after customer payment. In our case it's `http://localhost:15536/Plugins/PaymentPayPalStandard/PDTHandler` but don't forget to replace localhost with your site url.
 
     ![autoreturnURLPP](_static/paypal-standard/autoreturnURLPP.png)
 1. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
@@ -50,7 +50,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
     ![PDTtoken](_static/paypal-standard/PDTtoken.png)
 1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods**. In the **PayPal Standard** line click on **Configure**.
 
-![nopconfig](_static/paypal-standard/nopConfigPP.png)
+   ![nopconfig](_static/paypal-standard/nopConfigPP.png)
 
 1. In the **Business Email** field enter an email specified when registering a Business account on paypal.com.
 
@@ -62,20 +62,20 @@ For the **IPN** (Instant Payment Notification) activation:
 
 1. Select **Notifications** in the left panel and click on **Update in the Instant payment notifications** line.
 
-![notifications](_static/paypal-standard/notificationsPP.png)
+   ![notifications](_static/paypal-standard/notificationsPP.png)
 
 1. Familiarize yourself with the information regarding **IPN** and click **Choose IPN Settings**.
 
-![chooseIPN](_static/paypal-standard/chooseIPNSettings.png)
+   ![chooseIPN](_static/paypal-standard/chooseIPNSettings.png)
 
 1. Select **Receive IPN messages (Enabled)**. As **Notification URL** enter URL of your IPN handler.
 
-![editIPN](_static/paypal-standard/editIPN.png)
+   ![editIPN](_static/paypal-standard/editIPN.png)
 
 1. Click **Save.** You should get a message that you have successfully activated IPN.
 
 > [!NOTE]
-> 
+>
 > Instant Payment Notification (IPN) is PayPal's message service that sends a notification when a transaction is affected. Once IPN is integrated, sellers can automate their back office so they are not required to wait for payments to come in to trigger order fulfillment.
 
 ## Limit to stores and customer roles
@@ -84,25 +84,27 @@ You can limit any payment method to store and customer role. This means that the
 
 1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case it's **PayPal Standard**. To find it faster use the *Search* panel in the top of the page and search by **Plugin name** or by **Group** using the *Payment methods* option.
 
-![Plugins](_static/paypal-standard/plugin.jpg)
+   ![Plugins](_static/paypal-standard/plugin.jpg)
 
 1. Click the **Edit** button and the *Edit plugin details* window will be displayed, as follows:
 
-![Plugins](_static/paypal-standard/edit.jpg)
+   ![Plugins](_static/paypal-standard/edit.jpg)
 
-2. You can set up the following limits:
+1. You can set up the following limits:
 
-	* In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+   - In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+     > [!IMPORTANT]
+     >
+     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
-	* Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
+   - Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+     > [!IMPORTANT]
+     >
+     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
-	Click **Save**.
+   - Click **Save**.
 
 ## Known Issues
 

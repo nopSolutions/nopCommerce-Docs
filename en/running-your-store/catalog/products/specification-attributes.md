@@ -19,7 +19,7 @@ Let's say you are running an online computer store. What helps a customer to mak
 
   This table can be displayed on the product details page if you select the **Show on product page** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes).
 
-- Allow your customers to search computers using the filter functionality. Let's say we can search in your store by color, screensize, CPU type and memory. Then the category page will look the following way:
+- Allow your customers to search computers using the filter functionality. Let's say we can search in your store by CPU type and memory. Then the category page will look the following way:
 
   ![Filtering](_static/specification-attributes/filter.jpg)
 
@@ -37,7 +37,7 @@ The next section describes how to create specification attributes. Note that aft
 
 > [!NOTE]
 >
-> By default, there is the only one specification group created. It is *Default group (non-grouped specification attributes)* which includes all non-grouped specification attributes.
+> All specification attributes which don't belong to any group are under the *Default group (non-grouped specification attributes)*.
 
 To see and edit a list of specification attributes and their groups, go to **Catalog → Attributes → Specification attributes**.
 
