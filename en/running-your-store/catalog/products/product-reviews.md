@@ -24,6 +24,7 @@ To manage product reviews go to **Catalog → Product reviews**. The *Product re
 ### Search for reviews
 
 You can search for reviews by:
+
 - Date range using the **Created from** and **Created to**. In the Created From and Created to fields, enter the date range for your search. Alternatively, you can click on the dropdown calendar and select the required date range.
 - **Message**. Can be used to find a review by the title or a part of its text.
 - **Approved**. Can be used to find a review by a "Approved" property.
