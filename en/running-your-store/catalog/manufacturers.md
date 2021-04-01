@@ -42,11 +42,7 @@ In the *Display* panel, define the following details:
 - Select the **Published** checkbox, to enable the manufacturer to be visible in the public store.
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the manufacturer details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
   - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-- The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page.
-
-  > [!TIP]
-  > 
-  > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
+  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page. > [!TIP] > > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
 
 - Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
   - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
@@ -92,6 +88,7 @@ In the *SEO* panel, define the following details:
 - **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the manufacturer page URL would be formed using the manufacturer name. If you enter custom-seo-page-name, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
 
 - **Meta title** specifies the title of the web page. It is a code which is inserted into the header of your web page:
+
     ```html
     <head>
         <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
