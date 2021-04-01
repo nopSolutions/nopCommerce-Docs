@@ -12,11 +12,12 @@ To configure the Manual (fixed or by country/state/zip) tax provider go to **Con
 ![Tax providers](_static/manual/tax-providers.png)
 
 Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates.
-You can switch *Fixed rate* tax calculation to *Country/state/zip* tax calculation by clicking button at the top of the page.
+You can switch *Fixed rate* tax calculation to *Country/state/zip* tax calculation by clicking the appropriate button at the top left.
+To manage tax categories click the **Manage tax categories** button in the top right.
 
 ## Fixed rate
 
-Choose **Fixed rate** configuration using the switcher in the top of the page. 
+Choose **Fixed rate** configuration using the switcher in the top of the page.
 
 ![Configure](_static/manual/configure.jpg)
 
@@ -27,12 +28,12 @@ Make sure your products have a tax category assigned to them on their [product p
 ![Product](_static/manual/product.jpg)
 
 > [!NOTE]
-> 
-> This section shows only pre-created tax categories. Read how to create new categories below: [configure tax categories](#configure-tax-categories).
+>
+> This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
 
 ## By country
 
-Choose **By country** configuration using the switcher in the top of the page. 
+Choose **By country** configuration using the switcher in the top of the page.
 
 ![By country](_static/manual/tax-by-country.png)
 
@@ -50,8 +51,8 @@ Click **Add tax rate**. The new tax rate is displayed, as follows:
 ![Add tax rate](_static/manual/add-tax-rate.png)
 
 > [!NOTE]
-> 
-> This section shows only pre-created tax categories. Read how to create new categories below: [configure tax categories](#configure-tax-categories).
+>
+> This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
 
 ## Configure tax categories
 
