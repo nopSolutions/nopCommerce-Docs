@@ -25,21 +25,24 @@ To search for customers, in the *Customers* window enter one or more of the foll
 - **Customer roles** - you can select one or more customer roles to be displayed.
 
 > [!NOTE]
-> 
+>
 > You can export the customer data to an external file by clicking **Export to XML (all)** or **Export to Excel (all)**. You can export selected customer data to an external file by clicking **Export to XML (selected)** or **Export to Excel (selected)**.
 
 Then click the **Search** button.
 
 ## Add a new customer
+
 To add a new customer, in the *Customers* window click **Add new**.
 The *Add a new customer* window will be displayed. Define the following customer details:
 
 ## Customer info
+
 The *Customer info* panel allows to enter customers' personal and account information, e.g. change a password, assign/remove customer roles.
 
 ![Customer details](_static/managing-customers/add-new.jpg)
 
 You can edit the following fields:
+
 - **Email** address.
 - **Password**.
 - **First name**.
@@ -59,33 +62,40 @@ Click the **Save** button to save the changes or click the **Save and continue e
 You will also see the **Send email**, **Send private message** (if [forums](xref:en/running-your-store/content-management/forums) enabled) and **Delete** buttons.
 ![Buttons](_static/managing-customers/edit_customer_details.png)
 
-After clicking the **Send email** button, the *Send email* window will be displayed enabling a store owner to send an email to the customer. After clicking the **Send private message** button the *Send private message* window will be displayed enabling to send a message to the customer. To use private messaging, allow private messages in [forum settings](xref:en/running-your-store/content-management/forums). 
+After clicking the **Send email** button, the *Send email* window will be displayed enabling a store owner to send an email to the customer. After clicking the **Send private message** button the *Send private message* window will be displayed enabling to send a message to the customer. To use private messaging, allow private messages in [forum settings](xref:en/running-your-store/content-management/forums).
 
 ## Orders
+
 On the *Orders* panel you can view the customer's orders details.
 ![customer_info](_static/managing-customers/customer-orders.png)
 
 ## Addresses
+
 On the *Addresses* panel you can view, edit and create new addresses of the customer.
 ![addresses](_static/managing-customers/customert-adresses.png)
 
 Click the **Add new address** button to add a new customer address. Fill the appropriate fields and click **Save**. The new address will added to the customer.
 
 ## Current shopping cart and wishlist
+
 On the *Current shopping cart and wishlist* panel you can view the customer's shopping cart and wishlist.
 
 ## Activity log
-On the *Activity log* panel you can view the customer's activity log. See how to manage activity types in the [Activity log - Activity types](xref:en/running-your-store/customer-management/activity-log#activity-types) section.
+
+On the *Activity log* panel you can view the customer's activity log. See how to manage activity types in the [Activity log - Customer activity types](xref:en/running-your-store/customer-management/activity-log#customer-activity-types) section.
 
 ## Place order (impersonate)
-On the *Place order (impersonate)* panel store owners can create orders for their customers without having to have password information. This is useful for customers who do not want to register, or for large sites using CSRs to place orders over the phone. 
+
+On the *Place order (impersonate)* panel store owners can create orders for their customers without having to have password information. This is useful for customers who do not want to register, or for large sites using CSRs to place orders over the phone.
 
 The panel contains the **Place order** button. After clicking this button you will be redirected to the public store. Select the products the customer wants, add them to the cart exactly as the customer would do in the public store, then use the **Checkout** button to proceed through the usual checkout process and then click the **Finish session** link in the top of the page to finish this session.
 
 ## Back in stock subscriptions
+
 On the *Back in stock subscriptions* panel see the products the customer subscribed to.
 
 ## Reward points
+
 On the *Reward points* panel store owners can add reward points to the customer or view his or her reward points usage history. This panel is visible when the reward points program is enabled. Refer to [Reward points](xref:en/running-your-store/promotional-tools/reward-points) section for more information.
 
 ### Add (reduce) points
@@ -93,12 +103,12 @@ On the *Reward points* panel store owners can add reward points to the customer 
 ![Reward points](_static/managing-customers/customer-reward-points.png)
 
 In this panel:
+
 - Enter the amount of **Points**. To reduce points enter a negative value.
-- In the **Points validity** field specify the number of days when the awarded points will be valid (only for positive amount of points). 
+- In the **Points validity** field specify the number of days when the awarded points will be valid (only for positive amount of points).
 - Enter the **Message** or comment.
 - Tick the **Activate points immediately** checkbox if you want customers will be able to use reward points right after earn them. If you didn't check this checkbox one more option appears:
 - If the previous checkbox is unticked, in the **Reward points activation** field specify the period (number of days/hours) after which reward points will be activated.
-
 
 ## See also
 
