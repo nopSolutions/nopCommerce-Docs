@@ -1,38 +1,38 @@
 ---
-title: SendinBlue integration
+title: Sendinblue integration
 uid: en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin
 author: git.mariannk
 ---
 
-# Set up SendinBlue plugin
+# Set up Sendinblue plugin
 
-This section describes how to integrate SendinBlue in your store.
+This section describes how to integrate Sendinblue in your store.
 
 ## Install and enable the plugin
 
-The SendinBlue plugin is an out-of-the-box nopCommerce plugin. You can find it here: **Configuration → Local plugins**. To find the plugin faster use the **Group** field on the search panel to filter the plugins by *Misc* type:
+The Sendinblue plugin is an out-of-the-box nopCommerce plugin. You can find it here: **Configuration → Local plugins**. To find the plugin faster use the **Group** field on the search panel to filter the plugins by *Misc* type:
 ![Find the plugin](_static/set-up-sendinblue-plugin/plugin-list.jpg)
 
 Install the plugin using the **Install** button if it is uninstalled. Then enable it by clicking the **Edit** button. You will see the *Edit plugin details* window in this case. Mark the plugin as enabled using the **Is enabled** checkbox and click the **Save** button.
 
 ## How to configure the plugin
 
-1. Click the **Configure** button. You will see the *Configure - SendinBlue* window:
-![Configure - SendinBlue](_static/set-up-sendinblue-plugin/configure-window.jpg)
+1. Click the **Configure** button. You will see the *Configure - Sendinblue* window:
+![Configure - Sendinblue](_static/set-up-sendinblue-plugin/configure-window.jpg)
 
-1. You need to create a free SendinBlue account using [this link](https://app.sendinblue.com/account/login/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+1. You need to create a free Sendinblue account using [this link](https://app.sendinblue.com/account/login/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
 
-1. Enter your **API v3 key** from your SendinBlue account on [SMTP & API](https://account.sendinblue.com/advanced/api/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) page.
+1. Enter your **API v3 key** from your Sendinblue account on [SMTP & API](https://account.sendinblue.com/advanced/api/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) page.
 
 1. Click the **Save** button.
 
 1. Once you have done this you should be able to see your account details.
 ![After th first save](_static/set-up-sendinblue-plugin/general-panel.jpg)
 
-1. Go to the **Contacts** panel to synchronize your nopCommerce customers with your SendinBlue account.
+1. Go to the **Contacts** panel to synchronize your nopCommerce customers with your Sendinblue account.
 ![Contacts](_static/set-up-sendinblue-plugin/contacts-panel.jpg)
 
-* To create a new SendinBlue list, click on the **Create a list** button to be redirected to your SendinBlue account.
+* To create a new Sendinblue list, click on the **Create a list** button to be redirected to your Sendinblue account.
 * From the drop-down list, select the list where your nopCommerce subscribers as well as their contact data will be added. Click on the **Save** button.
 
 ### What data is synced?
@@ -72,7 +72,7 @@ Order data is synced as transactional attributes:
 
 ### How often are contacts synced?
 
-After the initial sync, a task is scheduled to run every 6000 seconds to automatically add your new subscribers to your SendinBlue list.
+After the initial sync, a task is scheduled to run every 6000 seconds to automatically add your new subscribers to your Sendinblue list.
 
 Click on the **Sync now** button to sync right away.
 
@@ -81,10 +81,10 @@ To change the sync frequency, go to **System → Schedule tasks**.
 
 ## Sending transactional emails
 
-Go to the **Transactional emails** panel to send your transactional emails via SendinBlue SMTP.
+Go to the **Transactional emails** panel to send your transactional emails via Sendinblue SMTP.
 ![Sending transactional emails](_static/set-up-sendinblue-plugin/email-panel.jpg)
 
-1. Check the **Use SendinBlue SMTP** checkbox.
+1. Check the **Use Sendinblue SMTP** checkbox.
 1. Paste your SMTP password that can be found [here](https://account.sendinblue.com/advanced/api?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
 1. From the drop-down list, select the sender you wish to send your emails from.
 1. Click on the **Save** button.
@@ -94,7 +94,7 @@ You should then be able to see the email notification list. This lists all of th
 
 For each template, you can:
 * Choose if it is active or inactive.
-* Choose between the default nopCommerce template or a SendinBlue template. To do this:
+* Choose between the default nopCommerce template or a Sendinblue template. To do this:
 	1. Click on the **Edit** button
 	1. From the dropdown, choose your template
 	1. Click **Update**
@@ -102,8 +102,8 @@ For each template, you can:
 
 > [!NOTE]
 >
-> If you *have checked* **SendinBlue email template**, then click on **Edit template** to edit the content of your template on your SendinBlue account. 
-If you *haven't checked* **SendinBlue email template**, then clicking on **Edit template** will redirect you to the message templage edit page in the nopCommerce admin area. Read more about the message template editing process [here](xref:en/running-your-store/content-management/message-templates). You can also send a test email from that page to check the content. Note that an email credit will be used for each test email.
+> If you *have checked* **Sendinblue email template**, then click on **Edit template** to edit the content of your template on your Sendinblue account. 
+If you *haven't checked* **Sendinblue email template**, then clicking on **Edit template** will redirect you to the message templage edit page in the nopCommerce admin area. Read more about the message template editing process [here](xref:en/running-your-store/content-management/message-templates). You can also send a test email from that page to check the content. Note that an email credit will be used for each test email.
 
 ## Sending SMS
 
@@ -115,7 +115,7 @@ Go to the **SMS** panel to send SMS notifications to your customers in addition 
 1. Type your telephone number.
 1. Click on the **Save** button.
 
-To send an SMS campaign to a SendinBlue list:
+To send an SMS campaign to a Sendinblue list:
 ![Sms panel](_static/set-up-sendinblue-plugin/sma-campaigns.jpg)
 
 1. Go to the **SMS campaigns** block.
@@ -124,7 +124,7 @@ To send an SMS campaign to a SendinBlue list:
 1. Specify SMS campaign content using the **Text** field. The number of characters is limited to 160 for one message.
 1. Click **Save campaign**.
 
-The plugin is now configured. You can access all of your transactional email stats directly from SendinBlue.
+The plugin is now configured. You can access all of your transactional email stats directly from Sendinblue.
 
 ## Setting up Marketing Automation workflows
 
@@ -136,12 +136,12 @@ Go to the **Marketing Automation** panel to install the marketing automation tra
 ![Marketing automation](_static/set-up-sendinblue-plugin/marketing-automation.jpg)
 
 1. Check the **Use Marketing Automation** checkbox.
-1. If the *Marketing Automation platform* is enabled on your SendinBlue account, then the plugin will auto-fill your **Tracker ID**.
-1. Paste the tracking script generated by SendinBlue to the **Tracking script** field. {TRACKING_ID} and {CUSTOMER_EMAIL} will be dynamically replaced.
-1. Make sure that the SendinBlue widget is activated on the **Configuration → Widgets** page.
+1. If the *Marketing Automation platform* is enabled on your Sendinblue account, then the plugin will auto-fill your **Tracker ID**.
+1. Paste the tracking script generated by Sendinblue to the **Tracking script** field. {TRACKING_ID} and {CUSTOMER_EMAIL} will be dynamically replaced.
+1. Make sure that the Sendinblue widget is activated on the **Configuration → Widgets** page.
 1. Click the **Save** button.
 
-Once Marketing Automation is enabled and functioning properly, you will find the following logs in your SendinBlue account under *Automation → Logs → Event logs*:
+Once Marketing Automation is enabled and functioning properly, you will find the following logs in your Sendinblue account under *Automation → Logs → Event logs*:
 
 * Page
 * Identify

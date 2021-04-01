@@ -326,11 +326,11 @@
           name: Email campaigns
           href: running-your-store/promotional-tools/email-campaigns.md
         -
-          name: SendinBlue integration
+          name: Sendinblue integration
           href: running-your-store/promotional-tools/sendinblue-integration/index.md
           items: 
             -
-              name: Set up SendinBlue plugin
+              name: Set up Sendinblue plugin
               href: running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin.md
             -
               name: Recover abandoned carts
