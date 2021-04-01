@@ -173,6 +173,7 @@ Edit the attribute value details, as follows:
 - Select the **Attribute value type**. There are two attribute value types, *Simple* and *Associated to product*. Choose the *associated to product* type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use *bundled products functionality* allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes using the **Customer enters quantity** field described below.
 
 If the previous setting set to *Associated to product* the following fields will be displayed:
+
 - **Associated product** allows you to choose the product which will be assotiated to this attribute. Use the **Associate a product** button to choose a product.
 
 > [!NOTE]
@@ -216,6 +217,7 @@ For each combination define:
 
 - The attributes which the combination contains.
 - The current **Stock quantity** of this combination.
+- If you have enabled 'Manage stock by attributes' on the product details page you can perform a number of different actions when the current stock quantity falls below (reaches) the **Minimum stock quantity** (e.g. Low stock report).
 - **Allow out of stock**, if you want your customers to be able to purchase product with certain attributes, when out of stock.
 - **SKU**.
 - **Manufacturer part number**.
