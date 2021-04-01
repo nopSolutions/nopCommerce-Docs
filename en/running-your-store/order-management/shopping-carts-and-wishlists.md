@@ -24,7 +24,9 @@ Select the *Shopping cart* from the **Shopping cart type** dropdown list on the 
 The following screenshot shows how a customer sees a shopping cart page in the public store: ![Shopping carts public](_static/shopping-carts-and-wishlists/shopping-cart-public.jpg)
 
 There are a few elements on the shopping cart page. Some of them can be disabled if needed:
-1. The **Update shopping cart** button allows a customer to change a product's quantity by entering the appropriate number in the **Qty** field or remove a product by ticking the **Remove** checkbox.
+
+1. The button in the **Remove** column allows to remove an item from the shopping cart.
+1. The **Update shopping cart** button allows a customer to change a product's quantity by entering the appropriate number in the **Qty** field.
 1. The **Continue shopping** button allows a customer to proceed to the catalog.
 1. The **Estimate shipping** button allows a customer to estimate shipping. After clicking this button the following popup window will be displayed: ![Estimate shipping](_static/shopping-carts-and-wishlists/estimate-shipping.jpg) In this window, the customer can enter the shipping address and see the appropriate shipping options. You can disable shipping estimation on the shopping cart page by unticking the **Estimate shipping enabled (cart page)** checkbox on the **Configuration → Settings → Shipping settings** page.
 1. You can see the **Gift wrapping** dropdown on the shopping cart screenshot provided above. This is a checkout attribute. Read more how to manage checkout attributes in the [Checkout attributes](xref:en/running-your-store/order-management/checkout-attributes) chapter.
@@ -56,7 +58,9 @@ A wishlist is a list of products that a customer can share with friends, or save
 The following screenshot illustrates how a customer sees a wishlist page in the public store: ![Wishlist public](_static/shopping-carts-and-wishlists/wishlist-public.jpg)
 
 There are a few elements on the wishlist page:
-1. The **Update wishlist** button allows a customer to change a product's quantity by entering the appropriate number in the **Qty** field or remove a product by ticking the **Remove** checkbox.
+
+1. The button in the **Remove** column allows to remove an item from the wishlist.
+1. The **Update wishlist** button allows a customer to change a product's quantity by entering the appropriate number in the **Qty** field.
 1. The **Add to cart** button allows a customer to add the selected products to cart.
 1. The **Email a friend** button allows a customer to send the wishlist to a friend by email. You can disable this by unticking the **Allow customers to email their wishlists** checkbox on the **Configuration → Settings → Shopping cart settings** page.
 1. The **Your wishlist URL for sharing** allows a customer to share the wishlist.
@@ -71,7 +75,8 @@ To change the shopping cart and wishlist settings go to the **Configuration → 
 
 This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
-### Common
+### Common settings
+
 In the *Common* panel you can define: ![Common](_static/shopping-carts-and-wishlists/common.png)
 
 * To **Show discount box** displaying the discount coupon box on the shopping cart page.
@@ -83,14 +88,16 @@ In the *Common* panel you can define: ![Common](_static/shopping-carts-and-wishl
 * To **Display cart after adding a product**, to the display the shopping cart page immediately after a product is added to the cart. When this checkbox is unticked, the customer will remain on the page where the product was added to the cart.
 * **Number of cross-sells** that you want to display on the checkout page of the shopping cart in the public store. Enter 0, if you do not want to display cross-sells.
 
-### Mini shopping cart
+### Mini shopping cart settings
+
 In the *Mini shopping cart* panel you can define: ![mini-shopping-cart](_static/shopping-carts-and-wishlists/mini-shopping-cart.png)
 
 * To **Show mini-shopping cart** - a drop down menu, that appears at the top right-hand corner of the main window, when hovering over the "Shopping cart" link, as shown below: ![Cart](_static/shopping-carts-and-wishlists/cart.png) When this field is ticked the following fields are displayed:
   * **Number of products in mini-shopping cart** - the maximum number of products displayed in the mini shopping cart dropdown menu, in the public store.
   * **Show product images in mini shopping cart** to determine whether images are displayed in the mini shopping cart dropdown menu.
 
-### Wishlist
+### Wishlist settings
+
 In the *Wishlist* panel you can define: ![Wishlist](_static/shopping-carts-and-wishlists/wishlist.png)
 
 * **Maximum wishlist items** - the maximum number of different products allowed to be added to the wishlist.
