@@ -50,11 +50,11 @@ Click **Save and continue edit** to proceed to the *Attribute values* panel (if 
 
 ### Add a new checkout attribute value
 
-In the *Attribute values* panel, click **Add a new checkout value** to create a new attribute value.
+In the *Attribute values* panel, click **Add a new checkout attribute value** to create a new attribute value.
 
 ![Add a new checkout attribute value](_static/checkout-attributes/value.jpg)
 
-In the *Add a new checkout value* window, define the following information:
+In the *Add a new checkout attribute value* window, define the following information:
 
 - **Name** - the attribute value name.
 
