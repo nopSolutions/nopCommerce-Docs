@@ -22,7 +22,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>netcoreapp3.1</TargetFramework>
+            <TargetFramework>net5.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
