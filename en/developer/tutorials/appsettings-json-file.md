@@ -1,26 +1,31 @@
 ---
-title: Description settings from appsettings.json file
+title: The settings from the appsettings.json file
 uid: en/developer/tutorials/appsettings-json-file
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin
+contributors: git.nopsg, git.DmitriyKulagin, git.mariannk
 ---
 
-# Description settings from appsettings.json file
+# The settings from the appsettings.json file
 
 ## Overview
 
-This article contains description of `appsettings.json` file. In this article we will be explaining what are the different settings available in these files what each settings does and when to use this settings to change the functionality/behavior of nopCommerce project.
+This article contains the description of the `appsettings.json` file. In this article, we will explain what settings are available in this file, what they are used for and how to use these settings to change the functionality/behavior of the nopCommerce project.
 
-## appsettings.json file overview
+> [!NOTE]
+>
+> You can also edit this file from the **Configuration → Settings → App settings** page.
 
-If you have worked on `ASP.NET Core` project previously or you are familiar wit `ASP.NET Core` then you might have used `appsettings.json` file and have some understanding of what this file is and what this file is used for.
-
-`appsettings.json` file is generally used to store the application configuration settings such as database connection strings, any application scope global variables and many other information. Actually in `ASP.NET Core`, the application configuration settings can be stored in different configurations sources such as `appsettings.json` file, `appsettings.{EnvironmentName}.json` file (where the {Environment} is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information) etc.
-
->[!NOTE]
+> [!NOTE]
+>
 > All settings can be overridden in environment variables.
 
-## Settings available in appsettings.json file
+## The appsettings.json file overview
+
+If you have worked on `ASP.NET Core` project previously or you are familiar wit `ASP.NET Core` then you might have used the `appsettings.json` file and have some understanding of what this file is and what this file is used for.
+
+The `appsettings.json` file is generally used to store the application configuration settings such as database connection strings, any application scope global variables and many other information. Actually in `ASP.NET Core`, the application configuration settings can be stored in different configurations sources such as `appsettings.json` file, `appsettings.{EnvironmentName}.json` file (where the {Environment} is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information) etc.
+
+## Settings available in the appsettings.json file
 
 ### CacheConfig
 
