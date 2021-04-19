@@ -39,7 +39,7 @@ Nop.Web.Framework is a class library project containing some common presentation
 
 ## `\Test\Nop.Tests`
 
-Nop.Tests is a class library project containing some common test classes and helpers for other test projects. It does not have any test.
+Nop.Tests is a class library project containing some common test classes and helpers for other test projects. It does not have any test. Read more about UNIT testing in nopCommerce in the following article: [UNIT testing](xref:en/developer/tutorials/unit-tests).
 
 ### `\Nop.Core.Tests`
 
