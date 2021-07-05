@@ -69,7 +69,7 @@ We can use `Azure Blob Storage` to store blob data. nopCommerce already have fea
 * **ContainerName** Value for this setting is also of type string. In this setting we set the container name for Azure BLOB storage.
 * **EndPoint** This setting also expects a string value. Here we need to set the end point for Azure BLOB storage.
 * **AppendContainerName** This setting expects a boolean value. Set the value to "**true**" or "**false**" on the basis of whether the Container Name is appended to the `EndPoint` when constructing the url.
-* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to "**true** if you want to  use the Windows Azure BLOB storage for Data Protection Keys (the  UseRedisToStoreDataProtectionKeys option should be disabled)
+* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to "**true** if you want to  use the Windows Azure BLOB storage for Data Protection Keys.
 * **DataProtectionKeysContainerName** This  setting expects a string value. Here you need to set up a Azure  container name for storing Data Prtection Keys (this container  should be separate from the container used for media and should be  Private)
 * **DataProtectionKeysVaultId (optional)** This setting also expects a string value. Set the Azure key vault ID if  you need to encrypt the Data Protection Keys
 
