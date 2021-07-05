@@ -1,24 +1,31 @@
 ---
-title: Description settings from appsettings.json file
+title: The settings from the appsettings.json file
 uid: en/developer/tutorials/appsettings-json-file
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin
+contributors: git.nopsg, git.DmitriyKulagin, git.mariannk
 ---
 
-# Description settings from appsettings.json file
+# The settings from the appsettings.json file
 
 ## Overview
 
-This article contains description of `appsettings.json` file. In this article we will be explaining what are the different settings available in these files what each settings does and when to use this settings to change the functionality/behavior of nopCommerce project.
+This article contains the description of the `appsettings.json` file. In this article, we will explain what settings are available in this file, what they are used for and how to use these settings to change the functionality/behavior of the nopCommerce project.
 
-## appsettings.json file overview
+> [!NOTE]
+> 
+> You can also edit this file from the **Configuration → Settings → App settings** page.
 
-If you have worked on `ASP.NET Core` project previously or you are familiar wit `ASP.NET Core` then you might have used `appsettings.json` file and have some understanding of what this file is and what this file is used for.
+> [!NOTE]
+> 
+> All settings can be overridden in environment variables.
 
-`appsettings.json` file is generally used to store the application configuration settings such as database connection strings, any application scope global variables and many other information. Actually in `ASP.NET Core`, the application configuration settings can be stored in different configurations sources such as `appsettings.json` file, `appsettings.{EnvironmentName}.json` file (where the {Environment} is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information) etc.
-> [!NOTE] All settings can be overridden in environment variables.
+## The appsettings.json file overview
 
-## Settings available in appsettings.json file
+If you have worked on `ASP.NET Core` project previously or you are familiar wit `ASP.NET Core` then you might have used the `appsettings.json` file and have some understanding of what this file is and what this file is used for.
+
+The `appsettings.json` file is generally used to store the application configuration settings such as database connection strings, any application scope global variables and many other information. Actually in `ASP.NET Core`, the application configuration settings can be stored in different configurations sources such as `appsettings.json` file, `appsettings.{EnvironmentName}.json` file (where the {Environment} is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information) etc.
+
+## Settings available in the appsettings.json file
 
 ### CacheConfig
 
@@ -62,7 +69,7 @@ We can use `Azure Blob Storage` to store blob data. nopCommerce already have fea
 * **ContainerName** Value for this setting is also of type string. In this setting we set the container name for Azure BLOB storage.
 * **EndPoint** This setting also expects a string value. Here we need to set the end point for Azure BLOB storage.
 * **AppendContainerName** This setting expects a boolean value. Set the value to "**true**" or "**false**" on the basis of whether the Container Name is appended to the `EndPoint` when constructing the url.
-* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to "**true** if you want to  use the Windows Azure BLOB storage for Data Protection Keys (the  UseRedisToStoreDataProtectionKeys option should be disabled)
+* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to "**true** if you want to  use the Windows Azure BLOB storage for Data Protection Keys.
 * **DataProtectionKeysContainerName** This  setting expects a string value. Here you need to set up a Azure  container name for storing Data Prtection Keys (this container  should be separate from the container used for media and should be  Private)
 * **DataProtectionKeysVaultId (optional)** This setting also expects a string value. Set the Azure key vault ID if  you need to encrypt the Data Protection Keys
 
@@ -70,8 +77,8 @@ We can use `Azure Blob Storage` to store blob data. nopCommerce already have fea
 
 It contains settings that used to configure the behavior of nopCommerce during the nopCommerce installation.
 
-* **DisableSampleDataDuringInstallation** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
-* **PluginsIgnoredDuringInstallation:** This setting expects a boolean value. By default the value for this setting is "**false**". You might want to set value for this setting to "**true**" if you don't want to `Install` any `Plugin` during nopCommerce installation
+* **DisableSampleData** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
+* **DisabledPlugins** This setting expects a string value. Specify a list of plugins (comma separated) ignored during installation.
 * **InstallRegionalResources** This setting enables the selection of additional language resources during installation. The choice of the country determines the settings that will be applied to the store (exchange rates, taxes, units of measurement, etc. regional features).
 
 #### PluginConfig
