@@ -439,7 +439,7 @@
           name: How do migrations work?
           href: developer/tutorials/migrations.md
         - 
-          name: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
+          name: A guide to expand the basic functionality of nopCommerce through a plugin
           href: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin.md
         - 
           name: Data validation
@@ -475,7 +475,7 @@
           name: Content Security Policy (CSP) Headers
           href: developer/tutorials/csp-headers.md
         - 
-          name: Description settings from appsettings.json file
+          name: The settings from the appsettings.json file
           href: developer/tutorials/appsettings-json-file.md
         - 
           name: Description of plugin system
