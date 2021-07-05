@@ -50,15 +50,15 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 1. The last required step is to create a class which implements IPlugin interface (Nop.Core.Plugins namespace). nopCommerce has BasePlugin class which already implements some IPlugin methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from IPlugin. For example, we have "IPaymentMethod" interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as ProcessPayment() or GetAdditionalHandlingFee(). Currently nopCommerce has the following specific plugin interfaces:
 
-    - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
-    - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on the left column of your site.
-    - **IExchangeRateProvider**. Used for getting currency exchange rate.
-    - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
-    - **IPaymentMethod**. Plugins which are used for payment processing.
-    - **IShippingRateComputationMethod**. These plugins are used for retrieving accepted delivery methods and appropriate shipping rates. For example, UPS, UPS, FedEx, etc.
-    - **ITaxProvider**. Tax providers are used for getting tax rates.
-
-    If your plugin doesn't fit any of these interfaces, then use the "IMiscPlugin" interface.
+   - **IPaymentMethod**. These plugins are used for payment processing.
+   - **IShippingRateComputationMethod**. These plugins are used for retrieving accepted delivery methods and appropriate shipping rates. For example, UPS, UPS, FedEx, etc.
+   - **IPickupPointProvider**. These plugins are used for providing pickup points.
+   - **ITaxProvider**. Tax providers are used for getting tax rates.
+   - **IExchangeRateProvider**. Used for getting currency exchange rate.
+   - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
+   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
+   - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on your site's left column.
+   - **IMiscPlugin**. If your plugin doesn't fit any of the interfaces above.
 
 > [!IMPORTANT] After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
