@@ -77,8 +77,8 @@ We can use `Azure Blob Storage` to store blob data. nopCommerce already have fea
 
 It contains settings that used to configure the behavior of nopCommerce during the nopCommerce installation.
 
-* **DisableSampleDataDuringInstallation** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
-* **PluginsIgnoredDuringInstallation:** This setting expects a boolean value. By default the value for this setting is "**false**". You might want to set value for this setting to "**true**" if you don't want to `Install` any `Plugin` during nopCommerce installation
+* **DisableSampleData** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
+* **DisabledPlugins** This setting expects a string value. Specify a list of plugins (comma separated) ignored during installation.
 * **InstallRegionalResources** This setting enables the selection of additional language resources during installation. The choice of the country determines the settings that will be applied to the store (exchange rates, taxes, units of measurement, etc. regional features).
 
 #### PluginConfig
