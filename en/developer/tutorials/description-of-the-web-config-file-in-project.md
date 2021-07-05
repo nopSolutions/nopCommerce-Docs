@@ -11,11 +11,11 @@ contributors: git.RomanovM, git.DmitriyKulagin
 
 `web.config` file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application logic from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
 
-The ASP.NET framework uses a hierarchical configuration system. You can place a `web.config file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
+The ASP.NET framework uses a hierarchical configuration system. You can place a `web.config` file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
 
 ## web.config for nopCommerce
 
-nopCommerce uses web.config in `Nop.Web` project which can be found inside Presentation directory. In the root of  the project directory there you can see a web.config file. If your solution is fresh installation of nopCommerce then the content of that file looks something like this.
+nopCommerce uses web.config in `Nop.Web` project which can be found inside Presentation directory. In the root of the project directory, you can see a web.config file. If your solution is fresh installation of nopCommerce then the content of that file looks something like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
