@@ -83,10 +83,10 @@ It contains settings that used to configure the behavior of nopCommerce during t
 
 #### PluginConfig
 
-* **ClearPluginShadowDirectoryOnStartup** This setting expects a boolean value. You might want to Set the value to "**true**" if you want to clear `/Plugins/bin` directory during application startup.
+* **ClearPluginShadowDirectoryOnStartup** This setting expects a boolean value. Set it to "true" if you want to clear the `/Plugins/bin` directory during application startup.
 * **CopyLockedPluginAssembilesToSubdirectoriesOnStartup** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy "locked" assemblies from `/Plugins/bin` directory to temporary subdirectories during application startup.
-* **UsePluginsShadowCopy** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy plugins library to the `/Plugins/bin` directory on application startup.
 * **UseUnsafeLoadAssembly** This setting expects a boolean value. You might want to set the value to "**true**" if you want to load an assembly into the load-from context, bypassing some security checks.
+* **UsePluginsShadowCopy** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy plugins library to the `/Plugins/bin` directory on application startup.
 
 ### CommonConfig
 
@@ -99,12 +99,12 @@ It contains settings that used to configure the behavior of nopCommerce during t
 * **CrawlerOnlyUserAgentStringsPath** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly"
 * **UseSessionStateTempDataProvider** This setting expects a boolean value. Default value for this setting is "**false**". You might want to set the value to "**true**" if you want to store `TempData` in the session state. By default the cookie-based `TempData` provider is used to store `TempData` in cookies.
 * **MiniProfilerEnabled** This setting activates the *MiniProfiler* performance appraisal tool
-* **ScheduleTaskRunTimeout** The length of time, in milliseconds, a running schedule task timeouts. Set null to use a default value.
-* **StaticFilesCacheControl** Specify a value of 'Cache - Control' header value for static content (in seconds).
+* **ScheduleTaskRunTimeout** allows you to set up a running schedule task timeout in milliseconds. Set null to use a default value.
+* **StaticFilesCacheControl** specifies the value of the 'Cache-Control' header for static content (in seconds).
 
   ```powershell
   public,max-age=31536000
   ```
 
-* **SupportPreviousNopcommerceVersions** Specify a value indicating whether we should support previous nopCommerce versions (it can slightly improve performance). In this case, old URLs (from previous nopCommerce versions) will redirect to new ones. Enable it only if you upgraded from one of the previous nopCommerce versions
-* **PluginStaticFileExtensionsBlacklist** Specify the blacklist of static file extension for plugin directories.
+* **SupportPreviousNopcommerceVersions** setting specifies the value indicating whether we should support previous nopCommerce versions. In this case, old URLs, from previous nopCommerce versions, will redirect to new ones. Enable it only if you upgraded from one of the previous nopCommerce versions.
+* **PluginStaticFileExtensionsBlacklist** Specify the blacklist of the static file extensions for plugin directories.
