@@ -20,7 +20,7 @@ The following is a list of common questions asked by developers working with nop
 * [Inversion of Control and Dependency Injection](xref:en/developer/tutorials/inversion-of-control)
 * [How do I register new routes?](xref:en/developer/tutorials/register-new-routes)
 * [How do migrations work?](xref:en/developer/tutorials/migrations)
-* [A guide to expanding the functionality of the basic functions of nopCommerce through a plugin](xref:en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin)
+* [A guide to expand the basic functionality of nopCommerce through a plugin](xref:en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin)
 * [Data Validation](xref:en/developer/tutorials/data-validation)
 * [Scheduled Tasks](xref:en/developer/tutorials/scheduled-tasks)
 * [Exposing and Handling Events](xref:en/developer/tutorials/events)
