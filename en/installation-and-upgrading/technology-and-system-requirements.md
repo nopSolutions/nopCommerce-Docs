@@ -39,7 +39,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 * MS SQL Server 2012 or above
 * MySql Server 5.7 or above (since nopCommerce 4.30)
-* PostgreSQL 9.2 or above (since nopCommerce 4.40)
+* PostgreSQL 9.5 or above (since nopCommerce 4.40)
 
 ## Supported browsers
 
