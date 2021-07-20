@@ -112,7 +112,7 @@ contributors: git.MDRashedKhanMenon
 		<p>যারা 24 ঘন্টার মধ্যে পেশাদার সমর্থন পেতে চান তাদের জন্য অর্থ প্রদানের প্রিমিয়াম সহায়তা পরিষেবা সরবরাহ করে নপকমার্স টিম</p>
 	</div>
 	<div class="quick-item forums">
-		<a target="_blank" href="https://www.nopcommerce.com/bn/boards"><h3>Forums</h3></a>
+		<a target="_blank" href="https://www.nopcommerce.com/bn/boards"><h3>ফোরাম</h3></a>
 		<p>আমরা নতুন প্রশ্ন এবং আলোচনাকে স্বাগত জানাই তাই নোপকমার্স ফোরামে আপনার প্রশ্নটি নির্দ্বিধায় জিজ্ঞাসা করুন</p>
 	</div>
 </div>
