@@ -3,3 +3,7 @@
   name: English
   href: en/
   topicHref: en/index.md
+-
+  name: বাংলা
+  href: bn/
+  topicHref: bn/index.md

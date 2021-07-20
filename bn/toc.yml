@@ -1,42 +1,42 @@
 ---
 - 
-  name: nopCommerce documentation
+  name: নপকমার্স ডকুমেন্টেশন
   href: /
   topicHref: index.md
 - 
-  name: Installation & upgrading
+  name: ইনস্টলেশন এবং আপগ্রেড
   href: installation-and-upgrading/index.md
   items:
     -
-      name: Technology & system requirements
+      name: প্রযুক্তি এবং সিস্টেমের প্রয়োজনীয়তা
       href: installation-and-upgrading/technology-and-system-requirements.md
     -
-      name: Installing nopCommerce
+      name: নপকমার্স ইনস্টল করা
       href: installation-and-upgrading/installing-nopcommerce/index.md
       items: 
         -
-          name: Choose a hosting company
+          name: একটি হোস্টিং প্রতিষ্ঠান পছন্দ করা
           href: installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.md
         -
-          name: Installing local (for developers only)
+          name: স্থানীয় ইনস্টল করা (কেবল বিকাশকারীদের জন্য)
           href: installation-and-upgrading/installing-nopcommerce/installing-local.md
         -
-          name: Installing on Windows
+          name: উইন্ডোজে ইনস্টল করা
           href: installation-and-upgrading/installing-nopcommerce/installing-on-windows.md
         -
-          name: Installing on Linux
+          name: লিনাক্সে ইনস্টল করা
           href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
         -
-          name: Installing on Microsoft Azure
+          name: মাইক্রোসফ্ট অ্যাজুরেতে ইনস্টল করা
           href: installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.md
         -
-          name: Load balancing and web farms in nopCommerce
+          name: নপকমার্সে ভারসাম্য এবং ওয়েব ফার্মগুলি
           href: installation-and-upgrading/installing-nopcommerce/web-farms.md
         -
-          name: Pre-installed nopCommerce
+          name: প্রাক ইনস্টলড নপকমার্স
           href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md
     - 
-      name: Upgrading nopCommerce
+      name: নপকমার্স আপগ্রেড করা
       href: installation-and-upgrading/upgrading-nopcommerce.md
 - 
   name: Getting started

@@ -1,115 +1,118 @@
 ---
-title: nopCommerce Documentation
-uid: en/index
+title: নপকমার্স ডকুমেন্টেশন
+uid: bn/index
 author: git.AndreiMaz
-contributors: git.AndreiMaz, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# nopCommerce Documentation
+# নপকমার্স ডকুমেন্টেশন
 
-nopCommerce is an open source eCommerce software that contains both a catalog frontend and an administration tool backend. nopCommerce is a fully customizable shopping cart, stable, secure and extendable. From downloads to documentation, [nopCommerce.com](https://www.nopCommerce.com) offers a comprehensive base of information, resources, and support of the nopCommerce community.
+নপকমার্স একটি ওপেন সোর্স ইকমার্স সফ্টওয়্যার যা একটি ক্যাটালগ ফ্রন্টএন্ড এবং প্রশাসনিক সরঞ্জামের ব্যাকএন্ড উভয়ই থাকে। নপকমার্স একটি সম্পূর্ণ কাস্টমাইজযোগ্য শপিং কার্ট, স্থিতিশীল, সুরক্ষিত এবং প্রসারযোগ্য। ডাউনলোড থেকে ডকুমেন্টেশন [nopCommerce.com](https://www.nopCommerce.com), নপকমার্স সম্প্রদায়ের তথ্য, সংস্থান এবং সহায়তার একটি বিস্তৃত বেস সরবরাহ করে।
 
-The nopCommerce documentation is here to help you through the process of setting up your store. These will allow you to up-and-run your site quickly.
+নপকমার্স ডকুমেন্টেশন আপনার স্টোর সেট আপ করার প্রক্রিয়াটির মাধ্যমে আপনাকে সহায়তা করার জন্য এখানে রয়েছে। এগুলি আপনাকে দ্রুত আপনার সাইটটিকে আপ-রান করার অনুমতি দেবে।
 
-<h2 class="click-links-title">Install</h2>
+<h2 class="click-links-title">ইনস্টল করা</h2>
 <div class="quick-links">
 	<div class="quick-item pre-installed">
-		<a href="/en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.html"><h3>Pre-installed</h3></a>
-		<p>Simple and fast nopCommerce installation solution created by the nopCommerce team and Winhost</p>
+		<a href="/bn/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.html"><h3>প্রাক ইনস্টলড</h3></a>
+		<p>নপকমার্স টিম এবং উইনহোস্ট দ্বারা তৈরি করা সহজ এবং দ্রুত নোপকমার্স ইনস্টলেশন সমাধান</p>
 	</div>
 	<div class="quick-item manually">
-		<a href="/en/installation-and-upgrading/installing-nopcommerce/index.html"><h3>Install manually</h3></a>
-		<p>Choose a <a href="/en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.html">hosting company</a> and install nopCommerce <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-local.html">locally</a>, on <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html">Windows</a>, <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.html">Microsoft Azure</a> or <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-linux.html">Linux</a></p>
+		<a href="/bn/installation-and-upgrading/installing-nopcommerce/index.html"><h3>ম্যানুয়ালি ইনস্টল করা</h3></a>
+		<p>Choose a <a href="/bn/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.html">হোস্টিং সংস্থা</a> এবং নপকমার্স ইনস্টল করা <a href="/bn/installation-and-upgrading/installing-nopcommerce/installing-local.html">স্থানীয়ভাবে</a>,<a href="/bn/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html">উইন্ডোজ</a>, <a href="/bn/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.html">মাইক্রোসফ্ট অ্যাজুরে</a> অথবা <a href="/bn/installation-and-upgrading/installing-nopcommerce/installing-on-linux.html">লিনাক্সের</a> উপরে</p>
 	</div>
 </div>
 
 
-<h2 class="click-links-title">Get started</h2>
+<h2 class="click-links-title">শুরু করা</h2>
 <div class="quick-links">
 	<div class="quick-item admin-panel">
-		<a href="/en/getting-started/admin-area-overview.html"><h3>Admin panel</h3></a>
-		<p>See how the nopCommerce interface looks like. Enjoy simplicity and approachability of the administration area</p>
+		<a href="/bn/getting-started/admin-area-overview.html"><h3>অ্যাডমিন প্যানেল</h3></a>
+		<p>নপকমার্স ইন্টারফেসটি দেখতে কেমন তা দেখুন। প্রশাসনিক অঞ্চলটির সরলতা এবং সহজলভ্যতা উপভোগ করুন</p>
 	</div>
 	<div class="quick-item design">
-		<a href="/en/getting-started/design-your-store/index.html"><h3>Design</h3></a>
-		<p>Make the best design for your store. Learn about <a href="/en/getting-started/design-your-store/choose-and-install-a-theme.html">themes</a>, <a href="/en/getting-started/design-your-store/nivo-slider.html">homepage slider</a>. Know how to <a href="/en/getting-started/design-your-store/uploading-your-logo.html">upload a logo</a> and <a href="/en/getting-started/design-your-store/media-settings.html">set up media</a></p>
+		<a href="/bn/getting-started/design-your-store/index.html"><h3>ডিজাইন</h3></a>
+		<p>আপনার স্টোরের জন্য সেরা নকশা তৈরি করুন। এ সম্পর্কে জানতে <a href="/bn/getting-started/design-your-store/choose-and-install-a-theme.html">থিম</a>, <a href="/bn/getting-started/design-your-store/nivo-slider.html">হোমপেজ স্লাইডার</a>। কিভাবে করে জানুন <a href="/bn/getting-started/design-your-store/uploading-your-logo.html">লোগো আপলোড করুন</a> এবং <a href="/bn/getting-started/design-your-store/media-settings.html">মিডিয়া সেট আপ করুন</a></p>
 	</div>
 </div>
 <div class="quick-links">
 	<div class="quick-item catalog">
-		<a href="/en/running-your-store/catalog/index.html"><h3>Catalog</h3></a>
-		<p>Add <a href="/en/running-your-store/catalog/products/add-products.html">products</a> and <a href="/en/running-your-store/catalog/categories.html">categories</a>. Learn about <a href="/en/running-your-store/catalog/products/downloadable-products.html">downloadable</a> products, <a href="/en/running-your-store/catalog/products/recurring-products.html">recurring</a> and <a href="/en/running-your-store/catalog/products/rental-products.html">rental</a> options you can integrate into your store</p>
+		<a href="/bn/running-your-store/catalog/index.html"><h3>ক্যাটালগ</h3></a>
+		<p>পণ্য <a href="/bn/running-your-store/catalog/products/add-products.html">যুক্ত করুন</a> এবং ক্যাটাগরি <a href="/bn/running-your-store/catalog/categories.html">যুক্ত করুন</a>। <a href="/bn/running-your-store/catalog/products/downloadable-products.html">ডাউনলোডযোগ্য</a> পণ্য, <a href="/bn/running-your-store/catalog/products/recurring-products.html">পুনরাবৃত্তি</a> এবং <a href="/bn/running-your-store/catalog/products/rental-products.html">ভাড়া করা</a> বিকল্পগুলি আপনি আপনার দোকানে একীভূত করতে পারেন</p>
 	</div>
 	<div class="quick-item payments">
-		<a href="/en/getting-started/configure-payments/index.html"><h3>Payments</h3></a>
-		<p>See how to receive payments in your store. Learn about <a href="/en/getting-started/configure-payments/advanced-configuration/currencies.html">currencies</a> and plenty of <a href="/en/getting-started/configure-payments/payment-methods/index.html">payment methods</a> available in nopCommerce</p>
+		<a href="/bn/getting-started/configure-payments/index.html"><h3>মুল্য পরিশোধ</h3></a>
+		<p>আপনার দোকানে কীভাবে পেমেন্ট পাবেন তা দেখুন। এ সম্পর্কে জানতে<a href="/bn/getting-started/configure-payments/advanced-configuration/currencies.html"> মুদ্রা</a> এবং প্রচুর <a href="/bn/getting-started/configure-payments/payment-methods/index.html">মুল্য পরিশোধ পদ্ধতি</a> নপকমার্সে আছে</p>
 	</div>
 </div>
 <div class="quick-links">
 	<div class="quick-item shipping">
-		<a href="/en/getting-started/configure-shipping/index.html"><h3>Shipping</h3></a>
-		<p>Want to configure shipping? Read about <a href="/en/getting-started/configure-shipping/shipping-settings.html">shipping settings</a> and <a href="/en/getting-started/configure-shipping/shipping-providers/index.html">providers</a>. Want more? Use <a href="/en/getting-started/configure-shipping/advanced-configuration/warehouses.html">warehouses</a>, <a href="/en/getting-started/configure-shipping/advanced-configuration/pickup-points.html">pickup points</a> and others</p>
+		<a href="/bn/getting-started/configure-shipping/index.html"><h3>শিপিং</h3></a>
+		<p>শিপিং কনফিগার করতে চান? এ সম্পর্কে পড়ুন<a href="/bn/getting-started/configure-shipping/shipping-settings.html"> শিপিং সেটিংস</a> এবং <a href="/bn/getting-started/configure-shipping/shipping-providers/index.html">সরবরাহকারী</a>. আরো চাই ? <a href="/bn/getting-started/configure-shipping/advanced-configuration/warehouses.html">গুদাম ব্যবহার</a>, <a href="/bn/getting-started/configure-shipping/advanced-configuration/pickup-points.html">পিকআপ পয়েন্ট</a> এবং অন্যান্য</p>
 	</div>
 	<div class="quick-item more">
-		<a href="/en/getting-started/index.html"><h3>More..</h3></a>
-		<p>Enter <a href="/en/getting-started/advanced-configuration/your-store-information.html">your store information</a>. Don't forget to configure <a href="/en/getting-started/email-accounts.html">email accounts</a> in order to reach your customers. Set up <a href="/en/getting-started/configure-taxes/index.html">taxes</a> and <a href="/en/getting-started/advanced-configuration/security-settings.html">security</a></p>
+		<a href="/bn/getting-started/index.html"><h3>আরও...</h3></a>
+		<p>আপনার স্টোরের <a href="/bn/getting-started/advanced-configuration/your-store-information.html">তথ্য লিখুন</a>. আপনার গ্রাহকদের কাছে পৌঁছানোর জন্য <a href="/bn/getting-started/email-accounts.html">ইমেইল অ্যাকাউন্টসমূহ</a>  কনফিগার করতে ভুলবেন না.<a href="/bn/getting-started/configure-taxes/index.html">কর</a> এবং <a href="/bn/getting-started/advanced-configuration/security-settings.html">সুরক্ষা</a> সেট আপ করুন</p>
 	</div>
 </div>
 
 
-<h2 class="click-links-title">Run the store</h2>
+<h2 class="click-links-title">স্টোর চালান</h2>
 <div class="quick-links">
 	<div class="quick-item orders">
-		<a href="/en/running-your-store/order-management/index.html"><h3>Orders</h3></a>
-		<p>Start accepting <a href="/en/running-your-store/order-management/orders.html">orders</a>. Set up <a href="/en/running-your-store/order-management/inventory-management.html">inventory</a>, manage <a href="/en/running-your-store/order-management/return-requests.html">return requests</a> and <a href="/en/running-your-store/order-management/shipping-management.html">shipments</a> in your nopCommerce store easily</p>
+		<a href="/bn/running-your-store/order-management/index.html"><h3>অর্ডার</h3></a>
+		<p><a href="/bn/running-your-store/order-management/orders.html">অর্ডার</a> গ্রহণ করা শুরু করুন। <a href="/bn/running-your-store/order-management/inventory-management.html">ইনভেন্টরি</a>, <a href="/bn/running-your-store/order-management/return-requests.html">রিটার্ন আবশ্যক</a> এবং  <a href="/bn/running-your-store/order-management/shipping-management.html">চালান</a> পরিচালনা করুন আপনার নপকমার্স স্টোরে সহজেই</p>
 	</div>
 	<div class="quick-item customers">
-		<a href="/en/running-your-store/customer-management/index.html"><h3>Customers</h3></a>
-		<p>What is more important than customers? Manage <a href="/en/running-your-store/customer-management/customer-settings.html">customer settings</a>, create <a href="/en/running-your-store/customer-management/customer-roles.html">customer roles</a> and set up <a href="/en/running-your-store/customer-management/access-control-list.html">access control list</a></p>
+		<a href="/bn/running-your-store/customer-management/index.html"><h3>গ্রাহকরা</h3></a>
+		<p>গ্রাহকদের চেয়ে গুরুত্বপূর্ণ কি? <a href="/bn/running-your-store/customer-management/customer-settings.html">গ্রাহক সেটিংস</a> পরিচালনা করুন, <a href="/bn/running-your-store/customer-management/customer-roles.html">গ্রাহকের ভূমিকা</a> তৈরি করুন এবং <a href="/bn/running-your-store/customer-management/access-control-list.html">অ্যাক্সেস নিয়ন্ত্রণ তালিকা</a> সেট আপ করুন</p>
 	</div>
 </div>
 <div class="quick-links">
 	<div class="quick-item content">
-		<a href="/en/running-your-store/content-management/index.html"><h3>Content</h3></a>
-		<p>Make your store informative. Edit <a href="/en/running-your-store/content-management/message-templates.html">message templates</a>, add <a href="/en/running-your-store/content-management/topics-pages.html">pages</a>, create <a href="/en/running-your-store/content-management/blog.html">blog</a> and use other features to connect to your customers</p>
+		<a href="/bn/running-your-store/content-management/index.html"><h3>বিষয়বস্তু</h3></a>
+		<p>আপনার স্টোর তথ্যপূর্ণ করুন। <a href="/bn/running-your-store/content-management/message-templates.html">বার্তা টেমপ্লেট</a> সম্পাদনা করুন, <a href="/bn/running-your-store/content-management/topics-pages.html">পৃষ্ঠাগুলি </a>যুক্ত করুন, <a href="/bn/running-your-store/content-management/blog.html">ব্লগ </a> তৈরি করুন এবং আপনার গ্রাহকদের সাথে সংযোগ রাখতে অন্যান্য বৈশিষ্ট্যগুলি ব্যবহার করুন</p>
 	</div>
 	<div class="quick-item more">
-		<a href="/en/running-your-store/index.html"><h3>More..</h3></a>
-		<p>Interested in drop shipping and multi-vendor? Welcome to <a href="/en/running-your-store/vendor-management.html">vendor management</a>. To maintain your store see the <a href="/en/running-your-store/system-administration/index.html">system administration</a></p>
+		<a href="/bn/running-your-store/index.html"><h3>আরও ...</h3></a>
+		<p>ড্রপ শিপিং এবং মাল্টি-ভেন্ডর আগ্রহী? <a href="/bn/running-your-store/vendor-management.html">
+বিক্রেতা পরিচালনায় </a> স্বাগতম। আপনার স্টোর বজায় রাখতে <a href="/bn/running-your-store/system-administration/index.html">সিস্টেম অ্যাডমিনিস্ট্রেশন</a> দেখুন</p>
 	</div>
 </div>
 
 
-<h2 class="click-links-title">Marketing</h2>
+<h2 class="click-links-title">বিপণন</h2>
 <div class="quick-links">
 	<div class="quick-item promotional">
-		<a href="/en/running-your-store/promotional-tools/index.html"><h3>Promote</h3></a>
-		<p>Use <a href="/en/running-your-store/promotional-tools/discounts.html">discounts</a>, <a href="/en/running-your-store/promotional-tools/reward-points.html">reward points</a>, <a href="/en/running-your-store/promotional-tools/gift-cards.html">gift cards</a> - all these features and <a href="/en/running-your-store/promotional-tools/index.html">much more</a> are available to improve your sales</p>
+		<a href="/bn/running-your-store/promotional-tools/index.html"><h3>প্রচার করুন</h3></a>
+		<p><a href="/bn/running-your-store/promotional-tools/discounts.html">ডিসকাউন্টস</a>, <a href="/bn/running-your-store/promotional-tools/reward-points.html">রিওয়ার্ড পয়েন্টস</a>, <a href="/bn/running-your-store/promotional-tools/gift-cards.html">গিফট কার্ডস</a> ব্যবহার এবং <a href="/bn/running-your-store/promotional-tools/index.html">অনেক কিছু</a> আপনার বিক্রয় বাড়াতে রয়েছে</p>
 	</div>
 	<div class="quick-item search-engines">
-		<a href="/en/running-your-store/search-engine-optimization.html"><h3>Search engines</h3></a>
-		<p>If search engines literally can't find your store, none of the rest of your work matters. nopCommerce includes all you need for <a href="/en/running-your-store/search-engine-optimization.html">SEO</a></p>
+		<a href="/bn/running-your-store/search-engine-optimization.html"><h3>
+অনুসন্ধান ইঞ্জিন</h3></a>
+		<p>যদি অনুসন্ধান ইঞ্জিনগুলি আক্ষরিক অর্থে আপনার স্টোরটি খুঁজে না পায় তবে আপনার বাকী কাজের কোনওোটাই গুরুত্বপূর্ণ নয়। আপনার যা প্রয়োজন তা অন্তর্ভুক্ত করে নপকমার্স <a href="/bn/running-your-store/search-engine-optimization.html">এস ই ও র</a> মাধ্যমে</p>
 	</div>
 </div>
 <div class="quick-links">
 	<div class="quick-item analytics">
-		<a href="/en/getting-started/advanced-configuration/configure-analytics.html"><h3>Analytics</h3></a>
-		<p>Learn how effective your markenting strategy is using the <a href="/en/getting-started/advanced-configuration/configure-analytics.html">Google analytics</a> and see your store statistics on the <a href="/en/running-your-store/reports.html">reports</a> panel</p>
+		<a href="/bn/getting-started/advanced-configuration/configure-analytics.html"><h3>বিশ্লেষণ</h3></a>
+		<p>আপনার চিহ্নিতকরণ কৌশলটি কতটা কার্যকর তা শিখুন <a href="/bn/getting-started/advanced-configuration/configure-analytics.html">
+গুগল বিশ্লেষক</a> ব্যবহার করে এবং আপনার স্টোর পরিসংখ্যান দেখুন <a href="/bn/running-your-store/reports.html">রিপোর্টে</a> প্যানেল থেকে</p>
 	</div>
 	<div class="quick-item plugins">
-		<a href="/en/getting-started/advanced-configuration/plugins-in-nopcommerce.html"><h3>Plugins</h3></a>
-		<p>Use built-in plugins to reach your marketing goals: <a href="/en/running-your-store/promotional-tools/sendinblue-integration/index.html">Sendinblue</a>, <a href="/en/running-your-store/promotional-tools/facebook-pixel.html">Facebook Pixel</a>. Find dozens of nopCommerce plugins on the <a target="_blank" href="https://www.nopcommerce.com/en/marketplace">marketplace</a></p>
+		<a href="/bn/getting-started/advanced-configuration/plugins-in-nopcommerce.html"><h3>প্লাগইনস</h3></a>
+		<p>আপনার বিপণনের লক্ষ্যে পৌঁছানোর জন্য অন্তর্নির্মিত প্লাগইনগুলি ব্যবহার করুন: <a href="/bn/running-your-store/promotional-tools/sendinblue-integration/index.html">Sendinblue</a>, <a href="/bn/running-your-store/promotional-tools/facebook-pixel.html">Facebook Pixel</a> <a target="_blank" href="https://www.nopcommerce.com/bn/marketplace">মার্কেটপ্লেসে</a> কয়েক ডজন নপকমার্স প্লাগইন সন্ধান করুন</p>
 	</div>
 </div>
 
-<h2 class="click-links-title">Support</h2>
+<h2 class="click-links-title">সমর্থন</h2>
 <div class="quick-links">
 	<div class="quick-item premium">
-		<a target="_blank" href="https://www.nopcommerce.com/en/nopcommerce-premium-support-services"><h3>Premium</h3></a>
-		<p>The nopCommerce team provides paid premium support services for those who want to get professional support within 24 hours</p>
+		<a target="_blank" href="https://www.nopcommerce.com/bn/nopcommerce-premium-support-services"><h3>প্রিমিয়াম</h3></a>
+		<p>যারা 24 ঘন্টার মধ্যে পেশাদার সমর্থন পেতে চান তাদের জন্য অর্থ প্রদানের প্রিমিয়াম সহায়তা পরিষেবা সরবরাহ করে নপকমার্স টিম</p>
 	</div>
 	<div class="quick-item forums">
-		<a target="_blank" href="https://www.nopcommerce.com/en/boards"><h3>Forums</h3></a>
-		<p>We welcome new questions and discussion so feel free to ask your question on the nopCommerce forums</p>
+		<a target="_blank" href="https://www.nopcommerce.com/bn/boards"><h3>Forums</h3></a>
+		<p>আমরা নতুন প্রশ্ন এবং আলোচনাকে স্বাগত জানাই তাই নোপকমার্স ফোরামে আপনার প্রশ্নটি নির্দ্বিধায় জিজ্ঞাসা করুন</p>
 	</div>
 </div>
