@@ -1,17 +1,18 @@
 ---
-title: Installing / Applying theme in nopCommerce
-uid: en/developer/design/installing-theme
+title: নপকমার্স থিম ইনস্টল / প্রয়োগ
+uid: bn/developer/design/installing-theme
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Installing / Applying theme in nopCommerce
+# নপকমার্স থিম ইনস্টল / প্রয়োগ
 
-Let's assume you just downloaded a new theme which is in a zip file.
+ধরে নেওয়া যাক আপনি একটি নতুন থিম ডাউনলোড করেছেন যা একটি জিপ ফাইলে রয়েছে।
 
-1. Extract the contents of your zip file and copy it under "Themes" folder like shown in the figure below: ![extracting-theme](_static/installing-theme/extracting-theme.jpg)
-1. Go to the admin section (`http://www.yourdomain.com/admin`)
-1. Go to Configuration → Settings → General And Miscellaneous settings
-1. Select new theme from the **Default Store Theme** and click **Save**.
+১. আপনার জিপ ফাইলের সামগ্রীগুলি বের করুন এবং নীচের চিত্রের মতো "থিমস" ফোল্ডারে এটি অনুলিপি করুন:
+![extracting-theme](_static/installing-theme/extracting-theme.jpg)
+২. প্রশাসক বিভাগে যান (`http://www.yourdomain.com/admin`)
+৩. কনফিগারেশন → সেটিংস → সাধারণ এবং বিবিধ সেটিংসে যান
+৪. ডিফল্ট স্টোর থিম **থেকে নতুন থিম নির্বাচন করুন** এবং **সংরক্ষণ করুন** ক্লিক করুন।
 
-Now, go to the public store. You should be able to see the new theme on your website.
+এখন, পাবলিক স্টোরে যান। আপনার নিজের ওয়েবসাইটে নতুন থিমটি দেখতে পারা উচিত।  

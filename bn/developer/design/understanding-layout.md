@@ -1,41 +1,41 @@
 ---
-title: Understanding Layout / Design
-uid: en/developer/design/understanding-layout
+title: লেআউট / ডিজাইন বোঝা
+uid: bn/developer/design/understanding-layout
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Understanding Layout / Design
+# লেআউট / ডিজাইন বোঝা
 
-What are layouts? Every web developer/designer wants to maintain a consistent look and feel across all of the pages within the website. Back in the days, the concept of "Master Pages" was introduced in ASP.NET 2.0 which helps in maintaining a consistent look of the website by mapping it with .aspx pages.
+লেআউট কি? প্রতিটি ওয়েব বিকাশকারী / ডিজাইনার ওয়েবসাইটের সমস্ত পৃষ্ঠায় একটি সামঞ্জস্যপূর্ণ চেহারা এবং অনুভূতি বজায় রাখতে চায়। কিছুদিন আগে, এএসপি.নেট ২.০ এ "মাস্টার পৃষ্ঠাগুলি" ধারণাটি চালু হয়েছিল যা .aspx পৃষ্ঠাগুলির মাধ্যমে ম্যাপিংয়ের মাধ্যমে ওয়েবসাইটটির ধারাবাহিক চেহারা বজায় রাখতে সহায়তা করে।
 
-Razor also supports this similar concept with a feature called "Layouts". Basically, it allows you to define a common site template and then inherit its look and feel across all the views/pages on your website.
+রেজার এই জাতীয় ধারণাকে সমর্থন করে "লেআউটগুলি" নামে একটি বৈশিষ্ট্য সহ। মূলত, এটি আপনাকে একটি সাধারণ সাইট টেমপ্লেট সংজ্ঞায়িত করতে দেয় এবং তারপরে এটির চেহারা এবং আপনার ওয়েবসাইটের সমস্ত দর্শন / পৃষ্ঠাগুলি জুড়ে অনুভব করতে পারে।
 
-In nopCommerce, there are 2 different kinds of layouts:
+নপকমার্সে, 2 টি বিভিন্ন ধরণের লেআউট রয়েছে:
 
 * `_ColumnsOne.cshtml`
 * `_ColumnsTwo.cshtml`
 
-All these 2 layouts are inherited from one main layout called: `_Root.cshtml`. The `_Root.cshtml` itself is inherited from `_Root.Head.cshtml`. `_Root.Head.cshtml` is the file you need to look into if you are linked css stylesheet and jquery files (you can add/link more `.css` and `.js` files here). The location of all these layouts in nopCommerce is as follows: `[nopCommerce root directory]/Views/Shared/...`. If you are using source code version then: `\Presentation\Nop.Web\Views\Shared\...`
+এই সমস্ত 2 টি লেআউটটিকে মূলত একটি প্রধান লেআউট বলা হয়: `_Root.cshtml`. `_Root.cshtml` নিজে থেকেই উত্তরাধিকার সূত্রে প্রাপ্ত `_Root.Head.cshtml`. `_Root.Head.cshtml` ফাইলটি যেখানে আপনি সিএসএস স্টাইলশীট এবং jquery ফাইলগুলি লিঙ্ক করেছেন কিনা তা খতিয়ে দেখার দরকার (আপনি এখানে আরও `.css` এবং `.js` ফাইল যুক্ত / লিঙ্ক করতে পারেন)। নপকমার্সে এই সমস্ত লেআউটের অবস্থান নিম্নরূপ: `[nopCommerce root directory]/Views/Shared/...`. আপনি যদি সোর্স কোড সংস্করণ ব্যবহার করেন তবে: `\Presentation\Nop.Web\Views\Shared\...`
 
-* **Layout of _Root.cshtml**
+* **_Root.cshtml এর লেআউট**
 
     ![root-layout](_static/understanding-layout/root-layout.jpg)
 
-* **Layout of `_Root.cshtml` (in respect of css class)**
+* **`_Root.cshtml` এর লেআউট (সিএসএস শ্রেণির ক্ষেত্রে)**
 
     ![root-layout-css](_static/understanding-layout/root-layout-css.jpg)
 
-Now the following 2 layouts override the body of `_Root.cshtml`:
+এখন নিম্নলিখিত 2 টি লেআউটগুলি `_Root.cshtml` এর শরীরকে ওভাররাইড করে:
 
 * `_ColumnsOne.cshtml`
 
-    In this case, there is no change in the layout of the body, so the structure remains pretty much the same as `_Root.cshtml`:
+    এই ক্ষেত্রে, দেহের বিন্যাসে কোনও পরিবর্তন নেই, সুতরাং কাঠামোটি `_Root.cshtml` এর মতো অনেকটা একইরকম থেকে যায়:
 
     ![columns-one](_static/understanding-layout/column-one.jpg)
 
 * `_ColumnsTwo.cshtml`
 
-    In this case, there are 2 columns in the body structure:
+    এই ক্ষেত্রে, শরীরের গঠনে 2 টি কলাম রয়েছে:
 
     ![column-two](_static/understanding-layout/column-two.jpg)

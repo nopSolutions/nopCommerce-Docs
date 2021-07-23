@@ -1,14 +1,14 @@
 ---
-title: Copyright notice
-uid: en/developer/copyright-notice
+title: কপিরাইট নোটিশ
+uid: bn/developer/copyright-notice
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Copyright notice
+# কপিরাইট নোটিশ
 
-Information in this document, including URL and other Internet Web site references, is subject to change without notice. The entire risk of the use or the results of the use of this document remains with the user. The example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious. No association with any real company, organization, product, domain name, email address, logo, person, places, or events is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Andrei Mazoulnitsyn. Nop Solutions may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document. Except as expressly provided in any written license agreement from Nop Solutions, the furnishing of this document does not give you any license to these patents, trademarks, copyrights, or other intellectual property.
+এই নথিতে তথ্য, ইউআরএল এবং অন্যান্য ইন্টারনেট ওয়েবসাইটের উল্লেখ, বিজ্ঞপ্তি ছাড়াই পরিবর্তন সাপেক্ষে। এই নথি ব্যবহারের পুরো ঝুঁকি বা এই নথি ব্যবহারের ফলাফল ব্যবহারকারীর হবে। উদাহরণস্বরূপ সংস্থা, প্রতিষ্ঠান, পণ্য, ডোমেন নাম, ই-মেইল ঠিকানা, লোগো, লোক, স্থান এবং ইভেন্টগুলি এখানে কল্পনা করা। কোনও প্রকৃত সংস্থা, প্রতিষ্ঠান, পণ্য, ডোমেন নাম, ইমেল ঠিকানা, লোগো, ব্যক্তি, স্থান, বা ইভেন্টগুলির উদ্দেশ্য বা অনুমিত হওয়া উচিত নয়৷ সমস্ত প্রযোজ্য কপিরাইট আইন মেনে চলা ব্যবহারকারীর দায়িত্ব। কপিরাইটের অধীনে অধিকার সীমাবদ্ধ না করে এই নথির কোনও অংশই পুনরুদ্ধার পদ্ধতিতে পুনরুত্পাদন, সঞ্চিত বা প্রবর্তন, বা কোনও ফর্ম বা কোনও উপায়ে (বৈদ্যুতিন, যান্ত্রিক, ফটোকপি, রেকর্ডিং, বা অন্য কোনওভাবে) দ্বারা প্রেরণ করা যাবে না বা অন্য কোনও ক্ষেত্রে উদ্দেশ্য, আন্দ্রেই মজলনিটসিনের প্রকাশিত অনুমতি ব্যতীত। এই নথিতে নপ সলিউশনগুলির পেটেন্টস, পেটেন্ট অ্যাপ্লিকেশন, ট্রেডমার্ক, কপিরাইট, বা অন্যান্য বৌদ্ধিক সম্পত্তির অধিকার থাকতে পারে। নপ সলিউশনগুলি থেকে কোনও লিখিত লাইসেন্স চুক্তিতে স্পষ্টভাবে সরবরাহ করা ব্যতীত, এই নথিটি সজ্জিতকরণ আপনাকে এই পেটেন্ট, ট্রেডমার্ক, কপিরাইট, বা অন্যান্য বৌদ্ধিক সম্পত্তির জন্য কোনও লাইসেন্স দেয় না।
 
-Joint Copyright &copy; 2010, Nop Solutions, Inc and Andrei Mazoulnitsyn. All Rights Reserved.
+যৌথ কপিরাইট & অনুলিপি; ২০১০, নপ সলিউশনস, ইনক এবং আন্দ্রেই মজলনিটসিন। সমস্ত অধিকার সংরক্ষিত.
 
-nopCommerce and the nopCommerce logo are either registered trademarks or trademarks of Nop Solutions, Inc. in the Russia and/or other countries. The names of actual companies and products mentioned herein may be the trademarks of their respective owners.
+নপকমার্স এবং নপকমার্স লোগোটি হয় রাশিয়া এবং / অথবা অন্যান্য দেশে নোপ সলিউশনস, ইনক। এর নিবন্ধিত ট্রেডমার্ক বা ট্রেডমার্ক। এখানে উল্লিখিত প্রকৃত সংস্থা এবং পণ্যগুলির নামগুলি তাদের নিজ নিজ মালিকদের ট্রেডমার্ক হতে পারে।

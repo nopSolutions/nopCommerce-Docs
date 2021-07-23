@@ -1,15 +1,15 @@
 ---
-title: Developers guide
-uid: en/developer/index
+title: ডেভেলপার গাইড
+uid: bn/developer/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Developers guide
+# ডেভেলপার গাইড
 
-The nopCommerce developer documentation is here to help you through the process of nopCommerce customization. Here you will find several sections:
+নপকমার্স ডেভেলপার ডকুমেন্টেশন এখানে নপকমার্স কাস্টমাইজেশন প্রক্রিয়া মাধ্যমে আপনাকে সহায়তা করার জন্য। এখানে আপনি কয়েকটি বিভাগ পাবেন:
 
-* [Developer tutorials](xref:en/developer/tutorials/index)
-* [Creating a nopCommerce plugin](xref:en/developer/plugins/index)
-* [Designer's Guide](xref:en/developer/design/index)
-* [Copyright notice](xref:en/developer/copyright-notice)
+* [ডেভেলপার টিউটোরিয়াল](xref:bn/developer/tutorials/index)
+* [নপকমার্স প্লাগইন তৈরি করা](xref:bn/developer/plugins/index)
+* [ডিজাইনার গাইড](xref:bn/developer/design/index)
+* [কপিরাইট নোটিশ](xref:bn/developer/copyright-notice)

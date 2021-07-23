@@ -18,7 +18,7 @@
           name: একটি হোস্টিং প্রতিষ্ঠান পছন্দ করা
           href: installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.md
         -
-          name: স্থানীয় ইনস্টল করা (কেবল বিকাশকারীদের জন্য)
+          name: স্থানীয় ইনস্টল করা (কেবল ডেভেলপারদের জন্য)
           href: installation-and-upgrading/installing-nopcommerce/installing-local.md
         -
           name: উইন্ডোজে ইনস্টল করা
@@ -395,11 +395,11 @@
           name: Templates
           href: running-your-store/system-administration/templates.md
 - 
-  name: Developer guide
-  href: developer/index.md
+  name: ডেভেলপার গাইড
+  href: /index.md
   items:
     - 
-      name: Developer tutorials
+      name: ডেভেলপার টিউটোরিয়াল
       href: developer/tutorials/index.md
       items:
         - 
@@ -484,7 +484,7 @@
           name: UNIT testing
           href: developer/tutorials/unit-tests.md
     - 
-      name: Creating a nopCommerce plugin
+      name: নপকমার্স প্লাগইন তৈরি করা
       href: developer/plugins/index.md
       items:
         - 
@@ -527,44 +527,44 @@
           name: Description of the structure of the plugin.json file
           href: developer/plugins/plugin.json.md
     - 
-      name: Designer's guide
+      name: ডিজাইনার গাইড
       href: developer/design/index.md
       items:
         - 
-          name: Overview (designer's guide)
+          name: ওভারভিউ (ডিজাইনার গাইড)
           href: developer/design/overview.md
         - 
-          name: Installing / applying theme in nopCommerce
+          name: নপকমার্স থিম ইনস্টল / প্রয়োগ
           href: developer/design/installing-theme.md
         - 
-          name: Creating / writing your own theme (using current / default theme)
+          name: আপনার নিজস্ব থিম তৈরি / রচনা (বর্তমান / ডিফল্ট থিম ব্যবহার)
           href: developer/design/new-theme.md
         - 
-          name: Understanding layout / design
+          name: লেআউট / ডিজাইন বোঝা
           href: developer/design/understanding-layout.md
         - 
-          name: Customizing nopCommerce themes
+          name: নপকমার্স থিমগুলি অনুকূলিতকরণ
           href: developer/design/customizing-theme.md
         - 
-          name: Right-to-left theme
+          name: ডান থেকে বাম থিম
           href: developer/design/right-to-left-theme.md
         - 
-          name: Widgets (designer's guide)
+          name: উইজেট (ডিজাইনার গাইড)
           href: developer/design/widgets.md
         - 
-          name: Responsive design
+          name: প্রতিক্রিয়াশীল ডিজাইনা
           href: developer/design/responsive.md
         - 
-          name: Tips and tricks
+          name: কৌশল
           href: developer/design/tips-and-tricks.md
         - 
-          name: Contributing a theme
+          name: থিমে অবদান
           href: developer/design/contributing-theme.md
         - 
-          name: Entity events system
+          name: সত্তা ইভেন্ট সিস্টেম
           href: developer/design/entity-events-system.md
     - 
-      name: Contribute
+      name: অবদান
       href: developer/contribute/index.md
       items:
         - 
@@ -577,7 +577,7 @@
           name: Working with source code and contributions
           href: developer/contribute/source-code.md
     - 
-      name: Copyright notice
+      name: কপিরাইট নোটিশ
       href: developer/copyright-notice.md
 - 
   name: Contribute

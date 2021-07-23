@@ -1,47 +1,41 @@
 ---
-title: Creating / Writing your own theme (using current / default theme)
-uid: en/developer/design/new-theme
+title: আপনার নিজস্ব থিম তৈরি / রচনা (বর্তমান / ডিফল্ট থিম ব্যবহার)
+uid: bn/developer/design/new-theme
 author: git.AndreiMaz
-contributors: git.a-patel, git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Creating / Writing your own theme (using current / default theme)
+# আপনার নিজস্ব থিম তৈরি / রচনা (বর্তমান / ডিফল্ট থিম ব্যবহার)
 
-Open your nopCommerce solution or website (web version) in Microsoft Visual Studio - Go to this location:
+Microsoft Visual Studio তে আপনার নপকমার্স সমাধান বা ওয়েবসাইট (ওয়েব সংস্করণ) খুলুন - এই অবস্থানে যান:
 
-* If using source code: `\Nop.Web\Themes\`
-* If using web version: `\[Project Root]\Themes\`
+* যদি সোর্স কোড ব্যবহার করা হয়: `\Nop.Web\Themes\`
+* যদি ওয়েব সংস্করণ ব্যবহার করা হয়: `\[Project Root]\Themes\`
 
-1. Select any default / current theme
+১. যে কোনও ডিফল্ট / বর্তমান থিম নির্বাচন করুন
 
-    ![step-1](_static/new-theme/new-theme-step-1.jpg)
+ ![step-1](_static/new-theme/new-theme-step-1.jpg)
 
-1. Now, Right click on the theme → select **COPY**
-
+২. এখন, থিমটিতে রাইট ক্লিক করুন * নির্বাচন করুন **COPY**
     ![step-2](_static/new-theme/new-theme-step-2.jpg)
 
-1. Now select "Theme" folder → right click → **PASTE**
-
+৩. এখন "থিম" ফোল্ডারটি নির্বাচন করুন → রাইট ক্লিক করুন → **PASTE**
     ![step-3](_static/new-theme/new-theme-step-3.jpg)
 
-1. You will get something like "Copy of default/current theme"
-
+৪. আপনি "ডিফল্ট / বর্তমান থিমের অনুলিপি" এর মতো কিছু পাবেন
     ![step-4](_static/new-theme/new-theme-step-4.jpg)
 
-1. Rename it - whatever you like to be the name of your new theme – For an instance, let's say: MyFirstTheme
+৫. এটির নতুন নাম দিন - আপনার নতুন থিমের নাম হিসাবে আপনি যা পছন্দ করেন - উদাহরণস্বরূপ, আসুন বলা যাক: MyFirstTheme
+    
+![step-5](_static/new-theme/new-theme-step-5.jpg)
 
-    ![step-5](_static/new-theme/new-theme-step-5.jpg)
-
-1. Now inside your New theme folder "MyFirstTheme" → open `theme.json`
-
+৬. এখন আপনার নতুন থিম ফোল্ডারের ভিতরে "মাইফারস্টেম" → খোলা `theme.json`
     ![step-6](_static/new-theme/new-theme-step-6.jpg)
 
-1. Change the current / existing theme name with your new theme name "MyFirstTheme"
-
+৭. আপনার নতুন থিমের নাম "মাই ফার্স্ট থিম" দিয়ে বর্তমান / বিদ্যমান থিমের নামটি পরিবর্তন করুন
     ![step-7](_static/new-theme/new-theme-step-7.jpg)
 
-1. Now, inside your new theme folder **"MyFirstTheme" → Content → Images** add your new images in "images" directory and start updating / customizing your `style.css` according to your requirements.
+৮. এখন, আপনার নতুন থিম ফোল্ডারের ভিতরে **"MyFirstTheme" → Content → Images** আপনার নতুন চিত্রগুলিকে "images" ডিরেক্টরিতে যুক্ত করুন  এবং আপনার প্রয়োজনীয়তা অনুসারে আপনার `style.css` - আপডেট / কাস্টমাইজ করা শুরু করুন।
 
-    If you would like to test the changes → Go to Admin section → Apply your new theme → Save change and preview your public store.
-
+আপনি যদি পরিবর্তনগুলি পরীক্ষা করতে চান → প্রশাসন বিভাগে যান আপনার নতুন থিম প্রয়োগ করুন পরিবর্তন সংরক্ষণ করুন এবং আপনার পাবলিক স্টোরের পূর্বরূপ দেখুন।
     ![step-8](_static/new-theme/new-theme-step-8.jpg)

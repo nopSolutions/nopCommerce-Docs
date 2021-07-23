@@ -1,20 +1,20 @@
 ---
-title: Designer's Guide
-uid: en/developer/design/index
+title: ডিজাইনার গাইড
+uid: bn/developer/design/index
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Designer's Guide
+# ডিজাইনার গাইড
 
-* [Overview (Designer's Guide)](xref:en/developer/design/overview)
-* [Installing / Applying theme in nopCommerce](xref:en/developer/design/installing-theme)
-* [Creating / Writing your own theme (using current / default theme)](xref:en/developer/design/new-theme)
-* [Understanding Layout / Design](xref:en/developer/design/understanding-layout)
-* [Customizing nopCommerce Themes](xref:en/developer/design/customizing-theme)
-* [Right To Left Theme](xref:en/developer/design/right-to-left-theme)
-* [Widgets (Designer's Guide)](xref:en/developer/design/widgets)
-* [Responsive Design](xref:en/developer/design/responsive)
-* [Tips and Tricks](xref:en/developer/design/tips-and-tricks)
-* [Contributing a Theme](xref:en/developer/design/contributing-theme)
-* [Entity events system](xref:en/developer/design/entity-events-system)
+* [ওভারভিউ (ডিজাইনার গাইড)](xref:bn/developer/design/overview)
+* [নপকমার্স থিম ইনস্টল / প্রয়োগ করা](xref:bn/developer/design/installing-theme)
+* [আপনার নিজস্ব থিম তৈরি / রচনা (বর্তমান / ডিফল্ট থিম ব্যবহার করে)](xref:bn/developer/design/new-theme)
+* [লেআউট / ডিজাইন বোঝা](xref:bn/developer/design/understanding-layout)
+* [নপকমার্স থিমগুলি অনুকূলিতকরণ](xref:bn/developer/design/customizing-theme)
+* [ডান থেকে বাম থিম](xref:bn/developer/design/right-to-left-theme)
+* [উইজেট (ডিজাইনার গাইড)](xref:bn/developer/design/widgets)
+* [প্রতিক্রিয়াশীল নকশা](xref:bn/developer/design/responsive)
+* [কৌশল](xref:bn/developer/design/tips-and-tricks)
+* [একটি থিমে অবদান](xref:bn/developer/design/contributing-theme)
+* [সত্তা ইভেন্ট সিস্টেম](xref:bn/developer/design/entity-events-system)
