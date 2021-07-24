@@ -1,14 +1,14 @@
 ---
-title: Contributing a Theme
-uid: en/developer/design/contributing-theme
+title:থিমে অবদান
+uid: bn/developer/design/contributing-theme
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Contributing a Theme
+# থিমে অবদান
 
-nopCommerce is supported by a very active community. So, any kind of contribution is highly appreciated.
+নপকমার্স একটি খুব সক্রিয় সম্প্রদায় দ্বারা সমর্থিত। সুতরাং, যে কোনও ধরনের অবদানের প্রশংসা করা হয়।
 
-You can now share your theme with other users by [Marketplace](https://www.nopcommerce.com/marketplace) section of nopCommerce website.
+আপনি এখন নপকমার্স ওয়েবসাইটের [Marketplace](https://www.nopcommerce.com/marketplace)) বিভাগ দ্বারা আপনার ব্যবহারকারীদের সাথে আপনার থিম বিস্তার করতে পারেন। 
 
-Just go to [My account](https://www.nopcommerce.com/customer/info) page, then **Your contributions and extensions** tab. Click **Upload a new extension** button in order to upload a new theme.
+কেবলমাত্র [My account](https://www.nopcommerce.com/customer/info) পৃষ্ঠায় যান, তারপরে **Your contributions and extensions** ট্যাব। নতুন থিম আপলোড করতে ***Upload a new extension** ক্লিক করুন। 

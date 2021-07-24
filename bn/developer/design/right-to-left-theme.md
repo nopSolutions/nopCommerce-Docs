@@ -1,24 +1,24 @@
 ---
-title: Right To Left Theme
-uid: en/developer/design/right-to-left-theme
+title: ডান থেকে বাম থিম
+uid: bn/developer/design/right-to-left-theme
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Right To Left Theme
+# ডান থেকে বাম থিম
 
-nopCommerce also supports right to left version of the public store theme.
+নপকমার্স পাবলিক স্টোর থিমের ডান থেকে বাম সংস্করণকেও সমর্থন করে।
 
-nopCommerce default public store theme **DefaultClean** comes with the feature of a right to left version style sheet.
+নপকমার্স ডিফল্ট পাবলিক স্টোর থিম **DefaultClean** ডান থেকে বাম সংস্করণ স্টাইল শীটের বৈশিষ্ট্য নিয়ে আসে। 
 
-To enable "Right to Left" version of the theme, please go to `Administration → Configuration → Languages`, click on **Edit** a language, and ensure that **Right-to-Left** option is enabled.
+থিমটির "বাম থেকে বাম" সংস্করণ সক্ষম করতে, দয়া করে `প্রশাসন → কনফিগারেশন → ভাষাগুলিতে যান, একটি ভাষা **Edit** ক্লিক করুন এবং নিশ্চিত করুন যে **Right-to-Left** বিকল্প সক্ষম হয়েছে|
 
 ![rtm-settings](_static/right-to-left-theme/rtm-settings.png)
 
-Now, if you see the public store, it will look like this:
+এখন, আপনি যদি পাবলিক স্টোরটি দেখেন তবে এটি দেখতে এরকম দেখাবে:
 
 ![rtm-public](_static/right-to-left-theme/rtm-public.jpg)
 
-Styles used for RTL support are located in `styles.rtl.css` file.
+আরটিএল সমর্থনের জন্য ব্যবহৃত স্টাইলগুলি `styles.rtl.css` ফাইলে রয়েছে।
 
 ![rtm-css](_static/right-to-left-theme/rtm-css.jpg)

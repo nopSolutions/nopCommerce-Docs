@@ -1,11 +1,11 @@
 ﻿---
-title: Entity events system
+title: সত্তা ইভেন্ট সিস্টেম
 uid: en/developer/design/entity-events-system
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Entity events system
+# সত্তা ইভেন্ট সিস্টেম
 
 ## OverView
 
