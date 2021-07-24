@@ -1,62 +1,62 @@
 ---
-title: Technology & system requirements
-uid: en/installation-and-upgrading/technology-and-system-requirements
-author: git.AndreiMaz
-contributors: git.IvanIvanIvanov, git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.skoshelev
+শিরোনাম: প্রযুক্তি ও সিস্টেমের প্রয়োজনীয়তা
+স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/technology-and-system-requirements
+লেখক: git.AndreiMaz
+অবদানকারী: git.MDRashedKhanMenon
 ---
 
-# Technology & system requirements
+# প্রযুক্তি ও সিস্টেমের প্রয়োজনীয়তা
 
-In order to run nopCommerce, you will need the following installed on your server/computer:
+নপকমার্স চালানোর জন্য আপনার সার্ভার / কম্পিউটারে নিম্নলিখিতগুলি ইনস্টল করা দরকার:
 
-## Supported operation systems
+## সমর্থিত অপারেটিং সিস্টেম
 
-* Windows
-  * Windows 7 SP1 or above
-  * Windows Server 2012 R2 or above
+* উইন্ডোজ
+  * উইন্ডোজ ৭ এসপি ১ বা তার বেশি
+  * উইন্ডোজ সার্ভার ২০১২ আর ২ বা তার বেশি
 
-* Linux
-  * Red Hat 7 / CentOS 7 or above
-  * Fedora 32 or above or
-  * Debian 9 or above / Ubuntu 18.04 or above / Linux Mint 18 or above
-  * OpenSUSE 15 or above / SUSE Enterprise SUSE Enterprise or above
-  * Alpine Linux 3.11 or above
+* লিনাক্স
+  * রেড হ্যাট ৭ / CentOS ৭ বা তার বেশি
+  * ফেডোরা ৩২ বা তার উপরে বা
+  * ডেবিয়ান ৯ বা তার উপরে / উবুন্টু ১৮.০৪ বা তার উপরে / লিনাক্স মিন্ট ১৮ বা তার বেশি
+  * ওপেনসুএস ১৫ বা তার বেশি / সুস এন্টারপ্রাইজ সুস এন্টারপ্রাইজ বা তার বেশি
+  * আলপাইন লিনাক্স ৩.১১ বা তার বেশি
 
-* MacOS
-  * Mac OS X 10.13 or above
+* ম্যাক ওএস
+  * ম্যাক ওএস এক্স ১০.১৩ বা তার বেশি
 
-## Supported web servers
+## সমর্থিত ওয়েব সার্ভারগুলি
 
-* Internet Information Service (IIS) 7.0 or above
-* For nopCommerce 4.40. Install .NET 5 runtime ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer)).
-* For nopCommerce 4.30. Install .NET Core 3.1 runtime ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer)).
-* For nopCommerce 4.20. Install .NET Core 2.2 runtime ([download](https://dotnet.microsoft.com/download)).
-* For nopCommerce 4.10. Install .NET Core 2.1 runtime ([download](https://dotnet.microsoft.com/download)).
-* For nopCommerce 4.00. Install .NET Core Window Server hosting runtime ([download](https://dotnet.microsoft.com/download))
-* For nopCommerce 3.90 or below. ASP.NET 4.5 (MVC 5.0) and Microsoft .NET Framework 4.5.1 or above
+* ইন্টারনেট তথ্য পরিষেবা (আইআইএস) ৭.০ অথবা উপরে
+* নপকমার্সের ৪.৪০ এর জন্য ইনস্টল করুন নেট ৫ রানটাইম ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer)).
+* নপকমার্সের ৪.৩০ এর জন্য  ইনস্টল করুন নেট কোর ৩.১ রানটাইম ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer)).
+* নপকমার্সের ৪.২০ এর জন্য নেট কোর ২.২ রানটাইম ইনস্টল করুন ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড)).
+* নপকমার্সের ৪.১০ এর জন্য নেট কোর ২.১ রানটাইম ইনস্টল করুন ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড)).
+* নপকমার্সের ৪.০০ এর জন্য নেট কোর উইন্ডো সার্ভার হোস্টিং রানটাইম ইনস্টল করুন ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড))
+* নপকমার্সের ৩.৯০ বা তার নিচের জন্য এএসপি.নেট ৪.৫ (এমভিসি ৫.০) এবং মাইক্রোসফ্ট। নেট ফ্রেমওয়ার্ক ৪.৫.১ বা তার বেশি ইনস্টল করুন
 
-## Supported databases
+## সমর্থিত ডাটাবেস
 
-* MS SQL Server 2012 or above
-* MySql Server 5.7 or above (since nopCommerce 4.30)
-* PostgreSQL 9.5 or above (since nopCommerce 4.40)
+* এমএস এসকিউএল সার্ভার ২০১২ বা তার বেশি
+* মাইএসকিএল সার্ভার ৫.৭ বা তার বেশি (নপকমার্স ৪.৩০ থেকে)
+* পোস্টগ্রিএসকিউএল ৯.৫ বা তার বেশি (নপকমার্স ৪.৪০ থেকে)
 
-## Supported browsers
+## সমর্থিত ব্রাউজারগুলি
 
-* Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was supported in versions prior 4.10)
-* Mozilla Firefox 2.0 and above
-* Google Chrome 1.x
-* Apple Safari 2.x
+* মাইক্রোসফ্ট ইন্টারনেট এক্সপ্লোরার ৯ এবং এর বেশি (আই ই ৬ এবং আই ই ৭ পূর্ববর্তী সংস্করণগুলিতে সমর্থিত ছিল ৩.৬০, আই ই পূর্ববর্তী সংস্করণগুলিতে সমর্থিত ছিল ৪.১০)
+* মোজিলা ফায়ারফক্স ২.০ এবং তার বেশি
+* গুগল ক্রোম ১.ক
+* Apple Safari ২.ক
 
-**For nopCommerce 4.40 or above. MS Visual Studio 2019 (version 16.9 or above). And don't forget to install .NET 5 SDK ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.200-windows-x64-installer)). Required for developers who want to edit source code.**
+**নপকমার্সের  ৪.৪০ বা তার বেশির জন্য এমএস ভিজ্যুয়াল স্টুডিও ২০১৯ (সংস্করণ ১৬.৯ বা তার বেশি) এবং নেট ৫ এসডিকে ইনস্টল করতে ভুলবেন না ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড/dotnet/thank-you/sdk-5.0.200-windows-x64-installer))। সোর্স কোড সম্পাদনা করতে চান এমন বিকাশকারীদের জন্য প্রয়োজনীয়।**
 
-**For nopCommerce 4.30. MS Visual Studio 2019 (version 16.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer)). Required for developers who want to edit source code.**
+**নপকমার্সের  ৪.৩০ এর জন্য এমএস ভিজ্যুয়াল স্টুডিও ২০১৯ (সংস্করণ ১৬.৩ বা তার বেশি) এবং নেট কোর এসডিকে ইনস্টল করতে ভুলবেন না ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড/dotnet-core/thank-you/sdk-3.1.201-windows-x64-installer))। সোর্স কোড সম্পাদনা করতে চান এমন বিকাশকারীদের জন্য প্রয়োজনীয়।**
 
-**For nopCommerce 4.20 or above. MS Visual Studio 2017 (version 15.9 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
+**নপকমার্সের ৪.২০ বা তার বেশির জন্য এমএস ভিজ্যুয়াল স্টুডিও ২০১৭ (সংস্করণ ১৫.৯ বা তার বেশি) এবং নেট কোর এসডিকে ইনস্টল করতে ভুলবেন না ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড))। সোর্স কোড সম্পাদনা করতে চান এমন বিকাশকারীদের জন্য প্রয়োজনীয়।**
 
-**For nopCommerce 4.10 MS Visual Studio 2017 (version 15.7 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
+**নপকমার্সের ৪.১০ এর জন্য এমএস ভিজ্যুয়াল স্টুডিও ২০১৭ (সংস্করণ ১5.৭ বা তার বেশি) এবং নেট কোর এসডিকে ইনস্টল করতে ভুলবেন না ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড))। সোর্স কোড সম্পাদনা করতে চান এমন বিকাশকারীদের জন্য প্রয়োজনীয়।**
 
-**For nopCommerce 4.00 or below. MS Visual Studio 2017 (version 15.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit source code.**
+**নপকমার্সের ৪.০০ বা তার নিচের জন্য এমএস ভিজ্যুয়াল স্টুডিও ২০১৭ (সংস্করণ ১৫.৩ বা তার বেশি) এবং নেট কোর এসডিকে ইনস্টল করতে ভুলবেন না ([ডাউনলোড](https://dotnet.microsoft.com/ডাউনলোড))। সোর্স কোড সম্পাদনা করতে চান এমন বিকাশকারীদের জন্য প্রয়োজনীয়।**
 
-> [!NOTE]
-> If you're installing nopCommerce on Windows and going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because it supports SNI (Server Name Indication).
+> [!বিঃদ্রঃ]
+> যদি আপনি উইন্ডোজে নপকমার্স ইনস্টল করে থাকেন এবং এসএসএল সহ মাল্টি-স্টোর বৈশিষ্ট্যটি ব্যবহার করতে চলেছেন তবে আইআইএস ৮ সহ উইন্ডোজ সার্ভার ২০১২ প্রয়োজনীয় কারণ এটি এসএনআই সমর্থন করে (সার্ভারের নাম ইঙ্গিত)

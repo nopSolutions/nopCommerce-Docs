@@ -1,23 +1,23 @@
 ---
-title: Choose a hosting company
-uid: en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company
-author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
+শিরোনাম: একটি হোস্টিং সংস্থা চয়ন করুন
+স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company
+লেখক: git.AndreiMaz
+অবদানকারী: git.MDRashedKhanMenon
 ---
 
-# Hosting providers
+# হোস্টিং সরবরাহকারী
 
-Whether you intend to use nopCommerce out of the box or you want to make changes to the code, eventually you will need to host your website so that the public can visit your site and buy your products. Hosting providers literally host your website and provide a way for users to get to your site. nopCommerce can be hosted with almost any provider.
+আপনার বাক্সের বাইরে নপকমার্স ব্যবহার করার ইচ্ছা আছে বা আপনি কোডটিতে পরিবর্তন আনতে চান, শেষ পর্যন্ত আপনাকে আপনার ওয়েবসাইটটি হোস্ট করা দরকার যাতে জনসাধারণ আপনার সাইটটি দেখতে এবং আপনার পণ্যগুলি কিনতে পারে। হোস্টিং সরবরাহকারীরা আক্ষরিকভাবে আপনার ওয়েবসাইটটিকে হোস্ট করে এবং ব্যবহারকারীদের আপনার সাইটে যাওয়ার জন্য একটি উপায় সরবরাহ করে। নপকমার্স যেকোনো সরবরাহকারীর সাথে হোস্ট করা যেতে পারে.
 
-Choosing a hosting provider is an important decision. There are a lot of factors that should be considered before selecting a provider. First and foremost, you'll need to ensure your provider fits the [technology & system requirements](xref:en/installation-and-upgrading/technology-and-system-requirements). In addition, the following factors should be considered:
+একটি হোস্টিং সরবরাহকারী নির্বাচন করা একটি গুরুত্বপূর্ণ সিদ্ধান্ত। সরবরাহকারী নির্বাচনের আগে অনেকগুলি বিষয় বিবেচনা করা উচিত। প্রথম এবং সর্বাগ্রে, আপনাকে নিশ্চিত করতে হবে যে আপনার সরবরাহকারী [প্রযুক্তি ও সিস্টেমের প্রয়োজনীয়তার সাথে খাপ খায়](xref:bn/installation-and-upgrading/technology-and-system-requirements)। এছাড়াও, নিম্নলিখিত বিষয়গুলি বিবেচনা করা উচিত:
 
-1. **Uptime** - A good provider should guarantee 99.9 percent uptime. Uptime simply means that your site will be up and running and available for users. If your site is consistently down or not available, you won't sell many products.
-1. **Support** - Look for providers who offer 24/7 technical support. Ideally, you want 24/7 phone support, but sometimes this can be hard to find. Look for a provider who offers phone, e-mail, and live chat support.
-1. **Cost** - For example, Windows hosting is relatively inexpensive for the most part. Choose a provider who offers annual or semi-annual discounts.
-1. **Dedicated IP address** - Most nopCommerce installations will require an SSL certificate as you will be processing credit cards. Check with your provider about the cost of a dedicated IP address for your domain, as it should not be a very high cost.
-1. **Backups** - Ensure your provider offers backups of your installation and database. This can either be automated backups or manual, but you will feel safer knowing your data has been backed up.
-1. **Growth options** - As your site gets more users and you make more sales, your site will need to grow as well. A good provider will offer options for growing your site, from more disk space to more database space. This would also include moving from a shared server to a dedicated server.
+১। **আপটাইম** - একজন ভাল সরবরাহকারীর আপটাইম 99.9 শতাংশ গ্যারান্টি দেওয়া উচিত। আপটাইম এর সহজ অর্থ হ'ল আপনার সাইটটি আপ এবং চলমান এবং ব্যবহারকারীদের জন্য লভ্য। যদি আপনার সাইটটি ধারাবাহিকভাবে ডাউন থাকে বা না পাওয়া যায় তবে আপনি অনেক পণ্য বিক্রয় করবেন না।
+২। **সহায়তা** - 24/7 প্রযুক্তিগত সহায়তা সরবরাহকারী সরবরাহকারীর সন্ধান করুন। আদর্শভাবে, আপনি 24/7 ফোন সমর্থন চান, তবে কখনও কখনও এটি খুঁজে পাওয়া শক্ত হয়। এমন কোনও সরবরাহকারীর সন্ধান করুন যিনি ফোন, ইমেল এবং লাইভ চ্যাট সমর্থন সরবরাহ করেন 
+৩। **ব্যয়** - উদাহরণস্বরূপ, উইন্ডোজ হোস্টিং বেশিরভাগ অংশের জন্য তুলনামূলকভাবে সস্তা। এমন একটি সরবরাহকারী চয়ন করুন যিনি বার্ষিক বা অর্ধ-বার্ষিক ছাড় দেয়।
+৪। **উত্সর্গীকৃত আইপি ঠিকানা** - আপনি ক্রেডিট কার্ডগুলি প্রক্রিয়াকরণ করার জন্য বেশিরভাগ নপকমার্স ইনস্টলেশনগুলির জন্য একটি এসএসএল শংসাপত্রের প্রয়োজন হবে। আপনার ডোমেনের জন্য উত্সর্গীকৃত আইপি ঠিকানার দাম সম্পর্কে আপনার সরবরাহকারীর সাথে চেক করুন, কারণ এটি খুব বেশি দামের হওয়া উচিত নয়।
+৫। **ব্যাকআপস** - নিশ্চিত করুন যে আপনার সরবরাহকারী আপনার ইনস্টলেশন এবং ডাটাবেসের ব্যাকআপ দেয়। এটি হয় স্বয়ংক্রিয় ব্যাকআপ বা ম্যানুয়াল হতে পারে তবে আপনার ডেটা ব্যাক আপ হয়েছে তা জেনে আপনি নিরাপদ বোধ করবেন।
+৬। **প্রবৃদ্ধির বিকল্পগুলি** - আপনার সাইটটি আরও বেশি ব্যবহারকারী এবং আপনি আরও বেশি বিক্রয় করার সাথে সাথে আপনার সাইটেরও বাড়তে হবে। একটি ভাল সরবরাহকারী আরও বেশি ডিস্ক স্পেস থেকে বেশি ডাটাবেস স্পেসে আপনার সাইটটি বাড়ানোর জন্য বিকল্প সরবরাহ করবে। এর মধ্যে একটি ভাগ করা সার্ভার থেকে ডেডিকেটেড সার্ভারে স্থানান্তর করাও অন্তর্ভুক্ত থাকবে।
 
-> [!TIP]
+> [!টিপ]
 > 
-> You can learn more about the recommended nopCommerce hosting partners here - [Hosting partners](https://www.nopcommerce.com/hosting-partners?utm_source=docs_nopcommerce&utm_medium=link&utm_content=hosting&utm_campaign=parnters_page).
+> আপনি এখানে প্রস্তাবিত নপকমার্স হোস্টিং অংশীদারদের সম্পর্কে আরও শিখতে পারেন - [হোস্টিং অংশীদার](https://www.nopcommerce.com/hosting-partners?utm_source=docs_nopcommerce&utm_medium=link&utm_content=hosting&utm_campaign=parnters_page)

@@ -1,45 +1,45 @@
 ---
-title: Upgrading nopCommerce
-uid: en/installation-and-upgrading/upgrading-nopcommerce
-author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.rajupaladiya, git.exileDev, git.dunaenko
+শিরোনাম: নপকমার্স আপগ্রেড
+স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/upgrading-nopcommerce
+লেখক: git.AndreiMaz
+অবদানকারী: git.MDRashedKhanMenon
 ---
 
-# Upgrading nopCommerce
+# নপকমার্স আপগ্রেড
 
-This chapter describes how to upgrade nopCommerce to the [latest](https://www.nopcommerce.com/download-nopcommerce) version. You might want to do this because you've seen a message at the nopCommerce news section of your dashboard telling you that a new release is available. nopCommerce doesn't support automatic upgrades, you have to do it manually.
+এই অধ্যায়ে কীভাবে নপকমার্সকে [সর্বশেষ] (https://www.nopcommerce.com/download-nopcommerce) সংস্করণে আপগ্রেড করা যায় তা বর্ণনা করে। আপনি এটি করতে চাইবেন কারণ আপনি আপনার ড্যাশবোর্ডের নপকমার্স নিউজ বিভাগে একটি বার্তা দেখেছেন যা আপনাকে জানিয়েছে যে একটি নতুন রিলিজ উপলব্ধ। নপকমার্স স্বয়ংক্রিয় আপগ্রেডগুলি সমর্থন করে না, আপনাকে এটি ম্যানুয়ালি করতে হবে।
 
-> [!IMPORTANT]
+> [!গুরুত্বপূর্ণ]
 >
-> Since version 4.40 we don't use SQL upgrade scripts anymore. The upgrade is performed automatically with migrations (during the first application start). So when you upgrade from 4.30 to 4.40 you need to skip step 2 from the list below!
+> সংস্করণ ৪.৪০ থেকে আমরা আর এসকিউএল আপগ্রেড স্ক্রিপ্ট ব্যবহার করি না। আপগ্রেডগুলি মাইগ্রেশনগুলির সাথে স্বয়ংক্রিয়ভাবে সম্পাদিত হয় (প্রথম অ্যাপ্লিকেশন শুরুর সময়)। সুতরাং আপনি যখন ৪.৩০ থেকে ৪.৪০ থেকে আপগ্রেড করবেন তখন আপনাকে নীচের তালিকা থেকে পদক্ষেপ ২ এড়িয়ে যেতে হবে!
 
-Follow the next steps:
+পরবর্তী পদক্ষেপগুলি অনুসরণ করুন:
 
-1. Make a backup of everything on your site, including the database. This is extremely important so that you can roll back to a running site no matter what happens during migration.
-1. **[To upgrade to nopCommerce 4.30 and below]** Then you have to execute SQL upgrade scripts. You have to execute them stepwise. For example, if your current version is 3.90 and the latest available version is 4.20, then you have to upgrade to 4.00, then to 4.10, and then to 4.20. So download the required upgrade scripts from the [download nopCommerce](https://www.nopcommerce.com/download-nopcommerce) page. Once an upgrade script is downloaded, execute it over your database.
+১। আপনার সাইটে ডেটাবেস সহ সমস্ত কিছুর ব্যাকআপ নিন। এটি অত্যন্ত গুরুত্বপূর্ণ তাই মাইগ্রেশন চলাকালীন যা কিছু ঘটুক না কেন আপনি কোনও চলমান সাইটে ফিরে যেতে পারেন।
+২। **[নপকমার্স ৪.৩০ এবং নীচে আপগ্রেড করতে]** তারপরে আপনাকে এসকিউএল আপগ্রেড স্ক্রিপ্টগুলি কার্যকর করতে হবে। আপনাকে সেগুলি ধাপে ধাপে চালিত করতে হবে। উদাহরণস্বরূপ, যদি আপনার বর্তমান সংস্করণটি ৩.৯০ হয় এবং সর্বশেষ উপলব্ধ সংস্করণটি ৪.২০ হয়, তবে আপনাকে ৪.০০, তারপরে ৪.১০ এবং তারপরে ৪.২০ এ উন্নীত করতে হবে। সুতরাং [নপকমার্স ডাউনলোড করুন](https://www.nopcommerce.com/download-nopcommerce) পৃষ্ঠা থেকে প্রয়োজনীয় আপগ্রেড স্ক্রিপ্টগুলি ডাউনলোড করুন। একবার আপগ্রেড স্ক্রিপ্টটি ডাউনলোড হয়ে গেলে এটি আপনার ডাটাবেসের মাধ্যমে সম্পাদন করুন।
 
-  > [!NOTE]
+  > [!বিঃদ্রঃ]
   >
-  > Don't forget to read the `Readme.txt` file provided with the upgrade script. Sometimes it contains important notes regarding upgrading to the newest version.
+  > আপগ্রেড স্ক্রিপ্টের সাথে সরবরাহিত `Readme.txt` ফাইলটি পড়তে ভুলবেন না। কখনও কখনও এটিতে সর্বশেষতম সংস্করণে আপগ্রেড করার বিষয়ে গুরুত্বপূর্ণ বিঃদ্রঃ থাকে।
 
-1. Remove all files from the previous version except JSON files in the 'App_Data' directory such as `dataSettings.json` (Settings.txt in oldest versions), `plugins.json` (InstalledPlugins.txt in oldest versions), `appsettings.json`, move them to the safe place.
-1. Upload the new site files (get the latest version [here](https://www.nopcommerce.com/download-nopcommerce)).
-1. Ensure that everything is OK.
+৩। 'অ্যাপস_ডাটা' ডিরেক্টরিতে জেএসএন ফাইল ব্যতীত সমস্ত ফাইল যেমন `dataSettings.json` (প্রাচীনতম সংস্করণে Settings.txt),`plugins.json` (পুরানো সংস্করণে InstalledPlugins.txt), `appsettings.json` থেকে সমস্ত ফাইল সরিয়ে ফেলুন এবং তাদের নিরাপদ জায়গায় সরান।
+৪। নতুন সাইটের ফাইলগুলি আপলোড করুন (সর্বশেষতম সংস্করণ [এখানে](https://www.nopcommerce.com/download-nopcommerce)) পান।
+৫। নিশ্চিত হয়ে নিন যে সবকিছু ঠিক আছে।
 
-> [!NOTE]
+> [!বিঃদ্রঃ]
 >
-> As you deploy, make sure that the target `dataSettings.json` (or `Settings.txt`) and `plugins.json` (or `InstalledPlugins.txt`) files are updated as per latest nopCommerce version, so that the production site continues to point to the production database.
+> আপনি ডেপ্লয় করার সময়, নিশ্চিত হয়ে নিন যে টার্গেট `dataSettings.json` (বা `Settings.txt`) এবং `plugins.json` (বা `InstalledPlugins.txt`) ফাইলগুলি সর্বশেষ নোপকমার্স সংস্করণ অনুযায়ী আপডেট করা হয়েছে, যাতে প্রোডাকশন সাইট প্রোডাকশনের ডাটাবেসের দিকে নির্দেশ করে চলে।
 
-> [!NOTE]
-> If you stored your pictures on the file system, then also backup them (`\wwwroot\Images\`) and copy back after the upgrade.
+> [!বিঃদ্রঃ]
+> আপনি যদি নিজের ছবিগুলি ফাইল সিস্টেমে সঞ্চিত করেন, তবে সেগুলিও ব্যাকআপ করুন (`\wwwroot\Images\`) এবং আপগ্রেডের পরে অনুলিপি করুন।
 
-> [!NOTE]
-> **(upgrading from 3.X to 4.X)**: If you want to upgrade from a version 3.90 to the latest version, you would need to install 4.00 first (over the existing database), run the 3.90 to 4.00 migration SQL script, and then upgrade to 4.10, 4.20 etc.
+> [!বিঃদ্রঃ]
+> **(৩.ক থেকে ৪.ক এ আপগ্রেড করা)**: আপনি যদি কোন সংস্করণ 	৩.৯০ থেকে সর্বশেষ সংস্করণে আপগ্রেড করতে চান তবে আপনাকে প্রথমে ৪.০০ ইনস্টল করতে হবে (বিদ্যমান ডাটাবেসের উপরে), ৩.৯০ থেকে ৪.০০ মাইগ্রেশন এসকিউএল স্ক্রিপ্ট চালনা করতে হবে এবং তারপরে ৪.১০, ৪.২০ ইত্যাদিতে আপগ্রেড করতে হবে
 
-## Troubleshooting
+## সমস্যা সমাধান
 
-If you experience problems after the upgrade, you can always restore your backup and replace the files with ones from your previous version. You can always post a question on our [forums](https://www.nopcommerce.com/boards/).
+আপনি যদি আপগ্রেডের পরে সমস্যা অনুভব করেন তবে আপনি সর্বদা আপনার ব্যাকআপটি পুনরুদ্ধার করতে পারেন এবং ফাইলগুলিকে আপনার আগের সংস্করণ থেকে প্রতিস্থাপন করতে পারেন। আপনি সর্বদা আমাদের উপর একটি প্রশ্ন পোস্ট করতে পারেন [ফোরাম](https://www.nopcommerce.com/boards/)
 
-> [!Note]
+> [!বিঃদ্রঃ]
 >
-> If when doing advanced search on our forums you cannot find what you need, then try a Google search focused into nopCommerce site: [your search words **site:[nopcommerce.com](https://www.nopcommerce.com/ "nopcommerce.com")**].
+> যদি আমাদের ফোরামে উন্নত অনুসন্ধান করার সময় আপনি যা পছন্দ করেন তা খুঁজে পেতে পারেন না, তবে নপকমার্স সাইটে মনোযোগ নিবদ্ধ করে গুগল অনুসন্ধান করুন: [আপনার অনুসন্ধানের শব্দগুলি **সাইট:[nopcommerce.com](https://www.nopcommerce.com/ "nopcommerce.com")**]
