@@ -1,46 +1,51 @@
 ﻿---
-title: Load balancing and web farms in nopCommerce
-uid: en/installation-and-upgrading/installing-nopcommerce/web-farms
-author: git.exileDev
-contributors: git.mariannk, git.AndreiMaz
+শিরোনাম: নপকমার্সে লোড ব্যালেন্সিং এবং ওয়েব ফার্মগুলি
+স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/web-farms.html
+লেখক: git.AndreiMaz
+অবদানকারী: git.MDRashedKhanMenon
 ---
 
-# Load balancing and web farms in nopCommerce
+# নপকমার্সে লোড ব্যালেন্সিং এবং ওয়েব ফার্মগুলি
 
-Load balancing is the distribution of a workload across many nodes. It is typically used for balancing HTTP traffic over multiple servers acting together as a web front-end.
+লোড ব্যালেন্সিং হ'ল বহু নোড জুড়ে একটি কাজের চাপ বিতরণ। এটি সাধারণত ওয়েব ফ্রন্ট-এন্ড হিসাবে একসাথে অভিনয় করে একাধিক সার্ভারের মধ্যে এইচটিটিপি ট্র্যাফিকের ভারসাম্য বজায় রাখার জন্য ব্যবহৃত হয়।
 
-There are several ways to configure load balancing in nopCommerce:
+নপকমার্সে লোড ব্যালেন্সিং কনফিগার করার বিভিন্ন উপায় রয়েছে:
 
-1. You use cloud-based auto-scaling appliances like Microsoft's Azure Web Apps. Please find more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure).
-1. Configure load balancing with IIS web farms. This approach is described below.
+১। আপনি মাইক্রোসফ্টের অ্যাজুরে ওয়েব অ্যাপ্লিকেশনগুলির মতো ক্লাউড-ভিত্তিক অটো-স্কেলিং অ্যাপ্লিকেশন ব্যবহার করেন। দয়া করে এটি সম্পর্কে [এখানে] (xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure) আরও সন্ধান করুন।
 
-We highly recommend you read [this tutorial](https://docs.microsoft.com/en-us/iis/web-hosting/scenario-build-a-web-farm-with-iis-servers/overview-build-a-web-farm-with-iis-servers) from Microsoft before you start configuring a web farm for nopCommerce. So Microsoft suggests two ways to build a web farm with IIS servers:
+২। আইআইএস এ ওয়েব ফার্মগুলির সাথে লোড ব্যালেন্সিং কনফিগার করুন। এই পদ্ধতির নীচে বর্ণিত হয়েছে
 
-1. Local Content Infrastructure
-1. Shared Network Content Infrastructure
+আমরা আপনাকে [এই টিউটোরিয়াল](https://docs.microsoft.com/en-us/iis/web-hosting/scenario-build-a-web-farm-with-iis-servers/overview-build-a-web-farm-with-iis-servers) পড়ার জন্য সুপারিশ করছি আপনি নপকমার্সের জন্য কোনও ওয়েব ফার্মকে কনফিগার করতে শুরু করার আগে। সুতরাং মাইক্রোসফ্ট আইআইএস সার্ভারের সাহায্যে ওয়েব ফার্ম তৈরির দুটি উপায়ের পরামর্শ দেয়:
+
+১। স্থানীয় কন্টেন্ট অবকাঠামো
+
+২। শেয়ার করা নেটওয়ার্ক সামগ্রীর অবকাঠামো
 
 nopCommerce supports both ways and handles content replication by using Distributed File System Replication (DFSR) if you use **Local Content Infrastructure**, or uses a central location to manage the content with **Shared Network Content Infrastructure**.
+নপকমার্স উভয় উপায়ে সমর্থন করে এবং বিতরণকৃত ফাইল সিস্টেমের প্রতিলিপি (ডিএফএসআর) ব্যবহার করে যদি আপনি **স্থানীয় সামগ্রীর ইনফ্রাস্ট্রাকচার** ব্যবহার করেন, বা কনটেন্টটি পরিচালনা করতে কেন্দ্রীয় অবস্থান ব্যবহার করেন **শেয়ার্ড নেটওয়ার্ক কনটেন্ট ইনফ্রাস্ট্রাকচার** এর সাথে।
 
-## nopCommerce configuration
+## নপকমার্স কনফিগারেশন
 
-First of all, you have to configure the initial settings of your web farm in IIS and add the first instance of your nopCommerce store there. Then you have to configure a few settings in the nopCommerce admin area in order to allow nopCommerce to work with web farms:
+প্রথমত, আপনাকে আইআইএসে আপনার ওয়েব ফার্মের প্রাথমিক সেটিংস কনফিগার করতে হবে এবং সেখানে আপনার নপকমার্স স্টোরের প্রথম উদাহরণটি যুক্ত করতে হবে। তারপরে আপনাকে নপকমার্সকে ওয়েব ফার্মগুলির সাথে কাজ করার অনুমতি দেওয়ার জন্য আপনাকে নপকমার্স প্রশাসক অঞ্চলে কয়েকটি সেটিংস কনফিগার করতে হবে:
 
-1. Go to **Configuration → Settings → All settings (advanced)**. Find the **mediasettings.useabsoluteimagepath** setting and change its value to *false*
-1. Go to **Configuration → Settings → App settings** and find the *Distributed cache configuration* tab. Tick the **Use distributed cache** checkbox and choose the option you prefer:
+১। **কনফিগারেশন → সেটিংস → সমস্ত সেটিংস (উন্নত)** এ যান। **mediasettings.useabsoluteimagepath** সেটিংটি সন্ধান করুন এবং এর মানটিকে *মিথ্যা* তে পরিবর্তন করুন
 
-   - *Redis*. In this case, you just need to enter the **Connection string** to your Redis server below
-   - *SQL Server*. In this case, you need to prepare a new table in your database using the "sql-cache create" command first. Read more about it in Microsoft docs [here](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-5.0#distributed-sql-server-cache). Then fill in the **Connection string**, **Schema name**, and **Table name** fields
+২। **কনফিগারেশন → সেটিংস → অ্যাপ্লিকেশন সেটিংস** এ যান এবং *বিতরণ করা ক্যাশে কনফিগারেশন* ট্যাবটি সন্ধান করুন। **বিতরণ করা ক্যাশ ব্যবহার করুন** চেকবাক্সটি টিক দিন এবং আপনার পছন্দের বিকল্পটি চয়ন করুন:
 
-1. Since our web farm utilizes Application Request Routing (ARR) to control traffic using a proxy server, tick the **Use HTTP_X_FORWARDED_PROTO** checkbox
-1. Click the **Save** button. The nopCommerce application will be restarted
+   - *রেডিস*। এই ক্ষেত্রে, আপনাকে কেবল নীচে আপনার রেডিস সার্ভারে **কানেকশন স্ট্রিং** প্রবেশ করাতে হবে
+   - *এসকিউএল সার্ভার*. এই ক্ষেত্রে, আপনাকে প্রথমে "sql-cache create" কমান্ডটি ব্যবহার করে আপনার ডাটাবেসে একটি নতুন সারণী প্রস্তুত করতে হবে। মাইক্রোসফ্ট ডক্সে এটি সম্পর্কে আরও পড়ুন [এখানে](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributes?view=aspnetcore-5.0#distributes-sql-server-cache)। তারপরে **কানেকশন স্ট্রিং**, **স্কিমার নাম** এবং **টেবিলের নাম** ক্ষেত্রগুলি পূরণ করুন
 
-## Web farm configuration
+১। যেহেতু আমাদের ওয়েব ফার্মটি প্রক্সি সার্ভার ব্যবহার করে ট্র্যাফিক নিয়ন্ত্রণ করতে অ্যাপ্লিকেশন রিকোয়েস্ট রাউটিং (এআরআর) ব্যবহার করে, **HTTP_X_FORWARDED_PROTO** চেকবক্সটি টিক দিন
 
-### Admin area redirection rule
+২। **সংরক্ষণ করুন** বোতামটি ক্লিক করুন। নোপকমার্স অ্যাপ্লিকেশনটি আবার শুরু হবে
 
-Since a web farm hosts multiple instances of an application, you need to choose one of the nopCommerce instances as a primary one in order to avoid file locking. This primary node will process requests from the admin panel.
+## ওয়েব ফার্ম কনফিগারেশন
 
-The rule should look the following way:
+### প্রশাসনিক অঞ্চল পুনর্নির্দেশের নিয়ম
+
+যেহেতু একটি ওয়েব ফার্ম কোনও অ্যাপ্লিকেশনটির একাধিক উদাহরণকে হোস্ট করে, তাই ফাইল লকিং এড়াতে আপনাকে নপকমার্সের একটি উদাহরণ প্রাথমিক হিসাবে বেছে নিতে হবে। এই প্রাথমিক নোড অ্যাডমিন প্যানেল থেকে অনুরোধগুলি প্রক্রিয়া করবে।
+
+নিয়মটি নিম্নলিখিত পদ্ধতিতে দেখা উচিত:
 
 ```
 <rule name="Admin Area" enabled="true" patternSyntax="ECMAScript" stopProcessing="true">
@@ -52,11 +57,11 @@ The rule should look the following way:
 </rule>
 ```
 
-Where `wf.local` is the address of your primary instance.
+যেখানে `wf.local` হল আপনার প্রাথমিক উদাহরণের ঠিকানা।
 
-### Load balancing rules
+### লোড ভারসাম্য বিধি
 
-After you set up the web farm you need to configure a load balancing rule in the **Application Request Routing** section. Add the condition which prevents handling requests intended for the primary node (admin area requests in our case):
+ওয়েব ফার্ম সেট আপ করার পরে আপনাকে **অ্যাপ্লিকেশন রিকোয়েস্ট রাউটিং** বিভাগে একটি ভারসাম্য রুল কনফিগার করতে হবে। শর্তটি যুক্ত করুন যা প্রাথমিক নোডের জন্য অনুরোধ করা হ্যান্ডলিং অনুরোধগুলি প্রতিরোধ করে (আমাদের ক্ষেত্রে অ্যাডমিন অঞ্চল অনুরোধগুলি):
 
 ```
 <rule name="ARR_wf-local_loadbalance" enabled="true" patternSyntax="ECMAScript" stopProcessing="true">
@@ -68,22 +73,23 @@ After you set up the web farm you need to configure a load balancing rule in the
 </rule>
 ```
 
-Where `wf-local` is the web farm name.
+যেখানে `wf-local` হ'ল ওয়েব ফার্মের নাম।
 
-You can add the rules we described above two ways:
+আমরা উপরে বর্ণিত দুটি বিধিগুলি যোগ করতে পারি:
 
-1. Include them in the `applicationHost.config` file (**system.webServer/rewrite/globalRules** section)
-1. Use the **URL Rewrite script** section in IIS Manager
+১। এগুলিকে `অ্যাপ্লিকেশনহোস্ট.কমফিগ ফাইলটিতে অন্তর্ভুক্ত করুন (**system.webServer/rewrite/globalRules** বিভাগ)
+
+২। আইআইএস ম্যানেজারের **ইউআরএল পুনর্লিখন স্ক্রিপ্ট** বিভাগটি ব্যবহার করুন
 
 > [!NOTE]
 >
-> In some cases, ARR has issues with handling URLs of javascript files containing more than one “.” symbol. For example, it can affect minified js-files ending with `.min.js`. To avoid errors when processing such files, we recommend routing these requests to one of the nopCommerce instances directly. As you can see in the examples above, we do this for the whole `lib_npm` directory by routing to the primary instance.
+> কিছু ক্ষেত্রে, জাভাস্ক্রিপ্ট ফাইলগুলির একাধিক "." সমন্বিত ইউআরএল গুলি পরিচালনা করার সাথে এআরআর সমস্যা রয়েছে। প্রতীক উদাহরণস্বরূপ, এটি `min.js` দিয়ে শেষ হওয়া মিনিড জেএস-ফাইলগুলিকে প্রভাবিত করতে পারে। এই জাতীয় ফাইলগুলি প্রক্রিয়া করার সময় ত্রুটিগুলি এড়ানোর জন্য, আমরা এই অনুরোধগুলি সরাসরি কোনও নপকমার্স উদাহরণগুলিতে রুট করার পরামর্শ দিই। আপনি উপরের উদাহরণগুলিতে দেখতে পাচ্ছেন, আমরা প্রাথমিক `lib_npm` ডিরেক্টরিটির জন্য প্রাথমিক দৃষ্টান্তে রাউটিং করে এটি করি।
 
-When the configuration is finished you add new instances to your web farm.
+কনফিগারেশন শেষ হয়ে গেলে আপনি আপনার ওয়েব ফার্মে নতুন দৃষ্টান্ত যুক্ত করেন।
 
-### File replication
+### ফাইলের প্রতিরূপ
 
-When you start configuration of file replication please make sure that the following folders of the primary instance are set up to support replication to all other nodes (instances):
+আপনি যখন ফাইলের প্রতিরূপের কনফিগারেশন শুরু করবেন দয়া করে তা নিশ্চিত করুন যে প্রাথমিক উদাহরণের নিম্নলিখিত ফোল্ডারগুলি অন্য সমস্ত নোডের (দৃষ্টান্ত) প্রতিলিপি সমর্থন করতে সেট আপ করা হয়েছে:
 
 - /App_Data
 - /Plugins
@@ -93,4 +99,4 @@ When you start configuration of file replication please make sure that the follo
 
 > [!NOTE]
 >
-> All actions that assume restarting the nopCommerce application (for example, plugin installation, updating of the app settings, etc.), require manual restarting of all application pools related to the web farm.
+> সমস্ত ক্রিয়া যা নপকমার্স অ্যাপ্লিকেশনটি পুনরায় চালু করতে অনুমান করে (উদাহরণস্বরূপ, প্লাগইন ইনস্টলেশন, অ্যাপ্লিকেশন সেটিংস আপডেট করা ইত্যাদি) ওয়েব ফার্ম সম্পর্কিত সমস্ত অ্যাপ্লিকেশন পুলের ম্যানুয়াল পুনঃসূচনা করা প্রয়োজন

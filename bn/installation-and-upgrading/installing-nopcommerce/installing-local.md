@@ -1,50 +1,52 @@
 ﻿---
-title: Installing local
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-local
-author: git.AndreiMaz
-contributors: git.IvanIvanIvanov, git.mariannk
+শিরোনাম: লোকাল ইনস্টল করা
+স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/installing-local
+লেখক: git.AndreiMaz
+অবদানকারী: git.MDRashedKhanMenon
 ---
 
-# Installing local
+# লোকাল ইনস্টল করা
 
-This chapter describes how to download nopCommerce software, upload it to your server, define the file permissions, and install it on your system. You may also watch the screencast about nopCommerce installation on our [YouTube channel](https://www.youtube.com/watch?v=L7NGodeB9sQ).
+এই অধ্যায়ে কীভাবে নোপকমার্স সফ্টওয়্যার ডাউনলোড করা যায়, এটি আপনার সার্ভারে আপলোড করা যায়, ফাইল অনুমতিগুলি সংজ্ঞায়িত করা হয় এবং এটি আপনার সিস্টেমে ইনস্টল করা যায় আপনি আমাদের [ইউটিউব চ্যানেলে](https://www.youtube.com/watch?v=L7NGodeB9sQ) নপকমার্স ইনস্টলেশন সম্পর্কে স্ক্রিনকাস্ট দেখতে পারেন।
 
-Before you begin the install, ensure that your web host have the [minimum requirements to run nopCommerce](xref:en/installation-and-upgrading/technology-and-system-requirements).
+আপনি ইনস্টলটি শুরু করার আগে আপনার ওয়েব হোস্টের [নপকমার্স চালানোর ন্যূনতম প্রয়োজনীয়তা](xref:bn/installation-and-upgrading/technology-and-system-requirements) রয়েছে তা নিশ্চিত করুন।
 
 > [!NOTE]
-> For more information on hosting selection guidelines, visit [this page](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
+> নির্বাচনের নির্দেশিকা হোস্টিং সম্পর্কিত আরও তথ্যের জন্য[এই পৃষ্ঠাটি](xref:bn/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company) দেখুন।
 
-There are several options available when downloading nopCommerce. In order to determine which option to download, you need to decide how you will use it. The following options are available:
+নপকমার্স ডাউনলোড করার সময় বিভিন্ন বিকল্প লভ্য কোন বিকল্পটি ডাউনলোড করবেন তা নির্ধারণ করার জন্য, আপনি কীভাবে এটি ব্যবহার করবেন তা সিদ্ধান্ত নিতে হবে। নিম্নলিখিত বিকল্পগুলি লভ্য:
 
-1. **Web (no source)**. This option is available for users who do not wish/need to develop any custom code. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately. With this option, users can still modify the look and feel or user interface (UI) of their site to suit their needs, but they do not have to worry about development.
-1. **Source code**. This option contains a full Visual Studio solution. It is for users who wish to customize the code within nopCommerce. It contains all the source code used to develop nopCommerce and must be opened in Visual Studio. It also includes scripts to build and compile the solution to upload to your hosting provider.
-1. **Upgrade script**. The upgrade script option is for users who have a nopCommerce installation already in place. The script will upgrade your current installation to the latest version.
+১। **ওয়েব (কোনও সোর্স নেই)**। এই বিকল্পটি এমন ব্যবহারকারীদের জন্য লভ্য যা কোনও কাস্টম কোড বিকাশ করতে / চান না / এটি নপকমার্সের একটি প্রাক-সংকলিত সংস্করণ যা কেবল আপনার হোস্টিং সরবরাহকারীর কাছে আপলোড করা যেতে পারে এবং সাথে সাথে ব্যবহার করা যেতে পারে। এই বিকল্পের সাহায্যে, ব্যবহারকারীরা তাদের প্রয়োজন অনুসারে এখনও তাদের চেহারা এবং অনুভূতি বা তাদের ইউজার ইন্টারফেস (ইউআই) সংশোধন করতে পারেন, তবে তাদের বিকাশের বিষয়ে চিন্তা করতে হবে না।
 
-With each of these options, excluding the upgrade script, you can deploy nopCommerce to your development environment and your hosting provider. Choose the option that you would like to [download](https://www.nopcommerce.com/en/download-nopcommerce) and click on the appropriate download link to begin your download. It is recommended that you create a new folder on your desktop to store your downloaded files for easy access.
+২। **সোর্স কোড**। এই বিকল্পটিতে একটি সম্পূর্ণ ভিজ্যুয়াল স্টুডিও সমাধান রয়েছে। এটি এমন ব্যবহারকারীদের জন্য যারা নোপকমার্সের মধ্যে কোডটি কাস্টমাইজ করতে চান। এটিতে নপকমার্স বিকাশের জন্য ব্যবহৃত সমস্ত উত্স কোড রয়েছে এবং অবশ্যই ভিজ্যুয়াল স্টুডিওতে এটি খুলতে হবে। এটি আপনার হোস্টিং সরবরাহকারীর আপলোড করার সমাধানটি তৈরি এবং সংকলন করার জন্য স্ক্রিপ্টগুলিও অন্তর্ভুক্ত করে।
 
-## Running the site using IIS (package without source code)
+৩। **স্ক্রিপ্ট আপগ্রেড করুন**। আপগ্রেড স্ক্রিপ্ট বিকল্পটি এমন ব্যবহারকারীদের জন্য যাঁদের ইতিমধ্যে স্থানে নোপকমার্স ইনস্টলেশন রয়েছে। স্ক্রিপ্টটি আপনার বর্তমান ইনস্টলেশনটিকে সর্বশেষতম সংস্করণে আপগ্রেড করবে।
 
-To use IIS, copy the contents of the extracted nopCommerce folder to an IIS virtual directory (or site root), and then view the site using a browser.
+এই প্রতিটি বিকল্পের সাথে আপগ্রেড স্ক্রিপ্টটি বাদ দিয়ে আপনি আপনার বিকাশ পরিবেশ এবং আপনার হোস্টিং সরবরাহকারীতে নপকমার্স স্থাপন করতে পারেন। আপনি যে বিকল্পটি [ডাউনলোড](https://www.nopcommerce.com/en/download-nopcommerce) করতে চান তা চয়ন করুন এবং আপনার ডাউনলোড শুরু করতে উপযুক্ত ডাউনলোড লিঙ্কে ক্লিক করুন। আপনার অ্যাক্সেসের জন্য ডাউনলোড করা ফাইলগুলি সংরক্ষণ করার জন্য আপনাকে ডেস্কটপে একটি নতুন ফোল্ডার তৈরি করার পরামর্শ দেওয়া হচ্ছে।
 
-If you are're using nopCommerce 3.90 and below, then configure it to run in integrated mode, and configure the application pool to run the .NET Framework version 4. Please note that it's not required for nopCommerce 4.00 and above.
+## আইআইএস ব্যবহার করে সাইট চালানো (সোর্স কোড ছাড়াই প্যাকেজ)
 
-## Running the site using Visual Studio (package with source code)
+আইআইএস ব্যবহার করতে, নিষ্কাশিত নপকমার্স ফোল্ডারের সামগ্রীগুলি একটি আইআইএস ভার্চুয়াল ডিরেক্টরিতে (বা সাইট রুট) অনুলিপি করুন এবং তারপরে একটি ব্রাউজার ব্যবহার করে সাইটটি দেখুন।
 
-This step describes how to launch a site in Visual Studio. To run the site in Visual Studio, extract the full source code archive to a local folder. Launch Visual Studio and select **File → Open → Project/Solution**. Navigate to the folder where you extracted the archive and open `NopCommerce.sln` solution file. Run `Nop.Web` project.
+আপনি যদি নোপকমার্স ৩.৯০ এবং তার থেকে নীচে ব্যবহার করছেন তবে এটি সংহত মোডে চালনার জন্য কনফিগার করুন এবং ডট নেট ফ্রেমওয়ার্ক সংস্করণ ৪ চালানোর জন্য অ্যাপ্লিকেশন পুলটি কনফিগার করুন Please অনুগ্রহ করে নোট করুন যে এটি নোটকমার্স ৪.০০ এবং তারপরের জন্য প্রয়োজনীয় নয়।
 
-## Getting the "ready to deploy" package (without source code) from a package with source code
+## ভিজ্যুয়াল স্টুডিও ব্যবহার করে সাইট চালানো (সোর্স কোড সহ প্যাকেজ)
 
-If you're using nopCommerce **3.20 (or above)**, then please follow the next steps:
+এই পদক্ষেপটি ভিজ্যুয়াল স্টুডিওতে কীভাবে কোনও সাইট লঞ্চ করবেন তা বর্ণনা করে। ভিজ্যুয়াল স্টুডিওতে সাইটটি চালাতে, স্থানীয় ফোল্ডারে পুরো সোর্স কোড সংরক্ষণাগারটি বের করুন। ভিজ্যুয়াল স্টুডিও চালু করুন এবং **ফাইল → ওপেন → প্রকল্প / সমাধান** নির্বাচন করুন। আপনি যে ফোল্ডারে সংরক্ষণাগারটি বের করেছেন সেটিতে নেভিগেট করুন এবং `NopCommerce.sln` সমাধান ফাইলটি খুলুন। `Nop.Web` প্রকল্পটি চালান।
 
-- Open the solution in Visual Studio.
-- Rebuild the entire solution.
-- Publish the **Nop.Web** project from Visual Studio. When publishing ensure that configuration is set to *Release*.
+## সোর্স কোড সহ একটি প্যাকেজ থেকে "উত্সাহিত করার জন্য প্রস্তুত" প্যাকেজটি (সোর্স কোড ছাড়াই) পাওয়া যাচ্ছে
 
-## Installation process
+আপনি যদি নোপকমার্স **৩.২০ (বা উপরে)** ব্যবহার করছেন তবে দয়া করে পরবর্তী পদক্ষেপগুলি অনুসরণ করুন:
 
-nopCommerce requires write permissions for the directories and files described below:
+- ভিজ্যুয়াল স্টুডিওতে সমাধানটি খুলুন।
+- সম্পূর্ণ সমাধান পুনর্নির্মাণ।
+- ভিজ্যুয়াল স্টুডিও থেকে **Nop.Web** প্রকল্পটি প্রকাশ করুন। প্রকাশের সময় কনফিগারেশনটি *রিলিজ* এ সেট করা আছে তা নিশ্চিত করুন।
 
-- **For nopCommerce versions 4.00 and above:**
+## ইনস্টলেশন প্রক্রিয়া
+
+নপকমার্সের নীচে বর্ণিত ডিরেক্টরি এবং ফাইলগুলির জন্য লেখার অনুমতি প্রয়োজন:
+
+- **নপকমার্স ৪.০০ বা তার বেশি সংস্করণগুলির জন্য:**
   - `\App_Data\`
   - `\bin\`
   - `\log\`
@@ -60,7 +62,7 @@ nopCommerce requires write permissions for the directories and files described b
   - `\App_Data\Plugins.json` (after installation)
   - `\App_Data\dataSettings.json` (after installation)
 
-- **For nopCommerce versions 2.00-3.90:**
+- **নপকমার্স ২.০০-৩.৯০ সংস্করণগুলির জন্য:**
   - `\App_Data\`
   - `\bin\`
   - `\Content\`
@@ -73,47 +75,47 @@ nopCommerce requires write permissions for the directories and files described b
   - `\Global.asax`
   - `\web.config`
 
-These permissions are validated during the installation process. If you do not have write permissions, a warning message is displayed, requesting you to configure permissions.
-Before installing nopCommerce, ensure you have database server installed on your system.
+এই অনুমতিগুলি ইনস্টলেশন প্রক্রিয়া চলাকালীন বৈধ হয়। আপনার যদি লেখার অনুমতি না থাকে তবে আপনাকে অনুমতি কনফিগার করার জন্য অনুরোধ করে একটি সতর্কতা বার্তা প্রদর্শিত হবে।
+নপকমার্স ইনস্টল করার আগে, আপনার সিস্টেমে আপনার ডাটাবেস সার্ভার ইনস্টল করা আছে তা নিশ্চিত করুন।
 
-You can use any of the following authentication methods to connect to the server:
+আপনি সার্ভারের সাথে সংযোগ করতে নিম্নলিখিত যে কোনও অথেনটিকেশন পদ্ধতি ব্যবহার করতে পারেন:
 
-- **SQL server account**: When connecting using this method, logins are created in the SQL server that is not based on the Windows user accounts. Both the user name and the password are created using the SQL server and are stored in the SQL server. When using this method you must enter your login and password.
-- **Integrated Windows authentication**: When connecting using this method, the SQL Server validates the account name and password using the Windows principal token in the operating system. This means the user identity is confirmed by Windows. The SQL Server does not request a password and does not perform the identity validation. Windows authentication is the default authentication mode and is much more secure than SQL server authentication. Windows authentication uses Kerberos security protocol, provides password policy enforcement with regard to complexity validation for strong passwords, provides support for account lockout, and supports password expiration. A connection made using Windows authentication is sometimes called a trusted connection, because SQL server trusts the credentials provided by Windows.
+- **এসকিউএল সার্ভার অ্যাকাউন্ট**: এই পদ্ধতিটি ব্যবহার করে সংযোগ করার সময়, লগইনগুলি এসকিউএল সার্ভারে তৈরি হয় যা উইন্ডোজ ব্যবহারকারীর অ্যাকাউন্টগুলির উপর ভিত্তি করে নয়। ব্যবহারকারীর নাম এবং পাসওয়ার্ড উভয়ই এসকিউএল সার্ভার ব্যবহার করে তৈরি করা হয় এবং এসকিউএল সার্ভারে সঞ্চিত থাকে। এই পদ্ধতিটি ব্যবহার করার সময় আপনাকে অবশ্যই আপনার লগইন এবং পাসওয়ার্ড প্রবেশ করতে হবে।
+- **ইন্টিগ্রেটেড উইন্ডোজ অথেনটিকেশন**: এই পদ্ধতিটি ব্যবহার করে সংযোগ করার সময়, এসকিউএল সার্ভার অপারেটিং সিস্টেমে উইন্ডোজ অধ্যক্ষ টোকেন ব্যবহার করে অ্যাকাউন্টের নাম এবং পাসওয়ার্ডটিকে বৈধ করে তোলে। এর অর্থ উইন্ডোজ দ্বারা ব্যবহারকারীর পরিচয় নিশ্চিত করা হয়েছে। এসকিউএল সার্ভার একটি পাসওয়ার্ডের জন্য অনুরোধ করে না এবং পরিচয় যাচাইকরণ সম্পাদন করে না। উইন্ডোজ অথেনটিকেশন ডিফল্ট অথেনটিকেশন মোড এবং এসকিউএল সার্ভার প্রমাণীকরণের চেয়ে অনেক বেশি সুরক্ষিত। উইন্ডোজ প্রমাণীকরণের কার্বেরোস সুরক্ষা প্রোটোকল ব্যবহার করে, শক্তিশালী পাসওয়ার্ডগুলির জটিলতার বৈধতা সম্পর্কিত পাসওয়ার্ড নীতি প্রয়োগকারী সরবরাহ করে, অ্যাকাউন্ট লকআউটটির জন্য সমর্থন সরবরাহ করে এবং পাসওয়ার্ডের মেয়াদোত্তীর্ণকরণ সমর্থন করে। উইন্ডোজ অথেনটিকেশন ব্যবহার করে তৈরি একটি সংযোগকে কখনও কখনও বিশ্বস্ত সংযোগ বলা হয়, কারণ এসকিউএল সার্ভার উইন্ডোজ দ্বারা সরবরাহিত শংসাপত্রগুলিকে বিশ্বাস করে।
 
-Once you open the site for the first time, you will be redirected to the installation page, as follows:
-![nopCommerce installation](_static/installing-local/installation.jpg)
+আপনি প্রথমবার সাইটটি খোলার পরে, আপনাকে ইনস্টলেশন পৃষ্ঠায় পুনঃনির্দেশিত করা হবে, নীচে:
+![নপকমার্স ইনস্টলেশন](_static/installing-local/installation.jpg)
 
-In the *Store information* panel fill the following details:
+*স্টোরের তথ্য* প্যানেলে নিম্নলিখিত বিবরণগুলি পূরণ করুন:
 
-- **Admin user email**: this is the email address for the first admin of the site.
-- **Admin user password**: you will need to supply a password for the admin account.
-- **Confirm the password**: confirm the admin user password.
-- **Country**: select the country from the dropdown list. It allows pre-configuring your store based on the country you selected. For example:
-  - download and pre-install a language pack from the official site
-  - pre-configure some settings (e.g. PangV or "Display tax/shipping info" settings for Germany)
-  - pre-configure some shipping details, VAT settings, currencies, measures, etc
-- **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
+- **প্রশাসকের ব্যবহারকারীর ইমেল**: এটি সাইটের প্রথম প্রশাসকের ইমেল ঠিকানা।
+- **প্রশাসনের ব্যবহারকারীর পাসওয়ার্ড**: আপনাকে প্রশাসক অ্যাকাউন্টের জন্য একটি পাসওয়ার্ড সরবরাহ করতে হবে।
+- **পাসওয়ার্ডটি নিশ্চিত করুন**: প্রশাসকের ব্যবহারকারীর পাসওয়ার্ডটি নিশ্চিত করুন।
+- **দেশ**: ড্রপডাউন তালিকা থেকে দেশটি নির্বাচন করুন। এটি আপনার নির্বাচিত দেশের উপর ভিত্তি করে আপনার স্টোরটিকে পূর্ব-কনফিগার করার অনুমতি দেয়। উদাহরণ স্বরূপ:
+  - অফিসিয়াল সাইট থেকে একটি ভাষা প্যাক ডাউনলোড এবং প্রাক ইনস্টল করুন
+  - কিছু সেটিংস প্রাক কনফিগার করুন (উদাঃ PangV বা "প্রদর্শন কর / শিপিং তথ্য" সেটিংস জার্মানি জন্য)
+  - কিছু শিপিংয়ের বিশদ, ভ্যাট সেটিংস, মুদ্রা, ব্যবস্থা ইত্যাদির প্রাক কনফিগার করুন
+- **নমুনা ডেটা তৈরি করুন**: আপনি যদি নমুনা পণ্য তৈরি করতে চান তবে এই চেকবক্সটি চেক করুন। এটি সুপারিশ করা হয় যাতে আপনার নিজের পণ্য যুক্ত করার আগে আপনি নিজের সাইটের সাথে কাজ শুরু করতে পারেন। আপনি এই আইটেমগুলি পরে সর্বদা মুছতে পারেন বা এগুলি প্রকাশ করুন যাতে সেগুলি আর আপনার সাইটে উপস্থিত না হয়।
 
-In the *Database information* panel you need to enter the following info:
+*ডাটাবেস তথ্য* প্যানেলে আপনাকে নিম্নলিখিত তথ্য প্রবেশ করতে হবে:
 
-- **Database**: here you can select either Microsoft SQL Server or MySQL.
-- **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
-- **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
-- **Server name**: this is the IP, URL, or server name of your database. Get your server name from the database management system or from the hosting control panel.
-- **Database name**: this is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
-- **Use integrated Windows authentication**: if you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. In this case don't chack this option. If you are using a development environment, you can select Windows authentication. In this case tick this checkbox. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.
-- **SQL Username**: enter your database user login.
-- **SQL Password**: ener your database user password.
-- **Specify custom collation**: this is an advanced setting and should be left unchecked.
+- **ডাটাবেস**: আপনি এখানে মাইক্রোসফ্ট এসকিউএল সার্ভার বা মাইএসকিউএল নির্বাচন করতে পারেন।
+- **এটি উপস্থিত না থাকলে ডাটাবেস তৈরি করুন**: একটি সফল ইনস্টলেশন নিশ্চিত করার জন্য আপনি আপনার ডাটাবেস এবং ডাটাবেস ব্যবহারকারীকে আগেই তৈরি করার পরামর্শ দেওয়া হয়। কেবল একটি ডাটাবেস উদাহরণ তৈরি করুন এবং এটিতে ডাটাবেস ব্যবহারকারী যুক্ত করুন। ইনস্টলেশন প্রক্রিয়া সমস্ত সারণী, সঞ্চিত পদ্ধতি এবং আরও তৈরি করবে।
+- **কাঁচা সংযোগের স্ট্রিং প্রবেশ করুন (উন্নত)**: আপনি যদি সংযোগ ক্ষেত্রগুলি পূরণ না করে একটি **সংযোগ স্ট্রিং** লিখতে চান তবে এই চেকবক্সটি চেক করুন।
+- **সার্ভারের নাম**: এটি আপনার ডাটাবেসের আইপি, ইউআরএল বা সার্ভারের নাম। ডাটাবেস পরিচালন সিস্টেম থেকে বা হোস্টিং নিয়ন্ত্রণ প্যানেল থেকে আপনার সার্ভারের নাম পাবেন।
+- **ডাটাবেসের নাম**: এটি নোপকমার্স দ্বারা ব্যবহৃত ডাটাবেসের নাম। যদি আপনি সময়ের আগে আপনার ডাটাবেস তৈরি করতে পছন্দ করেন তবে আপনি নিজের ডেটাবেসটি যে নামটি দিয়েছিলেন তা ব্যবহার করুন।
+- **ইন্টিগ্রেটেড উইন্ডোজ অথেনটিকেশন ব্যবহার করুন**: আপনি যদি কোনও হোস্টিং সরবরাহকারী ইনস্টল করছেন তবে আপনি আপনার এসকিউএল সার্ভার অ্যাকাউন্টটি ব্যবহার করতে পারেন এবং আপনার ডেটাবেস দিয়ে তৈরি শংসাপত্রগুলি সরবরাহ করতে পারেন। এই ক্ষেত্রে এই বিকল্পটি চেক করবেন না। আপনি যদি বিকাশের পরিবেশ ব্যবহার করেন তবে আপনি উইন্ডোজ অথেনটিকেশন নির্বাচন করতে পারেন। এক্ষেত্রে এই চেকবক্সটি টিক দিন। আপনি যদি উইন্ডোজ অথেনটিকেশন ব্যবহার করে থাকেন তবে আইআইএস-এ অ্যাপ্লিকেশন পুলের হোস্টিং অ্যাকাউন্টটি অবশ্যই ডাটাবেসের একজন ব্যবহারকারী হতে হবে।
+- **এসকিউএল ব্যবহারকারী নাম**: আপনার ডাটাবেস ব্যবহারকারী লগইন প্রবেশ করুন।
+- **এসকিউএল পাসওয়ার্ড**: আপনার ডাটাবেসের ব্যবহারকারীর পাসওয়ার্ড দিন।
+- **কাস্টম কোলেশন উল্লেখ করুন**: এটি একটি উন্নত সেটিং এবং এটি চেক না করা উচিত।
 
-Click **Install** in order to start the installation process. When the setup process is complete, your new site's home page is displayed.
-
-> [!NOTE]
-> The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
+ইনস্টলেশন প্রক্রিয়া শুরু করতে **ইনস্টল করুন** ক্লিক করুন। সেটআপ প্রক্রিয়াটি সম্পূর্ণ হলে আপনার নতুন সাইটের হোম পৃষ্ঠা প্রদর্শিত হবে।
 
 > [!NOTE]
-> If you are're using nopCommerce 3.90 and below ensure that your application pool is set to *Integrated* mode.
+> ইনস্টলেশন পৃষ্ঠার নীচে অবস্থিত **ইনস্টলেশন পুনঃসূচনা** বোতামটি কোনও সমস্যা হয়ে গেলে ইনস্টলেশন প্রক্রিয়া পুনরায় আরম্ভ করতে সক্ষম করে।
 
 > [!NOTE]
-> If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from `App_Data` directory.
+> আপনি যদি নপকমার্স ৩.৯০ ব্যবহার করছেন এবং নীচে আপনার অ্যাপ্লিকেশন পুলটি *ইন্টিগ্রেটেড* মোডে সেট করা আছে তা নিশ্চিত করুন।
+
+> [!NOTE]
+>আপনি যদি কোনও নপকমার্স সাইটটিকে তার ডিফল্ট সেটিংসে পুরোপুরি পুনরায় সেট করতে চান তবে আপনি `App_Data` ডিরেক্টরি থেকে `dataSettings.json` ফাইলটি মুছতে পারেন।

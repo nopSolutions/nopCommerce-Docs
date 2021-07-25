@@ -1,16 +1,17 @@
 ---
-title: Pre-installed nopCommerce
-uid: en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce
-author: git.mariannk
+শিরোনাম: প্রাক ইনস্টলড নপকমার্স
+স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce
+লেখক: git.AndreiMaz
+অবদানকারী: git.MDRashedKhanMenon
 ---
 
-# Pre-installed nopCommerce
+# প্রাক ইনস্টলড নপকমার্স
 
-You can use a simple and fast nopCommerce installation solution created by the nopCommerce team in collaboration with our hosting partner, Winhost. Our hosting plan comes with the platform pre-installed. That means you can start working on your website right away.
+আপনি আমাদের হোস্টিং পার্টনার উইনহোস্টের সহযোগিতায় নপকমার্স টিম দ্বারা নির্মিত একটি সাধারণ এবং দ্রুত নোপকমার্স ইনস্টলেশন সমাধান ব্যবহার করতে পারেন। আমাদের হোস্টিং পরিকল্পনা প্ল্যাটফর্মটি প্রাক ইনস্টলড নিয়ে আসে। এর অর্থ আপনি এখনই আপনার ওয়েবসাইটে কাজ শুরু করতে পারেন।
 
-## Advantages:
-* No need to waste time searching for reliable hosting and choosing an appropriate hosting plan and installing nopCommerce.
-* The pre-installed hosting plan ensures fast and reliable work of nopCommerce.
-* Winhost is offering a 30 day free hosting trial for pre-installed nopCommerce stores.
+## সুবিধাদি:
+* নির্ভরযোগ্য হোস্টিং অনুসন্ধান এবং উপযুক্ত হোস্টিং পরিকল্পনা বাছাই এবং নোপকমার্স ইনস্টল করার জন্য সময় নষ্ট করার দরকার নেই।
+* প্রাক ইনস্টল করা হোস্টিং পরিকল্পনা নোপকমার্সের দ্রুত এবং নির্ভরযোগ্য কাজকে নিশ্চিত করে।
+* উইনহোস্ট প্রি-ইনস্টলড নপকমার্স স্টোরগুলির জন্য 30 দিনের বিনামূল্যে হোস্টিং ট্রায়াল দিচ্ছে।
 
-Learn more about [the pre-installed nopCommerce hosting](https://www.winhost.com/a/noponwh$nopcommerce).
+[প্রাক ইনস্টলড নপকমার্স হোস্টিং](https://www.winhost.com/a/noponwh$nopcommerce) সম্পর্কে আরও জানুন।
