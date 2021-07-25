@@ -1,32 +1,32 @@
 ---
-title: Widgets (Designer's Guide)
+title: উইজেট (ডিজাইনার গাইড)
 uid: en/developer/design/widgets
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Widgets (Designer's Guide)
+# উইজেট (ডিজাইনার গাইড)
 
-> A widget is a stand-alone application that can be embedded into third party sites by any user on a page. It's a small application that can be installed and executed within a web page by an end user. (Wikipedia).
+> একটি উইজেট হ'ল একা থাকা অ্যাপ্লিকেশন যা কোনও পৃষ্ঠার কোনও ব্যবহারকারীর দ্বারা তৃতীয় পক্ষের সাইটগুলিতে এম্বেড করা যেতে পারে। এটি একটি ছোট অ্যাপ্লিকেশন যা কোনও শেষ ব্যবহারকারী দ্বারা কোনও ওয়েব পৃষ্ঠায় ইনস্টল ও সম্পাদন করতে পারে। (উইকিপিডিয়া)
 
-In nopCommerce, a widget plugin allows you to embed 3rd party code/application in public store in certain areas (for example, head tag, after body tag, left column block and right column block).
+নপকমার্সে, একটি উইজেট প্লাগইন যা আপনাকে নির্দিষ্ট অঞ্চলে (উদাহরণস্বরূপ, হেড ট্যাগ, বডি ট্যাগের পরে, বাম কলাম ব্লক এবং ডান কলাম ব্লক) তৃতীয় পক্ষের কোড / অ্যাপ্লিকেশন এম্বেড করতে দেয়।
 
-Currently, default nopCommerce installation allows the store admin to embed two widget plugins:
+বর্তমানে, ডিফল্ট নপকমার্স ইনস্টলেশন স্টোর অ্যাডমিনকে দুটি উইজেট প্লাগইন এম্বেড করতে দেয়:
 
-1. Google Analytics
-1. Nivo Slider
+১. Google Analytics
+২. Nivo Slider
 
-## Google Analytics Widget
+## Google Analytics উইজেট
 
-Google Analytics is a free website stats tool from Google. It keeps track of statistics about the visitors and eCommerce conversion on your website. This widget block can be rendered at:
+Google Analytics গুগলের একটি ফ্রী ওয়েবসাইটের পরিসংখ্যান সরঞ্জাম। এটি আপনার ওয়েবসাইটে দর্শকদের এবং ইকমার্স রূপান্তর সম্পর্কিত পরিসংখ্যানের উপর নজর রাখে। এই উইজেট ব্লকটি এখানে রেন্ডার করা যেতে পারে:
 
-* HTML Header tag
-* After `<body>` end HTML tag.
+* এইচটিএমএল শিরোনাম ট্যাগে
+* `<body>` এর পরে এইচটিএমএল ট্যাগ শেষ করে
 
-To configure Google Analytics Widget, go to `Administration → Configuration → Widgets`, click on **Configure** against **Google Analytics** and add your Google Analytics code.
+Google Analytics উইজেট কনফিগার করতে, `প্রশাসন → কনফিগারেশন → উইজেটস এ যান, **Google Analytics** এর **কনফিগার করুন** এ ক্লিক করুন এবং আপনার Google Analytics কোড যুক্ত করুন।
 
 ## Nivo Slider
 
-Nivo slider is a nice and clean jquery image slider for your website/homepage to display a number of images scrolling with unique transition effects.
+Nivo Slider টি আপনার ওয়েবসাইট / হোমপেজের জন্য একটি দুর্দান্ত এবং পরিষ্কার জ্যাকোরি চিত্র স্লাইডার যা অনন্য রূপান্তর প্রভাব সঙ্গে স্ক্রলিং ছবি একটি সংখ্যা প্রদর্শন করে।
 
-By default, nopCommerce comes with nivo slider integration as a widget (Enabled by default) which allows you to display a number of images scrolling automatically on your homepage.
+ডিফল্টরূপে, নপকমার্স একটি উইজেট হিসাবে ডিভো স্লাইডার ইন্টিগ্রেশন নিয়ে আসে (ডিফল্ট সক্ষম থাকে) যা আপনাকে নিজের হোমপেজে স্বয়ংক্রিয়ভাবে স্ক্রল করে বেশ কয়েকটি চিত্র প্রদর্শন করতে দেয়।

@@ -1,19 +1,18 @@
 ---
-title: Tips and Tricks
-uid: en/developer/design/tips-and-tricks
+title: পরামর্শ এবং কৌশল
+uid: bn/developer/design/tips-and-tricks
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.sanju741, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Tips and Tricks
+# পরামর্শ এবং কৌশল
 
-1. One of the major issues in web development/designing is that different browsers use different default values for various CSS properties. While customizing or creating your own theme – Always make sure that your styling is compatible with all the browsers. Test your website in major browsers like IE, Mozilla, Opera, Safari and Chrome.
-1. While working with CSS style sheets, if you don't see any change on your website – Do not panic. Try deleting history and cookies of your browser and then try again by refreshing your page.
-1. Make sure you understand the difference between id and classes. You can apply classes to multiple elements, while ids refer to only one element.
-1. CSS style sheets do not allow you to start the name of your ids and classes with a number or other non-alphabetical character.
-1. Do not limit yourself to span and div tags only. There are a lot of other / better features offered by CSS to style a page.
-
-> [!TIP]
-> Make use of **Firefox Developer Tools** plug-in offered by Mozilla. It is a very useful tool which allows you to edit, debug, and monitor CSS, HTML, and JavaScript live in any web page. You can learn more about it here: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools)
+১. ওয়েব বিকাশ / ডিজাইনিংয়ের অন্যতম প্রধান সমস্যা হ'ল বিভিন্ন ব্রাউজারগুলি বিভিন্ন সিএসএস বৈশিষ্ট্যের জন্য বিভিন্ন ডিফল্ট মান ব্যবহার করে। আপনার নিজস্ব থিমটি কাস্টমাইজ করার সময় বা তৈরি করার সময় - সর্বদা নিশ্চিত হয়ে নিন যে আপনার স্টাইলিং সমস্ত ব্রাউজারের সাথে সামঞ্জস্যপূর্ণ। আইই, মজিলা, অপেরা, সাফারি এবং ক্রোমের মতো প্রধান ব্রাউজারগুলিতে আপনার ওয়েবসাইটটি পরীক্ষা করুন।
+২. সিএসএস স্টাইল শীট নিয়ে কাজ করার সময়, আপনি যদি আপনার ওয়েবসাইটে কোনও পরিবর্তন না দেখেন - আতঙ্কিত হন না। আপনার ব্রাউজারের ইতিহাস এবং কুকিজ মুছতে চেষ্টা করুন এবং তারপরে আপনার পৃষ্ঠাটি রিফ্রেশ করে আবার চেষ্টা করুন।
+৩. আইডি এবং ক্লাসের মধ্যে পার্থক্য বুঝতে পেরেছেন তা নিশ্চিত করুন। আপনি একাধিক উপাদানগুলিতে ক্লাস প্রয়োগ করতে পারেন, যখন আইডিগুলি কেবল একটি উপাদানকে বোঝায়।
+৪. সিএসএস স্টাইল শিটগুলি আপনাকে একটি নম্বর বা অন্যান্য অ-বর্ণের অক্ষর দিয়ে আপনার আইডি এবং ক্লাসের নাম শুরু করতে দেয় না।
+৫. নিজেকে স্প্যান এবং ডিভ ট্যাগগুলিতে সীমাবদ্ধ করবেন না। কোনও পৃষ্ঠা স্টাইল করার জন্য সিএসএসের দেওয়া অনেকগুলি / আরও ভাল বৈশিষ্ট্য রয়েছে। 
+> [!পরামর্শ]
+> মজিলা প্রস্তাবিত **ফায়ারফক্স বিকাশকারী সরঞ্জাম** প্লাগ-ইন ব্যবহার করুন। এটি একটি খুব দরকারী সরঞ্জাম যা আপনাকে কোনও ওয়েব পৃষ্ঠাতে সিএসএস, এইচটিএমএল এবং জাভাস্ক্রিপ্ট লাইভ সম্পাদনা, ডিবাগ এবং নিরীক্ষণ করতে দেয়। আপনি এটি সম্পর্কে এখানে আরও জানতে পারেন: [Firefox Developer Tools.](https://developer.mozilla.org/en-US/docs/Tools)
 >
-> Or you can use the **Chrome DevTools tool**, which is part of the Chrome browser. You can learn more about it here: [Chrome DevTools.](https://developers.google.com/web/tools/chrome-devtools)
+> অথবা আপনি **ক্রোম ডেভটুলস সরঞ্জাম** ব্যবহার করতে পারেন যা ক্রোম ব্রাউজারের অংশ। আপনি এটি সম্পর্কে এখানে আরও জানতে পারেন: [Chrome DevTools.](https://developers.google.com/web/tools/chrome-devtools)

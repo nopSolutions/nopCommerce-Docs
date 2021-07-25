@@ -1,27 +1,27 @@
 ---
-title: Customizing nopCommerce Themes
+title: নপকমার্স থিমগুলি অনুকূলিতকরণ
 uid: en/developer/design/customizing-theme
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Customizing nopCommerce Themes
+# নপকমার্স থিমগুলি অনুকূলিতকরণ
 
-## Uploading your store logo
+## স্টোর লোগো আপলোড
 
-In order to upload your store logo in a nopCommerce website, there are basically 2 methods:
+কোনও নপকমার্স ওয়েবসাইটে আপনার স্টোর লোগো আপলোড করার জন্য, মূলত 2 টি পদ্ধতি রয়েছে:
 
-### First Method
+### প্রথম পদ্ধতি
 
-Upload your logo through the admin area. See how to do this in the [Uploading your logo](xref:en/getting-started/design-your-store/uploading-your-logo) article.
+প্রশাসক অঞ্চল মাধ্যমে আপনার লোগো আপলোড করুন। কিভাবে এটি করতে হয় দেখুন [লোগো আপলোড করা](xref:bn/getting-started/design-your-store/uploading-your-logo) অনুচ্ছেদ.
 
 ### Second method
 
-1. Go to nopCommerce root folder `/Themes/YOUR THEME/Content/images/`
-1. Look for logo.png image file
-1. Replace the `logo.png` with your store logo and name it as `logo.png` (with same width:250px and height:50px)
+১. নপকমার্সের root ফোল্ডারে যান `/Themes/YOUR THEME/Content/images/`
+২. Logo.png চিত্র ফাইলটি দেখুন
+৩. আপনার স্টোর লোগোটি `logo.png` প্রতিস্থাপন করুন এবং এটির নাম `logo.png` (একই প্রস্থ: 250px এবং উচ্চতা: 50px) রাখুন
 
-If you wish to make changes in stylesheet in regard to the logo, look for the following code in your `styles.css`:
+আপনি যদি লোগো সম্পর্কিত স্টাইলশিটে পরিবর্তন করতে চান তবে নীচের কোডটি আপনার `styles.css` এ সন্ধান করুন:
 
 ```css
 .header-logo {
@@ -39,12 +39,12 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
 }
 ```
 
-> [!IMPORTANT]
-> You might have to clear the browser cache (or refresh the page using Ctrl+F5 keys) in order to see the changes (new store logo).
+> [গুরুত্বপূর্ণ ]
+> পরিবর্তনগুলি (নতুন স্টোর লোগো) দেখতে আপনাকে ব্রাউজারের ক্যাশ (বা Ctrl + F5 কী ব্যবহার করে পৃষ্ঠাটি রিফ্রেশ করতে হবে) হতে পারে।
 
-## How to change a layout
+## কিভাবে একটি বিন্যাস পরিবর্তন করতে হয়
 
-1. If you would like to customize / make changes in the base layout (i.e. `_Root.cshtml`) of your nopCommerce website look for this css code in your `styles.css` file
+১. আপনি যদি নিজের নপকমার্স ওয়েবসাইটের বেস লেআউটটিতে (যেমন `_Root.cshtml`) কাস্টমাইজ / পরিবর্তন করতে চান তবে আপনার `style.css` ফাইলটিতে এই সিএসএস কোডের সন্ধান করুন
 
     ```css
     .master-wrapper-content {
@@ -64,7 +64,7 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
     }
     ```
 
-1. If you would like to customize / make changes in the layout of `_ColumnOne.cshtml`. Please look for this css code in your `style.css`
+২. আপনি যদি `_ ColumnOne.cshtml` এর বিন্যাসে কাস্টমাইজ / পরিবর্তন করতে চান আপনার সিএসএস কোডটি আপনার `style.css` এ সন্ধান করুন
 
     ```css
     .center-1 {
@@ -72,7 +72,7 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
     }
     ```
 
-1. If you would like to customize / make changes in the layout of `_ColumnTwo.cshtml`. Please look for this css code in your `style.css`
+৩. If you would like to customize / make changes in the layout of `_ColumnTwo.cshtml`. Please look for this css code in your `style.css`
 
     ```css
     .center-2, .side-2 {
@@ -85,16 +85,16 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
     }
     ```
 
-## How to make changes in header menu (top menu)
+## হেডার মেনুতে কীভাবে পরিবর্তন করবেন (টপ মেনু)
 
-1. If you would like to customize/make changes in header menu (top menu) of your nopCommerce website, please go to the following location:
+১. আপনি যদি নিজের নপকমার্স ওয়েবসাইটের শিরোনাম মেনুতে (টপ মেনু) কাস্টমাইজ / পরিবর্তন করতে চান তবে নীচের অবস্থানে যান:
 
-    Go to nopCommerce root folder `/Views/Shared/Components/TopMenu/Default.cshtml`
-1. Open file `Default.cshtml` - You can add or remove menu items in `<li>` according to your requirements.
+    নপকমার্স root ফোল্ডারে যান `/Views/Shared/Components/TopMenu/Default.cshtml`
+২. ফাইলটি খুলুন `Default.cshtml` - আপনি আপনার প্রয়োজনীয়তা অনুসারে` <li> এর মধ্যে মেনু আইটেমগুলি যুক্ত বা সরাতে পারেন।
 
-## How to make changes in footer (or footer links)
+## পাদলেখ (বা পাদলেখ লিঙ্ক) এ কীভাবে পরিবর্তন করবেন
 
-1. If you would like to customize/make changes in a footer (or footer links) of your nopCommerce website, please go to the following location:
+১. আপনি যদি আপনার নপকমার্স ওয়েবসাইটের পাদচরণ (বা পাদলেখ লিঙ্কগুলি) কাস্টমাইজ / পরিবর্তন করতে চান তবে নীচের অবস্থানে যান:
 
-    Go to nopCommerce root folder `/Views/Shared/Components/Footer/Default.cshtml`
-1. Open file `Default.cshtml` - You can add or remove links in `<li>` or complete `<ul>` according to your requirements.
+    নপকমার্স root ফোল্ডারে যান `/Views/Shared/Components/Footer/Default.cshtml`
+২. ফাইলটি খুলুন `Default.cshtml` - আপনি আপনার প্রয়োজনীয়তা অনুসারে` <li> এর মধ্যে মেনু আইটেমগুলি যুক্ত বা সরাতে পারেন।
