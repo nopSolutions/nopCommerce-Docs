@@ -488,43 +488,43 @@
       href: developer/plugins/index.md
       items:
         - 
-          name: How to write a plugin for nopCommerce 4.40 (and above)
+          name: কিভাবে নপকমার্স ৪.৪০ (এবং উপরে) এর জন্য প্লাগইন লিখব
           href: developer/plugins/how-to-write-plugin-4.40.md
         - 
-          name: How to write a plugin for nopCommerce 4.30
+          name: কিভাবে নপকমার্স ৪.৩০ এর জন্য প্লাগইন লিখব
           href: developer/plugins/how-to-write-plugin-4.30.md
         - 
-          name: How to write a plugin for nopCommerce 4.20
+          name: কিভাবে নপকমার্স ৪.২০ এর জন্য প্লাগইন লিখব
           href: developer/plugins/how-to-write-plugin-4.20.md
         - 
-          name: How to write a plugin for nopCommerce 4.10
+          name: কিভাবে নপকমার্স ৪.১০ এর জন্য প্লাগইন লিখব
           href: developer/plugins/how-to-write-plugin-4.10.md
         - 
-          name: How to write a plugin for nopCommerce 4.00
+          name: কিভাবে নপকমার্স ৪.০০ এর জন্য প্লাগইন লিখব
           href: developer/plugins/how-to-write-plugin-4.00.md
         - 
-          name: How to write a plugin for nopCommerce 3.90 (and previous versions)
+          name: কিভাবে নপকমার্স ৩.৯০ এর জন্য প্লাগইন লিখব (এবং পূর্ববর্তী সংস্করণ)
           href: developer/plugins/how-to-write-plugin-3.90.md
         - 
-          name: How to code my own payment method
+          name: কিভাবে আমার নিজের পেমেন্ট পদ্ধতি কোড করব
           href: developer/plugins/payment-method.md
         - 
-          name: How to code my own shipping rate computation method
+          name: কিভাবে আমার নিজের শিপিং রেট গণনা পদ্ধতি কোড করব
           href: developer/plugins/shipping-plugin.md
         - 
-          name: Plugin with data access
+          name: ডেটা অ্যাক্সেস সহ প্লাগইন
           href: developer/plugins/plugin-with-data-access.md
         - 
-          name: Plugin with data access (4.20 and below)
+          name: ডেটা অ্যাক্সেস সহ প্লাগইন (৪.২০ এবং নীচে)
           href: developer/plugins/plugin-with-data-access-4.20.md
         - 
-          name: How to add a menu item into the administration area from a plugin
+          name: কিভাবে প্লাগইন থেকে প্রশাসন এলাকায় একটি মেনু আইটেম যোগ করা যায়
           href: developer/plugins/menu-item.md
         - 
-          name: Adding CSS and JS resource files into nopCommerce plugin
+          name: সিএসএস এবং জেএস রিসোর্স ফাইলগুলিকে নপকমার্স প্লাগইন এ যোগ করা
           href: developer/plugins/resource-files.md
         - 
-          name: Description of the structure of the plugin.json file
+          name: Plugin.json ফাইলের কাঠামোর বর্ণনা
           href: developer/plugins/plugin.json.md
     - 
       name: ডিজাইনার গাইড
