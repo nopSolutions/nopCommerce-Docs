@@ -14,6 +14,7 @@ contributors: git.AfiaKhanom
 বর্তমানে, ডিফল্ট নপকমার্স ইনস্টলেশন স্টোর অ্যাডমিনকে দুটি উইজেট প্লাগইন এম্বেড করতে দেয়:
 
 ১. Google Analytics
+
 ২. Nivo Slider
 
 ## Google Analytics উইজেট
@@ -23,7 +24,7 @@ Google Analytics গুগলের একটি ফ্রী ওয়েবস
 * এইচটিএমএল শিরোনাম ট্যাগে
 * `<body>` এর পরে এইচটিএমএল ট্যাগ শেষ করে
 
-Google Analytics উইজেট কনফিগার করতে, `প্রশাসন → কনফিগারেশন → উইজেটস এ যান, **Google Analytics** এর **কনফিগার করুন** এ ক্লিক করুন এবং আপনার Google Analytics কোড যুক্ত করুন।
+Google Analytics উইজেট কনফিগার করতে, `প্রশাসন → কনফিগারেশন → উইজেটস` এ যান, **Google Analytics** এর **কনফিগার করুন** এ ক্লিক করুন এবং আপনার Google Analytics কোড যুক্ত করুন।
 
 ## Nivo Slider
 

@@ -15,10 +15,12 @@ contributors: git.AfiaKhanom
 
 প্রশাসক অঞ্চল মাধ্যমে আপনার লোগো আপলোড করুন। কিভাবে এটি করতে হয় দেখুন [লোগো আপলোড করা](xref:bn/getting-started/design-your-store/uploading-your-logo) অনুচ্ছেদ.
 
-### Second method
+### দ্বিতীয় পদ্ধতি
 
 ১. নপকমার্সের root ফোল্ডারে যান `/Themes/YOUR THEME/Content/images/`
+    
 ২. Logo.png চিত্র ফাইলটি দেখুন
+    
 ৩. আপনার স্টোর লোগোটি `logo.png` প্রতিস্থাপন করুন এবং এটির নাম `logo.png` (একই প্রস্থ: 250px এবং উচ্চতা: 50px) রাখুন
 
 আপনি যদি লোগো সম্পর্কিত স্টাইলশিটে পরিবর্তন করতে চান তবে নীচের কোডটি আপনার `styles.css` এ সন্ধান করুন:
@@ -39,7 +41,7 @@ contributors: git.AfiaKhanom
 }
 ```
 
-> [গুরুত্বপূর্ণ ]
+> [!IMPORTANT]
 > পরিবর্তনগুলি (নতুন স্টোর লোগো) দেখতে আপনাকে ব্রাউজারের ক্যাশ (বা Ctrl + F5 কী ব্যবহার করে পৃষ্ঠাটি রিফ্রেশ করতে হবে) হতে পারে।
 
 ## কিভাবে একটি বিন্যাস পরিবর্তন করতে হয়
@@ -64,7 +66,7 @@ contributors: git.AfiaKhanom
     }
     ```
 
-২. আপনি যদি `_ ColumnOne.cshtml` এর বিন্যাসে কাস্টমাইজ / পরিবর্তন করতে চান আপনার সিএসএস কোডটি আপনার `style.css` এ সন্ধান করুন
+২. আপনি যদি `_ ColumnOne.cshtml` এর বিন্যাসে কাস্টমাইজ / পরিবর্তন করতে চান। আপনার সিএসএস কোডটি আপনার `style.css` এ সন্ধান করুন
 
     ```css
     .center-1 {
@@ -72,7 +74,7 @@ contributors: git.AfiaKhanom
     }
     ```
 
-৩. If you would like to customize / make changes in the layout of `_ColumnTwo.cshtml`. Please look for this css code in your `style.css`
+৩. যদি আপনি `_ColumnTwo.cshtml` এর বিন্যাসে কাস্টমাইজ / পরিবর্তন করতে চান। দয়া করে আপনার `style.css` এ এই CSS কোডটি দেখুন
 
     ```css
     .center-2, .side-2 {
@@ -88,13 +90,13 @@ contributors: git.AfiaKhanom
 ## হেডার মেনুতে কীভাবে পরিবর্তন করবেন (টপ মেনু)
 
 ১. আপনি যদি নিজের নপকমার্স ওয়েবসাইটের শিরোনাম মেনুতে (টপ মেনু) কাস্টমাইজ / পরিবর্তন করতে চান তবে নীচের অবস্থানে যান:
-
-    নপকমার্স root ফোল্ডারে যান `/Views/Shared/Components/TopMenu/Default.cshtml`
+নপকমার্স root ফোল্ডারে যান `/Views/Shared/Components/TopMenu/Default.cshtml`
+    
 ২. ফাইলটি খুলুন `Default.cshtml` - আপনি আপনার প্রয়োজনীয়তা অনুসারে` <li> এর মধ্যে মেনু আইটেমগুলি যুক্ত বা সরাতে পারেন।
 
 ## পাদলেখ (বা পাদলেখ লিঙ্ক) এ কীভাবে পরিবর্তন করবেন
 
 ১. আপনি যদি আপনার নপকমার্স ওয়েবসাইটের পাদচরণ (বা পাদলেখ লিঙ্কগুলি) কাস্টমাইজ / পরিবর্তন করতে চান তবে নীচের অবস্থানে যান:
-
-    নপকমার্স root ফোল্ডারে যান `/Views/Shared/Components/Footer/Default.cshtml`
+নপকমার্স root ফোল্ডারে যান `/Views/Shared/Components/Footer/Default.cshtml`
+    
 ২. ফাইলটি খুলুন `Default.cshtml` - আপনি আপনার প্রয়োজনীয়তা অনুসারে` <li> এর মধ্যে মেনু আইটেমগুলি যুক্ত বা সরাতে পারেন।

@@ -1,23 +1,24 @@
 ---
-title: How to write a plugin for nopCommerce
-uid: en/developer/plugins/how-to-write-plugin-4.40
+title: কিভাবে নপকমার্স ৪.৪০ (এবং উপরে) এর জন্য প্লাগইন লিখব
+uid: bn/developer/plugins/how-to-write-plugin-4.40
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# How to write a plugin for nopCommerce
+# কিভাবে নপকমার্স ৪.৪০ (এবং উপরে) এর জন্য প্লাগইন লিখব
 
-Plugins are used to extend the functionality of nopCommerce. nopCommerce has several types of plugins. For example, payment methods (such as PayPal), tax providers, shipping method computation methods (such as UPS, USP, FedEx), widgets (such as 'live chat' block), and many others. nopCommerce is already distributed with many different plugins. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If not, this article will guide you through the process of creating your own plugin.
+প্লাগইনগুলি নপকমার্স এর কার্যকারিতা প্রসারিত করতে ব্যবহৃত হয়। নপকমার্স এর বিভিন্ন ধরণের প্লাগইন রয়েছে। উদাহরণস্বরূপ, পেমেন্ট পদ্ধতি (যেমন পেপাল), কর প্রদানকারী, শিপিং পদ্ধতি গণনা পদ্ধতি (যেমন ইউপিএস, ইউএসপি, ফেডেক্স), উইজেট (যেমন 'লাইভ চ্যাট' ব্লক) এবং আরও অনেকগুলি। নপকমার্স ইতিমধ্যেই বিভিন্ন প্লাগইন দিয়ে বিতরণ করা হয়েছে। আপনি [nopCommerce official site](https://www.nopcommerce.com/marketplace) এ বিভিন্ন প্লাগইন সার্চ করে দেখতে পারেন যে কেউ ইতিমধ্যে আপনার প্রয়োজন অনুসারে প্লাগইন তৈরি করেছে কিনা। যদি তা না হয় তবে এই নিবন্ধটি আপনাকে আপনার নিজস্ব প্লাগইন তৈরির প্রক্রিয়ার মাধ্যমে নির্দেশনা দেবে।
+প্লাগইনগুলি নপকমার্স এর কার্যকারিতা প্রসারিত করতে ব্যবহৃত হয়। নপকমার্স এর বিভিন্ন ধরণের প্লাগইন রয়েছে। উদাহরণস্বরূপ, পেমেন্ট পদ্ধতি (যেমন পেপাল), কর প্রদানকারী, শিপিং পদ্ধতি গণনা পদ্ধতি (যেমন ইউপিএস, ইউএসপি, ফেডেক্স), উইজেট (যেমন 'লাইভ চ্যাট' ব্লক) এবং আরও অনেকগুলি।
 
-## The plugin structure, required files, and locations
+## প্লাগইন গঠন, প্রয়োজনীয় ফাইল এবং লোকেশন
 
-1. First thing you need to do is to create a new *`Class Library`* project in the solution. It's a good practice to place all plugins into `\Plugins` directory in the root of your solution (do not mix up with `\Plugins` subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into `Plugins` solution folder.
+১. প্রথমে আপনাকে যা করতে হবে তা হল সমাধানের মধ্যে একটি নতুন *`ক্লাস লাইব্রেরি`* প্রকল্প তৈরি করা। আপনার সমাধানের মূলে সমস্ত প্লাগইনগুলিকে `\Plugins` ডিরেক্টরিতে স্থাপন করা একটি ভাল অভ্যাস (`\Nop.Web` ডিরেক্টরিতে অবস্থিত `\Plugins` সাবডিরেক্টরিতে মিশে না যা ইতিমধ্যে নিযুক্ত প্লাগইনগুলির জন্য ব্যবহৃত হয়)। সমস্ত প্লাগইনগুলিকে `Plugins` সমাধান ফোল্ডারে স্থাপন করা একটি ভাল অভ্যাস।
 
-    A recommended name for a plugin project is **`Nop.Plugin.{Group}.{Name}`**. **`{Group}`** is your plugin group (for example, *Payment* or *Shipping*). **`{Name}`** is your plugin name (for example, *PayPalStandard*). For example, PayPal Standard payment plugin has the following name: **`Nop.Plugin.Payments.PayPalStandard`**. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyGreatPlugin`.
+একটি প্লাগইন প্রকল্পের জন্য প্রস্তাবিত নাম হল **`Nop.Plugin.{Group}.{Name}`**। **`{Group}`** আপনার প্লাগইন গ্রুপ (উদাহরণস্বরূপ,*পেমেন্ট*অথবা*শিপিং*)। **`{Name}`** আপনার প্লাগইন নাম (উদাহরণস্বরূপ,*পেপ্যাল স্ট্যান্ডার্ড*)। উদাহরণস্বরূপ, পেপ্যাল স্ট্যান্ডার্ড পেমেন্ট প্লাগইনটির নিম্নলিখিত নাম রয়েছে: **`Nop.Plugin.Payments.PayPalStandard`**। কিন্তু দয়া করে নোট করুন যে এটি একটি প্রয়োজনীয়তা নয়। এবং আপনি একটি প্লাগইন এর জন্য যেকোনো নাম নির্বাচন করতে পারেন। উদাহরণস্বরূপ, `MyGreatPlugin`।
 
-    ![p1](_static/how-to-write-plugin-4.40/write_plugin_4.40_1.jpg)
+![p1](_static/how-to-write-plugin-4.40/write_plugin_4.40_1.jpg)
 
-1. Once the plugin project is created you have to open its `.csproj` file in any text editor and replace its content with the following one:
+২. একবার প্লাগইন প্রজেক্ট তৈরি হয়ে গেলে আপনাকে তার `.csproj` ফাইলটি যেকোন টেক্সট এডিটরে খুলতে হবে এবং এর বিষয়বস্তু নিচের একটি দিয়ে প্রতিস্থাপন করতে হবে:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -47,53 +48,54 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
     </Project>
     ```
 
-    > [!TIP]
-    > Where **PLUGIN_OUTPUT_DIRECTORY** should be replaced with the plugin name, for example, `Payments.PayPalStandard`.
-    >
-    > We do it this way to be able to use a new approach to add third-party references which was introduced  in .NET Core. But actually it's not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
+   > [!TIP]
+   > যেখানে **PLUGIN_OUTPUT_DIRECTORY** প্লাগইন নাম দিয়ে প্রতিস্থাপন করা উচিত, উদাহরণস্বরূপ, `Payments.PayPalStandard`।
+   >
+   > .NET Core-এ চালু করা তৃতীয় পক্ষের রেফারেন্স যোগ করার জন্য আমরা একটি নতুন পদ্ধতি ব্যবহার করতে সক্ষম হবার জন্য এটি করি। কিন্তু আসলে এটি প্রয়োজন হয় না। তাছাড়া, ইতিমধ্যে রেফারেন্সকৃত লাইব্রেরি থেকে রেফারেন্স স্বয়ংক্রিয়ভাবে লোড হবে। সুতরাং এটি খুব সুবিধাজনক।
 
-1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json)
+৩. পরবর্তী ধাপ হল প্রতিটি প্লাগইন এর জন্য প্রয়োজনীয় একটি `plugin.json` ফাইল তৈরি করা। এই ফাইলটিতে আপনার প্লাগইন বর্ণনা করে মেটা তথ্য রয়েছে। শুধু অন্য কোন বিদ্যমান প্লাগইন থেকে এই ফাইলটি অনুলিপি করুন এবং আপনার প্রয়োজনের জন্য এটি পরিবর্তন করুন। `Plugin.json` ফাইল সম্পর্কে তথ্যের জন্য, দয়া করে [plugin.json](xref:bn/developer/plugins/plugin_json) ফাইল দেখুন
 
-1. The last required step is to create a class which implements **`IPlugin`** interface (`Nop.Services.Plugins` namespace). nopCommerce has **`BasePlugin`** class which already implements some `IPlugin` methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from `IPlugin`. For example, we have `IPaymentMethod` interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as *`ProcessPayment()`* or *`GetAdditionalHandlingFee()`*. Currently nopCommerce has the following specific plugin interfaces:
+৪. সর্বশেষ প্রয়োজনীয় পদক্ষেপ হল একটি শ্রেণী তৈরি করা যা **`IPlugin`** ইন্টারফেস (`Nop.Services.Plugins` নেমস্পেস) প্রয়োগ করে। নপকমার্স এর **`BasePlugin`** ক্লাস আছে যা ইতিমধ্যে কিছু `IPlugin` পদ্ধতি প্রয়োগ করে এবং আপনাকে সোর্স কোডের নকল এড়াতে দেয়। নপকমার্স আপনাকে `IPlugin` থেকে প্রাপ্ত কিছু নির্দিষ্ট ইন্টারফেস প্রদান করে। উদাহরণস্বরূপ, আমাদের `IPaymentMethod` ইন্টারফেস আছে যা নতুন পেমেন্ট পদ্ধতি প্লাগইন তৈরিতে ব্যবহৃত হয়। এতে কিছু পদ্ধতি রয়েছে যা শুধুমাত্র পেমেন্ট পদ্ধতির জন্য নির্দিষ্ট যেমন *`ProcessPayment ()`* অথবা *`GetAdditionalHandlingFee ()`*। বর্তমানে নপকমার্স এর নিম্নলিখিত নির্দিষ্ট প্লাগইন ইন্টারফেস রয়েছে:
 
-   - **IPaymentMethod**. These plugins are used for payment processing.
-   - **IShippingRateComputationMethod**. These plugins are used for retrieving accepted delivery methods and appropriate shipping rates. For example, UPS, UPS, FedEx, etc.
-   - **IPickupPointProvider**. These plugins are used for providing pickup points.
-   - **ITaxProvider**. Tax providers are used for getting tax rates.
-   - **IExchangeRateProvider**. Used for getting currency exchange rate.
-   - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
-   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
-   - **IMultiFactorAuthenticationMethod**. Used for creating multi-factor authentication methods such as *GoogleAuthenticator*, etc.
+   - **IPaymentMethod**. এই প্লাগইনগুলি পেমেন্ট প্রক্রিয়াকরণের জন্য ব্যবহৃত হয়।
+   - **IShippingRateComputationMethod**. এই প্লাগইনগুলি গ্রহণযোগ্য ডেলিভারি পদ্ধতি এবং উপযুক্ত শিপিং হার পুনরুদ্ধারের জন্য ব্যবহৃত হয়। যেমন, UPS, UPS, FedEx ইত্যাদি।
+   - **IPickupPointProvider**. এই প্লাগইনগুলি পিকআপ পয়েন্ট প্রদানের জন্য ব্যবহৃত হয়।
+   - **ITaxProvider**. কর প্রদানকারীরা করের হার পাওয়ার জন্য ব্যবহার করা হয়।
+   - **IExchangeRateProvider**. মুদ্রা বিনিময় হার পেতে ব্যবহৃত।
+   - **IDiscountRequirementRule**. আপনাকে নতুন ছাড়ের নিয়ম তৈরি করতে দেয় যেমন "গ্রাহকের বিলিং দেশ হওয়া উচিত ..."
+   - **IExternalAuthenticationMethod**. বাহ্যিক প্রমাণীকরণ পদ্ধতি যেমন ফেসবুক, টুইটার, ওপেনআইডি ইত্যাদি তৈরিতে ব্যবহৃত হয়।
+   - **IMultiFactorAuthenticationMethod**. মাল্টি-ফ্যাক্টর প্রমাণীকরণ পদ্ধতি যেমন *GoogleAuthenticator* ইত্যাদি তৈরির জন্য ব্যবহৃত হয়।
      >[!NOTE]
-     > This is a new interface, since version 4.40 we provide the corresponding infrastructure for MFA integrations out of the box.
+     > এটি একটি নতুন ইন্টারফেস, 4.40 সংস্করণ থেকে আমরা বাক্সের বাইরে এমএফএ ইন্টিগ্রেশনের জন্য সংশ্লিষ্ট অবকাঠামো প্রদান করি।
 
-   - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on your site's left column.
-   - **IMiscPlugin**. If your plugin doesn't fit any of the interfaces above.
+   - **IWidgetPlugin**. এটি আপনাকে উইজেট তৈরি করতে দেয়। আপনার সাইটের কিছু অংশে উইজেট রেন্ডার করা হয়। উদাহরণস্বরূপ, এটি আপনার সাইটের বাম কলামে একটি "লাইভ চ্যাট" ব্লক হতে পারে।
+   - **IMiscPlugin**. যদি আপনার প্লাগইন উপরের কোন ইন্টারফেসের সাথে মানানসই না হয়।
 
 > [!IMPORTANT]
-> After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
+> প্রতিটি প্রকল্প তৈরির পরে, পরিবর্তন করার আগে সমাধানটি পরিষ্কার করুন। কিছু সম্পদ ক্যাশে করা হবে এবং ডেভেলপার পাগলামি হতে পারে।
 >
-> You may need to rebuild your solution after adding your plugin. If you do not see DLLs for your plugin under `Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY`, you need to rebuild your solution. nopCommerce will not list your plugin in the *Local Plugins* page if your DLLs do not exist in the correct folder in `Nop.Web`.
+> আপনার প্লাগইন যুক্ত করার পরে আপনার সমাধানটি পুনর্নির্মাণের প্রয়োজন হতে পারে। আপনি যদি `Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY` এর অধীনে আপনার প্লাগইনটির জন্য DLL না দেখতে পান, তাহলে আপনাকে আপনার সমাধানটি পুনর্নির্মাণ করতে হবে। নপকমার্স আপনার প্লাগইনকে *স্থানীয় প্লাগইন* পৃষ্ঠায় তালিকাভুক্ত করবে না যদি আপনার DLLs `Nop.Web`- এর সঠিক ফোল্ডারে না থাকে।
 
-## Handling requests. Controllers, models and views
+## অনুরোধগুলি পরিচালনা করা। কন্ট্রোলার, মডেল এবং ভিউ
 
-Now you can see the plugin by going to **Admin area → Configuration → Local Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
+এখন আপনি **Admin area → Configuration → Local Plugins** এ গিয়ে প্লাগইন দেখতে পারেন। কিন্তু আপনি যেমন অনুমান করেছেন আমাদের প্লাগইন কিছুই করে না। এটির কনফিগারেশনের জন্য ইউজার ইন্টারফেসও নেই। প্লাগইন কনফিগার করার জন্য একটি পৃষ্ঠা তৈরি করা যাক।
 
-What we need to do now is create a controller, a model, and a view.
+আমাদের এখন যা করতে হবে তা হল একটি কন্ট্রোলার, একটি মডেল এবং একটি ভিউ তৈরি করা।
 
-1. MVC controllers are responsible for responding to requests made against an ASP.NET Core MVC website. Each browser request is mapped to a particular controller.
-1. A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an `ASP.NET Core MVC` application.
-1. An MVC model contains all of your application logic that is not contained in a view or a controller.
+ ১. একটি ASP.NET Core MVC ওয়েবসাইটের বিরুদ্ধে করা অনুরোধের সাড়া দেওয়ার জন্য MVC কন্ট্রোলার দায়ী। প্রতিটি ব্রাউজারের অনুরোধ একটি নির্দিষ্ট নিয়ামককে ম্যাপ করা হয়।
 
-You can find more information about the MVC pattern [here](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-5.0).
+ ২. একটি ভিউতে HTML মার্কআপ এবং সামগ্রী রয়েছে যা ব্রাউজারে পাঠানো হয়। একটি ‘ASP.NET Core MVC` অ্যাপ্লিকেশনের সাথে কাজ করার সময় একটি ভিউ একটি পৃষ্ঠার সমতুল্য।
 
-So let's start:
+ ৩. একটি MVC মডেলে আপনার সমস্ত অ্যাপ্লিকেশন যুক্তি রয়েছে যা একটি ভিউ বা কন্ট্রোলার নয়।
+আপনি MVC প্যাটার্ন সম্পর্কে আরও তথ্য পেতে পারেন [এখানে](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-5.0).
 
-- **Create the model**. Add a **Models** folder in the new plugin, and then add a new model class which fits your need.
-- **Create the view**. Add a **Views** folder in the new plugin, and then add a cshtml file named `Configure.cshtml`. Set **"Build Action"** property of the view file is set to **"Content"**, and the **"Copy to Output Directory"** property is set to **"Copy always"**. Note that configuration page should use `_ConfigurePlugin` layout.
-- Also make sure that you have `_ViewImports.cshtml` file into your \Views directory. You can just copy it from any other existing plugin.
-- **Create the controller**. Add a **Controllers** folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers `{Group}{Name}Controller.cs`. For example, PaymentPayPalStandardController. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it *`Configure`*. Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
-- Use the following attributes for your action method:
+সুতরাং শুরু করি:
+
+- **মডেল তৈরি করুন**। নতুন প্লাগিনে একটি **মডেল** ফোল্ডার যোগ করুন, এবং তারপর আপনার প্রয়োজন অনুসারে একটি নতুন মডেল ক্লাস যোগ করুন।
+- **ভিউ তৈরি করুন**। নতুন প্লাগিনে একটি **ভিউস** ফোল্ডার যোগ করুন, এবং তারপর `Configure.cshtml` নামে একটি cshtml ফাইল যোগ করুন। ভিউ ফাইলের **"বিল্ড অ্যাকশন"** প্রপার্টি সেট করুন **"কন্টেন্ট"**, এবং **"কপি টু আউটপুট ডাইরেক্টরি"** প্রোপার্টি **"কপি সর্বদা"** সেট করা হয়েছে। মনে রাখবেন যে কনফিগারেশন পৃষ্ঠায় `_ConfigurePlugin` লেআউট ব্যবহার করা উচিত। 
+- এছাড়াও আপনার \Views ডিরেক্টরিতে `_ViewImports.cshtml` ফাইল আছে তা নিশ্চিত করুন। আপনি শুধু অন্য কোন বিদ্যমান প্লাগইন থেকে এটি অনুলিপি করতে পারেন।
+- **কন্ট্রোলার তৈরি করুন**। নতুন প্লাগিনে একটি **কন্ট্রোলার** ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন কন্ট্রোলার ক্লাস যোগ করুন। একটি ভাল অভ্যাস হল প্লাগইন কন্ট্রোলারদের নাম দেওয়া `{Group}{Name}Controller.cs`। উদাহরণস্বরূপ, PaymentPayPalStandardController। অবশ্যই এইভাবে কন্ট্রোলারের নাম দেওয়ার প্রয়োজন নেই (তবে কেবল একটি সুপারিশ)। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম পদ্ধতি তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম দিন *কনফিগার*। একটি মডেল শ্রেণী প্রস্তুত করুন এবং একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাঠান: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`।
+- আপনার কর্ম পদ্ধতির জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
 
     ```csharp
     [AutoValidateAntiforgeryToken]
@@ -102,11 +104,11 @@ So let's start:
     ```
 
     > [!TIP]
-    > You can also add these attributes directly to the controller. In this case, there is no need to tag each method with them.
+    > আপনি এই বৈশিষ্ট্যগুলিকে সরাসরি নিয়ামকের সাথে যুক্ত করতে পারেন। এই ক্ষেত্রে, তাদের সাথে প্রতিটি পদ্ধতি ট্যাগ করার প্রয়োজন নেই।
 
-    For example, open `PayPalStandard` payment plugin and look at its implementation of `PaymentPayPalStandardController`.
+    উদাহরণস্বরূপ, `PayPalStandard` পেমেন্ট প্লাগইনটি খুলুন এবং `PaymentPayPalStandardController` এর বাস্তবায়ন দেখুন।
 
-Then for each plugin which has a configuration page you should specify a configuration url. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration url:
+তারপরে প্রতিটি প্লাগইন যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে তার জন্য আপনাকে একটি কনফিগারেশন ইউআরএল নির্দিষ্ট করতে হবে। `BasePlugin` নামের বেস ক্লাসে `GetConfigurationPageUrl` পদ্ধতি আছে যা একটি কনফিগারেশন ইউআরএল প্রদান করে:
 
 ```csharp
 public override string GetConfigurationPageUrl()
@@ -115,29 +117,31 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-Where **{CONTROLLER_NAME}** is a name of your controller and **{ACTION_NAME}** is a name of action (usually it's `Configure`).
+যেখানে **{CONTROLLER_NAME}** আপনার নিয়ামকের একটি নাম এবং **{ACTION_NAME}** হল একটি কর্মের নাম (সাধারণত এটি `কনফিগার`)।
 
-Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under **Admin → Configuration → Local Plugins**.
+একবার আপনি আপনার প্লাগইন ইন্সটল করে কনফিগারেশন পদ্ধতি যোগ করলে আপনি **প্লাগইনটি অ্যাডমিন → কনফিগারেশন → লোকাল প্লাগইন** এর অধীনে কনফিগার করার জন্য একটি লিঙ্ক পাবেন।
 
 > [!TIP]
-> The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
+> উপরে বর্ণিত ধাপগুলি সম্পূর্ণ করার সবচেয়ে সহজ উপায় হল অন্য কোন প্লাগইন খুলে এই ফাইলগুলিকে আপনার প্লাগইন প্রকল্পে অনুলিপি করা। তারপরে কেবল উপযুক্ত ক্লাস এবং ডিরেক্টরিগুলির নাম পরিবর্তন করুন।
 
-For example, the project structure of *PayPalStandard* plugin looks like the image below:
+উদাহরণস্বরূপ, *PayPalStandard* প্লাগইন এর প্রজেক্ট গঠন নিচের ছবির মত দেখাচ্ছে:
 
 ![p3](_static/how-to-write-plugin-4.40/write_plugin_4.40_3.jpg)
 
-## Handling "InstallAsync", "UninstallAsync" and "UpdateAsync" methods
+## "InstallAsync", "UninstallAsync" এবং "UpdateAsync" পদ্ধতিগুলি পরিচালনা করা
 
-This step is optional. Some plugins can require additional logic during plugin installation. For example, a plugin can insert new locale resources. So open your `IPlugin` implementation (in most case it'll be derived from `BasePlugin` class) and override the following methods:
+এই পদক্ষেপটি ঐচ্ছিক। কিছু প্লাগইন প্লাগইন ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি প্লাগইন নতুন লোকেল সম্পদ সন্নিবেশ করতে পারে। সুতরাং আপনার `IPlugin` বাস্তবায়ন খুলুন (বেশিরভাগ ক্ষেত্রে এটি `BasePlugin` শ্রেণী থেকে উদ্ভূত হবে) এবং নিম্নলিখিত পদ্ধতিগুলি ওভাররাইড করুন:
 
-1. **InstallAsync**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
-1. **UninstallAsync**. This method will be invoked during plugin uninstallation.
-1. **UpdateAsync**. This method will be invoked during plugin the update (when its version is changed in the `plugin.json` file).
+১. **InstallAsync**. প্লাগইন ইনস্টলেশনের সময় এই পদ্ধতিটি চালু হয়। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
+
+২. **UninstallAsync**. প্লাগইন আনইনস্টল করার সময় এই পদ্ধতিটি চালু হয়।
+
+৩. **UpdateAsync**. প্লাগইন আপডেটের সময় এই পদ্ধতিটি চালু করা হবে (যখন এর সংস্করণ `plugin.json` ফাইলে পরিবর্তিত হয়)।
 
 > [!IMPORTANT]
-> If you override one of these methods, do not hide its base implementation.
+> আপনি যদি এই পদ্ধতিগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর ভিত্তি বাস্তবায়ন গোপন করবেন না।
 
-For example, overridden `InstallAsync` method should include the following method call: *`base.Install()`*. The `InstallAsync` method of *PayPalStandard* plugin looks like the code below
+উদাহরণস্বরূপ, ওভাররাইড করা 'InstallAsync' পদ্ধতিতে নিম্নলিখিত পদ্ধতি কল অন্তর্ভুক্ত করা উচিত: *`base.Install ()`*। *PayPalStandard* প্লাগইন এর `InstallAsync` পদ্ধতিটি নিচের কোডের মত দেখায়
 
 ```csharp
 public override async Task InstallAsync()
@@ -156,13 +160,13 @@ public override async Task InstallAsync()
 ```
 
 > [!TIP]
-> The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
+> ইনস্টল করা প্লাগইনগুলির তালিকা `\App_Data\plugins.json` তে অবস্থিত। ইনস্টলেশনের সময় তালিকা তৈরি করা হয়।
 
 ## Routes
 
-Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
+এখানে আমরা প্লাগইন রুটগুলি কীভাবে নিবন্ধন করব তার দিকে নজর দেব। ASP.NET Core রাউটিং নির্দিষ্ট MVC কন্ট্রোলার ক্রিয়ায় ইনকামিং ব্রাউজার অনুরোধ ম্যাপ করার জন্য দায়ী। আপনি রাউটিং সম্পর্কে আরও তথ্য পেতে পারেন [এখানে](https://docs.microsoft.com/aspnet/core/fundamentals/routing)। সুতরাং পরবর্তী পদক্ষেপগুলি অনুসরণ করুন:
 
-If you need to add some custom route, then create `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following `RouteProvider` class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by *PayPal* plugin):
+যদি আপনি কিছু কাস্টম রুট যোগ করতে চান, তাহলে `RouteProvider.cs` ফাইল তৈরি করুন। এটি নপকমার্স সিস্টেমকে প্লাগইন রুট সম্পর্কে অবহিত করে। উদাহরণস্বরূপ, নিচের `RouteProvider` ক্লাসটি একটি নতুন রুট যোগ করে যা আপনার ওয়েব ব্রাউজার খুলে এবং` http: // www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` ইউআরএল ( *PayPal* প্লাগইন দ্বারা ব্যবহৃত ): 
 
 ```csharp
 public partial class RouteProvider : IRouteProvider
@@ -177,14 +181,14 @@ public partial class RouteProvider : IRouteProvider
 }
 ```
 
-## Upgrading nopCommerce may break plugins
+## নপকমার্স আপগ্রেড করলে প্লাগইন ভেঙ্গে যেতে পারে
 
-Some plugins may become outdated and no longer work with the newer version of nopCommerce. If you have issues after upgrading to the newer version, delete the plugin and visit the official nopCommerce website to see if a newer version is available. Many plugin authors will upgrade their plugins to accommodate the newer version, however, some will not and their plugin will become obsolete with the improvements in nopCommerce. But in most cases, you can simply open an appropriate `plugin.json` file and update **SupportedVersions** field.
+কিছু প্লাগইন পুরনো হয়ে যেতে পারে এবং নপকমার্স এর নতুন সংস্করণের সাথে আর কাজ করবে না। নতুন সংস্করণে আপগ্রেড করার পরে যদি আপনার সমস্যা হয়, তাহলে প্লাগইনটি মুছুন এবং একটি নতুন সংস্করণ পাওয়া যায় কিনা তা দেখতে অফিসিয়াল নপকমার্স ওয়েবসাইটে যান। অনেক প্লাগইন লেখক নতুন সংস্করণকে সামঞ্জস্য করতে তাদের প্লাগইনগুলি আপগ্রেড করবে, তবে কেউ কেউ করবে না এবং তাদের প্লাগইন নপকমার্সের উন্নতির সাথে অপ্রচলিত হয়ে যাবে। তবে বেশিরভাগ ক্ষেত্রে, আপনি কেবল একটি উপযুক্ত `plugin.json` ফাইল খুলতে পারেন এবং **SupportedVersions** ক্ষেত্র আপডেট করতে পারেন। 
 
-## Conclusion
+## উপসংহার
 
-Hopefully this will get you started with nopCommerce and prepare you to build more elaborate plugins.
+আশা করি এটি আপনাকে নপকমার্স দিয়ে শুরু করবে এবং আপনাকে আরও বিস্তৃত প্লাগইন তৈরির জন্য প্রস্তুত করবে।
 
-## Plugin template
+## প্লাগইন টেমপ্লেট
 
-You can use our Visual Studio template for new nopCommerce plugins. It can save a lot of time for developers, because now they don't have to do manually all initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json etc), configuration, project references, etc). Please find it and installation instructions [here](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+আপনি নতুন নপকমার্স প্লাগইনগুলির জন্য আমাদের ভিজ্যুয়াল স্টুডিও টেমপ্লেট ব্যবহার করতে পারেন। এটি ডেভেলপারদের জন্য অনেক সময় বাঁচাতে পারে, কারণ এখন তাদের ম্যানুয়ালি সমস্ত প্রাথমিক পদক্ষেপ করতে হবে না। যেমন ফোল্ডার তৈরি (কন্ট্রোলার, ভিউ, মডেল ইত্যাদি), অন্যান্য প্রয়োজনীয় ফাইল (DependencyRegistrar.cs, _ViewImports.cshtml, ObjectContex, plugin.json ইত্যাদি), কনফিগারেশন, প্রকল্প রেফারেন্স ইত্যাদি)। অনুগ্রহ করে এটি খুঁজুন এবং ইনস্টলেশন নির্দেশাবলী [এখানে](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)।
