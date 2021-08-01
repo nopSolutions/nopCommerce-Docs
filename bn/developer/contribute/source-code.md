@@ -1,31 +1,31 @@
 ---
-title: Working with source code and contributions
-uid: en/developer/contribute/source-code
+title: সোর্স কোড এবং অবদানের সাথে কাজ করা
+uid: bn/developer/contribute/source-code
 author: git.AndreiMaz
-contributors: git.RomanovM, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Working with source code and contributions
+# সোর্স কোড এবং অবদানের সাথে কাজ করা
 
-## Checking out source code
+## সোর্স কোড চেক করা
 
-nopCommerce manages a repository at GitHub ([https://github.com/nopSolutions/nopCommerce](https://github.com/nopSolutions/nopCommerce)). So you can always check out the latest source code! Git SCM (Source Code Management) access is public and allows you to fetch in real time the latest version of nopCommerce! It allows you to follow daily nopCommerce developments and improvements. Get the latest patches, fixes without waiting for the next release. If you're not familiar with Git, there's a good and free documentation [here](https://git-scm.com/docs). Also find more info about GitHub support [here](https://opensource.guide/how-to-contribute/). Please note that these versions should not be used in a production environment. We do not guarantee that any of the functionality or code found in our SCM (Source Code Management) will be made available in our official releases. The best way to get the source code is to clone the repository. Git comes with built-in GUI tools for committing (git-gui) and browsing (gitk), but there are several third-party tools for users looking for platform-specific experience. Please find them at [https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis) (we use [SourceTree](https://www.sourcetreeapp.com/)).
+নপকমার্স গিটহাব এ একটি সংগ্রহস্থল পরিচালনা করে ([https://github.com/nopSolutions/nopCommerce](http://github.com/nopSolutions/nopCommerce))। সুতরাং আপনি সর্বদা সর্বশেষ সোর্স কোডটি পরীক্ষা করতে পারেন! গিট এসসিএম (সোর্স কোড ম্যানেজমেন্ট) অ্যাক্সেস সর্বজনীন এবং আপনাকে বাস্তব সময়ে নপকমার্স এর সর্বশেষ সংস্করণ আনতে দেয়! এটি আপনাকে দৈনিক নপকমার্স উন্নয়ন এবং উন্নতিগুলি অনুসরণ করতে দেয়। পরবর্তী রিলিজের জন্য অপেক্ষা না করে সর্বশেষ প্যাচ, ফিক্স পান। আপনি যদি গিটের সাথে পরিচিত না হন তবে [এখানে](https://git-scm.com/docs) একটি ভাল এবং বিনামূল্যে ডকুমেন্টেশন রয়েছে। এছাড়াও গিটহাব সাপোর্ট সম্পর্কে আরও তথ্য [এখানে](https://opensource.guide/how-to-contribute/) খুঁজে পান । দয়া করে মনে রাখবেন যে এই সংস্করণগুলি উৎপাদন পরিবেশে ব্যবহার করা উচিত নয়। আমরা গ্যারান্টি দিচ্ছি না যে আমাদের এসসিএম (সোর্স কোড ম্যানেজমেন্ট) -এ পাওয়া কোন কার্যকারিতা বা কোড আমাদের অফিসিয়াল রিলিজগুলিতে উপলব্ধ করা হবে। সোর্স কোড পাওয়ার সর্বোত্তম উপায় হল সংগ্রহস্থল ক্লোন করা। গিট কমিট (git-gui) এবং ব্রাউজিং (gitk) করার জন্য অন্তর্নির্মিত জিইউআই টুল নিয়ে আসে, কিন্তু প্ল্যাটফর্ম-নির্দিষ্ট অভিজ্ঞতা খুঁজতে ব্যবহারকারীদের জন্য বেশ কয়েকটি তৃতীয় পক্ষের সরঞ্জাম রয়েছে। অনুগ্রহ করে তাদের [https://git-scm.com/downloads/guis](http://git-scm.com/downloads/guis) এ খুঁজুন (আমরা [SourceTree](https://www.sourcetreeapp.com/) ব্যবহার করি )।
 
-## Branch Descriptions and Naming
+## শাখার বর্ণনা এবং নামকরণ
 
-Recently we started using Vincent Driessen's branching model (seen here: [http://nvie.com/posts/a-successful-git-branching-model/](https://nvie.com/posts/a-successful-git-branching-model/)) including the use of feature branches, a development branch (for integration) and a master branch (for publishing/production). Previously we had "master" branch only (till January 2016)
+সম্প্রতি আমরা ভিনসেন্ট ড্রিসেনের শাখা মডেল ব্যবহার শুরু করেছি (এখানে দেখা হয়েছে: [http://nvie.com/posts/a-successful-git-branching-model/](https://nvie.com/posts/a-successful-git-branching-model/)) সহ বৈশিষ্ট্য শাখা, একটি উন্নয়ন শাখা (ইন্টিগ্রেশন জন্য) এবং একটি মাস্টার শাখা (প্রকাশনা/উৎপাদনের জন্য) ব্যবহার সহ। আগে আমাদের শুধুমাত্র "মাস্টার" শাখা ছিল (জানুয়ারি 2016 পর্যন্ত)
 
-* Production branch: master
-* Development branch: develop
-* Feature and issue branches: Should start with "feature" or "issue". It should be followed by issue ID (according to our Github issue list) and some friendly name (example, "multistore"). Finally, it should look like "feature-34-multistore" or "issue-35-paypal-redirection-bug"
-* Release branches: Should start with "release". It should be followed by version number (example, "3.00"). Finally, it should look like "release-3.00"
+* উৎপাদন শাখা: মাস্টার
+* উন্নয়ন শাখা: বিকাশ
+* বৈশিষ্ট্য এবং ইস্যু শাখা: "বৈশিষ্ট্য" বা "সমস্যা" দিয়ে শুরু করা উচিত। ইস্যু আইডি (আমাদের গিথুব ইস্যু তালিকা অনুসারে) এবং কিছু বন্ধুত্বপূর্ণ নাম (উদাহরণস্বরূপ, "multistore") অনুসরণ করা উচিত। অবশেষে, এটি "feature-34-multistore" বা "issue-35-paypal-redirection-bug" এর মতো হওয়া উচিত
+* রিলিজ শাখা: "রিলিজ" দিয়ে শুরু করা উচিত। এটি সংস্করণ নম্বর দ্বারা অনুসরণ করা উচিত (উদাহরণস্বরূপ, "3.00")। অবশেষে, এটি "release-3.00" এর মতো হওয়া উচিত।
 
-## Forking and submitting pull requests
+## ফর্ক করা এবং পুল অনুরোধ জমা
 
-If you want to contribute some source code to nopCommerce core (issue fix or some new feature), then you should follow the next approach. Here is a short list of steps to contribute:
+আপনি যদি নপকমার্স কোর (ইস্যু ফিক্স বা কিছু নতুন বৈশিষ্ট্য) এ কিছু সোর্স কোড অবদান রাখতে চান, তাহলে আপনার পরবর্তী পদ্ধতি অনুসরণ করা উচিত। এখানে অবদানের জন্য পদক্ষেপগুলির একটি সংক্ষিপ্ত তালিকা রয়েছে:
 
-* First of all, you have to create a fork. Please find more about repository forking on GitHub at [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/).
-* Clone it locally.
-* Create a new branch from "develop". Please always create a new branch for each contribution. You should create it from our "develop" branch only. Do not use "master".
-* Write the code and push back to your GitHub fork.
-* Create pull request. Please read more about it at [https://help.github.com/articles/using-pull-requests/](https://help.github.com/articles/using-pull-requests/). And please always sync with our repository before doing it.
+* প্রথমত, আপনাকে একটি ফর্ক তৈরি করতে হবে। গিটহাব [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/) এ সংগ্রহস্থল ফর্কিং সম্পর্কে আরও জানুন।
+* এটি স্থানীয়ভাবে ক্লোন করুন।
+* "ডেভেলপ" থেকে একটি নতুন শাখা তৈরি করুন। প্রতিটি অবদানের জন্য দয়া করে একটি নতুন শাখা তৈরি করুন। আপনার এটি শুধুমাত্র আমাদের "বিকাশ" শাখা থেকে তৈরি করা উচিত। "মাস্টার" ব্যবহার করবেন না।
+* কোডটি লিখুন এবং আপনার গিটহাব ফর্কে ফিরে যান।
+* পুল অনুরোধ তৈরি করুন। অনুগ্রহ করে [https://help.github.com/articles/using-pull-requests/](https://help.github.com/articles/using-pull-requests/) এ আরও পড়ুন এবং এটি করার আগে আমাদের সংগ্রহস্থলের সাথে সর্বদা সিঙ্ক করুন।

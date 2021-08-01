@@ -1,21 +1,21 @@
 ---
-title: Sharing your plugins and themes
-uid: en/developer/contribute/sharing
+title: আপনার প্লাগইন, থিম এবং ভাষা প্যাক শেয়ার করা
+uid: bn/developer/contribute/sharing
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Sharing your plugins and themes
+# আপনার প্লাগইন, থিম এবং ভাষা প্যাক শেয়ার করা
 
-You can easily upload your plugin to our [Marketplace](http://www.nopcommerce.com/marketplace) directory to share it with other users. Just go to [My account](http://www.nopcommerce.com/customer/info) page, then "Your extensions" tab. Click "Upload a new extension" button in order to upload a new extension.
+আপনি সহজেই আপনার প্লাগইনটি আমাদের [মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) ডিরেক্টরিতে আপলোড করতে পারেন যাতে এটি অন্য ব্যবহারকারীদের সাথে শেয়ার করা যায়। শুধু [আমার অ্যাকাউন্ট](http://www.nopcommerce.com/customer/info) পৃষ্ঠায় যান, তারপর "আপনার এক্সটেনশন" ট্যাব। একটি নতুন এক্সটেনশন আপলোড করার জন্য "নতুন এক্সটেনশন আপলোড করুন" বোতামে ক্লিক করুন।
 
-And here are some of the benefits of hosting your plugin at the [Marketplace](http://www.nopcommerce.com/marketplace) directory:
+এবং [মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) ডিরেক্টরিতে আপনার প্লাগইন হোস্ট করার কিছু সুবিধা এখানে দেওয়া হল:
 
-* Track basic statistics regarding how many people are downloading
-* Give your plugin greater exposure to the community
-* Get your plugin rated against the many other hosted plugins
-* Provide a centralized location for users to leave comments and feedback
+* কতজন মানুষ ডাউনলোড করছে সে বিষয়ে মৌলিক পরিসংখ্যান ট্র্যাক করা
+* আপনার প্লাগইনটি সম্প্রদায়ের কাছে আরও বেশি এক্সপোজার করা
+* অনেক অন্যান্য হোস্ট করা প্লাগইনগুলির বিপরীতে আপনার প্লাগইন রেট করা
+* ব্যবহারকারীদের মন্তব্য এবং মতামত জানানোর জন্য একটি কেন্দ্রীয় অবস্থান প্রদান করা
 
-nopCommerce team examines each extension for quality and to make sure that it meets all our requirements (including the documentation and images). If your submission does not pass our reviews, we will tell you why, and how to fix it. Otherwise, your successful submissions will be listed on our marketplace.
+নপকমার্স টিম গুণমানের জন্য প্রতিটি এক্সটেনশন পরীক্ষা করে এবং নিশ্চিত করে যে এটি আমাদের সমস্ত প্রয়োজনীয়তা (ডকুমেন্টেশন এবং ছবি সহ) পূরণ করে। যদি আপনার জমা আমাদের রিভিউ পাস না করে, আমরা আপনাকে বলব কেন, এবং কিভাবে এটি ঠিক করতে হবে। অন্যথায়, আপনার সফল জমা আমাদের বাজারে তালিকাভুক্ত করা হবে।
 
-Please find a complete list of our requirements and information about the review process [here](https://www.nopcommerce.com/submitting-plugins-to-nopcommerce-marketplace).
+দয়া করে আমাদের প্রয়োজনীয়তার একটি সম্পূর্ণ তালিকা এবং পর্যালোচনা প্রক্রিয়া সম্পর্কে তথ্যের সন্ধান করুন [এখানে](https://www.nopcommerce.com/submitting-plugins-to-nopcommerce-marketplace).

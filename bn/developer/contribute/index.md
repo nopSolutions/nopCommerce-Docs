@@ -1,16 +1,16 @@
 ---
-title: Contribute
-uid: en/developer/contribute/index
+title: অবদান
+uid: bn/developer/contribute/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Contribute
+# অবদান
 
-You are more than welcome to contribute to the success of nopCommerce by helping out in the realization of the project, by participating in the forums, or just by spreading the word! If you have a site, write about us or place a hyperlink! We are committed to nurturing the growth of the nopCommerce community!
+প্রকল্পের বাস্তবায়নে সাহায্য করে, ফোরামে অংশ নিয়ে, অথবা শুধু কথা ছড়িয়ে দিয়ে নপকমার্স এর সাফল্যে অবদান রাখার জন্য আপনাকে স্বাগত জানাই! যদি আপনার কোন সাইট থাকে, আমাদের সম্পর্কে লিখুন অথবা একটি হাইপারলিঙ্ক রাখুন! আমরা নপকমার্স সম্প্রদায়ের বৃদ্ধিকে লালন করতে প্রতিশ্রুতিবদ্ধ!
 
-nopCommerce has a young but growing community of contributors. It is a very active community that is passionate about developing a very robust .NET Core open source eCommerce application. nopCommerce has had over 30,000 downloads in the last month, so it's pretty popular. So join the community and see what you can learn and what you can share!
+নপকমার্স এর অবদানকারীদের একটি নতুন কিন্তু ক্রমবর্ধমান সম্প্রদায় রয়েছে। এটি একটি খুব সক্রিয় সম্প্রদায় যা একটি খুব শক্তিশালী .NET Core ওপেন সোর্স ইকমার্স অ্যাপ্লিকেশন বিকাশের জন্য উত্সাহী। নপকমার্স গত মাসে 30,000 এরও বেশি ডাউনলোড হয়েছে, তাই এটি বেশ জনপ্রিয়। সুতরাং সম্প্রদায়ের সাথে যোগ দিন এবং দেখুন আপনি কি শিখতে পারেন এবং আপনি কি শেয়ার করতে পারেন!
 
-* [Possible ways to contribute](xref:en/developer/contribute/possible-ways)
-* [Sharing your plugins, themes, and language packs](xref:en/developer/contribute/sharing)
-* [Working with source code and contributions](xref:en/developer/contribute/source-code)
+* [অবদান রাখার সম্ভাব্য উপায়](xref:bn/developer/contribute/possible-ways)
+* [আপনার প্লাগইন, থিম এবং ভাষা প্যাক শেয়ার করা](xref:bn/developer/contribute/sharing)
+* [সোর্স কোড এবং অবদানের সাথে কাজ করা](xref:bn/developer/contribute/source-code)

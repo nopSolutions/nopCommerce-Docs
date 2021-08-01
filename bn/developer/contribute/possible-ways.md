@@ -1,20 +1,20 @@
 ---
-title: Possible ways to contribute
-uid: en/developer/contribute/possible-ways
+title: অবদান রাখার সম্ভাব্য উপায়
+uid: bn/developer/contribute/possible-ways
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Possible ways to contribute
+# অবদান রাখার সম্ভাব্য উপায়
 
-## Here are a few ways you can contribute to the nopCommerce project
+## নপকমার্স প্রকল্পে আপনি অবদান রাখতে পারেন এমন কয়েকটি উপায় এখানে দেওয়া হল
 
-* If you have a site, write about us or place a hyperlink
-* Answer a question on our [forums](http://www.nopcommerce.com/boards/).
-* Help us verifying submitted fixes for bugs.
-* Share an idea for a new feature or a better way to do something on the [forums](http://www.nopcommerce.com/boards/).
-* Create a new language pack.
-* Create a new graphical theme to share with the community.
-* Implement a new plugin (payment gateway module, etc).
-* Tell your friends about nopCommerce.
-* Our logos. PNG: [250x250](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo_250x250-trans.png) and [340x140](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo-340x140-trans.png). PSD: [250x250](http://www.nopcommerce.com/images/nopLogos/250x250.psd) and [340x140](http://www.nopcommerce.com/images/nopLogos/340x140.psd) and [1600x1200](http://www.nopcommerce.com/images/nopLogos/1600x1200.psd)
+* যদি আপনার কোন সাইট থাকে, আমাদের সম্পর্কে লিখুন অথবা একটি হাইপারলিঙ্ক রাখুন
+* আমাদের [ফোরাম](http://www.nopcommerce.com/boards/) এ একটি প্রশ্নের উত্তর দিন।
+* বাগের জন্য জমা দেওয়া সংশোধনগুলি যাচাই করতে আমাদের সহায়তা করুন।
+* [ফোরাম](http://www.nopcommerce.com/boards/) এ নতুন বৈশিষ্ট্য বা নতুন কিছু করার একটি ভাল উপায় সম্পর্কে একটি ধারণা শেয়ার করুন।
+* একটি নতুন ভাষার প্যাক তৈরি করুন।
+* সম্প্রদায়ের সাথে শেয়ার করার জন্য একটি নতুন গ্রাফিকাল থিম তৈরি করুন।
+* নতুন প্লাগইন (পেমেন্ট গেটওয়ে মডিউল, ইত্যাদি) বাস্তবায়ন করুন।
+* আপনার বন্ধুদের নপকমার্স সম্পর্কে বলুন।
+* আমাদের লোগো। PNG: [250x250](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo_250x250-trans.png) and [340x140](http://www.nopcommerce.com/images/nopLogos/nopcommerce_logo-340x140-trans.png). PSD: [250x250](http://www.nopcommerce.com/images/nopLogos/250x250.psd) and [340x140](http://www.nopcommerce.com/images/nopLogos/340x140.psd) and [1600x1200](http://www.nopcommerce.com/images/nopLogos/1600x1200.psd)

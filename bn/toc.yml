@@ -568,19 +568,19 @@
       href: developer/contribute/index.md
       items:
         - 
-          name: Possible ways to contribute
+          name: অবদান রাখার সম্ভাব্য উপায়
           href: developer/contribute/possible-ways.md
         - 
-          name: Sharing your plugins, themes, and language packs
+          name: আপনার প্লাগইন, থিম এবং ভাষা প্যাক শেয়ার করা
           href: developer/contribute/sharing.md
         - 
-          name: Working with source code and contributions
+          name: সোর্স কোড এবং অবদানের সাথে কাজ করা
           href: developer/contribute/source-code.md
     - 
       name: কপিরাইট নোটিশ
       href: developer/copyright-notice.md
 - 
-  name: Contribute
+  name: অবদান
   href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md
 - 
   name: Premium support services
