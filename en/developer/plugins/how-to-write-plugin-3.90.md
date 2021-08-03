@@ -49,8 +49,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 1. You should also created a web.config file and ensure that it's copied to output. Just copy it from any existing plugin.
 
-    > [!IMPORTANT]
-    > Going forward make sure "Copy local" properties of all third-party assembly references (including core libraries such as Nop.Services.dll or Nop.Web.Framework.dll) are set to "False" (do not copy)
+    > [!IMPORTANT] Going forward make sure "Copy local" properties of all third-party assembly references (including core libraries such as Nop.Services.dll or Nop.Web.Framework.dll) are set to "False" (do not copy)
 
 1. The last required step is to create a class which implements IPlugin interface (Nop.Core.Plugins namespace). nopCommerce has BasePlugin class which already implements some IPlugin methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from IPlugin. For example, we have "IPaymentMethod" interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as ProcessPayment() or GetAdditionalHandlingFee(). Currently nopCommerce has the following specific plugin interfaces:
 
@@ -64,8 +63,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
    - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on your site's left column.
    - **IMiscPlugin**. If your plugin doesn't fit any of the interfaces above.
 
-> [!IMPORTANT]
-> After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
+> [!IMPORTANT] After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
 ## Handling requests. Controllers, models and views
 
@@ -86,9 +84,9 @@ So let's start:
 - **Create the controller**. Add a Controllers folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers `{Group}{Name}Controller.cs`. For example, PaymentAuthorizeNetController. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it "Configure". Prepare a model class and pass it to the following view. For nopCommerce versions 2.00-3.30 you should pass embedded view path - "Nop.Plugin.{Group}.{Name}.Views. {Group}{Name}.Configure". And starting nopCommerce version 3.40 you should pass physical view path - `~/Plugins/{PluginOutputDirectory}/Views/{ControllerName}/Configure.cshtml`. For example, open Authorize.NET payment plugin and look at its implementation of PaymentAuthorizeNetController.
 
     > [!TIP]
-    >
+    > 
     > - The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
-    >
+    > 
     > - If you want to limit access to a certain action method of the controller to administrators (store owners), then just mark it with [AdminAuthorize] attribute.
 
     For example, the project structure of Authorize.NET plugin looks like the image below
@@ -149,8 +147,7 @@ This step is optional. Some plugins can require additional logic during plugin i
 - Install. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 - Uninstall. This method will be invoked during plugin uninstallation.
 
-> [!IMPORTANT]
-> If you override one of these methods, do not hide its base implementation.
+> [!IMPORTANT] If you override one of these methods, do not hide its base implementation.
 
 For example, the project structure of Authorize.NET plugin looks like the image below
 
@@ -169,8 +166,7 @@ public override void Install()
 }
 ```
 
-> [!TIP]
-> The list of installed plugins is located in `\App_Data\InstalledPlugins.txt`. The list is created during installation.
+> [!TIP] The list of installed plugins is located in `\App_Data\InstalledPlugins.txt`. The list is created during installation.
 
 ## Upgrading nopCommerce may break plugins
 
