@@ -16,15 +16,13 @@ To access your account at UPS use a username, a password, and an **XML license n
     * Password
     * XML access license number
 
-1. In nopCommerce admin area go to **Configuration → Shipping → Shipping providers**. 
- ![Shipping rate methods](_static/ups/shipping-rate-methods.jpg)
+1. In nopCommerce admin area go to **Configuration → Shipping → Shipping providers**. ![Shipping rate methods](_static/ups/shipping-rate-methods.jpg)
 1. Enable this method, as follows:
     * In the UPS (United Postal Service) row, click the **Edit** button.
     * In the Is **active** column, check the checkmark.
     * Click **Update**. The *false* option becomes *true*.
 
-1. Click **Configure** beside the UPS (United Parcel Service) option in the list. 
-    The *Configure – UPS (United Parcel Service)* window is displayed, as follows: ![Configure page](_static/ups/ups-configure.jpg)
+1. Click **Configure** beside the UPS (United Parcel Service) option in the list. The *Configure – UPS (United Parcel Service)* window is displayed, as follows: ![Configure page](_static/ups/ups-configure.jpg)
 
 1. Enter the following information obtained from the UPS provider:
     * Tick the **Use sandbox** checkbox to use testing environment.
