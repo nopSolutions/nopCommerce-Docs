@@ -11,19 +11,15 @@ The rental products functionality is useful when you want to create a website al
 
 ## Example
 
-Let's say you wish to create a website provides wedding dresses for rent. 
+Let's say you wish to create a website provides wedding dresses for rent.
 
 Which functionality will be useful in this case?
 
-- One of the most important feature is to allow customers to choose *rent period*. In nopCommerce, it is allowed to choose the start date and end date, as on the screenshot below:
-	![Rental example](_static/rental-products/example.jpg)
+- One of the most important feature is to allow customers to choose *rent period*. In nopCommerce, it is allowed to choose the start date and end date, as on the screenshot below: ![Rental example](_static/rental-products/example.jpg)
 
-- nopCommerce also allows the store administrator to chose *rental period* and *rental period length*. For example, you want to give the wedding dress for rent for 3 days minimum. In this case a customer will see the following on the product details page:
-	![Rental period](_static/rental-products/period.jpg)
+- nopCommerce also allows the store administrator to chose *rental period* and *rental period length*. For example, you want to give the wedding dress for rent for 3 days minimum. In this case a customer will see the following on the product details page: ![Rental period](_static/rental-products/period.jpg)
 
-- Use *checkout attributes* to allow a customer to specify return time when a carrier should pick up the dress:
-	![Rental example](_static/rental-products/time.jpg)
-	Read more about checkout attributes [here](xref:en/running-your-store/order-management/checkout-attributes).
+- Use *checkout attributes* to allow a customer to specify return time when a carrier should pick up the dress: ![Rental example](_static/rental-products/time.jpg) Read more about checkout attributes [here](xref:en/running-your-store/order-management/checkout-attributes).
 
 If you already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products) learn how to make this product rental in the section below.
 
