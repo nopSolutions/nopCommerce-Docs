@@ -25,15 +25,14 @@ To search for customers, in the *Customers* window enter one or more of the foll
 - **Customer roles** - you can select one or more customer roles to be displayed.
 
 > [!NOTE]
->
+> 
 > You can export the customer data to an external file by clicking **Export to XML (all)** or **Export to Excel (all)**. You can export selected customer data to an external file by clicking **Export to XML (selected)** or **Export to Excel (selected)**.
 
 Then click the **Search** button.
 
 ## Add a new customer
 
-To add a new customer, in the *Customers* window click **Add new**.
-The *Add a new customer* window will be displayed. Define the following customer details:
+To add a new customer, in the *Customers* window click **Add new**. The *Add a new customer* window will be displayed. Define the following customer details:
 
 ## Customer info
 
@@ -59,20 +58,17 @@ You can edit the following fields:
 
 Click the **Save** button to save the changes or click the **Save and continue edit** button to proceed for more customer's information. In this case you will se the newly added panels on the customer details page.
 
-You will also see the **Send email**, **Send private message** (if [forums](xref:en/running-your-store/content-management/forums) enabled) and **Delete** buttons.
-![Buttons](_static/managing-customers/edit_customer_details.png)
+You will also see the **Send email**, **Send private message** (if [forums](xref:en/running-your-store/content-management/forums) enabled) and **Delete** buttons. ![Buttons](_static/managing-customers/edit_customer_details.png)
 
 After clicking the **Send email** button, the *Send email* window will be displayed enabling a store owner to send an email to the customer. After clicking the **Send private message** button the *Send private message* window will be displayed enabling to send a message to the customer. To use private messaging, allow private messages in [forum settings](xref:en/running-your-store/content-management/forums).
 
 ## Orders
 
-On the *Orders* panel you can view the customer's orders details.
-![customer_info](_static/managing-customers/customer-orders.png)
+On the *Orders* panel you can view the customer's orders details. ![customer_info](_static/managing-customers/customer-orders.png)
 
 ## Addresses
 
-On the *Addresses* panel you can view, edit and create new addresses of the customer.
-![addresses](_static/managing-customers/customert-adresses.png)
+On the *Addresses* panel you can view, edit and create new addresses of the customer. ![addresses](_static/managing-customers/customert-adresses.png)
 
 Click the **Add new address** button to add a new customer address. Fill the appropriate fields and click **Save**. The new address will added to the customer.
 
