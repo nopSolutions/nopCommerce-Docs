@@ -13,8 +13,7 @@ In nopCommerce, your store can have several languages installed. However, the cu
 > 
 > By default, the English language is installed.
 
-To see or edit the installed languages go to **Configuration → Languages**:
-![language](_static/localization/Language.png)
+To see or edit the installed languages go to **Configuration → Languages**: ![language](_static/localization/Language.png)
 
 > [!NOTE]
 > 
@@ -28,24 +27,24 @@ To add a new language click **Add new**. In the *Add a new language* window, def
 
 * The **Name** of the new language.
 * The **Language culture** - a specific language code (for example, de-AT for Austrian German).
-* The **Unique SEO code** - a two letter language SEO code used to generate URLs like `http://www.yourstore.com/en/` when you have more than one published language. 
+* The **Unique SEO code** - a two letter language SEO code used to generate URLs like `http://www.yourstore.com/en/` when you have more than one published language.
 
   > [!NOTE]
-  >
+  > 
   > The **SEO friendly URLs with multiple languages** option should be enabled in the **Configuration → Settings → General settings → Localization settings** panel.
 
 * The **Flag image file name** - enter the flag image file name. The image should be saved under the `…/images/flags` directory. You can also choose an image from a predefined list.
-* Tick **Right-to-Left** if needed (for example, for Arabic, Hebrew, etc). 
-  
+* Tick **Right-to-Left** if needed (for example, for Arabic, Hebrew, etc).
+
   > [!NOTE]
-  >
+  > 
   > The active theme should support RTL (have an appropriate CSS style file). This option affects only the public store.
 
 * The **Default currency** for a specific language. If not specified, then the first found one (with the lowest display order) will be used.
 * **Limited to stores option** allowing to set this language for a specific store(s). You can choose the store(s) from a pre-created list. Leave this field empty if you don't use this option.
-  
+
   > [!NOTE]
-  >
+  > 
   > To use store limitaton the **Ignore "limit per store" rules (sitewide)** option should be disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
 * **Publish** the language, to enable this language to be visible and selected by visitors in your store.
@@ -55,8 +54,7 @@ Click **Save** to save the changes.
 
 > [!NOTE]
 > 
-> After adding a new language, you will be able to import and export string resources using the **Import resources**
-and **Export resources** buttons in the top of the page. The *String resources* panel from the language edit page will allow you to see the existing language resources and add new ones manually.
+> After adding a new language, you will be able to import and export string resources using the **Import resources** and **Export resources** buttons in the top of the page. The *String resources* panel from the language edit page will allow you to see the existing language resources and add new ones manually.
 
 ## Import language pack
 
@@ -64,14 +62,11 @@ If you wish to add a new language to your store, you should:
 
 1. Visit nopCommerce [translations](https://www.nopcommerce.com/translations) page.
 1. Choose nopCommerce version and download the desired language pack.
-1. Go to **Configuration → Languages** and press **AddNew** button.
-    ![LanguageAddNew](_static/localization/language-add-new.png)
+1. Go to **Configuration → Languages** and press **AddNew** button. ![LanguageAddNew](_static/localization/language-add-new.png)
 
-1. Fill in the required fields and click **Save and continue edit**.
-  ![LanguageSave](_static/localization/language-save.png)
+1. Fill in the required fields and click **Save and continue edit**. ![LanguageSave](_static/localization/language-save.png)
 
-1. Click **Import resources**. And specify the path to the language pack file (*.xml) that you downloaded.
-  ![LanguageImport](_static/localization/language-import.png)
+1. Click **Import resources**. And specify the path to the language pack file (*.xml) that you downloaded. ![LanguageImport](_static/localization/language-import.png)
 
 If you found a mistake in translation or wish to have custom naming, you can edit the string resources in the *String resources* panel.
 
@@ -83,19 +78,16 @@ Go to **Configuration → Languages**. The *Languages* window is displayed:
 
 Click the **Edit** button beside the language. In the **Edit language details** window, find the **String resources** panel.
 
-For example, you want to change the name of a panel on top of the page from "Administration" (on the picture below) to "Control panel". 
+For example, you want to change the name of a panel on top of the page from "Administration" (on the picture below) to "Control panel".
 
 ![Example 1](_static/localization/lang-example-before-change.jpeg)
- 
+
 1. In the Resource name field, enter "administration". The required string resource if found. Click **Edit** beside it.
-1. Enter the new name in the **Value** field and click **Update**.
-  ![Example 2](_static/localization/lang-resource-edit.png)
+1. Enter the new name in the **Value** field and click **Update**. ![Example 2](_static/localization/lang-resource-edit.png)
 
-1. The changes are implemented
-  ![Example 3](_static/localization/lang-example-after-change.jpeg)
+1. The changes are implemented ![Example 3](_static/localization/lang-example-after-change.jpeg)
 
-To add a new string resource use the **Add new record** panel. This window enabling you to add a new resource record to the grid, as follows:
-![Add new record](_static/localization/lang-add-resource.png)
+To add a new string resource use the **Add new record** panel. This window enabling you to add a new resource record to the grid, as follows: ![Add new record](_static/localization/lang-add-resource.png)
 
 * In the **Resource name** field, enter the resource string identifier.
 * In the **Value** field, enter a value for this resource string identifier.
