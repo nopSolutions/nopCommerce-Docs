@@ -13,12 +13,11 @@ News are displayed in your store on the homepage or on the site footer menu.
 
 ![p1](_static/news/news_1.png)
 
-To manage news go to **Content management → News itmes**. The list of all news is displayed, as follows:
-![News](_static/news/list.jpg)
+To manage news go to **Content management → News itmes**. The list of all news is displayed, as follows: ![News](_static/news/list.jpg)
 
 ## Adding news
 
-To add a new news item click the **Edit** button and fill the information about the news item. 
+To add a new news item click the **Edit** button and fill the information about the news item.
 
 ![Adding news](_static/news/add-new.jpg)
 
@@ -36,18 +35,14 @@ In the *Info* panel define the following news item details:
  > 
  > You can leave these fields empty if you do not want to define news item start and end dates.
 
- - Choose the stores in the **Limited to stores** field to enable this news item for specific stores only. Leave the field empty in case this functionality is not required.
-  > [!NOTE]
-  >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+ - Choose the stores in the **Limited to stores** field to enable this news item for specific stores only. Leave the field empty in case this functionality is not required. > [!NOTE] > > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 - Select the **Published** checkbox, to publish this news item in your store.
 
 While editing an existing news item or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the news item will appear on the site.
 
 ### SEO
-In the *SEO* panel define the following news item details:
-![SEO for news item](_static/news/seo.jpg)
+In the *SEO* panel define the following news item details: ![SEO for news item](_static/news/seo.jpg)
 
 - Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the news item.
 - Override the page title in the **Meta title** field (the default title is the title of the news item).
@@ -60,8 +55,7 @@ To manage news comments, go to **Content management → News comments**.
 
 ![News comments](_static/news/news-comments.jpg)
 
-Use the **Approve selected** to approve the selected comments and the **Disapprove selected** button to disapprove ones.
-You can also edit or delete a comment. If delete this comment will be removed from the system.
+Use the **Approve selected** to approve the selected comments and the **Disapprove selected** button to disapprove ones. You can also edit or delete a comment. If delete this comment will be removed from the system.
 
 ## News settings
 
