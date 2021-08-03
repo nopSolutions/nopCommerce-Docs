@@ -17,8 +17,7 @@ To set up inventory, go to **Catalog → Products → Edit a product**. In the *
 In the next sections we will see the difference between these methods.
 
 ## Don't track inventory
-Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing the *Don't track inventory* option in the **Inventory method** field. 
-![Don't track inventory](_static/inventory-management/inventory.png)
+Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing the *Don't track inventory* option in the **Inventory method** field. ![Don't track inventory](_static/inventory-management/inventory.png)
 
 In this case, the store owner can define:
 - **Warehouse** which will be used when calculating shipping rates. Read more in the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) chapter.
@@ -28,24 +27,21 @@ In this case, the store owner can define:
 - Tick the **Not returnable** checkbox if this product is not returnable. In this case a customer won't be allowed to submit a return request.
 
 ## Track inventory
-In case inventory tracking is required, the shop owner can select an **Inventory method** between two options: *Track inventory* (by product) or *Track inventory by product attributes*. The *Track inventory* option is for those who don't have product variants, and simply need to know how many items are left. In this section we will describe the *Track inventory* option.
-Once this option is chosen, the section expands displaying new fields:
+In case inventory tracking is required, the shop owner can select an **Inventory method** between two options: *Track inventory* (by product) or *Track inventory by product attributes*. The *Track inventory* option is for those who don't have product variants, and simply need to know how many items are left. In this section we will describe the *Track inventory* option. Once this option is chosen, the section expands displaying new fields:
 
 ![Track inventory](_static/inventory-management/track-inventory.jpg)
 
 Set up inventory, as follows:
 * **Stock quantity** is the total quantity. It is reduced every time when an order is shipped.
 * Choose the **Warehouse** which will be used when calculating shipping rates. You can manage warehouses on the **Configuration → Shipping → Warehouses** page. For further details refer to the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) page.
-* Tick the **Multiple warehouses** checkbox if you want to support shipping and inventory management from multiple warehouses. This way you can manage inventory per warehouse:
-  ![Multiple warehouses](_static/inventory-management/multiple-warehouses.jpg)
-    Click **Use** in the appropriate row if you want to use this warehouse for the product.
+* Tick the **Multiple warehouses** checkbox if you want to support shipping and inventory management from multiple warehouses. This way you can manage inventory per warehouse: ![Multiple warehouses](_static/inventory-management/multiple-warehouses.jpg) Click **Use** in the appropriate row if you want to use this warehouse for the product.
     * Enter the **Stock qty** what is the total quantity. It is reduced every time when an order is shipped.
     * Enter the **Reserved qty** what is the product quantity that is ordered but not shipped or added to a shipment yet.
     * The **Planned qty** is the product quantity that is ordered and already added to a shipment but not shipped yet.
 
 * To prevent customers from placing orders and finding out that the product is out of stock, you can take certain actions. Tick the **Display availability** checkbox, to display stock availability in the public store.
   * If required, tick the **Display stock quantity** checkbox, to enable customers to see a product stock quantity on the product details page (this checkbox is displayed only when the **Display availability** checkbox is ticked). The following screenshot demonstrates what a customer will see in the public store:
-      
+
       ![Availability](_static/inventory-management/stock-quantity.png)
 
 * In the **Minimum stock qty** field, enter a minimum value, under which further actions will be taken.
@@ -61,7 +57,7 @@ Set up inventory, as follows:
   * **Allow qty below 0 and notify customer**: customers can purchase this product even when there is no stock available. In addition, they get a notification with the following message: *Out of stock - on backorder and will be dispatched once in stock (**Display availability** option should be also enabled in this case)*.
 
 * Tick **Allow back in stock subscriptions**, to enable customers to subscribe for a notification about product availability, as on the screenshot below:
-  
+
   ![Subscribe](_static/inventory-management/stock-subscription.png)
 
 * Choose the **Product availability range** which will be displayed for customers when the product is not available for the moment. You can set up availability ranges in the *Product availability ranges* panel of the **Configuration → Shipping → Dates and ranges** page. For further details refer to the [Dates and ranges](xref:en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges) page.
@@ -72,15 +68,14 @@ Set up inventory, as follows:
 
 
 ## Track inventory by product attributes
-In case you have different product attributes combinations and need to track their stock quantity, select the *Track inventory by product attributes* inventory method.
-Once this option is chosen, the section expands displaying new fields:
+In case you have different product attributes combinations and need to track their stock quantity, select the *Track inventory by product attributes* inventory method. Once this option is chosen, the section expands displaying new fields:
 
 ![Track inventory by product attributes](_static/inventory-management/track-inventory-attributes.jpg)
 
 * Choose the **Warehouse** which will be used when calculating shipping rates. You can manage warehouses on the **Configuration → Shipping → Warehouses** page. For further details refer to the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) page.
 * To prevent customers from placing orders and finding out that the product is out of stock, you can take certain actions. Tick the **Display availability** checkbox, to display stock availability in the public store.
   * If required, tick the **Display stock quantity** checkbox, to enable customers to see a product stock quantity on the product details page (this checkbox is displayed only when the **Display availability** checkbox is ticked). The following screenshot demonstrates what a customer will see in the public store:
-    
+
     ![Availability](_static/inventory-management/stock-quantity.png)
 
 * Choose the **Product availability range** which will be displayed for customers when the product is not available for the moment. You can set up availability ranges in the *Product availability ranges* panel of the **Configuration → Shipping → Dates and ranges** page. For further details refer to the [Dates and ranges](xref:en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges) page.
@@ -91,17 +86,12 @@ Once this option is chosen, the section expands displaying new fields:
 - Tick the **Not returnable** checkbox if this product is not returnable. In this case a customer won't be allowed to submit a return request.
 
 > [!NOTE]
->
-> To set **Stock quantity** for different attribute combinations go to the **Attribute combinations** tab of the *Product attributes* panel on the edit product details page. On this tab you can define whether to **Allow out of stock** for a certain attribute combination to enable orders to be approved even when the product is out of stock.
-  ![Attribute combinations](_static/inventory-management/atribute-combinations.jpg)
+> 
+> To set **Stock quantity** for different attribute combinations go to the **Attribute combinations** tab of the *Product attributes* panel on the edit product details page. On this tab you can define whether to **Allow out of stock** for a certain attribute combination to enable orders to be approved even when the product is out of stock. ![Attribute combinations](_static/inventory-management/atribute-combinations.jpg)
 
 > [!TIP]
->
-> To track products that are currently under stock, go to **Reports → Low stock**.
-> The low stock report contains a list of products that are currently under stock, i.e. the stock quantity is equal or less than the minimum stock quantity set in the *Inventory* section on the product details page.
-  ![Low stock](_static/inventory-management/low-stock.png)
-  Click **Vew** to view the product details page, where these stock settings can be changed.
-  For more details about reports in nopCommerce visit the [Reports](xref:en/running-your-store/reports) page.
+> 
+> To track products that are currently under stock, go to **Reports → Low stock**. The low stock report contains a list of products that are currently under stock, i.e. the stock quantity is equal or less than the minimum stock quantity set in the *Inventory* section on the product details page. ![Low stock](_static/inventory-management/low-stock.png) Click **Vew** to view the product details page, where these stock settings can be changed. For more details about reports in nopCommerce visit the [Reports](xref:en/running-your-store/reports) page.
 
 ## See also
 
