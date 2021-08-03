@@ -22,7 +22,7 @@ You can create gift card products, defining a product as a gift card by ticking 
 In this panel you also need to specify the **Gift card type**: *Virtual* or *Physical*.
 
 > [!WARNING]
->
+> 
 > It is not recommended to change the gift card type from one to another in a "live" store.
 
 ## Activating a gift card
@@ -38,9 +38,8 @@ To see the gift card details click the **Edit** button deside it. The *Edit gift
 You should tick the **Is gift card activated** checkbox to activate the gift card. Then generate the **Coupon code**.
 
 > [!NOTE]
->
-> In order to active a gift card automatically after completing an order go to the **Configuration → Settings → Order settings** page. Find the *Gift cards* panel and tick the **Activate gift cards after completing of an order** checkbox. In this case the **Coupon code** will be generated automatically as well.
-> Note that there are other settings related to gift card activation on this page.
+> 
+> In order to active a gift card automatically after completing an order go to the **Configuration → Settings → Order settings** page. Find the *Gift cards* panel and tick the **Activate gift cards after completing of an order** checkbox. In this case the **Coupon code** will be generated automatically as well. Note that there are other settings related to gift card activation on this page.
 
 You can also define the following gift card information:
 
@@ -67,13 +66,13 @@ A gift card is used in the public store by entering the serial number in the box
 ![Using gift card](_static/gift-cards/using-geft-cards.jpg)
 
 > [!NOTE]
->
+> 
 > You can disable the gift card box on the shopping cart page by unticking the **Show gift card box** checkbox on the **Configuration → Settings → Shopping cart settings** page (*Common* panel).
 
 You can also allow your customers to check the gift card balane. To do this tick the **Allow customers to check gift card balance** checkbox on the **Configuration → Settings → Shopping cart settings** page (*Common* panel).
 
 > [!NOTE]
->
+> 
 > This feature requires CAPTCHA to be enabled because it is potentially not safe and CAPTCHA is needed to prevent and complicate bruteforce. To activate CAPTCHA go to **Configuration → Settings → General settings** page and tick the **CAPTCHA enabled** checkbox in the *CAPTCHA* panel. To learn how to set up CAPTCHA refer to the [Security settings - CAPTCHA](xref:en/getting-started/advanced-configuration/security-settings#captcha) section.
 
 ## See also
