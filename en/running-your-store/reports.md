@@ -19,8 +19,7 @@ The dashboard consist of several blocks:
 
 ### nopCommerce news
 
-Displays general nopCommerce news like new version releases.
-![News](_static/reports/news.png)
+Displays general nopCommerce news like new version releases. ![News](_static/reports/news.png)
 
 ### Common statistics
 
@@ -35,28 +34,23 @@ Here you can find links to more detailed reports:
 
 ### Orders
 
-This diagram enables you to know the number of orders that were processed in the last week, month, year.
-![Orders](_static/reports/orders.jpg)
+This diagram enables you to know the number of orders that were processed in the last week, month, year. ![Orders](_static/reports/orders.jpg)
 
 ### New customers
 
-This diagram shows the number of customers registered in last week, month, year.
-![New customers](_static/reports/customers.jpg)
+This diagram shows the number of customers registered in last week, month, year. ![New customers](_static/reports/customers.jpg)
 
 ### Order totals
 
-This section enables you to know the total of orders that were processed in the last day, week, month, year. Orders are shown by order status.
-![Order totals](_static/reports/order-totals.png)
+This section enables you to know the total of orders that were processed in the last day, week, month, year. Orders are shown by order status. ![Order totals](_static/reports/order-totals.png)
 
 ### Incomplete orders
 
-This section enables you to know the number of orders that are currently incomplete.
-![Orders incomplete](_static/reports/order-incomplete.png)
+This section enables you to know the number of orders that are currently incomplete. ![Orders incomplete](_static/reports/order-incomplete.png)
 
 ### Latest orders
 
-Latest orders section shows you the latest placed orders.
-![Latest orders](_static/reports/order-latest.png)
+Latest orders section shows you the latest placed orders. ![Latest orders](_static/reports/order-latest.png)
 
 ### Popular search keywords
 
@@ -66,8 +60,7 @@ This block displays most used keywords.
 
 ### Bestsellers reports
 
-This section displays the bestsellers by quantity and by amount.
-![Bestsellers](_static/reports/bestsellers.png)
+This section displays the bestsellers by quantity and by amount. ![Bestsellers](_static/reports/bestsellers.png)
 
 ## Sales summary
 
@@ -91,8 +84,7 @@ Then click **Run report**.
 
 The low stock report contains a list of products that are currently under stock. In the example shown below, the min stock quantity was set to 20 and the stock quantity is 0, therefore a low stock report is generated for this product. You can set up low stock settings when adding the product.
 
-To view low stock reports, go to **Reports → Low stock**. The *Low stock* report window is displayed, as follows:
-![Low stock report](_static/reports/low-stock-reports.png)
+To view low stock reports, go to **Reports → Low stock**. The *Low stock* report window is displayed, as follows: ![Low stock report](_static/reports/low-stock-reports.png)
 
 The low stock reports could be filtered by the **Published** property, which represents the *Published* property of products.
 
@@ -162,16 +154,13 @@ Customer reports give a store owner general information about registered custome
 
 ### Registered customers
 
-To run this report go to **Reports → Customer reports → Registered customers**.
-This report displays the number of registered customers for a certain period.
-You can track the number of users registered within the last day, week, two weeks, month and year.
+To run this report go to **Reports → Customer reports → Registered customers**. This report displays the number of registered customers for a certain period. You can track the number of users registered within the last day, week, two weeks, month and year.
 
 ![Registered customers](_static/reports/customer-registered.png)
 
 ### Customers by order total
 
-To run this report go to **Reports → Customer reports → Customers by order total**.
-In this report, you can see the orders total spent by customers and the number of orders by customers.
+To run this report go to **Reports → Customer reports → Customers by order total**. In this report, you can see the orders total spent by customers and the number of orders by customers.
 
 ![Customers by order total](_static/reports/Customers-by-order-total.png)
 
@@ -187,8 +176,7 @@ Then click **Run report**.
 
 ### Customers by number of orders
 
-To run this report go to **Reports → Customer reports → Customers by number of orders**.
-This report displays top 20 customers based on the total number of orders issued.
+To run this report go to **Reports → Customer reports → Customers by number of orders**. This report displays top 20 customers based on the total number of orders issued.
 
 ![Customers by number of orders](_static/reports/Customers-by-number-of-orders.png)
 
