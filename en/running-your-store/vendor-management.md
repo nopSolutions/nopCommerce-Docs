@@ -44,11 +44,11 @@ In the *Vendor info* panel, define the following vendor's details:
 
 > [!NOTE]
 > 
-> Some of vendor message templates, such as *OrderPaid.VendorNotification* and *OrderPlaced.VendorNotification*, are disabled by default. See how to change this in [Message templates](xref:en/running-your-store/content-management/message-templates) section. 
+> Some of vendor message templates, such as *OrderPaid.VendorNotification* and *OrderPlaced.VendorNotification*, are disabled by default. See how to change this in [Message templates](xref:en/running-your-store/content-management/message-templates) section.
 
 ### Vendor attributes
 
-When you create some additional vendor attributes the *Vendor attributes* panel will be displayed as well. 
+When you create some additional vendor attributes the *Vendor attributes* panel will be displayed as well.
 
 A store owners able to create attributes for a vendor much like they can for a product. This would allow for multi-vendor stores to collect and display more information about the vendor to customers.
 
@@ -89,6 +89,7 @@ Go to **Customers → Customers**. The *Customers* window is displayed:
 Create a new customer or click **Edit** beside a customer record you want to assign a vendor to. For more information about creating a customer refer to [Add a new customer](xref:en/running-your-store/customer-management/managing-customers#add-a-new-customer).
 
 * In the *Customer info* panel, ensure the *Vendors* customer role is selected in the **Customer roles** field.
+
   > [!NOTE]
   > 
   > A vendor customer account cannot belong to the default *Administrators* customer role.
@@ -111,21 +112,18 @@ This section describes how to define the vendor settings of your store. This inc
 Go to **Configuration → Settings → Vendor settings**.
 
 This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
-	
+
 ### Common
 
-In the *Common* panel define the following vendor settings:
-![Common](_static/vendor-management/vendorsettings1.png)
+In the *Common* panel define the following vendor settings: ![Common](_static/vendor-management/vendorsettings1.png)
 
 * **Allow customers to apply for vendor account**. Firstly, a vendor request is filled by a user, thus creating a vendor account. Then the request is presented to a store-owner (via email notification) to be accepted.
+
   > [!NOTE]
   > 
   > A store owner has to add an appropriate customer record to "Vendors" role manually if he wants to grant access to the admin area. Read about it in the [Assigning a vendor to a customer record](#assigning-a-vendor-to-a-customer-record) section above.
 
-  * If the previous checkbox is checked you can tick the **Terms of service** to require vendors to accept terms of service during registration.
-    > [!NOTE]
-    >
-    > To edit these terms of service go to **Content management → Topics (pages)**. Find the **VendorTermsOfService** item and click **Edit**. Read more about it in the [Topics (pages)](xref:en/running-your-store/content-management/topics-pages) section.
+  * If the previous checkbox is checked you can tick the **Terms of service** to require vendors to accept terms of service during registration. > [!NOTE] > > To edit these terms of service go to **Content management → Topics (pages)**. Find the **VendorTermsOfService** item and click **Edit**. Read more about it in the [Topics (pages)](xref:en/running-your-store/content-management/topics-pages) section.
 
 * **Allow vendors to edit info** allows vendors to provide personal information in public store.
   * Choose whether to **Notify about vendor information changes** to notify an admin about vendor information changes.
@@ -135,8 +133,7 @@ In the *Common* panel define the following vendor settings:
 
 ### Catalog
 
-In the *Catalog* panel define the following vendor settings:
-![Catalog](_static/vendor-management/vendorsettings2.png)
+In the *Catalog* panel define the following vendor settings: ![Catalog](_static/vendor-management/vendorsettings2.png)
 
 * **Allow customers to contact vendors** (send emails using contact forms). This functionality is available on a vendor details page in the public store.
 * **Allow search by vendor** to customers, on an advanced search page.
