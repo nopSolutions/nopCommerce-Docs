@@ -14,9 +14,8 @@ To manage manufacturers go to **Catalog → Manufacturers**.
 Search for a manufacturer in the *Search* panel by entering the **Manufacturer name** or a part of the name, by the **Published** property or among all the manufacturers of a certain **Store** (if more than one store enabled).
 
 > [!NOTE]
->
-> To remove manufacturers from the list, select the items to be deleted and click the **Delete (selected)** button.
-> You can export the manufacturers to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML** or **Export to Excel**.
+> 
+> To remove manufacturers from the list, select the items to be deleted and click the **Delete (selected)** button. You can export the manufacturers to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML** or **Export to Excel**.
 
 ## Adding a new manufacturer
 
@@ -43,10 +42,7 @@ In the *Display* panel, define the following details:
 - Select the **Published** checkbox, to enable the manufacturer to be visible in the public store.
 - Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the manufacturer details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
   - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page.
-    > [!TIP]
-    >
-    > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
+  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page. > [!TIP] > > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
 
 - Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
   - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
@@ -64,21 +60,23 @@ In the *Mappings* panel, define the following details:
 - **Discounts** - select discounts associated with this manufacturer. You can create discounts on the **Promotions → Discounts** page. Read more about discounts in the [Discounts](xref:en/running-your-store/promotional-tools/discounts) chapter.
 
     > [!NOTE]
-    >
+    > 
     > Note that only discounts with *assigned to manufacturers* type are visible here. After discounts are mapped to the manufacturer, they are applied to all products in this manufacturer.
 
     > [!NOTE]
-    >
+    > 
     > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
 - In the **Limited to customer roles** field choose the customer roles which will be able to see the manufacturer in the catalog. Leave this field empty if this option is not required and the manufacturer can be seen by everyone.
+
     > [!NOTE]
-    >
+    > 
     > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
 - Choose the stores in the **Limited to stores** field if the manufacturer is sold in specific stores. Leave the field empty in case this functionality is not required.
+
   > [!NOTE]
-  >
+  > 
   > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 ### SEO
@@ -121,7 +119,7 @@ After the product was added to the manufacturer, define the following informatio
 - **Display order**.
 
 > [!NOTE]
->
+> 
 > By clicking **View**, you will be redirected to the *Edit product details* page.
 
 Click **Save**.
@@ -131,7 +129,7 @@ Click **Save**.
 If you do not want to add all the manufacturers to your catalog manually you can use the import option.
 
 > [!NOTE]
->
+> 
 > Before you start import you should download a table template for import in Excel format. For accurate and correct import of your manufacturers it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
 
 It is not mandatory to fill all the table fields. The manufacturer will be created based on the filled fields.
