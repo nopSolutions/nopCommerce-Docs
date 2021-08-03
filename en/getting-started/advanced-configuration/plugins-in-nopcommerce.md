@@ -42,16 +42,13 @@ The plugins available on the marketplace are developed either by the nopCommerce
 
 ## To configure a plugin
 
-1. Go to **Configuration → Local plugins**. The plugins list is displayed:
-    ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
+1. Go to **Configuration → Local plugins**. The plugins list is displayed: ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
 1. Click the **Configure** link beside the plugin to go to the plugin's configuration page. If the **Configure** button does not exist beside a plugin, this indicates the plugin does not require any configuration.
 
 ## To change the plugin's friendly name, display order and limitations
 
-1. Go to **Configuration → Local Plugins**. The plugins list is displayed:
-    ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
-1. Click the **Edit** button beside the plugin. Edit plugin details, as follows:
-    ![Edit plugin](_static/plugins-in-nopcommerce/plugin-edit.jpg)
+1. Go to **Configuration → Local Plugins**. The plugins list is displayed: ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
+1. Click the **Edit** button beside the plugin. Edit plugin details, as follows: ![Edit plugin](_static/plugins-in-nopcommerce/plugin-edit.jpg)
 1. Enter the **Friendly name**.
 1. In the **Display order** field, define the required location to display this plugin. 1 represents the top of the list.
 1. Tick the **Is enabled** field if you want to enable the plugin in the store.
@@ -61,8 +58,7 @@ The plugins available on the marketplace are developed either by the nopCommerce
 
 ## To uninstall a plugin
 
-1. Go to **Configuration → Local plugins**. The plugins list is displayed:
-![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
+1. Go to **Configuration → Local plugins**. The plugins list is displayed: ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
 1. Click the **Uninstall** link beside the plugin to uninstall. The plugin is uninstalled. The link in the **Installation column** changes to **Install** enabling you to reinstall the plugin at any time.
 1. Click on the **Restart application to apply changes** button on the top panel to finish the uninstallation process.
 
