@@ -10,10 +10,9 @@ In nopCommerce you can choose how the top menu and footer will be displayed. You
 
 ## Top menu
 
-In the Default Clean theme the top menu looks the following way:
-![Default Clean theme top menu](_static/top-menu-and-footer/top-menu.jpg)
+In the Default Clean theme the top menu looks the following way: ![Default Clean theme top menu](_static/top-menu-and-footer/top-menu.jpg)
 
-As you can see in displays the store categories. Please note, if you want a category to be displayed in the top menu you should tick the **Include in top menu** checkbox on the category edit page. For more details, read below. 
+As you can see in displays the store categories. Please note, if you want a category to be displayed in the top menu you should tick the **Include in top menu** checkbox on the category edit page. For more details, read below.
 
 You can include the following items in the top menu:
 - Categories
@@ -31,7 +30,7 @@ To include a category in the top menu, go to the category edit page in admin are
 Tick the **Include in top menu** checkbox and click **Save**.
 
 > [!NOTE]
->
+> 
 > If this category is a subcategory, then ensure that its parent category also has this property enabled.
 
 ### Custom topics (pages)
@@ -48,7 +47,7 @@ To include some of the site sections in the top menu, go to **Configuration → 
 
 ![Top menu settings](_static/top-menu-and-footer/general-settings-top-menu.jpg)
 
-Choose the items you want to be displayed in the top menu from the following list: 
+Choose the items you want to be displayed in the top menu from the following list:
 
 * **Display "Home page"**
 * **Display "New products"**
@@ -61,13 +60,12 @@ Choose the items you want to be displayed in the top menu from the following lis
 Then click **Save**.
 
 > [!NOTE]
->
+> 
 > The "New products" menu item will be displayed only when the "New products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
 
 ## Footer
 
-In the Default Clean theme the footer looks the following way:
-![Default Clean theme footer](_static/top-menu-and-footer/footer.jpg)
+In the Default Clean theme the footer looks the following way: ![Default Clean theme footer](_static/top-menu-and-footer/footer.jpg)
 
 By default, it displays site section links grouped by three types: *Information, Customer service, My account*. You can remove any of the displayed links or add new ones.
 
@@ -98,12 +96,13 @@ To include some of the site sections in the footer, go to **Configuration → Se
 
 ![Footer settings](_static/top-menu-and-footer/general-settings-footer.jpg)
 
-Choose the items you want to be displayed in the footer from the following list: 
+Choose the items you want to be displayed in the footer from the following list:
 
 * **Display "Sitemap"**
-	> [!NOTE]
-	>
-	> The "Sitemap" menu item will be displayed only when the **Sitemap enabled** checkbox is ticked on the **Configuration → Settings → General settings** page (*Sitemap* panel).
+
+    > [!NOTE]
+    > 
+    > The "Sitemap" menu item will be displayed only when the **Sitemap enabled** checkbox is ticked on the **Configuration → Settings → General settings** page (*Sitemap* panel).
 
 * **Display "Contact us"**
 * **Display "Search"**
@@ -111,37 +110,43 @@ Choose the items you want to be displayed in the footer from the following list:
 * **Display "Blog"**
 * **Display "Forums"**
 * **Display "Recently viewed products"**
-	> [!NOTE]
-	>
-	> The "Recently viewed products" menu item will be displayed only when the "Recently viewed products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
+
+    > [!NOTE]
+    > 
+    > The "Recently viewed products" menu item will be displayed only when the "Recently viewed products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
 
 * **Display "Compare products list"**
-	> [!NOTE]
-	>
-	> The "Compare products list" menu item will be displayed only when the "Compare products" functionality is enabled on the **Configuration → Settings → Catalog settings** page (*Compare products* panel).
+
+    > [!NOTE]
+    > 
+    > The "Compare products list" menu item will be displayed only when the "Compare products" functionality is enabled on the **Configuration → Settings → Catalog settings** page (*Compare products* panel).
 
 * **Display "New products"**
-	> [!NOTE]
-	>
-	> The "New products" menu item will be displayed only when the "New products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
+
+    > [!NOTE]
+    > 
+    > The "New products" menu item will be displayed only when the "New products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
 
 * **Display "My account"**
 * **Display "Orders"**
 * **Display "Addresses"**
 * **Display "Shopping cart"**
-	> [!NOTE]
-	>
-	> The "Shopping cart" menu item will be displayed to a certain customer only when the "Public store. Enable shopping cart" permission is enabled for the customer's role. To manage permissions go to the **Configuration → Access control list** page. Or read more about permissions in the [Access control list](xref:en/running-your-store/customer-management/access-control-list) section.
- 
+
+    > [!NOTE]
+    > 
+    > The "Shopping cart" menu item will be displayed to a certain customer only when the "Public store. Enable shopping cart" permission is enabled for the customer's role. To manage permissions go to the **Configuration → Access control list** page. Or read more about permissions in the [Access control list](xref:en/running-your-store/customer-management/access-control-list) section.
+
 * **Display "Wishlist"**
-	> [!NOTE]
-	>
-	> The "Wishlist" menu item will be displayed to a certain customer only when the "Public store. Enable wishlist" permission is enabled for the customer's role. To manage permissions go to the **Configuration → Access control list** page. Or read more about permissions in the [Access control list](xref:en/running-your-store/customer-management/access-control-list) section.
+
+    > [!NOTE]
+    > 
+    > The "Wishlist" menu item will be displayed to a certain customer only when the "Public store. Enable wishlist" permission is enabled for the customer's role. To manage permissions go to the **Configuration → Access control list** page. Or read more about permissions in the [Access control list](xref:en/running-your-store/customer-management/access-control-list) section.
 
 * **Display "Apply for vendor account"**
-	> [!NOTE]
-	>
-	> The "Apply for vendor account" menu item will be displayed only when the **Allow customers to apply for vendor account** checkbox is ticked on the **Configuration → Settings → Vendor settings** page (*Common* panel).
+
+    > [!NOTE]
+    > 
+    > The "Apply for vendor account" menu item will be displayed only when the **Allow customers to apply for vendor account** checkbox is ticked on the **Configuration → Settings → Vendor settings** page (*Common* panel).
 
 Click **Save** to save the changes.
 
@@ -175,7 +180,6 @@ According to the terms of the nopCommerce license, without purchasing the *Copyr
 - When users click on the "powered by nopCommerce" text it must direct them to https://www.nopcommerce.com. The "Powered by nopCommerce" link must be in the same format, unedited, as delivered in the program source code. This obligation shall also apply to any copies or derivative works!
 - The copyright notice at the footer of your store (website) must remain intact, unedited and clearly visible. Please do NOT attempt to edit, remove or hide the copyright notice in any way.
 
-Upon purchase of a "copyright removal key" you are permitted to remove the "Powered by nopCommerce" statement.
-Copyright infringement is illegal - please be advised.
+Upon purchase of a "copyright removal key" you are permitted to remove the "Powered by nopCommerce" statement. Copyright infringement is illegal - please be advised.
 
 For more information please visit the [nopCommerce copyright removal key](https://nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=documentation&utm_medium=link&utm_campaign=powered_by_nopcommerce&utm_content=topmenu_footer) page.
