@@ -106,11 +106,10 @@ Sharing options from the *Share* panel allow to set up an opportunity for shoppe
 - The **Share button code** field displays the pages button code.
 
   > [!TIP]
-  >
+  > 
   > By default, AddThis service is used ([http://www.addthis.com/](http://www.addthis.com/)).
 
-This is how share links look like:
-![Share](_static/catalog-settings/zzz.png)
+This is how share links look like: ![Share](_static/catalog-settings/zzz.png)
 
 - Tick the **'Email a friend' enabled** checkbox to allow customers to use the "Email a friend" option.
 - **Allow anonymous users to email a friend** if needed.
@@ -167,7 +166,7 @@ In the *Product page* panel you can set the following options:
 - Select the **Display type for attribute value when out of stock**. If the attribute combination is out of stock you can show it as disabled or as usual.
 
   > [!NOTE]
-  >
+  > 
   > Note that the **Allow only existing attribute combinations** option should be enabled for a product.
 
 ## Catalog pages
