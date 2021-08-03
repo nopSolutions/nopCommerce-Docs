@@ -26,7 +26,7 @@ In the *VAT* panel:
 * Tick **EU VAT enabled**. This will ensure that tax is charged only for shipments within the EU.
 * Select the **Country** your shop is in.
 * If applicable, tick *Allow VAT exemption*. This will ensure that your VAT registered customers who are shipping within the EU but outside the country in which the store is located will not be charged VAT.
-* Tick the **Assume VAT always valid** checkbox to skip VAT validation. Entered VAT numbers will always be valid. It will be a client's responsibility to provide the correct VAT number. 
+* Tick the **Assume VAT always valid** checkbox to skip VAT validation. Entered VAT numbers will always be valid. It will be a client's responsibility to provide the correct VAT number.
 * If you checked **Allow VAT exemption**, then you might want to tick the "**Use web service**" and "**Notify admin when a new VAT number is submitted**" checkboxes too.
 
 Click the **Save** button.
@@ -39,7 +39,7 @@ Go to **Configuration → Countries**. Make sure that all the countries which ar
 > 
 > Jersey, Guernsey, and the other Channel Islands are not a part of the UK and are not within the scope of VAT. If you sell to those places you may need to change that.
 
-Go to **Configuration → Tax categories**. 
+Go to **Configuration → Tax categories**.
 
 ![Tax categories](_static/index/tax-categories.jpg)
 
@@ -49,7 +49,7 @@ Go to **Configuration → Tax providers**. Make the **Manual (fixed or by countr
 
 ![Tax providers](_static/index/tax-providers.jpg)
 
-Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. In the top of the page you will see the switch. Choose **Fixed rate** there. 
+Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. In the top of the page you will see the switch. Choose **Fixed rate** there.
 
 ![Configure](_static/index/configure.jpg)
 
