@@ -26,9 +26,10 @@ Define the following information:
   * *Including tax*
   * *Excluding tax*
 * Tick the **Enable password lifetime**, to force customers to change their passwords after a specified time.
-* **Purchased with product**. Click the **Choose product** button to choose a special product. A customer is added to this customer role once this product is purchased (paid). 
+* **Purchased with product**. Click the **Choose product** button to choose a special product. A customer is added to this customer role once this product is purchased (paid).
+
   > [!NOTE]
-  >
+  > 
   > In case of refund or order cancellation you must manually remove a customer from this role.
 
 * **Is system role**. This setting shows whether this role is used in the code. It is predefined and cannot be modified.
