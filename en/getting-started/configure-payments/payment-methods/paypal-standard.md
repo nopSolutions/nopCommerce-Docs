@@ -26,7 +26,7 @@ To use **PayPal Standard** plugin as a payment method please follow these steps:
     ![step1](_static/paypal-standard/signUp1step.png)
 
     > [!NOTE]
-    >
+    > 
     > If you already have an account you will be redirected to the authorization.
 
     ![step2](_static/paypal-standard/signUp2step.png)
@@ -75,7 +75,7 @@ For the **IPN** (Instant Payment Notification) activation:
 1. Click **Save.** You should get a message that you have successfully activated IPN.
 
 > [!NOTE]
->
+> 
 > Instant Payment Notification (IPN) is PayPal's message service that sends a notification when a transaction is affected. Once IPN is integrated, sellers can automate their back office so they are not required to wait for payments to come in to trigger order fulfillment.
 
 ## Limit to stores and customer roles
@@ -95,13 +95,13 @@ You can limit any payment method to store and customer role. This means that the
    - In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
      > [!IMPORTANT]
-     >
+     > 
      > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
    - Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
 
      > [!IMPORTANT]
-     >
+     > 
      > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
    - Click **Save**.
