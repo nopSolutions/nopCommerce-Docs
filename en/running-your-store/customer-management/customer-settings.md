@@ -36,16 +36,18 @@ Define the common customer settings, as follows:
 * Tick the **Notify about new customer registration** checkbox, to enable a store owner to get an email notification each time when a new customer is registered.
 * Tick the **Require registration for downloadable products** checkbox if customers have to complete registration in order to purchase downloadable products.
 * Use the **Allow customers to check gift card balance** field to allow customers to check gift card balance.
+
   > [!NOTE]
-  >
+  > 
   > If the **Allow customers to check gift card balance** field is checked, then CAPTCHA setting must be enabled in the admin area (**Configuration → Settings → General settings → CAPTCHA panel**). This feature is potentially not safe and CAPTCHA is needed to prevent and complicate bruteforce. For more details refer to [CAPTCHA settings](xref:en/getting-started/advanced-configuration/security-settings#captcha).
 
 * Choose whether to **Allow customers to select time zone** in the public store on the accounts page. Otherwise, the default time zone is used.
 * Select the **Default store time zone** from a dropdown list.
+
    > [!NOTE]
    > 
    > The current time zone is displayed automatically.
- 
+
  * Tick the **Allow customers to remove associations** to allow customers to remove external authentication associations.
 
 ## Password and security
@@ -57,14 +59,12 @@ Define the common customer settings, as follows:
 * Select the **Default password format**, as follows:
   * *Clear*
   * *Hashed*
-  * *Encrypted*
-  > [!NOTE]
-  > 
-  > This setting is for storing customers' passwords and will be applied only to newly registered customers.
+  * *Encrypted* > [!NOTE] > > This setting is for storing customers' passwords and will be applied only to newly registered customers.
 
 * In the **Password lifetime** enter the number of days for password expiration.
+
   > [!NOTE]
-  >
+  > 
   > To use the **Password lifetime** feature don't forget to check **Enable password lifetime** property on the customer role edit page (**Customers → Customer roles**) for those roles, that need to change passwords. For more details refer to [Customer roles](xref:en/running-your-store/customer-management/customer-roles).
 
 * In the **Password recovery link. Days valid** field, enter the number of days for password recovery link. Set it to 0 if you don't want the link to expire.
@@ -76,11 +76,12 @@ Define the common customer settings, as follows:
 
 ![Account](_static/customer-settings/account.jpg)
 
-* Tick the **'Usernames' enabled** checkbox, to enable using usernames for login and registration instead of emails. 
+* Tick the **'Usernames' enabled** checkbox, to enable using usernames for login and registration instead of emails.
+
   > [!NOTE]
-  >
-  > It is not recommended to change this option in the production environment. 
-  
+  > 
+  > It is not recommended to change this option in the production environment.
+
   When the **'Usernames' enabled** checkbox is selected, the following options are displayed:
   * **Allow customers to change their usernames**: select this option if customers are allowed to change their usernames.
   * **Allow customers to check the availability of usernames**: select this option to allow customers to check the username availability before clicking *Save* button on the *My account - Customer info* page. The **Check availability** button is displayed in this case, see the example below.
@@ -94,8 +95,7 @@ Define the common customer settings, as follows:
   * *Show emails*
   * *Show usernames*
   * *Show full names*
-  * *Show first name*
-  The customer name will be shown in the store next to the customer's news and blog comments, on the forum pages and others.
+  * *Show first name* The customer name will be shown in the store next to the customer's news and blog comments, on the forum pages and others.
 * Check the **Phone number validation is enabled** checkbox if you want to enable phone number validation (when registering or changing on the "My account" page in the public store). When this checkbox is selected, the following options are displayed:
   * **Phone number validation rule**: set the validation rule for a phone number in this field. You can specify a list of allowed characters or a regular expression. If you use a regular expression check the **Use regex for username validation** field described below.
   * Check the **Use regex for phone number validation** field to use a regular expression for phone number validation (when registering or changing on the "My account" page in the public store).
@@ -136,10 +136,10 @@ In the *Customer form fields* panel, define whether the following form fields ar
 * **'Phone number' enabled.** When enabled, you can also decide whether this field should be required.
 * **'Fax number' enabled.** When enabled, you can also decide whether this field should be required.
 * Tick the **'Accept privacy policy' enabled** checkbox, to request customers to accept the privacy policy during the registration.
-* Tick the **'Newsletter' enabled** checkbox to offer customers a newsletter subscription during the registration. 
+* Tick the **'Newsletter' enabled** checkbox to offer customers a newsletter subscription during the registration.
   * When the **'Newsletter' enabled** checkbox is selected, the **Newsletter ticked by default** checkbox is displayed. This automatically sets the 'Newsletter' checkbox on the registration page as ticked.
 
-### Custom customer attributes 
+### Custom customer attributes
 If the default form fields are not enough for your requirements, you can manage additional customer attributes using this table. Customer attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout attributes](xref:en/running-your-store/order-management/checkout-attributes).
 
 ![Custom customer attributes](_static/customer-settings/customersettings6.png)
