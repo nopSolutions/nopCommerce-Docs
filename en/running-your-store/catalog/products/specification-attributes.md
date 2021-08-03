@@ -26,7 +26,7 @@ Let's say you are running an online computer store. What helps a customer to mak
   Select the **Allow filtering** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes) to allow filtering by this attribute for the certain product.
 
 - Include the "Compare products" functionality in your store. This feature is also uses specification attributes. For your computer store the "Compare products" page will look the following way:
-  
+
   ![Compare products](_static/specification-attributes/compare.jpg)
 
   To enable the "Compare products" functionality go to **Configuration → Settings → Catalog settings**. In the *Compare products* panel tick the **'Compare products' enabled** checkbox.
@@ -36,7 +36,7 @@ The next section describes how to create specification attributes. Note that aft
 ## Create a specification attribute group
 
 > [!NOTE]
->
+> 
 > All specification attributes which don't belong to any group are under the *Default group (non-grouped specification attributes)*.
 
 To see and edit a list of specification attributes and their groups, go to **Catalog → Attributes → Specification attributes**.
@@ -57,7 +57,7 @@ Then save the changes.
 ## Create a specification attribute
 
 > [!NOTE]
->
+> 
 > By default, there are no specification attributes pre-created in nopCommerce.
 
 To see and edit a list of specification attributes, go to **Catalog → Attributes → Specification attributes**.
@@ -92,8 +92,7 @@ Define the following option settings:
 
 Click **Save** to save the option details.
 
-The following screenshot shows the already added options:
-![Options](_static/specification-attributes/options.jpg)
+The following screenshot shows the already added options: ![Options](_static/specification-attributes/options.jpg)
 
 ### Used by products
 
