@@ -22,7 +22,7 @@ The *Online customers* window includes the following columns:
 - **Last visited page** - the page the customer visited last time.
 
 > [!NOTE]
->
+> 
 > To see the last visited page you need to enable the **Store last visited page** setting on the **Configuration → Settings → Customer settings** page (*Account* panel).
 
 This page includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
