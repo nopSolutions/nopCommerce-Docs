@@ -21,8 +21,9 @@ In the following example we will describe the setup of two sample stores, as fol
 * `www.store2.com`
 
 1. Upload and install the site on `www.store1.com`. This is the only place where nopCommerce files and DLLs are stored.
+
       > [!NOTE]
-      >
+      > 
       > Read more how to install nopCommerce in the following chapter: [Installing nopCommerce](xref:en/installation-and-upgrading/installing-nopcommerce/index).
 
 1. From the control panel of `www.store2.com` (meaning your hosting control panel, not the nopCommerce administration area) ensure that all requests to `www.store2.com` are forwarded (not redirected) to `www.store1.com`. Perform this using CNAME records. This step is crucial.
@@ -32,7 +33,7 @@ In the following example we will describe the setup of two sample stores, as fol
     After completing the steps above, when accessing `www.store2.com` from your browser, the content of `www.store1.com` will be displayed. The next step is to configure the stores in the nopCommerce administration area which will be described below. You can then start uploading content for both stores.
 
 1. Optional (sample): This step can be performed from the Plesk control panel below, as follows:
-  
+
       When `www.store2.com` is redirected to `www.store1.com`, the web server for Plesk does not know how to display `www.store2.com` since it uses Name-Based Virtual Hosting. Therefore, you must create a domain alias for `www.store2.com`, as described below:
 
       * Log in to the domain panel of `www.store1.com`, either directly or via the **Open in Control Panel** link from the server administration panel.
@@ -66,11 +67,11 @@ To set up several stores click **Add new** and define the following store settin
 * Select the **SSL enabled** checkbox if your store is SSL secured. SSL (Secure Sockets Layer) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is an industry standard and is used by millions of websites in the protection of their online transactions with their customers.
 
   > [!IMPORTANT]
-  >
+  > 
   > Tick this option only after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
 
   > [!TIP]
-  >
+  > 
   > Read more about setting SSL up in the following chapter: [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification).
 
 * The **HOST values** field is a list of possible HTTP_HOST values of your store (for example, `store1.com`, `www.store1.com`). Filling this field is only required when you have a multi-store solution to determine the current store. This field enables distinguishing requests to distinct URLs and determines the current store. You can also see the current HTTP_POST value in **System → System information**.
