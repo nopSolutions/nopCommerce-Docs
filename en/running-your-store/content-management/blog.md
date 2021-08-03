@@ -9,13 +9,11 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 A blog is a great way to connect with your existing customers, keeping them informed about latest product offerings or educating them, as well as to find new customers.
 
-To manage blog posts go to **Content management → Blog posts**.
-![Blog posts](_static/blog/blog1.jpg)
+To manage blog posts go to **Content management → Blog posts**. ![Blog posts](_static/blog/blog1.jpg)
 
 ## Add a new blog post
 
-Click **Add new** and fill the information about a new blog post.
-![Add a new blog post](_static/blog/add-new.jpg)
+Click **Add new** and fill the information about a new blog post. ![Add a new blog post](_static/blog/add-new.jpg)
 
 ### Info
 In the *Info* panel define the following blog post details:
@@ -23,8 +21,7 @@ In the *Info* panel define the following blog post details:
 * Enter the **Title** of this blog post.
 * Enter the **Body** text of this blog post.
 * You can specify the **Body overview** if you want only part of the whole text to be visible on the main blog page where all blog posts are listed.
-* Enter **Tags** to be displayed on the blog page in the public store. Tags are keywords that this blog post can also be identified by. Enter a comma separated list of the tags to be associated with this blog post. The more blog posts are associated with a particular tag, the larger size it has in the "Popular tags" area, displayed in the sidebar on the blog page.
-   ![p3](_static/blog/Blog3.png)
+* Enter **Tags** to be displayed on the blog page in the public store. Tags are keywords that this blog post can also be identified by. Enter a comma separated list of the tags to be associated with this blog post. The more blog posts are associated with a particular tag, the larger size it has in the "Popular tags" area, displayed in the sidebar on the blog page. ![p3](_static/blog/Blog3.png)
 
 * Select the **Allow comments** checkbox, to enable customers to add comments to this blog post.
 * Select the **Include in sitemap** checkbox, to include the blog post in the sitemap.
@@ -35,15 +32,15 @@ In the *Info* panel define the following blog post details:
  > You can leave these fields empty if you do not want to define blog post start and end dates.
 
 - Choose the stores in the **Limited to stores** field to enable this blog post for specific stores only. Leave the field empty in case this functionality is not required.
+
   > [!NOTE]
-  >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > 
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 While editing an existing blog post or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the blog post will appear on the site.
 
 ### SEO
-In the *SEO* panel define the following blog post details:
-![SEO for blog posts](_static/blog/blog4.jpg)
+In the *SEO* panel define the following blog post details: ![SEO for blog posts](_static/blog/blog4.jpg)
 
 - Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the blog post.
 - Override the page title in the **Meta title** field (the default title is the title of the blog post).
@@ -56,8 +53,7 @@ To manage blog comments select **Content management → Blog comments**.
 
 ![Blog comments](_static/blog/blog5.jpg)
 
-Use the **Approve selected** to approve the selected comments and the **Disapprove selected** button to disapprove ones.
-You can also edit or delete a blog comment. If delete this comment will be removed from the system.
+Use the **Approve selected** to approve the selected comments and the **Disapprove selected** button to disapprove ones. You can also edit or delete a blog comment. If delete this comment will be removed from the system.
 
 ## Blog settings
 
@@ -86,5 +82,5 @@ Define the following *Blog comments* settings:
 Click **Save**.
 
 > [!NOTE]
->
+> 
 > You can enable CAPTCHA for blog comments for security purposes. For more information proceed to the [CAPTCHA](xref:en/getting-started/advanced-configuration/security-settings#captcha) section.
