@@ -19,7 +19,7 @@ Click **Edit** beside the Nivo slider plugin. The window is expanded, as follows
 
 ![Nivo Edit](_static/nivo-slider/nivo-slider-edit.png)
 
-Tick the **Is active** checkbox, to enable the plugin. 
+Tick the **Is active** checkbox, to enable the plugin.
 
 Click **Configure**. The *Configure – Nivo slider* window is displayed, as follows:
 
@@ -32,7 +32,6 @@ Perform the following for each slide you would like to upload:
 * In the **Image alternate text** field, enter alternate text that will be added to image.
 * In the **URL** field, enter the required URL or leave empty if you do not want the picture to be clickable.
 
-Click **Save**. 
+Click **Save**.
 
-Now you can go to the homepage of your public store and the updated image slider:
-![Homepage](_static/nivo-slider/homepage.jpg)
+Now you can go to the homepage of your public store and the updated image slider: ![Homepage](_static/nivo-slider/homepage.jpg)
