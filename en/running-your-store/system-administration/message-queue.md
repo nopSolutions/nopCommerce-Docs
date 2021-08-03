@@ -9,8 +9,7 @@ contributors: git.exileDev, git.mariannk
 
 Emails are not sent immediately in nopCommerce. They are queued. Message queue contains all emails that are already sent or not yet sent.
 
-To load the message queue, from the **System** menu, select **Message queue**. The *Message queue* window is displayed, as follows:
-![Message queue](_static/message-queue/message-queue.png)
+To load the message queue, from the **System** menu, select **Message queue**. The *Message queue* window is displayed, as follows: ![Message queue](_static/message-queue/message-queue.png)
 
 Enter one or more of the following criteria to search for messages:
   * From the **Start date** field, select the start date.
