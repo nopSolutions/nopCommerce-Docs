@@ -11,9 +11,7 @@ To configure the Manual (fixed or by country/state/zip) tax provider go to **Con
 
 ![Tax providers](_static/manual/tax-providers.png)
 
-Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates.
-You can switch *Fixed rate* tax calculation to *Country/state/zip* tax calculation by clicking the appropriate button at the top left.
-To manage tax categories click the **Manage tax categories** button in the top right.
+Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. You can switch *Fixed rate* tax calculation to *Country/state/zip* tax calculation by clicking the appropriate button at the top left. To manage tax categories click the **Manage tax categories** button in the top right.
 
 ## Fixed rate
 
@@ -28,7 +26,7 @@ Make sure your products have a tax category assigned to them on their [product p
 ![Product](_static/manual/product.jpg)
 
 > [!NOTE]
->
+> 
 > This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
 
 ## By country
@@ -51,7 +49,7 @@ Click **Add tax rate**. The new tax rate is displayed, as follows:
 ![Add tax rate](_static/manual/add-tax-rate.png)
 
 > [!NOTE]
->
+> 
 > This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
 
 ## Configure tax categories
