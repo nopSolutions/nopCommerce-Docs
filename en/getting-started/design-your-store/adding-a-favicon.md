@@ -13,8 +13,7 @@ Since the version 4.20 you can automatically upload favicons through the admin a
 > 
 > For multistore case you need to repeat this upload procedure for each store.
 
-1. To upload favicons go to **Configuration → Settings → General settings.** The *Favicon and app icons* panel is displayed: 
-![settings_block](_static/adding-a-favicon/settings_block.png)
+1. To upload favicons go to **Configuration → Settings → General settings.** The *Favicon and app icons* panel is displayed: ![settings_block](_static/adding-a-favicon/settings_block.png)
 
 1. Click the green button **Upload icons archive**, the file selection dialog will be opened: ![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Here you need to copy the path to your icons (it vary depends on the store and the virtual directory). For example: `/icons/icons_0`.
 
@@ -22,13 +21,11 @@ Since the version 4.20 you can automatically upload favicons through the admin a
 
    - The most complete option is to use one of the favicon generators. In this manual, we will show an example of using a [RealFaviconGenerator](https://realfavicongenerator.net/). Thanks to this service, uploading the full favicon package will be carried out in a few clicks.
 
-      * Go to this generator main page where you will be invited to choose a picture for the favicon 
-      ![realfavicongenerator](_static/adding-a-favicon/realfavicongenerator.png)
+      * Go to this generator main page where you will be invited to choose a picture for the favicon ![realfavicongenerator](_static/adding-a-favicon/realfavicongenerator.png)
 
       * After selecting a picture and clicking **Continue with this picture**, you will be redirected to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. The service will automatically show display examples. You can customize them to your needs or leave the default ones.
 
-      * At the bottom of the same page you can find the **Favicon Generator Options** panel. 
-      ![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
+      * At the bottom of the same page you can find the **Favicon Generator Options** panel. ![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
 
          - In this section, you must set certain settings. In the **Path** tab, select the option `I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here` and specify the path from the step 2. ![favicon_path](_static/adding-a-favicon/favicon_path.png)
 
