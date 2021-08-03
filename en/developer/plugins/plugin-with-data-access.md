@@ -15,17 +15,14 @@ In this tutorial I'll be using the nopCommerce plugin architecture to implement 
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
-> [!NOTE]
-> The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
+> [!NOTE] The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
 
 ## Getting started
 
 Create a new class library project "Nop.Plugin.Misc.ProductViewTracker".
 
 Add the  `plugin.json` file.
-
->[!TIP]
->For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+> [!TIP] For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
 
@@ -113,9 +110,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Migrations
     }
 }
 ```
-
->[!NOTE]
->Pay attention to the **SkipMigrationOnUpdate** attribute, its purpose is described by the name. This attribute allows you to skip migrations when performing the plugin update procedure.
+> [!NOTE] Pay attention to the **SkipMigrationOnUpdate** attribute, its purpose is described by the name. This attribute allows you to skip migrations when performing the plugin update procedure.
 
 ## Service layer
 
@@ -269,7 +264,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 ## The main plugin class
 
 > [!IMPORTANT]
->
+> 
 > We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
 
 ```csharp
