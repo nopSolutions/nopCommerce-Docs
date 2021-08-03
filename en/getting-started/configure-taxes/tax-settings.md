@@ -61,7 +61,7 @@ Then set up VAT in the *VAT* panel:
 > If VAT is enabled, then it charges 0% tax to shipping outside the EU and 0% to those who have supplied a validated and approved VAT number and are shipping within the EU but outside the shop country. Refer to an article for further information on the EU VAT.
 
 > [!TIP]
->
+> 
 > Read how to set up EU VAT here: [EU VAT configuration guide](xref:en/getting-started/configure-taxes/index#eu-vat-configuration-guide).
 
 Click **Save**.
