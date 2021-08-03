@@ -55,8 +55,7 @@ After filling the fields, click **Save**.
 
 > [!TIP]
 > 
-> It's not necessary to create attributes values when adding product attribute, you can create them later when apply certain product attribute to the product. 
-> Once the attributes and values are set, they can be grouped and managed in the *Product attributes* panel on the product edit page.
+> It's not necessary to create attributes values when adding product attribute, you can create them later when apply certain product attribute to the product. Once the attributes and values are set, they can be grouped and managed in the *Product attributes* panel on the product edit page.
 
 > [!NOTE]
 > 
