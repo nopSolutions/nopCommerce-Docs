@@ -12,7 +12,7 @@ Grouped products, or products with variants, is a convenient tool to sell a prod
 In nopCommerce, grouped products look like a single product details page displaying all possible options. It is a convenient and SEO-friendly tool to sell complex products.
 
 > [!TIP]
->
+> 
 > For example, a base product, such as a camera body, can be grouped with different sets of lens. Another use case of a grouped product is selling one type of a product with different attribute sets. For example, chocolate with different flavours. In this case, a customer can easily see the main product and all its options on the same page.
 
 ![Grouped](_static/grouped-products-variants/grouped.jpg)
@@ -22,7 +22,7 @@ In nopCommerce, grouped products look like a single product details page display
 To create a grouped product, go to **Catalog → Products**. There are several steps to follow:
 
   > [!TIP]
-  >
+  > 
   > Learn how to fill up the product fields [here](xref:en/running-your-store/catalog/products/add-products).
 
 1. Create several products with a *simple* product type. These are the variants of the main product. Define whether you want them to be visible separately in catalog and search results, or be shown only on a product page of the main product using the **Visible individually** checkbox.
