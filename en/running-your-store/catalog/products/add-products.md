@@ -14,7 +14,7 @@ To add a new product, go to **Catalog → Products**. Click **Add new** button i
 ![Products](_static/add-product-for-beginners/products.jpg)
 
 > [!NOTE]
->
+> 
 > You can import products from an external file by clicking the **Import** button. Once you have a list of products, you can export it to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. Additionally, it is possible to **Download catalog as PDF** to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the **Delete (selected)** button.
 
 *Add a new product* page is available in two modes: **advanced** and **basic** (in advanced mode by default). You can switch to the basic mode which displays the only required fields.
@@ -41,7 +41,7 @@ Start by filling up general information in the *Product info* panel:
 
 - Tick **Published**, to make the product visible in your store.
 - Enter the **Product tags**, the keywords for product identification. Enter tags separating them by comma. The more products are associated with a particular tag, the larger it will look in the *Popular tags* cloud, displayed in the sidebar of the catalog page. Read more how to manage product tags in the [Product tags](xref:en/running-your-store/catalog/products/product-tags) section.
-  
+
   ![Popular tags](_static/add-product-for-beginners/popular_tags.png)
 
 - Enter the **GTIN (global trade item number)**. These identifiers include UPC (in North America), EAN (in Europe), JAN (in Japan), and ISBN (for Books).
@@ -50,13 +50,11 @@ Start by filling up general information in the *Product info* panel:
 - Set up the **Product type** as *Simple* or *Grouped*. Read more about product types in the [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants) chapter.
 - The **Product template** field is visible if you have any custom product templates installed on the **Sysytem → Templates** page.
 - Tick **Visible individually** if you want the product to be in catalog or search results, otherwise the product will be hidden in the catalog and accessible only from a grouped product details page.
-- Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone.
-    > [!NOTE]
-    >
-    > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+- Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone. > [!NOTE] > > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 - Choose the stores in the **Limited to stores** field if the product is sold in specific stores. Leave the field empty in case this functionality is not required.
+
   > [!NOTE]
-  >
+  > 
   > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 - **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**.
@@ -71,8 +69,9 @@ Start by filling up general information in the *Product info* panel:
 In the *Price* panel define:
 
 - **Price**, in a predefined currency.
+
     > [!NOTE]
-    >
+    > 
     > You can change the store currency in **Configuration → Currencies**. Read more about currencies [here](xref:en/getting-started/configure-payments/advanced-configuration/currencies).
 
 - **Old price**. If it is larger than zero it becomes visible in the public store and is displayed beside the new price for comparison purposes.
@@ -90,8 +89,9 @@ In the *Price* panel define:
   - **Reference amount** - the base amount.
   - **Reference unit** - measure of a previously entered value.
 - **Discounts**. Learn how to set up discounts [here](xref:en/running-your-store/promotional-tools/discounts).
+
     > [!NOTE]
-    >
+    > 
     > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
 - Whether the product is exempted from tax, by ticking **Tax exempt**. Otherwise, from the **Tax category** dropdown list, select the required tax classification for this product. Tax categories can be configured by the store owner in  the **Configuration → Tax → Tax categories**.
@@ -104,22 +104,19 @@ Define product-specific shipping details in the *Shipping* panel:
 
 - Tick **Shipping enabled** if the product can be shipped. The section then expands for more details.
 - Set the product parameters which will be used for the shipping calculation: **Weight, Length, Width, Height**.
+
     > [!NOTE]
-    >
+    > 
     > You can change predefined measures in **Configuration → Shipping → Measures**.
 
 - **Free shipping** if the product is shipped for free.
 - **Ship separately** if the product should be shipped separately from other products. If the order includes several items of the product, all of them will be shipped separately.
 - **Additional shipping charge**.
-- **Delivery date** which will be displayed in the public store.
-    > [!NOTE]
-    >
-    > You can manage delivery date options in **Configuration → Shipping → Delivery dates**.
+- **Delivery date** which will be displayed in the public store. > [!NOTE] > > You can manage delivery date options in **Configuration → Shipping → Delivery dates**.
 
 > [!NOTE]
->
-> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**.
-> This setting allows to display estimate shipping information based on customer's shipping address in pop-up window on the product details page.
+> 
+> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**. This setting allows to display estimate shipping information based on customer's shipping address in pop-up window on the product details page.
 
 ## Inventory
 
@@ -137,7 +134,7 @@ In the *Pictures* panel you can add the product pictures.
 Click **Add product picture** to save the picture.
 
 > [!TIP]
->
+> 
 > [YouTube tutorial: Importing mass product images](https://www.youtube.com/watch?v=9BUqR_OGiq4)
 
 ## Product attributes
@@ -158,14 +155,14 @@ Set up a new attribute:
 - Fill the **Text prompt** field, if you want some text to be shown in front of this attribute in the public store.
 - Tick **Is required** to set this attribute as required for customers.
 - Define the **Control type** for this attribute (e.g. dropdown list, radio button list, etc.).
+
     > [!NOTE]
-    >
+    > 
     > For the "Date picker" control type, it is possible to set a number of years to be displayed by using **catalogsettings.countdisplayedyearsdatepicker** parameter on the *All settings (advanced)* page. For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed. Read how to set this up on the [All settings](xref:en/getting-started/advanced-configuration/all-settings) page.
 
 - Define the **Display order** of the attribute on a product page. 1 represents the top of the list.
 
-Click **Save and continue edit**.
-The **Values** panel now displays the predefined values for this attribute. Click **Edit** in the value row if required.
+Click **Save and continue edit**. The **Values** panel now displays the predefined values for this attribute. Click **Edit** in the value row if required.
 
 ### Edit an attribute value
 
@@ -180,9 +177,8 @@ If the previous setting set to *Associated to product* the following fields will
 - **Associated product** allows you to choose the product which will be assotiated to this attribute. Use the **Associate a product** button to choose a product.
 
 > [!NOTE]
->
-> Make sure there is no any warning after you chose the associated product. Such as:
-> ![Assotiated warning](_static/add-product-for-beginners/assotiated-warning.jpg)
+> 
+> Make sure there is no any warning after you chose the associated product. Such as: ![Assotiated warning](_static/add-product-for-beginners/assotiated-warning.jpg)
 
 - Tick the **Customer enters quantity** field to allow a customer to enter the quantity of the attribute (which represents the associated product).
 - If the previous field in unticked you can specify the **Product quantity**. Minimum allowed value is 1.
@@ -227,8 +223,9 @@ For each combination define:
 - **Manufacturer part number**.
 - **GTIN**.
 - **Overridden price**, if the price for products with certain attributes is different from the product regular price. For example, you can give a discount this way. Leave empty to ignore field.
+
   > [!NOTE]
-  >
+  > 
   > All other applied discounts will be ignored when this field is specified.
 - In the **Notify admin for quantity below** enter the quantity under which the admin will be notified.
 - Choose a **Picture** associated to this attribute combination. This picture will replace the main product image when this product attribute combination is selected.
@@ -236,7 +233,7 @@ For each combination define:
 Click **Save**.
 
 > [!NOTE]
->
+> 
 > Note that some attribute control types that support custom user input (e.g. file upload, textboxes, date picker) are useless with attribute combinations.
 
 To generate all possible combinations use the **Generate all possible combinations** button. Or use the **Generate several combinations** button to manually choose some attribute values to generate necessary combinations.
@@ -246,15 +243,14 @@ To generate all possible combinations use the **Generate all possible combinatio
 Specification attributes are product features i.e, screen size, number of USB-ports visible on product details page. Specification attributes can be used for filtering products on the category details page. Read more about specification attributes [here](xref:en/running-your-store/catalog/products/specification-attributes).
 
 > [!NOTE]
->
+> 
 > Unlike product attributes, specification attributes are used for information purposes only.
 
 ![Specification attributes](_static/add-product-for-beginners/spec.jpg)
 
 In the *Specification attributes* panel, add specification attributes.
-
->[!NOTE]
->
+> [!NOTE]
+> 
 > You can add an attribute for your product using the existing list of attributes, or if you need to create a new one go to **Catalog → Attributes → Specification attributes**.
 
  To add a new attribute, click the **Add attribute** button and fill the *Add a new product specification attribute* section:
