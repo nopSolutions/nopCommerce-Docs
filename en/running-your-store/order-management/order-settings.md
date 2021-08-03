@@ -7,15 +7,14 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Order settings
 
-To define order settings, go to **Configuration → Settings → Order settings**. The *Order settings* window will be displayed. 
+To define order settings, go to **Configuration → Settings → Order settings**. The *Order settings* window will be displayed.
 
 This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
 In this window you can define the following order settings:
 
 ## Checkout
-Define the following settings in the *Checkout* panel:
-![Checkout](_static/order-settings/checkout.jpg)
+Define the following settings in the *Checkout* panel: ![Checkout](_static/order-settings/checkout.jpg)
 
 * **Checkout disabled**, to disable the checkout process.
 * **Anonymous checkout allowed**, to enable customers to purchase products without registration/logging in.
@@ -28,8 +27,7 @@ Define the following settings in the *Checkout* panel:
 * To **Display "Pickup in store" on "Shipping method" page** or on the shipping address page.
 
 ## Order totals
-Define the following settings in the *Order totals* panel:
-![Totals](_static/order-settings/totals.jpg)
+Define the following settings in the *Order totals* panel: ![Totals](_static/order-settings/totals.jpg)
 
 * **Min order sub-total amount**. Orders under this amount will not be issued.
 * To **Calculate "Min order sub-total amount" including tax**. In this case, an order sub-total will be calculated including tax when validating **Min order sub-total amount field** specified in the previous step.
@@ -37,8 +35,7 @@ Define the following settings in the *Order totals* panel:
 * To **Auto update order totals** to have the order totals automatically updated on editing an order in admin area (currently in BETA testing).
 
 ## Common
-Define the following settings in the *Common* panel:
-![Common](_static/order-settings/common.jpg)
+Define the following settings in the *Common* panel: ![Common](_static/order-settings/common.jpg)
 
 * The **Order ID** counter. This is useful if you want your orders to start at a certain number. This affects only orders created after. The value must be greater than the current maximum order ID.
 * In the **Order number mask** you can create custom order number. For example, start with {YYYY} - year of an order creation date.
@@ -48,20 +45,18 @@ Define the following settings in the *Common* panel:
 * **Allow admins to buy "Call for price" products**, to allow administrators (in impersonation mode) to buy products marked as "Call for price".
 
 ## PDF invoice
-Define the following settings in the *PDF invoice* panel:
-![PDF invoice](_static/order-settings/pdf-invoice.jpg)
+Define the following settings in the *PDF invoice* panel: ![PDF invoice](_static/order-settings/pdf-invoice.jpg)
 
 * **To Attach PDF invoice ("order placed" email)**.
 * **To Attach PDF invoice ("order paid" email)**.
 * **To Attach PDF invoice ("order completed" email)**.
 
 > [!TIP]
->
+> 
 > Learn how to set up PDF in the [PDF settings](xref:en/getting-started/advanced-configuration/pdf-settings) chapter.
 
 ## Gift cards
-Define the following settings in the *Gift cards* panel:
-![Gift cards](_static/order-settings/gift-cards.jpg)
+Define the following settings in the *Gift cards* panel: ![Gift cards](_static/order-settings/gift-cards.jpg)
 
 * **Activate gift cards after completing of an order**, to activate related gift cards when an order is completed.
 * **Deactivate gift cards after cancelling of an order**, to deactivate related gift cards when an order is cancelled.
