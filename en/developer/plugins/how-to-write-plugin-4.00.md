@@ -60,8 +60,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
    - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on your site's left column.
    - **IMiscPlugin**. If your plugin doesn't fit any of the interfaces above.
 
-> [!IMPORTANT]
-> After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
+> [!IMPORTANT] After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
 
 ## Handling requests. Controllers, models and views
 
@@ -99,8 +98,7 @@ Where ControllerName is a name of your controller and ActionName is a name of ac
 
 Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under Admin → Configuration → Plugins.
 
-> [!TIP]
-> The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
+> [!TIP] The easiest way to complete the steps described above is opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
 
 For example, the project structure of PayPalStandard plugin looks like the image below:
 
@@ -113,8 +111,7 @@ This step is optional. Some plugins can require additional logic during plugin i
 - Install. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 - Uninstall. This method will be invoked during plugin uninstallation.
 
-> [!IMPORTANT]
-> If you override one of these methods, do not hide its base implementation.
+> [!IMPORTANT] If you override one of these methods, do not hide its base implementation.
 
 For example, overridden "Install" method should include the following method call: base.Install(). The "Install" method of PayPalStandard plugin looks like the code below
 
@@ -130,8 +127,7 @@ public override void Install()
 }
 ```
 
-> [!TIP]
-> The list of installed plugins is located in `\App_Data\installedPlugins.json`. The list is created during installation.
+> [!TIP] The list of installed plugins is located in `\App_Data\installedPlugins.json`. The list is created during installation.
 
 ## Routes
 
