@@ -48,11 +48,9 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
 
 1. Log into the [Developer Dashboard](https://developer.paypal.com/developer/applications) with your PayPal account credentials.
 
-1. On **My Apps & Credentials**, use the toggle to switch between live and sandbox testing apps.
-    ![My Apps & Credentials](_static/paypal-smart-payment-buttons/my-apps.jpg)
-  
-1. Navigate to the *REST API apps* section and click **Create App**.
-    ![Create App](_static/paypal-smart-payment-buttons/rest.jpg)
+1. On **My Apps & Credentials**, use the toggle to switch between live and sandbox testing apps. ![My Apps & Credentials](_static/paypal-smart-payment-buttons/my-apps.jpg)
+
+1. Navigate to the *REST API apps* section and click **Create App**. ![Create App](_static/paypal-smart-payment-buttons/rest.jpg)
 
 1. Type a name for your app and click **Create App**. The app details page opens and displays your credentials.
 
@@ -62,8 +60,7 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
 
 ### 4. Configure the payment method in nopCommerce
 
-1. Find the **PayPal Smart Payment Buttons** payment method on the **Configuration → Payment methods** page and click **Configure**. The *Configure - PayPal Smart Payment Buttons* page will be displayed, as follows:
-    ![Configure](_static/paypal-smart-payment-buttons/configure.jpg)
+1. Find the **PayPal Smart Payment Buttons** payment method on the **Configuration → Payment methods** page and click **Configure**. The *Configure - PayPal Smart Payment Buttons* page will be displayed, as follows: ![Configure](_static/paypal-smart-payment-buttons/configure.jpg)
 
 1. Define the following settings on the *Configure - PayPal Smart Payment Buttons* page:
     * **Use sandbox** if you want to test the payment method first.
@@ -71,9 +68,8 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
     * Enter the **Secret** you saved on the previous steps.
     * Choose the **Payment type** to either capture payment immediately or authorize a payment for an order after order creation.
 
-1. Then proceed to the *PayPal Prominently* panel:
-    ![Create App](_static/paypal-smart-payment-buttons/display.jpg)
-  
+1. Then proceed to the *PayPal Prominently* panel: ![Create App](_static/paypal-smart-payment-buttons/display.jpg)
+
     On this panel define the display settings:
 
       * Tick the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page instead of the default checkout button.
@@ -103,15 +99,13 @@ You can limit any payment method to store and customer role. This means that the
 
 2. You can set up the following limits:
 
-	* In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+    * In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+        > [!Important] In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
-	* Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
+    * Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+        > [!Important] In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
-	Click **Save**.
+    Click **Save**.
 
