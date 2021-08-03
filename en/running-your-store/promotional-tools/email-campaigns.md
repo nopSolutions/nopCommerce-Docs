@@ -48,7 +48,7 @@ After the campaign is saved you can send your campaign to customers. You will se
 ![Test email](_static/email-campaigns/test.jpg)
 
 > [!NOTE]
->
+> 
 > Make sure you've tested the campaign before sending it out to multiple customers.
 
 First of all send a test email to check if everything is done properly. To do this choose the **Email account** which will be used to send the campaign. See how to create an email account in the [Email accounts](xref:en/getting-started/email-accounts) section.
@@ -60,8 +60,7 @@ After you make sure that everything is OK send your campaign to customers using 
 
 ## Newsletter subscribers
 
-During registration, a customer can select the *Newsletter* option to receive a newsletter from your store:
-![Customers subscribing](_static/email-campaigns/customer-subs.jpg)
+During registration, a customer can select the *Newsletter* option to receive a newsletter from your store: ![Customers subscribing](_static/email-campaigns/customer-subs.jpg)
 
 Or it's possible to subscribe to a newsletter lately using the form in the footer (in the Default Clean nopCommerce theme):
 
