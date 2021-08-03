@@ -53,9 +53,10 @@ Define the currency settings:
 * From the **Display locale** dropdown list, select the display locale for currency values.
 * Enter **Custom formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in the public store, number of decimal places and so on.
 * In the **Limited to stores** select a pre-created store from drop-down list. Leave the field empty in case this functionality is not required.
+
   > [!NOTE]
-  >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > 
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 * From the **Rounding type** drop-down list choose one of the types of rounding:
   * *Default rounding*
