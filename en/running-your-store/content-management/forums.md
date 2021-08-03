@@ -59,10 +59,7 @@ Define following forum settings in the *Common* panel:
 - Select the **Show customers post count** checkbox to enable showing the number of posts created by a customer.
 - From the **Forum editor** dropdown list, select the forum editor type to use:
   - Simple textbox.
-  - BBCode editor.
-  > [!NOTE]
-  > 
-  > It is not recommended to change the forum editor type in the production environment.
+  - BBCode editor. > [!NOTE] > > It is not recommended to change the forum editor type in the production environment.
 
 ### Permissions
 ![Permissions settings](_static/forums/permissions.jpg)
