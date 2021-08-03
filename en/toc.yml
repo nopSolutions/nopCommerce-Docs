@@ -7,32 +7,32 @@
   name: Installation & upgrading
   href: installation-and-upgrading/index.md
   items:
-    -
+    - 
       name: Technology & system requirements
       href: installation-and-upgrading/technology-and-system-requirements.md
-    -
+    - 
       name: Installing nopCommerce
       href: installation-and-upgrading/installing-nopcommerce/index.md
-      items: 
-        -
+      items:
+        - 
           name: Choose a hosting company
           href: installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.md
-        -
+        - 
           name: Installing local (for developers only)
           href: installation-and-upgrading/installing-nopcommerce/installing-local.md
-        -
+        - 
           name: Installing on Windows
           href: installation-and-upgrading/installing-nopcommerce/installing-on-windows.md
-        -
+        - 
           name: Installing on Linux
           href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
-        -
+        - 
           name: Installing on Microsoft Azure
           href: installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.md
-        -
+        - 
           name: Load balancing and web farms in nopCommerce
           href: installation-and-upgrading/installing-nopcommerce/web-farms.md
-        -
+        - 
           name: Pre-installed nopCommerce
           href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md
     - 
@@ -42,356 +42,356 @@
   name: Getting started
   href: getting-started/index.md
   items:
-    -
+    - 
       name: Admin area overview
       href: getting-started/admin-area-overview.md
-    -
+    - 
       name: Create a catalog and add products
       href: running-your-store/catalog/index.md
-    -
+    - 
       name: Design your store
       href: getting-started/design-your-store/index.md
-      items: 
-        -
-          name: Choose and install a theme 
+      items:
+        - 
+          name: Choose and install a theme
           href: getting-started/design-your-store/choose-and-install-a-theme.md
-        -
+        - 
           name: Uploading your logo
           href: getting-started/design-your-store/uploading-your-logo.md
-        -
+        - 
           name: Adding a favicon
           href: getting-started/design-your-store/adding-a-favicon.md
-        -
+        - 
           name: Nivo slider
           href: getting-started/design-your-store/nivo-slider.md
-        -
+        - 
           name: Top menu & footer
           href: getting-started/design-your-store/top-menu-and-footer.md
-        -
+        - 
           name: Media settings
           href: getting-started/design-your-store/media-settings.md
-    -
+    - 
       name: Configure payments
       href: getting-started/configure-payments/index.md
       items:
-        -
+        - 
           name: Payment methods
           href: getting-started/configure-payments/payment-methods/index.md
           items:
-            -
+            - 
               name: Check/money order
               href: getting-started/configure-payments/payment-methods/check-money-order.md
-            -
+            - 
               name: Credit card (manual processing)
               href: getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
-            -
+            - 
               name: PayPal Standard
               href: getting-started/configure-payments/payment-methods/paypal-standard.md
-            -
+            - 
               name: PayPal Smart Payment Buttons
               href: getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
-        -
+        - 
           name: Advanced configuration
           href: getting-started/configure-payments/advanced-configuration/index.md
           items:
-            -
+            - 
               name: Payment method restrictions
               href: getting-started/configure-payments/advanced-configuration/payment-method-restrictions.md
-            -
+            - 
               name: Currencies
               href: getting-started/configure-payments/advanced-configuration/currencies.md
-    -
+    - 
       name: Configure shipping
       href: getting-started/configure-shipping/index.md
       items:
-        -
+        - 
           name: Shipping settings
           href: getting-started/configure-shipping/shipping-settings.md
-        -
+        - 
           name: Shipping providers
           href: getting-started/configure-shipping/shipping-providers/index.md
           items:
-            -
+            - 
               name: Manual (Fixed or by weight and by total)
               href: getting-started/configure-shipping/shipping-providers/manual.md
-            -
+            - 
               name: ShipStation
               href: getting-started/configure-shipping/shipping-providers/shipstation.md
-            -
+            - 
               name: UPS
               href: getting-started/configure-shipping/shipping-providers/ups.md
-        -
+        - 
           name: Advanced configuration
           href: getting-started/configure-shipping/advanced-configuration/index.md
           items:
-            -
+            - 
               name: Countries, states
               href: getting-started/configure-shipping/advanced-configuration/countries-states.md
-            -
+            - 
               name: Warehouses
               href: getting-started/configure-shipping/advanced-configuration/warehouses.md
-            -
+            - 
               name: Dates and ranges
               href: getting-started/configure-shipping/advanced-configuration/dates-and-ranges.md
-            -
+            - 
               name: Measures
               href: getting-started/configure-shipping/advanced-configuration/measures.md
-            -
+            - 
               name: Pickup points
               href: getting-started/configure-shipping/advanced-configuration/pickup-points.md
-    -
+    - 
       name: Configure taxes
       href: getting-started/configure-taxes/index.md
       items:
-        -
+        - 
           name: Tax settings
           href: getting-started/configure-taxes/tax-settings.md
-        -
+        - 
           name: Tax providers
           href: getting-started/configure-taxes/tax-providers/index.md
           items:
-            -
+            - 
               name: Manual (fixed or by country/state/zip)
               href: getting-started/configure-taxes/tax-providers/manual.md
-            -
+            - 
               name: Avalara
               href: getting-started/configure-taxes/tax-providers/avalara.md
-    -
+    - 
       name: Email accounts
       href: getting-started/email-accounts.md
-    -
+    - 
       name: Advanced configuration
       href: getting-started/advanced-configuration/index.md
       items:
-        -
+        - 
           name: How to install and configure SSL certification
           href: getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification.md
-        -
+        - 
           name: Your store information
           href: getting-started/advanced-configuration/your-store-information.md
-        -
+        - 
           name: GDPR settings
           href: getting-started/advanced-configuration/gdpr-settings.md
-        -
+        - 
           name: Localization
           href: getting-started/advanced-configuration/localization.md
-        -
+        - 
           name: External authentication methods
           href: getting-started/advanced-configuration/external-authentication-methods.md
-        -
+        - 
           name: Multi-factor authentication
           href: getting-started/advanced-configuration/multi-factor-authentication.md
-        -
+        - 
           name: Configure analytics
           href: getting-started/advanced-configuration/configure-analytics.md
-        -
+        - 
           name: Plugins in nopCommerce
           href: getting-started/advanced-configuration/plugins-in-nopcommerce.md
-        -
+        - 
           name: Multi-store
           href: getting-started/advanced-configuration/multi-store.md
-        -
+        - 
           name: Security settings
           href: getting-started/advanced-configuration/security-settings.md
-        -
+        - 
           name: PDF settings
           href: getting-started/advanced-configuration/pdf-settings.md
-        -
+        - 
           name: All settings
           href: getting-started/advanced-configuration/all-settings.md
--
+- 
   name: Running your store
   href: running-your-store/index.md
   items:
-    -
+    - 
       name: Catalog
       href: running-your-store/catalog/index.md
       items:
-        -
+        - 
           name: Products
           href: running-your-store/catalog/products/index.md
           items:
-            -
+            - 
               name: Add products
               href: running-your-store/catalog/products/add-products.md
-            -
+            - 
               name: Product attributes
               href: running-your-store/catalog/products/product-attributes.md
-            -
+            - 
               name: Specification attributes
               href: running-your-store/catalog/products/specification-attributes.md
-            -
+            - 
               name: Downloadable products
               href: running-your-store/catalog/products/downloadable-products.md
-            -
+            - 
               name: Grouped products (variants)
               href: running-your-store/catalog/products/grouped-products-variants.md
-            -
+            - 
               name: Recurring products
               href: running-your-store/catalog/products/recurring-products.md
-            -
+            - 
               name: Rental products
               href: running-your-store/catalog/products/rental-products.md
-            -
+            - 
               name: Import/export products
               href: running-your-store/catalog/products/import-export-products.md
-            -
+            - 
               name: Product tags
               href: running-your-store/catalog/products/product-tags.md
-            -
+            - 
               name: Product reviews
               href: running-your-store/catalog/products/product-reviews.md
-        -
+        - 
           name: Categories
           href: running-your-store/catalog/categories.md
-        -
+        - 
           name: Manufacturers
           href: running-your-store/catalog/manufacturers.md
-        -
+        - 
           name: Catalog settings
           href: running-your-store/catalog/catalog-settings.md
-    -
+    - 
       name: Order management
       href: running-your-store/order-management/index.md
       items:
-        -
+        - 
           name: Orders
           href: running-your-store/order-management/orders.md
-        -
+        - 
           name: Shipping management
           href: running-your-store/order-management/shipping-management.md
-        -
+        - 
           name: Return requests
           href: running-your-store/order-management/return-requests.md
-        -
+        - 
           name: Shopping carts and wishlists
           href: running-your-store/order-management/shopping-carts-and-wishlists.md
-        -
+        - 
           name: Inventory management
           href: running-your-store/order-management/inventory-management.md
-        -
+        - 
           name: Checkout attributes
           href: running-your-store/order-management/checkout-attributes.md
-        -
+        - 
           name: Order settings
           href: running-your-store/order-management/order-settings.md
-    -
+    - 
       name: Customer management
       href: running-your-store/customer-management/index.md
       items:
-        -
+        - 
           name: Managing customers
           href: running-your-store/customer-management/managing-customers.md
-        -
+        - 
           name: Customer roles
           href: running-your-store/customer-management/customer-roles.md
-        -
+        - 
           name: Access control list
           href: running-your-store/customer-management/access-control-list.md
-        -
+        - 
           name: Activity log
           href: running-your-store/customer-management/activity-log.md
-        -
+        - 
           name: Online customers
           href: running-your-store/customer-management/online-customers.md
-        -
+        - 
           name: Customer settings
           href: running-your-store/customer-management/customer-settings.md
-    -
+    - 
       name: Vendor management
       href: running-your-store/vendor-management.md
-    -
+    - 
       name: Promotional tools
       href: running-your-store/promotional-tools/index.md
       items:
-        -
+        - 
           name: Discounts
           href: running-your-store/promotional-tools/discounts.md
-        -
+        - 
           name: Gift cards
           href: running-your-store/promotional-tools/gift-cards.md
-        -
+        - 
           name: Reward points
           href: running-your-store/promotional-tools/reward-points.md
-        -
+        - 
           name: Affiliates
           href: running-your-store/promotional-tools/affiliates.md
-        -
+        - 
           name: Tier prices
           href: running-your-store/promotional-tools/tier-prices.md
-        -
+        - 
           name: Cross-sells and related products
           href: running-your-store/promotional-tools/cross-sells-and-related-products.md
-        -
+        - 
           name: Email campaigns
           href: running-your-store/promotional-tools/email-campaigns.md
-        -
+        - 
           name: Sendinblue integration
           href: running-your-store/promotional-tools/sendinblue-integration/index.md
-          items: 
-            -
+          items:
+            - 
               name: Set up Sendinblue plugin
               href: running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin.md
-            -
+            - 
               name: Recover abandoned carts
               href: running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts.md
-            -
+            - 
               name: Send an order confirmation email
               href: running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email.md
-        -
+        - 
           name: Facebook Pixel
           href: running-your-store/promotional-tools/facebook-pixel.md
-    -
+    - 
       name: Content management
       href: running-your-store/content-management/index.md
       items:
-        -
+        - 
           name: Blog
           href: running-your-store/content-management/blog.md
-        -
+        - 
           name: News
           href: running-your-store/content-management/news.md
-        -
+        - 
           name: Forums
           href: running-your-store/content-management/forums.md
-        -
+        - 
           name: Polls
           href: running-your-store/content-management/polls.md
-        -
+        - 
           name: Topics (pages)
           href: running-your-store/content-management/topics-pages.md
-        -
+        - 
           name: Message templates
           href: running-your-store/content-management/message-templates.md
-    -
+    - 
       name: Search engine optimization (SEO)
       href: running-your-store/search-engine-optimization.md
-    -
+    - 
       name: Reports
       href: running-your-store/reports.md
-    -
+    - 
       name: System administration
       href: running-your-store/system-administration/index.md
       items:
-        -
+        - 
           name: System information
           href: running-your-store/system-administration/system-information.md
-        -
+        - 
           name: Log
           href: running-your-store/system-administration/log.md
-        -
+        - 
           name: Warnings
           href: running-your-store/system-administration/warnings.md
-        -
+        - 
           name: Maintenance
           href: running-your-store/system-administration/maintenance.md
-        -
+        - 
           name: Message queue
           href: running-your-store/system-administration/message-queue.md
-        -
+        - 
           name: Schedule tasks
           href: running-your-store/system-administration/schedule-tasks.md
-        -
+        - 
           name: Templates
           href: running-your-store/system-administration/templates.md
 - 
