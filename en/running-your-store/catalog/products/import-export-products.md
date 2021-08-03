@@ -7,23 +7,21 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 
 # Import/export products
 
-nopCommerce supports importing from Excel format and exporting products in XML or Excel. You can download products from your catalog in PDF.
-You can find these options in **Catalog → Products** at the main page top left.
+nopCommerce supports importing from Excel format and exporting products in XML or Excel. You can download products from your catalog in PDF. You can find these options in **Catalog → Products** at the main page top left.
 
 ![Products](_static/import-export-products/buttons.jpg)
 
 ## Exporting products
 
- You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. 
- 
+ You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**.
+
 ![Exporting product](_static/import-export-products/exporting_product.png)
 
  If you don't need to download all the products use the *Search* panel to find the required products or/and use checkboxes to select the needed products. A file with products you have chosen will be downloaded. The file consists of all the products characteristics from product editing page panels (Product info, SEO, Pictures and so on).
 
 > [!NOTE]
 > 
-> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details click + next to your product in the table. 
-> ![Simple product](_static/import-export-products/simple_product.png)
+> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details click + next to your product in the table. ![Simple product](_static/import-export-products/simple_product.png)
 
 ## Importing products
 
