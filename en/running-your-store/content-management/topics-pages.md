@@ -11,15 +11,13 @@ Topics (pages) are free-form content blocks that can be displayed on your site, 
 
 ## Topic list
 
-To see the topics go to **Content management → Topics (pages)**.
-Search for topics in the topics list by entering topic text in the **Search keywords** field (or a part of the topic text), or among all the topics of a certain store.
+To see the topics go to **Content management → Topics (pages)**. Search for topics in the topics list by entering topic text in the **Search keywords** field (or a part of the topic text), or among all the topics of a certain store.
 
 ![p1](_static/topics-pages/topic-list.jpg)
 
 ## Adding topics
 
-To add a new topic go to **Content management → Topics (pages)**.
-Click **Add new** and fill the information about a new topic.
+To add a new topic go to **Content management → Topics (pages)**. Click **Add new** and fill the information about a new topic.
 
 ![p2](_static/topics-pages/new-topic.jpg)
 
@@ -35,24 +33,23 @@ In the *Diplay* panel define the following topic details:
 * You can include this topic in the **top menu**, in **footer (column 1)**, in footer (column 2), in footer (column 3) and **sitemap**. Do this by ticking the corresponding checkbox.
 * Select the **Password protected** checkbox, if this topic is password protected. The **Password** field is displayed on the topic page in the public store. A customer enters a password to access the content of this topic.
 * From the **Customer roles** drop-down list select a customer role or roles that can access this topic.
+
   > [!NOTE]
-  >
+  > 
   > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
 * In the **Limited to stores** drop-down list select stores in which the topic will be displayed.
+
   > [!NOTE]
-  >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > 
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 * Use the **Accessible when store closed** field to make this topic accessible when the store is closed.
 * Select this topic **Display order**. For example, 1 would represent the item first in a list.
-* Enter the **System name** of this topic. 
-  > [!NOTE]
-  >
-  > It is possible to use the same system name for different topics. For example, you can create two different topics with the same system name and make them accessible for different customer roles. For example, *Guest* and *Registered* customer roles. This means that guests and registered customers will see the different content on the site. 
+* Enter the **System name** of this topic. > [!NOTE] > > It is possible to use the same system name for different topics. For example, you can create two different topics with the same system name and make them accessible for different customer roles. For example, *Guest* and *Registered* customer roles. This means that guests and registered customers will see the different content on the site.
 
 > [!NOTE]
->
+> 
 > While editing existing topic or after clicking **Save and continue edit** button for a new one, you can click on **Preview** button to see how the topic will appear on the site.
 
 ### SEO
