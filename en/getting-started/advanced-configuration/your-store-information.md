@@ -7,8 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 # Your store information
 
-By default nopCommerce installation, only one store is created and needs to be configured, as described below.
-To set up the default store, go to **Configuration → Stores**.
+By default nopCommerce installation, only one store is created and needs to be configured, as described below. To set up the default store, go to **Configuration → Stores**.
 
 ![mainstore](_static/your-store-information/mainstore.png)
 
@@ -23,11 +22,11 @@ Configure your main store details, as follows:
 * Select the **SSL enabled** checkbox if your store is SSL secured. SSL (Secure Sockets Layer) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is an industry standard and is used by millions of websites in the protection of their online transactions with their customers.
 
   > [!IMPORTANT]
-  >
+  > 
   > Tick this option only after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
 
   > [!TIP]
-  >
+  > 
   > Read more about setting SSL up in the following chapter: [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification).
 
 * The **HOST values** field is a list of possible HTTP_HOST values of your store (for example, `yourstore.com`, `www.yourstore.com`). Filling this field is only required when you have a [multi-store solution](xref:en/getting-started/advanced-configuration/multi-store) to determine the current store. This field enables distinguishing requests to distinct URLs and determines the current store. You can also see the current HTTP_POST value in **System → System information**.
