@@ -12,7 +12,7 @@ Product reviews are customers' comments on a product. Reviews can also include r
 In the public store, reviews are displayed on the product details page. Customers can write reviews for different products. After a review has been written and approved by a store owner, other customers can define whether the review is helpful or not by clicking *Yes* or *No* beside the review.
 
 > [!NOTE]
->
+> 
 > By default, the reviews must be approved by the store owner before they appear in the public store. However, in case a store owner decides that reviews do not have to be approved, this default behavior can be changed. To opt out of the obligatory product reviews approval, go to **Configuration → Settings → Catalog settings** and untick the **Product reviews must be approved** option.
 
 ## Managing product reviews
