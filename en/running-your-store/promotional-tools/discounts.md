@@ -50,15 +50,13 @@ To add a new discount go to **Promotions → Discounts** and click **Add new**.
 
 - Or you can apply **Discount amount** to the order or SKU.
 - Tick the **Requires coupon code** checkbox, to enable a customer to supply a coupon code for the discount to be applied.
-  - After ticking the checkbox the **Coupon code** option appears. You can enter the required coupon code in this field. This enables customers to enter this coupon code during checkout to apply the discount.
-    > [!NOTE]
-    > 
-    > A customer can apply an unlimited number of coupon codes to one order if they fit it.
+  - After ticking the checkbox the **Coupon code** option appears. You can enter the required coupon code in this field. This enables customers to enter this coupon code during checkout to apply the discount. > [!NOTE] > > A customer can apply an unlimited number of coupon codes to one order if they fit it.
 
 - If you want to specify the **Start date** and the **End date** for your discount, select them in the calendar field in Coordinated Universal Time (UTC).
-- The **Cumulative with other discounts** option allows customers use several discounts at the same time. If checked, this discount can be used with other ones simultaneously. 
+- The **Cumulative with other discounts** option allows customers use several discounts at the same time. If checked, this discount can be used with other ones simultaneously.
+
   > [!NOTE]
-  >
+  > 
   > This feature works only for discounts with the same discount type. Right now, discounts with distinct types are already cumulative.
 
 - You can also limit the number of times the discount will be used. From the **Discount limitation** dropdown list, select the required limitation regarding the discount:
@@ -66,15 +64,14 @@ To add a new discount go to **Promotions → Discounts** and click **Add new**.
   - *N times only*: select this option and enter the number of times this discount will be available.
   - *N times per customer*: select this option and enter the number of times this discount will be available for one customer.
 
-- In the **Maximum discounted quantity** field (only visible when the **Discount type** is set to *Assigned to products*, *categories* or *manufacturers*) specify the maximum product quantity which could be discounted. It can be used for scenarios like "buy 2 get 1 free". 
+- In the **Maximum discounted quantity** field (only visible when the **Discount type** is set to *Assigned to products*, *categories* or *manufacturers*) specify the maximum product quantity which could be discounted. It can be used for scenarios like "buy 2 get 1 free".
 - Enter the **Admin comment** if needed. It is not visible for customers.
 
 Click **Save** to save the changes or click **Save and continue edit** to proceed to editing other panels.
 
 ## Adding discount requirements
 
-After creating the discount it's allowed to add discount requirements if you want some specific rules to be applied to the discount. 
-Set up requirements if you want to limit the discount to certain user categories depending on a customer role, the amount spent, etc. You can use single requirement type, or group several types and apply them simultaneously.
+After creating the discount it's allowed to add discount requirements if you want some specific rules to be applied to the discount. Set up requirements if you want to limit the discount to certain user categories depending on a customer role, the amount spent, etc. You can use single requirement type, or group several types and apply them simultaneously.
 
 To add discount requirements go to *Requirements* panel:
 
@@ -84,8 +81,7 @@ To add a new requirement select the **Discount requirement type** from the dropd
 
 - There is one requirement type available in nopCommerce out of the box: *Must be assigned to a customer role*. This allows you to configure discounts for certain customer groups (roles). Other requirements are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
 
-- Also, you can create a group of requirements to deal with complex requirements with multiple rules. Requirement group is a useful feature for creating discount requirement templates. You can create a requirement group just once and then use it every time you want this limitation to be applied. You can include one requirement group into another one if needed. 
-  The requirements are set using boolean logic. For instance, if you want the discount to be assigned to a particular customer role or in case a customer had spent a certain amount. Such requirements and more are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
+- Also, you can create a group of requirements to deal with complex requirements with multiple rules. Requirement group is a useful feature for creating discount requirement templates. You can create a requirement group just once and then use it every time you want this limitation to be applied. You can include one requirement group into another one if needed. The requirements are set using boolean logic. For instance, if you want the discount to be assigned to a particular customer role or in case a customer had spent a certain amount. Such requirements and more are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
 
 ![Group requirements](_static/discounts/discount-requirenents-group.png)
 
@@ -121,8 +117,8 @@ Often you need to sell more items of the certain product. In this case, to encou
 
 ![Edit discount details](_static/discounts/buy_1.png)
 
-- The **Discount type** is *Assigned to products*. In *Applied to products* panel you can add them, here will be an "Oversized T-shirt". 
-- We want our customers to get 50% discount on the 2nd t-shirt. 
+- The **Discount type** is *Assigned to products*. In *Applied to products* panel you can add them, here will be an "Oversized T-shirt".
+- We want our customers to get 50% discount on the 2nd t-shirt.
 - This discount can be used once per customer, so the **Maximum discounted quantity** is 1.
 - You can set up requirements to the product quantity in *Requirements* panel. Add a requirement type *Customer has all of these products* and add T-shirt with a quantity 2. This requirement type can be dowloaded as a plugin [here](https://www.nopcommerce.com/en/has-all-products-discount-requirement-rule).     Read how to install plugins in the [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) section.
 
