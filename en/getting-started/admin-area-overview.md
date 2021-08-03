@@ -21,7 +21,7 @@ The dashboard has the following sections:
 
 * **Common statistics** of your webstore which includes numbers of orders, pending return requests, registered customers and low stock products.
 
-* Other sections showing the vital statistics of your webstore: **orders, new customers, order totals, incomplete orders, latest orders, popular search keywords, bestsellers by quantity, bestsellers by amount**: 
+* Other sections showing the vital statistics of your webstore: **orders, new customers, order totals, incomplete orders, latest orders, popular search keywords, bestsellers by quantity, bestsellers by amount**:
 
 ![Stats](_static/admin-area-overview/stats.jpg)
 
