@@ -76,11 +76,10 @@ For example, if you have the following shipping conditions:
   * Additional fixed cost: **15**
   * Lower weight limit: **2**
   * Rate per weight unit: **3**
-  
-	> [!NOTE] 
-	> 
-	> It will charge proportionally for additional weight; 
-	> example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
+
+    > [!NOTE] 
+    > 
+    > It will charge proportionally for additional weight; example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
 
 To add a new shipping rule, click **Add record**. The *Add new record* window is displayed:
 
@@ -153,52 +152,45 @@ Click **Save**.
 
 ## Example
 
-Ley's say you have a store located in the USA and ships to the USA and Canada. You set up a three shipping methods available, such as: 
+Ley's say you have a store located in the USA and ships to the USA and Canada. You set up a three shipping methods available, such as:
 - **Ground** that allows shipping by land transport.
 - **Next day air** that provides one day air shipping.
 - **2nd day air** allowing two days air shipping.
 
 > [!TIP]
->
+> 
 > You can add your own shipping methods by clicking the **Manage shipping methods** button on the *Configure - Manual (Fixed or By Weight and By Total)* page.
 
-Then let's say the shipping fee depends on the order total and shipping address. For example: 
+Then let's say the shipping fee depends on the order total and shipping address. For example:
 - If a customer pays $150 for the order we provide a free shipping by the **Ground** method to only USA. If the order total is less than $150 we will charge $10. The delivery to the USA will take 5 days.
 - For Canada, a customer should order for $250 to have a free shipping by the **Ground** method. If the order total is less than $250 we will charge $20. The delivery in this case will take 7 days.
-- If a customer needs a **Next day air** delivery it will cost $60 for the USA. Let's say you wish to disable the **Next day air** option for Canada. 
+- If a customer needs a **Next day air** delivery it will cost $60 for the USA. Let's say you wish to disable the **Next day air** option for Canada.
 - If a customer is ready to wait one more day we suggest to use **2nd day air** shipping which costs $40 for the USA and Canada as well.
 
 Considering all the requirements above we will set up the payment method on the *Configure - Manual (Fixed or By Weight and By Total)* page the following way:
 
-- **Ground** method
-  ![Configuration Ground](_static/manual/configuration-ground.jpg)
+- **Ground** method ![Configuration Ground](_static/manual/configuration-ground.jpg)
 
-- **Next day air** method
-  ![Configuration Next day air](_static/manual/configuration-nextday.jpg)
+- **Next day air** method ![Configuration Next day air](_static/manual/configuration-nextday.jpg)
 
-- **2nd day air** method
-  ![Configuration 2nd day air](_static/manual/configuration-2ndday.jpg)
+- **2nd day air** method ![Configuration 2nd day air](_static/manual/configuration-2ndday.jpg)
 
-To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way:
-![Configuration example](_static/manual/restrictions-example.jpg)
+To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way: ![Configuration example](_static/manual/restrictions-example.jpg)
 
 ### Let's see how the shipping options look like in the public store
 
-1. When a customer from the USA visits the product page (or shopping cart page) the shipping estimation is displayed, as follows:
-  ![Estimation](_static/manual/estimate-product-page.jpg)
+1. When a customer from the USA visits the product page (or shopping cart page) the shipping estimation is displayed, as follows: ![Estimation](_static/manual/estimate-product-page.jpg)
+
     > [!TIP]
-    >
+    > 
     > By the way, you can disable shipping estimation by unticking the **Estimate shipping enabled (cart page)** and **Estimate shipping enabled (product page)** checkboxes on the **Configuration → Settings → Shipping settings** page.
 
-    When the customer proceeds for the shipping details the following options will be displayed:
-    ![Estimation USA](_static/manual/estimation-popup-usa.jpg)
+    When the customer proceeds for the shipping details the following options will be displayed: ![Estimation USA](_static/manual/estimation-popup-usa.jpg)
 
-2. When a customer chooses the Canada from the shipping estimation window the following options will be displayed:
-  ![Estimation Canada](_static/manual/estimation-popup-canada.jpg)
-    As you can see the **Next day air** option is not available anymore.
+2. When a customer chooses the Canada from the shipping estimation window the following options will be displayed: ![Estimation Canada](_static/manual/estimation-popup-canada.jpg) As you can see the **Next day air** option is not available anymore.
 
 > [!TIP]
->
+> 
 > In case you want to provide pickup points to your customers see how to set this up in the [Pickup points](xref:en/getting-started/configure-shipping/advanced-configuration/pickup-points) chapter.
 
 ## Tutorials
