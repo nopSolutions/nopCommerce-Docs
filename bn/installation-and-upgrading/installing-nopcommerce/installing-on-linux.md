@@ -1,96 +1,100 @@
 ---
-title: Installing on Linux
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-linux
+title: লিনাক্সে ইনস্টল করা
+uid: bn/installation-and-upgrading/installing-nopcommerce/installing-on-linux
 author: git.AndreiMaz
-contributors: git.skoshelev
+contributors: git.MDRashedKhanMenon
 ---
 
-# Installing on Linux
+# লিনাক্সে ইনস্টল করা
 
-This chapter describes how to install the nopCommerce software on Linux system on the example of XUbuntu 20.04:
+এই অধ্যায় এক্সউবুন্টু ২০.০০ এর উদাহরণে লিনাক্স সিস্টেমে নপকমার্স সফটওয়্যার কিভাবে ইনস্টল করতে হয় তা বর্ণনা করে:
 
-1. [Install and configure software](#install-and-configure-software)
-1. [Get nopCommerce](#get-nopcommerce)
-1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
-1. [Installation process](#installation-process)
-1. [Troubleshooting](#troubleshooting)
+১. [সফ্টওয়্যার ইনস্টল এবং কনফিগার](#install-and-configure-software)
 
-## Install and configure software
+২. [নপকমার্স পান](#get-nopcommerce)
 
-Before installing .NET Core, we'll need to register the Microsoft key and install required dependencies. This needs to be done once per machine.
+৩. [নপকমার্স ওয়েব পরিষেবা তৈরি এবং কনফিগার করা](#create-the-nopcommerce-service)
 
-### Register Microsoft key and feed
+৪. [ইনস্টলেশন প্রক্রিয়া](#installation-process)
 
-Open a terminal and run the following commands:
+৫. [সমস্যা সমাধান](#troubleshooting)
+
+## সফ্টওয়্যার ইনস্টল এবং কনফিগার
+
+ডটনেট কোর ইনস্টল করার আগে, আমাদের মাইক্রোসফট কী নিবন্ধন করতে হবে এবং প্রয়োজনীয় নির্ভরতাগুলি ইনস্টল করতে হবে। এটি প্রতি মেশিনে একবার করা দরকার।
+
+### মাইক্রোসফট কী এবং ফিড নিবন্ধন
+
+একটি টার্মিনাল খুলুন এবং নিম্নলিখিত কমান্ডগুলি চালান:
 
 `wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
 
 `sudo dpkg -i packages-microsoft-prod.deb`
 
-![nopCommerce installation](_static/installing-on-linux/register_key.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/register_key.jpg)
 
-### Install the .NET Core Runtime
+### ডটনেট কোর রানটাইম ইনস্টল করুন
 
-Update the products available for installation, then install the .NET runtime:
+ইনস্টলেশনের জন্য উপলব্ধ পণ্য আপডেট করুন, তারপর ডটনেট রানটাইম ইনস্টল করুন:
 
 `sudo apt-get update`
 
 `sudo apt-get install apt-transport-https aspnetcore-runtime-3.1`
 
-![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/net_core.jpg)
 
 > [!NOTE]
 > 
-> If you have any error see detail information on the https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
+> যদি আপনার কোন ত্রুটি থাকে তবে বিস্তারিত তথ্য দেখুন https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
 
-You may see all installed .Net Core runtimes by the following command:
+আপনি নিম্নলিখিত কমান্ড দ্বারা সমস্ত ইনস্টল করা। ডটনেট কোর রানটাইম দেখতে পারেন:
 
 `dotnet --list-runtimes`
 
-![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/list_runtimes.jpg)
 
-### Install MySql Server
+### মাইএসকিউএল সার্ভার ইনস্টল করা
 
-Install the MySql server 8.0 version
+মাইএসকিউএল সার্ভার ৮.০ সংস্করণ ইনস্টল করা
 
 `sudo apt-get install mysql-server`
 
-![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/install_mysql.jpg)
 
-By default, the root password is empty, let's set it
+ডিফল্টরূপে, রুট পাসওয়ার্ড খালি, আসুন এটি সেট করি
 
 `sudo /usr/bin/mysql_secure_installation`
 
-![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/config_mysql.jpg)
 
 > [!NOTE]
 > 
-> If you have some problem with configuring root password on your MySql server please read the following articles:
+> আপনার মাইএসকিউএল সার্ভারে রুট পাসওয়ার্ড কনফিগার করতে আপনার যদি কিছু সমস্যা হয় তবে দয়া করে নিম্নলিখিত নিবন্ধগুলি পড়ুন:
 > https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html and
 https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost.
 
-### Install nginx
+### এনজিনিক্স ইনস্টল করা
 
-Install the nginx package:
+এনজিনিক্স প্যাকেজ ইনস্টল করা:
 
 `sudo apt-get install nginx`
 
-![nopCommerce installation](_static/installing-on-linux/install_nginx.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/install_nginx.jpg)
 
-Run the nginx service:
+এনজিনিক্স পরিষেবা চালান:
 
 `sudo systemctl start nginx`
 
-and check its status:
+এবং এর অবস্থা পরীক্ষা করুন:
 
 `sudo systemctl status nginx`
 
-![nopCommerce installation](_static/installing-on-linux/status_nginx.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/status_nginx.jpg)
 
-To configure nginx as a reverse proxy to forward requests to your ASP.NET Core app, modify /etc/nginx/sites-available/default. Open it in a text editor and replace the contents with the following:
+আপনার  এএসপি ডটনেট কোর অ্যাপে অনুরোধ ফরওয়ার্ড করার জন্য এনজিনিক্স কে রিভার্স প্রক্সি হিসাবে কনফিগার করতে,/etc/nginx/sites-available/default পরিবর্তন করুন। এটি একটি টেক্সট এডিটরে খুলুন এবং বিষয়বস্তুগুলি নিম্নলিখিতগুলির সাথে প্রতিস্থাপন করুন:
 
 ```
-# Default server configuration
+# ডিফল্ট সার্ভার কনফিগারেশন
 #
 server {
     listen 80 default_server;
@@ -127,13 +131,13 @@ server {
 }
 ```
 
-## Get nopCommerce
+## নপকমার্স পান
 
-Create a directory
+একটি ডিরেক্টরি তৈরি করুন
 
 `mkdir /var/www/nopCommerce440`
 
-Download and unpack the nopCommerce:
+নপকমার্স ডাউনলোড এবং আনপ্যাক করুন:
 
 `cd /var/www/nopCommerce440`
 
@@ -143,13 +147,13 @@ Download and unpack the nopCommerce:
 
 `sudo unzip nopCommerce_4.40.3_NoSource_linux_x64.zip`
 
-Create couple directories to run nopCommerce:
+নপকমার্স চালানোর জন্য যুগ্ম ডিরেক্টরি তৈরি করুন:
 
 `sudo mkdir bin`
 
 `sudo mkdir logs`
 
-Change the file permissions
+ফাইলের অনুমতি পরিবর্তন করুন
 
 `cd ..`
 
@@ -157,9 +161,9 @@ Change the file permissions
 
 `sudo chown -R www-data nopCommerce440/`
 
-## Create the nopCommerce service
+## নপকমার্স পরিষেবা তৈরি করুন
 
-Create the /etc/systemd/system/nopCommerce440.service file with the following contents:
+নিম্নলিখিত বিষয়বস্তু সহ /etc/systemd/system/nopCommerce440.service ফাইল তৈরি করুন:
 
 ```
 [Unit]
@@ -181,34 +185,34 @@ Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 WantedBy=multi-user.target
 ```
 
-Start the service
+পরিষেবা শুরু করুন
 
 `sudo systemctl start nopCommerce440.service`
 
-Check the nopCommerce service status
+নপকমার্স পরিষেবার অবস্থা পরীক্ষা করুন
 
 `sudo systemctl status nopCommerce440.service`
 
-![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
+![নপকমার্স ইনস্টলেশন](_static/installing-on-linux/status_nopCommerce.jpg)
 
-Restart the nginx server
+এনজিনিক্স সার্ভার পুনরায় চালু করুন
 
 `sudo systemctl restart nginx`
 
-**Now everything is ready, you can proceed to install and configure the store**
+**এখন সবকিছু প্রস্তুত, আপনি স্টোর ইনস্টল এবং কনফিগার করতে এগিয়ে যেতে পারেন**
 
-## Installation process
+## ইনস্টলেশন প্রসেস
 
-The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
+নপকমার্স এর জন্য আরও ইনস্টলেশন প্রক্রিয়া এটি উইন্ডোজের ইনস্টলেশন প্রক্রিয়া থেকে আলাদা নয়, আপনি নির্দেশটি দেখতে পারেন [এই লিঙ্ক](xref:bn/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
 
-## Troubleshooting
+## মস্যা সমাধান
 
-### Gdip
+### জিডিপ
 
-*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception) just install the libgdiplus library*:
+*রিচটেক্স বক্সে ছবি লোড করতে আপনার যদি সমস্যা হয় ('Gdip' এর টাইপ ইনিশিয়ালাইজার একটি এক্সেপশন ছুঁড়ে ফেলে) শুধু libgdiplus লাইব্রেরি ইনস্টল করুন*:
 
 *`sudo apt-get install libgdiplus`*
 
-### SSL
+### এসএসএল
 
-*If you want to use SSL on your site don't forget set to `true` the `UseHttpXForwardedProto` setting in the **appsettings.json** file*.
+*আপনি যদি আপনার সাইটে SSL ব্যবহার করতে চান তাহলে **appsettings.json** ফাইলে `UseHttpXForwardedProto` সেটিংটি `true` সেট করতে ভুলবেন না।*

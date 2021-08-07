@@ -1,8 +1,8 @@
 ---
-শিরোনাম: প্রযুক্তি ও সিস্টেমের প্রয়োজনীয়তা
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/technology-and-system-requirements
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: প্রযুক্তি ও সিস্টেমের প্রয়োজনীয়তা
+uid: bn/installation-and-upgrading/technology-and-system-requirements
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # প্রযুক্তি ও সিস্টেমের প্রয়োজনীয়তা

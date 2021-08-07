@@ -1,8 +1,8 @@
 ﻿---
-শিরোনাম: নপকমার্সে লোড ব্যালেন্সিং এবং ওয়েব ফার্মগুলি
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/web-farms.html
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: নপকমার্সে লোড ব্যালেন্সিং এবং ওয়েব ফার্মগুলি
+uid: bn/installation-and-upgrading/installing-nopcommerce/web-farms.html
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # নপকমার্সে লোড ব্যালেন্সিং এবং ওয়েব ফার্মগুলি
@@ -11,7 +11,7 @@
 
 নপকমার্সে লোড ব্যালেন্সিং কনফিগার করার বিভিন্ন উপায় রয়েছে:
 
-১। আপনি মাইক্রোসফ্টের অ্যাজুরে ওয়েব অ্যাপ্লিকেশনগুলির মতো ক্লাউড-ভিত্তিক অটো-স্কেলিং অ্যাপ্লিকেশন ব্যবহার করেন। দয়া করে এটি সম্পর্কে [এখানে] (xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure) আরও সন্ধান করুন।
+১। আপনি মাইক্রোসফ্টের অ্যাজুরে ওয়েব অ্যাপ্লিকেশনগুলির মতো ক্লাউড-ভিত্তিক অটো-স্কেলিং অ্যাপ্লিকেশন ব্যবহার করেন। দয়া করে এটি সম্পর্কে [এখানে](xref:bn/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure) আরও সন্ধান করুন।
 
 ২। আইআইএস এ ওয়েব ফার্মগুলির সাথে লোড ব্যালেন্সিং কনফিগার করুন। এই পদ্ধতির নীচে বর্ণিত হয়েছে
 

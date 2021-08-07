@@ -1,78 +1,82 @@
 ---
-title: Installing on Windows
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-windows
+title: উইন্ডোজে ইনস্টল করা
+uid: bn/installation-and-upgrading/installing-nopcommerce/installing-on-windows
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Installing on Windows
+# উইন্ডোজে ইনস্টল করা
 
-This chapter describes how to download nopCommerce software, upload it to your server and install it. You may also watch the screencast about nopCommerce installation on our [YouTube channel](https://www.youtube.com/watch?v=L7NGodeB9sQ).
+এই অধ্যায়ে বর্ণনা করা হয়েছে কিভাবে নপকমার্স সফটওয়্যার ডাউনলোড করতে হয়, আপনার সার্ভারে আপলোড করে ইনস্টল করতে হয়। আপনি আমাদের [ইউটিউব চ্যানেল](https://www.youtube.com/watch?v=L7NGodeB9sQ) এ নপকমার্স ইনস্টলেশন সম্পর্কে স্ক্রিনকাস্ট দেখতে পারেন।
 
-Before you begin the install, ensure that your web host have the [minimum requirements to run nopCommerce](xref:en/installation-and-upgrading/technology-and-system-requirements).
-
+আপনি ইনস্টল শুরু করার আগে, নিশ্চিত করুন যে আপনার ওয়েব হোস্টের [নপকমার্স চালানোর ন্যূনতম প্রয়োজনীয়তা](xref:bn/installation-and-upgrade/technology-and-system-requirements) আছে।
 > [!NOTE]
-> For more information on hosting selection guidelines, visit [this page](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
+> হোস্টিং নির্বাচন নির্দেশিকা সম্পর্কে আরও তথ্যের জন্য, পরিদর্শন করুন [এই পৃষ্ঠা](xref:bn/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
 
-## Download nopCommerce
+## নপকমার্স ডাউনলোড করুন
 
-To install nopCommerce on Windows you should download it first. Go to [download page](https://www.nopcommerce.com/download-nopcommerce) and choose the **Package without source code** version for Windows. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately.
+উইন্ডোজ এ নপকমার্স ইনস্টল করার জন্য আপনাকে প্রথমে এটি ডাউনলোড করতে হবে। [ডাউনলোড পৃষ্ঠা](https://www.nopcommerce.com/download-nopcommerce) এ যান এবং উইন্ডোজের জন্য **সোর্স কোড ছাড়া প্যাকেজ** সংস্করণ নির্বাচন করুন। এটি নপকমার্স এর একটি প্রাক-সংকলিত সংস্করণ যা কেবল আপনার হোস্টিং প্রদানকারীর কাছে আপলোড করা যায় এবং অবিলম্বে ব্যবহার করা যায়।
 
-## Upload the nopCommerce files
+## নপকমার্স ফাইল আপলোড করুন
 
-The next step is to upload the nopCommerce files to your server. To do this you need to use an FTP connection which allows transferring files between computers. Follow the next steps to set this up:
+পরবর্তী ধাপ হল আপনার সার্ভারে নপকমার্স ফাইল আপলোড করা। এটি করার জন্য আপনাকে একটি এফটিপি সংযোগ ব্যবহার করতে হবে যা কম্পিউটারের মধ্যে ফাইল স্থানান্তর করার অনুমতি দেয়। এটি সেট আপ করার জন্য পরবর্তী পদক্ষেপগুলি অনুসরণ করুন:
 
-1. Choose and download one of FTP client applications which you will use for transferring files.
-1. Find your FTP credentials in your hosting control panel.
-1. In your FTP client application, set up the connection between your computer and the server using the FTP credentials you found in the previous step.
-1. Upload the nopCommerce files to the server.
+১. এফটিপি ক্লায়েন্ট অ্যাপ্লিকেশনগুলির মধ্যে একটি বেছে নিন এবং ডাউনলোড করুন যা আপনি ফাইল স্থানান্তরের জন্য ব্যবহার করবেন।
 
-## Create a database
+২. আপনার এফটিপি শংসাপত্রগুলি আপনার হোস্টিং কন্ট্রোল প্যানেলে খুঁজুন।
 
-Before running nopCommerce create a new database instance in your hosting control panel. This database will be used to store your website data.
+৩. আপনার এফটিপি ক্লায়েন্ট অ্যাপ্লিকেশনে, আগের ধাপে আপনার পাওয়া এফটিপি শংসাপত্রগুলি ব্যবহার করে আপনার কম্পিউটার এবং সার্ভারের মধ্যে সংযোগ স্থাপন করুন।
+
+৪. সার্ভারে নপকমার্স ফাইল আপলোড করুন।
+
+## একটি ডাটাবেস তৈরি করুন
+
+নপকমার্স চালানোর আগে আপনার হোস্টিং কন্ট্রোল প্যানেলে একটি নতুন ডাটাবেস ইনস্ট্যান্স তৈরি করুন। এই ডাটাবেসটি আপনার ওয়েবসাইটের ডেটা সংরক্ষণের জন্য ব্যবহার করা হবে।
 
 > [!NOTE]
 >
-> When creating the database choose MS SQL Server version *2012* or *above* if requested.
+> ডাটাবেস তৈরির সময় অনুরোধ করা হলে এমএস এসকিউএল সার্ভার সংস্করণ *২০১২* অথবা *উপরে* নির্বাচন করুন।
 
-We will use the name, server name (or IP, URL), user login and password of your database during the installation process later. These credentials are required for the database connection.
+আমরা পরে ইনস্টলেশন প্রক্রিয়ার সময় আপনার ডাটাবেসের নাম, সার্ভারের নাম (বা আইপি, ইউআরএল), ব্যবহারকারীর লগইন এবং পাসওয়ার্ড ব্যবহার করব। ডাটাবেস সংযোগের জন্য এই শংসাপত্রগুলি প্রয়োজন।
 
-## Create a new website
+## একটি নতুন ওয়েবসাইট তৈরি করুন
 
-Create a new website in your hosting control panel. Then find a url which allows you to acces this site.
+আপনার হোস্টিং কন্ট্রোল প্যানেলে একটি নতুন ওয়েবসাইট তৈরি করুন। তারপরে একটি ইউআরএল খুঁজুন যা আপনাকে এই সাইটে প্রবেশ করতে দেয়।
 
-## Install nopCommerce
+## নপকমার্স ইনস্টল করুন
 
-Using the url from the previous step access the website from your browser.
-Once you open the site for the first time, you will be redirected to the installation page, as follows:
-![nopCommerce installation](_static/installing-local/installation.jpg)
+পূর্ববর্তী ধাপের ইউআরএল ব্যবহার করে আপনার ব্রাউজার থেকে ওয়েবসাইটে প্রবেশ করুন।
+একবার আপনি প্রথমবার সাইটটি খুললে, আপনাকে ইনস্টলেশন পৃষ্ঠায় রেডিরেক্টেড করা হবে, নিম্নরূপ:
 
-In the *Store information* panel fill the following details:
+![নপকমার্স ইনস্টলেশন](_static/installing-local/installation.jpg)
 
-- **Admin user email**: this is the email address for the first admin of the site.
-- **Admin user password**: you will need to supply a password for the admin account.
-- **Confirm the password**: confirm the admin user password.
-- **Country**: select the country from the dropdown list. It allows pre-configuring your store based on the country you selected. For example:
-  - download and pre-install a language pack from the official site
-  - pre-configure some settings (e.g. PangV or "Display tax/shipping info" settings for Germany)
-  - pre-configure some shipping details, VAT settings, currencies, measures, etc
-- **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
+*স্টোর তথ্য* প্যানেলে নিম্নলিখিত বিবরণ পূরণ করুন:
 
-In the *Database information* panel you need to enter the following info:
+- **অ্যাডমিন ব্যবহারকারীর ইমেল**: এটি সাইটের প্রথম অ্যাডমিনের ইমেল ঠিকানা।
+- **অ্যাডমিন ব্যবহারকারীর পাসওয়ার্ড**: আপনাকে অ্যাডমিন অ্যাকাউন্টের জন্য একটি পাসওয়ার্ড সরবরাহ করতে হবে।
+- **পাসওয়ার্ড নিশ্চিত করুন**: অ্যাডমিন ব্যবহারকারীর পাসওয়ার্ড নিশ্চিত করুন।
+- **দেশ**: ড্রপডাউন তালিকা থেকে দেশ নির্বাচন করুন। এটি আপনার নির্বাচিত দেশের উপর ভিত্তি করে আপনার দোকানকে পূর্বে কনফিগার করার অনুমতি দেয়। উদাহরণ স্বরূপ:
+  - অফিসিয়াল সাইট থেকে একটি ভাষা প্যাক ডাউনলোড এবং প্রাক-ইনস্টল করুন
+  - কিছু সেটিংস প্রি-কনফিগার করুন (উদা জার্মানির জন্য প্যাংভি বা "ডিসপ্লে ট্যাক্স/শিপিং ইনফো" সেটিংস)
+  - কিছু শিপিং বিবরণ, ভ্যাট সেটিংস, মুদ্রা, পরিমাপ ইত্যাদি প্রাক-কনফিগার করুন
+- **নমুনা ডেটা তৈরি করুন**: যদি আপনি নমুনা পণ্য তৈরি করতে চান তবে এই চেকবক্সটি চেক করুন। এটি সুপারিশ করা হয়েছে যাতে আপনি আপনার নিজের পণ্যগুলি যোগ করার আগে আপনার সাইটের সাথে কাজ শুরু করতে পারেন। আপনি সর্বদা এই আইটেমগুলি পরে মুছে ফেলতে পারেন, অথবা এগুলি অপ্রকাশিত করতে পারেন যাতে সেগুলি আর আপনার সাইটে উপস্থিত না হয়
 
-- **Database**: here you can select either Microsoft SQL Server or MySQL. Choose the first one if you installing nopCommerce on Windows.
-- **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
-- **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
-- **Server name**: this is the IP, URL, or server name of your database. Get your server name from the hosting control panel.
-- **Database name**: this is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
-- **Use integrated Windows authentication**: if you are installing at a hosting provider, you don't need to use this option.
-- **SQL Username**: enter your database user login.
-- **SQL Password**: ener your database user password.
-- **Specify custom collation**: this is an advanced setting and should be left unchecked.
+*ডাটাবেস তথ্য* প্যানেলে আপনাকে নিম্নলিখিত তথ্য প্রবেশ করতে হবে:
 
-Click **Install** in order to start the installation process. When the setup process is complete, your new site's home page is displayed.
+- **ডাটাবেস**: এখানে আপনি মাইক্রোসফট এসকিউএল সার্ভার অথবা মাইএসকিউএল নির্বাচন করতে পারেন। আপনি যদি উইন্ডোজ এ নপকমার্স ইনস্টল করেন তাহলে প্রথমটি বেছে নিন।
+- **যদি এটি বিদ্যমান না থাকে তবে ডাটাবেস তৈরি করুন**: একটি সফল ইনস্টলেশন নিশ্চিত করার জন্য আপনার ডাটাবেস এবং ডাটাবেস ব্যবহারকারীকে আগে থেকেই তৈরি করার পরামর্শ দেওয়া হচ্ছে। কেবল একটি ডাটাবেস উদাহরণ তৈরি করুন এবং এতে ডাটাবেস ব্যবহারকারী যুক্ত করুন। ইনস্টলেশন প্রক্রিয়াটি সমস্ত টেবিল, সঞ্চিত পদ্ধতি ইত্যাদি তৈরি করবে।
+- **কাঁচা সংযোগ স্ট্রিং লিখুন (উন্নত)**: সংযোগ ক্ষেত্রগুলি পূরণ করার পরিবর্তে যদি আপনি একটি **সংযোগের স্ট্রিং** লিখতে চান তবে এই চেকবক্সটি চেক করুন।
+- **সার্ভারের নাম**: এটি আপনার ডাটাবেসের আইপি, ইউআরএল বা সার্ভারের নাম। হোস্টিং কন্ট্রোল প্যানেল থেকে আপনার সার্ভারের নাম পান।
+- **ডাটাবেসের নাম**: এটি নপকমার্স দ্বারা ব্যবহৃত ডাটাবেসের নাম। যদি আপনি সময়ের আগে আপনার ডাটাবেস তৈরি করতে পছন্দ করেন, তাহলে আপনি আপনার ডাটাবেস যে নামটি দিয়েছেন তা এখানে ব্যবহার করুন।
+- **ইন্টিগ্রেটেড উইন্ডোজ প্রমাণীকরণ ব্যবহার করুন**: যদি আপনি একটি হোস্টিং প্রদানকারীতে ইনস্টল করছেন, তাহলে আপনাকে এই বিকল্পটি ব্যবহার করার দরকার নেই।
+- **এসকিউএল ব্যবহারকারীর নাম**: আপনার ডাটাবেস ব্যবহারকারী লগইন লিখুন।
+- **এসকিউএল পাসওয়ার্ড**: আপনার ডাটাবেস ব্যবহারকারীর পাসওয়ার্ডকে শক্তিশালী করুন।
+- **কাস্টম কোলেশন নির্দিষ্ট করুন**: এটি একটি উন্নত সেটিং এবং এটিকে অনির্বাচিত রেখে দেওয়া উচিত।
 
-> [!NOTE]
-> The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
+ইনস্টলেশন প্রক্রিয়া শুরু করার জন্য **ইনস্টল করুন** ক্লিক করুন। সেটআপ প্রক্রিয়া সম্পন্ন হলে, আপনার নতুন সাইটের হোম পেজ প্রদর্শিত হবে।
 
 > [!NOTE]
-> If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from the `App_Data` directory.
+> ইনস্টলেশন পৃষ্ঠার নীচে অবস্থিত **পুনরায় চালু করুন** বোতামটি আপনাকে কিছু ভুল হলে ইনস্টলেশন প্রক্রিয়াটি পুনরায় চালু করতে সক্ষম করে।
+
+> [!NOTE]
+> আপনি যদি একটি নপকমার্স সাইটকে সম্পূর্ণরূপে তার ডিফল্ট সেটিংসে রিসেট করতে চান, তাহলে আপনি `App_Data` ডিরেক্টরি থেকে `dataSettings.json` ফাইলটি মুছে ফেলতে পারেন।

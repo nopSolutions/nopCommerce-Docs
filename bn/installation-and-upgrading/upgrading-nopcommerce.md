@@ -1,8 +1,8 @@
 ---
-শিরোনাম: নপকমার্স আপগ্রেড
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/upgrading-nopcommerce
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: নপকমার্স আপগ্রেড
+uid: bn/installation-and-upgrading/upgrading-nopcommerce
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # নপকমার্স আপগ্রেড

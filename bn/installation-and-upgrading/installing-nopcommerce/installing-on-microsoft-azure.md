@@ -1,44 +1,51 @@
 ---
-title: Installing on Microsoft Azure
-uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure
+title: মাইক্রোসফ্ট আজুরে ইনস্টল করা
+uid: bn/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure
 author: git.AndreiMaz
-contributors: git.skoshelev, git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
+
 ---
 
-# Installing on Microsoft Azure
+# মাইক্রোসফ্ট আজুরে ইনস্টল করা
 
-There are three ways to deploy nopCommerce on Microsoft Azure:
+মাইক্রোসফ্ট আজুরে নপকমার্স ডেপ্লয়ের তিনটি উপায় রয়েছে:
 
-1. **FTP**. Use this method if you already have a package ready to deploy (no source code). You can publish to a local file system then upload the published files through FTP.
-  How to get FTP credentials for Azure? You should go [Azure.com](https://azure.microsoft.com/) → My Account → Management portal → Choose your website → go to Dashboard → quick glance. From here you can find the FTP credentials or you can *Reset your deployment credentials* or *Download the publish profile*.
-  For the new azure portal go [portal.azure.com](http://portal.azure.com/) → browse websites → navigate to your website → Properties. From here you can find the FTP credentials or you can *Reset your deployment credentials* or *Download the publish profile*.
+১. **এফটিপি**। আপনার যদি ইতিমধ্যে একটি প্যাকেজ ডেপ্লয়ের জন্য প্রস্তুত থাকে (কোনও সোর্স কোড নেই) এই পদ্ধতিটি ব্যবহার করুন। আপনি একটি স্থানীয় ফাইল সিস্টেমে প্রকাশ করতে পারেন তারপর প্রকাশিত ফাইলগুলি এফটিপি এর মাধ্যমে আপলোড করুন।
+  আজুরের জন্য এফটিপি শংসাপত্রগুলি কীভাবে পাবেন? আপনার যেতে হবে এখান থেকে আপনি এফটিপি শংসাপত্রগুলি খুঁজে পেতে পারেন অথবা আপনি *আপনার স্থাপনার শংসাপত্রগুলি পুনরায় সেট করতে পারেন* অথবা *পাবলিশ প্রোফাইল ডাউনলোড করতে পারেন*।
+  নতুন অজুর পোর্টালের জন্য [portal.azure.com](http://portal.azure.com/) ওয়েবসাইট ব্রাউজ করুন → আপনার ওয়েবসাইট → প্রোপার্টিজে নেভিগেট করুন। এখান থেকে আপনি এফটিপি শংসাপত্রগুলি খুঁজে পেতে পারেন অথবা আপনি *আপনার স্থাপনার শংসাপত্রগুলি পুনরায় সেট করতে পারেন* অথবা *পাবলিশ প্রোফাইল ডাউনলোড করতে পারেন*।
 
-1. **Visual Studio** - web deploy. You can also deploy directly to azure from visual studio. Download or get the deployment credentials from azure using the above way and setup web deploy profile in visual studio.
+২. **ভিসুয়াল স্টুডিও** - ওয়েব স্থাপন। আপনি ভিজ্যুয়াল স্টুডিও থেকে সরাসরি অজুরে স্থাপন করতে পারেন। উপরের পদ্ধতি ব্যবহার করে অজুর থেকে স্থাপনার শংসাপত্রগুলি ডাউনলোড করুন বা পান এবং ভিজ্যুয়াল স্টুডিওতে ওয়েব স্থাপনার প্রোফাইল সেটআপ করুন।
 
-1. **Web platform installer**. nopCommerce is available in Azure Web Sites application gallery. So go to Azure portal, click "*start, new site, from gallery*".  Select nopCommerce from the list of available applications. After you enter your database connection information and click "*OK*", nopCommerce will be ready to launch.
+৩. **ওয়েব প্ল্যাটফর্ম ইনস্টলার**। নপকমার্স আজুরে ওয়েব সাইট অ্যাপ্লিকেশন গ্যালারিতে পাওয়া যায়। সুতরাং আজুর পোর্টালে যান, "*শুরু, নতুন সাইট, গ্যালারি থেকে" ক্লিক করুন। উপলব্ধ অ্যাপ্লিকেশনের তালিকা থেকে নপকমার্স নির্বাচন করুন। আপনি আপনার ডাটাবেস সংযোগের তথ্য প্রবেশ করার পরে এবং "*ওকে*" ক্লিক করার পরে, নপকমার্স চালু করার জন্য প্রস্তুত হবে।
 
     >[!TIP]
-    > If you get error "HTTP Error 500.32 - ANCM Failed to Load dll", it might be that the platform has to be changed to 64bit (through Azure: "App Settings" - "Settings" - "Configuration" - tab "General settings" - "Platform settings" - "Platform").
+    > যদি আপনি "HTTP Error 500.32 - ANCM Failed to load dll" ত্রুটি পান, তাহলে প্ল্যাটফর্মটি 64bit (আজুর- এর মাধ্যমে) পরিবর্তন করতে হতে পারে।
+"অ্যাপ সেটিংস" → "সেটিংস" → "কনফিগারেশন" → ট্যাব "সাধারণ সেটিংস" → "প্ল্যাটফর্ম সেটিংস" → "প্ল্যাটফর্ম").
 
-Once the site is deployed you have to install nopCommerce. Please read more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/index).
+সাইটটি স্থাপন হয়ে গেলে আপনাকে নপকমার্স ইনস্টল করতে হবে। এটা সম্পর্কে আরো পড়ুন দয়া করে [এখানে](xref:bn/installation-and-upgrading/installing-nopcommerce/index).
 
-Azure has support for multiple instances since version 3.70. It's great for any application scalability. Now you should not worry whether your site can handle a large number of visitors. So what exactly has been done to support multiple instances in Azure and web farms?
+সংস্করণ ৩.৭০ থেকে আজুরের একাধিক দৃষ্টান্তের জন্য সমর্থন রয়েছে। এটি যেকোনো অ্যাপ্লিকেশন স্কেলেবিলিটির জন্য দারুণ। এখন আপনি চিন্তা করবেন না যে আপনার সাইটটি বিপুল সংখ্যক ভিজিটর পরিচালনা করতে পারবে কিনা। তাহলে আজুর এবং ওয়েব ফার্মগুলিতে একাধিক দৃষ্টান্ত সমর্থন করার জন্য ঠিক কী করা হয়েছে?
 
-* **BLOB storage account support in Microsoft Azure**. Please learn more about storage accounts in Azure [here](https://azure.microsoft.com/documentation/articles/storage-introduction/). *How to configure:*
-  * Once your BLOB storage is set up in Azure, open your `appsettings.json` (or `web.config` in previous versions) file, find **AzureBlobStorage** element and specify your BLOB storage connection string, container, endpoint.
-* **Distributed caching and session management support**. [Redis](http://redis.io/) has been chosen as a caching server (already available in Azure, Amazon, other cloud hosting companies). *How to configure:*
-  * First, you have to install and setup Redis. Please find more about how to use Redis in Azure [here](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache/).
-  * Once it's done you have to configure it in nopCommerce. In order to enable caching in Redis open `appsettings.json` (or `web.config` in previous versions) file. Find **RedisEnabled** and **UseRedisForCaching** (**RedisCaching** in previous versions) config elements. Set them to *true* and then specify **RedisConnectionString** pointing your Redis server (configured in the first step).
-  * For versions 3.90 (and below) you also have to enable Redis as our distributed session management. Please open the `web.config` file. Find and uncomment **sessionState** element. Specify its attributes (*host*, *accessKey*, etc) pointing to your Redis server.
-* Recommended settings of the `appsettings.json` file to improve stability:
-  * **UsePluginsShadowCopy** - set it to *false* to prevent the problem with IIS pool recycle and horizontal scaling.
-* Ensure that the nopCommerce schedule tasks are run on one farm node at a time. To configure this (for versions 3.90 and below):
-  * In order to enable this functionality open the `web.config` file, find **WebFarms** element, and set its **MultipleInstancesEnabled** attribute to *true*. If you use Microsoft Azure Websites (not cloud services), then also set **RunOnAzureWebsites** attribute to *true*.
+* **মাইক্রোসফ্ট আজুরে ব্লব স্টোরেজ অ্যাকাউন্ট সাপোর্ট**। আজুরে স্টোরেজ অ্যাকাউন্ট সম্পর্কে আরও জানুন [এখানে](https://azure.microsoft.com/documentation/articles/storage-introduction/)। *কিভাবে কনফিগার করবেন:*
+  *একবার আপনার ব্লব স্টোরেজ আজুরে এ সেট আপ হয়ে গেলে, আপনার `appsettings.json` (অথবা পূর্ববর্তী সংস্করণে `web.config`) ফাইলটি খুলুন, **আজুর ব্লব স্টোরেজ** এলিমেন্ট খুঁজুন এবং আপনার ব্লব স্টোরেজ কানেকশন স্ট্রিং, কন্টেইনার, এন্ডপয়েন্ট নির্দিষ্ট করুন।
 
-## Installation process
+* **ডিস্ট্রিবিউটেড ক্যাশিং এবং সেশন ম্যানেজমেন্ট সাপোর্ট**। [রেডিস](http://redis.io/) একটি ক্যাশিং সার্ভার (ইতিমধ্যে আজুর, এমাজন, অন্যান্য ক্লাউড হোস্টিং কোম্পানিতে উপলব্ধ) হিসেবে বেছে নেওয়া হয়েছে। *কিভাবে কনফিগার করবেন:*
 
-The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
+  * প্রথমে, আপনাকে রেডিস ইনস্টল এবং সেটআপ করতে হবে। কিভাবে আজুরে রেডিস ব্যবহার করবেন সে সম্পর্কে আরো জানুন [এখানে](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache/)।
 
-## Web farms
+  * একবার এটি হয়ে গেলে আপনাকে এটি নপকমার্স এ কনফিগার করতে হবে। রেডিসে ক্যাশিং সক্ষম করার জন্য `appsettings.json` (অথবা পূর্ববর্তী সংস্করণে` web.config`) ফাইল খুলুন। **রেডিস সক্রিয়** এবং **ক্যাশিংয়ের জন্য রেডিস ব্যবহার করুন** (**রেডিস ক্যাশিং** পূর্ববর্তী সংস্করণে) কনফিগার উপাদান খুঁজুন। সেগুলিকে *সত্য* এ সেট করুন এবং তারপরে **রেডিস কানেকশন স্ট্রিং নির্দিষ্ট করুন** আপনার রেডিস সার্ভার নির্দেশ করে (প্রথম ধাপে কনফিগার করা)।
 
-You can also configure load balancing with IIS web farms. Please read more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/web-farms).
+  * ৩.৯০ (এবং নীচের) সংস্করণগুলির জন্য আপনাকে আমাদের বিতরণকৃত সেশন ব্যবস্থাপনা হিসাবে রেডিস সক্ষম করতে হবে। দয়া করে `web.config` ফাইলটি খুলুন। **সেশন স্টেট** উপাদানটি খুঁজুন এবং অস্বস্তিকর করুন। আপনার রেডিস সার্ভারের দিকে নির্দেশ করে এর বৈশিষ্ট্যগুলি (*হোস্ট*,*অ্যাক্সেস কী*, ইত্যাদি) নির্দিষ্ট করুন।
+
+* স্থিতিশীলতা উন্নত করতে `appsettings.json` ফাইলের প্রস্তাবিত সেটিংস:
+  * **প্লাগইন শ্যাডো কপি ব্যবহার করুন** - আইআইএস পুল রিসাইকেল এবং অনুভূমিক স্কেলিং এর সমস্যা রোধ করতে এটিকে *মিথ্যা* এ সেট করুন।
+
+* নিশ্চিত করুন যে নপকমার্স সময়সূচী কাজগুলি এক সময়ে একটি খামার নোডে চালানো হয়। এটি কনফিগার করতে (সংস্করণ ৩.৯০ এবং নীচের জন্য):
+  *এই কার্যকারিতা সক্ষম করার জন্য `web.config` ফাইলটি খুলুন, **ওয়েব ফার্মগুলি** উপাদানটি খুঁজুন এবং এর **মাল্টিপল ইন্স্টান্সেস এনাবল্ড** অ্যাট্রিবিউটটি *সত্য* এ সেট করুন। আপনি যদি মাইক্রোসফট আজুর ওয়েবসাইট ব্যবহার করেন (ক্লাউড সার্ভিস নয়), তবে **আজুর ওয়েবসাইটে চালান** অ্যাট্রিবিউট *সত্য* সেট করুন।
+
+## ইনস্টলেশন প্রক্রিয়া
+
+নপকমার্স এর জন্য আরও ইনস্টলেশন প্রক্রিয়া এটি উইন্ডোজের ইনস্টলেশন প্রক্রিয়া থেকে আলাদা নয়, আপনি নির্দেশটি দেখতে পারেন[এখানে](xref:bn/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
+
+## ওয়েব ফার্মস
+
+আপনি আইআইএস ওয়েব ফার্মগুলির সাথে লোড ব্যালেন্সিং কনফিগার করতে পারেন। এটা সম্পর্কে আরো পড়ুন দয়া করে [এখানে](xref:bn/installation-and-upgrading/installing-nopcommerce/web-farms).

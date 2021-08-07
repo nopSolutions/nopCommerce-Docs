@@ -1,8 +1,8 @@
 ---
-শিরোনাম: ইনস্টলেশন ও আপগ্রেড
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/index
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: ইনস্টলেশন ও আপগ্রেড
+uid: bn/installation-and-upgrading/index
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # নপকমার্স ইনস্টল করা

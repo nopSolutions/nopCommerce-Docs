@@ -1,8 +1,8 @@
 ﻿---
-শিরোনাম: লোকাল ইনস্টল করা
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/installing-local
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: লোকাল ইনস্টল করা
+uid: bn/installation-and-upgrading/installing-nopcommerce/installing-local
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # লোকাল ইনস্টল করা

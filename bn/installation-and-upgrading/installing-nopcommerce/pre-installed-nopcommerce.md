@@ -1,8 +1,8 @@
 ---
-শিরোনাম: প্রাক ইনস্টলড নপকমার্স
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: প্রাক ইনস্টলড নপকমার্স
+uid: bn/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # প্রাক ইনস্টলড নপকমার্স

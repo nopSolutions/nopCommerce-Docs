@@ -1,8 +1,8 @@
 ---
-শিরোনাম: একটি হোস্টিং সংস্থা চয়ন করুন
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: একটি হোস্টিং সংস্থা চয়ন করুন
+uid: bn/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # হোস্টিং সরবরাহকারী

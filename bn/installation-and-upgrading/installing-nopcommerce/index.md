@@ -1,8 +1,8 @@
 ---
-শিরোনাম: নপকমার্স ইনস্টল করা
-স্বতন্ত্র পরিচয় সংখ্যা: bn/installation-and-upgrading/installing-nopcommerce/index
-লেখক: git.AndreiMaz
-অবদানকারী: git.MDRashedKhanMenon
+title: নপকমার্স ইনস্টল করা
+uid: bn/installation-and-upgrading/installing-nopcommerce/index
+author: git.AndreiMaz
+contributors: git.MDRashedKhanMenon
 ---
 
 # নপকমার্স ইনস্টল করা
