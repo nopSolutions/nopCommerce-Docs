@@ -1,36 +1,36 @@
 ---
-title: How to code my own shipping rate computation method
-uid: en/developer/plugins/shipping-plugin
+title: কিভাবে আমার নিজের শিপিং রেট গণনা পদ্ধতি কোড করব
+uid: bn/developer/plugins/shipping-plugin
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# How to code my own shipping rate computation method
+# কিভাবে আমার নিজের শিপিং রেট গণনা পদ্ধতি কোড করব
 
-If customers have some shippable products, they can choose a shipping option during checkout. These shipping options are returned from shipping rate computation methods (such as UPS, USPS, FedEx, etc). Shipping rate computation methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40) before you start coding a new shipping rate computation method. The article will explain to you the required steps for creating a plugin. So actually a shipping rate computation method is an ordinary plugin which implements an **IShippingRateComputationMethod** interface (`Nop.Services.Shipping` namespace). So add a new shipping plugin project (class library) to solution and let's get started.
+যদি গ্রাহকদের কিছু শিপেবল পণ্য থাকে, তারা চেকআউটের সময় একটি শিপিং বিকল্প বেছে নিতে পারে। এই শিপিং বিকল্পগুলি শিপিং রেট গণনা পদ্ধতি (যেমন ইউপিএস, ইউএসপিএস, ফেডেক্স, ইত্যাদি) থেকে ফেরত দেওয়া হয়। শিপিং রেট গণনা পদ্ধতিগুলি নপকমার্স এ প্লাগইন হিসাবে প্রয়োগ করা হয়। আপনি একটি নতুন শিপিং রেট গণনা পদ্ধতি কোডিং শুরু করার আগে [নপকমার্স ৪.৪০ এর জন্য একটি প্লাগইন কিভাবে লিখবেন](xref:bn/developer/plugins/how-to-write-plugin-4.40) পড়ার পরামর্শ দিচ্ছি। নিবন্ধটি আপনাকে একটি প্লাগইন তৈরির প্রয়োজনীয় পদক্ষেপগুলি ব্যাখ্যা করবে। তাই আসলে একটি শিপিং রেট গণনা পদ্ধতি হল একটি সাধারণ প্লাগইন যা একটি **IShippingRateComputationMethod** ইন্টারফেস প্রয়োগ করে (`Nop.Services.Shipping` নপকমার্স)। সুতরাং সমাধানের জন্য একটি নতুন শিপিং প্লাগইন প্রকল্প (ক্লাস লাইব্রেরি) যোগ করুন এবং শুরু করা যাক।
 
-## Controllers, views, models
+## কন্ট্রোলার, ভিউ, মডেল 
 
-Add a controller and an appropriate **Configure** action method and a view. These will define how a store owner sees configuration options in admin panel **System → Configuration → Shipping → Shipping providers**. This article does not explain how to configure plugins, but you can find more info about it [here](xref:en/getting-started/configure-shipping/shipping-providers/index).
+একটি নিয়ামক এবং একটি উপযুক্ত **Configure** অ্যাকশান পদ্ধতি এবং একটি ভিউ যোগ করুন। এগুলি সংজ্ঞায়িত করবে কিভাবে একজন দোকান মালিক অ্যাডমিন প্যানেলে কনফিগারেশন অপশন দেখেন **System → Configuration → Shipping → Shipping providers**। এই নিবন্ধটি কীভাবে প্লাগইনগুলি কনফিগার করতে হয় তা ব্যাখ্যা করে না, তবে আপনি এটি সম্পর্কে আরও তথ্য পেতে পারেন [এখানে](xref:en/getting-started/configure-shipping/shipping-providers/index)।
 
 ![shipping-plugin_1](_static/shipping-plugin/shipping-plugin_1.png)
 
-Once this step is complete, you can start adding required business logic for getting shipping options.
+একবার এই ধাপটি সম্পন্ন হলে, আপনি শিপিং বিকল্পগুলি পাওয়ার জন্য প্রয়োজনীয় ব্যবসায়িক যুক্তি যুক্ত করতে শুরু করতে পারেন।
 
-## Getting shipping options
+## শিপিং অপশন
 
-Now you need to create a class which implements **IShippingRateComputationMethod** interface. This is the class that will be doing all the actual work. When nopCommerce calculates shipping totals or needs to get a list of available shipping options, the **GetShippingOptions** or **GetFixedRate** methods of your class will be called. Here is how UPSComputationMethod class is defined ("UPS" method):
+এখন আপনাকে একটি ক্লাস তৈরি করতে হবে যা **IShippingRateComputationMethod** ইন্টারফেস প্রয়োগ করে। এই ক্লাসটি সমস্ত প্রকৃত কাজ করবে। যখন নপকমার্স শিপিং মোট হিসাব করে বা উপলব্ধ শিপিং অপশনগুলির একটি তালিকা পাওয়ার প্রয়োজন হয়, তখন আপনার ক্লাসের **GetShippingOptions** বা **GetFixedRate** পদ্ধতি বলা হবে। এখানে কিভাবে UPSComputationMethod ক্লাস সংজ্ঞায়িত করা হয় ("ইউপিএস" পদ্ধতি):
 
 ```csharp
 public class UPSComputationMethod : BasePlugin, IShippingRateComputationMethod
 ```
 
-**IShippingRateComputationMethod** interface has several methods and properties which are required to implement.
+- **IShippingRateComputationMethod** ইন্টারফেসের বেশ কয়েকটি পদ্ধতি এবং বৈশিষ্ট্য রয়েছে যা বাস্তবায়নের জন্য প্রয়োজন।
 
-- **ShippingRateComputationMethodType**. This property indicates how your shipping rate computation works. It can be **Offline** or **Realtime**. **Offline** plugins do not use any third-party sites to get the rates (examples of such methods are "Fixed or by weight"). These plugins get all the required information from local databases. **Realtime** plugins use third-party sites to get the rates (for example, UPS).
-- **GetShippingOptions**. This method is always invoked when a customer chooses a shipping option during checkout. This method returns **GetShippingOptionResponse** which contains a list of **ShippingOption** objects. Each **ShippingOption** object contains information about certain shipping options such as option name (for example, "By ground"), its rate (for example, 10 USD) and other information. Put all your logic here (get the rates from your database or request them from a third-party site such as UPS).
-- **GetFixedRate**. As you already know **GetShippingOptions** is used to get shipping options during checkout (on "Select shipping method" page). But sometimes we need to know a shipping rate before a shipping option is chosen (for example, on the shopping cart page). In this case you can return a fixed rate. For example, your shipping rate computation method provides only one shipping option, and there's no need to wait until the customer chooses it on "Select shipping method" page. Return will be **null**, if your fixed rates are not supported. In this case customers will see the following message beside "Shipping total" on the shopping cart: "Calculated during checkout".
-- **GetConfigurationPageUrl**. As you remember we created a controller in the previous step. This method should return a url of its Configure method. For example:
+- **ShippingRateComputationMethodType**। এই প্রোপার্টি নির্দেশ করে কিভাবে আপনার শিপিং রেট গণনা কাজ করে। এটি **Offline** বা **Realtime** হতে পারে। **Offline** প্লাগইনগুলি হার পেতে কোন তৃতীয় পক্ষের সাইট ব্যবহার করে না (এই ধরনের পদ্ধতির উদাহরণ "স্থির বা ওজন অনুযায়ী")। এই প্লাগইনগুলি স্থানীয় ডেটাবেস থেকে সমস্ত প্রয়োজনীয় তথ্য পায়। **Realtime** প্লাগইনগুলি হার পাওয়ার জন্য তৃতীয় পক্ষের সাইট ব্যবহার করে (উদাহরণস্বরূপ, ইউপিএস)।
+- **GetShippingOptions**। চেকআউটের সময় যখন কোন গ্রাহক একটি শিপিং বিকল্প বেছে নেয় তখন এই পদ্ধতিটি সর্বদা প্রয়োগ করা হয়। এই পদ্ধতিটি ফিরে আসে **GetShippingOptionResponse** যা **ShippingOption** বস্তুর একটি তালিকা ধারণ করে। প্রতিটি **ShippingOption** অবজেক্টে কিছু শিপিং অপশন সম্পর্কে তথ্য থাকে যেমন অপশন নাম (উদাহরণস্বরূপ, "বাই গ্রাউন্ড"), এর রেট (উদাহরণস্বরূপ, 10 ইউএসডি) এবং অন্যান্য তথ্য। আপনার সমস্ত যুক্তি এখানে রাখুন (আপনার ডাটাবেস থেকে রেট পান অথবা তৃতীয় পক্ষের সাইট যেমন ইউপিএস থেকে তাদের অনুরোধ করুন)।
+- **GetFixedRate**। যেমন আপনি ইতিমধ্যে জানেন **GetShippingOptions** চেকআউটের সময় শিপিং অপশন পেতে ব্যবহৃত হয় ("শিপিং পদ্ধতি নির্বাচন করুন" পৃষ্ঠায়)। তবে কখনও কখনও শিপিংয়ের বিকল্পটি বেছে নেওয়ার আগে আমাদের শিপিং রেট জানতে হবে (উদাহরণস্বরূপ, শপিং কার্ট পৃষ্ঠায়)। এই ক্ষেত্রে আপনি একটি নির্দিষ্ট হার ফিরিয়ে দিতে পারেন। উদাহরণস্বরূপ, আপনার শিপিং রেট গণনা পদ্ধতি শুধুমাত্র একটি শিপিং বিকল্প প্রদান করে, এবং গ্রাহক "শিপিং পদ্ধতি নির্বাচন করুন" পৃষ্ঠায় এটি নির্বাচন না করা পর্যন্ত অপেক্ষা করার দরকার নেই। যদি আপনার নির্দিষ্ট হার সমর্থিত না হয় তবে রিটার্ন হবে **null**। এই ক্ষেত্রে গ্রাহকরা শপিং কার্টে "শিপিং মোট" এর পাশে নিম্নলিখিত বার্তাটি দেখতে পাবেন: "চেকআউটের সময় গণনা করা"।
+- **GetConfigurationPageUrl**। আপনার মনে আছে আমরা আগের ধাপে একটি নিয়ামক তৈরি করেছি। এই পদ্ধতিটি তার কনফিগার পদ্ধতির একটি ইউআরএল ফেরত দেওয়া উচিত। উদাহরণ স্বরূপ:
 
 ```csharp
 public override string GetConfigurationPageUrl()
@@ -39,6 +39,6 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-## Conclusion
+## উপসংহার
 
-Hopefully this will get you started with adding a new shipping rate computation method.
+আশা করি এটি আপনাকে একটি নতুন পেমেন্ট পদ্ধতি যুক্ত করে শুরু করবেন।

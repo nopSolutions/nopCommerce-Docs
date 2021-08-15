@@ -1,11 +1,11 @@
 ---
-title: Plugin with data access
+title: ডেটা অ্যাক্সেস সহ প্লাগইন
 uid: en/developer/plugins/plugin-with-data-access
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.skoshelev, git.cromatido
+contributors: git.AfiaKhanom
 ---
 
-# Plugin with data access
+# ডেটা অ্যাক্সেস সহ প্লাগইন
 
 In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
 

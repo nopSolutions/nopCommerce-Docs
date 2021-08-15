@@ -1,17 +1,17 @@
 ---
-title: How to add a menu item into the administration area from a plugin
-uid: en/developer/plugins/menu-item
+title: কিভাবে প্লাগইন থেকে প্রশাসন এলাকায় একটি মেনু আইটেম যোগ করা যায়
+uid: bn/developer/plugins/menu-item
 author: git.AndreiMaz
-contributors: git.Sandeep911, git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# How to add a menu item into the administration area from a plugin
+# কিভাবে প্লাগইন থেকে প্রশাসন এলাকায় একটি মেনু আইটেম যোগ করা যায়
 
-In nopCommerce, administration menu is build from the *sitemap.config* file which is located in *~/Areas/Admin folder*.
+নপকমার্স এ, প্রশাসন মেনু *sitemap.config* ফাইল থেকে তৈরি করা হয় যা *~/Areas/Admin folder* এ অবস্থিত।
 
-To do the same, you can use following sample code which you need to add in your plugins' cs file. First, implement IAdminMenuPlugin interface in your plugin main class.
+একই কাজ করার জন্য, আপনি নিম্নলিখিত নমুনা কোড ব্যবহার করতে পারেন যা আপনার প্লাগইন এর সিএস ফাইলে যোগ করতে হবে। প্রথমে, আপনার প্লাগইন প্রধান শ্রেণীতে IAdminMenuPlugin ইন্টারফেস প্রয়োগ করুন।
 
-Then, You can also put any security (ACL) logic to this method. For example, validate whether current customer has "Manage plugins" permission.
+তারপরে, আপনি এই পদ্ধতিতে কোনও সুরক্ষা (এসিএল) যুক্তি রাখতে পারেন। উদাহরণস্বরূপ, বর্তমান গ্রাহকের "ম্যানেজ প্লাগইন" অনুমতি আছে কিনা তা যাচাই করুন।
 
 ```csharp
  public class CustomPlugin : BasePlugin, IAdminMenuPlugin
@@ -41,7 +41,7 @@ Then, You can also put any security (ACL) logic to this method. For example, val
 
 ```
 
-In version 2.00-3.50 you should do it the following way:
+সংস্করণ 2.00-3.50 এ আপনার নিম্নলিখিত উপায়ে এটি করা উচিত:
 
 ```csharp
 public bool Authenticate()
@@ -72,4 +72,4 @@ public  SiteMapNode BuildMenuItem() // SiteMapNode is Class in Nop.Web.Framework
 }
 ```
 
-In the above code, you can find comments where you need to replace values depending on your requirements. Moreover, the above code also explains how you can add a child menu items inside main menu.
+উপরের কোডে, আপনি মন্তব্যগুলি খুঁজে পেতে পারেন যেখানে আপনাকে আপনার প্রয়োজনীয়তার উপর নির্ভর করে মানগুলি প্রতিস্থাপন করতে হবে। তাছাড়া, উপরের কোডটিও ব্যাখ্যা করে যে কিভাবে আপনি প্রধান মেনুতে একটি শাখা মেনু আইটেম যোগ করতে পারেন।

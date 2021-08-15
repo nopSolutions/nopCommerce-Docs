@@ -1,20 +1,20 @@
 ---
-title: Adding CSS and JS resource files into nopCommerce Plugin
-uid: en/developer/plugins/resource-files
+title: সিএসএস এবং জেএস রিসোর্স ফাইলগুলিকে নপকমার্স প্লাগইন এ যোগ করা
+uid: bn/developer/plugins/resource-files
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Adding CSS and JS resource files into nopCommerce Plugin
+# সিএসএস এবং জেএস রিসোর্স ফাইলগুলিকে নপকমার্স প্লাগইন এ যোগ করা
 
-To load resource files correctly you need to add its references into your plugin's view files.
+রিসোর্স ফাইল সঠিকভাবে লোড করার জন্য আপনার প্লাগইন এর ভিউ ফাইলে এর রেফারেন্স যোগ করতে হবে।
 
-You can use `Html.AddScriptParts()` or `Html.AddCssFileParts()` helper methods.
+আপনি `Html.AddScriptParts()` অথবা `Html.AddCssFileParts()` সাহায্যকারী পদ্ধতি ব্যবহার করতে পারেন।
 
 - `Html.AddCssFileParts()`
 - `Html.AddScriptParts()`
 
-You can check into more details about this methods by going to its definition in your nopCommerce projects.
+আপনি আপনার নপকমার্স প্রকল্পের সংজ্ঞায় গিয়ে এই পদ্ধতিগুলি সম্পর্কে আরও বিশদ জানতে পারেন।
 
 ```csharp
 @{
@@ -27,4 +27,4 @@ You can check into more details about this methods by going to its definition in
 }
 ```
 
-If you want to add resource link in the header then you can use ResourceLocation.Head and for footer you can use *ResourceLocation.Footer*.
+আপনি যদি হেডারে রিসোর্স লিঙ্ক যোগ করতে চান তাহলে আপনি রিসোর্সলোকেশন ব্যবহার করতে পারেন। হেড এবং ফুটার জন্য আপনি ব্যবহার করতে পারেন *ResourceLocation.Footer*।

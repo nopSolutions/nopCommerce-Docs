@@ -1,27 +1,27 @@
 ---
-title: How to code my own payment method
-uid: en/developer/plugins/payment-method
+title: কিভাবে আমার নিজের পেমেন্ট পদ্ধতি কোড করব
+uid: bn/developer/plugins/payment-method
 author: git.AndreiMaz
-contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# How to code my own payment method
+# কিভাবে আমার নিজের পেমেন্ট পদ্ধতি কোড করব
 
-Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
+পেমেন্ট পদ্ধতিগুলি নপকমার্স এ প্লাগইন হিসাবে প্রয়োগ করা হয়। নতুন পেমেন্ট পদ্ধতি কোডিং শুরু করার আগে [নপকমার্স 4.40 এর জন্য একটি প্লাগইন কিভাবে লিখবেন](xref:bn/developer/plugins/how-to-write-plugin-4.40) পড়ার পরামর্শ দিচ্ছি। প্লাগইন তৈরির জন্য প্রয়োজনীয় পদক্ষেপগুলি আপনাকে ব্যাখ্যা করবে।
 
-So actually a payment method is an ordinary plugin which implements an IPaymentMethod interface (Nop.Services.Payments namespace). As you already guessed IPaymentMethod interface is used for creating payment method plugins. It contains some methods which are specific only for payment methods such as ProcessPayment() or GetAdditionalHandlingFee(). So add a new payment plugin project (class library) to solution and let's get started.
+তাই আসলে একটি পেমেন্ট পদ্ধতি হল একটি সাধারণ প্লাগইন যা একটি IPaymentMethod ইন্টারফেস প্রয়োগ করে (Nop.Services.Payments namespace)। যেমন আপনি ইতিমধ্যেই অনুমান করেছেন IPaymentMethod ইন্টারফেস পেমেন্ট পদ্ধতি প্লাগইন তৈরির জন্য ব্যবহৃত হয়। এতে কিছু পদ্ধতি রয়েছে যা শুধুমাত্র পেমেন্ট পদ্ধতির জন্য নির্দিষ্ট যেমন ProcessPayment() বা GetAdditionalHandlingFee()। সুতরাং সমাধানের জন্য একটি নতুন পেমেন্ট প্লাগইন প্রকল্প (class library) যোগ করুন এবং শুরু করা যাক।
 
-## Controllers, views, models
+## কন্ট্রোলার, ভিউ, মডেল
 
-First thing you need to do is create a controller. This controller is responsible for responding to requests made against an ASP.NET MVC website.
+প্রথমে আপনাকে যা করতে হবে তা হল একটি নিয়ামক তৈরি করা। ASP.NET MVC ওয়েবসাইটের বিরুদ্ধে করা অনুরোধের সাড়া দেওয়ার জন্য এই নিয়ামক দায়ী।
 
-1. When implementing a new payment method, this controller should be derived from a special **BasePaymentController** abstract class.
+1. একটি নতুন পেমেন্ট পদ্ধতি প্রয়োগ করার সময়, এই নিয়ামকটি একটি বিশেষ **BasePaymentController** আবসট্রাকট ক্লাস থেকে নেওয়া উচিত।
 
-1. Then implement **Configure** action methods used for plugin configuration (by a store owner in admin area). This method and an appropriate view will define how a store owner sees configuration options in admin panel (System → Configuration → Payment methods).
+1. তারপর বাস্তবায়ন করুন **Configure** প্লাগইন কনফিগারেশনের জন্য ব্যবহৃত অ্যাকশন পদ্ধতি (অ্যাডমিন এলাকায় একটি দোকান মালিকের দ্বারা)। এই পদ্ধতি এবং একটি উপযুক্ত ভিউ নির্ধারণ করবে কিভাবে একজন দোকান মালিক অ্যাডমিন প্যানেলে কনফিগারেশন অপশন দেখে (System → Configuration → Payment methods)।
 
-## Public view component.GetPublicViewComponent
+## পাবলিক ভিউ component.GetPublicViewComponent
 
-Then you have to create a view component for displaying plugin in public store. This view component and an appropriate view will define how your customers will see the payment information page during checkout. First let's create a view component class. It should be placed in /Components folder. Look how it's done for PayPalStandard plugin:
+তারপর আপনাকে পাবলিক স্টোরে প্লাগইন প্রদর্শনের জন্য একটি ভিউ কম্পোনেন্ট তৈরি করতে হবে। এই ভিউ কম্পোনেন্ট এবং একটি উপযুক্ত ভিউ চেকআউটের সময় আপনার গ্রাহকরা কিভাবে পেমেন্ট তথ্য পৃষ্ঠা দেখতে পাবেন তা নির্ধারণ করবে। প্রথমে একটি ভিউ কম্পোনেন্ট ক্লাস তৈরি করা যাক। এটি /Components ফোল্ডারে স্থাপন করা উচিত। PayPalStandard প্লাগইন এর জন্য এটি কীভাবে করা হয়েছে তা দেখুন:
 
 ```csharp
 [ViewComponent(Name = "PaymentPayPalStandard")]
@@ -34,72 +34,72 @@ public class PaymentPayPalStandardViewComponent : NopViewComponent
 }
 ```
 
-Invoke method returns an appropriate PaymentInfo view from */Views* folder of your plugin. Note that we use our custom NopViewComponent class as a base class instead of existing built-in ViewComponent.
+ইনভোক পদ্ধতি আপনার প্লাগইন এর */Views* ফোল্ডার থেকে একটি উপযুক্ত পেমেন্ট ইনফো ভিউ প্রদান করে। মনে রাখবেন যে আমরা বিদ্যমান বিল্ট-ইন ভিউ কম্পোনেন্টের পরিবর্তে আমাদের কাস্টম NopViewComponent ক্লাসকে বেস ক্লাস হিসাবে ব্যবহার করি।
 
-Then let's create PaymentInfo view which shows payment information. For PayPalStandard plugin this view is pretty simple. There we just render text saying that a customer will be redirected to the payment page. But it's possible to create a more complex view component if need. For example if you want to collect customer's information on the payment information page look how it's already done in PayPalDirect payment plugin.
+তাহলে আসুন PaymentInfo ভিউ তৈরি করি যা পেমেন্ট তথ্য দেখায়। PayPalStandard প্লাগইনটির জন্য এই ভিউটি বেশ সহজ। সেখানে আমরা শুধু পাঠ্যটি রেন্ডার করে বলছি যে একজন গ্রাহককে পেমেন্ট পৃষ্ঠায় পুননির্দেশিত করা হবে। কিন্তু প্রয়োজন হলে আরো জটিল ভিউ কম্পোনেন্ট তৈরি করা সম্ভব। উদাহরণস্বরূপ যদি আপনি পেমেন্ট তথ্য পৃষ্ঠায় গ্রাহকের তথ্য সংগ্রহ করতে চান তাহলে দেখুন PayPalDirect পেমেন্ট প্লাগইন এ এটি ইতিমধ্যেই কিভাবে সম্পন্ন হয়েছে।
 
-## Payment processing
+## পেমেন্ট প্রসেসিং
 
-Now you need to create a class which implements **IPaymentMethod** interface. This is the class that will be doing all the actual work of communicating with your payment gateway. When someone creates an order either the **ProcessPayment** or **PostProcessPayment** methods of your class will be called. Here is how CheckMoneyOrderPaymentProcessor class is defined ("CheckMoneyOrder" payment method):
+এখন আপনাকে একটি ক্লাস তৈরি করতে হবে যা **IPaymentMethod** ইন্টারফেস প্রয়োগ করে। এই ক্লাসটিই আপনার পেমেন্ট গেটওয়ের সাথে যোগাযোগের সমস্ত প্রকৃত কাজ করবে। যখন কেউ অর্ডার তৈরি করে তখন হয় আপনার প্রসেসের **ProcessPayment** অথবা **PostProcessPayment** পদ্ধতি বলা হবে। এখানে কিভাবে CheckMoneyOrderPaymentProcessor শ্রেণী সংজ্ঞায়িত করা হয়েছে ("CheckMoneyOrder" পেমেন্ট পদ্ধতি):
 
 ```csharp
 public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
 ```
 
-**IPaymentMethod** interface has several methods and properties which are required to implement.
+- **IPaymentMethod** ইন্টারফেসের বেশ কয়েকটি পদ্ধতি এবং বৈশিষ্ট্য রয়েছে যা বাস্তবায়নের জন্য প্রয়োজন।
 
-- **ValidatePaymentForm** is used in the public store to validate customer input. It returns a list of warnings (for example, a customer did not enter his credit card name). If your payment method does not ask the customer to enter additional information, then the ValidatePaymentForm should return an empty list:
+- **ValidatePaymentForm**. পাবলিক স্টোরে গ্রাহকের ইনপুট যাচাই করতে ব্যবহৃত হয়। এটি সতর্কতার একটি তালিকা প্রদান করে (উদাহরণস্বরূপ, একজন গ্রাহক তার ক্রেডিট কার্ডের নাম লিখেননি)। যদি আপনার পেমেন্ট পদ্ধতি গ্রাহককে অতিরিক্ত তথ্য দিতে না বলে, তাহলে ValidatePaymentForm একটি খালি তালিকা ফেরত দিবে:
 
-    ```csharp
+```csharp
     public Task<IList<string>> ValidatePaymentFormAsync(IFormCollection form)
     {
         return Task.FromResult<IList<string>>(new List<string>());
     }
-    ```
+```
 
-- **GetPaymentInfo** method is used in the public store to parse customer input, such as credit card information. This method returns a ProcessPaymentRequest object with parsed customer input (for example, credit card information). If your payment method does not ask the customer to enter additional information, then GetPaymentInfo will return an empty ProcessPaymentRequest object:
+- **GetPaymentInfo**. পদ্ধতি পাবলিক স্টোরে ব্যবহার করা হয় গ্রাহকদের ইনপুট বিশ্লেষণ করতে, যেমন ক্রেডিট কার্ডের তথ্য। এই পদ্ধতিটি বিশ্লেষিত গ্রাহক ইনপুট সহ একটি ProcessPaymentRequest অবজেক্ট প্রদান করে (উদাহরণস্বরূপ, ক্রেডিট কার্ডের তথ্য)। যদি আপনার পেমেন্ট পদ্ধতি গ্রাহককে অতিরিক্ত তথ্য দিতে না বলে, তাহলে GetPaymentInfo একটি খালি ProcessPaymentRequest অবজেক্ট ফেরত দেবে:
 
-    ```csharp
+```csharp
     public Task<ProcessPaymentRequest> GetPaymentInfoAsync(IFormCollection form)
     {
         return Task.FromResult(new ProcessPaymentRequest());
     }
-    ```
+```
 
-- **ProcessPayment**. This method is always invoked right before a customer places an order. Use it when you need to process a payment before an order is stored into database. For example, capture or authorize credit card. Usually this method is used when a customer is not redirected to third-party site for completing a payment and all payments are handled on your site (for example, PayPal Direct).
-- **PostProcessPayment**. This method is invoked right after a customer places an order. Usually this method is used when you need to redirect a customer to a third-party site for completing a payment (for example, PayPal Standard).
-- **HidePaymentMethod**. You can put any logic here. For example, hide this payment method if all products in the cart are downloadable. Or hide this payment method if current customer is from certain country
-- **GetAdditionalHandlingFee**. You can return any additional handling fees which will be added to an order total.
-- **Capture**. Some payment gateways allow you to authorize payments before they're captured. It allows store owners to review order details before the payment is actually done. In this case you just authorize a payment in **ProcessPayment** or **PostProcessPayment** method (described above), and then just capture it. In this case a **Capture** button will be visible on the order details page in admin area. Note that an order should be already authorized and **SupportCapture** property should return **true**.
-- **Refund**. This method allows you make a refund. In this case a **Refund** button will be visible on the order details page in admin area. Note that an order should be paid, and **SupportRefund** or **SupportPartiallyRefund** property should return **true**.
-- **Void**. This method allows you void an authorized but not captured payment. In this case a **Void** button will be visible on the order details page in admin area. Note that an order should be authorized and **SupportVoid** property should return **true**.
-- **ProcessRecurringPayment**. Use this method to process recurring payments.
-- **CancelRecurringPayment**. Use this method to cancel recurring payments.
-- **CanRePostProcessPayment**. Usually this method is used when it redirects a customer to a third-party site for completing a payment. If the third party payment fails this option will allow customers to attempt the order again later without placing a new order. **CanRePostProcessPayment** should return **true** to enable this feature.
-- **GetConfigurationPageUrl**. As you remember we created a controller in the previous step. This method should return a url of its Configure method. For example:
+- **ProcessPayment**. কোনও গ্রাহক অর্ডার দেওয়ার আগে এই পদ্ধতিটি সর্বদা প্রয়োগ করা হয়। অর্ডার ডাটাবেসে সংরক্ষণ করার আগে যখন আপনার পেমেন্ট প্রক্রিয়া করার প্রয়োজন হয় তখন এটি ব্যবহার করুন। উদাহরণস্বরূপ, ক্রেডিট কার্ড ক্যাপচার বা অনুমোদন করুন। সাধারণত এই পদ্ধতিটি ব্যবহার করা হয় যখন কোন গ্রাহককে পেমেন্ট সম্পন্ন করার জন্য তৃতীয় পক্ষের সাইটে পুননির্দেশিত করা হয় না এবং সমস্ত পেমেন্ট আপনার সাইটে পরিচালনা করা হয় (উদাহরণস্বরূপ, পেপ্যাল ​​ডাইরেক্ট)।
+- **PostProcessPayment**. একজন গ্রাহক অর্ডার দেওয়ার পরেই এই পদ্ধতিটি চালু করা হয়। সাধারণত এই পদ্ধতিটি ব্যবহার করা হয় যখন আপনি একটি পেমেন্ট সম্পন্ন করার জন্য একটি গ্রাহককে তৃতীয় পক্ষের সাইটে পুননির্দেশিত করতে চান (উদাহরণস্বরূপ, পেপ্যাল ​​স্ট্যান্ডার্ড)।
+- **HidePaymentMethod**. আপনি যেকোন যুক্তি এখানে রাখতে পারেন। উদাহরণস্বরূপ, কার্টের সমস্ত পণ্য ডাউনলোডযোগ্য হলে এই পেমেন্ট পদ্ধতিটি লুকান। অথবা বর্তমান গ্রাহক নির্দিষ্ট দেশ থেকে হলে এই পেমেন্ট পদ্ধতিটি লুকানো।
+- **GetAdditionalHandlingFee**. আপনি যেকোন অতিরিক্ত হ্যান্ডলিং ফি ফেরত দিতে পারেন যা মোট অর্ডারে যোগ করা হবে।
+- **Capture**. কিছু পেমেন্ট গেটওয়ে আপনাকে ক্যাপচার করার আগে পেমেন্ট অনুমোদন করতে দেয়। এটি দোকান মালিকদের পেমেন্ট করার আগে অর্ডারের বিস্তারিত পর্যালোচনা করতে দেয়। এই ক্ষেত্রে আপনি শুধু **ProcessPayment** বা **PostProcessPayment** পদ্ধতিতে (উপরে বর্ণিত) একটি পেমেন্ট অনুমোদন করেন, এবং তারপর শুধু এটি ক্যাপচার করুন। এই ক্ষেত্রে একটি **Capture** বাটন অ্যাডমিন এলাকায় অর্ডারের বিস্তারিত পৃষ্ঠায় দৃশ্যমান হবে। মনে রাখবেন যে একটি অর্ডার ইতিমধ্যে অনুমোদিত হওয়া উচিত এবং **SupportCapture** প্রোপার্টি **true** ফিরতে হবে।
+- **Refund**. এই পদ্ধতিটি আপনাকে ফেরত দেওয়ার অনুমতি দেয়। এই ক্ষেত্রে অ্যাডমিন এলাকায় অর্ডারের বিস্তারিত পৃষ্ঠায় একটি **Refund** বাটন দৃশ্যমান হবে। মনে রাখবেন যে একটি অর্ডার দেওয়া উচিত, এবং **SupportRefund** অথবা **SupportPartiallyRefund** প্রোপার্টি অবশ্যই **true** ফিরতে হবে।
+- **Void**. এই পদ্ধতিটি আপনাকে একটি অনুমোদিত কিন্তু ক্যাপচারকৃত পেমেন্ট বাতিল করতে দেয়। এই ক্ষেত্রে অ্যাডমিন এলাকায় অর্ডারের বিস্তারিত পৃষ্ঠায় একটি **Void** বাটন দৃশ্যমান হবে। লক্ষ্য করুন যে একটি আদেশ অনুমোদিত হওয়া উচিত এবং **SupportVoid** প্রোপার্টি **true** ফিরতে হবে।
+- **ProcessRecurringPayment**. পুনরাবৃত্ত পেমেন্ট প্রক্রিয়া করার জন্য এই পদ্ধতিটি ব্যবহার করুন।
+- **CancelRecurringPayment**. পুনরাবৃত্ত পেমেন্ট বাতিল করতে এই পদ্ধতি ব্যবহার করুন।
+- **CanRePostProcessPayment**. সাধারণত এই পদ্ধতি ব্যবহার করা হয় যখন এটি একটি গ্রাহককে তৃতীয় পক্ষের সাইটে পেমেন্ট সম্পন্ন করার জন্য পুননির্দেশিত করে। যদি তৃতীয় পক্ষের পেমেন্ট ব্যর্থ হয় তবে এই বিকল্পটি গ্রাহকদের নতুন অর্ডার না দিয়ে পরে আবার অর্ডার করার চেষ্টা করবে। **CanRePostProcessPayment** এই বৈশিষ্ট্যটি সক্ষম করতে **true** ফিরতে হবে।
+- **GetConfigurationPageUrl**. আপনার মনে আছে আমরা আগের ধাপে একটি নিয়ামক তৈরি করেছি। এই পদ্ধতিটি তার কনফিগার পদ্ধতির একটি ইউআরএল ফেরত দেওয়া উচিত। উদাহরণ স্বরূপ:
 
-    ```csharp
+```csharp
     public override string GetConfigurationPageUrl()
     {
         return $"{_webHelper.GetStoreLocation()}Admin/PaymentCheckMoneyOrder/Configure";
     }
-    ```
+```
 
-- **GetPublicViewComponentName**. This method should return the name of the view component which used to display public information for customers. We have created an appropriate view component in the previous step. For example:
+- **GetPublicViewComponentName**। এই পদ্ধতিতে ভিউ কম্পোনেন্টের নাম ফেরত দেওয়া উচিত যা গ্রাহকদের জন্য সর্বজনীন তথ্য প্রদর্শন করতে ব্যবহৃত হয়। আমরা আগের ধাপে একটি উপযুক্ত ভিউ কম্পোনেন্ট তৈরি করেছি। উদাহরণ স্বরূপ:
 
-    ```csharp
+```csharp
     public string GetPublicViewComponentName()
     {
         viewComponentName = "CheckMoneyOrder";
     }
-    ```
+```
 
-- **SupportCapture, SupportPartiallyRefund, SupportRefund, SupportVoid**. These properties indicate whether appropriate methods of your payment method are supported.
-- **RecurringPaymentType**. This property indicates whether recurring payments are supported.
-- **PaymentMethodType**. This property indicates payment method type. Currently there are three types. **Standard** used by payment methods when a customer is not redirected to a third-party site. **Redirection** is used when a customer is redirected to a third-party site. And **Button** is similar to **Redirection** payment methods. The only difference is used that it's displayed as a button on shopping cart page (for example, Google Checkout).
-- **SkipPaymentInfo**. Indicates whether we should display a payment information page for this plugin.
-- **PaymentMethodDescription**. This property gets a payment method description that will be displayed on checkout pages in the public store
+- **SupportCapture, SupportPartiallyRefund, SupportRefund, SupportVoid**. এই বৈশিষ্ট্যগুলি নির্দেশ করে যে আপনার পেমেন্ট পদ্ধতির উপযুক্ত পদ্ধতি সমর্থিত কিনা।
+- **RecurringPaymentType**. এই সম্পত্তি নির্দেশ করে যে পুনরাবৃত্ত অর্থ প্রদান সমর্থিত কিনা।
+- **PaymentMethodType**. এই সম্পত্তি পেমেন্ট পদ্ধতির ধরন নির্দেশ করে। বর্তমানে তিন প্রকার। **Standard** পেমেন্ট পদ্ধতি দ্বারা ব্যবহৃত হয় যখন কোন গ্রাহককে তৃতীয় পক্ষের সাইটে পুননির্দেশিত করা হয় না। **Redirection** ব্যবহার করা হয় যখন একজন গ্রাহককে তৃতীয় পক্ষের সাইটে পুননির্দেশিত করা হয়। এবং **Button** **Redirection** পেমেন্ট পদ্ধতির অনুরূপ। শুধুমাত্র পার্থক্যটি ব্যবহার করা হয় যে এটি শপিং কার্ট পৃষ্ঠায় একটি বোতাম হিসাবে প্রদর্শিত হয় (উদাহরণস্বরূপ, গুগল চেকআউট)।
+- **SkipPaymentInfo**. এই প্লাগইনটির জন্য আমাদের একটি পেমেন্ট তথ্য পৃষ্ঠা প্রদর্শন করা উচিত কিনা তা নির্দেশ করে।
+- **PaymentMethodDescription**. এই সম্পত্তি একটি পেমেন্ট পদ্ধতির বিবরণ পায় যা পাবলিক স্টোরের চেকআউট পৃষ্ঠায় প্রদর্শিত হবে।
 
-## Conclusion
+## উপসংহার
 
-Hopefully this will get you started with adding a new payment method.
+আশা করি এটি আপনাকে একটি নতুন পেমেন্ট পদ্ধতি যুক্ত করে শুরু করবেন।
