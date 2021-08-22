@@ -1,84 +1,78 @@
 ---
-title: Search engine optimization
-uid: en/running-your-store/search-engine-optimization
+title: সন্ধান যন্ত্র নিখুতকরন
+uid: bn/running-your-store/search-engine-optimization
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Search engine optimization
+# সন্ধান যন্ত্র নিখুতকরন
 
-SEO stands for search engine optimization, it is a process of getting traffic from "free", "organic," "editorial" or "natural" search results on search engines. All major search engines have primary search results, where web pages and other content such as videos or local listings are shown and ranked based on what a search engine considers most relevant for users.
+এসইও মানে সার্চ ইঞ্জিন অপটিমাইজেশন, এটি সার্চ ইঞ্জিনে "বিনামূল্যে", "জৈব," "সম্পাদকীয়" বা "প্রাকৃতিক" সার্চ ফলাফল থেকে ট্রাফিক পাওয়ার একটি প্রক্রিয়া। সমস্ত প্রধান সার্চ ইঞ্জিনের প্রাথমিক অনুসন্ধান ফলাফল থাকে, যেখানে ওয়েব পেজ এবং অন্যান্য বিষয়বস্তু যেমন ভিডিও বা স্থানীয় তালিকা দেখানো হয় এবং একটি সার্চ ইঞ্জিন ব্যবহারকারীদের জন্য সবচেয়ে প্রাসঙ্গিক মনে করে তার ভিত্তিতে স্থান দেওয়া হয়।
 
-nopCommerce supports SEO techniques for different types of pages in your store. Find a list of them in [See also](#see-also) section.
+নপকমার্স আপনার দোকানের বিভিন্ন ধরনের পেজের এসইও কৌশল সমর্থন করে। [আরও দেখুন](#See-also) বিভাগে তাদের একটি তালিকা খুঁজুন।
 
-## SEO settings
+![এসইও সেটিংস](_static/search-engine-optimization/seo১.png)
 
-There are some general SEO settings in nopCommerce, that can be applied to the entire store.
+- **ডিফল্ট পৃষ্ঠার শিরোনাম** ক্ষেত্রে, আপনার দোকানের পৃষ্ঠাগুলির জন্য ডিফল্ট শিরোনাম লিখুন।
+- **পৃষ্ঠা শিরোনাম এসইও সমন্বয়** ক্ষেত্র থেকে, প্রয়োজনীয় পৃষ্ঠার শিরোনাম এসইও সমন্বয় নির্বাচন করুন, নিম্নরূপ:
 
-To edit SEO settings, go to **Configuration → Settings → General settings**. Then proceed to the *SEO* panel:
-
-![SEO settings](_static/search-engine-optimization/seo1.png)
-
-- In the **Default page title** field, enter the default title for the pages in your store.
-- From the **Page title SEO adjustment** field, select the required page title SEO adjustment, as follows:
-
-  - A page name comes after a store name in the title:
+  - শিরোনামে একটি দোকানের নামের পরে একটি পৃষ্ঠার নাম আসে:
   `YOURSTORE.COM` | PAGENAME
 
-  - A store name comes after a page name in the title:
+  - শিরোনামে একটি পৃষ্ঠার নামের পরে একটি দোকানের নাম আসে:
   PAGENAME | `YOURSTORE.COM`
 
-- Specify the **Page title separator**.
-- Enter the **Default meta keywords** for the pages in your store. This can be overridden for individual categories, manufacturers, products and some other pages.
-- Enter the **Default meta description** for the pages in your store. This can be overridden for individual categories, manufacturers, and products and some other pages.
-- Enter the **Home page title** for the home page page of your store.
-- Enter the **Home page meta description** for the home page page of your store.
-- Select the **Generate product meta description**, to automatically generate the product META descriptions (if not specified on the product details page) based on the product's short description.
-- Choose the **WWW prefix requirement**. For example, `http://yourStore.com/` could be automatically redirected to `http://www.yourStore.com/`. Select one of the following options:
-  - *Doesn't matter*
-  - *Pages should have WWW prefix*
-  - *Pages should not have WWW prefix*
-- Select the **Convert non-western chars** checkbox, to remove the accent in SEO names. For example, convert é to e.
-- Select the **Enable canonical URLs** checkbox, to transform an URL into a canonical URL to enable determining whether two syntactically different URLs may lead to a page with the equivalent content.
-- Tick the **Twitter META tags** checkbox to generate Twitter META tags on the product details page.
-- Tick the **Open Graph META tags** checkbox to generate Open Graph META tags on the product details page.
-- Tick the **Microdata tags** checkbox to generate Microdata tags on the product details page.
-- Enter the **Custom &#60;head&#62; tag**. For example, some custom &#60;meta&#62; tag. Or leave empty if ignore this setting.
+- **পৃষ্ঠা শিরোনাম বিভাজক** নির্দিষ্ট করুন।
+- আপনার দোকানের পৃষ্ঠাগুলির জন্য **ডিফল্ট মেটা কীওয়ার্ড** লিখুন। এটি পৃথক বিভাগ, নির্মাতারা, পণ্য এবং কিছু অন্যান্য পৃষ্ঠার জন্য ওভাররাইড করা যেতে পারে।
+- আপনার দোকানের পৃষ্ঠাগুলির জন্য **ডিফল্ট মেটা বর্ণনা** লিখুন। এটি পৃথক বিভাগ, নির্মাতারা এবং পণ্য এবং কিছু অন্যান্য পৃষ্ঠার জন্য ওভাররাইড করা যেতে পারে।
+- আপনার দোকানের হোম পেজ পৃষ্ঠার জন্য **হোম পেজের শিরোনাম** লিখুন।
+- আপনার দোকানের হোম পেজ পৃষ্ঠার জন্য **হোম পেজ মেটা বিবরণ** লিখুন।
+- পণ্যের সংক্ষিপ্ত বিবরণের উপর ভিত্তি করে স্বয়ংক্রিয়ভাবে পণ্যের মেটা বিবরণ (যদি পণ্যের বিবরণ পৃষ্ঠায় নির্দিষ্ট না থাকে) উৎপন্ন করার জন্য **জেনারেট প্রোডাক্ট মেটা ডেসক্রিপশন** নির্বাচন করুন।
+- **WWW উপসর্গ প্রয়োজন** চয়ন করুন। উদাহরণস্বরূপ, `http: // yourStore.com/` স্বয়ংক্রিয়ভাবে `http: // www.yourStore.com /` এ পুননির্দেশিত হতে পারে। নিম্নলিখিত বিকল্পগুলির মধ্যে একটি নির্বাচন করুন:
+  - *কোন ব্যাপার না*
+  - *পেজে WWW উপসর্গ থাকতে হবে*
+  - *পেজে WWW উপসর্গ থাকা উচিত নয়*
+- এসইও নামের অ্যাকসেন্ট অপসারণ করতে **কনভার্ট নন-ওয়েস্টার্ন অক্ষর** চেকবক্স নির্বাচন করুন। উদাহরণস্বরূপ, é কে ই -তে রূপান্তর করুন।
+- **ক্যানোনিকাল ইউআরএল সক্ষম করুন** চেকবক্স নির্বাচন করুন, একটি ইউআরএলকে একটি ক্যানোনিকাল ইউআরএলে রূপান্তর করার জন্য দুটি সিনট্যাকটিক্যালি আলাদা ইউআরএল সমতুল্য সামগ্রী সহ একটি পৃষ্ঠায় নিয়ে যেতে পারে কিনা তা নির্ধারণ করতে সক্ষম করুন।
+- পণ্যের বিবরণ পৃষ্ঠায় টুইটার মেটা ট্যাগ তৈরি করতে **টুইটার মেটা ট্যাগ** চেকবক্সে টিক দিন।
+- পণ্যের বিবরণ পৃষ্ঠায় ওপেন গ্রাফ মেটা ট্যাগ তৈরি করতে **ওপেন গ্রাফ মেটা ট্যাগ** চেকবক্সে টিক দিন।
+- পণ্যের বিবরণ পৃষ্ঠায় মাইক্রোডাটা ট্যাগ তৈরি করতে **মাইক্রোডাটা ট্যাগ** চেকবক্সে টিক দিন।
+- **কাস্টম &#60;head&#62; ট্যাগ** প্রবেশ করান। উদাহরণস্বরূপ, কিছু কাস্টম &#60; মেটা &#62; ট্যাগ অথবা এই সেটিং উপেক্ষা করলে খালি রাখুন।
 
-## SEO panels
+## এসইও প্যানেল
 
-There are several types of pages in nopCommerce for which you can set up individual SEO settings, including meta keywords, meta description, meta title and search engine friendly page names. This is done on SEO panels of the corresponding admin area sections.
+নপকমার্স এ বিভিন্ন ধরনের পেজ আছে যার জন্য আপনি মেটা কিওয়ার্ড, মেটা ডেসক্রিপশন, মেটা টাইটেল এবং সার্চ ইঞ্জিন ফ্রেন্ডলি পেজের নাম সহ পৃথক এসইও সেটিংস সেট করতে পারেন। এটি সংশ্লিষ্ট অ্যাডমিন এলাকা বিভাগের এসইও প্যানেলে করা হয়।
 
-![SEO panel](_static/search-engine-optimization/seo-panel.jpg)
+![এসইও প্যানেল](_static/search-engine-optimization/seo-panel.jpg)
 
-- In the **Search engine friendly page name** field, enter the name of the page used by search engines. If you enter nothing then the web page URL is formed using the page name. If you enter *custom-seo-page-name*, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
+- **সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** ফিল্ডে, সার্চ ইঞ্জিন দ্বারা ব্যবহৃত পৃষ্ঠার নাম লিখুন। আপনি যদি কিছুই না লিখেন তাহলে ওয়েব পেজ ইউআরএল পৃষ্ঠার নাম ব্যবহার করে গঠিত হয়। যদি আপনি *custom-seo-page-name* লিখেন, তাহলে নিচের কাস্টম URL ব্যবহার করা হবে: `http: // www.yourStore.com/custom-seo-page-name`।
 
-- In the **Meta title** field, enter the required title. The title tag specifies the title of your web page. It is retrieved by web browsers and also used by search engines such as Google to display a web page in search results:
-  ![Meta title](_static/search-engine-optimization/meta-title.jpg)
+- **মেটা শিরোনাম** ক্ষেত্রে, প্রয়োজনীয় শিরোনাম লিখুন। শিরোনাম ট্যাগ আপনার ওয়েব পৃষ্ঠার শিরোনাম নির্দিষ্ট করে। এটি ওয়েব ব্রাউজার দ্বারা পুনরুদ্ধার করা হয় এবং সার্চ ইঞ্জিন যেমন গুগল সার্চ ফলাফলে একটি ওয়েব পেজ প্রদর্শন করতে ব্যবহার করে:
+  ![মেটা শিরোনাম](_static/search-engine-optimization/meta-title.jpg)
 
-- Enter the required **Meta keywords**. They describe the content of a web page shortly and concisely and are therefore important indicators of a website's content to search engines. Meta keywords help tell search engines what the topic of the page is. The keywords are generally written in lower case.
+- প্রয়োজনীয় **মেটা কীওয়ার্ড** লিখুন। তারা একটি ওয়েব পেজের বিষয়বস্তু শীঘ্রই এবং সংক্ষিপ্তভাবে বর্ণনা করে এবং সেইজন্য সার্চ ইঞ্জিনের জন্য একটি ওয়েবসাইটের বিষয়বস্তুর গুরুত্বপূর্ণ সূচক। মেটা কীওয়ার্ড সার্চ ইঞ্জিনকে বলতে সাহায্য করে যে পেজের টপিক কি। কীওয়ার্ডগুলি সাধারণত ছোট ক্ষেত্রে লেখা হয়।
 
-- In the **Meta description** field, enter a description of the page. The meta description provides a summary of a web page. Search engines such as Google often display the meta description in search results, which can influence click-through rates:
-  ![Meta description](_static/search-engine-optimization/meta-description.jpg)
-  The meta description can be any length, but Google generally truncates snippets to ~155–160 characters. It's best to keep meta descriptions long enough that they're sufficiently descriptive, so it's recommended to write descriptions between 50–160 characters. Note that the "optimal" length will vary depending on the situation, and your primary goal should be to provide value and drive clicks.
+- **মেটা বর্ণনা** ফিল্ডে, পৃষ্ঠার একটি বিবরণ লিখুন। মেটা বর্ণনা একটি ওয়েব পেজের সারাংশ প্রদান করে। সার্চ ইঞ্জিন যেমন গুগল প্রায়ই সার্চ ফলাফলে মেটা বর্ণনা প্রদর্শন করে, যা ক্লিক-থ্রু রেটকে প্রভাবিত করতে পারে:
+  ![মেটা বর্ণনা](_static/search-engine-optimization/meta-description.jpg)
+  মেটা বর্ণনা যেকোনো দৈর্ঘ্যের হতে পারে, কিন্তু গুগল সাধারণত স্নিপেটগুলিকে ~ ১৫৫-১৬০ অক্ষরে ছোট করে। মেটা বর্ণনাগুলিকে যথেষ্ট সময় ধরে রাখা ভাল যে সেগুলি যথেষ্ট বর্ণনামূলক, তাই ৫০-১৬০ অক্ষরের মধ্যে বর্ণনা লেখার সুপারিশ করা হয়। নোট করুন যে "অনুকূল" দৈর্ঘ্য পরিস্থিতির উপর নির্ভর করে পরিবর্তিত হবে এবং আপনার প্রাথমিক লক্ষ্য মান এবং ড্রাইভ ক্লিক প্রদান করা উচিত।
   
-## Search engine friendly page names
+## সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম
 
-To see all search engine friendly page names used in store, go to **System → Search engine friendly page names**.
-![Search engine friendly page names](_static/search-engine-optimization/seo-page-names-list.jpg)
+দোকানে ব্যবহৃত সমস্ত সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম দেখতে, **সিস্টেম → সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** এ যান।
+![সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম](_static/search-engine-optimization/seo-page-names-list.jpg)
 
-Here you can filter search engine friendly page names by **Name**, **Language** or **Is active** property. You can also delete one or multiple selected filter search engine friendly page names using the **Delete selected** button. In the **Edit page** column you can see the button used to navigate to the appropriate page.
+এখানে আপনি সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নামগুলিকে **নাম**, **ভাষা** বা **সক্রিয়** সম্পত্তি দ্বারা ফিল্টার করতে পারেন। আপনি একটি বা একাধিক নির্বাচিত ফিল্টার সার্চ ইঞ্জিন বন্ধুত্বপূর্ণ পৃষ্ঠার নাম মুছে ফেলতে পারেন **মুছে ফেলা** বাটন ব্যবহার করে। **পৃষ্ঠা সম্পাদনা করুন** কলামে আপনি উপযুক্ত পৃষ্ঠায় নেভিগেট করতে ব্যবহৃত বোতামটি দেখতে পারেন।
 
-## See also
+## আরো দেখুন
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Product categories](xref:en/running-your-store/catalog/categories)
-- [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
-- [Vendors](xref:en/running-your-store/vendor-management)
-- [Topics (pages)](xref:en/running-your-store/content-management/topics-pages)
-- [News](xref:en/running-your-store/content-management/news)
-- [Blog](xref:en/running-your-store/content-management/blog)
+- [পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+- [পণের ধরন](xref:bn/running-your-store/catalog/categories)
+- [নির্মাতারা](xref:bn/running-your-store/catalog/manufacturers)
+- [বিক্রেতারা](xref:bn/running-your-store/vendor-management)
+- [বিষয় (পাতা)](xref:bn/running-your-store/content-management/topics-pages)
+- [খবর](xref:bn/running-your-store/content-management/news)
+- [ব্লগ](xref:bn/running-your-store/content-management/blog)
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Understanding SEO settings in nopCommerce](https://youtu.be/UxqM_nJyv1Q)
+- [নপকমার্স এ এসইও সেটিংস বোঝা](https://youtu.be/UxqM_nJyv১Q)

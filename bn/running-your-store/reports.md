@@ -1,207 +1,206 @@
 ﻿---
-title: Reports
-uid: en/running-your-store/reports
+title: রিপোর্ট
+uid: bn/running-your-store/reports
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Reports
+# রিপোর্ট
 
-Reports are important for management, they allow to monitor store performance, track key metrics and support decision making. nopCommerce reports provide access to sales and customer information.
+রিপোর্ট ব্যবস্থাপনার জন্য গুরুত্বপূর্ণ, তারা স্টোরের পারফরম্যান্স পর্যবেক্ষণ করতে, কী মেট্রিকগুলি ট্র্যাক করতে এবং সিদ্ধান্ত গ্রহণে সহায়তা করার অনুমতি দেয়। নপকমার্স রিপোর্ট বিক্রয় এবং গ্রাহকের তথ্য অ্যাক্সেস প্রদান করে।
 
-## Dashboard
+## ড্যাশবোর্ড
 
-The dashboard is the first page you see when accessing the admin area. It enables you to view your store statistics, including the total number of orders that were processed over the period of time you choose (year, month, week), registered customers, low stock products, the most popular products in your store, etc.
+অ্যাডমিন এলাকা অ্যাক্সেস করার সময় ড্যাশবোর্ড হল প্রথম পৃষ্ঠা। এটি আপনাকে আপনার স্টোরের পরিসংখ্যান দেখতে সক্ষম করে, যার মধ্যে আপনার পছন্দের সময়কাল (বছর, মাস, সপ্তাহ), নিবন্ধিত গ্রাহক, কম স্টক পণ্য, আপনার দোকানের সর্বাধিক জনপ্রিয় পণ্য ইত্যাদি প্রসেস করা হয়েছিল।
 
-![Dashboard](_static/reports/dashboard.png)
+![ড্যাশবোর্ড](_static/reports/dashboard.png)
 
-The dashboard consist of several blocks:
+ড্যাশবোর্ডে বেশ কয়েকটি ব্লক রয়েছে:
 
-### nopCommerce news
+### নপকমার্সের খবর
 
-Displays general nopCommerce news like new version releases.
-![News](_static/reports/news.png)
+নতুন সংস্করণ রিলিজের মত সাধারণ নপকমার্সের সংবাদ প্রদর্শন করে।
+![খবর](_static/reports/news.png)
 
-### Common statistics
+### সাধারণ পরিসংখ্যান
 
-![Common](_static/reports/common.png)
+![সাধারণ](_static/reports/common.png)
 
-Here you can find links to more detailed reports:
+এখানে আপনি আরও বিস্তারিত প্রতিবেদনের লিঙ্কগুলি খুঁজে পেতে পারেন:
 
-- Sales → Orders
-- Sales → Return requests
-- Customers → Registered customers
-- Reports → Low stock
+- বিক্রয় → আদেশ
+- বিক্রয় → ফেরত অনুরোধ
+- গ্রাহক → নিবন্ধিত গ্রাহক
+- রিপোর্ট → কম স্টক
 
-### Orders
+### অর্ডার
 
-This diagram enables you to know the number of orders that were processed in the last week, month, year.
-![Orders](_static/reports/orders.jpg)
+এই চিত্রটি আপনাকে গত সপ্তাহে, মাসে, বছরে প্রক্রিয়া করা অর্ডারের সংখ্যা জানতে সক্ষম করে।
+![অর্ডার](_static/reports/orders.jpg)
 
-### New customers
+### নতুন গ্রাহক
 
-This diagram shows the number of customers registered in last week, month, year.
-![New customers](_static/reports/customers.jpg)
+এই চিত্রটি গত সপ্তাহ, মাস, বছরে নিবন্ধিত গ্রাহকদের সংখ্যা দেখায়।
+[নতুন গ্রাহক](_static/reports/customers.jpg)
 
-### Order totals
+### মোট অর্ডার
 
-This section enables you to know the total of orders that were processed in the last day, week, month, year. Orders are shown by order status.
-![Order totals](_static/reports/order-totals.png)
+এই বিভাগটি আপনাকে সর্বশেষ দিন, সপ্তাহ, মাস, বছরে প্রক্রিয়া করা মোট অর্ডার জানতে সক্ষম করে। অর্ডার অর্ডার স্ট্যাটাস দ্বারা দেখানো হয়।
+![মোট অর্ডার](_static/reports/order-totals.png)
 
-### Incomplete orders
+### অসম্পূর্ণ আদেশ
 
-This section enables you to know the number of orders that are currently incomplete.
-![Orders incomplete](_static/reports/order-incomplete.png)
+এই বিভাগটি আপনাকে বর্তমানে অসম্পূর্ণ অর্ডারের সংখ্যা জানতে সক্ষম করে।
+[অর্ডার অসম্পূর্ণ](_static/reports/order-incomplete.png)
 
-### Latest orders
+### সর্বশেষ অর্ডার
 
-Latest orders section shows you the latest placed orders.
-![Latest orders](_static/reports/order-latest.png)
+সর্বশেষ আদেশ বিভাগ আপনাকে সর্বশেষ স্থাপিত আদেশগুলি দেখায়।
+[সর্বশেষ আদেশ](_static/reports/order-latest.png)
 
-### Popular search keywords
+### জনপ্রিয় সার্চ কিওয়ার্ড
 
-This block displays most used keywords.
+এই ব্লকটি সর্বাধিক ব্যবহৃত কীওয়ার্ড প্রদর্শন করে।
 
-![Keywords](_static/reports/keywords.png)
+[কীওয়ার্ড](_static/reports/keywords.png)
 
-### Bestsellers reports
+### বেস্টসেলার রিপোর্ট
 
-This section displays the bestsellers by quantity and by amount.
-![Bestsellers](_static/reports/bestsellers.png)
+এই বিভাগটি পরিমাণ এবং পরিমাণ দ্বারা বেস্টসেলার প্রদর্শন করে।
+[বেস্টসেলার](_static/reports/bestsellers.png)
 
-## Sales summary
+## বিক্রয় সারাংশ
 
-This report represents total orders summary. To generate a report you can use the following filters:
+এই প্রতিবেদনটি মোট অর্ডারের সারাংশ উপস্থাপন করে। একটি প্রতিবেদন তৈরি করতে আপনি নিম্নলিখিত ফিল্টারগুলি ব্যবহার করতে পারেন:
 
-- **Start date** for the search.
-- **End date** for the search.
-- **Order status** to search by a specific order status e.g. Complete.
-- **Payment status** to search by a specific payment status e.g. Paid.
-- **Category** to search in a specific category.
-- **Manufacturer** to search in a specific manufacturer.
-- **Billing country** to filter by order billing country.
-- **Product** to search by a specific product.
-- **Group by** for grouping by time periods. When this option is set to "Day" it'll display a list of dates for a selected period (start/end date). For example, "Nov 8th, 2020", "Nov 7th, 2020", etc. When it is set to "Week", it'll display a list of weeks (e.g. "December 7th, 2020 - December 12th, 2020", etc). When it is set to "Month", it'll display a list of months (e.g. "December 2020", "November 2020, etc).
+-**অনুসন্ধানের তারিখ** অনুসন্ধানের জন্য।
+- অনুসন্ধানের জন্য **শেষ তারিখ**
+- **অর্ডার স্ট্যাটাস** একটি নির্দিষ্ট অর্ডার স্ট্যাটাস দ্বারা অনুসন্ধান করতে যেমন সম্পূর্ণ।
+- **পেমেন্ট স্ট্যাটাস** একটি নির্দিষ্ট পেমেন্ট স্ট্যাটাস অনুসারে অনুসন্ধান করতে উদা পরিশোধিত।
+- **বিভাগ** একটি নির্দিষ্ট বিভাগে অনুসন্ধান করতে
+- **প্রস্তুতকারক** একটি নির্দিষ্ট প্রস্তুতকারকের মধ্যে অনুসন্ধান করতে।
+- **বিলিং দেশ** অর্ডার বিলিং দেশ দ্বারা ফিল্টার করতে।
+- **পণ্য** একটি নির্দিষ্ট পণ্য দ্বারা অনুসন্ধান করতে।
+- **সময় দ্বারা গ্রুপ করার জন্য** যখন এই বিকল্পটি "দিন" এ সেট করা হয় তখন এটি একটি নির্বাচিত সময়ের জন্য তারিখের একটি তালিকা প্রদর্শন করবে (শুরু/শেষ তারিখ)। উদাহরণস্বরূপ, "৪ ই নভেম্বর, ২০২০", "৭ ই নভেম্বর, ২০২০", ইত্যাদি। ইত্যাদি)। যখন এটি "মাস" এ সেট করা হয়, এটি মাসের একটি তালিকা প্রদর্শন করবে (যেমন "ডিসেম্বর ২০২০", "নভেম্বর ২০২০, ইত্যাদি)।
 
-Then click **Run report**.
+তারপর **রান রিপোর্ট** এ ক্লিক করুন।
 
-![Sales summary](_static/reports/sales-summary.jpg)
+![বিক্রয় সারাংশ](_static/reports/sales-summary.jpg)
 
-## Low stock report
+## কম স্টক রিপোর্ট
 
-The low stock report contains a list of products that are currently under stock. In the example shown below, the min stock quantity was set to 20 and the stock quantity is 0, therefore a low stock report is generated for this product. You can set up low stock settings when adding the product.
+কম স্টক রিপোর্টে বর্তমানে স্টকের অধীনে থাকা পণ্যগুলির একটি তালিকা রয়েছে। নীচে দেখানো উদাহরণে, ন্যূনতম স্টক পরিমাণ ২০ এবং স্টকের পরিমাণ ০, তাই এই পণ্যের জন্য কম স্টক রিপোর্ট তৈরি করা হয়েছে। পণ্য যোগ করার সময় আপনি কম স্টক সেটিংস সেট করতে পারেন।
 
-To view low stock reports, go to **Reports → Low stock**. The *Low stock* report window is displayed, as follows:
-![Low stock report](_static/reports/low-stock-reports.png)
+কম স্টক রিপোর্ট দেখতে, **রিপোর্ট → কম স্টক** এ যান। *নিম্ন স্টক* রিপোর্ট উইন্ডোটি নিম্নরূপ প্রদর্শিত হয়:
+![কম স্টক রিপোর্ট](_static/reports/low-stock-reports.png)
 
-The low stock reports could be filtered by the **Published** property, which represents the *Published* property of products.
+কম স্টক রিপোর্টগুলি **প্রকাশিত** সম্পত্তি দ্বারা ফিল্টার করা যেতে পারে, যা পণ্যের*প্রকাশিত*সম্পত্তি প্রতিনিধিত্ব করে।
 
-In the displayed table, click **View** to view the product details page where the stock quantity can be updated.
+প্রদর্শিত টেবিলে, পণ্যের বিবরণ পৃষ্ঠা দেখতে **দেখুন** ক্লিক করুন যেখানে স্টক পরিমাণ আপডেট করা যাবে।
 
-## Bestsellers and never purchased
+## বেস্টসেলার এবং কখনো কেনা হয়নি
 
-Knowing the bestselling products and products never purchased is very important for any shop owner.
+বেস্টসেলিং প্রোডাক্ট এবং যেসব পণ্য কখনো কেনা হয়নি তা জানা যে কোন দোকানের মালিকের জন্য খুবই গুরুত্বপূর্ণ।
 
-First of all, this can help in making better purchasing decisions: you can scale up on your popular items and exclude unpopular ones from your products list. When analyzing, consider, for example, whether certain colors sell faster, or whether your product sales depend on a season.
+প্রথমত, এটি আরও ভাল ক্রয়ের সিদ্ধান্ত নিতে সাহায্য করতে পারে: আপনি আপনার জনপ্রিয় আইটেমগুলিকে বাড়িয়ে তুলতে পারেন এবং আপনার পণ্য তালিকা থেকে অপ্রিয় জিনিসগুলি বাদ দিতে পারেন। বিশ্লেষণ করার সময়, বিবেচনা করুন, উদাহরণস্বরূপ, কিছু রং দ্রুত বিক্রি হয় কিনা, অথবা আপনার পণ্যের বিক্রয় কোন ঋতু নির্ভর করে কিনা।
 
-Secondly, defining most and least selling goods can help you to *re-evaluate product design and marketing*. Maybe your best items go faster just because of their placement in your web store, or because of a better description. Come up with different options and test them. To do it more effectively, engage with your customers. *Conduct different surveys* to find out why the best selling items are preferred, what makes them special for your buyers. Use the insights to improve your marketing and increase sales.
+দ্বিতীয়ত, সর্বাধিক এবং সর্বনিম্ন বিক্রিত পণ্যের সংজ্ঞা আপনাকে পণ্যের নকশা এবং বিপণন *পুনরায় মূল্যায়ন করতে সাহায্য করতে পারে। হয়তো আপনার সেরা আইটেমগুলি আপনার ওয়েব স্টোরে তাদের বসানোর কারণে, অথবা একটি ভাল বিবরণের কারণে দ্রুততর হয়ে যায়। বিভিন্ন বিকল্প নিয়ে আসুন এবং তাদের পরীক্ষা করুন। এটি আরও কার্যকরভাবে করতে, আপনার গ্রাহকদের সাথে যুক্ত থাকুন। * বিভিন্ন জরিপ পরিচালনা করুন* কেন সেরা বিক্রিত আইটেমগুলি পছন্দ করা হয়, সেগুলি আপনার ক্রেতাদের জন্য বিশেষ করে তোলে। আপনার মার্কেটিং উন্নত করতে এবং বিক্রয় বাড়ানোর জন্য অন্তর্দৃষ্টি ব্যবহার করুন।
 
-### Bestsellers
+### সর্বোচ্চ বিক্রেতা
 
-To view bestsellers in nopCommerce, go to **Reports → Bestsellers**. Enter one or more of the following search criteria to run the report:
+NopCommerce এ বেস্টসেলার দেখতে, **রিপোর্টস → বেস্টসেলার** এ যান। প্রতিবেদনটি চালানোর জন্য নিচের এক বা একাধিক অনুসন্ধান মানদণ্ড লিখুন:
 
-- **Start date** and/or **End date**.
-- **Store**, if you want to select one of your stores.
-- **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-- **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
-- Choose the **Category**.
-- Choose the **Manufacturer**.
-- Choose the **Billing country**.
-- Choose the **Vendor**.
+- **শুরুর তারি** এবং/অথবা **শেষ তারিখ**।
+- **স্টোর**, যদি আপনি আপনার কোন একটি স্টোর সিলেক্ট করতে চান।
+- **অর্ডার স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*প্রক্রিয়াকরণ*,*সম্পূর্ণ*, অথবা*বাতিল*।
+- **পেমেন্ট স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*অনুমোদিত*,*পেমেন্ট*,*ফেরত দেওয়া*,*আংশিকভাবে ফেরত*, অথবা*বাতিল*।
+- **বিভাগ** বেছে নিন।
+- **প্রস্তুতকারক** বেছে নিন।
+- **বিলিং দেশ** বেছে নিন।
+- **বিক্রেতা** বেছে নিন।
 
-Then click **Run report**.
+তারপর **রান রিপোর্ট** এ ক্লিক করুন।
 
-The report will break down your best-selling products based on both units sold and revenue:
+প্রতিবেদনটি বিক্রি হওয়া এবং আয়ের উপর ভিত্তি করে আপনার সর্বাধিক বিক্রিত পণ্যগুলি ভেঙে দেবে:
 
-![Bestsellers](_static/reports/bestsellers.jpeg)
+![সর্বোচ্চ বিক্রেতা](_static/reports/bestsellers.jpeg)
 
-### Products never purchased
+### পণ্য কখনো কেনা হয়নি
 
-To view products never purchased, go to **Reports → Products never purchased**. Enter one or more of the following search criteria to run the report:
+কখনই কেনা পণ্যগুলি দেখতে, **প্রতিবেদন → পণ্যগুলি কখনও কেনা হয়নি** এ যান। প্রতিবেদনটি চালানোর জন্য নিচের এক বা একাধিক অনুসন্ধান মানদণ্ড লিখুন:
 
-- Choose the **Category**.
-- Choose the **Manufacturer**.
-- **Store**, if you want to select one of your stores.
-- Choose the **Vendor**.
-- **Start date** and/or **End date**.
+- **বিভাগ** বেছে নিন।
+- **প্রস্তুতকারক** বেছে নিন।
+- **স্টোর**, যদি আপনি আপনার কোন একটি স্টোর সিলেক্ট করতে চান।
+- **বিক্রেতা** বেছে নিন।
+- **শুরুর তারিখ** এবং/অথবা **শেষ তারিখ**।
 
-Then click **Run report**.
+তারপর **রান রিপোর্ট** এ ক্লিক করুন।
 
-![Products never purchased](_static/reports/never-purchased.jpg)
+![পণ্য কখনই কেনা হয়নি](_static/reports/never-purchased.jpg)
 
-## Country sales
+## দেশি বিক্রয়
 
-Country report contains a list of orders that includes the number of orders and the total order sum in each country. This enables store owners to view the orders per country.
+কান্ট্রি রিপোর্টে অর্ডারের একটি তালিকা থাকে যাতে প্রতিটি দেশে অর্ডারের সংখ্যা এবং মোট অর্ডারের যোগফল অন্তর্ভুক্ত থাকে। এটি দোকান মালিকদের প্রতি দেশ অর্ডার দেখতে সক্ষম করে।
 
-To view country sales report, go to **Reports → Country sales**.
+দেশের বিক্রয় প্রতিবেদন দেখতে, **প্রতিবেদন → দেশি বিক্রয়** এ যান।
 
-![Country sales](_static/reports/country-report.png)
+![দেশি বিক্রয়](_static/reports/country-report.png)
 
-To set up the report, enter one or more of the following search criteria:
+প্রতিবেদনটি সেট আপ করতে, নিম্নলিখিত অনুসন্ধান মানদণ্ডগুলির মধ্যে একটি বা একাধিক লিখুন:
 
-- **Start date** for the search.
-- **End date** for the search.
-- **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-- **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
+- **শুরুর তারিখ** অনুসন্ধানের জন্য।
+- অনুসন্ধানের জন্য **শেষ তারিখ**
+- **অর্ডার স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*প্রক্রিয়াকরণ*,*সম্পূর্ণ*, অথবা*বাতিল*।
+- **পেমেন্ট স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*অনুমোদিত*,*পেমেন্ট*,*ফেরত দেওয়া*,*আংশিকভাবে ফেরত*, অথবা*বাতিল*।
 
-Then click **Run report**.
+তারপর **রান রিপোর্ট** এ ক্লিক করুন।
 
-## Customer reports
+## গ্রাহক রিপোর্ট
 
-Customer reports give a store owner general information about registered customers and their orders. You can find different reports in the **Reports → Customer reports** menu.
+গ্রাহক রিপোর্টগুলি একটি দোকানের মালিককে নিবন্ধিত গ্রাহক এবং তাদের অর্ডার সম্পর্কে সাধারণ তথ্য দেয়। আপনি **প্রতিবেদন → গ্রাহক প্রতিবেদন** মেনুতে বিভিন্ন প্রতিবেদন খুঁজে পেতে পারেন।
 
-### Registered customers
+### নিবন্ধিত গ্রাহকরা
 
-To run this report go to **Reports → Customer reports → Registered customers**.
-This report displays the number of registered customers for a certain period.
-You can track the number of users registered within the last day, week, two weeks, month and year.
+এই প্রতিবেদনটি চালানোর জন্য **প্রতিবেদন → গ্রাহক প্রতিবেদন → নিবন্ধিত গ্রাহক** এ যান।
+এই প্রতিবেদনটি নির্দিষ্ট সময়ের জন্য নিবন্ধিত গ্রাহকদের সংখ্যা প্রদর্শন করে।
+আপনি শেষ দিন, সপ্তাহ, দুই সপ্তাহ, মাস এবং বছরের মধ্যে নিবন্ধিত ব্যবহারকারীর সংখ্যা ট্র্যাক করতে পারেন।
 
-![Registered customers](_static/reports/customer-registered.png)
+![নিবন্ধিত গ্রাহকরা](_static/reports/customer-registered.png)
 
-### Customers by order total
+### মোট অর্ডার অনুযায়ী গ্রাহক
 
-To run this report go to **Reports → Customer reports → Customers by order total**.
-In this report, you can see the orders total spent by customers and the number of orders by customers.
+এই প্রতিবেদনটি চালানোর জন্য **প্রতিবেদন → গ্রাহক প্রতিবেদন → গ্রাহকদের মোট অর্ডার** এ যান।
+এই প্রতিবেদনে, আপনি গ্রাহকদের দ্বারা অর্জিত মোট অর্ডার এবং গ্রাহকদের দ্বারা অর্ডারের সংখ্যা দেখতে পারেন।
 
-![Customers by order total](_static/reports/Customers-by-order-total.png)
+![মোট অর্ডার অনুযায়ী গ্রাহক](_static/reports/Customers-by-order-total.png)
 
-Enter one or several search criteria to compile a report:
+একটি প্রতিবেদন সংকলনের জন্য এক বা একাধিক অনুসন্ধান মানদণ্ড লিখুন:
 
-- Registration **Start date**.
-- Registration **End date**.
-- **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-- **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
-- **Shipping Status** as *All*, *Shipping not required*, *Not yet shipped*, *Partially shipped*, *Shipped*, *Delivered*.
+- নিবন্ধন **শুরুর তারিখ**।
+- নিবন্ধন **শেষ তারিখ**।
+- **অর্ডার স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*প্রক্রিয়াকরণ*,*সম্পূর্ণ*, অথবা*বাতিল*।
+- **পেমেন্ট স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*অনুমোদিত*,*পেমেন্ট*,*ফেরত দেওয়া*,*আংশিকভাবে ফেরত*, অথবা*বাতিল*।
+- **শিপিং স্ট্যাটাস** হিসাবে *সব*,*শিপিংয়ের প্রয়োজন নেই*,*এখনো পাঠানো হয়নি*,*আংশিক পাঠানো*,*শিপড*,*ডেলিভার্ড*।
 
-Then click **Run report**.
+তারপর **রান রিপোর্ট** এ ক্লিক করুন।
 
-### Customers by number of orders
+### অর্ডার সংখ্যা দ্বারা গ্রাহক
 
-To run this report go to **Reports → Customer reports → Customers by number of orders**.
-This report displays top 20 customers based on the total number of orders issued.
+এই প্রতিবেদনটি চালানোর জন্য **প্রতিবেদন → গ্রাহক প্রতিবেদন orders গ্রাহকের সংখ্যা অনুসারে** যান।
+এই প্রতিবেদনটি জারি করা মোট অর্ডারের সংখ্যার উপর ভিত্তি করে শীর্ষ 20 গ্রাহকদের প্রদর্শন করে।
 
-![Customers by number of orders](_static/reports/Customers-by-number-of-orders.png)
+![অর্ডার সংখ্যা দ্বারা গ্রাহক](_static/reports/Customers-by-number-of-orders.png)
 
-Enter one or several search criteria to compile a report:
+একটি প্রতিবেদন সংকলনের জন্য এক বা একাধিক অনুসন্ধান মানদণ্ড লিখুন:
 
-- Registration **Start date**.
-- Registration **End date**.
-- **Order status**, such as *All*, *Pending*, *Processing*, *Complete*, or *Cancelled*.
-- **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded*, or *Voided*.
-- **Shipping Status** as *All*, *Shipping not required*, *Not yet shipped*, *Partially shipped*, *Shipped*, *Delivered*.
+- নিবন্ধন **শুরুর তারিখ**।
+- নিবন্ধন **শেষ তারিখ**।
+- **অর্ডার স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*প্রক্রিয়াকরণ*,*সম্পূর্ণ*, অথবা*বাতিল*।
+- **পেমেন্ট স্ট্যাটাস**, যেমন *সব*,*মুলতুবি*,*অনুমোদিত*,*পেমেন্ট*,*ফেরত দেওয়া*,*আংশিকভাবে ফেরত*, অথবা*বাতিল*।
+- **শিপিং স্ট্যাটাস** হিসাবে *সব*,*শিপিংয়ের প্রয়োজন নেই*,*এখনো পাঠানো হয়নি*,*আংশিক পাঠানো*,*শিপড*,*ডেলিভার্ড*।
 
-Then click **Run report**.
+তারপর ** রান রিপোর্ট ** এ ক্লিক করুন।
 
-## Tutorials
-
-- [Running reports in nopCommerce](https://www.youtube.com/watch?v=IbfoppTG9tM)
+## টিউটোরিয়াল
+- [নপকমার্স এ রিপোর্ট চালানো](https://www.youtube.com/watch?v=IbfoppTG9tM)
