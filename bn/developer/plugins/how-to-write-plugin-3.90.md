@@ -57,16 +57,16 @@ contributors: git.AfiaKhanom
 
 ৬. সর্বশেষ প্রয়োজনীয় পদক্ষেপ হল একটি শ্রেণী তৈরি করা যা **`IPlugin`** ইন্টারফেস (`Nop.Core.Plugins` namespace) প্রয়োগ করে। নপকমার্স এর **`BasePlugin`** ক্লাস আছে যা ইতিমধ্যে কিছু `IPlugin` পদ্ধতি প্রয়োগ করে এবং আপনাকে সোর্স কোডের নকল এড়াতে দেয়। নপকমার্স আপনাকে `IPlugin` থেকে প্রাপ্ত কিছু নির্দিষ্ট ইন্টারফেস প্রদান করে। উদাহরণস্বরূপ, আমাদের `IPaymentMethod` ইন্টারফেস আছে যা নতুন পেমেন্ট পদ্ধতি প্লাগইন তৈরিতে ব্যবহৃত হয়। এতে কিছু পদ্ধতি রয়েছে যা শুধুমাত্র পেমেন্ট পদ্ধতির জন্য নির্দিষ্ট যেমন *`ProcessPayment ()`* অথবা *`GetAdditionalHandlingFee ()`*। বর্তমানে নপকমার্স এর নিম্নলিখিত নির্দিষ্ট প্লাগইন ইন্টারফেস রয়েছে:
 
-   - **IPaymentMethod**. এই প্লাগইনগুলি পেমেন্ট প্রক্রিয়াকরণের জন্য ব্যবহৃত হয়।
-   - **IShippingRateComputationMethod**. এই প্লাগইনগুলি গ্রহণযোগ্য ডেলিভারি পদ্ধতি এবং উপযুক্ত শিপিং হার পুনরুদ্ধারের জন্য ব্যবহৃত হয়। 
+- **IPaymentMethod**. এই প্লাগইনগুলি পেমেন্ট প্রক্রিয়াকরণের জন্য ব্যবহৃত হয়।
+- **IShippingRateComputationMethod**. এই প্লাগইনগুলি গ্রহণযোগ্য ডেলিভারি পদ্ধতি এবং উপযুক্ত শিপিং হার পুনরুদ্ধারের জন্য ব্যবহৃত হয়।
    যেমন, UPS, UPS, FedEx ইত্যাদি।
-   - **IPickupPointProvider**. এই প্লাগইনগুলি পিকআপ পয়েন্ট প্রদানের জন্য ব্যবহৃত হয়।
-   - **ITaxProvider**. কর প্রদানকারীরা করের হার পাওয়ার জন্য ব্যবহার করা হয়।
-   - **IExchangeRateProvider**. মুদ্রা বিনিময় হার পেতে ব্যবহৃত।
-   - **IDiscountRequirementRule**. আপনাকে নতুন ছাড়ের নিয়ম তৈরি করতে দেয় যেমন "গ্রাহকের বিলিং দেশ হওয়া উচিত ..."
-   - **IExternalAuthenticationMethod**. বাহ্যিক প্রমাণীকরণ পদ্ধতি যেমন ফেসবুক, টুইটার, ওপেনআইডি ইত্যাদি তৈরিতে ব্যবহৃত হয়।
-   - **IWidgetPlugin**. এটি আপনাকে উইজেট তৈরি করতে দেয়। আপনার সাইটের কিছু অংশে উইজেট রেন্ডার করা হয়। উদাহরণস্বরূপ, এটি আপনার সাইটের বাম কলামে একটি "লাইভ চ্যাট" ব্লক হতে পারে।
-   - **IMiscPlugin**. যদি আপনার প্লাগইন উপরের কোন ইন্টারফেসের সাথে মানানসই না হয়।
+- **IPickupPointProvider**. এই প্লাগইনগুলি পিকআপ পয়েন্ট প্রদানের জন্য ব্যবহৃত হয়।
+- **ITaxProvider**. কর প্রদানকারীরা করের হার পাওয়ার জন্য ব্যবহার করা হয়।
+- **IExchangeRateProvider**. মুদ্রা বিনিময় হার পেতে ব্যবহৃত।
+- **IDiscountRequirementRule**. আপনাকে নতুন ছাড়ের নিয়ম তৈরি করতে দেয় যেমন "গ্রাহকের বিলিং দেশ হওয়া উচিত ..."
+- **IExternalAuthenticationMethod**. বাহ্যিক প্রমাণীকরণ পদ্ধতি যেমন ফেসবুক, টুইটার, ওপেনআইডি ইত্যাদি তৈরিতে ব্যবহৃত হয়।
+- **IWidgetPlugin**. এটি আপনাকে উইজেট তৈরি করতে দেয়। আপনার সাইটের কিছু অংশে উইজেট রেন্ডার করা হয়। উদাহরণস্বরূপ, এটি আপনার সাইটের বাম কলামে একটি "লাইভ চ্যাট" ব্লক হতে পারে।
+- **IMiscPlugin**. যদি আপনার প্লাগইন উপরের কোন ইন্টারফেসের সাথে মানানসই না হয়।
 
 > [!IMPORTANT]
 > গুরুত্বপূর্ণ নোট: প্রতিটি প্রকল্প তৈরির পরে, পরিবর্তন করার আগে সমাধানটি পরিষ্কার করুন। কিছু সম্পদ ক্যাশে করা হবে এবং ডেভেলপার পাগলামি হতে পারে।
@@ -107,23 +107,23 @@ contributors: git.AfiaKhanom
 - কিছু নির্দিষ্ট প্লাগইন ইন্টারফেস (উপরে বর্ণিত) এবং "IMiscPlugin" ইন্টারফেসের নিম্নলিখিত পদ্ধতি রয়েছে: "GetConfigurationRoute"। এটি একটি নিয়ামক ক্রিয়ায় একটি রুট ফিরিয়ে দেওয়া উচিত যা প্লাগইন কনফিগারেশনের জন্য ব্যবহৃত হয়। আপনার প্লাগইন ইন্টারফেসের "GetConfigurationRoute" পদ্ধতি প্রয়োগ করুন। এই পদ্ধতিটি প্লাগইন কনফিগারেশনের জন্য কোন রুট ব্যবহার করা হয় সে সম্পর্কে নপকমার্স কে অবহিত করে। যদি আপনার প্লাগিনে কনফিগারেশন পৃষ্ঠা না থাকে, তাহলে "GetConfigurationRoute" শূন্য হয়ে ফিরে আসা উচিত। উদাহরণস্বরূপ নীচের কোডটি দেখুন:
 
     ```csharp
-        public void GetConfigurationRoute(out string actionName,
-                    out string controllerName,
-                    out RouteValueDictionary routeValues)
+    public void GetConfigurationRoute(out string actionName,
+                out string controllerName,
+                out RouteValueDictionary routeValues)
+    {
+        actionName = "Configure";
+        controllerName = "PaymentAuthorizeNet";
+        routeValues = new RouteValueDictionary()
         {
-            actionName = "Configure";
-            controllerName = "PaymentAuthorizeNet";
-            routeValues = new RouteValueDictionary()
-            {
-                { "Namespaces", "Nop.Plugin.Payments.AuthorizeNet.Controllers" },
-                { "area", null }
-            };
-        }
+            { "Namespaces", "Nop.Plugin.Payments.AuthorizeNet.Controllers" },
+            { "area", null }
+        };
+    }
     ```
 
 - (ঐচ্ছিক) যদি আপনার কিছু কাস্টম রুট যোগ করার প্রয়োজন হয়, তাহলে `RouteProvider.cs` ফাইল তৈরি করুন। এটি নপকমার্স সিস্টেমকে প্লাগইন রুট সম্পর্কে অবহিত করে। উদাহরণস্বরূপ, নিম্নলিখিত RouteProvider ক্লাস একটি নতুন রুট যোগ করে যা আপনার ওয়েব ব্রাউজার খুলে এবং `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (PayPal প্লাগইন দ্বারা ব্যবহৃত) এ নেভিগেট করে ব্যবহার করা যায়:-
 
-    ```csharp
+```csharp
         public partial class RouteProvider : IRouteProvider
         {
             public void RegisterRoutes(RouteCollection routes)
@@ -143,7 +143,7 @@ contributors: git.AfiaKhanom
                 }
             }
         }
-    ```
+```
 
     একবার আপনি আপনার প্লাগইন ইনস্টল করে কনফিগারেশন পদ্ধতি যোগ করলে আপনি Admin → Configuration → Plugins এর অধীনে আপনার প্লাগইন কনফিগার করার জন্য একটি লিঙ্ক পাবেন।
 

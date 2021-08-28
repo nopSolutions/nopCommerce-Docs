@@ -1,30 +1,30 @@
 ﻿---
-title: How to write a widget for nopCommerce
-uid: en/developer/plugins/how-to-write-widget-for-nopCommerce
+title: নপকমার্স এর জন্য কিভাবে একটি উইজেট লিখব
+uid: bn/developer/plugins/how-to-write-widget-for-nopCommerce
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin, git.cromatido
+contributors: git.AfiaKhanom
 ---
 
-# How to write a widget for nopCommerce
+# নপকমার্স এর জন্য কিভাবে একটি উইজেট লিখব
 
-To extend nopCommerce functionality, widgets are used. There are various types of widgets like [NivoSlider](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.NivoSlider) and [Google Analytics](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics) which are already contained in the nopCommerce's repo. nopCommerce marketplace already contains various widgets (both free and paid) which may meet your requirement(s). If you have not found one, then you are at the right place because this article will guide you through the process of creating widget according to your need.
+নপকমার্সের কার্যকারিতা প্রসারিত করতে, উইজেট ব্যবহার করা হয়। [NivoSlider](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.NivoSlider) এবং [Google Analytics](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics) এর মতো বিভিন্ন ধরনের উইজেট রয়েছে। যা ইতিমধ্যে নপকমার্স এর রেপোতে আছে। নপকমার্স মার্কেটপ্লেসে ইতিমধ্যে বিভিন্ন উইজেট রয়েছে (বিনামূল্যে এবং প্রদেয় উভয়ই) যা আপনার প্রয়োজনীয়তা পূরণ করতে পারে। যদি আপনি একটি খুঁজে না পান, তাহলে আপনি সঠিক জায়গায় আছেন কারণ এই নিবন্ধটি আপনাকে আপনার প্রয়োজন অনুযায়ী উইজেট তৈরির প্রক্রিয়ার মাধ্যমে নির্দেশনা দেবে।
 
-## The widget structure, required files, and locations
+## উইজেটের গঠন, প্রয়োজনীয় ফাইল এবং অবস্থান
 
-1. Start by creating a new **Class Library** project in the solution. It is recommended to place your widget in the **Plugins** directory, located in the root folder of the source, where other widgets and plugins already resides.
+১. সমাধানের মধ্যে একটি নতুন **Class Library** প্রকল্প তৈরি করে শুরু করুন। আপনার উইজেটটি উৎসের মূল ফোল্ডারে অবস্থিত **Plugins** ডিরেক্টরিতে রাখার পরামর্শ দেওয়া হয়, যেখানে অন্যান্য উইজেট এবং প্লাগইনগুলি ইতিমধ্যেই থাকে।
 
-    ![image1](_static/how-to-write-a-widget-for-nopCommerce/image1.png)
+![image1](_static/how-to-write-a-widget-for-nopCommerce/image1.png)
 
-    > [!NOTE]
-    > Do not get confused this directory with the one which exists in `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugins compiled files.
+> [!NOTE]
+> এই প্রেজেন্টেশনটি যেটি `Presentation\Nop.Web` ডিরেক্টরিতে আছে তার সাথে বিভ্রান্ত হবেন না। Nop.Web ডিরেক্টরিতে প্লাগইন ডিরেক্টরিতে প্লাগইন সংকলিত ফাইল রয়েছে।
 
-    A recommended name for a widget project is `Nop.Plugin.Widgets.{Name}`. `{Name}` is your widget name (for example, "**GoogleAnalytics**"). For example, *Google Analytics widget* has the following name: `Nop.Plugin.Widgets.GoogleAnalytics`. But please note that it's not a requirement. And you can choose any name for a widget. For example, "*MyFirstNopWidget*". The Plugins directory structure of a solution looks like following.
+একটি উইজেট প্রকল্পের জন্য প্রস্তাবিত নাম হল `Nop.Plugin.Widgets। {Name}`।`{Name}` আপনার উইজেটের নাম (উদাহরণস্বরূপ, "**GoogleAnalytics**")। উদাহরণস্বরূপ, *Google Analytics widget* নিম্নলিখিত নাম রয়েছে: `Nop.Plugin.Widgets.GoogleAnalytics`। কিন্তু দয়া করে মনে রাখবেন যে এটি একটি প্রয়োজনীয়তা নয়। এবং আপনি একটি উইজেটের জন্য যেকোনো নাম নির্বাচন করতে পারেন। উদাহরণস্বরূপ, "*MyFirstNopWidget*"। একটি সমাধানের প্লাগইন ডিরেক্টরি কাঠামো নিম্নলিখিত মত দেখাচ্ছে।
 
-    ![image2](_static/how-to-write-a-widget-for-nopCommerce/image2.png)
+![image2](_static/how-to-write-a-widget-for-nopCommerce/image2.png)
 
-1. Once the widget project is created, the **.csproj** file content should be updated using any available text editor application. Replace the content with following one:
+২. একবার উইজেট প্রজেক্ট তৈরি হয়ে গেলে, **.csproj** ফাইলের বিষয়বস্তু যেকোনো উপলভ্য টেক্সট এডিটর অ্যাপ্লিকেশন ব্যবহার করে আপডেট করা উচিত। নিম্নলিখিত একটি দিয়ে বিষয়বস্তু প্রতিস্থাপন করুন:
 
-    ```xml
+```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <TargetFramework>net5.0</TargetFramework>
@@ -50,54 +50,54 @@ To extend nopCommerce functionality, widgets are used. There are various types o
             <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
         </Target>
     </Project>
-    ```
+```
 
-    > [!NOTE]
-    > The **WIDGET_OUTPUT_DIRECTORY** should be replace by the plugin name, for example *Widgets.GoogleAnalytics*.
+> [!NOTE]
+> **WIDGET_OUTPUT_DIRECTORY** প্লাগইন নাম দ্বারা প্রতিস্থাপন করা উচিত, উদাহরণস্বরূপ *Widgets.GoogleAnalytics*।
 
-1. After updating the *.csproj* file, **plugin.json** file should be added which is required for widget.  This file contains meta information describing your widget. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+৩. *.csproj*ফাইল আপডেট করার পর, **plugin.json** ফাইল যোগ করতে হবে যা উইজেটের জন্য প্রয়োজন। এই ফাইলে আপনার উইজেট বর্ণনা করে মেটা তথ্য রয়েছে। শুধু অন্য কোন বিদ্যমান প্লাগইন/উইজেট থেকে এই ফাইলটি অনুলিপি করুন এবং আপনার প্রয়োজনের জন্য এটি পরিবর্তন করুন। `Plugin.json` ফাইল সম্পর্কে তথ্যের জন্য, দয়া করে দেখুন [plugin.json file](xref:bn/developer/plugins/plugin_json)।
 
-    The last required step is to create a class which implements **BasePlugin** (*Nop.Core.Plugins* namespace) and **IWidgetPlugin** interface (*Nop.Services.Cms* namespace). IWidgetPlugin allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a live chat block on the bottom right of your site.
+সর্বশেষ প্রয়োজনীয় পদক্ষেপ হল একটি ক্লাস তৈরি করা যা **BasePlugin** (*Nop.Core.Plugins*namespace) এবং **IWidgetPlugin** ইন্টারফেস (*Nop.Services.Cms*namespace) প্রয়োগ করে। IWidgetPlugin আপনাকে উইজেট তৈরি করতে দেয়। আপনার সাইটের কিছু অংশে উইজেট রেন্ডার করা হয়। উদাহরণস্বরূপ, এটি আপনার সাইটের নিচের ডানদিকে একটি লাইভ চ্যাট ব্লক হতে পারে।
 
-## Handling requests. Controllers, models and views
+## অনুরোধগুলি পরিচালনা করা। কন্ট্রোলার, মডেল এবং ভিউ
 
-Now you can see the widget by going to **Admin area** → **Configuration** → **Local Plugins**.
+এখন আপনি গিয়ে উইজেট দেখতে পারেন **Admin area** → **Configuration** → **Local Plugins**.
 
 ![image4](_static/how-to-write-a-widget-for-nopCommerce/image4.png)
 
-When a plugin/widget is installed, you will see the **Uninstall** button. *For performance improvement, it is a good practice that you uninstall plugins/widgets which are not necessary*.
+যখন একটি প্লাগইন/উইজেট ইনস্টল করা হয়, আপনি দেখতে পাবেন **Uninstall** বাটন। *কর্মক্ষমতা উন্নতির জন্য, এটি একটি ভাল অভ্যাস যে আপনি প্লাগইন/উইজেটগুলি আনইনস্টল করুন যা প্রয়োজনীয় নয়*।
 
 ![image5](_static/how-to-write-a-widget-for-nopCommerce/image5.png)
-There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled. *Deleting will remove physical files from the server*.
+যখন একটি প্লাগইন/উইজেট ইনস্টল বা আনইনস্টল করা হয় না তখন **Install** এবং **Delete** বাটন থাকবে। *ডিলিট করলে সার্ভার থেকে ফিজিক্যাল ফাইল মুছে যাবে*।
 
-But as you guessed our widget does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the widget.
+কিন্তু আপনি যেমন অনুমান করেছেন আমাদের উইজেট কিছুই করে না। এটির কনফিগারেশনের জন্য ইউজার ইন্টারফেসও নেই। উইজেট কনফিগার করার জন্য একটি পৃষ্ঠা তৈরি করা যাক।
 
-What we need to do now is create a controller, a model, a view and a view component.
+আমাদের এখন যা করতে হবে তা হল একটি কন্ট্রোলার, একটি মডেল, একটি ভিউ এবং একটি ভিউ কম্পোনেন্ট তৈরি করা।
 
-- **MVC controllers** are responsible for responding to requests made against an *ASP.NET MVC* website. Each browser request is mapped to a particular controller.
-- A view contains the **HTML** markup and content that is sent to the browser. A view is the equivalent of a page when working with an *ASP.NET MVC* application.
-- A view component which implements **NopViewComponent** which contains logic and codes to render a view.
-- The **MVC model** contains all of your application logic that is not contained in a view or a controller.
+- **MVC controllers** একটি*ASP.NET MVC*ওয়েবসাইটের বিরুদ্ধে করা অনুরোধের সাড়া দেওয়ার জন্য দায়ী। প্রতিটি ব্রাউজারের অনুরোধ একটি নির্দিষ্ট নিয়ামককে ম্যাপ করা হয়।
+- একটি ভিউতে রয়েছে **HTML** মার্কআপ এবং সামগ্রী যা ব্রাউজারে পাঠানো হয়। একটি দৃশ্য একটি পৃষ্ঠার সমতুল্য যখন একটি *ASP.NET MVC* অ্যাপ্লিকেশনের সাথে কাজ করে।
+- একটি ভিউ কম্পোনেন্ট যা প্রয়োগ করে **NopViewComponent** যার মধ্যে যুক্তি এবং কোড রয়েছে একটি ভিউ রেন্ডার করার জন্য।
+- **MVC model** আপনার সমস্ত অ্যাপ্লিকেশন যুক্তি রয়েছে যা একটি ভিউ বা নিয়ামক অন্তর্ভুক্ত নয়।
 
-So let's start:
+সুতরাং শুরু করি:
 
-1. Create the model. Add a `Models` folder in the new widget, and then add a new model class which fits your need.
+১. মডেল তৈরি করুন। নতুন উইজেটে একটি 'মডেলস' ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন মডেল শ্রেণী যোগ করুন যা আপনার প্রয়োজন অনুসারে।
 
-1. Create the view. Add a `Views` folder in the new widget, and then add a `cshtml` file named `Configure.cshtml`. Set "**Build Action**" property of the view file is set to "**Content**", and the "**Copy to Output Directory**" property is set to "**Copy always**". Note that configuration page should use "**_ConfigurePlugin**" layout.
+২. ভিউ তৈরি করুন। নতুন উইজেটে একটি `Views` ফোল্ডার যোগ করুন, এবং তারপর `Configure.cshtml` নামে একটি `cshtml` ফাইল যোগ করুন। ভিউ ফাইলের "**Build Action**" প্রপার্টি সেট করুন "**Content**", এবং "**Copy to Output Directory**" প্রপার্টি "**Copy always**" সেট করা আছে। মনে রাখবেন কনফিগারেশন পৃষ্ঠায় "**_ConfigurePlugin**" লেআউট ব্যবহার করা উচিত।
 
-    ```cs
+```cs
     @{
         Layout = "_ConfigurePlugin";
-    }
-    ```
+     }
+```
 
-1. Also make sure that you have **_ViewImports.cshtml** file into your `Views` directory. You can just copy it from any other existing plugin or widget.
+৩. আপনার `Views` ডিরেক্টরিতে **_ViewImports.cshtml** ফাইল আছে তা নিশ্চিত করুন। আপনি এটি অন্য কোন বিদ্যমান প্লাগইন বা উইজেট থেকে কপি করতে পারেন।
 
-    ![image7](_static/how-to-write-a-widget-for-nopCommerce/image7.png)
+![image7](_static/how-to-write-a-widget-for-nopCommerce/image7.png)
 
-1. Create the controller. Add a `Controllers` folder in the new widget, and then add a new controller class. A good practice is to name plugin controllers `Widgets{Name}Controller.cs`. For example, **WidgetsGoogleAnalyticsController**. Of course it's not a requirement to name controllers this way, but just a recommendation. Then create an appropriate action method for configuration page (in admin area). Let's name it "`Configure`". Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
+৪. কন্ট্রোলার তৈরি করুন। নতুন উইজেটে একটি `Controllers` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন নিয়ামক শ্রেণী যোগ করুন। একটি ভাল অভ্যাস হল প্লাগইন কন্ট্রোলারদের নাম দেওয়া `Widgets{Name}Controller.cs`। উদাহরণস্বরূপ, **WidgetsGoogleAnalyticsController**। অবশ্যই কন্ট্রোলারদের এইভাবে নাম দেওয়ার প্রয়োজন নেই, তবে কেবল একটি সুপারিশ। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম পদ্ধতি তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম দিন "কনফিগার করুন"। একটি মডেল শ্রেণী প্রস্তুত করুন এবং একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাঠান: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`।
 
-    ```cs
+```cs
     public async Task<IActionResult> Configure()
     {
         if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.ManageWidgets))
@@ -119,76 +119,75 @@ So let's start:
 
         return View("~/Plugins/Widgets.MyFirstNopWidget/Views/Configure.cshtml", model);
     }
-    ```
+```
 
-1. Use the following attributes for your action method:
+৫. আপনার কর্ম পদ্ধতির জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
 
-    ```cs
+```cs
     [AutoValidateAntiforgeryToken]
     [AuthorizeAdmin] //confirms access to the admin panel
     [Area(AreaNames.Admin)] //specifies the area containing a controller or action
     [AdminAntiForgery] //Helps prevent malicious scripts from submitting forged page requests.
-    ```
+```
 
-    For example, open `GoogleAnalytics` widget and look at its implementation of `WidgetsGoogleAnalyticsController`.
-    Then for each widget which has a configuration page you should specify a configuration url. Base class named **BasePlugin** has `GetConfigurationPageUrl` method which returns a configuration url:
+উদাহরণস্বরূপ, `GoogleAnalytics` উইজেট খুলুন এবং `WidgetsGoogleAnalyticsController` এর বাস্তবায়ন দেখুন।
+তারপরে প্রতিটি উইজেটের জন্য যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে আপনার একটি কনফিগারেশন ইউআরল নির্দিষ্ট করা উচিত। **BasePlugin** নামক বেস ক্লাসের রয়েছে `GetConfigurationPageUrl` পদ্ধতি যা একটি কনফিগারেশন ইউআরল প্রদান করে:
 
-    ```cs
+```cs
     public override string GetConfigurationPageUrl()
     {
         return $"{_webHelper.GetStoreLocation()}Admin/{CONTROLLER_NAME}/{ACTION_NAME}";
     }
-    ```
+```
 
-    Where `{CONTROLLER_NAME}` is a name of your controller and `{ACTION_NAME}` is a name of action (usually it's "Configure").
-    Each widget should specify a list of widget zones. Base class named **IWidgetPlugin** has `GetWidgetZones` method which returns a list of widget zones where it will be rendered.
+যেখানে `{CONTROLLER_NAME}` আপনার নিয়ামকের একটি নাম এবং `{ACTION_NAME}` একটি কর্মের নাম (সাধারণত এটি "কনফিগার")।    প্রতিটি উইজেট উইজেট জোনের একটি তালিকা নির্দিষ্ট করা উচিত। **IWidgetPlugin** নামক বেস ক্লাসে রয়েছে `GetWidgetZones` পদ্ধতি যা উইজেট জোনগুলির একটি তালিকা প্রদান করে যেখানে এটি রেন্ডার করা হবে।
 
-    ```cs
+```cs
     public Task<IList<string>> GetWidgetZonesAsync()
     {
         return Task.FromResult<IList<string>>(new List<string> {PublicWidgetZones.HeadHtmlTag });
     }
-    ```
+```
 
-    You can find a list of public widget zones from this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) and admin widget zones following this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs).
-    In addition to `GetWidgetZonesAsync`, **IWidgetPlugin** has `GetWidgetViewComponentName` method which returns ViewComponent name. It accepts "*widgetZone*" name as parameter and can be used to render different view based on the selected widget zone.
+আপনি এটি থেকে পাবলিক উইজেট জোনের একটি তালিকা খুঁজে পেতে পারেন [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) এবং এটি অনুসরণ করে অ্যাডমিন উইজেট জোন [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs).
+`GetWidgetZonesAsync` ছাড়াও, **IWidgetPlugin** এর `GetWidgetViewComponentName` পদ্ধতি রয়েছে যা ViewComponent নাম প্রদান করে। এটি "*widgetZone*" নামটি প্যারামিটার হিসেবে গ্রহণ করে এবং নির্বাচিত উইজেট জোনের উপর ভিত্তি করে ভিন্ন দৃশ্য উপস্থাপন করতে ব্যবহার করা যেতে পারে।
 
-    ```cs
+```cs
     public string GetWidgetViewComponentName(string widgetZone)
     {
         return "MyFirstWidget";
     }
-    ```
+```
 
-## Project structure of Google Analytics widget
+## Google Analytics উইজেটের প্রকল্প কাঠামো
 
 ![image11](_static/how-to-write-a-widget-for-nopCommerce/image11.png)
 
-## Handling "InstallAsync" and "UninstallAsync" methods
+## "InstallAsync" এবং "UninstallAsync" পদ্ধতিগুলি পরিচালনা করা
 
-This step is optional. Some widgets can require additional logic during its installation. For example, a widget can insert new locale resources or settings values. So open your **IWidgetPlugin** implementation (in most case it'll be derived from **BasePlugin** class) and override the following methods:
+এই পদক্ষেপটি ঐচ্ছিক। কিছু উইজেট এর ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি উইজেট নতুন লোকেল সম্পদ বা সেটিংস মান সন্নিবেশ করতে পারে। সুতরাং আপনার **IWidgetPlugin** বাস্তবায়ন খুলুন (বেশিরভাগ ক্ষেত্রে এটি **BasePlugin** ক্লাস থেকে উদ্ভূত হবে) এবং নিম্নলিখিত পদ্ধতিগুলি ওভাররাইড করুন:
 
-1. **InstallAsync**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
+১. **InstallAsync**. প্লাগইন ইনস্টলেশনের সময় এই পদ্ধতিটি চালু করা হবে। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
 
-    ```cs
+```cs
     public override async Task InstallAsync()
     {
         // custom logic like adding settings, locale resources and database table(s) here
 
         await base.InstallAsync();
     }
-    ```
+```
 
-1. **UninstallAsync**. This method will be invoked during plugin uninstallation. You can remove previously initialized settings, locale resources, or database tables by widget during installation.
+২. **UninstallAsync**. প্লাগইন আনইনস্টল করার সময় এই পদ্ধতিটি চালু করা হবে। আপনি ইনস্টলেশনের সময় উইজেট দ্বারা পূর্বে আরম্ভ করা সেটিংস, লোকেল রিসোর্স, বা ডাটাবেস টেবিল অপসারণ করতে পারেন।
 
-    ```cs
+```cs
     public override async Task UninstallAsync()
     {
         // custom logic like removing settings, locale resources and database table(s) which was created during widget installation
 
         await base.UninstallAsync();
     }
-    ```
+```
 
-    > [!IMPORTANT]
-    > If you override one of these methods, do not hide its base implementation - **base.InstallAsync()** and **base.UninstallAsync()** which has been marked in the above images.
+> [!IMPORTANT]
+> যদি আপনি এই পদ্ধতিগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর বেস বাস্তবায়ন লুকিয়ে রাখবেন না - **base.InstallAsync()** এবং **base.UninstallAsync()** যা উপরের ছবিতে চিহ্নিত করা হয়েছে।

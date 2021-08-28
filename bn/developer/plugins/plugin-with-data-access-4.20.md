@@ -1,40 +1,40 @@
 ---
-title: Plugin with data access
-uid: en/developer/plugins/plugin-with-data-access-4.20
+title: ডেটা অ্যাক্সেস সহ প্লাগইন
+uid: bn/developer/plugins/plugin-with-data-access-4.20
 author: nop.52152
-contributors: git.DmitriyKulagin, git.rodolphito, git.exileDev, git.cromatido
+contributors: git.AfiaKhanom
 ---
 
-# Plugin with data access" (4.20 and below)
+# ডেটা অ্যাক্সেস সহ প্লাগইন" (4.20 এবং নীচে)
 
-In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
+এই টিউটোরিয়ালে আমি একটি প্রোডাক্ট ভিউ ট্র্যাকার বাস্তবায়নের জন্য নপকমার্স প্লাগইন আর্কিটেকচার ব্যবহার করব। আমরা ডেভেলপমেন্ট শুরু করার আগে এটি খুবই গুরুত্বপূর্ণ যে আপনি নীচে তালিকাভুক্ত টিউটোরিয়ালগুলি পড়েছেন, বুঝতে পেরেছেন এবং সফলভাবে সম্পন্ন করেছেন। আমি পূর্ববর্তী নিবন্ধগুলিতে আচ্ছাদিত কিছু ব্যাখ্যা এড়িয়ে যাচ্ছি, তবে আপনি প্রদত্ত লিঙ্কগুলি ব্যবহার করে পুনরায় সংক্ষেপ করতে পারেন।
 
-- [Developer tutorials](xref:en/developer/tutorials/index)
-- [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.20](xref:en/developer/plugins/how-to-write-plugin-4.20)
+- [ডেভেলপার টিউটোরিয়াল](xref:bn/developer/tutorials/index)
+- [একটি বিদ্যমান এন্টিটি আপডেট করা। কীভাবে একটি নতুন প্রপারটি যুক্ত করবেন।](xref:bn/developer/tutorials/update-existing-entity)
+- [কিভাবে নপকমার্স 4.20 এর জন্য একটি প্লাগইন লিখবেন](xref:bn/developer/plugins/how-to-write-plugin-4.20)
 
-We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
+আমরা ডেটা অ্যাক্সেস স্তর দিয়ে কোডিং শুরু করব, পরিষেবা স্তরে এগিয়ে যাব এবং অবশেষে নির্ভরতা ইনজেকশনের উপর শেষ করব।
 
 > [!NOTE]
-> The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
+> এই প্লাগইনটির ব্যবহারিক প্রয়োগ প্রশ্নবিদ্ধ, কিন্তু আমি এমন একটি বৈশিষ্ট্য সম্পর্কে ভাবতে পারিনি যা নপকমার্স এর সাথে আসে নি এবং যুক্তিসঙ্গত আকারের পোস্টে ফিট হবে। আপনি যদি এই প্লাগইনটি উত্পাদন পরিবেশে ব্যবহার করেন তবে আমি কোনও ওয়ারেন্টি অফার করি না। আমি সবসময় সাফল্যের গল্পে আগ্রহী এবং আমি এটা শুনে খুশি হব যে পোস্টটি কেবল একটি শিক্ষাগত মূল্যের চেয়ে বেশি প্রদান করেছে।
 
-## Getting started
+## শুরু করা
 
-Create a new class library project "Nop.Plugin.Other.ProductViewTracker".
+একটি নতুন ক্লাস লাইব্রেরি প্রকল্প তৈরি করুন "Nop.Plugin.Misc.ProductViewTracker"।
 
 ![plugin-with-data-access_1](_static/plugin-with-data-access/plugin-with-data-access_1.jpg)
 
-Add the following folders and `plugin.json` file.
+নিম্নলিখিত ফোল্ডার এবং `plugin.json` ফাইল যোগ করুন।
 
 ![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
 
-For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+`Plugin.json` ফাইল সম্পর্কে তথ্যের জন্য, দয়া করে দেখুন [plugin.json file](xref:bn/developer/plugins/plugin_json).
 
-Then add references to the following projects: Nop.Core, Nop.Data, Nop.Web.Framework
+তারপর নিম্নলিখিত প্রকল্পের রেফারেন্স যোগ করুন: Nop.Core, Nop.Data, Nop.Web.Framework
 
-## The Data Access Layer (A.K.A. Creating new entities in nopCommerce)
+## ডেটা অ্যাক্সেস লেয়ার (A.K.A. নপকমার্স এ নতুন এন্টিটি তৈরি করা)
 
-Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that all properties are marked as virtual and it isn't just for fun. Virtual properties are required on database entities because of how Entity Framework instantiates and tracks classes. One other thing to note is that we do not have navigation properties (relational properties), and I'll cover those in more detail later.
+"ডোমেন" নেমস্পেসের ভিতরে আমরা ProductViewTrackerRecord নামে একটি পাবলিক ক্লাস তৈরি করতে যাচ্ছি। এই ক্লাস BaseEntity প্রসারিত করে, কিন্তু এটি অন্যথায় একটি খুব বিরক্তিকর ফাইল। মনে রাখার মতো কিছু হল যে সমস্ত বৈশিষ্ট্যগুলি ভার্চুয়াল হিসাবে চিহ্নিত করা হয়েছে এবং এটি কেবল মজা করার জন্য নয়। ডাটাবেস সত্তাগুলিতে ভার্চুয়াল বৈশিষ্ট্যগুলি প্রয়োজন কারণ সত্তা ফ্রেমওয়ার্ক কীভাবে ক্লাসগুলিকে তাত্ক্ষণিক এবং ট্র্যাক করে। আরেকটি বিষয় লক্ষ্য করা যায় যে আমাদের ন্যাভিগেশন প্রপার্টি (রিলেশনাল প্রপার্টি) নেই এবং আমি সেগুলো পরে আরো বিস্তারিতভাবে কভার করব।
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Domain
@@ -50,9 +50,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Domain
 }
 ```
 
-**File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
+**ফাইলের অবস্থান**: নির্দিষ্ট কিছু ফাইল কোথায় থাকা উচিত তা বের করতে নামস্থান বিশ্লেষণ করুন এবং সেই অনুযায়ী ফাইল তৈরি করুন।
 
-The next class to create is the Entity Framework mapping class. Inside of the mapping class we map the columns, table relationships, and the database table.
+পরবর্তী ক্লাস তৈরি করা হচ্ছে সত্তা ফ্রেমওয়ার্ক ম্যাপিং ক্লাস। ম্যাপিং ক্লাসের ভিতরে আমরা কলাম, টেবিল সম্পর্ক এবং ডাটাবেস টেবিল ম্যাপ করি।
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -81,7 +81,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-The next class is the most complicated and the most important class in the data access layer. The Entity Framework Object Context is a pass-through class that gives us database access and helps track entity state (e.g. add, update, delete). The context is also used to generate the database schema or update an existing schema. In custom context classes we cannot reference previously existing entities because those types are already associated to another object context. That is also why we do not have complex navigation properties in our tracking record.
+ডেটা অ্যাক্সেস লেয়ারের পরবর্তী ক্লাস হল সবচেয়ে জটিল এবং সবচেয়ে গুরুত্বপূর্ণ ক্লাস। সত্তা ফ্রেমওয়ার্ক অবজেক্ট কনটেক্সট একটি পাস-থ্রু ক্লাস যা আমাদের ডাটাবেস অ্যাক্সেস দেয় এবং সত্তার অবস্থা ট্র্যাক করতে সাহায্য করে (যেমন যোগ, আপডেট, মুছে দিন)। প্রসঙ্গটি ডাটাবেস স্কিমা তৈরি করতে বা বিদ্যমান স্কিমা আপডেট করতেও ব্যবহৃত হয়। কাস্টম কনটেক্সট ক্লাসে আমরা পূর্বে বিদ্যমান সত্তাগুলিকে উল্লেখ করতে পারি না কারণ এই ধরনেরগুলি ইতিমধ্যে অন্য বস্তুর প্রসঙ্গের সাথে যুক্ত। এ কারণেই আমাদের ট্র্যাকিং রেকর্ডে জটিল ন্যাভিগেশন বৈশিষ্ট্য নেই।
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -177,9 +177,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-## Application Startup
+## অ্যাপ্লিকেশন স্টার্টআপ
 
-This part registers the record object context we created in the previous step.
+এই অংশটি আমরা আগের ধাপে তৈরি করা রেকর্ড অবজেক্ট প্রসঙ্গ নিবন্ধন করি।
 
 ```csharp
 using Microsoft.AspNetCore.Builder;
@@ -226,9 +226,9 @@ namespace Nop.Plugin.Misc.RepCred.Infrastructure
 }
 ```
 
-## Service layer
+## সার্ভিস স্তর
 
-The service layer connects the data access layer and the presentation layer. Since it is bad form to share any type of responsibility in code each layer needs to be isolated. The service layer wraps the data layer with business logic and the presentation layer depends on the service layer. Because our task is very small our service layer does nothing but communicate with the repository (the repository in nopCommerce acts as a facade to the object context).
+সার্ভিস স্তরটি ডেটা অ্যাক্সেস স্তর এবং উপস্থাপনা স্তরকে সংযুক্ত করে। যেহেতু কোডে যেকোনো ধরনের দায়িত্ব ভাগ করা খারাপ ফর্ম তাই প্রতিটি স্তরকে বিচ্ছিন্ন করতে হবে। সার্ভিস স্তরটি ব্যবসায়িক যুক্তি দিয়ে ডেটা স্তরকে আবৃত করে এবং উপস্থাপনা স্তরটি সার্ভিস স্তরের উপর নির্ভর করে। কারণ আমাদের কাজটি খুবই ছোট আমাদের সার্ভিস লেয়ারটি রিপোজিটরির সাথে যোগাযোগ করা ছাড়া আর কিছুই করে না (নপকমার্স- এর রিপোজিটরি বস্তুর প্রসঙ্গের সম্মুখভাগ হিসেবে কাজ করে)।
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Services
@@ -267,9 +267,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 }
 ```
 
-## Dependency Injection
+## ডেপেনডেনসি ইনজেকশন
 
-Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article here. Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
+মার্টিন ফাউলার ডেপেনডেনসি ইনজেকশন বা ইনভার্সন অব কন্ট্রোল এর একটি দুর্দান্ত বর্ণনা লিখেছেন। আমি তার কাজের নকল করতে যাচ্ছি না, এবং আপনি তার নিবন্ধটি এখানে খুঁজে পেতে পারেন । ডেপেনডেনসি ইনজেকশন বস্তুর জীবনচক্র পরিচালনা করে এবং নির্ভরশীল বস্তুর ব্যবহারের দৃষ্টান্ত প্রদান করে। প্রথমে আমাদের নির্ভরতা ধারকটি কনফিগার করতে হবে যাতে এটি বুঝতে পারে যে কোন বস্তুগুলি এটি নিয়ন্ত্রণ করবে এবং সেই বস্তুগুলি তৈরির ক্ষেত্রে কোন নিয়মগুলি প্রযোজ্য হতে পারে।
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
@@ -297,11 +297,11 @@ namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 }
 ```
 
-In the code above we register different types of objects so they can later be injected into controllers, services, and repositories. Now that we've covered the new topics I'll bring back some of the older ones so we can finish the plugin.
+উপরের কোডটিতে আমরা বিভিন্ন ধরণের অবজেক্ট নিবন্ধন করি যাতে সেগুলি পরে কন্টল্লার নিয়ন্ত্রক, সার্ভিস এবং সংগ্রহস্থলে প্রবেশ করা যায়। এখন যেহেতু আমরা নতুন বিষয়গুলি কভার করেছি আমি পুরোনো কিছু ফিরিয়ে আনব যাতে আমরা প্লাগইনটি শেষ করতে পারি।
 
-## The view component
+## ভিউ উপাদান
 
-Let's create a view component:
+আসুন একটি ভিউ কম্পোনেন্ট তৈরি করি:
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Components
@@ -343,7 +343,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 }
 ```
 
-## Plugin installer
+## প্লাগইন ইনস্টলার
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker
@@ -369,12 +369,12 @@ namespace Nop.Plugin.Other.ProductViewTracker
 }
 ```
 
-## The usage
+## ব্যবহার
 
-The tracking code should be added to `ProductTemplate.Simple.cshtml` and `ProductTemplate.Grouped.cshtml` files. These ones are product templates.
+ট্র্যাকিং কোড `ProductTemplate.Simple.cshtml` এবং` ProductTemplate.Grouped.cshtml` ফাইলে যোগ করা উচিত। এইগুলি পণ্য টেমপ্লেট।
 
 ```csharp
 @await Component.InvokeAsync("ProductViewTrackerIndex", new { productId = Model.Id })
 ```
 
-P.S. You can also implement it as a widget. In this case you won't need to edit a cshtml file.
+পুনশ্চ. আপনি এটি একটি উইজেট হিসাবে প্রয়োগ করতে পারেন। এই ক্ষেত্রে আপনাকে একটি cshtml ফাইল সম্পাদনা করতে হবে না।

@@ -1,37 +1,37 @@
 ---
 title: ডেটা অ্যাক্সেস সহ প্লাগইন
-uid: en/developer/plugins/plugin-with-data-access
+uid: bn/developer/plugins/plugin-with-data-access
 author: git.AndreiMaz
 contributors: git.AfiaKhanom
 ---
 
 # ডেটা অ্যাক্সেস সহ প্লাগইন
 
-In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
+এই টিউটোরিয়ালে আমি একটি প্রোডাক্ট ভিউ ট্র্যাকার বাস্তবায়নের জন্য নপকমার্স প্লাগইন আর্কিটেকচার ব্যবহার করব। আমরা ডেভেলপমেন্ট শুরু করার আগে এটি খুবই গুরুত্বপূর্ণ যে আপনি নীচে তালিকাভুক্ত টিউটোরিয়ালগুলি পড়েছেন, বুঝতে পেরেছেন এবং সফলভাবে সম্পন্ন করেছেন। আমি পূর্ববর্তী নিবন্ধগুলিতে আচ্ছাদিত কিছু ব্যাখ্যা এড়িয়ে যাচ্ছি, তবে আপনি প্রদত্ত লিঙ্কগুলি ব্যবহার করে পুনরায় সংক্ষেপ করতে পারেন।
 
-- [Developer tutorials](xref:en/developer/tutorials/index)
-- [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40)
+- [ডেভেলপার টিউটোরিয়াল](xref:bn/developer/tutorials/index)
+- [একটি বিদ্যমান এন্টিটি আপডেট করা। কীভাবে একটি নতুন প্রপারটি যুক্ত করবেন।](xref:bn/developer/tutorials/update-existing-entity)
+- [কিভাবে নপকমার্স এর জন্য প্লাগইন লিখব](xref:bn/developer/plugins/how-to-write-plugin-4.40)
 
-We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
+আমরা ডেটা অ্যাক্সেস স্তর দিয়ে কোডিং শুরু করব, পরিষেবা স্তরে এগিয়ে যাব এবং অবশেষে নির্ভরতা ইনজেকশনের উপর শেষ করব।
 
 > [!NOTE]
-> The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
+> এই প্লাগইনটির ব্যবহারিক প্রয়োগ প্রশ্নবিদ্ধ, কিন্তু আমি এমন একটি বৈশিষ্ট্য সম্পর্কে ভাবতে পারিনি যা নপকমার্স এর সাথে আসে নি এবং যুক্তিসঙ্গত আকারের পোস্টে ফিট হবে। আপনি যদি এই প্লাগইনটি উত্পাদন পরিবেশে ব্যবহার করেন তবে আমি কোনও ওয়ারেন্টি অফার করি না। আমি সবসময় সাফল্যের গল্পে আগ্রহী এবং আমি এটা শুনে খুশি হব যে পোস্টটি কেবল একটি শিক্ষাগত মূল্যের চেয়ে বেশি প্রদান করেছে।
 
-## Getting started
+## শুরু করা
 
-Create a new class library project "Nop.Plugin.Misc.ProductViewTracker".
+একটি নতুন ক্লাস লাইব্রেরি প্রকল্প তৈরি করুন "Nop.Plugin.Misc.ProductViewTracker"।
 
-Add the  `plugin.json` file.
+`Plugin.json` ফাইল যোগ করুন।
 
 >[!TIP]
->For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+>`Plugin.json` ফাইল সম্পর্কে তথ্যের জন্য, দয়া করে দেখুন [plugin.json file](xref:bn/developer/plugins/plugin_json).
 
-Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
+তারপর **Nop.Web.Framework** প্রকল্পের রেফারেন্স যোগ করুন। এটি আমাদের জন্য যথেষ্ট হবে, যেমন অন্যান্য নির্ভরতা, যেমন **Nop.Core** এবং **Nop.Data**, স্বয়ংক্রিয়ভাবে সংযুক্ত হবে
 
-## The Data Access Layer (A.K.A. Creating new entities in nopCommerce)
+## ডেটা অ্যাক্সেস লেয়ার (A.K.A. নপকমার্স এ নতুন এন্টিটি তৈরি করা)
 
-Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that we do not have navigation properties (relational properties), because Linq2DB framework, which we use to work with databases does not support the navigation properties.
+"ডোমেন" নেমস্পেসের ভিতরে আমরা ProductViewTrackerRecord নামে একটি পাবলিক ক্লাস তৈরি করতে যাচ্ছি। এই ক্লাস BaseEntity প্রসারিত করে, কিন্তু এটি অন্যথায় একটি খুব বিরক্তিকর ফাইল। মনে রাখার মতো কিছু আমাদের ন্যাভিগেশন প্রপার্টি (রিলেশনাল প্রপার্টি) নেই, কারণ Linq2DB ফ্রেমওয়ার্ক, যা আমরা ডাটাবেসের সাথে কাজ করার জন্য ব্যবহার করি তা ন্যাভিগেশন প্রপার্টি সমর্থন করে না।
 
 ```csharp
 namespace Nop.Plugin.Misc.ProductViewTracker.Domain
@@ -47,9 +47,9 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Domain
 }
 ```
 
-**File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
+**ফাইলের অবস্থান**: নির্দিষ্ট কিছু ফাইল কোথায় থাকা উচিত তা বের করতে নামস্থান বিশ্লেষণ করুন এবং সেই অনুযায়ী ফাইল তৈরি করুন।
 
-The next class to create is the *FluentMigrator* entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
+পরবর্তী শ্রেণী তৈরি করতে হবে *FluentMigrator* এন্টিটি নির্মাতা শ্রেণী। ম্যাপিং ক্লাসের ভিতরে আমরা কলাম, টেবিল সম্পর্ক এবং ডাটাবেস টেবিল ম্যাপ করি।
 
 ```csharp
 using FluentMigrator.Builders.Create.Table;
@@ -86,7 +86,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Mapping.Builders
 }
 ```
 
-The next important class for us will be the migration class, which creates our table directly in the database. You can create as many migrations as you like in your plugin, the only thing you need to keep track of is the version of your migration. We specially created our **NopMigration** attribute to make it easier for you. By indicating here the most complete and accurate file creation date, you practically guarantee the uniqueness of your migration number.
+আমাদের জন্য পরবর্তী গুরুত্বপূর্ণ শ্রেণী হবে মাইগ্রেশন ক্লাস, যা সরাসরি আমাদের ডাটাবেসে টেবিল তৈরি করে। আপনি আপনার প্লাগিনে যত খুশি মাইগ্রেশন তৈরি করতে পারেন, আপনার মাইগ্রেশনের সংস্করণটিই আপনার নজর রাখতে হবে। আপনার জন্য এটি সহজ করার জন্য আমরা বিশেষভাবে আমাদের **NopMigration** বৈশিষ্ট্য তৈরি করেছি। এখানে সবচেয়ে সম্পূর্ণ এবং সঠিক ফাইল তৈরির তারিখ নির্দেশ করে, আপনি কার্যত আপনার মাইগ্রেশন নম্বরের স্বতন্ত্রতার নিশ্চয়তা দেন।
 
 ```csharp
 using FluentMigrator;
@@ -115,11 +115,11 @@ namespace Nop.Plugin.Other.ProductViewTracker.Migrations
 ```
 
 >[!NOTE]
->Pay attention to the **SkipMigrationOnUpdate** attribute, its purpose is described by the name. This attribute allows you to skip migrations when performing the plugin update procedure.
+>**SkipMigrationOnUpdate** বৈশিষ্ট্যের দিকে মনোযোগ দিন, এর উদ্দেশ্য নাম দ্বারা বর্ণিত হয়েছে। এই বৈশিষ্ট্যটি আপনাকে প্লাগইন আপডেট পদ্ধতি সম্পাদন করার সময় মাইগ্রেশন এড়িয়ে যেতে দেয়।
 
-## Service layer
+## সার্ভিস স্তর
 
-The service layer connects the data access layer and the presentation layer. Since it is bad form to share any type of responsibility in code each layer needs to be isolated. The service layer wraps the data layer with business logic and the presentation layer depends on the service layer. Because our task is very small our service layer does nothing but communicate with the repository (the repository in nopCommerce acts as a facade to the object context).
+সার্ভিস স্তরটি ডেটা অ্যাক্সেস স্তর এবং উপস্থাপনা স্তরকে সংযুক্ত করে। যেহেতু কোডে যেকোনো ধরনের দায়িত্ব ভাগ করা খারাপ ফর্ম তাই প্রতিটি স্তরকে বিচ্ছিন্ন করতে হবে। সার্ভিস স্তরটি ব্যবসায়িক যুক্তি দিয়ে ডেটা স্তরকে আবৃত করে এবং উপস্থাপনা স্তরটি সার্ভিস স্তরের উপর নির্ভর করে। কারণ আমাদের কাজটি খুবই ছোট আমাদের সার্ভিস লেয়ারটি রিপোজিটরির সাথে যোগাযোগ করা ছাড়া আর কিছুই করে না (নপকমার্স- এর রিপোজিটরি বস্তুর প্রসঙ্গের সম্মুখভাগ হিসেবে কাজ করে)।
 
 ```csharp
 using Nop.Data;
@@ -162,9 +162,9 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Services
 }
 ```
 
-## Dependency Injection
+## ডেপেনডেনসি ইনজেকশন
 
-Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
+মার্টিন ফাউলার ডেপেনডেনসি ইনজেকশন বা ইনভার্সন অব কন্ট্রোল এর একটি দুর্দান্ত বর্ণনা লিখেছেন। আমি তার কাজের নকল করতে যাচ্ছি না, এবং আপনি তার নিবন্ধটি [এখানে](https://martinfowler.com/articles/injection.html) খুঁজে পেতে পারেন । ডেপেনডেনসি ইনজেকশন বস্তুর জীবনচক্র পরিচালনা করে এবং নির্ভরশীল বস্তুর ব্যবহারের দৃষ্টান্ত প্রদান করে। প্রথমে আমাদের নির্ভরতা ধারকটি কনফিগার করতে হবে যাতে এটি বুঝতে পারে যে কোন বস্তুগুলি এটি নিয়ন্ত্রণ করবে এবং সেই বস্তুগুলি তৈরির ক্ষেত্রে কোন নিয়মগুলি প্রযোজ্য হতে পারে।
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -199,11 +199,11 @@ namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 }
 ```
 
-In the code above we register different types of objects so they can later be injected into controllers, services, and repositories. Now that we've covered the new topics I'll bring back some of the older ones so we can finish the plugin.
+উপরের কোডটিতে আমরা বিভিন্ন ধরণের অবজেক্ট নিবন্ধন করি যাতে সেগুলি পরে কন্টল্লার, সার্ভিস এবং সংগ্রহস্থলে প্রবেশ করা যায়। এখন যেহেতু আমরা নতুন বিষয়গুলি কভার করেছি আমি পুরোনো কিছু ফিরিয়ে আনব যাতে আমরা প্লাগইনটি শেষ করতে পারি।
 
-## The view component
+## ভিউ উপাদান
 
-Let's create a view component:
+আসুন একটি ভিউ কম্পোনেন্ট তৈরি করি:
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -266,11 +266,11 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 }
 ```
 
-## The main plugin class
+## প্রধান প্লাগইন ক্লাস
 
 > [!IMPORTANT]
 >
-> We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
+> আমরা একটি উইজেট হিসাবে আমাদের প্লাগইন বাস্তবায়ন করি। এই ক্ষেত্রে আমাদের একটি cshtml ফাইল সম্পাদনা করতে হবে না।
 
 ```csharp
 using Nop.Services.Cms;
