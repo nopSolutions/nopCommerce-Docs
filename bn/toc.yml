@@ -403,85 +403,85 @@
       href: developer/tutorials/index.md
       items:
         - 
-          name: System requirements for developing
+          name: বিকাশের জন্য সিস্টেমের প্রয়োজনীয়তা
           href: developer/tutorials/system-requirements-for-developing.md
         - 
-          name: Configuring code style
+          name: কোড স্টাইল কনফিগার
           href: developer/tutorials/code-style.md
         - 
-          name: Coding standards
+          name: কোডিং স্ট্যান্ডার্ড
           href: developer/tutorials/coding-standards.md
         - 
-          name: Source code organization
+          name: সোর্স কোড সংগঠন
           href: developer/tutorials/source-code-organization.md
         - 
           name: Default database schema
           href: developer/tutorials/db-schema.md
         - 
-          name: Architecture of nopCommerce
+          name: নপকমার্স এর আর্কিটেকচার
           href: developer/tutorials/architecture-of-nopCommerce.md
         - 
-          name: Instruction on how to start developing on nopCommerce
+          name: নপকমার্স এ কীভাবে বিকাশ শুরু করবেন তার নির্দেশনা
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
         - 
-          name: Updating an existing entity. How to add a new property
+          name: একটি বিদ্যমান এন্টিটি আপডেট করা হচ্ছে। কিভাবে একটি নতুন সম্পত্তি যুক্ত করবেন।
           href: developer/tutorials/update-existing-entity.md
         - 
-          name: Entity events and how they work
+          name: এন্টিটি ইভেন্ট এবং তারা কিভাবে কাজ করে
           href: developer/tutorials/entity-event.md
         - 
-          name: Inversion of control and dependency injection
+          name: নিয়ন্ত্রণ ও নির্ভরতা ইনজেকশনের বিপরীত
           href: developer/tutorials/inversion-of-control.md
         - 
-          name: How do I register new routes?
+          name: আমি কিভাবে নতুন রুট নিবন্ধন করব?
           href: developer/tutorials/register-new-routes.md
         - 
-          name: How do migrations work?
+          name: মাইগ্রেশন কিভাবে কাজ করে?
           href: developer/tutorials/migrations.md
         - 
-          name: A guide to expand the basic functionality of nopCommerce through a plugin
+          name: একটি প্লাগইন এর মাধ্যমে নপকমার্স এর মৌলিক কার্যকারিতা প্রসারিত করার জন্য একটি গাইড
           href: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin.md
         - 
-          name: Data validation
+          name: ডেটা যাচাইকরণ
           href: developer/tutorials/data-validation.md
         - 
-          name: Scheduled tasks
+          name: নির্ধারিত কাজ
           href: developer/tutorials/scheduled-tasks.md
         - 
-          name: Exposing and handling events
+          name: ইভেন্টগুলি প্রকাশ করা এবং পরিচালনা
           href: developer/tutorials/events.md
         - 
-          name: Settings API
+          name: সেটিংস এপিআই
           href: developer/tutorials/settings.md
         - 
           name: How and when to use the ITypeFinder interface
           href: developer/tutorials/type-finder.md
         - 
-          name: Description of the web.config file in project
+          name: প্রকল্পে web.config ফাইলের বর্ণনা
           href: developer/tutorials/description-of-the-web-config-file-in-project.md
         - 
-          name: Step by step to deploy on Azure with GIT and automatic builds
+          name: ধাপে ধাপে জিআইটি এবং স্বয়ংক্রিয় বিল্ডের সাহায্যে অজুরে স্থাপন করা
           href: developer/tutorials/azure-deploy.md
         - 
-          name: Docker
+          name: ডকার
           href: developer/tutorials/docker.md
         - 
-          name: How to deploy nopCommerce to Azure
+          name: কিভাবে Azure এ নপকমার্স স্থাপন করা যায়
           href: developer/tutorials/azure-publish.md
         - 
-          name: Guide to creating a page containing a reporting table of DataTables
+          name: DataTables এর একটি রিপোর্টিং টেবিল সম্বলিত একটি পৃষ্ঠা তৈরির গাইড
           href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
         - 
-          name: Content Security Policy (CSP) Headers
+          name: কন্টেন্ট সিকিউরিটি পলিসি (সিএসপি) হেডার
           href: developer/tutorials/csp-headers.md
         - 
-          name: The settings from the appsettings.json file
+          name: Appsettings.json ফাইল থেকে সেটিংস
           href: developer/tutorials/appsettings-json-file.md
         - 
-          name: Description of plugin system
+          name: প্লাগইন সিস্টেমের বর্ণনা
           href: developer/tutorials/description-of-plugin-system.md
         - 
-          name: UNIT testing
+          name: ঊনিট পরিক্ষাকরণ
           href: developer/tutorials/unit-tests.md
     - 
       name: নপকমার্স প্লাগইন তৈরি করা

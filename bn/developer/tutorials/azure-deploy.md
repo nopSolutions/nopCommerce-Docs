@@ -1,52 +1,56 @@
 ---
-title: Step by step to deploy on Azure with GIT and automatic builds
-uid: en/developer/tutorials/azure-deploy
+title: ধাপে ধাপে জিআইটি এবং স্বয়ংক্রিয় বিল্ডের সাহায্যে অজুরে স্থাপন
+uid: bn/developer/tutorials/azure-deploy
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Step by step to deploy on Azure with GIT and automatic builds
+# ধাপে ধাপে জিআইটি এবং স্বয়ংক্রিয় বিল্ডের সাহায্যে অজুরে স্থাপন
 
-## Step by step guide for automatic deployment of nopCommerce with git on azure
+## অজুরে গিট সহ নপকমার্স এর স্বয়ংক্রিয় স্থাপনার জন্য ধাপে ধাপে নির্দেশিকা
 
-1. **Your own git-repository** You need your own repository, you cannot just build nopCommerce. It's designed to be used with "Publish" function in Visual Studio 2019 as default. I use Bitbucket myself and keep that in sync with official repository.
+১. **Your own git-repository** আপনার নিজের সংগ্রহস্থল প্রয়োজন, আপনি কেবল নপকমার্স তৈরি করতে পারবেন না। এটি ডিফল্ট হিসাবে ভিজ্যুয়াল স্টুডিও ২০১৯ এ "Publish" ফাংশনের সাথে ব্যবহার করার জন্য ডিজাইন করা হয়েছে। আমি নিজে বিটবকেট ব্যবহার করি এবং এটিকে সরকারী সংগ্রহস্থলের সাথে সমন্বয় করে রাখি।
 
-1. Setup git on Azure
-    - Tutorial: [https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/)
+২. অজুরে গিট সেটআপ করুন
 
-    - There's a great video here: [http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo](http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo)
+- টিউটোরিয়াল: [https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/)
 
-1. **Prepare for local deploy** When you ensured that the automatic build works, we are ready to customize our deployment scripts. This is needed because the default automatic build only builds `nop.web` projects. The problem with this is that it does not build the admin website, and none of the plugins are build. You cannot refer to the plugins as it would create circular references. So now we need to get the custom build working, these are the install steps (also mention other places)
-    - Install NodeJs: [https://nodejs.org](https://nodejs.org)
+- এখানে একটি দুর্দান্ত ভিডিও আছে: [http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo](http://channel9.msdn.com/Shows/Azure-Friday/What-is-Kudu-Azure-Web-Sites-Deployment-with-David-Ebbo)
 
-    - Install Azure CLI: [https://azure.microsoft.com/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/documentation/articles/xplat-cli-install/)
+৩. **Prepare for local deploy** যখন আপনি নিশ্চিত করেছেন যে স্বয়ংক্রিয় বিল্ড কাজ করে, আমরা আমাদের স্থাপনার স্ক্রিপ্টগুলি কাস্টমাইজ করতে প্রস্তুত। এটি প্রয়োজন কারণ ডিফল্ট স্বয়ংক্রিয় বিল্ড শুধুমাত্র `nop.web` প্রকল্প তৈরি করে। এর সাথে সমস্যা হল যে এটি অ্যাডমিন ওয়েবসাইট তৈরি করে না, এবং প্লাগইনগুলির কোনটিই তৈরি হয় না। আপনি প্লাগইনগুলিকে উল্লেখ করতে পারবেন না কারণ এটি বৃত্তাকার রেফারেন্স তৈরি করবে। সুতরাং এখন আমাদের কাস্টম বিল্ড কাজ করতে হবে, এগুলি ইনস্টল করার পদক্ষেপ (অন্যান্য জায়গাগুলিও উল্লেখ করুন)
 
-1. **Get NuGet to work at command line level.** The default behavior of the KUDO script is to check for NuGet packages.
-   - To get access to the `Nuget.exe` file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of NuGet packages" in you Visual Studio 2019, and it will be added to your project automatically.
+- ইনস্টল নোড জএস: [https://nodejs.org](https://nodejs.org)
 
-   - Ensure that NuGet is in the PATH. Copy the `nuget.exe` file to preferred location (I use `c:/Program Files/Nuget/Nuget.exe`). Add it to PATH environment variable.
-   - Confirm that NuGet is in your PATH by starting `cmd.exe` and write *nuget*. you should see the command options.
+- ইনস্টল অজুর সিআলআই: [https://azure.microsoft.com/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/documentation/articles/xplat-cli-install/)
 
-1. **Generate deployment scripts locally**
-    - Open the "Microsoft Azure Command Prompt"
-    - Navigate to the src folder of your project as you normally would in a shell window
-    - Execute the kudu script generator (You may found wiki by [this link](https://github.com/projectkudu/kudu/wiki) or see [this video](https://azure.microsoft.com/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
+৪. **Get NuGet to work at command line level.** কুড স্ক্রিপ্টের ডিফল্ট আচরণ হলো নাগেট প্যাকেজ পরীক্ষা করা।
+    - `Nuget.exe` ফাইলের অ্যাক্সেস পেতে আপনি হয় এখান থেকে ডাউনলোড করতে পারেন: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference)। আপনি ভিজুয়াল স্টুডিও ২০১৯ এ "নাগেট প্যাকেজগুলির স্বয়ংক্রিয় পুনরুদ্ধার সক্ষম করুন" এবং এটি স্বয়ংক্রিয়ভাবে আপনার প্রকল্পে যুক্ত হবে।
+
+- ফাইলটি পছন্দের স্থানে অনুলিপি করুন (আমি ব্যবহার করি `c:/programFiles/Nuget/Nuget.exe`)। এটি পথ এনভায়রনমেন্ট ভেরিয়েবলে যোগ করুন।
+- নিশ্চিত করুন যে `cmd.exe` শুরু করে নাগেট আপনার পথ এ আছে এবং *nuget* লিখুন। আপনি কমান্ড বিকল্প দেখতে হবে।
+
+৫. **Generate deployment scripts locally**
+
+- "Microsoft Azure Command Prompt" খুলুন
+- আপনার প্রকল্পের সোর্স ফোল্ডারে নেভিগেট করুন যেমন আপনি সাধারণত শেল উইন্ডোতে থাকবেন
+- কুদু স্ক্রিপ্ট জেনারেটর চালান (আপনি উইকি দ্বারা খুঁজে পেতে পারেন [this link](https://github.com/projectkudu/kudu/wiki) or see [this video](https://azure.microsoft.com/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
 
         So you would write something like:
 
         `kuduscript site deploymentscript --aspNetCore Presentation\Nop.Web\Nop.Web.csproj -s NopCommerce.sln -y`
-    - Verify that it has generated 2 files (in your local repository root):
+- যাচাই করুন যে এটি 2 টি ফাইল তৈরি করেছে (আপনার স্থানীয় রিপোজিটরির রুটটিতে):
 
         `.deployment`
 
         `deploy.cmd`
 
-1. **Run generated script**
-    - You must keep the .deployment and deploy.cmd file to the root of git repository
-    - Edit the deploy.cmd as the `%DEPLOYMENT_SOURCE%` variable contain the root of the git repository. So I would add `%DEPLOYMENT_SOURCE%\src\Presentation\Nop.Web\Nop.Web.csproj` instead of `%DEPLOYMENT_SOURCE%\Presentation\Nop.Web\Nop.Web.csproj`. All paths in the deployment section must be corrected.
-    - Run deploy.cmd to see if the default deploy script works locally. It should create an `\artifact` folder just outside of your git repository.
+৬. **Run generated script**
 
-1. **Customize the deployment script** So now we are at the final part. This is where all that work pays off. We want to alter the following piece:
+- আপনাকে অবশ্যই .deployment রাখতে হবে এবং গিট রিপোজিটরির রুট এ deploy.cmd স্থাপন করুন
+- `%DEPLOYMENT_SOURCE%` ভেরিয়েবলে গিট রিপোজিটরির মূল থাকে deploy.cmd সম্পাদনা করুন। তাই আমি `%DEPLOYMENT_SOURCE%\src\Presentation\Nop.Web\Nop.Web.csproj` এর পরিবর্তে `%DEPLOYMENT_SOURCE%\Presentation\Nop.Web\Nop.Web.csproj` যোগ করব। স্থাপনার বিভাগে সমস্ত পথ সংশোধন করা আবশ্যক।
+- ডিফল্ট স্থাপনার স্ক্রিপ্ট স্থানীয়ভাবে কাজ করে কিনা তা দেখতে deploy.cmd চালান। এটি আপনার গিট রিপোজিটরির ঠিক বাইরে একটি `\artifact` ফোল্ডার তৈরি করা উচিত।
+
+৭. **Customize the deployment script** তাই এখন আমরা চূড়ান্ত অংশে আছি। এখানেই সমস্ত কাজ বন্ধ হয়ে যায়। আমরা নিচের অংশটি পরিবর্তন করতে চাই:
 
     ```sh
     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -71,11 +75,11 @@ contributors: git.DmitriyKulagin, git.exileDev
 
     So between no ::1 and ::2 that's where we are gonna place our commands for building plugins.
 
-    An example for the first plugin would be:
+    প্রথম প্লাগইন এর জন্য একটি উদাহরণ হবে:
 
     ```sh
     :: 1.01 Build plugin customer roles to temporary path
     call :ExecuteCmd dotnet build "%DEPLOYMENT_SOURCE%\src\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\Nop.Plugin.DiscountRules.CustomerRoles.csproj" -c Release
     ```
 
-Now the plugin is built when you run the deploy scripts.
+এখন আপনি যখন ডিপ্লাই স্ক্রিপ্ট চালান তখন প্লাগইন তৈরি হয়।

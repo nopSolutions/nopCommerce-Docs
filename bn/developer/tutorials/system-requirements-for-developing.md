@@ -1,15 +1,15 @@
 ---
-title: System requirements for developing
-uid: en/developer/tutorials/system-requirements-for-developing
+title: বিকাশের জন্য সিস্টেমের প্রয়োজনীয়তা
+uid: bn/developer/tutorials/system-requirements-for-developing
 author: nop.sea
-contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
+contributors: git.AfiaKhanom
 ---
 
-# System requirements for developing
+# বিকাশের জন্য সিস্টেমের প্রয়োজনীয়তা
 
-## Operating System
+## অপারেটিং সিস্টেম
 
-* Windows
+* উইন্ডোজ
 
 | OS                | Version       |
 | ----------------- | ------------- |
@@ -17,7 +17,7 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 | Windows 10 Client | Version 1607+ |
 | Windows Server    | 2012 R2+      |
 
-* Linux
+* লিনাক্স
 
 | OS                           | Version             |
 | ---------------------------- | ------------------- |
@@ -31,7 +31,7 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 | SUSE Enterprise Linux (SLES) | 12 SP2+             |
 | Alpine Linux                 | 3.11+               |
 
-* MacOS
+* ম্যাক অপারেটিং সিস্টেম
 
 | OS       | Version |
 | -------- | ------- |
@@ -39,35 +39,35 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 > [!NOTE]
 >
-> For more information about supported OS versions please visit [this page](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md)
+> সমর্থিত ওএস সংস্করণ সম্পর্কে আরও তথ্যের জন্য অনুগ্রহ করে পরিদর্শন করুন [এই পৃষ্ঠা](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md)
 
-## 1. Supported Browsers
+## ১. সমর্থিত ব্রাউজার
 
-* Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior 3.60, IE8 was support in versions prior 4.10)
-* Mozilla Firefox 2.0 and above
-* Google Chrome 1.x
-* Apple Safari 2.x
+* মাইক্রোসফট ইন্টারনেট এক্সপ্লোরার 9 এবং উপরের (IE6 এবং IE7 3.60 এর পূর্বের সংস্করণগুলিতে সমর্থিত ছিল, IE8 4.10 এর পূর্বের সংস্করণগুলিতে সমর্থন করেছিল)
+* মোজিলা ফায়ারফক্স 2.0 এবং উপরের
+* গুগল ক্রম 1.x
+* আপেল সাফারি 2.x
 
-## 2. Tools Required for Development
+## ২. উন্নয়নের জন্য প্রয়োজনীয় সরঞ্জাম
 
-Since it is based on Microsoft's .NET 5 we need to install a few tools before starting developing on top of nopCommerce.
+যেহেতু এটি মাইক্রোসফটের .NET 5 এর উপর ভিত্তি করে আমাদের নপকমার্স এর উপরে বিকাশ শুরু করার আগে আমাদের কয়েকটি সরঞ্জাম ইনস্টল করতে হবে।
 
-### \.NET 5 runtime & .NET 5 SDK
+### \.NET 5 রানটাইম এবং .NET 5 এসডিকে
 
-Since nopCommerce 4.40 is based on .NET 5. We need to install [.NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer) and [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.200-windows-x64-installer) before we start development on nopCommerce.
+যেহেতু নপকমার্স 4.40 .NET 5. এর উপর ভিত্তি করে আমাদের ইনস্টল করতে হবে [.NET 5 রানটাইম](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer) এবং [.NET 5 এসডিকে](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.200-windows-x64-installer) আমরা নপকমার্স এ ডেভেলপমেন্ট শুরু করার আগে।
 
-### Visual Studio 2019 or Above / Visual Studio Code
+### ভিজ্যুয়াল স্টুডিও ২০১৯ আথবা উপরের / ভিজ্যুয়াল স্টুডিও কোড
 
-As we know nopCommerce is based on 'Microsoft's .NET 5' and Visual Studio IDE is best for developing  .Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
+আমরা জানি যে নপকমার্স 'Microsoft's .NET 5' এর উপর ভিত্তি করে এবং ভিসুয়াল স্টুডিও আইডিই নেট ভিত্তিক অ্যাপ্লিকেশনগুলি বিকাশের জন্য সেরা। যেহেতু .NET কোর প্ল্যাটফর্ম স্বাধীন তাই আমরা যেকোনো প্ল্যাটফর্মে নেট ভিত্তিক অ্যাপ্লিকেশন ডেভেলপ এবং স্থাপন করতে পারি কিন্তু উইন্ডো ছাড়া অন্য প্ল্যাটফর্মে ভিজ্যুয়াল স্টুডিও পাওয়া যায় না। তাই আমরা ভিজ্যুয়াল স্টুডিও কোড ব্যবহার করতে পারি ভিজ্যুয়াল স্টুডিওর বিকল্প হিসেবে উইন্ডোজ এবং অন্যান্য প্ল্যাটফর্মে ডেভেলপ করার জন্য।
 
-### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above / PostgreSQL 9.2 or Above
+### মাইক্রোসফট এসকিউএল সার্ভার ২০১২ আথবা উপরের / এমএস এসকিউএল সার্ভার ৫.৭ আথবা উপরের / পোস্টগ্রেএসকিউএল ৯.২ আথবা উপরের
 
-Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB  is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. And you may choose between MS SQL Server, MySql server and PostgreSQL.
+4.30 সংস্করণ থেকে শুরু নপকমার্স একটি ORM ফ্রেমওয়ার্ক হিসাবে Linq2DB ব্যবহার করে। Linq2DB হল একটি অবজেক্ট-রিলেশনাল ম্যাপার (ORM) যা .NET ডেভেলপারদের .NET অবজেক্ট ব্যবহার করে একটি ডাটাবেসের সাথে কাজ করতে সক্ষম করে। এটি বিভিন্ন সংখ্যক ডাটাবেস প্রদানকারীর কাছে নেট বস্তুর মানচিত্র তৈরি করতে পারে। এবং আপনি এমএস এসকিউএল সার্ভার, মাইএসকিউএল সার্ভার এবং পোস্টগ্রেএসকিউএল এর মধ্যে বেছে নিতে পারেন।
 
 > [!NOTE]
 >
-> For more information about supported databases please visit [this page](https://linq2db.github.io/articles/general/databases.html)
+> সমর্থিত ডাটাবেস সম্পর্কে আরও তথ্যের জন্য অনুগ্রহ করে পরিদর্শন করুন [এই পৃষ্ঠা](https://linq2db.github.io/articles/general/databases.html)
 
-### Internet Information Service (IIS) 7.0 or above
+### ইন্টারনেট ইনফরমেশন সার্ভিস (আইআইআস) 7.0 আথবা উপরের
 
-For hosting nopCommerce app/project we can use IIS. Which is Microsoft technology used to host Microsoft web based applications on windows. But you are not limited for hosting your nopCommerce in windows only you can host nopCommerce in Linux and MacOS too. As you may know you that IIS is not supported in other platform then windows. So, you can use other tools like Apache or Nginx to host your application on Linux server.
+নপকমার্স অ্যাপ/প্রজেক্ট হোস্ট করার জন্য আমরা আইআইআস  ব্যবহার করতে পারি। কোনটি মাইক্রোসফট প্রযুক্তি যা উইন্ডোজে মাইক্রোসফট ওয়েব ভিত্তিক অ্যাপ্লিকেশন হোস্ট করতে ব্যবহৃত হয়। তবে আপনি উইন্ডোতে আপনার নপকমার্স হোস্ট করার জন্য সীমাবদ্ধ নন শুধুমাত্র আপনি লিনাক্স এবং ম্যাকওএসেও নপকমার্স হোস্ট করতে পারেন। আপনি হয়তো জানেন যে আইআইআস অন্য প্ল্যাটফর্মে সমর্থিত নয় তারপর উইন্ডোতে। সুতরাং, আপনি লিনাক্স সার্ভারে আপনার অ্যাপ্লিকেশন হোস্ট করার জন্য অ্যাপাচি বা এনগিনেক্সের মতো অন্যান্য সরঞ্জাম ব্যবহার করতে পারেন।

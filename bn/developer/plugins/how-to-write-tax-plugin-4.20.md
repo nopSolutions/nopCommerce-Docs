@@ -1,30 +1,30 @@
 ---
-title: How to write a Tax Plugin for nopCommerce 4.20
-uid: en/developer/plugins/how-to-write-tax-plugin-4.20
+title: কিভাবে নপকমার্স ৪.২০ এর জন্য ট্যাক্স প্লাগইন লিখব
+uid: bn/developer/plugins/how-to-write-tax-plugin-4.20
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin, git.cromatido
+contributors: git.AfiaKhanom
 ---
 
-# How to write a Tax Plugin for nopCommerce
+# কিভাবে নপকমার্স এর জন্য ট্যাক্স প্লাগইন লিখব
 
-To extend nopCommerce functionality, plugins are used. There are various types of plugins like "PickupInStore" and "PayPal Standard" which are already contained in the nopCommerce distro. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If you haven't found one, then you are at the right place because this article will guide you through the process of creating plugin, especially tax plugin, according to your need.
+নপকমার্স কার্যকারিতা প্রসারিত করতে, প্লাগইন ব্যবহার করা হয়। "PickupInStore" এবং "PayPal Standard" এর মতো বিভিন্ন ধরণের প্লাগইন রয়েছে যা ইতিমধ্যে নপকমার্স ডিস্ট্রোতে রয়েছে। আপনি [nopCommerce official site](https://www.nopcommerce.com/marketplace) এ বিভিন্ন প্লাগইন সার্চ করে দেখতে পারেন যে কেউ ইতিমধ্যে আপনার প্রয়োজন অনুসারে প্লাগইন তৈরি করেছে কিনা। যদি আপনি একটি খুঁজে না পান, তাহলে আপনি সঠিক জায়গায় আছেন কারণ এই নিবন্ধটি আপনাকে প্লাগইন তৈরির প্রক্রিয়ার মাধ্যমে নির্দেশ করবে, বিশেষ করে ট্যাক্স প্লাগইন, আপনার প্রয়োজন অনুযায়ী।
 
-## The plugin structure, required files, and locations
+## প্লাগইন স্ট্রাকচার, প্রয়োজনীয় ফাইল এবং লোকেশন
 
-1. Start by creating a new "Class Library" project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already resides.
+১. সমাধানের মধ্যে একটি নতুন "Class Library" প্রকল্প তৈরি করে শুরু করুন। আপনার প্লাগইনটি উৎসের মূল ফোল্ডারে অবস্থিত **Plugins** ডিরেক্টরিতে রাখার সুপারিশ করা হয়, যেখানে অন্যান্য প্লাগইন এবং উইজেট ইতিমধ্যেই থাকে।
 
-    ![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
+![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
 
-    > [!NOTE]
-    > Do not get confused this directory with the one which exists in `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugins compiled files.
+> [!NOTE]
+> এই প্রেজেন্টেশনটি `Presentation\Nop.Web` ডিরেক্টরিতে বিদ্যমান একটিকে বিভ্রান্ত করবেন না। Nop.Web ডিরেক্টরিতে প্লাগইন ডিরেক্টরিতে প্লাগইন সংকলিত ফাইল রয়েছে।
 
-    A recommended name for a plugin project is `Nop.Plugin.{Group}.{Name}`. `{Group}` is your plugin group (for example, `Payment` or `Shipping`). `{Name}` is your plugin name (for example, `FixedOrByCountryStateZip`). For example, `FixedOrByCountryStateZip` tax plugin has the following name: `Nop.Plugin.Tax.FixedOrByCountryStateZip`. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyFirstTaxPlugin`. The Plugins directory structure of a solution looks like following.
+একটি প্লাগইন প্রকল্পের জন্য প্রস্তাবিত নাম হল `Nop.Plugin.{Group}.{Name}`. `{Group}` হল আপনার প্লাগইন গ্রুপ (উদাহরণস্বরূপ, `পেমেন্ট` বা `শিপিং`)। `{Name}` আপনার প্লাগইন নাম (উদাহরণস্বরূপ, `FixedOrByCountryStateZip`)। উদাহরণস্বরূপ, `FixedOrByCountryStateZip` ট্যাক্স প্লাগইনটির নিম্নলিখিত নাম রয়েছে: `Nop.Plugin.Tax.FixedOrByCountryStateZip`। কিন্তু দয়া করে মনে রাখবেন যে এটি একটি প্রয়োজনীয়তা নয়। এবং আপনি একটি প্লাগইন জন্য কোন নাম চয়ন করতে পারেন। উদাহরণস্বরূপ, `MyFirstTaxPlugin`। একটি সমাধানের প্লাগইন ডিরেক্টরি কাঠামো নিম্নলিখিত মত দেখাচ্ছে।
 
-    ![image2](_static/how-to-write-a-tax-plugin-4.20/image2.png)
+![image2](_static/how-to-write-a-tax-plugin-4.20/image2.png)
 
-1. Once the plugin project is created, the **.csproj** file content should be updated using any available text editor application. Replace the content with following one:
+২. প্লাগইন প্রজেক্ট তৈরি হয়ে গেলে, **.csproj** ফাইলের বিষয়বস্তু যেকোনো উপলভ্য টেক্সট এডিটর অ্যাপ্লিকেশন ব্যবহার করে আপডেট করা উচিত। নিম্নলিখিত একটি দিয়ে বিষয়বস্তু প্রতিস্থাপন করুন:
 
-    ```xml
+```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -50,43 +50,43 @@ To extend nopCommerce functionality, plugins are used. There are various types o
             <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $    (OutDir)" Targets="NopClear" />
         </Target>
     </Project>
-    ```
+```
 
-    > [!NOTE]
-    > The **PLUGIN_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, `Tax.FixedOrByCountryStateZip`.
+> [!NOTE]
+> **PLUGIN_OUTPUT_DIRECTORY** প্লাগইন নাম দ্বারা প্রতিস্থাপন করা উচিত, উদাহরণস্বরূপ, `Tax.FixedOrByCountryStateZip`।
 
-1. After updating the **.csproj** file, `plugin.json` file should be added which is required for plugin.  This file contains meta information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+৩. **.csproj** ফাইল আপডেট করার পর, `plugin.json` ফাইল যোগ করতে হবে যা প্লাগইন এর জন্য প্রয়োজন। এই ফাইলটিতে আপনার প্লাগইন বর্ণনা করে মেটা তথ্য রয়েছে। শুধু অন্য কোন বিদ্যমান প্লাগইন/উইজেট থেকে এই ফাইলটি অনুলিপি করুন এবং আপনার প্রয়োজনের জন্য এটি পরিবর্তন করুন। `Plugin.json` ফাইল সম্পর্কে তথ্যের জন্য, দয়া করে দেখুন [plugin.json file](xref:en/developer/plugins/plugin_json).
 
-1. The last required step is to create a class which implements `BasePlugin` (`Nop.Core.Plugins` namespace) and `ITaxProvider` interface (`Nop.Services.Tax` namespace). **ITaxProvider** implements `GetTaxRate` method which returns type **CalculateTaxResult** (contains tax rate, errors if any and Boolean success status) based on the custom logic, usually based on the customer address.
+৪. সর্বশেষ প্রয়োজনীয় ধাপ হল একটি ক্লাস তৈরি করা যা `BasePlugin` (`Nop.Core.Plugins` namespace) এবং `ITaxProvider` ইন্টারফেস (`Nop.Services.Tax` namespace) প্রয়োগ করে। **ITaxProvider** `GetTaxRate` পদ্ধতি প্রয়োগ করে যা টাইপ প্রদান করে **CalculateTaxResult** (ট্যাক্স রেট থাকে, ত্রুটি থাকে এবং বুলিয়ান সাফল্যের অবস্থা থাকে) কাস্টম যুক্তির উপর ভিত্তি করে, সাধারণত গ্রাহকের ঠিকানার উপর ভিত্তি করে।
 
-## Handling requests. Controllers, models and views
+## অনুরোধগুলি পরিচালনা। কন্ট্রোলার, মডেল এবং ভিউ
 
-Now you can see the plugin by going to **Admin area** → **Configuration** → **Local Plugins**.
+এখন আপনি প্লাগইন এ গিয়ে দেখতে পারেন **Admin area** → **Configuration** → **Local Plugins**.
 
 ![image4](_static/how-to-write-a-tax-plugin-4.20/image4.png)
 
-When a plugin/widget is installed, you will see **Uninstall** button. It is a good practice that you uninstall plugins/widgets which are not necessary for performance improvement.
+যখন একটি প্লাগইন/উইজেট ইনস্টল করা হয়, আপনি দেখতে পাবেন **Uninstall** বাটন। এটি একটি ভাল অভ্যাস যে আপনি প্লাগইন/উইজেট আনইনস্টল করুন যা কর্মক্ষমতা উন্নতির জন্য প্রয়োজনীয় নয়।
 
 ![image5](_static/how-to-write-a-tax-plugin-4.20/image5.png)
 
-There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled.
+যখন একটি প্লাগইন/উইজেট ইনস্টল করা বা আনইনস্টল করা হয় না তখন **Install** এবং **Delete** বাটন থাকবে।
 
 > [!NOTE]
-> Deleting will remove physical files from the server.
+> ডিলিট করলে সার্ভার থেকে ফিজিক্যাল ফাইল মুছে যাবে।
 
-But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
+কিন্তু আপনি যেমন অনুমান করেছেন আমাদের প্লাগইন কিছুই করে না। এটির কনফিগারেশনের জন্য ইউজার ইন্টারফেসও নেই। প্লাগইন কনফিগার করার জন্য একটি পৃষ্ঠা তৈরি করা যাক।
 
-What we need to do now is create a controller, a model, a view and a view component.
+আমাদের এখন যা করতে হবে তা হল একটি নিয়ামক, একটি মডেল, একটি ভিউ এবং একটি ভিউ কম্পোনেন্ট তৈরি করা।
 
-* MVC controllers are responsible for responding to requests made against an `ASP.NET MVC` website. Each browser request is mapped to a particular controller.
-* A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an `ASP.NET MVC` application.
-* A view component which implements **NopViewComponent** which contains logic and codes to render a view.
-* An MVC model contains all of your application logic that is not contained in a view or a controller.
+* এমভিসি কন্ট্রোলাররা একটি `ASP.NET MVC` ওয়েবসাইটের বিরুদ্ধে করা অনুরোধের সাড়া দেওয়ার জন্য দায়ী। প্রতিটি ব্রাউজারের অনুরোধ একটি নির্দিষ্ট নিয়ামককে ম্যাপ করা হয়।
+* একটি ভিউতে এইচটিএমএল মার্কআপ এবং সামগ্রী রয়েছে যা ব্রাউজারে পাঠানো হয়। একটি ভিউ একটি পৃষ্ঠার সমতুল্য যখন একটি `ASP.NET MVC` অ্যাপ্লিকেশনের সাথে কাজ করে।
+* একটি ভিউ কম্পোনেন্ট যা প্রয়োগ করে **NopViewComponent** যার মধ্যে যুক্তি এবং কোড রয়েছে একটি ভিউ রেন্ডার করার জন্য।
+* একটি এমভিসি মডেলে আপনার সমস্ত অ্যাপ্লিকেশন যুক্তি রয়েছে যা একটি ভিউ বা নিয়ামক নয়।
 
-So let's start:
+সুতরাং শুরু করি:
 
-* **Create the model**. Add a `Models` folder in the new plugin, and then add a new model class which fits your need.
-* **Create the view**. Add a `Views` folder in the new plugin, and then add a `.cshtml` file named `Configure.cshtml`. Set **Build Action** property of the view file is set to **Content**, and the **Copy to Output Directory** property is set to **Copy always**. Note that configuration page should use *_ConfigurePlugin* layout.
+* **Create the model**. নতুন প্লাগিনে একটি `Models` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন মডেল শ্রেণী যোগ করুন যা আপনার প্রয়োজন অনুসারে।
+* **Create the view**. নতুন প্লাগিনে একটি `Views` ফোল্ডার যোগ করুন, এবং তারপর `Configure.cshtml` নামে একটি `.cshtml` ফাইল যোগ করুন। ভিউ ফাইলের **Build Action** প্রপার্টি সেট করুন **Content**, এবং **Copy to Output Directory** প্রোপার্টি **Copy always** সেট করা হয়েছে। মনে রাখবেন যে কনফিগারেশন পৃষ্ঠায় *_ConfigurePlugin* লেআউট ব্যবহার করা উচিত।
 
 ```html
 @model Nop.Plugin.Tax.FixedOrByCountryStateZip.Models.ConfigurationModel
@@ -144,11 +144,11 @@ So let's start:
 @await Html.PartialAsync("~/Plugins/Tax.FixedOrByCountryStateZip/Views/_CountryStateZip.cshtml", Model)
 ```
 
-* Also make sure that you have **_ViewImports.cshtml** file into your `Views` directory. You can just copy it from any other existing plugin or widget.
+* আপনার `Views` ডিরেক্টরিতে **_ ViewImports.cshtml** ফাইল আছে তা নিশ্চিত করুন। আপনি এটি অন্য কোন বিদ্যমান প্লাগইন বা উইজেট থেকে কপি করতে পারেন।
 
 ![image6](_static/how-to-write-a-tax-plugin-4.20/image6.png)
 
-* **Create the controller**. Add a `Controllers` folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers **{Group}{Name}Controller.cs**. For example, `FixedOrByCountryStateZipController`. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it `Configure`. Prepare a model class and pass it to the following view using a physical view path: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**.
+* **Create the controller**. নতুন প্লাগিনে একটি `কন্ট্রোলার` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন কন্ট্রোলার শ্রেণী যোগ করুন। প্লাগইন কন্ট্রোলারদের নাম দেওয়া একটি ভাল অভ্যাস ***{Group}{Name}Controller.cs**। উদাহরণস্বরূপ, `FixedOrByCountryStateZipController`। অবশ্যই এইভাবে নিয়ামকদের নাম দেওয়ার প্রয়োজন নেই (তবে কেবল একটি সুপারিশ)। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম পদ্ধতি তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম রাখি `Configure`। একটি মডেল শ্রেণী প্রস্তুত করুন এবং এটি একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাস করুন: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**।
 
 ```cs
 public IActionResult Configure()
@@ -187,7 +187,7 @@ public IActionResult Configure()
 }
 ```
 
-* Use the following attributes for your action method:
+* আপনার কর্ম পদ্ধতির জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
 
 ```cs
 [AuthorizeAdmin] //confirms access to the admin panel
@@ -195,8 +195,8 @@ public IActionResult Configure()
 [AdminAntiForgery] //Helps prevent malicious scripts from submitting forged page requests.
 ```
 
-For example, open `FixedOrByCountryStateZip` plugin and look at its implementation of `FixedOrByCountryStateZipController`.
-Then for each plugin which has a configuration page you should specify a configuration url. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration url:
+উদাহরণস্বরূপ, `FixedOrByCountryStateZip` প্লাগইনটি খুলুন এবং `FixedOrByCountryStateZipController` এর বাস্তবায়ন দেখুন।
+তারপরে প্রতিটি প্লাগইন যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে তার জন্য আপনাকে একটি কনফিগারেশন ইউআরএল নির্দিষ্ট করতে হবে। `BasePlugin` নামের বেস ক্লাসে `GetConfigurationPageUrl` পদ্ধতি আছে যা একটি কনফিগারেশন ইউআরএল প্রদান করে:
 
 ```cs
 public override string GetConfigurationPageUrl()
@@ -205,13 +205,13 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-Where *{CONTROLLER_NAME}* is a name of your controller and *{ACTION_NAME}* is a name of action (usually it's `Configure`).
+যেখানে *{CONTROLLER_NAME}* আপনার নিয়ামকের একটি নাম এবং *{ACTION_NAME}* হল কর্মের নাম (সাধারণত এটি `Configure`)।
 
-For assigning different tax rate according to the customer address, a new table is required which records all data related to tax. For this purpose, `Domain` folder is added where we add a class which extends **BaseEntity** class. In this case `TaxRate.cs`
+গ্রাহকের ঠিকানা অনুযায়ী বিভিন্ন কর হার নির্ধারণের জন্য, একটি নতুন টেবিল প্রয়োজন যা কর সম্পর্কিত সমস্ত তথ্য রেকর্ড করে। এই উদ্দেশ্যে, `Domain` ফোল্ডার যোগ করা হয় যেখানে আমরা একটি ক্লাস যোগ করি যা **BaseEntity** বর্গকে প্রসারিত করে। এই ক্ষেত্রে `TaxRate.cs`।
 
 ![image7](_static/how-to-write-a-tax-plugin-4.20/image7.png)
 
-Another folder `Data` is also added which consists of Map class(es) and Object Context class(es). Mapping class implements **`NopEntityTypeConfiguration<T>`** (`Nop.Data.Mapping` namespace). Here, the configure method is overridden.
+আরেকটি ফোল্ডার `Data` যোগ করা হয়েছে যা মানচিত্র শ্রেণী (es) এবং অবজেক্ট কনটেক্সট ক্লাস (es) নিয়ে গঠিত। ম্যাপিং ক্লাস প্রয়োগ করে **`NopEntityTypeConfiguration <T>`** (`Nop.Data.Mapping` namespace)। এখানে, কনফিগার পদ্ধতিটি ওভাররাইড করা হয়েছে।
 
 ```cs
 public override void Configure(EntityTypeBuilder<TaxRate> builder)
@@ -223,7 +223,7 @@ public override void Configure(EntityTypeBuilder<TaxRate> builder)
 }
 ```
 
-Object Context class implements **DbContext** class (`Microsoft.EntityFrameworkCore` namespace) and **IDbContext** interface (`Nop.Data` namespace). This `IDbContext` interface consists of methods related to table creation, deletion and other custom actions like executing a raw SQL query according to the model which was previously added in `Domain` folder.
+অবজেক্ট কনটেক্সট ক্লাস **DbContext** ক্লাস (`Microsoft.EntityFrameworkCore` namespace) এবং **IDbContext** ইন্টারফেস (`Nop.Data` namespace) প্রয়োগ করে। এই `IDbContext` ইন্টারফেসটিতে টেবিল তৈরি, মুছে ফেলা এবং অন্যান্য কাস্টম অ্যাকশন সম্পর্কিত পদ্ধতি রয়েছে যেমন মডেল অনুযায়ী কাঁচা SQL ক্যোয়ারী চালানো যা পূর্বে `Domain` ফোল্ডারে যুক্ত করা হয়েছিল।
 
 ```cs
 public class CountryStateZipObjectContext : DbContext, IDbContext
@@ -346,7 +346,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
 }
 ```
 
-For tax rates **CRUD** operation, services are created. In this case, interface **ICountryStateZipService** and class **CountryStateZipService** is created. It contains method like `InsertTaxRate`, `UpdateTaxRate`, `DeleteTaxRate`, `GetAllTaxRates` and `GetTaxRateById`. These method names are self-explanatory and will be consumed by controllers. Other methods can be introduced/added based according to the requirements.
+ট্যাক্স রেটের জন্য **CRUD** অপারেশন, পরিষেবা তৈরি করা হয়। এই ক্ষেত্রে, ইন্টারফেস **ICountryStateZipService** এবং ক্লাস **CountryStateZipService** তৈরি করা হয়েছে। এতে '`InsertTaxRate`, `UpdateTaxRate`, `DeleteTaxRate`, `GetAllTaxRates` এবং `GetTaxRateById` এর মতো পদ্ধতি রয়েছে। এই পদ্ধতির নামগুলি স্ব-ব্যাখ্যামূলক এবং নিয়ন্ত্রকদের দ্বারা সেবন করা হবে। প্রয়োজনীয়তা অনুযায়ী অন্যান্য পদ্ধতি চালু/যোগ করা যেতে পারে।
 
 ### ICountryStateZipService.cs
 
@@ -499,9 +499,9 @@ public partial class CountryStateZipService : ICountryStateZipService
 }
 ```
 
-The last thing, we need is to register the services and configure plugin DB context on application startup. For this, **Infrastructure** folder is added which contains classes – `DependencyRegister` and `PluginDbStartup`.
+শেষ জিনিস, আমাদের প্রয়োজন পরিষেবাগুলি নিবন্ধন করা এবং অ্যাপ্লিকেশন প্রারম্ভে প্লাগইন ডিবি প্রসঙ্গ কনফিগার করা। এর জন্য, **Infrastructure** ফোল্ডার যোগ করা হয়েছে যার মধ্যে ক্লাস রয়েছে – `DependencyRegister` এবং `PluginDbStartup`।
 
-**DependencyRegister** class implements `IDependencyRegister` interface (`Nop.Core.Infrastructure.DependencyManagement` namespace) which has `Register` method.
+**DependencyRegister** ক্লাস প্রয়োগ করে `IDependencyRegister` ইন্টারফেস (`Nop.Core.Infrastructure.DependencyManagement` namespace) যার `Register` পদ্ধতি আছে.
 
 ```cs
 public class DependencyRegistrar : IDependencyRegistrar
@@ -533,7 +533,7 @@ public class DependencyRegistrar : IDependencyRegistrar
 }
 ```
 
-Similarly, **PluginDbStartup** class implements `INopStartup` interface (`Nop.Core.Infrastructure` namespace) which has `ConfigureServices` and `Configure` methods. For this example, object context is added in `ConfigureServices` method.
+একইভাবে, **PluginDbStartup** শ্রেণী `INopStartup` ইন্টারফেস (`Nop.Core.Infrastructure` namespace) প্রয়োগ করে যার `ConfigureServices` এবং `Configure` পদ্ধতি আছে। এই উদাহরণের জন্য, `ConfigureServices` পদ্ধতিতে বস্তুর প্রসঙ্গ যোগ করা হয়েছে।
 
 ```cs
 public class PluginDbStartup : INopStartup
@@ -567,15 +567,15 @@ public class PluginDbStartup : INopStartup
 }
 ```
 
-## Project structure of Tax Plugin
+## ট্যাক্স প্লাগইন এর প্রকল্প কাঠামো
 
 ![image8](_static/how-to-write-a-tax-plugin-4.20/image8.png)
 
-## Handling "Install" and "Uninstall" methods
+## "Install" এবং "Uninstall" পদ্ধতিগুলি পরিচালনা করা
 
-This step is optional. Some plugins can require additional logic during its installation. For example, a plugin can insert new locale resources or add necessary tables or settings values. So open your `BasePlugin` implementation and override the following methods:
+এই পদক্ষেপটি ঐচ্ছিক। কিছু প্লাগইন এর ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি প্লাগইন নতুন লোকেল সম্পদ সন্নিবেশ করতে পারে বা প্রয়োজনীয় টেবিল বা সেটিংস মান যোগ করতে পারে। সুতরাং আপনার `BasePlugin` বাস্তবায়ন খুলুন এবং নিম্নলিখিত পদ্ধতিগুলি ওভাররাইড করুন:
 
-* `Install`. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
+* `Install`. প্লাগইন ইনস্টলেশনের সময় এই পদ্ধতিটি চালু করা হবে। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
 
 ```cs
 public override void Install()
@@ -610,7 +610,7 @@ public override void Install()
 }
 ```
 
-* `Uninstall`. This method will be invoked during plugin uninstallation. You can remove previously initialized settings, locale resources, or database tables by plugin during installation.
+* `Uninstall`. প্লাগইন আনইনস্টল করার সময় এই পদ্ধতিটি চালু করা হবে। আপনি ইনস্টলেশনের সময় প্লাগইন দ্বারা পূর্বে আরম্ভ করা সেটিংস, লোকেল রিসোর্স, বা ডাটাবেস টেবিল অপসারণ করতে পারেন।
 
 ```cs
 public override void Uninstall()
@@ -652,4 +652,4 @@ public override void Uninstall()
 ```
 
 > [!IMPORTANT]
-> If you override one of these methods, do not hide its base implementation -base.Install() and base.Uninstall().
+> আপনি যদি এই পদ্ধতিগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর ভিত্তি বাস্তবায়ন গোপন করবেন না -base.Install() এবং base.Uninstall().

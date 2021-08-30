@@ -1,110 +1,110 @@
 ---
-title: The settings from the appsettings.json file
-uid: en/developer/tutorials/appsettings-json-file
+title: Appsettings.json ফাইল থেকে সেটিংস
+uid: bn/developer/tutorials/appsettings-json-file
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin, git.mariannk
+contributors: git.AfiaKhanom
 ---
 
-# The settings from the appsettings.json file
+# Appsettings.json ফাইল থেকে সেটিংস
 
-## Overview
+## ওভারভিউ
 
-This article contains the description of the `appsettings.json` file. In this article, we will explain what settings are available in this file, what they are used for and how to use these settings to change the functionality/behavior of the nopCommerce project.
-
-> [!NOTE]
->
-> You can also edit this file from the **Configuration → Settings → App settings** page.
+এই নিবন্ধে `appsettings.json` ফাইলের বর্ণনা রয়েছে। এই প্রবন্ধে, আমরা ব্যাখ্যা করব যে এই ফাইলে কোন সেটিংস পাওয়া যায়, সেগুলি কিসের জন্য ব্যবহার করা হয় এবং নপকমার্স প্রকল্পের কার্যকারিতা/আচরণ পরিবর্তন করতে এই সেটিংসগুলি কীভাবে ব্যবহার করা যায়।
 
 > [!NOTE]
 >
-> All settings can be overridden in environment variables.
+> আপনি **Configuration → Settings → App settings** পৃষ্ঠা থেকে এই ফাইলটি সম্পাদনা করতে পারেন।
 
-## The appsettings.json file overview
+> [!NOTE]
+>
+> পরিবেশের ভেরিয়েবলে সমস্ত সেটিংস ওভাররাইড করা যেতে পারে।
 
-If you have worked on `ASP.NET Core` project previously or you are familiar wit `ASP.NET Core` then you might have used the `appsettings.json` file and have some understanding of what this file is and what this file is used for.
+## Appsettings.json ফাইল ওভারভিউ
 
-The `appsettings.json` file is generally used to store the application configuration settings such as database connection strings, any application scope global variables and many other information. Actually in `ASP.NET Core`, the application configuration settings can be stored in different configurations sources such as `appsettings.json` file, `appsettings.{EnvironmentName}.json` file (where the {Environment} is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information) etc.
+আপনি যদি পূর্বে `ASP.NET Core` প্রকল্পে কাজ করে থাকেন অথবা আপনি `ASP.NET Core` এর সাথে পরিচিত হন তাহলে আপনি হয়তো `appsettings.json` ফাইলটি ব্যবহার করেছেন এবং এই ফাইলটি কি এবং এই ফাইলটি সম্পর্কে কিছু ধারণা আছে ব্যবহারের জন্য।
 
-## Settings available in the appsettings.json file
+`Appsettings.json` ফাইলটি সাধারণত অ্যাপ্লিকেশন কনফিগারেশন সেটিংস যেমন ডাটাবেস কানেকশন স্ট্রিং, যেকোনো অ্যাপ্লিকেশন স্কোপ গ্লোবাল ভেরিয়েবল এবং অন্যান্য অনেক তথ্য সংরক্ষণ করতে ব্যবহৃত হয়। প্রকৃতপক্ষে `ASP.NET Core` এ, অ্যাপ্লিকেশন কনফিগারেশন সেটিংস বিভিন্ন কনফিগারেশন উত্স যেমন `appsettings.json` ফাইল, `appsettings.{EnvironmentName}.json` ফাইল (যেখানে {Environment} হল অ্যাপ্লিকেশনের বর্তমান হোস্টিং পরিবেশ যেমন ডেভেলপমেন্ট, স্টেজিং বা প্রোডাকশন),`User Secrets` (যেখানে আমরা সংবেদনশীল তথ্য সংরক্ষণ করতাম) ইত্যাদি।
+
+## Appsettings.json ফাইলে সেটিংস উপলব্ধ
 
 ### CacheConfig
 
-Cache configuration
+ক্যাশ কনফিগারেশন
 
-* **DefaultCacheTime** This setting determines the lifetime of the cached data. The default is 60 minutes.
-* **ShortTermCacheTime** In some cases, it is required to cache data for a shorter period of time than the default. These values apply to caching addresses, generic attributes, customers, etc.
-* **BundledFilesCacheTime** This setting is used when the function of combining css and/or js files into one is activated, to control the cache lifetime for them.
+* **DefaultCacheTime** এই সেটিং ক্যাশেড ডেটার জীবনকাল নির্ধারণ করে। ডিফল্ট 60 মিনিট।
+* **ShortTermCacheTime** কিছু ক্ষেত্রে, ডিফল্টের চেয়ে স্বল্প সময়ের জন্য ডেটা ক্যাশে করা প্রয়োজন। এই মানগুলি ক্যাশিং ঠিকানা, জেনেরিক বৈশিষ্ট্য, গ্রাহক ইত্যাদির ক্ষেত্রে প্রযোজ্য।
+* **BundledFilesCacheTime** এই সেটিংটি ব্যবহার করা হয় যখন css এবং/অথবা js ফাইলগুলিকে একত্রিত করার ফাংশন সক্রিয় করা হয়, তাদের জন্য ক্যাশে আজীবন নিয়ন্ত্রণ করতে।
 
 ### HostingConfig
 
-Hosting contains settings used to configure the hosting behavior. It is a json object and contains some properties settings which can be tweak to change the behavior for hosting.
+হোস্টিংয়ে হোস্টিং আচরণ কনফিগার করার জন্য ব্যবহৃত সেটিংস রয়েছে। এটি একটি জসন বস্তু এবং এতে কিছু বৈশিষ্ট্য সেটিংস রয়েছে যা হোস্টিংয়ের আচরণ পরিবর্তন করার জন্য পরিবর্তন করা যেতে পারে।
 
-* **UseHttpClusterHttps** This setting expects a boolean value. Default value is "**false**", you can set the value to "**true**" if your hosting uses a load balancer. It'll be used to determine whether the current request is HTTPS.
-* **UseHttpXForwardedProto** This setting expects a boolean value. Default value is "**false**", You might want to set the value to "**true**" if your hosting uses load balancer and the if you are enabling the above **`UseHttpClusterHttps`** setting. This setting is used to add **`X-Forwarded-Proto`** in the `HTTP` header. **`X-Forwarded-Proto`** is an HTTP Header and is part of the HTTP standard. It is set on each HTTP request by a proxy or load balancer and can be used by a server application to determine what protocol the client used to connect.
-* **ForwardedHttpHeader** This setting expects a string value. You can use this setting if your hosting doesn't use `"X-FORWARDED-FOR"` header to determine IP address. In some cases server use other HTTP header. You can specify a custom HTTP header here. For example, CF-Connecting-IP, X-FORWARDED-PROTO, etc.
+* **UseHttpClusterHttps** এই সেটিং একটি বুলিয়ান মান আশা করে। ডিফল্ট মান হল "**false**", যদি আপনার হোস্টিং লোড ব্যালেন্সার ব্যবহার করে তবে আপনি মানটি "**true**" এ সেট করতে পারেন। বর্তমান অনুরোধটি এইচটিটিপিএস কিনা তা নির্ধারণ করতে এটি ব্যবহার করা হবে।
+* **UseHttpXForwardedProto** এই সেটিং একটি বুলিয়ান মান আশা করে। ডিফল্ট মান হল "**false**", যদি আপনার হোস্টিং লোড ব্যালেন্সার ব্যবহার করে এবং যদি আপনি উপরের **`UseHttpClusterHttps`** সেটিং সক্ষম করেন তবে আপনি মানটি" "**true**" এ সেট করতে চাইতে পারেন। এই সেটিংটি `HTTP` হেডারে **`X-Forwarded-Proto`** যোগ করতে ব্যবহৃত হয়। **`X-Forwarded-Proto`** একটি এইচটিটিপি হেডার এবং এটি এইচটিটিপি স্ট্যান্ডার্ডের অংশ। এটি একটি প্রক্সি বা লোড ব্যালেন্সার দ্বারা প্রতিটি এইচটিটিপি অনুরোধে সেট করা হয় এবং ক্লায়েন্ট কোন প্রোটোকল সংযোগ করতে ব্যবহার করে তা নির্ধারণ করতে সার্ভার অ্যাপ্লিকেশন দ্বারা ব্যবহার করা যেতে পারে।
+* **ForwardedHttpHeader** এই সেটিং একটি স্ট্রিং মান আশা করে। যদি আপনার হোস্টিং আইপি ঠিকানা নির্ধারণের জন্য "X-FORWARDED-FOR" হেডার ব্যবহার না করে তবে আপনি এই সেটিংটি ব্যবহার করতে পারেন। কিছু ক্ষেত্রে সার্ভার অন্যান্য এইচটিটিপি হেডার ব্যবহার করে। আপনি এখানে একটি কাস্টম এইচটিটিপি হেডার নির্দিষ্ট করতে পারেন। উদাহরণস্বরূপ, CF-Connecting-IP, X-FORWARDED-PROTO, ইত্যাদি।
 
 #### DistributedCacheConfig
 
-A distributed cache is a cache shared by multiple app servers, typically maintained as an external service to the app servers that access it. A distributed cache can improve the performance and scalability of an ASP.NET Core app, especially when the app is hosted by a cloud service or a server farm.
+একটি বিতরণ করা ক্যাশ হল একাধিক অ্যাপ সার্ভার দ্বারা ভাগ করা একটি ক্যাশ, যা সাধারণত অ্যাপ সার্ভারগুলির বাহ্যিক পরিষেবা হিসাবে রক্ষণাবেক্ষণ করা হয় যা এটি অ্যাক্সেস করে। একটি বিতরণ করা ক্যাশে একটি ASP.NET কোর অ্যাপের কর্মক্ষমতা এবং স্কেলেবিলিটি উন্নত করতে পারে, বিশেষ করে যখন অ্যাপটি ক্লাউড সার্ভিস বা সার্ভার ফার্ম দ্বারা হোস্ট করা হয়।
 
-* **DistributedCacheType** You can choose one of the implementations:
-  * **Memory** This is a framework-provided implementation of `IDistributedCache` that stores items in memory. The Distributed Memory Cache isn't an actual distributed cache. Cached items are stored by the app instance on the server where the app is running.
-  * **SQL Server** The Distributed SQL Server Cache implementation allows the distributed cache to use a SQL Server database as its backing store. To create a SQL Server cached item table in a SQL Server instance, you can use the sql-cache tool. The tool creates a table with the name and schema that you specify. It is recommended to use a separate database for this purpose.
+* **DistributedCacheType** আপনি বাস্তবায়নগুলির মধ্যে একটি পছন্দ করতে পারেন:
+  * **Memory** এটি `IDistributedCache` এর একটি কাঠামো-প্রদত্ত বাস্তবায়ন যা মেমরিতে আইটেম সংরক্ষণ করে। বিতরণকৃত মেমরি ক্যাশ একটি প্রকৃত বিতরণ করা ক্যাশ নয়। ক্যাশেড আইটেমগুলি অ্যাপের উদাহরণ দ্বারা সার্ভারে সংরক্ষণ করা হয় যেখানে অ্যাপটি চলছে।
+  * **SQL Server** ডিস্ট্রিবিউটেড এসকিউএল সার্ভার ক্যাশে বাস্তবায়ন বিতরণ করা ক্যাশক একটি এসকিউএল সার্ভার ডাটাবেসকে তার ব্যাকিং স্টোর হিসেবে ব্যবহার করতে দেয়। একটি এসকিউএল সার্ভার উদাহরণে একটি এসকিউএল সার্ভার ক্যাশেড আইটেম টেবিল তৈরি করতে, আপনি এসকিউএল-ক্যাশ টুল ব্যবহার করতে পারেন। টুলটি আপনার নির্দিষ্ট করা নাম এবং স্কিমা সহ একটি টেবিল তৈরি করে। এই উদ্দেশ্যে একটি পৃথক ডাটাবেস ব্যবহার করার সুপারিশ করা হয়।
   
   ```sh
   dotnet sql-cache create "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DistCache;Integrated Security=True;" dbo nopCache
   ```
 
-  * **Redis** nopCommerce supports *Redis* out of the box. In order to enable the `Redis` in our application we must set appropriate value for the following settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
-* **Enabled** This setting expects a boolean value. Set the value to **"true"** if you want to enable `Distributed cache`. The system uses a In-Memory caching, so this setting is used to indicating whether we should use `Distributed Cache` for caching, instead of default `in-memory caching`. So, use this setting if you want to use for example `Redis` for caching.
-* **ConnectionString (optional)** This setting is only used in conjunction with `Redis` or `SQL Server`. This setting expects a string value. Default value for this setting is `127.0.0.1:{PORT},ssl=False`.
-* **SchemaName (optional)** This setting is only used in conjunction with `SQL Server`.
-* **TableName (optional)** This setting is only used in conjunction with `SQL Server`. SQL Server database name.
+  * **Redis** নপকমার্স বক্সের বাইরে *Redis* সমর্থন করে। আমাদের অ্যাপ্লিকেশনে `রেডিস 'সক্ষম করার জন্য আমাদের অবশ্যই নিম্নলিখিত সেটিংসের জন্য উপযুক্ত মান নির্ধারণ করতে হবে। সম্পর্কে আরও তথ্যের জন্য [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
+* **Enabled** এই সেটিং একটি বুলিয়ান মান আশা করে। যদি আপনি `Distributed cache` সক্ষম করতে চান তবে মানটি **"true"** এ সেট করুন। সিস্টেমটি ইন-মেমরি ক্যাশিং ব্যবহার করে, তাই এই সেটিংটি ডিফল্ট `in-memory caching`-এর পরিবর্তে ক্যাশিংয়ের জন্য `Distributed Cache` ব্যবহার করা উচিত কিনা তা নির্দেশ করতে ব্যবহৃত হয়। সুতরাং, যদি আপনি ক্যাশিংয়ের জন্য উদাহরণস্বরূপ `Redis` ব্যবহার করতে চান তবে এই সেটিংটি ব্যবহার করুন।
+* **ConnectionString (optional)** এই সেটিংটি শুধুমাত্র `Redis` বা `SQL Server` এর সাথে ব্যবহার করা হয়। এই সেটিং একটি স্ট্রিং মান আশা করে। এই সেটিং এর জন্য ডিফল্ট মান হল `127.0.0.1:{PORT},ssl=False`।
+* **SchemaName (optional)** এই সেটিংটি শুধুমাত্র এর সাথে ব্যবহার করা হয় `SQL Server`।
+* **TableName (optional)** এই সেটিংটি শুধুমাত্র এর সাথে ব্যবহার করা হয় `SQL Server`। এসকিউএল সার্ভার ডাটাবেসের নাম।
 
 ### AzureBlobConfig
 
-We can use `Azure Blob Storage` to store blob data. nopCommerce already have feature integrated for that, we just need to set the following information correctly in order to use/enable this feature. Values for these setting can be obtained for Azure while you create the storage account.
+ব্লব ডেটা সংরক্ষণের জন্য আমরা `Azure Blob Storage` ব্যবহার করতে পারি। nopCommerce এর জন্য ইতিমধ্যে ফিচার ইন্টিগ্রেটেড আছে, এই ফিচারটি ব্যবহার/সক্ষম করার জন্য আমাদের শুধু নিম্নলিখিত তথ্যগুলো সঠিকভাবে সেট করতে হবে। আপনি স্টোরেজ অ্যাকাউন্ট তৈরি করার সময় এই সেটিং এর মান আজুর এর জন্য পাওয়া যাবে।
 
-* **ConnectionString** This setting expects a string value. Here you need to add your `AzureBlobStorage` connection string
-* **ContainerName** Value for this setting is also of type string. In this setting we set the container name for Azure BLOB storage.
-* **EndPoint** This setting also expects a string value. Here we need to set the end point for Azure BLOB storage.
-* **AppendContainerName** This setting expects a boolean value. Set the value to "**true**" or "**false**" on the basis of whether the Container Name is appended to the `EndPoint` when constructing the url.
-* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to "**true** if you want to  use the Windows Azure BLOB storage for Data Protection Keys.
-* **DataProtectionKeysContainerName** This  setting expects a string value. Here you need to set up a Azure  container name for storing Data Prtection Keys (this container  should be separate from the container used for media and should be  Private)
-* **DataProtectionKeysVaultId (optional)** This setting also expects a string value. Set the Azure key vault ID if  you need to encrypt the Data Protection Keys
+* **ConnectionString** এই সেটিং একটি স্ট্রিং মান আশা করে। এখানে আপনাকে আপনার `AzureBlobStorage` সংযোগ স্ট্রিং যোগ করতে হবে
+* **ContainerName** এই সেটিং এর মানও স্ট্রিং টাইপ। এই সেটিংয়ে আমরা আজুর ব্লব স্টোরেজের জন্য কন্টেইনারের নাম সেট করেছি।
+* **EndPoint** এই সেটিংটি একটি স্ট্রিং মান আশা করে। এখানে আমাদের আজুর ব্লব স্টোরেজের জন্য এন্ড পয়েন্ট সেট করতে হবে।
+* **AppendContainerName** এই সেটিং একটি বুলিয়ান মান আশা করে। ইউআরএল তৈরির সময় কন্টেইনারের নাম `EndPoint` -এর সাথে যুক্ত হয় কিনা তার ভিত্তিতে মানটি "**true**" বা "**false**" এ সেট করুন।
+* **StoreDataProtectionKeys** এই সেটিং একটি বুলিয়ান মান আশা করে। যদি আপনি ডেটা সুরক্ষা কীগুলির জন্য উইন্ডোজ আজুর ব্লব স্টোরেজ ব্যবহার করতে চান তবে মানটি "**true**" এ সেট করুন।
+* **DataProtectionKeysContainerName** এই সেটিং একটি স্ট্রিং মান আশা করে। এখানে আপনাকে ডেটা প্রটেকশন কী সংরক্ষণের জন্য একটি আজুর ধারক নাম সেট করতে হবে (এই ধারকটি মিডিয়ার জন্য ব্যবহৃত পাত্রে থেকে পৃথক হওয়া উচিত এবং ব্যক্তিগত হওয়া উচিত)
+* **DataProtectionKeysVaultId (optional)** এই সেটিংটি একটি স্ট্রিং মান আশা করে। যদি আপনার ডেটা সুরক্ষা কীগুলি এনক্রিপ্ট করার প্রয়োজন হয় তবে আজুর কী ভল্ট আইডি সেট করুন
 
 ### InstallationConfig
 
-It contains settings that used to configure the behavior of nopCommerce during the nopCommerce installation.
+এটি এমন সেটিংস রয়েছে যা নপকমার্স ইনস্টলেশনের সময় নপকমার্স এর আচরণ কনফিগার করতে ব্যবহৃত হয়।
 
-* **DisableSampleData** This setting expects a boolean value. This setting indicating whether a store owner can install sample data during installation. If you don't want store owner to install sample data during installation then just set the value for this setting to "**true**".
-* **DisabledPlugins** This setting expects a string value. Specify a list of plugins (comma separated) ignored during installation.
-* **InstallRegionalResources** This setting enables the selection of additional language resources during installation. The choice of the country determines the settings that will be applied to the store (exchange rates, taxes, units of measurement, etc. regional features).
+* **DisableSampleData** এই সেটিং একটি বুলিয়ান মান আশা করে। এই সেটিংটি নির্দেশ করে যে কোনও দোকানের মালিক ইনস্টলেশনের সময় নমুনা ডেটা ইনস্টল করতে পারে কিনা। যদি আপনি চান না যে দোকানের মালিক ইনস্টলেশনের সময় নমুনা ডেটা ইনস্টল করতে চান তবে এই সেটিংটির মানটি "**true**" এ সেট করুন।
+* **DisabledPlugins** এই সেটিং একটি স্ট্রিং মান আশা করে। ইনস্টলেশনের সময় উপেক্ষা করা প্লাগইনগুলির একটি তালিকা (কমা দ্বারা পৃথক) উল্লেখ করুন।
+* **InstallRegionalResources** এই সেটিংটি ইনস্টলেশনের সময় অতিরিক্ত ভাষা সংস্থান নির্বাচন করতে সক্ষম করে। দেশের পছন্দটি সেটিংস নির্ধারণ করে যা দোকানে প্রয়োগ করা হবে (বিনিময় হার, কর, পরিমাপের ইউনিট ইত্যাদি আঞ্চলিক বৈশিষ্ট্য)।
 
 #### PluginConfig
 
-* **ClearPluginShadowDirectoryOnStartup** This setting expects a boolean value. Set it to "true" if you want to clear the `/Plugins/bin` directory during application startup.
-* **CopyLockedPluginAssembilesToSubdirectoriesOnStartup** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy "locked" assemblies from `/Plugins/bin` directory to temporary subdirectories during application startup.
-* **UseUnsafeLoadAssembly** This setting expects a boolean value. You might want to set the value to "**true**" if you want to load an assembly into the load-from context, bypassing some security checks.
-* **UsePluginsShadowCopy** This setting expects a boolean value. You might want to set the value to "**true**" if you want to copy plugins library to the `/Plugins/bin` directory on application startup.
+* **ClearPluginShadowDirectoryOnStartup** এই সেটিং একটি বুলিয়ান মান আশা করে। অ্যাপ্লিকেশন স্টার্টআপের সময় যদি আপনি `/Plugins/bin` ডিরেক্টরিটি সাফ করতে চান তবে এটিকে "true" এ সেট করুন।
+* **CopyLockedPluginAssembilesToSubdirectoriesOnStartup** এই সেটিং একটি বুলিয়ান মান আশা করে। আপনি অ্যাপ্লিকেশন স্টার্টআপ চলাকালীন `/Plugins/bin` ডিরেক্টরি থেকে অস্থায়ী সাবডাইরেক্টরিতে 'locked' অ্যাসেম্বলিগুলি অনুলিপি করতে চাইলে মানটি "**true**" এ সেট করতে চাইতে পারেন।
+* **UseUnsafeLoadAssembly** এই সেটিং একটি বুলিয়ান মান আশা করে। আপনি যদি কিছু নিরাপত্তা চেক এড়িয়ে, লোড-ফ্রম প্রসঙ্গে একটি সমাবেশ লোড করতে চান তাহলে আপনি "**true**" মান সেট করতে চাইতে পারেন।
+* **UsePluginsShadowCopy** এই সেটিং একটি বুলিয়ান মান আশা করে। আপনি যদি অ্যাপ্লিকেশন স্টার্টআপের `/Plugins/bin` ডিরেক্টরিতে প্লাগইন লাইব্রেরি অনুলিপি করতে চান তবে আপনি "**true**" এ মান সেট করতে চাইতে পারেন।
 
 ### CommonConfig
 
-*CommonConfig* contains settings used to configure the behavior of nopCommerce itself. It is a json object and contains some properties settings which can be tweak to change the behavior of nopCommerce.
+*CommonConfig* নপকমার্স এর আচরণ কনফিগার করতে ব্যবহৃত সেটিংস ধারণ করে। এটি একটি জসন বস্তু এবং এতে কিছু বৈশিষ্ট্য সেটিংস রয়েছে যা নপকমার্স এর আচরণ পরিবর্তন করার জন্য পরিবর্তন করা যেতে পারে।
 
-* **DisplayFullErrorStack** This setting expects a boolean value. Default value is **"false"**. You can set the value to "**true**" if you want to see the full error in the production environment. Which is not what we usually suggest. But if you have a good reason to show full error during production environment then you can do it from this setting. For the development environment this setting is ignored and whatever the value you set for this setting full error will be shown. We can say that this setting is always enabled for development environment.
-* **UserAgentStringsPath** This setting stores the loction/path for `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
+* **DisplayFullErrorStack** এই সেটিং একটি বুলিয়ান মান আশা করে। ডিফল্ট মান হল **"false"**। যদি আপনি উত্পাদন পরিবেশে সম্পূর্ণ ত্রুটি দেখতে চান তবে আপনি মানটি "**true**" এ সেট করতে পারেন। যা আমরা সাধারণত প্রস্তাব করি না। কিন্তু যদি আপনার উত্পাদন পরিবেশের সময় সম্পূর্ণ ত্রুটি দেখানোর একটি ভাল কারণ থাকে তবে আপনি এই সেটিং থেকে এটি করতে পারেন। ডেভেলপমেন্ট এনভায়রনমেন্টের জন্য এই সেটিং উপেক্ষা করা হয় এবং এই সেটিং এর জন্য আপনি যে মান সেট করেন না কেন সম্পূর্ণ ত্রুটি দেখানো হবে। আমরা বলতে পারি যে এই পরিবেশ সবসময় উন্নয়ন পরিবেশের জন্য সক্ষম।
+* **UserAgentStringsPath** এই সেটিংটি `Browscap.xml` ফাইলের জন্য লকশন/পাথ সংরক্ষণ করে, ফাইলের নাম নির্দেশ করে, `Browscap.xml` একটি ব্রাউজার ক্ষমতা ডেটাবেস। এটি মূলত সমস্ত পরিচিত ব্রাউজার এবং বটগুলির একটি তালিকা, তাদের ডিফল্ট ক্ষমতা এবং সীমাবদ্ধতার সাথে।
     >[!NOTE]
-    > In computing, a user agent is software (a software agent) that is acting on behalf of a user, such as a web browser that "retrieves, renders and facilitates end user interaction with Web content". For more information please visit [UserAgent](https://en.wikipedia.org/wiki/User_agent).
-* **CrawlerOnlyUserAgentStringsPath** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly"
-* **UseSessionStateTempDataProvider** This setting expects a boolean value. Default value for this setting is "**false**". You might want to set the value to "**true**" if you want to store `TempData` in the session state. By default the cookie-based `TempData` provider is used to store `TempData` in cookies.
-* **MiniProfilerEnabled** This setting activates the *MiniProfiler* performance appraisal tool
-* **ScheduleTaskRunTimeout** allows you to set up a running schedule task timeout in milliseconds. Set null to use a default value.
-* **StaticFilesCacheControl** specifies the value of the 'Cache-Control' header for static content (in seconds).
+    > কম্পিউটিংয়ে, একটি ব্যবহারকারী এজেন্ট হল সফ্টওয়্যার (একটি সফটওয়্যার এজেন্ট) যা ব্যবহারকারীর পক্ষে কাজ করে, যেমন একটি ওয়েব ব্রাউজার যা "ওয়েব সামগ্রীর সাথে শেষ ব্যবহারকারীর মিথস্ক্রিয়া পুনরুদ্ধার, রেন্ডার এবং সহজতর করে"। আরো তথ্যের জন্য অনুগ্রহ করে পরিদর্শন করুন [UserAgent](https://en.wikipedia.org/wiki/User_agent).
+* **CrawlerOnlyUserAgentStringsPath** এই সেটিংটি অবস্থান/পথ সংরক্ষণ করে `browscap.crawlersonly.xml`। এটি শুধুমাত্র "CrawlerOnly" এর জন্য ব্যবহারকারী এজেন্ট সংরক্ষণ করে।
+* **UseSessionStateTempDataProvider** এই সেটিং একটি বুলিয়ান মান আশা করে। এই সেটিং এর জন্য ডিফল্ট মান হল "**false**"। আপনি যদি সেশন স্টেটে `TempData` সঞ্চয় করতে চান তাহলে আপনি "**true**" মান সেট করতে চাইতে পারেন। ডিফল্টরূপে কুকি-ভিত্তিক `TempData` প্রদানকারী কুকিতে `TempData` সংরক্ষণ করতে ব্যবহৃত হয়।
+* **MiniProfilerEnabled** এই সেটিং *MiniProfiler* কর্মক্ষমতা মূল্যায়ন টুল সক্রিয় করে।
+* **ScheduleTaskRunTimeout** আপনি মিলিসেকেন্ডে একটি চলমান সময়সূচী টাস্ক সময়সীমা সেট আপ করতে পারবেন। একটি ডিফল্ট মান ব্যবহার করতে শূন্য সেট করুন।
+* **StaticFilesCacheControl** স্ট্যাটিক কন্টেন্ট (সেকেন্ডে) এর জন্য 'ক্যাশ-কন্ট্রোল' হেডারের মান নির্দিষ্ট করে।
 
-  ```powershell
+```powershell
   public,max-age=31536000
-  ```
+```
 
-* **SupportPreviousNopcommerceVersions** setting specifies the value indicating whether we should support previous nopCommerce versions. In this case, old URLs, from previous nopCommerce versions, will redirect to new ones. Enable it only if you upgraded from one of the previous nopCommerce versions.
-* **PluginStaticFileExtensionsBlacklist** Specify the blacklist of the static file extensions for plugin directories.
+* **SupportPreviousNopcommerceVersions** সেটিং মান উল্লেখ করে যে আমাদের পূর্ববর্তী নপকমার্স সংস্করণ সমর্থন করা উচিত কিনা। এই ক্ষেত্রে, পূর্ববর্তী নপকমার্স সংস্করণ থেকে পুরানো ইউআরএল গুলি নতুনগুলিতে পুননির্দেশিত হবে। আপনি যদি পূর্ববর্তী নপকমার্স সংস্করণগুলির একটি থেকে আপগ্রেড করেন তবেই এটি সক্ষম করুন।
+* **PluginStaticFileExtensionsBlacklist** প্লাগইন ডিরেক্টরিগুলির জন্য স্ট্যাটিক ফাইল এক্সটেনশনের কালো তালিকা নির্দিষ্ট করুন।
