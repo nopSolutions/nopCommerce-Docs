@@ -1,108 +1,108 @@
 ---
-title: Specification attributes
-uid: en/running-your-store/catalog/products/specification-attributes
+title: স্পেসিফিকেশন বৈশিষ্ট্য
+uid: bn/running-your-store/catalog/products/specification-attributes
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Specification attributes
+# স্পেসিফিকেশন বৈশিষ্ট্য
 
-Specification attributes are similar to [product attributes](xref:en/running-your-store/catalog/products/product-attributes), however, they are only used for information purposes (visible on the product details page) and for filtering products on the category details page. They don't define a product price as well as can't be used for the inventory tracking.
+স্পেসিফিকেশন অ্যাট্রিবিউটগুলি [প্রোডাক্ট অ্যাট্রিবিউটস](xref:bn/running-your-store/catalog/products/product-attributes) এর অনুরূপ, তবে সেগুলি শুধুমাত্র তথ্যের উদ্দেশ্যে (পণ্যের বিবরণ পৃষ্ঠায় দৃশ্যমান) এবং পণ্য ফিল্টার করার জন্য ব্যবহৃত হয় বিভাগ বিবরণ পৃষ্ঠায়। তারা একটি পণ্যের মূল্য নির্ধারণ করে না এবং সেই সাথে ইনভেন্টরি ট্র্যাকিংয়ের জন্য ব্যবহার করা যায় না।
 
-## Example
+## উদাহরণ
 
-Let's say you are running an online computer store. What helps a customer to make a decision?
+ধরা যাক আপনি একটি অনলাইন কম্পিউটার স্টোর চালাচ্ছেন। কোন গ্রাহককে সিদ্ধান্ত নিতে সাহায্য করে?
 
-- Provide a customer full and descriptive information about your products. Despite you fill the short and full description of the certain computer, allow the customer to see the product's characteristic where reflected it's most important details:
+- আপনার পণ্য সম্পর্কে একজন গ্রাহককে পূর্ণ এবং বর্ণনামূলক তথ্য প্রদান করুন। আপনি নির্দিষ্ট কম্পিউটারের সংক্ষিপ্ত এবং সম্পূর্ণ বিবরণ পূরণ করলেও, গ্রাহককে পণ্যের বৈশিষ্ট্য দেখতে দিন যেখানে এটি সবচেয়ে গুরুত্বপূর্ণ বিবরণ প্রতিফলিত করে:
 
-  ![Specification attributes](_static/specification-attributes/specs.jpg)
+  ![স্পেসিফিকেশন বৈশিষ্ট্য](_static/specification-attributes/specs.jpg)
 
-  This table can be displayed on the product details page if you select the **Show on product page** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes).
+  এই টেবিলটি পণ্যের বিবরণ পৃষ্ঠায় প্রদর্শিত হতে পারে যদি আপনি যদি পণ্যের পৃষ্ঠায় দেখান ক্ষেত্রটি নির্বাচন করেন যখন [একটি পণ্যের একটি স্পেসিফিকেশন বৈশিষ্ট্য যুক্ত করে](xref:bn/running-your-store/catalog/products/add-products#specification-attributes)।
 
-- Allow your customers to search computers using the filter functionality. Let's say we can search in your store by CPU type and memory. Then the category page will look the following way:
+- আপনার গ্রাহকদের ফিল্টার কার্যকারিতা ব্যবহার করে কম্পিউটার অনুসন্ধান করার অনুমতি দিন। ধরা যাক আমরা আপনার দোকানে সিপিইউ টাইপ এবং মেমরি দ্বারা অনুসন্ধান করতে পারি। তারপর ক্যাটাগরি পেজটি নিচের মত দেখাবে:
 
-  ![Filtering](_static/specification-attributes/filter.jpg)
+  ![ফিল্টারিং](_static/specification-attributes/filter.jpg)
 
-  Select the **Allow filtering** field when [adding a specification attribute to a product](xref:en/running-your-store/catalog/products/add-products#specification-attributes) to allow filtering by this attribute for the certain product.
+এই বৈশিষ্ট্যের দ্বারা ফিল্টার করার অনুমতি দেওয়ার জন্য **ফিল্টার করার অনুমতি দিন** ক্ষেত্রটি নির্বাচন করুন যখন [একটি পণ্যে একটি স্পেসিফিকেশন অ্যাট্রিবিউট যুক্ত করা হচ্ছে](xref:bn/running-your-store/catalog/products/add-products#specification-attributes) নির্দিষ্ট পণ্য।
 
-- Include the "Compare products" functionality in your store. This feature is also uses specification attributes. For your computer store the "Compare products" page will look the following way:
+- আপনার দোকানে "পণ্য তুলনা করুন" কার্যকারিতা অন্তর্ভুক্ত করুন। এই বৈশিষ্ট্যটি স্পেসিফিকেশন বৈশিষ্ট্যগুলিও ব্যবহার করে। আপনার কম্পিউটারের দোকানের জন্য "পণ্যগুলির তুলনা করুন" পৃষ্ঠাটি নিম্নরূপ দেখাবে:
   
-  ![Compare products](_static/specification-attributes/compare.jpg)
+  ![পন্যের তুলনা করা](_static/specification-attributes/compare.jpg)
 
-  To enable the "Compare products" functionality go to **Configuration → Settings → Catalog settings**. In the *Compare products* panel tick the **'Compare products' enabled** checkbox.
+  "পণ্যগুলির তুলনা করুন" কার্যকারিতা সক্ষম করতে **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস** এ যান। *পণ্যগুলির তুলনা করুন* প্যানেলে **'পণ্যগুলির তুলনা করুন' সক্ষম** চেকবক্সে টিক দিন।
 
-The next section describes how to create specification attributes. Note that after creating a list of specification attributes you will need to add the specification attributes to the products one by one. Learn how add specification attributes to products in the [Add products - Specification attributes](xref:en/running-your-store/catalog/products/add-products#specification-attributes) section.
+পরবর্তী বিভাগ বর্ণনা করে কিভাবে স্পেসিফিকেশন অ্যাট্রিবিউট তৈরি করা যায়। লক্ষ্য করুন যে স্পেসিফিকেশন বৈশিষ্ট্যগুলির একটি তালিকা তৈরি করার পরে আপনাকে একের পর এক পণ্যগুলিতে স্পেসিফিকেশন বৈশিষ্ট্য যুক্ত করতে হবে। [প্রোডাক্ট-স্পেসিফিকেশন অ্যাট্রিবিউটস](xref:bn/running-your-store/catalog/products/add-products#specification-attributes) বিভাগে পণ্যগুলিতে স্পেসিফিকেশন অ্যাট্রিবিউট কিভাবে যোগ করবেন তা জানুন।
 
-## Create a specification attribute group
-
-> [!NOTE]
->
-> All specification attributes which don't belong to any group are under the *Default group (non-grouped specification attributes)*.
-
-To see and edit a list of specification attributes and their groups, go to **Catalog → Attributes → Specification attributes**.
-
-![Specification attributes](_static/specification-attributes/specification_attributes.jpg)
-
-Click **Add group** to add a new group. The *Add a new specification attribute group* window is displayed, as follows:
-
-![Add group](_static/specification-attributes/specification_group.jpg)
-
-In the *Attribute group info* panel, enter:
-
-- The **Name** of the specification attribute group.
-- The **Display order** number.
-
-Then save the changes.
-
-## Create a specification attribute
+## একটি স্পেসিফিকেশন অ্যাট্রিবিউট গ্রুপ তৈরি করুন
 
 > [!NOTE]
 >
-> By default, there are no specification attributes pre-created in nopCommerce.
+> সমস্ত স্পেসিফিকেশন বৈশিষ্ট্য যা কোনো গ্রুপের অন্তর্গত নয় *ডিফল্ট গ্রুপ (নন-গ্রুপেড স্পেসিফিকেশন অ্যাট্রিবিউট)* এর অধীনে।
 
-To see and edit a list of specification attributes, go to **Catalog → Attributes → Specification attributes**.
+স্পেসিফিকেশন অ্যাট্রিবিউট এবং তাদের গ্রুপগুলির একটি তালিকা দেখতে এবং এডিট করতে, **ক্যাটালগ → অ্যাট্রিবিউটস → স্পেসিফিকেশন অ্যাট্রিবিউট** এ যান।
 
-![Specification attributes](_static/specification-attributes/specification_attributes.jpg)
+![স্পেসিফিকেশন বৈশিষ্ট্য](_static/specification-attributes/specification_attributes.jpg)
 
-On this page you can delete specification attributes by selecting them and then clicking the **Delete(selected)** button.
+একটি নতুন গ্রুপ যোগ করতে **গ্রুপ যোগ করুন** ক্লিক করুন। *একটি নতুন স্পেসিফিকেশন অ্যাট্রিবিউট গ্রুপ যুক্ত করুন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-Click **Add attribute** to add a new attribute. The *Add a new specification attribute* window is displayed, as follows:
+![গ্রুপ যোগ করুন](_static/specification-attributes/specification_group.jpg)
 
-![Add new](_static/specification-attributes/new-attribute.jpg)
+*অ্যাট্রিবিউট গ্রুপ তথ্য* প্যানেলে প্রবেশ করুন:
 
-In the *Attribute info* panel, enter:
+- স্পেসিফিকেশন অ্যাট্রিবিউট গ্রুপের **নাম**।
+- **ডিসপ্লে অর্ডার** নম্বর।
 
-- The **Name** of the specification attribute.
-- The **Display order** number.
+তারপর পরিবর্তনগুলি সংরক্ষণ করুন।
 
-Click **Save and continue edit** to proceed to the *Options* editing panel.
+## একটি স্পেসিফিকেশন অ্যাট্রিবিউট তৈরি করুন
 
-### Add a new option
+> [!NOTE]
+>
+> ডিফল্টরূপে, নপকমার্স-এ পূর্বনির্ধারিত কোন স্পেসিফিকেশন বৈশিষ্ট্য নেই।
 
-Click the **Add a new option** button in the *Options* panel to create a new specification attribute option. The *Add a new option* window will be displayed, as follows:
+স্পেসিফিকেশন বৈশিষ্ট্যগুলির একটি তালিকা দেখতে এবং সম্পাদনা করতে, **ক্যাটালগ → বৈশিষ্ট্য → স্পেসিফিকেশন বৈশিষ্ট্য** এ যান।
 
-![Add a new option](_static/specification-attributes/add_a_new_option.jpg)
+![স্পেসিফিকেশন বৈশিষ্ট্যগুলির](_static/specification-attributes/specification_attributes.jpg)
 
-Define the following option settings:
+এই পৃষ্ঠায় আপনি স্পেসিফিকেশন অ্যাট্রিবিউটগুলি নির্বাচন করে মুছে ফেলতে পারেন এবং তারপর **মুছে ফেলুন (নির্বাচিত)** বাটনে ক্লিক করুন।
 
-- The **Name** of the specification attribute option.
-- Tick the **Specify color** checkbox to choose color to be used instead of an option text name (it'll be displayed as a "color square").
-  - Choose the **RGB color** which will be displayed to customers.
-- The **Display order** number.
+একটি নতুন অ্যাট্রিবিউট যোগ করতে ** অ্যাড অ্যাট্রিবিউট যোগ করুন। *একটি নতুন স্পেসিফিকেশন বৈশিষ্ট্য যুক্ত করুন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-Click **Save** to save the option details.
+![নতুন যোগ করুন](_static/specification-attributes/new-attribute.jpg)
 
-The following screenshot shows the already added options:
-![Options](_static/specification-attributes/options.jpg)
+*বৈশিষ্ট্য তথ্য* প্যানেলে প্রবেশ করুন:
 
-### Used by products
+- স্পেসিফিকেশন বৈশিষ্ট্যের **নাম**।
+- **ডিসপ্লে অর্ডার** নম্বর।
 
-If you applied the specification attribute to products you can see the list of these products in the *Used by products* panel:
+**বিকল্পগুলি সম্পাদনা প্যানেলে এগিয়ে যেতে** সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান ক্লিক করুন।
 
-![Used by products](_static/specification-attributes/used-by.jpg)
+### একটি নতুন বিকল্প যোগ করুন
 
-## See also
+একটি নতুন স্পেসিফিকেশন অ্যাট্রিবিউট বিকল্প তৈরি করতে *বিকল্প* প্যানেলে **একটি নতুন বিকল্প যোগ করুন** বাটনে ক্লিক করুন। *একটি নতুন বিকল্প যুক্ত করুন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Product attributes](xref:en/running-your-store/catalog/products/product-attributes)
-- [YouTube tutorial: Managing Specification Attributes](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+![একটি নতুন বিকল্প যোগ করুন](_static/specification-attributes/add_a_new_option.jpg)
+
+নিম্নলিখিত বিকল্প সেটিংস সংজ্ঞায়িত করুন:
+
+- স্পেসিফিকেশন অ্যাট্রিবিউট বিকল্পের **নাম**।
+- বিকল্প টেক্সট নামের পরিবর্তে ব্যবহারযোগ্য রং চয়ন করতে **রং নির্দিষ্ট করুন** চেকবক্সে টিক দিন (এটি "রঙের বর্গ" হিসাবে প্রদর্শিত হবে)।
+  - **আরজিবি রং** বেছে নিন যা গ্রাহকদের কাছে প্রদর্শিত হবে।
+- **ডিসপ্লে অর্ডা** নম্বর।
+
+বিকল্পের বিবরণ সংরক্ষণ করতে **সংরক্ষণ করুন** ক্লিক করুন।
+
+নিম্নলিখিত স্ক্রিনশটটি ইতিমধ্যে যোগ করা বিকল্পগুলি দেখায়:
+![বিকল্প](_static/specification-attributes/options.jpg)
+
+### পণ্য দ্বারা ব্যবহৃত
+
+আপনি যদি পণ্যের স্পেসিফিকেশন অ্যাট্রিবিউট প্রয়োগ করেন তবে আপনি এই পণ্যগুলির তালিকা *পণ্য দ্বারা ব্যবহৃত* প্যানেলে দেখতে পারেন:
+
+![পণ্য দ্বারা ব্যবহৃত](_static/specification-attributes/used-by.jpg)
+
+## আরো দেখুন
+
+-[পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+-[পণ্যের বৈশিষ্ট্য](xref:bn/running-your-store/catalog/products/product-attributes)
+- [ইউটিউব টিউটোরিয়াল: ম্যানেজিং স্পেসিফিকেশন অ্যাট্রিবিউটস](https://www.youtube.com/watch?v=YmD_vHqWzQw&index=11&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

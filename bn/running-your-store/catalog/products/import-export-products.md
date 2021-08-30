@@ -1,58 +1,58 @@
 ---
-title: Import/export products
-uid: en/running-your-store/catalog/products/import-export-products
+title: পণ্য আমদানি/রপ্তানি
+uid: bn/running-your-store/catalog/products/import-export-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Import/export products
+# পণ্য আমদানি/রপ্তানি
 
-nopCommerce supports importing from Excel format and exporting products in XML or Excel. You can download products from your catalog in PDF.
-You can find these options in **Catalog → Products** at the main page top left.
+নপকমার্স-এ এক্সেল ফরম্যাট থেকে আমদানি এবং এক্সএমএল বা এক্সেলে পণ্য রপ্তানি সমর্থন করে। আপনি পিডিএফ এ আপনার ক্যাটালগ থেকে পণ্য ডাউনলোড করতে পারেন।
+আপনি এই বিকল্পগুলি খুঁজে পেতে পারেন **ক্যাটালগ → পণ্য** বাম দিকে প্রধান পৃষ্ঠায়।
 
-![Products](_static/import-export-products/buttons.jpg)
+![পণ্য](_static/import-export-products/buttons.jpg)
 
-## Exporting products
+## পণ্য রপ্তানি
 
- You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. 
+ **রপ্তানি** বাটনে ক্লিক করে আপনি এক্সএমএল বা এক্সেল ফরম্যাটে পণ্য রপ্তানি করতে পারেন। **রপ্তানি** বাটনে ক্লিক করার পর আপনি ড্রপডাউন মেনু দেখতে পাবেন যা আপনাকে **এক্সএমএল (সব পাওয়া)** অথবা **এক্সএমএল রপ্তানি (নির্বাচিত)** এবং **এক্সেল এক্সপোর্ট (সব পাওয়া)** বা **এক্সেলে রপ্তানি করুন (নির্বাচিত)**।
  
-![Exporting product](_static/import-export-products/exporting_product.png)
+![পণ্য রপ্তানি](_static/import-export-products/exporting_product.png)
 
- If you don't need to download all the products use the *Search* panel to find the required products or/and use checkboxes to select the needed products. A file with products you have chosen will be downloaded. The file consists of all the products characteristics from product editing page panels (Product info, SEO, Pictures and so on).
+ আপনার যদি সমস্ত পণ্য ডাউনলোড করার প্রয়োজন না হয় তবে প্রয়োজনীয় পণ্যগুলি খুঁজে পেতে *অনুসন্ধান* প্যানেল ব্যবহার করুন অথবা/এবং প্রয়োজনীয় পণ্যগুলি নির্বাচন করতে চেকবক্স ব্যবহার করুন। আপনার পছন্দের পণ্য সহ একটি ফাইল ডাউনলোড করা হবে। ফাইলটিতে প্রোডাক্ট এডিটিং পেজ প্যানেল থেকে সব প্রোডাক্টের বৈশিষ্ট্য রয়েছে (প্রোডাক্ট ইনফো, এসইও, ছবি ইত্যাদি)।
+
+> [!NOTE]
+>
+> আপনি যদি প্রোডাক্ট অ্যাট্রিবিউট ব্যবহার করেন, একটি এক্সপোর্ট এক্সেল টেবিল সারি দ্বারা গ্রুপ করা হবে। বৈশিষ্ট্যের বিশদ বিবরণ দেখতে টেবিলে আপনার পণ্যের পাশে + ক্লিক করুন।
+> ![সহজ পণ্য](_static/import-export-products/simple_product.png)
+
+## পণ্য আমদানি করা
+
+আপনি যদি আপনার ক্যাটালগে ম্যানুয়ালি সব পণ্য যোগ করতে না চান তবে আপনি আমদানি বিকল্পটি ব্যবহার করতে পারেন।
 
 > [!NOTE]
 > 
-> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details click + next to your product in the table. 
-> ![Simple product](_static/import-export-products/simple_product.png)
+> আমদানি শুরু করার আগে আপনাকে এক্সেল ফরম্যাটে আমদানির জন্য একটি টেবিল টেমপ্লেট ডাউনলোড করতে হবে যেমনটি [রপ্তানি পণ্য] (#রপ্তানি-পণ্য) বিভাগে বর্ণিত হয়েছে। আপনার পণ্যের সঠিক এবং সঠিক আমদানির জন্য টেবিলে সমস্ত কলামের সঠিকভাবে নামকরণ করা গুরুত্বপূর্ণ (ঠিক যেমন ডাউনলোড করা টেবিলে)।
 
-## Importing products
+সমস্ত টেবিল ক্ষেত্র পূরণ করা বাধ্যতামূলক নয়। ভরাট ক্ষেত্রের উপর ভিত্তি করে পণ্য তৈরি করা হবে।
 
-If you do not want to add all the products to your catalog manually you can use the import option.
+আমদানিকৃত পণ্য এসকেইউ দ্বারা আলাদা করা হয়। যদি এসকেইউ ইতিমধ্যে বিদ্যমান থাকে, তবে এর সংশ্লিষ্ট পণ্য আপডেট করা হবে।
 
-> [!NOTE]
-> 
-> Before you start import you should download a table template for import in Excel format as it was described in the [exporting products](#exporting-products) section. For accurate and correct import of your products it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
+আমদানির জন্য প্রচুর মেমরি সম্পদ প্রয়োজন। এজন্য একবারে ৫০০ - ১০০০ এর বেশি রেকর্ড আমদানি করার সুপারিশ করা হয় না। আপনার যদি আরও রেকর্ড থাকে, সেগুলিকে একাধিক এক্সেল ফাইলে বিভক্ত করা এবং আলাদাভাবে আমদানি করা ভাল।
 
-It is not mandatory to fill all the table fields. The product will be created based on the filled fields.
+### উদাহরণ
 
-Imported products are distinguished by SKU. If the SKU already exists, then its corresponding product will be updated.
+উদাহরণস্বরূপ, আমরা আমাদের ক্যাটালগে নৃত্যের জুতা যোগ করতে চাই। টেবিলে একটি নতুন সারি তৈরি করা যাক:
 
-Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1000 records at once. If you have more records, it's better to split them into multiple Excel files and import separately.
+![পণ্য টেবিল](_static/import-export-products/product_table.png)
 
-### Example
+তারপর **আমদানি করুন** ক্লিক করুন, ফাইলটি নির্বাচন করুন এবং **এক্সেল থেকে আমদানি করুন** বাটনে ক্লিক করুন। তারপর ক্যাটালগে আপনার নতুন পণ্য আছে কিনা তা পরীক্ষা করুন।
 
-For example, we want to add Dancing shoes to our catalog. Let's create a new row in the table:
+![পণ্যের ক্যাটালগ](_static/import-export-products/product_catalog.png)
 
-![product table](_static/import-export-products/product_table.png)
+## আমদানি/রপ্তানি স্থাপন করা
 
-Then click **Import**, choose the file and click the **Import from Excel** button. Then check if you have a new product in the catalog.
+নিম্নলিখিত বিভাগ আমদানি/রপ্তানি সেটিংস বর্ণনা করে: [আমদানী রপ্তানি](xref:bn/running-your-store/catalog/catalog-settings#exportimport).
 
-![product catalog](_static/import-export-products/product_catalog.png)
+## আরো দেখুন
 
-## Setting up import/export
-
-The following section describes import/export settings: [Export/import](xref:en/running-your-store/catalog/catalog-settings#exportimport).
-
-## See also
-
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
+* [পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)

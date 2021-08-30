@@ -1,47 +1,47 @@
 ﻿---
-title: Rental products
-uid: en/running-your-store/catalog/products/rental-products
+title: ভাড়া পণ্য
+uid: bn/running-your-store/catalog/products/rental-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Rental products
+# ভাড়া পণ্য
 
-The rental products functionality is useful when you want to create a website allows customers to book rooms and hotels. This feature is also can be used for a website that offers clothes such as wedding dresses, camping stuff, children toys and more for rent.
+যখন আপনি একটি ওয়েবসাইট তৈরি করতে চান তখন ভাড়ার পণ্যের কার্যকারিতা উপকারী হয় যা গ্রাহকদের রুম এবং হোটেল বুক করতে দেয়। এই বৈশিষ্ট্যটি এমন একটি ওয়েবসাইটের জন্যও ব্যবহার করা যেতে পারে যা বিয়ের পোশাক, ক্যাম্পিং সামগ্রী, বাচ্চাদের খেলনা এবং ভাড়ার জন্য আরও অনেক কিছু প্রদান করে।
 
-## Example
+## উদাহরণ
 
-Let's say you wish to create a website provides wedding dresses for rent. 
+ধরুন আপনি একটি ওয়েবসাইট তৈরি করতে চান যা ভাড়ায় বিয়ের পোশাক সরবরাহ করে।
 
-Which functionality will be useful in this case?
+এই ক্ষেত্রে কোন কার্যকারিতা কার্যকর হবে?
 
-- One of the most important feature is to allow customers to choose *rent period*. In nopCommerce, it is allowed to choose the start date and end date, as on the screenshot below:
-	![Rental example](_static/rental-products/example.jpg)
+- সবচেয়ে গুরুত্বপূর্ণ বৈশিষ্ট্যগুলির মধ্যে একটি হল গ্রাহকদের *ভাড়ার সময়কাল* বেছে নেওয়ার অনুমতি দেওয়া। নপকমার্স-এ, নীচের স্ক্রিনশটের মতো শুরু তারিখ এবং শেষ তারিখ নির্বাচন করার অনুমতি দেওয়া হয়েছে:
+	![ভাড়ার উদাহরণ](_static/rental-products/example.jpg)
 
-- nopCommerce also allows the store administrator to chose *rental period* and *rental period length*. For example, you want to give the wedding dress for rent for 3 days minimum. In this case a customer will see the following on the product details page:
-	![Rental period](_static/rental-products/period.jpg)
+- নপকমার্স-এ দোকান প্রশাসককে *ভাড়ার সময়কাল* এবং *ভাড়া সময়ের দৈর্ঘ্য* বেছে নেওয়ার অনুমতি দেয়। উদাহরণস্বরূপ, আপনি বিয়ের পোশাক ন্যূনতম ৩ দিনের জন্য ভাড়া দিতে চান। এই ক্ষেত্রে একজন গ্রাহক পণ্যের বিবরণ পৃষ্ঠায় নিম্নলিখিতগুলি দেখতে পাবেন:
+	![ভাড়ার সময়সীমা](_static/rental-products/period.jpg)
 
-- Use *checkout attributes* to allow a customer to specify return time when a carrier should pick up the dress:
-	![Rental example](_static/rental-products/time.jpg)
-	Read more about checkout attributes [here](xref:en/running-your-store/order-management/checkout-attributes).
+- *চেকআউট অ্যাট্রিবিউটস* ব্যবহার করে একজন গ্রাহককে ফেরত যাওয়ার সময় নির্দিষ্ট করার অনুমতি দেয় যখন ক্যারিয়ারের পোশাকটি নেওয়া উচিত:
+	![ভাড়ার উদাহরণ](_static/rental-products/time.jpg)
+	চেকআউট বৈশিষ্ট্য সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/order-management/checkout-attributes).
 
-If you already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products) learn how to make this product rental in the section below.
+যদি আপনি ইতিমধ্যেই [সাধারণ পণ্য](xref:bn/running-your-store/catalog/products/add-products) সেট আপ করতে শিখে থাকেন তাহলে নিচের বিভাগে এই পণ্যটি কিভাবে ভাড়া দেওয়া যায় তা শিখুন।
 
-## Set up a rental product
+## একটি ভাড়া পণ্য সেট আপ করুন
 
-To create a rental product, go to **Catalog → Products**. Click **Add new**, fill up the common product fields and tick the corresponding checkbox in the *Rental* panel.
+একটি ভাড়া পণ্য তৈরি করতে, **ক্যাটালগ → পণ্য** এ যান। **নতুন যোগ করুন** ক্লিক করুন, সাধারণ পণ্যের ক্ষেত্রগুলি পূরণ করুন এবং*ভাড়া*প্যানেলে সংশ্লিষ্ট চেকবক্সে টিক দিন।
 
-![Rental panel](_static/rental-products/rental.png)
+![ভাড়া পণ্য](_static/rental-products/rental.png)
 
-Define the following details:
+নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
 
-- **Rental period length** is a rental cycle length, minimum billing period. Price is specified for this period.
-- **Rental period** in *Days*, *Weeks*, *Months* or *Years*. It defines units time rental period will be measured in.
+- **ভাড়া সময়কাল দৈর্ঘ্য** একটি ভাড়া চক্র দৈর্ঘ্য, ন্যূনতম বিলিং সময়কাল। এই সময়ের জন্য মূল্য নির্দিষ্ট করা আছে।
+- **ভাড়ার সময়কাল** *দিনে*,*সপ্তাহ*,*মাস* বা *বছর*। এটি ইউনিট নির্ধারণ করে সময় ভাড়ার সময় পরিমাপ করা হবে।
 
-When buying rental products, customers have to specify the rental period in the public store. The amount to be paid is calculated automatically.
+ভাড়ার পণ্য কেনার সময়, গ্রাহকদের পাবলিক স্টোরে ভাড়ার সময় নির্দিষ্ট করতে হবে। প্রদত্ত পরিমাণ স্বয়ংক্রিয়ভাবে গণনা করা হয়।
 
-![Rental in public store](_static/rental-products/rental1.png)
+![পাবলিক স্টোরে ভাড়া](_static/rental-products/rental1.png)
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Managing rental products](https://www.youtube.com/watch?v=tOaC6hOILZY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=24)
+- [ভাড়া পণ্য ব্যবস্থাপনা](https://www.youtube.com/watch?v=tOaC6hOILZY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=24)

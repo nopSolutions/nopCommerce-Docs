@@ -1,78 +1,80 @@
 ---
-title: Product attributes
-uid: en/running-your-store/catalog/products/product-attributes
+title: পণ্য বৈশিষ্ট্য
+uid: bn/running-your-store/catalog/products/product-attributes
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Product attributes
+# পণ্য বৈশিষ্ট্য
 
-Product attributes are variations of a product (such as color, size, etc.).
+পণ্যের বৈশিষ্ট্য হল একটি পণ্যের বৈচিত্র্য (যেমন রঙ, আকার ইত্যাদি)।
 
-A user can create different combinations of the attributes. For example, a product can be in different sizes and colors. Thus, a user would create two attributes and their values, e.g. "size" (S, M, L) and "color" (red, blue, white), and then set up groups according to the availability of the products.
+একজন ব্যবহারকারী বৈশিষ্ট্যগুলির বিভিন্ন সমন্বয় তৈরি করতে পারেন। উদাহরণস্বরূপ, একটি পণ্য বিভিন্ন আকার এবং রঙে হতে পারে। সুতরাং, একটি ব্যবহারকারী দুটি বৈশিষ্ট্য এবং তাদের মান তৈরি করবে, যেমন "আকার" (এস, এম, এল) এবং "রঙ" (লাল, নীল, সাদা), এবং তারপর পণ্যের প্রাপ্যতা অনুযায়ী গোষ্ঠী সেট আপ করুন।
 
-In nopCommerce, product attributes are used in **inventory tracking**, and can also cause the **price difference**.
+নপকমার্স-এ, পণ্যের বৈশিষ্ট্যগুলি **ইনভেন্টরি ট্র্যাকিং** এ ব্যবহার করা হয়, এবং **দামের পার্থক্য** সৃষ্টি করতে পারে।
 
-To define product attributes go to **Catalog → Attributes → Product attributes**.
+পণ্যের গুণাবলী সংজ্ঞায়িত করতে **ক্যাটালগ → গুণাবলী → পণ্যের বৈশিষ্ট্য** এ যান।
 
-![Product attributes](_static/product-attributes/product_attributes.png)
-
-> [!NOTE]
-> 
-> By default, there are no product attributes pre-created in nopCommerce.
-
-## Adding product attributes
-
-Click **Add new** to add an attribute.
-
-![Add new](_static/product-attributes/add_a_new_product_attribute.png)
-
-In the *Add a new product attribute* window fill the fields **Name** and **Description**.
-
-Click **Save and continue edit** to proceed to the *Predefined values* editing panel.
-
-> [!TIP]
-> 
-> [YouTube tutorial: Adding a product with color attributes](https://youtu.be/QihipwQ61YU)
-
-## Adding predefined values
-
-In the *Predefined values* panel click **Add a new value**, and *Add a new value window* will be opened:
-
-![Adding predefined values](_static/product-attributes/add_a_new_value.png)
-
-In the *Add a new value* window define:
-
-- The attribute **Name**.
-- The **Price adjustment** applied when choosing this attribute value. For example '10' to add 10 dollars. Or 10% if **Price adjustment. Use percentage** is ticked.
-- **Price adjustment. Use percentage** checkbox allows determining price adjustment in percentage instead of an absolute value.
-- The **Weight adjustment** applied when choosing this attribute value.
-- The attribute value **Cost** is the cost of all the different components which make up this value. This may be either the purchase price if the components are bought from outside suppliers, or the combined cost of materials and manufacturing processes if the component is made in-house.
-- Whether the value **Is pre-selected** for a customer.
-- The value **Display order** in an attribute list.
-
-After filling the fields, click **Save**.
-
-> [!TIP]
-> 
-> It's not necessary to create attributes values when adding product attribute, you can create them later when apply certain product attribute to the product. 
-> Once the attributes and values are set, they can be grouped and managed in the *Product attributes* panel on the product edit page.
+![পণ্য বৈশিষ্ট্য](_static/product-attributes/product_attributes.png)
 
 > [!NOTE]
 > 
-> Some store owners prefer to highlight products differentiated by attributes and create a separate product with each specific attribute (for example, separately listed blue T-shirts and red T-shirts). In this case, we recommend creating a grouped product (shirts, as in the example) in order for all of the variations to be displayed on the same page, once the grouped product is being viewed by a customer. Read more about [grouped products](xref:en/running-your-store/catalog/products/grouped-products-variants).
+> ডিফল্টরূপে, নপকমার্স-এ কোনো প্রডাক্ট অ্যাট্রিবিউট আগে থেকে তৈরি করা নেই।
 
-## Used by products panel
+## পণ্যের গুণাবলী যোগ করা
 
-In the *Used by products* panel you can which products use this attribute:
+একটি বৈশিষ্ট্য যুক্ত করতে **নতুন যোগ করা** ক্লিক করুন।
 
-![Used by products](_static/product-attributes/used-by.jpg)
+![নতুন যোগ করা](_static/product-attributes/add_a_new_product_attribute.png)
 
-## See also
+*একটি নতুন পণ্য বৈশিষ্ট্য যুক্ত করুন*উইন্ডোতে ক্ষেত্রগুলি পূরণ করুন ** নাম ** এবং ** বর্ণনা **।
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Grouped product](xref:en/running-your-store/catalog/products/grouped-products-variants)
+*পূর্বনির্ধারিত মানগুলি*সম্পাদনা প্যানেলে এগিয়ে যেতে ** সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান ** ক্লিক করুন।
 
-## Tutorials
+> [!TIP]
+>
+> [ইউটিউব টিউটোরিয়াল: রঙের বৈশিষ্ট্য সহ একটি পণ্য যোগ করা](https://youtu.be/QihipwQ61YU)
 
-- [Overview of conditional product attributes](https://www.youtube.com/watch?v=eIdHVcEdos8&t=55s)
+## পূর্বনির্ধারিত মান যোগ করা
+
+*পূর্বনির্ধারিত মান* প্যানেলে ক্লিক করুন **একটি নতুন মান যোগ করুন**, এবং *একটি নতুন মান যুক্ত করুন* খোলা হবে:
+
+> [!TIP]
+> 
+> [ইউটিউব টিউটোরিয়াল: রঙের বৈশিষ্ট্য সহ একটি পণ্য যুক্ত করা](https://youtu.be/QihipwQ61YU)
+
+*একটি নতুন মান যোগ করুন* উইন্ডো সংজ্ঞায়িত করুন:
+
+- বৈশিষ্ট্য **নাম**।
+- এই বৈশিষ্ট্য মান নির্বাচন করার সময় **মূল্য সমন্বয়** প্রয়োগ করা হয়। উদাহরণস্বরূপ '১০' অথবা ১০%, ১০ ডলার যোগ করতে যদি **মূল্য সমন্বয়। শতাংশ ব্যবহার করুন** টিক দেওয়া আছে।
+- **মূল্য সমন্বয়. শতাংশ ব্যবহার করুন** চেকবক্স একটি পরম মানের পরিবর্তে শতাংশে মূল্য সমন্বয় নির্ধারণ করতে দেয়।
+- এই বৈশিষ্ট্য মান নির্বাচন করার সময় **ওজন সমন্বয়** প্রয়োগ করা হয়।
+- অ্যাট্রিবিউট ভ্যালু **কস্ট** হল এই সমস্ত বিভিন্ন উপাদানগুলির খরচ যা এই মান তৈরি করে। উপাদানগুলি বাইরের সরবরাহকারীদের কাছ থেকে কেনা হলে এটি ক্রয়মূল্য হতে পারে, অথবা উপাদানটি যদি ঘরে তৈরি করা হয় তবে সামগ্রী এবং উত্পাদন প্রক্রিয়াগুলির সম্মিলিত খরচ।
+- গ্রাহকের জন্য মান **পূর্ব-নির্বাচিত** কিনা।
+- একটি অ্যাট্রিবিউট তালিকায় **ডিসপ্লে অর্ডার** মান।
+
+ক্ষেত্রগুলি পূরণ করার পরে, **সংরক্ষণ করুন** ক্লিক করুন।
+
+> [!TIP]
+>
+> প্রোডাক্ট অ্যাট্রিবিউট যোগ করার সময় অ্যাট্রিবিউট ভ্যালু তৈরির প্রয়োজন হয় না, প্রোডাক্টে নির্দিষ্ট প্রোডাক্ট অ্যাট্রিবিউট প্রয়োগ করার পরে আপনি সেগুলো পরে তৈরি করতে পারেন।
+> গুণাবলী এবং মানগুলি একবার সেট হয়ে গেলে, তারা পণ্য সম্পাদনা পৃষ্ঠায় *পণ্য বৈশিষ্ট্য* প্যানেলে গোষ্ঠীভুক্ত এবং পরিচালিত হতে পারে।
+
+> [!NOTE]
+> 
+> কিছু দোকানের মালিকগণ বৈশিষ্ট্য দ্বারা আলাদা পণ্যগুলি হাইলাইট করতে পছন্দ করে এবং প্রতিটি নির্দিষ্ট বৈশিষ্ট্যের সাথে একটি পৃথক পণ্য তৈরি করে (উদাহরণস্বরূপ, আলাদাভাবে তালিকাভুক্ত নীল টি-শার্ট এবং লাল টি-শার্ট)। এই ক্ষেত্রে, গ্রুপেড প্রোডাক্টটি গ্রাহকের দ্বারা একবার দেখা হলে, একই পৃষ্ঠায় সমস্ত বৈচিত্র প্রদর্শনের জন্য আমরা একটি গোষ্ঠীবদ্ধ পণ্য (উদাহরণের মতো শার্ট) তৈরি করার সুপারিশ করি। সম্পর্কে আরও পড়ুন [দলবদ্ধ পণ্য](xref:bn/running-your-store/catalog/products/grouped-products-variants).
+
+## পণ্য প্যানেল দ্বারা ব্যবহৃত
+
+*পণ্য দ্বারা ব্যবহৃত* প্যানেলে আপনি কোন পণ্যগুলি এই বৈশিষ্ট্যটি ব্যবহার করতে পারেন:
+
+![পণ্য দ্বারা ব্যবহৃত](_static/product-attributes/used-by.jpg)
+
+## আরো দেখুন
+
+-[পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+-[গোষ্ঠীভুক্ত পণ্য](xref:bn/running-your-store/catalog/products/grouped-products-variants)
+
+## টিউটোরিয়াল
+
+- [শর্তাধীন পণ্যের বৈশিষ্ট্যগুলির ওভারভিউ](https://www.youtube.com/watch?v=eIdHVcEdos8&t=55s)

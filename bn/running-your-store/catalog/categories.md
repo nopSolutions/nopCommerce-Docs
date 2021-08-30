@@ -1,149 +1,149 @@
 ---
-title: Categories
-uid: en/running-your-store/catalog/categories
+title: ক্যাটাগরি
+uid: bn/running-your-store/catalog/categories
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Categories
+# ক্যাটাগরি
 
-Prior to adding new products, a store manager should create categories, to which the products will later be assigned. To manage categories, go to **Catalog → Categories**.
+নতুন পণ্য যোগ করার আগে, একটি স্টোর ম্যানেজারের উচিত ক্যাটাগরি তৈরি করা, যেখানে পণ্যগুলি পরে বরাদ্দ করা হবে। বিভাগগুলি পরিচালনা করতে, **ক্যাটালগ → বিভাগগুলি** এ যান।
 
-![Categories](_static/categories/categories.jpg)
+![ক্যাটাগরি](_static/categories/categories.jpg)
 
-Search for a category in the *Search* panel by entering the **Category name** or a part of the name, by the **Published** property or among all the categories of a certain **Store** (if more than one store enabled).
+**শ্রেণী নাম** অথবা নামের একটি অংশ, **প্রকাশিত** সম্পত্তি দ্বারা অথবা নির্দিষ্ট **স্টোরের সকল বিভাগের মধ্যে (যদি বেশি হয় তবে)** *অনুসন্ধান* প্যানেলে একটি ক্যাটাগরি অনুসন্ধান করুন (যদি একাধিক স্টোর সক্রিয় হয় তবে)।
 
 > [!NOTE]
 >
-> To remove categories from the list, select the items to be deleted and click the **Delete (selected)** button.
-> You can export the categories to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML** or **Export to Excel**.
+> তালিকা থেকে বিভাগগুলি সরাতে, মুছে ফেলা আইটেমগুলি নির্বাচন করুন এবং **মুছুন (নির্বাচিত)** বাটনে ক্লিক করুন।
+আপনি **রপ্তানি** বাটনে ক্লিক করে ব্যাকআপের উদ্দেশ্যে একটি বহিরাগত ফাইলে বিভাগগুলি রপ্তানি করতে পারেন। **রপ্তানি** বাটনে ক্লিক করার পর আপনি ড্রপডাউন মেনু দেখতে পাবেন যা আপনাকে **এক্সএমএল** অথবা **এক্সেল** রপ্তানি করতে সক্ষম করে।
 
-## Adding a new category
+## একটি নতুন ক্যাটাগরি যোগ করা
 
-To add a new category click the **Add new** button in the top of the page. The *Add a new category* window will be displayed.
+একটি নতুন ক্যাটাগরি যোগ করার জন্য পৃষ্ঠার শীর্ষে ** নতুন যোগ করুন ** বাটনে ক্লিক করুন। * একটি নতুন ক্যাটাগরি যোগ করুন * উইন্ডো প্রদর্শিত হবে।
 
-![Add a new category](_static/categories/add-new.jpg)
+![একটি নতুন ক্যাটাগরি যোগ করা](_static/categories/add-new.jpg)
 
-This page is available in two modes: **advanced** and **basic**. Switch to the basic mode which displays the only main fields or use the advanced mode displaying all the available fields.
+এই পৃষ্ঠাটি দুটি মোডে উপলব্ধ: **উন্নত** এবং **মৌলিক**। মৌলিক মোডে স্যুইচ করুন যা শুধুমাত্র প্রধান ক্ষেত্র প্রদর্শন করে অথবা সমস্ত উপলব্ধ ক্ষেত্র প্রদর্শন করে উন্নত মোড ব্যবহার করে।
 
-### Category info
+### বিভাগের তথ্য
 
-In the *Category info* panel, define the following category information:
+*ক্যাটাগরির তথ্য* প্যানেলে, নিম্নলিখিত বিভাগের তথ্য সংজ্ঞায়িত করুন:
 
-- **Name** - this is the name of the category displayed in the catalog.
-- **Description** - a description of the category. Use the editor for layout and fonts.
-- If this category will be a subcategory, select a **Parent category** from the drop-down list. The new category will be placed under this category in the public store.
-- **Picture** - an image representing the category. Upload the image from your device.
+- **নাম** - এটি ক্যাটালগে প্রদর্শিত বিভাগের নাম।
+- **বর্ণনা** - বিভাগের একটি বিবরণ। বিন্যাস এবং ফন্টের জন্য সম্পাদক ব্যবহার করুন।
+- যদি এই বিভাগটি একটি উপশ্রেণী হবে, ড্রপ-ডাউন তালিকা থেকে একটি **অভিভাবক শ্রেণী** নির্বাচন করুন। পাবলিক স্টোরে এই ক্যাটাগরির অধীনে নতুন ক্যাটাগরি রাখা হবে।
+- **ছবি** - বিভাগকে উপস্থাপনকারী একটি চিত্র। আপনার ডিভাইস থেকে ছবিটি আপলোড করুন।
 
-### Display
+### প্রদর্শন
 
-![Display](_static/categories/display.png)
+![প্রদর্শন](_static/categories/display.png)
 
-In the *Display* panel, define the following category information:
 
-- Select the **Published** checkbox, to make the category visible in the public store.
-- Select the **Show on home page** checkbox, to display the category on the home page.
-- Select the **Include in top menu** checkbox, to include the category in the top menu on the home page.
-- Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the category details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
-  - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this category e.g. '4' products per page.
+*ডিসপ্লে* প্যানেলে, নিম্নলিখিত বিভাগের তথ্য সংজ্ঞায়িত করুন:
+
+- পাবলিক স্টোরে বিভাগটি দৃশ্যমান করতে **প্রকাশিত** চেকবক্স নির্বাচন করুন।
+- হোম পেজে বিভাগ প্রদর্শন করতে **হোম পেজে দেখান** চেকবক্স নির্বাচন করুন।
+- হোম পেজের উপরের মেনুতে ক্যাটাগরি অন্তর্ভুক্ত করতে **শীর্ষ মেনুতে অন্তর্ভুক্ত** চেকবক্স নির্বাচন করুন।
+- গ্রাহকদের একটি পৃষ্ঠার আকার নির্বাচন করতে সক্ষম করার জন্য **গ্রাহকদের পৃষ্ঠার আকার নির্বাচন করার অনুমতি দি** চেকবক্স নির্বাচন করুন, যেমন বিভাগ বিবরণ পৃষ্ঠায় প্রদর্শিত পণ্যের সংখ্যা। **পৃষ্ঠার আকারের বিকল্প** ক্ষেত্রের মধ্যে দোকানের মালিক কর্তৃক প্রবেশ করা পৃষ্ঠা আকারের তালিকা থেকে গ্রাহকদের দ্বারা পৃষ্ঠার আকার নির্বাচন করা যেতে পারে।
+  - পূর্ববর্তী চেকবক্সে **পৃষ্ঠা আকারের বিকল্পগুলি** প্রদর্শিত হয়। পৃষ্ঠা আকারের বিকল্পগুলির একটি কমা দ্বারা বিচ্ছিন্ন তালিকা লিখুন (যেমন ১০, ৫, ১৫, ২০)। প্রথম বিকল্পটি হল ডিফল্ট পৃষ্ঠার আকার যদি কেউ নির্বাচিত না হয়।
+  - ** পেজ সাইজ ** অপশন প্রদর্শিত হয় যদি **গ্রাহকদের পেজ সাইজ সিলেক্ট করার অনুমতি দেয়** চেকবক্সটি অনির্বাচিত হয়। এটি এই শ্রেণীর পণ্যগুলির জন্য পৃষ্ঠার আকার নির্ধারণ করে যেমন প্রতি পৃষ্ঠায় '৪' পণ্য।
   > [!TIP]
   >
-  > For example, when you add seven products to a category and you set its page size to three. Three products per page will be displayed on this category details page in the public store, and the total amount of pages will be three.
+  > উদাহরণস্বরূপ, যখন আপনি একটি বিভাগে সাতটি পণ্য যোগ করেন এবং আপনি তার পৃষ্ঠার আকার তিনটিতে সেট করেন। পাবলিক স্টোরে এই বিভাগের বিবরণ পাতায় প্রতি পৃষ্ঠায় তিনটি পণ্য প্রদর্শিত হবে এবং মোট পৃষ্ঠার পরিমাণ হবে তিনটি।
 
-- Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
-  - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
-    - If the setting above is enabled enter the **Price 'from'**.
-    - As well as the **Price 'to'**.
-- **Display order** - the order number for displaying the category. This display number is used to sort categories in the public store (ascending). The category with the display order 1 will be placed at the top of the list.
-- The **Category template** filed is visible if you have any custom category templates installed on the **System → Templates** page. This template defines how this category (and its products) will be displayed.
+- যদি আপনি মূল্য পরিসীমা দ্বারা ফিল্টারিং সক্ষম করতে চান তবে **মূল্য পরিসীমা ফিল্টারিং** চেকবক্সে টিক দিন।
+  - যদি আপনি মূল্য পরিসীমা ম্যানুয়ালি প্রবেশ করতে চান তাহলে **দাম মূল্য পরিসরে লিখুন** চেকবক্সে টিক দিন।
+    - যদি উপরের সেটিং সক্ষম করা থাকে তবে তা থেকে 'মূল্য' লিখুন।
+    - পাশাপাশি **মূল্য 'থেকে'**।
+- **ডিসপ্লে অর্ডার** - বিভাগ প্রদর্শনের জন্য অর্ডার নম্বর। এই ডিসপ্লে নম্বরটি পাবলিক স্টোরে ক্যাটাগরি সাজানোর জন্য ব্যবহার করা হয় (আরোহী)। ডিসপ্লে অর্ডার ১ সহ ক্যাটাগরি তালিকার শীর্ষে থাকবে।
+- **সিস্টেম → টেমপ্লেট** পৃষ্ঠায় যদি কোন কাস্টম ক্যাটাগরির টেমপ্লেট ইনস্টল করা থাকে তাহলে দায়ের করা **ক্যাটাগরি টেমপ্লেট** দৃশ্যমান। এই টেমপ্লেটটি নির্ধারণ করে কিভাবে এই বিভাগ (এবং এর পণ্য) প্রদর্শিত হবে।
 
-### Mappings
+### ম্যাপিং
 
-![Mappings](_static/categories/mappings.jpg)
+![ম্যাপিং](_static/categories/mappings.jpg)
 
-In the *Mappings* panel, define the following category information:
+*ম্যাপিংস* প্যানেলে, নিম্নলিখিত বিভাগের তথ্য সংজ্ঞায়িত করুন:
 
-- **Discounts** - select discounts associated with this category. You can create discounts on the **Promotions → Discounts** page. Read more about discounts in the [Discounts](xref:en/running-your-store/promotional-tools/discounts) chapter.
-
-    > [!NOTE]
-    >
-    > Note that only discounts with *assigned to categories* type are visible here. After discounts are mapped to the category, they are applied to all products in this category.
+- **ডিসকাউন্ট** - এই বিভাগের সাথে যুক্ত ডিসকাউন্ট নির্বাচন করুন। আপনি **প্রচার → ছাড়** পৃষ্ঠাতে ছাড় তৈরি করতে পারেন। [ডিসকাউন্ট](xref:bn/running-your-store/promotional-tools/discount) অধ্যায়ে ছাড় সম্পর্কে আরও পড়ুন।
 
     > [!NOTE]
     >
-    > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
+    > নোট করুন যে শুধুমাত্র *ক্যাটাগরির জন্য নির্ধারিত* ধরনের ডিসকাউন্ট এখানে দৃশ্যমান। ক্যাটাগরিতে ডিসকাউন্ট ম্যাপ করার পরে, সেগুলি এই ক্যাটাগরির সব পণ্যে প্রয়োগ করা হয়।
 
-- In the **Limited to customer roles** field choose the customer roles which will be able to see the category in the catalog. Leave this field empty if this option is not required and the category can be seen by everyone.
     > [!NOTE]
     >
-    > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+    > যদি আপনি ছাড় ব্যবহার করতে চান তবে নিশ্চিত করুন যে **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস → পারফরম্যান্স** প্যানেলে **ডিসকাউন্ট উপেক্ষা করুন (সাইটওয়াইড)** সেটিং অক্ষম করা আছে।
 
-- Choose the stores in the **Limited to stores** field if the category is sold in specific stores. Leave the field empty in case this functionality is not required.
+- **সীমিত গ্রাহকের ভূমিকায়** ক্ষেত্রটিতে গ্রাহকের ভূমিকা নির্বাচন করুন যা ক্যাটালগের বিভাগ দেখতে পারবে। এই বিকল্পটি প্রয়োজন না হলে এই ক্ষেত্রটি খালি রাখুন এবং বিভাগটি প্রত্যেকেই দেখতে পাবে।
+    > [!NOTE]
+    >
+    > এই কার্যকারিতাটি ব্যবহার করার জন্য আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **কনফিগারেশন → ক্যাটালগ সেটিংস-এ এসিএল নিয়ম (সাইটওয়াইড) উপেক্ষা করুন**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা [এখানে](xref:bn/running-your-store/customer-management/access-control-list) সম্পর্কে আরও পড়ুন।
+
+- নির্দিষ্ট দোকানে ক্যাটাগরি বিক্রি হলে **স্টোরের মধ্যে সীমিত** ক্ষেত্রের দোকানগুলি বেছে নিন। এই কার্যকারিতা প্রয়োজন না হলে ক্ষেত্রটি খালি রাখুন।
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-### SEO
+### এসইও
 
-![Setting up SEO](_static/categories/setting-up-seo.png)
+![এসইও স্থাপন করা](_static/categories/setting-up-seo.png)
 
-In the *SEO* panel, define the following details:
+ *এসইও* প্যানেলে, নিম্নলিখিত বিবরণগুলি সংজ্ঞায়িত করুন:
 
-- **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
+- **সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** - সার্চ ইঞ্জিন দ্বারা ব্যবহৃত পৃষ্ঠার নাম। যদি আপনি ক্ষেত্রটি ফাঁকা রাখেন, তাহলে বিভাগের নাম ব্যবহার করে বিভাগ পৃষ্ঠার URL তৈরি করা হবে। যদি আপনি কাস্টম-এসইও-পেজ-নাম লিখেন, তাহলে নিম্নলিখিত কাস্টম ইউআরএল ব্যবহার করা হবে: `http://www.yourStore.com/custom-seo-page-name`।
 
-- **Meta title** specifies the title of the web page. It is a code which is inserted into the header of your web page:
+- **Meta title** ওয়েব পেজের শিরোনাম উল্লেখ করে। এটি একটি কোড যা আপনার ওয়েব পেজের হেডারে োকানো হয়:
 
     ```html
     <head>
-        <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
+        <title> সার্চ ইঞ্জিন অপ্টিমাইজেশন এবং ওয়েব ব্যবহারযোগ্যতার জন্য টাইটেল ট্যাগ তৈরি করা </title>
     </head>
     ```
 
-- **Meta keywords** - category meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag looks like:
- `<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+- **মেটা কীওয়ার্ড** - ক্যাটাগরির মেটা কীওয়ার্ড, যা পৃষ্ঠার জন্য সবচেয়ে গুরুত্বপূর্ণ থিমগুলির একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত তালিকা। মেটা কীওয়ার্ড ট্যাগ এর মত দেখাচ্ছে:
+ `<meta name="keywords" content="কীওয়ার্ড, কীওয়ার্ড, কীওয়ার্ড ফ্রেজ, ইত্যাদি। ">
 
-- **Meta description** - a description of the category. The meta description tag is a brief and concise summary of the page content. The meta description tag looks like:
- `<meta name="description" content="Brief description of the contents of your page">`
+- **মেটা বর্ণনা** - বিভাগের বর্ণনা। মেটা ডেসক্রিপশন ট্যাগ হল পৃষ্ঠার বিষয়বস্তুর একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত সারসংক্ষেপ। মেটা ডেসক্রিপশন ট্যাগ এর মত দেখাচ্ছে:
+ `<meta name =" description "content =" আপনার পৃষ্ঠার বিষয়বস্তুর সংক্ষিপ্ত বিবরণ ">
 
-Click the **Save and continue edit** button to proceed to add products to the category.
+শ্রেণীতে পণ্য যুক্ত করতে এগিয়ে যেতে **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** বাটনে ক্লিক করুন।
 
-### Products
+### পণ্য
 
-The *Products* panel contains a list of products related to the selected category, these products can be filtered by category in the catalog. The store owner can add new products to the category. Note that you need to save the category before you can add products.
+*পণ্য* প্যানেলে নির্বাচিত বিভাগ সম্পর্কিত পণ্যগুলির একটি তালিকা রয়েছে, এই পণ্যগুলি ক্যাটালগের বিভাগ অনুসারে ফিল্টার করা যায়। দোকানের মালিক ক্যাটাগরিতে নতুন পণ্য যোগ করতে পারেন। মনে রাখবেন যে আপনি পণ্য যোগ করার আগে আপনাকে বিভাগটি সংরক্ষণ করতে হবে।
 
-Click **Add a new product** to find a product you want to include in this category. You can search by the **Product name**, **Categoty**, **Vendor**, **Store**, **Product type** and **Manufacturer**.
+আপনি এই বিভাগে অন্তর্ভুক্ত করতে চান এমন একটি পণ্য খুঁজে পেতে **একটি নতুন পণ্য যোগ করুন** ক্লিক করুন। আপনি **পণ্যের নাম**, **শ্রেণীবিভাগ **, **বিক্রেতা**, **দোকান**, **পণ্যের ধরন** এবং **প্রস্তুতকারক** দ্বারা অনুসন্ধান করতে পারেন।
+![পণ্য যোগ করুন](_static/categories/add-product.jpg)
 
-![Add products](_static/categories/add-product.jpg)
+যেসব পণ্য আপনি বিভাগে যোগ করতে চান সেগুলি নির্বাচন করুন এবং **সংরক্ষণ** বাটনে ক্লিক করুন। পণ্যগুলি নির্বাচিত বিভাগের অধীনে প্রদর্শিত হবে।
 
-Select products you would like to add to the category and click the **Save** button. The products will be displayed under the selected category.
+![পণ্য](_static/categories/products.png)
 
-![Products](_static/categories/products.png)
+পণ্যটি ক্যাটাগরিতে যুক্ত হওয়ার পর, একটি পণ্যের পাশে **সম্পাদনা** বাটনে ক্লিক করে*পণ্য*টেবিলে নিম্নলিখিত তথ্য সংজ্ঞায়িত করুন:
 
-After the product was added to the category, define the following information in the *Products* table by clicking the **Edit** button beside a product:
-
-- **Is featured product**.
-- **Display order**.
-
-> [!NOTE]
->
-> By clicking **View**, you will be redirected to the *Edit product details* page.
-
-Click **Save**. The new category will be displayed in the public store under its parent category.
-
-## Importing categories
-
-If you do not want to add all the categories to your catalog manually you can use the import option.
+- **বৈশিষ্ট্যযুক্ত পণ্য**।
+- **প্রদর্শন আদেশ**.
 
 > [!NOTE]
 >
-> Before you start import you should download a table template for import in Excel format. For accurate and correct import of your categories it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
+> **দেখুন** ক্লিক করে, আপনাকে *পণ্যের বিবরণ সম্পাদনা করুন* পৃষ্ঠায় পুন নির্দেশিত করা হবে।
 
-It is not mandatory to fill all the table fields. The category will be created based on the filled fields.
+**সেভ** ক্লিক করুন। নতুন বিভাগটি পাবলিক স্টোরে তার মূল বিভাগের অধীনে প্রদর্শিত হবে।
 
-Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1000 records at once. If you have more records, it's better to split them into multiple Excel files and import separately.
+## বিভাগ আমদানি করা
 
-## See also
+আপনি যদি আপনার ক্যাটালগে ম্যানুয়ালি সব বিভাগ যোগ করতে না চান তবে আপনি আমদানি বিকল্পটি ব্যবহার করতে পারেন।
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [SEO](xref:en/running-your-store/search-engine-optimization)
+> [!NOTE]
+>
+> আমদানি শুরু করার আগে আপনাকে এক্সেল ফরম্যাটে আমদানির জন্য একটি টেবিল টেমপ্লেট ডাউনলোড করতে হবে। আপনার বিভাগগুলির সঠিক এবং সঠিক আমদানির জন্য টেবিলে সমস্ত কলামের সঠিকভাবে নামকরণ করা গুরুত্বপূর্ণ (ঠিক যেমন ডাউনলোড করা টেবিলে)।
+
+সমস্ত টেবিল ক্ষেত্র পূরণ করা বাধ্যতামূলক নয়। ভরাট ক্ষেত্রের উপর ভিত্তি করে বিভাগ তৈরি করা হবে।
+
+আমদানির জন্য প্রচুর মেমরি সম্পদ প্রয়োজন। এজন্য একবারে ৫০০ - ১০০০ এর বেশি রেকর্ড আমদানি করার সুপারিশ করা হয় না। আপনার যদি আরও রেকর্ড থাকে, সেগুলিকে একাধিক এক্সেল ফাইলে বিভক্ত করা এবং আলাদাভাবে আমদানি করা ভাল।
+
+## আরো দেখুন
+
+-[পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+-[এসইও](xref:bn/running-your-store/search-engine-optimization)

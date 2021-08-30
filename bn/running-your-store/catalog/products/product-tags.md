@@ -1,36 +1,36 @@
 ---
-title: Product tags
-uid: en/running-your-store/catalog/products/product-tags
+title: পণ্যের ট্যাগ
+uid: bn/running-your-store/catalog/products/product-tags
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Product tags
+# পণ্যের ট্যাগ
 
-Product tags are keywords for product identification. They are used to sort the products by a certain feature and to enable a specific, narrow product search.
-For example, if you sell apparel, and you want to create tags for T-shirts, it can be "t-shirt", "cotton", "polo", etc.
+পণ্য ট্যাগ হল পণ্য সনাক্তকরণের কীওয়ার্ড। তারা একটি নির্দিষ্ট বৈশিষ্ট্য দ্বারা পণ্য বাছাই এবং একটি নির্দিষ্ট, সংকীর্ণ পণ্য অনুসন্ধান সক্রিয় করতে ব্যবহৃত হয়।
+উদাহরণস্বরূপ, যদি আপনি পোশাক বিক্রি করেন, এবং আপনি টি-শার্টের জন্য ট্যাগ তৈরি করতে চান, এটি "টি-শার্ট", ​​"তুলো", "পোলো" ইত্যাদি হতে পারে।
 
-To edit product tags that are displayed in the public store, go to **Catalog → Product tags**.
+পাবলিক স্টোরে প্রদর্শিত পণ্যের ট্যাগ সম্পাদনা করতে, **ক্যাটালগ → পণ্য ট্যাগ** এ যান।
 
-![Product tags](_static/product-tags/tags.jpg)
+![পণ্যের ট্যাগ](_static/product-tags/tags.jpg)
 
-On the product tags page, you can see how many products have a certain tag in the **Tagged products** column. You can edit the tag by clicking the **Edit** button beside it. Or you can also delete tags by selecting them and then clicking the **Delete(selected)** button.
+পণ্য ট্যাগ পৃষ্ঠায়, আপনি দেখতে পারেন কতগুলি পণ্যের একটি নির্দিষ্ট ট্যাগ রয়েছে **ট্যাগযুক্ত পণ্য** কলামে। আপনি ট্যাগটির পাশে **সম্পাদনা** বাটনে ক্লিক করে সম্পাদনা করতে পারেন। অথবা আপনি ট্যাগগুলি নির্বাচন করে মুছে ফেলতে পারেন এবং তারপরে **মুছুন (নির্বাচিত)** বাটনে ক্লিক করুন।
 
-## Adding product tags
+## পণ্যের ট্যাগ যোগ করা
 
-You can add tags on the Edit product details page when adding or editing a product.
+প্রোডাক্ট যুক্ত বা এডিট করার সময় আপনি এডিট প্রোডাক্ট ডিটেইলস পৃষ্ঠায় ট্যাগ যোগ করতে পারেন।
 
-![Add tags](_static/product-tags/product_tags2.png)
+![ট্যাগ যোগ করা](_static/product-tags/product_tags2.png)
 
-Enter tags separating them by comma. Once the tags are created, they can be used for other products as well. The more products are associated with a particular tag, the larger it will look in the *Popular tags* area, displayed in the sidebar of the catalog page:
+কমা দ্বারা তাদের আলাদা করে ট্যাগ লিখুন। একবার ট্যাগ তৈরি হয়ে গেলে, সেগুলি অন্যান্য পণ্যের জন্যও ব্যবহার করা যেতে পারে। একটি নির্দিষ্ট ট্যাগের সাথে যত বেশি পণ্য যুক্ত হবে, ক্যাটালগ পৃষ্ঠার সাইডবারে প্রদর্শিত *জনপ্রিয় ট্যাগ* এলাকায় এটি তত বড় হবে:
 
-![Popular tags](_static/product-tags/popular_tags.png)
+![জনপ্রিয় ট্যাগ](_static/product-tags/popular_tags.png)
 
-## Setting up product tags
+## পণ্যের ট্যাগ সেট আপ করা
 
-The following section describes product tags settings: [Tags](xref:en/running-your-store/catalog/catalog-settings#tags).
+নিচের বিভাগটি পণ্যের ট্যাগের সেটিংস বর্ণনা করে: [ট্যাগ](xref:bn/running-your-store/catalog/catalog-settings#tags)।
 
-## See also
+## আরো দেখুন
 
-* [Product categories](xref:en/running-your-store/catalog/categories)
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
+* [পণ্যের বিভাগ](xref:bn/running-your-store/catalog/category)
+* [পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)

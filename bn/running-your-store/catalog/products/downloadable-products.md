@@ -1,75 +1,76 @@
 ﻿---
-title: Downloadable products
-uid: en/running-your-store/catalog/products/downloadable-products
+title: ডাউনলোডযোগ্য পণ্য
+uid: bn/running-your-store/catalog/products/downloadable-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Downloadable products
+# ডাউনলোডযোগ্য পণ্য
 
-The downloadable products functionality is useful when you are going to sell ebooks or audio books, cources, PDfs, music, software or you want to create a picture stock, for example. 
+আপনি যখন ইবুক বা অডিও বই, কোর্স, পিডিএফ, সঙ্গীত, সফটওয়্যার বিক্রি করতে যাচ্ছেন অথবা আপনি একটি ছবির স্টক তৈরি করতে চান, তখন ডাউনলোডযোগ্য পণ্যগুলির কার্যকারিতা কার্যকর।
 
-## Example
+## উদাহরণ
 
-Let's say you wish to sell ebooks.
+ধরা যাক আপনি ইবুক বিক্রি করতে চান।
 
-What distinguishes a ebook-store from other stores? 
-- First of all you should provide to customers an easy way to download books from your store.
-	In nopCommerce, customers can find all the downloadable products they bought in the "My account" section:
-  ![Sample](_static/downloadable-products/my-account.jpg)
+কোন ই-বুক-স্টোরকে অন্য দোকান থেকে আলাদা করে?
+- প্রথমে আপনার গ্রাহকদের আপনার দোকান থেকে বই ডাউনলোড করার সহজ উপায় প্রদান করা উচিত।
+NopCommerce এ, গ্রাহকরা "আমার অ্যাকাউন্ট" বিভাগে কেনা সমস্ত ডাউনলোডযোগ্য পণ্য খুঁজে পেতে পারেন:
+  [নমুনা](_static/downloadable-products/my-account.jpg)
 
-- You may also wish to allow your customers to preview some parts of the books they want to buy.
-	In this case your customers will see the following *Download sample* button on the product details page:
-  ![Sample](_static/downloadable-products/sample.jpg)
+- আপনি আপনার গ্রাহকদের যে বইগুলি কিনতে চান তার কিছু অংশের পূর্বরূপ দেখার অনুমতি দিতে পারেন।
+এই ক্ষেত্রে আপনার গ্রাহকরা পণ্যের বিবরণ পৃষ্ঠায় নিম্নলিখিত *ডাউনলোড নমুনা* বাটন দেখতে পাবেন:
+  [নমুনা](_static/downloadable-products/sample.jpg)
 
-- Or it may be useful to ask a customer to agree with the *user agreement* before download an ebook. For example, agree to download and print one copy of each ebook chapter for only personal use.
-	This is how a customer will see this agreement:
-  ![Agree](_static/downloadable-products/agree.jpg)
+- অথবা একটি ইবুক ডাউনলোড করার আগে একজন গ্রাহককে *ব্যবহারকারী চুক্তি* এর সাথে একমত হতে বলা দরকারী হতে পারে। উদাহরণস্বরূপ, শুধুমাত্র ব্যক্তিগত ব্যবহারের জন্য প্রতিটি ইবুক অধ্যায়ের একটি কপি ডাউনলোড এবং মুদ্রণ করতে সম্মত হন।
+এইভাবে একজন গ্রাহক এই চুক্তিটি দেখতে পাবেন:
+  [সম্মত](_static/downloadable-products/agree.jpg)
 
-All these features can be set up when you editing a product. Futhermore, in special cases you can restrict downloads of the certain book by setting up a number of days during customers keeps access to the book or maximum downloads number. Or you can choose when customer is enabled to download a book: immediately after the book is paid or after manual validation.
+আপনি যখন কোনও পণ্য সম্পাদনা করেন তখন এই সমস্ত বৈশিষ্ট্যগুলি সেট আপ করা যেতে পারে। তাছাড়া, বিশেষ ক্ষেত্রে আপনি নির্দিষ্ট বইয়ের ডাউনলোড সীমাবদ্ধ করতে পারেন যখন গ্রাহকরা বই বা সর্বাধিক ডাউনলোড নম্বরে অ্যাক্সেস রাখেন। অথবা যখন গ্রাহক একটি বই ডাউনলোড করতে সক্ষম হন তখন আপনি চয়ন করতে পারেন: বইটি প্রদানের সাথে সাথে বা ম্যানুয়াল যাচাইকরণের পরে।
 
-If you already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products) learn how to make this product downloadable in the section below.
+যদি আপনি ইতিমধ্যেই [সাধারণ পণ্য](xref:bn/running-your-store/catalog/products/add-products) সেট আপ করতে শিখে থাকেন তাহলে নিচের বিভাগে এই পণ্যটি কিভাবে ডাউনলোডযোগ্য করা যায় তা শিখুন।
 
-## Set up a downloadable product
+## একটি ডাউনলোডযোগ্য পণ্য সেট আপ করুন
 
-To create a downloadable product, go to **Catalog → Products**. Click **Add new**, fill up the common product fields and tick the corresponding checkbox in the *Downloadable product* panel.
+একটি ডাউনলোডযোগ্য পণ্য তৈরি করতে, **ক্যাটালগ → পণ্য** এ যান। **নতুন যোগ করুন** ক্লিক করুন, সাধারণ পণ্যের ক্ষেত্রগুলি পূরণ করুন এবং*ডাউনলোডযোগ্য পণ্য* প্যানেলে সংশ্লিষ্ট চেকবক্সে টিক দিন।
 
-![DownloadableProduct](_static/downloadable-products/DownloadableProduct.png)
+![ডাউনলোডযোগ্য পণ্য](_static/downloadable-products/DownloadableProduct.png)
 
-Define the following details:
 
-- In the **Download file** section, upload the file using the **Upload a file** button or **use download URL** by ticking the corresponding checkbox and entering the **Download URL**.
-- **Unlimited downloads** - in case the product can be downloaded an unlimited number of times. When this option is not selected, an additional field appears. 
-  - In the **Max. downloads** field enter the maximum number of downloads, that are given to a customer, after purchasing the product.
-- **Number of days** during which customers keep access to the file. Leave this field empty if you want to enable continuous downloads.
-- **Download activation type**:
-  - *When order is paid* - select this option to enable the download only when the order payment status is "Paid".
-  - *Manually* - select this option to give control to the store administrator. When this option is selected, the administrator must manually activate the download. This is performed in the *Products* panel of an *Edit order details* page.
-- **Has user agreement** - if a customer must agree with the user agree in order to be able to download the product.
-  - **User agreement text** editor is then displayed enabling you to enter/edit the user agreement text.
-- **Has sample download file** allows a customer to download a sample file. 
-  - If this is applicable, upload the **Sample download file** using the **Upload a file** button or **use download URL** by ticking the corresponding checkbox and entering the **Download URL**. It will be shown on the product details page and can be downloaded by any customer without any charge.
+নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
 
- > [!TIP]
- >
- > Since downloadable products don't require shipping make sure the **Shipping enabled** field is unticked in the *Shipping* panel.
+- **ডাউনলোড ফাইল** বিভাগে, ফাইলটি আপলোড করুন **একটি ফাইল আপলোড করুন** বাটন ব্যবহার করে অথবা **ডাউনলোড ইউআরএল ব্যবহার করুন** সংশ্লিষ্ট চেকবক্সে টিক দিয়ে এবং **ডাউনলোড ইউআরএল** প্রবেশ করে।
+- **সীমাহীন ডাউনলোড** - যদি পণ্যটি অসীম সংখ্যক বার ডাউনলোড করা যায়। যখন এই বিকল্পটি নির্বাচন করা হয় না, একটি অতিরিক্ত ক্ষেত্র প্রদর্শিত হয়।
+  - **সর্বোচ্চ। ডাউনলোড** ক্ষেত্রটি সর্বাধিক সংখ্যক ডাউনলোড প্রবেশ করান, যা গ্রাহককে পণ্য কেনার পর দেওয়া হয়।
+- **দিনের সংখ্যা** যার সময় গ্রাহকরা ফাইলে অ্যাক্সেস রাখেন। যদি আপনি ক্রমাগত ডাউনলোড সক্ষম করতে চান তবে এই ক্ষেত্রটি খালি রাখুন।
+- **ডাউনলোড অ্যাক্টিভেশন টাইপ**:
+- *যখন অর্ডার দেওয়া হয়* - অর্ডার পেমেন্ট স্ট্যাটাস "পেইড" হলেই ডাউনলোড সক্ষম করতে এই বিকল্পটি নির্বাচন করুন।
+- *ম্যানুয়ালি* - স্টোর অ্যাডমিনিস্ট্রেটরকে নিয়ন্ত্রণ দিতে এই বিকল্পটি নির্বাচন করুন। যখন এই বিকল্পটি নির্বাচিত হয়, তখন প্রশাসককে অবশ্যই ডাউনলোডটি সক্রিয় করতে হবে। এটি একটি *অর্ডারের বিবরণ সম্পাদনা করুন* পৃষ্ঠার *পণ্য* প্যানেলে সঞ্চালিত হয়।
+- **ব্যবহারকারীর চুক্তি আছে** - যদি কোন গ্রাহককে পণ্যটি ডাউনলোড করতে সক্ষম হওয়ার জন্য ব্যবহারকারীর সাথে একমত হতে হয়।
+- **ব্যবহারকারী চুক্তি পাঠ্য** সম্পাদক প্রদর্শিত হয় যা আপনাকে ব্যবহারকারী চুক্তির পাঠ্য প্রবেশ/সম্পাদনা করতে সক্ষম করে।
+- **নমুনা ডাউনলোড ফাইল আছে** একজন গ্রাহক একটি নমুনা ফাইল ডাউনলোড করতে পারবেন।
+- যদি এটি প্রযোজ্য হয়, **নমুনা ডাউনলোড ফাইল** আপলোড করুন **একটি ফাইল আপলোড করুন** বোতাম ব্যবহার করে অথবা **ডাউনলোড ইউআরএল ব্যবহার করুন** সংশ্লিষ্ট চেকবক্সে টিক দিয়ে এবং **ডাউনলোড ইউআরএল** প্রবেশ করুন। এটি পণ্যের বিবরণ পৃষ্ঠায় দেখানো হবে এবং যে কোন গ্রাহক কোন চার্জ ছাড়াই ডাউনলোড করতে পারবেন।
 
  > [!TIP]
  >
- > Since you don't need to track inventory of downloadable products make sure the **Inventory method** field is set to *Don't track inventory* in the *Inventory* panel.
+ > যেহেতু ডাউনলোডযোগ্য পণ্যগুলি শিপিংয়ের প্রয়োজন হয় না তা নিশ্চিত করুন **শিপিং সক্ষম** ক্ষেত্রটি *শিপিং* প্যানেলে অনির্বাচিত।
 
-## Customer registration
+ > [!TIP]
+ >
+ > যেহেতু আপনাকে ডাউনলোডযোগ্য পণ্যের তালিকা ট্র্যাক করার প্রয়োজন নেই, নিশ্চিত করুন যে **তালিকা পদ্ধতি** ক্ষেত্রটি *তালিকা* প্যানেলে *তালিকা ট্র্যাক করবেন না* সেট করা আছে।
 
-Decide whether customer registration is required for downloadable products by ticking the **Require registration for downloadable products** checkbox in the *Common* panel on the **Configuration → Settings → Customer settings** page.
+## গ্রাহক নিবন্ধন
 
-## Downloadable products account page
+**কনফিগারেশন → সেটিংস → গ্রাহক সেটিংস** পৃষ্ঠায়*সাধারণ*প্যানেলে **ডাউনলোডযোগ্য পণ্যের জন্য নিবন্ধনের প্রয়োজন** চেকবক্স টিক দিয়ে ডাউনলোডযোগ্য পণ্যের জন্য গ্রাহক নিবন্ধন প্রয়োজন কিনা তা ঠিক করুন।
 
-If you would like to hide the 'Downloadable products' menu item from the customer account page go to the **Configuration → Settings → Customer settings** page and tick the **Hide 'Downloadable products' tab** checkbox.
+## ডাউনলোডযোগ্য পণ্য অ্যাকাউন্ট পৃষ্ঠা
 
-## See also
+আপনি যদি গ্রাহকের অ্যাকাউন্ট পৃষ্ঠা থেকে 'ডাউনলোডযোগ্য পণ্য' মেনু আইটেমটি আড়াল করতে চান তাহলে **কনফিগারেশন → সেটিংস → গ্রাহক সেটিংস** পৃষ্ঠায় যান এবং **লুকানো 'ডাউনলোডযোগ্য পণ্য' ট্যাব** চেকবক্সে টিক দিন।
 
-- [Orders](xref:en/running-your-store/order-management/orders)
+## আরো দেখুন
 
-## Tutorials
+-[অর্ডার](xref:bn/running-your-store/order-management/orders)
 
-- [Managing digital products](https://www.youtube.com/watch?v=om-HKr-B2yA)
+## টিউটোরিয়াল
+
+-[ডিজিটাল পণ্য ব্যবস্থাপনা](https://www.youtube.com/watch?v=om-HKr-B2yA)

@@ -1,28 +1,28 @@
 ---
-title: Recurring product
-uid: en/running-your-store/catalog/products/recurring-products
+title: পুনরাবৃত্ত পণ্য
+uid: bn/running-your-store/catalog/products/recurring-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Recurring products
+# পুনরাবৃত্ত পণ্য
 
-Recurring product type is usually used for subscriptions or products with installment payment plans. In case your product is recurring, tick the corresponding checkbox in the *Recurring product* panel.
+পুনরাবৃত্ত পণ্যের ধরন সাধারণত সাবস্ক্রিপশন বা কিস্তি পরিশোধের পরিকল্পনা সহ পণ্যগুলির জন্য ব্যবহৃত হয়। যদি আপনার পণ্যটি পুনরাবৃত্তি হয় তবে *পুনরাবৃত্ত পণ্য* প্যানেলে সংশ্লিষ্ট চেকবক্সটিতে টিক দিন।
 
-![Recurring](_static/recurring-products/recurring.png)
+![পুনরাবৃত্ত](_static/recurring-products/recurring.png)
 
-Define the following details:
+নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
 
-- **Cycle length**. It is a time period recurring order can be repeated.
-- **Cycle Period** in *Days*, *Weeks*, *Months* or *Years*. It defines units time period will be measured in.
-- **Total cycles** is a number of times customer will receive the recurring product.
+- **চক্রের দৈর্ঘ্য** এটি একটি সময়কাল পুনরাবৃত্তি আদেশ পুনরাবৃত্তি করা যেতে পারে।
+- **সাইকেল পিরিয়ড** *দিনে*,*সপ্তাহ*,*মাস* বা *বছর*। এটি সংজ্ঞায়িত করে একক সময়কাল পরিমাপ করা হবে।
+- **মোট চক্র** হলো গ্রাহক বারবার আসার পণ্য পাবেন।
 
-You can define a recurring cycle to any product in order to enable the system to automatically create repetitive orders. In this case, any time when the payment must be done, the system will use the payment details of the initial order for subsequent recurring orders. In addition, the original shipping charges will apply to subsequent orders.
+সিস্টেমকে স্বয়ংক্রিয়ভাবে পুনরাবৃত্তিমূলক অর্ডার তৈরি করতে সক্ষম করার জন্য আপনি যেকোনো পণ্যের একটি পুনরাবৃত্তিমূলক চক্র সংজ্ঞায়িত করতে পারেন। এই ক্ষেত্রে, যে কোনো সময় যখন পেমেন্ট করতে হবে, সিস্টেম পরবর্তী পুনরাবৃত্ত আদেশের জন্য প্রাথমিক আদেশের অর্থ প্রদানের বিবরণ ব্যবহার করবে। উপরন্তু, আসল শিপিং চার্জ পরবর্তী আদেশের ক্ষেত্রে প্রযোজ্য হবে।
 
 > [!NOTE]
 > 
-> At least one of the active payment modules should support recurring payments.
+> কমপক্ষে একটি সক্রিয় পেমেন্ট মডিউল পুনরাবৃত্ত পেমেন্ট সমর্থন করা উচিত।
 
-## See also
+## আরো দেখুন
 
-- [Payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
+- [মুল্য পরিশোধ পদ্ধতি](xref:bn/getting-started/configure-payments/payment-methods/index)

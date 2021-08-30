@@ -200,199 +200,199 @@
           name: All settings
           href: getting-started/advanced-configuration/all-settings.md
 -
-  name: Running your store
+  name: আপনার স্টোর চালানো
   href: running-your-store/index.md
   items:
     -
-      name: Catalog
+      name: ক্যাটালগ
       href: running-your-store/catalog/index.md
       items:
         -
-          name: Products
+          name: পণ্য
           href: running-your-store/catalog/products/index.md
           items:
             -
-              name: Add products
+              name: পণ্য যোগ করা
               href: running-your-store/catalog/products/add-products.md
             -
-              name: Product attributes
+              name: পণ্য বৈশিষ্ট্য
               href: running-your-store/catalog/products/product-attributes.md
             -
-              name: Specification attributes
+              name: স্পেসিফিকেশন বৈশিষ্ট্য
               href: running-your-store/catalog/products/specification-attributes.md
             -
-              name: Downloadable products
+              name: ডাউনলোডযোগ্য পণ্য
               href: running-your-store/catalog/products/downloadable-products.md
             -
-              name: Grouped products (variants)
+              name: গোষ্ঠীভুক্ত পণ্য (রূপ)
               href: running-your-store/catalog/products/grouped-products-variants.md
             -
-              name: Recurring products
+              name: পুনরাবৃত্ত পণ্য
               href: running-your-store/catalog/products/recurring-products.md
             -
-              name: Rental products
+              name: ভাড়া পণ্য
               href: running-your-store/catalog/products/rental-products.md
             -
-              name: Import/export products
+              name: পণ্য আমদানি/রপ্তানি
               href: running-your-store/catalog/products/import-export-products.md
             -
-              name: Product tags
+              name: পণ্যের ট্যাগ
               href: running-your-store/catalog/products/product-tags.md
             -
-              name: Product reviews
+              name: পণ্য রিভিউ
               href: running-your-store/catalog/products/product-reviews.md
         -
-          name: Categories
+          name: বিভাগ
           href: running-your-store/catalog/categories.md
         -
-          name: Manufacturers
+          name: নির্মাতারা
           href: running-your-store/catalog/manufacturers.md
         -
-          name: Catalog settings
+          name: ক্যাটালগ সেটিংস
           href: running-your-store/catalog/catalog-settings.md
     -
-      name: Order management
+      name: অর্ডার ব্যাবস্থাপনা
       href: running-your-store/order-management/index.md
       items:
         -
-          name: Orders
+          name: অর্ডার
           href: running-your-store/order-management/orders.md
         -
-          name: Shipping management
+          name: শিপিং ব্যবস্থাপনা
           href: running-your-store/order-management/shipping-management.md
         -
-          name: Return requests
+          name: ফেরতের অনুরোধ
           href: running-your-store/order-management/return-requests.md
         -
-          name: Shopping carts and wishlists
+          name: শপিং কার্ট এবং ইচ্ছা তালিকা
           href: running-your-store/order-management/shopping-carts-and-wishlists.md
         -
-          name: Inventory management
+          name: ইনভেন্টরি ম্যানেজমেন্ট
           href: running-your-store/order-management/inventory-management.md
         -
-          name: Checkout attributes
+          name: চেকআউট বৈশিষ্ট্য
           href: running-your-store/order-management/checkout-attributes.md
         -
-          name: Order settings
+          name: অর্ডার সেটিংস
           href: running-your-store/order-management/order-settings.md
     -
-      name: Customer management
+      name: গ্রাহক ব্যবস্থাপনা
       href: running-your-store/customer-management/index.md
       items:
         -
-          name: Managing customers
+          name: গ্রাহকদের পরিচালনা করা
           href: running-your-store/customer-management/managing-customers.md
         -
-          name: Customer roles
+          name: গ্রাহকের ভূমিকা
           href: running-your-store/customer-management/customer-roles.md
         -
-          name: Access control list
+          name: অ্যাক্সেস নিয়ন্ত্রণ তালিকা
           href: running-your-store/customer-management/access-control-list.md
         -
-          name: Activity log
+          name: কার্য বিবরণ
           href: running-your-store/customer-management/activity-log.md
         -
-          name: Online customers
+          name: অনলাইন গ্রাহক
           href: running-your-store/customer-management/online-customers.md
         -
-          name: Customer settings
+          name: গ্রাহক সেটিংস
           href: running-your-store/customer-management/customer-settings.md
     -
-      name: Vendor management
+      name: বিক্রেতা ব্যবস্থাপনা
       href: running-your-store/vendor-management.md
     -
-      name: Promotional tools
+      name: প্রচারমূলক সরঞ্জাম
       href: running-your-store/promotional-tools/index.md
       items:
         -
-          name: Discounts
+          name: ডিসকাউন্ট
           href: running-your-store/promotional-tools/discounts.md
         -
-          name: Gift cards
+          name: গিফট কার্ড
           href: running-your-store/promotional-tools/gift-cards.md
         -
-          name: Reward points
+          name: রিওয়ার্ড পয়েন্টস
           href: running-your-store/promotional-tools/reward-points.md
         -
-          name: Affiliates
+          name: সংযুক্ত করণ
           href: running-your-store/promotional-tools/affiliates.md
         -
-          name: Tier prices
+          name: স্তরের দাম
           href: running-your-store/promotional-tools/tier-prices.md
         -
-          name: Cross-sells and related products
+          name: ক্রস বিক্রয় এবং সম্পর্কিত পণ্য
           href: running-your-store/promotional-tools/cross-sells-and-related-products.md
         -
-          name: Email campaigns
+          name: ইমেল প্রচারণা
           href: running-your-store/promotional-tools/email-campaigns.md
         -
-          name: Sendinblue integration
+          name: সেন্ডইনব্লু ইন্টিগ্রেশন
           href: running-your-store/promotional-tools/sendinblue-integration/index.md
           items: 
             -
-              name: Set up Sendinblue plugin
+              name: সেন্ডইনব্লু প্লাগইন সেট আপ করুন
               href: running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin.md
             -
-              name: Recover abandoned carts
+              name: পরিত্যক্ত গাড়িগুলি পুনরুদ্ধার করুন
               href: running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts.md
             -
-              name: Send an order confirmation email
+              name: অর্ডার কনফার্মেশন ইমেইল পাঠান
               href: running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email.md
         -
-          name: Facebook Pixel
+          name: ফেসবুক পিক্সেল
           href: running-your-store/promotional-tools/facebook-pixel.md
     -
-      name: Content management
+      name: কন্টেন্ট ম্যানেজমেন্ট
       href: running-your-store/content-management/index.md
       items:
         -
-          name: Blog
+          name: ব্লগ
           href: running-your-store/content-management/blog.md
         -
-          name: News
+          name: খবর
           href: running-your-store/content-management/news.md
         -
-          name: Forums
+          name: ফোরাম
           href: running-your-store/content-management/forums.md
         -
-          name: Polls
+          name: ভোট
           href: running-your-store/content-management/polls.md
         -
-          name: Topics (pages)
+          name: বিষয় (পৃষ্ঠা)
           href: running-your-store/content-management/topics-pages.md
         -
-          name: Message templates
+          name: বার্তা টেমপ্লেট
           href: running-your-store/content-management/message-templates.md
     -
-      name: Search engine optimization (SEO)
+      name: সার্চ ইঞ্জিন অপটিমাইজেশন (এসইও)
       href: running-your-store/search-engine-optimization.md
     -
-      name: Reports
+      name: রিপোর্ট
       href: running-your-store/reports.md
     -
-      name: System administration
+      name: সিস্টেম অ্যাডমিনিস্ট্রেশন
       href: running-your-store/system-administration/index.md
       items:
         -
-          name: System information
+          name: পদ্ধতিগত তথ্য
           href: running-your-store/system-administration/system-information.md
         -
-          name: Log
+          name: লগ
           href: running-your-store/system-administration/log.md
         -
-          name: Warnings
+          name: সতর্কবাণী
           href: running-your-store/system-administration/warnings.md
         -
-          name: Maintenance
+          name: রক্ষণাবেক্ষণ
           href: running-your-store/system-administration/maintenance.md
         -
-          name: Message queue
+          name: বার্তার সারি
           href: running-your-store/system-administration/message-queue.md
         -
-          name: Schedule tasks
+          name: কাজের সময়সূচী
           href: running-your-store/system-administration/schedule-tasks.md
         -
-          name: Templates
+          name: টেমপ্লেট
           href: running-your-store/system-administration/templates.md
 - 
   name: ডেভেলপার গাইড
@@ -583,5 +583,5 @@
   name: অবদান
   href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md
 - 
-  name: Premium support services
+  name: প্রিমিয়াম সাপোর্ট সার্ভিস
   href: https://www.nopcommerce.com/nopcommerce-premium-support-services?utm_source=documentation&utm_medium=menu&utm_campaign=docs-menu

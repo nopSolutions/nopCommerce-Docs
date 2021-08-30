@@ -1,322 +1,322 @@
 ---
-title: Add products
-uid: en/running-your-store/catalog/products/add-products
+title: পণ্য যোগ করা
+uid: bn/running-your-store/catalog/products/add-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.sanju741, git.exileDev, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Add products
+# পণ্য যোগ করা
 
-Setting up products in the best way possible is highly important for a store. Make sure to not miss any detail, such as displaying different size and color options, giving a thorough product description, adding appealing pictures, etc.
+সম্ভাব্য সর্বোত্তম উপায়ে পণ্য সেট আপ করা একটি দোকানের জন্য অত্যন্ত গুরুত্বপূর্ণ। নিশ্চিত করুন যে কোনও বিবরণ মিস করবেন না, যেমন বিভিন্ন আকার এবং রঙের বিকল্প প্রদর্শন করা, পণ্যের পুঙ্খানুপুঙ্খ বিবরণ দেওয়া, আকর্ষণীয় ছবি যুক্ত করা ইত্যাদি।
 
-To add a new product, go to **Catalog → Products**. Click **Add new** button in the right top corner.
+একটি নতুন পণ্য যোগ করতে, **ক্যাটালগ → পণ্য** এ যান। ডান উপরের কোণে **নতুন যোগ করুন** বাটনে ক্লিক করুন।
 
-![Products](_static/add-product-for-beginners/products.jpg)
+![পণ্য](_static/add-product-for-beginners/products.jpg)
 
 > [!NOTE]
 >
-> You can import products from an external file by clicking the **Import** button. Once you have a list of products, you can export it to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. Additionally, it is possible to **Download catalog as PDF** to print the selected products to a PDF file. To remove products from the list, select the items to be deleted and click the **Delete (selected)** button.
+> আপনি **আমদানি** বাটনে ক্লিক করে একটি বাহ্যিক ফাইল থেকে পণ্য আমদানি করতে পারেন। একবার আপনার পণ্যের একটি তালিকা হয়ে গেলে, আপনি **এক্সপোর্ট** বাটনে ক্লিক করে ব্যাকআপ উদ্দেশ্যে এটি একটি বহিরাগত ফাইলে রপ্তানি করতে পারেন। **রপ্তানি** বাটনে ক্লিক করার পর আপনি ড্রপডাউন মেনু দেখতে পাবেন যা আপনাকে এক্সপ্লের এক্সএমএল (সব পাওয়া) **অথবা এক্সপোর্ট এক্সএমএল (নির্বাচিত)** এবং **এক্সেল এক্সপোর্ট করতে (সব পাওয়া)** বা **এক্সেলে রপ্তানি করুন (নির্বাচিত)**। অতিরিক্তভাবে, **নির্বাচিত পণ্যগুলিকে পিডিএফ ফাইলে মুদ্রণ করতে** পিডিএফ হিসাবে ক্যাটালগ ডাউনলোড করা সম্ভব। তালিকা থেকে পণ্যগুলি সরানোর জন্য, মুছে ফেলা আইটেমগুলি নির্বাচন করুন এবং **মুছুন (নির্বাচিত)** বাটনে ক্লিক করুন।
 
-*Add a new product* page is available in two modes: **advanced** and **basic** (in advanced mode by default). You can switch to the basic mode which displays the only required fields.
+*একটি নতুন পণ্য যোগ করুন*পৃষ্ঠা দুটি মোডে উপলব্ধ: **উন্নত** এবং **মৌলিক** (ডিফল্টরূপে উন্নত মোডে)। আপনি মৌলিক মোডে স্যুইচ করতে পারেন যা শুধুমাত্র প্রয়োজনীয় ক্ষেত্র প্রদর্শন করে।
 
-![Add a new product](_static/add-product-for-beginners/add_a_new_product.png)
+![একটি নতুন পণ্য যোগ করুন](_static/add-product-for-beginners/add_a_new_product.png)
 
-You can also set up the *basic* mode to choose which exactly fields you want to be required. To do this click the **Settings** button beside the swith. The *Setting* popup will be displayed, as follows:
+আপনি কোন মৌলিক ক্ষেত্রগুলি প্রয়োজন তা চয়ন করতে *মৌলিক* মোড সেট আপ করতে পারেন। এটি করার জন্য সুইথের পাশে **সেটিংস** বাটনে ক্লিক করুন। *সেটিং* পপআপ প্রদর্শিত হবে, নিম্নরূপ:
 
-![Settings](_static/add-product-for-beginners/settings.jpg)
+![সেটিংস](_static/add-product-for-beginners/settings.jpg)
 
-Tick the needed fields and click **Save**. Note that the page will be refreshed in this case.
+প্রয়োজনীয় ক্ষেত্রগুলিতে টিক দিন এবং ** সংরক্ষণ করুন ** ক্লিক করুন। মনে রাখবেন এই ক্ষেত্রে পৃষ্ঠাটি রিফ্রেশ হবে।
 
-## Product info
+## পণ্যের তথ্য
 
-Start by filling up general information in the *Product info* panel:
+*পণ্য তথ্য* প্যানেলে সাধারণ তথ্য পূরণ করে শুরু করুন:
 
-- Enter the **Product name**.
-- Enter the product **Short description** that will be displayed in the catalog.
-- Enter the product **Full description** that will be shown on the product details page. Here you can add text, bullet points, links, or additional images. Make sure to write a detailed description as it affects your buyers' decision making.
-- Enter the product **SKU**. This is the product stock keeping unit, used internally for tracking the product. This is your internal unique ID used to track this product.
-- **Categories**. You can assign a product to as many categories as you want. You can manage [product categories](xref:en/running-your-store/catalog/categories) in **Catalog → Categories**.
+- **পণ্যের নাম লিখুন**
+- পণ্যটি লিখুন **সংক্ষিপ্ত বিবরণ** যা ক্যাটালগে প্রদর্শিত হবে।
+- পণ্যটি লিখুন **সম্পূর্ণ বিবরণ** যা পণ্যের বিবরণ পৃষ্ঠায় দেখানো হবে। এখানে আপনি পাঠ্য, বুলেট পয়েন্ট, লিঙ্ক বা অতিরিক্ত ছবি যোগ করতে পারেন। একটি বিস্তারিত বিবরণ লিখতে ভুলবেন না কারণ এটি আপনার ক্রেতাদের সিদ্ধান্ত গ্রহণকে প্রভাবিত করে।
+- পণ্য **এসকেইউ** লিখুন। এই পণ্য স্টক পালন ইউনিট, অভ্যন্তরীণভাবে পণ্য ট্র্যাকিং জন্য ব্যবহৃত। এই পণ্যটি ট্র্যাক করার জন্য এটি আপনার অভ্যন্তরীণ অনন্য আইডি।
+- **বিভাগ**। আপনি যতগুলি বিভাগ চান আপনি একটি পণ্য বরাদ্দ করতে পারেন। **ক্যাটালগ → বিভাগ** এ আপনি [পণ্য বিভাগ](xref:bn/running-your-store/catalog/category) পরিচালনা করতে পারেন।
 
-- **Manufacturers**. You can assign a product to as many manufacturers as you want. You can manage [manufacturers](xref:en/running-your-store/catalog/manufacturers) in **Catalog → Manufacturers**.
+- **প্রস্তুতকারক**। আপনি যতগুলি নির্মাতাদের চান তাদের একটি পণ্য বরাদ্দ করতে পারেন। আপনি [নির্মাতারা](xref:bn/running-your-store/catalog/Manufacturers) পরিচালনা করতে পারেন **ক্যাটালগ → নির্মাতারা** এ।
 
-- Tick **Published**, to make the product visible in your store.
-- Enter the **Product tags**, the keywords for product identification. Enter tags separating them by comma. The more products are associated with a particular tag, the larger it will look in the *Popular tags* cloud, displayed in the sidebar of the catalog page. Read more how to manage product tags in the [Product tags](xref:en/running-your-store/catalog/products/product-tags) section.
+- আপনার দোকানে পণ্যটি দৃশ্যমান করতে **প্রকাশিত** টিক দিন।
+- **পণ্য ট্যাগ লিখুন**, পণ্য সনাক্তকরণের জন্য কীওয়ার্ড কমা দ্বারা তাদের আলাদা করে ট্যাগ লিখুন। একটি নির্দিষ্ট ট্যাগের সাথে যত বেশি পণ্য যুক্ত হবে, ক্যাটালগ পৃষ্ঠার সাইডবারে প্রদর্শিত *জনপ্রিয় ট্যাগ* ক্লাউডে এটি তত বড় হবে। [প্রোডাক্ট ট্যাগ](xref:bn/running-your-store/catalog/products/product-tags) বিভাগে কীভাবে পণ্য ট্যাগগুলি পরিচালনা করবেন তা আরও পড়ুন।
   
-  ![Popular tags](_static/add-product-for-beginners/popular_tags.png)
+  [জনপ্রিয় ট্যাগ](_static/add-product-for-beginners/popular_tags.png)
 
-- Enter the **GTIN (global trade item number)**. These identifiers include UPC (in North America), EAN (in Europe), JAN (in Japan), and ISBN (for Books).
-- Enter the **Manufacturer part number**. It's a part number provided by a manufacturer for the product.
-- Tick the **Show on homepage** checkbox to display this product on your store's home page. Recommended for your most popular products. If this checkbox is ticked, the store owner can also specify the **Display order** of the product. 1 represents the top of the list.
-- Set up the **Product type** as *Simple* or *Grouped*. Read more about product types in the [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants) chapter.
-- The **Product template** field is visible if you have any custom product templates installed on the **Sysytem → Templates** page.
-- Tick **Visible individually** if you want the product to be in catalog or search results, otherwise the product will be hidden in the catalog and accessible only from a grouped product details page.
-- Choose **Customer roles** which will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone.
+- **জিটিইন (গ্লোবাল ট্রেড আইটেম নম্বর)** লিখুন। এই শনাক্তকারীদের মধ্যে রয়েছে ইউপিসি (উত্তর আমেরিকায়), ইএএন (ইউরোপে), যেএএন (জাপানে), এবং আইএসবিএন (বইগুলির জন্য)।
+- **প্রস্তুতকারকের অংশ নম্বর লিখুন**। এটি একটি নির্মাতা পণ্যের জন্য প্রদত্ত একটি অংশ নম্বর।
+- আপনার দোকানের হোম পেজে এই পণ্যটি প্রদর্শন করতে **হোমপেজে দেখান** চেকবক্সে টিক দিন। আপনার সর্বাধিক জনপ্রিয় পণ্যের জন্য প্রস্তাবিত। যদি এই চেকবক্সে টিক দেওয়া থাকে, দোকানের মালিক পণ্যের **ডিসপ্লে অর্ডার** নির্দিষ্ট করতে পারেন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+- **পণ্যের ধরন** *সহজ* বা *গোষ্ঠীভুক্ত* হিসাবে সেট করুন। [গ্রুপযুক্ত পণ্য (রূপ)](xref:bn/running-your-store/catalog/products/grouped-products-variants) অধ্যায়ে পণ্যের ধরন সম্পর্কে আরও পড়ুন।
+- **প্রোডাক্ট টেমপ্লেট** ফিল্ড দেখা যায় যদি আপনার কোন কাস্টম প্রোডাক্ট টেমপ্লেট ইনস্টল করা থাকে **সিস্টেম → টেমপ্লেট** পেজে।
+- টিক করুন **পৃথকভাবে দৃশ্যমান** যদি আপনি পণ্যটি ক্যাটালগ বা অনুসন্ধানের ফলাফলে দেখতে চান, অন্যথায় পণ্যটি ক্যাটালগে লুকানো থাকবে এবং শুধুমাত্র একটি গোষ্ঠীভুক্ত পণ্যের বিবরণ পৃষ্ঠা থেকে অ্যাক্সেসযোগ্য হবে।
+- **গ্রাহকের ভূমিকা** চয়ন করুন যা ক্যাটালগে পণ্যটি দেখতে সক্ষম হবে। এই বিকল্পটি প্রয়োজন না হলে এই ক্ষেত্রটি খালি রেখে দিন এবং পণ্যটি সবাই দেখতে পারে।
     > [!NOTE]
     >
-    > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
-- Choose the stores in the **Limited to stores** field if the product is sold in specific stores. Leave the field empty in case this functionality is not required.
+    > এই কার্যকারিতাটি ব্যবহার করার জন্য আপনাকে নিম্নলিখিত সেটিংটি নিষ্ক্রিয় করতে হবে: **কনফিগারেশন → ক্যাটালগ সেটিংস → এসিএল উপেক্ষা করুন  (সাইটওয়াইড)**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/customer-management/access-control-list)।
+- নির্দিষ্ট দোকানে পণ্য বিক্রি হলে **স্টোরের মধ্যে সীমিত** ক্ষেত্রের দোকানগুলি বেছে নিন। এই কার্যকারিতা প্রয়োজন না হলে ক্ষেত্রটি খালি রাখুন।
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > এই কার্যকারিতা ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-- **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**.
-- Define whether the product **Require other products**. In this case select the **Required product IDs** entering them separated by comma, ensure that there are no circular references, e.g. A requires B, B requires A. Chose to **Automatically add these products to the cart** if required.
-- Tick **Allow customer reviews**, to enable customers to review this product.
-- Define **Available start date** and/or **Available end date** of the product availability.
-- Tick **Mark as new**, to mark the product as recently added. This way you can manage a list of products displayed on the "New products" page. You can also specify a period during which this product will be marked as new using the **Mark as new. Start date** and **Mark as new. End date** fields.
-- In the **Admin comment** field enter a comment for information purposes. This comment is for internal use only, not visible for customers.
+- **বিক্রেতা**। আপনি [বিক্রেতাদের](xref:bn/running-your-store/vendor-management) পরিচালনা করতে পারেন **গ্রাহক →বিক্রেতারা** এ।
+- প্রোডাক্ট **অন্য প্রোডাক্টের প্রয়োজন** নির্ধারণ করুন। এই ক্ষেত্রে **প্রয়োজনীয় প্রোডাক্ট আইডি নির্বাচন করুন** কমা দ্বারা আলাদা করে প্রবেশ করুন, নিশ্চিত করুন যে কোন বৃত্তাকার রেফারেন্স নেই, যেমন ক এর প্রয়োজন খ, খ এর প্রয়োজন ক। চয়ন করুন ** যদি প্রয়োজন হয় তবে এই পণ্যগুলিকে স্বয়ংক্রিয়ভাবে কার্টে যুক্ত করুন
+- গ্রাহকদের এই পণ্যটি পর্যালোচনা করতে সক্ষম করতে, **গ্রাহক পর্যালোচনার অনুমতি দিন** টিক দিন।
+- পণ্যের প্রাপ্যতার **উপলভ্য শুরুর তারিখ** এবং/অথবা **উপলভ্য শেষ তারিখ** নির্ধারণ করুন।
+- সাম্প্রতিক যোগ করা পণ্যটি চিহ্নিত করতে, **নতুন হিসেবে চিহ্নিত করুন**। এইভাবে আপনি "নতুন পণ্য" পৃষ্ঠায় প্রদর্শিত পণ্যের একটি তালিকা পরিচালনা করতে পারেন। আপনি একটি নির্দিষ্ট সময়ও নির্দিষ্ট করতে পারেন যার সময় এই পণ্যটি নতুন হিসাবে চিহ্নিত করা হবে **নতুন হিসাবে চিহ্নিত করুন। শুরুর তারিখ** এবং **নতুন হিসাবে চিহ্নিত করুন। শেষ তারিখ** ক্ষেত্র।
+- **অ্যাডমিন মন্তব্য** ক্ষেত্রের তথ্যের উদ্দেশ্যে একটি মন্তব্য লিখুন। এই মন্তব্যটি শুধুমাত্র অভ্যন্তরীণ ব্যবহারের জন্য, গ্রাহকদের জন্য দৃশ্যমান নয়।
 
-## Price
+## দাম
 
-In the *Price* panel define:
+*মূল্য* প্যানেলে সংজ্ঞায়িত করুন:
 
-- **Price**, in a predefined currency.
+- **মূল্য**, একটি পূর্বনির্ধারিত মুদ্রায়।
     > [!NOTE]
     >
-    > You can change the store currency in **Configuration → Currencies**. Read more about currencies [here](xref:en/getting-started/configure-payments/advanced-configuration/currencies).
+    > আপনি **কনফিগারেশন → কারেন্সি** এ দোকানের মুদ্রা পরিবর্তন করতে পারেন। মুদ্রা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/configure-payment/advanced-configuration/currencies)।
 
-- **Old price**. If it is larger than zero it becomes visible in the public store and is displayed beside the new price for comparison purposes.
-- **Product cost**, the sum of all costs associated with the production of the product or service. This is not displayed to customers.
-- To **Disable buy button**. This can be useful for products "upon request".
-- To **Disable wishlist button**.
-- **Available for pre-order** if the product is not in the store yet, but you want the customers to be able to order it. The *Pre-order* button will be displayed to replace the standard *Add to cart* button in the public store. When this option is selected, the **Pre-order availability start date** field is displayed. Enter the availability start date of the product in UTC. The *Pre-order* button will be changed to *Add to cart* when this date is reached.
-- **Call for price**, to show *Call for pricing* or *Call for quote* instead of the price on the product details page in the public store. This can help you to establish a contact with your customers and provide with additional information about the product they are interested in.
-- **Customer enters price**, to indicate that a customer must enter the price. When selected, the following fields are displayed:
-  - In the **Minimum amount** field, enter the minimum amount for the price.
-  - In the **Maximum amount** field, enter the maximum amount for the price.
-- **PAngV (base price) enabled**, if the product has a base price. This is required according to the German law (PAngV). For example, if you sell 500ml of beer for 1,50 euro, you have to show the base price: 3.00 euro per 1L. When selected, the following fields are displayed:
-  - **Amount in product** - amount of the product that is being sold.
-  - **Unit of product** - measure of a previously entered value.
-  - **Reference amount** - the base amount.
-  - **Reference unit** - measure of a previously entered value.
-- **Discounts**. Learn how to set up discounts [here](xref:en/running-your-store/promotional-tools/discounts).
+- **পুরাতন মূল্য**. যদি এটি শূন্যের চেয়ে বড় হয় তবে এটি পাবলিক স্টোরে দৃশ্যমান হয় এবং তুলনামূলক উদ্দেশ্যে নতুন মূল্যের পাশে প্রদর্শিত হয়।
+- **পণ্যের খরচ**, পণ্য বা সেবার উৎপাদনের সাথে যুক্ত সকল খরচের সমষ্টি। এটি গ্রাহকদের কাছে প্রদর্শিত হয় না।
+- থেকে **কিনুন বোতাম অক্ষম করুন**। এটি "অনুরোধের ভিত্তিতে" পণ্যগুলির জন্য দরকারী হতে পারে।
+- থেকে ** উইশলিস্ট বোতাম অক্ষম করুন **।
+- **প্রি-অর্ডারের জন্য উপলব্ধ** যদি পণ্যটি এখনও দোকানে না থাকে, কিন্তু আপনি চান গ্রাহকরা এটি অর্ডার করতে সক্ষম হন। পাবলিক স্টোরে স্ট্যান্ডার্ড *কার্টে যোগ করুন* বোতামটি প্রতিস্থাপন করতে *প্রি-অর্ডার* বাটন প্রদর্শিত হবে। যখন এই বিকল্পটি নির্বাচন করা হয়, **প্রি-অর্ডার প্রাপ্যতা শুরুর তারিখ** ক্ষেত্র প্রদর্শিত হয়। ইউটিসিতে পণ্যের প্রাপ্যতা শুরুর তারিখ লিখুন। এই তারিখটি পৌঁছালে *প্রি-অর্ডার* বোতামটি *কার্টে যোগ করুন* এ পরিবর্তন করা হবে।
+- **দামের জন্য কল করুন**, *দামের জন্য কল করুন অথবা পাবলিক স্টোরে পণ্যের বিবরণ পৃষ্ঠায় দামের পরিবর্তে উদ্ধৃতির জন্য কল করুন*। এটি আপনাকে আপনার গ্রাহকদের সাথে একটি যোগাযোগ স্থাপন করতে এবং তাদের আগ্রহী পণ্য সম্পর্কে অতিরিক্ত তথ্য প্রদান করতে সাহায্য করতে পারে।
+- **গ্রাহক মূল্য প্রবেশ করে**, নির্দেশ করে যে একজন গ্রাহককে অবশ্যই মূল্য দিতে হবে। নির্বাচিত হলে, নিম্নলিখিত ক্ষেত্রগুলি প্রদর্শিত হয়:
+  - **ন্যূনতম পরিমাণ** ক্ষেত্রের মধ্যে, মূল্যের জন্য সর্বনিম্ন পরিমাণ লিখুন।
+  - **সর্বোচ্চ পরিমাণ** ক্ষেত্রের মধ্যে, মূল্যের জন্য সর্বোচ্চ পরিমাণ লিখুন।
+- **পিএএনজিবি (বেস প্রাইস) সক্ষম**, যদি পণ্যের মূল মূল্য থাকে। জার্মান আইন (পিএএনজিবি) অনুযায়ী এটি প্রয়োজন। উদাহরণস্বরূপ, যদি আপনি ১,৫০ ইউরোতে ৫০০ মিলি বিয়ার বিক্রি করেন, তাহলে আপনাকে মূল মূল্য দেখাতে হবে: প্রতি ১L ৩.০০ ইউরো। নির্বাচিত হলে, নিম্নলিখিত ক্ষেত্রগুলি প্রদর্শিত হয়:
+  - **পণ্যের পরিমাণ** - বিক্রি হওয়া পণ্যের পরিমাণ।
+  - **পণ্যের একক** - পূর্বে প্রবেশ করা মান পরিমাপ।
+  - **রেফারেন্স পরিমাণ** - মূল পরিমাণ।
+  - **রেফারেন্স ইউনিট** - পূর্বে প্রবেশ করা মান পরিমাপ।
+- **ছাড়**। ডিসকাউন্ট কিভাবে সেট করতে হয় তা শিখুন [এখানে](xref:bn/running-your-store/promotional-tools/discounts)।
     > [!NOTE]
     >
-    > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
+    > যদি আপনি ছাড় ব্যবহার করতে চান তবে নিশ্চিত করুন যে **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস → পারফরম্যান্স** প্যানেলে **ডিসকাউন্ট উপেক্ষা করুন (সাইটওয়াইড)** সেটিং অক্ষম করা আছে।
 
-- Whether the product is exempted from tax, by ticking **Tax exempt**. Otherwise, from the **Tax category** dropdown list, select the required tax classification for this product. Tax categories can be configured by the store owner in  the **Configuration → Tax → Tax categories**.
-- The product as **Telecommunications, broadcasting, and electronic services**, to apply special tax rules used in the European Union.
-- Set up [tier prices](xref:en/running-your-store/promotional-tools/tier-prices) if required.
+- পণ্যটি ট্যাক্স থেকে অব্যাহতিপ্রাপ্ত কিনা, **কর অব্যাহতি** টিক দিয়ে। অন্যথায়, **ট্যাক্স বিভাগ** ড্রপডাউন তালিকা থেকে, এই পণ্যের জন্য প্রয়োজনীয় কর শ্রেণীবিভাগ নির্বাচন করুন। স্টোরের মালিক কর কনফিগার করতে পারেন **কনফিগারেশন → ট্যাক্স → ট্যাক্স বিভাগ**।
+- ইউরোপীয় ইউনিয়নে ব্যবহৃত বিশেষ কর নিয়ম প্রয়োগ করার জন্য **টেলিযোগাযোগ, সম্প্রচার এবং ইলেকট্রনিক পরিষেবা** হিসাবে পণ্য।
+-প্রয়োজনে [স্তর মূল্য](xref:bn/running-your-store/promotional-tools/tier-prices) সেট আপ করুন।
 
-## Shipping
+## পাঠানো
 
-Define product-specific shipping details in the *Shipping* panel:
+*শিপিং* প্যানেলে পণ্য-নির্দিষ্ট শিপিংয়ের বিবরণ সংজ্ঞায়িত করুন:
 
-- Tick **Shipping enabled** if the product can be shipped. The section then expands for more details.
-- Set the product parameters which will be used for the shipping calculation: **Weight, Length, Width, Height**.
+- পণ্যটি শিপিং করতে পারলে **শিপিং সক্ষম** টিক দিন। বিভাগটি আরও বিশদের জন্য প্রসারিত হয়।
+- পণ্য পরিমাপ সেট করুন যা শিপিং গণনার জন্য ব্যবহার করা হবে: **ওজন, দৈর্ঘ্য, প্রস্থ, উচ্চতা**।
     > [!NOTE]
     >
-    > You can change predefined measures in **Configuration → Shipping → Measures**.
+    > আপনি **কনফিগারেশন → শিপিং → পরিমাপ** এ পূর্বনির্ধারিত ব্যবস্থা পরিবর্তন করতে পারেন।
 
-- **Free shipping** if the product is shipped for free.
-- **Ship separately** if the product should be shipped separately from other products. If the order includes several items of the product, all of them will be shipped separately.
-- **Additional shipping charge**.
-- **Delivery date** which will be displayed in the public store.
+- **বিনামূল্যে শিপিং** যদি পণ্যটি বিনামূল্যে পাঠানো হয়।
+- **আলাদাভাবে প্রেরণ করুন** যদি পণ্যটি অন্য পণ্য থেকে আলাদাভাবে পাঠানো হয়। যদি অর্ডারে পণ্যের বেশ কিছু আইটেম অন্তর্ভুক্ত থাকে, সেগুলি সবই আলাদাভাবে পাঠানো হবে।
+- **অতিরিক্ত শিপিং চার্জ**।
+- **ডেলিভারির তারিখ** যা পাবলিক স্টোরে প্রদর্শিত হবে।
     > [!NOTE]
     >
-    > You can manage delivery date options in **Configuration → Shipping → Delivery dates**.
+    >আপনি **কনফিগারেশন → শিপিং → ডেলিভারি ডেটস** এ ডেলিভারির তারিখের বিকল্পগুলি পরিচালনা করতে পারেন।
 
 > [!NOTE]
 >
-> There is **Estimate shipping enabled (product page)** setting which can be enabled on **Configuration → Settings → Shipping settings**.
-> This setting allows to display estimate shipping information based on customer's shipping address in pop-up window on the product details page.
+> এখানে **আনুমানিক শিপিং সক্ষম (পণ্য পৃষ্ঠা)** সেটিং যা সক্ষম করা যেতে পারে **কনফিগারেশন → সেটিংস → শিপিং সেটিংস**।
+> এই সেটিংটি পণ্যের বিবরণ পৃষ্ঠায় পপ-আপ উইন্ডোতে গ্রাহকের শিপিং ঠিকানার উপর ভিত্তি করে আনুমানিক শিপিং তথ্য প্রদর্শন করতে দেয়।
 
-## Inventory
+## ইনভেন্টরি
 
-Define the inventory settings for the product as described [here](xref:en/running-your-store/order-management/inventory-management).
+বর্ণিত পণ্যের জন্য ইনভেন্টরি সেটিংস সংজ্ঞায়িত করুন [এখানে](xref:bn/running-your-store/order-management/inventory-management)।
 
-## Pictures
+## ছবি
 
-In the *Pictures* panel you can add the product pictures.
+*ছবি* প্যানেলে আপনি পণ্যের ছবি যোগ করতে পারেন।
 
-- In the *Add a new picture* area, click **Upload a file** to select a new picture you want to upload to your product page.
-- In the **Alt** field, enter a value for the "alt" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
-- In the **Title** field, enter a value for the "title" attribute of "img" HTML element. If empty, then a default rule will be used (e.g. product name).
-- Define the **Display order** of the image on a product page. 1 represents the top of the list.
+- *একটি নতুন ছবি যোগ করুন* এলাকায়, আপনার পণ্য পৃষ্ঠায় আপলোড করতে চান এমন একটি নতুন ছবি নির্বাচন করতে **একটি ফাইল আপলোড করুন** ক্লিক করুন।
+- **অল্ট** ফিল্ডে, "img" এইচটিএমএল এলিমেন্টের "alt" বৈশিষ্ট্যের জন্য একটি মান লিখুন। যদি খালি থাকে, তাহলে একটি ডিফল্ট নিয়ম ব্যবহার করা হবে (যেমন পণ্যের নাম)।
+- **টাইটেল** ফিল্ডে, "img" এইচটিএমএল এলিমেন্টের "title" অ্যাট্রিবিউটের জন্য একটি মান লিখুন। যদি খালি থাকে, তাহলে একটি ডিফল্ট নিয়ম ব্যবহার করা হবে (যেমন পণ্যের নাম)।
+- একটি প্রোডাক্ট পেজে ইমেজের **ডিসপ্লে অর্ডার** সংজ্ঞায়িত করুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Click **Add product picture** to save the picture.
+ছবি সংরক্ষণ করতে **পণ্যের ছবি যোগ করুন** ক্লিক করুন।
 
 > [!TIP]
 >
-> [YouTube tutorial: Importing mass product images](https://www.youtube.com/watch?v=9BUqR_OGiq4)
+> [ইউটিউব টিউটোরিয়াল: ভর পণ্যের ছবি আমদানি করা](https://www.youtube.com/watch?v=9BUqR_OGiq4)
 
-## Product attributes
+## পণ্য বৈশিষ্ট্য
 
-In the *Product attributes* panel you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes).
+*প্রোডাক্ট অ্যাট্রিবিউটস* প্যানেলে আপনি প্রোডাক্ট অ্যাট্রিবিউট যোগ করতে পারেন। পণ্যের গুণাবলী এবং সেগুলি কীভাবে তৈরি করবেন সে সম্পর্কে আরও জানুন [এখানে](xref:bn/running-your-store/catalog/products/product-attributes)।
 
-![Product attributes](_static/add-product-for-beginners/product_attributes2.png)
+![পণ্য বৈশিষ্ট্য](_static/add-product-for-beginners/product_attributes2.png)
 
-### Add a new attribute
+### একটি নতুন বৈশিষ্ট্য যোগ করুন
 
-Once you have a list of the attributes created, click **Add a new attribute** on the *Attributes* tab. The *Add a new attribute* window is displayed, as follows:
+একবার আপনার তৈরি বৈশিষ্ট্যগুলির একটি তালিকা তৈরি হয়ে গেলে,*বৈশিষ্ট্য*  ট্যাবে **একটি নতুন বৈশিষ্ট্য যুক্ত করুন** ক্লিক করুন। *একটি নতুন বৈশিষ্ট্য যুক্ত করুন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-![Add a new attribute](_static/add-product-for-beginners/add-attribute.jpg)
+![একটি নতুন বৈশিষ্ট্য যোগ করুন](_static/add-product-for-beginners/add-attribute.jpg)
 
-Set up a new attribute:
+একটি নতুন বৈশিষ্ট্য সেট আপ করুন:
 
-- From the **Attribute** dropdown list select an attribute.
-- Fill the **Text prompt** field, if you want some text to be shown in front of this attribute in the public store.
-- Tick **Is required** to set this attribute as required for customers.
-- Define the **Control type** for this attribute (e.g. dropdown list, radio button list, etc.).
-    > [!NOTE]
+- **অ্যাট্রিবিউট** ড্রপডাউন তালিকা থেকে একটি বৈশিষ্ট্য নির্বাচন করুন।
+- **টেক্সট প্রম্পট** ফিল্ডটি পূরণ করুন, যদি আপনি চান যে পাবলিক স্টোরে এই অ্যাট্রিবিউটের সামনে কিছু টেক্সট দেখানো হোক।
+- গ্রাহকদের জন্য প্রয়োজনীয় এই বৈশিষ্ট্যটি সেট করার জন্য **টিক প্রয়োজন**।
+- এই বৈশিষ্ট্যের জন্য **নিয়ন্ত্রণের ধরন** সংজ্ঞায়িত করুন (যেমন ড্রপডাউন তালিকা, রেডিও বোতাম তালিকা ইত্যাদি)।
+    > [! নোট]
     >
-    > For the "Date picker" control type, it is possible to set a number of years to be displayed by using **catalogsettings.countdisplayedyearsdatepicker** parameter on the *All settings (advanced)* page. For example, if you set zero then only current year will be displayed. If you set 5 then current year and the next 5 years will be displayed. Read how to set this up on the [All settings](xref:en/getting-started/advanced-configuration/all-settings) page.
+    > "তারিখ বাছাইকারী" নিয়ন্ত্রণ প্রকারের জন্য,*সমস্ত সেটিংস (উন্নত)পৃষ্ঠায়* **catalogsettings.countdisplayedyearsdatepicker** প্যারামিটার ব্যবহার করে প্রদর্শনের জন্য কয়েক বছর নির্ধারণ করা সম্ভব। উদাহরণস্বরূপ, যদি আপনি শূন্য সেট করেন তাহলে শুধুমাত্র চলতি বছর প্রদর্শিত হবে। যদি আপনি ৫ সেট করেন তাহলে চলতি বছর এবং পরবর্তী ৫ বছর প্রদর্শিত হবে। [সমস্ত সেটিংস](xref:bn/getting-start/advanced-configuration/all-settings) পৃষ্ঠায় কীভাবে এটি সেট আপ করবেন তা পড়ুন।
 
-- Define the **Display order** of the attribute on a product page. 1 represents the top of the list.
+- একটি পণ্যের পৃষ্ঠায় বৈশিষ্ট্যের **ডিসপ্লে অর্ডার** সংজ্ঞায়িত করুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Click **Save and continue edit**.
-The **Values** panel now displays the predefined values for this attribute. Click **Edit** in the value row if required.
+**সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** ক্লিক করুন।
+**মান** প্যানেল এখন এই বৈশিষ্ট্যের জন্য পূর্বনির্ধারিত মান প্রদর্শন করে। প্রয়োজনে মান সারিতে **সম্পাদনা করুন** ক্লিক করুন।
 
-### Edit an attribute value
+### একটি বৈশিষ্ট্য মান সম্পাদনা করুন
 
-![Edit a value](_static/add-product-for-beginners/attribute-value.jpg)
+![একটি মান সম্পাদনা করুন](_static/add-product-for-beginners/attribute-value.jpg)
 
-Edit the attribute value details, as follows:
+বৈশিষ্ট্য মান বিশদ সম্পাদনা করুন, নিম্নরূপ:
 
-- Select the **Attribute value type**. There are two attribute value types, *Simple* and *Associated to product*. Choose the *associated to product* type if you want this attribute value to be another product from your catalog and track its stock as well. Here you can use *bundled products functionality* allowing customers to buy different combinations or sets of products as a single product and shoppers have an opportunity to set the required quantity of the attributes using the **Customer enters quantity** field described below.
+- **অ্যাট্রিবিউট ভ্যালু টাইপ** নির্বাচন করুন। দুটি বৈশিষ্ট্যের মান প্রকার, *সহজ*এবং *পণ্যের সাথে সংযুক্ত*। *পণ্যের সাথে যুক্ত* টাইপটি চয়ন করুন যদি আপনি চান যে এই ক্যাটালগ মানটি আপনার ক্যাটালগ থেকে অন্য একটি পণ্য হোক এবং এর স্টকও ট্র্যাক করুন। এখানে আপনি *বান্ডেল পণ্য কার্যকারিতা* ব্যবহার করতে পারেন যা গ্রাহকদের একক পণ্য হিসাবে বিভিন্ন সংমিশ্রণ বা পণ্যের সেট কিনতে দেয় এবং ক্রেতাদের নিচে বর্ণিত **গ্রাহক প্রবেশের পরিমাণ** ক্ষেত্র ব্যবহার করে বৈশিষ্ট্যগুলির প্রয়োজনীয় পরিমাণ নির্ধারণ করার সুযোগ থাকে।
 
-If the previous setting set to *Associated to product* the following fields will be displayed:
+যদি পূর্ববর্তী সেটিং *পণ্যের সাথে সংযুক্ত* সেট করা হয় তাহলে নিম্নলিখিত ক্ষেত্রগুলি প্রদর্শিত হবে:
 
-- **Associated product** allows you to choose the product which will be assotiated to this attribute. Use the **Associate a product** button to choose a product.
+- **অ্যাসোসিয়েটেড প্রোডাক্ট** আপনাকে সেই প্রোডাক্টটি বেছে নিতে দেয় যা এই বৈশিষ্ট্যের সাথে যুক্ত হবে। একটি পণ্য চয়ন করতে **একটি পণ্য সংযুক্ত করুন** বোতামটি ব্যবহার করুন।
 
 > [!NOTE]
 >
-> Make sure there is no any warning after you chose the associated product. Such as:
-> ![Assotiated warning](_static/add-product-for-beginners/assotiated-warning.jpg)
+> আপনি সংশ্লিষ্ট পণ্যটি বেছে নেওয়ার পরে কোনও সতর্কতা নেই তা নিশ্চিত করুন। যেমন:
+> ![সংযুক্ত সতর্কতা](_static/add-product-for-beginners/assotiated-warning.jpg)
 
-- Tick the **Customer enters quantity** field to allow a customer to enter the quantity of the attribute (which represents the associated product).
-- If the previous field in unticked you can specify the **Product quantity**. Minimum allowed value is 1.
-- Enter the **Name** of the attribute.
-- Specify the **RGB color** to be used with the color squares attribute control.
-- In the **Price adjustment** field enter the price applied when choosing this attribute value. For example '10' to add 10 dollars. Or 10% if **Price adjustment. Use percentage** is ticked.
-- Tick the **Price adjustment. Use percentage** which determines whether to apply a percentage to the product. If not enabled, a fixed value is used.
-- Use the **Weight adjustment** field to specify the weight adjustment applied when choosing this attribute value.
-- Specify the **Cost** field. The attribute value cost is the cost of all the different components which make up this value. This may be either the purchase price if the components are bought from outside suppliers, or the combined cost of materials and manufacturing processes if the component is made in-house.
-- Tick the **Is pre-selected** field if this attribute value should be pre-selected for the customer.
-- Enter the **Display order** of the attribute value. 1 represents the first item in attribute value list.
-- Choose a **Picture** associated to this attribute value. This picture will replace the main product image when this product attribute value is clicked (selected).
+- **গ্রাহক প্রবেশের পরিমাণ** ক্ষেত্রটিতে টিক দিন যাতে গ্রাহককে গুণের পরিমাণ প্রবেশ করতে দেয় (যা সংশ্লিষ্ট পণ্যের প্রতিনিধিত্ব করে)।
+- যদি পূর্ববর্তী ক্ষেত্রটি অনির্বাচিত হয় তবে আপনি **পণ্যের পরিমাণ** নির্দিষ্ট করতে পারেন। ন্যূনতম অনুমোদিত মান হল ১।
+- বৈশিষ্ট্যের **নাম** লিখুন।
+- রঙ স্কোয়ার অ্যাট্রিবিউট কন্ট্রোল ব্যবহার করার জন্য **আরজিভি কালার** নির্দিষ্ট করুন।
+- **মূল্য সমন্বয়** ক্ষেত্রটিতে এই বৈশিষ্ট্য মান নির্বাচন করার সময় প্রযোজ্য মূল্য লিখুন। যেমন '১০' যোগ করার জন্য ১০ ডলার। অথবা ১০% যদি **মূল্য সমন্বয়। শতাংশ ব্যবহার করুন* টিক দেওয়া আছে।
+- **মূল্য সমন্বয় টিক। শতাংশ ব্যবহার করুন** যা নির্ধারণ করে যে পণ্যে শতাংশ প্রয়োগ করতে হবে। সক্ষম না হলে, একটি নির্দিষ্ট মান ব্যবহার করা হয়।
+- এই বৈশিষ্ট্য মান নির্বাচন করার সময় প্রয়োগ করা ওজন সমন্বয় নির্দিষ্ট করতে **ওজন সমন্বয়** ক্ষেত্রটি ব্যবহার করুন।
+- **খরচ** ক্ষেত্র নির্দিষ্ট করুন। অ্যাট্রিবিউট ভ্যালু কস্ট হল এই সমস্ত বিভিন্ন উপাদানের খরচ যা এই মান তৈরি করে। উপাদানগুলি বাইরের সরবরাহকারীদের কাছ থেকে কেনা হলে এটি ক্রয়মূল্য হতে পারে, অথবা উপাদানটি যদি ঘরে তৈরি করা হয় তবে উপকরণ এবং উত্পাদন প্রক্রিয়াগুলির সম্মিলিত খরচ।
+-যদি এই বৈশিষ্ট্য মানটি গ্রাহকের জন্য আগে থেকে নির্বাচিত করা হয় তবে **পূর্ব-নির্বাচিত** ক্ষেত্রটিতে টিক দিন।
+- অ্যাট্রিবিউট ভ্যালুর **ডিসপ্লে অর্ডার** লিখুন। অ্যাট্রিবিউট ভ্যালু লিস্টে প্রথম আইটেমটি উপস্থাপন করে।
+- এই বৈশিষ্ট্যের মান সম্পর্কিত একটি **ছবি** বেছে নিন। এই ছবিটি মূল প্রোডাক্ট ইমেজকে প্রতিস্থাপন করবে যখন এই প্রোডাক্ট অ্যাট্রিবিউট ভ্যালুতে ক্লিক করা হবে (নির্বাচিত)।
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
-### Attribute conditions
+### বৈশিষ্ট্যের শর্তাবলী
 
-If required, define conditions for this attribute in the *Condition* panel. Conditional attributes appear if a previous attribute is selected, such as having an option for personalizing clothing with a name and only providing the text input box if the "Personalize" radio button is checked.
+প্রয়োজন হলে, *কন্ডিশন* প্যানেলে এই বৈশিষ্ট্যের শর্তাবলী নির্ধারণ করুন। পূর্ববর্তী বৈশিষ্ট্য নির্বাচন করা হলে শর্তসাপেক্ষ বৈশিষ্ট্যগুলি উপস্থিত হয়, যেমন একটি নাম দিয়ে পোশাক ব্যক্তিগত করার জন্য একটি বিকল্প থাকা এবং "ব্যক্তিগতকরণ" রেডিও বোতামটি চেক করা হলে কেবল পাঠ্য ইনপুট বাক্স সরবরাহ করা।
 
-![Condition](_static/add-product-for-beginners/condition.jpg)
+![শর্ত](_static/add-product-for-beginners/condition.jpg)
 
-- Tick the **Enable condition** checkbox to enable the condition.
-- Select the **Attribute** and it's value. When the value is selected the condition is fulfilled. The attribute you added this condition for will be displayed.
+- শর্তটি সক্ষম করতে **সক্ষম অবস্থা** চেকবক্সে টিক দিন।
+- **অ্যাট্রিবিউট** নির্বাচন করুন এবং এর মান। মান নির্বাচিত হলে শর্ত পূরণ হয়। যে বৈশিষ্ট্যের জন্য আপনি এই শর্তটি যুক্ত করেছেন তা প্রদর্শিত হবে।
 
-### Attribute combinations
+### অ্যাট্রিবিউট কম্বিনেশন
 
-On the *Attribute combinations* tab, define different attribute combinations and the following information for each of them:
+*অ্যাট্রিবিউট কম্বিনেশন* ট্যাবে, বিভিন্ন অ্যাট্রিবিউট কম্বিনেশন এবং তাদের প্রত্যেকের জন্য নিম্নলিখিত তথ্য সংজ্ঞায়িত করুন:
 
-![product_attributes3](_static/add-product-for-beginners/product_attributes3.png)
+![অ্যাট্রিবিউট কম্বিনেশন](_static/add-product-for-beginners/product_attributes3.png)
 
-Click the **Add combination** button to select a new combination and enter it's details:
+**একটি নতুন সংমিশ্রণ নির্বাচন করতে** সংমিশ্রণ যোগ করুন বাটনে ক্লিক করুন এবং এর বিবরণ লিখুন:
 
-![Combination](_static/add-product-for-beginners/new-combination.jpg)
+![কম্বিনেশন](_static/add-product-for-beginners/new-combination.jpg)
 
-For each combination define:
+প্রতিটি সংমিশ্রণের জন্য সংজ্ঞায়িত করুন:
 
-- The attributes which the combination contains.
-- The current **Stock quantity** of this combination.
-- If you have enabled 'Manage stock by attributes' on the product details page you can perform a number of different actions when the current stock quantity falls below (reaches) the **Minimum stock quantity** (e.g. Low stock report).
-- **Allow out of stock**, if you want your customers to be able to purchase product with certain attributes, when out of stock.
-- **SKU**.
-- **Manufacturer part number**.
-- **GTIN**.
-- **Overridden price**, if the price for products with certain attributes is different from the product regular price. For example, you can give a discount this way. Leave empty to ignore field.
-  > [!NOTE]
+- সংমিশ্রণে যে বৈশিষ্ট্যগুলি রয়েছে।
+- এই সংমিশ্রণের বর্তমান **স্টক পরিমাণ**।
+- যদি আপনি পণ্যের বিবরণ পৃষ্ঠায় 'গুণাবলী দ্বারা স্টক পরিচালনা করুন' সক্ষম করে থাকেন তবে বর্তমান স্টক পরিমাণ **ন্যূনতম স্টক পরিমাণ** (যেমন কম স্টক রিপোর্ট) এর নিচে নেমে গেলে (বিভিন্ন স্থানে) বিভিন্ন কাজ করতে পারেন।
+- **স্টক ছাড়ার অনুমতি দিন**, যদি আপনি চান যে আপনার গ্রাহকরা নির্দিষ্ট গুণাবলীর সাথে পণ্য ক্রয় করতে সক্ষম হবেন, যখন স্টক নেই।
+- **এসকেইউ**।
+- **প্রস্তুতকারকের অংশ সংখ্যা**।
+- **জিটিআইএন**।
+- **ওভাররাইডেড মূল্য**, যদি নির্দিষ্ট গুণাবলীর পণ্যগুলির দাম পণ্যের নিয়মিত মূল্যের থেকে আলাদা হয়। উদাহরণস্বরূপ, আপনি এইভাবে ছাড় দিতে পারেন। ক্ষেত্রটি উপেক্ষা করার জন্য খালি রাখুন।
+  > [! নোট]
   >
-  > All other applied discounts will be ignored when this field is specified.
-- In the **Notify admin for quantity below** enter the quantity under which the admin will be notified.
-- Choose a **Picture** associated to this attribute combination. This picture will replace the main product image when this product attribute combination is selected.
+  > এই ক্ষেত্রটি নির্দিষ্ট করা হলে অন্যান্য সমস্ত প্রয়োগকৃত ছাড় উপেক্ষা করা হবে।
+- **নীচের পরিমাণের জন্য অ্যাডমিনকে নোটিফাই করুন** সেই পরিমাণটি প্রবেশ করান যার অধীনে অ্যাডমিনকে জানানো হবে।
+- এই বৈশিষ্ট্য সমন্বয়ের সাথে যুক্ত একটি **ছবি** বেছে নিন। এই প্রোডাক্ট অ্যাট্রিবিউট কম্বিনেশন নির্বাচন করা হলে এই ছবিটি মূল প্রোডাক্ট ইমেজ প্রতিস্থাপন করবে।
 
-Click **Save**.
-
-> [!NOTE]
->
-> Note that some attribute control types that support custom user input (e.g. file upload, textboxes, date picker) are useless with attribute combinations.
-
-To generate all possible combinations use the **Generate all possible combinations** button. Or use the **Generate several combinations** button to manually choose some attribute values to generate necessary combinations.
-
-## Specification attributes
-
-Specification attributes are product features i.e, screen size, number of USB-ports visible on product details page. Specification attributes can be used for filtering products on the category details page. Read more about specification attributes [here](xref:en/running-your-store/catalog/products/specification-attributes).
+**সেভ** ক্লিক করুন।
 
 > [!NOTE]
 >
-> Unlike product attributes, specification attributes are used for information purposes only.
+> মনে রাখবেন কিছু কন্ট্রোল কন্ট্রোল টাইপ যা কাস্টম ইউজার ইনপুট সমর্থন করে (যেমন ফাইল আপলোড, টেক্সটবক্স, ডেট পিকার) অ্যাট্রিবিউট কম্বিনেশনের সাথে অকেজো।
 
-![Specification attributes](_static/add-product-for-beginners/spec.jpg)
+সমস্ত সম্ভাব্য সংমিশ্রণ তৈরি করতে **সমস্ত সম্ভাব্য সংমিশ্রণ তৈরি করুন** বোতামটি ব্যবহার করুন। অথবা প্রয়োজনীয় সংমিশ্রণ উৎপন্ন করার জন্য কিছু বৈশিষ্ট্যের মান নির্বাচন করতে **জেনারেট বেশ কয়েকটি সমন্বয়** বোতামটি ব্যবহার করুন।
 
-In the *Specification attributes* panel, add specification attributes.
+## স্পেসিফিকেশন বৈশিষ্ট্য
 
->[!NOTE]
+স্পেসিফিকেশন অ্যাট্রিবিউট হল প্রোডাক্ট ফিচার অর্থাৎ স্ক্রিন সাইজ, ইউএসবি-পোর্টের সংখ্যা প্রোডাক্টের বিবরণ পৃষ্ঠায় দৃশ্যমান। স্পেসিফিকেশন অ্যাট্রিবিউটগুলি ক্যাটাগরির বিবরণ পৃষ্ঠায় পণ্য ফিল্টার করার জন্য ব্যবহার করা যেতে পারে। স্পেসিফিকেশন বৈশিষ্ট্য সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/catalog/products/specification-attributes)।
+
+> [!NOTE]
 >
-> You can add an attribute for your product using the existing list of attributes, or if you need to create a new one go to **Catalog → Attributes → Specification attributes**.
+> পণ্যের বৈশিষ্ট্যগুলির বিপরীতে, স্পেসিফিকেশন বৈশিষ্ট্যগুলি শুধুমাত্র তথ্যের উদ্দেশ্যে ব্যবহৃত হয়।
 
- To add a new attribute, click the **Add attribute** button and fill the *Add a new product specification attribute* section:
+![স্পেসিফিকেশন বৈশিষ্ট্য](_static/add-product-for-beginners/spec.jpg)
 
-![Add a new spec](_static/add-product-for-beginners/add_a_new_specification_attribute2.png)
+*স্পেসিফিকেশন অ্যাট্রিবিউটস* প্যানেলে স্পেসিফিকেশন অ্যাট্রিবিউট যোগ করুন।
 
-- Select the **Attribute type** from a drop down list.
-- Choose the **Attribute** from the list of the pre-created attributes.
-- Choose the **Attribute option**.
-- **Allow filtering** by this option on a category page, if required.
-- Tick **Show on product page**, to make the attribute visible on a product page.
-- Set the attribute **Display order**. 1 represents the top of the list.
+> [!NOTE]
+>
+> বিদ্যমান বৈশিষ্ট্যের তালিকা ব্যবহার করে আপনি আপনার পণ্যের জন্য একটি বৈশিষ্ট্য যুক্ত করতে পারেন, অথবা যদি আপনি একটি নতুন তৈরি করতে চান তবে **ক্যাটালগ → গুণাবলী → স্পেসিফিকেশন বৈশিষ্ট্য** এ যান।
 
-Click **Save**.
+ একটি নতুন অ্যাট্রিবিউট যুক্ত করতে, **অ্যাড অ্যাট্রিবিউট** বাটনে ক্লিক করুন এবং *একটি নতুন প্রোডাক্ট স্পেসিফিকেশন অ্যাট্রিবিউট যোগ করুন* বিভাগটি পূরণ করুন:
 
-## Product class
+![একটি নতুন স্পেক যোগ করুন](_static/add-product-for-beginners/add_a_new_specification_attribute2.png)
 
-Define whether the product is a
+- ড্রপ ডাউন তালিকা থেকে **অ্যাট্রিবিউট টাইপ** নির্বাচন করুন।
+- পূর্বনির্ধারিত বৈশিষ্ট্যের তালিকা থেকে **অ্যাট্রিবিউট** নির্বাচন করুন।
+- **অ্যাট্রিবিউট অপশন** বেছে নিন।
+- **যদি প্রয়োজন হয়**, তাহলে একটি ক্যাটাগরির পৃষ্ঠায় এই বিকল্পের মাধ্যমে ফিল্টার করার অনুমতি দিন।
+- পণ্যের পৃষ্ঠায় বৈশিষ্ট্যটি দৃশ্যমান করতে **পণ্যের পৃষ্ঠায় দেখান** টিক দিন।
+- অ্যাট্রিবিউট সেট করুন **ডিসপ্লে অর্ডার** ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-- [Gift card](xref:en/running-your-store/promotional-tools/gift-cards)
-- [Downloadable product](xref:en/running-your-store/catalog/products/downloadable-products)
-- [Rental](xref:en/running-your-store/catalog/products/rental-products)
-- [Recurring product](xref:en/running-your-store/catalog/products/recurring-products)
+**সেভ** ক্লিক করুন।
 
-## SEO
+## পণ্য শ্রেণী
 
-Define the following SEO parameters for the product page:
+প্রোডাক্ট কিনা তা নির্ধারণ করুন:
 
-- **Search engine friendly page name** - a name of the page used by search engines. If you enter nothing then the product page URL is formed using the product name. If you enter custom-seo-page-name, then the following custom the URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
-- **Meta title** - a title for the web page.
-- **Meta keywords** - a brief and concise list of the most important themes (keywords and key phrases) related to the product. These words will be added to the product page header.
-- **Meta description** - a brief description of the product that will be added to the product page header.
+- [উপহার কার্ড](xref:bn/running-your-store/promotional-tools/gift-cards)
+- [ডাউনলোডযোগ্য পণ্য](xref:bn/running-your-store/catalog/products/downloadable-products)
+- [ভাড়া](xref:bn/running-your-store/catalog/products/rental-products)
+- [পুনরাবৃত্ত পণ্য](xref:bn/running-your-store/catalog/products/recurring-products)
 
-Read more about SEO [here](xref:en/running-your-store/search-engine-optimization).
+## এসইও
 
-## Related products and cross-sells
+পণ্য পৃষ্ঠার জন্য নিম্নলিখিত এসইও পরামিতি সংজ্ঞায়িত করুন:
 
-Set up related products and cross-sells as described [here](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products).
+- **সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** - সার্চ ইঞ্জিন দ্বারা ব্যবহৃত পৃষ্ঠার নাম। আপনি যদি কিছু না লিখেন তবে পণ্যের নাম ব্যবহার করে পণ্য পৃষ্ঠার URL তৈরি হয়। যদি আপনি কাস্টম-এসইও-পেজ-নাম লিখেন, তাহলে নিম্নলিখিত কাস্টম ইউআরএল ব্যবহার করা হবে: `http://www.yourStore.com/custom-seo-page-name`।
+- **মেটা শিরোনাম** - ওয়েব পেজের জন্য একটি শিরোনাম।
+- **মেটা কীওয়ার্ড** - পণ্য সম্পর্কিত সবচেয়ে গুরুত্বপূর্ণ থিম (কীওয়ার্ড এবং মূল বাক্যাংশ) এর একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত তালিকা। এই শব্দগুলি পণ্য পৃষ্ঠার শিরোনামে যুক্ত করা হবে।
+- **মেটা বর্ণনা** - পণ্যের একটি সংক্ষিপ্ত বিবরণ যা পণ্য পৃষ্ঠার শিরোনামে যুক্ত করা হবে।
 
-## Purchased with orders
+এসইও সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/search-engine-optimization)।
 
-To view a list of orders in which the product was purchased, go to the *Purchased with orders* panel. Here you can check an order's status and view the order in details.
+## সম্পর্কিত পণ্য এবং ক্রস-সেলস
 
-![puchased_with_orders](_static/add-product-for-beginners/puchased_with_orders.png)
+[এখানে](xref:bn/running-your-store/promotional-tools/cross-sells-and-related-products) বর্ণনা অনুযায়ী সম্পর্কিত পণ্য এবং ক্রস-সেলস সেট আপ করুন
 
-## Stock quantity history
+## অর্ডার দিয়ে কেনা
 
-On this tab you can view all the product quantity changes, orders with the product.
+যে অর্ডারে পণ্যটি কেনা হয়েছিল তার একটি তালিকা দেখতে, *অর্ডার দিয়ে কেনা* প্যানেলে যান। এখানে আপনি একটি অর্ডারের অবস্থা পরীক্ষা করতে পারেন এবং বিস্তারিত অর্ডার দেখতে পারেন।
 
-![stock_quantity_history](_static/add-product-for-beginners/stock_quantity_history.png)
+![অর্ডার দিয়ে কেনা](_static/add-product-for-beginners/puchased_with_orders.png)
 
-## Setting up product page
+## স্টক পরিমাণ ইতিহাস
 
-The following sections describes product page settings: [Product fields](xref:en/running-your-store/catalog/catalog-settings#product-fields), [Product page](xref:en/running-your-store/catalog/catalog-settings#product-page) and [Share](xref:en/running-your-store/catalog/catalog-settings#share).
+এই ট্যাবে আপনি পণ্যের পরিমাণ পরিবর্তন, পণ্যের সাথে অর্ডার দেখতে পারেন।
 
-## See also
+![স্টক পরিমাণ ইতিহাস](_static/add-product-for-beginners/stock_quantity_history.png)
 
-- [Product categories](xref:en/running-your-store/catalog/categories)
-- [Product manufacturers](xref:en/running-your-store/catalog/manufacturers)
-- [Order management](xref:en/running-your-store/order-management/index)
-- [Webinar. First steps in nopCommerce](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
+## প্রোডাক্ট পেজ সেট আপ করা
 
-## Tutorials
+নিম্নলিখিত বিভাগগুলি পণ্যের পৃষ্ঠার সেটিংস বর্ণনা করে: [পণ্য ক্ষেত্র](xref:bn/running-your-store/catalog/catalog-settings#product-fields),  [পণ্য পাতা](xref:bn/running-your-store/catalog/catalog-settings#product-page) এবং [শেয়ার করুন](xref:bn/running-your-store/catalog/catalog-settings#share)।
 
-- [Video tutorial: Adding a new product](https://www.youtube.com/watch?v=wVgTgdQVWPQ&index=2&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+## আরো দেখুন
+
+- [পণ্যের বিভাগ](xref:bn/running-your-store/catalog/category)
+- [পণ্য নির্মাতারা](xref:bn/running-your-store/catalog/Manufactures)
+- [অর্ডার ম্যানেজমেন্ট](xref:bn/running-your-store/order-management/index)
+- [ওয়েব সেমিনার. NopCommerce এর প্রথম ধাপ](https://www.youtube.com/watch?v=B_CfgJH0ylM&list=PLnL_aDfmRHwsJn1rnKaXdIcJg4pKJeeXs)
+
+## টিউটোরিয়াল
+
+- [ভিডিও টিউটোরিয়াল: একটি নতুন পণ্য যোগ করা হচ্ছে](https://www.youtube.com/watch?v=wVgTgdQVWPQ&index=2&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
