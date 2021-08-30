@@ -20,7 +20,7 @@ The Web API framework provides integrators and developers the means to use web s
 The Web API Frontend offers you a way to implement the nopCommerce buying capabilities in any application, whenever it is a website or mobile app.Using the API is essential when sellers want to reach a wider audience and their individual requirements go beyond the standard nopCommerce functionality. The Web API Frontend provides methods that allow using the built-in public store functionality outside of the nopCommerce store. Even if you have customizations in your nopCommerce store you will be able to use this plugin since it is provided with the source code.
 
 After installing the plugin you will be able to see a list of the existing API methods using the following Swagger endpoint:
-**`{store location}/api-backend/index.html`**
+**`{store location}/api-frontend/index.html`**
 
 > [!TIP]
 > You can't use multi-factor authentication (MFA) through the Frontend API.
