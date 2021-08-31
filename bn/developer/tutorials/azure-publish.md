@@ -1,152 +1,170 @@
 ---
-title: How to deploy nopCommerce to Azure
-uid: en/developer/tutorials/azure-publish
+title: কিভাবে আজুর এ নপকমার্স স্থাপন করা যায়
+uid: bn/developer/tutorials/azure-publish
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# How to deploy nopCommerce to Azure
+# কিভাবে আজুর এ নপকমার্স স্থাপন করা যায়
 
-## Create a VM on Azure
+## আজুর এ একটি ভিএম তৈরি করুন
 
-This instruction of the steps required to set up an Azure virtual machine to host nopCommerce web applications, and to allow to be published using **WebDeploy**.
+নপকমার্স ওয়েব অ্যাপ্লিকেশনগুলি হোস্ট করার জন্য, এবং **WebDeploy** ব্যবহার করে প্রকাশ করার অনুমতি দেওয়ার জন্য একটি আজুর ভার্চুয়াল মেশিন স্থাপনের জন্য প্রয়োজনীয় পদক্ষেপগুলির এই নির্দেশনা।
 
-### Create a new VM
+### একটি নতুন ভিএম তৈরি করুন
 
-1. Log in to the [Azure portal](https://portal.azure.com/)
-1. Click **Add** button
+১. লগ ইন করুন [আজুর পোর্টালে](https://portal.azure.com/)
 
-    ![azure-publish_1](_static/azure-publish/azure-publish_1.png)
+২. **Add** বাটনে ক্লিক করুন
 
-1. Select *Windows Server 2016 VM* in the *Get Started* category or any Windows Server 2016 in the Compute category, such as **Windows Server 2016 Datacenter**
-1. Complete the required fields to configure the new VM.
-    - Username/password. You will need it to access the VM. This is admin account for connect on VM by RDP.
-    - Resource group. This is the name of the "virtual folder" that contains all resources created for this VM. You can delete all the resources created during this process by deleting the resource group.
+![azure-publish_1](_static/azure-publish/azure-publish_1.png)
 
-### Configure components and features on the VM
+৩. *Windows Server 2016 VM* *Get Started* ক্যাটাগরিতে অথবা যেকোনো উইন্ডোজ সার্ভার ২০১৬ কম্পিউট ক্যাটাগরিতে নির্বাচন করুন, যেমন **Windows Server 2016 Datacenter**
 
-1. DNS-name:
-    - From the [Azure portal](https://portal.azure.com/), navigate to the Overview page of your virtual machine.
-    - Under DNS name, click **Configure**
-    - Provide a globally unique DNS name. (A green tick appears when the name is validated.)
-    - Click **Save** to save the configuration.
+৪. নতুন ভিএম কনফিগার করার জন্য প্রয়োজনীয় ক্ষেত্রগুলি সম্পূর্ণ করুন।
 
-### Configure Azure Firewall rules
+- ব্যবহারকারীর নাম/পাসওয়ার্ড। ভিএম অ্যাক্সেস করতে আপনার এটির প্রয়োজন হবে। আরডিপি দ্বারা ভিএম -এ সংযোগের জন্য এটি অ্যাডমিন অ্যাকাউন্ট।
+- রিসোর্স গ্রুপ। এই "virtual folder" এর নাম যা এই ভিএম এর জন্য তৈরি সমস্ত সম্পদ ধারণ করে। আপনি রিসোর্স গ্রুপ ডিলিট করে এই প্রক্রিয়া চলাকালীন তৈরি করা সব রিসোর্স মুছে ফেলতে পারেন।
 
-1. Configure inbound firewall rules in the Azure portal. On the Networking section add inbound port rule to create new firewall entries:
-    - http - Port 80 (Priority 100)
-    - WebDeploy - Port 8172 (Priority 1010)
-    - RDP - Port 3389 (Priority 320)
+### ভিএম -তে উপাদান এবং বৈশিষ্ট্যগুলি কনফিগার করুন
 
-    ![azure-publish_2](_static/azure-publish/azure-publish_2.png)
+১. ডিএনএস-নাম:
 
-2. Configure outbound firewall rules in the Azure portal. On the *Networking* section add outbound port rule to create new firewall entries:
-    - RDP - Port 3389 (Priority 100)
+- [আজুর পোর্টালে](https://portal.azure.com/) থেকে, আপনার ভার্চুয়াল মেশিনের ওভারভিউ পৃষ্ঠায় যান।
+- ডিএনএস নামের অধীনে, **Configure** ক্লিক করুন
+- একটি বিশ্বব্যাপী অনন্য DNS নাম প্রদান করুন। (নামটি যাচাই করার সময় একটি সবুজ টিক উপস্থিত হয়।)
+- কনফিগারেশন সেভ করতে **Save** ক্লিক করুন।
 
-### Connect to the VM (RDP) using login and password
+### আজুর ফায়ারওয়াল নিয়ম কনফিগার করুন
+
+১. আজুর পোর্টালে ইনবাউন্ড ফায়ারওয়াল নিয়ম কনফিগার করুন। নেটওয়ার্কিং বিভাগে নতুন ফায়ারওয়াল এন্ট্রি তৈরি করতে ইনবাউন্ড পোর্ট নিয়ম যুক্ত করুন:
+
+- এইসটিটিপি - পোর্ট ৮০ (অগ্রাধিকার ১০০)
+- ওয়েব ডিপ্লয় - পোর্ট ৮১৭২ (অগ্রাধিকার ১০১০)
+- আরডিপি - পোর্ট ৩৩৮৯ (অগ্রাধিকার ৩২০)
+![azure-publish_2](_static/azure-publish/azure-publish_2.png)
+
+২. পোর্টালে আউটবাউন্ড ফায়ারওয়াল নিয়ম কনফিগার করুন। *Networking* বিভাগে নতুন ফায়ারওয়াল এন্ট্রি তৈরি করতে আউটবাউন্ড পোর্ট নিয়ম যোগ করুন:
+
+- আরডিপি - পোর্ট ৩৩৮৯ (অগ্রাধিকার ১০০)
+
+### লগইন এবং পাসওয়ার্ড ব্যবহার করে ভিএম (আরডিপি) এর সাথে সংযোগ করুন
 
 ![azure-publish_3](_static/azure-publish/azure-publish_3.png)
 
-### Install IIS (Web Server) and ASP.NET 4.6
+### আইআইএস (ওয়েব সার্ভার) এবং ASP.NET 4.6 ইনস্টল করুন
 
-1. Open the **Server Manager Dashboard** (Server Manager - Dashboard opens on first startup)
-1. Choose **2 Add roles and features**
+১. **Server Manager Dashboard** (সার্ভার ম্যানেজার - ড্যাশবোর্ড প্রথম প্রারম্ভে খোলে)
 
-    ![azure-publish_4](_static/azure-publish/azure-publish_4.png)
+২. পছন্দ করুন **2 Add roles and features**
 
-1. Accept the defaults and press **Next** three times to progress to the Server Roles section.
-1. Select **Web Server (IIS)**
+![azure-publish_4](_static/azure-publish/azure-publish_4.png)
 
-    ![azure-publish_5](_static/azure-publish/azure-publish_5.png)
+৩. ডিফল্টগুলি গ্রহণ করুন এবং সার্ভার রোলস বিভাগে অগ্রসর হওয়ার জন্য তিনবার **Next** টিপুন।
 
-1. When prompted, confirm the additional installation of *IIS Management Console*.
-1. Press **Next** three times to progress to the *Web Server Role (IIS) --> Roles Services section*
-1. Select **Management** Service, which is required to enable Web Deploy (through port 8172). When prompted, confirm the additional installation of ASP.NET 4.6.
+৪. নির্বাচন করুন **Web Server (IIS)**
 
-    ![azure-publish_6](_static/azure-publish/azure-publish_6.png)
+![azure-publish_5](_static/azure-publish/azure-publish_5.png)
 
-1. Select **Next** to confirm the configuration, then **Install** to complete IIS setup.
+৫. অনুরোধ করা হলে, *IIS Management Console* এর অতিরিক্ত ইনস্টলেশন নিশ্চিত করুন।
 
-    ![azure-publish_7](_static/azure-publish/azure-publish_7.png)
+৬. *Web Server Role (IIS) --> Roles Services section* অগ্রগতির জন্য **Next** তিনবার চাপুন।
 
-    Once installation completes:
-    - IIS is installed and running with internal firewall rule created for port 80.
-    - Web Management Service is installed with internal firewall rule created for port 8172.
+৭. **Management** সার্ভিস নির্বাচন করুন, যা ওয়েব ডিপ্লয় (পোর্ট ৮১৭২ এর মাধ্যমে) সক্ষম করার জন্য প্রয়োজনীয়। অনুরোধ করা হলে, ASP.NET 4.6 এর অতিরিক্ত ইনস্টলেশন নিশ্চিত করুন।
 
-### Configure IE Enhanced Security (Off)
+![azure-publish_6](_static/azure-publish/azure-publish_6.png)
 
-On a new Azure VM, default security rules prevent executables from being downloaded via Internet Explorer. In order to download the WebDeploy executable, you must first disable IE enhanced security.
+৮. কনফিগারেশন নিশ্চিত করতে **Next** নির্বাচন করুন, তারপর আইআইএস সেটআপ সম্পূর্ণ করতে **Install**।
 
-1. In the **Server Manager**, open the **Local Server** section on the left.
-1. In the main panel, next to "**IE Enhanced Security Configuration:**", select On.
-1. In the dialog that appears, select **Off for Administrators**, select **On for Users**, then select **OK**.
+![azure-publish_7](_static/azure-publish/azure-publish_7.png)
 
-    ![azure-publish_8](_static/azure-publish/azure-publish_8.png)
+ইনস্টলেশন সম্পন্ন হলে:
 
-### Install Web Deploy
+- আইআইএস পোর্ট ৮০ এর জন্য তৈরি অভ্যন্তরীণ ফায়ারওয়াল নিয়মের সাথে ইনস্টল এবং চলমান।
+- ওয়েব ম্যানেজমেন্ট সার্ভিস ৮১৭২ পোর্টের জন্য তৈরি অভ্যন্তরীণ ফায়ারওয়াল নিয়মের সাথে ইনস্টল করা আছে।
 
-1. Launch Internet Explorer.
-1. Accept default security settings.
-1. [Download](https://www.microsoft.com/download/details.aspx?id=43717) *WebDeploy_amd64_en-US.msi*
-1. Follow installation steps for Web Deploy
-1. Choose Complete option to install all components
+### আইই উন্নত নিরাপত্তা কনফিগার করুন (বন্ধ)
 
-### Install last version [NET Core SDK](https://www.microsoft.com/net/download/all)
+একটি নতুন আজুর ভিএম- এ, ডিফল্ট নিরাপত্তা নিয়ম ইন্টারনেট এক্সপ্লোরারের মাধ্যমে এক্সিকিউটেবল ডাউনলোড হতে বাধা দেয়। ওয়েব ডিপ্লয় এক্সিকিউটেবল ডাউনলোড করার জন্য, আপনাকে প্রথমে আইই বর্ধিত নিরাপত্তা নিষ্ক্রিয় করতে হবে।
 
-### Install package [.NET Core Windows Server Hosting](https://www.microsoft.com/net/download/all)
+১. **Server Manager** এ, বাম দিকে **Local Server** বিভাগটি খুলুন।
+
+২. প্রধান প্যানেলে, "**IE Enhanced Security Configuration:**" এর পাশে, অন নির্বাচন করুন।
+
+৩. প্রদর্শিত ডায়ালগে, **Off for Administrators** নির্বাচন করুন, **On for Users** নির্বাচন করুন, তারপর **OK** নির্বাচন করুন।
+
+![azure-publish_8](_static/azure-publish/azure-publish_8.png)
+
+### ওয়েব স্থাপনা ইনস্টল করুন
+
+১. ইন্টারনেট এক্সপ্লোরার চালু করুন।
+
+২. ডিফল্ট নিরাপত্তা সেটিংস গ্রহণ করুন।
+
+৩. [Download](https://www.microsoft.com/download/details.aspx?id=43717) *WebDeploy_amd64_en-US.msi*
+
+৪. ওয়েব স্থাপনার জন্য ইনস্টলেশন ধাপগুলি অনুসরণ করুন
+
+৫. সমস্ত উপাদান ইনস্টল করার জন্য সম্পূর্ণ বিকল্পটি চয়ন করুন
+
+### সর্বশেষ সংস্করণ ইনস্টল করুন [NET Core SDK](https://www.microsoft.com/net/download/all)
+
+### প্যাকেজ ইনস্টল করুন [.NET Core Windows Server Hosting](https://www.microsoft.com/net/download/all)
 
 ![azure-publish_9](_static/azure-publish/azure-publish_9.png)
 
-IIS is used to host ASP.NET Core web applications, its role will be reduced to a proxy server. Hosting of ASP.NET Core applications on IIS occurs using the native *AspNetCoreModuleV2*, which is configured to redirect requests to the *Kestrel* web server. This module controls the start of the external process `dotnet.exe`, within which the application is hosted, and forwards all requests from IIS to this host process.
+আইআইএস ASP.NET কোর ওয়েব অ্যাপ্লিকেশন হোস্ট করতে ব্যবহৃত হয়, এর ভূমিকা প্রক্সি সার্ভারে হ্রাস পাবে। আইআইএস -এ ASP.NET কোর অ্যাপ্লিকেশনগুলির হোস্টিং নেটিভ *AspNetCoreModuleV2* ব্যবহার করে ঘটে, যা *Kestrel* ওয়েব সার্ভারে অনুরোধগুলি পুননির্দেশ করার জন্য কনফিগার করা হয়। এই মডিউলটি বাহ্যিক প্রক্রিয়া `dotnet.exe` এর শুরু নিয়ন্ত্রণ করে, যার মধ্যে অ্যাপ্লিকেশনটি হোস্ট করা হয় এবং আইআইএস থেকে সমস্ত অনুরোধ এই হোস্ট প্রক্রিয়ায় ফরওয়ার্ড করে।
 
-After installing this package, run the **iisreset** command on the command line or manually restart IIS so that the server applies the changes.
+এই প্যাকেজটি ইনস্টল করার পরে, কমান্ড লাইনে **iisreset** কমান্ডটি চালান বা আইআইএস ম্যানুয়ালি পুনরায় চালু করুন যাতে সার্ভার পরিবর্তনগুলি প্রয়োগ করে।
 
-### Configure IIS
+### আইআইএস কনফিগার
 
-1. You must grant permission to the folder wwwroot. With the site selected in the **IIS Manager**, choose **Edit Permissions**, and make sure that *IUSR*, *IIS_IUSRS*, or the user configured for the Application Pool is an authorized user with Read & Execute rights. If none of these users are present, add *IUSR* as a user with *Read & Execute* rights.
+১. আপনাকে অবশ্যই wwwroot ফোল্ডারের অনুমতি দিতে হবে। **IIS Manager** এ নির্বাচিত সাইটের সাথে, **Edit Permissions** চয়ন করুন এবং নিশ্চিত করুন যে *IUSR*, *IIS_IUSRS*, অথবা অ্যাপ্লিকেশন পুলের জন্য কনফিগার করা ব্যবহারকারী রিড এবং এক্সিকিউট অধিকার সহ একজন অনুমোদিত ব্যবহারকারী । এই ব্যবহারকারীদের কেউ উপস্থিত না থাকলে, *Read & Execute* অধিকারের সাথে ব্যবহারকারী হিসাবে *IUSR* যোগ করুন।
 
-    ![azure-publish_10](_static/azure-publish/azure-publish_10.png)
+   ![azure-publish_10](_static/azure-publish/azure-publish_10.png)
 
-1. Click **Restart** on right panel to restart IIS
+২. আইআইএস পুনরায় চালু করতে ডান প্যানেলে **Restart** ক্লিক করুন
 
-Now everything is ready to publish the project.
+এখন প্রকল্পটি প্রকাশ করার জন্য সবকিছু প্রস্তুত।
 
-## Publish nopCommerce to an Azure VM from Microsoft Visual Studio
+## মাইক্রোসফ্ট ভিজ্যুয়াল স্টুডিও থেকে একটি আজুর ভিএম এ নপকমার্স প্রকাশ করুন
 
-Publishing the nopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, there will be described the minimum requirements to run the publication. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
+নপকমার্স অ্যাপ্লিকেশন প্রকাশ করা অন্য কোন ASP.NET কোর অ্যাপ্লিকেশন প্রকাশের থেকে আলাদা নয়। অতএব, প্রকাশনা চালানোর জন্য সর্বনিম্ন প্রয়োজনীয়তা বর্ণনা করা হবে। আরো বিস্তারিত পাওয়া যাবে [এখনে](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
 
-## Publish project `Nop.Web`
+## `Nop.Web` প্রকাশ করুন
 
-1. Open your web app solution in Microsoft Visual Studio. Right-click the project in *Solution Explorer* and choose **Publish**.
+১. মাইক্রোসফট ভিজ্যুয়াল স্টুডিওতে আপনার ওয়েব অ্যাপ সমাধান খুলুন। *Solution Explorer* -এ প্রকল্পটির ডান-ক্লিক করুন এবং **Publish** নির্বাচন করুন।
 
-    ![azure-publish_11](_static/azure-publish/azure-publish_11.png)
+![azure-publish_11](_static/azure-publish/azure-publish_11.png)
 
-1. Use the arrow on the right of the page to scroll through the publishing options until you find **Microsoft Azure Virtual Machines**. Select the appropriate VM from the list of Existing Virtual Machines.
-1. Click **Create Profile**.
+২. **Microsoft Azure Virtual Machines** না পাওয়া পর্যন্ত প্রকাশনার অপশনগুলির মাধ্যমে স্ক্রোল করার জন্য পৃষ্ঠার ডানদিকে তীরটি ব্যবহার করুন। বিদ্যমান ভার্চুয়াল মেশিনের তালিকা থেকে উপযুক্ত ভিএম নির্বাচন করুন।
 
-    ![azure-publish_12](_static/azure-publish/azure-publish_12.png)
+৩. নির্বাচন করুন **Create Profile**।
 
-1. To view and modify the publish profile settings, select **Configure**. Use the **Validate Connection** button to confirm that you have entered the right information.
+![azure-publish_12](_static/azure-publish/azure-publish_12.png)
 
-    ![azure-publish_13](_static/azure-publish/azure-publish_13.png)
+৪. প্রকাশের প্রোফাইল সেটিংস দেখতে এবং সংশোধন করতে, **Configure** নির্বাচন করুন। আপনি সঠিক তথ্য প্রবেশ করেছেন তা নিশ্চিত করতে **Validate Connection**  বোতামটি ব্যবহার করুন।
 
-1. If you want to ensure that the web server has a clean copy of the web application after each upload (and that no other files are left hanging around from a previous deployment), you can check the **Remove additional files at destination** checkbox in the **Settings** tab. Warning: Publishing with this setting deletes all files that exist on the web server (*wwwroot* directory). Be sure you know the state of the machine before publishing with this option enabled.
+![azure-publish_13](_static/azure-publish/azure-publish_13.png)
 
-    ![azure-publish_14](_static/azure-publish/azure-publish_14.png)
+৫. যদি আপনি নিশ্চিত করতে চান যে ওয়েব সার্ভারে প্রতিটি আপলোডের পরে ওয়েব অ্যাপ্লিকেশনের একটি পরিষ্কার কপি রয়েছে (এবং অন্য কোন ফাইল পূর্ববর্তী স্থাপনার কাছ থেকে ঝুলন্ত অবস্থায় নেই), আপনি **Remove additional files at destination** চেকবক্স চেক করতে পারেন **Settings** ট্যাবে। সতর্কতা: এই সেটিং দিয়ে প্রকাশ করা ওয়েব সার্ভারে বিদ্যমান সমস্ত ফাইল মুছে দেয় (*wwwroot* ডিরেক্টরি)। এই বিকল্পটি সক্রিয় করে প্রকাশ করার আগে নিশ্চিত হয়ে নিন যে আপনি মেশিনের অবস্থা জানেন।
 
-1. Click **Save**.
-1. Click **Publish** to begin publishing.
+![azure-publish_14](_static/azure-publish/azure-publish_14.png)
 
-You have now published your web app to an Azure virtual machine.
+৬. নির্বাচন করুন **Save**।
 
-## Potential problems and solutions
+৭. নির্বাচন করুন **Publish** প্রকাশ শুরু করতে।
 
-To [more](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in web.config:
+আপনি এখন আপনার ওয়েব অ্যাপটি একটি আজুর ভার্চুয়াল মেশিনে প্রকাশ হয়েছে।
+
+## সম্ভাব্য সমস্যা এবং সমাধান
+
+[আরও](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) সমস্যাটি কী তা সঠিকভাবে বুঝতে, আপনাকে লগিং সক্ষম করতে হবে web.config- এ stdoutLog সক্ষম করতে হবে:
 
 ```sh
-stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
+    stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
 ```
 
-## IIS not able to locate the web.config
+## আইআইএস web.config সনাক্ত করতে সক্ষম নয়
 
-Solution:  [support.microsoft.com](http://support.microsoft.com/kb/942055)
+সমাধান:  [support.microsoft.com](http://support.microsoft.com/kb/942055)

@@ -1,24 +1,24 @@
 ---
-title: Coding Standards
-uid: en/developer/tutorials/coding-standards
+title: কোডিং স্ট্যান্ডার্ড
+uid: bn/developer/tutorials/coding-standards
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Coding Standards
+# কোডিং স্ট্যান্ডার্ড
 
-There are three supported .NET coding convention categories:
+তিনটি সমর্থিত .NET কোডিং কনভেনশন বিভাগ রয়েছে:
 
-## Language conventions
+## ভাষা কনভেনশন
 
-### .NET code style settings
+### .NET কোড স্টাইল সেটিংস
 
-#### "this." qualifiers
+#### "this." যোগ্যতা
 
-This style rule can be applied to fields, properties, methods, or events.
+এই স্টাইলের নিয়মটি ফিল্ডস, প্রপার্টিস, মেথড বা ইভেন্টে প্রয়োগ করা যেতে পারে।
 
-- Prefer the code element *not* to be prefaced with `this.`
-- Prefer fields *not* to be prefaced with `this.`
+- `this.`দিয়ে প্রিফেক্স হতে কোড উপাদান *not* পছন্দ করুন
+- `this.`দিয়ে প্রিফেক্স করা ক্ষেত্রগুলি *not* পছন্দ করুন
 
   ```csharp
   //Right
@@ -30,7 +30,7 @@ This style rule can be applied to fields, properties, methods, or events.
   this.capacity = 0;
   ```
 
-- Prefer properties *not* to be prefaced with `this.`
+- `this.` দিয়ে প্রিফেক্স করা প্রপার্টি *not* পছন্দ করুন
 
   ```csharp
   //Right
@@ -42,7 +42,7 @@ This style rule can be applied to fields, properties, methods, or events.
   this.ID = 0;
   ```
 
-- Prefer methods *not* to be prefaced with `this.`
+- `this.` দিয়ে প্রিফেক্স করা মেথড *not* পছন্দ করুন
 
   ```csharp
   //Right
@@ -54,7 +54,7 @@ This style rule can be applied to fields, properties, methods, or events.
   this.Display();
   ```
 
-- Prefer events *not* to be prefaced with `this.`
+- `this.` দিয়ে প্রিফেক্স করা ইভেন্টে *not* পছন্দ করুন
 
   ```csharp
   //Right
@@ -66,11 +66,11 @@ This style rule can be applied to fields, properties, methods, or events.
   this.Elapsed += Handler;
   ```
 
-#### Language keywords instead of framework type names for type references
+#### টাইপ রেফারেন্সের জন্য ফ্রেমওয়ার্ক টাইপ নামের পরিবর্তে ভাষার কীওয়ার্ড
 
-This style rule can be applied to local variables, method parameters, and class members, or as a separate rule to type member access expressions.
+এই স্টাইলের নিয়মটি স্থানীয় ভেরিয়েবল, মেথড প্যারামিটার এবং ক্লাস মেম্বারদের জন্য অথবা মেম্বার অ্যাক্সেস এক্সপ্রেশন টাইপ করার জন্য আলাদা নিয়ম হিসাবে প্রয়োগ করা যেতে পারে।
 
-- Prefer the language keyword for local variables, method parameters, and class members, instead of the type name, for types that have a keyword to represent them.
+- টাইপ নামের পরিবর্তে স্থানীয় ভেরিয়েবল, মেথড প্যারামিটার এবং ক্লাস মেম্বারদের জন্য ভাষার কীওয়ার্ড পছন্দ করুন, যে ধরনের কিওয়ার্ড তাদের প্রতিনিধিত্ব করে।
 
   ```csharp
   //Right
@@ -82,7 +82,7 @@ This style rule can be applied to local variables, method parameters, and class 
   private Int32 _member;
   ```
 
-- Prefer the language keyword for member access expressions, instead of the type name, for types that have a keyword to represent them.
+- মেম্বার অ্যাক্সেস এক্সপ্রেশনগুলির জন্য ভাষার কীওয়ার্ড পছন্দ করুন, টাইপ নামের পরিবর্তে, যে ধরনের কিওয়ার্ড তাদের প্রতিনিধিত্ব করার জন্য।
 
   ```csharp
   //Right
@@ -94,11 +94,11 @@ This style rule can be applied to local variables, method parameters, and class 
   var local = Int32.MaxValue;
   ```
 
-#### Modifier preferences
+#### মডিফায়ার পছন্দ
 
-The style rules in this section concern modifier preferences, including requiring accessibility modifiers, specifying the desired modifier sort order, and requiring the read-only modifier.
+এই বিভাগে স্টাইলের নিয়মগুলি মডিফায়ার পছন্দগুলির বিষয়ে চিন্তা করে, যার মধ্যে অ্যাক্সেসযোগ্যতা মডিফায়ার প্রয়োজন, পছন্দসই মডিফায়ার সাজানোর ক্রম নির্দিষ্ট করা এবং কেবলমাত্র পঠনযোগ্য মডিফায়ার প্রয়োজন।
 
-- Prefer accessibility modifiers to be declared except for public interface members.
+- পাবলিক ইন্টারফেসের সদস্যদের বাদে অ্যাক্সেসিবিলিটি মডিফায়ার ঘোষণা করা পছন্দ করুন।
 
   ```csharp
   //Right
@@ -116,7 +116,7 @@ The style rules in this section concern modifier preferences, including requirin
   }
   ```
 
-- Prefer the specified ordering:
+- নির্দিষ্ট অর্ডার পছন্দ করুন:
 
     *`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
 
@@ -128,11 +128,11 @@ The style rules in this section concern modifier preferences, including requirin
   }
   ```
 
-#### Parentheses preferences
+#### বন্ধনী পছন্দ
 
-The style rules in this section concern parentheses preferences, including the use of parentheses for arithmetic, relational, and other binary operators.
+এই বিভাগে স্টাইলের নিয়মগুলি গাণিতিক, রিলেশনাল এবং অন্যান্য বাইনারি অপারেটরদের জন্য বন্ধনীর ব্যবহার সহ বন্ধনীর পছন্দগুলির সাথে সম্পর্কিত।
 
-- Prefer parentheses to clarify arithmetic operator (*, /, %, +, -, <<, >>, &, ^, |) precedence
+- গাণিতিক অপারেটর (*, /, %, +, -, <<, >>, &, ^, |) অগ্রাধিকার স্পষ্ট করার জন্য বন্ধনী পছন্দ করুন
 
   ```csharp
   //Right
@@ -144,7 +144,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a + b * c;
   ```
 
-- Prefer parentheses to clarify relational operator (>, <, <=, >=, is, as, ==, !=) precedence
+- রিলেশনাল অপারেটর (>, <, <=, >=, is, as, ==, !=) অগ্রাধিকার স্পষ্ট করার জন্য বন্ধনী পছন্দ করুন
 
   ```csharp
   //Right
@@ -156,7 +156,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a < b == c > d;
   ```
 
-- Prefer parentheses to clarify other binary operator (&&, ||, ??) precedence
+- বাইনারি অপারেটর (&&, ||, ??) অগ্রাধিকার স্পষ্ট করার জন্য বন্ধনী পছন্দ করুন
 
   ```csharp
   //Right
@@ -168,7 +168,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a || b && c;
   ```
 
-- Prefer to not have parentheses when operator precedence is obvious
+- অপারেটরের অগ্রাধিকার সুস্পষ্ট হলে বন্ধনী না থাকা পছন্দ করুন
 
   ```csharp
   //Right
@@ -180,11 +180,11 @@ The style rules in this section concern parentheses preferences, including the u
   var v = (a.b).Length;
   ```
 
-#### Expression-level preferences
+#### এক্সপ্রেশন-স্তরের পছন্দ
 
-The style rules in this section concern expression-level preferences, including the use of object initializers, collection initializers, explicit or inferred tuple names, and inferred anonymous types.
+এই বিভাগে স্টাইলের নিয়মগুলি এক্সপ্রেশন-স্তরের পছন্দগুলিকে উদ্বিগ্ন করে, যার মধ্যে অবজেক্ট ইনিশিয়ালাইজার, কালেকশন ইনিশিয়ালাইজার, এক্সপ্লিসিট বা অনুমিত টুপল নাম এবং অনুমিত অ্যানোনিমাস প্রকারগুলি অন্তর্ভুক্ত রয়েছে।
 
-- Prefer objects to be initialized using object initializers when possible
+- সম্ভব হলে অবজেক্ট ইনিশিয়ালাইজার ব্যবহার করে শুরু করা অবজেক্টগুলিকে পছন্দ করুন
 
   ```csharp
   //Right
@@ -197,7 +197,7 @@ The style rules in this section concern expression-level preferences, including 
   c.Age = 21;
   ```
 
-- Prefer collections to be initialized using collection initializers when possible
+- সম্ভব হলে সংগ্রহ আরম্ভকারীদের ব্যবহার করে সংগ্রহগুলি আরম্ভ করা পছন্দ করুন
 
   ```csharp
   //Right
@@ -212,7 +212,7 @@ The style rules in this section concern expression-level preferences, including 
   list.Add(3);
   ```
 
-- Prefer tuple names to ItemX properties
+- আইটেমএক্স বৈশিষ্ট্যে টুপল নাম পছন্দ করুন
 
   ```csharp
   //Right
@@ -226,7 +226,7 @@ The style rules in this section concern expression-level preferences, including 
   var name = customer.Item1;
   ```
 
-- Prefer inferred tuple element names
+- অনুমিত টুপল উপাদান নাম পছন্দ করুন
 
   ```csharp
   //Right
@@ -238,7 +238,7 @@ The style rules in this section concern expression-level preferences, including 
   var tuple = (age: age, name: name);
   ```
 
-- Prefer explicit anonymous type member names
+- এক্সপ্লিসিট অ্যানোনিমাস টাইপ সদস্য নাম পছন্দ করুন
 
   ```csharp
   //Right
@@ -250,7 +250,7 @@ The style rules in this section concern expression-level preferences, including 
   var anon = new { age, name };
   ```
 
-- Prefer autoproperties over properties with private backing fields
+- প্রাইভেট ব্যাকিং ফিল্ড সহ প্রোপার্টিগুলির চেয়ে স্বয়ংসম্পূর্ণতাকে অগ্রাধিকার দিন
 
   ```csharp
   //Right
@@ -270,7 +270,7 @@ The style rules in this section concern expression-level preferences, including 
   }
   ```
 
-- Prefer using a null check with pattern-matching over *`object.ReferenceEquals`*
+- *`object.ReferenceEquals`* প্যাটার্ন-ম্যাচিং ওভার দিয়ে একটি নাল চেক ব্যবহার করতে পছন্দ করুন
 
   ```csharp
   //Right
@@ -284,7 +284,7 @@ The style rules in this section concern expression-level preferences, including 
       return;
   ```
 
-- Prefer assignments with a ternary conditional over an if-else statement
+- ইফ-এলস স্টেটমেন্টের উপর একটি টার্নারি শর্তাধীন অ্যাসাইনমেন্ট পছন্দ করুন
 
   ```csharp
   //Right
@@ -304,7 +304,7 @@ The style rules in this section concern expression-level preferences, including 
   }
   ```
 
-- Prefer return statements to use a ternary conditional over an if-else statement
+- ইফ-এলস স্টেটমেন্টের উপর একটি টার্নারি কন্ডিশনাল ব্যবহার করতে রিটার্ন স্টেটমেন্ট পছন্দ করুন
 
   ```csharp
   //Right
@@ -323,7 +323,7 @@ The style rules in this section concern expression-level preferences, including 
   }
   ```
 
-- Prefer compound assignment expressions
+- যৌগিক অ্যাসাইনমেন্ট এক্সপ্রেশন পছন্দ করুন
 
   ```csharp
   //Right
@@ -335,11 +335,11 @@ The style rules in this section concern expression-level preferences, including 
   x = x + 1;
   ```
 
-#### Null-checking preferences
+#### নাল-চেকিং পছন্দ
 
-The style rules in this section concern null-checking preferences.
+এই বিভাগে স্টাইলের নিয়মগুলি শূন্য-চেকিং পছন্দগুলি সম্পর্কিত।
 
-- Prefer null coalescing expressions to ternary operator checking
+- টার্নারি অপারেটর চেকিংয়ের জন্য নাল কোয়ালসিং এক্সপ্রেশন পছন্দ করুন
 
   ```csharp
   //Right
@@ -352,7 +352,7 @@ The style rules in this section concern null-checking preferences.
   var v = x == null ? y : x;
   ```
 
-- Prefer to use null-conditional operator when possible
+- সম্ভব হলে নাল-কন্ডিশনাল অপারেটর ব্যবহার করতে পছন্দ করুন
 
   ```csharp
   //Right
@@ -365,13 +365,13 @@ The style rules in this section concern null-checking preferences.
   var v = o != null ? o.String() : null;
   ```
 
-### C# code style settings
+### C# কোড স্টাইল সেটিংস
 
-#### Implicit and explicit types
+#### ইমপ্লিসিট এবং এক্সপ্লিসিট টাইপ
 
-The style rules in this section concern the use of the var keyword versus an explicit type in a variable declaration. This rule can be applied separately to built-in types, when the type is apparent, and elsewhere.
+এই বিভাগে স্টাইল নিয়ম একটি পরিবর্তনশীল ঘোষণায় একটি এক্সপ্লিসিট ধরনের বনাম ভার কীওয়ার্ড ব্যবহার সম্পর্কিত। এই নিয়মটি অন্তর্নির্মিত প্রকারগুলিতে পৃথকভাবে প্রয়োগ করা যেতে পারে, যখন প্রকারটি এক্সপ্লিসিট এবং অন্য কোথাও।
 
-- Prefer *`var`* is used to declare variables with built-in system types such as *`int`*
+- *`var`* ব্যবহার করা পছন্দ করুন ভেরিয়েবলগুলিকে বিল্ট-ইন সিস্টেম টাইপ যেমন *`int`* ঘোষণা করার জন্য
 
   ```csharp
   //Right
@@ -383,7 +383,7 @@ The style rules in this section concern the use of the var keyword versus an exp
   int x = 5;
   ```
 
-- Prefer *`var`* when the type is already mentioned on the right-hand side of a declaration expression
+- *`var`* পছন্দ করুন যখন টাইপটি ইতিমধ্যেই একটি ডিক্লারেশন এক্সপ্রেশন এর ডানদিকে উল্লেখ করা আছে
 
   ```csharp
   //Right
@@ -395,7 +395,7 @@ The style rules in this section concern the use of the var keyword versus an exp
   Customer obj = new Customer();
   ```
 
-- Prefer *`var`* over explicit type in all cases, unless overridden by another code style rule
+- অন্য কোন কোড স্টাইলের নিয়ম দ্বারা ওভাররাইড না হওয়া পর্যন্ত সকল ক্ষেত্রে এক্সপ্লিসিট টাইপের চেয়ে *`var`* পছন্দ করুন
 
   ```csharp
   //Right
@@ -407,11 +407,11 @@ The style rules in this section concern the use of the var keyword versus an exp
   bool f = this.Init();
   ```
 
-#### Expression-bodied members
+#### এক্সপ্রেশন-বডি সদস্য
 
-The style rules in this section concern the use of [expression-bodied members](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) when the logic consists of a single expression. This rule can be applied to methods, constructors, operators, properties, indexers, and accessors.
+এই বিভাগে স্টাইলের নিয়মগুলি ব্যবহার সম্পর্কিত [এক্সপ্রেশন-বডি সদস্য](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) যখন যুক্তি একটি একক এক্সপ্রেশন নিয়ে গঠিত। এই নিয়ম মেথড, কনস্ট্রাক্টর, অপারেটর, প্রপার্টি, ইনডেক্সার এবং অ্যাক্সেসারের ক্ষেত্রে প্রয়োগ করা যেতে পারে।
 
-- Prefer block bodies for methods
+- মেথড জন্য ব্লক বডিগুলিকে পছন্দ করুন
 
   ```csharp
   //Right
@@ -423,7 +423,7 @@ The style rules in this section concern the use of [expression-bodied members](h
   public int GetAge() => this.Age;
   ```
 
-- Prefer block bodies for constructors
+- কনস্ট্রাক্টর জন্য এক্সপ্রেশন বডিগুলিকে পছন্দ করুন
 
   ```csharp
   //Right
@@ -435,7 +435,7 @@ The style rules in this section concern the use of [expression-bodied members](h
   public Customer(int age) => Age = age;
   ```
 
-- Prefer block bodies for operators
+- অপারেটর জন্য এক্সপ্রেশন বডিগুলিকে পছন্দ করুন
 
   ```csharp
   //Right
@@ -449,7 +449,7 @@ The style rules in this section concern the use of [expression-bodied members](h
       => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
   ```
 
-- Prefer expression bodies for properties when they will be a single line
+- প্রপার্টিগুলির জন্য এক্সপ্রেশন বডিগুলিকে পছন্দ করুন যখন তারা একটি একক লাইন হবে
 
   ```csharp
   //Right
@@ -461,7 +461,7 @@ The style rules in this section concern the use of [expression-bodied members](h
   public int Age { get { return _age; }}
   ```
 
-- Prefer expression bodies for indexers
+- ইনডেক্সার জন্য এক্সপ্রেশন বডিগুলিকে পছন্দ করুন
 
   ```csharp
   //Right
@@ -473,7 +473,7 @@ The style rules in this section concern the use of [expression-bodied members](h
   public T this[int i] { get { return _values[i]; } }
   ```
 
-- Prefer expression bodies for accessors
+- অ্যাক্সেসারের জন্য এক্সপ্রেশন বডিগুলিকে পছন্দ করুন
 
   ```csharp
   //Right
@@ -485,7 +485,7 @@ The style rules in this section concern the use of [expression-bodied members](h
   public int Age { get { return _age; } set { _age = value; } }
   ```
 
-- Prefer expression bodies for lambdas
+- ল্যাম্বডাসের জন্য এক্সপ্রেশন বডি পছন্দ করুন
 
   ```csharp
   //Right
@@ -497,11 +497,11 @@ The style rules in this section concern the use of [expression-bodied members](h
   Func<int, int> square = x => { return x * x; };
   ```
 
-#### Pattern matching
+#### প্যাটার্ন ম্যাচিং
 
-The style rules in this section concern the use of [pattern matching](https://docs.microsoft.com/dotnet/csharp/pattern-matching) in C#.
+এই বিভাগে স্টাইলের নিয়মগুলি C# এ [প্যাটার্ন ম্যাচিং](https://docs.microsoft.com/dotnet/csharp/pattern-matching)।
 
-- Prefer pattern matching instead of is expressions with type casts
+- টাইপ কাস্টের সাথে এক্সপ্রেশন এর পরিবর্তে প্যাটার্ন ম্যাচিং পছন্দ করুন
 
   ```csharp
   //Right
@@ -513,7 +513,7 @@ The style rules in this section concern the use of [pattern matching](https://do
   if (o is int) {var i = (int)o; ... }
   ```
 
-- Prefer pattern matching instead of *`as`* expressions with null checks to determine if something is of a particular type
+- কিছু নির্দিষ্ট ধরনের কিনা তা নির্ধারণ করতে নাল চেকের সাথে *`as`* এক্সপ্রেশন এর পরিবর্তে প্যাটার্ন ম্যাচিং পছন্দ করুন
 
   ```csharp
   //Right
@@ -526,11 +526,11 @@ The style rules in this section concern the use of [pattern matching](https://do
   if (s != null) {...}
   ```
 
-#### Inlined variable declarations
+#### ইনলাইন ভ্যারিয়েবল ঘোষণা
 
-This style rule concerns whether out variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
+এই স্টাইল নিয়মটি চিন্তা করে যে আউট ভেরিয়েবলগুলি ইনলাইন ঘোষণা করা হয়েছে কিনা। C# 7 থেকে শুরু করে, আপনি পারেন [একটি মেথড কলের আর্গুমেন্ট তালিকায় একটি আউট ভেরিয়েবল ঘোষণা করুন](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), একটি পৃথক পরিবর্তনশীল ঘোষণার পরিবর্তে।
 
-- Prefer *`out`* variables to be declared inline in the argument list of a method call when possible
+- সম্ভব হলে মেথড কলের আর্গুমেন্ট তালিকায় ইনলাইন ঘোষণা করার জন্য *`out`* ভেরিয়েবল পছন্দ করুন
 
   ```csharp
   //Right
@@ -543,11 +543,11 @@ This style rule concerns whether out variables are declared inline or not. Start
   if (int.TryParse(value, out i)) {...}
   ```
 
-#### C# expression-level preferences
+#### C# এক্সপ্রেশন-লেভেল পছন্দ
 
-This style rule concerns using the [default literal for default value expressions](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) when the compiler can infer the type of the expression.
+এই স্টাইলে নিয়ম [ডিফল্ট মান এক্সপ্রেশন জন্য ডিফল্ট লিটারেল](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) ব্যবহার করে উদ্বেগ প্রকাশ করে যখন কম্পাইলার প্রকাশের ধরন অনুমান করতে পারে।
 
-- Prefer *`default`* over *`default(T)`*
+- *`default`* উপরে *`default(T)`* পছন্দ করুন
 
   ```csharp
   //Right
@@ -559,11 +559,11 @@ This style rule concerns using the [default literal for default value expression
   void DoWork(CancellationToken cancellationToken = default(CancellationToken)) {   ... }
   ```
 
-#### C# null-checking preferences
+#### C# নাল-চেকিং পছন্দ
 
-These style rules concern the syntax around null checking, including using throw expressions or throw statements, and whether to perform a null check or use the conditional coalescing operator (?.) when invoking a [lambda expression](https://docs.microsoft.com/dotnet/csharp/lambda-expressions).
+এই স্টাইলের নিয়মগুলি নাল চেকিংয়ের চারপাশের বাক্য গঠনকে উদ্বেগজনক করে তোলে, যার মধ্যে রয়েছে থ্রো এক্সপ্রেশন বা থ্রো স্টেটমেন্ট ব্যবহার করা, এবং একটি নাল চেকিং করা বা কন্ডিশনাল কোলসিং অপারেটর ব্যবহার করা[ল্যামডা এক্সপ্রেশন](https://docs.microsoft.com/dotnet/csharp/lambda-expressions)।
 
-- Prefer to use throw expressions instead of throw statements
+- থ্রো স্টেটমেন্টের পরিবর্তে থ্রো এক্সপ্রেশন ব্যবহার করতে পছন্দ করুন
 
   ```csharp
   //Right
@@ -576,7 +576,7 @@ These style rules concern the syntax around null checking, including using throw
   this.s = s;
   ```
 
-- Prefer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
+- একটি নাল চেক করার পরিবর্তে একটি ল্যাম্বডা এক্সপ্রেশন চালানোর সময় কন্ডিশনাল কোলসেসিং অপারেটর (?।) ব্যবহার করতে পছন্দ করুন
 
   ```csharp
   //Right
@@ -588,9 +588,9 @@ These style rules concern the syntax around null checking, including using throw
   if (func != null) { func(args); }
   ```
 
-#### Code block preferences
+#### কোড ব্লক পছন্দ
 
-This style rule concerns the use of curly braces { } to surround code blocks.
+এই স্টাইলের নিয়ম কোড ব্লকগুলির চারপাশে কোঁকড়া ধনুর্বন্ধনী {} ব্যবহার সম্পর্কে উদ্বিগ্ন।
 
 - Prefer no curly braces if allowed
 
@@ -604,31 +604,15 @@ This style rule concerns the use of curly braces { } to surround code blocks.
   if (test) { this.Display(); }
   ```
 
-## Formatting conventions
+## ফরম্যাটিং কনভেনশন
 
-### .NET formatting settings
+### .NET ফরম্যাটিং সেটিংস
 
-### Organize using directives
+### ডিরেক্টিভ ব্যবহার করে সংগঠিত করা
 
-These formatting rules concern the sorting and display of *`using`* directives and *`Imports`* statements.
+.এই বিন্যাসের নিয়মগুলি *`using`* ডিরেক্টিভ এবং *`Imports`* বিবৃতিগুলির বাছাই এবং প্রদর্শন সম্পর্কিত।
 
-- Sort `System.*` *`using`* directives alphabetically, and place them before other using directives.
-
-  ```csharp
-  //Right
-  using System.Collections.Generic;
-  using System.Threading.Tasks;
-  using Octokit;
-  ```
-
-  ```csharp
-  //Wrong
-  using System.Collections.Generic;
-  using Octokit;
-  using System.Threading.Tasks;
-  ```
-
-- Do not place a blank line between using directive groups.
+- `System.*` *`using`* বর্ণানুক্রমিক ডিরেক্টিভ সাজান, এবং ডিরেক্টিভ ব্যবহার করে তাদের আগে রাখুন।
 
   ```csharp
   //Right
@@ -640,20 +624,36 @@ These formatting rules concern the sorting and display of *`using`* directives a
   ```csharp
   //Wrong
   using System.Collections.Generic;
+  using Octokit;
+  using System.Threading.Tasks;
+  ```
+
+- নির্দেশক গোষ্ঠী ব্যবহারের মধ্যে একটি ফাঁকা লাইন রাখবেন না।
+
+  ```csharp
+  //Right
+  using System.Collections.Generic;
+  using System.Threading.Tasks;
+  using Octokit;
+  ```
+
+  ```csharp
+  //Wrong
+  using System.Collections.Generic;
   using System.Threading.Tasks;
 
   using Octokit;
   ```
 
-### C# formatting settings
+### C# বিন্যাস সেটিংস
 
-The formatting rules in this section apply only to C# code.
+এই বিভাগে বিন্যাসের নিয়ম শুধুমাত্র C# কোডের ক্ষেত্রে প্রযোজ্য।
 
-#### New-line options
+#### নতুন-লাইনের বিকল্প
 
-These formatting rules concern the use of new lines to format code.
+এই ফর্ম্যাটিং নিয়ম কোড ফর্ম্যাট করার জন্য নতুন লাইন ব্যবহার সম্পর্কিত।
 
-- Require braces to be on a new line for all expressions ("Allman" style).
+- সব অভিব্যক্তি ("অলম্যান" স্টাইল) জন্য একটি নতুন লাইনে থাকতে ধনুর্বন্ধনী প্রয়োজন।
 
   ```csharp
   //Right
@@ -675,7 +675,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Place else statements on a new line.
+- একটি নতুন লাইনে এলস স্টেটমেন্ট রাখুন।
 
   ```csharp
   //Right
@@ -698,7 +698,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Place catch statements on a new line.
+- একটি নতুন লাইনে ক্যাচ স্টেটমেন্ট রাখুন।
 
   ```csharp
   //Right
@@ -721,7 +721,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require finally statements to be on a new line after the closing brace.
+- শেষ বন্ধনীর পরে একটি নতুন লাইনে থাকা স্টেটমেন্ট প্রয়োজন।
 
   ```csharp
   //Right
@@ -750,7 +750,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require members of object initializers to be on separate lines
+- বস্তুর প্রারম্ভিক সদস্যদের পৃথক লাইনে থাকতে হবে
 
   ```csharp
   //Right
@@ -769,7 +769,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require members of anonymous types to be on separate lines
+- অ্যানোনিমাস ধরণের সদস্যদের আলাদা লাইনে থাকতে হবে
 
   ```csharp
   //Right
@@ -788,7 +788,7 @@ These formatting rules concern the use of new lines to format code.
   }
   ```
 
-- Require elements of query expression clauses to be on separate lines
+- পৃথক লাইনে থাকার জন্য ক্যোয়ারী এক্সপ্রেশন ক্লজের উপাদানগুলির প্রয়োজন
 
   ```csharp
   //Right
@@ -803,11 +803,11 @@ These formatting rules concern the use of new lines to format code.
           select a * b;
   ```
 
-#### Indentation options
+#### ইন্ডেন্টেশন বিকল্প
 
-These formatting rules concern the use of indentation to format code.
+এই বিন্যাসের নিয়ম কোডের বিন্যাসে ইন্ডেন্টেশনের ব্যবহার সম্পর্কিত।
 
-- Indent *`switch`* case contents
+- ইন্ডেন্ট *`switch`* কেস বিষয়বস্তু
 
   ```csharp
   //Right
@@ -840,7 +840,7 @@ These formatting rules concern the use of indentation to format code.
   }
   ```
 
-- Indent *`switch`* labels
+- ইন্ডেন্ট *`switch`* লেবেল
 
   ```csharp
   //Right
@@ -873,7 +873,7 @@ These formatting rules concern the use of indentation to format code.
   }
   ```
 
-- Labels are placed at the same indent as the current context
+- লেবেলগুলি বর্তমান প্রেক্ষাপটের মতো একই ইন্ডেন্টে স্থাপন করা হয়েছে
 
   ```csharp
   //Right
@@ -921,11 +921,11 @@ These formatting rules concern the use of indentation to format code.
   }
   ```
 
-#### Spacing options
+#### স্পেস বিকল্প
 
-These formatting rules concern the use of space characters to format code.
+এই বিন্যাসের নিয়মগুলি কোড ফরম্যাট করতে স্পেস ক্যারেক্টার ব্যবহার সম্পর্কিত।
 
-- Remove space between the cast and the value
+- কাস্ট এবং মান মধ্যে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -937,7 +937,7 @@ These formatting rules concern the use of space characters to format code.
   int y = (int) x;
   ```
 
-- Place a space character after a keyword in a control flow statement such as a   *`for`* loop
+- একটি কন্ট্রোল ফ্লো স্টেটমেন্টে একটি কীওয়ার্ডের পরে একটি স্পেস ক্যারেক্টার রাখুন যেমন একটি *`for`* লুপ
 
   ```csharp
   //Right
@@ -949,7 +949,7 @@ These formatting rules concern the use of space characters to format code.
   for(int i;i<x;i++) { ... }
   ```
 
-- Place a space character before the colon for bases or interfaces in a type   declaration
+- টাইপ ডিক্লারেশনে বেস বা ইন্টারফেসের জন্য কোলনের আগে একটি স্পেস ক্যারেক্টার রাখুন
 
   ```csharp
   //Right
@@ -977,7 +977,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Place a space character after the colon for bases or interfaces in a type   declaration
+- একটি প্রকার ঘোষণায় ঘাঁটি বা ইন্টারফেসের জন্য কোলনের পরে একটি স্পেস ক্যারেক্টার রাখুন
 
   ```csharp
   //Right
@@ -1005,7 +1005,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Insert space before and after the binary operator
+- বাইনারি অপারেটরের আগে এবং পরে স্পেস ক্যারেক্টার ঢোকান
 
   ```csharp
   //Right
@@ -1022,7 +1022,7 @@ These formatting rules concern the use of space characters to format code.
   return x  *  (x-y);
   ```
 
-- Remove space characters after the opening parenthesis and before the closing   parenthesis of a method declaration parameter list
+- খোলার বন্ধনী পরে এবং একটি পদ্ধতি ঘোষণা প্যারামিটার তালিকার বন্ধের বন্ধনী আগে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1034,7 +1034,7 @@ These formatting rules concern the use of space characters to format code.
   void Bark( int x ) { ... }
   ```
 
-- Remove space within empty parameter list parentheses for a method declaration
+- একটি পদ্ধতি ঘোষণার জন্য খালি প্যারামিটার তালিকা বন্ধনীগুলির মধ্যে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1063,7 +1063,7 @@ These formatting rules concern the use of space characters to format code.
 
   ```
 
-- Remove space characters between the method name and opening parenthesis in the   method declaration
+- পদ্ধতির ঘোষণায় মেথডের নাম এবং খোলার বন্ধনীগুলির মধ্যে স্পেস ক্যারেক্টারগুলি সরান
 
   ```csharp
   //Right
@@ -1075,7 +1075,7 @@ These formatting rules concern the use of space characters to format code.
   void M () { }
   ```
 
-- Remove space characters after the opening parenthesis and before the closing   parenthesis of a method call
+- খোলার বন্ধনী পরে এবং একটি মেথড কল বন্ধ বন্ধনী আগে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1087,7 +1087,7 @@ These formatting rules concern the use of space characters to format code.
   MyMethod( argument );
   ```
 
-- Remove space within empty argument list parentheses
+- খালি যুক্তি তালিকা বন্ধনীগুলির মধ্যে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1115,7 +1115,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Remove space between method call name and opening parenthesis
+- মেথড কল নাম এবং খোলার বন্ধনী মধ্যে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1143,7 +1143,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Insert space after a comma
+- একটি কমা পরে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1155,7 +1155,7 @@ These formatting rules concern the use of space characters to format code.
   int[] x = new int[] { 1,2,3,4,5 }
   ```
 
-- Remove space before a comma
+- একটি কমা আগে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1167,7 +1167,7 @@ These formatting rules concern the use of space characters to format code.
   int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
   ```
 
-- Insert space after each semicolon in a for statement
+- বিবৃতিতে প্রতিটি সেমিকোলনের পরে স্পেস ক্যারেক্টার সন্নিবেশ করান
 
   ```csharp
   //Right
@@ -1179,7 +1179,7 @@ These formatting rules concern the use of space characters to format code.
   for (int i = 0;i < x.Length;i++)
   ```
 
-- Remove space before each semicolon in a for statement
+- বিবৃতিতে প্রতিটি সেমিকোলনের আগে স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1191,7 +1191,7 @@ These formatting rules concern the use of space characters to format code.
   for (int i = 0 ; i < x.Length ; i++)
   ```
 
-- Remove extra space characters in declaration statements
+- ঘোষণা বিবৃতিতে অতিরিক্ত স্পেস ক্যারেক্টার সরান
 
   ```csharp
   //Right
@@ -1203,7 +1203,7 @@ These formatting rules concern the use of space characters to format code.
   int    x    =    0   ;
   ```
 
-- Remove space before opening square brackets *`[`*
+- বর্গাকার বন্ধনী খোলার আগে স্পেস ক্যারেক্টার সরান *`[`*
 
   ```csharp
   //Right
@@ -1215,7 +1215,7 @@ These formatting rules concern the use of space characters to format code.
   int [] numbers = new int [] { 1, 2, 3, 4, 5 };
   ```
 
-- Remove space between empty square brackets *`[]`*
+- খালি বর্গাকার বন্ধনীগুলির মধ্যে স্পেস ক্যারেক্টার সরান *`[]`*
 
   ```csharp
   //Right
@@ -1227,7 +1227,7 @@ These formatting rules concern the use of space characters to format code.
   int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
   ```
 
-- Remove space characters in non-empty square brackets *`[0]`*
+- খালি নয় বর্গাকার বন্ধনীতে স্পেস ক্যারেক্টার সরান *`[0]`*
 
   ```csharp
   //Right
@@ -1239,11 +1239,11 @@ These formatting rules concern the use of space characters to format code.
   int index = numbers[ 0 ];
   ```
 
-#### Wrap options
+#### মোড়ানো বিকল্প
 
-These formatting rules concern the use of single lines versus separate lines for statements and code blocks.
+এই বিন্যাসের নিয়মগুলি বিবৃতি এবং কোড ব্লকের জন্য পৃথক লাইন বনাম একক লাইন ব্যবহার সম্পর্কিত।
 
-- Leave statements and member declarations on different lines
+- বিবৃতি এবং সদস্য ঘোষণা বিভিন্ন লাইনে ছেড়ে দিন
 
   ```csharp
   //Right
@@ -1256,7 +1256,7 @@ These formatting rules concern the use of single lines versus separate lines for
   int i = 0; string name = "John";
   ```
 
-- Leave code block on single line
+- একক লাইনে কোড ব্লক ছেড়ে দিন
 
   ```csharp
   //Right
@@ -1271,9 +1271,9 @@ These formatting rules concern the use of single lines versus separate lines for
   }
   ```
 
-## Naming conventions
+## নামকরণ অনুষ্ঠান
 
-- Constants are named only in capital letters with a delimiter *`_`*
+- ধ্রুবকগুলি শুধুমাত্র একটি ডিলিমিটার *`_`* দিয়ে বড় অক্ষরে লেখা হয়
 
   ```csharp
   //Right
@@ -1285,7 +1285,7 @@ These formatting rules concern the use of single lines versus separate lines for
   const int Test_Constant = 1;
   ```
 
-- Fields with *`public`* access are referred to as PascalCase notation
+- *`public`* অ্যাক্সেস সহ ফিল্ডগুলিকে প্যাসকেলকেস নোটেশন বলা হয়
 
   ```csharp
   //Right
@@ -1297,7 +1297,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public int testField;
   ```
 
-- Interface names must be in PascalCase notation and have the prefix *`I`*
+- ইন্টারফেসের নাম অবশ্যই প্যাসকেলকেস নোটেশনে থাকতে হবে এবং উপসর্গ *`I`* থাকতে হবে
 
   ```csharp
   //Right
@@ -1309,7 +1309,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public interface testInterface;
   ```
 
-- The names of classes, structures, methods, enums, events, properties,   namespaces, and delegates should be in PascalCase notation
+- ক্লাস, স্ট্রাকচার, মেথড, এনামস, ইভেন্টস, প্রপার্টি, নেমস্পেস এবং ডেলিগেটের নাম প্যাসকেলকেস নোটেশনে থাকা উচিত
 
   ```csharp
   //Right
@@ -1321,7 +1321,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public class someClass;
   ```
 
-- Assigned to the parameter of a generic type a descriptive name in the notation   PascalCase, unless enough of a letter and a descriptive name has no practical   value
+- একটি জেনেরিক প্রকারের প্যারামিটারে বরাদ্দ করা হয়েছে নোটেশন প্যাসক্যালকেসে এ একটি বর্ণনামূলক নাম, যতক্ষণ না একটি বর্ণ এবং বর্ণনামূলক নামের যথেষ্ট ব্যবহারিক মূল্য না থাকে
 
   ```csharp
   //Right
@@ -1330,7 +1330,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public class List<T> { /*...*/ }
   ```
 
-- Use the name of the type *`T`* parameter for types that contain only a single letter type parameter
+- প্রকারের নাম *`T`* প্যারামিটার ব্যবহার করুন যে ধরনের শুধুমাত্র একটি অক্ষর টাইপ প্যারামিটার রয়েছে
 
   ```csharp
   //Right
@@ -1339,7 +1339,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public struct Nullable<T> where T : struct { /*...*/ }
   ```
 
-- Use the prefix *`T`* for descriptive names of type parameters
+- টাইপ প্যারামিটারের বর্ণনামূলক নামের জন্য উপসর্গ *`T`* ব্যবহার করুন
 
   ```csharp
   //Right
@@ -1349,9 +1349,9 @@ These formatting rules concern the use of single lines versus separate lines for
   }
   ```
 
-  Specify the constraints associated with the type parameter in its name. For example, an *`ISession`* constraint parameter may be called *`TSession`*.
+ তার নামে টাইপ প্যারামিটারের সাথে যুক্ত সীমাবদ্ধতাগুলি নির্দিষ্ট করুন। উদাহরণস্বরূপ, একটি *`ISession`* সীমাবদ্ধতা প্যারামিটারকে *`TSession`* বলা যেতে পারে।
 
-- Private and protected class fields must begin with the prefix *`_`*
+- প্রাইভেট এবং সুরক্ষিত শ্রেণীর ক্ষেত্রগুলি অবশ্যই উপসর্গ *`_`* দিয়ে শুরু করতে হবে
 
   ```csharp
   //Right
@@ -1365,7 +1365,7 @@ These formatting rules concern the use of single lines versus separate lines for
   protected int testField;
   ```
 
-- All other code elements such as variables, method parameters and class fields (except open ones) are named in camelCase notation.
+- অন্যান্য সমস্ত কোড উপাদান যেমন ভেরিয়েবল, মেথড প্যারামিটার এবং ক্লাস ফিল্ড (খোলা ছাড়া) ক্যামেলকেস নোটেশনে নামকরণ করা হয়েছে।
 
   ```csharp
   //Right

@@ -28,7 +28,7 @@ contributors: git.AfiaKhanom
 * [প্রকল্পে web.config ফাইলের বর্ণনা](xref:bn/developer/tutorials/description-of-the-web-config-file-in-project)
 * [ধাপে ধাপে জিআইটি এবং স্বয়ংক্রিয় বিল্ডের সাহায্যে অজুরে স্থাপন](xref:bn/developer/tutorials/azure-deploy)
 * [ডকার](xref:bn/developer/tutorials/docker)
-* [কিভাবে Azure এ নপকমার্স স্থাপন করা যায়](xref:bn/developer/tutorials/azure-publish)
+* [কিভাবে আজুর এ নপকমার্স স্থাপন করা যায়](xref:bn/developer/tutorials/azure-publish)
 * [DataTables এর একটি রিপোর্টিং টেবিল সম্বলিত একটি পৃষ্ঠা তৈরির গাইড](xref:bn/developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables)
 * [কন্টেন্ট সিকিউরিটি পলিসি (সিএসপি) হেডার](xref:bn/developer/tutorials/csp-headers)
 * [Appsettings.json ফাইল থেকে সেটিংস](xref:bn/developer/tutorials/appsettings-json-file)

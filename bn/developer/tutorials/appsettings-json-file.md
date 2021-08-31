@@ -55,7 +55,7 @@ contributors: git.AfiaKhanom
   dotnet sql-cache create "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DistCache;Integrated Security=True;" dbo nopCache
   ```
 
-  * **Redis** নপকমার্স বক্সের বাইরে *Redis* সমর্থন করে। আমাদের অ্যাপ্লিকেশনে `রেডিস 'সক্ষম করার জন্য আমাদের অবশ্যই নিম্নলিখিত সেটিংসের জন্য উপযুক্ত মান নির্ধারণ করতে হবে। সম্পর্কে আরও তথ্যের জন্য [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
+  * **Redis** নপকমার্স বক্সের বাইরে *Redis* সমর্থন করে। আমাদের অ্যাপ্লিকেশনে `রেডিস` সক্ষম করার জন্য আমাদের অবশ্যই নিম্নলিখিত সেটিংসের জন্য উপযুক্ত মান নির্ধারণ করতে হবে। সম্পর্কে আরও তথ্যের জন্য [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
 * **Enabled** এই সেটিং একটি বুলিয়ান মান আশা করে। যদি আপনি `Distributed cache` সক্ষম করতে চান তবে মানটি **"true"** এ সেট করুন। সিস্টেমটি ইন-মেমরি ক্যাশিং ব্যবহার করে, তাই এই সেটিংটি ডিফল্ট `in-memory caching`-এর পরিবর্তে ক্যাশিংয়ের জন্য `Distributed Cache` ব্যবহার করা উচিত কিনা তা নির্দেশ করতে ব্যবহৃত হয়। সুতরাং, যদি আপনি ক্যাশিংয়ের জন্য উদাহরণস্বরূপ `Redis` ব্যবহার করতে চান তবে এই সেটিংটি ব্যবহার করুন।
 * **ConnectionString (optional)** এই সেটিংটি শুধুমাত্র `Redis` বা `SQL Server` এর সাথে ব্যবহার করা হয়। এই সেটিং একটি স্ট্রিং মান আশা করে। এই সেটিং এর জন্য ডিফল্ট মান হল `127.0.0.1:{PORT},ssl=False`।
 * **SchemaName (optional)** এই সেটিংটি শুধুমাত্র এর সাথে ব্যবহার করা হয় `SQL Server`।
