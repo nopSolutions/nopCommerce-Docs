@@ -1,19 +1,20 @@
 ---
-title: Data Validation
-uid: en/developer/tutorials/data-validation
+title: ডেটা যাচাইকরণ
+uid: bn/developer/tutorials/data-validation
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Data Validation
+# ডেটা যাচাইকরণ
 
-Data validation is the process of ensuring that a program operates on clean, correct and useful data. Most .NET developers use `Data Annotation Validators`. But nopCommerce uses **`Fluent Validation`**. It's a small validation library for .NET that uses a fluent interface and lambda expressions for building validation rules for your business objects. You have to complete two steps in order to add a validation to some models in nopCommerce:
+ডেটা যাচাইকরণ হল একটি প্রোগ্রাম পরিষ্কার, সঠিক এবং দরকারী ডেটার উপর কাজ করে তা নিশ্চিত করার প্রক্রিয়া। বেশিরভাগ .NET ডেভেলপাররা 'ডেটা টীকা যাচাইকারী' ব্যবহার করে। কিন্তু নপকমার্স **`Fluent Validation`** ব্যবহার করে। এটি .NET এর জন্য একটি ছোট বৈধতা লাইব্রেরি যা আপনার ব্যবসায়িক বস্তুর জন্য বৈধতা বিধি তৈরির জন্য একটি সাবলীল ইন্টারফেস এবং ল্যাম্বদা এক্সপ্রেশন ব্যবহার করে। নপকমার্স- এ কিছু মডেলের বৈধতা যোগ করার জন্য আপনাকে দুটি ধাপ সম্পূর্ণ করতে হবে:
 
-1. Create a class derived from `AbstractValidator` class and put all required logic there.
-   The path to the class is Presentation > Nop.Web > Validators > Common > AddressValidator.cs
-See the source code below to get an idea:
+১. `AbstractValidator` শ্রেণী থেকে প্রাপ্ত একটি ক্লাস তৈরি করুন এবং সেখানে সমস্ত প্রয়োজনীয় যুক্তি রাখুন।
+   ক্লাসের পথ হল Presentation > Nop.Web > Validators > Common > AddressValidator.cs
 
-    ```csharp
+একটি ধারণা পেতে নীচের সোর্স কোড দেখুন:
+
+```csharp
     public class AddressValidator : BaseNopValidator<AddressModel>
     {
         public AddressValidator(ILocalizationService localizationService)
@@ -24,16 +25,16 @@ See the source code below to get an idea:
             .When(x => x.FirstNameEnabled && x.FirstNameRequired);
         }
     }
-    ```
+```
 
-1. Annotate your model class with the `ValidatorAttribute`. Refer to the example below for guidance.
+২. `ValidatorAttribute` দিয়ে আপনার মডেল ক্লাস টীকা করুন। নির্দেশনার জন্য নীচের উদাহরণ পড়ুন।
 
-    ```csharp
+```csharp
     [Validator(typeof(AddressValidator))]
     public partial class AddressModel : BaseNopEntityModel
     {
       //...
     }
-    ```
+```
 
-    ASP.NET Core will execute the appropriate validator when a view model is posted to a controller.
+ASP.NET Core যথাযথ যাচাইকারীকে কার্যকর করবে যখন একটি ভিউ মডেল কন্ট্রোলারে পোস্ট করা হবে।

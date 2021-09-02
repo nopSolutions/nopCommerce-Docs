@@ -1,17 +1,17 @@
 ---
-title: Default database schema
-uid: en/developer/tutorials/db-schema
+title: ডিফল্ট ডাটাবেস স্কিমা
+uid: bn/developer/tutorials/db-schema
 author: git.skoshelev
 contributors: git.mariannk
 ---
 
-# Default database schema
+# ডিফল্ট ডাটাবেস স্কিমা
 
-In this article, we will look at the database schema that is installed during initial installation and which remains unchanged in 90% cases.
+এই নিবন্ধে, আমরা ডাটাবেস স্কিমাটি দেখব যা প্রাথমিক ইনস্টলেশনের সময় ইনস্টল করা আছে এবং যা ৯০% ক্ষেত্রে অপরিবর্তিত রয়েছে।
 
-We won't bring the entire schema as a whole but will describe the default installation that provides for the creation of 126 tables.
+আমরা সম্পূর্ণ স্কিমা আনব না কিন্তু ১২৬ টেবিল তৈরির জন্য ডিফল্ট ইনস্টলেশন বর্ণনা করব।
 
-To understand such a scheme easily let's split it into component parts. Below, we grouped the tables in the most natural and understandable way:
+এই ধরনের একটি স্কিম সহজেই বোঝার জন্য আসুন এটিকে কম্পোনেন্ট অংশে বিভক্ত করি। নীচে, আমরা টেবিলগুলিকে সর্বাধিক প্রাকৃতিক এবং বোধগম্য উপায়ে গ্রুপ করেছি:
 
 * [Customers info](#customers-info)
 * [Products info](#products-info)
@@ -28,20 +28,20 @@ To understand such a scheme easily let's split it into component parts. Below, w
 
 ![Customers info](_static/db-schema/customers-info.jpg)
 
-This diagram shows a set of tables that contain basic customer information. It also indicates the direction of links.
+এই ডায়াগ্রামে টেবিলের একটি সেট দেখানো হয়েছে যাতে মৌলিক গ্রাহকের তথ্য রয়েছে। এটি লিঙ্কগুলির দিক নির্দেশ করে।
 
-We won't delve into the purpose of tables and fields, since their names are self-descriptive enough.
+আমরা টেবিল এবং ক্ষেত্রের উদ্দেশ্য অনুসন্ধান করব না, কারণ তাদের নাম যথেষ্ট সেলফ-ডেস্ক্রিপটিভ।
 
-### Features (Customers info)
+### বৈশিষ্ট্য (Customers info)
 
-* In the **Customer** table we have three fields which in fact should be defined as foreign keys but in practice, they are not:
+* **Customer** টেবিলে আমাদের তিনটি ক্ষেত্র রয়েছে যা আসলে ফরেন কী হিসাবে সংজ্ঞায়িত করা উচিত কিন্তু বাস্তবে, সেগুলি নয়:
     1. AffiliateId
     1. VendorId
     1. RegisteredInStoreId
 
-    This is done intentionally so as not to overload the system with unnecessary connections, since these fields are not used in every online store.
+    এটি ইচ্ছাকৃতভাবে করা হয়েছে যাতে অপ্রয়োজনীয় সংযোগের সাথে সিস্টেমটি অতিরিক্ত লোড না হয়, যেহেতু এই ক্ষেত্রগুলি প্রতিটি অনলাইন স্টোরে ব্যবহার করা হয় না।
 
-* Some of the user data is stored in the **GenericAttribute** table. By default, in this table we store the following data:
+* ব্যবহারকারীর কিছু ডেটা  টেবিলে সংরক্ষণ করা হয়। ডিফল্টরূপে, এই টেবিলে আমরা নিম্নলিখিত ডেটা সংরক্ষণ করি:
   * First name
   * Last name
   * Gender
@@ -50,25 +50,25 @@ We won't delve into the purpose of tables and fields, since their names are self
   * Customer Address
   * Phone
 
-    The structure of this table is presented below:
+    এই টেবিলের গঠন নীচে উপস্থাপন করা হয়েছে:
 
     ![GenericAttribute](_static/db-schema/generic-attribute.jpg)
 
-    Besides the mentioned customer data, this table can store any data for other entities as well. We added this table on purpose so that you could extend any entity without changing the structure of the tables.
+    .উল্লিখিত গ্রাহকের ডেটা ছাড়াও, এই টেবিলটি অন্যান্য সত্তাগুলির জন্য যে কোনও ডেটা সংরক্ষণ করতে পারে। আমরা এই টেবিলটি উদ্দেশ্যমূলকভাবে যুক্ত করেছি যাতে আপনি টেবিলের কাঠামো পরিবর্তন না করে যেকোন সত্তাকে প্রসারিত করতে পারেন।
 
-    Additionally, this table stores custom **Customer attributes** and **Vendor attributes** with the chosen values for vendors and customers in the XML format. See the following rows to understand how it looks like:
+    উপরন্তু, এই টেবিলটি এক্সএমএল ফরম্যাটে বিক্রেতাদের এবং গ্রাহকদের জন্য নির্বাচিত মান সহ কাস্টম **Customer attributes** এবং **Vendor attributes** সংরক্ষণ করে। এটি কেমন দেখাচ্ছে তা বুঝতে নিম্নলিখিত সারিগুলি দেখুন:
 
     ![Xml](_static/db-schema/xml.jpg)
 
-    On the example of the XML string from the *Value* column we can see how exactly the attribute values are stored for a certain vendor:
+    *value* কলাম থেকে এক্সএমএল স্ট্রিং এর উদাহরণে আমরা দেখতে পাই কিভাবে একটি নির্দিষ্ট বিক্রেতার জন্য অ্যাট্রিবিউট মান ঠিকভাবে সংরক্ষণ করা হয়:
 
       ```csharp
     <Attributes><VendorAttribute ID="2"><VendorAttributeValue><Value>1</Value></VendorAttributeValue></VendorAttribute></Attributes>
       ```
 
-    As you can see the vendor with ID 1 has only one vendor attribute filled. This attribute has ID 2 and its value is 1.
+    যেমন আপনি দেখতে পারেন যে আইডি ১ সহ বিক্রেতার শুধুমাত্র একটি বিক্রেতার বৈশিষ্ট্য রয়েছে। এই বৈশিষ্ট্যের আইডি ২ আছে এবং এর মান ১।
 
-    Custom customer attributes have the same structure as vendor attributes. The following screenshot represents the relationships between **Customer attributes** and **Vendor attributes** and their values:
+    কাস্টম গ্রাহকের বৈশিষ্ট্যগুলির বিক্রেতার বৈশিষ্ট্যগুলির মতো একই কাঠামো রয়েছে। নিচের স্ক্রিনশটটি  **Customer attributes** এবং **Vendor attributes** এবং তাদের মানগুলির মধ্যে সম্পর্কের প্রতিনিধিত্ব করে:
 
     ![Xml](_static/db-schema/attributes.jpg)
 
@@ -76,35 +76,35 @@ We won't delve into the purpose of tables and fields, since their names are self
 
 ![Products info](_static/db-schema/products-info.jpg)
 
-In the diagram, you can see the base data for the product (the schema of the product information table below). As a rule, this data is used in 99% of cases.
+চিত্রটিতে, আপনি পণ্যের জন্য বেস ডেটা দেখতে পারেন (নীচে পণ্য তথ্য সারণির স্কিমা)। একটি নিয়ম হিসাবে, এই ডেটা ৯৯% ক্ষেত্রে ব্যবহার করা হয়।
 
 ![Product table](_static/db-schema/product.png)
 
-### Features (Products info)
+### বৈশিষ্ট্য (Products info)
 
-Depending on the store settings, additional tables may be connected to this scheme. For example, to distribute product quantity among multiple warehouses.
+স্টোর সেটিংসের উপর নির্ভর করে, এই স্কিমের সাথে অতিরিক্ত টেবিল সংযুক্ত হতে পারে। উদাহরণস্বরূপ, একাধিক গুদামের মধ্যে পণ্যের পরিমাণ বিতরণ করা।
 
 ![Product table](_static/db-schema/warehouse.jpg)
 
-Or if you want to use the product reviews functionality:
+অথবা যদি আপনি পণ্য রিভিউ কার্যকারিতা ব্যবহার করতে চান:
 
 ![Product table](_static/db-schema/product-review.jpg)
 
 ### Product attributes
 
-Then let's consider the scheme of attributes and their combinations presented below:
+তারপরে নীচে উপস্থাপিত বৈশিষ্ট্যগুলির বৈশিষ্ট্য এবং তাদের সংমিশ্রণগুলি বিবেচনা করা যাক:
 
 ![Product attributes](_static/db-schema/product-attributes.jpg)
 
 ### Tier price
 
-If you use tier pricing for products you should also pay attention to the following scheme:
+আপনি যদি পণ্যের জন্য টায়ার প্রাইসিং ব্যবহার করেন তাহলে আপনাকে নিম্নলিখিত স্কিমের দিকেও মনোযোগ দিতে হবে:
 
 ![Tier price](_static/db-schema/tier-price.jpg)
 
 ### Inventory by warehouses
 
-Despite the fact that this feature is not used often, it might be useful to give a scheme for accounting for goods in a particular warehouse:
+এই বৈশিষ্ট্যটি প্রায়শই ব্যবহৃত হয় না তা সত্ত্বেও, একটি বিশেষ গুদামে পণ্যগুলির হিসাবের জন্য একটি স্কিম দেওয়া দরকারী হতে পারে:
 
 ![Inventory by warehouses](_static/db-schema/stock-quantity-history.jpg)
 
@@ -112,28 +112,28 @@ Despite the fact that this feature is not used often, it might be useful to give
 
 ![orders](_static/db-schema/orders.jpg)
 
-In this diagram, we can see the tables related to the order data. The **Order** table has the following structure:
+এই চিত্রটিতে, আমরা অর্ডার ডেটা সম্পর্কিত টেবিলগুলি দেখতে পারি। **Order** টেবিলে নিম্নলিখিত কাঠামো রয়েছে:
 
 ![order](_static/db-schema/order.png)
 
-There is no need to comment on anything, since everything should be clear from the diagram and the names of the fields are self-descriptive enough. It should only be noted that the **RewardPointsHistory** table is used only if the *Reward points system* is activated for the store.
+কোন বিষয়ে মন্তব্য করার প্রয়োজন নেই, যেহেতু চিত্র থেকে সবকিছু পরিষ্কার হওয়া উচিত এবং ক্ষেত্রের নামগুলি যথেষ্ট সেলফ-ডেস্ক্রিপটিভ। এটি শুধুমাত্র লক্ষ করা উচিত যে **RewardPointsHistory** টেবিলটি শুধুমাত্র তখনই ব্যবহার করা হয় যদি *Reward points system* স্টোরের জন্য সক্রিয় হয়।
 
 ## Shipments
 
 ![shipments](_static/db-schema/shipments.jpg)
 
-The purpose of all tables in the diagram, as before, raises no questions. Nevertheless, let's dwell on a few points. The **ShippingMethod** table is used to manage the list of connected plugins, and the specific shipping method is stored in the *ShippingRateComputationMethodSystemName* and *ShippingMethod* fields of the **Order** table.
+ডায়াগ্রামে সমস্ত টেবিলের উদ্দেশ্য, আগের মতো, কোনও প্রশ্ন উত্থাপন করে না। যাইহোক, আসুন কয়েকটি পয়েন্টে মনোযোগ দিন। **ShippingMethod** টেবিল সংযুক্ত প্লাগইনগুলির তালিকা পরিচালনা করতে ব্যবহৃত হয় এবং নির্দিষ্ট শিপিং পদ্ধতিটি **Order** টেবিলের*ShippingRateComputationMethodSystemName* এবং *ShippingMethod* ক্ষেত্রগুলিতে সংরক্ষিত থাকে।
 
-The *OrderItemId* field of the **ShipmentItem** table is essentially a reference to the **OrderItem** table.
+**ShipmentItem** টেবিলের*OrderItemId*ক্ষেত্রটি মূলত **OrderItem** টেবিলের একটি রেফারেন্স।
 
 ## Discounts
 
 ![discounts](_static/db-schema/discounts.jpg)
 
-From the diagram above, we can see that discounts can be applied to three groups: **Products**, **Manufacturers**, **Categories**
-And can be configured with various rules which are controlled by plugins (``IDiscountRequirementRule``).
+উপরের চিত্র থেকে, আমরা দেখতে পাচ্ছি যে ছাড় তিনটি গ্রুপে প্রয়োগ করা যেতে পারে:  **Products**, **Manufacturers**, **Categories**
+এবং প্লাগইন দ্বারা নিয়ন্ত্রিত বিভিন্ন নিয়ম দ্বারা কনফিগার করা যেতে পারে (``IDiscountRequirementRule``)।
 
-In the **DiscountRequirement** table, the *InteractionTypeId* field must contain one of the values specified in the ``RequirementGroupInteractionType`` enumeration:
+**DiscountRequirement**টেবিলে, *InteractionTypeId* ফিল্ডে অবশ্যই ``RequirementGroupInteractionType`` গণনায় উল্লেখিত মানগুলির মধ্যে একটি থাকতে হবে:
 
 ```csharp
 /// <summary>
@@ -155,11 +155,11 @@ public enum RequirementGroupInteractionType
 
 ## Shopping cart
 
-Another important part of the store is a shopping cart. In our case the scheme of this mechanism is very simple:
+দোকানের আরেকটি গুরুত্বপূর্ণ অংশ হল একটি শপিং কার্ট। আমাদের ক্ষেত্রে এই মেকানিজমের স্কিম খুবই সহজ:
 
 ![Shopping cart](_static/db-schema/shopping-cart-item.jpg)
 
-The only thing worth noting is that this scheme is also used for a wishlist. To separate these two types, the *ShoppingCartTypeId* field is used. The values in this field must match the values from the **ShoppingCartType** enumeration:
+শুধুমাত্র লক্ষ্য করার মতো বিষয় হল এই স্কিমটি একটি উইশলিস্টের জন্যও ব্যবহার করা হয়। এই দুটি প্রকার আলাদা করার জন্য, *ShoppingCartTypeId* ক্ষেত্রটি ব্যবহার করা হয়। এই ক্ষেত্রের মানগুলি অবশ্যই **ShoppingCartType** গণনার মানগুলির সাথে মেলে:
 
 ```csharp
 /// <summary>
@@ -181,8 +181,8 @@ public enum ShoppingCartType
 
 ## Addresses
 
-Perhaps you will also be interested in the table schema involved in storing addresses, both delivery and the customer addresses:
+সম্ভবত আপনি ডেলিভারি এবং গ্রাহক ঠিকানা উভয়ই ঠিকানা সংরক্ষণে জড়িত টেবিল স্কিমাতেও আগ্রহী হবেন:
 
 ![addresses](_static/db-schema/addresses.jpg)
 
-As you understand, the standard installation includes much more tables. We don't describe them all, since many of them have no connections and serve only for a specific purpose, while others are used very rarely.
+আপনি বুঝতে পারছেন, স্ট্যান্ডার্ড ইনস্টলেশনের মধ্যে আরও অনেক টেবিল রয়েছে। আমরা তাদের সব বর্ণনা করি না, যেহেতু তাদের অনেকের কোন সংযোগ নেই এবং শুধুমাত্র একটি নির্দিষ্ট উদ্দেশ্যে পরিবেশন করা হয়, অন্যরা খুব কমই ব্যবহৃত হয়।

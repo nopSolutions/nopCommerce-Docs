@@ -415,7 +415,7 @@
           name: সোর্স কোড সংগঠন
           href: developer/tutorials/source-code-organization.md
         - 
-          name: Default database schema
+          name: ডিফল্ট ডাটাবেস স্কিমা
           href: developer/tutorials/db-schema.md
         - 
           name: নপকমার্স এর আর্কিটেকচার
