@@ -1,95 +1,99 @@
 ---
-title: News
-uid: en/running-your-store/content-management/news
+title: খবর
+uid: bn/running-your-store/content-management/news
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# News
+# খবর
 
-nopCommerce allows you to post news in your store. There can be any important tidings like nopCommerce latest release information, your company updates and so on.
+নপকমার্স আপনাকে আপনার দোকানে সংবাদ পোস্ট করার অনুমতি দেয়। নপকমার্স-এর সর্বশেষ রিলিজের তথ্য, আপনার কোম্পানির আপডেট ইত্যাদির মতো গুরুত্বপূর্ণ কোনো খবর থাকতে পারে।
 
-News are displayed in your store on the homepage or on the site footer menu.
+হোমপেজে অথবা সাইট ফুটার মেনুতে আপনার দোকানে খবর প্রদর্শিত হয়।
 
-![p1](_static/news/news_1.png)
+![প১](_static/news/news_1.png)
 
-To manage news go to **Content management → News itmes**. The list of all news is displayed, as follows:
-![News](_static/news/list.jpg)
+নিউজ ম্যানেজ করতে **কনটেন্ট ম্যানেজমেন্ট → নিউজ আইটেম** এ যান। সমস্ত খবরের তালিকা নিম্নরূপ প্রদর্শিত হয়:
+![খবর](_static/news/list.jpg)
 
-## Adding news
+## খবর যোগ করা
 
-To add a new news item click the **Edit** button and fill the information about the news item. 
+একটি নতুন সংবাদ যোগ করার জন্য **সম্পাদনা করুন** বাটনে ক্লিক করুন এবং সংবাদ আইটেম সম্পর্কে তথ্য পূরণ করুন।
 
-![Adding news](_static/news/add-new.jpg)
+![খবর যোগ করা](_static/news/add-new.jpg)
 
-### Info
+### তথ্য
 
-In the *Info* panel define the following news item details:
-- If more than one language is enabled, from the **Language** dropdown list, select the language of this news item. Customers will only see news for their selected language.
-- Enter the **Title** of this news item. For example: "The launch of our new nopCommerce store".
-- In the **Short description** field, enter an abstract of this news item. This is the text your visitors will see on the news list in the public store.
-- In the **Full description** field, enter the text of this news item.
-- Select the **Allow comments** checkbox, to enable customers to add comments to the news item.
-* Enter **Start date** and **End date** for displaying this news item in Coordinated Universal Time (UTC).
+*তথ্য* প্যানেলে নিম্নলিখিত সংবাদ আইটেমের বিবরণ সংজ্ঞায়িত করুন:
+- যদি একাধিক ভাষা সক্ষম হয়, **ভাষা** ড্রপডাউন তালিকা থেকে, এই সংবাদটির ভাষা নির্বাচন করুন। গ্রাহকরা শুধুমাত্র তাদের নির্বাচিত ভাষার জন্য খবর দেখতে পাবেন।
+- এই খবরের **শিরোনাম** লিখুন। উদাহরণস্বরূপ: "আমাদের নতুন নপকমার্স স্টোরের সূচনা"।
+- **সংক্ষিপ্ত বিবরণ** ক্ষেত্রের মধ্যে, এই সংবাদের একটি বিমূর্ত লিখুন। এই পাঠ্যটি আপনার দর্শকরা পাবলিক স্টোরের খবরের তালিকায় দেখতে পাবেন।
+- **সম্পূর্ণ বিবরণ** ফিল্ডে, এই খবরের টেক্সট লিখুন।
+- নিউজ আইটেমগুলিতে মন্তব্য যুক্ত করতে গ্রাহকদের সক্ষম করতে **মন্তব্য অনুমোদন করুন** চেকবক্স নির্বাচন করুন।
+*সমন্বিত ইউনিভার্সাল টাইমে (UTC) এই সংবাদটি প্রদর্শনের জন্য **শুরু তারিখ** এবং **শেষ তারিখ** লিখুন।
 
- > [!NOTE]
- > 
- > You can leave these fields empty if you do not want to define news item start and end dates.
+ > [! নোট]
+ >
+ > আপনি যদি খবরের শুরুর এবং শেষের তারিখ নির্ধারণ করতে না চান তবে আপনি এই ক্ষেত্রগুলি খালি রাখতে পারেন।
 
- - Choose the stores in the **Limited to stores** field to enable this news item for specific stores only. Leave the field empty in case this functionality is not required.
-  > [!NOTE]
-  >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+ - শুধুমাত্র নির্দিষ্ট দোকানের জন্য এই নিউজ আইটেমটি সক্ষম করতে **স্টোর সীমিত** স্টোরের দোকানগুলি বেছে নিন। এই কার্যকারিতা প্রয়োজন না হলে ক্ষেত্রটি খালি রাখুন।
+ 
+> [! নোট]
+>
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-- Select the **Published** checkbox, to publish this news item in your store.
+- আপনার দোকানে এই সংবাদটি প্রকাশ করতে **প্রকাশিত** চেকবক্স নির্বাচন করুন।
 
-While editing an existing news item or after clicking the **Save and continue edit** button for a new one, you can click on the **Preview** button in the top right to see how the news item will appear on the site.
+একটি বিদ্যমান সংবাদ আইটেম সম্পাদনা করার সময় অথবা নতুন সংরক্ষণের জন্য **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** বাটনে ক্লিক করার পরে, আপনি সাইটে ডানদিকে নিউম আইটেমটি কীভাবে প্রদর্শিত হবে তা দেখতে উপরের ডানদিকে **পূর্বরূপ** বাটনে ক্লিক করতে পারেন। ।
 
-### SEO
-In the *SEO* panel define the following news item details:
-![SEO for news item](_static/news/seo.jpg)
+### এসইও
 
-- Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the news item.
-- Override the page title in the **Meta title** field (the default title is the title of the news item).
-- Enter **Meta keywords** - news item meta keywords to be added to the news item header. It is a brief and concise list of the most important themes for the page.
-- Enter **Meta description** to be added to the news item header. The meta description tag is a brief and concise summary of the page content.
+*এসইও* প্যানেলে নিম্নলিখিত সংবাদ আইটেমের বিবরণ সংজ্ঞায়িত করুন:
 
-## Managing news comments
+![সংবাদ আইটেমের জন্য এসইও](_static/news/seo.jpg)
 
-To manage news comments, go to **Content management → News comments**.
+- **সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** সংজ্ঞায়িত করুন। উদাহরণস্বরূপ, আপনার URL `http://yourStore.com/the-best-news` তৈরি করতে" সেরা সংবাদ "লিখুন। খবরের শিরোনামের উপর ভিত্তি করে স্বয়ংক্রিয়ভাবে এটি তৈরি করতে এই ক্ষেত্রটি খালি রাখুন।
+- **মেটা শিরোনাম** ক্ষেত্রের পৃষ্ঠার শিরোনামকে ওভাররাইড করুন (ডিফল্ট শিরোনাম হল সংবাদ আইটেমের শিরোনাম)।
+- **মেটা কীওয়ার্ড লিখুন** - নিউজ আইটেম হেডারে নিউজ আইটেম মেটা কিওয়ার্ড যোগ করতে হবে। এটি পৃষ্ঠার জন্য সবচেয়ে গুরুত্বপূর্ণ থিমগুলির একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত তালিকা।
+- খবরের শিরোনামে যোগ করার জন্য **মেটা বর্ণনা** লিখুন। মেটা ডেসক্রিপশন ট্যাগ হল পৃষ্ঠার বিষয়বস্তুর একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত সারসংক্ষেপ।
 
-![News comments](_static/news/news-comments.jpg)
+## খবরের মন্তব্য পরিচালনা করা
 
-Use the **Approve selected** to approve the selected comments and the **Disapprove selected** button to disapprove ones.
-You can also edit or delete a comment. If delete this comment will be removed from the system.
+সংবাদ মন্তব্য পরিচালনা করতে, **বিষয়বস্তু ব্যবস্থাপনা → সংবাদ মন্তব্য** এ যান।
 
-## News settings
+![খবরের মন্তব্য](_static/news/news-comments.jpg)
 
-You can manage news settings in **Configuration → Settings → News settings**. This page is available in 2 modes: *advanced* and *basic*.
+নির্বাচিত মন্তব্য অনুমোদন করার জন্য **অনুমোদিত নির্বাচন করুন** এবং অনুমোদিত না করার জন্য **বাছাইকৃত অনুমোদন** বোতামটি ব্যবহার করুন।
+আপনি একটি মন্তব্য সম্পাদনা বা মুছে ফেলতে পারেন। মুছে ফেললে এই মন্তব্যটি সিস্টেম থেকে সরিয়ে দেওয়া হবে।
 
-This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+## নিউজ সেটিংস
 
-![News settings](_static/news/news-settings.jpg)
+আপনি **কনফিগারেশন → সেটিংস → নিউজ সেটিংস** এ নিউজ সেটিংস পরিচালনা করতে পারেন। এই পৃষ্ঠাটি ২ টি মোডে উপলব্ধ: *উন্নত* এবং *মৌলিক*।
 
-### Common
+এই পৃষ্ঠাটি মাল্টি-স্টোর কনফিগারেশন সক্ষম করে, এর মানে হল যে একই স্টোরিং সকল স্টোরের জন্য সংজ্ঞায়িত করা যেতে পারে, অথবা স্টোর থেকে স্টোরে আলাদা হতে পারে। আপনি যদি একটি নির্দিষ্ট দোকানের জন্য সেটিংস পরিচালনা করতে চান, মাল্টি-স্টোর কনফিগারেশন ড্রপ-ডাউন তালিকা থেকে তার নামটি চয়ন করুন এবং তাদের জন্য কাস্টম মান নির্ধারণ করতে বাম পাশে সমস্ত প্রয়োজনীয় চেকবক্সে টিক দিন। আরও তথ্যের জন্য [মাল্টি-স্টোর](xref:bn/get-start/advanced-configuration/multi-store) পড়ুন।
 
-Define the following *Common* settings:
-* Select the **News enabled** checkbox, to enable the news functionality in your store.
-* Tick the **Show on home page** to display your news items on your store home page.
-* Enter the **Number of items to display** on the home page.
-* Enter the **News archive page size**. It's a number of news displayed on one page.
-* Tick the **Display news RSS feed link in the browser address bar** to enable the news RSS feed link in customers browser address bar.
+![সংবাদ সেটিংস](_static/news/news-settings.jpg)
 
-### News comments
+### সাধারণ
 
-Define the following *News comments* settings:
-- Select the **Allow guests to leave comments** checkbox, to enable non-registered users to add comments to the news.
-- Select the **News comments must be approved** checkbox if news comments must be approved by administrator.
-- Select the **Notify about new news comments** checkbox, to notify the store owner about new news comments.
-- Select the **News comments per store** checkbox, to display news comments written in the current store only.
+নিম্নলিখিত *সাধারণ* সেটিংস সংজ্ঞায়িত করুন:
+*আপনার দোকানে সংবাদ কার্যকারিতা সক্ষম করতে, **সংবাদ সক্ষম** চেকবক্স নির্বাচন করুন।
+*আপনার দোকানের হোম পেজে আপনার সংবাদগুলি প্রদর্শন করতে **হোম পেজে দেখান** টিক দিন।
+*হোম পেজে **প্রদর্শনের জন্য আইটেমের সংখ্যা** লিখুন।
+**নিউজ আর্কাইভ পেজ সাইজ** লিখুন। এটি একটি পৃষ্ঠায় প্রদর্শিত সংখ্যক সংবাদ।
+*ব্রাউজার অ্যাড্রেস বারে **ডিসপ্লে নিউজ আরএসএস ফিড লিংকে টিক দিন** গ্রাহকদের ব্রাউজার অ্যাড্রেস বারে নিউজ আরএসএস ফিড লিঙ্ক চালু করতে।
 
-Click **Save**.
+### খবরের মন্তব্য
 
-## Tutorials
+নিম্নলিখিত *সংবাদ মন্তব্য* সেটিংস সংজ্ঞায়িত করুন:
 
-- [Managing news in nopCommerce](https://www.youtube.com/watch?v=ztLlRXvBQK4)
+- অ-নিবন্ধিত ব্যবহারকারীদের খবরে মন্তব্য যোগ করতে সক্ষম করতে **অতিথিদের মন্তব্য ছেড়ে দেওয়ার অনুমতি দিন** চেকবক্স নির্বাচন করুন।
+- **খবরের মন্তব্যগুলি অবশ্যই অনুমোদিত হতে হবে** চেকবক্স নির্বাচন করুন যদি খবরের মন্তব্য প্রশাসক কর্তৃক অনুমোদিত হয়।
+- **নতুন খবরের মন্তব্য সম্পর্কে বিজ্ঞপ্তি** চেকবক্স নির্বাচন করুন, নতুন সংবাদ মন্তব্য সম্পর্কে দোকান মালিককে অবহিত করতে।
+- শুধুমাত্র বর্তমান দোকানে লেখা নিউজ মন্তব্য প্রদর্শন করতে **স্টোর প্রতি নিউজ মন্তব্য** চেকবক্স নির্বাচন করুন।
+
+**সেভ** ক্লিক করুন।
+
+## টিউটোরিয়াল
+
+- [নপকমার্স-এ নিউজ ম্যানেজ করা](https://www.youtube.com/watch?v=ztLlRXvBQK4)

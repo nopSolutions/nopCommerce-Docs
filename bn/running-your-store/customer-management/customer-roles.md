@@ -1,42 +1,42 @@
 ---
-title: Customer roles
-uid: en/running-your-store/customer-management/customer-roles
+title: গ্রাহকের ভূমিকা
+uid: bn/running-your-store/customer-management/customer-roles
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Customer roles
+# গ্রাহকের ভূমিকা
 
-The customer roles in nopCommerce enable you to form groups of your web store users. You can create various groups such as store admins, shoppers, [vendors](xref:en/running-your-store/vendor-management), and other. You can also grant these groups certain rights such as discounted pricing, and other special statuses (such as tax exemption, free shipping, and more) using the [access control list](xref:en/running-your-store/customer-management/access-control-list).
+নপকমার্স-এ গ্রাহকের ভূমিকা আপনাকে আপনার ওয়েব স্টোর ব্যবহারকারীদের গ্রুপ গঠন করতে সক্ষম করে। আপনি বিভিন্ন গ্রুপ তৈরি করতে পারেন যেমন দোকান প্রশাসক, ক্রেতা, [বিক্রেতারা](xref:bn/running-your-store/vendor-management), এবং অন্যান্য। আপনি এই গ্রুপগুলিকে [অ্যাক্সেস কন্ট্রোল লিস্ট](xref:bn/running-your-store/customer-management//access-control-list) ।
 
-To manage customer roles go to **Customers → Customer roles**. The *Customer roles* window is displayed, as follows:
+গ্রাহকের ভূমিকা পরিচালনা করতে **গ্রাহক → গ্রাহকের ভূমিকা** এ যান। *গ্রাহকের ভূমিকা* উইন্ডোটি নিম্নরূপ প্রদর্শিত হয়:
 
-![Customer roles](_static/customer-roles/customerroles1.png)
+![গ্রাহকের ভূমিকা](_static/customer-roles/customerroles1.png)
 
-Click **Add new** to add a new customer role. The *Add a new customer role* window is displayed:
+নতুন গ্রাহক ভূমিকা যোগ করতে **নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন গ্রাহক ভূমিকা যোগ করুন* উইন্ডো প্রদর্শিত হয়:
 
-![Add a new customer role](_static/customer-roles/customerroles2.png)
+![একটি নতুন গ্রাহক ভূমিকা যোগ করুন](_static/customer-roles/customerroles2.png)
 
-Define the following information:
-* **Name** of the customer role.
-* Tick the **Active** to make this role active.
-* Tick the **Free shipping** checkbox, to enable customers with this role to get free shipping on their orders.
-* Tick the **Tax exempt** checkbox, to enable customers with this role to make tax-free purchases.
-* Tick the **Override default tax display type** and select from **Default tax display type** drop-down list one of the tax types:
-  * *Including tax*
-  * *Excluding tax*
-* Tick the **Enable password lifetime**, to force customers to change their passwords after a specified time.
-* **Purchased with product**. Click the **Choose product** button to choose a special product. A customer is added to this customer role once this product is purchased (paid). 
+নিম্নলিখিত তথ্য সংজ্ঞায়িত করুন:
+***গ্রাহকের ভূমিকার নাম**।
+*এই ভূমিকা সক্রিয় করতে **সক্রিয়** টিক দিন।
+***ফ্রি শিপিং** চেকবক্সে টিক দিন, এই ভূমিকা সহ গ্রাহকদের তাদের অর্ডারে ফ্রি শিপিং পেতে সক্ষম করতে।
+*করমুক্ত ক্রয় করতে এই ভূমিকা সহ গ্রাহকদের সক্ষম করতে **ট্যাক্স ছাড়** চেকবক্সে টিক দিন।
+**ওভাররাইড ডিফল্ট ট্যাক্স ডিসপ্লে টাইপ** এ টিক দিন এবং **ডিফল্ট ট্যাক্স ডিসপ্লে টাইপ** ড্রপ-ডাউন তালিকা থেকে ট্যাক্সের ধরনগুলির মধ্যে একটি নির্বাচন করুন:
+  **কর সহ*
+  **কর বাদে*
+*একটি নির্দিষ্ট সময়ের পরে গ্রাহকদের পাসওয়ার্ড পরিবর্তন করতে বাধ্য করতে **পাসওয়ার্ড আজীবন সক্ষম করুন** টিক দিন।
+***পণ্য দিয়ে কেনা**। একটি বিশেষ পণ্য চয়ন করতে **পণ্য নির্বাচন করুন** বাটনে ক্লিক করুন। এই পণ্যটি কেনা (অর্থ প্রদান) করার পরে একজন গ্রাহককে এই গ্রাহকের ভূমিকায় যুক্ত করা হয়।
   > [!NOTE]
   >
-  > In case of refund or order cancellation you must manually remove a customer from this role.
+  > ফেরত বা অর্ডার বাতিলের ক্ষেত্রে আপনাকে অবশ্যই একজন গ্রাহককে এই ভূমিকা থেকে সরিয়ে দিতে হবে।
 
-* **Is system role**. This setting shows whether this role is used in the code. It is predefined and cannot be modified.
-* **System name** of the customer role.
+*** সিস্টেমের ভূমিকা**। এই সেটিংটি দেখায় যে কোডটিতে এই ভূমিকা ব্যবহার করা হয়েছে কিনা। এটি পূর্বনির্ধারিত এবং পরিবর্তন করা যাবে না।
+*গ্রাহকের ভূমিকার **সিস্টেমের নাম**।
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Overview of customer roles](https://www.youtube.com/watch?v=3vdIDNIYFIQ)
-* [Recovering back a deleted admin user](https://www.youtube.com/watch?v=D45WkrbaA38)
+* [গ্রাহকের ভূমিকার ওভারভিউ](https://www.youtube.com/watch?v=3vdIDNIYFIQ)
+* [একজন মুছে যাওয়া প্রশাসক ব্যবহারকারীকে পুনরুদ্ধার করা](https://www.youtube.com/watch?v=D45WkrbaA38)

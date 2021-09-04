@@ -1,64 +1,68 @@
 ---
-title: Polls
-uid: en/running-your-store/content-management/polls
+title: ভোট
+uid: bn/running-your-store/content-management/polls
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.MDRashedKhanMenon
 ---
 
-# Polls
+# ভোট
 
-Polls functionality in nopCommerce allows you to make your eCommerce site more interactive. There are many ways you can use polls for an eCommerce site. One popular way is to use them as a short customer satisfaction survey. People like being asked for a feedback and this is a good opportunity to see how you are doing as an online merchant.
+নপকমার্স-এ ভোটের কার্যকারিতা আপনাকে আপনার ইকমার্স সাইটটিকে আরও ইন্টারেক্টিভ করতে দেয়। একটি ইকমার্স সাইটের জন্য আপনি পোল ব্যবহার করতে পারেন এমন অনেকগুলি উপায় রয়েছে। একটি জনপ্রিয় উপায় হল তাদের সংক্ষিপ্ত গ্রাহক সন্তুষ্টি জরিপ হিসেবে ব্যবহার করা। মানুষ মতামত চাওয়া পছন্দ করে এবং এটি একটি ভাল সুযোগ যে আপনি একজন অনলাইন বণিক হিসেবে কেমন করছেন তা দেখার জন্য।
 
-The poll on the home page of the Deafult Clean nopCommerce theme looks like:
-![Home page poll](_static/polls/polls_3.png)
+Deafult Clean নপকমার্স থিমের হোম পেজে জরিপের মত দেখাচ্ছে:
 
-To view all the polls and add new ones go to **Content management → Polls**.
+![হোম পেজ পোল](_static/polls/polls_3.png)
 
-![Polls list](_static/polls/polls_1.png)
+সমস্ত নির্বাচন দেখতে এবং নতুন যোগ করতে **কনটেন্ট ম্যানেজমেন্ট → পোলস** এ যান।
 
-To search for polls that were used in a certain store, select a name of the store from the list.
+![ভোটের তালিকা](_static/polls/polls_1.png)
 
-## Adding polls
+একটি নির্দিষ্ট দোকানে ব্যবহৃত পোলগুলি অনুসন্ধান করতে, তালিকা থেকে দোকানের একটি নাম নির্বাচন করুন।
 
-To add a new poll click the **Add new** button in the top right.
+## পোল যোগ করা
 
-![Add a new poll](_static/polls/add-new.jpg)
+একটি নতুন পোল যোগ করতে উপরের ডানদিকে **নতুন যোগ করুন** বাটনে ক্লিক করুন।
 
-### Poll info
-Define the following details for the new poll:
-- If more than one language is enabled, from the **Language** dropdown list, select the language of this poll. Customers will only see polls for their selected language.
-- Enter the descriptive **Name** of this poll. This is the text the customers will see. For example, "What do you think about our store?".
-- Tick the **Published** checkbox to make this poll active.
-- Tick the **Show polls on home page** checkbox if you want to show the poll on the home page.
-- Tick the **Allow guests to vote** checkbox to enable unregistered guests to vote for the poll.
-- Enter the **Start date** and **End date** in Coordinated Universal Time (UTC).
-  > [!NOTE]
-  > 
-  > You can leave these fields empty if you do not want to define news item start and end dates.
+![একটি নতুন পোল যোগ করুন](_static/polls/add-new.jpg)
 
-- Choose the stores in the **Limited to stores** field to enable this poll for specific stores only. Leave the field empty in case this functionality is not required.
+### ভোটের তথ্য
+
+নতুন ভোটের জন্য নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
+
+- যদি একাধিক ভাষা সক্ষম হয়, **ভাষা** ড্রপডাউন তালিকা থেকে, এই ভোটের ভাষা নির্বাচন করুন। গ্রাহকরা শুধুমাত্র তাদের নির্বাচিত ভাষার জন্য ভোট দেখতে পাবেন।
+- এই জরিপের বর্ণনামূলক **নাম** লিখুন। এই পাঠ্যটি গ্রাহকরা দেখতে পাবেন। উদাহরণস্বরূপ, "আপনি আমাদের দোকান সম্পর্কে কি মনে করেন?"।
+- এই পোলটি সক্রিয় করতে **প্রকাশিত** চেকবক্সে টিক দিন।
+- হোম পেজে পোল দেখান **চেকবক্সে টিক দিন যদি আপনি হোম পেজে পোল দেখাতে চান।
+- অনিবন্ধিত অতিথিদের ভোটের জন্য ভোট দিতে সক্ষম করতে **অতিথিদের ভোট দেওয়ার অনুমতি দিন** চেকবক্সে টিক দিন।
+- কোঅর্ডিনেটেড ইউনিভার্সাল টাইমে (UTC) **স্টার্ট ডেট** এবং **এন্ড ডেট** লিখুন।
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > আপনি যদি খবরের শুরুর এবং শেষের তারিখ নির্ধারণ করতে না চান তবে আপনি এই ক্ষেত্রগুলি খালি রাখতে পারেন।
 
-- In the **System keyword** field you can specify where the poll will be displayed. For example, LeftColumnPoll.
-- Enter the **Display order** of the poll. A value of 1 represents the top of the list.
+- শুধুমাত্র নির্দিষ্ট দোকানের জন্য এই জরিপ সক্ষম করার জন্য **সীমিত দোকানে** ক্ষেত্রের দোকানগুলি বেছে নিন। এই কার্যকারিতা প্রয়োজন না হলে ক্ষেত্রটি খালি রাখুন।
 
-Click **Save and continue edit** to proceed to the *Poll answers* panel.
+> [!NOTE]
+>
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-### Poll answers
+- **সিস্টেম কীওয়ার্ড** ফিল্ডে আপনি নির্দিষ্ট করতে পারেন যে পোল কোথায় প্রদর্শিত হবে। উদাহরণস্বরূপ, LeftColumnPoll।
+- ভোটের **ডিসপ্লে অর্ডার** লিখুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Fill the following poll answer info:
-* The **Name** that will be displayed to a customer.
-* The **Display order**. A value of 1 represents the top of the list.
+**ভোটের উত্তর প্যানেলে এগিয়ে যেতে** সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান, ক্লিক করুন।
 
-Then click **Add new record** button to save the answer.
+### পোল উত্তর
 
-The complete list of answers can look the following way:
-![Poll answers](_static/polls/answers.jpg)
+নিম্নলিখিত পোল উত্তর তথ্য পূরণ করুন:
+***নাম** যা একজন গ্রাহকের কাছে প্রদর্শিত হবে।
+**ডিসপ্লে অর্ডার**। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-You can then **Edit** records, if required and **Delete** them.
+তারপর উত্তর সংরক্ষণ করতে **নতুন রেকর্ড যোগ করুন** বাটনে ক্লিক করুন।
 
-## Tutorials
+উত্তরগুলির সম্পূর্ণ তালিকা নিম্নলিখিত উপায়ে দেখতে পারে:
+![ভোটের উত্তর](_static/polls/answers.jpg)
 
-- [Managing polls in nopCommerce](https://www.youtube.com/watch?v=RJP45cUhuZQ)
+আপনি যদি প্রয়োজন হয় তবে ** রেকর্ডগুলি সম্পাদনা করতে পারেন এবং ** সেগুলি মুছে ফেলতে পারেন।
+
+## টিউটোরিয়াল
+
+- [নপকমার্স এ ভোট পরিচালনা][https://www.youtube.com/watch?v=RJP45cUhuZQ]

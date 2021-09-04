@@ -1,102 +1,110 @@
 ---
-title: Forums
-uid: en/running-your-store/content-management/forums
+title: ফোরাম
+uid: bn/running-your-store/content-management/forums
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Forums
+# ফোরাম
 
-A forum is an online discussion site where people can hold conversations in the form of posted messages. A forum may contain a number of subforums, with each having several topics.
+একটি ফোরাম হল একটি অনলাইন আলোচনা সাইট যেখানে মানুষ পোস্ট করা বার্তা আকারে কথোপকথন করতে পারে। একটি ফোরামে বেশ কয়েকটি সাবফোরাম থাকতে পারে, যার প্রত্যেকটিতে বেশ কয়েকটি বিষয় থাকে।
 
 > [!NOTE]
-> 
-> In nopCommerce, forums are disabled by default. To enable forums, go to **Configuration → Settings → Forum settings** and tick the **Forums enabled** checkbox. The "Forums" link should be displayed in the menu in the public store (top menu or footer in the default theme).
+>
+> নপকমার্স-এ, ফোরাম ডিফল্টরূপে নিষ্ক্রিয় করা হয়। ফোরাম সক্ষম করতে, **কনফিগারেশন → সেটিংস → ফোরাম সেটিংস** এ যান এবং **ফোরাম সক্ষম** চেকবক্সে টিক দিন। "ফোরাম" লিঙ্কটি পাবলিক স্টোরের মেনুতে প্রদর্শিত হওয়া উচিত (উপরের মেনু বা ডিফল্ট থিমের পাদলেখ)।
 
-To manage forum groups and forums (inside forum groups) go to **Content management → Forums**.
+ফোরাম গ্রুপ এবং ফোরাম পরিচালনা করার জন্য (ফোরাম গ্রুপের ভিতরে) **কন্টেন্ট ম্যানেজমেন্ট → ফোরাম** এ যান।
 
-![Manage forums](_static/forums/list.jpg)
+![ফোরাম পরিচালনা করুন](_static/forums/list.jpg)
 
-## Add a new forum group
+## একটি নতুন ফোরাম গ্রুপ যোগ করুন
 
-Click the **Add new forum group** button.
+**নতুন ফোরাম গ্রুপ যোগ করুন** বাটনে ক্লিক করুন।
 
-![Add a new forum group](_static/forums/forums2.png)
+![একটি নতুন ফোরাম গ্রুপ যোগ করুন](_static/forums/forums2.png)
 
-- Define a new forum group **Name**.
-- In the **Display order** field, enter the display order of the forum group. A value of 1 represents the top of the list
+- একটি নতুন ফোরাম গ্রুপ **নাম** সংজ্ঞায়িত করুন।
+- **ডিসপ্লে অর্ডার** ফিল্ডে, ফোরাম গ্রুপের ডিসপ্লে অর্ডার লিখুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
-## Add a new forum
+## একটি নতুন ফোরাম যুক্ত করুন
 
-![Add a new forum](_static/forums/forums3.png)
+![একটি নতুন ফোরাম যুক্ত করুন](_static/forums/forums3.png)
 
-- From the **Forum group** dropdown list, select the required forum group.
-- Enter the **Name** of the new forum.
-- Enter the **Description** of the new forum.
-- Select the **Display order** for the forum group. A value of 1 represents the top of the list
+- **ফোরাম গ্রুপ** ড্রপডাউন তালিকা থেকে, প্রয়োজনীয় ফোরাম গ্রুপ নির্বাচন করুন।
+- নতুন ফোরামের **নাম** লিখুন।
+- নতুন ফোরামের **বর্ণনা** লিখুন।
+- ফোরাম গ্রুপের জন্য **ডিসপ্লে অর্ডার** নির্বাচন করুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
-To view an example of how forums should work go to <http://www.nopcommerce.com/boards/>.
+ফোরাম কিভাবে কাজ করবে তার একটি উদাহরণ দেখতে <http://www.nopcommerce.com/boards/> এ যান।
 
-![nopCommerce forums](_static/forums/example.jpg)
+![নপকমার্স ফোরাম](_static/forums/example.jpg)
 
-## Forum settings
+## ফোরাম সেটিংস
 
-To access forum settings go to **Configuration → Settings → Forum settings**. This page is available in 2 modes: *advanced* and *basic*.
+ফোরাম সেটিংস অ্যাক্সেস করতে **কনফিগারেশন → সেটিংস → ফোরাম সেটিংস** এ যান। এই পৃষ্ঠাটি ২ টি মোডে উপলব্ধ: *উন্নত* এবং *মৌলিক*।
 
-This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+এই পৃষ্ঠাটি মাল্টি-স্টোর কনফিগারেশন সক্ষম করে, এর মানে হল যে একই স্টোরিং সকল স্টোরের জন্য সংজ্ঞায়িত করা যেতে পারে, অথবা স্টোর থেকে স্টোরে আলাদা হতে পারে। আপনি যদি একটি নির্দিষ্ট দোকানের জন্য সেটিংস পরিচালনা করতে চান, মাল্টি-স্টোর কনফিগারেশন ড্রপ-ডাউন তালিকা থেকে তার নামটি চয়ন করুন এবং তাদের জন্য কাস্টম মান নির্ধারণ করতে বাম পাশে সমস্ত প্রয়োজনীয় চেকবক্সে টিক দিন। আরও তথ্যের জন্য [মাল্টি-স্টোর](xref:bn/get-start/advanced-configuration/multi-store) পড়ুন।
 
-### Common
-![Common settings](_static/forums/common.jpg)
+### সাধারণ
 
-Define following forum settings in the *Common* panel:
-- Enable forums by checking the **Forums enabled** checkbox.
-- Select the **Relative date and time formatting** checkbox to enable relative date and time (e.g. 2 hours ago, 1 day ago).
-- You can give an opportunity to specify customers signatures by checking **Signature enabled**.
-- Select the **Show customers post count** checkbox to enable showing the number of posts created by a customer.
-- From the **Forum editor** dropdown list, select the forum editor type to use:
-  - Simple textbox.
-  - BBCode editor.
+![সাধারণ সেটিংস](_static/forums/common.jpg)
+
+*সাধারণ* প্যানেলে নিম্নলিখিত ফোরাম সেটিংস সংজ্ঞায়িত করুন:
+
+- **ফোরাম সক্ষম** চেকবক্স চেক করে ফোরাম সক্ষম করুন।
+- আপেক্ষিক তারিখ এবং সময় সক্ষম করতে **আপেক্ষিক তারিখ এবং সময় বিন্যাস** চেকবক্স নির্বাচন করুন (যেমন ২ ঘন্টা আগে, ১ দিন আগে)।
+- আপনি **স্বাক্ষর সক্ষম** চেক করে গ্রাহকদের স্বাক্ষর নির্দিষ্ট করার সুযোগ দিতে পারেন।
+- গ্রাহকদের তৈরি করা পোস্টের সংখ্যা দেখাতে সক্ষম করতে **গ্রাহকদের পোস্ট কাউন্ট দেখান** চেকবক্স নির্বাচন করুন।
+- **ফোরাম এডিটর** ড্রপডাউন তালিকা থেকে, ব্যবহার করার জন্য ফোরাম এডিটর টাইপ নির্বাচন করুন:
+  - সহজ টেক্সটবক্স।
+  - বিবিকোড সম্পাদক।
   > [!NOTE]
-  > 
-  > It is not recommended to change the forum editor type in the production environment.
+  >
+  > উত্পাদন পরিবেশে ফোরাম সম্পাদকের ধরন পরিবর্তন করার সুপারিশ করা হয় না।
 
-### Permissions
-![Permissions settings](_static/forums/permissions.jpg)
+### অনুমতি
 
-Define following forum settings in the *Permissions* panel:
-- **Allow guests to create posts**.
-- **Allow guests to create topics**.
-- **Allow customers to edit posts**.
-- **Allow customers to delete posts**.
-- **Allow customers to manage forum subscriptions**.
-- Tick the **Allow users to vote for posts** checkbox to enable voting.
-  - The **Maximum votes per day** field sets a number of votes each user can do per day if the previous setting is enabled.
-- Enable private messages by checking **Allow private messages** checkbox. If enabled the following two settings will be visible:
-  - Tick the **Show alert for PM** checkbox to enable the alert popup if new private messages were received.
-  - Tick the **Notify about private messages** if a customer should be notified by email about new private messages.
+![অনুমতি সেটিংস](_static/forums/permissions.jpg)
 
-### Page sizes
-![Page sizes settings](_static/forums/page-sizes.jpg)
+*অনুমতি* প্যানেলে নিম্নলিখিত ফোরাম সেটিংস সংজ্ঞায়িত করুন:
 
-Define following forum settings in the *Page sizes* panel:
-- **Topics page size** - the page size for topics in forums e.g. '10' topics per page.
-- **Posts page size** - the page size for posts in topics e.g. '10' posts per page.
-- **Search results page size** - the page size for search results e.g. '10' results per page.
-- **Active discussions page size** - the page size for active discussions page e.g. '10' results per page.
+- **অতিথিদের পোস্ট তৈরির অনুমতি দিন**।
+- **অতিথিদের বিষয় তৈরির অনুমতি দিন**।
+- **গ্রাহকদের পোস্ট সম্পাদনা করার অনুমতি দিন**।
+- **গ্রাহকদের পোস্ট মুছে ফেলার অনুমতি দিন**।
+- **গ্রাহকদের ফোরাম সাবস্ক্রিপশন পরিচালনা করার অনুমতি দিন**।
+- ভোটিং সক্ষম করতে **ব্যবহারকারীদের পোস্টের জন্য ভোট দেওয়ার অনুমতি দিন** চেকবক্সে টিক দিন।
+  - **প্রতিদিন সর্বোচ্চ ভোট** ক্ষেত্রটি পূর্ববর্তী সেটিং সক্ষম থাকলে প্রতিটি ব্যবহারকারী প্রতিদিন করতে পারে এমন একটি সংখ্যা নির্ধারণ করে।
+**ব্যক্তিগত বার্তাগুলি চেক করুন** চেকবক্স চেক করে ব্যক্তিগত বার্তাগুলি সক্ষম করুন। সক্ষম হলে নিচের দুটি সেটিংস দৃশ্যমান হবে:
+  - নতুন ব্যক্তিগত বার্তা পেলে **সতর্কতা পপআপ সক্ষম করতে** -এর জন্য সতর্কতা দেখান চেকবক্সে টিক দিন।
+  - যদি ব্যক্তিগত গ্রাহকদের **নতুন ব্যক্তিগত বার্তা সম্পর্কে** ইমেলের মাধ্যমে অবহিত করা হয় তবে ব্যক্তিগত বিজ্ঞপ্তি সম্পর্কে বিজ্ঞপ্তি দিন, টিক দিন।
 
-### Feeds
-![Feeds settings](_static/forums/feeds.jpg)
+### পৃষ্ঠার মাপ
 
-Define following forum settings in the *Feeds* panel:
-- Select the **Forum feeds enabled** checkbox to enable RSS feeds for each forum.
-- In the **Forum feed count** field set the number of topics to be included in each feed.
-- Select the **Active discussions feed enabled** checkbox, to enable RSS feeds for active discussion topics.
-- In the **Active discussions feed count** field set the number of discussions to be included in "Active discussions" feed.
+![পৃষ্ঠা আকার সেটিংস](_static/forums/page-sizes.jpg)
 
-## Tutorials
+*পৃষ্ঠা আকার* প্যানেলে নিম্নলিখিত ফোরাম সেটিংস সংজ্ঞায়িত করুন:
 
-- [Managing forums in nopCommerce](https://www.youtube.com/watch?v=wW2QvC4WA_8)
+- **টপিক পেজ সাইজ** - ফোরামে টপিকের জন্য পেজের সাইজ যেমন প্রতি পৃষ্ঠায় '১০' বিষয়।
+- **পোস্ট পৃষ্ঠার আকার** - বিষয়গুলির পোস্টের জন্য পৃষ্ঠার আকার উদা প্রতি পৃষ্ঠায় '১০' পোস্ট।
+- **অনুসন্ধান ফলাফল পৃষ্ঠার আকার** - অনুসন্ধান ফলাফলের জন্য পৃষ্ঠার আকার উদা প্রতি পৃষ্ঠায় '১০' ফলাফল।
+- **সক্রিয় আলোচনা পৃষ্ঠার আকার** - সক্রিয় আলোচনার পৃষ্ঠার জন্য পৃষ্ঠার আকার উদা প্রতি পৃষ্ঠায় '১০' ফলাফল।
+
+### ফিড
+
+![ফিড সেটিংস](_static/forums/feeds.jpg)
+
+*ফিডস* প্যানেলে নিম্নলিখিত ফোরাম সেটিংস সংজ্ঞায়িত করুন:
+
+- প্রতিটি ফোরামের জন্য আরএসএস ফিড সক্ষম করতে **ফোরাম ফিডস সক্ষম** চেকবক্স নির্বাচন করুন।
+- **ফোরাম ফিড কাউন্ট** ফিল্ডে প্রতিটি ফিডের অন্তর্ভুক্ত বিষয়গুলির সংখ্যা নির্ধারণ করুন।
+- সক্রিয় আলোচনার বিষয়গুলির জন্য আরএসএস ফিড সক্ষম করতে **সক্রিয় আলোচনা ফিড সক্ষম** চেকবক্স নির্বাচন করুন।
+- **সক্রিয় আলোচনা ফিড গণনা** ক্ষেত্রের মধ্যে "সক্রিয় আলোচনা" ফিডের অন্তর্ভুক্ত আলোচনার সংখ্যা নির্ধারণ করুন।
+
+## টিউটোরিয়াল
+
+- [নপকমার্স-এ ফোরাম পরিচালনা করা](https://www.youtube.com/watch?v=wW2QvC4WA_8)

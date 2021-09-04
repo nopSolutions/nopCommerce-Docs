@@ -1,89 +1,89 @@
 ---
-title: Customer settings
-uid: en/running-your-store/customer-management/customer-settings
+title: গ্রাহক সেটিংস
+uid: bn/running-your-store/customer-management/customer-settings
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Customer settings
+# গ্রাহক সেটিংস
 
-Customer settings include enabling customers to upload avatar, showing customer location, changing name format, joining date and more.
+গ্রাহক সেটিংসের মধ্যে রয়েছে গ্রাহকদের অবতার আপলোড করা, গ্রাহকের অবস্থান দেখানো, নামের বিন্যাস পরিবর্তন করা, যোগদানের তারিখ এবং আরও অনেক কিছু অন্তর্ভুক্ত করা।
 
-To define customer settings, go to **Configuration → Settings → Customer settings**. The customer settings window is displayed. This window contains six panels: Common, Password and security, Account, Profile, Customer form fields and Address form fields.
+গ্রাহক সেটিংস নির্ধারণ করতে, **কনফিগারেশন → সেটিংস → গ্রাহক সেটিংস** এ যান। গ্রাহক সেটিংস উইন্ডো প্রদর্শিত হয়। এই উইন্ডোতে ছয়টি প্যানেল রয়েছে: সাধারণ, পাসওয়ার্ড এবং নিরাপত্তা, অ্যাকাউন্ট, প্রোফাইল, গ্রাহক ফর্ম ক্ষেত্র এবং ঠিকানা ফর্ম ক্ষেত্র।
 
-1. **Common** panel contains general customer settings.
+১। **সাধারণ** প্যানেলে সাধারণ গ্রাহক সেটিংস রয়েছে।
 
-1. **Password and security** panel contains fields that can be used to configure security settings and password complexity.
+২। **পাসওয়ার্ড এবং নিরাপত্তা** প্যানেলে এমন ক্ষেত্র রয়েছে যা নিরাপত্তা সেটিংস এবং পাসওয়ার্ড জটিলতা কনফিগার করতে ব্যবহার করা যেতে পারে।
 
-1. **Account** panel contains fields for setting up a customer account.
+৩। **অ্যাকাউন্ট** প্যানেলে গ্রাহক অ্যাকাউন্ট স্থাপনের জন্য ক্ষেত্র রয়েছে।
 
-1. **Profile** panel contains fields for configuring customer profile.
+৪। **প্রোফাইল** প্যানেলে গ্রাহকের প্রোফাইল কনফিগার করার জন্য ক্ষেত্র রয়েছে।
 
-1. **Customer form fields** panel contains fields that are used on the customer registration page.
+৫। **গ্রাহক ফর্ম ক্ষেত্র** প্যানেলে এমন ক্ষেত্র রয়েছে যা গ্রাহক নিবন্ধন পৃষ্ঠায় ব্যবহৃত হয়।
 
-1. **Address form fields** panel contains fields for detailing the customer's address during checkout.
+৬। **ঠিকানা ফর্ম ক্ষেত্র** প্যানেলে চেকআউটের সময় গ্রাহকের ঠিকানা বিশদ বিবরণের জন্য ক্ষেত্র রয়েছে
 
-## Common
+## সাধারণ
 
-![common](_static/customer-settings/customersettings1.png)
+![সাধারণ](_static/customer-settings/customersettings1.png)
 
-Define the common customer settings, as follows:
-* Select the **Registration method**, as follows:
-  * **Standard account creation**: users are enabled to register, no approval is required.
-  * **Email validation is required after registration**: users are enabled to register, however, they must accept the confirmation email sent to them before their account is approved.
-  * **A customer should be approved by administrator**: users are enabled to register, administrator approval is required.
-  * **Registration is disabled**: select this option to disable registration.
-* Tick the **Notify about new customer registration** checkbox, to enable a store owner to get an email notification each time when a new customer is registered.
-* Tick the **Require registration for downloadable products** checkbox if customers have to complete registration in order to purchase downloadable products.
-* Use the **Allow customers to check gift card balance** field to allow customers to check gift card balance.
+সাধারণ গ্রাহক সেটিংস সংজ্ঞায়িত করুন, নিম্নরূপ:
+**নিবন্ধন পদ্ধতি** নির্বাচন করুন, নিম্নরূপ:
+  **স্ট্যান্ডার্ড অ্যাকাউন্ট তৈরি**: ব্যবহারকারীরা নিবন্ধন করতে সক্ষম, কোন অনুমোদনের প্রয়োজন নেই।
+  ***রেজিস্ট্রেশনের পরে ইমেইল যাচাইকরণ প্রয়োজন**: ব্যবহারকারীরা নিবন্ধন করতে সক্ষম হন, তবে তাদের অ্যাকাউন্ট অনুমোদিত হওয়ার আগে তাদের অবশ্যই পাঠানো নিশ্চিতকরণ ইমেল গ্রহণ করতে হবে।
+  ***একজন গ্রাহককে প্রশাসক কর্তৃক অনুমোদিত হওয়া উচিত**: ব্যবহারকারীরা নিবন্ধন করতে সক্ষম, প্রশাসকের অনুমোদন প্রয়োজন।
+  **নিবন্ধন নিষ্ক্রিয় করা হয়েছে**: নিবন্ধন অক্ষম করতে এই বিকল্পটি নির্বাচন করুন।
+*নতুন গ্রাহক নিবন্ধনের বিষয়ে বিজ্ঞপ্তি **চেকবক্সে টিক দিন, যাতে নতুন গ্রাহক নিবন্ধিত হওয়ার সময় প্রতিটি দোকানের মালিককে ইমেল বিজ্ঞপ্তি পেতে সক্ষম করে।
+**ডাউনলোডযোগ্য পণ্যের জন্য নিবন্ধনের প্রয়োজন** চেকবক্সে টিক দিন যদি গ্রাহকদের ডাউনলোডযোগ্য পণ্য ক্রয়ের জন্য নিবন্ধন সম্পন্ন করতে হয়।
+**গ্রাহকদের উপহার কার্ডের ব্যালেন্স চেক করার অনুমতি দিন** গ্রাহকদের উপহার কার্ডের ব্যালেন্স চেক করার অনুমতি দিন।
   > [!NOTE]
   >
-  > If the **Allow customers to check gift card balance** field is checked, then CAPTCHA setting must be enabled in the admin area (**Configuration → Settings → General settings → CAPTCHA panel**). This feature is potentially not safe and CAPTCHA is needed to prevent and complicate bruteforce. For more details refer to [CAPTCHA settings](xref:en/getting-started/advanced-configuration/security-settings#captcha).
+  > যদি **গ্রাহকদের উপহার কার্ডের ব্যালেন্স চেক করার অনুমতি দেয়** ক্ষেত্রটি চেক করা হয়, তাহলে অ্যাডমিন এলাকায় ক্যাপচা সেটিং সক্ষম করতে হবে (**কনফিগারেশন → সেটিংস → সাধারণ সেটিংস AP ক্যাপচা প্যানেল**)। এই বৈশিষ্ট্যটি সম্ভাব্যভাবে নিরাপদ নয় এবং ব্রুটফোর্স প্রতিরোধ এবং জটিল করার জন্য ক্যাপচা প্রয়োজন। আরো বিস্তারিত জানার জন্য [ক্যাপচা সেটিংস](xref:bn/getting-start/advanced-configuration/security-settings#captcha) দেখুন।
 
-* Choose whether to **Allow customers to select time zone** in the public store on the accounts page. Otherwise, the default time zone is used.
-* Select the **Default store time zone** from a dropdown list.
+*অ্যাকাউন্ট পৃষ্ঠায় পাবলিক স্টোরে **গ্রাহকদের টাইম জোন নির্বাচন করার অনুমতি দিতে হবে কিনা তা চয়ন করুন। অন্যথায়, ডিফল্ট টাইম জোন ব্যবহার করা হয়।
+*ড্রপডাউন তালিকা থেকে **ডিফল্ট স্টোর টাইম জোন** নির্বাচন করুন।
    > [!NOTE]
-   > 
-   > The current time zone is displayed automatically.
+   >
+   > বর্তমান সময় অঞ্চল স্বয়ংক্রিয়ভাবে প্রদর্শিত হয়।
  
- * Tick the **Allow customers to remove associations** to allow customers to remove external authentication associations.
+ *গ্রাহকদের বাহ্যিক প্রমাণীকরণ সমিতি অপসারণের অনুমতি দিতে **গ্রাহকদের সমিতি অপসারণের অনুমতি দিন** টিক দিন।
 
-## Password and security
+## পাসওয়ার্ড এবং নিরাপত্তা
 
-![password](_static/customer-settings/customersettings2.png)
+![পাসওয়ার্ড](_static/customer-settings/customersettings2.png)
 
-* Set the **Password minimum length, Password must have at least one lowercase, Password must have at least one uppercase, Password must have at least one non alphanumeric character, Password must have at least one digit** to change password complexity.
-* **Unduplicated passwords number** is a number of passwords that mustn't be the same as the previous one.
-* Select the **Default password format**, as follows:
-  * *Clear*
-  * *Hashed*
-  * *Encrypted*
+**পাসওয়ার্ডের সর্বনিম্ন দৈর্ঘ্য সেট করুন, পাসওয়ার্ডে কমপক্ষে একটি ছোট হাত থাকতে হবে, পাসওয়ার্ডে কমপক্ষে একটি বড় হাতের অক্ষর থাকতে হবে, পাসওয়ার্ডে কমপক্ষে একটি অ অক্ষরবিশিষ্ট অক্ষর থাকতে হবে, পাসওয়ার্ডের জটিলতা পরিবর্তন করতে পাসওয়ার্ডের কমপক্ষে একটি অঙ্ক থাকতে হবে**
+**অনুপযুক্ত পাসওয়ার্ড নম্বর** এমন একটি পাসওয়ার্ড যা পূর্ববর্তী পাসওয়ার্ডের মতো নয়।
+*নিম্নরূপ **ডিফল্ট পাসওয়ার্ড ফরম্যাট** নির্বাচন করুন:
+  * *পরিষ্কার*
+  * *হ্যাশড*
+  * *এনক্রিপ্ট করা*
   > [!NOTE]
   > 
-  > This setting is for storing customers' passwords and will be applied only to newly registered customers.
+  > এই সেটিংটি গ্রাহকদের পাসওয়ার্ড সংরক্ষণের জন্য এবং শুধুমাত্র নতুন নিবন্ধিত গ্রাহকদের জন্য প্রযোজ্য হবে।
 
-* In the **Password lifetime** enter the number of days for password expiration.
+**পাসওয়ার্ড লাইফটাইম** পাসওয়ার্ডের মেয়াদ শেষ হওয়ার জন্য দিনের সংখ্যা লিখুন।
   > [!NOTE]
   >
-  > To use the **Password lifetime** feature don't forget to check **Enable password lifetime** property on the customer role edit page (**Customers → Customer roles**) for those roles, that need to change passwords. For more details refer to [Customer roles](xref:en/running-your-store/customer-management/customer-roles).
+  > **পাসওয়ার্ড লাইফটাইম** ফিচারটি ব্যবহার করতে চেক করতে ভুলবেন না **পাসওয়ার্ড লাইফটাইম সক্ষম করুন** সেই ভূমিকাগুলির জন্য গ্রাহক ভূমিকা সম্পাদনা পৃষ্ঠায় (**গ্রাহক → গ্রাহকের ভূমিকা**) সম্পত্তি, যা পাসওয়ার্ড পরিবর্তন করতে হবে। আরো বিস্তারিত জানার জন্য [গ্রাহক ভূমিকা](xref:bn/running-your-store/customer-management/customer-role) পড়ুন।
 
-* In the **Password recovery link. Days valid** field, enter the number of days for password recovery link. Set it to 0 if you don't want the link to expire.
-* Enter the **Maximum login failures** number. Set 0 to disable this feature.
-* In the **Lockout time (login failures)** enter the number of minutes to lockout users.
-* Tick the **Force entering email twice** checkbox if you want your customers to enter email twice during the registration.
+**পাসওয়ার্ড পুনরুদ্ধারের লিঙ্কে। দিন বৈধ** ক্ষেত্র, পাসওয়ার্ড পুনরুদ্ধারের লিঙ্কের জন্য দিনের সংখ্যা লিখুন। যদি আপনি লিঙ্কটির মেয়াদ শেষ না হতে চান তবে এটি ০ তে সেট করুন।
+**সর্বোচ্চ লগইন ব্যর্থতা** নম্বর লিখুন। এই বৈশিষ্ট্যটি অক্ষম করতে ০ সেট করুন।
+**লকআউট সময় (লগইন ব্যর্থতা)** ব্যবহারকারীদের লকআউট করার জন্য মিনিটের সংখ্যা লিখুন।
+**যদি আপনি আপনার গ্রাহকদের রেজিস্ট্রেশনের সময় দুবার ইমেইল দিতে চান তবে** ফোর্স দুইবার প্রবেশ করান, চেকবক্সে টিক দিন।
 
-## Account
+## অ্যাকাউন্ট
 
-![Account](_static/customer-settings/account.jpg)
+![অ্যাকাউন্ট](_static/customer-settings/account.jpg)
 
-* Tick the **'Usernames' enabled** checkbox, to enable using usernames for login and registration instead of emails. 
-  > [!NOTE]
+* ইমেলের পরিবর্তে লগইন এবং নিবন্ধনের জন্য ব্যবহারকারীর নাম ব্যবহার করতে সক্ষম করতে ** 'ব্যবহারকারীর নাম' সক্ষম ** চেকবক্সে টিক দিন।
+  > [! নোট]
   >
-  > It is not recommended to change this option in the production environment. 
+  > উৎপাদন পরিবেশে এই বিকল্পটি পরিবর্তন করার সুপারিশ করা হয় না।
   
-  When the **'Usernames' enabled** checkbox is selected, the following options are displayed:
-  * **Allow customers to change their usernames**: select this option if customers are allowed to change their usernames.
-  * **Allow customers to check the availability of usernames**: select this option to allow customers to check the username availability before clicking *Save* button on the *My account - Customer info* page. The **Check availability** button is displayed in this case, see the example below.
+  যখন **'ব্যবহারকারীর নাম' সক্ষম** চেকবক্স নির্বাচন করা হয়, নিম্নলিখিত বিকল্পগুলি প্রদর্শিত হয়:
+  * **গ্রাহকদের তাদের ব্যবহারকারীর নাম পরিবর্তন করার অনুমতি দিন**: যদি গ্রাহকদের তাদের ব্যবহারকারীর নাম পরিবর্তন করার অনুমতি দেওয়া হয় তবে এই বিকল্পটি নির্বাচন করুন।
+  * **গ্রাহকদের ব্যবহারকারীর নামগুলির প্রাপ্যতা যাচাই করার অনুমতি দিন**: *আমার অ্যাকাউন্ট - গ্রাহক তথ্য*পৃষ্ঠায় *সংরক্ষণ করুন* বাটনে ক্লিক করার আগে গ্রাহকদের ব্যবহারকারীর নাম প্রাপ্যতা যাচাই করার অনুমতি দেওয়ার জন্য এই বিকল্পটি নির্বাচন করুন। এই ক্ষেত্রে **চেক প্রাপ্যতা** বাটন প্রদর্শিত হয়, নিচের উদাহরণ দেখুন।
 
 ![Check availability button](_static/customer-settings/check-availability-button.jpg)
 
@@ -140,7 +140,7 @@ In the *Customer form fields* panel, define whether the following form fields ar
   * When the **'Newsletter' enabled** checkbox is selected, the **Newsletter ticked by default** checkbox is displayed. This automatically sets the 'Newsletter' checkbox on the registration page as ticked.
 
 ### Custom customer attributes 
-If the default form fields are not enough for your requirements, you can manage additional customer attributes using this table. Customer attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout attributes](xref:en/running-your-store/order-management/checkout-attributes).
+If the default form fields are not enough for your requirements, you can manage additional customer attributes using this table. Customer attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout attributes](xref:bn/running-your-store/order-management/checkout-attributes).
 
 ![Custom customer attributes](_static/customer-settings/customersettings6.png)
 
@@ -163,7 +163,7 @@ In the *Address form fields* panel, a store owner can manage the address form fi
 ### Custom address attributes
 > [!NOTE]
 > 
-> If the default address fields are not enough for your requirements, you can manage additional address attributes using this table. Address attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout Attributes](xref:en/running-your-store/order-management/checkout-attributes).
+> If the default address fields are not enough for your requirements, you can manage additional address attributes using this table. Address attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout Attributes](xref:bn/running-your-store/order-management/checkout-attributes).
 
 ![Custom address attributes](_static/customer-settings/customersettings8.png)
 

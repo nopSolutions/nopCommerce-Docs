@@ -1,90 +1,94 @@
 ---
-title: Topics (pages)
-uid: en/running-your-store/content-management/topics-pages
+title: বিষয় (পৃষ্ঠা)
+uid: bn/running-your-store/content-management/topics-pages
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Topics (pages)
+# বিষয় (পৃষ্ঠা)
 
-Topics (pages) are free-form content blocks that can be displayed on your site, either embedded within other pages or on a page of their own. These are often used for FAQ pages, policy pages, special instructions, and so on. To create custom page, you should create a new topic and enter your custom page content on the topic details page. Content can be written for each language separately.
+বিষয়গুলি (পৃষ্ঠাগুলি) ফ্রি-ফর্ম সামগ্রী ব্লক যা আপনার সাইটে প্রদর্শিত হতে পারে, অন্য পৃষ্ঠার মধ্যে বা তাদের নিজস্ব পৃষ্ঠায় এম্বেড করা হয়। এগুলি প্রায়শই FAQ পৃষ্ঠা, নীতি পৃষ্ঠা, বিশেষ নির্দেশাবলী ইত্যাদির জন্য ব্যবহৃত হয়। কাস্টম পৃষ্ঠা তৈরি করতে, আপনার একটি নতুন বিষয় তৈরি করা উচিত এবং বিষয়বস্তুর বিশদ পৃষ্ঠায় আপনার কাস্টম পৃষ্ঠার সামগ্রী প্রবেশ করা উচিত। প্রতিটি ভাষার জন্য বিষয়বস্তু আলাদাভাবে লেখা যেতে পারে।
 
-## Topic list
+## বিষয় তালিকা
 
-To see the topics go to **Content management → Topics (pages)**.
-Search for topics in the topics list by entering topic text in the **Search keywords** field (or a part of the topic text), or among all the topics of a certain store.
+বিষয়গুলি দেখতে **বিষয়বস্তু ব্যবস্থাপনা → বিষয় (পৃষ্ঠা)** এ যান।
+**সার্চ কিওয়ার্ডস** ফিল্ডে (অথবা টপিক টেক্সটের একটি অংশ), অথবা একটি নির্দিষ্ট দোকানের সব টপিকের মধ্যে টপিক টেক্সট লিখে টপিক লিস্টে টপিকস সার্চ করুন।
 
-![p1](_static/topics-pages/topic-list.jpg)
+![প১](_static/topics-pages/topic-list.jpg)
 
-## Adding topics
+## বিষয় যোগ করা
 
-To add a new topic go to **Content management → Topics (pages)**.
-Click **Add new** and fill the information about a new topic.
+একটি নতুন বিষয় যোগ করতে **বিষয়বস্তু ব্যবস্থাপনা → বিষয় (পৃষ্ঠা)** এ যান।
+**নতুন যোগ করুন** ক্লিক করুন এবং একটি নতুন বিষয় সম্পর্কে তথ্য পূরণ করুন।
 
-![p2](_static/topics-pages/new-topic.jpg)
+![প২](_static/topics-pages/new-topic.jpg)
 
-### Info
-In the *Info* panel define the following topic details:
-* Enter the **Title** for the topic.
-* Add the topic content using the editor provided in the **Body** field.
-* The **URL** field is here only for information purposes. It is the URL of the topic in the public store. You can edit this by editing the **Search engine friendly page name** field below.
+### তথ্য
 
-### Diplay
-In the *Diplay* panel define the following topic details:
-* Tick **Published** checkbox to make this topic published.
-* You can include this topic in the **top menu**, in **footer (column 1)**, in footer (column 2), in footer (column 3) and **sitemap**. Do this by ticking the corresponding checkbox.
-* Select the **Password protected** checkbox, if this topic is password protected. The **Password** field is displayed on the topic page in the public store. A customer enters a password to access the content of this topic.
-* From the **Customer roles** drop-down list select a customer role or roles that can access this topic.
+*তথ্য* প্যানেলে নিম্নলিখিত বিষয়ের বিবরণ সংজ্ঞায়িত করুন:
+
+*বিষয়টির জন্য **শিরোনাম** লিখুন।
+**শরীর** ক্ষেত্রটিতে প্রদত্ত সম্পাদক ব্যবহার করে বিষয়বস্তু যুক্ত করুন।
+***URL** ক্ষেত্রটি শুধুমাত্র তথ্যের উদ্দেশ্যে। এটি পাবলিক স্টোরের টপিকের ইউআরএল। আপনি নীচের **সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** ক্ষেত্রটি সম্পাদনা করে এটি সম্পাদনা করতে পারেন।
+
+### ডিপ্লে
+
+*ডিপ্লে* প্যানেলে নিম্নলিখিত বিষয়ের বিবরণ সংজ্ঞায়িত করুন:
+এই টপিকটি প্রকাশ করার জন্য **প্রকাশিত** চেকবক্সে টিক দিন।
+*আপনি এই বিষয়টি **শীর্ষ মেনুতে**, **পাদলেখ (কলাম ১)**, পাদলেখ (কলাম ২), পাদলেখ (কলাম ৩) এবং **সাইটম্যাপ** এ অন্তর্ভুক্ত করতে পারেন। সংশ্লিষ্ট চেকবক্সে টিক দিয়ে এটি করুন।
+**এই পাসওয়ার্ড সুরক্ষিত হলে** পাসওয়ার্ড সুরক্ষিত **চেকবক্স নির্বাচন করুন।** পাসওয়ার্ড ** ক্ষেত্রটি পাবলিক স্টোরের বিষয় পৃষ্ঠায় প্রদর্শিত হয়। একজন গ্রাহক এই বিষয়ের বিষয়বস্তু অ্যাক্সেস করার জন্য একটি পাসওয়ার্ড প্রবেশ করে।
+***গ্রাহকের ভূমিকা** ড্রপ-ডাউন তালিকা থেকে গ্রাহকের ভূমিকা বা ভূমিকা নির্বাচন করুন যা এই বিষয়ে অ্যাক্সেস করতে পারে।
   > [!NOTE]
   >
-  > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+  > এই কার্যকারিতাটি ব্যবহার করার জন্য আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **কনফিগারেশন → ক্যাটালগ সেটিংস এসিএল নিয়ম (সাইটওয়াইড) উপেক্ষা করুন**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/customer-management/access-control-list)।
 
-* In the **Limited to stores** drop-down list select stores in which the topic will be displayed.
+***সীমিত দোকানে** ড্রপ-ডাউন তালিকায় এমন দোকানগুলি নির্বাচন করুন যেখানে বিষয় প্রদর্শিত হবে।
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-* Use the **Accessible when store closed** field to make this topic accessible when the store is closed.
-* Select this topic **Display order**. For example, 1 would represent the item first in a list.
-* Enter the **System name** of this topic. 
+***যখন দোকান বন্ধ থাকে তখন অ্যাক্সেসযোগ্য** ক্ষেত্রটি ব্যবহার করুন যখন দোকানটি বন্ধ থাকে তখন এই বিষয়টিকে অ্যাক্সেসযোগ্য করে তুলুন।
+*এই বিষয় নির্বাচন করুন **ডিসপ্লে অর্ডার**। উদাহরণস্বরূপ, ১ একটি তালিকায় প্রথমে আইটেমটি উপস্থাপন করবে।
+*এই বিষয়ের **সিস্টেমের** নাম লিখুন।
   > [!NOTE]
   >
-  > It is possible to use the same system name for different topics. For example, you can create two different topics with the same system name and make them accessible for different customer roles. For example, *Guest* and *Registered* customer roles. This means that guests and registered customers will see the different content on the site. 
+  > বিভিন্ন বিষয়ের জন্য একই সিস্টেমের নাম ব্যবহার করা সম্ভব। উদাহরণস্বরূপ, আপনি একই সিস্টেমের নাম দিয়ে দুটি ভিন্ন বিষয় তৈরি করতে পারেন এবং সেগুলি বিভিন্ন গ্রাহকের ভূমিকার জন্য অ্যাক্সেসযোগ্য করে তুলতে পারেন। উদাহরণস্বরূপ, *অতিথি* এবং *নিবন্ধিত* গ্রাহকের ভূমিকা। এর মানে হল যে অতিথি এবং নিবন্ধিত গ্রাহকরা সাইটে বিভিন্ন বিষয়বস্তু দেখতে পাবেন।
 
 > [!NOTE]
 >
-> While editing existing topic or after clicking **Save and continue edit** button for a new one, you can click on **Preview** button to see how the topic will appear on the site.
+> বিদ্যমান বিষয় সম্পাদনা করার সময় অথবা নতুন সংরক্ষণের জন্য **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** বাটনে ক্লিক করার পরে, আপনি সাইটটিতে বিষয়টি কীভাবে প্রদর্শিত হবে তা দেখতে **প্রিভিউ** বাটনে ক্লিক করতে পারেন।
 
-### SEO
-In the *SEO* panel define the following topic details:
-* In the **Search engine friendly page name** field, enter the name of the page used by search engines. If you enter nothing then the web page URL is formed using the page name. If you enter *custom-seo-page-name*, then the following URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
-* In the **Meta title** field, enter the required title. The title tag specifies the title of your web page. It is code which is inserted into the header of your web page and is in the following format:
+### এসইও
+
+*এসইও* প্যানেলে নিম্নলিখিত বিষয়ের বিবরণ সংজ্ঞায়িত করুন:
+**সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** ফিল্ডে, সার্চ ইঞ্জিন দ্বারা ব্যবহৃত পৃষ্ঠার নাম লিখুন। যদি আপনি কিছু না লিখেন তাহলে ওয়েব পেজ ইউআরএল পেজের নাম ব্যবহার করে গঠিত হয়। যদি আপনি *custom-seo-page-name* লিখেন, তাহলে নিচের URL টি ব্যবহার করা হবে: `http://www.yourStore.com/custom-seo-page-name`।
+**মেটা শিরোনাম** ক্ষেত্রে, প্রয়োজনীয় শিরোনাম লিখুন। শিরোনাম ট্যাগ আপনার ওয়েব পৃষ্ঠার শিরোনাম নির্দিষ্ট করে। এটি কোড যা আপনার ওয়েব পেজের হেডারে হয় এবং নিম্নলিখিত বিন্যাসে থাকে:
 
    ```html
    <head>
      <title>
-        Creating Title Tags for Search Engine Optimization & Web Usability
+        সার্চ ইঞ্জিন অপ্টিমাইজেশন এবং ওয়েব ব্যবহারযোগ্যতার জন্য টাইটেল ট্যাগ তৈরি করা
       <title>
    </head>
    ```
-* Enter the required category **Meta keywords**, which are a brief and concise list of the most important themes of your page. The meta keywords tag takes the following format:
+*প্রয়োজনীয় বিভাগ **মেটা কীওয়ার্ড** লিখুন, যা আপনার পৃষ্ঠার সবচেয়ে গুরুত্বপূর্ণ থিমগুলির একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত তালিকা। মেটা কীওয়ার্ড ট্যাগ নিম্নলিখিত বিন্যাস নেয়:
 
    ```html
-   <meta name="keywords" content="keywords, keyword, keyword phrase, etc.">
+   <meta name="keywords" content="কীওয়ার্ড, কিওয়ার্ড, কিওয়ার্ড ফ্রেজ ইত্যাদি।">
    ```
 
-* In the **Meta description** field, enter a description of the category. The meta description tag is a brief and concise summary of your page's content. The meta description tag is in the following format:
+***মেটা বর্ণনা** ফিল্ডে, বিভাগের একটি বিবরণ লিখুন। মেটা বর্ণনা ট্যাগ আপনার পৃষ্ঠার বিষয়বস্তুর একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত সারসংক্ষেপ। মেটা বিবরণ ট্যাগ নিম্নলিখিত বিন্যাসে রয়েছে:
 
    ```html
-   <meta name="description" content="Brief description of the contents of your page.">
+   <meta name="description" content="আপনার পৃষ্ঠার বিষয়বস্তুর সংক্ষিপ্ত বিবরণ।">
    ```
 
-Click **Save**. The topic will be displayed in the public store.
+**সেভ** ক্লিক করুন। বিষয়টি পাবলিক স্টোরে প্রদর্শিত হবে।
 
-## See also
+## আরো দেখুন
 
-- [SEO](xref:en/running-your-store/search-engine-optimization)
+-[এসইও](xref:bn/running-your-store/search-engine-optimization)
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Adding new topic template](https://www.youtube.com/watch?v=M-g4Ux2GCaY)
+- [নতুন বিষয় টেমপ্লেট যুক্ত করা হচ্ছে](https://www.youtube.com/watch?v=M-g4Ux2GCaY)

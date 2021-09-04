@@ -1,21 +1,21 @@
 ---
-title: Content management
-uid: en/running-your-store/content-management/index
+title: কন্টেন্ট ম্যানেজমেন্ট
+uid: bn/running-your-store/content-management/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Content management
+# কন্টেন্ট ম্যানেজমেন্ট
 
-Content management is a set of processes and technologies that support the collection, managing, and publishing of information on your site. nopCommerce allows you to use all tools needed to make your online store more informative and make communication between you and your customers better.
+বিষয়বস্তু ব্যবস্থাপনা হল প্রক্রিয়া এবং প্রযুক্তির একটি সেট যা আপনার সাইটে তথ্য সংগ্রহ, পরিচালনা এবং প্রকাশনাকে সমর্থন করে। নপকমার্স আপনাকে আপনার অনলাইন স্টোরকে আরও তথ্যবহুল করতে এবং আপনার এবং আপনার গ্রাহকদের মধ্যে যোগাযোগকে আরও ভাল করার জন্য প্রয়োজনীয় সমস্ত সরঞ্জাম ব্যবহার করতে দেয়।
 
-## Learn more
+## আরো জানুন
 
-- [Blog](xref:en/running-your-store/content-management/blog)
-- [News](xref:en/running-your-store/content-management/news)
-- [Forums](xref:en/running-your-store/content-management/forums)
-- [Polls](xref:en/running-your-store/content-management/polls)
-- [Topics (pages)](xref:en/running-your-store/content-management/topics-pages)
-- [Message templates](xref:en/running-your-store/content-management/message-templates)
-- [SEO](xref:en/running-your-store/search-engine-optimization)
-- [Email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns)
+- [ব্লগ](xref:bn/running-your-store/content-management/blog)
+- [সংবাদ](xref:bn/running-your-store/content-management/news)
+- [ফোরাম](xref:bn/running-your-store/content-management/forums)
+- [পোল](xref:bn/running-your-store/content-management/Polls)
+- [বিষয় (পৃষ্ঠা)](xref:bn/running-your-store/content-management/topic-pages)
+- [বার্তা টেমপ্লেট](xref:bn/running-your-store/content-management/message-template)
+- [এসইও](xref:bn/running-your-store/search-engine-optimization)
+- [ইমেল প্রচার](xref:bn/running-your-store/promotional-tools/email-campaigns)

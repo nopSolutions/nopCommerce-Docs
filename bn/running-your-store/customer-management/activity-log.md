@@ -1,32 +1,32 @@
 ---
-title: Activity log
-uid: en/running-your-store/customer-management/activity-log
+title: কার্য বিবরণ
+uid: bn/running-your-store/customer-management/activity-log
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git., git.exileDev, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Activity log
+# কার্য বিবরণ
 
-Activity log is used to track user activity in the system. By default, all *activity types* are enabled for tracking in nopCommerce. A store owner can disable them by unticking the relevant checkbox. Most of the activity types listed are only for the administrator, and record actions in the administration area. However, some are for the public store and track actions of shoppers (such as, adding to cart/wishlist, placing an order, etc.).
+সিস্টেমে ব্যবহারকারীর কার্যকলাপ ট্র্যাক করতে কার্যকলাপ লগ ব্যবহার করা হয়। ডিফল্টরূপে, সমস্ত *কার্যকলাপ প্রকার* নপকমার্স-এ ট্র্যাক করার জন্য সক্ষম করা হয়। একটি দোকান মালিক প্রাসঙ্গিক চেকবক্স আনচিক করে তাদের নিষ্ক্রিয় করতে পারেন। তালিকাভুক্ত বেশিরভাগ কার্যকলাপের ধরন শুধুমাত্র প্রশাসকের জন্য, এবং প্রশাসন এলাকায় রেকর্ড কর্ম। যাইহোক, কিছু পাবলিক স্টোরের জন্য এবং ক্রেতাদের কর্মের ট্র্যাক (যেমন, কার্ট/ইচ্ছা তালিকায় যোগ করা, অর্ডার দেওয়া ইত্যাদি)।
 
-## Customer activity types
+## গ্রাহক কার্যকলাপের ধরন
 
-To enable/disable activity types, go to **Customers → Activity types**.
+কার্যকলাপের ধরন সক্ষম/নিষ্ক্রিয় করতে, **গ্রাহক → কার্যকলাপের ধরন** এ যান।
 
-![Activity types](_static/activity-log/activity-type.png)
+![কার্যকলাপের ধরন](_static/activity-log/activity-type.png)
 
-Tick the **Is enabled** checkbox beside the activity type that you want to be enabled. Then click **Save** in the top right.
+যে ক্রিয়াকলাপের ধরনটি আপনি সক্ষম করতে চান তার পাশে **সক্রিয় আছে** চেকবক্সে টিক দিন। তারপর উপরের ডানদিকে **সেভ** ক্লিক করুন।
 
-## Customer activity log
+## গ্রাহক কার্যকলাপ লগ
 
-To search for activity logs, go to **Customers → Activity log**.
+কার্যকলাপ লগ অনুসন্ধান করতে, **গ্রাহক → কার্যকলাপ লগ** এ যান।
 
-![Activity log](_static/activity-log/activity-log.jpg)
+![কার্য বিবরণ](_static/activity-log/activity-log.jpg)
 
-Define the search criteria, using one or more of the following fields:
+নিম্নলিখিত এক বা একাধিক ক্ষেত্র ব্যবহার করে অনুসন্ধানের মানদণ্ড নির্ধারণ করুন:
 
-- To search by date range enter the date range in the **Created from** and **Created to** fields. Alternatively, you can click on the dropdown calendar and select the required date ranges.
-- **Activity log type** for customer's activity.
-- **IP address** for search customer by ip address.
+- তারিখের পরিসীমা অনুসারে অনুসন্ধানের জন্য **তৈরি থেকে** এবং **থেকে তৈরি** ক্ষেত্রের মধ্যে তারিখ পরিসীমা লিখুন। বিকল্পভাবে, আপনি ড্রপডাউন ক্যালেন্ডারে ক্লিক করতে পারেন এবং প্রয়োজনীয় তারিখের রেঞ্জ নির্বাচন করতে পারেন।
+- **ক্রিয়াকলাপ লগ টাইপ** গ্রাহকের কার্যকলাপের জন্য।
+- **আইপি ঠিকানা** আইপি ঠিকানা দ্বারা গ্রাহকের জন্য অনুসন্ধান করুন।
 
-You can clear the certain activity log item by clicking the **Delete** button beside it or you can clear the whole log of activities by clicking the **Clear activity log** button in the top right.
+আপনি নির্দিষ্ট অ্যাক্টিভিটি লগ আইটেমটি পাশের **ডিলিট** বাটনে ক্লিক করে পরিষ্কার করতে পারেন অথবা উপরের ডানদিকে **ক্লিয়ার অ্যাক্টিভিটি লগ** বাটনে ক্লিক করে ক্রিয়াকলাপের পুরো লগ সাফ করতে পারেন।

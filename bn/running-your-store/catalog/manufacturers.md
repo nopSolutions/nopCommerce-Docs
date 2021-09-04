@@ -1,148 +1,148 @@
 ---
-title: Manufacturers
-uid: en/running-your-store/catalog/manufacturers
+title: নির্মাতারা
+uid: bn/running-your-store/catalog/manufacturers
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Manufacturers
+# নির্মাতারা
 
-To manage manufacturers go to **Catalog → Manufacturers**.
+নির্মাতাদের পরিচালনা করতে যান **ক্যাটালগ → নির্মাতারা**।
 
-![Manufactures](_static/manufacturers/manufactures.jpg)
+![নির্মাতারা](_static/manufacturers/manufactures.jpg)
 
-Search for a manufacturer in the *Search* panel by entering the **Manufacturer name** or a part of the name, by the **Published** property or among all the manufacturers of a certain **Store** (if more than one store enabled).
+**প্রস্তুতকারকের নাম** অথবা নামের একটি অংশ, **প্রকাশিত** সম্পত্তি দ্বারা বা নির্দিষ্ট **স্টোরের সমস্ত নির্মাতাদের মধ্যে** (যদি বেশি একাধিক স্টোর সক্রিয়)।
 
 > [!NOTE]
 >
-> To remove manufacturers from the list, select the items to be deleted and click the **Delete (selected)** button.
-> You can export the manufacturers to an external file for backup purposes, by clicking the **Export** button. After clicking the **Export** button you will see the dropdown menu enabling you to **Export to XML** or **Export to Excel**.
+> তালিকা থেকে নির্মাতাদের অপসারণ করতে, মুছে ফেলা আইটেমগুলি নির্বাচন করুন এবং **মুছুন (নির্বাচিত)** বাটনে ক্লিক করুন।
+আপনি **এক্সপোর্ট** বাটনে ক্লিক করে ব্যাকআপের উদ্দেশ্যে নির্মাতাদের একটি বহিরাগত ফাইলে রপ্তানি করতে পারেন। **এক্সপোর্ট** বাটনে ক্লিক করার পর আপনি ড্রপডাউন মেনু দেখতে পাবেন যা আপনাকে **এক্সএমএল** বা **এক্সেল** থেকে এক্সপোর্ট করতে সক্ষম করে।
 
-## Adding a new manufacturer
+## একটি নতুন প্রস্তুতকারক যোগ করা হচ্ছে
 
-To add a new manufacturer click the **Add new** button in the top of the page. The *Add a new manufacturer* window will be displayed.
+একটি নতুন প্রস্তুতকারক যোগ করতে পৃষ্ঠার শীর্ষে **নতুন যোগ করুন** বাটনে ক্লিক করুন। *একটি নতুন প্রস্তুতকারক যোগ করুন* উইন্ডো প্রদর্শিত হবে।
 
-![Add a new manufacturer](_static/manufacturers/add_a_new_manufacturer.png)
+![একটি নতুন প্রস্তুতকারক যোগ করা](_static/manufacturers/add_a_new_manufacturer.png)
 
-This page is available in two modes: **advanced** and **basic**. Switch to the basic mode which displays the only main fields or use the advanced mode displaying all the available fields.
+এই পৃষ্ঠাটি দুটি মোডে উপলব্ধ: **উন্নত** এবং **মৌলিক**। মৌলিক মোডে স্যুইচ করুন যা শুধুমাত্র প্রধান ক্ষেত্র প্রদর্শন করে অথবা সমস্ত উপলব্ধ ক্ষেত্র প্রদর্শন করে উন্নত মোড ব্যবহার করে।
 
-### Manufacturer info
+### প্রস্তুতকারকের তথ্য
 
-In the *Manufacturer info* panel, define the following details:
+*প্রস্তুতকারকের তথ্য* প্যানেলে, নিম্নলিখিত বিবরণগুলি সংজ্ঞায়িত করুন:
 
-- **Name** - this is the name of the manufacturer displayed in the catalog.
-- **Description** - a description of the manufacturer. Use the editor for layout and fonts.
-- **Picture** - an image representing the manufacturer. Upload the image from your device.
+- **নাম** - এটি ক্যাটালগে প্রদর্শিত প্রস্তুতকারকের নাম।
+- **বর্ণনা** - প্রস্তুতকারকের বিবরণ। বিন্যাস এবং ফন্টের জন্য সম্পাদক ব্যবহার করুন।
+- **ছবি** - প্রস্তুতকারকের প্রতিনিধিত্বকারী একটি ছবি। আপনার ডিভাইস থেকে ছবিটি আপলোড করুন।
 
-### Display
+### প্রদর্শন
 
-![Display](_static/manufacturers/display2.png)
+![প্রদর্শন](_static/manufacturers/display2.png)
 
-In the *Display* panel, define the following details:
+*ডিসপ্লে* প্যানেলে, নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
 
-- Select the **Published** checkbox, to enable the manufacturer to be visible in the public store.
-- Select the **Allow customers to select page size** checkbox, to enable customers to select a page size, i.e. the number of products displayed on the manufacturer details page. The page size can be selected by customers from the page sizes list entered by the store owner in the **Page size options** field.
-  - In the previous checkbox is ticked the **Page size options** is displayed. Enter a comma separated list of page size options (e.g. 10, 5, 15, 20). First option is the default page size if none are selected.
-  - The **Page size** option is displayed if the **Allow customers to select page size** checkbox is unticked. It sets the page size for products in this manufacturer e.g. '4' products per page.
+- প্রকাশককে পাবলিক স্টোরে দৃশ্যমান করতে সক্ষম করতে **প্রকাশিত** চেকবক্স নির্বাচন করুন।
+- গ্রাহকদের একটি পৃষ্ঠার আকার নির্বাচন করতে সক্ষম করার জন্য **গ্রাহকদের পৃষ্ঠার আকার নির্বাচন করার অনুমতি দিন** চেকবক্স নির্বাচন করুন, যেমন নির্মাতার বিবরণ পৃষ্ঠায় প্রদর্শিত পণ্যের সংখ্যা। **পৃষ্ঠার আকারের বিকল্প** ক্ষেত্রের মধ্যে দোকানের মালিক কর্তৃক প্রবেশ করা পৃষ্ঠা আকারের তালিকা থেকে গ্রাহকদের দ্বারা পৃষ্ঠার আকার নির্বাচন করা যেতে পারে।
+  - পূর্ববর্তী চেকবক্সে **পৃষ্ঠা আকারের বিকল্পগুলি** প্রদর্শিত হয়। পৃষ্ঠা আকারের বিকল্পগুলির একটি কমা দ্বারা বিচ্ছিন্ন তালিকা লিখুন (যেমন ১০, ৫, ১৫, ২০)। প্রথম বিকল্পটি হল ডিফল্ট পৃষ্ঠার আকার যদি কেউ নির্বাচিত না হয়।
+  - **পেজ সাইজ** অপশন প্রদর্শিত হয় যদি **গ্রাহকদের পেজ সাইজ সিলেক্ট করার অনুমতি দেয়** চেকবক্সটি অনির্বাচিত হয়। এটি এই প্রস্তুতকারকের পণ্যের জন্য পৃষ্ঠার আকার নির্ধারণ করে যেমন প্রতি পৃষ্ঠায় '৪' পণ্য।
     > [!TIP]
     >
-    > For example, when you add seven products to a manufacturer and you set its page size to three. Three products per page will be displayed on this manufacturer details page in the public store, and the total amount of pages will be three.
+    > উদাহরণস্বরূপ, যখন আপনি একটি প্রস্তুতকারকের কাছে সাতটি পণ্য যোগ করেন এবং আপনি তার পৃষ্ঠার আকার তিনটিতে সেট করেন। পাবলিক স্টোরে এই নির্মাতার বিশদ পৃষ্ঠায় প্রতি পৃষ্ঠায় তিনটি পণ্য প্রদর্শিত হবে এবং মোট পৃষ্ঠার পরিমাণ হবে তিনটি।
 
-- Tick the **Price range filtering** checkbox if you want to enable filtering by price range.
-  - If you want price range to be entered manually tick the **Enter price range manually** checkbox.
-    - If the setting above is enabled enter the **Price 'from'**.
-    - As well as the **Price 'to'**.
-- **Display Order** - the order number for displaying the manufacturer. This display number is used to sort manufacturers in the public store (ascending). The manufacturer with the display order 1 will be placed at the top of the list.
-- The **Manufacturer template** filed is visible if you have any custom manufacturer templates installed on the **System → Templates** page. This template defines how this manufacturer (and its products) will be displayed.
+- যদি আপনি মূল্য পরিসীমা দ্বারা ফিল্টারিং সক্ষম করতে চান তবে **মূল্য পরিসীমা ফিল্টারিং** চেকবক্সে টিক দিন।
+  - যদি আপনি মূল্য পরিসীমা ম্যানুয়ালি প্রবেশ করতে চান তাহলে **দাম মূল্য পরিসরে লিখুন** চেকবক্সে টিক দিন।
+    - যদি উপরের সেটিং সক্ষম করা থাকে তবে ** থেকে 'মূল্য' লিখুন।
+    - পাশাপাশি **মূল্য 'থেকে'**।
+- **ডিসপ্লে অর্ডার** - প্রস্তুতকারকের প্রদর্শনের জন্য অর্ডার নম্বর। এই ডিসপ্লে নম্বরটি পাবলিক স্টোরে (আরোহী) নির্মাতাদের সাজানোর জন্য ব্যবহৃত হয়। ডিসপ্লে অর্ডার 	১ সহ প্রস্তুতকারক তালিকার শীর্ষে থাকবে।
+- **সিস্টেম → টেমপ্লেট** পৃষ্ঠায় যদি কোন কাস্টম প্রস্তুতকারক টেমপ্লেট ইনস্টল করা থাকে তবে দায়ের করা **প্রস্তুতকারক টেমপ্লেটটি** দৃশ্যমান। এই টেমপ্লেটটি নির্ধারণ করে কিভাবে এই প্রস্তুতকারক (এবং এর পণ্য) প্রদর্শিত হবে।
 
-### Mappings
+### ম্যাপিং
 
-![Mappings](_static/manufacturers/mappings.png)
+![ম্যাপিং](_static/manufacturers/mappings.png)
 
-In the *Mappings* panel, define the following details:
+*ম্যাপিংস* প্যানেলে, নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
 
-- **Discounts** - select discounts associated with this manufacturer. You can create discounts on the **Promotions → Discounts** page. Read more about discounts in the [Discounts](xref:en/running-your-store/promotional-tools/discounts) chapter.
-
-    > [!NOTE]
-    >
-    > Note that only discounts with *assigned to manufacturers* type are visible here. After discounts are mapped to the manufacturer, they are applied to all products in this manufacturer.
+- **ছাড়** - এই নির্মাতার সাথে যুক্ত ডিসকাউন্ট নির্বাচন করুন। আপনি **প্রচার → ছাড়** পৃষ্ঠাতে ছাড় তৈরি করতে পারেন। [ডিসকাউন্ট](xref:bn/running-your-store/promotional-tools/discount) অধ্যায়ে ছাড় সম্পর্কে আরও পড়ুন।
 
     > [!NOTE]
     >
-    > If you want to use discounts make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
+    > মনে রাখবেন যে শুধুমাত্র *নির্মাতাদের নির্ধারিত* প্রকারের ছাড় এখানে দৃশ্যমান। নির্মাতাকে ডিসকাউন্ট ম্যাপ করার পর, তারা এই নির্মাতার সকল পণ্যে প্রয়োগ করা হয়।
 
-- In the **Limited to customer roles** field choose the customer roles which will be able to see the manufacturer in the catalog. Leave this field empty if this option is not required and the manufacturer can be seen by everyone.
     > [!NOTE]
     >
-    > In order to use this functionality you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+    > আপনি যদি ডিসকাউন্ট ব্যবহার করতে চান তবে নিশ্চিত করুন যে **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস → পারফরমেন্স** প্যানেলে * ডিসকাউন্ট উপেক্ষা করুন (সাইটওয়াইড)** সেটিং অক্ষম করা আছে।
 
-- Choose the stores in the **Limited to stores** field if the manufacturer is sold in specific stores. Leave the field empty in case this functionality is not required.
+- **সীমিত গ্রাহকের ভূমিকায়** ক্ষেত্রটিতে গ্রাহকের ভূমিকা নির্বাচন করুন যা প্রস্তুতকারককে ক্যাটালগে দেখতে পারবে। এই বিকল্পটি প্রয়োজন না হলে এবং ক্ষেত্রটি খালি রেখে দিন এবং নির্মাতাকে সবাই দেখতে পারে।
+    > [!NOTE]
+    >
+    > এই কার্যকারিতাটি ব্যবহার করার জন্য আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **কনফিগারেশন → ক্যাটালগ সেটিংস A ACL নিয়ম (সাইটওয়াইড) উপেক্ষা করুন**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/customer-management/access-control-list)।
+
+- যদি নির্মাতারা নির্দিষ্ট দোকানে বিক্রি হয় তবে **সীমিত দোকানে** ক্ষেত্রের দোকানগুলি বেছে নিন। এই কার্যকারিতা প্রয়োজন না হলে ক্ষেত্রটি খালি রাখুন।
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-### SEO
+### এসইও
 
-![SEO](_static/manufacturers/SEO.png)
+![এসইও](_static/manufacturers/SEO.png)
 
-In the *SEO* panel, define the following details:
+*এসইও* প্যানেলে, নিম্নলিখিত বিবরণগুলি সংজ্ঞায়িত করুন:
 
-- **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the manufacturer page URL would be formed using the manufacturer name. If you enter custom-seo-page-name, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
-
-- **Meta title** specifies the title of the web page. It is a code which is inserted into the header of your web page:
+- **সার্চ ইঞ্জিন বান্ধব পৃষ্ঠার নাম** - সার্চ ইঞ্জিন দ্বারা ব্যবহৃত পৃষ্ঠার নাম। আপনি যদি ক্ষেত্রটি ফাঁকা রাখেন, তাহলে প্রস্তুতকারকের নাম ব্যবহার করে প্রস্তুতকারক পৃষ্ঠার ইউআরএল তৈরি হবে। যদি আপনি কাস্টম-এসইও-পেজ-নাম লিখেন, তাহলে নিম্নলিখিত কাস্টম ইউআরএল ব্যবহার করা হবে: `http://www.yourStore.com/custom-seo-page-name`।
+- 
+- **মেটা শিরোনাম** ওয়েব পেজের শিরোনাম উল্লেখ করে। এটি একটি কোড যা আপনার ওয়েব পেজের হেডারে োকানো হয়:
 
     ```html
     <head>
-        <title> Creating Title Tags for Search Engine Optimization & Web Usability </title>
+        <title> সার্চ ইঞ্জিন অপ্টিমাইজেশন এবং ওয়েব ব্যবহারযোগ্যতার জন্য টাইটেল ট্যাগ তৈরি করা </title>
     </head>
     ```
 
-- **Meta keywords** - manufacturer meta keywords, which are a brief and concise list of the most important themes for the page. Meta keywords tag looks like: `<meta name="keywords" content="keyword, keyword, keyword phrase, etc.">`
+- **মেটা কীওয়ার্ড** - প্রস্তুতকারক মেটা কীওয়ার্ড, যা পৃষ্ঠার জন্য সবচেয়ে গুরুত্বপূর্ণ থিমগুলির একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত তালিকা। মেটা কীওয়ার্ড ট্যাগ এর মত দেখায়:`<meta name="keywords" content="কীওয়ার্ড, কিওয়ার্ড, কীওয়ার্ড ফ্রেজ ইত্যাদি।">`
 
-- **Meta description** - a description of the manufacturer. The meta description tag is a brief and concise summary of the page content. The meta description tag looks like: `<meta name="description" content="Brief description of the contents of your page">`
+- **মেটা বর্ণনা** - প্রস্তুতকারকের বর্ণনা। মেটা ডেসক্রিপশন ট্যাগ হল পৃষ্ঠার বিষয়বস্তুর একটি সংক্ষিপ্ত এবং সংক্ষিপ্ত সারসংক্ষেপ। মেটা ডেসক্রিপশন ট্যাগ এর মত দেখায়: `<meta name="description" content="আপনার পৃষ্ঠার বিষয়বস্তুর সংক্ষিপ্ত বিবরণ">`
 
-Click the **Save and continue edit** button to proceed to add products to the manufacturer.
+প্রস্তুতকারকের পণ্য যোগ করতে এগিয়ে যেতে **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** বাটনে ক্লিক করুন।
 
-### Products
+### পণ্য
 
-The *Products* panel contains a list of products related to the selected manufacturer, these products can be filtered by manufacturer in the catalog. The store owner can add new products to the manufacturer. Note that you need to save the manufacturer before you can add products.
+*পণ্য* প্যানেলে নির্বাচিত প্রস্তুতকারকের সাথে সম্পর্কিত পণ্যের একটি তালিকা থাকে, এই পণ্যগুলি প্রস্তুতকারকের দ্বারা ক্যাটালগে ফিল্টার করা যায়। দোকানের মালিক প্রস্তুতকারকের কাছে নতুন পণ্য যোগ করতে পারেন। মনে রাখবেন যে আপনি পণ্য যোগ করার আগে আপনাকে প্রস্তুতকারককে সংরক্ষণ করতে হবে।
 
-Click **Add a new product** to find a product you want to include in this manufacturer. You can search by the **Product name**, **Categoty**, **Vendor**, **Store**, **Product type** and **Manufacturer**.
+আপনি এই প্রস্তুতকারকের অন্তর্ভুক্ত করতে চান এমন একটি পণ্য খুঁজে পেতে একটি নতুন পণ্য যোগ করুন এ ক্লিক করুন। আপনি **পণ্যের নাম**, **শ্রেণীবিভাগ**, **বিক্রেতা**, **দোকান**, **পণ্যের ধরন** এবং **প্রস্তুতকারক** দ্বারা অনুসন্ধান করতে পারেন।
 
-![Add products](_static/manufacturers/add-product.jpg)
+![পণ্য যোগ করুন](_static/manufacturers/add-product.jpg)
 
-Select products you would like to add to the manufacturer and click the **Save** button. The product will be displayed under the selected manufacturer.
+আপনি প্রস্তুতকারকের সাথে যোগ করতে চান এমন পণ্যগুলি নির্বাচন করুন এবং **সংরক্ষণ** বাটনে ক্লিক করুন। পণ্য নির্বাচিত প্রস্তুতকারকের অধীনে প্রদর্শিত হবে।
 
-![products2](_static/manufacturers/products2.png)
+![পণ্য](_static/manufacturers/products2.png)
 
-After the product was added to the manufacturer, define the following information in the *Products* table by clicking the **Edit** button beside a product:
+পণ্যটি প্রস্তুতকারকের সাথে যুক্ত হওয়ার পরে, একটি পণ্যের পাশে **সম্পাদনা** বাটনে ক্লিক করে*পণ্য*টেবিলে নিম্নলিখিত তথ্যগুলি সংজ্ঞায়িত করুন:
 
-- **Is featured product**.
-- **Display order**.
-
-> [!NOTE]
->
-> By clicking **View**, you will be redirected to the *Edit product details* page.
-
-Click **Save**.
-
-## Importing manufacturers
-
-If you do not want to add all the manufacturers to your catalog manually you can use the import option.
+- **বৈশিষ্ট্যযুক্ত পণ্য**।
+- **প্রদর্শন আদেশ**.
 
 > [!NOTE]
 >
-> Before you start import you should download a table template for import in Excel format. For accurate and correct import of your manufacturers it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
+> **দেখুন** ক্লিক করে, আপনাকে*পণ্যের বিবরণ সম্পাদনা করুন*পৃষ্ঠায় পুননির্দেশিত করা হবে।
 
-It is not mandatory to fill all the table fields. The manufacturer will be created based on the filled fields.
+**সেভ** ক্লিক করুন।
 
-Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1000 records at once. If you have more records, it's better to split them into multiple Excel files and import separately.
+## আমদানিকারকরা
 
-## See also
+আপনি যদি আপনার ক্যাটালগে সব নির্মাতাকে ম্যানুয়ালি যোগ করতে না চান তবে আপনি আমদানি বিকল্পটি ব্যবহার করতে পারেন।
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [SEO](xref:en/running-your-store/search-engine-optimization)
+> [!NOTE]
+>
+> আমদানি শুরু করার আগে আপনার এক্সেল ফরম্যাটে আমদানির জন্য একটি টেবিল টেমপ্লেট ডাউনলোড করা উচিত। আপনার নির্মাতাদের সঠিক এবং সঠিক আমদানির জন্য টেবিলে সমস্ত কলামের সঠিকভাবে নামকরণ করা গুরুত্বপূর্ণ (ঠিক যেমন ডাউনলোড করা টেবিলে)।
 
-## Tutorials
+সমস্ত টেবিল ক্ষেত্র পূরণ করা বাধ্যতামূলক নয়। ভরাট ক্ষেত্রের উপর ভিত্তি করে প্রস্তুতকারক তৈরি করা হবে।
 
-- [Managing manufacturers in nopCommerce](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
+আমদানির জন্য প্রচুর মেমরি সম্পদ প্রয়োজন। এজন্য একবারে ৫০০ - ১০০০ এর বেশি রেকর্ড আমদানি করার সুপারিশ করা হয় না। আপনার যদি আরও রেকর্ড থাকে, সেগুলিকে একাধিক এক্সেল ফাইলে বিভক্ত করা এবং আলাদাভাবে আমদানি করা ভাল।
+
+## আরো দেখুন
+
+-[পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+-[এসইও](xref:bn/running-your-store/search-engine-optimization)
+
+## টিউটোরিয়াল
+
+- [নপকমার্স-এ নির্মাতাদের পরিচালনা করা](https://www.youtube.com/watch?v=NnWD9-zi8s4&feature=youtu.be)
