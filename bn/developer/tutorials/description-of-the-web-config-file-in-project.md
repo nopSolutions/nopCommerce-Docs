@@ -1,21 +1,21 @@
 ---
-title: Description of the web.config file in project
-uid: en/developer/tutorials/description-of-the-web-config-file-in-project
+title: প্রকল্পে web.config ফাইলের বর্ণনা
+uid: bn/developer/tutorials/description-of-the-web-config-file-in-project 
 author: nop.sea
-contributors: git.RomanovM, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Description of the web.config file in project
+# প্রকল্পে web.config ফাইলের বর্ণনা
 
-## What is web.config file
+## Web.config ফাইল কি
 
-`web.config` file is a xml based configuration file used in ASP.NET based application to manage various settings that concerned with configuration of our website. In this way we can separate our application logic from configuration logic. And the main benefit of this is, if we want to change some configuration settings then we do not need to restart our application to apply new changes, ASP.NET automatically detects the changes and applies them to the running ASP.NET application.
+`web.config` ফাইলটি একটি এক্সএমএল ভিত্তিক কনফিগারেশন ফাইল যা ASP.NET ভিত্তিক অ্যাপ্লিকেশনে ব্যবহৃত হয় যা আমাদের ওয়েবসাইটের কনফিগারেশনের সাথে সম্পর্কিত বিভিন্ন সেটিংস পরিচালনা করে। এভাবে আমরা আমাদের অ্যাপ্লিকেশন লজিককে কনফিগারেশন লজিক থেকে আলাদা করতে পারি। এবং এর প্রধান সুবিধা হল, যদি আমরা কিছু কনফিগারেশন সেটিংস পরিবর্তন করতে চাই তাহলে নতুন পরিবর্তনগুলি প্রয়োগ করার জন্য আমাদের অ্যাপ্লিকেশন পুনরায় চালু করার প্রয়োজন নেই, ASP.NET স্বয়ংক্রিয়ভাবে পরিবর্তনগুলি সনাক্ত করে এবং চলমান ASP.NET অ্যাপ্লিকেশনে প্রয়োগ করে।
 
-The ASP.NET framework uses a hierarchical configuration system. You can place a `web.config` file in any subdirectory of an application. The file then applies to any pages located in the same directory or any subdirectories.
+ASP.NET ফ্রেমওয়ার্ক একটি শ্রেণিবিন্যাস কনফিগারেশন সিস্টেম ব্যবহার করে। আপনি একটি অ্যাপ্লিকেশনের যেকোনো সাবডিরেক্টরিতে একটি `web.config` ফাইল রাখতে পারেন। ফাইলটি একই ডিরেক্টরি বা যেকোনো সাবডিরেক্টরিতে থাকা যেকোনো পৃষ্ঠায় প্রযোজ্য।
 
-## web.config for nopCommerce
+## নপকমার্স এর জন্য web.config
 
-nopCommerce uses web.config in `Nop.Web` project which can be found inside Presentation directory. In the root of the project directory, you can see a web.config file. If your solution is fresh installation of nopCommerce then the content of that file looks something like this:
+নপকমার্স `Nop.Web` প্রকল্পে web.config ব্যবহার করে যা প্রেজেন্টেশন ডিরেক্টরিতে পাওয়া যাবে। প্রজেক্ট ডাইরেক্টরির মূলে, আপনি একটি web.config ফাইল দেখতে পারেন। যদি আপনার সমাধান নপকমার্স এর নতুন ইনস্টলেশন হয় তবে সেই ফাইলের বিষয়বস্তু এইরকম কিছু দেখায়:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -62,7 +62,7 @@ nopCommerce uses web.config in `Nop.Web` project which can be found inside Prese
 </configuration>
 ```
 
-Every configuration rules goes inside "`<configuration>`" element.
+প্রতিটি কনফিগারেশন নিয়ম "`<configuration>`" এলিমেন্টের ভিতরে যায়।
 
 ```xml
 <system.webServer>
@@ -70,7 +70,7 @@ Every configuration rules goes inside "`<configuration>`" element.
 </system.webServer>
 ```
 
-The `<system.webServer>` element specifies the root element for many of the site-level and application-level configuration settings for IIS, and contains configuration elements that define the settings used by the Web server engine and modules.
+`<System.webServer>` উপাদানটি আইআইএস-এর জন্য অনেক সাইট-লেভেল এবং অ্যাপ্লিকেশন-লেভেল কনফিগারেশন সেটিংসের মূল উপাদান নির্দিষ্ট করে এবং কনফিগারেশন উপাদান থাকে যা ওয়েব সার্ভার ইঞ্জিন এবং মডিউল দ্বারা ব্যবহৃত সেটিংস সংজ্ঞায়িত করে।
 
 ```xml
 <modules>
@@ -79,11 +79,11 @@ The `<system.webServer>` element specifies the root element for many of the site
 </modules>
 ```
 
-The `<modules>` element defines the native-code modules and managed-code modules that are registered for an application. We commonly use modules to implement customized functionality.
+`<modules>` উপাদানটি একটি অ্যাপ্লিকেশনের জন্য নিবন্ধিত নেটিভ-কোড মডিউল এবং পরিচালিত-কোড মডিউল সংজ্ঞায়িত করে। আমরা সাধারণত কাস্টমাইজড কার্যকারিতা বাস্তবায়নের জন্য মডিউল ব্যবহার করি।
 
-The `<modules>` element contains a collection of `<add>`, `<remove>` and `<clear>` elements.
+`<modules>` এলিমেন্টে `<add>`, `<remove>` এবং `<clear>` এলিমেন্টের একটি সংগ্রহ রয়েছে।
 
-Here nopCommerce is using `<remove>` element to remove WebDAVModule module form the application.
+এখানে নপকমার্স অ্যাপ্লিকেশন ব্যবহার করে WebDAVModule মডিউল অপসারণ করতে `<remove>` উপাদান ব্যবহার করছে।
 
 ```xml
 <handlers>
@@ -93,9 +93,9 @@ Here nopCommerce is using `<remove>` element to remove WebDAVModule module form 
 </handlers>
 ```
 
-Handlers are Internet IIS components that are configured to process requests to specific content, typically to generate a response for the request resource. For example, an ASP.NET Web page is one type of handler. You can use handlers to process requests to any resource that needs to return information to users that is not a static file.
+হ্যান্ডলারগুলি হল ইন্টারনেট আইআইএস উপাদান যা নির্দিষ্ট বিষয়বস্তুতে অনুরোধ প্রক্রিয়া করার জন্য কনফিগার করা হয়, সাধারণত অনুরোধ রিসোর্সের জন্য একটি প্রতিক্রিয়া তৈরি করতে। উদাহরণস্বরূপ, ASP.NET ওয়েব পেজ হল এক ধরনের হ্যান্ডলার। আপনি হ্যান্ডলার ব্যবহার করতে পারেন এমন কোনো রিসোর্সে রিকোয়েস্ট প্রসেস করার জন্য যা ব্যবহারকারীদের তথ্য ফেরত দিতে হবে যা স্ট্যাটিক ফাইল নয়।
 
-The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clear>` elements, each of which defines a handler mapping for the application. The `<add>` element adds a handler to the collection of handlers, `<remove>` element removes a references of handler from the handlers collection and `<clear>` element removes all references of handlers from the handlers collection. Here in above code  "WebDAV" handler is removed and handler for module `AspNetCoreModuleV2` is added.
+`<handlers>` উপাদানটিতে `<add>`, `<remove>` এবং `<clear>` উপাদানগুলির একটি সংগ্রহ রয়েছে, যার প্রত্যেকটিই অ্যাপ্লিকেশনের জন্য একটি হ্যান্ডলার ম্যাপিং সংজ্ঞায়িত করে। `<add>` উপাদান হ্যান্ডলার সংগ্রহে একটি হ্যান্ডলার যোগ করে, `<remove>` উপাদান হ্যান্ডলার সংগ্রহ থেকে হ্যান্ডলারের একটি রেফারেন্স সরিয়ে দেয় এবং `<clear>` উপাদান হ্যান্ডলার সংগ্রহ থেকে হ্যান্ডলারের সমস্ত রেফারেন্স সরিয়ে দেয়। এখানে উপরের কোডে "WebDAV" হ্যান্ডলার সরানো হয়েছে এবং মডিউল `AspNetCoreModuleV2` এর জন্য হ্যান্ডলার যোগ করা হয়েছে।
 
 ```xml
 <aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600" hostingModel="InProcess"/>
@@ -123,19 +123,19 @@ The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clea
     </httpProtocol>
 ```
 
-The `<customHeaders>` element of the `<httpProtocol>` element specifies custom HTTP headers that IIS will return in HTTP responses from the Web server.
+`<httpProtocol>` উপাদানটির `<customHeaders>` উপাদান কাস্টম এইচটিটিপি হেডার নির্দিষ্ট করে যে আইআইএস ওয়েব সার্ভার থেকে এইচটিটিপি প্রতিক্রিয়াগুলিতে ফিরে আসবে।
 
-HTTP headers are name and value pairs that are returned in responses from a Web server. Custom response headers are sent to the client together with the default HTTP header. Unlike redirect response headers, which are returned in responses only when redirection occurs, custom response headers are returned in every response.
+এইচটিটিপি হেডার হল নাম এবং মান জোড়া যা একটি ওয়েব সার্ভার থেকে প্রতিক্রিয়াগুলিতে ফেরত দেওয়া হয়। ডিফল্ট এইচটিটিপি হেডার সহ ক্লায়েন্টকে কাস্টম রেসপন্স হেডার পাঠানো হয়। রিডাইরেক্ট রেসপন্স হেডারের বিপরীতে, যেগুলো রিডাইরেকশন হলেই রেসপন্সে ফেরত আসে, কাস্টম রেসপন্স হেডার প্রতিটি রেসপন্সে ফেরত দেওয়া হয়।
 
-## Configure the redirect rules in IIS
+## আইআইএস -এ পুননির্দেশিত নিয়ম কনফিগার করুন
 
-We can add other configurations additional to the above configurations. Here we will see how to configure redirect rules in IIS.
+আমরা উপরের কনফিগারেশনে অতিরিক্ত কনফিগারেশন যোগ করতে পারি। এখানে আমরা দেখব কিভাবে আইআইএস -এ পুননির্দেশিত নিয়ম কনফিগার করতে হয়।
 
-A redirect rule enables more than one URL to point to a single Web page. There may be several reasons why you want to redirect request to one server to another. For example, May be your company name is changed and you may want to register a new domain for your company and move your website to new domain, so in that case you may want to redirect all request from your old domain to new domain.
+একটি পুননির্দেশিত নিয়ম একাধিক ওয়েবকে একটি একক ওয়েব পেজে নির্দেশ করতে সক্ষম করে। আপনি একটি সার্ভারে অন্য সার্ভারে অনুরোধ পুননির্দেশিত করতে চান তার বিভিন্ন কারণ থাকতে পারে। উদাহরণস্বরূপ, আপনার কোম্পানির নাম পরিবর্তন করা হতে পারে এবং আপনি আপনার কোম্পানির জন্য একটি নতুন ডোমেইন নিবন্ধন করতে এবং আপনার ওয়েবসাইটকে নতুন ডোমেইনে স্থানান্তর করতে চাইতে পারেন, সেক্ষেত্রে আপনি আপনার পুরানো ডোমেইন থেকে সমস্ত অনুরোধ নতুন ডোমেইনে পুননির্দেশিত করতে চাইতে পারেন।
 
-In order for our website to be able to use redirect rules, we need to install URL rewrite module which is an extension to IIS.
+আমাদের ওয়েবসাইট পুননির্দেশিত নিয়মগুলি ব্যবহার করতে সক্ষম হওয়ার জন্য, আমাদের ইউআরএল পুনর্লিখন মডিউল ইনস্টল করতে হবে যা আইআইএসের একটি এক্সটেনশন।
 
-For demonstration purpose lets say we have to redirect request to our old site to our new site, for that we need to write following rules in our web.config file.
+বিক্ষোভের উদ্দেশ্যে বলা যাক আমাদের পুরনো সাইটের অনুরোধ আমাদের নতুন সাইটে রিডাইরেক্ট করতে হবে, এজন্য আমাদের web.config ফাইলে নিম্নলিখিত নিয়ম লিখতে হবে।
 
 ```xml
 <rewrite>
@@ -152,28 +152,28 @@ For demonstration purpose lets say we have to redirect request to our old site t
 ```
 
 > [!NOTE]
-> By using this rule we can redirect all pages of an old domain name to the same page on a new domain name.
+> এই নিয়মটি ব্যবহার করে আমরা একটি পুরানো ডোমেইন নামের সমস্ত পৃষ্ঠাগুলিকে একটি নতুন ডোমেইন নামের একই পৃষ্ঠায় পুননির্দেশ করতে পারি।
 
-Here we need to replacing [RULE NAME], [OLD URL] and [NEW URL] with the appropriate information.
+এখানে আমাদের উপযুক্ত নিয়ম দিয়ে [RULE NAME], [OLD URL] এবং [NEW URL] প্রতিস্থাপন করতে হবে।
 
-* [RULE NAME] can be any that thing like describes what this rule is doing
-* [OLD URL] is the old url you want to redirect from.
-* [NEW URL] is the new url you want to redirect to.
+* [RULE NAME] এই নিয়মটি কী করছে তা বর্ণনা করার মতো যে কোনও জিনিস হতে পারে।
+* [OLD URL] আপনি যে পুরানো ইউআরএল থেকে পুননির্দেশিত করতে চান।
+* [NEW URL] হল নতুন ইউআরএল যা আপনি পুনdনির্দেশিত করতে চান।
 
 ```xml
 <match url="(.*)" />
 ```
 
-The above element refers that this rule will match all URL string.
+উপরের উপাদানটি বোঝায় যে এই নিয়মটি সমস্ত ইউআরএল স্ট্রিংয়ের সাথে মিলবে।
 
 ```xml
 <add input="{HTTP_HOST}{REQUEST_URI}" pattern="[OLD URL]" />
 ```
 
-The element above adds a condition to the rule that retrieves the host and request uri header value by reading the server variable HTTP_HOST and REQUEST_URI and matches it against the pattern with value supplied for [OLD URL].
+উপরের উপাদানটি নিয়মে একটি শর্ত জুড়ে দেয় যা হোস্ট পুনরুদ্ধার করে এবং সার্ভার ভেরিয়েবল HTTP_HOST এবং REQUEST_URI পড়ে উরি হেডার মান অনুরোধ করে এবং [OLD URL] এর জন্য সরবরাহকৃত মান সহ প্যাটার্নের সাথে এটি মেলে।
 
 ```xml
 <action type="Redirect" url="http://[NEW URL]/{R:1}" redirectType="Permanent"/>
 ```
 
-This element redirects the matching old url to new url.
+এই উপাদানটি পুরানো ইউআরএল কে নতুন ইউআরএল- এ পুননির্দেশিত করে।

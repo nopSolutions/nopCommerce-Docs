@@ -1,13 +1,14 @@
 ---
-title: Exposing and Handling Events
-uid: en/developer/tutorials/events
+title: ইভেন্টগুলি প্রকাশ করা এবং পরিচালনা
+uid: bn/developer/tutorials/events
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Exposing and Handling Events
+# ইভেন্টগুলি প্রকাশ করা এবং পরিচালনা
 
-Events are notifications broadcasted to interested parties. Events are triggered on data changes like inserts, updates and deletes. nopCommerce allows developers to "listen" for events they might be interested in. There are two ways a developer will work with events. A developer will either want to publish events for listeners to consume, or subscribe to events other developers will have programmatically published.
+ইভেন্টগুলি আগ্রহী পক্ষের কাছে প্রচারিত বিজ্ঞপ্তি। ইভেন্টগুলি সন্নিবেশ, আপডেট এবং মুছে ফেলার মতো ডেটা পরিবর্তনের মাধ্যমে শুরু হয়। নপকমার্স ডেভেলপারদের যেসব ইভেন্টে তারা আগ্রহী হতে পারে তাদের "listen" অনুমতি দেয়। ডেভেলপাররা ইভেন্টগুলির সাথে কাজ করার দুটি উপায় আছে। একজন ডেভেলপার হয় শ্রোতাদের গ্রহনের জন্য ইভেন্টগুলি প্রকাশ করতে চান, অথবা অন্য ডেভেলপারদের প্রোগ্রামগতভাবে প্রকাশিত ইভেন্টগুলিতে সাবস্ক্রাইব করতে চান।
 
-1. To publish an event a developer will need to obtain an instance of **IEventPublisher** and call the **Publish** method with the appropriate event data.
-1. To listen for an event the developer will want to create a new implementation of the generic **IConsumer** interface. Once a new consumer implementation has been created nopCommerce uses reflection to find and register the implementation for event handling.
+১. একটি ইভেন্ট প্রকাশ করার জন্য একজন ডেভেলপারকে **IEventPublisher** এর একটি উদাহরণ পেতে হবে এবং উপযুক্ত ইভেন্ট ডেটা সহ **Publish** মেথডে কল করতে হবে।
+
+২. একটি ইভেন্ট শোনার জন্য ডেভেলপার জেনেরিক **IConsumer** ইন্টারফেসের একটি নতুন বাস্তবায়ন তৈরি করতে চাইবে। একবার একটি নতুন ভোক্তা বাস্তবায়ন তৈরি হয়ে গেলে নপকমার্স ইভেন্ট পরিচালনার জন্য বাস্তবায়ন খুঁজে পেতে এবং নিবন্ধনের জন্য প্রতিফলন ব্যবহার করে।

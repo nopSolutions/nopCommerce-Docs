@@ -1,155 +1,155 @@
 ﻿---
-title: Description of plugin system
-uid: en/developer/tutorials/description-of-plugin-system
+title: প্লাগইন সিস্টেমের বর্ণনা
+uid: bn/developer/tutorials/description-of-plugin-system
 author: git.nopsg
-contributors: git.nopsg, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Description of plugin system
+# প্লাগইন সিস্টেমের বর্ণনা
 
-## How to initialize a new Plugin system (How to create a new plugin project)
+## কীভাবে একটি নতুন প্লাগইন সিস্টেম শুরু করবেন (কীভাবে একটি নতুন প্লাগইন প্রকল্প তৈরি করবেন)
 
-nopCommerce uses plugins system to extend the functionality of nopCommerce store. Plugins are a set of independent programs or components which can be added to an existing system to extend some specific functionality and also can be removed from system without effecting the main system during the process.
+নপকমার্স দোকানের কার্যকারিতা বাড়ানোর জন্য নপকমার্স প্লাগইন সিস্টেম ব্যবহার করে। প্লাগইনগুলি স্বাধীন প্রোগ্রাম বা উপাদানগুলির একটি সেট যা কিছু নির্দিষ্ট কার্যকারিতা বাড়ানোর জন্য একটি বিদ্যমান সিস্টেমে যোগ করা যেতে পারে এবং প্রক্রিয়া চলাকালীন মূল সিস্টেমকে প্রভাবিত না করে সিস্টেম থেকে সরানো যেতে পারে।
 
 > [!NOTE]
-> For more information about how to create a plugin you can visit [**this page**.](xref:en/developer/plugins/index)
+> কিভাবে একটি প্লাগইন তৈরি করতে হয় সে সম্পর্কে আরও তথ্যের জন্য আপনি  দেখতে পারেন [**এই পৃষ্ঠাটি**](xref:bn/developer/plugins/index)
 
-## How to Search and use plugins from nopCommerce store
+## কিভাবে নপকমার্স দোকান থেকে প্লাগইন অনুসন্ধান এবং ব্যবহার করবেন
 
-nopCommerce already have several plugins pre built and available to use out of the box. You can also search and find several plugins already available from nopCommerce official store and see if someone has already created a plugin that suits your needs. If not then you always can build your won plugin according to your requirement. But here let's see how to find and use plugins from nopCommerce store. For that nopCommerce has a market place where we can find different themes and plugins. You can visit to go to the [nopCommerce Marketplace](https://www.nopcommerce.com/marketplace).
+নপকমার্স এ ইতিমধ্যেই বেশ কিছু প্লাগইন আছে যা আগে থেকেই তৈরি এবং বাক্সের বাইরে ব্যবহারের জন্য উপলব্ধ। আপনি নপকমার্স অফিসিয়াল স্টোর থেকে ইতিমধ্যে পাওয়া বেশ কয়েকটি প্লাগইন অনুসন্ধান এবং খুঁজে পেতে পারেন এবং দেখতে পারেন যে কেউ ইতিমধ্যে আপনার প্রয়োজন অনুসারে একটি প্লাগইন তৈরি করেছে কিনা। যদি তা না হয় তবে আপনি সর্বদা আপনার প্রয়োজন অনুসারে আপনার জিতে যাওয়া প্লাগইনটি তৈরি করতে পারেন। কিন্তু এখানে দেখা যাক কিভাবে নপকমার্স দোকান থেকে প্লাগইন খুঁজে বের করা যায় এবং ব্যবহার করা যায়। সেই জন্য নপকমার্স এর একটি বাজার জায়গা আছে যেখানে আমরা বিভিন্ন থিম এবং প্লাগইন খুঁজে পেতে পারি। আপনি এখানে যেতে ভিজিট করতে পারেন [nopCommerce Marketplace](https://www.nopcommerce.com/marketplace).
 
 ![image4](_static/description-of-plugin-system/image4.png)
 
-Here you can see three tabs. **All tab** contains all themes and extensions, **Themes tab** contains all nopCommerce themes which is for nopCommerce website skin, and lastly **Extensions tab** where we can find plugins. So go to Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. In the right side you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use plugin, in its download page, so don't forget to read those descriptions.
+এখানে আপনি তিনটি ট্যাব দেখতে পারেন। **All tab** সব থিম এবং এক্সটেনশন থাকে, **Themes tab** সব নপকমার্স থিম থাকে যা নপকমার্স ওয়েবসাইট স্কিনের জন্য, এবং সবশেষে **Extensions tab** যেখানে আমরা প্লাগইন খুঁজে পেতে পারি। সুতরাং এক্সটেনশন ট্যাবে যান। এখানে আপনি সমস্ত বিনামূল্যে এবং বাণিজ্যিক প্লাগইন খুঁজে পেতে পারেন। আপনি চান একটি নির্দিষ্ট প্লাগইন খুঁজে পেতে, আপনি এখান থেকে অনুসন্ধান করতে পারেন। ডানদিকে আপনি পরিস্রাবণ বিভাগটি খুঁজে পেতে পারেন যেখানে আপনি আপনার ফিল্টারিংকে সংকুচিত করতে পারেন। আপনার অনুসন্ধান করা প্লাগইনটি খুঁজে পাওয়ার পরে কেবল ডাউনলোড এবং ইনস্টল করুন। প্রতিটি প্লাগইন এর ডাউনলোড পৃষ্ঠায় কিভাবে প্লাগইন ব্যবহার করতে হয় তার সম্পূর্ণ বিবরণ আছে, তাই সেই বর্ণনাগুলি পড়তে ভুলবেন না।
 
-## Interface `IPlugin`
+## ইন্টারফেস `IPlugin`
 
-`IPlugin` is an interface that exposes the functionalities used while installing or uninstalling the plugin. Every plugin project must have a class that inherent form this interface in order for nopCommerce to treat that project as plugin.
+`IPlugin` হল একটি ইন্টারফেস যা প্লাগইন ইনস্টল বা আনইনস্টল করার সময় ব্যবহৃত কার্যকারিতা প্রকাশ করে। প্রতিটি প্লাগইন প্রকল্পের একটি শ্রেণী থাকতে হবে যা এই ইন্টারফেসটিকে অন্তর্নিহিত করে যাতে নপকমার্স সেই প্রকল্পটিকে প্লাগইন হিসাবে বিবেচনা করে।
 
-### Method `GetConfigurationPageUrl`
+### মেথড `GetConfigurationPageUrl`
 
 ```cs
 string GetConfigurationPageUrl()
 ```
 
-This should return the URL for configuration view. When we install the plugin we will see a `Configuration` button, so if we implement this method in our class then the string value we return form this method will be used as the URL for that `configuration` button.
+যখন আমরা প্লাগইনটি ইনস্টল করি তখন আমরা একটি `Configuration` বোতাম দেখতে পাব, তাই যদি আমরা এই পদ্ধতিটি আমাদের ক্লাসে প্রয়োগ করি তাহলে এই পদ্ধতিতে আমরা যে স্ট্রিং মানটি ফেরত দিই সেই `Configuration` বোতামের ইউআরএল হিসাবে ব্যবহার করা হবে।
 
-### Property `PluginDescriptor`
+### প্রপার্টি `PluginDescriptor`
 
 ```cs
 PluginDescriptor PluginDescriptor{ get; set; }
 ```
 
-This property is used to get or set the information that describes the current plugin. When we write a new plugin or widget we need to create a **plugin.json** file. nopCommerce uses the same file to initialize the value for this property.
+এই প্রপার্টি বর্তমান প্লাগইন বর্ণনা করে এমন তথ্য পেতে বা সেট করতে ব্যবহৃত হয়। যখন আমরা একটি নতুন প্লাগইন বা উইজেট লিখি তখন আমাদের একটি **plugin.json** ফাইল তৈরি করতে হবে। নপকমার্স এই প্রপার্টির মান শুরু করতে একই ফাইল ব্যবহার করে।
 
-### Method `InstallAsync`
+### মেথড `InstallAsync`
 
 ```cs
 Task InstallAsync();
 ```
 
-The method executed when the plugin is installed, this logic usually implements the initialization of settings, locales and other infrastructure for the correct configuration of the plugin.
+প্লাগইন ইনস্টল করার সময় যে পদ্ধতিটি কার্যকর করা হয়, এই যুক্তিটি সাধারণত প্লাগইনটির সঠিক কনফিগারেশনের জন্য সেটিংস, লোকেল এবং অন্যান্য অবকাঠামোর সূচনা প্রয়োগ করে।
 
-### Method `UninstallAsync`
+### মেথড `UninstallAsync`
 
 ```cs
 Task UninstallAsync();
 ```
 
-The method is the opposite of "InstallAsync", it should completely delete all resources allocated to the plugin after it is uninstalled.
+পদ্ধতিটি "InstallAsync" এর বিপরীত, এটি আনইনস্টল হওয়ার পরে প্লাগইনটিতে বরাদ্দ করা সমস্ত সম্পদ সম্পূর্ণরূপে মুছে ফেলা উচিত।
 
-### Method `UpdateAsync`
+### মেথড `UpdateAsync`
 
 ```cs
 Task UpdateAsync(string currentVersion, string targetVersion);
 ```
 
-The method is used to update the plugin to the specified version.
+পদ্ধতিটি নির্দিষ্ট সংস্করণে প্লাগইন আপডেট করতে ব্যবহৃত হয়।
 
-### Method `PreparePluginToUninstallAsync`
+### মেথড `PreparePluginToUninstallAsync`
 
 ```cs
 Task PreparePluginToUninstallAsync()
 ```
 
-This method will be invoked when we click `UninstallAsync` button for the plugin. Code inside this method will be executed before the nopCommerce uninstalls the plugin from system. In this method we may want to write the logic to validate our plugin from uninstallation. For example here we can check if there are other plugins which are depending on the plugin we are trying to uninstall. If so we may not want users to uninstall the plugin until the plugin depending on the current plugin is uninstalled.
+যখন আমরা প্লাগইনটির জন্য `UninstallAsync` বাটনে ক্লিক করি তখন এই পদ্ধতিটি চালু করা হবে। নপকমার্স সিস্টেম থেকে প্লাগইন আনইনস্টল করার আগে এই পদ্ধতির ভিতরে কোড কার্যকর করা হবে। এই পদ্ধতিতে আমরা আমাদের প্লাগইন আনইনস্টলেশন থেকে যাচাই করার জন্য যুক্তি লিখতে চাই। উদাহরণস্বরূপ এখানে আমরা অন্য প্লাগইন আছে কিনা তা পরীক্ষা করতে পারি যা প্লাগইন এর উপর নির্ভর করে আমরা আনইনস্টল করার চেষ্টা করছি। যদি তাই হয় তবে আমরা চাই না যে ব্যবহারকারীরা প্লাগইনটি আনইনস্টল করুন যতক্ষণ না প্লাগইনটি বর্তমান প্লাগইনটির উপর নির্ভর করে আনইনস্টল করা হয়।
 
-## Class `PluginDescriptor`
+## ক্লাস `PluginDescriptor`
 
-This class as name implies holds the information that describes about the plugin. If you compare the *properties* from this class to *key* from **plugin.json** file, you will see similar structure. That is because this class **PluginDescriptor.cs** is used to map that **plugin.json** file to C# class, so that the information provided in **plugin.json** can be used by nopCommerce. Except those properties `PluginDescriptor` class contains some more properties and helper methods like.
+নাম অনুসারে এই ক্লাসটি প্লাগইন সম্পর্কে বর্ণিত তথ্য ধারণ করে। আপনি যদি এই ক্লাসের *properties* কে **plugin.json** ফাইল থেকে *key* এর সাথে তুলনা করেন, তাহলে আপনি একই ধরনের গঠন দেখতে পাবেন। এর কারণ হল এই ক্লাস **PluginDescriptor.cs** সেই **plugin.json** ফাইলকে C# ক্লাসে ম্যাপ করতে ব্যবহৃত হয়, যাতে **plugin.json** এ প্রদত্ত তথ্য নপকমার্স ব্যবহার করতে পারে। সেই প্রপার্টিগুলি বাদ দিয়ে `PluginDescriptor` শ্রেণীতে আরও কিছু বৈশিষ্ট্য এবং সহায়ক পদ্ধতি রয়েছে।
 
-### Property `Installed`
+### প্রপার্টি `Installed`
 
 ```cs
 public virtual bool Installed { get; set; }
 ```
 
-This property is used to verify if plugin is installed in our nopCommerce application or not.
+এই প্রপার্টি আমাদের নপকমার্স অ্যাপ্লিকেশনে প্লাগইন ইনস্টল করা আছে কিনা তা যাচাই করতে ব্যবহৃত হয়।
 
-### Property `PluginType`
+### প্রপার্টি `PluginType`
 
 ```cs
 public virtual Type PluginType { get; set; }
 ```
 
-It is used to get or set the type of the plugin. This type reference the class that implements the `IPlugin` interface in the plugin project.
+এটি প্লাগিনের ধরন পেতে বা সেট করতে ব্যবহৃত হয়। এই প্রকারটি সেই ক্লাসের উল্লেখ করে যা প্লাগইন প্রকল্পে `IPlugin` ইন্টারফেস প্রয়োগ করে।
 
-### Property `OriginalAssemblyFile`
+### প্রপার্টি `OriginalAssemblyFile`
 
 ```cs
 public virtual string OriginalAssemblyFile { get; set; }
 ```
 
-It is used to get or set the original assembly file that a shadow copy was made from.
+এটি আসল অ্যাসেম্বলি ফাইলটি পেতে বা সেট করতে ব্যবহৃত হয় যা থেকে একটি ছায়া কপি তৈরি করা হয়েছিল।
 
-### Property `ReferencedAssembly`
+### প্রপার্টি `ReferencedAssembly`
 
 ```cs
 public virtual Assembly ReferencedAssembly { get; set; }
 ```
 
-It is to gets or sets the assembly that has been shadow copied that is active in the application.
+এটি এমন অ্যাসেম্বলি পেতে বা সেট করতে হয় যা ছায়ায় অনুলিপি করা হয়েছে যা অ্যাপ্লিকেশনটিতে সক্রিয়।
 
-### Property `ShowInPluginsList`
+### প্রপার্টি `ShowInPluginsList`
 
 ```cs
 public virtual bool ShowInPluginsList { get; set; } = true;
 ```
 
-This property is used to indicate whether we want to show the plugin in the plugin list or not.
+আমরা প্লাগইন তালিকায় প্লাগইন দেখাতে চাই কি না তা নির্দেশ করতে এই প্রপার্টি ব্যবহার করা হয়।
 
-### Method GetPluginDescriptorFromText
+### মেথড GetPluginDescriptorFromText
 
 ```cs
 public static PluginDescriptor GetPluginDescriptorFromText(string text)
 ```
 
-This method takes *json string* as input and parse the *json string* to type `PluginDescriptor`. And returns `PluginDescriptor` parsed from the *json string*.
+এই পদ্ধতিটি *json string* ইনপুট হিসেবে নেয় এবং *json string* বিশ্লেষণ করে `PluginDescriptor` টাইপ করে। এবং *json string* থেকে বিশ্লেষিত `PluginDescriptor` প্রদান করে।
 
-### Method `Save`
+### মেথড `Save`
 
 ```cs
 public virtual void Save()
 ```
 
-It is to save plugin description from `PluginDescriptor` to **plugin.json** file.
+এটি হল `PluginDescriptor` থেকে **plugin.json** ফাইলে প্লাগইন বর্ণনা সংরক্ষণ করা।
 
-### Method `CompareTo`
+### মেথড `CompareTo`
 
 ```cs
 public int CompareTo(PluginDescriptor other)
 ```
 
-It compares the current instance of `PluginDescriptor` with other instance of `PluginDescriptor` supplied in parameter by comparing the property *FriendlyName* And returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified parameter.
+এটি `PluginDescriptor` এর বর্তমান দৃষ্টান্তকে `PluginDescriptor` এর অন্যান্য উদাহরণের সাথে প্যারামিটারে সরবরাহকৃত প্রপার্টি *FriendlyName* এর সাথে তুলনা করে এবং একটি পূর্ণসংখ্যা প্রদান করে যা নির্দেশ করে যে এই দৃষ্টান্তটি নির্দিষ্ট প্যারামিটারের মতো সাজানোর ক্রমে একই অবস্থানের আগে, অনুসরণ, বা প্রদর্শিত হয় কিনা।
 
-### Method `Instance`
+### মেথড `Instance`
 
 ```cs
 public virtual TPlugin Instance<TPlugin>() where TPlugin : class, IPlugin
 ```
 
-This method is used to get the instance of *Plugin* of type `PluginType` property from the current `PluginDescriptor`.
+বর্তমান `PluginDescriptor` থেকে `PluginType` বৈশিষ্ট্যের *Plugin* এর উদাহরণ পেতে এই পদ্ধতি ব্যবহার করা হয়।
 
-## Interface `IPluginManager`
+## ইন্টারফেস। `IPluginManager`
 
-`IPluginManager` is a generic interface of type class. It contains method decelerations used for loading plugins using different filter parameters. We can find the implementation of this interface in `PluginManager` located under namespace `{Nop.Services.Plugins}`.
+`IPluginManager` টাইপ ক্লাসের একটি জেনেরিক ইন্টারফেস। এটি বিভিন্ন ফিল্টার প্যারামিটার ব্যবহার করে প্লাগইন লোড করার জন্য ব্যবহৃত পদ্ধতি হ্রাস করে। আমরা এই ইন্টারফেসের বাস্তবায়ন খুঁজে পেতে পারি `PluginManager` নেমস্পেস `{Nop.Services.Plugins}` এর অধীনে অবস্থিত।

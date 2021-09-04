@@ -430,7 +430,7 @@
           name: এন্টিটি ইভেন্ট এবং তারা কিভাবে কাজ করে
           href: developer/tutorials/entity-event.md
         - 
-          name: নিয়ন্ত্রণ ও নির্ভরতা ইনজেকশনের বিপরীত
+          name: ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন
           href: developer/tutorials/inversion-of-control.md
         - 
           name: আমি কিভাবে নতুন রুট নিবন্ধন করব?

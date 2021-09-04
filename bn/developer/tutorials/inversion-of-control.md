@@ -1,13 +1,13 @@
 ---
-title: Inversion of Control and Dependency Injection
-uid: en/developer/tutorials/inversion-of-control
+title: ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন
+uid: bn/developer/tutorials/inversion-of-control
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Inversion of Control and Dependency Injection
+# ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন
 
-Inversion of Control and Dependency Injection are two related ways to break apart dependencies in your applications. [Inversion of Control (IoC)](https://en.wikipedia.org/wiki/Inversion_of_control) means that objects do not create other objects on which they rely to do their work. Instead, they get the objects that they need from an outside source. [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection) means that this is done without the object intervention, usually by a framework component that passes constructor parameters and sets properties. Martin Fowler has written a great description of Dependency Injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). nopCommerce uses ASP.NET Core's built-in DI container, which is represented by the `IServiceProvider` interface. This container is responsible for mapping dependencies to specific types and for injecting dependencies into various objects. Once a service and an appropriate interface, which the service implements, are written you should register them in any class implementing the `IDependencyRegistrar` interface (`Nop.Core.Infrastructure.DependencyManagement` namespace). For example, all core nopCommerce services are registered in the **DependencyRegistrar** class located in the `Nop.Web.Framework` library.
+ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন আপনার অ্যাপ্লিকেশনে ডিপেন্ডেন্সি ভাঙার দুটি সম্পর্কিত উপায়। [ইনভার্শন অফ কন্ট্রোল (IoC)](https://en.wikipedia.org/wiki/Inversion_of_control) এর মানে হল যে অবজেক্টগুলি অন্য অবজেক্ট তৈরি করে না যার উপর তারা তাদের কাজ করার জন্য নির্ভর করে। পরিবর্তে, তারা একটি বাইরের উৎস থেকে তাদের প্রয়োজনীয় অবজেক্ট পায়। [ডিপেন্ডেন্সি ইনজেকশন (DI)](http://en.wikipedia.org/wiki/Dependency_injection) এর মানে হল যে এটি অবজেক্টর হস্তক্ষেপ ছাড়াই করা হয়, সাধারণত একটি কাঠামোর উপাদান দ্বারা যা কন্সট্রাকটর প্যারামিটার পাস করে এবং প্রপার্টি সেট করে। মার্টিন ফাউলার ডিপেন্ডেন্সি ইনজেকশন বা ইনভার্শন অফ কন্ট্রোলের একটি দুর্দান্ত বর্ণনা লিখেছেন। আমি তার কাজের নকল করতে যাচ্ছি না, এবং আপনি তার নিবন্ধটি খুঁজে পেতে পারেন [এখানে](https://martinfowler.com/articles/injection.html)। নপকমার্স ASP.NET Core এর অন্তর্নির্মিত DI কন্টেইনার ব্যবহার করে, যা `IServiceProvider` ইন্টারফেস দ্বারা প্রতিনিধিত্ব করে। এই ধারকটি নির্দিষ্ট ধরনের ডিপেন্ডেন্সি ম্যাপিং এবং বিভিন্ন বস্তুর উপর ডিপেন্ডেন্সি ইনজেকশনের জন্য দায়ী। একবার একটি সার্ভিস এবং একটি উপযুক্ত ইন্টারফেস, যা সার্ভিসটি প্রয়োগ করে, লেখা হলে আপনাকে তাদের `IDependencyRegistrar` ইন্টারফেস (`Nop.Core.Infrastructure.DependencyManagement` namespace) বাস্তবায়িত যেকোনো ক্লাসে নিবন্ধন করতে হবে। উদাহরণস্বরূপ, সমস্ত NopCommerce সার্ভিসগুলি `Nop.Web.Framework` লাইব্রেরিতে অবস্থিত **DependencyRegistrar** ক্লাসে নিবন্ধিত।
 
 ```csharp
     public class DependencyRegistrar : IDependencyRegistrar
@@ -20,4 +20,4 @@ Inversion of Control and Dependency Injection are two related ways to break apar
     }
 ```
 
-You can create as many dependency registrar classes as you need. Each class implementing **IDependencyRegistrar** interface has an **Order** property. It allows you to replace existing dependencies. To override nopCommerce dependencies, set the `Order` property to something greater than 0. nopCommerce orders dependency classes and runs them in ascending order. The higher the number the later your objects will be registered.
+আপনি আপনার প্রয়োজন মত অনেক ডিপেন্ডেন্সি রেজিস্ট্রার ক্লাস তৈরি করতে পারেন। **IDependencyRegistrar** ইন্টারফেস বাস্তবায়িত প্রতিটি ক্লাসের একটি **Order** প্রপার্টি আছে। এটি আপনাকে বিদ্যমান ডিপেন্ডেন্সিগুলি প্রতিস্থাপন করতে দেয়। নপকমার্স ডিপেন্ডেন্সিগুলিকে ওভাররাইড করার জন্য, `Order` প্রপার্টিটিকে ০ এর চেয়ে বড় কিছুতে সেট করুন। যত বেশি সংখ্যক পরে আপনার অবজেক্টগুলি নিবন্ধিত হবে।

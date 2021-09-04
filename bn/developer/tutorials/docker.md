@@ -1,122 +1,122 @@
 ---
-title: Docker
-uid: en/developer/tutorials/docker
+title: ডকার
+uid: bn/developer/tutorials/docker 
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Docker
+# ডকার
 
-This document describes a step-by-step guide to building and running a Docker container.
+এই ডকুমেন্ট একটি ডকার কন্টেইনার নির্মাণ এবং চালানোর জন্য ধাপে ধাপে নির্দেশিকা বর্ণনা করে।
 
-1. **Preparing for the deployment of virtual Docker** in Windows environment.
+১. **Preparing for the deployment of virtual Docker** উইন্ডোজ পরিবেশে।
 
-    You need to download and install the [Kitematic](https://kitematic.com/) application. This program will allow us to deploy a Linux virtual machine in VirtualBox with Docker installed and manage it from our main computer. After the first launch, we choose that we will work through VirtualBox and wait until the application installs and starts the virtual machine.
+আপনাকে [Kitematic](https://kitematic.com/) অ্যাপ্লিকেশনটি ডাউনলোড এবং ইনস্টল করতে হবে। এই প্রোগ্রামটি আমাদের ভার্চুয়ালবক্সে একটি লিনাক্স ভার্চুয়াল মেশিনকে ডকার ইনস্টল করা এবং আমাদের প্রধান কম্পিউটার থেকে এটি পরিচালনা করার অনুমতি দেবে। প্রথম লঞ্চের পরে, আমরা বেছে নিই যে আমরা ভার্চুয়ালবক্সের মাধ্যমে কাজ করব এবং অ্যাপ্লিকেশনটি ইনস্টল এবং ভার্চুয়াল মেশিন চালু না হওয়া পর্যন্ত অপেক্ষা করব।
 
-1. **Run the command shell** to the Docker via the [Kitematic](https://kitematic.com/)  interface. To do this, simply click on the inconspicuous button in the interface.
+২. **Run the command shell** [Kitematic](https://kitematic.com/) ইন্টারফেসের মাধ্যমে ডকারের কাছে। এটি করার জন্য, কেবল ইন্টারফেসের ইনকন্সপিকাওয়াস বোতামে ক্লিক করুন।
 
-    ![docker_1](_static/docker/docker_1.png)
+   ![docker_1](_static/docker/docker_1.png)
 
-    All further work will take place in the familiar PowerShell window.
+পরবর্তী সমস্ত কাজ পরিচিত পাওয়ারশেল উইন্ডোতে হবে।
 
-1. **We collect the Docker container**. For the convenience of executing commands, go to the directory where Dockerfile is located (the root directory of the nopCommerce source files).
+৩. **We collect the Docker container**. কমান্ডগুলি কার্যকর করার সুবিধার জন্য, ডকরিফিল যেখানে অবস্থিত সেই ডিরেক্টরিতে যান (নপকমার্স সোর্স ফাইলগুলির মূল ডিরেক্টরি)।
 
-    The command that we need:
+যে কমান্ডটি আমাদের প্রয়োজন:
 
-    ```csharp
-    [docker build -t nopcommerce .]
-    ```
+```csharp
+    docker build -t nopcommerce .]
+```
 
-    This command builds the container according to the instructions described in the "Dockerfile" file. The first launch of the assembly will take a lot of time, since it will require downloading two basic images for .Net Core applications.
+এই কমান্ডটি "Dockerfile" ফাইলে বর্ণিত নির্দেশাবলী অনুসারে ধারক তৈরি করে। সমাবেশের প্রথম প্রবর্তনে অনেক সময় লাগবে, যেহেতু এটি। .Net Core অ্যাপ্লিকেশনের জন্য দুটি মৌলিক ছবি ডাউনলোড করতে হবে।
 
-    The first image containing the SDK is required for the intermediate container, which will assemble the application by repairing all the dependencies, and then execute the process of publishing the `Nop.Web` application to a separate directory, from which you will create the resulting container with the name *nopcommerce* later (you can create an image without name, but the name is more convenient. To specify the name of the container during assembly, you must specify the flag [–t], as was done in our case).
+এসডিকে ধারণকারী প্রথম চিত্রটি অন্তর্বর্তী কন্টেইনারের জন্য প্রয়োজন, যা সমস্ত নির্ভরতা মেরামত করে অ্যাপ্লিকেশনটি একত্রিত করবে, এবং তারপর `Nop.Web` অ্যাপ্লিকেশনটি একটি পৃথক ডিরেক্টরিতে প্রকাশ করার প্রক্রিয়াটি সম্পাদন করবে, যেখান থেকে আপনি ফলাফল তৈরি করবেন *nopcommerce* নামের কন্টেইনারটি পরে )।
 
-    After installation, if everything went well, executing the next command:
+ইনস্টলেশনের পরে, যদি সবকিছু ঠিকঠাক হয় তবে পরবর্তী কমান্ডটি কার্যকর করুন:
 
-    ```csharp
-    [docker images]
-    ```
+```csharp
+[docker images]
+```
 
-    We should see something similar to this:
+আমাদের এর অনুরূপ কিছু দেখা উচিত:
 
-    ![docker_2](_static/docker/docker_2.png)
+   ![docker_2](_static/docker/docker_2.png)
 
-    This is a list of all loaded containers, among which we can easily see our container, it is created and ready to go.
+এটি সমস্ত লোড কন্টেইনারের একটি তালিকা, যার মধ্যে আমরা সহজেই আমাদের কন্টেইনার দেখতে পাচ্ছি, এটি তৈরি এবং যাওয়ার জন্য প্রস্তুত।
 
-1. **Run and test the container.**
+৪. **Run and test the container.**
 
-    First, let's start the container with the command:
+প্রথমে, কমান্ড দিয়ে কন্টেইনারটি শুরু করি:
 
-    ```csharp
+```csharp
     [docker run -d -p 80:80 nopcommerce]
-    ```
+```
 
-    This command will launch our container in the background (flag [-d]) and set port 80 from the container to port 80 of the host machine (flag [–p]).
+এই কমান্ডটি পটভূমিতে আমাদের কন্টেইনার চালু করবে (পতাকা [-d]) এবং কন্টেইনার থেকে পোর্ট ৮০ সেট করবে হোস্ট মেশিনের পোর্ট ৮০ (পতাকা [–p])।
 
-    > [!TIP]
-    >
-    > You can view the list of running containers using the next command:
-    >
-    > ```csharp
-    > [docker ps]
-    > ```
+> [!TIP]
+>
+> আপনি পরবর্তী কমান্ড ব্যবহার করে চলমান পাত্রে তালিকা দেখতে পারেন:
+>
+>```csharp
+> [docker ps]
+> ```
 
-    Since we are launching the docker through a virtual machine, we need to first get an IP address at which we can test the operation of the application. To do this, execute the command, which will start the redirection service and give us the IP address on which we can verify that the application has started.
+যেহেতু আমরা একটি ভার্চুয়াল মেশিনের মাধ্যমে ডকার চালু করছি, আমাদের প্রথমে একটি আইপি ঠিকানা পেতে হবে যেখানে আমরা অ্যাপ্লিকেশনটির কাজ পরীক্ষা করতে পারি। এটি করার জন্য, কমান্ডটি চালান, যা পুননির্দেশ পরিষেবাটি শুরু করবে এবং আমাদের আইপি ঠিকানা দেবে যার উপর আমরা যাচাই করতে পারি যে অ্যাপ্লিকেশনটি শুরু হয়েছে।
 
-    ```csharp
+```csharp
     [docker-machine ip]
-    ```
+```
 
-    Having clicked on this address, we should see the page with the installation of nopCommerce.
+এই ঠিকানায় ক্লিক করে, আমাদের নপকমার্স ইনস্টলেশন সহ পৃষ্ঠাটি দেখা উচিত।
 
-    ![docker_3](_static/docker/docker_3.png)
+   ![docker_3](_static/docker/docker_3.png)
 
-    This will be our verification that the container is being created, launched and successfully operating.
+এটি আমাদের যাচাই হবে যে কন্টেইনার তৈরি হচ্ছে, চালু হয়েছে এবং সফলভাবে কাজ করছে।
 
-1. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, ours and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
+৫. কাজ কেবল তখনই কাজ করবে যদি আপনার একটি এসকিউএল সার্ভার থাকে যা আমাদের কন্টেইনার অ্যাক্সেস করতে পারে। কিন্তু, একটি নিয়ম হিসাবে, আমাদের এবং ব্যবহারকারীর পরিবেশ সীমিত, তাই আমরা একটি লেআউট ফাইল প্রস্তুত করেছি যা আপনাকে এসকিউএল সার্ভার ধারণকারী কন্টেইনারের সাথে একত্রে নপকমার্স ধারক স্থাপনের অনুমতি দেবে।
 
-    To begin, stop all containers so as not to interfere. Use the command for this:
+শুরু করার জন্য, সমস্ত পাত্র বন্ধ করুন যাতে হস্তক্ষেপ না হয়। এই জন্য কমান্ড ব্যবহার করুন:
 
-    ```csharp
+```csharp
     [docker stop $ (docker ps -a -q)]
-    ```
+```
 
-    To deploy container composition, use the command:
+কন্টেইনারে রচনা স্থাপন করতে, কমান্ডটি ব্যবহার করুন:
 
-    ```csharp
+```csharp
     [docker-compose up -d]
-    ```
+```
 
-    This command uses the docker-compose.yml file for deployment, which describes the creation of two containers "nopcommerce_web" and "nopcommerce_database", which provide a bundle of applications and a database. Now we will get the IP address for the tests by executing the command:
+এই কমান্ডটি স্থাপনার জন্য docker-compose.yml ফাইলটি ব্যবহার করে, যা "nopcommerce_web" এবং "nopcommerce_database" দুটি কনটেইনার তৈরির বর্ণনা দেয়, যা অ্যাপ্লিকেশনগুলির একটি বান্ডেল এবং একটি ডাটাবেস প্রদান করে। এখন আমরা কমান্ডটি সম্পাদন করে পরীক্ষার জন্য আইপি ঠিকানা পাব:
 
-    ```csharp
+```csharp
     [docker-machine ip]
-    ```
+```
 
-    And by opening the page at this address in the browser, we will be able to test everything we want. To connect to the database server, we use the following data (as described in the docker-compose.yml file):
+এবং ব্রাউজারে এই ঠিকানায় পৃষ্ঠাটি খোলার মাধ্যমে আমরা যা চাই তা পরীক্ষা করতে সক্ষম হব। ডাটাবেস সার্ভারের সাথে সংযোগ করার জন্য, আমরা নিম্নলিখিত ডেটা ব্যবহার করি (docker-compose.yml ফাইলে বর্ণিত):
 
-    ```csharp
+```csharp
     Server name: nopcommerce_mssql_server
     User: sa
     Password: nopCommerce_db_password
-    ```
+```
 
-1. After testing is complete, you can remove all containers so that they do not interfere next time. Two commands will help to execute it:
-
-    ```csharp
-    [docker stop $ (docker ps -a -q)]
-    ```
-
-    and
-
-    ```csharp
-    [docker system prune -a]
-    ```
-
-## Docker Hub
-
-Starting from version nopCommerce 4.20, we publish the completed image on the github service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
+৬. পরীক্ষা শেষ হওয়ার পরে, আপনি সমস্ত পাত্রে অপসারণ করতে পারেন যাতে তারা পরের বার হস্তক্ষেপ না করে। দুটি কমান্ড এটি কার্যকর করতে সাহায্য করবে:
 
 ```csharp
-[docker pull nopcommerceteam/nopcommerce:latest]
+    [docker stop $ (docker ps -a -q)]
+```
+
+এবং
+
+```csharp
+    [docker system prune -a]
+```
+
+## ডকার হাব
+
+নপকমার্স ৪.২০ সংস্করণ থেকে শুরু করে, আমরা সম্পূর্ণ ছবিটি গিটহাব পরিষেবাতে প্রকাশ করি, আপনি [এই লিঙ্ক](https://hub.docker.com/r/nopcommerceteam/nopcommerce) দ্বারা উপলব্ধ সংস্করণগুলি পরীক্ষা করতে পারেন, অথবা সর্বশেষ সংস্করণটি ডাউনলোড করতে পারেন নিম্নলিখিত কমান্ড দিয়ে:
+
+```csharp
+    [docker pull nopcommerceteam/nopcommerce:latest]
 ```
