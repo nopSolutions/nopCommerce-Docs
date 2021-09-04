@@ -2,7 +2,7 @@
 title: ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন
 uid: bn/developer/tutorials/inversion-of-control
 author: git.AndreiMaz
-contributors: git.AfiaKhanom
+contributors: git.afiakhanom
 ---
 
 # ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন
