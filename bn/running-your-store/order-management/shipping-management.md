@@ -1,55 +1,55 @@
 ---
-title: Shipping management
-uid: en/running-your-store/order-management/shipping-management
+title: শিপিং ব্যবস্থাপনা
+uid: bn/running-your-store/order-management/shipping-management
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Shipping management
+# শিপিং ব্যবস্থাপনা
 
-To search for and view shipments go to **Sales → Shipments**.
+শিপমেন্ট অনুসন্ধান এবং দেখার জন্য **বিক্রয় → শিপমেন্ট** এ যান।
 
-## Shipment list
+## চালানের তালিকা
 
-![Shipment list](_static/shipping-management/order-shipment-list.jpg)
+![চালানের তালিকা](_static/shipping-management/order-shipment-list.jpg)
 
-The top area of the page enables you to search for a shipment by different search criteria:
+পৃষ্ঠার শীর্ষ এলাকা আপনাকে বিভিন্ন অনুসন্ধান মানদণ্ড অনুসারে একটি চালান অনুসন্ধান করতে সক্ষম করে:
 
-* **Start date** and **End date** for shipments created between these dates.
-* Enter the **Tracking number** if you want to find shipments with a certain tracking number.
-* Select the **Warehouse** for shipments sent from a specific warehouse.
-* Click the **Load not delivered** checkbox if you do not want to load already delivered items.
-* Use **Country, State/province, County/region, City** to search by a shipment destination.
-* Click **Load not shipped** checkbox if you do not want to load already shipped items.
+* এই তারিখগুলির মধ্যে তৈরি চালানের জন্য **শুরুর তারিখ** এবং **শেষ তারিখ**।
+* যদি আপনি একটি নির্দিষ্ট ট্র্যাকিং নম্বর দিয়ে চালান খুঁজে পেতে চান তবে **ট্র্যাকিং নম্বর** লিখুন।
+* একটি নির্দিষ্ট গুদাম থেকে পাঠানো চালানের জন্য **গুদাম** নির্বাচন করুন।
+* যদি আপনি ইতিমধ্যে বিতরণ করা আইটেমগুলি লোড করতে না চান তবে **লোড বিতরণ** চেকবক্সে ক্লিক করুন।
+* একটি চালান গন্তব্য অনুসন্ধানের জন্য **দেশ, রাজ্য/প্রদেশ, কাউন্টি/অঞ্চল, শহর** ব্যবহার করুন।
+* যদি আপনি ইতিমধ্যেই প্রেরিত আইটেমগুলি লোড করতে না চান তবে **লোড না পাঠানো** চেকবক্স ক্লিক করুন।
 
-Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print packaging receipts.
+নির্দিষ্ট শিপমেন্টগুলিকে **পাঠানো হিসাবে সেট করুন (নির্বাচিত)** অথবা **বিতরণ হিসাবে সেট করুন (নির্বাচিত)**। প্যাকেজিং রসিদ প্রিন্ট করতে আপনি **প্যাকেজিং স্লিপ (নির্বাচিত)** অথবা **মুদ্রণ প্যাকেজিং স্লিপ (সব)** করতে পারেন।
 
-In the list of shipments, a store owner can view all items of a shipment by clicking on ![expand](_static/shipping-management/order-shipment-expand.png) in the first column of the shipment.
+চালানের তালিকায়, একটি দোকানের মালিক চালানের প্রথম কলামে ![বিস্তৃত করা](_static/shipping-management/order-shipment-expand.png) এ ক্লিক করে একটি চালানের সমস্ত আইটেম দেখতে পারেন।
 
-## Shipment details
+## চালান বিবরণ
 
-If click on **View**, the *View shipment details* window will be opened, as follows:
+**ভিউ** এ ক্লিক করলে,*শিপমেন্টের বিবরণ দেখুন* উইন্ডো খোলা হবে, নিম্নরূপ:
 
-![Shipment details](_static/shipping-management/shipment-details.jpg)
+![চালান বিবরণ](_static/shipping-management/shipment-details.jpg)
 
-In this window you can:
+এই উইন্ডোতে আপনি করতে পারেন:
 
-* Proceed to the order.
-* Set a **Tracking number** for the shipment.
-* Add an **Admin comment** for internal use.
-* See the **Shipment total weight**.
-* Mark the shipment as **Shipped**.
-* Edit the **Date shipped**.
-* Mark the shipment as **Delivered**.
-* Edit the **Date delivered**.
-* **Print packaging slip**.
-* **Delete** the shipment.
+* অর্ডারে এগিয়ে যান।
+* চালানের জন্য একটি **ট্র্যাকিং নম্বর** সেট করুন।
+* অভ্যন্তরীণ ব্যবহারের জন্য একটি **অ্যাডমিন মন্তব্য** যোগ করুন।
+* **চালানের মোট ওজন** দেখুন।
+* চালানটি **শিপড** হিসাবে চিহ্নিত করুন।
+* **সম্পাদিত তারিখ** সম্পাদনা করুন।
+* চালানকে **বিতরণ করা** হিসাবে চিহ্নিত করুন।
+* **বিতরণ তারিখ** সম্পাদনা করুন।
+* **প্যাকেজিং স্লিপ প্রিন্ট করুন**।
+* **চালান মুছুন**।
 
-## Shipping settings
+## শিপিং সেটিংস
 
-To set up shipping visit the [Configure shipping](xref:en/getting-started/configure-shipping/index) section.
+শিপিং সেট আপ করার জন্য [কনফিগার শিপিং](xref:bn/getting-start/configure-shipping/index) বিভাগে যান।
 
-## See also
+## আরো দেখুন
 
-* [Orders](xref:en/running-your-store/order-management/orders)
-* [Adding products](xref:en/running-your-store/catalog/products/add-products)
+* [অর্ডার](xref:bn/running-your-store/order-management/orders)
+* [পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)

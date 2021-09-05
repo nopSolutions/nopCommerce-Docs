@@ -1,86 +1,86 @@
 ---
-title: Checkout attributes
-uid: en/running-your-store/order-management/checkout-attributes
+title: চেকআউট বৈশিষ্ট্য
+uid: bn/running-your-store/order-management/checkout-attributes
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Checkout attributes
+# চেকআউট বৈশিষ্ট্য
 
-Checkout attributes represent additional order information that is gathered during the final stage of the shopping process.
+চেকআউট বৈশিষ্ট্যগুলি অতিরিক্ত অর্ডারের তথ্য উপস্থাপন করে যা কেনাকাটা প্রক্রিয়ার শেষ পর্যায়ে সংগ্রহ করা হয়।
 
 > [!TIP]
 >
-> Using the checkout attributes shop owners can specify, for example, whether a bought product requires gift-wrapping or careful handling as in a case of fragile goods.
+> চেকআউট বৈশিষ্ট্যগুলি ব্যবহার করে দোকানের মালিকরা নির্দিষ্ট করতে পারেন, উদাহরণস্বরূপ, একটি কেনা পণ্যের জন্য উপহার-মোড়ক প্রয়োজন বা নাজুক পণ্যের ক্ষেত্রে সতর্কতার সাথে পরিচালনার প্রয়োজন।
 
-Checkout attributes are displayed on the shopping cart page and enable users to select them, if required, before the checkout.
+চেকআউট বৈশিষ্ট্য শপিং কার্ট পৃষ্ঠায় প্রদর্শিত হয় এবং ব্যবহারকারীদের চেকআউটের আগে প্রয়োজন হলে সেগুলি নির্বাচন করতে সক্ষম করে।
 
-To set up or edit checkout attributes, go to **Catalog → Attributes → Checkout attributes**.
+চেকআউট বৈশিষ্ট্যগুলি সেট আপ বা সম্পাদনা করতে, **ক্যাটালগ → বৈশিষ্ট্য → চেকআউট বৈশিষ্ট্য** এ যান।
 
-![Checkout attributes](_static/checkout-attributes/list.jpg)
+![চেকআউট বৈশিষ্ট্যগুলি](_static/checkout-attributes/list.jpg)
 
-You can select checkout attributes and click the **Delete (selected)** button to delete them.
+আপনি চেকআউট বৈশিষ্ট্যগুলি নির্বাচন করতে পারেন এবং তাদের মুছে ফেলার জন্য **মুছুন (নির্বাচিত)** বাটনে ক্লিক করতে পারেন।
 
-## Add a new checkout attribute
+## একটি নতুন চেকআউট বৈশিষ্ট্য যুক্ত করুন
 
-To create a new checkout attribute, click **Add new**. The *Add a new checkout attribute* window will be displayed, as follows:
+একটি নতুন চেকআউট বৈশিষ্ট্য তৈরি করতে, **নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন চেকআউট বৈশিষ্ট্য যুক্ত করুন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-![Add a new checkout attributes](_static/checkout-attributes/add-new.jpg)
+![একটি নতুন চেকআউট বৈশিষ্ট্য যুক্ত করুন](_static/checkout-attributes/add-new.jpg)
 
-This page is available in two modes: **advanced** and **basic**. Switch to the basic mode which displays the only main fields or use the advanced mode displaying all the available fields.
+এই পৃষ্ঠাটি দুটি মোডে উপলব্ধ: **উন্নত** এবং **মৌলিক**। মৌলিক মোডে স্যুইচ করুন যা শুধুমাত্র প্রধান ক্ষেত্র প্রদর্শন করে অথবা সমস্ত উপলব্ধ ক্ষেত্র প্রদর্শন করে উন্নত মোড ব্যবহার করে।
 
-In the *Attribute info* panel, define the following information:
+*অ্যাট্রিবিউট তথ্য* প্যানেলে, নিম্নলিখিত তথ্য সংজ্ঞায়িত করুন:
 
-- **Name** - the attribute name.
-- **Text prompt** - a question or a comment that will be displayed in the checkout area on the shopping cart page.
-- From the **Control type** dropdown list, select the required method for displaying the attribute value: *Dropdown list*, *Radio button list*, *Checkboxes*, *Textbox*, etc.
+- **নাম** - বৈশিষ্ট্যের নাম।
+- **টেক্সট প্রম্পট** - একটি প্রশ্ন বা একটি মন্তব্য যা শপিং কার্ট পৃষ্ঠায় চেকআউট এলাকায় প্রদর্শিত হবে।
+- **কন্ট্রোল টাইপ** ড্রপডাউন তালিকা থেকে, বৈশিষ্ট্য মান প্রদর্শনের জন্য প্রয়োজনীয় পদ্ধতি নির্বাচন করুন:*ড্রপডাউন তালিকা*,*রেডিও বোতাম তালিকা*,*চেকবক্স*,*টেক্সটবক্স*, ইত্যাদি।
   > [!NOTE]
   >
-  > Dropdown lists, radio lists, checkboxes and color squares require the store owner to define values (such as Green, Blue, Red and so on). *Textbox* and *Date picker* control types do not require the store owner to define values since customers will be requested to fill these textbox fields. In addition, for some control types, you can specify validation rules. For example: for the *Textbox* attribute, you can define the **Minimum length**, **Maximum length** and **Default value**. For the *File upload* attribute, you can define **Allowed file extension** and **Maximum file size (KB)**.
+  > ড্রপডাউন তালিকা, রেডিও তালিকা, চেকবক্স এবং রঙের স্কোয়ারের জন্য দোকানের মালিককে মান নির্ধারণ করতে হবে (যেমন সবুজ, নীল, লাল ইত্যাদি)। *টেক্সটবক্স* এবং *ডেট পিকার* কন্ট্রোল টাইপের জন্য স্টোরের মালিককে মান নির্ধারণ করতে হয় না কারণ গ্রাহকদের এই টেক্সটবক্স ফিল্ডগুলো পূরণ করার জন্য অনুরোধ করা হবে। উপরন্তু, কিছু নিয়ন্ত্রণ প্রকারের জন্য, আপনি যাচাইকরণের নিয়ম নির্দিষ্ট করতে পারেন। উদাহরণস্বরূপ:*টেক্সটবক্স*বৈশিষ্ট্যের জন্য, আপনি **সর্বনিম্ন দৈর্ঘ্য**, **সর্বোচ্চ দৈর্ঘ্য** এবং **ডিফল্ট মান** নির্ধারণ করতে পারেন। *ফাইল আপলোড*বৈশিষ্ট্যের জন্য, আপনি **অনুমোদিত ফাইল এক্সটেনশন** এবং **সর্বোচ্চ ফাইলের আকার(কেবি)** নির্ধারণ করতে পারেন।
 
-- Tick the **Required** checkbox if selecting an attribute value is required before completing the purchasing process.
-- **Display order** - display order number of the checkout attribute.
-- Tick **Shippable product required** checkbox in case this attribute should only be displayed for product that needs to be shipped.
-- Ticked **Tax exempt** checkbox indicates that tax will not be applied to this checkout attribute.
-- In case the tax is applied, from the **Tax category** dropdown list, select the checkout attribute tax category.
-- **Limited to stores** enables you to limit the attribute to one or more stores.
+- ক্রয় প্রক্রিয়া শেষ করার আগে একটি বৈশিষ্ট্য মান নির্বাচন করা প্রয়োজন হলে **প্রয়োজনীয়** চেকবক্সে টিক দিন।
+- **ডিসপ্লে অর্ডার** - চেকআউট বৈশিষ্ট্যের অর্ডার নম্বর প্রদর্শন করুন।
+- টিপ করুন **শিপেবল প্রোডাক্ট প্রয়োজন** চেকবক্সের ক্ষেত্রে যদি এই অ্যাট্রিবিউটটি শুধুমাত্র সেই প্রোডাক্টের জন্য প্রদর্শিত হয় যা প্রেরণের প্রয়োজন হয়।
+- টিক করা **ট্যাক্স অব্যাহতি** চেকবক্স নির্দেশ করে যে এই চেকআউট বৈশিষ্ট্যটিতে কর প্রয়োগ করা হবে না।
+- যদি কর প্রয়োগ করা হয়, **ট্যাক্স বিভাগ** ড্রপডাউন তালিকা থেকে, চেকআউট বৈশিষ্ট্য কর বিভাগ নির্বাচন করুন।
+- **দোকানে সীমাবদ্ধ** আপনাকে এক বা একাধিক দোকানে বৈশিষ্ট্য সীমাবদ্ধ করতে সক্ষম করে।
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-Click **Save and continue edit** to proceed to the *Attribute values* panel (if applicable).
+**সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** অ্যাট্রিবিউট ভ্যালু*প্যানেলে (যদি প্রযোজ্য হয়) ক্লিক করুন।
 
-### Add a new checkout attribute value
+### একটি নতুন চেকআউট বৈশিষ্ট্য মান যোগ করুন
 
-In the *Attribute values* panel, click **Add a new checkout attribute value** to create a new attribute value.
+*অ্যাট্রিবিউট ভ্যালু* প্যানেলে, একটি নতুন অ্যাট্রিবিউট মান তৈরি করতে **একটি নতুন চেকআউট অ্যাট্রিবিউট মান যোগ করুন** ক্লিক করুন।
 
-![Add a new checkout attribute value](_static/checkout-attributes/value.jpg)
+![একটি নতুন চেকআউট বৈশিষ্ট্য মান যোগ করুন](_static/checkout-attributes/value.jpg)
 
-In the *Add a new checkout attribute value* window, define the following information:
+*একটি নতুন চেকআউট বৈশিষ্ট্য মান যোগ করুন* উইন্ডোতে, নিম্নলিখিত তথ্য সংজ্ঞায়িত করুন:
 
-- **Name** - the attribute value name.
+- **নাম** - বৈশিষ্ট্যের মান নাম।
   > [!TIP]
   >
-  > For example, *Yes* or *No*, for questions such as "Do you require fragile care handling"?
+  > উদাহরণস্বরূপ, *হ্যাঁ* বা *না*, "আপনার কি ভঙ্গুর যত্নের ব্যবস্থাপনা প্রয়োজন" এর মতো প্রশ্নের জন্য?
 
-- **Price adjustment** will add the entered amount to a purchase total sum in case the attribute value is selected.
-- **Weight adjustment** will change an order weight by the entered amount in case the attribute value is selected.
-- Tick the **Pre-selected** checkbox, to indicate the attribute value is pre-selected for a customer.
-- **Display order** - display order number of the attribute value.
+- **মূল্য সমন্বয়** অ্যাট্রিবিউট মান নির্বাচিত হলে ক্রয়ের মোট যোগফল প্রবেশ করা পরিমাণ যোগ করবে।
+- **ওজন সমন্বয়** অ্যাট্রিবিউট মান নির্বাচিত হলে প্রবেশকৃত পরিমাণ দ্বারা অর্ডারের ওজন পরিবর্তন করবে।
+- একটি গ্রাহকের জন্য অ্যাট্রিবিউট মানটি আগে থেকে নির্বাচিত হওয়ার জন্য **পূর্বনির্ধারিত** চেকবক্সে টিক দিন।
+- **ডিসপ্লে অর্ডার** - অ্যাট্রিবিউট ভ্যালুর অর্ডার নম্বর প্রদর্শন করুন।
 
-You can **Edit** and **Delete** attribute values by clicking the corresponding buttons beside the attributes in the *Attribute values* panel.
+আপনি*এট্রিবিউট ভ্যালু* প্যানেলে অ্যাট্রিবিউটের পাশে সংশ্লিষ্ট বোতামে ক্লিক করে **এডিট** এবং **ডিলিট** অ্যাট্রিবিউট ভ্যালু করতে পারেন।
 
-![attribute_values](_static/checkout-attributes/attribute_values.png)
+![গুণ_ মান](_static/checkout-attributes/attribute_values.png)
 
-## Add a condition
+## একটি শর্ত যোগ করুন
 
-In the *Condition* panel, a store owner can specify a condition for the checkout attribute to be visible (depending on other attributes). Conditional attribute only appears if a previous attribute is selected.
+*কন্ডিশন* প্যানেলে, দোকানের মালিক চেকআউট অ্যাট্রিবিউট দৃশ্যমান হওয়ার জন্য একটি শর্ত নির্দিষ্ট করতে পারেন (অন্যান্য বৈশিষ্ট্যের উপর নির্ভর করে)। পূর্ববর্তী বৈশিষ্ট্য নির্বাচন করা হলেই শর্তসাপেক্ষ বৈশিষ্ট্যটি উপস্থিত হয়।
 
-![condition](_static/checkout-attributes/condition.png)
+![শর্ত](_static/checkout-attributes/condition.png)
 
-Click **Save**. The the new attribute will be displayed on the shopping cart page in the public store.
+**সেভ** ক্লিক করুন। নতুন বৈশিষ্ট্যটি পাবলিক স্টোরে শপিং কার্ট পৃষ্ঠায় প্রদর্শিত হবে।
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Adding checkout attributes](https://www.youtube.com/watch?v=sJcZP1qjHmY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=3)
-- [Overview of conditional checkout attributes](https://www.youtube.com/watch?v=z3UiXgK8Jgo&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=18)
+- [চেকআউট বৈশিষ্ট্য যোগ করা](https://www.youtube.com/watch?v=sJcZP1qjHmY&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=3)
+- [শর্তাধীন চেকআউট বৈশিষ্ট্যের ওভারভিউ](https://www.youtube.com/watch?v=z3UiXgK8Jgo&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=18)

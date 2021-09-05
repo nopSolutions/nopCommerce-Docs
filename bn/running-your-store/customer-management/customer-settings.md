@@ -41,7 +41,7 @@ contributors: git.MDRashedKhanMenon
   > যদি **গ্রাহকদের উপহার কার্ডের ব্যালেন্স চেক করার অনুমতি দেয়** ক্ষেত্রটি চেক করা হয়, তাহলে অ্যাডমিন এলাকায় ক্যাপচা সেটিং সক্ষম করতে হবে (**কনফিগারেশন → সেটিংস → সাধারণ সেটিংস AP ক্যাপচা প্যানেল**)। এই বৈশিষ্ট্যটি সম্ভাব্যভাবে নিরাপদ নয় এবং ব্রুটফোর্স প্রতিরোধ এবং জটিল করার জন্য ক্যাপচা প্রয়োজন। আরো বিস্তারিত জানার জন্য [ক্যাপচা সেটিংস](xref:bn/getting-start/advanced-configuration/security-settings#captcha) দেখুন।
 
 *অ্যাকাউন্ট পৃষ্ঠায় পাবলিক স্টোরে **গ্রাহকদের টাইম জোন নির্বাচন করার অনুমতি দিতে হবে কিনা তা চয়ন করুন। অন্যথায়, ডিফল্ট টাইম জোন ব্যবহার করা হয়।
-*ড্রপডাউন তালিকা থেকে **ডিফল্ট স্টোর টাইম জোন** নির্বাচন করুন।
+*ড্রপডাউন তালিকা থেকে**ডিফল্ট স্টোর টাইম জোন** নির্বাচন করুন।
    > [!NOTE]
    >
    > বর্তমান সময় অঞ্চল স্বয়ংক্রিয়ভাবে প্রদর্শিত হয়।
@@ -55,9 +55,11 @@ contributors: git.MDRashedKhanMenon
 **পাসওয়ার্ডের সর্বনিম্ন দৈর্ঘ্য সেট করুন, পাসওয়ার্ডে কমপক্ষে একটি ছোট হাত থাকতে হবে, পাসওয়ার্ডে কমপক্ষে একটি বড় হাতের অক্ষর থাকতে হবে, পাসওয়ার্ডে কমপক্ষে একটি অ অক্ষরবিশিষ্ট অক্ষর থাকতে হবে, পাসওয়ার্ডের জটিলতা পরিবর্তন করতে পাসওয়ার্ডের কমপক্ষে একটি অঙ্ক থাকতে হবে**
 **অনুপযুক্ত পাসওয়ার্ড নম্বর** এমন একটি পাসওয়ার্ড যা পূর্ববর্তী পাসওয়ার্ডের মতো নয়।
 *নিম্নরূপ **ডিফল্ট পাসওয়ার্ড ফরম্যাট** নির্বাচন করুন:
-  * *পরিষ্কার*
-  * *হ্যাশড*
-  * *এনক্রিপ্ট করা*
+
+* *পরিষ্কার*
+* *হ্যাশড*
+* *এনক্রিপ্ট করা*
+
   > [!NOTE]
   > 
   > এই সেটিংটি গ্রাহকদের পাসওয়ার্ড সংরক্ষণের জন্য এবং শুধুমাত্র নতুন নিবন্ধিত গ্রাহকদের জন্য প্রযোজ্য হবে।
@@ -85,90 +87,93 @@ contributors: git.MDRashedKhanMenon
   * **গ্রাহকদের তাদের ব্যবহারকারীর নাম পরিবর্তন করার অনুমতি দিন**: যদি গ্রাহকদের তাদের ব্যবহারকারীর নাম পরিবর্তন করার অনুমতি দেওয়া হয় তবে এই বিকল্পটি নির্বাচন করুন।
   * **গ্রাহকদের ব্যবহারকারীর নামগুলির প্রাপ্যতা যাচাই করার অনুমতি দিন**: *আমার অ্যাকাউন্ট - গ্রাহক তথ্য*পৃষ্ঠায় *সংরক্ষণ করুন* বাটনে ক্লিক করার আগে গ্রাহকদের ব্যবহারকারীর নাম প্রাপ্যতা যাচাই করার অনুমতি দেওয়ার জন্য এই বিকল্পটি নির্বাচন করুন। এই ক্ষেত্রে **চেক প্রাপ্যতা** বাটন প্রদর্শিত হয়, নিচের উদাহরণ দেখুন।
 
-![Check availability button](_static/customer-settings/check-availability-button.jpg)
+![প্রাপ্যতা বাটন চেক করুন](_static/customer-settings/check-availability-button.jpg)
 
-* Tick the **Username validation is enabled** field if you want to enable username validation (when registering or changing on the "My account" page in the public store). When this checkbox is selected, the following options are displayed:
-  * **Username validation rule**: set the validation rule for a username in this field. You can specify a list of allowed characters or a regular expression. If you use a regular expression check the **Use regex for username validation** field described below.
-  * Check the **Use regex for username validation** field to use a regular expression for username validation (when registering or changing on the "My account" page in the public store).
-* Select the **Customer name format**, as follows:
-  * *Show emails*
-  * *Show usernames*
-  * *Show full names*
-  * *Show first name*
-  The customer name will be shown in the store next to the customer's news and blog comments, on the forum pages and others.
-* Check the **Phone number validation is enabled** checkbox if you want to enable phone number validation (when registering or changing on the "My account" page in the public store). When this checkbox is selected, the following options are displayed:
-  * **Phone number validation rule**: set the validation rule for a phone number in this field. You can specify a list of allowed characters or a regular expression. If you use a regular expression check the **Use regex for username validation** field described below.
-  * Check the **Use regex for phone number validation** field to use a regular expression for phone number validation (when registering or changing on the "My account" page in the public store).
-* **Allow customers to upload avatars**: the customers' avatars will be shown in the store next to their news and blog comments, on the forum pages and others. If this option is selected, the following checkbox is displayed:
-  * Tick the **Default avatar enabled** checkbox, to display the default user avatars.
-* Tick the **Hide 'Downloadable products' tab** checkbox, to hide this tab on the "My account" page.
-* Tick the **Hide 'Back in stock subscriptions' tab** checkbox, to hide this tab on the "My account" page.
-* Tick the **Hide newsletter box** checkbox if you do not want to display the newsletter subscription box.
-* Tick the **Newsletter box. Allow to unsubscribe** checkbox to display "unsubscribe" option in the newsletter block. For example, it's required in Germany.
-* Tick the **Store last visited page** checkbox, to store the customer's last visited page. You can then view the last visited pages by different customers on the **Customers → Online customers** page. You can untick this checkbox, to improve the site performance.
-* Tick the **Store IP address** checkbox, to store the last IP address of customers. When disabled, it can improve performance.
+* আপনি যদি ব্যবহারকারীর নাম যাচাইকরণ সক্ষম করতে চান **ব্যবহারকারীর নাম যাচাইকরণ সক্ষম** ক্ষেত্রটিতে টিক দিন (পাবলিক স্টোরে "আমার অ্যাকাউন্ট" পৃষ্ঠায় নিবন্ধন বা পরিবর্তন করার সময়)। যখন এই চেকবক্স নির্বাচন করা হয়, নিম্নলিখিত বিকল্পগুলি প্রদর্শিত হয়:
+  ***ব্যবহারকারীর নাম যাচাইকরণের নিয়ম**: এই ক্ষেত্রে একটি ব্যবহারকারীর নামের জন্য বৈধতা নিয়ম সেট করুন। আপনি অনুমোদিত অক্ষরের একটি তালিকা বা একটি নিয়মিত অভিব্যক্তি নির্দিষ্ট করতে পারেন। আপনি যদি রেগুলার এক্সপ্রেশন ব্যবহার করেন তাহলে **ব্যবহারকারীর নাম যাচাই করার জন্য রিজেক্স ব্যবহার করুন** ক্ষেত্রটি নীচে বর্ণিত।
+  *ব্যবহারকারীর নাম যাচাইকরণের জন্য রিজেক্স ব্যবহার করুন **ব্যবহারকারীর নাম যাচাইকরণের জন্য নিয়মিত অভিব্যক্তি ব্যবহার করতে** (পাবলিক স্টোরে "আমার অ্যাকাউন্ট" পৃষ্ঠায় নিবন্ধন বা পরিবর্তন করার সময়) পরীক্ষা করুন।
+**গ্রাহকের নাম বিন্যাস** নির্বাচন করুন, নিম্নরূপ:
+  * *ইমেলগুলি দেখান*
+  * *ব্যবহারকারীর নাম দেখান*
+  * *পুরো নাম দেখান*
+  * *প্রথম নাম দেখান*
+  গ্রাহকের নাম স্টোরটিতে গ্রাহকের খবর এবং ব্লগ মন্তব্যের পাশে, ফোরাম পৃষ্ঠায় এবং অন্যান্যগুলিতে দেখানো হবে।
+**ফোন নম্বর যাচাইকরণ সক্ষম** চেকবক্স চেক করুন যদি আপনি ফোন নম্বর যাচাইকরণ সক্ষম করতে চান (পাবলিক স্টোরে "আমার অ্যাকাউন্ট" পৃষ্ঠায় নিবন্ধন বা পরিবর্তন করার সময়)। যখন এই চেকবক্স নির্বাচন করা হয়, নিম্নলিখিত বিকল্পগুলি প্রদর্শিত হয়:
+  **ফোন নম্বর যাচাইকরণ নিয়ম**: এই ক্ষেত্রে একটি ফোন নম্বরের জন্য বৈধতা নিয়ম সেট করুন। আপনি অনুমোদিত অক্ষরের একটি তালিকা বা একটি নিয়মিত অভিব্যক্তি নির্দিষ্ট করতে পারেন। আপনি যদি রেগুলার এক্সপ্রেশন ব্যবহার করেন তাহলে **ব্যবহারকারীর নাম যাচাই করার জন্য রিজেক্স ব্যবহার করুন** ক্ষেত্রটি নীচে বর্ণিত।
+  *ফোন নম্বর যাচাইকরণের জন্য রেগেক্স ব্যবহার করুন ** ফোন নম্বর যাচাইকরণের জন্য নিয়মিত অভিব্যক্তি ব্যবহার করতে (পাবলিক স্টোরে "আমার অ্যাকাউন্ট" পৃষ্ঠায় নিবন্ধন বা পরিবর্তন করার সময়) পরীক্ষা করুন।
+***গ্রাহকদের অবতার আপলোড করার অনুমতি দিন**: গ্রাহকদের অবতারগুলি তাদের সংবাদ এবং ব্লগ মন্তব্যের পাশে স্টোরটিতে দেখানো হবে, ফোরাম পৃষ্ঠায় এবং অন্যান্যগুলিতে। এই বিকল্পটি নির্বাচিত হলে, নিম্নলিখিত চেকবক্সটি প্রদর্শিত হবে:
+* ডিফল্ট ব্যবহারকারী অবতার প্রদর্শন করতে **ডিফল্ট অবতার সক্ষম** চেকবক্সে টিক দিন।
+* "আমার অ্যাকাউন্ট" পৃষ্ঠায় এই ট্যাবটি আড়াল করতে **লুকানো 'ডাউনলোডযোগ্য পণ্য' ট্যাব** চেকবক্সে টিক দিন।
+* "আমার অ্যাকাউন্ট" পৃষ্ঠায় এই ট্যাবটি লুকানোর জন্য **হাইড 'স্টক সাবস্ক্রিপশন' ট্যাব** চেকবক্সে টিক দিন।
+* নিউজলেটার সাবস্ক্রিপশন বক্স প্রদর্শন করতে না চাইলে **লুকান নিউজলেটার বক্স** চেকবক্সে টিক দিন।
+* **নিউজলেটার বক্সে টিক দিন। আনসাবস্ক্রাইব করার অনুমতি দিন** নিউজলেটার ব্লকে "আনসাবস্ক্রাইব" অপশন প্রদর্শনের জন্য চেকবক্স। উদাহরণস্বরূপ, জার্মানিতে এটি প্রয়োজন।
+* গ্রাহকের সর্বশেষ পরিদর্শন করা পৃষ্ঠাটি সংরক্ষণ করতে **স্টোর সর্বশেষ দেখা পৃষ্ঠা** চেকবক্সে টিক দিন। এরপর আপনি **গ্রাহক → অনলাইন গ্রাহক** পৃষ্ঠায় বিভিন্ন গ্রাহকদের দ্বারা সর্বশেষ পরিদর্শন করা পৃষ্ঠাগুলি দেখতে পারেন। সাইটের কর্মক্ষমতা উন্নত করতে আপনি এই চেকবক্সটি আনটিক করতে পারেন।
+*গ্রাহকদের শেষ আইপি ঠিকানা সংরক্ষণ করতে **স্টোর আইপি ঠিকানা** চেকবক্সে টিক দিন। অক্ষম হলে, এটি কর্মক্ষমতা উন্নত করতে পারে।
 
-## Profile
+## প্রোফাইল
 
-![profile](_static/customer-settings/customersettings4.png)
+![প্রোফাইল](_static/customer-settings/customersettings4.png)
 
-* **Allow viewing of customer profiles**: this setting enables to see the details of other customers in the public store.
-* Tick the **Show customers location** checkbox if required.
-* Tick the **Show customers join date** checkbox if required.
+* **গ্রাহকের প্রোফাইল দেখার অনুমতি দিন**: এই সেটিং পাবলিক স্টোরে অন্যান্য গ্রাহকদের বিবরণ দেখতে সক্ষম করে।
+* প্রয়োজনে **গ্রাহকদের অবস্থান দেখান** চেকবক্সে টিক দিন।
+* প্রয়োজনে **গ্রাহকদের যোগদান তারিখ দেখান** চেকবক্সে টিক দিন।
 
-## Customer form fields
-In the *Customer form fields* panel, define whether the following form fields are enabled in the system:
+## গ্রাহক ফর্ম ক্ষেত্র
 
-![customerformfields](_static/customer-settings/customersettings5.png)
+*গ্রাহক ফর্ম ক্ষেত্র* প্যানেলে, নিম্নলিখিত ফর্ম ক্ষেত্রগুলি সিস্টেমে সক্ষম কিনা তা নির্ধারণ করুন:
 
-* **'Gender' enabled**
-* **'First name' enabled**. When enabled, you can also decide whether this field should be required.
-* **'Last name' enabled**. When enabled, you can also decide whether this field should be required.
-* **'Date of Birth' enabled.** When enabled, you can also decide whether this field should be required and enter a minimum allowed age (for example, to ensure that a customer is above 18).
-* **'Company' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Street address' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Street address 2' enabled**, if the second street address is enabled. When enabled, you can also decide whether this field should be required.
-* **'Zip/postal code' enabled**. When enabled, you can also decide whether this field should be required.
-* **'City' enabled.** When enabled, you can also decide whether this field should be required.
-* **'County/region' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Country' enabled.** When enabled, you can also decide whether this field should be required.
-* **'State/province' enabled.** When enabled, you can also decide whether this field should be required. Note: This field is visible only when the **Country** field is enabled.
-* **'Phone number' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Fax number' enabled.** When enabled, you can also decide whether this field should be required.
-* Tick the **'Accept privacy policy' enabled** checkbox, to request customers to accept the privacy policy during the registration.
-* Tick the **'Newsletter' enabled** checkbox to offer customers a newsletter subscription during the registration. 
-  * When the **'Newsletter' enabled** checkbox is selected, the **Newsletter ticked by default** checkbox is displayed. This automatically sets the 'Newsletter' checkbox on the registration page as ticked.
+![গ্রাহক ফর্ম ক্ষেত্র](_static/customer-settings/customersettings5.png)
 
-### Custom customer attributes 
-If the default form fields are not enough for your requirements, you can manage additional customer attributes using this table. Customer attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout attributes](xref:bn/running-your-store/order-management/checkout-attributes).
+* **'লিঙ্গ' সক্ষম**
+* **'প্রথম নাম' সক্ষম** সক্রিয় করা হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'শেষ নাম' সক্ষম** সক্রিয় করা হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'জন্ম তারিখ' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন এবং ন্যূনতম অনুমোদিত বয়স লিখতে পারেন (উদাহরণস্বরূপ, একজন গ্রাহকের বয়স 18 এর উপরে তা নিশ্চিত করার জন্য)।
+* **'কোম্পানি' সক্ষম।** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'রাস্তার ঠিকানা' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'রাস্তার ঠিকানা ২' সক্ষম**, যদি দ্বিতীয় রাস্তার ঠিকানা সক্রিয় থাকে। সক্রিয় করা হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'জিপ/পোস্টাল কোড' সক্ষম** সক্রিয় করা হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'সিটি' সক্ষম।** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'কাউন্টি/অঞ্চল' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'দেশ' সক্ষম।** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* রাজ্য/প্রদেশ সক্ষম। দ্রষ্টব্য: এই ক্ষেত্রটি কেবল তখনই দৃশ্যমান হয় যখন **দেশ** ক্ষেত্র সক্রিয় থাকে।
+* **'ফোন নম্বর' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'ফ্যাক্স নম্বর' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* নিবন্ধন চলাকালীন গোপনীয়তা নীতি গ্রহণ করার জন্য গ্রাহকদের অনুরোধ করার জন্য **'গোপনীয়তা নীতি গ্রহণ করুন' সক্ষম** চেকবক্সে টিক দিন।
+*নিবন্ধনের সময় গ্রাহকদের একটি নিউজলেটার সাবস্ক্রিপশন দেওয়ার জন্য **'নিউজলেটার' সক্ষম** চেকবক্সে টিক দিন।
+  *যখন **'নিউজলেটার' সক্ষম** চেকবক্স নির্বাচন করা হয়, **ডিফল্টরূপে টিক দেওয়া নিউজলেটার** চেকবক্স প্রদর্শিত হয়। এটি স্বয়ংক্রিয়ভাবে নিবন্ধন পৃষ্ঠায় 'নিউজলেটার' চেকবক্সটি টিক হিসাবে সেট করে।
 
-![Custom customer attributes](_static/customer-settings/customersettings6.png)
+### কাস্টম গ্রাহকের বৈশিষ্ট্য
 
-## Address form fields
-In the *Address form fields* panel, a store owner can manage the address form fields available during the registration. You can select which fields are enabled and required among the following:
+যদি আপনার প্রয়োজনীয়তার জন্য ডিফল্ট ফর্ম ক্ষেত্রগুলি পর্যাপ্ত না হয়, তাহলে আপনি এই টেবিলটি ব্যবহার করে অতিরিক্ত গ্রাহক বৈশিষ্ট্যগুলি পরিচালনা করতে পারেন। গ্রাহক বৈশিষ্ট্যগুলি চেকআউট বৈশিষ্ট্যগুলির মতোই তৈরি করা হয়। আরও বিস্তারিত জানার জন্য, [চেকআউট বৈশিষ্ট্য](xref:bn/running-your-store/order-management/checkout-attributes) পড়ুন।
 
-![Address form fields](_static/customer-settings/customersettings7.png)
+![কাস্টম গ্রাহকের বৈশিষ্ট্য](_static/customer-settings/customersettings6.png)
 
-* **'Company' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Street address' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Street address 2' enabled**, if the second street address is enabled. When enabled, you can also decide whether this field should be required.
-* **'Zip/postal code' enabled**. When enabled, you can also decide whether this field should be required.
-* **'City' enabled.** When enabled, you can also decide whether this field should be required.
-* **'County/region' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Country' enabled.** When enabled, you can also decide whether this field should be required.
-* **'State/province' enabled.** When enabled, you can also decide whether this field should be required. Note: This field is visible only when the **Country** field is enabled.
-* **'Phone number' enabled.** When enabled, you can also decide whether this field should be required.
-* **'Fax number' enabled.** When enabled, you can also decide whether this field should be required.
+## ঠিকানা ফর্ম ক্ষেত্র
 
-### Custom address attributes
+*ঠিকানা ফর্ম ক্ষেত্র* প্যানেলে, একজন দোকান মালিক নিবন্ধনের সময় উপলব্ধ ঠিকানা ফর্ম ক্ষেত্রগুলি পরিচালনা করতে পারেন। আপনি নিম্নলিখিতগুলির মধ্যে কোন ক্ষেত্রগুলি সক্ষম এবং প্রয়োজনীয় তা নির্বাচন করতে পারেন:
+![ঠিকানা ফর্ম ক্ষেত্র](_static/customer-settings/customersettings7.png)
+
+* **'কোম্পানি' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'রাস্তার ঠিকানা' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'রাস্তার ঠিকানা ২' সক্ষম**, যদি দ্বিতীয় রাস্তার ঠিকানা সক্রিয় থাকে। সক্রিয় করা হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'জিপ/পোস্টাল কোড' সক্ষম** সক্রিয় করা হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'সিটি' সক্ষম।** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'কাউন্টি/অঞ্চল' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'দেশ' সক্ষম।** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* রাজ্য/প্রদেশ সক্ষম। দ্রষ্টব্য: এই ক্ষেত্রটি কেবল তখনই দৃশ্যমান হয় যখন **দেশ** ক্ষেত্র সক্রিয় থাকে।
+* **'ফোন নম্বর' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+* **'ফ্যাক্স নম্বর' সক্ষম** সক্ষম হলে, আপনি এই ক্ষেত্রের প্রয়োজন হবে কিনা তাও সিদ্ধান্ত নিতে পারেন।
+
+### কাস্টম অ্যাড্রেস অ্যাট্রিবিউট
+
 > [!NOTE]
 > 
-> If the default address fields are not enough for your requirements, you can manage additional address attributes using this table. Address attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout Attributes](xref:bn/running-your-store/order-management/checkout-attributes).
+> যদি ডিফল্ট ঠিকানা ক্ষেত্রগুলি আপনার প্রয়োজনীয়তার জন্য যথেষ্ট না হয়, তাহলে আপনি এই টেবিলটি ব্যবহার করে অতিরিক্ত ঠিকানা বৈশিষ্ট্যগুলি পরিচালনা করতে পারেন। ঠিকানার বৈশিষ্ট্যগুলি চেকআউট বৈশিষ্ট্যগুলির মতোই তৈরি করা হয়। আরো বিস্তারিত জানার জন্য, [চেকআউট বৈশিষ্ট্য](xref:bn/running-your-store/order-management/checkout-attributes) পড়ুন।
 
-![Custom address attributes](_static/customer-settings/customersettings8.png)
+![কাস্টম ঠিকানা বৈশিষ্ট্য](_static/customer-settings/customersettings8.png)
 
-Click **Save** in the top of the page.
+পৃষ্ঠার শীর্ষে **সেভ** ক্লিক করুন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Configuring password settings](https://www.youtube.com/watch?v=TwWArXNi0CA)
+* [পাসওয়ার্ড সেটিংস কনফিগার করা](https://www.youtube.com/watch?v=TwWArXNi0CA)

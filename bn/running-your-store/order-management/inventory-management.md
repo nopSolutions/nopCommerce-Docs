@@ -1,113 +1,119 @@
 ---
-title: Inventory management
-uid: en/running-your-store/order-management/inventory-management
+title: ইনভেন্টরি ম্যানেজমেন্ট
+uid: bn/running-your-store/order-management/inventory-management
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Inventory management
+# ইনভেন্টরি ম্যানেজমেন্ট
 
-Inventory management is a system of stock level controlling. In nopCommerce it consists of setting up the inventory and tracking low stocks.
+ইনভেন্টরি ম্যানেজমেন্ট হল স্টক লেভেল কন্ট্রোলিং এর একটি সিস্টেম। NopCommerce এ এটি ইনভেন্টরি সেট আপ এবং কম স্টক ট্র্যাকিং নিয়ে গঠিত।
 
-To set up inventory, go to **Catalog → Products → Edit a product**. In the *Edit product details* window, go to the *Inventory* panel. In this panel you can choose one of three inventory methods:
-1. [Don't track inventory](#dont-track-inventory)
-1. [Track inventory](#track-inventory)
-1. [Track inventory by product attributes](#track-inventory-by-product-attributes)
+তালিকা সেট করতে, **ক্যাটালগ → পণ্য একটি পণ্য সম্পাদনা করুন** এ যান। *পণ্যের বিবরণ সম্পাদনা করুন* উইন্ডোতে, *ইনভেন্টরি* প্যানেলে যান। এই প্যানেলে আপনি তিনটি ইনভেন্টরি পদ্ধতির মধ্যে একটি বেছে নিতে পারেন:
 
-In the next sections we will see the difference between these methods.
+১। [ইনভেন্টরি ট্র্যাক করবেন না](#dont-track-inventory)
 
-## Don't track inventory
-Some products may not require inventory tracking. For example, services, second hand or custom-made goods. In this case, a store owner can opt for no tracking, by choosing the *Don't track inventory* option in the **Inventory method** field. 
-![Don't track inventory](_static/inventory-management/inventory.png)
+২। [ইনভেন্টরি ট্র্যাক করবেন](#track-inventory)
 
-In this case, the store owner can define:
-- **Warehouse** which will be used when calculating shipping rates. Read more in the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) chapter.
-- **Minimum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 3 to only allow customers to purchase 3 or more of this product.
-- **Maximum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 5 to only allow customers to purchase 5 of this product.
-- In the **Allowed quantities** field, enter a comma separated list of quantities you want this product to be restricted to. Instead of a quantity textbox that allows them to enter any quantity, they will receive a dropdown list of the values you enter here.
-- Tick the **Not returnable** checkbox if this product is not returnable. In this case a customer won't be allowed to submit a return request.
+৩। [পণ্যের গুণাবলী অনুসারে তালিকা ট্র্যাক করুন](#track-inventory-by-product-attributes)
 
-## Track inventory
-In case inventory tracking is required, the shop owner can select an **Inventory method** between two options: *Track inventory* (by product) or *Track inventory by product attributes*. The *Track inventory* option is for those who don't have product variants, and simply need to know how many items are left. In this section we will describe the *Track inventory* option.
-Once this option is chosen, the section expands displaying new fields:
+পরবর্তী বিভাগগুলিতে আমরা এই পদ্ধতিগুলির মধ্যে পার্থক্য দেখতে পাব।
 
-![Track inventory](_static/inventory-management/track-inventory.jpg)
+## ইনভেন্টরি ট্র্যাক করবেন না
 
-Set up inventory, as follows:
-* **Stock quantity** is the total quantity. It is reduced every time when an order is shipped.
-* Choose the **Warehouse** which will be used when calculating shipping rates. You can manage warehouses on the **Configuration → Shipping → Warehouses** page. For further details refer to the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) page.
-* Tick the **Multiple warehouses** checkbox if you want to support shipping and inventory management from multiple warehouses. This way you can manage inventory per warehouse:
-  ![Multiple warehouses](_static/inventory-management/multiple-warehouses.jpg)
-    Click **Use** in the appropriate row if you want to use this warehouse for the product.
-    * Enter the **Stock qty** what is the total quantity. It is reduced every time when an order is shipped.
-    * Enter the **Reserved qty** what is the product quantity that is ordered but not shipped or added to a shipment yet.
-    * The **Planned qty** is the product quantity that is ordered and already added to a shipment but not shipped yet.
+কিছু পণ্যের জন্য ইনভেন্টরি ট্র্যাকিংয়ের প্রয়োজন নাও হতে পারে। উদাহরণস্বরূপ, পরিষেবা, সেকেন্ড হ্যান্ড বা কাস্টম-তৈরি পণ্য। এই ক্ষেত্রে, একটি দোকানের মালিক **ইনভেন্টরি পদ্ধতি** ক্ষেত্রের মধ্যে *ট্র্যাক ইনভেন্টরি* বিকল্পটি বেছে নিয়ে কোন ট্র্যাকিং করতে পারে না।
+![ইনভেন্টরি ট্র্যাক করবেন না](_static/inventory-management/inventory.png)
 
-* To prevent customers from placing orders and finding out that the product is out of stock, you can take certain actions. Tick the **Display availability** checkbox, to display stock availability in the public store.
-  * If required, tick the **Display stock quantity** checkbox, to enable customers to see a product stock quantity on the product details page (this checkbox is displayed only when the **Display availability** checkbox is ticked). The following screenshot demonstrates what a customer will see in the public store:
-      
-      ![Availability](_static/inventory-management/stock-quantity.png)
+এই ক্ষেত্রে, দোকান মালিক সংজ্ঞায়িত করতে পারেন:
 
-* In the **Minimum stock qty** field, enter a minimum value, under which further actions will be taken.
-* From the **Low stock activity** dropdown list, select the action to be taken when the stock quantity falls below the minimum stock quantity value, as follows:
-  * **Nothing**: store owners can still choose to not take any action. It means that customers can continue to order products.
-  * **Disable buy button**: the buy button becomes disabled when stock is low. Therefore, customers cannot buy this product but can still see it existing in the store.
-  * **Unpublish**: the product is not visible in the store anymore. Used when the product is going to be stopped entirely.
+- **গুদাম** যা শিপিং হার গণনা করার সময় ব্যবহার করা হবে। [গুদামগুলি](xref:bn/getting-start/configure-shipping/advanced-configuration/warehouses) অধ্যায়ে আরও পড়ুন।
+- **ন্যূনতম কার্ট পরিমাণ** একটি গ্রাহকের শপিং কার্টে অনুমোদিত পরিমাণ যেমন ৩ তে সেট করুন শুধুমাত্র গ্রাহকদের এই পণ্যটির ৩ বা তার বেশি কেনার অনুমতি দেয়।
+- **সর্বোচ্চ কার্ট পরিমাণ** একটি গ্রাহকের শপিং কার্টে অনুমোদিত পরিমাণ যেমন সেট ৫ শুধুমাত্র গ্রাহকদের এই পণ্য ৫ কিনতে অনুমতি দেয়।
+- **অনুমোদিত পরিমাণ** ক্ষেত্রের মধ্যে, আপনি যে পরিমাণ পণ্যগুলি সীমাবদ্ধ রাখতে চান তার একটি কমা দ্বারা পৃথক করা তালিকা লিখুন। একটি পরিমাণ পাঠ্যবাক্সের পরিবর্তে যা তাদের যেকোন পরিমাণে প্রবেশ করতে দেয়, তারা এখানে যে মানগুলি প্রবেশ করে তার একটি ড্রপডাউন তালিকা পাবে।
+- যদি এই পণ্যটি ফেরতযোগ্য না হয় তবে **ফেরতযোগ্য নয়** চেকবক্সে টিক দিন। এই ক্ষেত্রে একজন গ্রাহককে রিটার্নের অনুরোধ জমা দেওয়ার অনুমতি দেওয়া হবে না।
 
-* In the **Notify for qty below** field, enter a value under which a notification email will be sent to the administrator.
-* Store owners can set up **Backorders**, i.e. orders that can not be fulfilled at the moment of purchase. From the backorders dropdown list, select the required backorder mode, as follows:
-  * **No backorders**: customers can't purchase this product when there is no stock available.
-  * **Allow qty below 0**: customers can purchase this product even when there is no stock available.
-  * **Allow qty below 0 and notify customer**: customers can purchase this product even when there is no stock available. In addition, they get a notification with the following message: *Out of stock - on backorder and will be dispatched once in stock (**Display availability** option should be also enabled in this case)*.
+## ট্র্যাক ইনভেন্টরি
 
-* Tick **Allow back in stock subscriptions**, to enable customers to subscribe for a notification about product availability, as on the screenshot below:
+যদি ইনভেন্টরি ট্র্যাকিং প্রয়োজন হয়, দোকানের মালিক দুটি বিকল্পের মধ্যে একটি **ইনভেন্টরি পদ্ধতি** বেছে নিতে পারেন: *ট্র্যাক ইনভেন্টরি* বিকল্পটি তাদের জন্য, যাদের প্রোডাক্ট ভেরিয়েন্ট নেই, এবং শুধু জানতে হবে কতগুলো আইটেম বাকি আছে। এই বিভাগে আমরা *ট্র্যাক ইনভেন্টরি* বিকল্পটি বর্ণনা করব।
+একবার এই বিকল্পটি নির্বাচিত হলে, বিভাগটি নতুন ক্ষেত্র প্রদর্শন করে প্রসারিত করে:
+
+![ট্র্যাক ইনভেন্টরি](_static/inventory-management/track-inventory.jpg)
+
+নিম্নরূপ তালিকা সেট করুন:
+
+**স্টক পরিমাণ** মোট পরিমাণ। অর্ডার প্রেরণের সময় এটি প্রতিবার হ্রাস পায়।
+***গুদাম** বেছে নিন যা শিপিং রেট গণনার সময় ব্যবহার করা হবে। আপনি **কনফিগারেশন → শিপিং → গুদাম** পৃষ্ঠায় গুদাম পরিচালনা করতে পারেন। আরও তথ্যের জন্য [গুদামগুলি](xref:bn/getting-start/configure-shipping/advanced-configuration/warehouses) পৃষ্ঠাটি দেখুন।
+আপনি একাধিক গুদাম থেকে শিপিং এবং ইনভেন্টরি ম্যানেজমেন্ট সমর্থন করতে চাইলে **একাধিক গুদাম** চেকবক্সে টিক দিন। এইভাবে আপনি প্রতি গুদামে ইনভেন্টরি পরিচালনা করতে পারেন:
+  ![একাধিক গুদাম](_static/inventory-management/multiple-warehouses.jpg)
+    পণ্যের জন্য এই গুদামটি ব্যবহার করতে চাইলে উপযুক্ত সারিতে **ব্যবহার করুন** ক্লিক করুন।
+    **স্টক পরিমাণ** মোট পরিমাণ কত? অর্ডার প্রেরণের সময় এটি প্রতিবার হ্রাস পায়।
+    *প্রবেশ করুন **সংরক্ষিত পরিমাণ** পণ্যের পরিমাণ যা অর্ডার করা হয়েছে কিন্তু এখনও পাঠানো হয়নি বা একটি চালানে যোগ করা হয়নি।
+    ***পরিকল্পিত পরিমাণ** হল পণ্যের পরিমাণ যা অর্ডার করা হয়েছে এবং ইতিমধ্যে একটি চালানে যোগ করা হয়েছে কিন্তু এখনও পাঠানো হয়নি।
+
+*গ্রাহকদের অর্ডার দেওয়া থেকে বিরত রাখতে এবং পণ্যটি স্টকের বাইরে আছে তা খুঁজে বের করতে, আপনি কিছু পদক্ষেপ নিতে পারেন। পাবলিক স্টোরে স্টক প্রাপ্যতা প্রদর্শনের জন্য **ডিসপ্লে প্রাপ্যতা** চেকবক্সে টিক দিন।
+  *যদি প্রয়োজন হয়, **ডিসপ্লে স্টক পরিমাণ** চেকবক্সে টিক দিন, যাতে গ্রাহকরা পণ্যের বিবরণ পৃষ্ঠায় একটি পণ্যের স্টক পরিমাণ দেখতে সক্ষম হন (এই চেকবক্সটি তখনই প্রদর্শিত হয় যখন **ডিসপ্লে প্রাপ্যতা** চেকবক্স টিক দেওয়া থাকে)। নিচের স্ক্রিনশটটি দেখায় যে একজন গ্রাহক পাবলিক স্টোরে কী দেখতে পাবেন:
+
+      ![উপস্থিতি](_static/inventory-management/stock-quantity.png)
+
+***ন্যূনতম স্টক পরিমাণ** ক্ষেত্রের মধ্যে, একটি ন্যূনতম মান লিখুন, যার অধীনে আরও পদক্ষেপ নেওয়া হবে।
+***নিম্ন স্টক কার্যকলাপ** ড্রপডাউন তালিকা থেকে, যখন স্টক পরিমাণ ন্যূনতম স্টক পরিমাণের নীচে নেমে আসে তখন নেওয়া পদক্ষেপগুলি নির্বাচন করুন, নিম্নরূপ:
+  ***কিছুই না**: দোকানের মালিকরা এখনও কোন পদক্ষেপ না নেওয়ার সিদ্ধান্ত নিতে পারেন। এর মানে হল যে গ্রাহকরা পণ্য অর্ডার করতে পারেন।
+  ***কিনুন বোতাম অক্ষম করুন**: স্টক কম থাকলে কিনুন বোতামটি অক্ষম হয়ে যায়। অতএব, গ্রাহকরা এই পণ্যটি কিনতে পারেন না কিন্তু এখনও এটি দোকানে বিদ্যমান দেখতে পারেন।
+  ***অপ্রকাশিত**: পণ্যটি আর দোকানে দেখা যায় না। ব্যবহার করা হয় যখন পণ্য সম্পূর্ণরূপে বন্ধ হয়ে যাচ্ছে।
+
+**নিচের পরিমাণের জন্য বিজ্ঞপ্তি** ক্ষেত্রের মধ্যে, একটি মান লিখুন যার অধীনে প্রশাসকের কাছে একটি বিজ্ঞপ্তি ইমেল পাঠানো হবে।
+*দোকানের মালিকরা **ব্যাকঅর্ডার** সেট করতে পারেন, অর্থাৎ ক্রয়ের মুহূর্তে যে অর্ডারগুলি পূরণ করা যাবে না। ব্যাকঅর্ডার ড্রপডাউন তালিকা থেকে, প্রয়োজনীয় ব্যাকঅর্ডার মোড নির্বাচন করুন, নিম্নরূপ:
+  **কোন ব্যাকঅর্ডার নেই**: স্টক না থাকলে গ্রাহকরা এই পণ্যটি কিনতে পারবেন না।
+  * **০ এর নিচে পরিমাণের অনুমতি দিন**: গ্রাহকরা এই পণ্যটি কিনতে পারেন এমনকি কোন স্টক না থাকলেও।
+  * **০ এর নিচে পরিমাণ অনুমোদন করুন এবং গ্রাহককে জানান**: স্টক না থাকা সত্ত্বেও গ্রাহকরা এই পণ্যটি কিনতে পারেন। উপরন্তু, তারা নিম্নলিখিত বার্তা সহ একটি বিজ্ঞপ্তি পায়: স্টক আউট - ব্যাকঅর্ডার এবং একবার স্টকে প্রেরণ করা হবে (**ডিসপ্লে প্রাপ্যতা** বিকল্পটি এই ক্ষেত্রেও সক্ষম করা উচিত)*।
+
+*টিক করুন **স্টক সাবস্ক্রিপশনে আবার অনুমতি দিন**, গ্রাহকদের পণ্যের প্রাপ্যতা সম্পর্কে একটি বিজ্ঞপ্তির জন্য সাবস্ক্রাইব করতে সক্ষম করুন, যেমন নীচের স্ক্রিনশটে রয়েছে:
   
-  ![Subscribe](_static/inventory-management/stock-subscription.png)
+  ![সাবস্ক্রাইব](_static/inventory-management/stock-subscription.png)
 
-* Choose the **Product availability range** which will be displayed for customers when the product is not available for the moment. You can set up availability ranges in the *Product availability ranges* panel of the **Configuration → Shipping → Dates and ranges** page. For further details refer to the [Dates and ranges](xref:en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges) page.
-- **Minimum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 3 to only allow customers to purchase 3 or more of this product.
-- **Maximum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 5 to only allow customers to purchase 5 of this product.
-- In the **Allowed quantities** field, enter a comma separated list of quantities you want this product to be restricted to. Instead of a quantity textbox that allows them to enter any quantity, they will receive a dropdown list of the values you enter here.
-- Tick the **Not returnable** checkbox if this product is not returnable. In this case a customer won't be allowed to submit a return request.
+*** পণ্যের প্রাপ্যতা পরিসীমা** বেছে নিন যা গ্রাহকদের জন্য প্রদর্শিত হবে যখন এই মুহূর্তে পণ্যটি উপলব্ধ নয়। আপনি **কনফিগারেশন → শিপিং → তারিখ এবং রেঞ্জ** পৃষ্ঠার *পণ্যের প্রাপ্যতা পরিসীমা* প্যানেলে প্রাপ্যতা সীমা সেট করতে পারেন। আরো বিস্তারিত জানার জন্য [তারিখ এবং রেঞ্জ](xref:bn/getting-start/configure-shipping/advanced-configuration/তারিখ-এবং-পরিসর) পৃষ্ঠা পড়ুন।
+- **ন্যূনতম কার্ট পরিমাণ** একটি গ্রাহকের শপিং কার্টে অনুমোদিত পরিমাণ যেমন customers এ সেট করুন শুধুমাত্র গ্রাহকদের এই পণ্যটির purchase বা তার বেশি কেনার অনুমতি দিতে।
+- **সর্বোচ্চ কার্ট পরিমাণ** একটি গ্রাহকের শপিং কার্টে অনুমোদিত পরিমাণ যেমন গ্রাহকদের এই পণ্যটির ৫ কেনার অনুমতি দিতে ৫ তে সেট করুন।
+- **অনুমোদিত পরিমাণ** ক্ষেত্রের মধ্যে, আপনি যে পরিমাণ পণ্যগুলি সীমাবদ্ধ রাখতে চান তার একটি কমা দ্বারা পৃথক করা তালিকা লিখুন। একটি পরিমাণ পাঠ্যবাক্সের পরিবর্তে যা তাদের যেকোন পরিমাণে প্রবেশ করতে দেয়, তারা এখানে যে মানগুলি প্রবেশ করে তার একটি ড্রপডাউন তালিকা পাবে।
+- যদি এই পণ্যটি ফেরতযোগ্য না হয় তবে **ফেরতযোগ্য নয়** চেকবক্সে টিক দিন। এই ক্ষেত্রে একজন গ্রাহককে রিটার্নের অনুরোধ জমা দেওয়ার অনুমতি দেওয়া হবে না।
 
+## পণ্যের গুণাবলী অনুসারে তালিকা ট্র্যাক করুন
+যদি আপনার প্রোডাক্ট অ্যাট্রিবিউট কম্বিনেশন থাকে এবং তাদের স্টক পরিমাণ ট্র্যাক করার প্রয়োজন হয়, তাহলে *প্রোডাক্ট অ্যাট্রিবিউট দ্বারা ট্র্যাক ইনভেন্টরি* ইনভেন্টরি পদ্ধতি বেছে নিন।
+একবার এই বিকল্পটি নির্বাচিত হলে, বিভাগটি নতুন ক্ষেত্র প্রদর্শন করে প্রসারিত করে:
 
-## Track inventory by product attributes
-In case you have different product attributes combinations and need to track their stock quantity, select the *Track inventory by product attributes* inventory method.
-Once this option is chosen, the section expands displaying new fields:
+![পণ্যের গুণাবলী অনুসারে তালিকা ট্র্যাক করুন](_static/inventory-management/track-inventory-attributes.jpg)
 
-![Track inventory by product attributes](_static/inventory-management/track-inventory-attributes.jpg)
-
-* Choose the **Warehouse** which will be used when calculating shipping rates. You can manage warehouses on the **Configuration → Shipping → Warehouses** page. For further details refer to the [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses) page.
-* To prevent customers from placing orders and finding out that the product is out of stock, you can take certain actions. Tick the **Display availability** checkbox, to display stock availability in the public store.
-  * If required, tick the **Display stock quantity** checkbox, to enable customers to see a product stock quantity on the product details page (this checkbox is displayed only when the **Display availability** checkbox is ticked). The following screenshot demonstrates what a customer will see in the public store:
+***গুদাম** বেছে নিন যা শিপিং রেট গণনার সময় ব্যবহার করা হবে। আপনি **কনফিগারেশন → শিপিং → গুদাম** পৃষ্ঠায় গুদাম পরিচালনা করতে পারেন। আরও তথ্যের জন্য [গুদামগুলি](xref:bn/getting-start/configure-shipping/advanced-configuration/warehouses) পৃষ্ঠাটি দেখুন।
+* গ্রাহকদের অর্ডার দেওয়া থেকে বিরত রাখতে এবং পণ্যটি স্টকের বাইরে আছে তা খুঁজে বের করতে, আপনি কিছু পদক্ষেপ নিতে পারেন। পাবলিক স্টোরে স্টক প্রাপ্যতা প্রদর্শনের জন্য **ডিসপ্লে প্রাপ্যতা** চেকবক্সে টিক দিন।
+  *যদি প্রয়োজন হয়, **ডিসপ্লে স্টক পরিমাণ** চেকবক্সে টিক দিন, যাতে গ্রাহকরা পণ্যের বিবরণ পৃষ্ঠায় একটি পণ্যের স্টক পরিমাণ দেখতে সক্ষম হন (এই চেকবক্সটি তখনই প্রদর্শিত হয় যখন **ডিসপ্লে প্রাপ্যতা** চেকবক্স টিক দেওয়া থাকে)। নিচের স্ক্রিনশটটি দেখায় যে একজন গ্রাহক পাবলিক স্টোরে কী দেখতে পাবেন:
     
-    ![Availability](_static/inventory-management/stock-quantity.png)
+    ![উপস্থিতি](_static/inventory-management/stock-quantity.png)
 
-* Choose the **Product availability range** which will be displayed for customers when the product is not available for the moment. You can set up availability ranges in the *Product availability ranges* panel of the **Configuration → Shipping → Dates and ranges** page. For further details refer to the [Dates and ranges](xref:en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges) page.
-- **Minimum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 3 to only allow customers to purchase 3 or more of this product.
-- **Maximum cart qty** is a quantity allowed in a customer's shopping cart e.g. set to 5 to only allow customers to purchase 5 of this product.
-- In the **Allowed quantities** field, enter a comma separated list of quantities you want this product to be restricted to. Instead of a quantity textbox that allows them to enter any quantity, they will receive a dropdown list of the values you enter here.
-- Tick **Allow only existing attribute combinations** to allow adding to the cart/wishlist only existing attribute combinations with stock quantity greater than 0. In this case you have to create all product attributes combinations that you have in stock.
-- Tick the **Not returnable** checkbox if this product is not returnable. In this case a customer won't be allowed to submit a return request.
+* **পণ্যের প্রাপ্যতা পরিসীমা** বেছে নিন যা গ্রাহকদের জন্য প্রদর্শিত হবে যখন এই মুহূর্তে পণ্যটি উপলভ্য নয়। আপনি **কনফিগারেশন → শিপিং → তারিখ এবং রেঞ্জ** পৃষ্ঠার *পণ্যের প্রাপ্যতা পরিসীমা* প্যানেলে প্রাপ্যতা সীমা সেট করতে পারেন। আরো বিস্তারিত জানার জন্য [তারিখ এবং রেঞ্জ](xref:bn/getting-start/configure-shipping/advanced-configuration/তারিখ-এবং-পরিসর) পৃষ্ঠা পড়ুন।
+- **ন্যূনতম কার্ট পরিমাণ** একটি গ্রাহকের শপিং কার্টে অনুমোদিত পরিমাণ যেমন গ্রাহক-এ সেট করুন শুধুমাত্র গ্রাহকদের এই পণ্যটির ক্রয় বা তার বেশি কেনার অনুমতি দিতে।
+- **সর্বোচ্চ কার্ট পরিমাণ** একটি গ্রাহকের শপিং কার্টে অনুমোদিত পরিমাণ যেমন গ্রাহকদের এই পণ্যটির ৫ কেনার অনুমতি দিতে ৫ তে সেট করুন।
+- **অনুমোদিত পরিমাণ** ক্ষেত্রের মধ্যে, আপনি যে পরিমাণ পণ্যগুলি সীমাবদ্ধ রাখতে চান তার একটি কমা দ্বারা পৃথক করা তালিকা লিখুন। একটি পরিমাণ পাঠ্যবাক্সের পরিবর্তে যা তাদের যেকোন পরিমাণে প্রবেশ করতে দেয়, তারা এখানে যে মানগুলি প্রবেশ করে তার একটি ড্রপডাউন তালিকা পাবে।
+- টিক করুন **শুধুমাত্র বিদ্যমান অ্যাট্রিবিউট কম্বিনেশনগুলিকে অনুমতি দিন** কার্ট/উইশলিস্টে যোগ করার অনুমতি দিতে শুধুমাত্র বিদ্যমান অ্যাট্রিবিউট কম্বিনেশন যার পরিমাণ ০ এর বেশি। এক্ষেত্রে আপনার স্টকে থাকা সমস্ত প্রোডাক্ট অ্যাট্রিবিউট কম্বিনেশন তৈরি করতে হবে।
+- যদি এই পণ্যটি ফেরতযোগ্য না হয় তবে **ফেরতযোগ্য নয়** চেকবক্সে টিক দিন। এই ক্ষেত্রে একজন গ্রাহককে রিটার্নের অনুরোধ জমা দেওয়ার অনুমতি দেওয়া হবে না।
 
 > [!NOTE]
 >
-> To set **Stock quantity** for different attribute combinations go to the **Attribute combinations** tab of the *Product attributes* panel on the edit product details page. On this tab you can define whether to **Allow out of stock** for a certain attribute combination to enable orders to be approved even when the product is out of stock.
-  ![Attribute combinations](_static/inventory-management/atribute-combinations.jpg)
+> বিভিন্ন বৈশিষ্ট্যের সংমিশ্রণের জন্য **স্টক পরিমাণ** সেট করার জন্য, প্রোডাক্ট এট্রিবিউটস প্যানেলের *প্রোডাক্ট অ্যাট্রিবিউটস* প্যানেলের **অ্যাট্রিবিউট কম্বিনেশন** ট্যাবে যান। এই ট্যাবে আপনি নির্দিষ্ট স্ট্রিটের বাইরে থাকা সত্ত্বেও অর্ডার অনুমোদন করতে সক্ষম করার জন্য একটি নির্দিষ্ট বৈশিষ্ট্য সমন্বয়ের জন্য **স্টক আউট করার অনুমতি** দিন কিনা তা নির্ধারণ করতে পারেন।
+  ![গুণ সমন্বয়](_static/inventory-management/atribute-combinations.jpg)
 
 > [!TIP]
 >
-> To track products that are currently under stock, go to **Reports → Low stock**.
-> The low stock report contains a list of products that are currently under stock, i.e. the stock quantity is equal or less than the minimum stock quantity set in the *Inventory* section on the product details page.
-  ![Low stock](_static/inventory-management/low-stock.png)
-  Click **Vew** to view the product details page, where these stock settings can be changed.
-  For more details about reports in nopCommerce visit the [Reports](xref:en/running-your-store/reports) page.
+> বর্তমানে স্টকে থাকা পণ্যগুলি ট্র্যাক করতে, **রিপোর্টস → কম স্টক** এ যান।
+> কম স্টক রিপোর্টে বর্তমানে স্টকের অধীনে থাকা পণ্যের একটি তালিকা রয়েছে, যেমন স্টক পরিমাণ পণ্যের বিবরণ পৃষ্ঠায় *ইনভেন্টরি* বিভাগে সেট করা সর্বনিম্ন স্টক পরিমাণের সমান বা কম।
+  ![স্বল্প জমা](_static/inventory-management/low-stock.png)
+  পণ্যের বিবরণ পৃষ্ঠা দেখতে **দেখুন** ক্লিক করুন, যেখানে এই স্টক সেটিংস পরিবর্তন করা যাবে।
+  নপকমার্স-এ রিপোর্ট সম্পর্কে আরও বিস্তারিত জানার জন্য [রিপোর্ট](xref:bn/running-your-store/catalog/products/product-attributes) পৃষ্ঠা দেখুন।
 
-## See also
+## আরো দেখুন
 
-* [Product attributes](xref:en/running-your-store/catalog/products/product-attributes)
-* [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses)
+* [পণ্যের বৈশিষ্ট্য](xref:bn/running-your-store/catalog/products/product-attributes)
+* [গুদাম](xref:bn/get-start/configure-shipping/advanced-configuration/warehouses)
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Managing backorders in nopCommerce](https://www.youtube.com/watch?v=CMhQ39clCKM)
+* [নপকমার্স-এ ব্যাকঅর্ডার পরিচালনা করা] (https://www.youtube.com/watch?v=CMhQ39clCKM)

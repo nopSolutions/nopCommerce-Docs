@@ -1,28 +1,28 @@
 ---
 title: Online customers
-uid: en/running-your-store/customer-management/online-customers
+uid: bn/running-your-store/customer-management/online-customers
 author: git.AndreiMaz
-contributors: git.exileDev, git.dunaenko, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Online customers
+# অনলাইন গ্রাহকরা
 
-Online customers section enables store owners to view customers that were online within the last 20 minutes. This information is useful for the store owners as it shows the last visited page and helps to decide upon actions required to convert visitors into buyers.
+অনলাইন গ্রাহক বিভাগ দোকানের মালিকদের গত ২০ মিনিটের মধ্যে অনলাইনে থাকা গ্রাহকদের দেখতে সক্ষম করে। এই তথ্যটি দোকান মালিকদের জন্য দরকারী কারণ এটি সর্বশেষ পরিদর্শন করা পৃষ্ঠাটি দেখায় এবং দর্শকদের ক্রেতাদের রূপান্তর করার জন্য প্রয়োজনীয় পদক্ষেপগুলি নির্ধারণ করতে সহায়তা করে।
 
-To access this window, go to **Customers → Online customers**.
+এই উইন্ডোটি অ্যাক্সেস করতে, **গ্রাহক → অনলাইন গ্রাহক** এ যান।
 
-![Online customers](_static/online-customers/list.jpg)
+![অনলাইন গ্রাহকরা](_static/online-customers/list.jpg)
 
-The *Online customers* window includes the following columns:
+*অনলাইন গ্রাহক* উইন্ডোতে নিম্নলিখিত কলামগুলি অন্তর্ভুক্ত রয়েছে:
 
-- **Customer info**, you can view and edit the customer's information by clicking on the link.
-- **IP Address** - current IP address of customer
-- **Location** - IP address wise location of customer.
-- **Last activity** - date and time the online customer last logged in.
-- **Last visited page** - the page the customer visited last time.
+- **গ্রাহকের তথ্য**, আপনি লিঙ্কে ক্লিক করে গ্রাহকের তথ্য দেখতে এবং সম্পাদনা করতে পারেন।
+- **আইপি ঠিকানা** - গ্রাহকের বর্তমান আইপি ঠিকানা
+- **অবস্থান** - গ্রাহকের আইপি ঠিকানা অনুসারে অবস্থান।
+- **শেষ কার্যকলাপ** - অনলাইন গ্রাহক সর্বশেষ লগ ইন করার তারিখ এবং সময়।
+- **শেষ পরিদর্শন পৃষ্ঠা** - গ্রাহক শেষবার যে পৃষ্ঠাটি দেখেছিলেন।
 
 > [!NOTE]
 >
-> To see the last visited page you need to enable the **Store last visited page** setting on the **Configuration → Settings → Customer settings** page (*Account* panel).
+> সর্বশেষ পরিদর্শন করা পৃষ্ঠাটি দেখার জন্য আপনাকে **কনফিগারেশন → সেটিংস → গ্রাহক সেটিংস** পৃষ্ঠায় (*অ্যাকাউন্ট*প্যানেল) **স্টোর শেষ পরিদর্শন পৃষ্ঠা** সেটিং সক্ষম করতে হবে।
 
-This page includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
+এই পৃষ্ঠায় ম্যাক্সমাইন্ডের তৈরি জিওলাইট ২ ডেটা রয়েছে, যা [http://www.maxmind.com] (http://www.maxmind.com) থেকে পাওয়া যায়
