@@ -1,22 +1,22 @@
 ---
-title: Scheduled Tasks
-uid: en/developer/tutorials/scheduled-tasks
+title: নির্ধারিত কাজ
+uid: bn/developer/tutorials/scheduled-tasks
 author: git.AndreiMaz
-contributors: git.sinaislam, git.DmitriyKulagin, git., git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Scheduled Tasks
+# নির্ধারিত কাজ
 
-With Scheduled tasks, you can schedule a task to run at certain periods. For example, nopCommerce sends queued emails periodically. The basic steps to create a new task are:
+নির্ধারিত কাজগুলির সাথে, আপনি নির্দিষ্ট সময়গুলিতে চালানোর জন্য একটি কাজ নির্ধারণ করতে পারেন। উদাহরণস্বরূপ, নপকমার্স পর্যায়ক্রমে সারিবদ্ধ ইমেল পাঠায়। একটি নতুন টাস্ক তৈরির প্রাথমিক পদক্ষেপগুলি হল:
 
-1. Define a class which implements **IScheduleTask** interface. It has only one method that takes no arguments; **Execute**. As you guessed this method is invoked when the task should be run.
+১. একটি ক্লাস সংজ্ঞায়িত করুন যা **IScheduleTask** ইন্টারফেস প্রয়োগ করে। এটির একটি মাত্র পদ্ধতি আছে যার কোন যুক্তি নেই; **Execute**. আপনি অনুমান করেছেন যে এই পদ্ধতিটি চালু করা হয়েছে যখন টাস্কটি চালানো উচিত।
 
-1. To schedule a task the developer should insert a new **ScheduleTask** record into the appropriate database table. You can use **IScheduleTaskService** for inserting such a record.
+২. একটি টাস্ক নির্ধারিত করার জন্য ডেভেলপারের উপযুক্ত ডাটাবেস টেবিলে একটি নতুন **ScheduleTask** রেকর্ড যোগ করা উচিত। এই ধরনের রেকর্ড যোগের জন্য আপনি **IScheduleTaskService** ব্যবহার করতে পারেন।
 
 > [!IMPORTANT]
-> When insert the new record into **ScheduleTask** database table for new **ScheduleTask**, it is important to keep **Type** column  format **Namespace.TaskClassName, AssemblyName**.
+> যখন নতুন রেকর্ড **ScheduleTask** ডাটাবেস টেবিলে নতুন **ScheduleTask** এর মধ্যে, **Type** কলাম ফর্ম্যাট **Namespace.TaskClassName, AssemblyName** রাখা গুরুত্বপূর্ণ।
 
-## Troubleshooting
+## সমস্যা সমাধান
 
-- Make sure your store has a valid URL.
-- Restart the application after adding new schedule task.
+- আপনার দোকানের একটি বৈধ ইউআরএল আছে তা নিশ্চিত করুন।
+- নতুন সময়সূচী টাস্ক যোগ করার পরে অ্যাপ্লিকেশনটি পুনরায় চালু করুন।

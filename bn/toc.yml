@@ -433,7 +433,7 @@
           name: ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন
           href: developer/tutorials/inversion-of-control.md
         - 
-          name: আমি কিভাবে নতুন রুট নিবন্ধন করব?
+          name: কিভাবে নতুন রুট নিবন্ধন করব?
           href: developer/tutorials/register-new-routes.md
         - 
           name: মাইগ্রেশন কিভাবে কাজ করে?

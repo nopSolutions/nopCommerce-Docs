@@ -1,13 +1,13 @@
 ---
-title: How do I register new routes?
-uid: en/developer/tutorials/register-new-routes
+title: কিভাবে নতুন রুট নিবন্ধন করব?
+uid: bn/developer/tutorials/register-new-routes
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Register new routes
+# নতুন রুট নিবন্ধন
 
-ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing). nopCommerce has an IRouteProvider interface which is used for route registration during application startup. All core routes are registered in the RouteProvider class located in the `Nop.Web` project.
+ASP.NET Core রাউটিং নির্দিষ্ট MVC কন্ট্রোলার ক্রিয়ায় ইনকামিং ব্রাউজার অনুরোধ ম্যাপ করার জন্য দায়ী। আপনি রাউটিং সম্পর্কে আরও তথ্য পেতে পারেন [এখানে](https://docs.microsoft.com/aspnet/core/fundamentals/routing)। নপকমার্সের একটি IRouteProvider ইন্টারফেস রয়েছে যা অ্যাপ্লিকেশন শুরুর সময় রুট নিবন্ধনের জন্য ব্যবহৃত হয়। সমস্ত মূল রুট `Nop.Web` প্রকল্পে অবস্থিত RouteProvider ক্লাসে নিবন্ধিত।
 
 ```csharp
  public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
@@ -21,4 +21,4 @@ ASP.NET Core routing is responsible for mapping incoming browser requests to par
 }
 ```
 
-You can create as many `RouteProvider` classes as you need. For example, if your plugin has some custom routes which you want to register, then create a new class implementing the `IRouteProvider` interface and register the routes specific to your new plugin.
+আপনি আপনার প্রয়োজন হিসাবে অনেক `RouteProvider` ক্লাস তৈরি করতে পারেন। উদাহরণস্বরূপ, যদি আপনার প্লাগিনে কিছু কাস্টম রুট থাকে যা আপনি নিবন্ধন করতে চান, তাহলে `IRouteProvider` ইন্টারফেস বাস্তবায়ন করে একটি নতুন শ্রেণী তৈরি করুন এবং আপনার নতুন প্লাগইনটির জন্য নির্দিষ্ট রুটগুলি নিবন্ধন করুন।

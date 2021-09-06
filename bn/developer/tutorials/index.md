@@ -7,7 +7,7 @@ contributors: git.AfiaKhanom
 
 # ডেভেলপার টিউটোরিয়াল
 
-নীচে নপকমার্স এর সাথে কাজ করা ডেভেলপারদের দ্বারা জিজ্ঞাসা করা সাধারণ প্রশ্নের একটি তালিকা। এটি নপকমার্স টিমের তৈরি কিছু স্থাপত্য পছন্দও বর্ণনা করে।
+নীচে নপকমার্সের সাথে কাজ করা ডেভেলপারদের দ্বারা জিজ্ঞাসা করা সাধারণ প্রশ্নের একটি তালিকা। এটি নপকমার্স টিমের তৈরি কিছু স্থাপত্য পছন্দও বর্ণনা করে।
 
 * [বিকাশের জন্য সিস্টেমের প্রয়োজনীয়তা](xref:bn/developer/tutorials/system-requirements-for-developing)
 * [কোড স্টাইল কনফিগার](xref:bn/developer/tutorials/code-style)
@@ -18,7 +18,7 @@ contributors: git.AfiaKhanom
 * [একটি বিদ্যমান সত্তা আপডেট করা হচ্ছে। কিভাবে একটি নতুন সম্পত্তি যুক্ত করবেন।](xref:bn/developer/tutorials/update-existing-entity)
 * [এন্টিটি ইভেন্ট এবং তারা কিভাবে কাজ করে](xref:bn/developer/tutorials/entity-event)
 * [ইনভার্শন অফ কন্ট্রোল ও ডিপেন্ডেন্সি ইনজেকশন](xref:bn/developer/tutorials/inversion-of-control)
-* [আমি কিভাবে নতুন রুট নিবন্ধন করব?](xref:bn/developer/tutorials/register-new-routes)
+* [কিভাবে নতুন রুট নিবন্ধন করব?](xref:bn/developer/tutorials/register-new-routes)
 * [মাইগ্রেশন কিভাবে কাজ করে?](xref:bn/developer/tutorials/migrations)
 * [একটি প্লাগইন এর মাধ্যমে নপকমার্স এর মৌলিক কার্যকারিতা প্রসারিত করার জন্য একটি গাইড](xref:bn/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin)
 * [ডেটা যাচাইকরণ](xref:bn/developer/tutorials/data-validation)

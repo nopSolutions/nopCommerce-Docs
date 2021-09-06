@@ -1,15 +1,15 @@
 ---
-title: Settings API
-uid: en/developer/tutorials/settings
+title: সেটিংস এপিআই
+uid: bn/developer/tutorials/settings
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Settings API
+# সেটিংস এপিআই
 
-Like any other website platforms nopCommerce has settings such as "Store name" or "One page checkout enabled". There are two ways to manage settings in nopCommerce.
+অন্য কোন ওয়েবসাইট প্ল্যাটফর্মের মত নপকমার্সে "Store name" বা "One page checkout enabled" এর মতো সেটিংস আছে। নপকমার্সের সেটিংস পরিচালনা করার দুটি উপায় রয়েছে।
 
-You can use **GetSettingByKey** and **SetSetting** methods of **ISettingService** implementation for loading and saving individual settings. The preferred approach for handling settings in nopCommerce is to create a new implementation of the **ISettings** interface. Each setting will be represented by a C# property and developers should rely on setting classes to be injected via the constructor when they are required. Below is an example settings class.
+আপনি পৃথক সেটিংস লোড এবং সংরক্ষণের জন্য **ISettingService** বাস্তবায়নের **GetSettingByKey** এবং **SetSetting** পদ্ধতি ব্যবহার করতে পারেন। নপকমার্সের সেটিংস পরিচালনার জন্য পছন্দের পদ্ধতি হল **ISettings** ইন্টারফেসের একটি নতুন বাস্তবায়ন তৈরি করা। প্রতিটি সেটিং একটি C# সম্পত্তি দ্বারা প্রতিনিধিত্ব করা হবে এবং ডেভেলপারদের প্রয়োজন হবে যখন কনস্ট্রাক্টরের মাধ্যমে ইনজেকশনের ক্লাস সেট করার উপর নির্ভর করা উচিত। নীচে একটি উদাহরণ সেটিংস ক্লাস।
 
 ```csharp
 public class MediaSettings : ISettings
