@@ -1,17 +1,17 @@
 ---
-title: Updating an existing entity. How to add a new property.
-uid: en/developer/tutorials/update-existing-entity
+title: একটি বিদ্যমান এন্টিটি আপডেট করা হয়। কিভাবে একটি নতুন সম্পত্তি যুক্ত করবেন।
+uid: bn/developer/tutorials/update-existing-entity
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Updating an existing entity. How to add a new property
+# একটি বিদ্যমান এন্টিটি আপডেট করা হয়। কিভাবে একটি নতুন সম্পত্তি যুক্ত করবেন
 
-This tutorial covers how to add a property to the "Category" entity that ships with the nopCommerce source code.
+এই টিউটোরিয়ালে নপকমার্স সোর্স কোড দিয়ে পাঠানো "Category" এন্টিটিতে কিভাবে একটি প্রপার্টি যোগ করতে হয় তা বর্ণনা করা হয়েছে।
 
-## The data model
+## ডেটা মডেল
 
-Entities will have two classes that are used to map records to a table. The first class defines the properties, fields, and methods consumed by the web application.
+এন্টিটির দুটি ক্লাস থাকবে যা একটি টেবিলে রেকর্ড ম্যাপ করার জন্য ব্যবহৃত হয়। প্রথম ক্লাস ওয়েব অ্যাপ্লিকেশন দ্বারা ব্যবহৃত প্রপার্টিস, ফিল্ডস এবং মেথদ গুলি সংজ্ঞায়িত করে।
 
 ```sh
 File System Location: [Project Root]\Libraries\Nop.Core\Domain\Catalog\Category.cs
@@ -19,7 +19,7 @@ Assembly: Nop.Core
 Solution Location: Nop.Core.Domain.Catalog.Category.cs
 ```
 
-The second class is used to map the properties defined in the class above to their respective SQL columns. The mapping class is also responsible for mapping relationships between different SQL tables.
+দ্বিতীয় ক্লাসটি তাদের নিজ নিজ এসকিউএল কলামগুলিতে উপরের ক্লাসতে সংজ্ঞায়িত প্রপার্টিগুলি ম্যাপ করতে ব্যবহৃত হয়। বিভিন্ন এসকিউএল টেবিলের মধ্যে সম্পর্ক ম্যাপ করার জন্য ম্যাপিং ক্লাসই দায়ী।
 
 ```sh
 File System Location: [Project Root]\Libraries\Nop.Data\Mapping\Builders\Catalog\CategoryBuilder.cs
@@ -27,15 +27,15 @@ Assembly: Nop.Data
 Solution Location: Nop.Data.Mapping.Builders.Catalog.CategoryBuilder.cs
 ```
 
-But I recommend you to use it only for your own entity classes. In our case, we'll use the migration mechanism instead of mapping class.
+কিন্তু আমি আপনাকে শুধুমাত্র আপনার নিজের সত্তা ক্লাসের জন্য এটি ব্যবহার করার পরামর্শ দিচ্ছি। আমাদের ফিল্ডে, আমরা ম্যাপিং ক্লাসের পরিবর্তে মাইগ্রেশন মেকানিজম ব্যবহার করব।
 
-Add the following property to the Category class.
+ক্যাটাগরি ক্লাসে নিম্নলিখিত সম্পত্তি যুক্ত করুন।
 
 ```csharp
 public string SomeNewProperty { get; set; }
 ```
 
-Add the new class (Nop.Data.Migrations.AddSomeNewProperty) with following code:  
+নিম্নলিখিত কোড সহ নতুন ক্লাস (Nop.Data.Migrations.AddSomeNewProperty) যোগ করুন:
 
 ```csharp
 using FluentMigrator;
@@ -59,18 +59,18 @@ namespace Nop.Data.Migrations
 ```
 
 > [!NOTE]
-> The procedure for updating migrations is carried out during the initialization of the database.
+> মাইগ্রেশন আপডেট করার পদ্ধতি ডাটাবেসের প্রারম্ভিকতার সময় সঞ্চালিত হয়।
 
 ```csharp
 var migrationManager = EngineContext.Current.Resolve<IMigrationManager>();
 migrationManager.ApplyUpMigrations(typeof(NopDbStartup).Assembly);
 ```
 
-## The presentation model
+## প্রেসেন্টেশন মডেল
 
-The presentation model is used to transport information from a controller to the view (read more at asp.net/mvc). Models have another purpose; defining requirements.
+প্রেসেন্টেশন মডেলটি কন্ট্রোলার থেকে ভিউতে তথ্য পরিবহনের জন্য ব্যবহৃত হয় (asp.net/mvc এ আরও পড়ুন)। মডেলের আরেকটি উদ্দেশ্য আছে; প্রয়োজনীয়তা নির্ধারণ।
 
-We configured our database to only store 255 characters for the SomeNewProperty. If we try and save an SomeNewProperty with 300 characters the application will break (or truncate the text). We want the application to protect users from failures the best we can, and our view models help enforce requirements like string length.
+ আমরা SomeNewProperty- এর জন্য ২৫৫ টি অক্ষর সংরক্ষণ করতে আমাদের ডাটাবেস কনফিগার করেছি। যদি আমরা ৩০০ অক্ষর দিয়ে SomeNewProperty- কে সংরক্ষণ করার চেষ্টা করি তাহলে অ্যাপ্লিকেশনটি ভেঙে যাবে (অথবা পাঠ্যটি ছাঁটাই করবে)। আমরা ব্যবহারকারীদের যতটা সম্ভব ব্যর্থতা থেকে রক্ষা করতে চাই এবং আমাদের ভিউ মডেলগুলি স্ট্রিং দৈর্ঘ্যের মতো প্রয়োজনীয়তা প্রয়োগ করতে সহায়তা করে।
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Models\Catalog\CategoryModel.cs
@@ -78,7 +78,7 @@ Assembly: Nop.Admin
 Solution Location: Nop.Web.Areas.Admin.Models.Catalog.CategoryModel.cs
 ```
 
-The validator class is used to validate the data stored inside of the model class (e.g. required fields, max length, and required ranges).
+ভ্যালিডেটর ক্লাস মডেল ক্লাসের ভিতরে সংরক্ষিত ডেটা যাচাই করতে ব্যবহৃত হয় (উদা required প্রয়োজনীয় ফিল্ড, সর্বোচ্চ দৈর্ঘ্য এবং প্রয়োজনীয় রেঞ্জ)।
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Validators\Catalog\CategoryValidator.cs
@@ -86,7 +86,7 @@ Assembly: Nop.Web
 Solution Location: Nop.Web.Areas.Admin.Validators.Catalog.CategoryValidator.cs
 ```
 
-Add the property to our view model.
+আমাদের ভিউ মডেলে প্রপার্টি যুক্ত করুন।
 
 ```csharp
 // The NopResourceDisplayName provides the "key" used during localization
@@ -95,21 +95,21 @@ Add the property to our view model.
 public string SomeNewProperty { get; set; }
 ```
 
-The requirements code will be added in the constructor of the validator.
+যাচাইকারীর কনস্ট্রাক্টারে প্রয়োজনীয় কোড যুক্ত করা হবে।
 
 ```csharp
 //I think this code can speak for itself
 RuleFor(m => m.SomeNewProperty).Length(0, 255);
 ```
 
-## The view
+## ভিউ
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Views\Category\ _CreateOrUpdate.Info.cshtml
 Assembly: Nop.Web
 ```
 
-Views contain the html for displaying model data. Place this html under the "PictureId" section.
+ভিউতে মডেল ডেটা প্রদর্শনের জন্য এইচটিএমএলটি থাকে। এই এইচটিএমএলটিকে "PictureId" বিভাগের অধীনে রাখুন।
 
 ```csharp
 <div class="form-group">
@@ -123,9 +123,9 @@ Views contain the html for displaying model data. Place this html under the "Pic
  </div>
 ```
 
-## The controller
+## কন্ট্রোলার
 
-In this case the controller is responsible for mapping the domain data model to our view model and vice versa. The reason I choose the category model to update is because of the simplicity. I want this to be an introduction to the nopCommerce platform and I would like to keep it as simple as possible.
+এই ক্ষেত্রে নিয়ামক আমাদের ভিউ মডেলে ডোমেন ডেটা মডেল এবং উলটাভাবে ম্যাপ করার জন্য দায়ী। আপডেট করার জন্য আমি ক্যাটাগরি মডেলটি বেছে নেওয়ার কারণ হল সরলতা। আমি এটি নপকমার্স প্ল্যাটফর্মের একটি সূচনা হতে চাই এবং আমি এটি যতটা সম্ভব সহজ রাখতে চাই।
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Controllers\CategoryController.cs
@@ -134,25 +134,25 @@ Solution Location:
 Nop.Web.Areas.Admin.Controllers.CategoryController.cs
 ```
 
-We're going to make three updates to the CategoryController class.
+আমরা ক্যাটাগরি কন্ট্রোলার ক্লাসে তিনটি আপডেট করতে যাচ্ছি।
 
 * Data Model → View Model
 * Create View Model → Data Model
 * Edit View Model → Data Model
 
-Normally I would write tests for the following code and verify that model mapping is working correctly, but I'll skip unit testing to keep it simple.
+সাধারণত আমি নিম্নলিখিত কোডের জন্য পরীক্ষা লিখব এবং যাচাই করব যে মডেল ম্যাপিং সঠিকভাবে কাজ করছে, কিন্তু আমি এটি সহজ রাখার জন্য ইউনিট টেস্ট এড়িয়ে যাব।
 
-In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most case it's not required because it's automatically handled by AutoMapper in the .ToModel() method.
+যথাযথ মেথড দিয়ে ("Create", "Edit", বা "PrepareSomeModel") এই প্রপার্টি সেট করার জন্য কোড যোগ করুন। বেশিরভাগ ক্ষেত্রে এটি প্রয়োজন হয় না কারণ এটি স্বয়ংক্রিয়ভাবে .ToModel () মেথডে অটোমেপার দ্বারা পরিচালিত হয়।
 
-In the public method to save entity (usually: "Create" or "Edit" methods with [HttpPost] attribute)
+এন্টিটি সংরক্ষণের পাবলিক মেথড (সাধারণত: [HttpPost] অ্যাট্রিবিউট সহ "Create" বা "Edit" মেথড)
 
 ```csharp
 // Edit View Model → Data Model
 category.SomeNewProperty = model.SomeNewProperty;
 ```
 
-## Troubleshooting
+## সমস্যা সমাধান
 
-* Recreate the database. Either your own custom SQL script or use the nopCommerce installer.
-* Stop the development web server between schema changes.
-* Post a detailed comment on [our forums](http://www.nopcommerce.com/boards/).
+* ডাটাবেস পুনরায় তৈরি করুন। হয় আপনার নিজস্ব কাস্টম এসকিউএল স্ক্রিপ্ট অথবা নপকমার্স ইনস্টলার ব্যবহার করুন।
+* স্কিমা পরিবর্তনের মধ্যে ডেভেলপমেন্ট ওয়েব সার্ভার বন্ধ করুন।
+* একটি বিস্তারিত মন্তব্য পোস্ট করুন [আমাদের ফোরামে](http://www.nopcommerce.com/boards/).

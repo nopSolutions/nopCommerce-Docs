@@ -1,51 +1,51 @@
 ﻿---
-title: A guide to expand the basic functionality of nopCommerce through a plugin
-uid: en/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
+title: একটি প্লাগইন এর মাধ্যমে নপকমার্স এর মৌলিক কার্যকারিতা প্রসারিত করার জন্য একটি গাইড
+uid: bn/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
 author: nop.sea
-contributors: git.RomanovM, git.DmitriyKulagin, git.cromatido
+contributors: git.AfiaKhanom
 ---
 
-# A guide to expand the basic functionality of nopCommerce through a plugin
+# একটি প্লাগইন এর মাধ্যমে নপকমার্স এর মৌলিক কার্যকারিতা প্রসারিত করার জন্য একটি গাইড
 
-## Overview
+## ওভারভিউ
 
-nopCommerce uses the plugins system to extend the functionality of nopCommerce admin panel and uses widget system to extend the functionality of the website. Plugins and Widgets are a set of independent programs or components which can be added to an existing system to extend some specific functionality and also can be removed from system without effecting the main system during the process. So by using the concept of Plugin and widgets we can add more functionality to our system and we can build them without altering or editing the core source code of nopCommerce solution. Which enables us to upgrade or downgrade our nopCommerce solution to the latest version or older version as we desire without having to rewrite plugin and widgets we already created.
+নপকমার্স অ্যাডমিন প্যানেলের কার্যকারিতা বাড়ানোর জন্য প্লাগইন সিস্টেম ব্যবহার করে এবং ওয়েবসাইটের কার্যকারিতা বাড়ানোর জন্য উইজেট সিস্টেম ব্যবহার করে। প্লাগইন এবং উইজেটগুলি স্বাধীন প্রোগ্রাম বা উপাদানগুলির একটি সেট যা কিছু নির্দিষ্ট কার্যকারিতা প্রসারিত করার জন্য একটি বিদ্যমান সিস্টেমে যোগ করা যেতে পারে এবং প্রক্রিয়া চলাকালীন মূল সিস্টেমকে প্রভাবিত না করে সিস্টেম থেকে সরানো যেতে পারে। সুতরাং প্লাগইন এবং উইজেটগুলির ধারণা ব্যবহার করে আমরা আমাদের সিস্টেমে আরও কার্যকারিতা যুক্ত করতে পারি এবং আমরা নপকমার্স সমাধানের মূল সোর্স কোড পরিবর্তন বা সম্পাদনা না করেই এটি তৈরি করতে পারি। যা আমাদের নপকমার্স সমাধানকে সর্বশেষ সংস্করণ বা পুরোনো সংস্করণে আপগ্রেড বা ডাউনগ্রেড করতে সক্ষম করে যেমনটি আমরা ইতোমধ্যেই তৈরি করা প্লাগইন এবং উইজেটগুলি পুনর্লিখন না করেই চাই।
 
-## Difference between Plugin and Widget
+## প্লাগইন এবং উইজেটের মধ্যে পার্থক্য
 
-As we know both Plugin and widget are for extending the functionality of nopCommerce solution. Well then you may ask "what is the difference between them". Ultimately in nopCommerce you can think widget as a plugin but with extra feature. In order to create widget the process is mostly the same as creating a plugin, but by using widget we can show some UI (User Interface) to nopCommerce public website in some specific areas predefined by nopCommerce which is known as widget-zones. Which we cannot achieve only via plugin. You may think Widget as a Superset of Plugin.
+যেহেতু আমরা জানি প্লাগইন এবং উইজেট উভয়ই নপকমার্স সমাধানের কার্যকারিতা বাড়ানোর জন্য। ঠিক আছে তাহলে আপনি জিজ্ঞাসা করতে পারেন "তাদের মধ্যে পার্থক্য কি"। শেষ পর্যন্ত নপকমার্সে আপনি উইজেটকে প্লাগইন হিসেবে ভাবতে পারেন কিন্তু অতিরিক্ত বৈশিষ্ট্য সহ। উইজেট তৈরির জন্য প্রক্রিয়াটি বেশিরভাগই একটি প্লাগইন তৈরির মতো, কিন্তু উইজেট ব্যবহার করে আমরা কিছু ইউআই (ইউজার ইন্টারফেস) নপকমার্স পাবলিক ওয়েবসাইটকে নপকমার্স দ্বারা পূর্বনির্ধারিত কিছু নির্দিষ্ট এলাকায় দেখাতে পারি যা উইজেট-জোন নামে পরিচিত। যা আমরা শুধুমাত্র প্লাগইন এর মাধ্যমে অর্জন করতে পারি না। আপনি উইজেটকে প্লাগইন এর একটি সুপারসেট হিসেবে ভাবতে পারেন।
 
-I think you are bit more clear about what widgets and plugins are, when they can be used and what is the benefits of using them. So, now lets go and create a simple widget that shows "Hello World" message to the public site, to understand about how to create a widget in nopCommerce.
+আমি মনে করি আপনি উইজেট এবং প্লাগইনগুলি কী, সেগুলি কখন ব্যবহার করা যায় এবং সেগুলি ব্যবহার করার সুবিধাগুলি সম্পর্কে আপনি আরও স্পষ্ট। সুতরাং, এখন চলুন এবং একটি সহজ উইজেট তৈরি করি যা পাবলিক সাইটে "Hello World" বার্তা দেখায়, যাতে নপকমার্সে একটি উইজেট তৈরি করা যায়।
 
-## Initialize Plugin Project
+## প্লাগইন প্রকল্প শুরু করুন
 
-### Step 1: Create a new project
+### ধাপ 1: একটি নতুন প্রকল্প তৈরি করুন
 
-Go to the nopCommerce official website and download latest nopCommerce source code. Since right now the latest version is 4.40, this documentation is written according to v4.40. Open your nopCommerce solution in your favorite IDE (Microsoft Visual Studio is recommended). There you will see a bunch of folders, If you want to know more about the structure of the project, then first check out the article ["Source code organization"](xref:en/developer/tutorials/source-code-organization). In the roof of the solution you will see a *Plugins* folder, expand that folder and you will see a list of plugin projects shipped with nopCommerce by default.
+নপকমার্স অফিসিয়াল ওয়েবসাইটে যান এবং সর্বশেষ নপকমার্স সোর্স কোড ডাউনলোড করুন। যেহেতু এখনই সর্বশেষ সংস্করণ 4.40, এই ডকুমেন্টেশন v4.40 অনুযায়ী লেখা হয়েছে। আপনার নপকমার্স সমাধানটি আপনার প্রিয় IDE তে খুলুন (মাইক্রোসফট ভিজ্যুয়াল স্টুডিও সুপারিশ করা হয়েছে)। সেখানে আপনি একগুচ্ছ ফোল্ডার দেখতে পাবেন, যদি আপনি প্রকল্পের কাঠামো সম্পর্কে আরো জানতে চান, তাহলে প্রথমে নিবন্ধটি দেখুন ["সোর্স কোড সংগঠন"](xref:bn/developer/tutorials/source-code-organization) । সমাধানের ছাদে আপনি একটি *Plugins* ফোল্ডার দেখতে পাবেন, সেই ফোল্ডারটি প্রসারিত করুন এবং আপনি ডিফল্টরূপে নপকমার্স দিয়ে পাঠানো প্লাগইন প্রকল্পগুলির একটি তালিকা দেখতে পাবেন।
 
 ![image1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image1.png)
 
-In order to create new Widget project, Right click on *Plugins* folder: Add=>New Project. After that add new project window will appear.
+নতুন উইজেট প্রকল্প তৈরির জন্য, *Plugins* ফোল্ডারে ডান ক্লিক করুন: Add=>New Project। এর পরে যোগ করুন নতুন প্রকল্প উইন্ডো প্রদর্শিত হবে।
 
 ![image2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2.png)
 
-Select the **Class Library** project template and go to the next step, where you will need to specify the name of the project.
+**Class Library** প্রকল্প টেমপ্লেট নির্বাচন করুন এবং পরবর্তী ধাপে যান, যেখানে আপনাকে প্রকল্পের নাম উল্লেখ করতে হবে।
 
 ![image2_1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_1.png)
 
- nopCommerce follows some standard naming conversion, which you can get more information from nopCommerce documentation. I have choose `Nop.Plugin.Widget.HelloWorld` as my project name by following the naming conversion of nopCommerce. And the location should be inside */source/Plugins* directory. Now click "Next".
+নপকমার্স কিছু আদর্শ নামকরণ রূপান্তর অনুসরণ করে, যা আপনি নপকমার্স ডকুমেন্টেশন থেকে আরো তথ্য পেতে পারেন। নপকমার্স এর নামকরণ রূপান্তর অনুসরণ করে আমি আমার প্রকল্পের নাম হিসেবে `Nop.Plugin.Widget.HelloWorld` নির্বাচন করেছি। এবং অবস্থান */source/Plugins* ডিরেক্টরির ভিতরে থাকা উচিত। এখন "Next" ক্লিক করুন।
 
 ![image2_2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_2.png)
 
-This should create a new project inside Plugin directory. And you may see in your solution like this:
+এটি প্লাগইন ডিরেক্টরিতে একটি নতুন প্রকল্প তৈরি করা উচিত। এবং আপনি আপনার সল্যুশনে দেখতে পারেন:
 
 ![image3](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image3.png)
 
-### Step 2: Configure your new project to be used as Widget
+### ধাপ 2: উইজেট হিসেবে ব্যবহার করার জন্য আপনার নতুন প্রকল্প কনফিগার করুন
 
-We need to configure a couple of things in our project for it to be used as a *Plugin* or *Widget*.
+আমাদের প্রজেক্টে এটি একটি *Plugin*  বা *Widget* হিসাবে ব্যবহার করার জন্য আমাদের কয়েকটি জিনিস কনফিগার করতে হবে।
 
-After you create your project successfully open its `.csproj` file, for that right click on your project and click `{Your_Project_Name.csproj}` menu from context menu and replace its content with the following code.
+আপনি আপনার প্রজেক্ট তৈরির পর সফলভাবে তার `.csproj` ফাইলটি খুলুন, তার জন্য আপনার প্রজেক্টে ডান ক্লিক করুন এবং প্রসঙ্গ মেনু থেকে `{Your_Project_Name.csproj}` মেনুতে ক্লিক করুন এবং এর বিষয়বস্তু নিচের কোড দিয়ে প্রতিস্থাপন করুন।
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -75,17 +75,17 @@ After you create your project successfully open its `.csproj` file, for that rig
 </Project>
 ```
 
-Here replace `{Plugin_Output_Directory}` by your project name, in my case *Widget.HelloWorld*.
+এখানে আপনার প্রকল্পের নাম দিয়ে `{Plugin_Output_Directory}` প্রতিস্থাপন করুন, আমার ক্ষেত্রে *Widget.HelloWorld*।
 
-What this will do is it copies all dll files related to this project into the `Nop.Web/Plugin/{Plugin_Output_Directory}`, because *Plugin* directory inside `Nop.Web` is the location where nopCommerce search from plugins and widgets to display in *Plugin* or *Widget* list in admin panel.
+এটি কি করবে তা হল এই প্রকল্পের সাথে সম্পর্কিত সমস্ত dll ফাইলগুলিকে `Nop.Web/Plugin/{Plugin_Output_Directory}` এ কপি করে, কারণ `Nop.Web` এর ভিতরে *Plugin* ডিরেক্টরি হল সেই জায়গা যেখানে নপকমার্স প্লাগইন এবং উইজেট থেকে অনুসন্ধান করে। অ্যাডমিন প্যানেলে *Plugin* বা *Widget* তালিকায় প্রদর্শন করুন।
 
-### Step 3: Create a plugin.json file
+### ধাপ 3: একটি plugin.json ফাইল তৈরি করুন
 
-This file is required for every *Plugin* or *Widget* we create in nopCommerce. This file contains meta information about our plugin that describes our plugin. It contains information like, Name of our plugin, which version of nopCommerce it is target/built for, some description about our plugin, version of our plugin and so on. For information please see the article [plugin.json file](xref:en/developer/plugins/plugin_json).
+নপকমার্স এ তৈরি করা প্রতিটি *Plugin* বা *Widget* এর জন্য এই ফাইলটি প্রয়োজন। এই ফাইলটিতে আমাদের প্লাগইন সম্পর্কে মেটা তথ্য রয়েছে যা আমাদের প্লাগইন বর্ণনা করে। এতে আমাদের প্লাগইন এর নাম, নপকমার্স এর কোন সংস্করণটি টার্গেট/বিল্ট করা হয়েছে, আমাদের প্লাগইন সম্পর্কে কিছু বর্ণনা, আমাদের প্লাগইন এর সংস্করণ ইত্যাদি তথ্য রয়েছে। তথ্যের জন্য অনুগ্রহ করে নিবন্ধটি দেখুন [plugin.json file](xref:bn/developer/plugins/plugin_json)।
 
-### Step 4: Create a class that extends from BasePlugin Class
+### ধাপ 4: BasePlugin ক্লাস থেকে প্রসারিত একটি ক্লাস তৈরি করুন
 
-Actually we need to have a class that inherent from `IPlugin` interface so that nopCommerce treats our project as plugin. But nopCommerce already has a class `BasePlugin` that inherits  from `IPlugin` interface and implements all methods from that interface. So, instead of inheriting from `IPlugin` interface we can extend from `BasePlugin` class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override `InstallAsync` and `UninstallAsync` method from BasePlugin class to our class. Finally the class should look like this
+প্রকৃতপক্ষে আমাদের এমন একটি ক্লাস থাকা দরকার যা `IPlugin` ইন্টারফেসের অন্তর্নিহিত যাতে নপকমার্স আমাদের প্রজেক্টকে প্লাগইন হিসেবে বিবেচনা করে। কিন্তু নপকমার্স এর ইতিমধ্যেই একটি ক্লাস `BasePlugin` রয়েছে যা `IPlugin` ইন্টারফেস থেকে উত্তরাধিকারসূত্রে প্রাপ্ত এবং সেই ইন্টারফেস থেকে সমস্ত মেথড প্রয়োগ করে। সুতরাং, `IPlugin` ইন্টারফেস থেকে উত্তরাধিকারী হওয়ার পরিবর্তে আমরা `BasePlugin` ক্লাস থেকে প্রসারিত করতে পারি। আমাদের প্লাগইন/উইজেট ইনস্টলেশন এবং আনইনস্টলেশন প্রক্রিয়া চলাকালীন যদি আমাদের কিছু যুক্তি থাকে তবে আমরা BasePlugin ক্লাস থেকে আমাদের ক্লাসে `InstallAsync` এবং `UninstallAsync` মেথডটি ওভাররাইড করতে পারি। পরিশেষে ক্লাস এই মত হওয়া উচিত
 
 ```cs
 public class HelloWorldPlugin: BasePlugin
@@ -106,19 +106,19 @@ public class HelloWorldPlugin: BasePlugin
 }
 ```
 
-Now build your project and run. Navigate to admin panel and under **Configuration** there is a **Local plugins** menu click that menu. Here you will see all plugins listed that are present in out `Nop.Web/Plugins` directory. In there you will see your newly created plugin. If you do not see then click on **Reload list of plugins** button, after that it will restart your application and lists all plugins available. Now you should see your plugin listed in that list. Click the green **Install** button present in your plugins row.
+এখন আপনার প্রকল্প তৈরি করুন এবং চালান। অ্যাডমিন প্যানেলে নেভিগেট করুন এবং **Configuration** এর অধীনে একটি **Local plugins** মেনু সেই মেনুতে ক্লিক করুন। এখানে আপনি তালিকাভুক্ত সমস্ত প্লাগইন দেখতে পাবেন যা `Nop.Web/Plugins` ডিরেক্টরিতে উপস্থিত রয়েছে। সেখানে আপনি আপনার নতুন তৈরি প্লাগইন দেখতে পাবেন। যদি আপনি না দেখতে পান তবে **Reload list of plugins** বাটনে ক্লিক করুন, এর পরে এটি আপনার অ্যাপ্লিকেশন পুনরায় চালু করবে এবং উপলব্ধ সমস্ত প্লাগইন তালিকাভুক্ত করবে। এখন আপনি সেই তালিকায় তালিকাভুক্ত আপনার প্লাগইন দেখতে পাবেন। আপনার প্লাগইন সারিতে উপস্থিত সবুজ **Install** বাটনে ক্লিক করুন।
 
 ![image5](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image5.png)
 
-Now after you click the install button, click **Restart your application to apply changes** button. It will restart your application and installs your plugin. After installation completes you will see a *Configure* and *Edit* button and a *Uninstall* button like this.
+এখন আপনি ইনস্টল বোতামে ক্লিক করার পরে, **Restart your application to apply changes** বোতামে ক্লিক করুন। এটি আপনার অ্যাপ্লিকেশন পুনরায় চালু করবে এবং আপনার প্লাগইন ইনস্টল করবে। ইনস্টলেশন সম্পন্ন হওয়ার পর আপনি একটি *Configure* এবং *Edit* বাটন এবং একটি *Uninstall* বাটন দেখতে পাবেন।
 
-![image6](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png) Now your plugin is installed. But the *Configure* button will not work, since we don't have any configure page in our plugin.
+![image6](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png) এখন আপনার প্লাগইন ইন্সটল হয়ে গেছে। কিন্তু *Configure* বাটন কাজ করবে না, যেহেতু আমাদের প্লাগিনে কোন কনফিগার পেজ নেই।
 
-## Create a widget to show some UI in our public Site
+## আমাদের পাবলিক সাইটে কিছু ইউআই দেখানোর জন্য একটি উইজেট তৈরি করুন
 
-As previously mentioned, *Widget* is same as plugin but with extra features. So we can use this same plugin project to convert it to widget and render some UI to our public site. So lets see how we can extend this plugin to create a widget.
+পূর্বে উল্লিখিত হিসাবে, *Widget* প্লাগইন হিসাবে একই কিন্তু অতিরিক্ত বৈশিষ্ট্য সহ। তাই আমরা এই একই প্লাগইন প্রকল্পটি উইজেটে রূপান্তর করতে এবং আমাদের পাবলিক সাইটে কিছু ইউআই রেন্ডার করতে ব্যবহার করতে পারি। তাহলে দেখা যাক কিভাবে আমরা একটি উইজেট তৈরি করতে এই প্লাগইনটি প্রসারিত করতে পারি।
 
-First we need to create a `ViewComponent`. Create a directory *Components* in the root of the project and create a **`ViewComponent`** class. We need to extend from this class from `NopViewComponent` base class.
+প্রথমে আমাদের একটি `ViewComponent` তৈরি করতে হবে। প্রকল্পের মূলে একটি ডিরেক্টরি *Components* তৈরি করুন এবং একটি **`ViewComponent`** শ্রেণী তৈরি করুন। আমাদের এই ক্লাস থেকে `NopViewComponent` বেস ক্লাস থেকে প্রসারিত করতে হবে।
 
 ```cs
 [ViewComponent(Name = "HelloWorldWidget")]
@@ -131,7 +131,7 @@ public class ExampleWidgetViewComponent: NopViewComponent
 }
 ```
 
-Now go to the class one that extends from `BasePlugin` we have previously created, and inherent from `IWidgetPlugin` interface. This interface has two function declaration `GetWidgetZones` and `GetWidgetViewComponentName` which we need to implement in our class.
+এখন সেই ক্লাস ওয়ানে যান যা আমাদের আগে তৈরি করা `BasePlugin` থেকে এবং `IWidgetPlugin` ইন্টারফেস থেকে অন্তর্নিহিত। এই ইন্টারফেসের দুটি ফাংশন ডিক্লারেশন `GetWidgetZones` এবং `GetWidgetViewComponentName` আছে যা আমাদের ক্লাসে বাস্তবায়ন করতে হবে।
 
 ```cs
 public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
@@ -179,14 +179,14 @@ public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
 }
 ```
 
-Now if you build your project and navigate to admin panel and go to **Configuration -> Widgets**. You will see your widget listed.
+যদি আপনি আপনার প্রকল্পটি তৈরি করেন এবং অ্যাডমিন প্যানেলে যান এবং **Configuration -> Widgets** এ যান। আপনি আপনার উইজেট তালিকাভুক্ত দেখতে পাবেন।
 
 ![image7](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
 
-Here you may notice that this widget do not have *Configure* button. That is because we did not create a configuration view file for this widget and did not override `GetConfigurationPageUrl` method from `BasePlugin` class. Since we have already installed our plugin we do not have to install it again, but here you can see that widget is not active right now. We can activate this by clicking the *Edit* button.
+এখানে আপনি লক্ষ্য করতে পারেন যে এই উইজেটটিতে *Configure* বাটন নেই। কারণ আমরা এই উইজেটের জন্য একটি কনফিগারেশন ভিউ ফাইল তৈরি করিনি এবং `BasePlugin` ক্লাস থেকে `GetConfigurationPageUrl` মেথডটি ওভাররাইড করিনি। যেহেতু আমরা ইতিমধ্যেই আমাদের প্লাগইন ইন্সটল করে ফেলেছি তাই আমাদের আবার ইন্সটল করতে হবে না, কিন্তু এখানে আপনি দেখতে পাচ্ছেন যে উইজেটটি এখন সক্রিয় নয়। আমরা *Edit* বাটনে ক্লিক করে এটি সক্রিয় করতে পারি।
 
 ![image8](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
 
-Now after we set widget to active now our widget should work as expected. If we go to our home page before category we must see the "Hello World" message as shown in picture highlighted in yellow.
+এখন আমরা উইজেট সক্রিয় করার পর এখন আমাদের উইজেটটি প্রত্যাশা অনুযায়ী কাজ করা উচিত। যদি আমরা ক্যাটাগরির আগে আমাদের হোম পেজে যাই তাহলে আমাদের অবশ্যই "Hello World" বার্তা দেখতে হবে যেমন হলুদে হাইলাইট করা ছবিতে দেখানো হয়েছে।
 
 ![image9](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image9.png)

@@ -421,10 +421,10 @@
           name: নপকমার্স এর আর্কিটেকচার
           href: developer/tutorials/architecture-of-nopCommerce.md
         - 
-          name: নপকমার্স এ কীভাবে বিকাশ শুরু করবেন তার নির্দেশনা
+          name: নপকমার্সে কীভাবে ডেভেলপিং শুরু করবেন তার নির্দেশনা
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
         - 
-          name: একটি বিদ্যমান এন্টিটি আপডেট করা হচ্ছে। কিভাবে একটি নতুন সম্পত্তি যুক্ত করবেন।
+          name: একটি বিদ্যমান এন্টিটি আপডেট করা হয়। কিভাবে একটি নতুন সম্পত্তি যুক্ত করবেন।
           href: developer/tutorials/update-existing-entity.md
         - 
           name: এন্টিটি ইভেন্ট এবং তারা কিভাবে কাজ করে
@@ -454,7 +454,7 @@
           name: সেটিংস এপিআই
           href: developer/tutorials/settings.md
         - 
-          name: How and when to use the ITypeFinder interface
+          name: কিভাবে এবং কখন ITypeFinder ইন্টারফেস ব্যবহার করবেন
           href: developer/tutorials/type-finder.md
         - 
           name: প্রকল্পে web.config ফাইলের বর্ণনা
@@ -481,7 +481,7 @@
           name: প্লাগইন সিস্টেমের বর্ণনা
           href: developer/tutorials/description-of-plugin-system.md
         - 
-          name: ঊনিট পরিক্ষাকরণ
+          name: ইউনিট টেস্ট
           href: developer/tutorials/unit-tests.md
     - 
       name: নপকমার্স প্লাগইন তৈরি করা
