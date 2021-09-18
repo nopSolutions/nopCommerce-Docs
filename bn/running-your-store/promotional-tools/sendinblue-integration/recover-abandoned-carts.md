@@ -1,158 +1,162 @@
 ---
-title: Recover abandoned carts
-uid: en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts
+title: পরিত্যক্ত কার্টগুলি পুনরুদ্ধার করুন
+uid: bn/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
+# পরিত্যক্ত কার্টগুলি পুনরুদ্ধার করুন
 
-# Recover abandoned carts
+এই টিউটোরিয়ালে, আপনি শিখবেন কিভাবে পরিত্যক্ত কার্ট ইমেইল তৈরি করতে হয় এবং হারানো বিক্রয় পুনরুদ্ধারের জন্য কিভাবে ওয়ার্কফ্লো সেট আপ করতে হয়। আপনি কোন নপকমার্স-এ অর্ডার ডেটা সেন্ডিনব্লু প্ল্যাটফর্মের সাথে সামঞ্জস্যপূর্ণ তাও শিখবেন।
 
-In this tutorial, you will learn how to create abandoned cart email and how to set up the workflow to recover lost sales. You will also learn which nopCommerce order data is compatible with the Sendinblue platform.
+## শুরু করার আগে
 
-## Before getting started
+আপনি নিম্নলিখিত প্রয়োজন হবে:
+* সেন্ডিনব্লু অ্যাকাউন্টের শংসাপত্র। যদি আপনার না থাকে, [বিনামূল্যে সাইন আপ করুন](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)।
+*নিশ্চিত করুন যে সেন্ডিনব্লু এর [নতুন টেমপ্লেট ল্যাঙ্গুয়েজ](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) চালু আছে।
+* এই ধাপগুলি অনুসরণ করুন (xref: bn/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) সেন্ডিনব্লু প্লাগইন সেট আপ করতে।
 
-You will need the following:
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). 
-* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) for emails is enabled on your account.
-* Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
+## একটি পরিত্যক্ত কার্ট ইমেল টেমপ্লেট তৈরি করুন
 
-## Create an abandoned cart email template
+প্রথমে আপনার সেন্ডিনব্লু অ্যাকাউন্টে লগ ইন করুন তারপর অটোমেশন প্ল্যাটফর্ম> [ইমেইল টেমপ্লেট](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) এ যান। উপরের ডানদিকে **নতুন টেমপ্লেট** বাটনে ক্লিক করুন।
 
-First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). Click on the **New Template** button at the top right.
+ইমেল টেমপ্লেটটি বিভিন্ন ধরণের ডেটা দিয়ে ব্যক্তিগতকৃত করা যেতে পারে:
 
-The email template can be personalized with several types of data:
+* [আপনার সেন্ডিনব্লু তালিকায় সংরক্ষিত যোগাযোগের বৈশিষ্ট্য](#personalize-your-email-with-contact-attributes)
+* [পরিত্যক্ত আইটেমের বিবরণ](#personalize-your-email-with-the-abandoned-items-details)
+* [পরিত্যক্ত কার্ট বিবরণ](#personalize-your-email-with-the-abandoned-cart-details)
 
-* [contact attributes saved in your Sendinblue list](#personalize-your-email-with-contact-attributes)
-* [abandoned item details](#personalize-your-email-with-the-abandoned-items-details)
-* [abandoned cart details](#personalize-your-email-with-the-abandoned-cart-details)
+### যোগাযোগের বৈশিষ্ট্যগুলির সাথে আপনার ইমেল ব্যক্তিগতকৃত করুন
 
-### Personalize your email with contact attributes
+আসুন শুরু করি [যোগাযোগের বৈশিষ্ট্যগুলির সাথে ব্যক্তিগতকরণ](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)।
 
-Let's start by [personalizing with contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+নীচের উদাহরণে, আমরা একটি ব্যক্তিগতকরণ অন্তর্ভুক্ত করেছি:
 
-In the example below, we have included a personalization of:
-
-* the recipient's first name using {{ contact.FIRSTNAME }}
-* the recipient's last name using {{ contact.LASTNAME }}
+* {{contact.FIRSTNAME}} ব্যবহার করে প্রাপকের প্রথম নাম
+* {{contact.LASTNAME}} ব্যবহার করে প্রাপকের শেষ নাম
 
 > [!NOTE]
-> FIRSTNAME and LASTNAME should be existing attributes in your Sendinblue account.
+> প্রথম নাম এবং শেষ নাম আপনার সেন্ডিনব্লু অ্যাকাউন্টে বিদ্যমান বৈশিষ্ট্য থাকা উচিত।
 
-![Attribute personalization](_static/recover-abandoned-carts/attribute-personalization.gif)
+![বৈশিষ্ট্য ব্যক্তিগতকরণ](_static/recover-abandoned-carts/attribute-personalization.gif)
 
-Now let's personalize the email template with order variables such as the name of the items left behind, their images, price etc. To do so, we will use the *New Template Language* to [insert a dynamic list](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+এখন আসুন ইমেল টেমপ্লেটকে অর্ডার ভেরিয়েবলের সাথে ব্যক্তিগতকৃত করি যেমন পিছনে থাকা আইটেমগুলির নাম, তাদের ছবি, মূল্য ইত্যাদি করার জন্য, আমরা *নতুন টেমপ্লেট ভাষা* ব্যবহার করব [একটি গতিশীল তালিকা সন্নিবেশ করানোর জন্য](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) সাহায্য।
 
-### Personalize your email with the abandoned items details
+### পরিত্যক্ত আইটেমের বিবরণ সহ আপনার ইমেল ব্যক্তিগতকৃত করুন
 
-The following variables may be included directly from a dynamic list within your Sendinblue template content:
+আপনার সেন্ডিনব্লু টেমপ্লেট বিষয়বস্তুর মধ্যে একটি গতিশীল তালিকা থেকে নিম্নলিখিত ভেরিয়েবলগুলি সরাসরি অন্তর্ভুক্ত করা যেতে পারে:
 
-| Items data | Insert this placeholder in your template |
+| আইটেম তথ্য | আপনার টেমপ্লেটে এই স্থানধারকটি সন্নিবেশ করান |
 | ------------- | ------------- |
-| Name | {{ item.name }} |
-| SKU | {{ item.sku }} |
-| Category | {{ item.category }} |
-| ID | {{ item.id }} |
-| ID of the item variation | {{ item.variant_id }} |
-| Name of the item variation | {{ item.variant_name }} |
-| Price | {{ item.price }} |
-| Quantity | {{ item.quantity }} |
-| Storefront link of the purchased item | {{ item.url }} |
-| Image | {{ item.image }} |
+| নাম | {{item.name}} |
+| এসকেইউ | {{item.sku}} |
+| বিভাগ | {{item.category}} |
+| আইডি | {{item.id}} |
+| আইটেম বৈচিত্রের আইডি | {{item.variant_id}} |
+| আইটেমের ভিন্নতার নাম | {{item.variant_name}} |
+| মূল্য | {{item.price}} |
+| পরিমাণ | {{item.quantity}} |
+| কেনা আইটেমের স্টোরফ্রন্ট লিঙ্ক | {{item.url}} |
+| ছবি | {{item.image}} |
 
-In the *Drag & Drop Editor*, select your desired block that will display the abandoned items.
+*ড্র্যাগ অ্যান্ড ড্রপ এডিটর* এ, আপনার পছন্দসই ব্লকটি নির্বাচন করুন যা পরিত্যক্ত আইটেমগুলি প্রদর্শন করবে।
 
-1. Click the **pencil icon** to edit the settings for the design block.
-1. Enable the **dynamic list** option.
-1. In the **parameter** field, write `items`.
-1. In the **variable** field, write `item`.
-1. Set the limit for the number of items that will be displayed. For example, if there are 5 items left in the cart, and you set 3 as the limit, only 3 items will be shown in the email.
+১। ডিজাইন ব্লকের সেটিংস সম্পাদনা করতে **পেন্সিল আইকন** এ ক্লিক করুন।
 
-![Email editor](_static/recover-abandoned-carts/items.jpg)
+২। **গতিশীল তালিকা** বিকল্পটি সক্ষম করুন।
 
-Now add the variables to your email template. In the example above, we have added:
-* `{{ item.name }}` - the name of the item
-* `{{ item.quantity }}` - the quantity of the item
-* `{{ item.price | floatformat: 2 }}` - the price of the item
+৩। **প্যারামিটার** ফিল্ডে, 'আইটেমস' লিখুন।
 
-To add the link of the item, select the **Call-To-Action (CTA)** button. On the right sidebar, under *Link*, type `{{ item.url }}`.
+৪। **পরিবর্তনশীল** ক্ষেত্রের মধ্যে, `আইটেম` লিখুন।
 
-![item.url](_static/recover-abandoned-carts/item-url.jpg)
+৫। প্রদর্শিত আইটেমের সংখ্যার সীমা নির্ধারণ করুন। উদাহরণস্বরূপ, যদি কার্টে 5 টি আইটেম অবশিষ্ট থাকে এবং আপনি ৩ টি সীমা হিসাবে সেট করেন তবে কেবল ৩ টি আইটেম ইমেইলে দেখানো হবে।
 
-To add the image of the item, select the image. On the right sidebar, under *Image source*, choose *From URL* then type `{{ item.image }}`.
+![ইমেইল সম্পাদক](_static/recover-abandoned-carts/items.jpg)
 
-![item.image](_static/recover-abandoned-carts/item-image.jpg)
+এখন আপনার ইমেইল টেমপ্লেটে ভেরিয়েবল যোগ করুন। উপরের উদাহরণে, আমরা যোগ করেছি:
+* `{{item.name}}` - আইটেমের নাম
+* `{{item.quantity}}` - - আইটেমের পরিমাণ
+* `{{item.price | floatformat: 2}} ` - আইটেমের দাম
 
-Once your design is complete, click the green **Save & Quit** button. Then click the **Save & Activate** button.
+আইটেমের লিঙ্ক যোগ করতে, **কল-টু-অ্যাকশন (সিটিএ)** বাটন নির্বাচন করুন। ডান সাইডবারে, *লিঙ্ক* এর অধীনে, `{{item.url}} টাইপ করুন।
 
-### Personalize your email with the abandoned cart details
+![আইটেম.ইউআরএল](_static/recover-abandoned-carts/item-url.jpg)
 
-The following variables may be included directly within your Sendinblue template content:
+আইটেমের ছবি যোগ করতে, ছবিটি নির্বাচন করুন। ডান সাইডবারে, *ইমেজ সোর্স* এর অধীনে, *ইউআরএল থেকে* নির্বাচন করুন তারপর `{{item.image}} টাইপ করুন।
 
-| Cart details | Insert this placeholder |
+![আইটেম.ছবি](_static/recover-abandoned-carts/item-image.jpg)
+
+একবার আপনার নকশা সম্পন্ন হলে, সবুজ **সংরক্ষণ করুন এবং ছেড়ে যান** বোতামে ক্লিক করুন। তারপর **সংরক্ষণ করুন এবং সক্রিয় করুন** বাটনে ক্লিক করুন।
+
+### পরিত্যক্ত কার্টের বিবরণ সহ আপনার ইমেল ব্যক্তিগতকৃত করুন
+
+নিম্নোক্ত ভেরিয়েবলগুলি সরাসরি আপনার সেন্ডিনব্লু টেমপ্লেট বিষয়বস্তুর মধ্যে অন্তর্ভুক্ত করা যেতে পারে:
+
+| কার্টের বিবরণ | এই স্থানধারক সন্নিবেশ করান |
 | ------------- | ------------- |
-| Affiliation | {{ params.affiliation }} |
-| Currency | {{ params.currency }} |
-| Discount | {{ params.discount }} |
-| Shipping | {{ params.shipping }} |
-| Subtotal | {{ params.subtotal }} |
-| Tax | {{ params.tax }} |
-| Total before tax | {{ params.tax }} |
-| Total | {{ params.total_before_tax }} |
-| Link to cart | {{ params.url }} |
+| সম্বন্ধ | {{params.affiliation}} |
+| মুদ্রা | {{params.currency}} |
+| ছাড় | {{params.discount}} |
+| শিপিং | {{params.shipping}} |
+| উপ -মোট | {{params.subtotal}} |
+| কর | {{params.tax}} |
+| করের আগে মোট | {{params.tax}} |
+| মোট | {{params.total_before_tax}} |
+| কার্টের লিঙ্ক | {{params.url}} |
 
 > [!NOTE]
-> Items shown in the link to cart page will be different based on where the session is opened from. For example, let's say a customer is browsing from their laptop. If they click on the abandoned cart email from their phone, it will not show their abandoned cart.
+> সেশনটি কোথা থেকে খোলা হয়েছে তার উপর ভিত্তি করে কার্ট পৃষ্ঠার লিঙ্কে প্রদর্শিত আইটেমগুলি ভিন্ন হবে। উদাহরণস্বরূপ, ধরা যাক একজন গ্রাহক তাদের ল্যাপটপ থেকে ব্রাউজ করছেন। যদি তারা তাদের ফোন থেকে পরিত্যক্ত কার্ট ইমেইলে ক্লিক করে, এটি তাদের পরিত্যক্ত কার্ট দেখাবে না।
 
-In the *Drag & Drop Editor*, select your desired block that will display the abandoned cart information then add the order variables you want.
+*ড্র্যাগ অ্যান্ড ড্রপ এডিটর* এ, আপনার পছন্দসই ব্লকটি নির্বাচন করুন যা পরিত্যক্ত কার্টের তথ্য প্রদর্শন করবে তারপর আপনার পছন্দসই অর্ডার ভেরিয়েবল যোগ করুন।
 
-We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers). In the example below, we have added:
+আমরা [ভাসা বিন্যাস](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers) ব্যবহার করে সংখ্যা বিন্যাস করার সুপারিশ করি। নীচের উদাহরণে, আমরা যোগ করেছি:
 
-* `{{ params.currency }}` - the currency of the abandoned cart
-* `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the abandoned cart
-* `{{ params.discount | floatformat: 2 }}` - the discount of the abandoned cart
-* `{{ params.total | floatformat: 2 }}` - the total of the abandoned cart
+* {{params.currency}} ` - পরিত্যক্ত কার্টের মুদ্রা
+* {{{params.subtotal | floatformat: 2}} ` - পরিত্যক্ত কার্টের উপ -মোট
+* {{{params.discount | floatformat: 2}} ` - পরিত্যক্ত কার্টের ছাড়
+* `{{params.total | floatformat: 2}} ` - পরিত্যক্ত কার্টের মোট
 
-![Cart](_static/recover-abandoned-carts/cart.jpg)
+![কার্ট](_static/recover-abandoned-carts/cart.jpg)
 
-To add the link of the abandoned cart, select the **Call-To-Action (CTA)** button. On the right sidebar, under *Link*, type `{{ params.url }}`.
+পরিত্যক্ত কার্টের লিঙ্ক যোগ করতে, **কল-টু-অ্যাকশন (সিটিএ)** বোতামটি নির্বাচন করুন। ডান সাইডবারে, *লিঙ্ক* এর অধীনে, `{{params.url}}` টাইপ করুন।
 
-![params.url](_static/recover-abandoned-carts/url.jpg)
+![প্যারাম.ইউআরএল](_static/recover-abandoned-carts/url.jpg)
 
-Once your design is complete, click the green **Save & Quit** button. Then click the **Save & Activate** button.
+আপনার নকশা সম্পূর্ণ হলে, সবুজ **সংরক্ষণ করুন এবং ছেড়ে যান** বাটনে ক্লিক করুন। তারপর **সংরক্ষণ করুন এবং সক্রিয় করুন** বাটনে ক্লিক করুন।
 
 
-## Creating the abandoned cart workflow
+## পরিত্যক্ত কার্ট ওয়ার্কফ্লো তৈরি করা
 
 > [!NOTE]
-> A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
+> একটি গ্রাহককে তার ইমেইল ঠিকানা দ্বারা চিহ্নিত করতে হবে কর্মপ্রবাহকে ট্রিগার করার জন্য, যেমন একজন গ্রাহককে আপনার নপকমার্স দোকানে তাদের অ্যাকাউন্টে লগ ইন করতে হবে অথবা চেকআউটের সময় তাদের ইমেল ঠিকানা ইনপুট করতে হবে।
 
-Navigate to the [Automation](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) tab of your Sendinblue account.
+আপনার Sendinblue অ্যাকাউন্টের [অটোমেশন](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) ট্যাবে যান।
 
-Click on **+ CREATE A NEW WORKFLOW**, then select **Detailed Abandoned Cart** and follow the steps.
+**+একটি নতুন ওয়ার্কফ্লো তৈরি করুন** এ ক্লিক করুন, তারপর **বিস্তারিত পরিত্যক্ত কার্ট** নির্বাচন করুন এবং ধাপগুলো অনুসরণ করুন।
 
-![Detailed Abandoned Cart](_static/recover-abandoned-carts/detailed-abandoned-cart.jpg)
+![বিস্তারিত পরিত্যক্ত কার্ট](_static/recover-abandoned-carts/detailed-abandoned-cart.jpg)
 
-At the *Send an email* step, select the email template you have just created and activated from the dropdown list.
+*একটি ইমেল পাঠান* ধাপে, ড্রপডাউন তালিকা থেকে আপনি যে ইমেল টেমপ্লেটটি তৈরি করেছেন এবং সক্রিয় করেছেন তা নির্বাচন করুন।
 
-When your workflow is complete, click on **DONE** to save and activate it.
+যখন আপনার ওয়ার্কফ্লো সম্পূর্ণ হয়, সেভ এবং অ্যাক্টিভেট করতে **সম্পন্ন** এ ক্লিক করুন।
 
-Feel free to read this tutorials to help you creating the workflow: 
-* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)
-
-
-## Example
-
-Let's say that customer Jean Blue jean.blue@sendinblue.com has visited your store but the following 3 items have been left in the cart.
-
-![Cart example](_static/recover-abandoned-carts/cart-example.jpg)
-
-Your template will look like this:
-
-![Cart example](_static/recover-abandoned-carts/template.jpg)
-
-The email received by Jean Blue will look like this:
-
-![Cart example](_static/recover-abandoned-carts/email.jpg)
+ওয়ার্কফ্লো তৈরিতে আপনাকে সাহায্য করার জন্য নির্দ্বিধায় এই টিউটোরিয়ালগুলি পড়ুন:
+* [পরিত্যক্ত কার্ট পুনরুদ্ধার: স্বয়ংক্রিয়ভাবে ইমেল পাঠান (ধাপ 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)
 
 
-## Learn more
-* [Send an order confirmation email](xref:en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email)
+## উদাহরণ
+
+ধরা যাক যে গ্রাহক জিন ব্লু jean.blue@sendinblue.com আপনার দোকান পরিদর্শন করেছে কিন্তু নিচের ৩ টি আইটেম কার্টে রেখে গেছে।
+
+![কার্ট উদাহরণ](_static/recover-abandoned-carts/cart-example.jpg)
+
+আপনার টেমপ্লেটটি দেখতে এইরকম হবে:
+
+![কার্ট উদাহরণ](_static/recover-abandoned-carts/template.jpg)
+
+জিন ব্লু কর্তৃক প্রাপ্ত ইমেলটি দেখতে এরকম হবে:
+
+![কার্ট উদাহরণ](_static/recover-abandoned-carts/email.jpg)
+
+
+## আরো জানুন
+* [অর্ডার কনফার্মেশন ইমেইল পাঠান](xref:bn/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email)

@@ -1,142 +1,142 @@
 ﻿---
 title: Discounts
-uid: en/running-your-store/promotional-tools/discounts
+uid: bn/running-your-store/promotional-tools/discounts
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Discounts
+# ছাড়
 
-In nopCommerce you can use discounts to enable access to special offers. They can be applied to certain categories, products, to the total amount and so on. You can use different requirements available out of the box and via plugins from [nopCommerce marketplace](http://www.nopcommerce.com/marketplace) for applying to your discounts.
+নপকমার্স-এ আপনি বিশেষ অফারগুলিতে অ্যাক্সেস সক্ষম করতে ছাড় ব্যবহার করতে পারেন। এগুলি নির্দিষ্ট বিভাগ, পণ্য, মোট পরিমাণে প্রয়োগ করা যেতে পারে এবং আরও অনেক কিছু। আপনার ছাড়ের জন্য আবেদন করার জন্য আপনি বাক্সের বাইরে এবং [নপকমার্স মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) থেকে প্লাগইনগুলির মাধ্যমে উপলব্ধ বিভিন্ন প্রয়োজনীয়তা ব্যবহার করতে পারেন।
 
-Products in nopCommerce can have any number of discounts attached. In case of several discounts applied, nopCommerce will automatically calculate the best possible price for the customer based on all the available discounts and group memberships.
+নপকমার্স- এর পণ্যগুলিতে যে কোনও সংখ্যক ছাড় সংযুক্ত থাকতে পারে। বিভিন্ন ডিসকাউন্ট প্রয়োগের ক্ষেত্রে, নপকমার্স স্বয়ংক্রিয়ভাবে সমস্ত উপলব্ধ ডিসকাউন্ট এবং গ্রুপ মেম্বারশিপের উপর ভিত্তি করে গ্রাহকের জন্য সর্বোত্তম সম্ভাব্য মূল্য গণনা করবে।
 
-The most common way of using the discounts is a coupon code. The coupon code is entered by your customer on the shopping cart page just before checking out.
+ছাড় ব্যবহার করার সবচেয়ে সাধারণ উপায় হল একটি কুপন কোড। চেক আউট করার ঠিক আগে শপিং কার্ট পৃষ্ঠায় আপনার গ্রাহক কুপন কোডটি প্রবেশ করান।
 
-To see the list of discounts go to **Promotions → Discounts** page:
+ছাড়ের তালিকা দেখতে **প্রচার → ছাড়** পৃষ্ঠায় যান:
 
-![Discounts](_static/discounts/list.jpg)
+![ছাড়](_static/discounts/list.jpg)
 
-The top area of the page enables you to search for a discounts by different search criteria:
+পৃষ্ঠার শীর্ষ এলাকা আপনাকে বিভিন্ন অনুসন্ধান মানদণ্ড অনুসারে ছাড়ের জন্য অনুসন্ধান করতে সক্ষম করে:
 
-- **Start date** and **End date** for discounts created between these dates.
-- **Discount type**.
-- **Coupon code**.
-- **Discount name** is a full discount name or a part of the discount name.
+- এই তারিখগুলির মধ্যে তৈরি ছাড়ের জন্য **শুরু তারিখ** এবং **শেষ তারিখ**।
+- **ডিসকাউন্ট টাইপ**।
+- **কুপন কোড**.
+- **ডিসকাউন্ট নাম** একটি সম্পূর্ণ ডিসকাউন্ট নাম বা ডিসকাউন্ট নামের একটি অংশ।
 
 > [!NOTE]
-> 
-> By default, there are no discounts available in nopCommerce, so you can create them from scratch and follow your own marketing strategy.
+>
+> ডিফল্টরূপে, নপকমার্স- এ কোন ছাড় পাওয়া যায় না, তাই আপনি সেগুলি শুরু থেকে তৈরি করতে পারেন এবং আপনার নিজস্ব মার্কেটিং কৌশল অনুসরণ করতে পারেন।
 
-## Adding new discount
+## একটি নতুন ছাড় যোগ করুন
 
-To add a new discount go to **Promotions → Discounts** and click **Add new**.
+একটি নতুন ছাড় যোগ করতে **প্রচার → ছাড়** এ যান এবং **নতুন যোগ করুন** ক্লিক করুন।
 
-![Add a new discount](_static/discounts/add-new.jpg)
+![একটি নতুন ছাড় যোগ করুন](_static/discounts/add-new.jpg)
 
-- Enter the **Name** of the discount.
-- From the **Discount type** dropdown list, assign the discount to the required option, as follows:
-  - *Assigned to order total*: these discounts are applied to the entire customer order (order total).
-  - *Assigned to products*: after this discount is created, the store owner can assign this discount to a product on the product details page or add products in the *Applied to products* panel which will be displayed below after you save the new discount.
-  - *Assigned to categories*: after this discount is created, the store owner can assign this discount to a category on the category edit page or add categories in the *Applied to categories* panel which will be displayed below after you save the new discount. This enables the discount to be applied to all products in this category.
-    - If selected the **Apply to subcategories** field will be displayed to allow applying this discount to subcategories.
-  - *Assigned to manufacturers*: after this discount is created, the store owner can assign this discount to a manufacturer on the manufacturer edit page or add manufacturer in the *Applied to manufacturer* panel which will be displayed below after you save the new discount. This enables the discount to be applied to all products in this manufacturer.
-  - *Assigned to shipping*: these discounts are applied to the shipping fee.
-  - *Assigned to order subtotal*: these discounts are applied to the order subtotal value.
+- ছাড়ের **নাম** লিখুন।
+- **ডিসকাউন্ট টাইপ** ড্রপডাউন তালিকা থেকে, প্রয়োজনীয় বিকল্পটিতে ডিসকাউন্ট অর্পণ করুন, নিম্নরূপ:
+- *মোট অর্ডার করার জন্য নির্ধারিত*: এই ডিসকাউন্টগুলি পুরো গ্রাহকের অর্ডারে (মোট অর্ডার) প্রযোজ্য।
+- *পণ্যের জন্য নির্ধারিত*: এই ডিসকাউন্ট তৈরির পর, দোকানের মালিক পণ্যের বিবরণ পৃষ্ঠায় একটি পণ্যের জন্য এই ডিসকাউন্ট বরাদ্দ করতে পারেন অথবা *পণ্যগুলিতে প্রয়োগ* প্যানেলে পণ্য যুক্ত করতে পারেন যা নতুন ডিস্কাউন্ট সংরক্ষণ করার পরে নিচে প্রদর্শিত হবে ।
+- *ক্যাটাগরির জন্য নির্ধারিত*: এই ডিসকাউন্ট তৈরির পরে, স্টোরের মালিক এই ডিসকাউন্টটি ক্যাটাগরি এডিট পেজে একটি ক্যাটাগরির জন্য বরাদ্দ করতে পারেন অথবা *ক্যাটাগরির জন্য প্রযোজ্য *প্যানেলে ক্যাটাগরি যোগ করতে পারেন যা নতুন ডিসকাউন্ট সংরক্ষণ করার পরে নিচে প্রদর্শিত হবে । এটি এই শ্রেণীর সকল পণ্যে ছাড় প্রয়োগ করতে সক্ষম করে।
+- যদি নির্বাচন করা হয় **উপশ্রেণীতে প্রয়োগ করুন** ক্ষেত্রটি উপশ্রেণীতে এই ছাড় প্রয়োগের অনুমতি দেওয়ার জন্য প্রদর্শিত হবে।
+- *নির্মাতাদের জন্য নির্ধারিত*: এই ছাড় তৈরির পরে, দোকানের মালিক নির্মাতা সম্পাদনা পৃষ্ঠায় একটি নির্মাতাকে এই ছাড় প্রদান করতে পারেন অথবা *প্রস্তুতকারকের জন্য প্রয়োগ করা *প্যানেলে প্রস্তুতকারক যোগ করতে পারেন যা নতুন ছাড় সংরক্ষণ করার পরে নীচে প্রদর্শিত হবে । এটি এই নির্মাতার সমস্ত পণ্যে ছাড় প্রয়োগ করতে সক্ষম করে।
+- *শিপিংয়ের জন্য নির্ধারিত*: এই ছাড়গুলি শিপিং ফি -তে প্রযোজ্য।
+- *সাবটোটাল অর্ডার করার জন্য নির্ধারিত*: এই ডিসকাউন্ট অর্ডার সাবটোটাল ভ্যালুতে প্রয়োগ করা হয়।
 
-- Tick the **Use percentage** checkbox if you want to apply a percentage discount.
-  - If the previous checkbox is ticked the **Discount percentage** field will be displayed.
-  - You can also set the **Maximum discount amount**. Leave this field empty to allow any discount amount. If you're using *Assigned to products* discount type, then it's applied to each product separately.
+- যদি আপনি শতাংশ ছাড় প্রয়োগ করতে চান তবে **ব্যবহার শতাংশ** চেকবক্সে টিক দিন।
+- যদি পূর্ববর্তী চেকবক্সে টিক দেওয়া হয় তবে **ডিসকাউন্ট শতাংশ** ক্ষেত্র প্রদর্শিত হবে।
+- আপনি **সর্বোচ্চ ছাড়ের পরিমাণ** সেট করতে পারেন। যে কোন ছাড়ের পরিমাণের অনুমতি দিতে এই ক্ষেত্রটি খালি রাখুন। আপনি যদি ব্যবহার করছেন *নির্ধারিত পণ্য* ডিসকাউন্ট টাইপ, তাহলে এটি প্রতিটি পণ্যের জন্য আলাদাভাবে প্রযোজ্য।
 
-- Or you can apply **Discount amount** to the order or SKU.
-- Tick the **Requires coupon code** checkbox, to enable a customer to supply a coupon code for the discount to be applied.
-  - After ticking the checkbox the **Coupon code** option appears. You can enter the required coupon code in this field. This enables customers to enter this coupon code during checkout to apply the discount.
+- অথবা আপনি অর্ডার বা এসকেইউতে **ছাড়ের পরিমাণ** আবেদন করতে পারেন।
+- একটি গ্রাহককে ছাড়ের জন্য একটি কুপন কোড সরবরাহ করতে সক্ষম করার জন্য **প্রয়োজনীয় কুপন কোড** চেকবক্সে টিক দিন।
+- চেকবক্স টিক দেওয়ার পর **কুপন কোড** অপশন আসবে। আপনি এই ক্ষেত্রে প্রয়োজনীয় কুপন কোড লিখতে পারেন। এটি গ্রাহকদের চেকআউট চলাকালীন এই কুপন কোডটি প্রবেশ করতে দেয়।
     > [!NOTE]
-    > 
-    > A customer can apply an unlimited number of coupon codes to one order if they fit it.
+    >
+    > একজন গ্রাহক যদি একটি অর্ডারের সাথে মানানসই হন তাহলে তিনি অসীম সংখ্যক কুপন কোড প্রয়োগ করতে পারেন।
 
-- If you want to specify the **Start date** and the **End date** for your discount, select them in the calendar field in Coordinated Universal Time (UTC).
-- The **Cumulative with other discounts** option allows customers use several discounts at the same time. If checked, this discount can be used with other ones simultaneously. 
+- যদি আপনি আপনার ডিসকাউন্টের জন্য **শুরু তারিখ** এবং **শেষ তারিখ** নির্দিষ্ট করতে চান, তাহলে তাদের সমন্বিত ইউনিভার্সাল টাইম (UTC) ক্যালেন্ডার ক্ষেত্রে নির্বাচন করুন।
+- **অন্যান্য ডিসকাউন্ট সহ ক্রমবর্ধমান** বিকল্প গ্রাহকদের একই সময়ে বিভিন্ন ছাড় ব্যবহার করতে দেয়। যদি চেক করা হয়, এই ডিসকাউন্ট একই সাথে অন্যদের সাথে ব্যবহার করা যেতে পারে।
   > [!NOTE]
   >
-  > This feature works only for discounts with the same discount type. Right now, discounts with distinct types are already cumulative.
+  > এই ফিচারটি একই ডিসকাউন্ট টাইপের ডিসকাউন্টের জন্য কাজ করে। এই মুহুর্তে, স্বতন্ত্র ধরণের ছাড়গুলি ইতিমধ্যে ক্রমবর্ধমান।
 
-- You can also limit the number of times the discount will be used. From the **Discount limitation** dropdown list, select the required limitation regarding the discount:
-  - *Unlimited*.
-  - *N times only*: select this option and enter the number of times this discount will be available.
-  - *N times per customer*: select this option and enter the number of times this discount will be available for one customer.
+- আপনি ডিসকাউন্ট কতবার ব্যবহার করা হবে তা সীমিত করতে পারেন। **ডিসকাউন্ট সীমাবদ্ধতা** ড্রপডাউন তালিকা থেকে, ডিসকাউন্ট সংক্রান্ত প্রয়োজনীয় সীমাবদ্ধতা নির্বাচন করুন:
+  - *সীমাহীন*।
+  - *শুধুমাত্র N বার*: এই বিকল্পটি নির্বাচন করুন এবং এই ছাড়টি কতবার পাওয়া যাবে তা লিখুন।
+  - *গ্রাহকের প্রতি N বার
 
-- In the **Maximum discounted quantity** field (only visible when the **Discount type** is set to *Assigned to products*, *categories* or *manufacturers*) specify the maximum product quantity which could be discounted. It can be used for scenarios like "buy 2 get 1 free". 
-- Enter the **Admin comment** if needed. It is not visible for customers.
+- **সর্বাধিক ছাড়ের পরিমাণ** ক্ষেত্রের মধ্যে (শুধুমাত্র তখনই দৃশ্যমান যখন **ডিসকাউন্ট টাইপ** পণ্যের জন্য নির্ধারিত হয়,*বিভাগ* বা *নির্মাতারা*) সর্বাধিক পণ্যের পরিমাণ নির্দিষ্ট করে যা ছাড় করা যেতে পারে। এটি "বাই ২ গেট ১ ফ্রি" এর মতো পরিস্থিতিতে ব্যবহার করা যেতে পারে।
+- প্রয়োজন হলে **অ্যাডমিন মন্তব্য লিখুন** এটি গ্রাহকদের জন্য দৃশ্যমান নয়।
 
-Click **Save** to save the changes or click **Save and continue edit** to proceed to editing other panels.
+পরিবর্তনগুলি সংরক্ষণ করতে **সংরক্ষণ করুন** ক্লিক করুন অথবা অন্যান্য প্যানেল সম্পাদনা করতে এগিয়ে যান সংরক্ষণ করুন এবং **সম্পাদনা চালিয়ে যান** ক্লিক করুন।
 
-## Adding discount requirements
+## ছাড়ের প্রয়োজনীয়তা যোগ করা
 
-After creating the discount it's allowed to add discount requirements if you want some specific rules to be applied to the discount. 
-Set up requirements if you want to limit the discount to certain user categories depending on a customer role, the amount spent, etc. You can use single requirement type, or group several types and apply them simultaneously.
+ডিসকাউন্ট তৈরির পর ডিসকাউন্টের প্রয়োজনীয়তা যোগ করার অনুমতি দেওয়া হয় যদি আপনি ডিসকাউন্টে কিছু নির্দিষ্ট নিয়ম প্রয়োগ করতে চান।
+আপনি যদি গ্রাহকের ভূমিকা, খরচ করা পরিমাণ ইত্যাদির উপর নির্ভর করে নির্দিষ্ট ব্যবহারকারীর বিভাগে ডিসকাউন্ট সীমাবদ্ধ করতে চান তাহলে প্রয়োজনীয়তা সেট করুন।
 
-To add discount requirements go to *Requirements* panel:
+ছাড়ের প্রয়োজনীয়তা যুক্ত করতে *প্রয়োজনীয়তা* প্যানেলে যান:
 
-![Requirements](_static/discounts/requirements.jpg)
+![প্রয়োজনীয়তা](_static/discounts/requirements.jpg)
 
-To add a new requirement select the **Discount requirement type** from the dropdown list.
+একটি নতুন প্রয়োজনীয়তা যোগ করতে ড্রপডাউন তালিকা থেকে ** ডিসকাউন্ট প্রয়োজনের ধরন ** নির্বাচন করুন।
 
-- There is one requirement type available in nopCommerce out of the box: *Must be assigned to a customer role*. This allows you to configure discounts for certain customer groups (roles). Other requirements are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
+- বক্সের বাইরে নপকমার্স- এ একটি প্রয়োজনের ধরন পাওয়া যায়: *একজন গ্রাহকের ভূমিকায় নিযুক্ত হতে হবে *। এটি আপনাকে নির্দিষ্ট গ্রাহক গোষ্ঠীর (ভূমিকা) জন্য ছাড় কনফিগার করতে দেয়। অন্যান্য প্রয়োজনীয়তা আমাদের [মার্কেটপ্লেস](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions) এ প্লাগইন হিসেবে উপলব্ধ।
 
-- Also, you can create a group of requirements to deal with complex requirements with multiple rules. Requirement group is a useful feature for creating discount requirement templates. You can create a requirement group just once and then use it every time you want this limitation to be applied. You can include one requirement group into another one if needed. 
-  The requirements are set using boolean logic. For instance, if you want the discount to be assigned to a particular customer role or in case a customer had spent a certain amount. Such requirements and more are available as plugins on our [marketplace](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions).
+- এছাড়াও, আপনি একাধিক নিয়ম সহ জটিল প্রয়োজনীয়তা মোকাবেলার জন্য প্রয়োজনীয়তার একটি গ্রুপ তৈরি করতে পারেন। ডিসকাউন্ট প্রয়োজনীয়তা টেমপ্লেট তৈরির জন্য প্রয়োজনীয় গ্রুপ একটি দরকারী বৈশিষ্ট্য। আপনি মাত্র একবার একটি প্রয়োজনীয়তা গোষ্ঠী তৈরি করতে পারেন এবং তারপর যখনই আপনি এই সীমাবদ্ধতা প্রয়োগ করতে চান তখন এটি ব্যবহার করতে পারেন। প্রয়োজনে আপনি একটি প্রয়োজন গ্রুপকে অন্য একটি গ্রুপে অন্তর্ভুক্ত করতে পারেন।
+  প্রয়োজনীয়তা বুলিয়ান যুক্তি ব্যবহার করে সেট করা হয়। উদাহরণস্বরূপ, যদি আপনি চান যে কোন নির্দিষ্ট গ্রাহকের ভূমিকায় ছাড় দেওয়া হোক বা যদি কোনো গ্রাহক নির্দিষ্ট পরিমাণ খরচ করে। এই ধরনের প্রয়োজনীয়তা এবং আরও অনেক কিছু আমাদের [মার্কেটপ্লেস](https://www.nopcommerce.com/en/extensions?searchterm=discount+requirement&category=discounts-promotions) এ প্লাগইন হিসেবে পাওয়া যায়।
 
-![Group requirements](_static/discounts/discount-requirenents-group.png)
+![গ্রুপের প্রয়োজনীয়তা](_static/discounts/discount-requirenents-group.png)
 
-You can set an unlimited number of requirement groups, one inside another. For example, more complex case, when you want you customers get a discount if they are vendors and had spent a certain amount or if they are forum moderators and they put a certain product to the cart at the same time.
+আপনি সীমাহীন সংখ্যক প্রয়োজনীয়তা গোষ্ঠী সেট করতে পারেন, একটির মধ্যে আরেকটি। উদাহরণস্বরূপ, আরো জটিল কেস, যখন আপনি চান যে আপনি গ্রাহকরা ডিসকাউন্ট পান যদি তারা বিক্রেতা হয় এবং একটি নির্দিষ্ট পরিমাণ ব্যয় করে অথবা যদি তারা ফোরাম মডারেটর হয় এবং তারা একই সময়ে কার্টে একটি নির্দিষ্ট পণ্য রাখে।
 
-When customers apply a discount while proceeding to the checkout, it is displayed, as follows:
+চেকআউটে যাওয়ার সময় গ্রাহকরা যখন ডিসকাউন্ট প্রয়োগ করেন, এটি নিম্নরূপ প্রদর্শিত হয়:
 
-![discount-in-shopping-cart](_static/discounts/discount-in-shopping-cart.png)
+![ডিসকাউন্ট-ইন-শপিং-কার্ট](_static/discounts/discount-in-shopping-cart.png)
 
-![coupone-code](_static/discounts/coupone-code.png)
-
-
-## Common type of discounts
-
-### Black Friday sale
-
-Black Friday is always the day after Thanksgiving. It's quite common discount campaign, almost every online store has a Black Friday sale.
-
-![Black Friday](_static/discounts/Black-friday.png)
-
-- **Name** - you can enter any name, it's only internal.
-- **Discount type** - here it's *Assigned to subtotal* type when a discount is applied to the whole order amount before all the fees are added (like shipping fee and taxes). It's relevant here because we want all the products in the cart to be discounted.
-- We can apply the discount in % or just enter the amount in chosen currency. We have 10% here.
-- The **Maximum discount amount** can be limited as well, so even if the total amount of products in the cart will be $300 a customer will only have 10$ discount anyway.
-- This discount will require a **Coupon code**. You can apply discounts without entering coupon codes, but it's not recommended considering marketing purposes. Coupon codes allow you to check campaigns results.
-- Frequently discounts are time-based. Here we entered Black Friday weekend dates in the **Start date** and **End date** fields.
-- **Cumulative with other discounts** option allows customers use several discounts at the same time.
-- The last setting is for **Discount limitation** usage. For instance, this discount can be applied once per customer.
-
-### Buy one item and get 50% on the second
-
-Often you need to sell more items of the certain product. In this case, to encourage your customers to buy several items of that, you can offer them a discount. Let's see how to use the discount "Buy one item and get 50% on the second" in your nopCommerce store.
-
-![Edit discount details](_static/discounts/buy_1.png)
-
-- The **Discount type** is *Assigned to products*. In *Applied to products* panel you can add them, here will be an "Oversized T-shirt". 
-- We want our customers to get 50% discount on the 2nd t-shirt. 
-- This discount can be used once per customer, so the **Maximum discounted quantity** is 1.
-- You can set up requirements to the product quantity in *Requirements* panel. Add a requirement type *Customer has all of these products* and add T-shirt with a quantity 2. This requirement type can be dowloaded as a plugin [here](https://www.nopcommerce.com/en/has-all-products-discount-requirement-rule).     Read how to install plugins in the [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) section.
-
-![Buy one item and get 50% on the second](_static/discounts/buy_2.png)
-
-You can use this scenario to set up other popular discount - "Buy one and get the second for free" if you set up a 100% discount.
+![কুপন কোড](_static/discounts/coupone-code.png)
 
 
-## See also
+## সাধারণ ধরনের ছাড়
 
-- More plugins on discount types and discount requirement types on [nopCommerce marketplace](http://www.nopcommerce.com/marketplace)
-- How to [install plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
+### ব্ল্যাক ফ্রাইডে বিক্রি
 
-## Tutorials
+ব্ল্যাক ফ্রাইডে সবসময় থ্যাঙ্কসগিভিং এর পরের দিন। এটি বেশ সাধারণ ডিসকাউন্ট ক্যাম্পেইন, প্রায় প্রতিটি অনলাইন স্টোরে ব্ল্যাক ফ্রাইডে বিক্রয় রয়েছে।
 
-- [Using discounts in nopCommerce](https://www.youtube.com/watch?v=cAXxnV79dzw&index=7&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
-- [Configuring discounts with boolean logic](https://www.youtube.com/watch?v=gBtZG3OcjnQ)
+![ব্ল্যাক ফ্রাইডে](_static/discounts/Black-friday.png)
+
+- **নাম** - আপনি যে কোন নাম লিখতে পারেন, এটি শুধুমাত্র অভ্যন্তরীণ।
+- **ডিসকাউন্ট টাইপ** - এখানে এটি *উপ -মোট* টাইপ করা হয় এটি এখানে প্রাসঙ্গিক কারণ আমরা চাই যে কার্টের সমস্ত পণ্য ছাড় দেওয়া হোক।
+- আমরা % এ ছাড় প্রয়োগ করতে পারি অথবা নির্বাচিত মুদ্রায় পরিমাণ লিখতে পারি। আমাদের এখানে ১০% আছে।
+- **সর্বোচ্চ ছাড়ের পরিমাণ** সীমাবদ্ধও হতে পারে, তাই কার্টে মোট পণ্যের পরিমাণ $ ৩০০ হলেও একজন গ্রাহকের যাইহোক ১০ % ছাড় থাকবে।
+- এই ছাড়ের জন্য একটি **কুপন কোড** লাগবে। আপনি কুপন কোড প্রবেশ না করে ছাড় প্রয়োগ করতে পারেন, কিন্তু বিপণনের উদ্দেশ্য বিবেচনা করে এটি সুপারিশ করা হয় না। কুপন কোডগুলি আপনাকে প্রচারাভিযানের ফলাফল চেক করার অনুমতি দেয়।
+- ঘন ঘন ছাড় সময় ভিত্তিক। এখানে আমরা **শুরু তারিখ** এবং **শেষ তারিখ** ক্ষেত্রগুলিতে ব্ল্যাক ফ্রাইডে উইকএন্ড তারিখগুলি প্রবেশ করেছি।
+- **অন্যান্য ডিসকাউন্ট সহ ক্রমবর্ধমান** বিকল্প গ্রাহকদের একই সময়ে বিভিন্ন ছাড় ব্যবহার করতে দেয়।
+- শেষ সেটিং **ছাড়ের সীমা** ব্যবহারের জন্য। উদাহরণস্বরূপ, এই ডিসকাউন্ট প্রতি গ্রাহক একবার প্রয়োগ করা যেতে পারে।
+
+### একটি আইটেম কিনুন এবং দ্বিতীয়টিতে ৫০% পান
+
+প্রায়শই আপনাকে নির্দিষ্ট পণ্যের আরও আইটেম বিক্রি করতে হবে। এই ক্ষেত্রে, আপনার গ্রাহকদের এর বিভিন্ন আইটেম কিনতে উৎসাহিত করার জন্য, আপনি তাদের ছাড় দিতে পারেন। আসুন দেখি কিভাবে আপনার নপকমার্স দোকানে "একটি আইটেম কিনুন এবং দ্বিতীয়টিতে ৫০% পান" ছাড়টি ব্যবহার করবেন।
+
+![ছাড়ের বিবরণ সম্পাদনা করুন](_static/discounts/buy_১.png)
+
+- **ডিসকাউন্ট টাইপ** হল পণ্যগুলির জন্য নির্ধারিত। *প্রযোজ্য পণ্যগুলিতে* প্যানেলে আপনি সেগুলি যুক্ত করতে পারেন, এখানে একটি "বড় আকারের টি-শার্ট" থাকবে।
+- আমরা চাই আমাদের গ্রাহকরা ২য় টি-শার্টে ৫০% ছাড় পান।
+- এই ছাড় প্রতি গ্রাহক একবার ব্যবহার করা যেতে পারে, তাই **সর্বোচ্চ ছাড়ের পরিমা** হল ১।
+- আপনি *প্রয়োজনীয়তা* প্যানেলে পণ্যের পরিমাণের প্রয়োজনীয়তা সেট করতে পারেন। একটি প্রয়োজনীয়তা প্রকার যোগ করুন *গ্রাহকের এই সমস্ত পণ্য রয়েছে* এবং একটি পরিমাণের সাথে টি-শার্ট যোগ করুন ২। এই প্রয়োজনীয়তার ধরনটি প্লাগইন হিসাবে ডাউনলোড করা যেতে পারে [এখানে](https://www.nopcommerce.com/en/has-all-products-discount-requirement-rule)। [প্লাগইন](xref:bn/getting-start/advanced-configuration/plugins-in-nopcommerce) বিভাগে কিভাবে প্লাগইন ইনস্টল করবেন তা পড়ুন।
+
+![একটি আইটেম কিনুন এবং দ্বিতীয়টিতে ৫০% পান](_static/discounts/buy_2.png)
+
+আপনি ১০০% ডিসকাউন্ট সেট -আপ করলে অন্য জনপ্রিয় ডিসকাউন্ট সেট -আপ করতে এই দৃশ্যটি ব্যবহার করতে পারেন - "একটি কিনুন এবং দ্বিতীয়টি বিনামূল্যে পান"।
+
+
+## আরো দেখুন
+
+- [নপকমার্স মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) এ ছাড়ের প্রকার এবং ডিসকাউন্টের প্রয়োজনীয়তার ধরনগুলিতে আরও প্লাগইন
+-কিভাবে [প্লাগইন ইনস্টল করুন]
+
+## টিউটোরিয়াল
+
+- [নপকমার্স- এ ছাড় ব্যবহার করে](https://www.youtube.com/watch?v=cAXxnV79dzw&index=7&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+- [বুলিয়ান যুক্তি দিয়ে ছাড় কনফিগার করা](https://www.youtube.com/watch?v=gBtZG3OcjnQ)

@@ -1,58 +1,58 @@
 ---
-title: Cross-sells and related products
-uid: en/running-your-store/promotional-tools/cross-sells-and-related-products
+title: ক্রস বিক্রয় এবং সম্পর্কিত পণ্য
+uid: bn/running-your-store/promotional-tools/cross-sells-and-related-products
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Cross-sells and related products
+# ক্রস বিক্রয় এবং সম্পর্কিত পণ্য
 
-"Cross-sells" and "Related products" are marketing tools in nopCommerce that can be used to offer your customers additional products they may like based on their shopping behavior (viewing and adding to the cart certain products). It is also a good opportunity for you to up-sell some products. You can use both of these tools simultaneously.
+"ক্রস-সেলস" এবং "রিলেটেড প্রোডাক্টস" হল নপকমার্স- এ মার্কেটিং টুল যা আপনার গ্রাহকদের তাদের শপিং আচরণের উপর ভিত্তি করে তাদের পছন্দসই অতিরিক্ত পণ্য অফার করতে ব্যবহার করা যেতে পারে (কার্টে নির্দিষ্ট পণ্য দেখা এবং যুক্ত করা)। এটি আপনার জন্য কিছু পণ্য আপ-সেল করার একটি ভাল সুযোগ। আপনি একই সাথে এই দুটি সরঞ্জাম ব্যবহার করতে পারেন।
 
-You can set up cross-sells and related products when creating or editing a product on the product edit page. Go to **Catalog → Products**, select a product and click **Edit**. Look for the *Cross-sells* and *Related products* panels.
+প্রোডাক্ট এডিট পেজে প্রোডাক্ট তৈরি বা এডিট করার সময় আপনি ক্রস সেলস এবং সংশ্লিষ্ট প্রোডাক্ট সেট আপ করতে পারেন। **ক্যাটালগ → পণ্য** এ যান, একটি পণ্য নির্বাচন করুন এবং **সম্পাদনা করুন** ক্লিক করুন। *ক্রস সেলস* এবং *সম্পর্কিত পণ্য* প্যানেলগুলি সন্ধান করুন।
 
 > [!NOTE]
-> 
-> You need to save the product before you can add cross-sells and related products.
+>
+> ক্রস-সেল এবং সংশ্লিষ্ট পণ্য যোগ করার আগে আপনাকে পণ্যটি সংরক্ষণ করতে হবে।
 
-## Cross-sells
+## ক্রস-সেলস
 
-The "cross-sell products" option provides an opportunity to sell additional products that are usually being bought with the selected product, however, you can add any product from your catalog even non-complementary to the product in the cart. Cross-sells are displayed at the bottom of the checkout page. For example, when your customer is buying a CPU, he/she might need a monitor and something else. You can add an unlimited number of cross-sell products to a product.
+"ক্রস-সেল প্রোডাক্টস" বিকল্পটি অতিরিক্ত পণ্য বিক্রির সুযোগ প্রদান করে যা সাধারণত নির্বাচিত পণ্যের সাথে কেনা হয়, তবে, আপনি আপনার ক্যাটালগ থেকে যেকোনো পণ্য যোগ করতে পারেন এমনকি কার্টে পণ্যটির পরিপূরক নয়। ক্রস বিক্রয় চেকআউট পৃষ্ঠার নীচে প্রদর্শিত হয়। উদাহরণস্বরূপ, যখন আপনার গ্রাহক একটি CPU কিনছেন, তখন তার একটি মনিটর এবং অন্য কিছু প্রয়োজন হতে পারে। আপনি একটি পণ্যে সীমাহীন সংখ্যক ক্রস-সেল পণ্য যোগ করতে পারেন।
 
-![Cross-sells](_static/cross-sells-and-related-products/Cross-sells.png)
+![ক্রস-সেলস](_static/cross-sells-and-related-products/Cross-sells.png)
 
-### Adding new cross-sells
+### নতুন ক্রস-সেল যোগ করা
 
-Click **Add new cross-sell product** and choose product/s from the catalog. You can use following criteria: **Product name**, **Category**, **Vendor**, **Store**, **Product type** and **Manufacturer** to find a product easily.
+**নতুন ক্রস-সেল পণ্য যোগ করুন** ক্লিক করুন এবং ক্যাটালগ থেকে পণ্য/গুলি নির্বাচন করুন। আপনি নিম্নোক্ত মানদণ্ড ব্যবহার করতে পারেন: **পণ্যের নাম**, **বিভাগ**, **বিক্রেতা**, **দোকান**, **পণ্যের ধরন** এবং **প্রস্তুতকারক** একটি পণ্য সহজে খুঁজে পেতে।
 
-![Adding new cross-sells](_static/cross-sells-and-related-products/add-new-cross-sells.png)
+![নতুন ক্রস-সেল যোগ করা](_static/cross-sells-and-related-products/add-new-cross-sells.png)
 
-After you have chosen cross-sell product and saved it, you can check how cross-sells will be displayed on the checkout page:
+আপনি ক্রস-সেল প্রোডাক্ট বেছে নেওয়ার পরে এবং সেভ করার পর, চেকআউট পৃষ্ঠায় ক্রস-সেল কিভাবে প্রদর্শিত হবে তা পরীক্ষা করতে পারেন:
 
-![Cross-sells on the checkout page](_static/cross-sells-and-related-products/Cross-sells_on_checkout.png)
+![চেকআউট পৃষ্ঠায় ক্রস-সেলস](_static/cross-sells-and-related-products/Cross-sells_on_checkout.png)
 
-## Related products
+## সংশ্লিষ্ট পণ্য
 
-The Related Products option provides an opportunity to advertise and up-sell other products to your customers together with the chosen one. These products are displayed below the selected product on the product details page. You can add an unlimited number of related products to a product.
+রিলেটেড প্রোডাক্টস অপশন আপনার গ্রাহকদের সাথে নির্বাচিত পণ্যের সাথে অন্যান্য পণ্যের বিজ্ঞাপন ও বিক্রির সুযোগ প্রদান করে। এই পণ্যগুলি পণ্যের বিবরণ পৃষ্ঠায় নির্বাচিত পণ্যের নীচে প্রদর্শিত হয়। আপনি একটি পণ্যের সাথে সীমাহীন সংখ্যক সম্পর্কিত পণ্য যুক্ত করতে পারেন।
 
-![Related_products](_static/cross-sells-and-related-products/Related.png)
+![সংশ্লিষ্ট পণ্য](_static/cross-sells-and-related-products/Related.png)
 
-### Adding new related products
+### নতুন সম্পর্কিত পণ্য যোগ করা
 
-Click **Add new related product** and choose product/s from the catalog. You can use following criteria: **Product name**, **Category**, **Vendor**, **Store**, **Product type** and **Manufacturer** to find a product easily.
+**নতুন সম্পর্কিত পণ্য যোগ করুন** ক্লিক করুন এবং ক্যাটালগ থেকে পণ্য/গুলি নির্বাচন করুন। আপনি নিম্নোক্ত মানদণ্ড ব্যবহার করতে পারেন: **পণ্যের নাম**, **বিভাগ**, **বিক্রেতা**, **দোকান**, **পণ্যের ধরন** এবং **প্রস্তুতকারক** একটি পণ্য সহজে খুঁজে পেতে।
 
-![Adding a new related product](_static/cross-sells-and-related-products/adiing-new-related.png)
+![নতুন সম্পর্কিত পণ্য যোগ করা](_static/cross-sells-and-related-products/adiing-new-related.png)
 
-After you have chosen related product and saved it, you can check how related products will be displayed on the product details page:
+আপনি সম্পর্কিত পণ্য চয়ন করার পরে এবং এটি সংরক্ষণ করার পরে, আপনি পণ্যের বিবরণ পৃষ্ঠায় সম্পর্কিত পণ্যগুলি কীভাবে প্রদর্শিত হবে তা পরীক্ষা করতে পারেন:
 
-![Related products on the product details page](_static/cross-sells-and-related-products/rel-product-on-the-prod-det-page.png)
+![পণ্যের বিবরণ পৃষ্ঠায় সম্পর্কিত পণ্য](_static/cross-sells-and-related-products/rel-product-on-the-prod-det-page.png)
 
 ## See also
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
+- [পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+- [স্তরের মূল্য](xref:bn/running-your-store/promotional-tools/tier-prices)
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Understanding cross-sells in nopCommerce](https://www.youtube.com/watch?v=J_6OlVarIFc)
-- [Managing related products](https://www.youtube.com/watch?v=FGuozvhyqYE&t=6s)
+- [নপকমার্স- এ ক্রস-সেলস বোঝা](https://www.youtube.com/watch?v=J_6OlVarIFc)
+- [সম্পর্কিত পণ্য ব্যবস্থাপনা](https://www.youtube.com/watch?v=FGuozvhyqYE&t=6s)

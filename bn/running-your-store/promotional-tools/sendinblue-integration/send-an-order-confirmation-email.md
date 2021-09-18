@@ -1,156 +1,162 @@
 ---
-title: Send an order confirmation email
-uid: en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email
+title: অর্ডার কনফার্মেশন ইমেইল পাঠান
+uid: bn/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Send an order confirmation email
+# অর্ডার কনফার্মেশন ইমেইল পাঠান
 
-In this tutorial, you will learn how to create an order confirmation email template and set up a workflow to keep buyers engaged. You will also learn which nopCommerce order data are compatible with the Sendinblue platform.
+এই টিউটোরিয়ালে, আপনি শিখবেন কিভাবে অর্ডার কনফার্মেশন ইমেইল টেমপ্লেট তৈরি করতে হয় এবং ক্রেতাদের ব্যস্ত রাখতে একটি ওয়ার্কফ্লো সেট আপ করতে হয়। আপনি কোন নপকমার্স-এ অর্ডার ডেটা সেন্ডিনব্লু প্ল্যাটফর্মের সাথে সামঞ্জস্যপূর্ণ তাও শিখবেন।
 
-## Before getting started
+## শুরু করার আগে
 
-You will need the following:
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). 
-* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) for emails is enabled on your account.
-* Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
+আপনি নিম্নলিখিত প্রয়োজন হবে:
+* সেন্ডিন ব্লু অ্যাকাউন্টের শংসাপত্র। যদি আপনার না থাকে, [বিনামূল্যে সাইন আপ করুন](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)।
+*নিশ্চিত করুন যে সেনডিনব্লু এর* [নতুন টেমপ্লেট ল্যাঙ্গুয়েজ](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) চালু আছে।
+* এই [ধাপগুলি অনুসরণ করুন](xref:bn/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) সেনডিনব্লু প্লাগইন সেট আপ করতে।
 
-## Create the order confirmation email template
+## অর্ডার কনফার্মেশন ইমেইল টেমপ্লেট তৈরি করুন
 
-First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). Click on the **New Template** button at the top right.
+প্রথমে আপনার সেনডিনব্লু অ্যাকাউন্টে লগ ইন করুন তারপর অটোমেশন প্ল্যাটফর্ম> [ইমেইল টেমপ্লেট](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) এ যান। উপরের ডানদিকে **নতুন টেমপ্লে** বাটনে ক্লিক করুন।
 
-The email template can be personalized with several types of data:
+ইমেল টেমপ্লেটটি বিভিন্ন ধরণের ডেটা দিয়ে ব্যক্তিগতকৃত করা যেতে পারে:
+* [আপনার সেনডিনব্লু তালিকায় সংরক্ষিত যোগাযোগের বৈশিষ্ট্য](#personalize-your-email-with-contact-attributes)
+* [অর্ডার বিবরণী](#personalize-your-email-with-the-order-details)
+* [অর্ডারকৃত আইটেমের বিবরণ](#personalize-your-email-with-the-ordered-items-details)
 
-* [contact attributes saved in your Sendinblue list](#personalize-your-email-with-contact-attributes)
-* [order details](#personalize-your-email-with-the-order-details)
-* [ordered item details](#personalize-your-email-with-the-ordered-items-details)
+### যোগাযোগের বৈশিষ্ট্যগুলির সাথে আপনার ইমেল ব্যক্তিগতকৃত করুন
 
-### Personalize your email with contact attributes
+আসুন [পরিচিতি বৈশিষ্ট্য](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) দিয়ে ব্যক্তিগতকরণ করে শুরু করা যাক।
 
-Let's start by personalizing with [contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+নীচের উদাহরণে, আমরা একটি ব্যক্তিগতকরণ অন্তর্ভুক্ত করেছি:
 
-In the example below, we have included a personalization of:
-
-* the recipient's first name using `{{ contact.FIRSTNAME }}`
-* the recipient's last name using `{{ contact.LASTNAME }}`
+* {{contact.FIRSTNAME}} ব্যবহার করে প্রাপকের প্রথম নাম
+* {{contact.LASTNAME}} ব্যবহার করে প্রাপকের শেষ নাম
 
 > [!NOTE]
-> FIRSTNAME and LASTNAME should be existing attributes in your Sendinblue account.
+> FIRSTNAME এবং LASTNAME আপনার Sendinblue অ্যাকাউন্টে বিদ্যমান বৈশিষ্ট্য থাকা উচিত।
 
-![Attribute personalization](_static/send-an-order-confirmation-email/attribute-personalization.gif)
+![বৈশিষ্ট্য ব্যক্তিগতকরণ](_static/send-an-order-confirmation-email/attribute-personalization.gif)
 
-### Personalize your email with the order details
+### অর্ডারের বিবরণ সহ আপনার ইমেল ব্যক্তিগতকৃত করুন
 
-The following variables may be included directly within your Sendinblue template content:
+নিম্নোক্ত ভেরিয়েবলগুলি সরাসরি আপনার Sendinblue টেমপ্লেট বিষয়বস্তুর মধ্যে অন্তর্ভুক্ত করা যেতে পারে:
 
-| Order data | Shipping address data | Billing address data |
+| অর্ডার ডেটা | শিপিং ঠিকানা তথ্য | বিলিং ঠিকানা তথ্য |
 | ------------- | ------------- | ------------- |
-| {{ params.affiliation }} | {{ params.shipping.firstname }} | {{ params.billing.firstname }} |
-| {{ params.currency }} | {{ params.shipping.lastname }} | {{ params.billing.lastname }} |
-| {{ params.date }} | {{ params.shipping.company }} | {{ params.billing.company }} |
-| {{ params.discount }} | {{ params.shipping.phone }} | {{ params.billing.phone }} |
-| {{ params.id }} | {{ params.shipping.address1 }} | {{ params.billing.address1 }} |
-| {{ params.revenue }} | {{ params.shipping.address2 }} | {{ params.billing.address2 }} |
-| {{ params.shipping }} | {{ params.shipping.city }} | {{ params.billing.city }} |
-| {{ params.subtotal }} | {{ params.shipping.country }} | {{ params.billing.country }} |
-| {{ params.tax }} | {{ params.shipping.state }} | {{ params.billing.state }} |
-| {{ params.total_before_tax }} | {{ params.shipping.zipcode }} | {{ params.billing.zipcode }} |
-| {{ params.url }} |
+| {{params.affiliation}} | {{params.shipping.firstname}} | {{params.billing.firstname}} |
+| {{params.currency}} | {{params.shipping.lastname}} | {{params.billing.lastname}} |
+| {{params.date}} | {{params.shipping.company}} | {{params.billing.company}} |
+| {{params.discount}} | {{params.shipping.phone}} | {{params.billing.phone}} |
+| {{params.id}} | {{params.shipping.address1}} | {{params.billing.address1}} |
+| {{params.revenue}} | {{params.shipping.address2}} | {{params.billing.address2}} |
+| {{params.shipping}} | {{params.shipping.city}} | {{params.billing.city}} |
+| {{params.subtotal}} | {{params.shipping.country}} | {{params.billing.country}} |
+| {{params.tax}} | {{params.shipping.state}} | {{params.billing.state}} |
+| {{params.total_before_tax}} | {{params.shipping.zipcode}} | {{params.billing.zipcode}} |
+| {{params.url}} |
 
-In the *Drag & Drop Editor*, select your desired block that will display the order information, then add your variables.
+*ড্র্যাগ অ্যান্ড ড্রপ এডিটর* এ, আপনার পছন্দসই ব্লকটি নির্বাচন করুন যা অর্ডারের তথ্য প্রদর্শন করবে, তারপর আপনার ভেরিয়েবল যুক্ত করুন।
 
-We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers). In the example below, we have added:
+আমরা [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers) ব্যবহার করে সংখ্যা বিন্যাস করার সুপারিশ করি। নীচের উদাহরণে, আমরা যোগ করেছি:
 
-* `{{ params.currency | floatformat: 2 }}` - the currency of the order
-* `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the order
-* `{{ params.discount | floatformat: 2 }}` - the discount of the order
-* `{{ params.total | floatformat: 2 }}` - the total of the order
+* `{{params.currency | floatformat: 2}} ` - অর্ডারের মুদ্রা
+* {{{params.subtotal | floatformat: 2}} ` - অর্ডারের উপ -মোট
+* {{{params.discount | floatformat: 2}} ` - অর্ডারের ছাড়
+* `{{params.total | floatformat: 2}} ` - অর্ডারের মোট
 
-![Order summary](_static/send-an-order-confirmation-email/order.jpg)
+![অর্ডারের সারাংশ](_static/send-an-order-confirmation-email/order.jpg)
 
-Now let's personalize the email template with ordered items. To do so, we're using the *New Template Language* to [insert a dynamic list](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+এখন আসুন অর্ডারকৃত আইটেম সহ ইমেল টেমপ্লেটকে ব্যক্তিগতকৃত করি। এটি করার জন্য, আমরা একটি নতুন টেমপ্লেট ভাষা ব্যবহার করছি [একটি গতিশীল তালিকা সন্নিবেশ করান](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)।
 
-### Personalize your email with the ordered items details
+### অর্ডারকৃত আইটেমের বিবরণ দিয়ে আপনার ইমেল ব্যক্তিগতকৃত করুন
 
-The following variables may be included directly from a dynamic list within your Sendinblue template content:
+আপনার Sendinblue টেমপ্লেট বিষয়বস্তুর মধ্যে একটি গতিশীল তালিকা থেকে নিম্নলিখিত ভেরিয়েবলগুলি সরাসরি অন্তর্ভুক্ত করা যেতে পারে:
 
-| Items data | Insert this placeholder in your template |
+| আইটেম তথ্য | আপনার টেমপ্লেটে এই স্থানধারকটি সন্নিবেশ করান |
 | ------------- | ------------- |
-| Name | {{ item.name }} |
-| SKU | {{ item.sku }} |
-| Category | {{ item.category }} |
-| ID | {{ item.id }} |
-| ID of the item variation | {{ item.variant_id }} |
-| Name of the item variation | {{ item.variant_name }} |
-| Price | {{ item.price }} |
-| Quantity | {{ item.quantity }} |
-| Storefront link of the purchased item | {{ item.url }} |
-| Image | {{ item.image }} |
+| নাম | {{item.name}} |
+| এসকেইউ | {{item.sku}} |
+| বিভাগ | {{item.category}} |
+| আইডি | {{item.id}} |
+| আইটেম বৈচিত্রের আইডি | {{item.variant_id}} |
+| আইটেমের ভিন্নতার নাম | {{item.variant_name}} |
+| মূল্য | {{item.price}} |
+| পরিমাণ | {{item.quantity}} |
+| কেনা আইটেমের স্টোরফ্রন্ট লিঙ্ক | {{item.url}} |
+| ছবি | {{item.image}} |
 
-In the *Drag & Drop Editor*, select your desired block that will display the ordered items.
+*ড্র্যাগ অ্যান্ড ড্রপ এডিটর* এ, আপনার পছন্দসই ব্লকটি নির্বাচন করুন যা অর্ডারকৃত আইটেম প্রদর্শন করবে।
 
-1. Click the **pencil icon** to edit the settings for the design block.
-1. Enable the **dynamic list** option.
-1. In the **parameter** field, write `items`.
-1. In the **variable** field, write `item`.
-1. Set the limit for the number of items that will be displayed. For example, if there are 5 items, and you set 3 as the limit, only 3 items will be shown in the email.
+১। ডিজাইন ব্লকের সেটিংস সম্পাদনা করতে **পেন্সিল আইকন** এ ক্লিক করুন।
 
-![Items](_static/send-an-order-confirmation-email/items.jpg)
+২। **গতিশীল তালিকা** বিকল্পটি সক্ষম করুন।
 
-Now add the variables to your email template. In the example above, we have added:
-* `{{ item.name }}` - the name of the item
-* `{{ item.quantity }}` - the quantity of the item
-* `{{ item.price | floatformat: 2 }}` - the price of the item
+৩। **প্যারামিটার** ফিল্ডে, 'আইটেমস' লিখুন।
 
-To add the link of the item, select the **Call-To-Action (CTA)** button. On the right sidebar, under *Link*, type `{{ item.url }}`.
+৪। **পরিবর্তনশীল** ক্ষেত্রের মধ্যে, `আইটেম` লিখুন।
 
-![Item](_static/send-an-order-confirmation-email/item.jpg)
+৫। প্রদর্শিত আইটেমের সংখ্যার সীমা নির্ধারণ করুন। উদাহরণস্বরূপ, যদি ৫ টি আইটেম থাকে এবং আপনি ৩ টি সীমা হিসাবে সেট করেন তবে কেবল ৩ টি আইটেম ইমেলটিতে দেখানো হবে।
 
-To add the image of the item, select the image. On the right sidebar, under *Image source*, choose *From URL* then type `{{ item.image }}`.
+![আইটেম](_static/send-an-order-confirmation-email/items.jpg)
 
-![Image](_static/send-an-order-confirmation-email/image.jpg)
+এখন আপনার ইমেইল টেমপ্লেটে ভেরিয়েবল যোগ করুন। উপরের উদাহরণে, আমরা যোগ করেছি:
+* `{{item.name}}` - আইটেমের নাম
+* `{{item.quantity}}` - - আইটেমের পরিমাণ
+* `{{item.price | floatformat: 2}} ` - আইটেমের দাম
 
-Once your design is complete, click the green **Save & Quit** button. Then click the **Save & Activate** button.
+আইটেমের লিঙ্ক যোগ করতে, **কল-টু-অ্যাকশন (সিটিএ)** বাটন নির্বাচন করুন। ডান সাইডবারে, *লিঙ্ক* এর অধীনে, `{{item.url}} টাইপ করুন।
 
-## Creating the order confirmation workflow
+![আইটেম](_static/send-an-order-confirmation-email/item.jpg)
+
+আইটেমের ছবি যোগ করতে, ছবিটি নির্বাচন করুন। ডান সাইডবারে, *ইমেজ সোর্স* এর অধীনে, *ইউআরএল থেকে* নির্বাচন করুন তারপর `{{item.image}} টাইপ করুন।
+
+![আইটেম](_static/send-an-order-confirmation-email/image.jpg)
+
+একবার আপনার নকশা সম্পন্ন হলে, সবুজ **সংরক্ষণ করুন এবং ছেড়ে যান** বোতামে ক্লিক করুন। তারপর **সংরক্ষণ করুন এবং সক্রিয় করুন** বাটনে ক্লিক করুন।
+
+## অর্ডার কনফার্মেশন ওয়ার্কফ্লো তৈরি করা
 
 > [!NOTE]
-> A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
+> একটি গ্রাহককে তার ইমেইল ঠিকানা দ্বারা চিহ্নিত করতে হবে কর্মপ্রবাহকে ট্রিগার করার জন্য, যেমন একজন গ্রাহককে আপনার নপকমার্স দোকানে তাদের অ্যাকাউন্টে লগ ইন করতে হবে অথবা চেকআউটের সময় তাদের ইমেল ঠিকানা ইনপুট করতে হবে।
 
-Navigate to the [Automation](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) tab of your Sendinblue account.
+আপনার Sendinblue অ্যাকাউন্টের [অটোমেশন](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) ট্যাবে যান।
 
-Click on **+ CREATE A NEW WORKFLOW**, then select **Product Purchase** and follow the steps.
+**+একটি নতুন ওয়ার্কফ্লো তৈরি করুন** এ ক্লিক করুন, তারপর **পণ্য ক্রয়** নির্বাচন করুন এবং ধাপগুলি অনুসরণ করুন।
 
-1. **Step 1/3** - An event happens
-	* Select *Custom Event (Track Event)*.
-	* Type `order_completed`.
-	* Click on **NEXT**.
-2. **Step 2/3** - Add a delay
-	* Choose a delay. For example 5 seconds.
-	* Click on **NEXT**.
-3. **Step 3/3** - Send an email
-	* From the dropdown list, select the email template you have just created and activated.
-	* Check **Use my event data to customize the email**.
-	* Select **The event data which triggered the workflow**.
-	* Click on **FINISH**.
+১। **ধাপ ১/৩** - একটি ঘটনা ঘটে
 
-![Create workflow](_static/send-an-order-confirmation-email/create-workflow.gif)
+* *নির্বাচন করুন* কাস্টম ইভেন্ট (ট্র্যাক ইভেন্ট)। টাইপ করুন `order_completed`।
+**পরবর্তী** এ ক্লিক করুন।
+২। **ধাপ ২/৩** - একটি বিলম্ব যোগ করুন
 
-When your workflow is complete, click on **DONE** to save and activate it.
+* একটি বিলম্ব চয়ন করুন উদাহরণস্বরূপ ৫ সেকেন্ড।
+**পরবর্তী** এ ক্লিক করুন।
+৩। **ধাপ ৩/৩** - একটি ইমেইল পাঠান
 
-## Example
+* ড্রপডাউন তালিকা থেকে, আপনি যে ইমেল টেমপ্লেটটি তৈরি করেছেন এবং সক্রিয় করেছেন তা নির্বাচন করুন।
+* চেক করুন **ইমেইল কাস্টমাইজ করতে আমার ইভেন্ট ডেটা ব্যবহার করুন**।
+* নির্বাচন করুন **ইভেন্ট ডেটা যা ওয়ার্কফ্লোকে ট্রিগার করে**।
+**ফিনিশ** এ ক্লিক করুন।
 
-Let's say that customer Jean Blue jean.blue@sendinblue.com has purchased the following 3 items from your store.
+![ওয়ার্কফ্লো তৈরি করুন](_static/send-an-order-confirmation-email/create-workflow.gif)
 
-![Order items](_static/send-an-order-confirmation-email/order-items.jpg)
+খন আপনার ওয়ার্কফ্লো সম্পূর্ণ হয়, সেভ এবং অ্যাক্টিভেট করতে **সম্পন্ন** এ ক্লিক করুন।
 
-Your template will look like this:
+## উদাহরণ
 
-![Template](_static/send-an-order-confirmation-email/template.jpg)
+ধরা যাক গ্রাহক জিন ব্লু jean.blue@sendinblue.com আপনার দোকান থেকে নিম্নলিখিত ৩ টি জিনিস কিনেছে।
 
-The email received by Jean Blue jean.blue@sendinblue.com will look like this:
+![অর্ডার আইটেম](_static/send-an-order-confirmation-email/order-items.jpg)
 
-![Email](_static/send-an-order-confirmation-email/email.jpg)
+আপনার টেমপ্লেটটি দেখতে এইরকম হবে:
 
-## Learn more
-* [Recover abandoned carts](xref:en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts)
+![টেমপ্লেট](_static/send-an-order-confirmation-email/template.jpg)
+
+জিন ব্লু দ্বারা প্রাপ্ত ইমেল jean.blue@sendinblue.com এর মত দেখতে হবে:
+
+![ইমেইল](_static/send-an-order-confirmation-email/email.jpg)
+
+## আরো জানুন
+* [পরিত্যক্ত কার্টগুলি পুনরুদ্ধার করুন](xref:bn/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts)

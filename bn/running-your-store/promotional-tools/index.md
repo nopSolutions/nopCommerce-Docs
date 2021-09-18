@@ -1,21 +1,21 @@
 ---
-title: Promotional tools
-uid: en/running-your-store/promotional-tools/index
+title: প্রচারমূলক সরঞ্জাম
+uid: bn/running-your-store/promotional-tools/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Promotional tools
+# প্রচারমূলক সরঞ্জাম
 
-nopCommerce allows you to use a lot of promotional tools to market your store. They can help you to raise customer awareness of your brand, encourage your partners, vendors to participate in affiliate programmes, and offer your customers some good deals (like discounts, tier prices), generating sales, and creating loyalty to your store.
+নপকমার্স আপনাকে আপনার দোকান বাজারজাত করার জন্য প্রচুর প্রচারমূলক সরঞ্জাম ব্যবহার করতে দেয়। তারা আপনাকে আপনার ব্র্যান্ড সম্পর্কে গ্রাহক সচেতনতা বাড়াতে, আপনার অংশীদার, বিক্রেতাদের অ্যাফিলিয়েট প্রোগ্রামে অংশ নিতে উৎসাহিত করতে এবং আপনার গ্রাহকদের কিছু ভাল ডিল (যেমন ডিসকাউন্ট, টিয়ার প্রাইস), বিক্রয় তৈরি এবং আপনার দোকানের প্রতি আনুগত্য তৈরি করতে সাহায্য করতে পারে।
 
-Learn more in following chapters:
-- [Discounts](xref:en/running-your-store/promotional-tools/discounts)
-- [Gift cards](xref:en/running-your-store/promotional-tools/gift-cards)
-- [Reward points](xref:en/running-your-store/promotional-tools/reward-points)
-- [Affiliates](xref:en/running-your-store/promotional-tools/affiliates)
-- [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
-- [Cross-sells and related products](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products)
-- [Email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns)
-- [Sendinblue integration](xref:en/running-your-store/promotional-tools/sendinblue-integration/index)
-- [Facebook Pixel](xref:en/running-your-store/promotional-tools/facebook-pixel)
+নিম্নলিখিত অধ্যায়গুলিতে আরও জানুন:
+-[ছাড়](xref:bn/running-your-store/promotional-tools/discount)
+-[উপহার কার্ড](xref:bn/running-your-store/promotional-tools/gift-cards)
+-[পুরষ্কার পয়েন্ট](xref:bn/running-your-store/promotional-tools/reward-points)
+-[অনুমোদিত](xref:bn/running-your-store/promotional-tools/affiliates)
+-[স্তরের মূল্য](xref:bn/running-your-store/promotional-tools/tier-prices)
+-[ক্রস-সেলস এবং সম্পর্কিত পণ্য](xref:bn/running-your-store/promotional-tools/cross-sells-and-related-products)
+-[ইমেল প্রচার](xref:bn/running-your-store/promotional-tools/email-campaigns)
+-[সেন্ডিনব্লু ইন্টিগ্রেশন](xref:bn/running-your-store/promotional-tools/sendinblue-integration/index)
+-[ফেসবুক পিক্সেল](xref:bn/running-your-store/promotional-tools/facebook-pixel)

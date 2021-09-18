@@ -1,53 +1,52 @@
 ---
-title: Affiliates
-uid: en/running-your-store/promotional-tools/affiliates
+title: সংযুক্ত করণ
+uid: bn/running-your-store/promotional-tools/affiliates
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Affiliates
+# সংযুক্ত করণ
 
-Affiliate marketing is an internet-based marketing practice in which affiliates are rewarded for the website traffic generated (each visitor or customer). It is a web-based pay-for-performance program designed to compensate affiliate partners for driving qualified leads or sales from their websites to a merchant website.
+অ্যাফিলিয়েট মার্কেটিং হল একটি ইন্টারনেট-ভিত্তিক মার্কেটিং প্র্যাকটিস যেখানে অ্যাফিলিয়েটরা ওয়েবসাইট ট্র্যাফিকের জন্য পুরস্কৃত হয় (প্রতিটি ভিজিটর বা গ্রাহক)। এটি একটি ওয়েব-ভিত্তিক পে-পারফরম্যান্স প্রোগ্রাম যা অনুমোদিত অংশীদারদের তাদের ওয়েবসাইট থেকে একটি বণিক ওয়েবসাইটে বিক্রয় করার জন্য ক্ষতিপূরণ দেওয়ার জন্য ডিজাইন করা হয়েছে।
 
-Affiliates are third parties who refer customers to your site. The nopCommerce software can track those referrals so that the store administrator can determine the commission to be paid to affiliates. Once a customer is assigned an affiliate ID, every order they place is also tagged with that ID.
+অ্যাফিলিয়েট হল তৃতীয় পক্ষ যারা আপনার সাইটে গ্রাহকদের রেফার করে। নপকমার্স-এ সফটওয়্যার সেই রেফারেলগুলিকে ট্র্যাক করতে পারে যাতে স্টোর অ্যাডমিনিস্ট্রেটর সংশ্লিষ্টদের দেওয়া কমিশন নির্ধারণ করতে পারে। একবার একজন গ্রাহককে একটি অ্যাফিলিয়েট আইডি বরাদ্দ করা হলে, তাদের দেওয়া প্রতিটি অর্ডারও সেই আইডি দিয়ে ট্যাগ করা হয়।
 
- In nopCommerce, an affiliate partner link looks as follows: `http://www.yourstore.com/?AffiliateID=N` (where N is an affiliate ID). A store owner can also specify *friendly URL* name field for marketing purposes: `http://www.yourstore.com/?affiliate=your_friendly_name_here`. This URL is displayed when you visit the affiliate details page. When this hyperlink is clicked from the affiliate site, nopCommerce looks for an affiliate ID query string parameter.
+ নপকমার্স- এ, একটি অ্যাফিলিয়েট পার্টনার লিঙ্ক নিম্নরূপ দেখায়: `http://www.yourstore.com/?AffiliateID=N` (যেখানে N একটি অ্যাফিলিয়েট আইডি)। একটি দোকানের মালিক বিপণনের উদ্দেশ্যে *বন্ধুত্বপূর্ণ URL* নাম ক্ষেত্রও নির্দিষ্ট করতে পারেন: `http://www.yourstore.com/?affiliate=your_friendly_name_here`। এই ইউআরএলটি প্রদর্শিত হয় যখন আপনি অ্যাফিলিয়েট বিশদ পৃষ্ঠা দেখুন। যখন এই হাইপারলিঙ্কটি অ্যাফিলিয়েট সাইট থেকে ক্লিক করা হয়, nopCommerce একটি অ্যাফিলিয়েট আইডি ক্যোয়ারী স্ট্রিং প্যারামিটার খোঁজে।
 
-![nopCommerce affiliates](_static/affiliates/affiliates.jpg.png)
+![নপকমার্স সংযুক্ত করণ](_static/affiliates/affiliates.jpg.png)
 
-## Add a new affiliate
+## একটি নতুন অ্যাফিলিয়েট যোগ করুন
 
-To add an affiliate go to **Promotions → Affiliates** and click **Add new**.
+একটি অ্যাফিলিয়েট যোগ করতে **প্রোমোশন → অ্যাফিলিয়েটস ** এ যান এবং** **নতুন যোগ করুন** এ ক্লিক করুন।
 
-![Add a new affiliate](_static/affiliates/affiliate_new.png)
+![একটি নতুন অ্যাফিলিয়েট যোগ করুন](_static/affiliates/affiliate_new.png)
+অ্যাফিলিয়েট বিশদ সংজ্ঞায়িত করুন:
 
-Define the affiliate details:
+- অ্যাফিলিয়েট সক্রিয় করতে **সক্রিয়** চেকবক্স নির্বাচন করুন।
+- **নামের প্রথম অংশ**.
+- **নামের শেষাংশ**.
+- **ইমেইল**।
+- **কোম্পানির নাম**.
+- ড্রপ-ডাউন তালিকা থেকে **দেশ** নির্বাচন করুন।
+- যদি নির্বাচিত দেশটি মার্কিন যুক্তরাষ্ট্র হয় তবে **রাজ্য/প্রদেশ** উল্লেখ করুন।
+- **কাউন্টি/অঞ্চল**।
+- **শহর**।
+- **ঠিকানা ১**.
+- **ঠিকানা ২**.
+- **জিপ/পোস্টাল কোড**।
+- **ফোন নম্বর**.
+- **ফ্যাক্স নম্বর**.
+- **প্রশাসক মন্তব্য** ক্ষেত্রের মধ্যে, আপনি একটি ঐচ্ছিক মন্তব্য বা অভ্যন্তরীণ ব্যবহারের জন্য তথ্য লিখতে পারেন।
+- আপনি **ফ্রেন্ডলি ইউআরএল নাম উল্লেখ করতে পারেন** যা মার্কেটিং এর উদ্দেশ্যে একটি বন্ধুত্বপূর্ণ অ্যাফিলিয়েট ইউআরএল লিংক অথবা আপনি এই ফিল্ডটি খালি রাখতে পারেন, তাহলে ডিফল্ট ইউআরএল ব্যবহার করা হবে। ডিফল্টরূপে, অ্যাফিলিয়েট পার্টনারদের URL থাকে: `http://www.yourstore.com/?AffiliateID=N` (যেখানে N হল একটি অ্যাফিলিয়েট আইডি)।
 
-- Select the **Active** checkbox, to activate the affiliate.
-- **First name**.
-- **Last name**.
-- **Email**.
-- **Company** name.
-- Select the **Country** from the drop-down list.
-- If the selected country is the USA specify the **State/province** as well.
-- **County/region**.
-- **City**.
-- **Address 1**.
-- **Address 2**.
-- **Zip/postal code**.
-- **Phone number**.
-- **Fax number**.
-- In the **Admin comment** field, you can enter an optional comment or information for internal use.
-- You can specify the **Friendly URL name** which is a friendly affiliate URL link for marketing purposes or you can leave this field empty, then the default URL will be used. By default, affiliate partners have URL: `http://www.yourstore.com/?AffiliateID=N` (where N is an affiliate ID).
+যদি আপনি **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** ক্লিক করেন তাহলে আপনি আরও দুটি প্যানেল দেখতে পাবেন যেখানে আপনি এই অধিভুক্তটি কতটা কার্যকর তা পরীক্ষা করতে পারেন:
 
-If you click **Save and continue edit** you will see two more panels where you can check how effective this affiliate is:
+* *অনুমোদিত গ্রাহক* প্যানেল সমস্ত অনুমোদিত গ্রাহকদের একটি তালিকা দেখায়।
+* *এফিলিয়েটেড অর্ডার* প্যানেল সমস্ত অনুমোদিত অর্ডারের একটি তালিকা দেখায়। যখন একটি অনুমোদিত গ্রাহক একটি অর্ডার দেয়, আপনি এই প্যানেলে অর্ডার দেখতে পারেন।
 
-* The *Affiliated customers* panel shows a list of all affiliated customers.
-* The *Affiliated orders* panel shows a list of all affiliated orders. When an affiliated customer places an order, you can see the order on this panel.
+## আরো দেখুন
 
-## See also
-
-- [Order management](xref:en/running-your-store/order-management/index)
-- [Customer management](xref:en/running-your-store/customer-management/index)
+-[অর্ডার ম্যানেজমেন্ট](xref:bn/running-your-store/order-management/index)
+-[গ্রাহক ব্যবস্থাপনা](xref:bn/running-your-store/customer-management/index)
 
 

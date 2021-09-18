@@ -1,39 +1,39 @@
 ---
-title: Tier prices
-uid: en/running-your-store/promotional-tools/tier-prices
+title: স্তরের দাম
+uid: bn/running-your-store/promotional-tools/tier-prices
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Tier prices
+# স্তরের দাম
 
-Tier prices is a promotional tool that allows a store owner to offer special prices when customers buy bigger amounts of a particular product. This tool is typically used in wholesales, but retailers can apply it as well to incentivize buyers and drive more sales.
+টিয়ার মূল্য একটি প্রচারমূলক হাতিয়ার যা একটি দোকানের মালিককে বিশেষ মূল্য প্রদানের অনুমতি দেয় যখন গ্রাহকরা একটি নির্দিষ্ট পণ্য বেশি পরিমাণে কেনেন। এই সরঞ্জামটি সাধারণত পাইকারী বিক্রিতে ব্যবহৃত হয়, তবে খুচরা বিক্রেতারা ক্রেতাদের উৎসাহিত করতে এবং আরও বিক্রয় চালাতে এটি প্রয়োগ করতে পারে।
 
-Tier prices can be applied to a product on the product edit page. Go to **Catalog → Products**, select a product you want to add a tier price to and click **Edit**. Look for the *Tier prices* panel to add a new tier price:
-![Tier prices](_static/tier-prices/tier.png)
+প্রোডাক্ট এডিট পেজে একটি প্রোডাক্টে টায়ারের দাম প্রয়োগ করা যেতে পারে। **ক্যাটালগ → পণ্য** এ যান, একটি পণ্য নির্বাচন করুন যা আপনি একটি স্তরের মূল্য যোগ করতে চান এবং **সম্পাদনা করুন** ক্লিক করুন। একটি নতুন স্তর মূল্য যোগ করার জন্য *টিয়ার মূল্য* প্যানেল দেখুন:
+![স্তরের দাম](_static/tier-prices/tier.png)
 
 > [!NOTE]
 > 
-> You need to save the product before you can add tier prices for the product page.
+> প্রোডাক্ট পৃষ্ঠার জন্য টায়ার মূল্য যোগ করার আগে আপনাকে পণ্যটি সংরক্ষণ করতে হবে।
 
-## Adding tier prices
+## স্তরের দাম যোগ করা
 
-Click the **Add new tier price** button to add a new tier price. The *Add new tier price* window will be displayed:
-![Adding tier prices](_static/tier-prices/add-new.jpg)
+একটি নতুন স্তরের মূল্য যোগ করতে **নতুন স্তরের দাম যোগ করুন** বাটনে ক্লিক করুন। *নতুন স্তরের মূল্য যোগ করুন* উইন্ডো প্রদর্শিত হবে:
+![স্তরের দাম যোগ করা](_static/tier-prices/add-new.jpg)
 
-- In the **Quantity** and **Price** fields, define the price applicable to a certain quantity of the product.
-- In case you run several stores, from the **Store** drop-down list, select the one in which you plan to apply the tier prices.
-- From the **Customer role** drop-down list, select the customer role based on which the tier price will be defined, ex. *All* customers, *Registered*, *Guests*.
-- In the **Start date** and **End date** fields enter the period of tier prices availability. Leave these fields empty if not applicable.
+- **পরিমাণ** এবং **মূল্য** ক্ষেত্রগুলিতে, পণ্যের একটি নির্দিষ্ট পরিমাণে প্রযোজ্য মূল্য নির্ধারণ করুন।
+- যদি আপনি বেশ কয়েকটি দোকান চালান, তবে **স্টোর** ড্রপ-ডাউন তালিকা থেকে, যেটি আপনি স্তরের মূল্য প্রয়োগ করার পরিকল্পনা করছেন তা নির্বাচন করুন।
+- **গ্রাহকের ভূমিকা** ড্রপ-ডাউন তালিকা থেকে, গ্রাহকের ভূমিকা নির্বাচন করুন যার ভিত্তিতে স্তরের মূল্য নির্ধারণ করা হবে, যেমন। *সকল* গ্রাহক,*নিবন্ধিত*,*অতিথি*।
+- **শুরুর তারিখ** এবং **সমাপ্তির তারিখ** ক্ষেত্রগুলিতে টিয়ার মূল্য প্রাপ্যতার সময়কাল লিখুন। প্রযোজ্য না হলে এই ক্ষেত্রগুলি খালি রাখুন।
 
-Click **Save**. The *Tier prices* table is updated with the new data.
+**সেভ** ক্লিক করুন। *টিয়ার মূল্য* টেবিলটি নতুন ডেটা দিয়ে আপডেট করা হয়।
 
-You can now view the updated product details page in the public store:
+আপনি এখন পাবলিক স্টোরে আপডেট পণ্যের বিবরণ পৃষ্ঠা দেখতে পারেন:
 
-![Tier price example](_static/tier-prices/TierPriceExample.jpg)
+![স্তরের মূল্য উদাহরণ](_static/tier-prices/TierPriceExample.jpg)
 
-When a customer adds a certain quantity of a product to their cart, the price is being automatically changed to reflect the discount. 
+যখন একজন গ্রাহক তাদের কার্টে একটি নির্দিষ্ট পরিমাণ পণ্য যোগ করেন, তখন মূল্যটি স্বয়ংক্রিয়ভাবে পরিবর্তিত হচ্ছে ডিসকাউন্ট প্রতিফলিত করতে।
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Managing tier pricing](https://www.youtube.com/watch?v=ERE08UEDU58&t=10s)
+- [স্তরের মূল্য ব্যবস্থাপনা](https://www.youtube.com/watch?v=ERE08UEDU58&t=10s)
