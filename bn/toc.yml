@@ -39,165 +39,165 @@
       name: নপকমার্স আপগ্রেড করা
       href: installation-and-upgrading/upgrading-nopcommerce.md
 - 
-  name: Getting started
+  name: শুরু করুন
   href: getting-started/index.md
   items:
     -
-      name: Admin area overview
+      name: অ্যাডমিন এলাকা ওভারভিউ
       href: getting-started/admin-area-overview.md
     -
-      name: Create a catalog and add products
+      name: একটি ক্যাটালগ তৈরি করুন এবং পণ্য যোগ করুন
       href: running-your-store/catalog/index.md
     -
-      name: Design your store
+      name: আপনার দোকান ডিজাইন করুন
       href: getting-started/design-your-store/index.md
       items: 
         -
-          name: Choose and install a theme 
+          name: একটি থিম নির্বাচন করুন এবং ইনস্টল করুন
           href: getting-started/design-your-store/choose-and-install-a-theme.md
         -
-          name: Uploading your logo
+          name: আপনার লোগো আপলোড করুন
           href: getting-started/design-your-store/uploading-your-logo.md
         -
-          name: Adding a favicon
+          name: একটি ফেভিকন যোগ করুন
           href: getting-started/design-your-store/adding-a-favicon.md
         -
-          name: Nivo slider
+          name: নিভো স্লাইডার
           href: getting-started/design-your-store/nivo-slider.md
         -
-          name: Top menu & footer
+          name: শীর্ষ মেনু এবং পাদলেখ
           href: getting-started/design-your-store/top-menu-and-footer.md
         -
-          name: Media settings
+          name: মিডিয়া সেটিংস
           href: getting-started/design-your-store/media-settings.md
     -
-      name: Configure payments
+      name: পেমেন্ট কনফিগার করুন
       href: getting-started/configure-payments/index.md
       items:
         -
-          name: Payment methods
+          name: মুল্য পরিশোধ পদ্ধতি
           href: getting-started/configure-payments/payment-methods/index.md
           items:
             -
-              name: Check/money order
+              name: চেক / মানি অর্ডার
               href: getting-started/configure-payments/payment-methods/check-money-order.md
             -
-              name: Credit card (manual processing)
+              name: ক্রেডিট কার্ড (ম্যানুয়াল প্রসেসিং)
               href: getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
             -
-              name: PayPal Standard
+              name: পেপ্যাল ​​স্ট্যান্ডার্ড
               href: getting-started/configure-payments/payment-methods/paypal-standard.md
             -
-              name: PayPal Smart Payment Buttons
+              name: পেপ্যাল ​​স্মার্ট পেমেন্ট বোতাম
               href: getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
         -
-          name: Advanced configuration
+          name: উন্নত কনফিগারেশন
           href: getting-started/configure-payments/advanced-configuration/index.md
           items:
             -
-              name: Payment method restrictions
+              name: পেমেন্ট পদ্ধতি সীমাবদ্ধতা
               href: getting-started/configure-payments/advanced-configuration/payment-method-restrictions.md
             -
-              name: Currencies
+              name: মুদ্রা
               href: getting-started/configure-payments/advanced-configuration/currencies.md
     -
-      name: Configure shipping
+      name: শিপিং কনফিগার করুন
       href: getting-started/configure-shipping/index.md
       items:
         -
-          name: Shipping settings
+          name: শিপিং সেটিংস
           href: getting-started/configure-shipping/shipping-settings.md
         -
           name: Shipping providers
           href: getting-started/configure-shipping/shipping-providers/index.md
           items:
             -
-              name: Manual (Fixed or by weight and by total)
+              name: ম্যানুয়াল (স্থির বা ওজন এবং মোট দ্বারা)
               href: getting-started/configure-shipping/shipping-providers/manual.md
             -
-              name: ShipStation
+              name: শিপস্টেশন
               href: getting-started/configure-shipping/shipping-providers/shipstation.md
             -
-              name: UPS
+              name: ইউপিএস
               href: getting-started/configure-shipping/shipping-providers/ups.md
         -
-          name: Advanced configuration
+          name: উন্নত কনফিগারেশন
           href: getting-started/configure-shipping/advanced-configuration/index.md
           items:
             -
-              name: Countries, states
+              name: দেশ, রাজ্য
               href: getting-started/configure-shipping/advanced-configuration/countries-states.md
             -
-              name: Warehouses
+              name: গুদাম
               href: getting-started/configure-shipping/advanced-configuration/warehouses.md
             -
-              name: Dates and ranges
+              name: তারিখ এবং রেঞ্জ
               href: getting-started/configure-shipping/advanced-configuration/dates-and-ranges.md
             -
-              name: Measures
+              name: পরিমাপ
               href: getting-started/configure-shipping/advanced-configuration/measures.md
             -
-              name: Pickup points
+              name: পিকআপ পয়েন্ট
               href: getting-started/configure-shipping/advanced-configuration/pickup-points.md
     -
-      name: Configure taxes
+      name: কর কনফিগার করুন
       href: getting-started/configure-taxes/index.md
       items:
         -
-          name: Tax settings
+          name: ট্যাক্স সেটিংস
           href: getting-started/configure-taxes/tax-settings.md
         -
-          name: Tax providers
+          name: কর প্রদানকারী
           href: getting-started/configure-taxes/tax-providers/index.md
           items:
             -
-              name: Manual (fixed or by country/state/zip)
+              name: ম্যানুয়াল (স্থির বা দেশ/রাজ্য/জিপ দ্বারা)
               href: getting-started/configure-taxes/tax-providers/manual.md
             -
-              name: Avalara
+              name: আভালারা
               href: getting-started/configure-taxes/tax-providers/avalara.md
     -
-      name: Email accounts
+      name: ইমেইল অ্যাকাউন্টসমূহ
       href: getting-started/email-accounts.md
     -
-      name: Advanced configuration
+      name: উন্নত কনফিগারেশন
       href: getting-started/advanced-configuration/index.md
       items:
         -
-          name: How to install and configure SSL certification
+          name: কিভাবে এসএসএল সার্টিফিকেশন ইনস্টল এবং কনফিগার করবেন
           href: getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification.md
         -
-          name: Your store information
+          name: আপনার দোকানের তথ্য
           href: getting-started/advanced-configuration/your-store-information.md
         -
-          name: GDPR settings
+          name: জিডিপিআর সেটিংস
           href: getting-started/advanced-configuration/gdpr-settings.md
         -
-          name: Localization
+          name: স্থানীয়করণ
           href: getting-started/advanced-configuration/localization.md
         -
-          name: External authentication methods
+          name: বাহ্যিক প্রমাণীকরণ পদ্ধতি
           href: getting-started/advanced-configuration/external-authentication-methods.md
         -
-          name: Multi-factor authentication
+          name: মাল্টি-ফ্যাক্টর প্রমাণীকরণ
           href: getting-started/advanced-configuration/multi-factor-authentication.md
         -
-          name: Configure analytics
+          name: বিশ্লেষণ কনফিগার করুন
           href: getting-started/advanced-configuration/configure-analytics.md
         -
-          name: Plugins in nopCommerce
+          name: নপকমার্স-এ প্লাগইন
           href: getting-started/advanced-configuration/plugins-in-nopcommerce.md
         -
-          name: Multi-store
+          name: মাল্টি-স্টোর
           href: getting-started/advanced-configuration/multi-store.md
         -
-          name: Security settings
+          name: নিরাপত্তা বিন্যাস
           href: getting-started/advanced-configuration/security-settings.md
         -
-          name: PDF settings
+          name: পিডিএফ সেটিংস
           href: getting-started/advanced-configuration/pdf-settings.md
         -
-          name: All settings
+          name: সব সেটিংস
           href: getting-started/advanced-configuration/all-settings.md
 -
   name: আপনার স্টোর চালানো

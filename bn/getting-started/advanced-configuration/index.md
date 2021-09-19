@@ -1,20 +1,21 @@
 ---
-title: Advanced configuration
-uid: en/getting-started/advanced-configuration/index
+title: উন্নত কনফিগারেশন
+uid: bn/getting-started/advanced-configuration/index
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Advanced configuration
+# উন্নত কনফিগারেশন
 
-* [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification)
-* [Your store information](xref:en/getting-started/advanced-configuration/your-store-information)
-* [GDPR settings](xref:en/getting-started/advanced-configuration/gdpr-settings)
-* [Localization](xref:en/getting-started/advanced-configuration/localization)
-* [External authentication methods](xref:en/getting-started/advanced-configuration/external-authentication-methods)
-* [Multi-factor authentication](xref:en/getting-started/advanced-configuration/multi-factor-authentication)
-* [Configure analytics](xref:en/getting-started/advanced-configuration/configure-analytics)
-* [Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
-* [Multi-store](xref:en/getting-started/advanced-configuration/multi-store)
-* [Security settings](xref:en/getting-started/advanced-configuration/security-settings)
-* [PDF settings](xref:en/getting-started/advanced-configuration/pdf-settings)
-* [All settings](xref:en/getting-started/advanced-configuration/all-settings)
+* [SSL সার্টিফিকেশন কিভাবে ইনস্টল এবং কনফিগার করবেন](xref:bn/getting-start/advanced-configuration/how-to-install-and-configure-ssl-certification)
+* [আপনার দোকানের তথ্য](xref:bn/getting-start/advanced-configuration/your-store-information)
+* [জিডিপিআর সেটিংস](xref:bn/getting-start/advanced-configuration/gdpr-settings)
+* [স্থানীয়করণ](xref:bn/get-start/advanced-configuration/localization)
+* [বাহ্যিক প্রমাণীকরণ পদ্ধতি](xref:bn/get-start/advanced-configuration/বহিরাগত-প্রমাণীকরণ-পদ্ধতি)
+* [মাল্টি-ফ্যাক্টর প্রমাণীকরণ](xref:bn/get-start/advanced-configuration/multi-factor-authentication)
+* [বিশ্লেষণ কনফিগার করুন](xref:bn/getting-start/advanced-configuration/configure-analytics)
+* [NopCommerce- এ প্লাগইন](xref:bn/getting-start/advanced-configuration/plugins-in-nopcommerce)
+* [মাল্টি-স্টোর](xref:bn/getting-start/advanced-configuration/multi-store)
+* [নিরাপত্তা সেটিংস](xref:bn/get-start/advanced-configuration/security-settings)
+* [পিডিএফ সেটিংস](xref:bn/getting-start/advanced-configuration/pdf-settings)
+* [সমস্ত সেটিংস](xref:bn/get-start/advanced-configuration/all-settings)
