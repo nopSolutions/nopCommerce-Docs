@@ -1,45 +1,44 @@
 ---
-title: Maintenance
-uid: en/running-your-store/system-administration/maintenance
+title: রক্ষণাবেক্ষণ
+uid: bn/running-your-store/system-administration/maintenance
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Maintenance
+# রক্ষণাবেক্ষণ
 
-From the **System** menu, select **Maintenance**. The *Maintenance* window is displayed, as follows:
+**সিস্টেম** মেনু থেকে, **রক্ষণাবেক্ষণ** নির্বাচন করুন। *রক্ষণাবেক্ষণ* উইন্ডোটি নিম্নরূপ প্রদর্শিত হয়:
 
-![Maintenance](_static/maintenance/maintenance.jpg)
+![রক্ষণাবেক্ষণ](_static/maintenance/maintenance.jpg)
 
-## Delete guest customer records
+## অতিথি গ্রাহকের রেকর্ড মুছে দিন
 
-From the *Deleting guest customers* panel, click the **Delete** button. This option enables you to delete customer records created for guest visitors.
-
-> [!NOTE]
-> 
-> Only guests without orders or written customer content (such as product reviews or news comments) will be deleted.
-
-## Deleting old exported files
-
-From the *Deleting old exported files* panel, click the **Delete** button. All the exported and generated files (such as, PDF and Excel files for example) will be deleted and removed from the database.
-
-## Delete abandoned shopping carts and wishlists
-
-From the *Deleting abandoned shopping carts* panel, click the **Delete** button. All shopping cart and wishlist items created before the specified date will be deleted.
-
-## Re-index database tables
-
-From the *Re-index database tables* panel, click the **Re-index** button. This procedure modifies existing tables by rebuilding the index. When you execute re-indexing in a table, only the statistics associated with the indexes are updated. Automatic or manual statistics created in the table (instead of an index) are not updated.
-
-## Database backups 
-
-From the *Database backups* panel, click the **Backup now** button to create a database backup. 
+*অতিথি গ্রাহকদের মুছে ফেলা* প্যানেল থেকে, **মুছুন** বোতামে ক্লিক করুন। এই বিকল্পটি আপনাকে অতিথি দর্শকদের জন্য তৈরি গ্রাহক রেকর্ড মুছে ফেলতে সক্ষম করে।
 
 > [!NOTE]
 >
-> Database backup functionality works only when your nopCommerce application is deployed on the same server as the database. Otherwise you will have to take care of the backup yourself (contact your system administrator).
+> শুধুমাত্র অর্ডার বা লিখিত গ্রাহক সামগ্রী (যেমন পণ্য পর্যালোচনা বা সংবাদ মন্তব্য) ছাড়া অতিথি মুছে ফেলা হবে।
 
+## পুরানো রপ্তানি করা ফাইল মুছে ফেলা
 
-## Tutorials
+*পুরানো রপ্তানি করা ফাইল মুছে ফেলা* প্যানেল থেকে, **মুছুন** বাটনে ক্লিক করুন। সমস্ত রপ্তানি ও উৎপন্ন ফাইল (যেমন, পিডিএফ এবং এক্সেল ফাইল) ডাটাবেস থেকে মুছে ফেলা হবে।
 
-[Overview of system maintenance options](https://www.youtube.com/watch?v=CNgTJZoWHTA)
+## পরিত্যক্ত শপিং কার্ট এবং ইচ্ছা তালিকা মুছুন
+
+*পরিত্যক্ত শপিং কার্ট মুছে ফেলা* প্যানেল থেকে, **মুছুন** বাটনে ক্লিক করুন। নির্দিষ্ট তারিখের আগে তৈরি সমস্ত শপিং কার্ট এবং উইশলিস্ট আইটেম মুছে ফেলা হবে।
+
+## ডাটাবেস টেবিল পুনরায় সূচী করুন
+
+*রি-ইনডেক্স ডাটাবেস টেবিল* প্যানেল থেকে, **রি-ইনডেক্স** বাটনে ক্লিক করুন। এই পদ্ধতিটি সূচক পুনর্নির্মাণের মাধ্যমে বিদ্যমান টেবিলগুলি পরিবর্তন করে। যখন আপনি একটি টেবিলে পুনরায় সূচীকরণ চালান, তখন শুধুমাত্র সূচকের সাথে সম্পর্কিত পরিসংখ্যান আপডেট করা হয়। টেবিলে তৈরি স্বয়ংক্রিয় বা ম্যানুয়াল পরিসংখ্যান (একটি সূচকের পরিবর্তে) আপডেট করা হয় না।
+
+## ডাটাবেস ব্যাকআপ
+
+*ডাটাবেস ব্যাকআপ* প্যানেল থেকে, ডাটাবেস ব্যাকআপ তৈরি করতে **এখন ব্যাকআপ** বাটনে ক্লিক করুন।
+
+> [!NOTE]
+>
+> ডাটাবেসের ব্যাকআপ কার্যকারিতা তখনই কাজ করে যখন আপনার নপকমার্স অ্যাপ্লিকেশনটি ডাটাবেসের মতো একই সার্ভারে স্থাপন করা হয়। অন্যথায় আপনাকে নিজের ব্যাকআপের যত্ন নিতে হবে (আপনার সিস্টেম প্রশাসকের সাথে যোগাযোগ করুন)।
+
+## টিউটোরিয়াল
+
+[সিস্টেম রক্ষণাবেক্ষণ বিকল্পগুলির ওভারভিউ](https://www.youtube.com/watch?v=CNgTJZoWHTA)

@@ -1,82 +1,81 @@
 ---
-title: Gift cards
-uid: en/running-your-store/promotional-tools/gift-cards
+title: উপহার কার্ড
+uid: bn/running-your-store/promotional-tools/gift-cards
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Gift cards
+# উপহার কার্ড
 
-In nopCommerce, you have an opportunity to sell gift cards among other types of products.
+নপকমার্স-এ, আপনার অন্যান্য ধরণের পণ্যের মধ্যে উপহার কার্ড বিক্রির সুযোগ রয়েছে।
 
-Gift cards is a good marketing tool, enabling you to reach more customers and stimulate additional purchases. Gift cards is a highly targeted instrument as the receivers are certainly motivated to use them, because it is like a personal proposal to them.
+গিফট কার্ড একটি ভালো মার্কেটিং টুল, যা আপনাকে আরও বেশি গ্রাহকদের কাছে পৌঁছাতে এবং অতিরিক্ত ক্রয়কে উদ্দীপিত করতে সক্ষম করে। উপহার কার্ড একটি অত্যন্ত লক্ষ্যযুক্ত যন্ত্র, কারণ রিসিভার অবশ্যই সেগুলি ব্যবহার করতে অনুপ্রাণিত হয়, কারণ এটি তাদের কাছে ব্যক্তিগত প্রস্তাবের মতো।
 
-![nopCommerce gift card](_static/gift-cards/gift_main.png)
+![নপকমার্স উপহার কার্ড](_static/gift-cards/gift_main.png)
 
-## Add a new gift card
+## একটি নতুন উপহার কার্ড যোগ করুন
 
-You can create gift card products, defining a product as a gift card by ticking the **Is gift card** checkbox when creating the product in the **Catalog → Products → Add new → Gift card** panel.
+**ক্যাটালগ → পণ্য → নতুন যোগ করুন→ উপহার কার্ড** প্যানেলে পণ্য তৈরি করার সময় আপনি **উপহার কার্ড** চেকবক্সে টিক দিয়ে একটি পণ্যকে উপহার কার্ড হিসাবে সংজ্ঞায়িত করে উপহার কার্ড পণ্য তৈরি করতে পারেন।
 
-![Is gift card](_static/gift-cards/is_gift_card.png)
+![উপহার কার্ড](_static/gift-cards/is_gift_card.png)
 
-In this panel you also need to specify the **Gift card type**: *Virtual* or *Physical*.
+এই প্যানেলে আপনাকে **উপহার কার্ডের ধরন**: *ভার্চুয়াল* বা *শারীরিক* নির্দিষ্ট করতে হবে।
 
 > [!WARNING]
 >
-> It is not recommended to change the gift card type from one to another in a "live" store.
+> "লাইভ" দোকানে উপহার কার্ডের ধরন এক থেকে অন্যের মধ্যে পরিবর্তন করার সুপারিশ করা হয় না।
 
-## Activating a gift card
+## একটি উপহার কার্ড সক্রিয় করা
 
-After customers complete purchases with the gift card products, you can then search and view the list of all the purchased gift cards in **Sales → Gift cards**.
+গ্রাহকরা গিফট কার্ড পণ্য দিয়ে কেনাকাটা শেষ করার পরে, আপনি **বিক্রয় → উপহার কার্ড** এ সমস্ত কেনা উপহার কার্ডের তালিকা অনুসন্ধান এবং দেখতে পারেন।
+![উপহার কার্ড](_static/gift-cards/gift-cards.jpg)
 
-![Gift cards](_static/gift-cards/gift-cards.jpg)
+উপহার কার্ডের বিবরণ দেখতে **সম্পাদনা করুন** বোতামে ক্লিক করুন। *উপহার কার্ডের বিবরণ সম্পাদনা করুন* উইন্ডো প্রদর্শিত হবে:
 
-To see the gift card details click the **Edit** button deside it. The *Edit gift card details* window will be displayed:
+![উপহার কার্ড সম্পাদনা করুন](_static/gift-cards/gift-card-edit.jpg)
 
-![Edit gift card](_static/gift-cards/gift-card-edit.jpg)
-
-You should tick the **Is gift card activated** checkbox to activate the gift card. Then generate the **Coupon code**.
-
-> [!NOTE]
->
-> In order to active a gift card automatically after completing an order go to the **Configuration → Settings → Order settings** page. Find the *Gift cards* panel and tick the **Activate gift cards after completing of an order** checkbox. In this case the **Coupon code** will be generated automatically as well.
-> Note that there are other settings related to gift card activation on this page.
-
-You can also define the following gift card information:
-
-- From the **Gift card type** select whether it's *Virtual* or *Physical*.
-- Beside **Order** field, click **View** to view the order in which the gift card was purchased.
-- In the **Initial value** field, edit the initial value of the card if needed.
-- The **Remaining amount** field allows to see the remaining amount of this gift card.
-- The **Is gift card activated** field determines whether gift this card is activated and can be used.
-- The **Coupon code** field represents the gift card coupon code (used during checkout).
-- If required, edit the **Recipients name**, **Recipient's email** (if the gift card type is *Virtual*), **Sender's name** and **Sender's email** (if the gift card type is *Virtual*) in the relevant fields.
-- Enter an optional message in the **Message** area.
-- Click **Notify recipient**. An email containing the gift card details will be sent to the recipient's email. This button is relevant only for virtual gift cards card and not physical gift cards.
-
-## Usage history
-
-In the *Usage history* panel you can see the list of orders this gift card coupon was used for. After the gift card is activated and the sender received a coupon code, he can use it during checkout.
-
-![Gift card usage history](_static/gift-cards/gift-usage.jpg)
-
-## Using gift cards
-
-A gift card is used in the public store by entering the serial number in the box on the shopping cart page.
-
-![Using gift card](_static/gift-cards/using-geft-cards.jpg)
+গিফট কার্ডটি সক্রিয় করতে আপনাকে **উপহার কার্ড সক্রিয় কি** চেকবক্সে টিক দিতে হবে। তারপর **কুপন কোড** জেনারেট করুন।
 
 > [!NOTE]
 >
-> You can disable the gift card box on the shopping cart page by unticking the **Show gift card box** checkbox on the **Configuration → Settings → Shopping cart settings** page (*Common* panel).
+> অর্ডার শেষ করার পর স্বয়ংক্রিয়ভাবে একটি উপহার কার্ড সক্রিয় করার জন্য **কনফিগারেশন → সেটিংস → অর্ডার সেটিংস** পৃষ্ঠায় যান। *উপহার কার্ড* প্যানেল খুঁজুন এবং একটি অর্ডার শেষ করার পর **উপহার কার্ড সক্রিয় করুন** চেকবক্সে টিক দিন। এই ক্ষেত্রে **কুপন কোড** স্বয়ংক্রিয়ভাবে উৎপন্ন হবে।
+> লক্ষ্য করুন যে এই পৃষ্ঠায় উপহার কার্ড সক্রিয়করণ সম্পর্কিত অন্যান্য সেটিংস রয়েছে।
 
-You can also allow your customers to check the gift card balane. To do this tick the **Allow customers to check gift card balance** checkbox on the **Configuration → Settings → Shopping cart settings** page (*Common* panel).
+আপনি নিম্নলিখিত উপহার কার্ড তথ্য সংজ্ঞায়িত করতে পারেন:
+
+- **উপহার কার্ডের ধরন থেকে** নির্বাচন করুন যে এটি *ভার্চুয়াল*বা *শারীরিক*।
+- **অর্ডার** ক্ষেত্রের পাশে, উপহার কার্ডটি যে অর্ডারে কেনা হয়েছিল তা দেখতে **দেখুন** ক্লিক করুন।
+- **প্রাথমিক মান** ক্ষেত্রে, প্রয়োজন হলে কার্ডের প্রাথমিক মান সম্পাদনা করুন।
+- **অবশিষ্ট পরিমাণ** ক্ষেত্র এই উপহার কার্ডের অবশিষ্ট পরিমাণ দেখতে দেয়।
+- **উপহার কার্ড সক্রিয়** ক্ষেত্র নির্ধারণ করে যে এই কার্ডটি সক্রিয় করা হয়েছে এবং ব্যবহার করা যাবে।
+- **কুপন কোড** ক্ষেত্র উপহার কার্ড কুপন কোড (চেকআউটের সময় ব্যবহৃত) উপস্থাপন করে।
+- প্রয়োজনে, **প্রাপকদের নাম**, **প্রাপকের ইমেল** (যদি উপহার কার্ডের ধরন*ভার্চুয়াল*হয়), **প্রেরকের নাম** এবং **প্রেরকের ইমেল** (যদি উপহার কার্ডের ধরন প্রাসঙ্গিক ক্ষেত্রে *ভার্চুয়াল*)।
+- **বার্তা** এলাকায় একটি ঐচ্ছিক বার্তা লিখুন।
+- **বিজ্ঞপ্তি প্রাপক** ক্লিক করুন। উপহার কার্ডের বিবরণ সম্বলিত একটি ইমেল প্রাপকের ইমেইলে পাঠানো হবে। এই বোতামটি শুধুমাত্র ভার্চুয়াল উপহার কার্ড কার্ডের জন্য প্রাসঙ্গিক এবং শারীরিক উপহার কার্ড নয়।
+
+## ব্যবহারের ইতিহাস
+
+*ব্যবহারের ইতিহাস* প্যানেলে আপনি এই অর্ডারগুলির তালিকা দেখতে পারেন এই উপহার কার্ডের কুপন ব্যবহার করা হয়েছিল। উপহার কার্ড সক্রিয় হওয়ার পরে এবং প্রেরক একটি কুপন কোড পেয়েছেন, তিনি চেকআউটের সময় এটি ব্যবহার করতে পারেন।
+
+![উপহার কার্ড ব্যবহারের ইতিহাস](_static/gift-cards/gift-usage.jpg)
+
+## উপহার কার্ড ব্যবহার করা
+
+পাবলিক স্টোরে একটি উপহার কার্ড ব্যবহার করা হয় শপিং কার্ট পৃষ্ঠায় বাক্সে সিরিয়াল নম্বর প্রবেশ করে।
+
+![উপহার কার্ড ব্যবহার করা](_static/gift-cards/using-geft-cards.jpg)
 
 > [!NOTE]
 >
-> This feature requires CAPTCHA to be enabled because it is potentially not safe and CAPTCHA is needed to prevent and complicate bruteforce. To activate CAPTCHA go to **Configuration → Settings → General settings** page and tick the **CAPTCHA enabled** checkbox in the *CAPTCHA* panel. To learn how to set up CAPTCHA refer to the [Security settings - CAPTCHA](xref:en/getting-started/advanced-configuration/security-settings#captcha) section.
+> আপনি শপিং কার্ট পৃষ্ঠায় উপহার কার্ড বাক্সটি অক্ষম করতে পারেন **উপহার কার্ড বাক্স দেখান** চেকবক্সটি **কনফিগারেশন → সেটিংস → শপিং কার্ট সেটিংস** পৃষ্ঠায় (*সাধারণ* প্যানেল)।
 
-## See also
+আপনি আপনার গ্রাহকদের উপহার কার্ডের ব্যালেন চেক করার অনুমতি দিতে পারেন। এটি করার জন্য **গ্রাহকদের উপহার কার্ডের ব্যালেন্স চেক করার অনুমতি দিন** **কনফিগারেশন → সেটিংস → শপিং কার্ট সেটিংস** পৃষ্ঠায় (*সাধারণ*প্যানেল) চেকবক্স।
 
-- [Adding products](xref:en/running-your-store/catalog/products/add-products)
-- [YouTube tutorial on managing gift cards](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)
+> [!NOTE]
+>
+> এই বৈশিষ্ট্যটির জন্য ক্যাপচা সক্ষম করা প্রয়োজন কারণ এটি সম্ভাব্য নিরাপদ নয় এবং ব্রুটফোর্স প্রতিরোধ ও জটিল করার জন্য ক্যাপচা প্রয়োজন। ক্যাপচা সক্রিয় করতে **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** পৃষ্ঠায় যান এবং*ক্যাপচা*প্যানেলে **ক্যাপচা সক্ষম** চেকবক্সে টিক দিন। ক্যাপচা কিভাবে সেট আপ করতে হয় তা জানতে [নিরাপত্তা সেটিংস-ক্যাপচা](xref:bn/getting-start/advanced-configuration/security-settings#captcha) বিভাগটি দেখুন।
+
+## আরো দেখুন
+
+- [পণ্য যোগ করা](xref:bn/running-your-store/catalog/products/add-products)
+- [উপহার কার্ড পরিচালনার জন্য ইউটিউব টিউটোরিয়াল](https://www.youtube.com/watch?v=4SJ7uBZGas0&index=4&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4)

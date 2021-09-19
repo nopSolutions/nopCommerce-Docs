@@ -1,14 +1,14 @@
 ---
-title: System information
-uid: en/running-your-store/system-administration/system-information
+title: পদ্ধতিগত তথ্য
+uid: bn/running-your-store/system-administration/system-information
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# System information
+# পদ্ধতিগত তথ্য
 
-The following procedure describes how to view the system information of the store and system server.
+নিম্নোক্ত পদ্ধতিটি বর্ণনা করে কিভাবে দোকান এবং সিস্টেম সার্ভারের সিস্টেম তথ্য দেখতে হয়।
 
-To view system information go to **System** menu, select **System Information**. The *System information* will be displayed, as follows:
+সিস্টেমের তথ্য দেখতে **সিস্টেম** মেনুতে যান, **সিস্টেম তথ্য** নির্বাচন করুন। *সিস্টেম তথ্য* প্রদর্শিত হবে, নিম্নরূপ:
 
-![System information](_static/system-information/system-information.png)
+![পদ্ধতিগত তথ্য](_static/system-information/system-information.png)

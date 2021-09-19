@@ -1,23 +1,22 @@
 ﻿---
-title: Warnings
-uid: en/running-your-store/system-administration/warnings
+title: সতর্কবাণী
+uid: bn/running-your-store/system-administration/warnings
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Warnings
+# সতর্কবাণী
 
-The following procedure describes how to view all the warnings that currently exist in the store.
+নিম্নোক্ত পদ্ধতিটি বর্ণনা করে যে দোকানে বর্তমানে বিদ্যমান সমস্ত সতর্কতা কিভাবে দেখতে হয়।
+দোকানের সতর্কতা দেখতে **সিস্টেম → সতর্কতা** এ যান। *সতর্কতা* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-To view store warnings go to **System → Warnings**. The *Warnings* window will be displayed, as follows:
+![সতর্কবাণী](_static/warnings/warnings.jpg)
 
-![Warnings](_static/warnings/warnings.jpg)
+আমরা আপনাকে যদি সমস্ত সতর্কতা বিদ্যমান থাকে তা ঠিক করার পরামর্শ দিই। অন্যথায়, এটি আপনার দোকানের দক্ষতা এবং কর্মক্ষমতাকে প্রভাবিত করে।
 
-We recommend you to fix all warnings if exist. Otherwise, it affects your store efficiency and performance.
-
-Refer the following articles in order to fix the existing warnings:
-* [Your store information](xref:en/getting-started/advanced-configuration/your-store-information)
-* [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies)
-* [Measures](xref:en/getting-started/configure-shipping/advanced-configuration/measures)
-* [Payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
-* [Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
+বিদ্যমান সতর্কতাগুলি ঠিক করার জন্য নিম্নলিখিত নিবন্ধগুলি পড়ুন:
+* [আপনার দোকানের তথ্য](xref:bn/getting-start/advanced-configuration/your-store-information)
+* [মুদ্রা](xref:bn/get-start/configure-payment/advanced-configuration/currencies)
+* [পরিমাপ](xref:bn/get-start/configure-shipping/advanced-configuration/પગલાં)
+* [পেমেন্ট পদ্ধতি](xref:bn/get-start/configure-payment/payment-methods/index)
+* [নপকমার্স-এ প্লাগইন](xref:bn/getting-start/advanced-configuration/plugins-in-nopcommerce)

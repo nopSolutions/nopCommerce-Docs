@@ -1,22 +1,22 @@
 ---
-title: System administration
-uid: en/running-your-store/system-administration/index
+title: সিস্টেম অ্যাডমিনিস্ট্রেশন
+uid: bn/running-your-store/system-administration/index
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# System administration
+# সিস্টেম অ্যাডমিনিস্ট্রেশন
 
-This chapter covers technical aspects of running a nopCommerce store. It describes how to expand the store functionality by technical means, such as additional external plugins, external authentication for the easier checkout process, configuration of widgets and setting up the e-mail accounts.
+এই অধ্যায় একটি নপকমার্স দোকান চালানোর প্রযুক্তিগত দিকগুলি অন্তর্ভুক্ত করে। এটি প্রযুক্তিগত উপায়ে স্টোরের কার্যকারিতা কীভাবে বাড়ানো যায় তা বর্ণনা করে, যেমন অতিরিক্ত বাহ্যিক প্লাগইন, সহজ চেকআউট প্রক্রিয়ার জন্য বাহ্যিক প্রমাণীকরণ, উইজেটগুলির কনফিগারেশন এবং ই-মেইল অ্যাকাউন্টগুলি সেট আপ করা।
 
-This chapter concentrates more on the back-end, the front-end is covered in the [Design](xref:en/getting-started/design-your-store/index) chapter.
+এই অধ্যায়টি ব্যাক-এন্ডে বেশি মনোনিবেশ করে, সামনের প্রান্তটি [ডিজাইন](xref:bn/getting-start/design-your-store/index) অধ্যায়ে অন্তর্ভুক্ত।
 
-## See here
+## এখানে দেখো
 
-* [System information](xref:en/running-your-store/system-administration/system-information)
-* [Log](xref:en/running-your-store/system-administration/log)
-* [Warnings](xref:en/running-your-store/system-administration/warnings)
-* [Maintenance](xref:en/running-your-store/system-administration/maintenance)
-* [Message queue](xref:en/running-your-store/system-administration/message-queue)
-* [Schedule tasks](xref:en/running-your-store/system-administration/schedule-tasks)
-* [Templates](xref:en/running-your-store/system-administration/templates)
+* [সিস্টেম তথ্য](xref:bn/running-your-store/system-Administration/system-information)
+* [লগ](xref:bn/running-your-store/system-Administration/log)
+* [সতর্কতা](xref:bn/running-your-store/system-Administration/warning)
+* [রক্ষণাবেক্ষণ](xref:bn/running-your-store/system-Administration/maintenance)
+* [বার্তার সারি](xref:bn/running-your-store/system-Administration/message-queue)
+* [কাজের সময়সূচী](xref:bn/running-your-store/system-Administration/Schedule-Tasks)
+* [টেমপ্লেট](xref:bn/running-your-store/system-Administration/template)

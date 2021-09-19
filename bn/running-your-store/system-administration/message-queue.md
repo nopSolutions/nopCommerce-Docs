@@ -1,51 +1,52 @@
 ---
-title: Message queue
-uid: en/running-your-store/system-administration/message-queue
+title: বার্তার সারি
+uid: bn/running-your-store/system-administration/message-queue
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Message queue
+# বার্তার সারি
 
-Emails are not sent immediately in nopCommerce. They are queued. Message queue contains all emails that are already sent or not yet sent.
+ইমেইল নপকমার্স-এ অবিলম্বে পাঠানো হয় না। তারা সারিবদ্ধ। বার্তা সারিতে এমন সব ইমেইল রয়েছে যা ইতিমধ্যেই পাঠানো হয়েছে বা এখনও পাঠানো হয়নি।
 
-To load the message queue, from the **System** menu, select **Message queue**. The *Message queue* window is displayed, as follows:
-![Message queue](_static/message-queue/message-queue.png)
+বার্তা সারি লোড করতে, **সিস্টেম** মেনু থেকে, **বার্তা সারি** নির্বাচন করুন। *বার্তা সারি* উইন্ডোটি নিম্নরূপ প্রদর্শিত হয়:
+![বার্তার সারি](_static/message-queue/message-queue.png)
 
-Enter one or more of the following criteria to search for messages:
-  * From the **Start date** field, select the start date.
-  * From the **End date** field, select the end date.
-  * In the **From address** field, enter the source address of a message.
-  * In the **To address** field, enter the target address of a message.
-  * Tick the **Load not sent emails only** checkbox, to only load emails that have not been sent yet.
-  * In the **Maximum send attempts** field, enter the maximum number of attempts to send a message.
-  * In the **Go directly to email #** field, enter the email number and click **Go** to display the required email.
+বার্তাগুলি অনুসন্ধান করার জন্য নিচের এক বা একাধিক মানদণ্ড লিখুন:
 
-Click **Search** to load the message queue matching the criteria.
+* **শুরু তারিখ** ক্ষেত্র থেকে, শুরুর তারিখ নির্বাচন করুন।
+* *শেষ তারিখ** ক্ষেত্র থেকে, শেষ তারিখ নির্বাচন করুন।
+* **ঠিকানা থেকে** ক্ষেত্রের মধ্যে, একটি বার্তার উৎস ঠিকানা লিখুন।
+* **ঠিকানা দিতে** ক্ষেত্রের মধ্যে, একটি বার্তার লক্ষ্য ঠিকানা লিখুন।
+* এখনও পাঠানো হয়নি এমন ইমেল লোড করতে **লোড না পাঠানো ইমেলগুলি** চেকবক্সে টিক দিন।
+* **সর্বোচ্চ পাঠানোর প্রচেষ্টা** ক্ষেত্রটিতে, বার্তা পাঠানোর সর্বোচ্চ সংখ্যক প্রচেষ্টা লিখুন।
+* **সরাসরি ইমেল#** ফিল্ডে যান, ইমেইল নম্বর লিখুন এবং প্রয়োজনীয় ইমেইল প্রদর্শন করতে **যাওয়া** ক্লিক করুন।
 
-On this page, you can click the **Delete selected** button to delete selected emails from the grid. You can click **Delete all** to remove all emails.
+মানদণ্ডের সাথে মিলে যাওয়া বার্তার সারি লোড করতে **অনুসন্ধান** ক্লিক করুন।
 
-## Message queue item details
+এই পৃষ্ঠায়, আপনি গ্রিড থেকে নির্বাচিত ইমেলগুলি মুছে ফেলার জন্য **মুছে ফেলা** বোতামটি ক্লিক করতে পারেন। সব ইমেইল অপসারণ করতে আপনি **সব মুছুন** ক্লিক করতে পারেন।
 
-To view the message queue item details click the **Edit** button beside the message. The *Edit message queue item* window will be displayed:
+## বার্তা সারির আইটেমের বিবরণ
 
-![Message queue item details](_static/message-queue/edit.jpg)
+বার্তা সারি আইটেমের বিবরণ দেখতে বার্তার পাশে **সম্পাদনা** বাটনে ক্লিক করুন। *বার্তা সারি আইটেম সম্পাদনা করুন* উইন্ডো প্রদর্শিত হবে:
 
-In this window you can delete the message by clicking the **Delete** button. Or you can requeue the message using the **Requeue** button.
+![বার্তা সারির আইটেমের বিবরণ](_static/message-queue/edit.jpg)
 
-On this page you can edit the following message details:
+এই উইন্ডোতে আপনি **মুছে ফেলা** বাটনে ক্লিক করে বার্তাটি মুছে ফেলতে পারেন। অথবা আপনি **রিকিউ** বাটন ব্যবহার করে বার্তাটি অনুরোধ করতে পারেন।
 
-* **From** email address.
-* **From name**.
-* **To** email address.
-* **To name**.
-* **ReplyTo** email address.
-* **ReplyTo name**.
-* **Cc** email address.
-* **Bcc** email address.
-* Email message **Subject**.
-* Email message **Body**.
-* Tick the **Send immediately** checkbox to send this message immediately.
-* Enter the number of **Sent attempts**. This is the number of times to attempt to send this message.
+এই পৃষ্ঠায় আপনি নিম্নলিখিত বার্তার বিবরণ সম্পাদনা করতে পারেন:
 
-Click **Save** or **Save and continue edit** to save the message details. 
+* **থেকে** ইমেল ঠিকানা।
+* **নাম থেকে**।
+* **থেকে** ইমেল ঠিকানা।
+* **নাম দিতে**।
+* **উত্তর দিতে** ইমেল ঠিকানা।
+* **উত্তর দিতে নাম**।
+* **সিসি** ইমেল ঠিকানা।
+* **বিসিসি** ইমেল ঠিকানা।
+* ইমেল বার্তা **বিষয়**।
+* ইমেল বার্তা **শরীর**।
+* অবিলম্বে এই বার্তাটি পাঠাতে **অবিলম্বে পাঠান** চেকবক্সে টিক দিন।
+**পাঠানো প্রচেষ্টার সংখ্যা** লিখুন। এই বার্তাটি পাঠানোর চেষ্টা করার সংখ্যা এটি।
+
+বার্তার বিবরণ সংরক্ষণ করতে **সংরক্ষণ করুন** বা **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** ক্লিক করুন।

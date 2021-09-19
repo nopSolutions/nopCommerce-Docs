@@ -1,36 +1,36 @@
 ﻿---
-title: Log
-uid: en/running-your-store/system-administration/log
+title: লগ
+uid: bn/running-your-store/system-administration/log
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Log
+# লগ
 
-The system log report displays a list of all the errors, warnings and information messages that were created in the system. To view the log go to **System → Log**. The *Log* window is displayed, as follows:
+সিস্টেম লগ রিপোর্ট সিস্টেমে তৈরি সমস্ত ত্রুটি, সতর্কতা এবং তথ্য বার্তার একটি তালিকা প্রদর্শন করে। লগ দেখতে **সিস্টেম → লগ** এ যান। নিম্নরূপ *লগ* উইন্ডো প্রদর্শিত হয়:
 
-![Log](_static/log/log.png)
+![লগ](_static/log/log.png)
 
-A log item include the log type, description of the error and date. You can click the **Delete selected** button to remove the selected log items or click the **Clear log** button to clear all log.
+একটি লগ আইটেমে লগের ধরন, ত্রুটির বিবরণ এবং তারিখ অন্তর্ভুক্ত থাকে। আপনি নির্বাচিত লগ আইটেমগুলি অপসারণ করতে **মুছে ফেলা** বোতামটি ক্লিক করতে পারেন অথবা সমস্ত লগ সাফ করতে **পরিষ্কার লগ** বাটনে ক্লিক করতে পারেন।
 
-To search for the system log enter one or more of the following information:
-  * From the **Created from** field, select the start date for the search.
-  * From the **Created to** field, select the end date for the search.
-  * In the **Message** field, select the message or part of the message to search by.
-  * From the **Log level** dropdown list, select the type of log information to display, as follows:
-    * *All*
-    * *Debug*
-    * *Information*
-    * *Warning*
-    * *Error*
-    * *Fatal*
+সিস্টেম লগ অনুসন্ধানের জন্য নিচের এক বা একাধিক তথ্য লিখুন:
+  **থেকে তৈরি** ক্ষেত্র থেকে, অনুসন্ধানের জন্য শুরু তারিখ নির্বাচন করুন।
+  **তৈরি করা** ক্ষেত্র থেকে, অনুসন্ধানের শেষ তারিখ নির্বাচন করুন।
+  **মেসেজ** ফিল্ডে, সার্চ করার জন্য মেসেজ বা মেসেজের অংশ নির্বাচন করুন।
+  **লগ লেভেল** ড্রপডাউন তালিকা থেকে, প্রদর্শনের জন্য লগ তথ্যের ধরন নির্বাচন করুন, নিম্নরূপ:
+  * *সব*
+  * *ডিবাগ*
+  * *তথ্য*
+  * *সতর্কতা*
+  * *ত্রুটি*
+  * *মারাত্মক*
 
-Click **Search**. The log system window will be displayed based on the search criteria.
+**অনুসন্ধান** ক্লিক করুন। অনুসন্ধান মানদণ্ডের উপর ভিত্তি করে লগ সিস্টেম উইন্ডো প্রদর্শিত হবে।
 
-## View system log details
+## সিস্টেম লগের বিবরণ দেখুন
 
-Clicking **View** displays additional details of the error that occurred, as follows:
+**দেখুন** ক্লিক করলে ত্রুটিটির অতিরিক্ত বিবরণ প্রদর্শিত হয়, নিম্নরূপ:
 
-![Log entry - Details](_static/log/log-details.jpg)
+![লগ এন্ট্রি - বিস্তারিত](_static/log/log-details.jpg)
 
-You can click **Delete** to remove a log from the system if required.
+প্রয়োজনে সিস্টেম থেকে একটি লগ অপসারণ করতে আপনি **মুছুন** ক্লিক করতে পারেন।

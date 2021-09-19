@@ -1,30 +1,31 @@
 ---
-title: Schedule tasks
-uid: en/running-your-store/system-administration/schedule-tasks
+title: কাজের সময়সূচী
+uid: bn/running-your-store/system-administration/schedule-tasks
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Schedule tasks
+# কাজের সময়সূচী
 
-The *Schedule tasks* window enables the store owner to schedule a task to run during certain periods in the background and to view useful information regarding the task and whether it was completed successfully. For example, nopCommerce sends queued emails periodically. The tasks run on a separate thread coming from the ASP.NET thread pool.
+*শিডিউল টাস্কস* উইন্ডো স্টোরের মালিককে ব্যাকগ্রাউন্ডে নির্দিষ্ট সময়ের মধ্যে একটি টাস্ক চালানোর সময় নির্ধারণ করতে এবং টাস্ক সম্পর্কিত দরকারী তথ্য দেখতে এবং এটি সফলভাবে সম্পন্ন হয়েছে কিনা তা সক্ষম করে। উদাহরণস্বরূপ, নপকমার্স পর্যায়ক্রমে সারিবদ্ধ ইমেল পাঠায়। কাজগুলি এসপি.নেট থ্রেড পুল থেকে আসা একটি পৃথক থ্রেডে চলে।
 
-To view the scheduled tasks, from the **System** menu, select **Schedule tasks**. The *Schedule tasks* window is displayed, as follows:
-![Schedule tasks](_static/schedule-tasks/schedule-tasks.png)
+নির্ধারিত কাজগুলি দেখতে, **সিস্টেম** মেনু থেকে, **কর্মের সময়সূচী** নির্বাচন করুন।  *শিডিউল টাস্ক* উইন্ডোটি নিম্নরূপ প্রদর্শিত হয়:
+![কাজের সময়সূচী](_static/schedule-tasks/schedule-tasks.png)
 
-To edit a scheduled task, click the **Edit** button beside the task. The window is expanded, as follows:
-![Schedule tasks - Edit](_static/schedule-tasks/schedule-tasks-edit.png)
+একটি নির্ধারিত কাজ সম্পাদনা করতে, টাস্কের পাশে **সম্পাদনা করুন** বাটনে ক্লিক করুন। উইন্ডোটি প্রসারিত করা হয়েছে, নিম্নরূপ:
+![কাজের সময়সূচী - সম্পাদনা করুন](_static/schedule-tasks/schedule-tasks-edit.png)
 
-You can edit the scheduled task the following way:
-* Edit the **Name**.
-* Edit the number of **Seconds (run period)**. Task period should not exceed 24 days.
-* Tick the **Enabled** checkbox in order to enable the task.
-* Tick the **Stop on error** checkbox in order to stop the task when an error occurs.
+আপনি নিম্নলিখিত পদ্ধতিতে নির্ধারিত কাজ সম্পাদনা করতে পারেন:
 
-Click **Update** to save your changes.
+* **নাম** সম্পাদনা করুন।
+* **সেকেন্ডের সংখ্যা (রান পিরিয়ড)** সম্পাদনা করুন। কাজের সময়কাল ২৪ দিনের বেশি হওয়া উচিত নয়।
+* টাস্কটি সক্ষম করতে **সক্ষম** চেকবক্সে টিক দিন।
+* একটি ত্রুটি ঘটলে কাজটি বন্ধ করার জন্য **স্টপ অন এরার** চেকবক্সে টিক দিন।
+
+আপনার পরিবর্তনগুলি সংরক্ষণ করতে **আপডেট** ক্লিক করুন।
 
 > [!NOTE]
 >
-> Do not forget to restart the application once a task has been modified.
+> একটি টাস্ক পরিবর্তিত হওয়ার পরে অ্যাপ্লিকেশনটি পুনরায় চালু করতে ভুলবেন না।
 
-If required, you can click **Run now**, to run a scheduled task on-demand.
+যদি প্রয়োজন হয়, আপনি অন-ডিমান্ড একটি নির্ধারিত কাজ চালানোর জন্য **এখনই চালান** ক্লিক করতে পারেন।

@@ -1,91 +1,91 @@
 ﻿---
-title: Email campaigns
-uid: en/running-your-store/promotional-tools/email-campaigns
+title: ইমেল প্রচারণা
+uid: bn/running-your-store/promotional-tools/email-campaigns
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Email campaigns
+# ইমেল প্রচারণা
 
-During registration, a customer can select the *Newsletter* option to receive newsletters from your store. Or it's possible to subscribe to a newsletter lately using the form in the footer (in the Default Clean nopCommerce theme). The other way of filling in email subscribers is to import list of subscribers from an external CSV file to nopCommerce. As well as you can export the list of subscribers to an external CSV file from nopCommerce.
+নিবন্ধনের সময়, একজন গ্রাহক আপনার দোকান থেকে নিউজলেটার পাওয়ার জন্য *নিউজলেটার* বিকল্পটি নির্বাচন করতে পারেন। অথবা ফুটার (ডিফল্ট ক্লিন নপকমার্স থিমে) ফর্ম ব্যবহার করে ইদানীং একটি নিউজলেটার সাবস্ক্রাইব করা সম্ভব। ইমেইল সাবস্ক্রাইবার পূরণের অন্য উপায় হল একটি বহিরাগত সিএসভি ফাইল থেকে নপকমার্স-এ গ্রাহকদের তালিকা আমদানি করা। পাশাপাশি আপনি নপকমার্স থেকে বহিরাগত সিএসভি ফাইলে গ্রাহকদের তালিকা রপ্তানি করতে পারেন।
 
-See how to manage newsletter subscribers in the [Newsletter subscribers](#newsletter-subscribers) section below.
+নীচের [নিউজলেটার গ্রাহক](#newsletter-subscribers) বিভাগে নিউজলেটার গ্রাহকদের কীভাবে পরিচালনা করবেন তা দেখুন।
 
-Use your subscribers list to create email campaigns to easily and quickly reach the target audience without any additional marketing activities. Campaigns help to promote trust and loyalty to a company while also increasing sales.
+কোন অতিরিক্ত বিপণন কার্যক্রম ছাড়াই সহজে এবং দ্রুত লক্ষ্য দর্শকদের কাছে পৌঁছানোর জন্য ইমেল প্রচারাভিযান তৈরি করতে আপনার গ্রাহকদের তালিকা ব্যবহার করুন। প্রচারাভিযান একটি কোম্পানির প্রতি আস্থা এবং আনুগত্য প্রচার করতে সাহায্য করে এবং বিক্রয় বাড়ায়।
 
-There are several examples of email marketing campaigns you can use for your store: start with a welcome email that thanks for the subscription, regularly send out announcements, news regarding your company, coupons for future purchasing and much more.
+ইমেইল মার্কেটিং ক্যাম্পেইনের বেশ কয়েকটি উদাহরণ রয়েছে যা আপনি আপনার দোকানের জন্য ব্যবহার করতে পারেন: একটি স্বাগত ইমেল দিয়ে শুরু করুন যা সাবস্ক্রিপশনের জন্য ধন্যবাদ, নিয়মিত ঘোষণা পাঠান, আপনার কোম্পানীর খবর, ভবিষ্যতের ক্রয়ের জন্য কুপন এবং আরও অনেক কিছু।
 
 > [!NOTE]
 > 
-> There are no campaigns available by default, so you can create them from scratch in order to follow your own marketing strategy.
+> ডিফল্টরূপে কোন প্রচারাভিযান নেই, তাই আপনি আপনার নিজস্ব মার্কেটিং কৌশল অনুসরণ করার জন্য সেগুলিকে শুরু থেকেই তৈরি করতে পারেন।
 
-To manage campaigns go to **Promotions → Campaigns**.
+প্রচারাভিযান পরিচালনা করতে **প্রচার → প্রচারাভিযান** এ যান।
 
-![Manage campaigns](_static/email-campaigns/manage-campaigns.png)
+![প্রচার পরিচালনা করুন](_static/email-campaigns/manage-campaigns.png)
 
-## Add a new email campaign
+## একটি নতুন ইমেল প্রচারণা যোগ করুন
 
-To create a new campaign click **Add new**.
+একটি নতুন প্রচারণা তৈরি করতে **নতুন যোগ করুন** ক্লিক করুন।
 
-![Add a campaign](_static/email-campaigns/add-new.jpg)
+![একটি প্রচারণা যোগ করুন](_static/email-campaigns/add-new.jpg)
 
-Define the following campaign details:
+নিম্নলিখিত প্রচারাভিযানের বিবরণ সংজ্ঞায়িত করুন:
 
-- Campaign **Name**.
-- **Subject** of the campaign.
-- Enter the **Body** text of the email you want to send out.
-- In the **Allowed message tokens** you can see the list of allowed message tokens you can use in your email campaign. You can see all of them if click **Show**.
-- Enter the **Planned date of sending** and time.
-- From the **Limited to store** dropdown list, select the store which subscribers will get this email.
-- From the **Limited to customer role** dropdown list, select the roles of subscribers which will receive this email.
+- প্রচারাভিযান **নাম**.
+- ক্যাম্পেইনের **বিষয়**।
+- আপনি যে ইমেইলটি পাঠাতে চান তার **বডি** টেক্সট লিখুন।
+- **অনুমোদিত বার্তা টোকেনগুলিতে** আপনি অনুমোদিত বার্তা টোকেনগুলির তালিকা দেখতে পারেন যা আপনি আপনার ইমেল প্রচারাভিযানে ব্যবহার করতে পারেন। **দেখান** এ ক্লিক করলে আপনি তাদের সব দেখতে পাবেন।
+- **পাঠানোর পরিকল্পিত তারিখ** এবং সময় লিখুন।
+- **লিমিটেড থেকে স্টোর** ড্রপডাউন তালিকা থেকে, যে স্টোরটি গ্রাহকরা এই ইমেলটি পাবেন সেগুলি নির্বাচন করুন।
+- **সীমিত থেকে গ্রাহকের ভূমিকা** ড্রপডাউন তালিকা, গ্রাহকদের ভূমিকা নির্বাচন করুন যারা এই ইমেলটি পাবেন।
 
-Click **Save** or **Save and continue editing** to proceed to send your campaign.
+আপনার প্রচারাভিযানটি পাঠানোর জন্য **সংরক্ষণ করুন** বা **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** ক্লিক করুন।
 
-## Send the campaign
+## ক্যাম্পেইন পাঠান
 
-After the campaign is saved you can send your campaign to customers. You will see the new panel in the top of the page:
+ক্যাম্পেইন সেভ করার সময় আপনি প্রেক্ষাগৃহে নতুন নতুন পিলিশ দেখতে পাবেন:
 
-![Test email](_static/email-campaigns/test.jpg)
+![টেস্ট ইমেইল](_static/email-campaigns/test.jpg)
 
 > [!NOTE]
 >
-> Make sure you've tested the campaign before sending it out to multiple customers.
+> একাধিক গ্রাহকের কাছে পাঠানোর আগে নিশ্চিত হয়ে নিন যে আপনি ক্যাম্পেইনটি পরীক্ষা করেছেন।
 
-First of all send a test email to check if everything is done properly. To do this choose the **Email account** which will be used to send the campaign. See how to create an email account in the [Email accounts](xref:en/getting-started/email-accounts) section.
+প্রথমে সবকিছু ঠিকঠাক হয়েছে কিনা তা পরীক্ষা করার জন্য একটি পরীক্ষার ইমেইল পাঠান। এটি করার জন্য **ইমেইল একাউন্ট** নির্বাচন করুন যা ক্যাম্পেইন পাঠাতে ব্যবহৃত হবে। [ইমেল অ্যাকাউন্ট](xref:bn/getting-start/email-accounts) বিভাগে কিভাবে একটি ইমেইল অ্যাকাউন্ট তৈরি করবেন তা দেখুন।
 
-Then enter your email address in the **Send test email to** field and click **Send test email**.
+তারপর আপনার ইমেল ঠিকানাটি প্রবেশ করুন **পরীক্ষার ইমেইল পাঠান** ফিল্ডে এবং **পরীক্ষার ইমেইল পাঠান** ক্লিক করুন।
 
-After you make sure that everything is OK send your campaign to customers using the **Send mass email** button.
+সবকিছু ঠিকঠাক আছে কিনা তা নিশ্চিত করার পর **সেন্ড ম্যাস ইমেল** বাটন ব্যবহার করে গ্রাহকদের কাছে আপনার ক্যাম্পেইন পাঠান।
 
 
-## Newsletter subscribers
+## নিউজলেটার গ্রাহক
 
-During registration, a customer can select the *Newsletter* option to receive a newsletter from your store:
-![Customers subscribing](_static/email-campaigns/customer-subs.jpg)
+নিবন্ধনের সময়, একজন গ্রাহক আপনার দোকান থেকে একটি নিউজলেটার পাওয়ার জন্য *নিউজলেটার* বিকল্পটি নির্বাচন করতে পারেন:
+![গ্রাহকরা সাবস্ক্রাইব করছেন](_static/email-campaigns/customer-subs.jpg)
 
-Or it's possible to subscribe to a newsletter lately using the form in the footer (in the Default Clean nopCommerce theme):
+অথবা ফুটার (ডিফল্ট ক্লিন নপকমার্স থিমে) ফর্ম ব্যবহার করে ইদানীং একটি নিউজলেটার সাবস্ক্রাইব করা সম্ভব:
 
-![Newsletter box](_static/email-campaigns/newsletter-box.jpg)
+![নিউজলেটার বক্স](_static/email-campaigns/newsletter-box.jpg)
 
-The other way of filling in email subscribers is to import list of subscribers from an external CSV file to nopCommerce. As well as you can export the list of subscribers to an external CSV file from nopCommerce.
+ইমেইল সাবস্ক্রাইবার পূরণের অন্য উপায় হল একটি বহিরাগত সিএসভি ফাইল থেকে নপকমার্স-এ গ্রাহকদের তালিকা আমদানি করা। পাশাপাশি আপনি নপকমার্স থেকে বহিরাগত সিএসভি ফাইলে গ্রাহকদের তালিকা রপ্তানি করতে পারেন।
 
-To export/import newsletter subscribers go to **Promotions → Newsletter subscribers**.
+নিউজলেটার গ্রাহকদের রপ্তানি/আমদানি করতে **প্রোমোশন → নিউজলেটার সাবস্ক্রাইবার** এ যান।
 
-![Newsletter subscribers](_static/email-campaigns/subscribers.jpg)
+![নিউজলেটার গ্রাহক](_static/email-campaigns/subscribers.jpg)
 
-You can click **Import from CSV** to import subscriber lists in CSV format. Ensure that each line of the CSV file is in the following format: email_address, is_active, store_id (store_id parameter is optional). For example, `test@test.com, true`. You can click **Export to CSV** to export the existing subscriber list.
+আপনি সিএসভি ফরম্যাটে গ্রাহকদের তালিকা আমদানি করতে **সিএসভি থেকে আমদানি করুন** ক্লিক করতে পারেন। নিশ্চিত করুন যে সিএসভি ফাইলের প্রতিটি লাইন নিম্নলিখিত বিন্যাসে রয়েছে: email_address, is_active, store_id (store_id প্যারামিটার ঐচ্ছিক)। উদাহরণস্বরূপ, `test@test.com, true`। আপনি বিদ্যমান গ্রাহক তালিকা রপ্তানি করতে **সিএসভি- এ রপ্তানি করুন** ক্লিক করতে পারেন।
 
-## Searching for the subscribers
+## গ্রাহকদের জন্য অনুসন্ধান
 
-On the *Newsletter subscribers* page you can find certain subscribers using the following fields for search:
-- Enter the **Email** of the subscriber to find, or leave this field empty to load all the newsletter subscribers registered in the system.
-- Specify **Start date** and **End date** when a customer was subscribed.
-- From the **Active** dropdown list, choose between *Active* and *Not active* subscribers or load *All*.
-- From the **Store** dropdown list, choose the store.
-- From the **Customer roles** dropdown list, select the customer role.
+*নিউজলেটার সাবস্ক্রাইবার* পৃষ্ঠায় আপনি অনুসন্ধানের জন্য নিম্নলিখিত ক্ষেত্রগুলি ব্যবহার করে নির্দিষ্ট গ্রাহক খুঁজে পেতে পারেন:
+- খুঁজে পেতে গ্রাহকের **ইমেইল** লিখুন, অথবা সিস্টেমে নিবন্ধিত সমস্ত নিউজলেটার গ্রাহকদের লোড করার জন্য এই ক্ষেত্রটি খালি রাখুন।
+- কোন গ্রাহক সাবস্ক্রাইব করার সময় **শুরু তারিখ** এবং **শেষ তারিখ** উল্লেখ করুন।
+- **সক্রিয়** ড্রপডাউন তালিকা থেকে,*সক্রিয়* এবং*সক্রিয় নয়* গ্রাহক বা লোড*সব*এর মধ্যে বেছে নিন।
+- **স্টোর** ড্রপডাউন তালিকা থেকে, দোকানটি বেছে নিন।
+- **গ্রাহক ভূমিকা** ড্রপডাউন তালিকা থেকে, গ্রাহকের ভূমিকা নির্বাচন করুন।
 
-Click **Search**.
+**অনুসন্ধান** ক্লিক করুন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-- [Managing campaigns in nopCommerce](https://youtu.be/iW2m8LQyyWM)
+- [nopCommerce এ প্রচারাভিযান পরিচালনা করা](https://youtu.be/iW2m8LQyyWM)

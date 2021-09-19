@@ -1,59 +1,60 @@
 ﻿---
-title: Templates
-uid: en/running-your-store/system-administration/templates
+title: টেমপ্লেট
+uid: bn/running-your-store/system-administration/templates
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Templates
+# টেমপ্লেট
 
-In nopCommerce you can specify an alternate layout template for a category, manufacturer, product and topic. You can see a list of the existing templates on the **System → Templates** page:
+নপকমার্স-এ আপনি একটি বিভাগ, নির্মাতা, পণ্য এবং বিষয়ের জন্য একটি বিকল্প লেআউট টেমপ্লেট নির্দিষ্ট করতে পারেন। আপনি **সিস্টেম → টেমপ্লেট** পৃষ্ঠায় বিদ্যমান টেমপ্লেটগুলির একটি তালিকা দেখতে পারেন:
 
-![Templates](_static/templates/templates.jpg)
+![টেমপ্লেট](_static/templates/templates.jpg)
 
-By default, there is one category template, one manufacturer template, one topic template and two product templates in the system.
+ডিফল্টরূপে, সিস্টেমে একটি বিভাগ টেমপ্লেট, একটি প্রস্তুতকারকের টেমপ্লেট, একটি বিষয় টেমপ্লেট এবং দুটি পণ্য টেমপ্লেট রয়েছে।
 
-Each category, manufacturer, product and topic details page in admin area allows you to choose the template when editing an entity. For example:
+অ্যাডমিন এলাকায় প্রতিটি বিভাগ, প্রস্তুতকারক, পণ্য এবং বিষয় বিবরণ পৃষ্ঠা আপনাকে একটি সত্তা সম্পাদনা করার সময় টেমপ্লেট চয়ন করতে দেয়। উদাহরণ স্বরূপ:
 
-![Category templates](_static/templates/category-templates.jpg)
-
-> [!NOTE]
->
-> You will see the template dropdown list only if you have more than one tepmlate created for categories, manufacturers and topics.
+![বিভাগ টেমপ্লেট](_static/templates/category-templates.jpg)
 
 > [!NOTE]
 >
-> Since we have two product types, *Simple* and *Grouped (product with variants)*, we have two appropriate product templates created by default:
-> ![Product templates list](_static/templates/product-templates-list.jpg)
-> 
-> Therefore, to see the template dropdown list on the product details page you need to create two product templates that fit the choosen produt type. Read how to do this below.
-
-## Add a new template
-
-Let's see how to create a template on the product template example. Let's say you want to create it for the *Simple* product type.
-
-1. First of all, you need to create an appropriate template file. Skip this step if you already have one placed in the right folder. 
-	
-	- Go to the `Views\Product` folder.
-	- Copy the `ProductTemplate.Simple.cshtml` file and rename it. Let's say it will be `ProductTemplate.MyNewOne.cshtml`.
-	- Modify the code of the `ProductTemplate.MyNewOne.cshtml` file to fit your needs.
-
-2. Go to the **System → Templates** page and proceed to the *Product templates* panel:
-![Create a product template](_static/templates/product-templates-with-form.jpg)
-
-3. In the *Add new record* block fill the following form:
-	- Enter the **Name** of the template. In our case it's `My New One`.
-	- Enter the **View path**. In our case it's `ProductTemplate.MyNewOne`.
-	- Enter the **Display order** of this template. 1 represents the top of the list.
-	- *For the product template only. Not applicable for other templates:* Enter the **Ignored product type IDs (advanced)**. By default, we have two product types and appropriate product type IDs: *Simple* (ID 5) and *Grouped (ID 10)*. Since we create a template for the *Simple* product type we should ignore the *Grouped* product type with ID 10.
-
-		So the form will look the following way:
-		![Form](_static/templates/form.jpg)
-
-4. Click the **Add new record** button to save the new template.
-
-After you save the new template you will see it on the product details page and now you can choose from two product templates:
-![Product details page](_static/templates/choose.jpg)
+> আপনি টেমপ্লেট ড্রপডাউন তালিকা দেখতে পাবেন যদি আপনার একাধিক বিভাগ, নির্মাতা এবং বিষয়গুলির জন্য তৈরি টেমপ্লেট থাকে।
 
 > [!NOTE]
 >
-> It's not required to restrict a product template using the **Ignored product type IDs (advanced)** field. If you leave this field empty you will be able to use the product template for all types of products.
+> যেহেতু আমাদের দুটি পণ্যের ধরন রয়েছে, *সহজ* এবং *গোষ্ঠীভুক্ত (বৈচিত্র সহ পণ্য)*, আমাদের ডিফল্টরূপে দুটি উপযুক্ত পণ্য টেমপ্লেট রয়েছে:
+> ![পণ্য টেমপ্লেট তালিকা](_static/templates/product-templates-list.jpg)
+> অতএব, পণ্যের বিবরণ পৃষ্ঠায় টেমপ্লেট ড্রপডাউন তালিকা দেখতে আপনাকে দুটি প্রোডাক্ট টেমপ্লেট তৈরি করতে হবে যা বেছে নেওয়া প্রোডুট টাইপের সাথে মানানসই। এটি কীভাবে করবেন তা নীচে পড়ুন।
+
+## একটি নতুন টেমপ্লেট যোগ করুন
+
+আসুন দেখি কিভাবে পণ্য টেমপ্লেট উদাহরণে একটি টেমপ্লেট তৈরি করা যায়। ধরা যাক আপনি এটি *সহজ* পণ্যের প্রকারের জন্য তৈরি করতে চান।
+
+১। প্রথমত, আপনাকে একটি উপযুক্ত টেমপ্লেট ফাইল তৈরি করতে হবে। আপনার যদি ইতিমধ্যেই ডান ফোল্ডারে একটি থাকে তবে এই পদক্ষেপটি এড়িয়ে যান।
+
+- `Views \ Product` ফোল্ডারে যান।
+- `ProductTemplate.Simple.cshtml` ফাইলটি অনুলিপি করুন এবং এটির নাম পরিবর্তন করুন। ধরা যাক এটি হবে `ProductTemplate.MyNewOne.cshtml`।
+- আপনার প্রয়োজন অনুসারে `ProductTemplate.MyNewOne.cshtml` ফাইলের কোড পরিবর্তন করুন।
+
+২। **সিস্টেম → টেমপ্লেট** পৃষ্ঠায় যান এবং *পণ্য টেমপ্লেট* প্যানেলে যান:
+![একটি পণ্য টেমপ্লেট তৈরি করুন](_static/templates/product-templates-with-form.jpg)
+
+৩। *নতুন রেকর্ড যোগ করুন* ব্লকে নিম্নলিখিত ফর্মটি পূরণ করুন:
+
+- টেমপ্লেটের **নাম** লিখুন। আমাদের ক্ষেত্রে এটি `মাই নিউ ওয়ান`।
+- **দেখুন পথ** প্রবেশ করুন। আমাদের ক্ষেত্রে এটি `ProductTemplate.MyNewOne`।
+- এই টেমপ্লেটের **ডিসপ্লে অর্ডার** লিখুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+- *শুধুমাত্র পণ্য টেমপ্লেটের জন্য। অন্যান্য টেমপ্লেটগুলির জন্য প্রযোজ্য নয়:* **উপেক্ষা করা পণ্যের ধরন আইডি (উন্নত)** লিখুন। ডিফল্টরূপে, আমাদের দুটি পণ্যের ধরন এবং উপযুক্ত পণ্যের ধরন আইডি আছে: *সহজ* (আইডি ৫) এবং *গোষ্ঠীভুক্ত (আইডি ১০)*। যেহেতু আমরা *সিম্পল* প্রোডাক্ট টাইপের জন্য একটি টেমপ্লেট তৈরি করি তাই আমাদের আইডি ১০ দিয়ে *গ্রুপড* প্রোডাক্ট টাইপ উপেক্ষা করা উচিত।
+
+সুতরাং ফর্মটি নিম্নরূপ দেখাবে:
+![ফর্ম](_static/templates/form.jpg)
+
+৪। নতুন টেমপ্লেট সংরক্ষণ করতে **নতুন রেকর্ড যোগ করুন** বাটনে ক্লিক করুন।
+
+আপনি নতুন টেমপ্লেটটি সংরক্ষণ করার পরে আপনি এটি পণ্যের বিবরণ পৃষ্ঠায় দেখতে পাবেন এবং এখন আপনি দুটি পণ্য টেমপ্লেট থেকে চয়ন করতে পারেন:
+![পণ্যের বিবরণ পৃষ্ঠা](_static/templates/choose.jpg)
+
+> [!NOTE]
+>
+> **উপেক্ষিত পণ্যের ধরন আইডি (উন্নত)** ক্ষেত্র ব্যবহার করে একটি পণ্য টেমপ্লেটকে সীমাবদ্ধ করার প্রয়োজন নেই। আপনি যদি এই ক্ষেত্রটি খালি রাখেন তবে আপনি সমস্ত ধরণের পণ্যের জন্য পণ্য টেমপ্লেট ব্যবহার করতে সক্ষম হবেন।
