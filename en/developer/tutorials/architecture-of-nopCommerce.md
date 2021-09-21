@@ -31,7 +31,7 @@ This is the innermost layer in the nopCommerce architecture system. It is the co
 
 #### Nop.Core
 
-This project contains a set of core classes for nopCommerce. This project is at the center of the architecture. This project does not have any dependencies to other projects in the solution. This project contains core classes which are shared to entire solution like Domain Entities, Cashing, Events and other Helper classes.
+This project contains a set of core classes for nopCommerce. This project is at the center of the architecture. This project does not have any dependencies to other projects in the solution. This project contains core classes which are shared to entire solution like Domain Entities, Caching, Events and other Helper classes.
 
 #### Nop.Data
 
