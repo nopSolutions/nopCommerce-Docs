@@ -17,4 +17,4 @@ contributors: git.AfiaKhanom
 * [প্রতিক্রিয়াশীল নকশা](xref:bn/developer/design/responsive)
 * [পরামর্শ এবং কৌশল](xref:bn/developer/design/tips-and-tricks)
 * [থিমে অবদান](xref:bn/developer/design/contributing-theme)
-* [সত্তা ইভেন্ট সিস্টেম](xref:bn/developer/design/entity-events-system)
+* [এন্টিটি ইভেন্ট সিস্টেম](xref:bn/developer/design/entity-events-system)

@@ -33,7 +33,7 @@ contributors: git.AfiaKhanom
 
 - "Microsoft Azure Command Prompt" খুলুন
 - আপনার প্রকল্পের সোর্স ফোল্ডারে নেভিগেট করুন যেমন আপনি সাধারণত শেল উইন্ডোতে থাকবেন
-- কুদু স্ক্রিপ্ট জেনারেটর চালান (আপনি উইকি দ্বারা খুঁজে পেতে পারেন [this link](https://github.com/projectkudu/kudu/wiki) or see [this video](https://azure.microsoft.com/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
+- কুদু স্ক্রিপ্ট জেনারেটর চালান (আপনি উইকি দ্বারা খুঁজে পেতে পারেন [এই লিঙ্কে](https://github.com/projectkudu/kudu/wiki) or see [এই ভিডিওতে](https://azure.microsoft.com/resources/videos/custom-web-site-deployment-scripts-with-kudu/)).
 
         So you would write something like:
 
