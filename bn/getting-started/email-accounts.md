@@ -1,37 +1,37 @@
 ---
-title: Email accounts
-uid: en/getting-started/email-accounts
+title:ইমেইল একাউন্ট
+uid: bn/getting-started/email-accounts
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.AfiaKhanom
 ---
 
-# Email accounts
+# ইমেইল একাউন্ট
 
-This chapter describes how to set up email accounts associated with your store: a general contact email, a sales representative email, a customer support email and more.
+এই অধ্যায়ে বর্ণনা করা হয়েছে কিভাবে আপনার দোকানের সাথে সম্পর্কিত ইমেইল অ্যাকাউন্ট সেট আপ করতে হয়: একটি সাধারণ যোগাযোগের ইমেইল, একটি বিক্রয় প্রতিনিধি ইমেল, একটি গ্রাহক সহায়তা ইমেল এবং আরও অনেক কিছু।
 
-To manage email accounts, go to **Configuration → Email accounts**. The *Email accounts* window displays the email accounts of the store owner, as shown below. After the email accounts are configured, the store owner can then select the required email account on the message template details page, as described in the [Message templates](xref:en/running-your-store/content-management/message-templates) chapter.
+ইমেল অ্যাকাউন্ট পরিচালনা করতে, **কনফিগারেশন → ইমেইল একাউন্ট** এ যান। *ইমেইল একাউন্ট* উইন্ডোটি দোকানের মালিকের ইমেইল অ্যাকাউন্ট প্রদর্শন করে, যেমনটি নিচে দেখানো হয়েছে। ইমেইল অ্যাকাউন্টগুলি কনফিগার করার পর, দোকান মালিক বার্তা টেমপ্লেট বিবরণ পৃষ্ঠায় প্রয়োজনীয় ইমেল অ্যাকাউন্ট নির্বাচন করতে পারেন, যেমন [বার্তা টেমপ্লেট](xref:en/running-your-store/content-management/message-templates) অধ্যায়।
 
-![Email accounts](_static/email-accounts/email-accounts.png)
+![ইমেইল একাউন্ট](_static/email-accounts/email-accounts.png)
 
-## Add a new email account
+## একটি নতুন ইমেল অ্যাকাউন্ট যোগ করা
 
-To add a new email account click **Add new**. The *Add a new email account* window is displayed:
+একটি নতুন ইমেইল অ্যাকাউন্ট যোগ করতে **নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন ইমেল অ্যাকাউন্ট যোগ করা* উইন্ডো প্রদর্শিত হয়:
 
-![Add a new email account](_static/email-accounts/email-accounts-add-new.png)
+![একটি নতুন ইমেল অ্যাকাউন্ট যোগ করা](_static/email-accounts/email-accounts-add-new.png)
 
-Define the following email account information:
+নিম্নলিখিত ইমেল অ্যাকাউন্ট তথ্য সংজ্ঞায়িত করুন:
 
-* In the **Email address** field enter the from email address for all outgoing emails of your store. Example, `sales@yourstore.com`.
-* In the **Email display name** field, enter the displayed name for outgoing emails of your store. Example, "Your store sales department".
-* In the **Host** field, enter the host name of IP address of your email server.
-* In the **Port** field, enter the SMTP port of your email server.
-* In the **User** field, enter the user name of your email server.
-* In the **Password** field, enter the password of your email server.
-* Select the **SSL** checkbox, to use Security Sockets Layer to encrypt the SMTP connection.
-* Select the **Use default credentials** checkbox, to use default credentials for the connection.
+* **ইমেল ঠিকানা** ক্ষেত্রের মধ্যে আপনার দোকানের সমস্ত বহির্গামী ইমেলের জন্য ইমেল ঠিকানা থেকে প্রবেশ করুন। উদাহরণ, `sales@yourstore.com`।
+* **ইমেল ডিসপ্লে নাম** ফিল্ডে, আপনার দোকানের বহির্গামী ইমেলের জন্য প্রদর্শিত নাম লিখুন। উদাহরণ, "আপনার দোকান বিক্রয় বিভাগ"।
+* **হোস্ট** ফিল্ডে, আপনার ইমেল সার্ভারের আইপি ঠিকানার হোস্ট নাম লিখুন।
+* **পোর্ট** ফিল্ডে, আপনার ইমেইল সার্ভারের SMTP পোর্ট লিখুন।
+* **ব্যবহারকারী** ক্ষেত্রে, আপনার ইমেল সার্ভারের ব্যবহারকারীর নাম লিখুন।
+* **পাসওয়ার্ড** ফিল্ডে, আপনার ইমেইল সার্ভারের পাসওয়ার্ড লিখুন।
+* এসএমটিপি সংযোগ এনক্রিপ্ট করার জন্য সিকিউরিটি সকেট লেয়ার ব্যবহার করতে **এসএসএল** চেকবক্স নির্বাচন করুন।
+* সংযোগের জন্য ডিফল্ট শংসাপত্র ব্যবহার করতে **ডিফল্ট শংসাপত্র ব্যবহার করুন** চেকবক্স ব্যবহার করুন।
 
-Click **Save**. The window is expanded, as follows:
+**সেভ** ক্লিক করুন। উইন্ডোটি প্রসারিত করা হয়েছে, নিম্নরূপ:
 
-![Email account  - Details](_static/email-accounts/email-accounts-details.png)
+![ইমেইল অ্যাকাউন্ট - বিস্তারিত](_static/email-accounts/email-accounts-details.png)
 
-In the **Send email to** field, enter the email address for the test email and click **Send test email**.
+**ইমেল পাঠান** ফিল্ডে, পরীক্ষার ইমেইলের জন্য ইমেল ঠিকানা লিখুন এবং **পরীক্ষার ইমেইল পাঠান** ক্লিক করুন।
