@@ -13,7 +13,7 @@ contributors: git.AfiaKhanom
 
 > [!NOTE]
 >
-> আপনি **Configuration → Settings → App settings** পৃষ্ঠা থেকে এই ফাইলটি সম্পাদনা করতে পারেন।
+> আপনি **কনফিগারেশন → সেটিংস → অ্যাপ সেটিংস** পৃষ্ঠা থেকে এই ফাইলটি সম্পাদনা করতে পারেন।
 
 > [!NOTE]
 >

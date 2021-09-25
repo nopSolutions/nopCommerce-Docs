@@ -1,6 +1,6 @@
 ---
 title: উইজেট (ডিজাইনার গাইড)
-uid: en/developer/design/widgets
+uid: bn/developer/design/widgets
 author: git.AndreiMaz
 contributors: git.AfiaKhanom
 ---

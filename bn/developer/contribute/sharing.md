@@ -2,7 +2,7 @@
 title: আপনার প্লাগইন, থিম এবং ভাষা প্যাক শেয়ার করা
 uid: bn/developer/contribute/sharing
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
 # আপনার প্লাগইন, থিম এবং ভাষা প্যাক শেয়ার করা

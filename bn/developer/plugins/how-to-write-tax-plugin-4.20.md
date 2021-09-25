@@ -7,7 +7,7 @@ contributors: git.AfiaKhanom
 
 # কিভাবে নপকমার্স এর জন্য ট্যাক্স প্লাগইন লিখব
 
-নপকমার্স কার্যকারিতা প্রসারিত করতে, প্লাগইন ব্যবহার করা হয়। "PickupInStore" এবং "PayPal Standard" এর মতো বিভিন্ন ধরণের প্লাগইন রয়েছে যা ইতিমধ্যে নপকমার্স ডিস্ট্রোতে রয়েছে। আপনি [nopCommerce official site](https://www.nopcommerce.com/marketplace) এ বিভিন্ন প্লাগইন সার্চ করে দেখতে পারেন যে কেউ ইতিমধ্যে আপনার প্রয়োজন অনুসারে প্লাগইন তৈরি করেছে কিনা। যদি আপনি একটি খুঁজে না পান, তাহলে আপনি সঠিক জায়গায় আছেন কারণ এই নিবন্ধটি আপনাকে প্লাগইন তৈরির প্রক্রিয়ার মাধ্যমে নির্দেশ করবে, বিশেষ করে ট্যাক্স প্লাগইন, আপনার প্রয়োজন অনুযায়ী।
+নপকমার্স কার্যকারিতা প্রসারিত করতে, প্লাগইন ব্যবহার করা হয়। "PickupInStore" এবং "PayPal Standard" এর মতো বিভিন্ন ধরণের প্লাগইন রয়েছে যা ইতিমধ্যে নপকমার্স ডিস্ট্রোতে রয়েছে। আপনি [নপকমার্স অফিসিয়াল সাইট](https://www.nopcommerce.com/marketplace) এ বিভিন্ন প্লাগইন সার্চ করে দেখতে পারেন যে কেউ ইতিমধ্যে আপনার প্রয়োজন অনুসারে প্লাগইন তৈরি করেছে কিনা। যদি আপনি একটি খুঁজে না পান, তাহলে আপনি সঠিক জায়গায় আছেন কারণ এই নিবন্ধটি আপনাকে প্লাগইন তৈরির প্রক্রিয়ার মাধ্যমে নির্দেশ করবে, বিশেষ করে ট্যাক্স প্লাগইন, আপনার প্রয়োজন অনুযায়ী।
 
 ## প্লাগইন স্ট্রাকচার, প্রয়োজনীয় ফাইল এবং লোকেশন
 
@@ -57,7 +57,7 @@ contributors: git.AfiaKhanom
 
 ৩. **.csproj** ফাইল আপডেট করার পর, `plugin.json` ফাইল যোগ করতে হবে যা প্লাগইন এর জন্য প্রয়োজন। এই ফাইলটিতে আপনার প্লাগইন বর্ণনা করে মেটা তথ্য রয়েছে। শুধু অন্য কোন বিদ্যমান প্লাগইন/উইজেট থেকে এই ফাইলটি অনুলিপি করুন এবং আপনার প্রয়োজনের জন্য এটি পরিবর্তন করুন। `Plugin.json` ফাইল সম্পর্কে তথ্যের জন্য, দয়া করে দেখুন [plugin.json file](xref:en/developer/plugins/plugin_json).
 
-৪. সর্বশেষ প্রয়োজনীয় ধাপ হল একটি ক্লাস তৈরি করা যা `BasePlugin` (`Nop.Core.Plugins` namespace) এবং `ITaxProvider` ইন্টারফেস (`Nop.Services.Tax` namespace) প্রয়োগ করে। **ITaxProvider** `GetTaxRate` পদ্ধতি প্রয়োগ করে যা টাইপ প্রদান করে **CalculateTaxResult** (ট্যাক্স রেট থাকে, ত্রুটি থাকে এবং বুলিয়ান সাফল্যের অবস্থা থাকে) কাস্টম যুক্তির উপর ভিত্তি করে, সাধারণত গ্রাহকের ঠিকানার উপর ভিত্তি করে।
+৪. সর্বশেষ প্রয়োজনীয় ধাপ হল একটি ক্লাস তৈরি করা যা `BasePlugin` (`Nop.Core.Plugins` namespace) এবং `ITaxProvider` ইন্টারফেস (`Nop.Services.Tax` namespace) প্রয়োগ করে। **ITaxProvider** `GetTaxRate` মেথড প্রয়োগ করে যা টাইপ প্রদান করে **CalculateTaxResult** (ট্যাক্স রেট থাকে, ত্রুটি থাকে এবং বুলিয়ান সাফল্যের অবস্থা থাকে) কাস্টম যুক্তির উপর ভিত্তি করে, সাধারণত গ্রাহকের ঠিকানার উপর ভিত্তি করে।
 
 ## অনুরোধগুলি পরিচালনা। কন্ট্রোলার, মডেল এবং ভিউ
 
@@ -148,7 +148,7 @@ contributors: git.AfiaKhanom
 
 ![image6](_static/how-to-write-a-tax-plugin-4.20/image6.png)
 
-* **Create the controller**. নতুন প্লাগিনে একটি `কন্ট্রোলার` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন কন্ট্রোলার শ্রেণী যোগ করুন। প্লাগইন কন্ট্রোলারদের নাম দেওয়া একটি ভাল অভ্যাস ***{Group}{Name}Controller.cs**। উদাহরণস্বরূপ, `FixedOrByCountryStateZipController`। অবশ্যই এইভাবে নিয়ামকদের নাম দেওয়ার প্রয়োজন নেই (তবে কেবল একটি সুপারিশ)। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম পদ্ধতি তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম রাখি `Configure`। একটি মডেল শ্রেণী প্রস্তুত করুন এবং এটি একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাস করুন: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**।
+* **Create the controller**. নতুন প্লাগিনে একটি `কন্ট্রোলার` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন কন্ট্রোলার শ্রেণী যোগ করুন। প্লাগইন কন্ট্রোলারদের নাম দেওয়া একটি ভাল অভ্যাস ***{Group}{Name}Controller.cs**। উদাহরণস্বরূপ, `FixedOrByCountryStateZipController`। অবশ্যই এইভাবে নিয়ামকদের নাম দেওয়ার প্রয়োজন নেই (তবে কেবল একটি সুপারিশ)। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম মেথড তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম রাখি `Configure`। একটি মডেল শ্রেণী প্রস্তুত করুন এবং এটি একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাস করুন: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**।
 
 ```cs
 public IActionResult Configure()
@@ -187,7 +187,7 @@ public IActionResult Configure()
 }
 ```
 
-* আপনার কর্ম পদ্ধতির জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
+* আপনার কর্ম মেথডের জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
 
 ```cs
 [AuthorizeAdmin] //confirms access to the admin panel
@@ -196,7 +196,7 @@ public IActionResult Configure()
 ```
 
 উদাহরণস্বরূপ, `FixedOrByCountryStateZip` প্লাগইনটি খুলুন এবং `FixedOrByCountryStateZipController` এর বাস্তবায়ন দেখুন।
-তারপরে প্রতিটি প্লাগইন যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে তার জন্য আপনাকে একটি কনফিগারেশন ইউআরএল নির্দিষ্ট করতে হবে। `BasePlugin` নামের বেস ক্লাসে `GetConfigurationPageUrl` পদ্ধতি আছে যা একটি কনফিগারেশন ইউআরএল প্রদান করে:
+তারপরে প্রতিটি প্লাগইন যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে তার জন্য আপনাকে একটি কনফিগারেশন ইউআরএল নির্দিষ্ট করতে হবে। `BasePlugin` নামের বেস ক্লাসে `GetConfigurationPageUrl` মেথড আছে যা একটি কনফিগারেশন ইউআরএল প্রদান করে:
 
 ```cs
 public override string GetConfigurationPageUrl()
@@ -211,7 +211,7 @@ public override string GetConfigurationPageUrl()
 
 ![image7](_static/how-to-write-a-tax-plugin-4.20/image7.png)
 
-আরেকটি ফোল্ডার `Data` যোগ করা হয়েছে যা মানচিত্র শ্রেণী (es) এবং অবজেক্ট কনটেক্সট ক্লাস (es) নিয়ে গঠিত। ম্যাপিং ক্লাস প্রয়োগ করে **`NopEntityTypeConfiguration <T>`** (`Nop.Data.Mapping` namespace)। এখানে, কনফিগার পদ্ধতিটি ওভাররাইড করা হয়েছে।
+আরেকটি ফোল্ডার `Data` যোগ করা হয়েছে যা মানচিত্র শ্রেণী (es) এবং অবজেক্ট কনটেক্সট ক্লাস (es) নিয়ে গঠিত। ম্যাপিং ক্লাস প্রয়োগ করে **`NopEntityTypeConfiguration <T>`** (`Nop.Data.Mapping` namespace)। এখানে, কনফিগার মেথডটি ওভাররাইড করা হয়েছে।
 
 ```cs
 public override void Configure(EntityTypeBuilder<TaxRate> builder)
@@ -223,7 +223,7 @@ public override void Configure(EntityTypeBuilder<TaxRate> builder)
 }
 ```
 
-অবজেক্ট কনটেক্সট ক্লাস **DbContext** ক্লাস (`Microsoft.EntityFrameworkCore` namespace) এবং **IDbContext** ইন্টারফেস (`Nop.Data` namespace) প্রয়োগ করে। এই `IDbContext` ইন্টারফেসটিতে টেবিল তৈরি, মুছে ফেলা এবং অন্যান্য কাস্টম অ্যাকশন সম্পর্কিত পদ্ধতি রয়েছে যেমন মডেল অনুযায়ী কাঁচা SQL ক্যোয়ারী চালানো যা পূর্বে `Domain` ফোল্ডারে যুক্ত করা হয়েছিল।
+অবজেক্ট কনটেক্সট ক্লাস **DbContext** ক্লাস (`Microsoft.EntityFrameworkCore` namespace) এবং **IDbContext** ইন্টারফেস (`Nop.Data` namespace) প্রয়োগ করে। এই `IDbContext` ইন্টারফেসটিতে টেবিল তৈরি, মুছে ফেলা এবং অন্যান্য কাস্টম অ্যাকশন সম্পর্কিত মেথড রয়েছে যেমন মডেল অনুযায়ী কাঁচা SQL ক্যোয়ারী চালানো যা পূর্বে `Domain` ফোল্ডারে যুক্ত করা হয়েছিল।
 
 ```cs
 public class CountryStateZipObjectContext : DbContext, IDbContext
@@ -346,7 +346,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
 }
 ```
 
-ট্যাক্স রেটের জন্য **CRUD** অপারেশন, পরিষেবা তৈরি করা হয়। এই ক্ষেত্রে, ইন্টারফেস **ICountryStateZipService** এবং ক্লাস **CountryStateZipService** তৈরি করা হয়েছে। এতে '`InsertTaxRate`, `UpdateTaxRate`, `DeleteTaxRate`, `GetAllTaxRates` এবং `GetTaxRateById` এর মতো পদ্ধতি রয়েছে। এই পদ্ধতির নামগুলি স্ব-ব্যাখ্যামূলক এবং নিয়ন্ত্রকদের দ্বারা সেবন করা হবে। প্রয়োজনীয়তা অনুযায়ী অন্যান্য পদ্ধতি চালু/যোগ করা যেতে পারে।
+ট্যাক্স রেটের জন্য **CRUD** অপারেশন, পরিষেবা তৈরি করা হয়। এই ক্ষেত্রে, ইন্টারফেস **ICountryStateZipService** এবং ক্লাস **CountryStateZipService** তৈরি করা হয়েছে। এতে '`InsertTaxRate`, `UpdateTaxRate`, `DeleteTaxRate`, `GetAllTaxRates` এবং `GetTaxRateById` এর মতো মেথড রয়েছে। এই মেথডের নামগুলি স্ব-ব্যাখ্যামূলক এবং নিয়ন্ত্রকদের দ্বারা সেবন করা হবে। প্রয়োজনীয়তা অনুযায়ী অন্যান্য মেথড চালু/যোগ করা যেতে পারে।
 
 ### ICountryStateZipService.cs
 
@@ -501,7 +501,7 @@ public partial class CountryStateZipService : ICountryStateZipService
 
 শেষ জিনিস, আমাদের প্রয়োজন পরিষেবাগুলি নিবন্ধন করা এবং অ্যাপ্লিকেশন প্রারম্ভে প্লাগইন ডিবি প্রসঙ্গ কনফিগার করা। এর জন্য, **Infrastructure** ফোল্ডার যোগ করা হয়েছে যার মধ্যে ক্লাস রয়েছে – `DependencyRegister` এবং `PluginDbStartup`।
 
-**DependencyRegister** ক্লাস প্রয়োগ করে `IDependencyRegister` ইন্টারফেস (`Nop.Core.Infrastructure.DependencyManagement` namespace) যার `Register` পদ্ধতি আছে.
+**DependencyRegister** ক্লাস প্রয়োগ করে `IDependencyRegister` ইন্টারফেস (`Nop.Core.Infrastructure.DependencyManagement` namespace) যার `Register` মেথড আছে.
 
 ```cs
 public class DependencyRegistrar : IDependencyRegistrar
@@ -533,7 +533,7 @@ public class DependencyRegistrar : IDependencyRegistrar
 }
 ```
 
-একইভাবে, **PluginDbStartup** শ্রেণী `INopStartup` ইন্টারফেস (`Nop.Core.Infrastructure` namespace) প্রয়োগ করে যার `ConfigureServices` এবং `Configure` পদ্ধতি আছে। এই উদাহরণের জন্য, `ConfigureServices` পদ্ধতিতে বস্তুর প্রসঙ্গ যোগ করা হয়েছে।
+একইভাবে, **PluginDbStartup** শ্রেণী `INopStartup` ইন্টারফেস (`Nop.Core.Infrastructure` namespace) প্রয়োগ করে যার `ConfigureServices` এবং `Configure` মেথড আছে। এই উদাহরণের জন্য, `ConfigureServices` মেথডে বস্তুর প্রসঙ্গ যোগ করা হয়েছে।
 
 ```cs
 public class PluginDbStartup : INopStartup
@@ -571,11 +571,11 @@ public class PluginDbStartup : INopStartup
 
 ![image8](_static/how-to-write-a-tax-plugin-4.20/image8.png)
 
-## "Install" এবং "Uninstall" পদ্ধতিগুলি পরিচালনা করা
+## "Install" এবং "Uninstall" মেথডগুলি পরিচালনা করা
 
-এই পদক্ষেপটি ঐচ্ছিক। কিছু প্লাগইন এর ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি প্লাগইন নতুন লোকেল সম্পদ সন্নিবেশ করতে পারে বা প্রয়োজনীয় টেবিল বা সেটিংস মান যোগ করতে পারে। সুতরাং আপনার `BasePlugin` বাস্তবায়ন খুলুন এবং নিম্নলিখিত পদ্ধতিগুলি ওভাররাইড করুন:
+এই পদক্ষেপটি ঐচ্ছিক। কিছু প্লাগইন এর ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি প্লাগইন নতুন লোকেল সম্পদ সন্নিবেশ করতে পারে বা প্রয়োজনীয় টেবিল বা সেটিংস মান যোগ করতে পারে। সুতরাং আপনার `BasePlugin` বাস্তবায়ন খুলুন এবং নিম্নলিখিত মেথডগুলি ওভাররাইড করুন:
 
-* `Install`. প্লাগইন ইনস্টলেশনের সময় এই পদ্ধতিটি চালু করা হবে। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
+* `Install`. প্লাগইন ইনস্টলেশনের সময় এই মেথডটি চালু করা হবে। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
 
 ```cs
 public override void Install()
@@ -610,7 +610,7 @@ public override void Install()
 }
 ```
 
-* `Uninstall`. প্লাগইন আনইনস্টল করার সময় এই পদ্ধতিটি চালু করা হবে। আপনি ইনস্টলেশনের সময় প্লাগইন দ্বারা পূর্বে আরম্ভ করা সেটিংস, লোকেল রিসোর্স, বা ডাটাবেস টেবিল অপসারণ করতে পারেন।
+* `Uninstall`. প্লাগইন আনইনস্টল করার সময় এই মেথডটি চালু করা হবে। আপনি ইনস্টলেশনের সময় প্লাগইন দ্বারা পূর্বে আরম্ভ করা সেটিংস, লোকেল রিসোর্স, বা ডাটাবেস টেবিল অপসারণ করতে পারেন।
 
 ```cs
 public override void Uninstall()
@@ -652,4 +652,4 @@ public override void Uninstall()
 ```
 
 > [!IMPORTANT]
-> আপনি যদি এই পদ্ধতিগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর ভিত্তি বাস্তবায়ন গোপন করবেন না -base.Install() এবং base.Uninstall().
+> আপনি যদি এই মেথডগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর ভিত্তি বাস্তবায়ন গোপন করবেন না -base.Install() এবং base.Uninstall().

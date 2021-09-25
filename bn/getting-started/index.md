@@ -1,109 +1,110 @@
 ---
-title: Getting started
-uid: en/getting-started/index
+title: শুরু করা
+uid: bn/getting-started/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Getting started
+# শুরু করা
 
-If you are a novice in nopCommerce, follow the steps below to set your store up and running:
+আপনি যদি নপকমার্স এ একজন নবাগত হন, তাহলে আপনার দোকান সেট আপ এবং চলমান করতে নিচের ধাপগুলো অনুসরণ করুন:
 
-## 1. Configure your store
+## ১. আপনার স্টোর কনফিগার
 
-- [Configure general store settings](xref:en/getting-started/advanced-configuration/your-store-information)
-- [Configure payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
-- [Configure shipping options](xref:en/getting-started/configure-shipping/index)
-- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them [separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list), offers and so on.
+- [সাধারণ স্টোর সেটিং কনফিগার](xref:bn/getting-started/advanced-configuration/your-store-information)
+- [পেমেন্ট মেথড কনফিগার](xref:bn/getting-started/configure-payments/payment-methods/index)
+- [শিপিং বিকল্পগুলি কনফিগার](xref:bn/getting-started/configure-shipping/index)
+- ব্যবহারকারীদের তালিকা কনফিগার: ব্যবহারকারীদের [বিভিন্ন গ্রুপ](xref:bn/running-your-store/customer-management/customer-roles) তৈরি করুন, তাদের [আপনার সাইটের এলাকায় আলাদা অ্যাক্সেস](xref:bn/running-your-store/customer-management/access-control-list), অফার ইত্যাদি দিন।
 
-## 2. Create a catalog and add products
+## ২. একটি ক্যাটালগ তৈরি এবং পণ্য যোগ
 
-A catalog is what your customers constantly deal with. That is why it is crucial to make it easy to browse and find needed products.
+ক্যাটালগ হচ্ছে আপনার গ্রাহকরা প্রতিনিয়ত মোকাবেলা করেন। এজন্য ব্রাউজ করা এবং প্রয়োজনীয় পণ্য খুঁজে পাওয়া সহজ করা অত্যন্ত গুরুত্বপূর্ণ।
 
-### Create categories and manufacturers
+### ক্যাটালগ এবং প্রস্তুতকারক তৈরি
 
-Categories and manufacturers  will be used in your catalog for product filtering. Learn how to deal with them and make the site navigation easier.
+প্রোডাক্ট ফিল্টারিংয়ের জন্য আপনার ক্যাটালগ এবং প্রস্তুতকারক ব্যবহার করা হবে। কীভাবে তাদের সাথে মোকাবিলা করতে হয় এবং সাইট নেভিগেশনকে আরও সহজ করে তুলুন তা শিখুন।
 
-* [Categories](xref:en/running-your-store/catalog/categories)
-* [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
+* [ক্যাটালগ](xref:bn/running-your-store/catalog/categories)
+* [প্রস্তুতকারক](xref:bn/running-your-store/catalog/manufacturers)
 
-### Add products
+### পণ্য যোগ করা
 
-You can add products manually one by one or import your catalog from an xml file.
+আপনি ম্যানুয়ালি একের পর এক পণ্য যোগ করতে পারেন অথবা একটি xml ফাইল থেকে আপনার ক্যাটালগ আমদানি করতে পারেন।
 
-* [Products](xref:en/running-your-store/catalog/products/index)
+* [পণ্য](xref:bn/running-your-store/catalog/products/index)
 
-### Define product variations
+### পণ্যের বৈচিত্র্য নির্ধারণ করা
 
-What if your products are variable, for example, you sell sneakers in different colors and sizes? In nopCommerce you can set up specification and product attributes to manage this.
+যদি আপনার পণ্যগুলি পরিবর্তনশীল হয়, উদাহরণস্বরূপ, আপনি বিভিন্ন রং এবং আকারের স্নিকার বিক্রি করেন? নপকমার্স এ আপনি এটি পরিচালনা করতে স্পেসিফিকেশন এবং পণ্যের বৈশিষ্ট্য সেট করতে পারেন।
 
-* [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants)
+* [গোষ্ঠীভুক্ত পণ্য (রূপ)](xref:bn/running-your-store/catalog/products/grouped-products-variants)
 
-## 3. Improve customer experience in your store
+## ৩. দোকানে গ্রাহকের অভিজ্ঞতা উন্নত করা
 
-Now when your catalog is filled with products, ensure that your customers are able to get all the needed support on their journey to a purchase.
+এখন যখন আপনার ক্যাটালগ পণ্য দ্বারা ভরা হয়, নিশ্চিত করুন যে আপনার গ্রাহকরা তাদের ক্রয়ের যাত্রায় সমস্ত প্রয়োজনীয় সহায়তা পেতে সক্ষম।
 
-### Product reviews
+### পণ্য রিভিউ
 
-Personal buying experience counts. It makes people trust you as a seller more. Learn how to make product reviews available for your online store and manage them here.
+ব্যক্তিগত কেনার অভিজ্ঞতা গণনা করে। এটি আপনাকে একজন বিক্রেতা হিসেবে আরো বিশ্বাস করে। আপনার অনলাইন স্টোরের জন্য কীভাবে পণ্য পর্যালোচনাগুলি উপলব্ধ করা যায় এবং সেগুলি এখানে পরিচালনা করবেন তা শিখুন।
 
-* [Product reviews](xref:en/running-your-store/catalog/products/product-reviews)
+* [পণ্য রিভিউ](xref:bn/running-your-store/catalog/products/product-reviews)
 
-### Livechat support
+### লাইভচ্যাট সাপোর্ট
 
-Often your customers need to ask a question right here and right now. Livechat option can be a good way to help them. Find chat plugins in nopCommerce marketplace.
+প্রায়ই আপনার গ্রাহকদের এখানে এবং এখনই একটি প্রশ্ন জিজ্ঞাসা করতে হবে। লিভচ্যাট বিকল্প তাদের সাহায্য করার একটি ভাল উপায় হতে পারে। নপকমার্স মার্কেটপ্লেসে চ্যাট প্লাগইন খুঁজুন।
 
-* [Learn more about Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
+* [নপকমার্সে প্লাগইন সম্পর্কে আরও জানুন](xref:bn/getting-started/advanced-configuration/plugins-in-nopcommerce)
 
-### Wishlists
+### ইচ্ছা তালিকা
 
-A wishlist is a good option for deferred purchasing. Let your customers add some products to wishlist to buy them later or to share with friends. It is also a good option for you to analyze your customers behavior.
+বিল্ডড ক্রয়ের জন্য একটি উইশলিস্ট একটি ভাল বিকল্প। আপনার ক্রেতাদের কিছু পণ্য উইশলিস্টে যুক্ত করতে দিন যাতে সেগুলো পরে কেনা যায় অথবা বন্ধুদের সাথে শেয়ার করা যায়। আপনার গ্রাহকদের আচরণ বিশ্লেষণ করার জন্য এটি আপনার জন্য একটি ভাল বিকল্প।
 
-* [Shopping carts and wishlists](xref:en/running-your-store/order-management/shopping-carts-and-wishlists)
+* [শপিং কার্ট এবং ইচ্ছা তালিকা](xref:bn/running-your-store/order-management/shopping-carts-and-wishlists)
 
-## 4. Marketing & promotional tools
+## ৪. বিপণন এবং প্রচারমূলক সরঞ্জাম
 
-Marketing your store is essential to gain your customers loyalty and raise awareness among potential customers. There are many marketing options in nopCommerce: you can offer special prices, advice products depending on shopping behaviour, promote your store through email campaigns and much more.
+আপনার গ্রাহকদের আনুগত্য অর্জন এবং সম্ভাব্য গ্রাহকদের মধ্যে সচেতনতা বাড়াতে আপনার দোকান বিপণন অপরিহার্য। নপকমার্স এ অনেক মার্কেটিং অপশন আছে: আপনি শপিং আচরণের উপর নির্ভর করে বিশেষ মূল্য, উপদেশ পণ্য দিতে পারেন, ইমেইল ক্যাম্পেইনের মাধ্যমে আপনার দোকান প্রচার করতে পারেন এবং আরো অনেক কিছু।
 
-* [Promotional tools](xref:en/running-your-store/promotional-tools/index)
+* [প্রচারমূলক সরঞ্জাম](xref:bn/running-your-store/promotional-tools/index)
 
-### Discounts and special prices
+### ছাড় এবং বিশেষ মূল্য
 
-Applying special prices to products can encourage your customers to make a purchase sooner, and (or) to buy more.
+পণ্যগুলিতে বিশেষ মূল্য প্রয়োগ করা আপনার গ্রাহকদেরকে তাড়াতাড়ি কেনাকাটা করতে উৎসাহিত করতে পারে, এবং (অথবা) আরও বেশি কেনার জন্য।
 
-* [Discounts](xref:en/running-your-store/promotional-tools/discounts)
-* [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
+* [ছাড়](xref:bn/running-your-store/promotional-tools/discounts)
+* [বিশেষ মূল্য](xref:bn/running-your-store/promotional-tools/tier-prices)
 
-### Loyalty program
+### বিশ্বস্ততা প্রোগ্রাম
 
-The reward points functionality in nopCommerce allows customers to earn points for certain actions (registration, making purchases).
+নপকমার্সে পুরস্কার পয়েন্ট কার্যকারিতা গ্রাহকদের নির্দিষ্ট কর্মের জন্য পয়েন্ট অর্জন করতে দেয় (নিবন্ধন, ক্রয় করা)।
 
-* [Reward points](xref:en/running-your-store/promotional-tools/reward-points)
+* [পুরস্কার পয়েন্ট](xref:bn/running-your-store/promotional-tools/reward-points)
 
 ### Cross-marketing
 
-In nopCommerce, you can offer your customers [additional products](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products) they may like based on their shopping behavior. It is also a good opportunity for you to up-sell some products.
+নপকমার্সে, আপনি আপনার গ্রাহকদের [অতিরিক্ত পণ্য](xref:bn/running-your-store/promotional-tools/cross-sells-and-related-products)  অফার করতে পারেন যা তারা তাদের কেনাকাটার আচরণের উপর ভিত্তি করে পছন্দ করতে পারে। এটি আপনার জন্য কিছু পণ্য আপ-সেল করার একটি ভাল সুযোগ।
 
-### Email campaigns
+### ইমেল প্রচারণা
 
-Create [email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns) to easily and quickly reach your target audience with special offers, news, educational content, and so on.
 
-## 5. nopCommerce special features for stores of any kind
+বিশেষ অফার, সংবাদ, শিক্ষামূলক বিষয়বস্তু সহ সহজেই এবং দ্রুত আপনার লক্ষ্য দর্শকদের কাছে পৌঁছানোর জন্য [ইমেল প্রচারণা](xref:bn/running-your-store/promotional-tools/email-campaigns) তৈরি করুন।
 
-Whether you want to give a shot to a small project or you are to start a marketplace, you can rely on nopCommerce. There are many options to fulfil your business requirements:
+## ৫. নপকমার্স যে কোন ধরণের দোকানের জন্য বিশেষ বৈশিষ্ট্য
 
-### Multi-store
+আপনি একটি ছোট প্রকল্পের জন্য একটি শট দিতে চান বা আপনি একটি মার্কেটপ্লেস শুরু করতে চান, আপনি নপকমার্স এর উপর নির্ভর করতে পারেন। আপনার ব্যবসার প্রয়োজনীয়তা পূরণের জন্য অনেকগুলি বিকল্প রয়েছে:
 
-nopCommerce enables you to run more than one store using one interface from a single nopCommerce installation and manage all admin operations from a single panel. Learn [here](xref:en/getting-started/advanced-configuration/multi-store) how to set up several stores.
+### মাল্টি-স্টোর
 
-* [Multi-store](xref:en/getting-started/advanced-configuration/multi-store)
+নপকমার্স আপনাকে একক নপকমার্স ইনস্টলেশন থেকে একটি ইন্টারফেস ব্যবহার করে একাধিক দোকান চালাতে সক্ষম করে এবং একক প্যানেল থেকে সমস্ত অ্যাডমিন অপারেশন পরিচালনা করে। [এখানে](xref:bn/getting-started/advanced-configuration/multi-store) শিখুন কিভাবে বিভিন্ন দোকান স্থাপন করতে হয়।
 
-### Multi-vendor
+* [মাল্টি-স্টোর](xref:bn/getting-started/advanced-configuration/multi-store)
 
-Multi-vendor and drop shipping tools enable you to sell online without having to keep stocks or ship orders. Watch the [video tutorial](https://www.youtube.com/watch?v=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) on multi-vendor support.
+### মাল্টি বিক্রেতা
 
-* [Vendor management](xref:en/running-your-store/vendor-management)
+মাল্টি-ভেন্ডার এবং ড্রপ শিপিং সরঞ্জামগুলি আপনাকে স্টক বা জাহাজের অর্ডার না রেখে অনলাইনে বিক্রি করতে সক্ষম করে। মাল্টি-ভেন্ডার সাপোর্টে [ভিডিও টিউটোরিয়াল](https://www.youtube.com/watch?v=MH6r6tqfLF8&index=9&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4) দেখুন।
+
+* [বিক্রেতা ব্যবস্থাপনা](xref:bn/running-your-store/vendor-management)
 
 > [!TIP]
-> 
-> If you have some issues on configuring your store catalog, don't hesitate to place questions on [community forums](http://www.nopcommerce.com/boards/forum/5/general-support) or request [premium support](http://www.nopcommerce.com/nopcommerce-premium-support-services) services.
+>
+> যদি আপনার স্টোর ক্যাটালগ কনফিগার করার বিষয়ে কিছু সমস্যা থাকে, তাহলে [কমিউনিটি ফোরাম](http://www.nopcommerce.com/boards/forum/5/general-support)এ প্রশ্ন করতে দ্বিধা করবেন না অথবা অনুরোধ করুন [প্রিমিয়াম সাপোর্ট](http://www.nopcommerce.com/nopcommerce-premium-support-services) পরিষেবা।

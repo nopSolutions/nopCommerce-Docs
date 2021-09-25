@@ -61,7 +61,7 @@ contributors: git.AfiaKhanom
 
 ## অনুরোধগুলি পরিচালনা করা। কন্ট্রোলার, মডেল এবং ভিউ
 
-এখন আপনি গিয়ে উইজেট দেখতে পারেন **Admin area** → **Configuration** → **Local Plugins**.
+এখন আপনি গিয়ে উইজেট দেখতে পারেন **প্রশাসন → কনফিগারেশন → লোকাল প্লাগইন**.
 
 ![image4](_static/how-to-write-a-widget-for-nopCommerce/image4.png)
 
@@ -95,7 +95,7 @@ contributors: git.AfiaKhanom
 
 ![image7](_static/how-to-write-a-widget-for-nopCommerce/image7.png)
 
-৪. কন্ট্রোলার তৈরি করুন। নতুন উইজেটে একটি `Controllers` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন নিয়ামক শ্রেণী যোগ করুন। একটি ভাল অভ্যাস হল প্লাগইন কন্ট্রোলারদের নাম দেওয়া `Widgets{Name}Controller.cs`। উদাহরণস্বরূপ, **WidgetsGoogleAnalyticsController**। অবশ্যই কন্ট্রোলারদের এইভাবে নাম দেওয়ার প্রয়োজন নেই, তবে কেবল একটি সুপারিশ। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম পদ্ধতি তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম দিন "কনফিগার করুন"। একটি মডেল শ্রেণী প্রস্তুত করুন এবং একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাঠান: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`।
+৪. কন্ট্রোলার তৈরি করুন। নতুন উইজেটে একটি `Controllers` ফোল্ডার যোগ করুন, এবং তারপর একটি নতুন নিয়ামক শ্রেণী যোগ করুন। একটি ভাল অভ্যাস হল প্লাগইন কন্ট্রোলারদের নাম দেওয়া `Widgets{Name}Controller.cs`। উদাহরণস্বরূপ, **WidgetsGoogleAnalyticsController**। অবশ্যই কন্ট্রোলারদের এইভাবে নাম দেওয়ার প্রয়োজন নেই, তবে কেবল একটি সুপারিশ। তারপরে কনফিগারেশন পৃষ্ঠার জন্য একটি উপযুক্ত কর্ম মেথড তৈরি করুন (অ্যাডমিন এলাকায়)। এর নাম দিন "কনফিগার করুন"। একটি মডেল শ্রেণী প্রস্তুত করুন এবং একটি ভিজ্যুয়াল ভিউ পাথ ব্যবহার করে নিম্নলিখিত ভিউতে পাঠান: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`।
 
 ```cs
     public async Task<IActionResult> Configure()
@@ -121,7 +121,7 @@ contributors: git.AfiaKhanom
     }
 ```
 
-৫. আপনার কর্ম পদ্ধতির জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
+৫. আপনার কর্ম মেথডের জন্য নিম্নলিখিত বৈশিষ্ট্যগুলি ব্যবহার করুন:
 
 ```cs
     [AutoValidateAntiforgeryToken]
@@ -131,7 +131,7 @@ contributors: git.AfiaKhanom
 ```
 
 উদাহরণস্বরূপ, `GoogleAnalytics` উইজেট খুলুন এবং `WidgetsGoogleAnalyticsController` এর বাস্তবায়ন দেখুন।
-তারপরে প্রতিটি উইজেটের জন্য যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে আপনার একটি কনফিগারেশন ইউআরল নির্দিষ্ট করা উচিত। **BasePlugin** নামক বেস ক্লাসের রয়েছে `GetConfigurationPageUrl` পদ্ধতি যা একটি কনফিগারেশন ইউআরল প্রদান করে:
+তারপরে প্রতিটি উইজেটের জন্য যার একটি কনফিগারেশন পৃষ্ঠা রয়েছে আপনার একটি কনফিগারেশন ইউআরল নির্দিষ্ট করা উচিত। **BasePlugin** নামক বেস ক্লাসের রয়েছে `GetConfigurationPageUrl` মেথড যা একটি কনফিগারেশন ইউআরল প্রদান করে:
 
 ```cs
     public override string GetConfigurationPageUrl()
@@ -140,7 +140,7 @@ contributors: git.AfiaKhanom
     }
 ```
 
-যেখানে `{CONTROLLER_NAME}` আপনার নিয়ামকের একটি নাম এবং `{ACTION_NAME}` একটি কর্মের নাম (সাধারণত এটি "কনফিগার")।    প্রতিটি উইজেট উইজেট জোনের একটি তালিকা নির্দিষ্ট করা উচিত। **IWidgetPlugin** নামক বেস ক্লাসে রয়েছে `GetWidgetZones` পদ্ধতি যা উইজেট জোনগুলির একটি তালিকা প্রদান করে যেখানে এটি রেন্ডার করা হবে।
+যেখানে `{CONTROLLER_NAME}` আপনার নিয়ামকের একটি নাম এবং `{ACTION_NAME}` একটি কর্মের নাম (সাধারণত এটি "কনফিগার")।    প্রতিটি উইজেট উইজেট জোনের একটি তালিকা নির্দিষ্ট করা উচিত। **IWidgetPlugin** নামক বেস ক্লাসে রয়েছে `GetWidgetZones` মেথড যা উইজেট জোনগুলির একটি তালিকা প্রদান করে যেখানে এটি রেন্ডার করা হবে।
 
 ```cs
     public Task<IList<string>> GetWidgetZonesAsync()
@@ -150,7 +150,7 @@ contributors: git.AfiaKhanom
 ```
 
 আপনি এটি থেকে পাবলিক উইজেট জোনের একটি তালিকা খুঁজে পেতে পারেন [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) এবং এটি অনুসরণ করে অ্যাডমিন উইজেট জোন [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs).
-`GetWidgetZonesAsync` ছাড়াও, **IWidgetPlugin** এর `GetWidgetViewComponentName` পদ্ধতি রয়েছে যা ViewComponent নাম প্রদান করে। এটি "*widgetZone*" নামটি প্যারামিটার হিসেবে গ্রহণ করে এবং নির্বাচিত উইজেট জোনের উপর ভিত্তি করে ভিন্ন দৃশ্য উপস্থাপন করতে ব্যবহার করা যেতে পারে।
+`GetWidgetZonesAsync` ছাড়াও, **IWidgetPlugin** এর `GetWidgetViewComponentName` মেথড রয়েছে যা ViewComponent নাম প্রদান করে। এটি "*widgetZone*" নামটি প্যারামিটার হিসেবে গ্রহণ করে এবং নির্বাচিত উইজেট জোনের উপর ভিত্তি করে ভিন্ন দৃশ্য উপস্থাপন করতে ব্যবহার করা যেতে পারে।
 
 ```cs
     public string GetWidgetViewComponentName(string widgetZone)
@@ -163,11 +163,11 @@ contributors: git.AfiaKhanom
 
 ![image11](_static/how-to-write-a-widget-for-nopCommerce/image11.png)
 
-## "InstallAsync" এবং "UninstallAsync" পদ্ধতিগুলি পরিচালনা করা
+## "InstallAsync" এবং "UninstallAsync" মেথডগুলি পরিচালনা করা
 
-এই পদক্ষেপটি ঐচ্ছিক। কিছু উইজেট এর ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি উইজেট নতুন লোকেল সম্পদ বা সেটিংস মান সন্নিবেশ করতে পারে। সুতরাং আপনার **IWidgetPlugin** বাস্তবায়ন খুলুন (বেশিরভাগ ক্ষেত্রে এটি **BasePlugin** ক্লাস থেকে উদ্ভূত হবে) এবং নিম্নলিখিত পদ্ধতিগুলি ওভাররাইড করুন:
+এই পদক্ষেপটি ঐচ্ছিক। কিছু উইজেট এর ইনস্টলেশনের সময় অতিরিক্ত যুক্তির প্রয়োজন হতে পারে। উদাহরণস্বরূপ, একটি উইজেট নতুন লোকেল সম্পদ বা সেটিংস মান সন্নিবেশ করতে পারে। সুতরাং আপনার **IWidgetPlugin** বাস্তবায়ন খুলুন (বেশিরভাগ ক্ষেত্রে এটি **BasePlugin** ক্লাস থেকে উদ্ভূত হবে) এবং নিম্নলিখিত মেথডগুলি ওভাররাইড করুন:
 
-১. **InstallAsync**. প্লাগইন ইনস্টলেশনের সময় এই পদ্ধতিটি চালু করা হবে। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
+১. **InstallAsync**. প্লাগইন ইনস্টলেশনের সময় এই মেথডটি চালু করা হবে। আপনি এখানে যেকোনো সেটিংস শুরু করতে পারেন, নতুন লোকাল রিসোর্স সন্নিবেশ করতে পারেন, অথবা কিছু নতুন ডাটাবেস টেবিল তৈরি করতে পারেন (প্রয়োজন হলে)।
 
 ```cs
     public override async Task InstallAsync()
@@ -178,7 +178,7 @@ contributors: git.AfiaKhanom
     }
 ```
 
-২. **UninstallAsync**. প্লাগইন আনইনস্টল করার সময় এই পদ্ধতিটি চালু করা হবে। আপনি ইনস্টলেশনের সময় উইজেট দ্বারা পূর্বে আরম্ভ করা সেটিংস, লোকেল রিসোর্স, বা ডাটাবেস টেবিল অপসারণ করতে পারেন।
+২. **UninstallAsync**. প্লাগইন আনইনস্টল করার সময় এই মেথডটি চালু করা হবে। আপনি ইনস্টলেশনের সময় উইজেট দ্বারা পূর্বে আরম্ভ করা সেটিংস, লোকেল রিসোর্স, বা ডাটাবেস টেবিল অপসারণ করতে পারেন।
 
 ```cs
     public override async Task UninstallAsync()
@@ -190,4 +190,4 @@ contributors: git.AfiaKhanom
 ```
 
 > [!IMPORTANT]
-> যদি আপনি এই পদ্ধতিগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর বেস বাস্তবায়ন লুকিয়ে রাখবেন না - **base.InstallAsync()** এবং **base.UninstallAsync()** যা উপরের ছবিতে চিহ্নিত করা হয়েছে।
+> যদি আপনি এই মেথডগুলির মধ্যে একটিকে ওভাররাইড করেন তবে এর বেস বাস্তবায়ন লুকিয়ে রাখবেন না - **base.InstallAsync()** এবং **base.UninstallAsync()** যা উপরের ছবিতে চিহ্নিত করা হয়েছে।
