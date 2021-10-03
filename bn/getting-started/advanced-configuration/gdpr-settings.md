@@ -1,63 +1,63 @@
 ---
-title: GDPR settings
-uid: en/getting-started/advanced-configuration/gdpr-settings
+title: জিডিপিআর সেটিংস
+uid: bn/getting-started/advanced-configuration/gdpr-settings
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# GDPR settings
+# জিডিপিআর সেটিংস
 
-*GDPR* (General Data Protection Regulation) is a revised European Union's new data privacy law which impacts how all companies collect, use and share personal data of their European customers. The regulation entered into force on May 24, 2016 and applies since May 25, 2018. The regulation is an essential step to strengthen individuals' fundamental rights in the digital age and facilitate business by clarifying rules for companies and public bodies in the digital single market.
+*জিডিপিআর* (জেনারেল ডেটা প্রোটেকশন রেগুলেশন) হল একটি সংশোধিত ইউরোপীয় ইউনিয়নের নতুন ডেটা গোপনীয়তা আইন যা সমস্ত কোম্পানি তাদের ইউরোপীয় গ্রাহকদের ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার এবং ভাগ করে নেওয়ার উপর প্রভাব ফেলে। ২৪ মে, ২০১৬ তারিখে প্রযোজ্য প্রবিধান এবং ২৫ মে, ২০১৮ থেকে প্রযোজ্য। ডিজিটাল যুগে ব্যক্তিদের মৌলিক অধিকারকে শক্তিশালী করতে এবং ডিজিটাল একক বাজারে কোম্পানি এবং পাবলিক সংস্থার জন্য বিধিগুলি স্পষ্ট করে ব্যবসার সুবিধার্থে প্রবিধান একটি অপরিহার্য পদক্ষেপ। ।
 
-For more information (please refer to this source):
+আরও তথ্যের জন্য (অনুগ্রহ করে এই উৎসটি দেখুন):
 
 [https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en](https://ec.europa.eu/info/law/law-topic/data-protection/data-protection-eu_en)
 
-## Configure GDPR
+## জিডিপিআর কনফিগার করুন
 
-To enable GDPR settings on your nopCommerce store go to **Administration → Configuration → Settings → GDPR settings**.
+আপনার নপকমার্স দোকানে জিডিপিআর সেটিংস সক্ষম করতে **প্রশাসন → কনফিগারেশন → সেটিংস → জিডিপিআর সেটিংস** এ যান।
 
-![Configure](_static/gdpr-settings/configure.jpg)
+![কনফিগার](_static/gdpr-settings/configure.jpg)
 
-Then tick the **GDPR enabled** checkbox. Additional settings will allow you to capture a log of the following activities:
+তারপর **জিডিপিআর সক্ষম** চেকবক্সে টিক দিন। অতিরিক্ত সেটিংস আপনাকে নিম্নলিখিত ক্রিয়াকলাপগুলির একটি লগ ক্যাপচার করার অনুমতি দেবে:
 
-* **Log "accept privacy policy" consent**.
-* **Log "newsletter" consent**.
-* **Log user profile changes**.
+* **লগ "গোপনীয়তা নীতি গ্রহণ করুন" সম্মতি**।
+* **লগ "নিউজলেটার" সম্মতি**।
+* **লগ ব্যবহারকারীর প্রোফাইল পরিবর্তন**।
 
-You can add consents on your nopCommerce site by clicking the **Add consent** button in the *Consents* panel:
+আপনি আপনার নপকমার্স সাইটে সম্মতি যোগ করতে পারেন *সম্মতি* প্যানেলের **সম্মতি যোগ করুন** বাটনে ক্লিক করে:
 
-![Consents](_static/gdpr-settings/consents.jpg)
+![সম্মতি](_static/gdpr-settings/consents.jpg)
 
-To add a new consent you will be redirected to the *Add consent* window:
+একটি নতুন সম্মতি যোগ করার জন্য আপনাকে *সম্মতি যোগ করুন* উইন্ডোতে পুননির্দেশিত করা হবে:
 
-![Add consent](_static/gdpr-settings/add-consent.jpg)
+![সম্মতি যোগ করুন](_static/gdpr-settings/add-consent.jpg)
 
-Define the following consent settings:
+নিম্নলিখিত সম্মতি সেটিংস সংজ্ঞায়িত করুন:
 
-* **Message** or question which will be displayed to customers.
-* If the consent **Is required**.
-* If the consent will be **Displayed during registration**.
-* If thes consent will be **Displayed on "customer info" page** in the "My account" section.
-* **Display order** is the consent display order. 1 represents the first item in the list.
+* **বার্তা** বা প্রশ্ন যা গ্রাহকদের কাছে প্রদর্শিত হবে।
+* যদি **সম্মতির প্রয়োজন হয়**।
+* যদি সম্মতি **নিবন্ধনের সময় প্রদর্শিত হয়**।
+* যদি তাদের সম্মতি **"গ্রাহক তথ্য" পৃষ্ঠায়** "আমার অ্যাকাউন্ট" বিভাগে প্রদর্শিত হয়।
+* **ডিসপ্লে অর্ডার** হল সম্মতি প্রদর্শনের অর্ডার। ১ তালিকার প্রথম আইটেমটি উপস্থাপন করে।
 
-Here is an example of a consent option on customer info page:
+গ্রাহকের তথ্য পৃষ্ঠায় সম্মতির বিকল্পের একটি উদাহরণ এখানে দেওয়া হল:
 
-![agreement](_static/gdpr-settings/agreement.png)
+![চুক্তি](_static/gdpr-settings/agreement.png)
 
-If you have enabled the consent log settings then you can see the log activity by going to: **Administration → Customers → GDPR requests (log)**.
+যদি আপনি সম্মতি লগ সেটিংস সক্ষম করেন তাহলে আপনি লগ অ্যাক্টিভিটি দেখতে পারেন: **প্রশাসন → গ্রাহক → জিডিপিআর অনুরোধ (লগ)**।
 
-![log](_static/gdpr-settings/log.png)
+![লগ](_static/gdpr-settings/log.png)
 
-When GDPR setting is enabled, store owner can also perform actions like:
+যখন জিডিপিআর সেটিং সক্ষম করা হয়, তখন দোকানের মালিক যেমন কাজ করতে পারেন:
 
-* **Permanent delete** for deletion of customer record.
-* **Export data** for exporting customer data.
+* **স্থায়ী মুছে ফেলুন** গ্রাহকের রেকর্ড মুছে ফেলার জন্য।
+* **গ্রাহকদের ডেটা রপ্তানির জন্য ডেটা রপ্তানি করুন**
 
-To do this go to **Administration → Customers → Edit customer** page.
+এটি করার জন্য **প্রশাসন → গ্রাহক → সম্পাদনা গ্রাহক** পৃষ্ঠায় যান।
 
-![customerdetails](_static/gdpr-settings/customerdetails.png)
+![বিস্তারিত কাস্টমার](_static/gdpr-settings/customerdetails.png)
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Managing GDPR settings in nopCommerce](https://www.youtube.com/watch?v=6bLc_TDqD18&feature=youtu.be)
+* [নপকমার্স-এ জিডিপিআর সেটিংস পরিচালনা করা](https://www.youtube.com/watch?v=6bLc_TDqD18&feature=youtu.be)

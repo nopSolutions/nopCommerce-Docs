@@ -1,90 +1,91 @@
 ﻿---
-title: How to install and configure SSL certification
-uid: en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification
+title: কিভাবে এসএসএল সার্টিফিকেশন ইনস্টল এবং কনফিগার করবেন
+uid: bn/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# How to install and configure SSL certification
+# কিভাবে এসএসএল সার্টিফিকেশন ইনস্টল এবং কনফিগার করবেন
 
-What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates validate your website's identity, and encrypt the information visitors send to, or receive from, your site. When you have an SSL certificate protecting your website, your customers can rest assured that the information they enter on any secured page is private and can't be viewed by cyber crooks.
+একটি এসএসএল সার্টিফিকেট কি? এসএসএল মানে সিকিউর সকেট লেয়ার। এসএসএল সার্টিফিকেট আপনার ওয়েবসাইটের পরিচয় যাচাই করে, এবং ভিজিটরদের আপনার সাইটে পাঠানো বা প্রাপ্ত তথ্য এনক্রিপ্ট করে। যখন আপনার এসএসএল সার্টিফিকেট আপনার ওয়েবসাইটকে সুরক্ষিত করে, তখন আপনার গ্রাহকরা নিশ্চিন্ত থাকতে পারেন যে তারা যে কোনো সুরক্ষিত পৃষ্ঠায় যে তথ্য প্রবেশ করে তা ব্যক্তিগত এবং সাইবার দুর্বৃত্তদের দ্বারা দেখা যাবে না।
 
-## How to get an SSL certificate
+## কিভাবে এসএসএল সার্টিফিকেট পাবেন
 
-1. First, to implement SSL on your website, you will need to get an SSL certificate from a SSL Certificate Provider aka Certification Authority. There are plenty of Certificate Authorities that you can go for securing an SSL certificate on your website, such as SSL.com, Namecheap or GoDaddy.
+১। প্রথমে, আপনার ওয়েবসাইটে এসএসএল বাস্তবায়নের জন্য, আপনাকে এসএসএল সার্টিফিকেট প্রদানকারী ওরফে সার্টিফিকেশন অথরিটি থেকে একটি এসএসএল সার্টিফিকেট পেতে হবে। প্রচুর সার্টিফিকেট কর্তৃপক্ষ আছে যা আপনি আপনার ওয়েবসাইটে এসএসএল সার্টিফিকেট সুরক্ষিত করার জন্য যেতে পারেন, যেমন SSL.com, Namecheap বা GoDaddy।
 
-2. Then, you need to install the SSL certificate you bought on your server. How to do this depends on the server. For more instructions and recommendations you should refer to the SSL Certificate Provider guideline or your server documentation. In this article, I will just provide you with a link to such guideline from GoDaddy: [Install SSL certificates](https://www.godaddy.com/help/install-ssl-certificates-16623).
+২। তারপর, আপনাকে আপনার সার্ভারে কেনা এসএসএল সার্টিফিকেট ইনস্টল করতে হবে। এটি কিভাবে করবেন তা সার্ভারের উপর নির্ভর করে। আরও নির্দেশাবলী এবং সুপারিশের জন্য আপনাকে এসএসএল সার্টিফিকেট প্রদানকারী নির্দেশিকা বা আপনার সার্ভার ডকুমেন্টেশন উল্লেখ করতে হবে। এই নিবন্ধে, আমি আপনাকে GoDaddy থেকে এই ধরনের নির্দেশিকাগুলির একটি লিঙ্ক প্রদান করব: [এসএসএল সার্টিফিকেট ইনস্টল করুন](https://www.godaddy.com/help/install-ssl-certificates-16623)।
 
-3. On the last step, you need to set up your nopCommerce store in admin area. To do this go to the **Configuration → Stores** page. Select the store you want to set up and click the **Edit** button beside it. The *Edit store details* window will be displayed, as follows:
-  ![Store](_static/how-to-install-and-configure-ssl-certification/store.jpg)
-  - Enter your **Store URL** with the 'https://' prefix.
-  - Tick the **SSL enabled** checkbox.
+৩। শেষ ধাপে, আপনাকে অ্যাডমিন এলাকায় আপনার নপকমার্স স্টোর স্থাপন করতে হবে। এটি করার জন্য **কনফিগারেশন → স্টোরস** পৃষ্ঠায় যান। আপনি যে দোকানটি সেট আপ করতে চান তা নির্বাচন করুন এবং তার পাশে **সম্পাদনা করুন** বাটনে ক্লিক করুন। *স্টোরের বিবরণ সম্পাদনা করুন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
+  ![স্টোর](_static/how-to-install-and-configure-ssl-certification/store.jpg)
+  - 'https://' উপসর্গ দিয়ে আপনার **স্টোর ইউআরএল** লিখুন।
+  - **এসএসএএল সক্ষম** চেকবক্সে টিক দিন।
     > [!WARNING]
     >
-    > Do not enable it until you have SSL certificate installed on the server.
+    > আপনার সার্ভারে এসএসএল সার্টিফিকেট ইনস্টল না হওয়া পর্যন্ত এটি সক্ষম করবেন না।
 
-## Troubleshooting
+## সমস্যা সমাধান
 
-### Admin panel is not available due to problems with SSL certificate
+### এসএসএএল সার্টিফিকেট নিয়ে সমস্যার কারণে অ্যাডমিন প্যানেল পাওয়া যায় না
 
-A common problem is when the SSL certificate is not installed on the server or there are problems with the SSL configuration. At the same time, the **SSL enabled** setting was activated in the store (as we done in the previous section).
+একটি সাধারণ সমস্যা হল যখন এসএসএল সার্টিফিকেট সার্ভারে ইনস্টল করা হয় না বা এসএসএল কনফিগারেশনে সমস্যা হয়। একই সময়ে, দোকানে **এসএসএএল সক্ষম** সেটিং সক্রিয় করা হয়েছিল (যেমনটি আমরা আগের বিভাগে করেছি)।
 
-**Affected versions**: All 
+**প্রভাবিত সংস্করণ**: সব
 
-**Solution**:
-Run the following SQL Query:
+**সমাধান**:
+নিম্নলিখিত এসকিউএল ক্যোয়ারী চালান:
 
   ```sql
   UPDATE [dbo].[Store] SET [SslEnabled] = 'False'
   ```
 
-### Mixed Content HTTP and HTTPS
+### মিশ্র বিষয়বস্তু HTTP এবং এইচটিটিপিএস
 
-Mixed content occurs when a site operates over the SSL security protocol, but some of the resources (for example, images) are loaded over an insecure HTTP connection. This causes errors on the page as the original request was secured over HTTPS.
+মিশ্র বিষয়বস্তু ঘটে যখন একটি সাইট এসএসএল নিরাপত্তা প্রোটোকলের উপর কাজ করে, কিন্তু কিছু সম্পদ (উদাহরণস্বরূপ, ছবি) একটি অনিরাপদ এইচটিটিপি সংযোগের মাধ্যমে লোড করা হয়। এটি পৃষ্ঠায় ত্রুটি সৃষ্টি করে কারণ মূল অনুরোধটি এইচটিটিপিএস এর মাধ্যমে সুরক্ষিত ছিল।
 
-When using a load balancer, similar problems can arise due to the fact that it communicates with the application over HTTP.
+লোড ব্যালেন্সার ব্যবহার করার সময়, এটি এইচটিটিপি এর মাধ্যমে অ্যাপ্লিকেশনের সাথে যোগাযোগ করার কারণে একই সমস্যা দেখা দিতে পারে।
 
-**Affected versions**: 4.20 and below 
+**প্রভাবিত সংস্করণ**: ৪.২০ এবং নীচে
 
-**Solutions**:
+**সমাধান**:
 
-- Make sure you have activated the setting:
+- আপনি সেটিংস সক্রিয় করেছেন তা নিশ্চিত করুন:
 
   ```json
   securitysettings.forcesslforallpages = true
   ```
   
-- Make sure your website is listening on port 443 on the hosting server.
+- নিশ্চিত করুন যে আপনার ওয়েবসাইট হোস্টিং সার্ভারে ৪৪৩ পোর্টে শুনছে।
 
-**Affected versions**: All 
+**প্রভাবিত সংস্করণ**: সব
 
-**Solutions**:
+**সমাধান**:
 
-- Missing field `UseHttpXForwardedProto` in request header. Try to enable the `UseHttpXForwardedProto` setting in the `appsettings.json` file and restart the web site.
+- অনুরোধ শিরোনামে অনুপস্থিত ক্ষেত্র `UseHttpXForwardedProto`। `Appsettings.json` ফাইলে` UseHttpXForwardedProto` সেটিং সক্ষম করার চেষ্টা করুন এবং ওয়েব সাইটটি পুনরায় চালু করুন।
 
   ```json
   "UseHttpXForwardedProto": true
   ```
 
-- You can fix it by adding the CSP "upgrade-insecure-requests" directive. This can be done either in the `web.config` file.
-  Or by embedding the same inline directive in the `<head>` section of the document, using the `<meta>` element:
+-আপনি সিএসপি "আপগ্রেড-অনিরাপদ-অনুরোধ" নির্দেশ যোগ করে এটি ঠিক করতে পারেন। এটি `web.config` ফাইলে করা যেতে পারে।
+  অথবা ডকুমেন্টের `<head>` বিভাগে একই ইনলাইন নির্দেশিকা এম্বেড করে, `<meta>` উপাদান ব্যবহার করে:
 
   ```XML
   <meta http-equiv = "Content-Security-Policy" content = "upgrade-insecure-requests">
   ```
 
-- In case of using Cloudflare check to see if your SSL setting is `Full` or `Flexible` mode by logging into your Cloudflare dashboard and clicking on the `SSL/TLS app` to check the SSL setting.
+- ক্লাউডফ্লেয়ার ব্যবহারের ক্ষেত্রে আপনার ক্লাউডফ্লেয়ার ড্যাশবোর্ডে লগ ইন করে এবং এসএসএল সেটিংস চেক করতে `SSL/TLS app` -এ ক্লিক করে আপনার এসএসএল সেটিং `Full` বা `Flexible` মোড কিনা তা পরীক্ষা করে দেখুন।
 
-### Infinite redirection loop (ERR_TOO_MANY_REDIRECTS)
+### অসীম পুননির্দেশ লুপ (ERR_TOO_MANY_REDIRECTS)
 
-When an unauthorized user tries to login or visit the shopping cart, the site enters an infinite redirection loop.
+যখন একটি অননুমোদিত ব্যবহারকারী লগইন বা শপিং কার্ট পরিদর্শন করার চেষ্টা করে, তখন সাইটটি একটি অসীম পুননির্দেশ লুপে প্রবেশ করে।
 
-**Affected versions**: All 
+**প্রভাবিত সংস্করণ**: সব
 
-**Solutions**:
+**সমাধান**:
 
-- Try to delete cookies on the site, depending on the browser used, this procedure may be slightly different. Alternatively, you can simply open the page in private mode to check if this is the cause of the error.
-- Clear Server, Proxy, and Browser Cache
-- Check HTTP to HTTPS Redirects on Server. It could very well be that perhaps the HTTPS redirect rules on your server were misconfigured. You can add a redirect rule to your IIS from http to https. The rule pattern has the following form:
+- ব্যবহার করা ব্রাউজারের উপর নির্ভর করে সাইটে কুকি মুছে ফেলার চেষ্টা করুন, এই পদ্ধতিটি কিছুটা ভিন্ন হতে পারে। বিকল্পভাবে, আপনি কেবলমাত্র প্রাইভেট মোডে পৃষ্ঠাটি খুলতে পারেন যাতে এটি ত্রুটির কারণ হয় কিনা তা পরীক্ষা করতে পারেন।
+- সার্ভার, প্রক্সি এবং ব্রাউজার ক্যাশে সাফ করুন
+- এইচটিটিপি থেকে এইচটিটিপিএস সার্ভারে পুননির্দেশ দেখুন। এটি খুব ভাল হতে পারে যে সম্ভবত আপনার সার্ভারে এইচটিটিপিএস পুননির্দেশের নিয়ম ভুল কনফিগার করা হয়েছে। আপনি আপনার আইআইএস থেকে এইচটিটিপি থেকে এইচটিটিপিএস এ একটি পুনirectনির্দেশ নিয়ম যোগ করতে পারেন। নিয়ম প্যাটার্ন নিম্নলিখিত ফর্ম আছে:
 
   ```xml
   <configuration>
@@ -94,7 +95,7 @@ When an unauthorized user tries to login or visit the shopping cart, the site en
           <rule name="http_to_https" stopProcessing="true">
             <match url="(.*)" />
             <conditions logicalGrouping="MatchAll" trackAllCaptures="false">
-              <add input="{HTTPS}" pattern="^OFF$" />
+              <add input="{এইচটিটিপিএস}" pattern="^OFF$" />
             </conditions>
             <action type="Redirect" url="https://{HTTP_HOST}/{R:1}" redirectType="SeeOther" />
           </rule>
@@ -104,4 +105,4 @@ When an unauthorized user tries to login or visit the shopping cart, the site en
   </configuration>
   ```
 
-- ERR_TOO_MANY_REDIRECTS is also often commonly caused by reverse-proxy services such as Cloudflare. This usually happens when their Flexible SSL option is enabled and you already have an SSL certificate installed with your web host. When flexible is selected, all requests to your hosting server are sent over HTTP. Your host server most likely already has a redirect in place from HTTP to HTTPS, and therefore a redirect loop occurs. To fix this you need to change the Cloudflare Crypto settings from Flexible to either Full or Full (strict).
+- ERR_TOO_MANY_REDIRECTS প্রায়শই ক্লাউডফ্লেয়ারের মতো রিভার্স-প্রক্সি পরিষেবার কারণে হয়। এটি সাধারণত ঘটে যখন তাদের নমনীয় এসএসএল বিকল্পটি সক্রিয় থাকে এবং আপনার ওয়েব হোস্টের সাথে ইতিমধ্যেই একটি এসএসএল সার্টিফিকেট ইনস্টল করা থাকে। যখন নমনীয় নির্বাচন করা হয়, আপনার হোস্টিং সার্ভারে সমস্ত অনুরোধ পাঠানো হয় এইচটিটিপি। সম্ভবত আপনার হোস্ট সার্ভারটি ইতিমধ্যেই এইচটিটিপি থেকে এইচটিটিপিএস এ পুননির্দেশিত হয়েছে, এবং সেইজন্য একটি পুননির্দেশ লুপ ঘটে। এটি ঠিক করতে আপনাকে ক্লাউডফ্লেয়ার ক্রিপ্টো সেটিংস নমনীয় থেকে সম্পূর্ণ বা পূর্ণ (কঠোর) পরিবর্তন করতে হবে।

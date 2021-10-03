@@ -1,24 +1,24 @@
 ---
-title: PDF settings
-uid: en/getting-started/advanced-configuration/pdf-settings
+title: পিডিএফ সেটিংস
+uid: bn/getting-started/advanced-configuration/pdf-settings
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# PDF settings
+# পিডিএফ সেটিংস
 
-When running a store you might need automatically generated PDF files, like invoices and terms of agreement.
+একটি দোকান চালানোর সময় আপনার স্বয়ংক্রিয়ভাবে তৈরি হওয়া পিডিএফ ফাইলগুলির প্রয়োজন হতে পারে, যেমন চালান এবং চুক্তির শর্তাবলী।
 
-To define PDF settings go to **Configuration → Settings → General settings** and find the *PDF* panel:
+পিডিএফ সেটিংস সংজ্ঞায়িত করতে **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান এবং *পিডিএফ* প্যানেল খুঁজুন:
 
-![PDF panel](_static/pdf-settings/pdf.png)
+![পিডিএফ প্যানেল](_static/pdf-settings/pdf.png)
 
-* In the **PDF logo area**, drag and drop the logo file to be uploaded. This image file will be displayed on the PDF order invoices. It is recommended to use a small image.
-* In the **Invoice footer text (left column)** field, enter the text that will appear at the bottom of the generated invoices (left column).
-* In the **Invoice footer text (right column)** field, enter the text that will appear at the bottom of the generated invoices (right column).
-* Tick **Use Letter page size** if you want your PDF documents to have the Letter page size. When this checkbox is unticked, the A4 page size is used by default.
-* Tick **Disable PDF invoices for pending orders** if you don't want your customers to be able to print PDF invoices for pending orders.
+* **পিডিএফ লোগো এলাকায়**, আপলোড করার জন্য লোগো ফাইলটি টেনে আনুন এবং ড্রপ করুন। এই চিত্র ফাইলটি পিডিএফ অর্ডারের চালানে প্রদর্শিত হবে। এটি একটি ছোট ছবি ব্যবহার করার জন্য সুপারিশ করা হয়।
+* **ইনভয়েস ফুটার টেক্সট (বাম কলাম)** ফিল্ডে, টেক্সট লিখুন যা জেনারেটেড ইনভয়েসের নীচে প্রদর্শিত হবে (বাম কলাম)।
+* **ইনভয়েস ফুটার টেক্সট (ডান কলাম)** ফিল্ডে, টেক্সট লিখুন যা জেনারেটেড ইনভয়েসের নীচে প্রদর্শিত হবে (ডান কলাম)।
+* টিক করুন **লেটার পেজ সাইজ ব্যবহার করুন** যদি আপনি চান আপনার পিডিএফ ডকুমেন্টে লেটার পেজের সাইজ থাকে। যখন এই চেকবক্সটি অনির্বাচিত হয়, A4 পৃষ্ঠার আকারটি ডিফল্টরূপে ব্যবহৃত হয়।
+* টিক করুন **পেন্ডিং অর্ডারের জন্য পিডিএফ ইনভয়েস অক্ষম করুন** যদি আপনি না চান যে আপনার গ্রাহকরা পেন্ডিং অর্ডারের জন্য পিডিএফ ইনভয়েস প্রিন্ট করতে পারবেন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Adding business information (branding) on PDF invoice](https://youtu.be/TeXmuNWsdD4)
+* [পিডিএফ ইনভয়েসে ব্যবসার তথ্য (ব্র্যান্ডিং) যোগ করা](https://youtu.be/TeXmuNWsdD4)

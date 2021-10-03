@@ -1,46 +1,54 @@
 ---
-title: External authentication methods
-uid: en/getting-started/advanced-configuration/external-authentication-methods
+title: বাহ্যিক প্রমাণীকরণ পদ্ধতি
+uid: bn/getting-started/advanced-configuration/external-authentication-methods
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# External authentication methods
+# বাহ্যিক প্রমাণীকরণ পদ্ধতি
 
-External authentication methods allow users to login to a nopCommerce site without entering their credentials: email and password. Users can be authenticated using an external site (such as  Facebook, Google, and so on). nopCommerce has a built-in external authentication through Facebook. You can set up other methods using plugins from the [marketplace](https://www.nopcommerce.com/marketplace).
+বাহ্যিক প্রমাণীকরণ পদ্ধতি ব্যবহারকারীদের তাদের শংসাপত্র: ইমেল এবং পাসওয়ার্ড প্রবেশ না করেই একটি নপকমার্স সাইটে লগইন করার অনুমতি দেয়। ব্যবহারকারীদের একটি বহিরাগত সাইট (যেমন ফেসবুক, গুগল, ইত্যাদি) ব্যবহার করে প্রমাণীকরণ করা যেতে পারে। ফেসবুকের মাধ্যমে নপকমার্স এর অন্তর্নির্মিত বাহ্যিক প্রমাণীকরণ রয়েছে। আপনি [মার্কেটপ্লেস](https://www.nopcommerce.com/marketplace) থেকে প্লাগইন ব্যবহার করে অন্যান্য পদ্ধতি সেট আপ করতে পারেন।
 
-After an external authentication method is configured and marked as active, users will see a new authentication option on the login page.
+একটি বহিরাগত প্রমাণীকরণ পদ্ধতি কনফিগার এবং সক্রিয় হিসাবে চিহ্নিত করার পরে, ব্যবহারকারীরা লগইন পৃষ্ঠায় একটি নতুন প্রমাণীকরণ বিকল্প দেখতে পাবেন।
 
-## Manage the external authentication methods
+## বাহ্যিক প্রমাণীকরণ পদ্ধতিগুলি পরিচালনা করুন
 
-Go to **Configuration → Authentication → External authentication**. The *External authentication* window is displayed:
+**কনফিগারেশন → প্রমাণীকরণ → বাহ্যিক প্রমাণীকরণ** এ যান। *বাহ্যিক প্রমাণীকরণ* উইন্ডো প্রদর্শিত হয়:
 
-![External auth](_static/external-authentication-methods/external-authentication.png)
+![বাহ্যিক প্রমাণীকরণ](_static/external-authentication-methods/external-authentication.png)
 
-Click **Edit** beside an authentication method and tick **Is active** to activate the method. You can also define the method **Display order**. Then click the **Update** button to save the changes.
+একটি প্রমাণীকরণ পদ্ধতির পাশে **সম্পাদনা করুন** ক্লিক করুন এবং পদ্ধতিটি সক্রিয় করতে **সক্রিয়** টিক দিন। আপনি পদ্ধতি প্রদর্শন করতে পারেন **ডিসপ্লে অর্ডার**। তারপর পরিবর্তনগুলি সংরক্ষণ করতে **আপডেট** বাটনে ক্লিক করুন।
 
-Click **Configure** for the method configuration.
+পদ্ধতি কনফিগারেশনের জন্য **কনফিগার করুন** ক্লিক করুন।
 
-## Manage Facebook authentication
+## ফেসবুক প্রমাণীকরণ পরিচালনা করুন
 
-The Facebook authentication method is a built-in external authentication plugin. To configure authentication with Facebook, please follow these steps:
+ফেসবুক প্রমাণীকরণ পদ্ধতি একটি অন্তর্নির্মিত বাহ্যিক প্রমাণীকরণ প্লাগইন। ফেসবুকের সাথে প্রমাণীকরণ কনফিগার করতে, দয়া করে এই পদক্ষেপগুলি অনুসরণ করুন:
 
-1. On the **Configuration → Authentication → External authentication** page click **Configure** beside the **Facebook authentication**. The *Configure - Facebook authentication* window is displayed:
+১। **কনফিগারেশন → প্রমাণীকরণ → বাহ্যিক প্রমাণীকরণ** পৃষ্ঠায় **কনফিগার করুন** ফেসবুক প্রমাণীকরণের পাশে ক্লিক করুন। *কনফিগার - ফেসবুক প্রমাণীকরণ* উইন্ডো প্রদর্শিত হয়:
 
-   ![Facebook](_static/external-authentication-methods/facebook.jpg)
+   ![ফেসবুক](_static/external-authentication-methods/facebook.jpg)
 
-1. Navigate to the [Facebook for Developers](https://developers.facebook.com/apps) page and sign in. If you don't already have a Facebook account, use the Sign up for Facebook link on the login page to create one.
-1. Tap the **+ Add a New App button** in the upper right corner to create a new App ID. (If this is your first app with Facebook, the text of the button will be **Create a New App**.)
-1. Fill out the form and tap the **Create App ID button**.
-1. The *Product Setup* page is displayed, letting you select the features for your new app. Click **Get Started** on *Facebook Login*.
-1. Click the **Settings** link in the menu at the left, you are presented with the *Client OAuth Settings* page with some defaults already set.
-1. Enter `https://yoursitename.com/signin-facebook` into the **Valid OAuth Redirect URIs** field replacing `yoursitename.com` woth your site url.
-1. Click **Save Changes**.
-1. Click the **Dashboard** link in the left navigation.
-1. Copy your **App ID/API Key** and **App secret** in the form on the plugin configuration page.
+২। [ডেভেলপারদের জন্য ফেসবুক](https://developers.facebook.com/apps) পৃষ্ঠায় নেভিগেট করুন এবং সাইন ইন করুন। আপনার যদি ইতিমধ্যে ফেসবুক অ্যাকাউন্ট না থাকে, লগইন পৃষ্ঠায় ফেসবুকের জন্য সাইন আপ লিঙ্কটি ব্যবহার করুন একটি তৈরি করতে।
 
-Click the **Save** button. On the login page of the public store see the newly added authentication method.
+৩। একটি নতুন অ্যাপ আইডি তৈরি করতে উপরের ডানদিকে কোণায় **+একটি নতুন অ্যাপ বোতাম যোগ করুন** আলতো চাপুন। (যদি এটি ফেসবুকের সাথে আপনার প্রথম অ্যাপ হয় তবে বোতামের পাঠ্য হবে **একটি নতুন অ্যাপ তৈরি করুন**।)
 
-## See also
+৪। ফর্মটি পূরণ করুন এবং **অ্যাপ আইডি বাটন তৈরি করুন** আলতো চাপুন।
 
-* [Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
+৫। *প্রোডাক্ট সেটআপ* পৃষ্ঠা প্রদর্শিত হয়, যা আপনাকে আপনার নতুন অ্যাপের জন্য বৈশিষ্ট্য নির্বাচন করতে দেয়। *ফেসবুক লগইন* এ **শুরু করুন** ক্লিক করুন।
+
+৬। বাম দিকের মেনুতে **সেটিংস** লিংকে ক্লিক করুন, আপনাকে ইতিমধ্যেই সেট করা কিছু ডিফল্ট সহ *ক্লায়েন্ট ওঅথ সেটিংস* পৃষ্ঠা উপস্থাপন করা হয়েছে।
+
+৭। আপনার সাইটের ইউআরএল- এর পরিবর্তে 'yoursitename.com' এর পরিবর্তে **বৈধ ওঅথ পুননির্দেশিত ইউআরআইস** ক্ষেত্রের মধ্যে 'https://yoursitename.com/signin-facebook' লিখুন।
+
+৮। **পরিবর্তনগুলি সংরক্ষণ করুন** ক্লিক করুন।
+
+৯। বাম নেভিগেশনে **ড্যাশবোর্ড** লিঙ্কে ক্লিক করুন।
+
+১০। প্লাগইন কনফিগারেশন পৃষ্ঠায় আপনার **অ্যাপ আইডি/এপিআই কী** এবং **অ্যাপ সিক্রেট** ফর্মটিতে অনুলিপি করুন।
+
+**সেভ** বাটনে ক্লিক করুন। পাবলিক স্টোরের লগইন পৃষ্ঠায় নতুন যোগ করা প্রমাণীকরণ পদ্ধতি দেখুন।
+
+## আরো দেখুন
+
+* [নপকমার্স-এ প্লাগইনগুলি](xref:bn/getting-started/advanced-configuration/plugins-in-nopcommerce)

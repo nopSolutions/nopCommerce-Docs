@@ -1,113 +1,113 @@
 ---
-title: Multi-store
-uid: en/getting-started/advanced-configuration/multi-store
+title: মাল্টি-স্টোর
+uid: bn/getting-started/advanced-configuration/multi-store
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Multi-store
+# মাল্টি-স্টোর
 
-nopCommerce enables you to run more than one store using one interface from a single nopCommerce installation.
+নপকমার্স আপনাকে একক নপকমার্স ইনস্টলেশন থেকে একটি ইন্টারফেস ব্যবহার করে একাধিক দোকান চালাতে সক্ষম করে।
 
-This enables you to host more than one front-end store on different domains and manage all admin operations from your single administration panel. You can share the catalog data between stores, have a product in more than one store for example, and your customers can login to all of your stores using the same credentials.
+এটি আপনাকে বিভিন্ন ডোমেইনে একাধিক ফ্রন্ট-এন্ড স্টোর হোস্ট করতে এবং আপনার একক প্রশাসন প্যানেল থেকে সমস্ত অ্যাডমিন অপারেশন পরিচালনা করতে সক্ষম করে। আপনি দোকানের মধ্যে ক্যাটালগ ডেটা ভাগ করতে পারেন, উদাহরণস্বরূপ একাধিক দোকানে একটি পণ্য রাখতে পারেন এবং আপনার গ্রাহকরা একই শংসাপত্র ব্যবহার করে আপনার সমস্ত দোকানে লগইন করতে পারেন।
 
-## Configuring multi-store
+## মাল্টি-স্টোর কনফিগার করা
 
-### 1. Hosting control panel part
+### হোস্টিং কন্ট্রোল প্যানেলের অংশ
 
-In the following example we will describe the setup of two sample stores, as follows:
+নিম্নলিখিত উদাহরণে আমরা দুটি নমুনা দোকানের সেটআপ বর্ণনা করব, নিম্নরূপ:
 
 * `www.store1.com`
 * `www.store2.com`
 
-1. Upload and install the site on `www.store1.com`. This is the only place where nopCommerce files and DLLs are stored.
+১। `www.store1.com` এ সাইটটি আপলোড এবং ইনস্টল করুন। এটিই একমাত্র জায়গা যেখানে নপকমার্স ফাইল এবং ডিএলএল সংরক্ষণ করা হয়।
       > [!NOTE]
       >
-      > Read more how to install nopCommerce in the following chapter: [Installing nopCommerce](xref:en/installation-and-upgrading/installing-nopcommerce/index).
+      > নিচের অধ্যায়ে নপকমার্স কিভাবে ইনস্টল করতে হয় তা পড়ুন: [নপকমার্স ইনস্টল করা](xref:bn/installation-and-upgrading/install-nopcommerce/index)।
 
-1. From the control panel of `www.store2.com` (meaning your hosting control panel, not the nopCommerce administration area) ensure that all requests to `www.store2.com` are forwarded (not redirected) to `www.store1.com`. Perform this using CNAME records. This step is crucial.
+২। `www.store2.com` এর কন্ট্রোল প্যানেল থেকে (মানে আপনার হোস্টিং কন্ট্রোল প্যানেল, নপকমার্স প্রশাসন এলাকা নয়) নিশ্চিত করুন যে `www.store2.com`- এ সমস্ত অনুরোধ ফরওয়ার্ড করা হয়েছে (পুন redনির্দেশিত নয়) `www.store1- এ .com`। CNAME রেকর্ড ব্যবহার করে এটি সম্পাদন করুন। এই পদক্ষেপটি গুরুত্বপূর্ণ।
 
-1. From the control panel of `www.store1.com`, configure a domain alias for `www.store2.com`. This step can be complicated for some users (ask your system administrator to perform this step if you have issues).
+৩। `www.store1.com` এর কন্ট্রোল প্যানেল থেকে, `www.store2.com` এর জন্য একটি ডোমেইন উপনাম কনফিগার করুন। এই পদক্ষেপটি কিছু ব্যবহারকারীর জন্য জটিল হতে পারে (আপনার সমস্যা থাকলে আপনার সিস্টেম প্রশাসককে এই পদক্ষেপটি করতে বলুন)।
 
-    After completing the steps above, when accessing `www.store2.com` from your browser, the content of `www.store1.com` will be displayed. The next step is to configure the stores in the nopCommerce administration area which will be described below. You can then start uploading content for both stores.
+উপরের ধাপগুলি সম্পন্ন করার পর, আপনার ব্রাউজার থেকে `www.store2.com` অ্যাক্সেস করার সময়, `www.store1.com` এর বিষয়বস্তু প্রদর্শিত হবে। পরবর্তী ধাপ হল নপকমার্স প্রশাসন এলাকায় দোকানগুলি কনফিগার করা যা নীচে বর্ণনা করা হবে। তারপরে আপনি উভয় দোকানের জন্য সামগ্রী আপলোড শুরু করতে পারেন।
 
-1. Optional (sample): This step can be performed from the Plesk control panel below, as follows:
+৪। ঐচ্ছিক (নমুনা): এই ধাপটি নীচের প্লেসক কন্ট্রোল প্যানেল থেকে সম্পাদিত হতে পারে
   
-      When `www.store2.com` is redirected to `www.store1.com`, the web server for Plesk does not know how to display `www.store2.com` since it uses Name-Based Virtual Hosting. Therefore, you must create a domain alias for `www.store2.com`, as described below:
+যখন `www.store2.com` কে `www.store1.com` এ পুননির্দেশিত করা হয়, তখন প্লেস্কের ওয়েব সার্ভার `www.store2.com` প্রদর্শন করতে জানে না কারণ এটি নাম-ভিত্তিক ভার্চুয়াল হোস্টিং ব্যবহার করে। অতএব, আপনাকে অবশ্যই `www.store2.com` এর জন্য একটি ডোমেইন উপনাম তৈরি করতে হবে, যেমনটি নিচে বর্ণিত হয়েছে:
 
-      * Log in to the domain panel of `www.store1.com`, either directly or via the **Open in Control Panel** link from the server administration panel.
+*সার্ভার অ্যাডমিনিস্ট্রেশন প্যানেল থেকে সরাসরি বা **কন্ট্রোল প্যানেলে** লিঙ্কের মাধ্যমে `www.store1.com` এর ডোমেইন প্যানেলে লগ ইন করুন।
 
-      * From the **Websites & Domains** tab, select the **Add New Domain Alias** link near the bottom of the tab.
+**ওয়েবসাইট এবং ডোমেইন** ট্যাব থেকে, ট্যাবের নিচের দিকে **নতুন ডোমেইন উপনাম যোগ করুন** লিঙ্কটি নির্বাচন করুন।
 
-      * Enter the full alias. For example - `store2.com`.
+ * সম্পূর্ণ উপনাম লিখুন যেমন- `store2.com`।
 
-      * Ensure the **Web service** option is selected.
+*নিশ্চিত করুন যে **ওয়েব পরিষেবা** বিকল্প নির্বাচন করা হয়েছে।
 
-      * The **Mail** service is optional. Check this option if you want emails from `www.store2.com` to be redirected in a similar way.
+**মেল** পরিষেবা ঐচ্ছিক। আপনি যদি www.store2.com থেকে ইমেলগুলি একইভাবে পুননির্দেশিত করতে চান তবে এই বিকল্পটি পরীক্ষা করুন।
 
-      * Ensure the **Synchronize DNS zone with the primary domain** option is unchecked.
+**প্রাথমিক ডোমেইনের সাথে সিএনক্রোনাইজ ডিএনএস জোন নিশ্চিত করুন** বিকল্পটি অনির্বাচিত।
 
-### 2. nopCommerce administration area part
+### নপকমার্স প্রশাসন এলাকা অংশ
 
-Once the installation and technical setup are done, you can manage your stores from the nopCommerce administration area. Go to **Configuration → Stores**. The *Stores* window is displayed:
+একবার ইনস্টলেশন এবং টেকনিক্যাল সেটআপ হয়ে গেলে, আপনি আপনার দোকানগুলি পরিচালনা করতে পারেন নপ্যাকার্স প্রশাসন এলাকা থেকে। **কনফিগারেশন → স্টোরস** এ যান। *স্টোরস* উইন্ডো প্রদর্শিত হয়:
 
-![Stores window](_static/multi-store/mainstore.png)
+![স্টোর জানালা](_static/multi-store/mainstore.png)
 
 > [!NOTE]
 > 
-> By default, only one store is created.
+> ডিফল্টরূপে, শুধুমাত্র একটি দোকান তৈরি করা হয়।
 
-To set up several stores click **Add new** and define the following store settings:
+বেশ কয়েকটি দোকান সেট আপ করতে **নতুন যোগ করুন** ক্লিক করুন এবং নিম্নলিখিত স্টোর সেটিংস সংজ্ঞায়িত করুন:
 
-![Create](_static/multi-store/create.jpg)
+![সৃষ্টি](_static/multi-store/create.jpg)
 
-* Define the **Store name**.
-* Enter the **Store URL** of your store.
-* Select the **SSL enabled** checkbox if your store is SSL secured. SSL (Secure Sockets Layer) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is an industry standard and is used by millions of websites in the protection of their online transactions with their customers.
+* **স্টোরের নাম** সংজ্ঞায়িত করুন।
+* আপনার দোকানের **স্টোর ইউআরএল** লিখুন।
+* যদি আপনার দোকান এসএসএল সুরক্ষিত থাকে তবে **এসএসএল সক্রিয়** চেকবক্স নির্বাচন করুন। এসএসএল (সিকিউর সকেটস লেয়ার) হল একটি ওয়েব সার্ভার এবং ব্রাউজারের মধ্যে একটি এনক্রিপ্ট করা লিঙ্ক স্থাপনের জন্য মানসম্মত নিরাপত্তা প্রযুক্তি। এই লিঙ্কটি নিশ্চিত করে যে ওয়েব সার্ভার এবং ব্রাউজারের মধ্যে পাস করা সমস্ত ডেটা ব্যক্তিগত এবং অবিচ্ছেদ্য থাকবে। এসএসএল একটি শিল্প মান এবং লক্ষ লক্ষ ওয়েবসাইট তাদের গ্রাহকদের সাথে তাদের অনলাইন লেনদেনের সুরক্ষায় ব্যবহার করে।
 
   > [!IMPORTANT]
   >
-  > Tick this option only after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
+  > আপনার সার্ভারে এসএসএল সার্টিফিকেট ইন্সটল করার পরেই এই অপশনে টিক দিন। অন্যথায়, আপনি আপনার সাইটে অ্যাক্সেস করতে পারবেন না এবং আপনার ডাটাবেসের ([স্টোর] টেবিলে) উপযুক্ত রেকর্ড ম্যানুয়ালি সম্পাদনা করতে হবে।
 
   > [!TIP]
   >
-  > Read more about setting SSL up in the following chapter: [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification).
+  > নিম্নলিখিত অধ্যায়ে এসএসএল সেট আপ করার বিষয়ে আরও পড়ুন: [এসএসএল সার্টিফিকেশন কিভাবে ইনস্টল এবং কনফিগার করবেন](xref:bn/getting-start/advanced-configuration/how-to-install-and-configure-ssl-certification)।
 
-* The **HOST values** field is a list of possible HTTP_HOST values of your store (for example, `store1.com`, `www.store1.com`). Filling this field is only required when you have a multi-store solution to determine the current store. This field enables distinguishing requests to distinct URLs and determines the current store. You can also see the current HTTP_POST value in **System → System information**.
-* In the **Default language** field, choose a default language of your store. You may also leave it unselected. In this case, the first found one (with the lowest display order) will be used.
-* Define the **Display order** for this store. 1 represents the top of the list.
-* Define the **Company name**.
-* Define the **Company address**.
-* Set your **Company phone number**.
-* In the **Company VAT** field, enter VAT of your company (used in the EU).
+* **হোস্ট মান** ক্ষেত্র হল আপনার দোকানের সম্ভাব্য HTTP_HOST মানগুলির একটি তালিকা (উদাহরণস্বরূপ, `store1.com`,` www.store1.com`)। এই ক্ষেত্রটি পূরণ করা কেবল তখনই প্রয়োজন যখন আপনার কাছে বর্তমান দোকান নির্ধারণের জন্য একটি মাল্টি-স্টোর সমাধান থাকে। এই ক্ষেত্রটি স্বতন্ত্র ইউআরএলগুলিতে অনুরোধগুলি আলাদা করতে সক্ষম করে এবং বর্তমান স্টোর নির্ধারণ করে। **সিস্টেম → সিস্টেম তথ্য** এ আপনি বর্তমান HTTP_POST মান দেখতে পারেন।
+* **ডিফল্ট ভাষা** ফিল্ডে, আপনার দোকানের একটি ডিফল্ট ভাষা বেছে নিন। আপনি এটিকে অনির্বাচিতও রেখে দিতে পারেন। এই ক্ষেত্রে, প্রথম পাওয়া একটি (সর্বনিম্ন ডিসপ্লে অর্ডার সহ) ব্যবহার করা হবে।
+* এই দোকানের জন্য **ডিসপ্লে অর্ডার** নির্ধারণ করুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+* **কোম্পানির নাম** সংজ্ঞায়িত করুন।
+* **কোম্পানির ঠিকানা** সংজ্ঞায়িত করুন।
+* **আপনার কোম্পানির ফোন নম্বর** সেট করুন।
+**কোম্পানি ভ্যাট** ক্ষেত্রে, আপনার কোম্পানির ভ্যাট লিখুন (ইইউতে ব্যবহৃত)।
 
-Add another store by clicking the **Add new** button on the **Configuration → Stores** page and filling up the similar fields.
+**কনফিগারেশন → স্টোরস** পৃষ্ঠায় **নতুন যোগ করুন** বাটনে ক্লিক করে এবং অনুরূপ ক্ষেত্রগুলি পূরণ করে অন্য একটি দোকান যুক্ত করুন।
 
-The two stores have now been configured using a single nopCommerce installation, as follows:
+দুটি দোকান এখন একটি একক নপকমার্স ইনস্টলেশন ব্যবহার করে কনফিগার করা হয়েছে, নিম্নরূপ:
 
 * www.store1.com
 * www.store2.com
 
 > [!NOTE]
-> 
-> The multi-store solution (distinction of stores by HTTP_HOST) does not work for sites in virtual directories on the same domain.
+>
+> মাল্টি-স্টোর সমাধান (HTTP_HOST দ্বারা দোকানের পার্থক্য) একই ডোমেইনের ভার্চুয়াল ডিরেক্টরিতে সাইটগুলির জন্য কাজ করে না।
 
-For example, you cannot have one store on `http://www.site.com/store1` and the second store on `http://www.site.com/store2`, since the HTTP_HOST value for both of these sites is the same (`www.site.com`).
+উদাহরণস্বরূপ, আপনার একটি দোকান `http://www.site.com/store1` এবং দ্বিতীয় দোকান `http://www.site.com/store2` এ থাকতে পারে না, যেহেতু এই উভয় সাইটের জন্য HTTP_HOST মান একই (`www.site.com`)।
 
-## Configuring entities for multi-store
+## মাল্টি-স্টোরের জন্য সত্তাগুলি কনফিগার করা
 
-Once the stores have been setup and configured, you can define your entities for each store. Do this by filling the **Limited to stores** field of the details pages for each of the following: [Products](xref:en/running-your-store/catalog/products/index), [Categories](xref:en/running-your-store/catalog/categories), [Manufacturers](xref:en/running-your-store/catalog/manufacturers), [Languages](xref:en/getting-started/advanced-configuration/localization), [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies), [Message templates](xref:en/running-your-store/content-management/message-templates), [Blogs](xref:en/running-your-store/content-management/blog), [News](xref:en/running-your-store/content-management/news), [Topics](xref:en/running-your-store/content-management/topics-pages).
+একবার দোকানগুলি সেটআপ এবং কনফিগার হয়ে গেলে, আপনি প্রতিটি দোকানের জন্য আপনার সত্তা নির্ধারণ করতে পারেন। নিচের প্রত্যেকটির জন্য বিবরণ পাতার **সীমিত দোকানে** ক্ষেত্র পূরণ করে এটি করুন: [পণ্য](xref:bn/running-your-store/catalog/products/index), [Categories](xref:bn/running-your-store/catalog/category), [Manufacturers](xref:bn/running-your-store/catalog/Manufactures), [Languages](xref:bn/getting-start/advanced-configuration/localization) , [মুদ্রা](xref:bn/getting-start/configure-payment/advanced-configuration/currencies), [বার্তা টেমপ্লেট](xref:bn/running-your-store/content-management/message-template), [ব্লগ ](xref:bn/running-your-store/content-management/blog), [News](xref:bn/running-your-store/content-management/news), [বিষয়](xref:bn/running-your-store/content-management/topics-pages)।
 
-Scroll down to the **Limited to stores** field and choose the name of the existing store from the dropdown menu, as shown in the *Edit product details* screen below:
+**সীমিত দোকানে** ক্ষেত্রের নিচে স্ক্রোল করুন এবং ড্রপডাউন মেনু থেকে বিদ্যমান দোকানের নাম নির্বাচন করুন, যেমন *পণ্যের বিবরণ সম্পাদনা করুন* স্ক্রিনে দেখানো হয়েছে:
 
-![Mappings](_static/multi-store/product-limited-to-store.png)
+![ম্যাপিং](_static/multi-store/product-limited-to-store.png)
 
-## Configuring settings for multi-store
+## মাল্টি-স্টোরের জন্য সেটিংস কনফিগার করা
 
-Different [themes](xref:en/getting-started/design-your-store/choose-and-install-a-theme) can also be configured for different stores.
+বিভিন্ন [থিম](xref:bn/getting-start/design-your-store/choose-and-install-a-theme) এছাড়াও বিভিন্ন দোকানের জন্য কনফিগার করা যায়।
 
-In addition, you can override any setting value per store. For example, go to **Settings → Order settings** and see the **Multi-store configuration for** dropdown where you can choose the store you want override the settings for:
+উপরন্তু, আপনি প্রতি দোকান কোন সেটিং মান ওভাররাইড করতে পারেন। উদাহরণস্বরূপ, **সেটিংস → অর্ডার সেটিংস** এ যান এবং **ড্রপডাউনের জন্য** মাল্টি-স্টোর কনফিগারেশন দেখুন যেখানে আপনি যে স্টোরটি পছন্দ করতে চান সেটি সেটিং ওভাররাইড করতে পারেন:
 
-![Override settings](_static/multi-store/override-settings.jpg)
+![সেটিংস ওভাররাইড করুন](_static/multi-store/override-settings.jpg)
 
-When you choose the store the page will be refreshed and you will be able to define any field for the chosen store. Then just click **Save** to save the settings.
+যখন আপনি দোকানটি চয়ন করবেন তখন পৃষ্ঠাটি রিফ্রেশ হবে এবং আপনি নির্বাচিত দোকানের জন্য কোন ক্ষেত্র নির্ধারণ করতে পারবেন। তারপর সেটিংস সেভ করতে শুধু **সেভ** ক্লিক করুন।

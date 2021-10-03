@@ -1,72 +1,88 @@
 ---
-title: Plugins in nopCommerce
-uid: en/getting-started/advanced-configuration/plugins-in-nopcommerce
+title: নপকমার্স-এ প্লাগইন
+uid: bn/getting-started/advanced-configuration/plugins-in-nopcommerce
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Plugins in nopCommerce
+# নপকমার্স-এ প্লাগইন
 
-Plugins are a set of components adding specific capabilities to a nopCommerce store. Examples of plugins include payment modules, shipping rate computation methods and more. This section describes how to install plugins manually.
+প্লাগইনগুলি উপাদানগুলির একটি সেট যা একটি নপকমার্স স্টোরে নির্দিষ্ট ক্ষমতা যুক্ত করে। প্লাগইনগুলির উদাহরণগুলির মধ্যে রয়েছে পেমেন্ট মডিউল, শিপিং রেট গণনা পদ্ধতি এবং আরও অনেক কিছু। এই বিভাগটি বর্ণনা করে কিভাবে ম্যানুয়ালি প্লাগইন ইনস্টল করতে হয়।
 
-nopCommerce has a variety of plugins, expanding your store functions, on its [marketplace](http://www.nopcommerce.com/marketplace). The plugins can be installed either by downloading from the marketplace or by accessing the storefront right from the admin panel.
+নপকমার্স এর বিভিন্ন প্লাগইন রয়েছে, যা আপনার স্টোর ফাংশন এর সম্প্রসারণ করে, তার [মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) এ। প্লাগইনগুলি মার্কেটপ্লেস থেকে ডাউনলোড করে অথবা অ্যাডমিন প্যানেল থেকে সরাসরি স্টোরফ্রন্টে প্রবেশ করে ইনস্টল করা যায়।
 
-The plugins on the marketplace can be sorted by category, version, name or rating, and are free or paid.
+মার্কেটপ্লেসে প্লাগইনগুলি বিভাগ, সংস্করণ, নাম বা রেটিং দ্বারা বাছাই করা যায় এবং বিনামূল্যে বা অর্থ প্রদান করা যায়।
 
-The plugins available on the marketplace are developed either by the nopCommerce team, solution partners or third party vendors.
+মার্কেটপ্লেসে উপলব্ধ প্লাগইনগুলি নপকমার্স টিম, সমাধান অংশীদার বা তৃতীয় পক্ষের বিক্রেতাদের দ্বারা বিকশিত হয়।
 
 > [!NOTE]
-> 
-> Plugins labelled "By nopCommerce team" are developed by the nopCommerce team and are distributed freely. Third-party services connectors are developed in the course of the *technology partnership program*, they are subject to nopCommerce [premium support services](http://www.nopcommerce.com/nopcommerce-premium-support-services) and are also distributed freely.
+>
+> "নপকমার্স টীম দ্বারা" লেবেলযুক্ত প্লাগইনগুলি নপকমার্স টিম দ্বারা বিকশিত হয় এবং অবাধে বিতরণ করা হয়। থার্ড-পার্টি সার্ভিস কানেক্টরগুলি *টেকনোলজি পার্টনারশিপ প্রোগ্রাম* এর মধ্যে বিকশিত হয়, তারা নপকমার্স [প্রিমিয়াম সাপোর্ট সার্ভিসেস](http://www.nopcommerce.com/nopcommerce-premium-support-services) এর অধীন এবং এছাড়াও অবাধে বিতরণ করা হয়।
 
-## To install a plugin
+## একটি প্লাগইন ইন্সটল করতে
 
-1. The user has two options for uploading the plugin. You can use any that seems most convenient:
-    * Upload the plugin to the `/plugins` folder in your nopCommerce directory. And restart your application (or click **Reload list of plugins** button).
-    * Upload the plugin or theme using the **Upload plugin or theme** button indicating the path to the location of the archive with the plugin in your local storage.
+1. ব্যবহারকারীর প্লাগইন আপলোড করার জন্য দুটি বিকল্প আছে। আপনি যেটি সবচেয়ে সুবিধাজনক মনে করেন তা ব্যবহার করতে পারেন:
+    * প্লাগইনটি আপনার নপকমার্স ডিরেক্টরিতে `/plugins` ফোল্ডারে আপলোড করুন। এবং আপনার অ্যাপ্লিকেশন পুনরায় আরম্ভ করুন (অথবা **প্লাগইন তালিকা পুনরায় লোড করুন** বাটনে ক্লিক করুন)।
+    **প্লাগইন বা থিম আপলোড করুন** প্লাগইন বা থিম আপলোড করুন বোতামটি আপনার স্থানীয় স্টোরেজে প্লাগইন সহ আর্কাইভের অবস্থানের পথ নির্দেশ করে।
 
     > [!TIP]
-    > 
-    > You can download more nopCommerce plugins on our [extensions directory](https://www.nopcommerce.com/marketplace).
+    >
+    > আপনি আমাদের [এক্সটেনশন ডিরেক্টরি](https://www.nopcommerce.com/marketplace) থেকে আরো নপকমার্স প্লাগইন ডাউনলোড করতে পারেন।
 
-    ![Upload plugin](_static/plugins-in-nopcommerce/plugin-upload.png)
+    ![প্লাগইন আপলোড করুন](_static/plugins-in-nopcommerce/plugin-upload.png)
 
-1. Scroll down through the list of plugins to find the newly installed plugin.
-1. Click on the **Install** link to install the plugin.
-1. Click on the **Restart application to apply changes** button on the top panel to finish the installation process.
-1. The plugin is displayed in the plugins list (**Configuration → Local plugins**).
+১। নতুন ইনস্টল করা প্লাগইনটি খুঁজে পেতে প্লাগইনগুলির তালিকা দিয়ে নিচে স্ক্রোল করুন।
 
+২। প্লাগইনটি ইনস্টল করতে **ইনস্টল** লিঙ্কে ক্লিক করুন।
+
+৩। ইনস্টলেশন প্রক্রিয়া শেষ করার জন্য উপরের প্যানেলের **রিস্টার্ট অ্যাপ্লিকেশন বদল করার জন্য** বোতামে ক্লিক করুন।
+
+৪। প্লাগইন প্লাগইন তালিকায় প্রদর্শিত হয় (**কনফিগারেশন → স্থানীয় প্লাগইন**)।
     > [!NOTE]
     > 
-    > If you're running nopCommerce in medium trust, then it's recommended to clear your `\Plugins\bin\` directory.
+    > যদি আপনি মিডিয়াম ট্রাস্টে নপকমার্স চালাচ্ছেন, তাহলে আপনার `\Plugins\bin\` ডিরেক্টরিটি সাফ করার পরামর্শ দেওয়া হচ্ছে।
 
-## To configure a plugin
+## একটি প্লাগইন কনফিগার করতে
 
-1. Go to **Configuration → Local plugins**. The plugins list is displayed:
-    ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
-1. Click the **Configure** link beside the plugin to go to the plugin's configuration page. If the **Configure** button does not exist beside a plugin, this indicates the plugin does not require any configuration.
+১। **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান। প্লাগইন তালিকা প্রদর্শিত হয়:
 
-## To change the plugin's friendly name, display order and limitations
+![স্থানীয় প্লাগইন](_static/plugins-in-nopcommerce/local-plugins.png)
+	
+২। প্লাগইন এর কনফিগারেশন পৃষ্ঠায় যেতে প্লাগইন এর পাশে **কনফিগার** লিঙ্কে ক্লিক করুন। যদি কোন প্লাগিনের পাশে **কনফিগার** বাটন না থাকে, তাহলে এটি নির্দেশ করে যে প্লাগইনটির কোন কনফিগারেশনের প্রয়োজন নেই।
 
-1. Go to **Configuration → Local Plugins**. The plugins list is displayed:
-    ![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
-1. Click the **Edit** button beside the plugin. Edit plugin details, as follows:
-    ![Edit plugin](_static/plugins-in-nopcommerce/plugin-edit.jpg)
-1. Enter the **Friendly name**.
-1. In the **Display order** field, define the required location to display this plugin. 1 represents the top of the list.
-1. Tick the **Is enabled** field if you want to enable the plugin in the store.
-1. From the **Limited to customer roles** drop-down list choose roles you want to be able to use this plugin.
-1. In the **Limited to stores** field, define the stores in which the plugin will be used.
-1. Click **Save** at the top of the page.
+## প্লাগিনের বন্ধুত্বপূর্ণ নাম পরিবর্তন করতে, অর্ডার এবং সীমাবদ্ধতা প্রদর্শন করুন
 
-## To uninstall a plugin
+১। **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান। প্লাগইন তালিকা প্রদর্শিত হয়:
 
-1. Go to **Configuration → Local plugins**. The plugins list is displayed:
-![Local plugins](_static/plugins-in-nopcommerce/local-plugins.png)
-1. Click the **Uninstall** link beside the plugin to uninstall. The plugin is uninstalled. The link in the **Installation column** changes to **Install** enabling you to reinstall the plugin at any time.
-1. Click on the **Restart application to apply changes** button on the top panel to finish the uninstallation process.
+![স্থানীয় প্লাগইন](_static/plugins-in-nopcommerce/local-plugins.png)
+	
+২। প্লাগইন এর পাশে **এডিট** বাটনে ক্লিক করুন। নিম্নরূপ প্লাগইন বিশদ সম্পাদনা করুন:
 
-## Tutorials
+![প্লাগইন সম্পাদনা করুন](_static/plugins-in-nopcommerce/plugin-edit.jpg)
+	
+৩। **বন্ধুত্বপূর্ণ নাম** লিখুন।
 
-- [Installing a plugin (for versions 3.90 - 4.10)](https://youtu.be/eLDsSm-4gKA)
-- [Managing access to plugins per customer role](https://www.youtube.com/watch?v=52lVVpQ3Qag)
+৪। **ডিসপ্লে অর্ডার** ফিল্ডে, এই প্লাগইনটি প্রদর্শনের জন্য প্রয়োজনীয় অবস্থান নির্ধারণ করুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+
+৫। যদি আপনি দোকানে প্লাগইনটি সক্ষম করতে চান তবে **সক্রিয় করা** ক্ষেত্রটিতে টিক দিন।
+
+৬। **সীমিত থেকে গ্রাহকের ভূমিকা** ড্রপ-ডাউন তালিকা আপনি এই প্লাগইন ব্যবহার করতে সক্ষম হতে চান এমন ভূমিকা নির্বাচন করুন।
+
+৭। **সীমিত দোকানে** ক্ষেত্রের মধ্যে, যে দোকানগুলিতে প্লাগইন ব্যবহার করা হবে তা সংজ্ঞায়িত করুন।
+
+৮। পৃষ্ঠার শীর্ষে **সেভ** ক্লিক করুন।
+
+## একটি প্লাগইন আনইনস্টল করতে
+
+১। **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান। প্লাগইন তালিকা প্রদর্শিত হয়:
+
+![স্থানীয় প্লাগইন](_static/plugins-in-nopcommerce/local-plugins.png)
+
+২। আনইনস্টল করার জন্য প্লাগইনটির পাশে **আনইনস্টল** লিঙ্কে ক্লিক করুন। প্লাগইনটি আনইনস্টল করা আছে। **ইনস্টলেশন কলামের লিঙ্কটি** **ইন্সটল** এ পরিবর্তন করে আপনাকে যে কোন সময় প্লাগইন পুনরায় ইনস্টল করতে সক্ষম করে।
+
+৩। আনইনস্টলেশন প্রক্রিয়া শেষ করতে উপরের প্যানেলের **রিস্টার্ট অ্যাপ্লিকেশন পরিবর্তন করতে আবেদন করুন** বোতামে ক্লিক করুন।
+
+## টিউটোরিয়াল
+
+- [একটি প্লাগইন ইনস্টল করা (সংস্করণ ৩.৯০ - ৪.১০)](https://youtu.be/eLDsSm-4gKA)
+- [প্রতি গ্রাহকের ভূমিকাতে প্লাগইনগুলিতে অ্যাক্সেস পরিচালনা করা](https://www.youtube.com/watch?v=52lVVpQ3Qag)

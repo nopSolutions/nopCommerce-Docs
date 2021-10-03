@@ -1,65 +1,68 @@
 ---
-title: Multi-factor authentication
-uid: en/getting-started/advanced-configuration/multi-factor-authentication
+title: মাল্টি-ফ্যাক্টর প্রমাণীকরণ
+uid: bn/getting-started/advanced-configuration/multi-factor-authentication
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Multi-factor authentication
+# মাল্টি-ফ্যাক্টর প্রমাণীকরণ
 
-Multi-factor Authentication (MFA) (in our case, it is Two-Factor Authentication - 2FA) is an authentication method that requires a user to provide two or more verification factors to gain access to a resource. MFA is a core component of a strong identity and access management (IAM) policy. Rather than just asking for a username and password, MFA requires one or more additional verification factors, which decreases the likelihood of a successful cyber attack.
+মাল্টি-ফ্যাক্টর প্রমাণীকরণ (এমএফএ) (আমাদের ক্ষেত্রে, এটি দ্বি-ফ্যাক্টর প্রমাণীকরণ-২ এফএ) একটি প্রমাণীকরণ পদ্ধতি যা ব্যবহারকারীকে সম্পদে অ্যাক্সেস পাওয়ার জন্য দুই বা ততোধিক যাচাইকরণের কারণ সরবরাহ করতে হবে। এমএফএ একটি শক্তিশালী পরিচয় এবং অ্যাক্সেস ম্যানেজমেন্ট (আইএএম) নীতির মূল উপাদান। শুধু একটি ব্যবহারকারীর নাম এবং পাসওয়ার্ড চাওয়ার পরিবর্তে, এমএফএর এক বা একাধিক অতিরিক্ত যাচাইকরণের কারণ প্রয়োজন, যা সফল সাইবার আক্রমণের সম্ভাবনা হ্রাস করে।
 
-nopCommerce implements a built-in multi-factor authentication through Google Authenticator. You can set up other methods using plugins from the [marketplace](https://www.nopcommerce.com/marketplace).
+নপকমার্স গুগল প্রমাণীকরণের মাধ্যমে একটি অন্তর্নির্মিত মাল্টি-ফ্যাক্টর প্রমাণীকরণ প্রয়োগ করে। আপনি [মার্কেটপ্লেস](https://www.nopcommerce.com/marketplace) থেকে প্লাগইন ব্যবহার করে অন্যান্য পদ্ধতি সেট আপ করতে পারেন।
 
-## Manage the multi-factor authentication methods
+## মাল্টি-ফ্যাক্টর প্রমাণীকরণ পদ্ধতি পরিচালনা করুন
 
-By default, the Google Authenticator plugin is not installed. To install the plugin go to **Configuration → Local plugins**.
+ডিফল্টরূপে, গুগল প্রমাণীকরণকারী প্লাগইন ইনস্টল করা হয় না। প্লাগইনটি ইনস্টল করতে **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান।
 
-1. Search by *Google Authenticator* in the **Plugin name** field.
-1. Click the **Install** button.
-1. Then click the **Restart application to apply changes** button to apply changes.
-1. Go to **Configuration → Authentication → Multi-factor authentication**. The *Multi-factor authentication* window is displayed:
+১। **প্লাগইন নাম** ক্ষেত্রের মধ্যে *গুগল প্রমাণীকরণকারী* দ্বারা অনুসন্ধান করুন।
+২। **ইনস্টল** বাটনে ক্লিক করুন।
+৩। তারপর পরিবর্তনগুলি প্রয়োগ করার জন্য **পুনরায় আরম্ভ অ্যাপ্লিকেশন** বোতামে ক্লিক করুন।
+৪। **কনফিগারেশন → প্রমাণীকরণ → মাল্টি-ফ্যাক্টর প্রমাণীকরণ** এ যান। *মাল্টি-ফ্যাক্টর প্রমাণীকরণ* উইন্ডো প্রদর্শিত হয়:
 
-   ![Multi-factor auth](_static/multi-factor-authentication/list.jpg)
+   ![মাল্টি-ফ্যাক্টর প্রমাণীকরণ](_static/multi-factor-authentication/list.jpg)
 
-1. Click **Edit** beside an authentication method and tick **Is active** to activate the method. You can also define the method **Display order**. Then click the **Update** button to save the changes.
+৫। একটি প্রমাণীকরণ পদ্ধতির পাশে **সম্পাদনা করুন** ক্লিক করুন এবং পদ্ধতিটি সক্রিয় করতে **সক্রিয়** টিক দিন। আপনি পদ্ধতি প্রদর্শন করতে পারেন **ডিসপ্লে অর্ডার**। তারপর পরিবর্তনগুলি সংরক্ষণ করতে **আপডেট** বাটনে ক্লিক করুন।
 
-## Configuring the Google Authenticator plugin
+## গুগল প্রমাণীকরণকারী প্লাগইন কনফিগার করা হচ্ছে
 
-Click **Configure** for the method configuration. The *Configure - Google Authenticator* page will be displayed, as follows:
+পদ্ধতি কনফিগারেশনের জন্য **কনফিগার করুন** ক্লিক করুন। *কনফিগার - গুগল প্রমাণীকরণকারী* পৃষ্ঠাটি নিম্নরূপ প্রদর্শিত হবে:
 
-![Multi-factor auth](_static/multi-factor-authentication/google-authenticator.jpg)
+![মাল্টি-ফ্যাক্টর প্রমাণীকরণ](_static/multi-factor-authentication/google-authenticator.jpg)
 
-On this page you have to enter:
+এই পৃষ্ঠায় আপনাকে প্রবেশ করতে হবে:
 
-- Your **Business prefix** so users can differentiate the account information for your store in the GoogleAuthenticator app.
-- **QRPixelsPerModule** to set the number of pixels per unit. The module is one square in the QR code. By default is 3 for a 171x171 pixel image.
+- আপনার **ব্যবসায়িক উপসর্গ** যাতে ব্যবহারকারীরা গুগল প্রমাণীকরণক অ্যাপে আপনার দোকানের অ্যাকাউন্টের তথ্য আলাদা করতে পারে।
+- **QRPixelsPerModule** প্রতি ইউনিটে পিক্সেলের সংখ্যা নির্ধারণ করতে। মডিউলটি কিউআর কোডের একটি বর্গক্ষেত্র। ডিফল্টরূপে ১৭১x১৭১ পিক্সেল ছবির জন্য ৩।
 
-Then click **Save**.
+তারপর **সেভ** ক্লিক করুন।
 
-On this page, you can also search customers by email using the *Search* panel.
+এই পৃষ্ঠায়, আপনি *অনুসন্ধান* প্যানেল ব্যবহার করে ইমেইল দ্বারা গ্রাহকদের অনুসন্ধান করতে পারেন।
 
-## How it works
+## কিভাবে এটা কাজ করে
 
-To understand how the multi-factor authentication works in nopCommerce see the diagram above.
+নপকমার্স-এ মাল্টি-ফ্যাক্টর প্রমাণীকরণ কীভাবে কাজ করে তা বোঝার জন্য উপরের চিত্রটি দেখুন।
 
-- The **2FA configured** scheme represents the process when 2FA is already configured by a customer.
-- The **2FA setup** scheme represents the process when 2FA setup is needed to be done by a customer.
+- **টুএফএ কনফিগার করা** স্কিম প্রক্রিয়াটিকে প্রতিনিধিত্ব করে যখন টুএফএ ইতিমধ্যে একজন গ্রাহক দ্বারা কনফিগার করা হয়।
+- **টুএফএ সেটআপ** স্কিম সেই প্রক্রিয়ার প্রতিনিধিত্ব করে যখন একজন গ্রাহকের দ্বারা টুএফএ সেটআপ করার প্রয়োজন হয়।
 
-![How it works](_static/multi-factor-authentication/diagram.jpg)
+![কিভাবে এটা কাজ করে](_static/multi-factor-authentication/diagram.jpg)
 
-## Multi-factor authentication page in public store
+## পাবলিক স্টোরে মাল্টি-ফ্যাক্টর প্রমাণীকরণ পৃষ্ঠা
 
-To configure multi-factor authentication a customer should visit the **My account - Multi-factor authentication** page which is displayed as follows:
+মাল্টি-ফ্যাক্টর প্রমাণীকরণ কনফিগার করার জন্য একজন গ্রাহককে **আমার অ্যাকাউন্ট-মাল্টি-ফ্যাক্টর প্রমাণীকরণ** পৃষ্ঠায় যেতে হবে যা নিম্নরূপ প্রদর্শিত হবে:
+![কিভাবে এটা কাজ করে](_static/multi-factor-authentication/my-account.jpg)
 
-![How it works](_static/multi-factor-authentication/my-account.jpg)
+MFA সক্রিয় করার পদক্ষেপ:
 
-Steps to activate MFA:
+১। **সক্রিয় আছে** সেটিং সক্রিয় করুন।
 
-1. Activate the **Is enabled** setting.
-1. Choose one of the multi-factor authentication providers (by default, there is the only one).
-1. Save.
-1. Configure the selected multi-factor authentication provider by following the instructions on the individual settings page of the selected provider.
+২। মাল্টি-ফ্যাক্টর প্রমাণীকরণ প্রদানকারীর মধ্যে একটি বেছে নিন (ডিফল্টরূপে, শুধুমাত্র একটি আছে)।
+
+৩। সংরক্ষণ করুন।
+
+৪। নির্বাচিত প্রদানকারীর পৃথক সেটিংস পৃষ্ঠায় নির্দেশাবলী অনুসরণ করে নির্বাচিত মাল্টি-ফ্যাক্টর প্রমাণীকরণ প্রদানকারীকে কনফিগার করুন।
 
 > [!WARNING]
 >
-> After saving the selected provider, be sure to configure it, otherwise, you will be denied access the next time you try to enter your account.
+> নির্বাচিত প্রদানকারী সংরক্ষণ করার পরে, এটি কনফিগার করতে ভুলবেন না, অন্যথায়, পরের বার যখন আপনি আপনার অ্যাকাউন্টে প্রবেশ করার চেষ্টা করবেন তখন আপনাকে প্রবেশাধিকার থেকে বঞ্চিত করা হবে।

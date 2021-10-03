@@ -1,126 +1,129 @@
 ---
-title: Localization
-uid: en/getting-started/advanced-configuration/localization
+title: স্থানীয়করণ
+uid: bn/getting-started/advanced-configuration/localization
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Localization
+# স্থানীয়করণ
 
-In nopCommerce, your store can have several languages installed. However, the customers will only see the data that has been defined in their selected language.
+নপকমার্স-এ, আপনার দোকানে বেশ কয়েকটি ভাষা ইনস্টল করা থাকতে পারে। যাইহোক, গ্রাহকরা শুধুমাত্র তাদের নির্বাচিত ভাষায় সংজ্ঞায়িত ডেটা দেখতে পাবেন।
 
 > [!TIP]
-> 
-> By default, the English language is installed.
+>
+> ডিফল্টরূপে, ইংরেজি ভাষা ইনস্টল করা হয়।
 
-To see or edit the installed languages go to **Configuration → Languages**:
-![language](_static/localization/Language.png)
-
-> [!NOTE]
-> 
-> You can download new language packs from the official [Marketplace](http://www.nopcommerce.com/marketplace).
-
-## Adding new language
-
-To add a new language click **Add new**. In the *Add a new language* window, define the following settings:
-
-![addlanguage](_static/localization/addlanguage.png)
-
-* The **Name** of the new language.
-* The **Language culture** - a specific language code (for example, de-AT for Austrian German).
-* The **Unique SEO code** - a two letter language SEO code used to generate URLs like `http://www.yourstore.com/en/` when you have more than one published language. 
-
-  > [!NOTE]
-  >
-  > The **SEO friendly URLs with multiple languages** option should be enabled in the **Configuration → Settings → General settings → Localization settings** panel.
-
-* The **Flag image file name** - enter the flag image file name. The image should be saved under the `…/images/flags` directory. You can also choose an image from a predefined list.
-* Tick **Right-to-Left** if needed (for example, for Arabic, Hebrew, etc). 
-  
-  > [!NOTE]
-  >
-  > The active theme should support RTL (have an appropriate CSS style file). This option affects only the public store.
-
-* The **Default currency** for a specific language. If not specified, then the first found one (with the lowest display order) will be used.
-* **Limited to stores option** allowing to set this language for a specific store(s). You can choose the store(s) from a pre-created list. Leave this field empty if you don't use this option.
-  
-  > [!NOTE]
-  >
-  > To use store limitaton the **Ignore "limit per store" rules (sitewide)** option should be disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
-
-* **Publish** the language, to enable this language to be visible and selected by visitors in your store.
-* **Display order** of the language. 1 represents the top of the list.
-
-Click **Save** to save the changes.
+ইনস্টল করা ভাষাগুলি দেখতে বা সম্পাদনা করতে **কনফিগারেশন → ভাষা** এ যান:
+![ভাষা](_static/localization/Language.png)
 
 > [!NOTE]
 > 
-> After adding a new language, you will be able to import and export string resources using the **Import resources**
-and **Export resources** buttons in the top of the page. The *String resources* panel from the language edit page will allow you to see the existing language resources and add new ones manually.
+> আপনি অফিসিয়াল [মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) থেকে নতুন ভাষার প্যাক ডাউনলোড করতে পারেন।
 
-## Import language pack
+## নতুন ভাষা যোগ করা
 
-If you wish to add a new language to your store, you should:
+একটি নতুন ভাষা যোগ করতে **নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন ভাষা যোগ করুন* উইন্ডোতে, নিম্নলিখিত সেটিংস সংজ্ঞায়িত করুন:
 
-1. Visit nopCommerce [translations](https://www.nopcommerce.com/translations) page.
-1. Choose nopCommerce version and download the desired language pack.
-1. Go to **Configuration → Languages** and press **AddNew** button.
-    ![LanguageAddNew](_static/localization/language-add-new.png)
+![ভাষা যোগ করা](_static/localization/addlanguage.png)
 
-1. Fill in the required fields and click **Save and continue edit**.
-  ![LanguageSave](_static/localization/language-save.png)
+* নতুন ভাষার **নাম**।
+* **ভাষা সংস্কৃতি** - একটি নির্দিষ্ট ভাষা কোড (উদাহরণস্বরূপ, অস্ট্রিয়ান জার্মানদের জন্য ডি -এটি)।
+* **দ্য ইউনিক এসইও কোড** - একটি দুই অক্ষরের ভাষা এসইও কোড ব্যবহার করা হয় যেমন ইউআরএল তৈরি করতে যেমন 'http://www.yourstore.com/en/` যখন আপনার একাধিক প্রকাশিত ভাষা থাকে।
 
-1. Click **Import resources**. And specify the path to the language pack file (*.xml) that you downloaded.
-  ![LanguageImport](_static/localization/language-import.png)
+  > [!NOTE]
+  >
+  > একাধিক ভাষা সহ **SEO বন্ধুত্বপূর্ণ URL গুলি** বিকল্পটি **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস → স্থানীয়করণ সেটিংস** প্যানেলে সক্ষম করা উচিত।
 
-If you found a mistake in translation or wish to have custom naming, you can edit the string resources in the *String resources* panel.
+* **ফ্ল্যাগ ইমেজ ফাইলের নাম** - ফ্ল্যাগ ইমেজ ফাইলের নাম লিখুন। ছবিটি `…/ইমেজ/পতাকা` ডিরেক্টরিতে সংরক্ষণ করা উচিত। আপনি একটি পূর্বনির্ধারিত তালিকা থেকে একটি ছবিও চয়ন করতে পারেন।
+* প্রয়োজন হলে **ডান থেকে বামে** টিক দিন (উদাহরণস্বরূপ, আরবি, হিব্রু ইত্যাদি)।
+  
+  > [!NOTE]
+  >
+  > সক্রিয় থিমটি RTL সমর্থন করবে (একটি উপযুক্ত CSS স্টাইল ফাইল আছে)। এই বিকল্পটি শুধুমাত্র পাবলিক স্টোরকে প্রভাবিত করে।
 
-## Manage string resources
+*একটি নির্দিষ্ট ভাষার জন্য **ডিফল্ট মুদ্রা**। যদি নির্দিষ্ট না করা হয়, তাহলে প্রথম পাওয়া একটি (সর্বনিম্ন ডিসপ্লে অর্ডার সহ) ব্যবহার করা হবে।
+* **সীমিত স্টোর বিকল্প** একটি নির্দিষ্ট স্টোরের জন্য এই ভাষা সেট করার অনুমতি দেয়। আপনি একটি পূর্বনির্ধারিত তালিকা থেকে দোকান (গুলি) নির্বাচন করতে পারেন। আপনি যদি এই বিকল্পটি ব্যবহার না করেন তবে এই ক্ষেত্রটি খালি রাখুন।
+  
+  > [!NOTE]
+  >
+  > দোকান সীমা ব্যবহার করার জন্য **উপেক্ষা করুন "প্রতি দোকান সীমা" নিয়ম (সাইটওয়াইড)** **বিকল্পটি ** কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস → পারফরম্যান্স** প্যানেলে অক্ষম করা উচিত।
 
-Go to **Configuration → Languages**. The *Languages* window is displayed:
+* **প্রকাশ করুন** ভাষা, এই ভাষাকে আপনার দোকানের দর্শকদের দ্বারা দৃশ্যমান এবং নির্বাচিত করতে সক্ষম করতে।
+**ভাষার ডিসপ্লে অর্ডার**। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-![Languages](_static/localization/languages.png)
+পরিবর্তনগুলি সংরক্ষণ করতে **সংরক্ষণ** ক্লিক করুন।
 
-Click the **Edit** button beside the language. In the **Edit language details** window, find the **String resources** panel.
+> [!NOTE]
+>
+> একটি নতুন ভাষা যোগ করার পর, আপনি **আমদানি সম্পদ ব্যবহার করে স্ট্রিং রিসোর্স আমদানি ও রপ্তানি করতে সক্ষম হবেন**
+এবং **রপ্তানি সম্পদ** পৃষ্ঠার শীর্ষে বোতাম। ভাষা সম্পাদনা পৃষ্ঠা থেকে *স্ট্রিং রিসোর্স* প্যানেল আপনাকে বিদ্যমান ভাষা সম্পদগুলি দেখতে এবং ম্যানুয়ালি নতুন যুক্ত করতে দেবে।
 
-For example, you want to change the name of a panel on top of the page from "Administration" (on the picture below) to "Control panel". 
+## ভাষা প্যাক আমদানি করুন
 
-![Example 1](_static/localization/lang-example-before-change.jpeg)
+আপনি যদি আপনার দোকানে একটি নতুন ভাষা যোগ করতে চান, আপনার উচিত:
+
+১। নপকমার্স [অনুবাদ](https://www.nopcommerce.com/translations) পৃষ্ঠায় যান।
+
+২। নপকমার্স সংস্করণ চয়ন করুন এবং পছন্দসই ভাষা প্যাক ডাউনলোড করুন।
+
+৩। **কনফিগারেশন → ভাষা** এ যান এবং **নতুন যোগ করুন** বোতাম টিপুন।
+    ![নতুন ভাষা যোগ করুন](_static/localization/language-add-new.png)
+
+৪। প্রয়োজনীয় ক্ষেত্র পূরণ করুন এবং **সংরক্ষণ করুন এবং সম্পাদনা চালিয়ে যান** ক্লিক করুন।
+  ![ভাষা সংরক্ষণ](_static/localization/language-save.png)
+
+৫। **সম্পদ আমদানি করুন** ক্লিক করুন। এবং আপনার ডাউনলোড করা ভাষা প্যাক ফাইলের (*.xml) পথ নির্দিষ্ট করুন।
+  ![ভাষা আমদানি](_static/localization/language-import.png)
+
+যদি আপনি অনুবাদে ভুল খুঁজে পান বা কাস্টম নামকরণ করতে চান তবে আপনি স্ট্রিং রিসোর্সগুলি *স্ট্রিং রিসোর্স* প্যানেলে সম্পাদনা করতে পারেন।
+
+## স্ট্রিং রিসোর্স পরিচালনা করুন
+
+**কনফিগারেশন → ভাষা** এ যান। *ভাষা* উইন্ডো প্রদর্শিত হয়:
+
+![ভাষা](_static/localization/languages.png)
+
+ভাষার পাশে **সম্পাদনা করুন** বাটনে ক্লিক করুন। **ভাষা বিবরণ সম্পাদনা করুন** উইন্ডোতে, **স্ট্রিং রিসোর্স** প্যানেল খুঁজুন।
+
+উদাহরণস্বরূপ, আপনি "প্রশাসন" (নীচের ছবিতে) থেকে "কন্ট্রোল প্যানেল" থেকে পৃষ্ঠার উপরে একটি প্যানেলের নাম পরিবর্তন করতে চান।
+
+![উদাহরণ ১](_static/localization/lang-example-before-change.jpeg)
  
-1. In the Resource name field, enter "administration". The required string resource if found. Click **Edit** beside it.
-1. Enter the new name in the **Value** field and click **Update**.
-  ![Example 2](_static/localization/lang-resource-edit.png)
+১। রিসোর্স নেম ফিল্ডে, "প্রশাসন" লিখুন। প্রয়োজনীয় স্ট্রিং রিসোর্স পাওয়া গেলে। এর পাশে **এডিট** ক্লিক করুন।
 
-1. The changes are implemented
-  ![Example 3](_static/localization/lang-example-after-change.jpeg)
+২। **মান** ক্ষেত্রটিতে নতুন নাম লিখুন এবং **আপডেট** ক্লিক করুন।
+  ![উদাহরণ ২](_static/localization/lang-resource-edit.png)
 
-To add a new string resource use the **Add new record** panel. This window enabling you to add a new resource record to the grid, as follows:
-![Add new record](_static/localization/lang-add-resource.png)
+৩। পরিবর্তনগুলি বাস্তবায়িত হয়
+  ![উদাহরণ 	৩](_static/localization/lang-example-after-change.jpeg)
 
-* In the **Resource name** field, enter the resource string identifier.
-* In the **Value** field, enter a value for this resource string identifier.
+একটি নতুন স্ট্রিং রিসোর্স যুক্ত করতে **নতুন রেকর্ড যোগ করুন** প্যানেল ব্যবহার করুন। এই উইন্ডোটি আপনাকে গ্রিডে একটি নতুন রিসোর্স রেকর্ড যুক্ত করতে সক্ষম করে:
+![নতুন রেকর্ড যোগ করুন](_static/localization/lang-add-resource.png)
 
-Click **Save**.
+* **রিসোর্সের নাম** ফিল্ডে, রিসোর্স স্ট্রিং আইডেন্টিফায়ার লিখুন।
+* **ভ্যালু** ফিল্ডে, এই রিসোর্স স্ট্রিং আইডেন্টিফায়ারের জন্য একটি মান লিখুন।
 
-## Localization settings
+**সেভ** ক্লিক করুন।
 
-To configure localization settings go to **Configuration  → Settings  → General settings**:
+## স্থানীয়করণ সেটিংস
 
-![Localization settings](_static/localization/lang-localization-settings.jpg)
+স্থানীয়করণ সেটিংস কনফিগার করতে **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান:
 
-- To sets the [CLDR](http://cldr.unicode.org/) pattern for localization of client-side validation according to the current culture click the **Set CLDR for current culture** button.
-- Tick the checkbox **Load all locale resources on startup** to load all local resources on application startup. When enabled, all locale resources will be loaded on application startup. The application start will be slower, but then all pages could be opened much faster.
-- Tick the checkbox **Load all localized properties on startup** to load all localized properties on application startup. When enabled, all localized properties (such as localized product properties) will be loaded on application startup. The application start will be slower, but then all pages could be opened much faster. It's used only when you have two or more languages enabled. Not recommended to enable when you have a large catalog (several thousand localized entities).
-- Tick the checkbox **Load all search engine friendly names on startup** to load all search engine friendly names on application startup. When enabled, all slugs (search engine friendly names) will be loaded on application startup. The application start will be slower, but then all pages could be opened much faster. Not recommended to enable when you have a large catalog (several thousand entities).
-- Tick the checkbox **Use images for language selection** to use images instead of language names.
-- Tick the checkbox **SEO friendly URLs with multiple languages enabled** to allow SEO friendly URLs for all languages. When enabled, your URLs will be `http://www.yourStore.com/en/` or `http://www.yourStore.com/ru/` (SEO friendly).
-- Tick the checkbox **Automatically detect language** for detecting language based on customer browser settings.
+![স্থানীয়করণ সেটিংস](_static/localization/lang-localization-settings.jpg)
 
-## Localize entities
+- বর্তমান সংস্কৃতি অনুসারে ক্লায়েন্ট-সাইড ভ্যালিডেশনের স্থানীয়করণের জন্য [সিএলডিআর](http://cldr.unicode.org/) প্যাটার্ন সেট করতে **বর্তমান সংস্কৃতির জন্য সিএলডিআর সেট করুন** বাটনে ক্লিক করুন।
+- চেকবক্সে টিক দিন **স্টার্টআপে সমস্ত লোকাল রিসোর্স লোড করুন** অ্যাপ্লিকেশন স্টার্টআপের সমস্ত স্থানীয় রিসোর্স লোড করতে। সক্ষম হলে, সমস্ত লোকাল রিসোর্স অ্যাপ্লিকেশন স্টার্টআপে লোড করা হবে। অ্যাপ্লিকেশন শুরু হবে ধীর, কিন্তু তারপর সব পৃষ্ঠা অনেক দ্রুত খোলা যাবে।
+- চেকবক্সে টিক দিন **স্টার্টআপে সমস্ত স্থানীয় বৈশিষ্ট্য লোড করুন** অ্যাপ্লিকেশন স্টার্টআপের সমস্ত স্থানীয় বৈশিষ্ট্য লোড করতে। সক্ষম হলে, সমস্ত স্থানীয় বৈশিষ্ট্য (যেমন স্থানীয় পণ্য বৈশিষ্ট্য) অ্যাপ্লিকেশন স্টার্টআপের সময় লোড করা হবে। অ্যাপ্লিকেশন শুরু হবে ধীর, কিন্তু তারপর সব পৃষ্ঠা অনেক দ্রুত খোলা যাবে। এটি শুধুমাত্র তখনই ব্যবহৃত হয় যখন আপনার দুই বা ততোধিক ভাষা সক্ষম থাকে। যখন আপনার একটি বড় ক্যাটালগ (কয়েক হাজার স্থানীয় সত্তা) থাকে তখন সক্ষম করার সুপারিশ করা হয় না।
+- চেকবক্সে টিক দিন **স্টার্টআপে সমস্ত সার্চ ইঞ্জিন বান্ধব নাম লোড করুন** অ্যাপ্লিকেশন স্টার্টআপে সমস্ত সার্চ ইঞ্জিন বান্ধব নাম লোড করতে। সক্ষম হলে, সমস্ত স্লাগ (সার্চ ইঞ্জিন বন্ধুত্বপূর্ণ নাম) অ্যাপ্লিকেশন স্টার্টআপের সময় লোড হবে। অ্যাপ্লিকেশন শুরু হবে ধীর, কিন্তু তারপর সব পৃষ্ঠা অনেক দ্রুত খোলা যাবে। যখন আপনি একটি বড় ক্যাটালগ (কয়েক হাজার সত্তা) আছে সক্রিয় করার সুপারিশ করা হয় না।
+- চেকবক্সে টিক দিন **ভাষা নির্বাচনের জন্য ছবি ব্যবহার করুন** ভাষার নামের পরিবর্তে ছবি ব্যবহার করতে।
+- সকল ভাষার জন্য এসইও বান্ধব ইউআরএল অনুমোদনের জন্য চেকবক্সে **একাধিক ভাষা সক্ষম এসইও বন্ধুত্বপূর্ণ ইউআরএল** টিক চিহ্ন দিন । সক্ষম হলে, আপনার ইউআরএল গুলি হবে `http://www.yourStore.com/en/` অথবা `http://www.yourStore.com/ru/` (এসইও বন্ধুত্বপূর্ণ)।
+- গ্রাহক ব্রাউজার সেটিংসের উপর ভিত্তি করে ভাষা সনাক্ত করার জন্য চেকবক্সে **ভাষা স্বয়ংক্রিয়ভাবে সনাক্ত করুন**
 
-If you have more than one language installed in your store you will be able to enter some fields which are displayed to customers in different languages. For example:
+## সত্তাগুলিকে স্থানীয়করণ করুন
 
-![Fields](_static/localization/fields.jpg)
+যদি আপনার দোকানে একাধিক ভাষা ইনস্টল করা থাকে তবে আপনি কিছু ক্ষেত্র প্রবেশ করতে পারবেন যা বিভিন্ন ভাষায় গ্রাহকদের কাছে প্রদর্শিত হবে। উদাহরণ স্বরূপ:
 
-- In the *Standard tab* enter the text which will be displayed to customers if the localized fields are not specified.
-- In the *tabs with language names* enter the localized text.
+![ক্ষেত্র](_static/localization/fields.jpg)
+
+- *স্ট্যান্ডার্ড ট্যাবে* পাঠ্যটি প্রবেশ করান যা গ্রাহকদের কাছে প্রদর্শিত হবে যদি স্থানীয় ক্ষেত্রগুলি নির্দিষ্ট না করা হয়।
+- ভাষার নাম সহ *ট্যাবে* স্থানীয় পাঠ্য লিখুন।
