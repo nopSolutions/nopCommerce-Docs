@@ -1,63 +1,63 @@
 ---
-title: Manual (fixed or by country/state/zip)
-uid: en/getting-started/configure-taxes/tax-providers/manual
+title: ম্যানুয়াল (স্থির বা দেশ/রাজ্য/জিপ দ্বারা)
+uid: bn/getting-started/configure-taxes/tax-providers/manual
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.MDRashedKhanMenon
 ---
 
-# Manual (fixed or by country/state/zip)
+# ম্যানুয়াল (স্থির বা দেশ/রাজ্য/জিপ দ্বারা)
 
-To configure the Manual (fixed or by country/state/zip) tax provider go to **Configuration → Tax providers**.
+ম্যানুয়াল কনফিগার করতে (নির্দিষ্ট বা দেশ/রাজ্য/জিপ দ্বারা) কর প্রদানকারী যান **কনফিগারেশন → কর প্রদানকারী**।
 
-![Tax providers](_static/manual/tax-providers.png)
+![কর প্রদানকারী](_static/manual/tax-providers.png)
 
-Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates.
-You can switch *Fixed rate* tax calculation to *Country/state/zip* tax calculation by clicking the appropriate button at the top left.
-To manage tax categories click the **Manage tax categories** button in the top right.
+**ম্যানুয়াল (নির্দিষ্ট বা দেশ/রাজ্য/জিপ দ্বারা)** প্রদানকারীর লাইনে **কনফিগার করুন** ক্লিক করুন
+আপনি উপরের বাম দিকের উপযুক্ত বোতামে ক্লিক করে *স্থির হার* ট্যাক্স গণনা *দেশ/রাজ্য/জিপ* ট্যাক্স গণনায় পরিবর্তন করতে পারেন।
+কর বিভাগগুলি পরিচালনা করতে উপরের ডানদিকে **কর বিভাগগুলি পরিচালনা করুন** বোতামে ক্লিক করুন।
 
-## Fixed rate
+## নির্ধারিত দাম
 
-Choose **Fixed rate** configuration using the switcher in the top of the page.
+পৃষ্ঠার শীর্ষে সুইচার ব্যবহার করে **স্থির হার** কনফিগারেশন চয়ন করুন।
 
-![Configure](_static/manual/configure.jpg)
+![কনফিগার](_static/manual/configure.jpg)
 
-On this page you can see the pre-created tax categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
+এই পৃষ্ঠায় আপনি প্রাক-তৈরি কর বিভাগগুলি দেখতে পারেন। প্রতিটি বিভাগের পাশে **সম্পাদনা করুন** ক্লিক করুন এবং শতাংশ হার লিখুন। তারপর **আপডেট** বাটনে ক্লিক করুন।
 
-Make sure your products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-products).
+নিশ্চিত করুন যে আপনার পণ্যগুলি তাদের [পণ্যের পৃষ্ঠাগুলি](xref:bn/running-your-store/catalog/products/add-products) তে তাদের জন্য একটি কর শ্রেণী বরাদ্দ করেছে।
 
-![Product](_static/manual/product.jpg)
-
-> [!NOTE]
->
-> This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
-
-## By country
-
-Choose **By country** configuration using the switcher in the top of the page.
-
-![By country](_static/manual/tax-by-country.png)
-
-Define the new tax rate, as follows:
-
-* Select the **Store** for which the rate is defined. Select an * to apply this rate to all stores.
-* Select the **Country** for which the tax rate is defined.
-* Select the **State/province** for which the tax rate is defined. If an asterisk (*) is selected, this tax rate will apply to all customers from the selected country regardless of the state.
-* Enter **Zip** code of an area for which the tax rate is defined. If this field is empty, then this tax rate will apply to all customers from the selected country or state regardless of the zip code.
-* Select the **Tax category** for which to apply the tax rate.
-* In the **Percentage** field, enter the required percentage.
-
-Click **Add tax rate**. The new tax rate is displayed, as follows:
-
-![Add tax rate](_static/manual/add-tax-rate.png)
+![পণ্য](_static/manual/product.jpg)
 
 > [!NOTE]
 >
-> This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
+> এই বিভাগ শুধুমাত্র প্রাক-তৈরি কর বিভাগ দেখায়। **কর বিভাগ সম্পাদনা করতে** ট্যাক্স বিভাগগুলি পরিচালনা করুন বা এখানে কর বিভাগগুলি কীভাবে পরিচালনা করবেন তা পড়ুন: [কর বিভাগগুলি কনফিগার করুন] (#configure-tax-categories)।
 
-## Configure tax categories
+## দেশ অনুযায়ী
 
-To define tax categories go to **Configuration → Tax categories**. The *Tax categories* window is displayed:
+পৃষ্ঠার শীর্ষে সুইচার ব্যবহার করে **দেশ অনুযায়ী** কনফিগারেশন চয়ন করুন।
 
-![Tax categories](_static/manual/tax-categories.jpg)
+![দেশ অনুযায়ী](_static/manual/tax-by-country.png)
 
-To add a new tax category, enter the category **Name**, and the **Display order** of this tax classification in the bottom of the panel. In the **Display order** field, value of 1 represents the top of the list. Then click **Add new record** to save the new tax category.
+নতুন কর হার নির্ধারণ করুন, নিম্নরূপ:
+
+* **স্টোর** নির্বাচন করুন যার জন্য হার নির্ধারণ করা হয়েছে। সব দোকানে এই হার প্রয়োগ করার জন্য একটি * নির্বাচন করুন।
+* **দেশ** নির্বাচন করুন যার জন্য করের হার নির্ধারণ করা হয়েছে।
+* **রাজ্য/প্রদেশ** নির্বাচন করুন যার জন্য করের হার নির্ধারণ করা হয়েছে। যদি একটি তারকাচিহ্ন (*) নির্বাচন করা হয়, এই করের হার রাজ্য নির্বিশেষে নির্বাচিত দেশের সকল গ্রাহকদের জন্য প্রযোজ্য হবে।
+* একটি এলাকার **জিপ** কোড লিখুন যার জন্য করের হার নির্ধারণ করা হয়েছে। যদি এই ক্ষেত্রটি খালি থাকে, তাহলে এই কর হার নির্বাচিত দেশ বা রাজ্যের সমস্ত গ্রাহকদের জন্য প্রযোজ্য হবে, জিপ কোড নির্বিশেষে।
+* করের হার প্রয়োগ করার জন্য **ট্যাক্স বিভাগ** নির্বাচন করুন।
+* **পারসেন্টেজ** ফিল্ডে, প্রয়োজনীয় শতাংশ লিখুন।
+
+**ট্যাক্স রেট যোগ করুন** ক্লিক করুন। নতুন কর হার নিম্নরূপ প্রদর্শিত হয়:
+
+![ট্যাক্স রেট যোগ করুন](_static/manual/add-tax-rate.png)
+
+> [!NOTE]
+>
+> এই বিভাগ শুধুমাত্র প্রাক-তৈরি কর বিভাগ দেখায়। **কর বিভাগ সম্পাদনা করতে** ট্যাক্স বিভাগগুলি পরিচালনা করুন বা এখানে কর বিভাগগুলি কীভাবে পরিচালনা করবেন তা পড়ুন: [কর বিভাগগুলি কনফিগার করুন](#configure-tax-categories)।
+
+## কর বিভাগগুলি কনফিগার করুন
+
+কর বিভাগ নির্ধারণ করতে **কনফিগারেশন → ট্যাক্স বিভাগ** এ যান। *ট্যাক্স বিভাগ* উইন্ডো প্রদর্শিত হয়:
+
+![কর বিভাগ](_static/manual/tax-categories.jpg)
+
+একটি নতুন ট্যাক্স ক্যাটাগরি যোগ করার জন্য, প্যানেলের নীচে এই ক্যাটাগরিটির **নাম** এবং **ডিসপ্লে অর্ডার** লিখুন। **ডিসপ্লে অর্ডার** ফিল্ডে, ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে। তারপর নতুন কর বিভাগ সংরক্ষণ করতে **নতুন রেকর্ড যোগ করুন** ক্লিক করুন।

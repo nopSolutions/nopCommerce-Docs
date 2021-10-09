@@ -1,68 +1,70 @@
 ﻿---
-title: Configure taxes
-uid: en/getting-started/configure-taxes/index
+title: কর কনফিগার
+uid: bn/getting-started/configure-taxes/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Configure taxes
+# কর কনফিগার
 
-This chapter covers the settings of nopCommerce tax tools.
-
-> [!NOTE]
-> 
-> This chapter includes nopCommerce in-built tax instruments, not third-party tax services.
-
-nopCommerce supports external services as well, but they require plugins from a [marketplace](http://www.nopcommerce.com/marketplace) to be installed. The process of installation of such modules is described in the chapter [Plugins](xref:en/developer/plugins/index).
-
-## EU VAT configuration guide
-
-To set up nopCommerce VAT support for shops in the EU go to **Configuration → Settings → Tax settings**.
-
-In the *Common* panel:
-* Set **Tax based on** to **Shipping address**.
-
-In the *VAT* panel:
-* Tick **EU VAT enabled**. This will ensure that tax is charged only for shipments within the EU.
-* Select the **Country** your shop is in.
-* If applicable, tick *Allow VAT exemption*. This will ensure that your VAT registered customers who are shipping within the EU but outside the country in which the store is located will not be charged VAT.
-* Tick the **Assume VAT always valid** checkbox to skip VAT validation. Entered VAT numbers will always be valid. It will be a client's responsibility to provide the correct VAT number. 
-* If you checked **Allow VAT exemption**, then you might want to tick the "**Use web service**" and "**Notify admin when a new VAT number is submitted**" checkboxes too.
-
-Click the **Save** button.
-
-Go to **Configuration → Countries**. Make sure that all the countries which are in the scope of the VAT have **Subject to VAT** set to *true*.
-
-![Countries](_static/index/countries.jpg)
+এই অধ্যায় নপকমার্স ট্যাক্স টুলস এর সেটিংস কভার করে।
 
 > [!NOTE]
-> 
-> Jersey, Guernsey, and the other Channel Islands are not a part of the UK and are not within the scope of VAT. If you sell to those places you may need to change that.
+>
+> এই অধ্যায়ে নপকমার্স- এর অন্তর্নির্মিত কর যন্ত্র অন্তর্ভুক্ত রয়েছে, তৃতীয় পক্ষের কর পরিষেবাগুলি নয়।
 
-Go to **Configuration → Tax categories**. 
+নপকমার্স বহিরাগত পরিষেবাগুলিকেও সমর্থন করে, কিন্তু তাদের একটি [মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) থেকে প্লাগইন লাগাতে হবে। এই ধরনের মডিউল ইনস্টল করার প্রক্রিয়া [প্লাগইন](xref:bn/developer/plugins/index) অধ্যায়ে বর্ণিত হয়েছে।
 
-![Tax categories](_static/index/tax-categories.jpg)
+## ইইউ ভ্যাট কনফিগারেশন গাইড
 
-Set up a tax category for each VAT rate in your country. For example, "Standard Rate", "Zero rate", "Discounted rate". Delete default classes that are already there and are not applicable.
+ইইউতে দোকানগুলির জন্য নপকমার্স ভ্যাট সমর্থন স্থাপন করতে **কনফিগারেশন → সেটিংস → ট্যাক্স সেটিংস** এ যান।
 
-Go to **Configuration → Tax providers**. Make the **Manual (fixed or by country/state/zip)** the default one using the **Mark as primary provider** button.
+*সাধারণ* প্যানেলে:
 
-![Tax providers](_static/index/tax-providers.jpg)
+* **শিপিং ঠিকানা** **এর উপর ভিত্তি করে** ট্যাক্স সেট করুন।
 
-Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. In the top of the page you will see the switch. Choose **Fixed rate** there. 
+*ভ্যাট* প্যানেলে:
 
-![Configure](_static/index/configure.jpg)
+* টিক দিন **ইইউ ভ্যাট সক্ষম**। এটি নিশ্চিত করবে যে কর কেবল ইইউ -র মধ্যে চালানের জন্য নেওয়া হয়।
+* আপনার দেশ যে **দেশ** নির্বাচন করুন।
+* প্রযোজ্য হলে, ভ্যাট ছাড়ের অনুমতি দিন *টিক দিন। এটি নিশ্চিত করবে যে আপনার ভ্যাট নিবন্ধিত গ্রাহকরা যারা ইইউ -এর মধ্যে কিন্তু যে দেশের দোকানে অবস্থিত সে দেশের বাইরে শিপিং করছে তাদের ভ্যাট নেওয়া হবে না।
+* ভ্যাট ভ্যালিডেশন এড়িয়ে যেতে **ভ্যাট সর্বদা বৈধ** চেকবক্সে টিক দিন। প্রবেশ করা ভ্যাট নম্বর সর্বদা বৈধ থাকবে। সঠিক ভ্যাট নম্বর প্রদান করা একজন ক্লায়েন্টের দায়িত্ব হবে।
+* যদি আপনি **মূসক অব্যাহতি** চেক করেন, তাহলে আপনি "**ব্যবহার করুন ওয়েব পরিষেবা**" এবং "**নতুন ভ্যাট নম্বর জমা দিলে প্রশাসককে অবহিত করুন**" চেকবক্সগুলিতে টিক দিতে পারেন।
 
-On this page you can see your VAT rate categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
+* **সেভ** বাটনে ক্লিক করুন।
 
-Make sure that all products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-products).
+**কনফিগারেশন → দেশ** এ যান। নিশ্চিত করুন যে সমস্ত দেশ ভ্যাটের আওতাভুক্ত **ভ্যাট সাপেক্ষে** সত্য*সেট করা আছে।
 
-![Product](_static/index/product.jpg)
+![দেশগুলি](_static/index/countries.jpg)
+
+> [!NOTE]
+>
+> জার্সি, গার্নসি এবং অন্যান্য চ্যানেল দ্বীপপুঞ্জ যুক্তরাজ্যের অংশ নয় এবং ভ্যাটের আওতায় নেই। আপনি যদি সেই জায়গাগুলিতে বিক্রি করেন তবে আপনাকে এটি পরিবর্তন করতে হতে পারে।
+
+**কনফিগারেশন → ট্যাক্স বিভাগ** এ যান।
+
+![ট্যাক্স বিভাগ](_static/index/tax-categories.jpg)
+
+আপনার দেশে প্রতিটি ভ্যাট হারের জন্য একটি ট্যাক্স বিভাগ সেট করুন। উদাহরণস্বরূপ, "স্ট্যান্ডার্ড রেট", "জিরো রেট", "ডিসকাউন্ট রেট"। ডিফল্ট ক্লাসগুলি মুছে দিন যা ইতিমধ্যে আছে এবং প্রযোজ্য নয়।
+
+**কনফিগারেশন → কর প্রদানকারী** এ যান। **ম্যানুয়াল (নির্দিষ্ট বা দেশ/রাজ্য/জিপ দ্বারা)** ডিফল্ট করুন **প্রাথমিক প্রদানকারী হিসাবে** চিহ্নিত করুন বোতামটি ব্যবহার করুন।
+
+![কর প্রদানকারী](_static/index/tax-providers.jpg)
+
+**ম্যানুয়াল (নির্দিষ্ট বা দেশ/রাজ্য/জিপ দ্বারা)** প্রদানকারীর লাইনে **কনফিগার করুন** ক্লিক করুন পৃষ্ঠার শীর্ষে আপনি সুইচ দেখতে পাবেন। সেখানে **স্থির হার** বেছে নিন।
+
+![কনফিগার](_static/index/configure.jpg)
+
+এই পৃষ্ঠায় আপনি আপনার ভ্যাট হারের বিভাগগুলি দেখতে পারেন। প্রতিটি বিভাগের পাশে **সম্পাদনা করুন** ক্লিক করুন এবং শতাংশ হার লিখুন। তারপর **আপডেট** বাটনে ক্লিক করুন।
+
+নিশ্চিত করুন যে সমস্ত পণ্যের তাদের [পণ্যের পৃষ্ঠাগুলি](xref:bn/running-your-store/catalog/products/add-products) এ তাদের জন্য একটি ট্যাক্স বিভাগ নির্ধারিত আছে।
+
+![পণ্য](_static/index/product.jpg)
 
 
-# See also
+# আরো দেখুন
 
-* [Tax settings](xref:en/getting-started/configure-taxes/tax-settings)
-* [Tax providers](xref:en/getting-started/configure-taxes/tax-providers/index)
+* [ট্যাক্স সেটিংস](xref:bn/get-start/configure-tax/tax-settings)
+* [কর প্রদানকারী](xref:bn/get-start/configure-tax/tax-providers/index)
 
 

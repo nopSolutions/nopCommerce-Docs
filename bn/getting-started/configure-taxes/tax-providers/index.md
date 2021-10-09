@@ -1,23 +1,23 @@
 ---
-title: Tax providers
-uid: en/getting-started/configure-taxes/tax-providers/index
+title: কর প্রদানকারী
+uid: bn/getting-started/configure-taxes/tax-providers/index
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Tax providers
+# কর প্রদানকারী
 
-To define tax rate providers go to **Configuration → Tax providers**.
+ট্যাক্স রেট প্রদানকারীদের সংজ্ঞায়িত করতে **কনফিগারেশন → ট্যাক্স প্রদানকারী** এ যান।
 
-![Tax providers](_static/index/tax-providers.png)
+![কর প্রদানকারী](_static/index/tax-providers.png)
 
-Only one tax rate provider can be used for tax calculation. Adding new tax providers is recommended only for advanced users.
-To select the default tax provider click the **Mark as primary provider** button.
+কর গণনার জন্য শুধুমাত্র একটি কর হার প্রদানকারী ব্যবহার করা যেতে পারে। নতুন কর প্রদানকারী যোগ করা শুধুমাত্র উন্নত ব্যবহারকারীদের জন্য সুপারিশ করা হয়।
+ডিফল্ট কর প্রদানকারী নির্বাচন করতে **প্রাথমিক প্রদানকারী হিসেবে চিহ্নিত করুন** বাটনে ক্লিক করুন।
 
 > [!TIP]
 > 
-> By default, there are several tax providers available in nopCommerce, but you can find more tax providers in the nopCommerce [marketplace](https://www.nopcommerce.com/marketplace).
+> ডিফল্টরূপে, নপকমার্স-এ বেশ কিছু কর প্রদানকারী পাওয়া যায়, কিন্তু নপকমার্স [মার্কেটপ্লেস](https://www.nopcommerce.com/marketplace) এ আপনি আরো কর প্রদানকারী খুঁজে পেতে পারেন।
 
-The configuration of tax providers is described in the following chapters:
-* [Avalara tax provider](xref:en/getting-started/configure-taxes/tax-providers/avalara)
-* [Manual (fixed or by country/state/zip)](xref:en/getting-started/configure-taxes/tax-providers/manual)
+কর প্রদানকারীদের কনফিগারেশন নিম্নলিখিত অধ্যায়ে বর্ণিত হয়েছে:
+* [আভালারা কর প্রদানকারী](xref:bn/get-start/configure-tax/tax-providers/avalara)
+ম্যানুয়াল

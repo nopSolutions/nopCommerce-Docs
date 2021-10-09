@@ -1,84 +1,94 @@
 ---
-title: Avalara
-uid: en/getting-started/configure-taxes/tax-providers/avalara
+title: অ্যাভালারা
+uid: bn/getting-started/configure-taxes/tax-providers/avalara
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Avalara tax provider
+# অ্যাভালারা ট্যাক্স প্রদানকারী
 
-## Connect to AvaTax
+## অ্যাভাট্যাক্স এর সাথে সংযোগ করুন
 
-After installing the AvaTax integration you need to configure the integration.
-
-> [!NOTE]
-> 
-> Be sure that the plugin is installed and checked as "Enabled" (**Configuration → Local plugins**). To enable the plugin click **Edit** and check **Is enabled** checkbox.
-
-![Local plugins](_static/avalara/local-plugins.png)
-
-To configure Avalara tax provider go to **Configuration → Tax providers**.
-
-![Tax Providers](_static/avalara/tax-providers.png)
-
-Click **Mark as primary provider**.
-
-Click **Configure** beside the Avalara tax provider option in the list.
-
-Follow the instructions on top of the page, each field's function is annotated when "?" is hovered on.
-
-![Configuration](_static/avalara/avalara-configuration.jpg)
-
-1. Configure your Avalara Tax credentials:
-    * **Account ID**: provided during your AvaTax account activation process.
-    * **License key**: provided during your AvaTax account activation process.
-    * **Company**: company profile identifier in the AvaTax admin console.
-    * **Use sandbox** is enabled to commit test transaction.
-    * **Commit transactions** is enabled to commit transactions right after they are saved.
-    * **Validate address** is enabled to validate address entered.
-    * **Tax origin address** is used for tax requests to Avalara services.
-    * **Enable logging** enables logging of all requests to Avalara services.
-2. **Save** and click the **Test connection** button to perform test connection.
-3. To perform the *test tax calculation* fill the address form on the bottom of the page (please note, that nopCommerce Avalara tax plugin commits transactions to US addresses only) and click **Test tax transaction**.
-
-## Assign Avalara AvaTax code
-
-Navigate to **Configuration → Tax categories**.
-
-At the top right of the page you will see the branded **Avalara tax codes** button. Clicking it the drop-down menu will show the following menu:
-
-![Tax categoties](_static/avalara/tax-categories.jpg)
-
-* **Export tax codes to Avalara** – exports all codes from your store to your Avalara backend.
-* **Import Avalara system tax codes** – imports all Avalara tax codes from Avalara.
-* **Delete Avalara system tax codes** – deletes all codes exported from Avalara.
-
-## Assign an Avalara tax exempt category to a customer
-
-1. Click **Customers → Customers → Edit customer**
-1. Find the highlighted **Entity use code** field and select the field, select the appropriate customer type code.
-
-    ![Customer details](_static/avalara/customer-entity-use-code.png)
-1. Click **Save**
+অ্যাভাট্যাক্স ইন্টিগ্রেশন ইনস্টল করার পরে আপনাকে ইন্টিগ্রেশন কনফিগার করতে হবে।
 
 > [!NOTE]
 > 
-> It is not necessary to check **Tax exempt** checkbox: assigning **Entity use code** is enough.
+> নিশ্চিত করুন যে প্লাগইনটি "সক্রিয়" (**কনফিগারেশন → স্থানীয় প্লাগইন**) হিসাবে ইনস্টল এবং চেক করা আছে। প্লাগিনটি সক্ষম করতে **সম্পাদনা করুন** ক্লিক করুন এবং **সক্রিয় আছে** চেকবক্সটি চেক করুন।
 
-## Assign an AvaTax system tax code to an item
+![স্থানীয় প্লাগইন](_static/avalara/local-plugins.png)
 
-1. Go to **Catalog → Products**.
-1. Select a product to open the product details screen and click **Edit**.
-1. On the product details screen, in **Price** panel assign appropriate code from drop-down list in **Tax category** field.
+অ্যাভালারা ট্যাক্স প্রদানকারী কনফিগার করতে যান **কনফিগারেশন → ট্যাক্স প্রদানকারী**।
 
-    ![Product tax category](_static/avalara/product-tax-category.png)
-1. **IMPORTANT:** Ensure that **SKU** is entered, for better navigation in Avalara backend.
-1. Click **Save**.
-1. To see a listing of all available AvaTax system tax codes, visit [http://taxcode.avatax.avalara.com](http://taxcode.avatax.avalara.com).
+![ট্যাক্স প্রদানকারী](_static/avalara/tax-providers.png)
 
-## Validate a customer address
+**প্রাথমিক প্রদানকারী হিসাবে চিহ্নিত করুন** ক্লিক করুন।
 
-1. Ensure **Validate address** checkbox is on, in that case the address will be validated automatically.
-1. User will see the following screen:
+তালিকায় অ্যাভালারা ট্যাক্স প্রদানকারী বিকল্পের পাশে **কনফিগার করুন** ক্লিক করুন।
 
-    ![Validate address](_static/avalara/validate-customer-address.png)
+পৃষ্ঠার উপরে নির্দেশাবলী অনুসরণ করুন, প্রতিটি ক্ষেত্রের ফাংশন টীকা করা হয় যখন "?" উপর ঝুলছে।
+
+![কনফিগারেশন ](_static/avalara/avalara-configuration.jpg)
+
+১। আপনার অ্যাভালারা ট্যাক্স শংসাপত্র কনফিগার করুন:
+
+* **অ্যাকাউন্ট আইডি**: আপনার অ্যাভাট্যাক্স অ্যাকাউন্ট সক্রিয়করণ প্রক্রিয়ার সময় প্রদান করা হয়েছে।
+* **লাইসেন্স কী**: আপনার অ্যাভাট্যাক্স অ্যাকাউন্ট সক্রিয়করণ প্রক্রিয়ার সময় প্রদান করা হয়েছে।
+* **কোম্পানি**: অ্যাভাট্যাক্স অ্যাডমিন কনসোলে কোম্পানির প্রোফাইল আইডেন্টিফায়ার।
+* **ব্যবহার করুন স্যান্ডবক্স** পরীক্ষা লেনদেন করতে সক্ষম।
+* **কমেন্ট লেনদেন** সেভ করার পরেই লেনদেন করতে সক্ষম হয়।
+* **ঠিকানা যাচাই করুন** প্রবেশ করা ঠিকানা যাচাই করতে সক্ষম।
+* **ট্যাক্স মূল ঠিকানা** অ্যাভালারা পরিষেবাগুলিতে ট্যাক্স অনুরোধের জন্য ব্যবহৃত হয়।
+* **লগিং সক্ষম করুন** অ্যাভালারা পরিষেবাগুলিতে সমস্ত অনুরোধ লগিং সক্ষম করে।
+
+২। **সেভ করুন** এবং টেস্ট কানেকশন করতে **টেস্ট কানেকশন** বাটনে ক্লিক করুন।
+
+৩। পরীক্ষা কর গণনা করার জন্য*পৃষ্ঠার নীচে ঠিকানা ফর্মটি পূরণ করুন (দয়া করে মনে রাখবেন, নপকমার্স অ্যাভালারা ট্যাক্স প্লাগইন শুধুমাত্র মার্কিন ঠিকানায় লেনদেন করে) এবং **পরীক্ষা কর লেনদেন** ক্লিক করুন।
+
+## অ্যাভালারা অ্যাভাট্যাক্স কোড বরাদ্দ করুন
+
+**কনফিগারেশন → ট্যাক্স বিভাগ** এ নেভিগেট করুন।
+
+পৃষ্ঠার উপরের ডানদিকে আপনি ব্র্যান্ডেড **অ্যাভালারা ট্যাক্স কোড** বাটন দেখতে পাবেন। এটিতে ক্লিক করলে ড্রপ-ডাউন মেনু নিম্নলিখিত মেনুটি দেখাবে:
+
+![কর বিভাগ](_static/avalara/tax-categories.jpg)
+
+* **অ্যাভালারা রপ্তানি কর কোডগুলি** - আপনার দোকান থেকে আপনার কোডগুলি আপনার অ্যাভালারা ব্যাকএন্ডে রপ্তানি করে।
+* **আমদানি করা অ্যাভালারা সিস্টেম ট্যাক্স কোড** - সব অ্যাভালারা ট্যাক্স কোড আমদানি করে।
+* **মুছে দিন অ্যাভালারা সিস্টেম ট্যাক্স কোড** - অ্যাভালারা থেকে রপ্তানি করা সব কোড মুছে দেয়।
+
+## একজন গ্রাহককে একটি করদাতাদের কর ছাড়ের বিভাগ নির্ধারণ করুন
+
+১। ক্লিক করুন **গ্রাহক → গ্রাহক সম্পাদনা করুন**।
+
+২। হাইলাইট করা **সত্তা ব্যবহার কোড** ক্ষেত্র খুঁজুন এবং ক্ষেত্র নির্বাচন করুন, উপযুক্ত গ্রাহক টাইপ কোড নির্বাচন করুন।
+
+![কাস্টমার বিস্তারিত](_static/avalara/customer-entity-use-code.png)
+
+৩। **সেভ** ক্লিক করুন
+
+> [!NOTE]
+>
+> **ট্যাক্স ছাড়** চেকবক্স চেক করার প্রয়োজন নেই: **সত্তা ব্যবহার কোড** বরাদ্দ করা যথেষ্ট।
+
+## একটি আইটেমের জন্য একটি অ্যাভাটপ্লেস সিস্টেম ট্যাক্স কোড বরাদ্দ করুন
+
+১। **ক্যাটালগ → পণ্য** এ যান।
+
+২। পণ্যের বিবরণ পর্দা খুলতে একটি পণ্য নির্বাচন করুন এবং **সম্পাদনা করুন** ক্লিক করুন।
+
+৩। পণ্যের বিবরণ স্ক্রিনে, **মূল্য** প্যানেলে **ট্যাক্স বিভাগ** ক্ষেত্রের ড্রপ-ডাউন তালিকা থেকে উপযুক্ত কোড বরাদ্দ করুন।
+
+![পণ্য কর বিভাগ](_static/avalara/product-tax-category.png)
+
+১। **গুরুত্বপূর্ণ:** নিশ্চিত করুন যে **এসকেইউ** প্রবেশ করা হয়েছে, ভাল নেভিগেশনের জন্য অ্যাভালারা ব্যাকএন্ডে।
+
+২। ক্লিক করুন **সংরক্ষণ করুন**।
+
+৩। সমস্ত উপলব্ধ অ্যাভালটেস সিস্টেম ট্যাক্স কোডগুলির একটি তালিকা দেখতে, [http://taxcode.avatax.avalara.com](http://taxcode.avatax.avalara.com) দেখুন।
+
+## গ্রাহকের ঠিকানা যাচাই করুন
+
+১। নিশ্চিত করুন **ঠিকানা যাচাই করুন** চেকবক্স চালু আছে, সেক্ষেত্রে ঠিকানাটি স্বয়ংক্রিয়ভাবে যাচাই করা হবে।
+
+২। ব্যবহারকারী নিম্নলিখিত পর্দা দেখতে পাবেন:
+![ঠিকানা যাচাই করুন](_static/avalara/validate-customer-address.png)
