@@ -108,7 +108,7 @@
           name: শিপিং সেটিংস
           href: getting-started/configure-shipping/shipping-settings.md
         -
-          name: Shipping providers
+          name: শিপিং প্রদানকারী
           href: getting-started/configure-shipping/shipping-providers/index.md
           items:
             -
