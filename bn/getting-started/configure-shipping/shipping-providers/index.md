@@ -1,22 +1,22 @@
 ---
-title: Shipping providers
-uid: en/getting-started/configure-shipping/shipping-providers/index
+title: শিপিং প্রদানকারী
+uid: bn/getting-started/configure-shipping/shipping-providers/index
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Shipping providers
+# শিপিং প্রদানকারী
 
-If you sell shippable products, you will need to set up shipping methods for your store to deliver orders to customers. You can either define your own shipping methods or use the pre-defined shipping methods provided by popular carriers, such as UPS and Shipstation. nopCommerce has preinstalled shipment plugins connecting the platform with leading shipping providers, in addition to inbuilt tools for complex shipping calculations, such as shipping by weight or by total and fixed rate shipping.
+আপনি যদি শিপেবল পণ্য বিক্রি করেন, তাহলে গ্রাহকদের অর্ডার দেওয়ার জন্য আপনাকে আপনার দোকানের জন্য শিপিং পদ্ধতি সেট করতে হবে। আপনি হয় আপনার নিজস্ব শিপিং পদ্ধতিগুলি সংজ্ঞায়িত করতে পারেন অথবা জনপ্রিয় ক্যারিয়ার, যেমন ইউপিএস এবং শিপস্টেশন দ্বারা প্রদত্ত পূর্বনির্ধারিত শিপিং পদ্ধতি ব্যবহার করতে পারেন। নপকমার্স- এ শিপমেন্ট প্লাগইনগুলিকে প্রি -ইন্সটল করা আছে যা প্ল্যাটফর্মকে নেতৃস্থানীয় শিপিং প্রদানকারীদের সাথে সংযুক্ত করে, জটিল শিপিং গণনার জন্য অন্তর্নির্মিত সরঞ্জামগুলি যেমন ওজন দ্বারা বা মোট এবং নির্দিষ্ট হারের শিপিংয়ের মাধ্যমে।
 
 > [!TIP]
 > 
-> By default, there are several shipping providers available in nopCommerce, but you can find more shipping providers in the nopCommerce [marketplace](https://www.nopcommerce.com/marketplace).
+> ডিফল্টরূপে, নপকমার্স-এ বেশ কিছু শিপিং প্রদানকারী পাওয়া যায়, কিন্তু আপনি নপকমার্স [মার্কেটপ্লেস](https://www.nopcommerce.com/marketplace) এ আরো শিপিং প্রদানকারী খুঁজে পেতে পারেন।
 
-If you decide to define and use your own shipping methods, the shipping rates for these methods should be entered manually. If you decide to use the shipping methods provided by the carrier companies like UPS or Shipstation, the shipping rates for these methods will need to be obtained from the respective carrier companies.
+যদি আপনি আপনার নিজের শিপিং পদ্ধতিগুলি সংজ্ঞায়িত এবং ব্যবহার করার সিদ্ধান্ত নেন, তাহলে এই পদ্ধতিগুলির জন্য শিপিং হারগুলি ম্যানুয়ালি প্রবেশ করা উচিত। আপনি যদি ইউপিএস বা শিপস্টেশনের মতো ক্যারিয়ার কোম্পানি দ্বারা প্রদত্ত শিপিং পদ্ধতিগুলি ব্যবহার করার সিদ্ধান্ত নেন, তাহলে এই পদ্ধতিগুলির জন্য শিপিং রেট সংশ্লিষ্ট ক্যারিয়ার কোম্পানিগুলির কাছ থেকে পেতে হবে।
 
-All shipment options are implemented as plugins and can be found and installed in *Local plugins* section (**Configuration → Plugins → Local plugins**).
+সমস্ত চালানের বিকল্পগুলি প্লাগইন হিসাবে প্রয়োগ করা হয় এবং*স্থানীয় প্লাগইন*বিভাগে (** কনফিগারেশন → প্লাগিনস → স্থানীয় প্লাগইন **) পাওয়া যায় এবং ইনস্টল করা যায়।
 
-Learn how to set up the required shipment options in the following chapters:
-* [Manual (fixed or by weight and by total)](xref:en/getting-started/configure-shipping/shipping-providers/manual)
-* [UPS](xref:en/getting-started/configure-shipping/shipping-providers/ups)
+নিম্নলিখিত অধ্যায়গুলিতে প্রয়োজনীয় চালানের বিকল্পগুলি কীভাবে সেট আপ করবেন তা শিখুন:
+* [ম্যানুয়াল (স্থির বা ওজন দ্বারা এবং মোট)](xref:bn/get-start/configure-shipping/shipping-providers/manual)
+* [ইউপিএস](xref:bn/get-start/configure-shipping/shipping-providers/ups)

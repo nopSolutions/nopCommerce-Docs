@@ -1,74 +1,75 @@
 ---
-title: Shipping settings
-uid: en/getting-started/configure-shipping/shipping-settings
+title: শিপিং সেটিংস
+uid: bn/getting-started/configure-shipping/shipping-settings
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Shipping settings
+# শিপিং সেটিংস
 
-This chapter describes how to set up the shipping details of a store. Besides the location and warehouses set, there are other things which comprise good logistics.
+এই অধ্যায়ে বর্ণনা করা হয়েছে কিভাবে একটি দোকানের শিপিংয়ের বিবরণ সেট করা যায়। অবস্থান এবং গুদাম সেট ছাড়াও, অন্যান্য জিনিস আছে যা ভাল রসদ অন্তর্ভুক্ত।
 
-To manage shipping settings go to **Configuration → Settings → Shipping settings**.
+শিপিং সেটিংস পরিচালনা করতে **কনফিগারেশন → সেটিংস → শিপিং সেটিংস** এ যান।
 
-Define your shipping settings in the *Common* panel the following way:
+নিম্নলিখিত পদ্ধতিতে *সাধারণ* প্যানেলে আপনার শিপিং সেটিংস সংজ্ঞায়িত করুন:
 
-![Shipping Settings](_static/shipping-settings/shipping-settings.jpg)
+![শিপিং সেটিংস](_static/shipping-settings/shipping-settings.jpg)
 
-* Check **Estimate shipping enabled (cart page)** to display estimate shipping information based on customer's shipping address on the shopping cart page. See the screenshot below.
-* Check **Estimate shipping enabled (product page)** to display estimate shipping information based on customer's shipping address on the product details page. See the screenshot below.
+* শপিং কার্ট পৃষ্ঠায় গ্রাহকের শিপিং ঠিকানার উপর ভিত্তি করে **আনুমানিক শিপিং তথ্য প্রদর্শনের জন্য** আনুমানিক শিপিং সক্ষম (কার্ট পৃষ্ঠা) চেক করুন। নিচের স্ক্রিনশট দেখুন।
+* চেক করুন **আনুমানিক শিপিং সক্ষম (পণ্য পৃষ্ঠা)** পণ্যের বিবরণ পৃষ্ঠায় গ্রাহকের শিপিং ঠিকানার ভিত্তিতে আনুমানিক শিপিং তথ্য প্রদর্শন করতে। নিচের স্ক্রিনশট দেখুন।
 
-![Estimate shipping](_static/shipping-settings/estimate-shipping.png)
+![অনুমান শিপিং](_static/shipping-settings/estimate-shipping.png)
 
-* Select the **"Pick up in store" enabled** to display the pickup in store option during checkout at the shipping address step. Users will see the following screen:
+* শিপিং অ্যাড্রেস ধাপে চেকআউটের সময় পিকআপ ইন স্টোর বিকল্পটি প্রদর্শন করতে **"পিক আপ ইন স্টোর" সক্ষম** নির্বাচন করুন। ব্যবহারকারীরা নিম্নলিখিত স্ক্রিন দেখতে পাবেন:
 
-![Shipping Address](_static/shipping-settings/shipping-address.png) ![Pickup Point Address](_static/shipping-settings/Pickup-Point-address.png)
+![শিপিং ঠিকানা](_static/shipping-settings/shipping-address.png) ![পিকআপ পয়েন্ট ঠিকানা](_static/shipping-settings/Pickup-Point-address.png)
 
-* Tick the **Ignore additional shipping charge for pick up in store** checkbox if needed.
-* Choose to **Display pickup points on the map** if you want to display them on the Google Maps. Customers should not enter a shipping address and choose a shipping method when this option is selected.
+* প্রয়োজনে **দোকানে তোলার জন্য অতিরিক্ত শিপিং চার্জ উপেক্ষা করুন** চেকবক্সে টিক দিন।
+* যদি আপনি গুগল মানচিত্রে তাদের প্রদর্শন করতে চান তাহলে মানচিত্রে **পিকআপ পয়েন্ট প্রদর্শন করুন** বেছে নিন। এই বিকল্পটি নির্বাচিত হলে গ্রাহকদের একটি শিপিং ঠিকানা লিখতে হবে না এবং একটি শিপিং পদ্ধতি বেছে নিতে হবে।
 
 > [!Note]
 >
-> You can also specify a fee for the 'Pick up in store' option. To do this go to **Configuration → Shipping → Pickup points** and configure the appropriate pickup point provider. Learn more here: [Pickup points](xref:en/getting-started/configure-shipping/advanced-configuration/pickup-points).
+> আপনি 'পিক আপ ইন স্টোর' বিকল্পের জন্য একটি ফি নির্দিষ্ট করতে পারেন। এটি করার জন্য **কনফিগারেশন → শিপিং → পিকআপ পয়েন্ট** এ যান এবং উপযুক্ত পিকআপ পয়েন্ট প্রদানকারীকে কনফিগার করুন। এখানে আরো জানুন: [পিকআপ পয়েন্ট](xref:bn/getting-start/configure-shipping/advanced-configuration/pickup-points)।
 
-* Tick **Free shipping over 'x'**, to enable free shipping for orders over a certain total amount. The following field is then displayed, enabling you to define the value of 'x'.
-* In the **Value of 'x'** field, enter the value over which all orders with a total greater than this will qualify for free shipping.
-* **Calculate 'x' including tax**. If it is not ticked, the value is calculated excluding tax.
-* Tick **Use warehouse location** to use it when requesting shipping rates. This is useful when you ship from multiple warehouses.
-* Tick **Consider associated products dimensions and weight** to consider associated products dimensions and weight on shipping, uncheck for example if the main product already includes them.
+* নির্দিষ্ট পরিমাণের উপর অর্ডারের জন্য বিনামূল্যে শিপিং সক্ষম করতে, 'ক' **এর উপর ফ্রি শিপিং** টিক করুন। নিম্নলিখিত ক্ষেত্রটি প্রদর্শিত হয়, যা আপনাকে 'ক' এর মান নির্ধারণ করতে সক্ষম করে।
+* **'ক' ক্ষেত্রের মানটিতে**, সেই মানটি প্রবেশ করান, যার উপরে এর চেয়ে বেশি পরিমাণের সমস্ত অর্ডার বিনামূল্যে শিপিংয়ের যোগ্যতা অর্জন করবে।
+* **ট্যাক্স সহ 'ক' গণনা করুন**। যদি এটি টিক করা না হয়, তাহলে কর বাদে মান গণনা করা হয়।
+* শিপিং রেটের অনুরোধ করার সময় এটি ব্যবহার করতে **গুদামের অবস্থান ব্যবহার করুন** টিক দিন। যখন আপনি একাধিক গুদাম থেকে জাহাজ পাঠান তখন এটি কার্যকর।
+* টিক করুন **সংশ্লিষ্ট পণ্যের মাত্রা এবং ওজন বিবেচনা করুন** সংযুক্ত পণ্যের মাত্রা এবং শিপিংয়ে ওজন বিবেচনা করুন, উদাহরণস্বরূপ যদি প্রধান পণ্য ইতিমধ্যেই সেগুলি অন্তর্ভুক্ত করে তবে আনচেক করুন।
 
-Define your shipping settings in the *Notifications* panel the following way:
+নিম্নলিখিত পদ্ধতিতে *বিজ্ঞপ্তি* প্যানেলে আপনার শিপিং সেটিংস সংজ্ঞায়িত করুন:
 
-* Tick **Notify customer about shipping from multiple locations** if required. This is useful when you ship from multiple warehouses.
-* Tick **Display shipment events (customers)**, to enable customers to view shipment events on their shipment details page. 
+* টিক করুন **গ্রাহককে একাধিক স্থান থেকে শিপিং সম্পর্কে অবহিত করুন** যদি প্রয়োজন হয়। যখন আপনি একাধিক গুদাম থেকে জাহাজ পাঠান তখন এটি কার্যকর।
+* টিপ করুন **ডিসপ্লে শিপমেন্ট ইভেন্ট (গ্রাহক)**, গ্রাহকদের তাদের চালানের বিবরণ পৃষ্ঠায় শিপমেন্ট ইভেন্টগুলি দেখতে সক্ষম করতে।
 
-	> [!NOTE]
-	>
-	>	Note: to be enabled, this feature must be supported by a shipment computation method.
+> [!NOTE]
+>
+>দ্রষ্টব্য: সক্ষম হওয়ার জন্য, এই বৈশিষ্ট্যটি একটি চালান গণনা পদ্ধতি দ্বারা সমর্থিত হতে হবে।
 
-* Tick **Display shipment events (store owners)**, to enable store owners to view shipment events on their shipment details page.
-	> [!NOTE]
-	>
-	>	Note: to be enabled, this feature must be supported by a shipment computation method as well.
+* টিপ করুন **ডিসপ্লে শিপমেন্ট ইভেন্ট (স্টোর মালিক)**, স্টোর মালিকদের তাদের চালানের বিবরণ পৃষ্ঠায় শিপমেন্ট ইভেন্টগুলি দেখতে সক্ষম করতে।
 
-Then define the *checkout* settings:
-* Check the **Hide shipping total if shipping not required** checkbox if you want to hide the *Shipping total* label if shipping is not required.
-* Check the **Ship to the same address** checkbox to display "ship to the same address" option during checkout ("billing address" step). In this case "shipping address" with appropriate options (e.g. pick up in store) will be skipped. 
-	
-	> [!NOTE]
-	>
-	> When using this setting make sure that all billing countries (**Configuration → Countries**) support shipping (**Allows shipping** checkbox ticked).
+> [!NOTE]
+>
+>দ্রষ্টব্য: সক্ষম হওয়ার জন্য, এই বৈশিষ্ট্যটি অবশ্যই একটি চালান গণনা পদ্ধতি দ্বারা সমর্থিত হতে হবে।
 
-* Tick **Bypass shipping method page** if there's only one shipping method available. This page will not be displayed during the checkout process.
+তারপর *চেকআউট* সেটিংস সংজ্ঞায়িত করুন:
 
+* চেক করুন **শিপিং মোট লুকান যদি শিপিং প্রয়োজন না হয়** চেকবক্স যদি আপনি শিপিংয়ের প্রয়োজন না হয় তবে *শিপিং মোট* লেবেল লুকিয়ে রাখতে চান।
+* চেকআউটের সময় **"একই ঠিকানায় শিপিং** চেকবক্স" একই ঠিকানায় জাহাজ "বিকল্পটি প্রদর্শন করুন (" বিলিং ঠিকানা "ধাপ)। এই ক্ষেত্রে যথাযথ বিকল্প সহ "শিপিং ঠিকানা" বাদ দেওয়া হবে।
 
-Define the *shipping origin details*:
+> [!NOTE]
+>
+> এই সেটিংটি ব্যবহার করার সময় নিশ্চিত করুন যে সমস্ত বিলিং দেশ (**কনফিগারেশন → দেশ**) শিপিং সমর্থন করে (**শিপিংয়ের অনুমতি দেয়** চেকবক্সে টিক দেওয়া আছে)।
 
-* Select the **Country**.
-* Select the **State/province**.
-* Define the **County/region**.
-* Enter the required **City**.
-* Enter the required **Address 1**.
-* Enter the required **Zip/postal code**.
+**বাইপাস শিপিং পদ্ধতি পৃষ্ঠায় টিক দিন** যদি শুধুমাত্র একটি শিপিং পদ্ধতি পাওয়া যায়। চেকআউট প্রক্রিয়ার সময় এই পৃষ্ঠাটি প্রদর্শিত হবে না।
 
-Click **Save**.
+*শিপিং মূল বিবরণ* সংজ্ঞায়িত করুন:
+
+* **দেশ** নির্বাচন করুন।
+* **রাজ্য/প্রদেশ** নির্বাচন করুন।
+* **কাউন্টি/অঞ্চল** সংজ্ঞায়িত করুন।
+* প্রয়োজনীয় **সিটি** লিখুন।
+* প্রয়োজনীয় **ঠিকানা 1** লিখুন।
+* প্রয়োজনীয় **জিপ/পোস্টাল কোড লিখুন**।
+
+**সেভ** ক্লিক করুন।

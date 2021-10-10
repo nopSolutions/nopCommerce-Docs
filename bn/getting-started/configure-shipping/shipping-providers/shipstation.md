@@ -1,30 +1,34 @@
 ---
-title: ShipStation
-uid: en/getting-started/configure-shipping/shipping-providers/shipstation
+title: শিপস্টেশন
+uid: bn/getting-started/configure-shipping/shipping-providers/shipstation
 author: git.mariannk, git.skoshelev
+contributors: git.MDRashedKhanMenon
 ---
 
-# ShipStation
+# শিপস্টেশন
 
-To use **ShipStation** integration plugin please follow these steps:
+**শিপস্টেশন** ইন্টিগ্রেশন প্লাগইন ব্যবহার করতে দয়া করে এই পদক্ষেপগুলি অনুসরণ করুন:
 
-1. Register or login on the [ShipStation](https://www.shipstation.com/?ref=partner-nopcommerce&utm_campaign=partner-referrals&utm_source=nopcommerce&utm_medium=partner-referral) site.
-1. In the nopCommerce admin area go to **Configuration → Shipping → Shipping providers**. 
-![Shipping rate methods](_static/shipstation/shipping-rate-methods.jpg)
-    * Enable this method, as follows:
-        * In the ShipStation row, click the **Edit** button.
-        * In the **Is active** column, check the checkbox.
-        * Click the **Update** button. The false option becomes **true**.
-    * Click the **Configure** button beside the ShipStation option in the list. The *Configure - ShipStation* window is displayed, as follows: ![Configure page](_static/shipstation/shipstation-configure.jpg)
-1. Enter the following information obtained from the ShipStation provider:
-    * The **API Key** and the **API Secret**: this data is used to get a list of available carriers. You may get them on the *Settings - API Settings* page on the ShipStation site.
-    > [!Note]
-    > If you do not plan to use the automatic determination of the shipping cost, then entering this data is not necessary.
-    > But in this case, the plugin will stop working as a provider of shipping methods and you will need to make sure that there is another active plugin the same type.
+১।[শিপস্টেশন](https://www.shipstation.com/?ref=partner-nopcommerce&utm_campaign=partner-referrals&utm_source=nopcommerce&utm_medium=partner-referral) সাইটে নিবন্ধন করুন বা লগইন করুন।
 
-    * Create a **Username** and **Password**, enter them into the settings form (the ShipStation form and the nopCommerce form). This data is necessary for the safe transfer of data between your server and the ShipStation server. Always keep them secret.
+২। নপকমার্স এডমিন এলাকায় **কনফিগারেশন → শিপিং → শিপিং প্রদানকারী** এ যান।
+![শিপিং রেট পদ্ধতি](_static/shipstation/shipping-rate-methods.jpg)
+* এই পদ্ধতিটি সক্রিয় করুন, নিম্নরূপ:
+* শিপস্টেশন সারিতে, **সম্পাদনা** বাটনে ক্লিক করুন।
+* **সক্রিয়** কলামে, চেকবক্স চেক করুন।
+* **আপডেট** বাটনে ক্লিক করুন। মিথ্যা অপশনটি **সত্য** হয়ে যায়।
+* তালিকার শিপস্টেশন বিকল্পের পাশে **কনফিগার করুন** বাটনে ক্লিক করুন। *কনফিগার - শিপস্টেশন* উইন্ডোটি নিম্নরূপ প্রদর্শিত হয়: 
+![কনফিগার পৃষ্ঠা](_static/shipstation/shipstation-configure.jpg)
+
+৩। শিপস্টেশন প্রদানকারীর কাছ থেকে প্রাপ্ত নিম্নলিখিত তথ্যগুলি প্রবেশ করান:
+    **এপিআই কী** এবং **এপিআই সিক্রেট**: এই তথ্যটি উপলব্ধ ক্যারিয়ারের একটি তালিকা পেতে ব্যবহৃত হয়। আপনি সেগুলি শিপস্টেশন সাইটে *সেটিংস - এপিআই সেটিংস* পৃষ্ঠায় পেতে পারেন।
+    > [!NOTE]
+    > যদি আপনি শিপিং খরচ স্বয়ংক্রিয়ভাবে নির্ধারণ করার পরিকল্পনা না করেন, তাহলে এই ডেটা প্রবেশ করার প্রয়োজন নেই।
+    > কিন্তু এই ক্ষেত্রে, প্লাগইনটি শিপিং পদ্ধতি প্রদানকারী হিসাবে কাজ করা বন্ধ করে দেবে এবং আপনাকে নিশ্চিত করতে হবে যে একই ধরনের আরেকটি সক্রিয় প্লাগইন আছে।
+
+    * একটি **ব্যবহারকারীর নাম** এবং **পাসওয়ার্ড** তৈরি করুন, সেগুলি সেটিংস ফর্ম (শিপস্টেশন ফর্ম এবং নপকমার্স ফর্ম) এ প্রবেশ করুন। আপনার সার্ভার এবং শিপস্টেশন সার্ভারের মধ্যে ডেটা নিরাপদ স্থানান্তরের জন্য এই ডেটা প্রয়োজন। সবসময় তাদের গোপন রাখুন।
 
     > [!Important] 
-    > Do not use the ShipStation or nopCommerce user credentials for this fields.
+    > এই ক্ষেত্রগুলির জন্য শিপস্টেশন বা নপকমার্স ব্যবহারকারীর শংসাপত্র ব্যবহার করবেন না।
 
-    * Check the **Pass dimensions** checkbox if sending dimensions to the ShipStation server is needed. When this parameter is activated, the additional parameter **Packing type** appears. This parameter is responsible for the type of data sent. ![Packing type](_static/shipstation/packing-type.jpg)
+    *শিপস্টেশন সার্ভারে মাত্রা পাঠানোর প্রয়োজন হলে **পাসের মাত্রা** চেকবক্স চেক করুন। যখন এই প্যারামিটারটি সক্রিয় হয়, অতিরিক্ত প্যারামিটার **প্যাকিং টাইপ** উপস্থিত হয়। এই প্যারামিটারটি পাঠানো ডেটার ধরনের জন্য দায়ী। [প্যাকিং টাইপ](_static/shipstation/packing-type.jpg)

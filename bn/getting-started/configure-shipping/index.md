@@ -1,22 +1,22 @@
 ---
-title: Configure shipping
-uid: en/getting-started/configure-shipping/index
+title: শিপিং কনফিগার
+uid: bn/getting-started/configure-shipping/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Configure shipping
+# শিপিং কনফিগার
 
-This section will cover the configuration process of shipping and handling multiple warehouses in nopCommerce. It will include both manual shipping configuration and setting up shipping via API of individual shipping providers like UPS and Shipstation.
+এই বিভাগটি নপকমার্স-এ একাধিক গুদাম শিপিং এবং পরিচালনা করার কনফিগারেশন প্রক্রিয়াটি কভার করবে। এটি ম্যানুয়াল শিপিং কনফিগারেশন এবং ইউপিএস এবং শিপস্টেশনের মতো পৃথক শিপিং প্রদানকারীর এপিআই এর মাধ্যমে শিপিং সেটআপ উভয়ই অন্তর্ভুক্ত করবে।
 
-Please note that nopCommerce offers integration with third-party shipping services and optimizations. They can be found in the nopCommerce [marketplace](http://www.nopcommerce.com/marketplace) and in the [technology partners](http://www.nopcommerce.com/technology-partners) section.
+অনুগ্রহ করে মনে রাখবেন যে নপকমার্স তৃতীয় পক্ষের শিপিং পরিষেবা এবং অপ্টিমাইজেশনের সাথে ইন্টিগ্রেশন অফার করে। এগুলি নপকমার্স [মার্কেটপ্লেস](http://www.nopcommerce.com/marketplace) এবং [প্রযুক্তি অংশীদার](http://www.nopcommerce.com/technology-partners) বিভাগে পাওয়া যাবে।
 
-## See also
+## আরো দেখুন
 
-* [Shipping settings](xref:en/getting-started/configure-shipping/shipping-settings)
-* [Shipping providers](xref:en/getting-started/configure-shipping/shipping-providers/index)
-* [Warehouses](xref:en/getting-started/configure-shipping/advanced-configuration/warehouses)
-* [Dates and ranges](xref:en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges)
-* [Measures](xref:en/getting-started/configure-shipping/advanced-configuration/measures)
-* [Pickup points](xref:en/getting-started/configure-shipping/advanced-configuration/pickup-points)
-* [Countries, states](xref:en/getting-started/configure-shipping/advanced-configuration/countries-states)
+* [শিপিং সেটিংস](xref:bn/getting-start/configure-shipping/shipping-settings)
+* [শিপিং প্রদানকারী](xref:bn/getting-start/configure-shipping/shipping-providers/index)
+* [গুদাম](xref:bn/get-start/configure-shipping/advanced-configuration/warehouses)
+* [তারিখ এবং রেঞ্জ](xref:bn/getting-start/configure-shipping/advanced-configuration/তারিখ-এবং-রেঞ্জ)
+* [পরিমাপ](xref:bn/get-start/configure-shipping/advanced-configuration/પગલાં)
+* [পিকআপ পয়েন্ট](xref:bn/getting-start/configure-shipping/advanced-configuration/pickup-points)
+* [দেশ, রাজ্য](xref:bn/getting-start/configure-shipping/advanced-configuration/countries-states)

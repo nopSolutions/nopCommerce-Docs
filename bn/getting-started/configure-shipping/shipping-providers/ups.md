@@ -1,75 +1,76 @@
 ---
-title: UPS
-uid: en/getting-started/configure-shipping/shipping-providers/ups
+title: ইউপিএস
+uid: bn/getting-started/configure-shipping/shipping-providers/ups
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.MDRashedKhanMenon
 ---
 
-# UPS
+# ইউপিএস
 
-To access your account at UPS use a username, a password, and an **XML license number**, which you will be provided with after the registration process.
+ইউপিএস -এ আপনার অ্যাকাউন্ট অ্যাক্সেস করতে ব্যবহারকারীর নাম, একটি পাসওয়ার্ড এবং একটি **এক্সএমএল লাইসেন্স নম্বর** ব্যবহার করুন, যা আপনাকে নিবন্ধন প্রক্রিয়ার পরে প্রদান করা হবে।
 
-## Define the UPS Real Time Shipping Calculations
+## ইউপিএস রিয়েল টাইম শিপিং ক্যালকুলেশন নির্ধারণ করুন
 
-1. Create a UPS account by going to [https://www.ups.com/upsdeveloperkit?loc=en_US](https://www.ups.com/upsdeveloperkit?loc=en_US) to receive the following:
-    * Username ID
-    * Password
-    * XML access license number
+১। নিম্নলিখিতগুলি পেতে [https://www.ups.com/upsdeveloperkit?loc=en_USque(https://www.ups.com/upsdeveloperkit?loc=en_US) এ গিয়ে একটি UPS অ্যাকাউন্ট তৈরি করুন:
+    * ইউজার নেম আইডি
+    * পাসওয়ার্ড
+    * এক্সএমএল অ্যাক্সেস লাইসেন্স নম্বর
 
-1. In nopCommerce admin area go to **Configuration → Shipping → Shipping providers**. 
- ![Shipping rate methods](_static/ups/shipping-rate-methods.jpg)
-1. Enable this method, as follows:
-    * In the UPS (United Postal Service) row, click the **Edit** button.
-    * In the Is **active** column, check the checkmark.
-    * Click **Update**. The *false* option becomes *true*.
+২। নপকমার্স এডমিন এলাকায় **কনফিগারেশন → শিপিং → শিপিং প্রদানকারী** এ যান।
+ ![শিপিং রেট পদ্ধতি](_static/ups/shipping-rate-methods.jpg)
+৩। এই পদ্ধতিটি সক্রিয় করুন, নিম্নরূপ:
+    * ইউপিএস (ইউনাইটেড পোস্টাল সার্ভিস) সারিতে, **এডিট** বাটনে ক্লিক করুন।
+    * **সক্রিয়** কলামে, চেকমার্ক চেক করুন।
+    * **আপডেট** ক্লিক করুন। *মিথ্যা *বিকল্পটি *সত্য *হয়ে যায়।
 
-1. Click **Configure** beside the UPS (United Parcel Service) option in the list. 
-    The *Configure – UPS (United Parcel Service)* window is displayed, as follows: ![Configure page](_static/ups/ups-configure.jpg)
+৪। তালিকায় ইউপিএস (ইউনাইটেড পার্সেল সার্ভিস) বিকল্পের পাশে **কনফিগার করুন** ক্লিক করুন।
+   *কনফিগার-ইউপিএস (ইউনাইটেড পার্সেল সার্ভিস)* উইন্ডো প্রদর্শিত হয়, নিম্নরূপ: ![কনফিগার পৃষ্ঠা](_static/ups/ups-configure.jpg)
 
-1. Enter the following information obtained from the UPS provider:
-    * Tick the **Use sandbox** checkbox to use testing environment.
-    * Enter the **Account number** of the UPS provider.
-    * Enter the **Access Key** obtained from the provider.
-    * Enter your **Username** obtained from the provider.
-    * Enter the **Password** obtained from the provider
-    * Select your required **UPS Customer Classification**, as follows:
-        * Rates Associated With Shipper Number
-        * Daily Rates
-        * Retail Rates
-        * Regional Rates
-        * General List Rates
-        * Standard List Rates
-    * Select the required **UPS Pickup Type**, as follows:
-        * Daily Pickup
-        * Customer Counter
-        * One Time Pickup
-        * On Call Air
-        * Letter Center
-        * Air Service Center
-    * Select the required **UPS Packaging Type**, as follows:
-        * Unknown
-        * Letter
-        * Customer Supplied Package
-        * Tube
-        * P A K
-        * Express Box
-        * 10 kg Box
-        * 25 kg Box
-        * Pallet
-        * Small Express Box
-        * Medium Express Box
-        * Large Express Box
-    * Tick the **Insure package** checkbox, to indicate the package will be insured.
-    * Enter **Additional handling charge**. It is an additional fee to charge your customers.
-    * Select the **Carrier Services** you want to offer to your customers.
-    * Check to get rates for **Saturday Delivery enabled**.
-    * Select the **Packing type**, as follows:
-        * Pack by dimensions
-        * Pack by one item per package
-        * Pack by volume
-    * Tick the **Pass dimensions** checkbox, to pass package dimensions when requesting for rates.
-    * Select the **Weight type** - pounds or kilograms.
-    * Select the **Dimensions type** - inches or centimeters.
-    * Tick the **Tracing** checkbox, to record system tracing in the system log. The entire request and response XML will be logged (including AccessKey/Username, Password). Do not leave this enabled in a production environment.
+৫। ইউপিএস প্রদানকারীর কাছ থেকে প্রাপ্ত নিম্নলিখিত তথ্য লিখুন:
 
-    Click **Save**.
+* পরীক্ষার পরিবেশ ব্যবহার করতে **ব্যবহার করুন স্যান্ডবক্স** চেকবক্সে টিক দিন।
+	* ইউপিএস প্রদানকারীর **অ্যাকাউন্ট নম্বর** লিখুন।
+	* প্রদানকারীর কাছ থেকে প্রাপ্ত **অ্যাক্সেস কী** লিখুন।
+	* প্রদানকারীর কাছ থেকে প্রাপ্ত আপনার **ব্যবহারকারীর** নাম লিখুন।
+	* প্রদানকারীর কাছ থেকে প্রাপ্ত **পাসওয়ার্ড** লিখুন
+* আপনার প্রয়োজনীয় **ইউপিএস গ্রাহক শ্রেণীবিভাগ** নির্বাচন করুন, নিম্নরূপ:
+	* শিপার নম্বরের সাথে যুক্ত হার
+	* দৈনিক দর
+	* খুচরা মূল্য
+	* আঞ্চলিক হার
+	* সাধারণ তালিকা হার
+	* স্ট্যান্ডার্ড তালিকা হার
+* প্রয়োজনীয় **ইউপিএস পিকআপ টাইপ** নির্বাচন করুন, নিম্নরূপ:
+	* দৈনিক পিকআপ
+	* গ্রাহক কাউন্টার
+	* ওয়ান টাইম পিকআপ
+	* কল এয়ারে
+	* চিঠি কেন্দ্র
+	* বিমান পরিষেবা কেন্দ্র
+* প্রয়োজনীয় **ইউপিএস প্যাকেজিং টাইপ** নির্বাচন করুন, নিম্নরূপ:
+	* অজানা
+	* চিঠি
+	* গ্রাহক সরবরাহকৃত প্যাকেজ
+	* নল
+	* পি এ কে
+	* এক্সপ্রেস বক্স
+	* 10 কেজি বাক্স
+	* 25 কেজি বাক্স
+	* প্যালেট
+	* ছোট এক্সপ্রেস বক্স
+	* মাঝারি এক্সপ্রেস বক্স
+	* বড় এক্সপ্রেস বক্স
+	* প্যাকেজটি বীমা করা হবে তা নির্দেশ করতে **বীমা প্যাকেজ** চেকবক্সে টিক দিন।
+	* **অতিরিক্ত হ্যান্ডলিং চার্জ লিখুন** আপনার গ্রাহকদের চার্জ করার জন্য এটি একটি অতিরিক্ত ফি।
+	* **আপনি যে ক্যারিয়ার পরিষেবাগুলি** আপনার গ্রাহকদের দিতে চান তা নির্বাচন করুন।
+	* **শনিবার ডেলিভারি সক্ষম** এর জন্য রেট পেতে চেক করুন।
+* **প্যাকিং টাইপ** নির্বাচন করুন, নিম্নরূপ:
+	* মাত্রা অনুযায়ী প্যাক করুন
+	* প্রতি প্যাকেজে একটি আইটেম দ্বারা প্যাক করুন
+	* ভলিউম অনুযায়ী প্যাক করুন
+	* হারের জন্য অনুরোধ করার সময় প্যাকেজের মাত্রা পাস করতে **পাসের মাত্রা** চেকবক্সে টিক দিন।
+* **ওজন ধরন** - পাউন্ড বা কিলোগ্রাম নির্বাচন করুন।
+* **মাত্রা টাইপ** - ইঞ্চি বা সেন্টিমিটার নির্বাচন করুন।
+* সিস্টেম লগে সিস্টেম ট্রেসিং রেকর্ড করতে **ট্রেসিং** চেকবক্সে টিক দিন। সম্পূর্ণ অনুরোধ এবং প্রতিক্রিয়া XML লগ করা হবে (অ্যাক্সেস কী/ব্যবহারকারীর নাম, পাসওয়ার্ড সহ)। এটি একটি উত্পাদন পরিবেশে সক্ষম করবেন না।
+
+**সেভ** ক্লিক করুন।

@@ -1,206 +1,206 @@
 ﻿---
-title: Manual (fixed or by weight and by total)
-uid: en/getting-started/configure-shipping/shipping-providers/manual
+title: ম্যানুয়াল (স্থির বা ওজন এবং মোট দ্বারা)
+uid: bn/getting-started/configure-shipping/shipping-providers/manual
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Manual (fixed or by weight and by total)
+# ম্যানুয়াল (স্থির বা ওজন এবং মোট দ্বারা)
 
-Manual (fixed or by weight and by total) shipping allows setting fixed fees or calculating fees by weight and by total to all predefined shipping methods.
+ম্যানুয়াল (স্থির বা ওজন দ্বারা এবং মোট) শিপিং নির্দিষ্ট ফি নির্ধারণ করতে বা ওজন দ্বারা এবং মোট পূর্বনির্ধারিত শিপিং পদ্ধতিতে ফি গণনার অনুমতি দেয়।
 
-To see the example of how this method can be applied to your store please see the [Example](#example) section below.
+আপনার দোকানে এই পদ্ধতিটি কিভাবে প্রয়োগ করা যায় তার উদাহরণ দেখতে অনুগ্রহ করে নিচের [উদাহরণ](#example) বিভাগটি দেখুন।
 
-## Define the manual shipping provider
+## ম্যানুয়াল শিপিং প্রদানকারী সংজ্ঞায়িত করুন
 
-Go to **Configuration → Shipping → Shipping providers**. The *Shipping providers* window is displayed:
+**কনফিগারেশন → শিপিং → শিপিং প্রদানকারী** এ যান। *শিপিং প্রদানকারী* উইন্ডো প্রদর্শিত হয়:
 
-![Manual shipping methods](_static/manual/methods.jpg)
+![ম্যানুয়াল শিপিং পদ্ধতি](_static/manual/methods.jpg)
 
-Enable the manual shipping rate computation method, as follows:
+নিম্নরূপ ম্যানুয়াল শিপিং রেট গণনা পদ্ধতি সক্ষম করুন:
 
-* In the **Manual (fixed or by weight and by total)** row, click the **Edit** button.
-* In the **Is active** column, check the checkbox.
-* Click the **Update** button. The *false* option becomes *true*.
+* **ম্যানুয়াল (স্থির বা ওজন এবং মোট)** সারিতে, **সম্পাদনা** বাটনে ক্লিক করুন।
+* **সক্রিয়** কলামে, চেকবক্স চেক করুন।
+* **আপডেট** বাটনে ক্লিক করুন। *মিথ্যা* বিকল্পটি *সত্য *হয়ে যায়।
 
-Click the **Configure** button beside the Manual (fixed or by weight and by total) option in the list.
+তালিকার ম্যানুয়াল (স্থির বা ওজন এবং মোট) বিকল্পের পাশে **কনফিগার করুন** বাটনে ক্লিক করুন।
 
-You can switch *Fixed rate* shipping fee calculation to shipping *By weight/total* calculation by clicking button at the top of the page.
+আপনি *স্থির হার* শিপিং ফি গণনা শিপিংয়ে পরিবর্তন করতে পারেন *ওজন/মোট* গণনার মাধ্যমে পৃষ্ঠার উপরের বোতামে ক্লিক করুন।
 
-## Configure fixed rate
+## নির্দিষ্ট হার কনফিগার করুন
 
-![Manual configure](_static/manual/fixed-rate-configure.jpg)
+![ম্যানুয়াল কনফিগার](_static/manual/fixed-rate-configure.jpg)
 
-Click the **Edit** button beside a shipping method and enter the **Rate** and **Transit days** (if needed) for it.
+একটি শিপিং পদ্ধতির পাশে **এডিট** বাটনে ক্লিক করুন এবং এর জন্য **রেট** এবং **ট্রানজিট দিন** (প্রয়োজন হলে) লিখুন।
 
-Click **Update**.
+**আপডেট** ক্লিক করুন।
 
 > [!NOTE]
 > 
-> You can add/remove shipping methods in the *Shipping methods window*, accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png) on the top.
+>আপনি ![বোতাম](_static/manual/manual-shipping-manage-button.png) ক্লিক করে অ্যাক্সেস করা *শিপিং পদ্ধতি উইন্ডোতে* শিপিং পদ্ধতি যোগ/অপসারণ করতে পারেন এবং উপরে ক্লিক করে নির্বাচিত দেশগুলির জন্য কিছু পদ্ধতি সীমাবদ্ধ করতে পারেন! [বিধিনিষেধ](_static/manual/manual-shipping-restrictions.png) শীর্ষে।
 
-## Configure rate by weight/total
+## ওজন/মোট দ্বারা হার কনফিগার করুন
 
-![by weight](_static/manual/manual-shipping-by-weight-total.png)
+![ওজন দ্বারা](_static/manual/manual-shipping-by-weight-total.png)
 
-The **shipping by weight and by total** option allows setting different shipping fees based on a shipment weight and total. The ability to charge different fees depending on the weight and total of the shipment helps to keep the company's shipping costs down when heavy items are shipped, yet offer reasonable shipping costs to customers who purchase light products.
+**ওজন এবং মোট দ্বারা শিপিং** বিকল্প একটি চালানের ওজন এবং মোটের উপর ভিত্তি করে বিভিন্ন শিপিং ফি সেট করার অনুমতি দেয়। ওজন এবং চালানের মোটের উপর নির্ভর করে বিভিন্ন ফি চার্জ করার ক্ষমতা কোম্পানির শিপিং খরচ কম রাখতে সাহায্য করে যখন ভারী আইটেম পাঠানো হয়, তবুও হালকা পণ্য কেনা গ্রাহকদের যুক্তিসঙ্গত শিপিং খরচ অফার করে।
 
-Use formula **[additional fixed cost] + ([order total weight] - [lower weight limit]) &times; [rate per weight unit] + [order subtotal] &times; [charge percentage]** to calculate the fees, where:
+সূত্র ব্যবহার করুন **[অতিরিক্ত নির্দিষ্ট খরচ] + ([অর্ডার মোট ওজন] - [কম ওজন সীমা]] & বার; [ওজন প্রতি ইউনিট হার] + [অর্ডার সাবটোটাল] & বার; [চার্জ শতাংশ]** ফি গণনা করতে, যেখানে:
 
-* **additional fixed cost** - is the cost of the shipment in case the weight is under a certain level (lower weight limit).
-* **rate per weight unit** - is the cost of each weight unit above the lower weight limit.
-* **order subtotal and charge percentage** - are parameters for calculating the extra cost based on the order subtotal.
+* **অতিরিক্ত নির্দিষ্ট খরচ** - যদি ওজন একটি নির্দিষ্ট স্তরের (ওজন কম সীমা) এর অধীনে থাকে তাহলে চালানের খরচ।
+* **ওজন প্রতি ইউনিট হার** - কম ওজন সীমার উপরে প্রতিটি ওজন ইউনিটের খরচ।
+* **অর্ডার সাবটোটাল এবং চার্জ পার্সেন্ট** - অর্ডার সাবটোটালের উপর ভিত্তি করে অতিরিক্ত খরচ গণনার জন্য প্যারামিটার।
 
-For example, if you have the following shipping conditions:
+উদাহরণস্বরূপ, যদি আপনার নিম্নলিখিত শিপিং শর্ত থাকে:
 
-* from weight 0 to 1 pounds and order subtotal from $1 and order subtotal to $10 the cost is $10. You should create the **following shipping rules**:
-  * Order weight from: **0**
-  * Order weight to: **1**
-  * Order subtotal from: **1**
-  * Order subtotal to: **10**
-  * Additional fixed cost: **10**
-  * Lower weight limit: **0**
-  * Rate per weight unit: **0**
-* from weight 1.1 pounds to 2 pounds and order subtotal from $11 and order subtotal to $1000000 the cost is $15. You should create the **following shipping rules**:
-  * Order weight from: **1.000**
-  * Order weight to: **2**
-  * Order subtotal from: **11**
-  * Order subtotal to: **1000000**
-  * Additional fixed cost: **15**
-  * Lower weight limit: **0**
-  * Rate per weight unit: **0**
-* over 2 pounds the cost is $3 per each additional 0.5 pounds.You should create the **following shipping rules**:
-  * If your fixed cost is $15 and $6 per pounds over 2 pounds
-  * Order weight from: **2.0001**
-  * Order weight to: **99999**
-  * Additional fixed cost: **15**
-  * Lower weight limit: **2**
-  * Rate per weight unit: **3**
+* ওজন ০ থেকে ১ পাউন্ড এবং $ ১ থেকে সাবটোটাল অর্ডার করুন এবং সাবটোটাল $ ১০ এ অর্ডার করুন খরচ ১০ ডলার। আপনি **নিম্নলিখিত শিপিং নিয়ম** তৈরি করা উচিত:
+* থেকে ওজন অর্ডার করুন: **০**
+* ওজন অর্ডার করুন: **১**
+* থেকে উপ -মোট অর্ডার করুন: **১**
+* সাবটোটাল অর্ডার করুন: **১০**
+* অতিরিক্ত নির্দিষ্ট খরচ: **১০**
+* কম ওজন সীমা: **০**
+* ওজন ইউনিট প্রতি হার: **০**
+* ওজন ১.১ পাউন্ড থেকে ২ পাউন্ড এবং $ ১১ থেকে সাবটোটাল অর্ডার করুন এবং সাবটোটাল $ ১০০০০০০ অর্ডার করুন খরচ হল $ ১৫। আপনি **নিম্নলিখিত শিপিং নিয়ম** তৈরি করা উচিত:
+* থেকে ওজন অর্ডার করুন: ** ১.০০০ **
+* ওজন অর্ডার করুন: **২**
+* থেকে উপ -মোট অর্ডার করুন: **১১**
+* সাবটোটাল অর্ডার করুন: **১০০০০০০**
+* অতিরিক্ত নির্দিষ্ট খরচ: **১৫**
+* কম ওজন সীমা: **০**
+* ওজন ইউনিট প্রতি হার: **০**
+* ২ পাউন্ডের বেশি প্রতি অতিরিক্ত ০.৫ পাউন্ডের জন্য খরচ $ ৩। আপনাকে **নিম্নলিখিত শিপিং নিয়ম তৈরি করতে হবে**:
+* যদি আপনার স্থির খরচ $ ১৫ এবং $ ৬ প্রতি পাউন্ড ২ পাউন্ডের উপরে হয়
+* থেকে ওজন অর্ডার করুন: **২.০০০১**
+* ওজন অর্ডার করুন: **৯৯৯৯৯**
+* অতিরিক্ত নির্দিষ্ট খরচ: **১৫**
+* কম ওজন সীমা: **২**
+* ওজন ইউনিট প্রতি হার: **৩**
   
-	> [!NOTE] 
-	> 
-	> It will charge proportionally for additional weight; 
-	> example for 2.1 pounds it will charge $15 + (0.1 * 6)= $15.6
+> [!NOTE] 
+> 
+> এটি অতিরিক্ত ওজনের জন্য আনুপাতিকভাবে চার্জ করবে;
+> উদাহরণ ২.১ পাউন্ডের জন্য এটি $ ১৫ + (০.১ * ৬) = $ ১৫.৬ চার্জ করবে
 
-To add a new shipping rule, click **Add record**. The *Add new record* window is displayed:
+একটি নতুন শিপিং নিয়ম যোগ করতে, **রেকর্ড যোগ করুন** ক্লিক করুন। * নতুন রেকর্ড যোগ করুন * উইন্ডো প্রদর্শিত হয়:
 
-![Add rule](_static/manual/manual-shipping-add-new.jpg)
+![নিয়ম যোগ করুন](_static/manual/manual-shipping-add-new.jpg)
 
-Define the following information:
+নিম্নলিখিত তথ্য সংজ্ঞায়িত করুন:
 
-* **Store** in which the calculated fees will be applied. Choose * to apply the rules to all stores.
-* **Warehouse** from which the shipping will be done. Choose * to apply the rules to all warehouses.
-* **Country, State/province, Zip** of a shipment destination.
-* Select a **Shipping method** from the list of pre-created options. Use **Manage shipping methods** on the top to add/remove shipping methods or proceed to the [Configure shipping methods](#configure-shipping-methods) section to learn more.
-* Create your weight configuration by filling **Order weight from** and **Order weight to** fields. If the customer's shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
-* Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage (of subtotal)** fields.
-* Define the **Transit days** field which defines the number of days of delivery.
+* **স্টোর** যেখানে গণনা করা ফি প্রয়োগ করা হবে। সমস্ত দোকানে নিয়ম প্রয়োগ করতে * বেছে নিন।
+* **গুদাম** যেখান থেকে শিপিং করা হবে। সমস্ত গুদামে নিয়ম প্রয়োগ করতে * বেছে নিন।
+* **দেশ, রাজ্য/প্রদেশ, জিপ** একটি চালানের গন্তব্যস্থল।
+* পূর্বনির্ধারিত বিকল্পগুলির তালিকা থেকে একটি **শিপিং পদ্ধতি** নির্বাচন করুন। শিপিং পদ্ধতি যোগ/অপসারণের জন্য উপরে **শিপিং পদ্ধতিগুলি পরিচালনা করুন** অথবা আরও জানতে [শিপিং পদ্ধতি কনফিগার করুন](#configure-shipping-methods) বিভাগে যান।
+* **থেকে ওজন অর্ডার করুন এবং** ক্ষেত্রগুলিতে ওজন অর্ডার করুন। যদি গ্রাহকের চালানের ওজন এই সীমার মধ্যে পড়ে, অতিরিক্ত খরচ ঠিক করা হবে এবং এই রেকর্ড অনুযায়ী হিসাব করা হবে।
+* ক্ষেত্রগুলি ব্যবহার করে এই রেকর্ডের জন্য মূল্যের নিয়মগুলি কনফিগার করুন **থেকে অর্ডার সাবটোটাল, অর্ডার সাবটোটাল থেকে, অতিরিক্ত নির্দিষ্ট খরচ, কম ওজন সীমা, ওজন প্রতি ইউনিট হার, চার্জ শতাংশ (সাবটোটালের)** ক্ষেত্র।
+* **ট্রানজিট দিন** ক্ষেত্রের সংজ্ঞা দিন যা ডেলিভারির দিন সংখ্যা নির্ধারণ করে।
 
 > [!NOTE]
 > 
-> Make sure that the setting **Configuration → Settings → Shipping settings → Consider associated products dimensions and weight** is true.
+> নিশ্চিত করুন যে সেটিং **কনফিগারেশন → সেটিংস → শিপিং সেটিংস সংশ্লিষ্ট পণ্যের মাত্রা এবং ওজন বিবেচনা করুন** সত্য।
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
+
+> [!NOTE]
+>
+> আপনি যদি আপনার গ্রাহকদের শুধুমাত্র সেই স্ক্রিনে কনফিগার করা পদ্ধতিতে সীমাবদ্ধ রাখতে চান তবে **কনফিগার করা শিপিং পদ্ধতি সীমাবদ্ধ করুন** পৃষ্ঠার নীচে চেকবক্সে টিক দিন।
+
+
+## শিপিং পদ্ধতি কনফিগার করুন
+
+একজন দোকানের মালিক *ম্যানুয়াল (নির্দিষ্ট বা ওজন এবং মোট)* প্রদানকারীর মধ্যে প্রয়োজনীয় শিপিং পদ্ধতির তালিকা নির্ধারণ করতে পারেন। শিপিং পদ্ধতিগুলি পরিচালনা করতে:
+
+**কনফিগারেশন → শিপিং → শিপিং প্রদানকারী** এ যান। তারপর *ম্যানুয়াল (স্থির বা ওজন এবং মোট)* প্রদানকারীর পাশে **কনফিগার করুন** বাটনে ক্লিক করুন। কনফিগারেশন উইন্ডো প্রদর্শিত হয়:
+
+![কনফিগার](_static/manual/fixed-rate-configure.jpg)
+
+**শিপিং পদ্ধতি পরিচালনা করুন** ক্লিক করুন,*শিপিং পদ্ধতি উইন্ডো*প্রদর্শিত হয়:
+
+![পদ্ধতি](_static/manual/fixed-rate-methods.jpg)
+
+**নতুন যোগ করুন** বাটনে ক্লিক করুন,*একটি নতুন শিপিং পদ্ধতি যোগ করুন*উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
+
+![নতুন যোগ করুন](_static/manual/fixed-rate-methods-add-new.jpg)
+
+একটি নতুন রেকর্ডের জন্য নিম্নলিখিত ক্ষেত্রগুলি সংজ্ঞায়িত করুন:
+
+**একজন গ্রাহকের দ্বারা দেখা শিপিং পদ্ধতির নাম**।
+* **বর্ণনা** শিপিং পদ্ধতির জন্য একজন গ্রাহক দেখেছেন।
+শিপিং পদ্ধতির **ডিসপ্লে অর্ডার**। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+
+**সেভ** ক্লিক করুন।
 
 > [!NOTE]
 > 
-> If you wish to limit your customers only to methods configured on that screen tick the **Limit shipping methods to configured ones** checkbox on the bottom of the page.
+> উপরে বর্ণিত হিসাবে, বিদ্যমান শিপিং পদ্ধতি সম্পাদনা করতে আপনি *শিপিং পদ্ধতি* উইন্ডোতে **সম্পাদনা** ক্লিক করতে পারেন।
 
+## শিপিং পদ্ধতির বিধিনিষেধ
 
-## Configure shipping methods
+একটি দোকানের মালিক নির্দিষ্ট দেশে নির্দিষ্ট শিপিং পদ্ধতির জন্য সীমাবদ্ধতা নির্ধারণ করতে পারে। এটি করার জন্য, **কনফিগারেশন → শিপিং → শিপিং প্রদানকারী** এ যান। *ম্যানুয়াল (নির্দিষ্ট বা ওজন এবং মোট)* প্রদানকারীর পাশে **কনফিগার করুন** বাটনে ক্লিক করুন। কনফিগারেশন উইন্ডো প্রদর্শিত হয়:
 
-A store owner can define required shipping method list used in *Manual (fixed or by weight and by total)* provider. To manage shipping methods:
+![কনফিগার](_static/manual/fixed-rate-configure.jpg)
 
-Go to **Configuration → Shipping → Shipping providers**. Then click the **Configure** button beside the *Manual (fixed or by weight and by total)* provider. The configuration window is displayed:
+**শিপিং পদ্ধতি বিধিনিষেধ** ক্লিক করুন,*শিপিং পদ্ধতি বিধিনিষেধ* উইন্ডো প্রদর্শিত হয়:
 
-![Configure](_static/manual/fixed-rate-configure.jpg)
+![পদ্ধতি](_static/manual/fixed-rate-restrictions-methods.jpg)
 
-Click **Manage shipping methods**, the *Shipping methods window* is displayed:
+আপনার এক বা একাধিক শিপিং পদ্ধতি নির্বাচন করুন, যা আপনি নির্দিষ্ট দেশে অক্ষম করতে চান।
 
-![Methods](_static/manual/fixed-rate-methods.jpg)
+প্রয়োজন হলে, আপনি সমস্ত দেশের জন্য সম্পূর্ণ সীমাবদ্ধতা কলাম নির্বাচন করতে পারেন।
 
-Click **Add new** button, the *Add a new shipping method* window is displayed, as follows:
+**সেভ** ক্লিক করুন।
 
-![Add new](_static/manual/fixed-rate-methods-add-new.jpg)
+## উদাহরণ
 
-Define the following fields for a new record:
-
-* **Name** of the shipping method viewed by a customer.
-* **Description** for the shipping method viewed by a customer.
-* **Display order** of the shipping method. A value of 1 represents the top of the list.
-
-Click **Save**.
-
-> [!NOTE]
-> 
-> You can click **Edit** in the *Shipping methods* window to edit existing shipping methods, as described above.
-
-## Shipping method restrictions
-
-A store owner can define restrictions for certain shipping methods in certain countries. To do so, go to **Configuration → Shipping → Shipping providers**. Click the **Configure** button beside the *Manual (fixed or by weight and by total)* provider. The configuration window is displayed:
-
-![Configure](_static/manual/fixed-rate-configure.jpg)
-
-Click **Shipping method restrictions**, the *Shipping method restrictions* window is displayed:
-
-![Methods](_static/manual/fixed-rate-restrictions-methods.jpg)
-
-Select one or more of your shipping methods, that you want to disable in certain countries.
-
-If required, you can select the entire restriction column for all countries.
-
-Click **Save**.
-
-## Example
-
-Ley's say you have a store located in the USA and ships to the USA and Canada. You set up a three shipping methods available, such as: 
-- **Ground** that allows shipping by land transport.
-- **Next day air** that provides one day air shipping.
-- **2nd day air** allowing two days air shipping.
+লেই বলছেন যে আপনার একটি স্টোর আছে মার্কিন যুক্তরাষ্ট্রে এবং ইউএসএ এবং কানাডায় জাহাজ। আপনি উপলব্ধ তিনটি শিপিং পদ্ধতি সেট আপ করেছেন, যেমন:
+- **স্থল** যা স্থল পরিবহনের মাধ্যমে শিপিংয়ের অনুমতি দেয়।
+- **পরের দিন এয়ার** যা একদিন এয়ার শিপিং প্রদান করে।
+- **দ্বিতীয় দিনের এয়ার** দুই দিনের এয়ার শিপিংয়ের অনুমতি দেয়।
 
 > [!TIP]
 >
-> You can add your own shipping methods by clicking the **Manage shipping methods** button on the *Configure - Manual (Fixed or By Weight and By Total)* page.
+> আপনি কনফিগার - *ম্যানুয়াল (স্থির বা ওজন এবং মোট দ্বারা)* পৃষ্ঠায় **শিপিং পদ্ধতি পরিচালনা করুন** বোতামে ক্লিক করে আপনার নিজের শিপিং পদ্ধতি যুক্ত করতে পারেন।
 
-Then let's say the shipping fee depends on the order total and shipping address. For example: 
-- If a customer pays $150 for the order we provide a free shipping by the **Ground** method to only USA. If the order total is less than $150 we will charge $10. The delivery to the USA will take 5 days.
-- For Canada, a customer should order for $250 to have a free shipping by the **Ground** method. If the order total is less than $250 we will charge $20. The delivery in this case will take 7 days.
-- If a customer needs a **Next day air** delivery it will cost $60 for the USA. Let's say you wish to disable the **Next day air** option for Canada. 
-- If a customer is ready to wait one more day we suggest to use **2nd day air** shipping which costs $40 for the USA and Canada as well.
+তাহলে ধরা যাক শিপিং ফি অর্ডার মোট এবং শিপিং ঠিকানার উপর নির্ভর করে। উদাহরণ স্বরূপ:
+- যদি কোন গ্রাহক অর্ডারের জন্য $ ১৫০ প্রদান করে তবে আমরা শুধুমাত্র মার্কিন যুক্তরাষ্ট্রে **গ্রাউন্ড** পদ্ধতিতে একটি বিনামূল্যে শিপিং প্রদান করি। অর্ডার মোট $ ১৫০ এর কম হলে আমরা $ ১০ চার্জ করব। মার্কিন যুক্তরাষ্ট্রে ডেলিভারিতে ৫ দিন সময় লাগবে।
+- কানাডার জন্য, একজন গ্রাহকের **গ্রাউন্ড** পদ্ধতিতে বিনামূল্যে শিপিং করার জন্য $ ২৫০ এর জন্য অর্ডার করা উচিত। অর্ডার মোট $ ২৫০ এর কম হলে আমরা $ ২০ চার্জ করব। এই ক্ষেত্রে ডেলিভারি ৭ দিন লাগবে।
+- যদি কোন গ্রাহকের **পরের দিন এয়ার** ডেলিভারির প্রয়োজন হয় তাহলে ইউএসএ এর জন্য $ ৬০ খরচ হবে। ধরা যাক আপনি কানাডার জন্য **পরের দিন এয়ার** বিকল্পটি অক্ষম করতে চান।
+- যদি একজন গ্রাহক আরও একদিন অপেক্ষা করতে প্রস্তুত থাকেন তবে আমরা সুপারিশ করি **২ য় দিনের এয়ার** শিপিং ব্যবহার করার জন্য যা মার্কিন যুক্তরাষ্ট্র এবং কানাডার জন্যও $ ৪০ খরচ করে।
 
-Considering all the requirements above we will set up the payment method on the *Configure - Manual (Fixed or By Weight and By Total)* page the following way:
+উপরের সমস্ত প্রয়োজনীয়তা বিবেচনা করে আমরা নিম্নলিখিত পদ্ধতিতে *কনফিগার - ম্যানুয়াল (স্থির বা ওজন এবং মোট)* পৃষ্ঠায় পেমেন্ট পদ্ধতি সেট আপ করব:
 
-- **Ground** method
-  ![Configuration Ground](_static/manual/configuration-ground.jpg)
+- **গ্রাউন্ড** পদ্ধতি
+  ![কনফিগারেশন গ্রাউন্ড](_static/manual/configuration-ground.jpg)
 
-- **Next day air** method
-  ![Configuration Next day air](_static/manual/configuration-nextday.jpg)
+- **পরের দিন এয়ার** পদ্ধতি
+  ![কনফিগারেশন পরের দিন এয়ার](_static/manual/configuration-nextday.jpg)
 
-- **2nd day air** method
-  ![Configuration 2nd day air](_static/manual/configuration-2ndday.jpg)
+- **২য় দিনের এয়ার** পদ্ধতি
+  ![কনফিগারেশন ২য় দিনের এয়ার](_static/manual/configuration-2ndday.jpg)
 
-To disable the **Next day air** option for Canada click the **Shipping method restrictions** button and fill the *Shipping method restrictions* the following way:
-![Configuration example](_static/manual/restrictions-example.jpg)
+কানাডার জন্য **পরের দিন এয়ার** অপশনটি নিষ্ক্রিয় করতে **শিপিং পদ্ধতি সীমাবদ্ধতা** বাটনে ক্লিক করুন এবং*শিপিং পদ্ধতির বিধিনিষেধগুলি*পূরণ করুন:
+![কনফিগারেশনের উদাহরণ](_static/manual/restrictions-example.jpg)
 
-### Let's see how the shipping options look like in the public store
+### আসুন দেখি পাবলিক স্টোরে শিপিং অপশনগুলো কেমন দেখাচ্ছে
 
-1. When a customer from the USA visits the product page (or shopping cart page) the shipping estimation is displayed, as follows:
-  ![Estimation](_static/manual/estimate-product-page.jpg)
+১. যখন ইউএসএ থেকে একজন গ্রাহক পণ্য পৃষ্ঠা (বা শপিং কার্ট পৃষ্ঠা) পরিদর্শন করেন তখন শিপিংয়ের অনুমানটি নিম্নরূপ প্রদর্শিত হয়:
+  ![অনুমান](_static/manual/estimate-product-page.jpg)
     > [!TIP]
     >
-    > By the way, you can disable shipping estimation by unticking the **Estimate shipping enabled (cart page)** and **Estimate shipping enabled (product page)** checkboxes on the **Configuration → Settings → Shipping settings** page.
+    > যাইহোক, আপনি **আনুমানিক শিপিং সক্ষম (কার্ট পৃষ্ঠা)** এবং **আনুমানিক শিপিং সক্ষম (পণ্য পৃষ্ঠা)** চেকবক্সগুলি **কনফিগারেশন → সেটিংস → শিপিং সেটিংস** পৃষ্ঠায় আনচিক করে শিপিং অনুমান অক্ষম করতে পারেন।
 
-    When the customer proceeds for the shipping details the following options will be displayed:
-    ![Estimation USA](_static/manual/estimation-popup-usa.jpg)
+    যখন গ্রাহক শিপিংয়ের বিবরণের জন্য এগিয়ে যান তখন নিম্নলিখিত বিকল্পগুলি প্রদর্শিত হবে:
+    ![অনুমান ইউএসএ](_static/manual/estimation-popup-usa.jpg)
 
-2. When a customer chooses the Canada from the shipping estimation window the following options will be displayed:
-  ![Estimation Canada](_static/manual/estimation-popup-canada.jpg)
-    As you can see the **Next day air** option is not available anymore.
+২. যখন একজন গ্রাহক শিপিং প্রাক্কলন উইন্ডো থেকে কানাডা নির্বাচন করেন তখন নিম্নলিখিত বিকল্পগুলি প্রদর্শিত হবে:
+  ![অনুমান কানাডা](_static/manual/estimation-popup-canada.jpg)
+    যেমন আপনি দেখতে পারেন **পরের দিন এয়ার** বিকল্পটি আর পাওয়া যায় না।
 
 > [!TIP]
 >
-> In case you want to provide pickup points to your customers see how to set this up in the [Pickup points](xref:en/getting-started/configure-shipping/advanced-configuration/pickup-points) chapter.
+> যদি আপনি আপনার গ্রাহকদের পিকআপ পয়েন্ট প্রদান করতে চান তাহলে [পিকআপ পয়েন্ট](xref:bn/get-start/configure-shipping/advanced-configuration/pickup-points) অধ্যায়ে এটি কিভাবে সেট আপ করবেন তা দেখুন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Configuring manual shipping method](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
+* [ম্যানুয়াল শিপিং পদ্ধতি কনফিগার করা](https://www.youtube.com/watch?v=1nYj0NqVUWw&t=8s)
