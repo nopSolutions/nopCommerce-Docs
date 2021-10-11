@@ -104,7 +104,7 @@ The following variables may be included directly within your Sendinblue template
 
 In the *Drag & Drop Editor*, select your desired block that will display the abandoned cart information then add the order variables you want.
 
-We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers). In the example below, we have added:
+We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?tap_a=30591-fb13f0&tap_s=840216-5153c7). In the example below, we have added:
 
 * `{{ params.currency }}` - the currency of the abandoned cart
 * `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the abandoned cart
@@ -125,7 +125,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 > [!NOTE]
 > A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
 
-Navigate to the [Automation](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) tab of your Sendinblue account.
+Navigate to the [Automation](https://automation.sendinblue.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) tab of your Sendinblue account.
 
 Click on **+ CREATE A NEW WORKFLOW**, then select **Detailed Abandoned Cart** and follow the steps.
 
@@ -136,7 +136,7 @@ At the *Send an email* step, select the email template you have just created and
 When your workflow is complete, click on **DONE** to save and activate it.
 
 Feel free to read this tutorials to help you creating the workflow: 
-* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)
+* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?tap_a=30591-fb13f0&tap_s=840216-5153c7)
 
 
 ## Example
