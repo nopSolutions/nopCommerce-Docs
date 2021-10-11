@@ -11,13 +11,13 @@ In this tutorial, you will learn how to create abandoned cart email and how to s
 ## Before getting started
 
 You will need the following:
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). 
-* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) for emails is enabled on your account.
+* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7). 
+* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled on your account.
 * Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
 
 ## Create an abandoned cart email template
 
-First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). Click on the **New Template** button at the top right.
+First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?tap_a=30591-fb13f0&tap_s=840216-5153c7). Click on the **New Template** button at the top right.
 
 The email template can be personalized with several types of data:
 
@@ -27,7 +27,7 @@ The email template can be personalized with several types of data:
 
 ### Personalize your email with contact attributes
 
-Let's start by [personalizing with contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+Let's start by [personalizing with contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 
 In the example below, we have included a personalization of:
 
@@ -39,7 +39,7 @@ In the example below, we have included a personalization of:
 
 ![Attribute personalization](_static/recover-abandoned-carts/attribute-personalization.gif)
 
-Now let's personalize the email template with order variables such as the name of the items left behind, their images, price etc. To do so, we will use the *New Template Language* to [insert a dynamic list](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+Now let's personalize the email template with order variables such as the name of the items left behind, their images, price etc. To do so, we will use the *New Template Language* to insert a dynamic list.
 
 ### Personalize your email with the abandoned items details
 
