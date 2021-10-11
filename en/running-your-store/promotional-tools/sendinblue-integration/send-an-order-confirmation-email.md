@@ -11,13 +11,13 @@ In this tutorial, you will learn how to create an order confirmation email templ
 ## Before getting started
 
 You will need the following:
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). 
-* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) for emails is enabled on your account.
+* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7). 
+* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled on your account.
 * Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
 
 ## Create the order confirmation email template
 
-First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link). Click on the **New Template** button at the top right.
+First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?tap_a=30591-fb13f0&tap_s=840216-5153c7). Click on the **New Template** button at the top right.
 
 The email template can be personalized with several types of data:
 
@@ -27,7 +27,7 @@ The email template can be personalized with several types of data:
 
 ### Personalize your email with contact attributes
 
-Let's start by personalizing with [contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+Let's start by personalizing with [contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 
 In the example below, we have included a personalization of:
 
@@ -59,7 +59,7 @@ The following variables may be included directly within your Sendinblue template
 
 In the *Drag & Drop Editor*, select your desired block that will display the order information, then add your variables.
 
-We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link#numbers). In the example below, we have added:
+We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?tap_a=30591-fb13f0&tap_s=840216-5153c7). In the example below, we have added:
 
 * `{{ params.currency | floatformat: 2 }}` - the currency of the order
 * `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the order
@@ -68,7 +68,7 @@ We recommend formatting numbers by using [floatformat](https://help.sendinblue.c
 
 ![Order summary](_static/send-an-order-confirmation-email/order.jpg)
 
-Now let's personalize the email template with ordered items. To do so, we're using the *New Template Language* to [insert a dynamic list](https://help.sendinblue.com/hc/en-us/articles/360000887379-Inserting-a-dynamic-list-in-the-Drag-Drop-editor-NEW-?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+Now let's personalize the email template with ordered items. To do so, we're using the *New Template Language* to insert a dynamic list.
 
 ### Personalize your email with the ordered items details
 
@@ -117,7 +117,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 > [!NOTE]
 > A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
 
-Navigate to the [Automation](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) tab of your Sendinblue account.
+Navigate to the [Automation](https://automation.sendinblue.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) tab of your Sendinblue account.
 
 Click on **+ CREATE A NEW WORKFLOW**, then select **Product Purchase** and follow the steps.
 
