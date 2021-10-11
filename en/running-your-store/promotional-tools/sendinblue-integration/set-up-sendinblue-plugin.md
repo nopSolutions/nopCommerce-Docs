@@ -20,9 +20,9 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
 1. Click the **Configure** button. You will see the *Configure - Sendinblue* window:
 ![Configure - Sendinblue](_static/set-up-sendinblue-plugin/configure-window.jpg)
 
-1. You need to create a free Sendinblue account using [this link](https://app.sendinblue.com/account/login/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+1. You need to create a free Sendinblue account using [this link](https://app.sendinblue.com/account/login/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 
-1. Enter your **API v3 key** from your Sendinblue account on [SMTP & API](https://account.sendinblue.com/advanced/api/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) page.
+1. Enter your **API v3 key** from your Sendinblue account on [SMTP & API](https://account.sendinblue.com/advanced/api/?tap_a=30591-fb13f0&tap_s=840216-5153c7) page.
 
 1. Click the **Save** button.
 
@@ -85,7 +85,7 @@ Go to the **Transactional emails** panel to send your transactional emails via S
 ![Sending transactional emails](_static/set-up-sendinblue-plugin/email-panel.jpg)
 
 1. Check the **Use Sendinblue SMTP** checkbox.
-1. Paste your SMTP password that can be found [here](https://account.sendinblue.com/advanced/api?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link).
+1. Paste your SMTP password that can be found [here](https://account.sendinblue.com/advanced/api?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 1. From the drop-down list, select the sender you wish to send your emails from.
 1. Click on the **Save** button.
 
