@@ -2,7 +2,7 @@
 title: এন্টিটি ইভেন্ট এবং তারা কিভাবে কাজ করে
 uid: bn/developer/tutorials/entity-event
 author: git.sinaislam
-contributors: git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
 # এন্টিটি ইভেন্ট এবং তারা কিভাবে কাজ করে

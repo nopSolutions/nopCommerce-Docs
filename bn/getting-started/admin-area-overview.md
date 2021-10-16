@@ -1,72 +1,74 @@
 ---
-title: Admin area overview
-uid: en/getting-started/admin-area-overview
+title: অ্যাডমিন এলাকা ওভারভিউ
+uid: bn/getting-started/admin-area-overview
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIvanov, git.ivkadp
+contributors: git.AfiaKhanom
 ---
 
-# nopCommerce interface
+# নপকমার্স ইন্টারফেস
 
-This chapter covers the basics of nopCommerce interface.
+এই অধ্যায় নপকমার্স ইন্টারফেসের মূল বিষয়গুলি অন্তর্ভুক্ত করা হবে।
 
-Once logged in, you should see the **Administration** hyperlink at the top of your website. Or you can simply add `/admin` to the end of your site's URL to open the admin area. For example: `www.example.com/admin`.
 
-The first screen that is displayed after logging in the nopCommerce administration area is the *Dashboard*:
+একবার লগ ইন করার পরে, আপনার ওয়েবসাইটের শীর্ষে **প্রশাসন** হাইপারলিঙ্ক দেখতে হবে। অথবা অ্যাডমিন এলাকা খুলতে আপনি কেবল আপনার সাইটের URL এর শেষে `/admin` যোগ করতে পারেন। উদাহরণস্বরূপ: `www.example.com/admin`।
 
-![dashboard](_static/admin-area-overview/dashboard.png)
+নপকমার্স প্রশাসন এলাকায় লগ ইন করার পর যে প্রথম পর্দাটি প্রদর্শিত হয় তা হল *ড্যাশবোর্ড*:
 
-The dashboard has the following sections:
+![ড্যাশবোর্ড১](_static/admin-area-overview/dashboard.png)
 
-* **nopCommerce news** is a section where important news, sales, and promotions information from nopCommerce are shown.
 
-* **Common statistics** of your webstore which includes numbers of orders, pending return requests, registered customers and low stock products.
+ড্যাশবোর্ডে নিম্নলিখিত বিভাগ রয়েছে:
 
-* Other sections showing the vital statistics of your webstore: **orders, new customers, order totals, incomplete orders, latest orders, popular search keywords, bestsellers by quantity, bestsellers by amount**: 
+* **নপকমার্স নিউজ** একটি বিভাগ যেখানে নপকমার্স থেকে গুরুত্বপূর্ণ খবর, বিক্রয় এবং প্রচারের তথ্য দেখানো হয়।
 
-![Stats](_static/admin-area-overview/stats.jpg)
+* **সাধারণ পরিসংখ্যান** আপনার ওয়েব স্টোর যার মধ্যে রয়েছে অর্ডারের সংখ্যা, মুলতুবি ফেরত অনুরোধ, নিবন্ধিত গ্রাহক এবং কম স্টক পণ্য।
 
-Learn more about these reports [here](xref:en/running-your-store/reports).
+* আপনার ওয়েব স্টোরের গুরুত্বপূর্ণ পরিসংখ্যান দেখানো অন্যান্য বিভাগগুলি: **অর্ডার সমূহ, নতুন গ্রাহক, অর্ডার টোটাল, অসম্পূর্ণ অর্ডার,  সর্বশেষ অর্ডার, জনপ্রিয় অনুসন্ধানের কীওয়ার্ড, সংখ্যা বিবেচনায় সর্বোচ্চ বিক্রেতা, পরিমাণ বিবেচনায় সর্বোচ্চ বিক্রেতা**: 
 
-The dashboard sections are easily collapsed by clicking the ![item](_static/admin-area-overview/item.png) icon.
+![পরিসংখ্যান](_static/admin-area-overview/stats.jpg)
 
-## Common nopCommerce page elements
+এই প্রতিবেদনগুলি সম্পর্কে আরও জানুন [এখানে](xref:en/running-your-store/reports)।
 
-### Sidebar
+ড্যাশবোর্ড বিভাগগুলি সহজেই ভেঙে যায়! [আইটেম](_static/admin-area-overview/item.png) আইকন।
 
-![Sidebar](_static/admin-area-overview/sidebar.jpg)
+## সাধারণ নপকমার্স পৃষ্ঠার উপাদান
 
-The sidebar is placed on the left of each page in the administration area. It allows you to navigate through nopCommerce administrator's functionality.
+### সাইডবার
 
-The sidebar can be easily collapsed by clicking the "hamburger" icon next to the logo ![dashboard2](_static/admin-area-overview/hamburger.jpg)
+![সাইডবার](_static/admin-area-overview/sidebar.jpg)
 
-### Search field
+প্রশাসন এলাকায় প্রতিটি পৃষ্ঠার বাম দিকে সাইডবার স্থাপন করা হয়েছে। এটি আপনাকে নপকমার্স প্রশাসকের কার্যকারিতার মাধ্যমে নেভিগেট করার অনুমতি দেয়।
 
-![dashboard3](_static/admin-area-overview/search.jpg)
+লোগোর পাশে "হ্যামবার্গার" আইকনে ক্লিক করে সাইডবারটি সহজেই ভেঙে ফেলা যায়! [ড্যাশবোর্ড২](_static/admin-area-overview/hamburger.jpg)
 
-On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line auto-suggests the options, proceed directly to the required one.
+### অনুসন্ধান ক্ষেত্র
 
-### System menu
+![ড্যাশবোর্ড৩](_static/admin-area-overview/search.jpg)
 
-![dashboard4](_static/admin-area-overview/menu.jpg)
+সাইডবারের উপরে, একটি অনুসন্ধান ক্ষেত্র রয়েছে। আপনি যে অংশে নেভিগেট করতে চান তার একটি নাম টাইপ করা শুরু করুন, সার্চ লাইন বিকল্পগুলি স্বয়ংক্রিয়ভাবে প্রস্তাব করে, সরাসরি প্রয়োজনীয় দিকে এগিয়ে যান।
 
-This part of the interface shows the name of a logged-in user, logout button, public store link and a small menu from which a user can select to clear cache or restart application.
+### সিস্টেম মেনু
 
-## Basic and advanced modes
+![ড্যাশবোর্ড৪](_static/admin-area-overview/menu.jpg)
 
-On some pages in the administration area you will see the following switch:
+ইন্টারফেসের এই অংশটি লগ-ইন করা ব্যবহারকারীর নাম, লগআউট বোতাম, পাবলিক স্টোর লিঙ্ক এবং একটি ছোট মেনু দেখায় যেখান থেকে ব্যবহারকারী ক্যাশে সাফ করতে বা অ্যাপ্লিকেশন পুনরায় চালু করতে পারেন।
 
-![dashboard5](_static/admin-area-overview/dashboard5.png)
+## মৌলিক এবং বিস্তারিত মোড
 
-This two-position *Basic-Advanced* switch allows you to switch between page display modes.
+প্রশাসন এলাকায় কিছু পৃষ্ঠায় আপনি নিম্নলিখিত সুইচ দেখতে পাবেন:
 
-For the convenience of use, we made the **Basic** mode where the most frequent settings are shown.
+![ড্যাশবোর্ড৫](_static/admin-area-overview/dashboard5.png)
 
-If you cannot find a required setting on a page, switch to the **Advanced** mode to see all available settings.
+এই দুই অবস্থানের *মৌলিক-বিস্তারিত* সুইচ আপনাকে পৃষ্ঠা প্রদর্শন মোডের মধ্যে স্যুইচ করতে দেয়।
 
-On some pages, the switch has a **Settings** button beside. You can use it to set up the basic mode according to your needs by adding/removing the required settings.
+ব্যবহারের সুবিধার জন্য, আমরা **মৌলিক** মোড তৈরি করেছি যেখানে সবচেয়ে ঘন ঘন সেটিংস দেখানো হয়।
 
-![dashboard6](_static/admin-area-overview/dashboard6.png)
+যদি আপনি একটি পৃষ্ঠায় একটি প্রয়োজনীয় সেটিং খুঁজে না পান, তাহলে সমস্ত উপলব্ধ সেটিংস দেখতে **বিস্তারিত** মোডে যান।
 
-Click **Settings** to see a list of the available settings. Tick the checkboxes of the **desired setting**. The added settings will then be displayed in the **Basic** mode.
+কিছু পাতায়, সুইচটির পাশে একটি **সেটিংস** বাটন থাকে। আপনি প্রয়োজনীয় সেটিংস যোগ/অপসারণ করে আপনার প্রয়োজন অনুযায়ী মৌলিক মোড সেট আপ করতে এটি ব্যবহার করতে পারেন।
 
-![dashboard7](_static/admin-area-overview/dashboard7.png)
+![ড্যাশবোর্ড৬](_static/admin-area-overview/dashboard6.png)
+
+উপলব্ধ সেটিংসের একটি তালিকা দেখতে **সেটিংস** ক্লিক করুন। **পছন্দসই সেটিং** এর চেকবক্সে টিক দিন। যোগ করা সেটিংসগুলি তখন **মৌলিক** মোডে প্রদর্শিত হবে।
+
+![ড্যাশবোর্ড৭](_static/admin-area-overview/dashboard7.png)

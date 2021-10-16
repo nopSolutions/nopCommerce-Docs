@@ -1,19 +1,20 @@
 ---
-title: Choose and install a theme
-uid: en/getting-started/design-your-store/choose-and-install-a-theme
+title: একটি থিম নির্বাচন করুন এবং ইনস্টল করুন
+uid: bn/getting-started/design-your-store/choose-and-install-a-theme
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin
+contributors: git.AfiaKhanom
 ---
 
-# Choose and install a theme
+# একটি থিম নির্বাচন করুন এবং ইনস্টল করুন
 
-After downloading a new theme which is in a zip file, extract the contents of your zip file and copy it to the **Themes** folder like shown on the picture below:
+একটি জিপ ফাইলে থাকা একটি নতুন থিম ডাউনলোড করার পরে, আপনার জিপ ফাইলের বিষয়বস্তুগুলি বের করুন এবং এটি নীচের ছবিতে দেখানো মত **থিমস** ফোল্ডারে অনুলিপি করুন:
 
 ![p1](_static/choose-and-install-a-theme/instal_theme1.jpg)
 
-1. Go to **admin panel → Configuration → Settings → General settings**.
+১. **অ্যাডমিন প্যানেল → কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান।
 
     ![p2](_static/choose-and-install-a-theme/instal_theme2.png)
 
-1. Select your new theme in the **Default store theme** field and click **Save**.
-1. Go to the public store. You should be able to see the new theme applied to your store.
+২. **ডিফল্ট স্টোর থিম** ফিল্ডে আপনার নতুন থিম নির্বাচন করুন এবং **সংরক্ষণ করুন** ক্লিক করুন।
+
+৩. পাবলিক স্টোরে যান। আপনি আপনার দোকানে প্রয়োগ করা নতুন থিম দেখতে সক্ষম হওয়া উচিত।

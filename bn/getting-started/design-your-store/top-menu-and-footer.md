@@ -1,181 +1,183 @@
 ﻿---
-title: Top menu & footer
-uid: en/getting-started/design-your-store/top-menu-and-footer
-author: git.mariannk
+title: শীর্ষ মেনু এবং পাদলেখ
+uid: bn/getting-started/design-your-store/top-menu-and-footer
+author: git.AfiaKhanom
 ---
 
-# Top menu & footer
+# শীর্ষ মেনু এবং পাদলেখ
 
-In nopCommerce you can choose how the top menu and footer will be displayed. You can include the most important and interesting links in the top menu to attract more customers and add service links to the footer to provide the actual store information to your clients.
+নপকমার্সে আপনি কিভাবে উপরের মেনু এবং পাদলেখ প্রদর্শিত হবে তা চয়ন করতে পারেন। আপনি আরো গ্রাহকদের আকৃষ্ট করতে এবং শীর্ষস্থানীয় মেনুতে সবচেয়ে গুরুত্বপূর্ণ এবং আকর্ষণীয় লিঙ্কগুলি অন্তর্ভুক্ত করতে পারেন এবং আপনার ক্লায়েন্টদের প্রকৃত দোকানের তথ্য প্রদান করতে পাদলেখের পরিষেবা লিঙ্ক যোগ করতে পারেন।
 
-## Top menu
+## শীর্ষ মেনু
 
-In the Default Clean theme the top menu looks the following way:
-![Default Clean theme top menu](_static/top-menu-and-footer/top-menu.jpg)
+ডিফল্ট ক্লিন থিমের শীর্ষ মেনুটি নিম্নরূপ দেখায়:
+![ডিফল্ট ক্লিন থিমের শীর্ষ মেনু](_static/top-menu-and-footer/top-menu.jpg)
 
-As you can see in displays the store categories. Please note, if you want a category to be displayed in the top menu you should tick the **Include in top menu** checkbox on the category edit page. For more details, read below. 
+আপনি দোকানের বিভাগগুলি প্রদর্শন করতে পারেন। অনুগ্রহ করে মনে রাখবেন, যদি আপনি শীর্ষ মেনুতে একটি বিভাগ প্রদর্শন করতে চান তবে আপনাকে বিভাগ সম্পাদনা পৃষ্ঠায় **শীর্ষ মেনুতে অন্তর্ভুক্ত** চেকবক্স টিক দেওয়া উচিত। আরো বিস্তারিত জানার জন্য, নীচে পড়ুন।
 
-You can include the following items in the top menu:
-- Categories
-- Custom topics (pages)
-- Links to the site sections
+আপনি উপরের মেনুতে নিম্নলিখিত আইটেমগুলি অন্তর্ভুক্ত করতে পারেন:
+- বিভাগ
+- বিষয়সমূহ (পৃষ্ঠা)
+- সাইট বিভাগের লিঙ্ক
 
-See below how to add each of these items.
+এই আইটেমগুলির প্রতিটি কীভাবে যুক্ত করবেন তা নীচে দেখুন।
 
-### Categories
+### বিভাগ
 
-To include a category in the top menu, go to the category edit page in admin area: choose **Catalog → Categories**. Then click the **Edit** button beside the category. The *Edit category details* window will be displayed:
+শীর্ষ মেনুতে একটি বিভাগ অন্তর্ভুক্ত করার জন্য, প্রশাসক এলাকায় বিভাগ সম্পাদনা পৃষ্ঠায় যান: **ক্যাটালগ → বিভাগ** নির্বাচন করুন। তারপর ক্যাটাগরির পাশে **সম্পাদনা** বাটনে ক্লিক করুন। *বিভাগের বিবরন সম্পাদনা করুন* উইন্ডো প্রদর্শিত হবে:
 
-![Edit category details](_static/top-menu-and-footer/category-details.jpg)
+![বিভাগের বিবরন সম্পাদনা করুন](_static/top-menu-and-footer/category-details.jpg)
 
-Tick the **Include in top menu** checkbox and click **Save**.
-
-> [!NOTE]
->
-> If this category is a subcategory, then ensure that its parent category also has this property enabled.
-
-### Custom topics (pages)
-
-To include a topic in the top menu, go to the topic edit page in admin area: choose **Content management → Topics (pages)**. Then click the **Edit** button beside the topic. The *Edit topic details* window will be displayed:
-
-![Edit topic details](_static/top-menu-and-footer/topic-details-top-menu.jpg)
-
-Tick the **Include in top menu** checkbox and click **Save**.
-
-### Links to the site sections
-
-To include some of the site sections in the top menu, go to **Configuration → Settings → General settings**. Proceed to the *Top menu items* panel:
-
-![Top menu settings](_static/top-menu-and-footer/general-settings-top-menu.jpg)
-
-Choose the items you want to be displayed in the top menu from the following list: 
-
-* **Display "Home page"**
-* **Display "New products"**
-* **Display "Search"**
-* **Display "My account"**
-* **Display "Blog"**
-* **Display "Forums"**
-* **Display "Contact us"**
-
-Then click **Save**.
+**শীর্ষ মেনুতে অন্তর্ভুক্ত** চেকবক্সে টিক দিন এবং **সংরক্ষণ** ক্লিক করুন।
 
 > [!NOTE]
 >
-> The "New products" menu item will be displayed only when the "New products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
+> যদি এই বিভাগটি একটি উপশ্রেণী হয়, তাহলে নিশ্চিত করুন যে তার মূল শ্রেণীতেও এই সম্পত্তি সক্ষম রয়েছে।
 
-## Footer
+### বিষয়সমূহ (পৃষ্ঠা)
 
-In the Default Clean theme the footer looks the following way:
-![Default Clean theme footer](_static/top-menu-and-footer/footer.jpg)
+শীর্ষ মেনুতে একটি বিষয় অন্তর্ভুক্ত করার জন্য, প্রশাসক এলাকায় বিষয় সম্পাদনা পৃষ্ঠায় যান: **কনটেন্ট ম্যানেজমেন্ট  → বিষয়সমূহ (পৃষ্ঠা)** নির্বাচন করুন। তারপর টপিকের পাশে **সম্পাদনা** বাটনে ক্লিক করুন। *বিষয়ের বিশদ সম্পাদনা করুন* উইন্ডো প্রদর্শিত হবে:
 
-By default, it displays site section links grouped by three types: *Information, Customer service, My account*. You can remove any of the displayed links or add new ones.
+![বিষয়ের বিশদ সম্পাদনা করুন](_static/top-menu-and-footer/topic-details-top-menu.jpg)
 
-You can include the following items in the footer:
-- Custom topics (pages)
-- Links to the site sections
+**শীর্ষ মেনুতে অন্তর্ভুক্ত** চেকবক্সে টিক দিন এবং **সংরক্ষণ** ক্লিক করুন।
 
-See below how to add each of these items.
+### সাইট বিভাগের লিঙ্ক
 
-### Custom topics (pages)
+উপরের মেনুতে সাইটের কিছু অংশ অন্তর্ভুক্ত করতে, **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান। *শীর্ষ মেনু আইটেম* প্যানেলে এগিয়ে যান:
 
-To include a topic in the footer, go to the topic edit page in admin area: choose **Content management → Topics (pages)**. Then click the **Edit** button beside the topic. The *Edit topic details* window will be displayed:
+![শীর্ষ মেনু আইটেম](_static/top-menu-and-footer/general-settings-top-menu.jpg)
 
-![Edit topic details](_static/top-menu-and-footer/topic-details-footer.jpg)
 
-Choose where you want the topic link to be displayed. You can tick one or more checkboxes:
-* **Include in footer (column 1)**
-* **Include in footer (column 2)**
-* **Include in footer (column 3)**
+নিচের তালিকা থেকে আপনি উপরের মেনুতে যে আইটেমগুলি প্রদর্শন করতে চান তা চয়ন করুন:
 
-For example, if you choose **Include in footer (column 1)** then the link will be displayed in the *Information* column.
+* **"হোম পেজ" প্রদর্শন করুন**
+* **"নতুন পণ্য" প্রদর্শন করুন**
+* **"অনুসন্ধান" প্রদর্শন করুন**
+* **"আমার অ্যাকাউন্ট" প্রদর্শন করুন**
+* **"ব্লগ" প্রদর্শন করুন**
+* **"ফোরাম" প্রদর্শন করুন**
+* **"যোগাযোগ" প্রদর্শন করুন**
 
-Click **Save** to save the changes.
+তারপর **সংরক্ষণ** ক্লিক করুন।
 
-### Links to the site sections
+> [!NOTE]
+>
+> "নতুন পণ্য" মেনু আইটেমটি শুধুমাত্র তখনই প্রদর্শিত হবে যখন "নতুন পণ্য" পৃষ্ঠাটি **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস** পৃষ্ঠায় সক্ষম হবে (*অতিরিক্ত বিভাগ*প্যানেল)।
 
-To include some of the site sections in the footer, go to **Configuration → Settings → General settings**. Proceed to the *Footer items* panel:
+## পাদলেখ
 
-![Footer settings](_static/top-menu-and-footer/general-settings-footer.jpg)
+ডিফল্ট ক্লিন থিমের মধ্যে পাদলেখটি নিম্নরূপ দেখায়:
+![ডিফল্ট ক্লিন থিম ফুটার](_static/top-menu-and-footer/footer.jpg)
 
-Choose the items you want to be displayed in the footer from the following list: 
+ডিফল্টরূপে, এটি সাইট বিভাগের লিঙ্কগুলিকে তিনটি প্রকারের গ্রুপে দেখায়: *তথ্য, গ্রাহক সেবা, আমার অ্যাকাউন্ট*। আপনি প্রদর্শিত যে কোন লিঙ্ক অপসারণ করতে পারেন অথবা নতুন যোগ করতে পারেন।
 
-* **Display "Sitemap"**
+আপনি পাদলেখনে নিম্নলিখিত আইটেমগুলি অন্তর্ভুক্ত করতে পারেন: 
+- বিষয়সমূহ (পৃষ্ঠা)
+- সাইট বিভাগের লিঙ্ক
+
+এই আইটেমগুলির প্রতিটি কীভাবে যুক্ত করবেন তা নীচে দেখুন।
+
+### বিষয়সমূহ (পৃষ্ঠা)
+
+পাদলেখ মেনুতে একটি বিষয় অন্তর্ভুক্ত করার জন্য, প্রশাসক এলাকায় বিষয় সম্পাদনা পৃষ্ঠায় যান: **কনটেন্ট ম্যানেজমেন্ট  → বিষয়সমূহ (পৃষ্ঠা)** নির্বাচন করুন। তারপর টপিকের পাশে **সম্পাদনা** বাটনে ক্লিক করুন। *বিষয়ের বিশদ সম্পাদনা করুন* উইন্ডো প্রদর্শিত হবে:
+
+![বিষয়ের বিশদ সম্পাদনা করুন](_static/top-menu-and-footer/topic-details-footer.jpg)
+
+আপনি যেখানে বিষয় লিংকটি প্রদর্শন করতে চান তা চয়ন করুন। আপনি এক বা একাধিক চেকবক্সে টিক দিতে পারেন:
+* **পাদচরণ অন্তর্ভুক্ত (কলাম 1)**
+* **পাদচরণ অন্তর্ভুক্ত (কলাম 2)**
+* **পাদচরণ অন্তর্ভুক্ত (কলাম 3)**
+
+উদাহরণস্বরূপ, যদি আপনি **পাদচরণ অন্তর্ভুক্ত (কালাম 1)** নির্বাচন করেন তবে লিঙ্কটি *তথ্য* কলামে প্রদর্শিত হবে।
+
+তারপর **সংরক্ষণ** ক্লিক করুন।
+
+### সাইট বিভাগের লিঙ্ক
+
+উপরের মেনুতে সাইটের কিছু অংশ অন্তর্ভুক্ত করতে, **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান। *পাদলেখ আইটেম* প্যানেলে এগিয়ে যান:
+
+![পাদলেখ সেটিংস](_static/top-menu-and-footer/general-settings-footer.jpg)
+
+নিচের তালিকা থেকে আপনি পাদলেখের মধ্যে যে আইটেমগুলি প্রদর্শন করতে চান তা চয়ন করুন:
+
+* **"সাইটম্যাপ" প্রদর্শন করুন**
 	> [!NOTE]
 	>
-	> The "Sitemap" menu item will be displayed only when the **Sitemap enabled** checkbox is ticked on the **Configuration → Settings → General settings** page (*Sitemap* panel).
+	> "সাইটম্যাপ" মেনু আইটেমটি তখনই প্রদর্শিত হবে যখন **সাইটম্যাপ চালু** চেকবক্সটি **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** পৃষ্ঠায় (*সাইটম্যাপ*প্যানেল) টিক দেওয়া হবে।
 
-* **Display "Contact us"**
-* **Display "Search"**
-* **Display "News"**
-* **Display "Blog"**
-* **Display "Forums"**
-* **Display "Recently viewed products"**
+* **"যোগাযোগ" প্রদর্শন করুন**
+* **"অনুসন্ধান" প্রদর্শন করুন**
+* **"সংবাদ" প্রদর্শন করুন**
+* **"ব্লগ" প্রদর্শন করুন**
+* **"ফোরাম" প্রদর্শন করুন"**
+* **"সম্প্রতি দেখা পণ্য" প্রদর্শন করুন**
 	> [!NOTE]
 	>
-	> The "Recently viewed products" menu item will be displayed only when the "Recently viewed products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
+	> "সম্প্রতি দেখা পণ্য" মেনু আইটেম শুধুমাত্র তখনই প্রদর্শিত হবে যখন **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস** পৃষ্ঠা (*অতিরিক্ত বিভাগ*প্যানেল) "সম্প্রতি দেখা পণ্য" পৃষ্ঠা সক্রিয় করা হবে।
 
-* **Display "Compare products list"**
+* **"পণ্য তালিকার তুলনা করুন" প্রদর্শন করুন**
 	> [!NOTE]
 	>
-	> The "Compare products list" menu item will be displayed only when the "Compare products" functionality is enabled on the **Configuration → Settings → Catalog settings** page (*Compare products* panel).
+	> "পণ্যগুলির তুলনা করুন" মেনু আইটেমটি তখনই প্রদর্শিত হবে যখন **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস** পৃষ্ঠায় "পণ্যগুলির তুলনা করুন"কার্যকারিতা সক্ষম হবে (*পণ্যগুলির তুলনা করুন*প্যানেল)।
 
-* **Display "New products"**
+* **"নতুন পণ্য" প্রদর্শন করুন**
 	> [!NOTE]
 	>
-	> The "New products" menu item will be displayed only when the "New products" page is enabled on the **Configuration → Settings → Catalog settings** page (*Additional sections* panel).
+	> "নতুন পণ্য" মেনু আইটেমটি শুধুমাত্র তখনই প্রদর্শিত হবে যখন "নতুন পণ্য" পৃষ্ঠাটি **কনফিগারেশন → সেটিংস → ক্যাটালগ সেটিংস** পৃষ্ঠায় সক্ষম হবে (*অতিরিক্ত বিভাগ*প্যানেল)।
 
-* **Display "My account"**
-* **Display "Orders"**
-* **Display "Addresses"**
-* **Display "Shopping cart"**
+* **"আমার অ্যাকাউন্ট" প্রদর্শন করুন**
+* **"অর্ডার" প্রদর্শন করুন**
+* **"ঠিকানাগুলি" প্রদর্শন করুন**
+* **"শপিং কার্ট" প্রদর্শন করুন**
 	> [!NOTE]
 	>
-	> The "Shopping cart" menu item will be displayed to a certain customer only when the "Public store. Enable shopping cart" permission is enabled for the customer's role. To manage permissions go to the **Configuration → Access control list** page. Or read more about permissions in the [Access control list](xref:en/running-your-store/customer-management/access-control-list) section.
+	> "শপিং কার্ট" মেনু আইটেম শুধুমাত্র একটি নির্দিষ্ট গ্রাহকের কাছে প্রদর্শিত হবে যখন "পাবলিক দোকান। শপিং কার্ট চালু করুন" অনুমতিটি গ্রাহকের ভূমিকার জন্য সক্ষম করা হবে। অনুমতিগুলি পরিচালনা করতে **কনফিগারেশন → অ্যাক্সেস নিয়ন্ত্রণ তালিকা** পৃষ্ঠায় যান। অথবা [অ্যাক্সেস কন্ট্রোল লিস্ট](xref:bn/running-your-store/customer-management/access-control-list) বিভাগে অনুমতি সম্পর্কে আরও পড়ুন।
  
-* **Display "Wishlist"**
+* **"ইচ্ছা তালিকা" প্রদর্শন করুন"**
 	> [!NOTE]
 	>
-	> The "Wishlist" menu item will be displayed to a certain customer only when the "Public store. Enable wishlist" permission is enabled for the customer's role. To manage permissions go to the **Configuration → Access control list** page. Or read more about permissions in the [Access control list](xref:en/running-your-store/customer-management/access-control-list) section.
+	> "ইচ্ছা তালিকা" মেনু আইটেম শুধুমাত্র একটি নির্দিষ্ট গ্রাহকের কাছে প্রদর্শিত হবে যখন "পাবলিক দোকান। শইচ্ছা তালিকা চালু করুন" অনুমতিটি গ্রাহকের ভূমিকার জন্য সক্ষম করা হবে। অনুমতিগুলি পরিচালনা করতে **কনফিগারেশন → অ্যাক্সেস নিয়ন্ত্রণ তালিকা** পৃষ্ঠায় যান। অথবা [অ্যাক্সেস কন্ট্রোল লিস্ট](xref:bn/running-your-store/customer-management/access-control-list) বিভাগে অনুমতি সম্পর্কে আরও পড়ুন।
 
-* **Display "Apply for vendor account"**
+* **"বিক্রেতা অ্যাকাউন্টের জন্য আবেদন করুন" প্রদর্শন করুন**
 	> [!NOTE]
 	>
-	> The "Apply for vendor account" menu item will be displayed only when the **Allow customers to apply for vendor account** checkbox is ticked on the **Configuration → Settings → Vendor settings** page (*Common* panel).
+	> "বিক্রেতা অ্যাকাউন্টের জন্য আবেদন করুন" মেনু আইটেমটি তখনই প্রদর্শিত হবে যখন **গ্রাহকদের বিক্রেতা অ্যাকাউন্টের জন্য আবেদন করার অনুমতি দিন** চেকবক্স টিক দেওয়া হয় **কনফিগারেশন → সেটিংস → বিক্রেতা সেটিংস** পৃষ্ঠায় (*সাধারণ*প্যানেল)।
 
-Click **Save** to save the changes.
 
-### Follow us
+পরিবর্তনগুলি সংরক্ষণ করতে **সংরক্ষণ** ক্লিক করুন।
 
-To customize the **Follow us** block of the footer go to **Configuration → Settings → General settings**. Proceed to the *Social media* panel, as follows:
+### আমাদের অনুসরণ করো
 
-![Social media settings](_static/top-menu-and-footer/social-media-settings.jpg)
+কাস্টমাইজ করতে **আমাদের অনুসরণ করুন** পাদলেখের ব্লক **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান। নিম্নরূপ *সামাজিক মিডিয়া* প্যানেলে এগিয়ে যান:
 
-Enter your social media links:
+![সামাজিক মিডিয়া সেটিংস](_static/top-menu-and-footer/social-media-settings.jpg)
 
-- **Facebook page URL**
-- **Twitter page URL**
-- **Twitter page URL**
+আপনার সামাজিক মিডিয়া লিঙ্কগুলি প্রবেশ করুন:
 
-If you want to enable/disable the RSS link in the footer you need to enable/disable news accordingly on the **Configuration → Settings → News settings** page (*Common* panel).
+- **ফেসবুক পেজ ইউআরএল**
+- **টুইটার পৃষ্ঠার ইউআরএল**
+- **ইউটিউব চ্যানেলের ইউআরএল** 
 
-### Newsletter
+আপনি যদি পাদলেখের মধ্যে আরএসএস লিঙ্কটি সক্ষম/নিষ্ক্রিয় করতে চান তাহলে আপনাকে **কনফিগারেশন → সেটিংস → নিউজ সেটিংস** পৃষ্ঠায় (*সাধারণ* প্যানেল) অনুসারে সংবাদ সক্ষম/অক্ষম করতে হবে।
 
-The newsletter block is displayed in the footer by default. To hide this block go to **Configuration → Settings → Customer settings**. Proceed to the *Account* panel and tick the **Hide newsletter box** checkbox, as follows:
+### নিউজলেটার
 
-![Newsletter box settings](_static/top-menu-and-footer/newsletter-settings.jpg)
+নিউজলেটার ব্লক ডিফল্টরূপে পাদলেখ প্রদর্শিত হয়। এই ব্লকটি আড়াল করতে **কনফিগারেশন → সেটিংস → গ্রাহক সেটিংস** এ যান। *অ্যাকাউন্ট* প্যানেলে এগিয়ে যান এবং **নিউজলেটার বাক্স লুকান** চেকবক্স টিকুন, নিম্নরূপ
 
-Click **Save** to save the changes. The footer will be updated accordingly.
+![নিউজলেটার বাক্স সেটিংস](_static/top-menu-and-footer/newsletter-settings.jpg)
+
+পরিবর্তনগুলি সংরক্ষণ করতে **সংরক্ষণ** ক্লিক করুন। ফুটার সেই অনুযায়ী আপডেট করা হবে।
 
 ### Powered by nopCommerce
 
-According to the terms of the nopCommerce license, without purchasing the *Copyright removal key*:
+নপকমার্স লাইসেন্সের শর্তাবলী অনুযায়ী, *কপিরাইট অপসারণ কী *না কিনে:
 
-- You may NOT remove or hide the "Powered by nopCommerce" statement that appears at the bottom of each page within a nopCommerce-powered website
-- When users click on the "powered by nopCommerce" text it must direct them to https://www.nopcommerce.com. The "Powered by nopCommerce" link must be in the same format, unedited, as delivered in the program source code. This obligation shall also apply to any copies or derivative works!
-- The copyright notice at the footer of your store (website) must remain intact, unedited and clearly visible. Please do NOT attempt to edit, remove or hide the copyright notice in any way.
+- আপনি নপকমার্স দ্বারা চালিত ওয়েবসাইটের মধ্যে প্রতিটি পৃষ্ঠার নীচে প্রদর্শিত "Powered by nopCommerce" বিবৃতিটি অপসারণ বা লুকিয়ে রাখতে পারবেন না
+- যখন ব্যবহারকারীরা "Powered by nopCommerce" পাঠ্যে ক্লিক করেন তখন এটি তাদের অবশ্যই https://www.nopcommerce.com এ পাঠাতে হবে। "Powered by nopCommerce" লিঙ্কটি অবশ্যই একই ফর্ম্যাটে, অপ্রকাশিত, প্রোগ্রাম সোর্স কোডে বিতরণ করা হবে। এই বাধ্যবাধকতা কোন কপি বা ডেরিভেটিভ রচনার ক্ষেত্রেও প্রযোজ্য হবে!
+- আপনার দোকান (ওয়েবসাইট) এর পাদলেখের কপিরাইট বিজ্ঞপ্তি অক্ষত, অপ্রশিক্ষিত এবং স্পষ্টভাবে দৃশ্যমান থাকতে হবে। অনুগ্রহ করে কপিরাইট নোটিশ সম্পাদনা, অপসারণ বা লুকানোর চেষ্টা করবেন না।
 
-Upon purchase of a "copyright removal key" you are permitted to remove the "Powered by nopCommerce" statement.
-Copyright infringement is illegal - please be advised.
+একটি "কপিরাইট অপসারণ কী" কেনার পরে আপনাকে "পাওয়ার্ড বাই নপকমার্স" বিবৃতিটি সরানোর অনুমতি দেওয়া হয়।
+কপিরাইট লঙ্ঘন অবৈধ - দয়া করে পরামর্শ দিন।
 
-For more information please visit the [nopCommerce copyright removal key](https://nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=documentation&utm_medium=link&utm_campaign=powered_by_nopcommerce&utm_content=topmenu_footer) page.
+আরও তথ্যের জন্য অনুগ্রহ করে দেখুন [নপকমার্স কপিরাইট অপসারণ কী](https://nopcommerce.com/nopcommerce-copyright-removal-key?utm_source=documentation&utm_medium=link&utm_campaign=powered_by_nopcommerce&utm_content=topmenu_footer) পৃষ্ঠা।
