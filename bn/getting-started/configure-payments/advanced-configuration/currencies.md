@@ -1,85 +1,85 @@
 ---
-title: Currencies
-uid: en/getting-started/configure-payments/advanced-configuration/currencies
+title: মুদ্রা
+uid: bn/getting-started/configure-payments/advanced-configuration/currencies
 author: git.AndreiMaz
-contributors: git.exileDev, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Currencies
+# মুদ্রা
 
-In nopCommerce, the **only primary store currency is used**. Primary store currency is the currency against which all other allowed currencies will be configured. Although nopCommerce allows having multiple currencies for displaying your product prices, the primary currency is used for payment transactions with online payment gateways.
+নপকমার্স-এ, **শুধুমাত্র প্রাথমিক দোকানের মুদ্রা ব্যবহার করা হয়**। প্রাথমিক স্টোর মুদ্রা হল সেই মুদ্রা যার বিপরীতে অন্য সব অনুমোদিত মুদ্রা কনফিগার করা হবে। যদিও নপকমার্স আপনার পণ্যের মূল্য প্রদর্শনের জন্য একাধিক মুদ্রা থাকার অনুমতি দেয়, প্রাথমিক মুদ্রা অনলাইন পেমেন্ট গেটওয়েগুলির মাধ্যমে পেমেন্ট লেনদেনের জন্য ব্যবহৃত হয়।
 
-If you are using an online payment gateway (such as PayPal), the amount is sent to the payment gateway and will be the price you entered in primary store currency.
+আপনি যদি একটি অনলাইন পেমেন্ট গেটওয়ে ব্যবহার করেন (যেমন পেপাল), পেমেন্ট গেটওয়েতে টাকা পাঠানো হয় এবং প্রাথমিক স্টোরের মুদ্রায় আপনি যে মূল্য লিখেছেন তা হবে।
 
-Primary store currency is used only by the store administrators. It is used for setting product prices and does not have to be the same as the published currencies.
+প্রাথমিক দোকান মুদ্রা শুধুমাত্র স্টোর প্রশাসকদের দ্বারা ব্যবহৃত হয়। এটি পণ্যের মূল্য নির্ধারণের জন্য ব্যবহৃত হয় এবং প্রকাশিত মুদ্রার সমান হতে হবে না।
 
-If you have only one published currency, the store will not display a currency selector, or any currency symbol with prices. If more than one currency is published, all prices are marked with the currently selected currency. nopCommerce recommends removing any currency that is not required.
+আপনার যদি শুধুমাত্র একটি প্রকাশিত মুদ্রা থাকে, দোকানটি মুদ্রা নির্বাচক বা মূল্য সহ কোন মুদ্রা প্রতীক প্রদর্শন করবে না। যদি একাধিক মুদ্রা প্রকাশিত হয়, তবে সমস্ত মূল্য বর্তমানে নির্বাচিত মুদ্রা দ্বারা চিহ্নিত করা হয়। নপকমার্স কোন মুদ্রা অপসারণের সুপারিশ করে যা প্রয়োজন হয় না।
 
-nopCommerce uses an **exchange rate** to calculate the amounts for published currencies. The exchange rate is entered when a currency is added or edited. Alternatively, you can use a **real-time exchange** rate service to calculate the amount, and the price of the product is multiplied by the exchange rate provided.
+নপকমার্স প্রকাশিত মুদ্রার পরিমাণ গণনার জন্য একটি **বিনিময় হার** ব্যবহার করে। মুদ্রা যোগ বা সম্পাদনা করলে বিনিময় হার প্রবেশ করা হয়। বিকল্পভাবে, আপনি পরিমাণ গণনা করার জন্য একটি **রিয়েল-টাইম এক্সচেঞ্জ** রেট পরিষেবা ব্যবহার করতে পারেন, এবং পণ্যের মূল্য প্রদত্ত বিনিময় হার দ্বারা গুণিত হয়।
 
-Exchange rates fluctuate on a daily basis. Therefore, you can edit the exchange rate as often as you need in order to stay current. Actual transactions are only handled in your store's primary currency. On credit card transactions, banks will usually make exchanges automatically based on the most current currency values.
+বিনিময় হার দৈনিক ভিত্তিতে ওঠানামা করে। অতএব, বর্তমান থাকার জন্য আপনি যতবার প্রয়োজন বিনিময় হার সম্পাদনা করতে পারেন। প্রকৃত লেনদেন শুধুমাত্র আপনার দোকানের প্রাথমিক মুদ্রায় পরিচালিত হয়। ক্রেডিট কার্ড লেনদেনের ক্ষেত্রে, ব্যাংকগুলি সাধারণত বর্তমান মুদ্রার মানগুলির উপর ভিত্তি করে স্বয়ংক্রিয়ভাবে বিনিময় করবে।
 
-To define currency settings go to **Configuration → Currencies**.
+মুদ্রা সেটিংস নির্ধারণ করতে **কনফিগারেশন → মুদ্রা** এ যান।
 
-![Currencies](_static/currencies/currencies1.png)
+![মুদ্রা](_static/currencies/currencies1.png)
 
-From the **Current exchange rate provider** dropdown list, select the exchange rate provider that will be used to get live rates.
-
-> [!NOTE]
-> 
-> By default in nopCommerce there is only one exchange rate provider available - ECB. To get live rates from ECB you should select EUR as a primary exchange rate currency.
-
- Tick the **Auto update enabled** checkbox, to enable receiving an automatic update of currency rates every hour.
-
- Click **Save**.
+**বর্তমান বিনিময় হার প্রদানকারী** ড্রপডাউন তালিকা থেকে, বিনিময় হার প্রদানকারী নির্বাচন করুন যা লাইভ রেট পেতে ব্যবহার করা হবে।
 
 > [!NOTE]
-> 
-> By default, all the currency rates are updated once per hour. You can change currency rates updating settings in **System → Schedule tasks**, choose **Update currency exchange rates**.
+>
+> ডিফল্টরূপে ননকমার্সে শুধুমাত্র একটি বিনিময় হার প্রদানকারী পাওয়া যায় - ইসিবি। ইসিবি থেকে লাইভ রেট পেতে আপনার প্রাথমিক বিনিময় হারের মুদ্রা হিসেবে ইউরো নির্বাচন করা উচিত।
 
-![Schedule task](_static/currencies/tasks.jpg)
+ প্রতি ঘণ্টায় মুদ্রার হারগুলির একটি স্বয়ংক্রিয় আপডেট পাওয়ার জন্য **অটো আপডেট সক্ষম** চেকবক্সে টিক দিন।
 
-## Add a new currency
+ **সেভ** ক্লিক করুন।
 
-Click the **Add new** button.
+> [!NOTE]
+>
+> ডিফল্টরূপে, সমস্ত মুদ্রার হার প্রতি ঘন্টায় একবার আপডেট হয়। আপনি মুদ্রার হার আপডেট করার সেটিংস পরিবর্তন করতে পারেন **সিস্টেম → সময়সূচী কাজ**, বেছে নিন **মুদ্রা বিনিময় হার আপডেট করুন**।
 
-![currencies3](_static/currencies/currencies3.png)
+![সিডিউল টাস্ক](_static/currencies/tasks.jpg)
 
-Define the currency settings:
+## একটি নতুন মুদ্রা যোগ করুন
 
-* Currency **Name**.
-* **Currency code**. For a list of currency codes, go to: https://en.wikipedia.org/wiki/ISO_4217
-* Enter the exchange **Rate** against the primary exchange rate of the currency.
-* From the **Display locale** dropdown list, select the display locale for currency values.
-* Enter **Custom formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in the public store, number of decimal places and so on.
-* In the **Limited to stores** select a pre-created store from drop-down list. Leave the field empty in case this functionality is not required.
+**নতুন যোগ করুন** বাটনে ক্লিক করুন।
+
+![মুদ্রা](_static/currencies/currencies3.png)
+
+মুদ্রা সেটিংস সংজ্ঞায়িত করুন:
+
+* মুদ্রা **নাম**।
+* **মুদ্রা কোড**. মুদ্রা কোডের তালিকার জন্য, এখানে যান: https://bn.wikipedia.org/wiki/ISO_4217
+* মুদ্রার প্রাথমিক বিনিময় হারের বিপরীতে বিনিময় **হার** লিখুন।
+* **ডিসপ্লে লোকেল** ড্রপডাউন তালিকা থেকে, মুদ্রার মানগুলির জন্য ডিসপ্লে লোকেল নির্বাচন করুন।
+মুদ্রার মানগুলিতে প্রয়োগ করতে **কাস্টম ফর্ম্যাটিং** লিখুন। এই ক্ষেত্রে, আপনি পাবলিক স্টোরে প্রদর্শিত মুদ্রার জন্য কোন চিহ্ন, দশমিক স্থান সংখ্যা ইত্যাদি উল্লেখ করতে পারেন।
+* **স্টোরে সীমাবদ্ধ** ড্রপ-ডাউন তালিকা থেকে একটি পূর্বনির্ধারিত দোকান নির্বাচন করুন। এই কার্যকারিতা প্রয়োজন না হলে ক্ষেত্রটি খালি রাখুন।
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-* From the **Rounding type** drop-down list choose one of the types of rounding:
-  * *Default rounding*
-  * *Rounding up with 0.05 intervals (0.06 round to 0.10)*
-  * *Rounding down with 0.05 intervals (0.06 round to 0.05)*
-  * *Rounding up with 0.10 intervals (1.05 round to 1.10)*
-  * *Rounding down with 0.10 intervals (1.05 round to 1.00)*
-  * *Rounding with 0.50 intervals*
-  * *Rounding with 1.00 intervals (1.01-1.49 round to 1.00, 1.50-1.99 round to 2.00)*
-  * *Rounding up with 1.00 intervals (1.01–1.99 round to 2.00)*
+**রাউন্ডিং টাইপ** ড্রপ-ডাউন তালিকা থেকে রাউন্ডিংয়ের যে কোন একটি ধরন বেছে নিন:
+  * *ডিফল্ট রাউন্ডিং*
+  * *০.০৫ ব্যবধানের সাথে রাউন্ডিং (০.০৬ রাউন্ড থেকে ০.১০)*
+  * *০.০৫ ব্যবধান (০.০৬ রাউন্ড থেকে ০.০৫) দিয়ে নিচে গোলাকার*
+  * *০.১০ ব্যবধানে (১.০৫ রাউন্ড থেকে ১.১০)*
+  * *০.১০ বিরতি দিয়ে নিচে গোলাকার (১.০৫ রাউন্ড থেকে ১.০০)*
+  * *০.৫০ বিরতি দিয়ে রাউন্ডিং*
+  * *১.০০ ব্যবধানে রাউন্ডিং (১.০১-১.৪৯ রাউন্ড থেকে ১.০০, ১.৫০-১.৯৯ রাউন্ড থেকে ২.০০)*
+  * *১.০০ ব্যবধানে (১.০১-১.৯৯ রাউন্ড থেকে ২.০০)*
 
-* Select the **Published** checkbox, to enable this currency to be visible and selected by visitors in your store. nopCommerce supports a multi-currency pricing display. If you have several published currencies, customers will be able to select the currency they want.
-* In the **Display order** field, enter the display order of this currency. A value of 1 represents the top of the list.
+* এই মুদ্রাকে দৃশ্যমান করতে এবং আপনার দোকানের দর্শকদের দ্বারা নির্বাচিত করতে **প্রকাশিত** চেকবক্স নির্বাচন করুন। নপকমার্স একটি বহু মুদ্রার মূল্য প্রদর্শন সমর্থন করে। আপনার যদি বেশ কয়েকটি প্রকাশিত মুদ্রা থাকে, গ্রাহকরা তাদের পছন্দসই মুদ্রা নির্বাচন করতে সক্ষম হবে।
+**ডিসপ্লে অর্ডার** ফিল্ডে, এই মুদ্রার ডিসপ্লে অর্ডার লিখুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
-## Get live rates
+## লাইভ রেট পান
 
-Click the **Get live rates** button in the top right of the *Currencies* window. The panel is expanded in the bottom of the page as follows:
+*মুদ্রা* উইন্ডোর উপরের ডানদিকে **লাইভ রেট পান** বাটনে ক্লিক করুন। প্যানেলটি নীচের পৃষ্ঠার নীচে প্রসারিত করা হয়েছে:
 
-![Live rates](_static/currencies/live-rates.jpg)
+![লাইভ রেট](_static/currencies/live-rates.jpg)
 
-Click **Apply all** here or apply manually new rates for all the needed currencies using the **Apply rate** button.
+এখানে **সব প্রয়োগ করুন** ক্লিক করুন অথবা **প্রয়োজনীয় হার** বোতামটি ব্যবহার করে সমস্ত প্রয়োজনীয় মুদ্রার জন্য ম্যানুয়ালি নতুন রেট প্রয়োগ করুন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Managing currencies in nopCommerce](https://www.youtube.com/watch?v=2nzVxGyc5-M)
+* [নপকমার্সে মুদ্রা পরিচালনা](https://www.youtube.com/watch?v=2nzVxGyc5-M)

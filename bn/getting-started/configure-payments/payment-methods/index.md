@@ -1,39 +1,39 @@
 ---
-title: Payment methods
-uid: en/getting-started/configure-payments/payment-methods/index
+title: মুল্য পরিশোধ পদ্ধতি
+uid: bn/getting-started/configure-payments/payment-methods/index
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
+contributors: git.MDRashedKhanMenon
 ---
 
-# Payment methods
+# মুল্য পরিশোধ পদ্ধতি
 
-A payment method is how a customer pays for the order. nopCommerce supports both *online* and *offline transactions*. For the online methods, nopCommerce integrates with third-party payment gateways, so that customer's credit card information will be automatically sent through the gateway (as either an authorization or an authorization and charge) upon completion of an order. You can have multiple payment methods active at one time. The customer can select how he/she wants to pay at the checkout.
+পেমেন্ট পদ্ধতি হল একজন গ্রাহক কিভাবে অর্ডারের জন্য অর্থ প্রদান করে। নপকমার্স *অনলাইন* এবং *অফলাইন লেনদেন* উভয়ই সমর্থন করে। অনলাইন পদ্ধতিগুলির জন্য, নপকমার্স তৃতীয় পক্ষের পেমেন্ট গেটওয়েগুলির সাথে একীভূত হয়, যাতে অর্ডার শেষ হওয়ার পর গ্রাহকের ক্রেডিট কার্ডের তথ্য স্বয়ংক্রিয়ভাবে গেটওয়ে (একটি অনুমোদন বা অনুমোদন এবং চার্জ হিসাবে) পাঠানো হবে। আপনার এক সময়ে একাধিক পেমেন্ট পদ্ধতি সক্রিয় থাকতে পারে। গ্রাহক চেকআউটে কীভাবে অর্থ প্রদান করতে চান তা নির্বাচন করতে পারেন।
 
-To define payment methods go to **Configuration →  Payment methods**.
+পেমেন্ট পদ্ধতি নির্ধারণ করতে **কনফিগারেশন → পেমেন্ট পদ্ধতি** এ যান।
 
 > [!TIP]
 > 
-> By default, there are several payment methods available in nopCommerce, but you can find more payment plugins in the nopCommerce [marketplace](https://www.nopcommerce.com/marketplace).
+> ডিফল্টরূপে, ননকমার্সে বেশ কিছু পেমেন্ট পদ্ধতি পাওয়া যায়, কিন্তু আপনি ননকমার্স [মার্কেটপ্লেস](https://www.nopcommerce.com/marketplace) এ আরো পেমেন্ট প্লাগইন খুঁজে পেতে পারেন।
 
-For the payment method development details, refer to the [document](xref:en/developer/plugins/payment-method).
+পেমেন্ট পদ্ধতি বিকাশের বিশদ বিবরণের জন্য, [ডকুমেন্ট](xref:bn/developer/plugins/payment-method) পড়ুন।
 
-![methods](_static/index/payment-methods.jpg)
+[পদ্ধতি](_static/index/payment-methods.jpg)।
 
-To activate a payment method, click **Edit** beside the required method, tick the **Is active** checkbox and click **Update**. The **Is active** option changes from *false* to *true*.
+একটি পেমেন্ট পদ্ধতি সক্রিয় করতে, প্রয়োজনীয় পদ্ধতির পাশে **সম্পাদনা করুন** ক্লিক করুন, **সক্রিয় আছে** চেকবক্সে টিক দিন এবং **আপডেট** ক্লিক করুন। **সক্রিয়** বিকল্পটি *মিথ্যা* থেকে *সত্য* এ পরিবর্তিত হয়।
 
- Different payment methods support different options. There are **4 payment options** that can supported by a payment method or not:
+ বিভিন্ন পেমেন্ট পদ্ধতি বিভিন্ন বিকল্প সমর্থন করে। **৪ পেমেন্ট অপশন আছে** যেগুলি পেমেন্ট পদ্ধতি দ্বারা সমর্থিত হতে পারে বা না:
 
-* **Supports capture** indicates whether this method allows processing money transfer after the amount was charged.
-* **Refund** indicates  this method allows making a money refund after the amount was charged and captured already.
-* **Partial refund** indicates whether this method allows making a partial money refund after the amount was charged and captured already.
-* **Void** indicates whether this method allows making a money refund before the amount was charged (when the payment status is pending).
-* **Recurring support** indicates whether this method allows recurring payments.
+* **ক্যাপচার সাপোর্ট করে** নির্দেশ করে যে এই পদ্ধতিটি টাকা চার্জ করার পরে অর্থ স্থানান্তর প্রক্রিয়া করার অনুমতি দেয় কিনা।
+* **রিফান্ড** ইঙ্গিত করে যে এই পদ্ধতিটি অর্থ চার্জ করার পরে অর্থ ফেরত দেওয়ার অনুমতি দেয় এবং ইতিমধ্যে ক্যাপচার করা হয়েছে।
+* **আংশিক ফেরত** ইঙ্গিত করে যে এই পদ্ধতিটি অর্থ চার্জ এবং ইতিমধ্যেই ক্যাপচার করার পরে আংশিক অর্থ ফেরত দেওয়ার অনুমতি দেয় কিনা।
+* **অকার্যকর** নির্দেশ করে যে এই পদ্ধতিটি অর্থ চার্জ করার আগে অর্থ ফেরত দেওয়ার অনুমতি দেয় কিনা (যখন পেমেন্ট স্থিতি বাকি আছে)।
+* **পুনরাবৃত্তিমূলক সহায়তা** নির্দেশ করে যে এই পদ্ধতিটি পুনরাবৃত্ত অর্থ প্রদানের অনুমতি দেয় কিনা।
 
-Click **Configure** beside a payment method to set it up.
+এটি সেট আপ করার জন্য একটি পেমেন্ট পদ্ধতির পাশে **কনফিগার করুন** ক্লিক করুন।
 
-## See also
+## আরো দেখুন
 
-* [Check/money order](xref:en/getting-started/configure-payments/payment-methods/check-money-order)
-* [Credit card (manual processing)](xref:en/getting-started/configure-payments/payment-methods/credit-card-manual-processing)
-* [PayPal Standard](xref:en/getting-started/configure-payments/payment-methods/paypal-standard)
-* [PayPal Smart Payment Buttons](xref:en/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons)
+* [চেক/মানি অর্ডার](xref:bn/getting-start/configure-payment/payment-methods/check-money-order)
+* [ক্রেডিট কার্ড (ম্যানুয়াল প্রসেসিং)](xref:bn/get-start/configure-payment/payment-methods/credit-card-manual-processing)
+* [পেপ্যাল ​​স্ট্যান্ডার্ড](xref:bn/get-start/configure-payment/payment-methods/paypal-standard)
+* [পেপ্যাল ​​স্মার্ট পেমেন্ট বাটন](xref:bn/get-start/configure-payment/payment-methods/paypal-smart-payment-buttons)

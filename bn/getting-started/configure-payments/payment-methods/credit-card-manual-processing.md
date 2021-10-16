@@ -1,66 +1,66 @@
 ---
-title: Credit card (manual processing)
-uid: en/getting-started/configure-payments/payment-methods/credit-card-manual-processing
+title: ক্রেডিট কার্ড (ম্যানুয়াল প্রসেসিং)
+uid: bn/getting-started/configure-payments/payment-methods/credit-card-manual-processing
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Credit card (manual processing)
+# ক্রেডিট কার্ড (ম্যানুয়াল প্রসেসিং)
 
-This is a special payment plugin that allows all orders to be successfully entered on the website, but it does NOT really charge a customer or make any calls to any live payment gateway. It is recommended to use this payment method if you want to perform one of the following:
+এটি একটি বিশেষ পেমেন্ট প্লাগইন যা ওয়েবসাইটটিতে সমস্ত অর্ডার সফলভাবে প্রবেশ করার অনুমতি দেয়, কিন্তু এটি প্রকৃতপক্ষে কোনও গ্রাহককে চার্জ করে না বা কোনও লাইভ পেমেন্ট গেটওয়েতে কল করে না। যদি আপনি নিম্নলিখিতগুলির মধ্যে একটি করতে চান তবে এই পেমেন্ট পদ্ধতিটি ব্যবহার করার পরামর্শ দেওয়া হচ্ছে:
 
-* Process all orders offline
-* Process them manually via another back-office system
-* Test the site end-to-end before going live
+* সমস্ত অর্ডার অফলাইনে প্রক্রিয়া করুন
+* এগুলি অন্য ব্যাক-অফিস সিস্টেমের মাধ্যমে ম্যানুয়ালি প্রক্রিয়া করুন
+* লাইভে যাওয়ার আগে সাইটের শেষ থেকে শেষ পর্যন্ত পরীক্ষা করুন
 
-To configure this payment method go to **Configuration → Payment methods**. Then find the **Credit card (Payments.Manual)** payment method in the payment method list:
+এই পেমেন্ট পদ্ধতি কনফিগার করতে **কনফিগারেশন → পেমেন্ট পদ্ধতি** এ যান। তারপর পেমেন্ট পদ্ধতি তালিকায় **ক্রেডিট কার্ড (পেমেন্টস ম্যানুয়াল)** পেমেন্ট পদ্ধতি খুঁজুন:
 
-![List](_static/credit-card-manual-processing/list.jpg)
+![তালিকা](_static/credit-card-manual-processing/list.jpg)
 
-## Activate the method, edit its name and display order
+## পদ্ধতিটি সক্রিয় করুন, এর নাম সম্পাদন করুন এবং অর্ডার প্রদর্শন করুন
 
-You can edit the payment method name which will be displayed for customers in the public store or its display order. To do this click the **Edit** button in the plugin row on the payment method list page. You will be able to enter **Friendly name** and **Display order**. In this row you can also activate the plugin or make it inactive using the **Is active** field. Click the **Update** button. Your changes will be saved.
+আপনি পেমেন্ট পদ্ধতির নাম সম্পাদনা করতে পারেন যা পাবলিক স্টোর বা এর ডিসপ্লে অর্ডারে গ্রাহকদের জন্য প্রদর্শিত হবে। এটি করার জন্য পেমেন্ট পদ্ধতি তালিকা পৃষ্ঠায় প্লাগইন সারিতে **সম্পাদনা করুন** বাটনে ক্লিক করুন। আপনি **বন্ধুত্বপূর্ণ নাম** এবং **ডিসপ্লে অর্ডার** লিখতে পারবেন। এই সারিতে আপনি প্লাগইনটি সক্রিয় করতে পারেন অথবা **সক্রিয়** ক্ষেত্র ব্যবহার করে এটিকে নিষ্ক্রিয় করতে পারেন। **আপডেট** বাটনে ক্লিক করুন। আপনার পরিবর্তনগুলি সংরক্ষণ করা হবে।
 
-## Configure the payment method
+## পেমেন্ট পদ্ধতি কনফিগার করুন
 
-On the **Configuration → Payment methods** find the **Credit card (Payments.Manual)** payment method and click the **Configure** button. The *Configure - Credit card* window will be displayed, as follows:
+**কনফিগারেশন → পেমেন্ট পদ্ধতিতে** **ক্রেডিট কার্ড (পেমেন্টস ম্যানুয়াল)** পেমেন্ট পদ্ধতি খুঁজুন এবং **কনফিগার করুন** বাটনে ক্লিক করুন। *কনফিগার - ক্রেডিট কার্ড* উইন্ডো প্রদর্শিত হবে, নিম্নরূপ:
 
-![manualprocessing](_static/credit-card-manual-processing/manualprocessing.png)
+![ম্যানুয়াল প্রসেসিং](_static/credit-card-manual-processing/manualprocessing.png)
 
-Set up the payment method the following way:
+নিম্নলিখিত পদ্ধতিতে পেমেন্ট পদ্ধতি সেট আপ করুন:
 
-* In the **After checkout mark payment as** field specify the transaction mode.
-* Define the **Additional fee** for using this method.
-* In the **Additional fee. Use percentage** field define whether to apply a percentage additional fee to the order total. If not enabled, a fixed value is used.
+* **চেকআউট মার্ক পেমেন্টের পরে** ফিল্ডে লেনদেনের মোড উল্লেখ করুন।
+* এই পদ্ধতি ব্যবহারের জন্য **অতিরিক্ত ফি** নির্ধারণ করুন।
+* **অতিরিক্ত ফি -তে। শতাংশ ব্যবহার করুন** ক্ষেত্র অর্ডার মোট একটি শতাংশ অতিরিক্ত ফি প্রয়োগ করতে হবে কিনা তা নির্ধারণ করুন। সক্ষম না হলে, একটি নির্দিষ্ট মান ব্যবহার করা হয়।
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
-## Limit to stores and customer roles
+## দোকান এবং গ্রাহকের ভূমিকা সীমাবদ্ধ
 
-You can limit any payment method to store and customer role. This means that the method will be available to certain stores or customer roles only. You can do this from the *plugin list* page.
+আপনি সঞ্চয় এবং গ্রাহকের ভূমিকা সীমিত করতে পারেন। এর মানে হল যে পদ্ধতিটি শুধুমাত্র নির্দিষ্ট দোকান বা গ্রাহকের ভূমিকার জন্য উপলব্ধ হবে। আপনি এটি *প্লাগইন তালিকা* পৃষ্ঠা থেকে করতে পারেন।
 
-1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case it's **Credit card**. To find it faster use the *Search* panel in the top of the page and search by **Plugin name** or by **Group** using the *Payment methods* option.
+১। **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান। আপনি সীমাবদ্ধ করতে চান এমন প্লাগইন খুঁজুন। আমাদের ক্ষেত্রে এটি **ক্রেডিট কার্ড**। এটি দ্রুত খুঁজে পেতে পৃষ্ঠার শীর্ষে *অনুসন্ধান* প্যানেলটি ব্যবহার করুন এবং **প্লাগইন নাম** অথবা **পেমেন্ট পদ্ধতি*বিকল্প ব্যবহার করে** **গ্রুপ** দ্বারা অনুসন্ধান করুন।
 
-![Plugins](_static/credit-card-manual-processing/plugin.jpg)
+![প্লাগইন](_static/credit-card-manual-processing/plugin.jpg)
 
-1. Click the **Edit** button and the *Edit plugin details* window will be displayed, as follows:
+২। **সম্পাদনা করুন** বাটনে ক্লিক করুন এবং *প্লাগইন বিশদ সম্পাদনা করুন* উইন্ডোটি প্রদর্শিত হবে, নিম্নরূপ:
 
-![Plugins](_static/credit-card-manual-processing/edit.jpg)
+![প্লাগইন](_static/credit-card-manual-processing/edit.jpg)
 
-2. You can set up the following limits:
+৩। আপনি নিম্নলিখিত সীমা সেট করতে পারেন:
 
-	* In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+**গ্রাহকের ভূমিকা সীমাবদ্ধ** ক্ষেত্রটিতে এক বা একাধিক গ্রাহকের ভূমিকা বেছে নিন যেমন প্রশাসক, বিক্রেতা, অতিথি, যারা এই প্লাগইনটি ব্যবহার করতে পারবেন। আপনার যদি এই বিকল্পের প্রয়োজন না হয় তবে এই ক্ষেত্রটি খালি রাখুন।
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+> [!Important]
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস → এসিএল নিয়ম উপেক্ষা করুন (সাইটওয়াইড)**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা সম্পর্কে আরও পড়ুন[এখানে](xref:bn/running-your-store/customer-management/access-control-list)।
 
-	* Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
+* একটি নির্দিষ্ট দোকানে এই প্লাগইন সীমাবদ্ধ করার জন্য **সীমিত দোকানে** বিকল্পটি ব্যবহার করুন। আপনার যদি একাধিক দোকান থাকে তবে তালিকা থেকে একটি বা একাধিক নির্বাচন করুন। আপনি যদি এই বিকল্পটি ব্যবহার না করেন তবে এই ক্ষেত্রটি খালি রাখুন।
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+> [!Important]
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-	Click **Save**.
+**সেভ** ক্লিক করুন।
 
-## Tutorials
+## টিউটোরিয়াল
 
-* [Configuring Credit card (manual processing) payment method](https://www.youtube.com/watch?v=dN2q27dKvUU)
+* [ক্রেডিট কার্ড কনফিগার করা (ম্যানুয়াল প্রসেসিং) পেমেন্ট পদ্ধতি](https://www.youtube.com/watch?v=dN2q27dKvUU)

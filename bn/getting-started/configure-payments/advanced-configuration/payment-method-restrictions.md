@@ -1,22 +1,22 @@
 ---
-title: Payment method restrictions
-uid: en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions
+title: পেমেন্ট পদ্ধতি সীমাবদ্ধতা
+uid: bn/getting-started/configure-payments/advanced-configuration/payment-method-restrictions
 author: git.AndreiMaz
-contributors: git.ivkadp
+contributors: git.MDRashedKhanMenon
 ---
 
-# Payment method restrictions
+# পেমেন্ট পদ্ধতি সীমাবদ্ধতা
 
-Payment method restrictions allow you to restrict payments coming from certain countries.
+পেমেন্ট পদ্ধতি সীমাবদ্ধতা আপনাকে নির্দিষ্ট দেশ থেকে আসা পেমেন্ট সীমাবদ্ধ করার অনুমতি দেয়।
 
-To restrict payment method go to **Configuration → Payment restrictions**.
+পেমেন্ট পদ্ধতি সীমিত করতে **কনফিগারেশন → পেমেন্ট বিধিনিষেধ** এ যান।
 
-![paymentmethodrestrictions](_static/payment-method-restrictions/paymentmethodrestrictions.jpg)
+![পেমেন্ট পদ্ধতি সীমাবদ্ধতা](_static/payment-method-restrictions/paymentmethodrestrictions.jpg)
 
-Select the checkbox(es) for the country or countries in which you want the payment method(s) to not be available.
+যে দেশ বা দেশে আপনি পেমেন্ট পদ্ধতি (গুলি) উপলভ্য না হতে চান তার জন্য চেকবক্স (গুলি) নির্বাচন করুন।
 
-Click **Save**.
+**সেভ** ক্লিক করুন।
 
 > [!NOTE]
-> 
-> If required, you can select the entire restriction column for all countries.
+>
+> প্রয়োজন হলে, আপনি সমস্ত দেশের জন্য সম্পূর্ণ সীমাবদ্ধতা কলাম নির্বাচন করতে পারেন।

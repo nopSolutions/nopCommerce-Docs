@@ -1,10 +1,11 @@
 ---
-title: Advanced configuration
-uid: en/getting-started/configure-payments/advanced-configuration/index
+title: উন্নত কনফিগারেশন
+uid: bn/getting-started/configure-payments/advanced-configuration/index
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Advanced configuration
+# উন্নত কনফিগারেশন
 
-- [Payment method restrictions](xref:en/getting-started/configure-payments/advanced-configuration/payment-method-restrictions)
-- [Currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies)
+-[পেমেন্ট পদ্ধতি সীমাবদ্ধতা](xref:bn/getting-started/configure-payments/advanced-configuration/payment-method-restrictions)
+-[মুদ্রা](xref:bn/getting-start/configure-payment/advanced-configuration/currencies)

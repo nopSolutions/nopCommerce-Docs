@@ -1,127 +1,127 @@
 ---
-title: PayPal Standard
-uid: en/getting-started/configure-payments/payment-methods/paypal-standard
+title: পেপ্যাল ​​স্ট্যান্ডার্ড
+uid: bn/getting-started/configure-payments/payment-methods/paypal-standard
 author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# PayPal Standard
+# পেপ্যাল ​​স্ট্যান্ডার্ড
 
-PayPal Standard is the easiest way to securely accept credit card and PayPal payments online.
+অনলাইনে ক্রেডিট কার্ড এবং পেপ্যাল ​​পেমেন্ট নিরাপদভাবে গ্রহণ করার সবচেয়ে সহজ উপায় হল পেপ্যাল ​​স্ট্যান্ডার্ড।
 
-To configure the PayPal Standard plugin go to **Configuration → Payment methods**. Then find the **PayPal Smart Payment Buttons** payment method in the payment method list:
+পেপ্যাল ​​স্ট্যান্ডার্ড প্লাগইন কনফিগার করতে **কনফিগারেশন → পেমেন্ট পদ্ধতি** এ যান। তারপর পেমেন্ট পদ্ধতি তালিকায় **পেপাল স্মার্ট পেমেন্ট বাটন** পেমেন্ট পদ্ধতি খুঁজুন:
 
-![List](_static/paypal-standard/list.jpg)
+![তালিকা](_static/paypal-standard/list.jpg)
 
-## Activate the method, edit its name and display order
+## পদ্ধতিটি সক্রিয় করুন, এর নাম সম্পাদন করুন এবং অর্ডার প্রদর্শন করুন
 
-You can edit the payment method name which will be displayed for customers in the public store or its display order. To do this click the **Edit** button in the plugin row on the payment method list page. You will be able to enter **Friendly name** and **Display order**. In this row you can also activate the plugin or make it inactive using the **Is active** field. Click the **Update** button. Your changes will be saved.
+আপনি পেমেন্ট পদ্ধতির নাম সম্পাদনা করতে পারেন যা পাবলিক স্টোর বা এর ডিসপ্লে অর্ডারে গ্রাহকদের জন্য প্রদর্শিত হবে। এটি করার জন্য পেমেন্ট পদ্ধতি তালিকা পৃষ্ঠায় প্লাগইন সারিতে **সম্পাদনা করুন** বাটনে ক্লিক করুন। আপনি **বন্ধুত্বপূর্ণ নাম** এবং **ডিসপ্লে অর্ডার** লিখতে পারবেন। এই সারিতে আপনি প্লাগইনটি সক্রিয় করতে পারেন অথবা **সক্রিয়** ক্ষেত্র ব্যবহার করে এটিকে নিষ্ক্রিয় করতে পারেন। **আপডেট** বাটনে ক্লিক করুন। আপনার পরিবর্তনগুলি সংরক্ষণ করা হবে।
 
-## Configure the payment method
+## পেমেন্ট পদ্ধতি কনফিগার করুন
 
-To use **PayPal Standard** plugin as a payment method please follow these steps:
+পেমেন্ট পদ্ধতি হিসাবে **পেপ্যাল ​​স্ট্যান্ডার্ড** প্লাগইন ব্যবহার করতে অনুগ্রহ করে এই পদক্ষেপগুলি অনুসরণ করুন:
 
-1. Register a Business account on www.paypal.com. Follow the link [https://www.paypal.com/bizsignup/](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
+১। Www.paypal.com এ একটি ব্যবসায়িক অ্যাকাউন্ট নিবন্ধন করুন। লিঙ্কটি অনুসরণ করুন [https://www.paypal.com/bizsignup/](https://www.paypal.com/bizsignup/)। তারপর আপনার এবং আপনার ব্যবসা সম্পর্কে তথ্য পূরণ করুন:
 
-    ![step1](_static/paypal-standard/signUp1step.png)
+   ![ধাপ১](_static/paypal-standard/signUp1step.png)
 
-    > [!NOTE]
-    >
-    > If you already have an account you will be redirected to the authorization.
+   > [!NOTE]
+   >
+   > আপনার যদি ইতিমধ্যে একটি অ্যাকাউন্ট থাকে তবে আপনাকে অনুমোদনের দিকে পুননির্দেশিত করা হবে।
 
-    ![step2](_static/paypal-standard/signUp2step.png)
+   ![ধাপ২](_static/paypal-standard/signUp2step.png)
 
-    ![step3](_static/paypal-standard/signUp3step.png)
+   ![ধাপ৩](_static/paypal-standard/signUp3step.png)
 
-    ![step4](_static/paypal-standard/signUp4step.png)
+   ![ধাপ৪](_static/paypal-standard/signUp4step.png)
 
-    ![step5](_static/paypal-standard/signUp5step.png)
+   ![ধাপ৫](_static/paypal-standard/signUp5step.png)
 
-1. In the top navigation bar, click on the **Settings** icon ![settings](_static/paypal-standard/settings_icon.png)
+২। উপরের ন্যাভিগেশন বারে, **সেটিংস** আইকনে ক্লিক করুন ![সেটিংস](_static/paypal-standard/settings_icon.png)
 
-1. Select **Website payments** in the left panel and click on **Update** in the **Website preferences** line.
+৩। বাম প্যানেলে **ওয়েবসাইট পেমেন্ট** নির্বাচন করুন এবং **ওয়েবসাইট পছন্দ** লাইনে **আপডেট** এ ক্লিক করুন।
 
-    ![websitepayments](_static/paypal-standard/websitepaymentsppal.png)
-1. In the **Auto return for website payments** section set the switch to **On.** As the **Return URL** enter the URL of your site, which will be receiving ID transactions sending by PayPal after customer payment. In our case it's `http://localhost:15536/Plugins/PaymentPayPalStandard/PDTHandler` but don't forget to replace localhost with your site url.
+   ![ওয়েব সাইটপেমেন্টস](_static/paypal-standard/websitepaymentsppal.png)
+৪। **ওয়েবসাইটের পেমেন্টের জন্য অটো রিটার্ন** বিভাগে সুইচটি সেট করুন **অন**। আমাদের ক্ষেত্রে এটি `http://localhost:15536/Plugins/PaymentPayPalStandard/PDTHandler` কিন্তু আপনার সাইটের ইউআরএল দিয়ে localhost প্রতিস্থাপন করতে ভুলবেন না।
 
-    ![autoreturnURLPP](_static/paypal-standard/autoreturnURLPP.png)
-1. In the **Payment data transfer** section set the switch to **On** and copy **Identity Token.**
+   ![ক্রিয় রিটার্ন ইউআরএল পিপি](_static/paypal-standard/autoreturnURLPP.png)
+৫। **পেমেন্ট ডেটা ট্রান্সফার** বিভাগে সুইচটি **অন** এ সেট করুন এবং **আইডেন্টিটি টোকেন কপি করুন।**
 
-    ![PDTtoken](_static/paypal-standard/PDTtoken.png)
-1. To configure the plugin in the admin panel of nopCommerce go to **Configuration  → Payment methods**. In the **PayPal Standard** line click on **Configure**.
+   ![পিডিটি টোকেন](_static/paypal-standard/PDTtoken.png)
+৬। নপকমার্স এর অ্যাডমিন প্যানেলে প্লাগইন কনফিগার করতে **কনফিগারেশন → পেমেন্ট পদ্ধতি** এ যান। **পেপ্যাল ​​স্ট্যান্ডার্ড** লাইনে **কনফিগার** এ ক্লিক করুন।
 
    ![nopconfig](_static/paypal-standard/nopConfigPP.png)
 
-1. In the **Business Email** field enter an email specified when registering a Business account on paypal.com.
+৭। **বিজনেস ইমেইল** ফিল্ডে paypal.com- এ একটি বিজনেস অ্যাকাউন্ট রেজিস্টার করার সময় নির্দিষ্ট একটি ইমেইল লিখুন।
 
-1. In the **PDT Identity Token** field enter the copied **Identity Token** from clause #5.
+৮। **পিডিটি আইডেন্টিটি টোকেন** ফিল্ডে কপি করা **আইডেন্টিটি টোকেন** ক্লজ #5 থেকে লিখুন।
 
-1. Click **Save**.
+৯। ক্লিক করুন **সংরক্ষণ করুন**।
 
-For the **IPN** (Instant Payment Notification) activation:
+**আইপিএন**(তাত্ক্ষণিক পেমেন্ট বিজ্ঞপ্তি) সক্রিয়করণের জন্য:
 
-1. Select **Notifications** in the left panel and click on **Update in the Instant payment notifications** line.
+১০। বাম প্যানেলে **বিজ্ঞপ্তি** নির্বাচন করুন এবং তাত্ক্ষণিক পেমেন্ট বিজ্ঞপ্তি **লাইনে আপডেট করুন** লাইনে ক্লিক করুন।
 
-   ![notifications](_static/paypal-standard/notificationsPP.png)
+   ![বিজ্ঞপ্তি](_static/paypal-standard/notificationsPP.png)
 
-1. Familiarize yourself with the information regarding **IPN** and click **Choose IPN Settings**.
+১১। **আইপিএন** সম্পর্কিত তথ্যের সাথে নিজেকে পরিচিত করুন এবং **আইপিএন সেটিংস চয়ন করুন** ক্লিক করুন।
 
-   ![chooseIPN](_static/paypal-standard/chooseIPNSettings.png)
+   ![আইপিএন নির্বাচন করুন](_static/paypal-standard/chooseIPNSettings.png)
 
-1. Select **Receive IPN messages (Enabled)**. As **Notification URL** enter URL of your IPN handler.
+১২। **আইপিএন বার্তা গ্রহণ করুন (সক্ষম)** নির্বাচন করুন। **নোটিফিকেশন ইউআরএল হিসাবে** আপনার আইপিএন হ্যান্ডলারের ইউআরএল লিখুন।
 
-   ![editIPN](_static/paypal-standard/editIPN.png)
+   ![সম্পাদনা](_static/paypal-standard/editIPN.png)
 
-1. Click **Save.** You should get a message that you have successfully activated IPN.
+১৩। ক্লিক করুন **সংরক্ষণ করুন।** আপনি একটি বার্তা পাবেন যে আপনি সফলভাবে আইপিএন সক্রিয় করেছেন।
 
 > [!NOTE]
 >
-> Instant Payment Notification (IPN) is PayPal's message service that sends a notification when a transaction is affected. Once IPN is integrated, sellers can automate their back office so they are not required to wait for payments to come in to trigger order fulfillment.
+> তাত্ক্ষণিক পেমেন্ট বিজ্ঞপ্তি (আইপিএন) হল পেপালের বার্তা পরিষেবা যা একটি লেনদেন প্রভাবিত হলে একটি বিজ্ঞপ্তি পাঠায়। একবার আইপিএন ইন্টিগ্রেটেড হয়ে গেলে, বিক্রেতারা তাদের ব্যাক অফিস স্বয়ংক্রিয় করতে পারেন যাতে অর্ডার পূরণ করতে তাদের অর্থ প্রদানের জন্য অপেক্ষা করতে হয় না।
 
-## Limit to stores and customer roles
+## দোকান এবং গ্রাহকের ভূমিকা সীমাবদ্ধ
 
-You can limit any payment method to store and customer role. This means that the method will be available to certain stores or customer roles only. You can do this from the *plugin list* page.
+আপনি সঞ্চয় এবং গ্রাহকের ভূমিকা সীমিত করতে পারেন। এর মানে হল যে পদ্ধতিটি শুধুমাত্র নির্দিষ্ট দোকান বা গ্রাহকের ভূমিকার জন্য উপলব্ধ হবে। আপনি এটি *প্লাগইন তালিকা* পৃষ্ঠা থেকে করতে পারেন।
 
-1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case it's **PayPal Standard**. To find it faster use the *Search* panel in the top of the page and search by **Plugin name** or by **Group** using the *Payment methods* option.
+১৪। **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান। আপনি সীমাবদ্ধ করতে চান এমন প্লাগইন খুঁজুন। আমাদের ক্ষেত্রে এটি **পেপ্যাল ​​স্ট্যান্ডার্ড**। এটি দ্রুত খুঁজে পেতে পৃষ্ঠার শীর্ষে *অনুসন্ধান* প্যানেলটি ব্যবহার করুন এবং **প্লাগইন নাম** অথবা **পেমেন্ট পদ্ধতি** বিকল্প ব্যবহার করে **গ্রুপ** দ্বারা অনুসন্ধান করুন।
 
-   ![Plugins](_static/paypal-standard/plugin.jpg)
+   ![প্লাগইন](_static/paypal-standard/plugin.jpg)
 
-1. Click the **Edit** button and the *Edit plugin details* window will be displayed, as follows:
+১৫। **সম্পাদনা করুন** বাটনে ক্লিক করুন এবং *প্লাগইন বিশদ সম্পাদনা করুন* উইন্ডোটি প্রদর্শিত হবে, নিম্নরূপ:
 
-   ![Plugins](_static/paypal-standard/edit.jpg)
+   ![প্লাগইন](_static/paypal-standard/edit.jpg)
 
-1. You can set up the following limits:
+১৬। আপনি নিম্নলিখিত সীমা সেট করতে পারেন:
 
-   - In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
-
-     > [!IMPORTANT]
-     >
-     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
-
-   - Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
+   - **গ্রাহকের ভূমিকা সীমিত** ক্ষেত্রের মধ্যে এক বা একাধিক গ্রাহকের ভূমিকা বেছে নিন যেমন প্রশাসক, বিক্রেতা, অতিথি, যারা এই প্লাগইনটি ব্যবহার করতে পারবেন। আপনার যদি এই বিকল্পের প্রয়োজন না হয় তবে এই ক্ষেত্রটি খালি রাখুন।
 
      > [!IMPORTANT]
      >
-     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+     > এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস → এসিএল নিয়ম উপেক্ষা করুন (সাইটওয়াইড)**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/customer-management/access-control-list)।
 
-   - Click **Save**.
+   - একটি নির্দিষ্ট দোকানে এই প্লাগইন সীমাবদ্ধ করার জন্য **সীমিত দোকানে** বিকল্পটি ব্যবহার করুন। আপনার যদি একাধিক দোকান থাকে তবে তালিকা থেকে একটি বা একাধিক নির্বাচন করুন। আপনি যদি এই বিকল্পটি ব্যবহার না করেন তবে এই ক্ষেত্রটি খালি রাখুন।
 
-## Known Issues
+     > [!IMPORTANT]
+     >
+     > এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-### Error: Things don't appear to be working at the moment (Paypal)
+   - **সেভ** ক্লিক করুন।
 
-If you see the above error "Things don't appear to be working at the moment. Please try again later"
+## জ্ঞাত সমস্যা
 
-![paypalerror](_static/paypal-standard/file-6jjW2AH7yT.png)
+### ত্রুটি: এই মুহূর্তে জিনিসগুলি কাজ করছে বলে মনে হচ্ছে না (পেপ্যাল)
 
-The error is caused by a setting within your PayPal Account.
+যদি আপনি উপরের ত্রুটিটি দেখেন "এই মুহূর্তে জিনিসগুলি কাজ করছে বলে মনে হচ্ছে না। অনুগ্রহ করে পরে আবার চেষ্টা করুন"
 
-**Step 1**: On the left sidebar under "Products & Services" click "Website Payments"
+![পেপাল ত্রুটি](_static/paypal-standard/file-6jjW2AH7yT.png)
 
-**Step 2**: Click "Update" next to the "Website Preferences" section
+ত্রুটি আপনার পেপ্যাল ​​অ্যাকাউন্টের মধ্যে একটি সেটিং দ্বারা সৃষ্ট হয়।
 
-**Step 3**: Scroll down to "Encrypted Website Payments" section, and select "Off" from the right side and then save your changes.
+**ধাপ ১**: "পণ্য ও পরিষেবা" এর অধীনে বাম সাইডবারে "ওয়েবসাইট পেমেন্ট" ক্লিক করুন
 
-![encryptedwebsitepayments](_static/paypal-standard/file-c2yKWw2xMN.png)
+**ধাপ ২**: "ওয়েবসাইট পছন্দ" বিভাগের পাশে "আপডেট" ক্লিক করুন
 
-After saving the change you may go back to your site and try the button/forms again and they should work.
+**ধাপ ৩**: "এনক্রিপ্টেড ওয়েবসাইট পেমেন্টস" বিভাগে স্ক্রোল করুন এবং ডান দিক থেকে "বন্ধ" নির্বাচন করুন এবং তারপরে আপনার পরিবর্তনগুলি সংরক্ষণ করুন।
+
+![এনক্রিপ্ট করা ওয়েবসাইট সাইট পেমেন্ট](_static/paypal-standard/file-c2yKWw2xMN.png)
+
+পরিবর্তনটি সংরক্ষণ করার পরে আপনি আপনার সাইটে ফিরে যেতে পারেন এবং আবার বোতাম/ফর্মগুলি চেষ্টা করুন এবং সেগুলি কাজ করা উচিত।
