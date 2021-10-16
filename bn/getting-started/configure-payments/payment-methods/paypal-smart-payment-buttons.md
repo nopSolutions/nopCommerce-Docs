@@ -1,117 +1,116 @@
 ﻿---
-title: PayPal Smart Payment Buttons
-uid: en/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons
+title: পেপ্যাল ​​স্মার্ট পেমেন্ট বোতাম
+uid: bn/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons
 author: git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# PayPal Smart Payment Buttons
+# পেপ্যাল ​​স্মার্ট পেমেন্ট বোতাম
 
-PayPal Checkout with Smart Payment Buttons gives your buyers a simplified and secure checkout experience. PayPal intelligently presents the most relevant payment types to your shoppers, automatically, making it easier for them to complete their purchase using methods like Pay with Venmo, PayPal Credit, credit card payments, iDEAL, Bancontact, Sofort, and other payment types.
+স্মার্ট পেমেন্ট বাটন সহ পেপ্যাল ​​চেকআউট আপনার ক্রেতাদের একটি সরলীকৃত এবং নিরাপদ চেকআউট অভিজ্ঞতা দেয়। পেপ্যাল ​​বুদ্ধিমানভাবে আপনার ক্রেতাদের কাছে সবচেয়ে প্রাসঙ্গিক পেমেন্ট প্রকারগুলি উপস্থাপন করে, স্বয়ংক্রিয়ভাবে তাদের জন্য পে সহ ভেনমো, পেপ্যাল ​​ক্রেডিট, ক্রেডিট কার্ড পেমেন্ট, আইডিয়াল, ব্যাঙ্ককন্টাক্ট, সফট এবং অন্যান্য পেমেন্ট প্রকারগুলি ব্যবহার করে তাদের ক্রয় সম্পন্ন করা সহজ করে তোলে।
 
-## Video tutorial
+## চলচ্চিত্র মাধ্যমে শিক্ষা
 
-Wath this [video tutorial](https://youtu.be/lJxVqjwUFkY) to learn how to configure PayPal Smart Payment Buttons.
+পেপ্যাল স্মার্ট পেমেন্ট বাটন কনফিগার করতে শিখতে এই [ভিডিও টিউটোরিয়াল](https://youtu.be/lJxVqjwUFkY) দেখুন।
 
-## Configure the payment method
+## পেমেন্ট পদ্ধতি কনফিগার করুন
 
-To configure the PayPal Smart Payment Buttons plugin go to **Configuration → Payment methods**. Then find the **PayPal Smart Payment Buttons** payment method in the payment method list:
+পেপ্যাল ​​স্মার্ট পেমেন্ট বাটন প্লাগইন কনফিগার করতে **কনফিগারেশন → পেমেন্ট পদ্ধতি** এ যান। তারপর পেমেন্ট পদ্ধতি তালিকায় **পেপাল স্মার্ট পেমেন্ট বাটন** পেমেন্ট পদ্ধতি খুঁজুন:
 
-![List](_static/paypal-smart-payment-buttons/list.jpg)
+![তালিকা](_static/paypal-smart-payment-buttons/list.jpg)
 
-Follow the next steps to configure PayPal Smart Payment Buttons:
+পেপ্যাল ​​স্মার্ট পেমেন্ট বাটন কনফিগার করার জন্য পরবর্তী ধাপগুলি অনুসরণ করুন:
 
-### 1. Activate the payment method
+### ১। পেমেন্ট পদ্ধতি সক্রিয় করুন
 
-To do this click the **Edit** button in the plugin row on the payment method list page. Activate the plugin by ticking the **Is active** checkbox. Click the **Update** button. Your changes will be saved.
+এটি করার জন্য পেমেন্ট পদ্ধতি তালিকা পৃষ্ঠায় প্লাগইন সারিতে **সম্পাদনা করুন** বাটনে ক্লিক করুন। **সক্রিয়** চেকবক্সে টিক দিয়ে প্লাগইনটি সক্রিয় করুন। **আপডেট** বাটনে ক্লিক করুন। আপনার পরিবর্তনগুলি সংরক্ষণ করা হবে।
 
-### 2. Create a PayPal account
+### ২। একটি পেপ্যাল ​​অ্যাকাউন্ট তৈরি করুন
 
-If you already have a PayPal account just proceed to the [next section](#3-set-up-the-paypal-developer-dashboard).
+আপনার যদি ইতিমধ্যেই পেপ্যাল ​​অ্যাকাউন্ট থাকে তবে শুধু [পরবর্তী বিভাগ] (#3-সেট-আপ-দ্য পেপাল-ডেভেলপার-ড্যাশবোর্ড) -এ যান।
 
-Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Then fill in the information about yourself and your business:
+[পেপ্যাল](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8) এ একটি ব্যবসায়িক অ্যাকাউন্ট নিবন্ধন করুন । তারপর আপনার এবং আপনার ব্যবসা সম্পর্কে তথ্য পূরণ করুন:
 
-![Step 1](_static/paypal-smart-payment-buttons/signUp1step.png)
+![ধাপ ১](_static/paypal-smart-payment-buttons/signUp1step.png)
 
 > [!NOTE]
-> 
-> If you already have an account you will be redirected to the authorization.
+>
+> আপনার যদি ইতিমধ্যে একটি অ্যাকাউন্ট থাকে তবে আপনাকে অনুমোদনের দিকে পুননির্দেশিত করা হবে।
 
-![Step 2](_static/paypal-smart-payment-buttons/signUp2step.png)
+![ধাপ ২](_static/paypal-smart-payment-buttons/signUp2step.png)
 
-![Step 3](_static/paypal-smart-payment-buttons/signUp3step.png)
+![ধাপ ৩](_static/paypal-smart-payment-buttons/signUp3step.png)
 
-![Step 4](_static/paypal-smart-payment-buttons/signUp4step.png)
+![ধাপ ৪](_static/paypal-smart-payment-buttons/signUp4step.png)
 
-![Step 5](_static/paypal-smart-payment-buttons/signUp5step.png)
+![ধাপ ৫](_static/paypal-smart-payment-buttons/signUp5step.png)
 
-### 3. Set up the Paypal Developer Dashboard
+### ৩। পেপ্যাল ​​ডেভেলপার ড্যাশবোর্ড সেট আপ করুন
 
-1. Log into the [Developer Dashboard](https://developer.paypal.com/developer/applications) with your PayPal account credentials.
+* আপনার পেপ্যাল ​​অ্যাকাউন্টের শংসাপত্র সহ [বিকাশকারী ড্যাশবোর্ড](https://developer.paypal.com/developer/applications) এ লগ ইন করুন।
 
-1. On **My Apps & Credentials**, use the toggle to switch between live and sandbox testing apps.
-    ![My Apps & Credentials](_static/paypal-smart-payment-buttons/my-apps.jpg)
+* **আমার অ্যাপস এবং ক্রেডেনশিয়ালস** এ, লাইভ এবং স্যান্ডবক্স টেস্টিং অ্যাপের মধ্যে স্যুইচ করতে টগল ব্যবহার করুন।
+    ![আমার অ্যাপস এবং ক্রেডেনশিয়ালস](_static/paypal-smart-payment-buttons/my-apps.jpg)
   
-1. Navigate to the *REST API apps* section and click **Create App**.
-    ![Create App](_static/paypal-smart-payment-buttons/rest.jpg)
+* **REST API অ্যাপস** বিভাগে নেভিগেট করুন এবং **অ্যাপ তৈরি করুন** ক্লিক করুন।
+    ![অ্যাপ তৈরি করুন](_static/paypal-smart-payment-buttons/rest.jpg)
 
-1. Type a name for your app and click **Create App**. The app details page opens and displays your credentials.
+* আপনার অ্যাপের জন্য একটি নাম লিখুন এবং **অ্যাপ তৈরি করুন** ক্লিক করুন। অ্যাপের বিবরণ পৃষ্ঠা খোলে এবং আপনার পরিচয়পত্র প্রদর্শন করে।
 
-1. Copy and save the **Client ID** and **Secret** for your app.
+* আপনার অ্যাপের জন্য **ক্লায়েন্ট আইডি** এবং **গোপন** কপি করে সংরক্ষণ করুন।
 
-1. Review your app details and save your app if you made any changes.
+* আপনার অ্যাপের বিশদ পর্যালোচনা করুন এবং যদি আপনি কোনও পরিবর্তন করেন তবে আপনার অ্যাপ্লিকেশনটি সংরক্ষণ করুন।
 
-### 4. Configure the payment method in nopCommerce
+### ৪। নপকমার্স এ পেমেন্ট পদ্ধতি কনফিগার করুন
 
-1. Find the **PayPal Smart Payment Buttons** payment method on the **Configuration → Payment methods** page and click **Configure**. The *Configure - PayPal Smart Payment Buttons* page will be displayed, as follows:
-    ![Configure](_static/paypal-smart-payment-buttons/configure.jpg)
+* **কনফিগারেশন → পেমেন্ট পদ্ধতি** পেজে **পেপাল স্মার্ট পেমেন্ট বাটন** পেমেন্ট পদ্ধতি খুঁজুন এবং **কনফিগার করুন** ক্লিক করুন। *কনফিগার - পেপাল স্মার্ট পেমেন্ট বাটন* পৃষ্ঠাটি নিম্নরূপ প্রদর্শিত হবে:
+    ![কনফিগার](_static/paypal-smart-payment-buttons/configure.jpg)
 
-1. Define the following settings on the *Configure - PayPal Smart Payment Buttons* page:
-    * **Use sandbox** if you want to test the payment method first.
-    * Enter the **Client ID** you saved on the previous steps.
-    * Enter the **Secret** you saved on the previous steps.
-    * Choose the **Payment type** to either capture payment immediately or authorize a payment for an order after order creation.
+* *কনফিগার - পেপ্যাল ​​স্মার্ট পেমেন্ট বাটন* পৃষ্ঠায় নিম্নলিখিত সেটিংস সংজ্ঞায়িত করুন:
+* আপনি যদি প্রথমে পেমেন্ট পদ্ধতি পরীক্ষা করতে চান তবে **স্যান্ডবক্স ব্যবহার** করুন।
+* আপনি আগের ধাপে সেভ করা **ক্লায়েন্ট আইডি** লিখুন।
+* আপনি আগের ধাপে সংরক্ষিত **গোপন** লিখুন।
+* **পেমেন্টের ধরন** বেছে নিন অবিলম্বে পেমেন্ট ক্যাপচার করুন অথবা অর্ডার তৈরির পরে অর্ডারের জন্য পেমেন্ট অনুমোদন করুন।
 
-1. Then proceed to the *PayPal Prominently* panel:
-    ![Create App](_static/paypal-smart-payment-buttons/display.jpg)
+* তারপর *পেপ্যাল বিশিষ্টভাবে* প্যানেলে এগিয়ে যান:
+    ![অ্যাপ তৈরি করুন](_static/paypal-smart-payment-buttons/display.jpg)
   
-    On this panel define the display settings:
+    এই প্যানেলে ডিসপ্লে সেটিংস সংজ্ঞায়িত করুন:
 
-      * Tick the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page instead of the default checkout button.
+  * **শপিং কার্টে ডিসপ্লে বোতাম টিপুন** ডিফল্ট চেকআউট বোতামের পরিবর্তে শপিং কার্ট পৃষ্ঠায় পেপাল বোতাম প্রদর্শন করতে চেকবক্স।
 
-      * Tick the **Display buttons on product details** to display PayPal buttons on product details pages, clicking on them matches the behavior of the default 'Add to cart' button.
+  * পণ্যের বিবরণ পৃষ্ঠায় পেপাল বোতামগুলি প্রদর্শন করতে **পণ্যের বিবরণে প্রদর্শন** বোতামগুলি টিক দিন, তাদের উপর ক্লিক করা ডিফল্ট 'অ্যাড টু কার্ট' বোতামের আচরণের সাথে মেলে।
 
-      * Tick the **Display logo in header links** checkbox to display PayPal logo in header links. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
-        * If the previous checkbox is ticked the **Logo source code** field is displayed. In this field, enter source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
+  * হেডার লিঙ্কে পেপ্যাল ​​লোগো প্রদর্শনের জন্য **হেডার লিঙ্কগুলিতে প্রদর্শন লোগো** চেকবক্সে টিক দিন। এই লোগো এবং ব্যানারগুলি আপনার ক্রেতাদের জানানোর একটি দুর্দান্ত উপায় যে আপনি নিরাপদে তাদের পেমেন্ট প্রক্রিয়া করার জন্য পেপ্যাল ​​বেছে নিয়েছেন।
+  * যদি আগের চেকবক্সে টিক দেওয়া থাকে **লোগো সোর্স কোড** ক্ষেত্র প্রদর্শিত হয়। এই ক্ষেত্রে, লোগোর সোর্স কোড লিখুন। পেপ্যাল ​​লোগো সেন্টারে আরও লোগো এবং ব্যানার খুঁজুন। আপনি আপনার থিম এবং সাইট স্টাইলে সঠিকভাবে ফিট করার জন্য কোডটি সংশোধন করতে পারেন।
 
-      * Tick the **Display logo in footer** checkbox to display PayPal logo in the footer. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
-        * If the previous checkbox is ticked the **Logo source code** field is displayed. In this field, enter source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
+  * **পাদলেখের মধ্যে পেপ্যাল ​​লোগো প্রদর্শন করতে** পাদলেখের ডিসপ্লে লোগো চেকবক্সে টিক দিন। এই লোগো এবং ব্যানারগুলি আপনার ক্রেতাদের জানানোর একটি দুর্দান্ত উপায় যে আপনি নিরাপদে তাদের পেমেন্ট প্রক্রিয়া করার জন্য পেপ্যাল ​​বেছে নিয়েছেন।
+  * যদি আগের চেকবক্সে টিক দেওয়া থাকে **লোগো সোর্স কোড** ক্ষেত্র প্রদর্শিত হয়। এই ক্ষেত্রে, লোগোর সোর্স কোড লিখুন। পেপ্যাল ​​লোগো সেন্টারে আরও লোগো এবং ব্যানার খুঁজুন। আপনি আপনার থিম এবং সাইট স্টাইলে সঠিকভাবে ফিট করার জন্য কোডটি সংশোধন করতে পারেন।
 
-Click **Save** to save the plugin settings.
+প্লাগইন সেটিংস সেভ করতে **সেভ** ক্লিক করুন।
 
+## দোকান এবং গ্রাহকের ভূমিকা সীমাবদ্ধ
 
-## Limit to stores and customer roles
+আপনি সঞ্চয় এবং গ্রাহকের ভূমিকা সীমিত করতে পারেন। এর মানে হল যে পদ্ধতিটি শুধুমাত্র নির্দিষ্ট দোকান বা গ্রাহকের ভূমিকার জন্য উপলব্ধ হবে। আপনি এটি *প্লাগইন তালিকা* পৃষ্ঠা থেকে করতে পারেন।
 
-You can limit any payment method to store and customer role. This means that the method will be available to certain stores or customer roles only. You can do this from the *plugin list* page.
+* **কনফিগারেশন → স্থানীয় প্লাগইন** এ যান। আপনি সীমাবদ্ধ করতে চান এমন প্লাগইন খুঁজুন। আমাদের ক্ষেত্রে এটি **পেপাল স্মার্ট পেমেন্ট বাটন**। এটি দ্রুত খুঁজে পেতে পৃষ্ঠার শীর্ষে *অনুসন্ধান* প্যানেলটি ব্যবহার করুন এবং **প্লাগইন নাম** অথবা **পেমেন্ট পদ্ধতি** বিকল্প ব্যবহার করে **গ্রুপ** দ্বারা অনুসন্ধান করুন।
 
-1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case it's **PayPal Smart Payment Buttons**. To find it faster use the *Search* panel in the top of the page and search by **Plugin name** or by **Group** using the *Payment methods* option.
+![প্লাগইন](_static/paypal-smart-payment-buttons/plugins.jpg)
 
-![Plugins](_static/paypal-smart-payment-buttons/plugins.jpg)
+* **সম্পাদনা** বাটনে ক্লিক করুন এবং *প্লাগইন বিশদ সম্পাদনা করুন* উইন্ডো প্রদর্শিত হবে, নিম্নরূপ:
 
-1. Click the **Edit** button and the *Edit plugin details* window will be displayed, as follows:
+![সম্পাদনা](_static/paypal-smart-payment-buttons/edit.jpg)
 
-![Edit](_static/paypal-smart-payment-buttons/edit.jpg)
+* আপনি নিম্নলিখিত সীমা সেট করতে পারেন:
 
-2. You can set up the following limits:
+**গ্রাহকের ভূমিকা সীমাবদ্ধ** ক্ষেত্রটিতে এক বা একাধিক গ্রাহকের ভূমিকা বেছে নিন যেমন প্রশাসক, বিক্রেতা, অতিথি, যারা এই প্লাগইনটি ব্যবহার করতে পারবেন। আপনার যদি এই বিকল্পের প্রয়োজন না হয় তবে এই ক্ষেত্রটি খালি রাখুন।
 
-	* In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+> [!Important]
+> এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস → এসিএল নিয়ম উপেক্ষা করুন (সাইটওয়াইড)**। অ্যাক্সেস নিয়ন্ত্রণ তালিকা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/running-your-store/customer-management/access-control-list)।
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+* একটি নির্দিষ্ট দোকানে এই প্লাগইন সীমাবদ্ধ করার জন্য **সীমিত দোকানে** বিকল্পটি ব্যবহার করুন। আপনার যদি একাধিক দোকান থাকে তবে তালিকা থেকে একটি বা একাধিক নির্বাচন করুন। আপনি যদি এই বিকল্পটি ব্যবহার না করেন তবে এই ক্ষেত্রটি খালি রাখুন।
 
-	* Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
+> [!Important]
+>এই কার্যকারিতাটি ব্যবহার করার জন্য, আপনাকে নিম্নলিখিত সেটিংটি অক্ষম করতে হবে: **ক্যাটালগ সেটিংস → এসিএল নিয়ম "উপেক্ষা করুন" প্রতি দোকান সীমা "নিয়ম (সাইটওয়াইড)**। মাল্টি-স্টোর কার্যকারিতা সম্পর্কে আরও পড়ুন [এখানে](xref:bn/getting-start/advanced-configuration/multi-store)।
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
-
-	Click **Save**.
-
+**সংরক্ষণ** ক্লিক করুন।

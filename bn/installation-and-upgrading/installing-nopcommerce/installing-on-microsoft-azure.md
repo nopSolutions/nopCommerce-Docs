@@ -2,7 +2,7 @@
 title: মাইক্রোসফ্ট আজুরে ইনস্টল করা
 uid: bn/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure
 author: git.AndreiMaz
-
+contributors: git.MDRashedKhanMenon
 ---
 
 # মাইক্রোসফ্ট আজুরে ইনস্টল করা

@@ -1,6 +1,6 @@
 ---
 title: কিভাবে এবং কখন ITypeFinder ইন্টারফেস ব্যবহার করবেন
-uid: en/developer/tutorials/type-finder
+uid: bn/developer/tutorials/type-finder
 author: git.skoshelev
 contributors: git.AfiaKhanom
 ---

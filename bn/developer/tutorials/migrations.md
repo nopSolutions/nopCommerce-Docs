@@ -1,6 +1,6 @@
 ---
 title: মাইগ্রেশন কিভাবে কাজ করে?
-uid: en/developer/tutorials/migrations
+uid: bn/developer/tutorials/migrations
 author: git.AndreiMaz
 contributors: git.AfiaKhanom
 ---

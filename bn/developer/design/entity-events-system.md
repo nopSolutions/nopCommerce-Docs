@@ -1,6 +1,6 @@
 ﻿---
 title: এন্টিটি ইভেন্ট সিস্টেম
-uid: en/developer/design/entity-events-system
+uid: bn/developer/design/entity-events-system
 author: git.nopsg
 contributors: git.AfiaKhanom
 ---

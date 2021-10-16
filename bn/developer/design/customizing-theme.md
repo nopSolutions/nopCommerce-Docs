@@ -1,6 +1,6 @@
 ---
 title: নপকমার্স থিমগুলি অনুকূলিতকরণ
-uid: en/developer/design/customizing-theme
+uid: bn/developer/design/customizing-theme
 author: git.AndreiMaz
 contributors: git.AfiaKhanom
 ---
