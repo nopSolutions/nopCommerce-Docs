@@ -1,34 +1,34 @@
 ---
-title: Measures
-uid: en/getting-started/configure-shipping/advanced-configuration/measures
+title: পরিমাপ 
+uid: bn/getting-started/configure-shipping/advanced-configuration/measures
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Measures
+# পরিমাপ 
 
-This section describes how to add new units of weights and dimensions.
+এই বিভাগে বর্ণনা করা হয়েছে কিভাবে ওজন এবং মাত্রার নতুন একক যোগ করা যায়।
 
-To add new dimensions or weights:
+নতুন মাত্রা বা ওজন যোগ করতে:
 
-Go to **Configuration → Shipping → Measures**. The *Dimensions* and *Weight* sections are expanded, as follows:
+**কনফিগারেশন → শিপিং → পরিমাপ** এ যান। *মাত্রা* এবং *ওজন* বিভাগগুলি নিম্নরূপ বর্ধিত করা হয়েছে:
 
-![dimensions](_static/measures/dimensions.png)
+![মাত্রা](_static/measures/dimensions.png)
 
-![weights](_static/measures/weights.png)
+![ওজন](_static/measures/weights.png)
 
-In the bottom of the section define the following new unit details:
-* **Name** of the new dimension (weight) unit.
-* **System keyword** for this unit.
-* **Ratio to primary dimension (weight)** unit.
-* **Display order** of the measure in the list. A value of 1 represents the top of the list.
+বিভাগের নীচে নিম্নলিখিত নতুন ইউনিটের বিবরণ সংজ্ঞায়িত করুন:
+* **নতুন মাত্রা (ওজন) ইউনিটের নাম**।
+* এই ইউনিটের জন্য **সিস্টেম কীওয়ার্ড**।
+* **প্রাথমিক মাত্রার অনুপাত (ওজন)** একক।
+* **তালিকাতে পরিমাপের ক্রম প্রদর্শন করুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Then click **Add new record**.
+তারপর **নতুন রেকর্ড যোগ করুন** ক্লিক করুন।
 
-The new dimension (weight) unit is added to the *Dimensions* (*Weights*) table.
+নতুন মাত্রা (ওজন) ইউনিট *মাত্রা* (*ওজন*) টেবিলে যোগ করা হয়েছে।
 
 > [!NOTE]
-> 
-> You can set the primary dimension (weight) by clicking **Mark as primary dimension (weight)**.
+>
+> আপনি প্রাথমিক মাত্রা (ওজন) **প্রাথমিক মাত্রা (ওজন)** হিসাবে চিহ্নিত করে ক্লিক করে সেট করতে পারেন।
 
-Click **Edit** beside the measure to edit its details, as described above.
+উপরে বর্ণিত হিসাবে পরিমাপের বিবরণ সম্পাদনা করতে তার পাশে **সম্পাদনা করুন** ক্লিক করুন।

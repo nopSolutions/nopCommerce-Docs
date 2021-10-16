@@ -1,82 +1,82 @@
 ﻿---
-title: Countries, states
-uid: en/getting-started/configure-shipping/advanced-configuration/countries-states
+title: দেশ, রাজ্য
+uid: bn/getting-started/configure-shipping/advanced-configuration/countries-states
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Countries, states
+# দেশ, রাজ্য
 
-This section describes how to manage countries (where your customers are located) and states.
+এই বিভাগ কীভাবে দেশগুলি (যেখানে আপনার গ্রাহকরা অবস্থিত) এবং রাজ্যগুলি পরিচালনা করতে বর্ণনা করে।
 
-To define the countries and states go to **Configuration → Countries**.
+দেশ এবং রাজ্য সংজ্ঞায়িত করতে **কনফিগারেশন → দেশ** এ যান।
 
-![countries](_static/countries-states/countries1_1.png)
-
-> [!TIP]
-> 
-> By default, all the countries are uploaded. You can *publish* and *unpublish* countries by selecting them and clicking the corresponding buttons in the top of the page.
-
-## Add a new country
-
-To add a new country click **Add new**.
-
-![addcountry](_static/countries-states/addcountry.png)
-
-In the *country info* panel define the following country settings:
-
-* The **Name** of the country.
-* **Allows billing** to customers located in this country.
-* **Allows shipping** to customers located in this country.
-* Enter **Two letter ISO** code of this country.
-* Enter **Three letter ISO** code of this country.
-* Enter **Numeric ISO code** code of this country.
-* Select the **Subject to VAT** checkbox, to indicate whether customers in this country are charged EU VAT (the European Union Value Added Tax).
-
-> [!NOTE]
-> 
-> This field is used only when the EU VAT option is enabled on the tax settings page (Configuration → Settings → Tax settings).
-
-* To tie a certain store to a country select the required stores in the **Limited to stores** field, as follows:
-
-> [!NOTE]
-> 
-> This list is used only when you have several stores configured. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
-
-* Tick the **Published** checkbox, to enable this country to be visible for new account registrations and for the creation of shipping and billing addresses.
-* Enter the **Display order** of this country. A value of 1 represents the top of the list.
-
-Click **Save**.
-
-## Adding new states and provinces
-
-In the *State and provinces* panel, you can add states and provinces of the country.
+![দেশ](_static/countries-states/countries1_1.png)
 
 > [!TIP]
 > 
-> By default, the states of the USA are added.
+> ডিফল্টরূপে, সমস্ত দেশ আপলোড করা হয়। আপনি দেশগুলি নির্বাচন করে এবং পৃষ্ঠার শীর্ষে সংশ্লিষ্ট বোতামে ক্লিক করে *প্রকাশ* এবং *অপ্রকাশিত* করতে পারেন।
 
-![addcountry2](_static/countries-states/states.jpg)
+## একটি নতুন দেশ যুক্ত করুন
 
-Click the **Add a new state/province** button in the bottom of the panel to add a new state or province.
+একটি নতুন দেশ যুক্ত করতে **নতুন যোগ করুন** ক্লিক করুন।
 
-![countries3](_static/countries-states/countries3.png)
+![দেশ যুক্ত করুন](_static/countries-states/addcountry.png)
 
-Define the following state/province details:
+*দেশের তথ্য* প্যানেলে নিম্নলিখিত দেশের সেটিংস সংজ্ঞায়িত করুন:
 
-* **Name** of a state or a province.
-* **Abbreviation** for the province or state.
-* Tick the **Published** checkbox, to publish the state or province on the website.
-* In the **Display order** field, enter the display order of this province or state. A value of 1 represents the top of the list.
+* দেশের **নাম**।
+* **এই দেশে অবস্থিত গ্রাহকদের বিলিং করার অনুমতি দেয়**
+* **এই দেশে অবস্থিত গ্রাহকদের** শিপিংয়ের অনুমতি দেয়।
+* এই দেশের **দুই অক্ষরের আইএসও** কোড লিখুন।
+* এই দেশের **তিনটি অক্ষর আইএসও** কোড লিখুন।
+* এই দেশের **সংখ্যাসূচক আইএসও কোড** কোড লিখুন।
+* **ভ্যাট -এর বিষয়** চেকবক্স নির্বাচন করুন, এই দেশের গ্রাহকদের ইইউ ভ্যাট (ইউরোপীয় ইউনিয়ন ভ্যালু অ্যাডেড ট্যাক্স) আদায় করা হয় কিনা তা নির্দেশ করতে।
 
-Click **Save**
+> [!NOTE]
+>
+> এই ক্ষেত্রটি কেবল তখনই ব্যবহার করা হয় যখন কর সেটিংস পৃষ্ঠায় ইইউ ভ্যাট বিকল্প সক্রিয় থাকে (**কনফিগারেশন → সেটিংস → ট্যাক্স সেটিংস**)।
 
-## Export/import states
+* একটি নির্দিষ্ট স্টোরকে একটি দেশে বেঁধে দিতে **স্টোরের মধ্যে সীমিত** স্টোরে প্রয়োজনীয় স্টোর নির্বাচন করুন, নিম্নরূপ:
 
-You can export a list of states of all the countries, which were added to the system, or import the additional ones using the corresponding buttons in the top of the **Configuration → Countries** page.
+> [!NOTE]
+>
+> এই তালিকাটি তখনই ব্যবহৃত হয় যখন আপনার বেশ কয়েকটি দোকান কনফিগার থাকে। আরও তথ্যের জন্য [মাল্টি-স্টোর](xref:bn/get-start/advanced-configuration/multi-store) পড়ুন।
 
-![Export/import](_static/countries-states/export-import.jpg)
+* নতুন প্রকাশিত নিবন্ধনের জন্য এবং শিপিং এবং বিলিং ঠিকানা তৈরির জন্য এই দেশকে দৃশ্যমান করতে **প্রকাশিত** চেকবক্সে টিক দিন।
+* এই দেশের **ডিসপ্লে অর্ডার** লিখুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+
+**সেভ** ক্লিক করুন।
+
+## নতুন রাজ্য এবং প্রদেশ যোগ করা
+
+*রাজ্য এবং প্রদেশ* প্যানেলে, আপনি দেশের রাজ্য এবং প্রদেশ যোগ করতে পারেন।
+
+> [!TIP]
+>
+> ডিফল্টরূপে, মার্কিন যুক্তরাষ্ট্রের রাজ্যগুলি যোগ করা হয়।
+
+![দেশ যোগ করুন](_static/countries-states/states.jpg)
+
+একটি নতুন রাজ্য বা প্রদেশ যুক্ত করতে প্যানেলের নীচে **একটি নতুন রাজ্য/প্রদেশ যোগ করুন** বাটনে ক্লিক করুন।
+
+![দেশ যোগ করুন](_static/countries-states/countries3.png)
+
+নিম্নলিখিত রাজ্য/প্রদেশের বিবরণ সংজ্ঞায়িত করুন:
+
+* **রাজ্য বা প্রদেশের নাম**
+* **প্রদেশ বা রাজ্যের জন্য সংক্ষিপ্তকরণ**।
+* ওয়েবসাইটটিতে রাজ্য বা প্রদেশ প্রকাশ করতে **প্রকাশিত** চেকবক্সে টিক দিন।
+* **ডিসপ্লে অর্ডার** ফিল্ডে, এই প্রদেশ বা রাজ্যের ডিসপ্লে অর্ডার লিখুন। ১ এর মান তালিকার শীর্ষে প্রতিনিধিত্ব করে।
+
+**সেভ** ক্লিক করুন
+
+## রপ্তানি/আমদানি রাজ্য
+
+আপনি সিস্টেমে যোগ করা সমস্ত দেশের রাজ্যের একটি তালিকা রপ্তানি করতে পারেন, অথবা **কনফিগারেশন → দেশ** পৃষ্ঠার শীর্ষে সংশ্লিষ্ট বোতামগুলি ব্যবহার করে অতিরিক্তগুলি আমদানি করতে পারেন।
+
+![আমদানী/রপ্তানি](_static/countries-states/export-import.jpg)
 
 > [!NOTE]
 > 
-> The format of your file to be imported should be the same as of the exported one.
+> আমদানি করা আপনার ফাইলের ফর্ম্যাটটি রপ্তানি করা ফাইলটির মতো হওয়া উচিত।

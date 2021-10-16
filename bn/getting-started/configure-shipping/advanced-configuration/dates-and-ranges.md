@@ -1,42 +1,42 @@
 ---
-title: Dates and ranges
-uid: en/getting-started/configure-shipping/advanced-configuration/dates-and-ranges
+title: তারিখ এবং রেঞ্জ
+uid: bn/getting-started/configure-shipping/advanced-configuration/dates-and-ranges
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Dates and ranges
+# তারিখ এবং রেঞ্জ
 
-## Delivery dates
+## ডেলিভারির তারিখ
 
-Delivery dates are time ranges displaying approximate delivery time to a customer. The delivery dates can be applied to products and displayed on the product details pages.
+ডেলিভারির তারিখ হল সময়সীমা যা গ্রাহকের কাছে আনুমানিক ডেলিভারি সময় প্রদর্শন করে। বিতরণের তারিখ পণ্যগুলিতে প্রয়োগ করা যেতে পারে এবং পণ্যের বিবরণ পৃষ্ঠাগুলিতে প্রদর্শিত হতে পারে।
 
-* Go to **Configuration → Shipping → Dates and ranges**. The two following panels will be displayed in the *Dates and ranges* window:
+**কনফিগারেশন → শিপিং → তারিখ এবং রেঞ্জ** এ যান। নিম্নলিখিত দুটি প্যানেল *তারিখ এবং রেঞ্জ* উইন্ডোতে প্রদর্শিত হবে:
 
-### Delivery dates panel
+### ডেলিভারির তারিখের প্যানেল
 
-![Delivery dates](_static/dates-and-ranges/delivery-dates.png)
+![ডেলিভারির তারিখ](_static/dates-and-ranges/delivery-dates.png)
 
-Click **Add new**. The *Add a new delivery date* window is displayed:
+**নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন ডেলিভারি তারিখ যোগ করুন* উইন্ডো প্রদর্শিত হয়:
 
-![Add new](_static/dates-and-ranges/delivery-dates-add-new.png)
+![নতুন যোগ করুন](_static/dates-and-ranges/delivery-dates-add-new.png)
 
-* In the **Name** field, enter the name of the new delivery date, usually, it is a date range.
-* In the **Display order** field, enter the display order of this delivery date. 1 represents the top of the list.
+* **নাম** ক্ষেত্রের মধ্যে, নতুন বিতরণের তারিখের নাম লিখুন, সাধারণত, এটি একটি তারিখ পরিসীমা।
+* **ডিসপ্লে অর্ডার** ফিল্ডে, এই ডেলিভারির তারিখের ডিসপ্লে অর্ডার লিখুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Click the **Save** button.
+**সেভ** বাটনে ক্লিক করুন।
 
-### Product availability ranges panel
+### পণ্যের প্রাপ্যতা পরিসীমা প্যানেল
 
-Here you can set up product availability ranges. This options will be displayed on the product editing page.
+এখানে আপনি পণ্যের প্রাপ্যতা রেঞ্জ সেট করতে পারেন। এই বিকল্পগুলি পণ্য সম্পাদনা পৃষ্ঠায় প্রদর্শিত হবে।
 
-![Availability ranges](_static/dates-and-ranges/avialability-ranges.png)
+![প্রাপ্যতা পরিসীমা](_static/dates-and-ranges/avialability-ranges.png)
 
-Click **Add new** to add your own range. The *Add a new product availability range* window is displayed:
+আপনার নিজস্ব পরিসর যোগ করতে **নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন পণ্য প্রাপ্যতা পরিসীমা যোগ করুন* উইন্ডো প্রদর্শিত হয়:
 
-![Add new availability ranges](_static/dates-and-ranges/avialability-ranges-add-new.png)
+![নতুন প্রাপ্যতা রেঞ্জ যোগ করুন](_static/dates-and-ranges/avialability-ranges-add-new.png)
 
-* In the **Name** field enter name of new range, for example, 2 months.
-* In the **Display order** field, enter the display order of this availability range. 1 represents the top of the list.
+* **নাম** ক্ষেত্রটিতে নতুন পরিসরের নাম লিখুন, উদাহরণস্বরূপ, ২ মাস।
+* **ডিসপ্লে অর্ডার** ফিল্ডে, এই প্রাপ্যতা পরিসরের ডিসপ্লে অর্ডার লিখুন। ১ তালিকার শীর্ষে প্রতিনিধিত্ব করে।
 
-Click the **Save** button.
+**সেভ** বাটনে ক্লিক করুন।

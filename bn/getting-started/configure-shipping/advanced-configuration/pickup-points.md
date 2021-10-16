@@ -1,48 +1,48 @@
 ---
-title: Pickup points
-uid: en/getting-started/configure-shipping/advanced-configuration/pickup-points
+title: পিকআপ পয়েন্ট
+uid: bn/getting-started/configure-shipping/advanced-configuration/pickup-points
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Pickup points
+# পিকআপ পয়েন্ট
 
-Pickup point is an option providing customers the flexibility to select a point where they can receive parcels.
+পিকআপ পয়েন্ট হল একটি বিকল্প যেখানে গ্রাহকরা পার্সেল পেতে পারে এমন একটি পয়েন্ট নির্বাচন করার নমনীয়তা প্রদান করে।
 
 > [!NOTE]
-> 
-> This option is available only when the checkbox **"Pick up in store" enabled** is ticked on the shipping settings page (**Configuration → Settings → Shipping settings**).
+>
+> এই বিকল্পটি তখনই পাওয়া যাবে যখন চেকবক্স **"পিক আপ ইন স্টোর" সক্ষম** শিপিং সেটিংস পৃষ্ঠায় টিক দেওয়া থাকে (**কনফিগারেশন → সেটিংস → শিপিং সেটিংস**)।
 
-To manage pickup point providers:
+পিকআপ পয়েন্ট প্রদানকারীদের পরিচালনা করতে:
 
-Go to **Configuration → Shipping → Pickup points**, the *Pickup point providers* page is displayed:
+**কনফিগারেশন → শিপিং → পিকআপ পয়েন্ট** এ যান,*পিকআপ পয়েন্ট প্রদানকারী* পৃষ্ঠা প্রদর্শিত হয়:
 
-![Pickup point providers](_static/pickup-points/pickup-point-providers.jpg)
+![পিকআপ পয়েন্ট প্রদানকারী](_static/pickup-points/pickup-point-providers.jpg)
 
-By default, only one **Pickup in store** option is available. Make sure the pickup point provider is active. If not click the **Edit** button and tick the checkbox in the **Is active** column. Then save the changes by clicking the **Update** button.
+ডিফল্টরূপে, শুধুমাত্র একটি **পিকআপ ইন স্টোর** বিকল্প উপলব্ধ। পিকআপ পয়েন্ট প্রদানকারী সক্রিয় আছে তা নিশ্চিত করুন। যদি না হয় তবে **এডিট** বাটনে ক্লিক করুন এবং **সক্রিয়** কলামের চেকবক্সে টিক দিন। তারপর **আপডেট** বাটনে ক্লিক করে পরিবর্তনগুলি সংরক্ষণ করুন।
 
-To edit existing pickup points or add new click **Configure** in the grid. The *Configure - Pickup in store* page will be opened:
+বিদ্যমান পিকআপ পয়েন্ট সম্পাদনা করতে অথবা গ্রিডে নতুন **কনফিগার** ক্লিক করুন। *কনফিগার - পিকআপ ইন স্টোর* পৃষ্ঠা খোলা হবে:
 
-![Pickup point configure](_static/pickup-points/pickup-in-store-configure.png)
+![পিকআপ পয়েন্ট কনফিগার](_static/pickup-points/pickup-in-store-configure.png)
 
-Click **Add a new pickup point**, the *Add new* window is displayed:
+ক্লিক করুন **একটি নতুন পিকআপ পয়েন্ট যোগ করুন**,*নতুন যোগ করুন* উইন্ডো প্রদর্শিত হবে:
 
-![New pickup point](_static/pickup-points/pickup-point-add-new.png)
+![নতুন পিকআপ পয়েন্ট](_static/pickup-points/pickup-point-add-new.png)
 
-Define the following details:
+নিম্নলিখিত বিবরণ সংজ্ঞায়িত করুন:
 
-* **Name** of the pickup point.
-* **Description** if needed.
-* Select a **Country** from the drop-down list.
-* Select a **State/province** from the drop-down list.
-* **City**.
-* **Address 1**.
-* **Zip/postal code**.
-* Pickup point **Opening hours**.
-* **Pickup fee** in needed.
-* **Display order** of this pickup point.
-* **Store(s)** using this pickup point.
+* **পিকআপ পয়েন্টের নাম**।
+* **বর্ণনা** প্রয়োজন হলে।
+* ড্রপ-ডাউন তালিকা থেকে একটি **দেশ** নির্বাচন করুন।
+* ড্রপ-ডাউন তালিকা থেকে একটি **রাজ্য/প্রদেশ** নির্বাচন করুন।
+* **শহর**।
+* **ঠিকানা ১**.
+* **জিপ/পোস্টাল কোড**।
+* পিকআপ পয়েন্ট **খোলার সময়**।
+* **পিকআপ ফি** প্রয়োজন।
+* **এই পিকআপ পয়েন্টের ডিসপ্লে অর্ডার**।
+* **এই স্টোর (গুলি)** এই পিকআপ পয়েন্ট ব্যবহার করে।
 
-**Save** changes.
+**পরিবর্তনগুলোর সংরক্ষন করুন**
 
-Click **Edit** beside the pickup point to edit the details entered before.
+আগে প্রবেশ করা বিবরণ সম্পাদনা করতে পিকআপ পয়েন্টের পাশে **সম্পাদনা করুন** ক্লিক করুন।

@@ -1,32 +1,32 @@
 ---
-title: Warehouses
-uid: en/getting-started/configure-shipping/advanced-configuration/warehouses
+title: গুদাম
+uid: bn/getting-started/configure-shipping/advanced-configuration/warehouses
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.MDRashedKhanMenon
 ---
 
-# Warehouses
+# গুদাম
 
-nopCommerce supports multiple warehouses. This tool allows a store owner to keep track of inventory in different warehouses and improve logistics.
+নপকমার্স একাধিক গুদাম সমর্থন করে। এই সরঞ্জামটি একটি দোকানের মালিককে বিভিন্ন গুদামে তালিকাভুক্তির ট্র্যাক রাখতে এবং রসদ উন্নত করতে দেয়।
 
-The following section describes how to add warehouses. This includes the warehouse details, such as name, country, address and more. To add new warehouses:
+নিচের অংশে বর্ণনা করা হয়েছে কিভাবে গুদাম যুক্ত করা যায়। এর মধ্যে রয়েছে গুদামের বিবরণ, যেমন নাম, দেশ, ঠিকানা এবং আরও অনেক কিছু। নতুন গুদাম যুক্ত করতে:
 
-1. Go to **Configuration → Shipping → Warehouses**. The *Warehouses* window is displayed:
-    ![Warehouses](_static/warehouses/warehouses.png)
+১। যান **কনফিগারেশন → শিপিং → গুদাম**। *গুদাম* জানালা প্রদর্শিত হয়:
+    ![গুদাম](_static/warehouses/warehouses.png)
 
-1. Click **Add new**. The *Add a new warehouse* window is displayed:
-    ![Add new](_static/warehouses/warehouses-add-new.png)
+২। **নতুন যোগ করুন** ক্লিক করুন। *একটি নতুন গুদাম যুক্ত করুন* উইন্ডো প্রদর্শিত হয়:
+    ![নতুন যোগ করুন](_static/warehouses/warehouses-add-new.png)
 
-1. Define the following warehouse details:
-    * **Name**.
-    * **Country** of the warehouse.
-    * **State/province** of the warehouse.
-    * **County/region** of the warehouse.
-    * **City** of the warehouse.
-    * **Address 1** of the warehouse.
-    * **Zip/postal code** of the warehouse.
-    * **Phone number** of the warehouse.
-    * In the **Admin comment** field, enter an optional comment or information for internal use.
+৩। নিম্নলিখিত গুদামের বিবরণ সংজ্ঞায়িত করুন:
+    * **নাম**।
+    * গুদামের **দেশ**।
+    * **গুদামের রাজ্য/প্রদেশ**।
+    * **গুদামের কাউন্টি/অঞ্চল**।
+    * গুদামের **শহর**।
+    * **গুদামের ঠিকানা**।
+    * **গুদামের জিপ/পোস্টাল কোড**।
+    * **গুদামের ফোন নম্বর**।
+    * **এডমিন মন্তব্য** ক্ষেত্রের মধ্যে, অভ্যন্তরীণ ব্যবহারের জন্য একটি ঐচ্ছিক মন্তব্য বা তথ্য লিখুন।
 
-Then you will be able to choose a warehouse for you products or even use a multiple warehouses functionality on the product edit page:
-![Multiple warehouses](_static/warehouses/multiple.jpg)
+তারপরে আপনি আপনার পণ্যগুলির জন্য একটি গুদাম চয়ন করতে পারবেন বা এমনকি পণ্য সম্পাদনা পৃষ্ঠায় একাধিক গুদাম কার্যকারিতা ব্যবহার করতে সক্ষম হবেন:
+![একাধিক গুদাম](_static/warehouses/multiple.jpg)
