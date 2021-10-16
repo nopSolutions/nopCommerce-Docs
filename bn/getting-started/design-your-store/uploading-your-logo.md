@@ -1,18 +1,18 @@
 ﻿---
-title: Uploading your logo
+title: আপনার লোগো আপলোড করুন
 uid: en/getting-started/design-your-store/uploading-your-logo
-author: git.mariannk
+author: git.AfiaKhanom
 ---
 
-# Uploading your logo
+# আপনার লোগো আপলোড করুন
 
-The logo of your site is usually displayed on each site page in the page header. Regardless of which theme you choose and how often you change it, your logo will look perfect in most nopCommerce themes. Follow the next steps to upload a new logo to your site:
+আপনার সাইটের লোগো সাধারণত পৃষ্ঠার শিরোনামে প্রতিটি সাইটের পৃষ্ঠায় প্রদর্শিত হয়। আপনি কোন থিমটি বেছে নিন এবং কতবার আপনি এটি পরিবর্তন করেন তা নির্বিশেষে, আপনার লোগোটি বেশিরভাগ নপকমার্স থিমগুলিতে নিখুঁত দেখাবে। আপনার সাইটে একটি নতুন লোগো আপলোড করার জন্য পরবর্তী পদক্ষেপগুলি অনুসরণ করুন:
 
-1. Go to **Configuration → Settings → General settings**. The *General settings* window is displayed:
-![General settings](_static/uploading-your-logo/general-settings.jpg)
+১. **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান। *সাধারণ সেটিংস* উইন্ডো প্রদর্শিত হয়:
+![সাধারণ সেটিংস](_static/uploading-your-logo/general-settings.jpg)
 
-1. Find the **Logo** field, then click the **Upload a file** button beside and choose an image file. The chosen image will be uploaded. You can remove the uploaded image by clicking the **Remove picture** button.
+২. **লোগো** ক্ষেত্রটি খুঁজুন, তারপরে **একটি ফাইল আপলোড করুন** বাটনে ক্লিক করুন এবং একটি চিত্র ফাইল চয়ন করুন। নির্বাচিত ছবিটি আপলোড করা হবে। আপনি **ছবি সরান** বাটনে ক্লিক করে আপলোড করা ছবিটি সরাতে পারেন।
 
-1. Click the **Save** button in the top right to activate the logo on your site.
+৩. আপনার সাইটে লোগো সক্রিয় করতে উপরের ডানদিকে **সংরক্ষণ করুন** বাটনে ক্লিক করুন।
 
-1. Visit the public site to make sure the logo looks nice.
+৪. লোগো সুন্দর দেখায় তা নিশ্চিত করতে পাবলিক সাইটে যান।

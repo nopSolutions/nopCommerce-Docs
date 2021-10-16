@@ -1,38 +1,38 @@
 ﻿---
-title: Nivo slider
-uid: en/getting-started/design-your-store/nivo-slider
+title: নিভো স্লাইডার
+uid: bn/getting-started/design-your-store/nivo-slider
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.AfiaKhanom
 ---
 
-# Nivo slider plugin
+# নিভো স্লাইডার প্লাগইন
 
-Nivo slider widget plugin allows you to display a slider on the homepage of your store.
+নিভো স্লাইডার উইজেট প্লাগইন আপনাকে আপনার দোকানের হোমপেজে একটি স্লাইডার প্রদর্শন করতে দেয়।
 
-## Configure the Nivo slider plugin
+## নিভো স্লাইডার প্লাগইন কনফিগার করুন
 
-Go to **Configuration → Widgets**. The *Widgets* window is displayed:
+**কনফিগারেশন → উইজেটস** এ যান। *উইজেট* উইন্ডো প্রদর্শিত হয়:
 
-![Widgets](_static/nivo-slider/nivo-slider-widgets.png)
+![উইজেটস](_static/nivo-slider/nivo-slider-widgets.png)
 
-Click **Edit** beside the Nivo slider plugin. The window is expanded, as follows:
+নিভো স্লাইডার প্লাগইন এর পাশে **সম্পাদনা** এ ক্লিক করুন। উইন্ডোটি প্রসারিত করা হয়েছে, নিম্নরূপ:
 
-![Nivo Edit](_static/nivo-slider/nivo-slider-edit.png)
+![নিভো সম্পাদনা](_static/nivo-slider/nivo-slider-edit.png)
 
-Tick the **Is active** checkbox, to enable the plugin. 
+প্লাগইনটি সক্ষম করতে **সক্রিয়** চেকবক্সে টিক দিন।
 
-Click **Configure**. The *Configure – Nivo slider* window is displayed, as follows:
+**কনফিগার** ক্লিক করুন। *কনফিগার - নিভো স্লাইডার* উইন্ডোটি নিম্নরূপ প্রদর্শিত হবে:
 
-![Nivo - Configure](_static/nivo-slider/nivo-slider-configure.jpg)
+![নিভো - কনফিগার](_static/nivo-slider/nivo-slider-configure.jpg)
 
-Perform the following for each slide you would like to upload:
+আপনি যে স্লাইডটি আপলোড করতে চান তার জন্য নিম্নলিখিতগুলি সম্পাদন করুন:
 
-* In the **Picture** field, click **Upload a file** to upload the required picture. Click **Remove picture** to remove the existing one.
-* In the **Comment** field, enter a comment for the picture or leave empty to not display any text.
-* In the **Image alternate text** field, enter alternate text that will be added to image.
-* In the **URL** field, enter the required URL or leave empty if you do not want the picture to be clickable.
+* **ছবি** ফিল্ডে, প্রয়োজনীয় ছবি আপলোড করতে **একটি ফাইল আপলোড করুন** ক্লিক করুন। বিদ্যমান ছবিটি সরানোর জন্য **ছবি সরান** ক্লিক করুন।
+* **মন্তব্য** ক্ষেত্রের মধ্যে, ছবির জন্য একটি মন্তব্য লিখুন বা কোনও পাঠ্য প্রদর্শন না করার জন্য খালি ছেড়ে দিন।
+* **ইমেজ অল্টারনেটিভ টেক্সট** ফিল্ডে, বিকল্প টেক্সট লিখুন যা ছবিতে যোগ করা হবে।
+* **ইউআরএল** ফিল্ডে, প্রয়োজনীয় ইউআরএল লিখুন অথবা যদি আপনি ছবিটি ক্লিকযোগ্য করতে না চান তবে খালি রাখুন।
 
-Click **Save**. 
+**সংরক্ষণ করুন** ক্লিক করুন।
 
-Now you can go to the homepage of your public store and the updated image slider:
-![Homepage](_static/nivo-slider/homepage.jpg)
+এখন আপনি আপনার পাবলিক স্টোরের হোমপেজে এবং আপডেটেড ইমেজ স্লাইডারে যেতে পারেন:
+![হোমপেজে](_static/nivo-slider/homepage.jpg)

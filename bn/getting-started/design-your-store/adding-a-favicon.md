@@ -1,73 +1,73 @@
 ﻿---
-title: Adding a favicon
-uid: en/getting-started/design-your-store/adding-a-favicon
+title: একটি ফেভিকন যোগ করুন
+uid: bn/getting-started/design-your-store/adding-a-favicon
 author: git.RomanovM
-contributors: git.rajupaladiya, git.DmitriyKulagin, git.mariannk
+contributors: git.AfiaKhanom
 ---
 
-# Uploading favicons
+# ফেভিকন আপলোড করা
 
-Since the version 4.20 you can automatically upload favicons through the admin area.
+সংস্করণ ৪.২০ থেকে আপনি স্বয়ংক্রিয়ভাবে অ্যাডমিন এলাকার মাধ্যমে ফেভিকন আপলোড করতে পারেন।
 
 > [!NOTE]
 > 
-> For multistore case you need to repeat this upload procedure for each store.
+> মাল্টিস্টোর ক্ষেত্রে আপনাকে প্রতিটি দোকানের জন্য এই আপলোড পদ্ধতি পুনরাবৃত্তি করতে হবে।
 
-1. To upload favicons go to **Configuration → Settings → General settings.** The *Favicon and app icons* panel is displayed: 
-![settings_block](_static/adding-a-favicon/settings_block.png)
+১. ফেভিকন আপলোড করতে **কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান।  ফেভিকন এবং অ্যাপ *আইকন* প্যানেল প্রদর্শিত হয়:
+![সেটিংস_ব্লক](_static/adding-a-favicon/settings_block.png)
 
-1. Click the green button **Upload icons archive**, the file selection dialog will be opened: ![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Here you need to copy the path to your icons (it vary depends on the store and the virtual directory). For example: `/icons/icons_0`.
+২. সবুজ বোতামে ক্লিক করুন **একক আইকন বা আইকন সংরক্ষণাগার আপলোড করুন**, ফাইল নির্বাচন ডায়ালগ খোলা হবে: ![ফাইল_সিলেকশন_ডায়লগ](_static/adding-a-favicon/file_selection_dialog.png) এখানে আপনাকে আপনার আইকনগুলির পথটি অনুলিপি করতে হবে (এটি স্টোর এবং ভার্চুয়াল ডিরেক্টরির উপর নির্ভর করে পরিবর্তিত হয়)। উদাহরণ স্বরূপ: `/icons/icons_0`।
 
-1. There are several options for what to upload, depending on how friendly your site favicons should be for different devices:
+৩. বিভিন্ন ডিভাইসের জন্য আপনার সাইট ফেভিকন কতটা বন্ধুত্বপূর্ণ হওয়া উচিত তার উপর নির্ভর করে কি আপলোড করতে হবে তার জন্য বেশ কয়েকটি বিকল্প রয়েছে:
 
-   - The most complete option is to use one of the favicon generators. In this manual, we will show an example of using a [RealFaviconGenerator](https://realfavicongenerator.net/). Thanks to this service, uploading the full favicon package will be carried out in a few clicks.
+   - সবচেয়ে সম্পূর্ণ বিকল্প হল ফেভিকন জেনারেটর ব্যবহার করা। এই ম্যানুয়ালটিতে, আমরা ব্যবহারের একটি উদাহরণ দেখাব [RealFaviconGenerator](https://realfavicongenerator.net/)। এই পরিষেবাটির জন্য ধন্যবাদ, সম্পূর্ণ ফেভিকন প্যাকেজ আপলোড করা কয়েক ক্লিকে সম্পন্ন করা হবে।
 
-      * Go to this generator main page where you will be invited to choose a picture for the favicon 
+      * এই জেনারেটরের প্রধান পৃষ্ঠায় যান যেখানে আপনাকে ফেভিকনের জন্য একটি ছবি চয়ন করার জন্য আমন্ত্রণ জানানো হবে
       ![realfavicongenerator](_static/adding-a-favicon/realfavicongenerator.png)
 
-      * After selecting a picture and clicking **Continue with this picture**, you will be redirected to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. The service will automatically show display examples. You can customize them to your needs or leave the default ones.
+      * একটি ছবি নির্বাচন করে এবং **এই ছবি দিয়ে চালিয়ে যান** ক্লিক করার পর, আপনাকে পরবর্তী পৃষ্ঠায় পুননির্দেশিত করা হবে। এখানে আপনি নির্দিষ্ট ডিভাইস এবং অ্যাপ্লিকেশনের জন্য ফেভিকনের ডিসপ্লে সেটিংস সামঞ্জস্য করতে পারেন - iOS ওয়েব ক্লিপ, অ্যান্ড্রয়েড ক্রোম, উইন্ডোজ মেট্রো, ম্যাকোস সাফারি ইত্যাদি। পরিষেবাটি স্বয়ংক্রিয়ভাবে প্রদর্শনের উদাহরণ দেখাবে। আপনি সেগুলি আপনার প্রয়োজন অনুসারে কাস্টমাইজ করতে পারেন বা ডিফল্টগুলি ছেড়ে দিতে পারেন।
 
-      * At the bottom of the same page you can find the **Favicon Generator Options** panel. 
-      ![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
+      * একই পৃষ্ঠার নীচে আপনি **ফেভিকন জেনারেটর বিকল্প** প্যানেল খুঁজে পেতে পারেন।
+      ![ফেভিকন_জেনারেটর_বিকল্প](_static/adding-a-favicon/favicon_generator_options.png)
 
-         - In this section, you must set certain settings. In the **Path** tab, select the option `I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here` and specify the path from the step 2. ![favicon_path](_static/adding-a-favicon/favicon_path.png)
+         - এই বিভাগে, আপনাকে অবশ্যই নির্দিষ্ট সেটিংস সেট করতে হবে। **পথ** ট্যাবে, 'আমি পারি না বা আমি আমার ওয়েব সাইটের মূলে ফেভিকন ফাইল স্থাপন করতে চাই না' বিকল্পটি নির্বাচন করুন। পরিবর্তে আমি তাদের এখানে রাখব এবং ধাপ 2 থেকে পথটি নির্দিষ্ট করব। ![ফেভিকন_পথ](_static/adding-a-favicon/favicon_path.png)
 
-         - In the **Version/Refresh** tab, select the option depending on whether your site is already in production. The setting description will help you with this. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
+         - **সংস্করণ/রিফ্রেশ** ট্যাবে, আপনার সাইট ইতিমধ্যে উৎপাদনে আছে কিনা তার উপর নির্ভর করে বিকল্পটি নির্বাচন করুন। সেটিং বিবরণ আপনাকে এটিতে সাহায্য করবে। ![ফেভিকন_সংস্করণ](_static/adding-a-favicon/favicon_version.png)
 
-         - In the **Additional files** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
+         - **অতিরিক্ত ফাইল** ট্যাবে প্যাকেজে একটি এইচটিএমএল ফাইল তৈরি করার বিকল্পটি পরীক্ষা করা প্রয়োজন। ![ফেভিকন_অতিরিক্ত_ফাইল](_static/adding-a-favicon/favicon_additional_fields.png)
 
-      * Now all settings are set, click the button to generate. ![generate_button](_static/adding-a-favicon/generate_button.png)
+      * এখন সমস্ত সেটিংস সেট করা হয়েছে, জেনারেট করতে বোতামে ক্লিক করুন। ![উৎপন্ন_বাটন](_static/adding-a-favicon/generate_button.png)
 
-      * Get your favicon package. ![download_package](_static/adding-a-favicon/download_package.png)
+      * আপনার ফেভিকন প্যাকেজ পান। ![ডাউনলোড_প্যাকেজ](_static/adding-a-favicon/download_package.png)
 
-   - The simplest option is to use only **favicon.ico** file, that has been successfully used on many sites for a long time, until devices with different screen resolutions appeared.
+   - সবচেয়ে সহজ বিকল্প হল শুধুমাত্র **favicon.ico** ফাইলটি ব্যবহার করা, যেটি বিভিন্ন সাইটে বিভিন্ন স্ক্রিন রেজোলিউশনের ডিভাইস উপস্থিত না হওয়া পর্যন্ত দীর্ঘদিন ধরে সফলভাবে ব্যবহার করা হয়েছে।
 
-      * Find a sample favicon package that is located in `wwwroot/icons/samples/` directory and copy it.
+      * একটি নমুনা ফেভিকন প্যাকেজ খুঁজুন যা `wwwroot/icons/sample/` ডিরেক্টরিতে অবস্থিত এবং এটি অনুলিপি করুন।
 
-      * In the new package delete all files except **favicon.ico** and **html_code.html**.
+      * নতুন প্যাকেজে **favicon.ico** এবং **html_code.html** বাদে সব ফাইল মুছে দিন।
 
-      * Replace in this package the file **favicon.ico** with your new favicon.
+      * এই প্যাকেজে আপনার নতুন ফেভিকন দিয়ে **favicon.ico** ফাইলটি প্রতিস্থাপন করুন।
 
-      * Edit the **html_code.html** file. Leave the only one line there: `<link rel="shortcut icon" href="/icons/icons_0/favicon.ico">`, assuming that `/icons/icons_0` is the path from the step 2.
+      * **html_code.html** ফাইল সম্পাদনা করুন। সেখানে শুধু একটি লাইন ছেড়ে দিন: `<link rel =" shortcut icon "href ="/icons/icons_0/favicon.ico ">`, ধরে নিচ্ছি যে `/icons/icons_0` ধাপ 2 থেকে পথ।
 
-      * Save these two files into a package. Your favicon package is ready.
+      * এই দুটি ফাইল একটি প্যাকেজে সংরক্ষণ করুন। আপনার ফেভিকন প্যাকেজ প্রস্তুত।
 
-   - An intermediate option is using the full favicon package without a generator.
+   - একটি মধ্যবর্তী বিকল্প একটি জেনারেটর ছাড়া সম্পূর্ণ ফেভিকন প্যাকেজ ব্যবহার করা হয়।
 
-      1. Find a sample favicon package that is located in `wwwroot/icons/samples/` directory and copy it.
+      ১. একটি নমুনা ফেভিকন প্যাকেজ খুঁজুন যা `wwwroot/icons/sample/` ডিরেক্টরিতে অবস্থিত এবং এটি অনুলিপি করুন।
 
-      1. Replace the pictures in the new package with your own ones taking into account the original sizes.
+      ২. নতুন প্যাকেজে আপনার নিজের ছবিগুলি মূল আকারগুলি বিবেচনা করে প্রতিস্থাপন করুন।
 
-      1. Edit the **html_code.html** file, replace all entries of the `/icons/icons_0` with the path that was saved on the step 2.
+      ৩. ফাইলটি সম্পাদনা **html_code.html** করুন, `/icons/icons_0` এর সমস্ত এন্ট্রিগুলি ২য় ধাপে সংরক্ষিত পথের সাথে প্রতিস্থাপন করুন।
 
-      1. Save this package. Your favicon package is ready.
+      ৪. এই প্যাকেজটি সংরক্ষণ করুন। আপনার ফেভিকন প্যাকেজ প্রস্তুত।
 
-1. Return back to the admin area with a prepared favicon package to upload. Select the desired file and click **Upload icons archive**. ![upload_package](_static/adding-a-favicon/file_selection_dialog.png)
+৪. আপলোড করার জন্য প্রস্তুত ফ্যাভিকন প্যাকেজ সহ প্রশাসক এলাকায় ফিরে আসুন। পছন্দসই ফাইল নির্বাচন করুন এবং **আপলোড আইকন আর্কাইভ** ক্লিক করুন। ![আপলোড_প্যাকেজ](_static/adding-a-favicon/file_selection_dialog.png)
 
-1. Ensure your package is successfully uploaded. ![success](_static/adding-a-favicon/success.png)
+৫. আপনার প্যাকেজ সফলভাবে আপলোড করা হয়েছে তা নিশ্চিত করুন। ![সফল](_static/adding-a-favicon/success.png)
 
-1. To see the new favicon on the site you should clear cache in the admin area and in the browser then reload the page.
+৬. সাইটে নতুন ফেভিকন দেখতে আপনার অ্যাডমিন এলাকায় এবং ব্রাউজারে ক্যাশে সাফ করা উচিত তারপর পৃষ্ঠাটি পুনরায় লোড করুন।
 
 > [!TIP]
 > 
-> To create a favicon package, you can use any generators, third-party services, or do it manually. The only requirement is the existence of the **html_code.html** file with the html code, which will be placed in the `<head>` element of the site pages.
+> একটি ফেভিকন প্যাকেজ তৈরি করতে, আপনি যেকোনো জেনারেটর, তৃতীয় পক্ষের পরিষেবা ব্যবহার করতে পারেন, অথবা নিজে নিজে করতে পারেন। একমাত্র প্রয়োজনীয়তা হল এইচটিএমএল কোড সহ **html_code.html** ফাইলের অস্তিত্ব, যা সাইট পৃষ্ঠার `<head>` উপাদানটিতে স্থাপন করা হবে।

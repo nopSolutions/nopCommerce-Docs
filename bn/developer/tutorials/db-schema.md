@@ -2,7 +2,7 @@
 title: ডিফল্ট ডাটাবেস স্কিমা
 uid: bn/developer/tutorials/db-schema
 author: git.skoshelev
-contributors: git.mariannk
+contributors: git.AfiaKhanom
 ---
 
 # ডিফল্ট ডাটাবেস স্কিমা
@@ -13,18 +13,18 @@ contributors: git.mariannk
 
 এই ধরনের একটি স্কিম সহজেই বোঝার জন্য আসুন এটিকে কম্পোনেন্ট অংশে বিভক্ত করি। নীচে, আমরা টেবিলগুলিকে সর্বাধিক প্রাকৃতিক এবং বোধগম্য উপায়ে গ্রুপ করেছি:
 
-* [Customers info](#customers-info)
-* [Products info](#products-info)
-  * [Product attributes](#product-attributes)
-  * [Tier price](#tier-price)
-  * [Inventory by warehouses](#inventory-by-warehouses)
-* [Orders](#orders)
-* [Shipments](#shipments)
-* [Discounts](#discounts)
-* [Shopping cart](#shopping-cart)
-* [Addresses](#addresses)
+* [গ্রাহকদের তথ্য](#customers-info)
+* [পণ্যের তথ্য](#products-info)
+  * [পণ্য বৈশিষ্ট্য](#product-attributes)
+  * [টিয়ার মূল্য](#tier-price)
+  * [গুদাম দ্বারা তালিকা](#inventory-by-warehouses)
+* [অর্ডার](#orders)
+* [পরিবহন](#shipments)
+* [ছাড়](#discounts)
+* [শপিং কার্ট](#shopping-cart)
+* [ঠিকানা](#addresses)
 
-## Customers info
+## গ্রাহকদের তথ্য
 
 ![Customers info](_static/db-schema/customers-info.jpg)
 
@@ -32,7 +32,7 @@ contributors: git.mariannk
 
 আমরা টেবিল এবং ক্ষেত্রের উদ্দেশ্য অনুসন্ধান করব না, কারণ তাদের নাম যথেষ্ট সেলফ-ডেস্ক্রিপটিভ।
 
-### বৈশিষ্ট্য (Customers info)
+### বৈশিষ্ট্য (গ্রাহকদের তথ্য)
 
 * **Customer** টেবিলে আমাদের তিনটি ক্ষেত্র রয়েছে যা আসলে ফরেন কী হিসাবে সংজ্ঞায়িত করা উচিত কিন্তু বাস্তবে, সেগুলি নয়:
     1. AffiliateId
@@ -72,15 +72,15 @@ contributors: git.mariannk
 
     ![Xml](_static/db-schema/attributes.jpg)
 
-## Products info
+## পণ্যের তথ্য
 
-![Products info](_static/db-schema/products-info.jpg)
+![পণ্যের তথ্য](_static/db-schema/products-info.jpg)
 
 চিত্রটিতে, আপনি পণ্যের জন্য বেস ডেটা দেখতে পারেন (নীচে পণ্য তথ্য সারণির স্কিমা)। একটি নিয়ম হিসাবে, এই ডেটা ৯৯% ক্ষেত্রে ব্যবহার করা হয়।
 
 ![Product table](_static/db-schema/product.png)
 
-### বৈশিষ্ট্য (Products info)
+### বৈশিষ্ট্য (পণ্যের তথ্য)
 
 স্টোর সেটিংসের উপর নির্ভর করে, এই স্কিমের সাথে অতিরিক্ত টেবিল সংযুক্ত হতে পারে। উদাহরণস্বরূপ, একাধিক গুদামের মধ্যে পণ্যের পরিমাণ বিতরণ করা।
 
@@ -90,27 +90,27 @@ contributors: git.mariannk
 
 ![Product table](_static/db-schema/product-review.jpg)
 
-### Product attributes
+### পণ্য বৈশিষ্ট্য
 
 তারপরে নীচে উপস্থাপিত বৈশিষ্ট্যগুলির বৈশিষ্ট্য এবং তাদের সংমিশ্রণগুলি বিবেচনা করা যাক:
 
-![Product attributes](_static/db-schema/product-attributes.jpg)
+![পণ্য বৈশিষ্ট্য](_static/db-schema/product-attributes.jpg)
 
-### Tier price
+### টিয়ার মূল্য
 
 আপনি যদি পণ্যের জন্য টায়ার প্রাইসিং ব্যবহার করেন তাহলে আপনাকে নিম্নলিখিত স্কিমের দিকেও মনোযোগ দিতে হবে:
 
-![Tier price](_static/db-schema/tier-price.jpg)
+![টিয়ার মূল্য](_static/db-schema/tier-price.jpg)
 
-### Inventory by warehouses
+### গুদাম দ্বারা তালিকা
 
 এই বৈশিষ্ট্যটি প্রায়শই ব্যবহৃত হয় না তা সত্ত্বেও, একটি বিশেষ গুদামে পণ্যগুলির হিসাবের জন্য একটি স্কিম দেওয়া দরকারী হতে পারে:
 
-![Inventory by warehouses](_static/db-schema/stock-quantity-history.jpg)
+![গুদাম দ্বারা তালিকা](_static/db-schema/stock-quantity-history.jpg)
 
-## Orders
+## অর্ডার 
 
-![orders](_static/db-schema/orders.jpg)
+![অর্ডার](_static/db-schema/orders.jpg)
 
 এই চিত্রটিতে, আমরা অর্ডার ডেটা সম্পর্কিত টেবিলগুলি দেখতে পারি। **Order** টেবিলে নিম্নলিখিত কাঠামো রয়েছে:
 
@@ -118,17 +118,17 @@ contributors: git.mariannk
 
 কোন বিষয়ে মন্তব্য করার প্রয়োজন নেই, যেহেতু চিত্র থেকে সবকিছু পরিষ্কার হওয়া উচিত এবং ক্ষেত্রের নামগুলি যথেষ্ট সেলফ-ডেস্ক্রিপটিভ। এটি শুধুমাত্র লক্ষ করা উচিত যে **RewardPointsHistory** টেবিলটি শুধুমাত্র তখনই ব্যবহার করা হয় যদি *Reward points system* স্টোরের জন্য সক্রিয় হয়।
 
-## Shipments
+## পরিবহন
 
-![shipments](_static/db-schema/shipments.jpg)
+![পরিবহন](_static/db-schema/shipments.jpg)
 
 ডায়াগ্রামে সমস্ত টেবিলের উদ্দেশ্য, আগের মতো, কোনও প্রশ্ন উত্থাপন করে না। যাইহোক, আসুন কয়েকটি পয়েন্টে মনোযোগ দিন। **ShippingMethod** টেবিল সংযুক্ত প্লাগইনগুলির তালিকা পরিচালনা করতে ব্যবহৃত হয় এবং নির্দিষ্ট শিপিং পদ্ধতিটি **Order** টেবিলের*ShippingRateComputationMethodSystemName* এবং *ShippingMethod* ক্ষেত্রগুলিতে সংরক্ষিত থাকে।
 
 **ShipmentItem** টেবিলের*OrderItemId*ক্ষেত্রটি মূলত **OrderItem** টেবিলের একটি রেফারেন্স।
 
-## Discounts
+## ছাড়
 
-![discounts](_static/db-schema/discounts.jpg)
+![ছাড়](_static/db-schema/discounts.jpg)
 
 উপরের চিত্র থেকে, আমরা দেখতে পাচ্ছি যে ছাড় তিনটি গ্রুপে প্রয়োগ করা যেতে পারে:  **Products**, **Manufacturers**, **Categories**
 এবং প্লাগইন দ্বারা নিয়ন্ত্রিত বিভিন্ন নিয়ম দ্বারা কনফিগার করা যেতে পারে (``IDiscountRequirementRule``)।
@@ -153,11 +153,11 @@ public enum RequirementGroupInteractionType
 }
 ```
 
-## Shopping cart
+## শপিং কার্ট
 
 দোকানের আরেকটি গুরুত্বপূর্ণ অংশ হল একটি শপিং কার্ট। আমাদের ক্ষেত্রে এই মেকানিজমের স্কিম খুবই সহজ:
 
-![Shopping cart](_static/db-schema/shopping-cart-item.jpg)
+![শপিং কার্ট](_static/db-schema/shopping-cart-item.jpg)
 
 শুধুমাত্র লক্ষ্য করার মতো বিষয় হল এই স্কিমটি একটি উইশলিস্টের জন্যও ব্যবহার করা হয়। এই দুটি প্রকার আলাদা করার জন্য, *ShoppingCartTypeId* ক্ষেত্রটি ব্যবহার করা হয়। এই ক্ষেত্রের মানগুলি অবশ্যই **ShoppingCartType** গণনার মানগুলির সাথে মেলে:
 
@@ -179,10 +179,10 @@ public enum ShoppingCartType
 }
 ```
 
-## Addresses
+## ঠিকানা 
 
 সম্ভবত আপনি ডেলিভারি এবং গ্রাহক ঠিকানা উভয়ই ঠিকানা সংরক্ষণে জড়িত টেবিল স্কিমাতেও আগ্রহী হবেন:
 
-![addresses](_static/db-schema/addresses.jpg)
+![ঠিকানা](_static/db-schema/addresses.jpg)
 
 আপনি বুঝতে পারছেন, স্ট্যান্ডার্ড ইনস্টলেশনের মধ্যে আরও অনেক টেবিল রয়েছে। আমরা তাদের সব বর্ণনা করি না, যেহেতু তাদের অনেকের কোন সংযোগ নেই এবং শুধুমাত্র একটি নির্দিষ্ট উদ্দেশ্যে পরিবেশন করা হয়, অন্যরা খুব কমই ব্যবহৃত হয়।

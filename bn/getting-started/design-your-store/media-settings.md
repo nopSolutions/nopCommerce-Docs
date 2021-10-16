@@ -1,46 +1,48 @@
 ---
-title: Media settings
-uid: en/getting-started/design-your-store/media-settings
+title: মিডিয়া সেটিংস
+uid: bn/getting-started/design-your-store/media-settings
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.mariannk
+contributors: git.AfiaKhanom
 ---
 
-# Media Settings
+# মিডিয়া সেটিংস
 
-This section describes how to set the media details of your store. This includes defining product, variants and avatar image sizes and more.
+এই বিভাগটি বর্ণনা করে কিভাবে আপনার দোকানের মিডিয়া বিবরণ সেট করা যায়। এর মধ্যে রয়েছে প্রোডাক্ট, রূপ এবং অবতার ছবির মাপ এবং আরও অনেক কিছু নির্ধারণ করা।
 
-To define the media settings go to **Configuration → Settings → Media settings**. The *Media settings* window is displayed:
+মিডিয়া সেটিংস সংজ্ঞায়িত করতে **কনফিগারেশন → সেটিংস → মিডিয়া সেটিংস** এ যান। *মিডিয়া সেটিংস* উইন্ডো প্রদর্শিত হয়:
 
 ![p1](_static/media-settings/media_sett_1.png)
 
-In the *Common* panel define the settings, as follows:
-- Click the **Change** button above **Pictures are stored into** option to choose between database or file system.
+*সাধারণ* প্যানেলে সেটিংস সংজ্ঞায়িত করুন, নিম্নরূপ:
+- উপরের **পরিবর্তন** বাটনে ক্লিক করুন **ছবিগুলো ডাটাবেস বা ফাইল সিস্টেমের মধ্যে বেছে নিতে** অপশনে সংরক্ষণ করা হয়।
 
   > [!NOTE]
   > 
-  > It is recommended to make a backup of the database before clicking the **Change** button.
-- In the **Maximum image size** field, enter the maximum image size (meaning, the longest side) allowed for image upload (in pixels).
-- Tick **Multiple thumb directories** to have multiple thumb directories. It is useful when your hosting company has limitations on the amount of files per directory.
-- In the **Default image quality (0 - 100)** enter the quality of uploaded images. Once changed you have to manually delete all already generated thumbs.
-- Tick **Import product images using hash** to use HASHBYTES to compare pictures with uploaded products. Please note that this functionality is not supported by some databases.
-- Tick **Picture zoom** to enable picture zoom on the product details page.
+  > **পরিবর্তন** বাটনে ক্লিক করার আগে ডাটাবেসের ব্যাকআপ করার পরামর্শ দেওয়া হচ্ছে।
 
-In the *Product* panel define the settings, as follows:
-- In the **Product detail image size** field, enter the default size for the product detail images in pixels.
-- In the **Product thumbnail image size (catalog)** field, enter the default size for the product thumbnail images  displayed on the category or manufacturer pages in pixels.
-- In the **Product thumbnail image size (product page)** field, enter the default size for the product thumbnail images (in pixels) displayed on the product details page (used when you have more than one product image).
-- In the **Associated product image size** field, enter the default size for the associated product images in pixels. Associated products are part of grouped products.
+- **সর্বোচ্চ ছবির আকার** ফিল্ডে, ইমেজ আপলোডের জন্য অনুমোদিত সর্বাধিক ইমেজ সাইজ (অর্থাত্ দীর্ঘতম দিক) লিখুন (পিক্সেলে)।
+- একাধিক থাম্ব ডাইরেক্টরি থাকতে **একাধিক থাম্ব ডিরেক্টরি** টিক করুন। এটি দরকারী যখন আপনার হোস্টিং কোম্পানির প্রতি ডিরেক্টরি ফাইলের পরিমাণ সীমাবদ্ধতা আছে।
+- **ডিফল্ট চিত্রের গুণমান (0 - 100)** আপলোড করা ছবির কোয়ালিটি লিখুন। একবার পরিবর্তিত হলে আপনাকে ম্যানুয়ালি মুছে ফেলতে হবে ইতিমধ্যেই উৎপন্ন সমস্ত থাম্বনেইল।
+- আপলোড করা পণ্যের সাথে ছবি তুলনা করতে হ্যাশবাইট ব্যবহার করতে **হ্যাশ ব্যবহার করে প্রোডাক্টের ইমেজগুলো আপলোড করুন**। দয়া করে মনে রাখবেন যে এই কার্যকারিতা কিছু ডেটাবেস দ্বারা সমর্থিত নয়।
+- পণ্যের বিবরণ পৃষ্ঠায় ছবি জুম সক্ষম করতে **ছবি জুম** টিক দিন।
 
-In the *Other pages* panel define the settings, as follows:
-- In the **Category thumbnail image size** field, enter the default size for the product thumbnail images on the category pages in pixels.
-- In the **Manufacturer thumbnail image size** field, enter the default size for the product thumbnail images on the manufacturer pages in pixels.
-- In the **Vendor thumbnail image size** field, enter the default size for the product thumbnail images on the vendor pages in pixels.
-- In the **Cart/wishlist thumbnail image size** field, enter the default size for product thumbnail images in the shopping cart and wishlist in pixels.
-- In the **Mini-shopping cart thumbnail image** size field, enter the default size (in pixels) of the product thumbnail images displayed in the mini-shopping cart block.
-- In the **Avatar image size** field, enter the default size for the avatar images.
+*পণ্য* প্যানেলে সেটিংস সংজ্ঞায়িত করুন, নিম্নরূপ:
+- **পণ্যের বিশদ চিত্রের আকার** ফিল্ডে, পিক্সেলে প্রোডাক্ট ডিটেইলস ইমেজের জন্য ডিফল্ট সাইজ লিখুন।
+- **পণ্যের থাম্বনেইল চিত্রের আকার (ক্যাটালগ)** ফিল্ডে, পিক্সেলে ক্যাটাগরি বা ম্যানুফ্যাকচারার পেজে প্রদর্শিত প্রোডাক্ট থাম্বনেইল ইমেজের জন্য ডিফল্ট সাইজ লিখুন।
+- **পণ্যের থাম্বনেইল চিত্রের আকার (পণ্য পৃষ্ঠা)** ফিল্ডে, প্রোডাক্টের বিস্তারিত পৃষ্ঠায় প্রদর্শিত প্রোডাক্ট থাম্বনেইল ইমেজ (পিক্সেলে) এর জন্য ডিফল্ট সাইজ লিখুন (যখন আপনার একাধিক প্রোডাক্ট ইমেজ থাকে তখন ব্যবহার করা হয়)।
+- **সংযুক্ত পণ্যের চিত্রের সাইজ** ফিল্ডে, সংশ্লিষ্ট প্রোডাক্ট ইমেজের পিক্সেলে ডিফল্ট সাইজ লিখুন। সংশ্লিষ্ট পণ্যগুলি গ্রুপযুক্ত পণ্যের অংশ।
 
-This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from *Multi-store configuration drop-down* list and tick all needed checkboxes at the left side to set custom value for them.
+*অন্যান্য পেজগুলি* প্যানেলে সেটিংস সংজ্ঞায়িত করে, নিম্নরূপ:
+- **বিভাগের থাম্বনেইল ছবির আকার** ফিল্ডে, পিক্সেলের ক্যাটাগরির পেজে প্রোডাক্ট থাম্বনেইল ইমেজের জন্য ডিফল্ট সাইজ লিখুন।
+- **প্রস্তুতকারক থাম্বনেইল চিত্রের সাইজ** ফিল্ডে, প্রোডাক্ট থাম্বনেইল ইমেজগুলির জন্য ডিফল্ট সাইজ পিক্সেলে প্রস্তুতকারক পৃষ্ঠায় লিখুন।
+- **বিক্রেতার থাম্বনেইল চিত্রের আকার** ক্ষেত্রের মধ্যে, বিক্রেতার পৃষ্ঠায় পণ্যের থাম্বনেইল ছবির জন্য ডিফল্ট আকারটি পিক্সেলে প্রবেশ করান।
+- **কার্ট/ইচ্ছা তালিকা থাম্বনেইল ছবির আকার** ফিল্ডে, শপিং কার্টে প্রোডাক্ট থাম্বনেইল ইমেজের জন্য ডিফল্ট সাইজ এবং পিক্সেলে উইশলিস্ট লিখুন।
+- **মিনি-শপিং কার্টের থাম্বনেইল চিত্রের সাইজ** এর ক্ষেত্রে, মিনি-শপিং কার্ট ব্লকে প্রদর্শিত পণ্যের থাম্বনেইল ছবির ডিফল্ট আকার (পিক্সেলে) লিখুন।
+- **অ্যাভাটার ইমেজ সাইজ ** ফিল্ডে, অ্যাভাটার ইমেজের জন্য ডিফল্ট সাইজ লিখুন।
 
-## Tutorials
 
-- [Managing media settings](https://www.youtube.com/watch?v=3JS4Zj4TBwQ)
+এই পৃষ্ঠাটি **মাল্টি-দোকান কনফিগারেশন এর জন্য** সক্ষম করে, এর মানে হল যে একই সেটিংস সব স্টোরের জন্য সংজ্ঞায়িত করা যেতে পারে, অথবা স্টোর থেকে স্টোর থেকে আলাদা হতে পারে। আপনি যদি একটি নির্দিষ্ট দোকানের জন্য সেটিংস পরিচালনা করতে চান, তাহলে *মাল্টি-দোকান কনফিগারেশন এর জন্য ড্রপ-ডাউন* তালিকা থেকে তার নামটি চয়ন করুন এবং তাদের জন্য কাস্টম মান নির্ধারণ করতে বাম পাশে সমস্ত প্রয়োজনীয় চেকবক্সে টিক দিন।
+
+## টিউটোরিয়াল
+
+- [মিডিয়া সেটিংস পরিচালনা](https://www.youtube.com/watch?v=3JS4Zj4TBwQ)
