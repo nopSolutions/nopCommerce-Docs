@@ -154,7 +154,7 @@
               name: ম্যানুয়াল (স্থির বা দেশ/রাজ্য/জিপ দ্বারা)
               href: getting-started/configure-taxes/tax-providers/manual.md
             -
-              name: আভালারা
+              name: অ্যাভালারা
               href: getting-started/configure-taxes/tax-providers/avalara.md
     -
       name: ইমেইল অ্যাকাউন্টসমূহ

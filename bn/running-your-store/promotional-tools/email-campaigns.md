@@ -88,4 +88,4 @@ contributors: git.MDRashedKhanMenon
 
 ## টিউটোরিয়াল
 
-- [nopCommerce এ প্রচারাভিযান পরিচালনা করা](https://youtu.be/iW2m8LQyyWM)
+- [নপকমার্স-এ প্রচারাভিযান পরিচালনা করা](https://youtu.be/iW2m8LQyyWM)

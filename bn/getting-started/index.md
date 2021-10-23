@@ -80,7 +80,7 @@ contributors: git.AfiaKhanom
 
 * [পুরস্কার পয়েন্ট](xref:bn/running-your-store/promotional-tools/reward-points)
 
-### Cross-marketing
+### ক্রস মার্কেটিং
 
 নপকমার্সে, আপনি আপনার গ্রাহকদের [অতিরিক্ত পণ্য](xref:bn/running-your-store/promotional-tools/cross-sells-and-related-products)  অফার করতে পারেন যা তারা তাদের কেনাকাটার আচরণের উপর ভিত্তি করে পছন্দ করতে পারে। এটি আপনার জন্য কিছু পণ্য আপ-সেল করার একটি ভাল সুযোগ।
 

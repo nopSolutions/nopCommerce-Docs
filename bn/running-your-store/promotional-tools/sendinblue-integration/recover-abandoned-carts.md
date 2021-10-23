@@ -13,7 +13,7 @@ contributors: git.MDRashedKhanMenon
 আপনি নিম্নলিখিত প্রয়োজন হবে:
 * সেন্ডিনব্লু অ্যাকাউন্টের শংসাপত্র। যদি আপনার না থাকে, [বিনামূল্যে সাইন আপ করুন](https://app.sendinblue.com/account/register/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link)।
 *নিশ্চিত করুন যে সেন্ডিনব্লু এর [নতুন টেমপ্লেট ল্যাঙ্গুয়েজ](https://help.sendinblue.com/hc/en-us/articles/360000659260?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) চালু আছে।
-* এই ধাপগুলি অনুসরণ করুন (xref: bn/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) সেন্ডিনব্লু প্লাগইন সেট আপ করতে।
+* এই ধাপগুলি অনুসরণ করুন [সেন্ডিনব্লু প্লাগইন সেট আপ](xref:bn/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) করতে।
 
 ## একটি পরিত্যক্ত কার্ট ইমেল টেমপ্লেট তৈরি করুন
 
@@ -129,7 +129,7 @@ contributors: git.MDRashedKhanMenon
 > [!NOTE]
 > একটি গ্রাহককে তার ইমেইল ঠিকানা দ্বারা চিহ্নিত করতে হবে কর্মপ্রবাহকে ট্রিগার করার জন্য, যেমন একজন গ্রাহককে আপনার নপকমার্স দোকানে তাদের অ্যাকাউন্টে লগ ইন করতে হবে অথবা চেকআউটের সময় তাদের ইমেল ঠিকানা ইনপুট করতে হবে।
 
-আপনার Sendinblue অ্যাকাউন্টের [অটোমেশন](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) ট্যাবে যান।
+আপনার সেন্ডিনব্লু অ্যাকাউন্টের [অটোমেশন](https://automation.sendinblue.com/?utm_source=nopcommerce_plugin&utm_medium=plugin&utm_campaign=module_link) ট্যাবে যান।
 
 **+একটি নতুন ওয়ার্কফ্লো তৈরি করুন** এ ক্লিক করুন, তারপর **বিস্তারিত পরিত্যক্ত কার্ট** নির্বাচন করুন এবং ধাপগুলো অনুসরণ করুন।
 

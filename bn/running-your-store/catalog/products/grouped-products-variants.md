@@ -38,5 +38,5 @@ contributors: git.MDRashedKhanMenon
 
 ## টিউটোরিয়াল
 
-- [nopCommerce এ গোষ্ঠীভুক্ত পণ্যগুলি বোঝা](https://www.youtube.com/watch?v=B1UdxXf_jmE)
-- [nopCommerce এ বান্ডেল পণ্য তৈরি করা](https://www.youtube.com/watch?v=sf9jP6KFcko)
+- [নপকমার্স-এ গোষ্ঠীভুক্ত পণ্যগুলি বোঝা](https://www.youtube.com/watch?v=B1UdxXf_jmE)
+- [নপকমার্স-এ বান্ডেল পণ্য তৈরি করা](https://www.youtube.com/watch?v=sf9jP6KFcko)

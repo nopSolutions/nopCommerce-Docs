@@ -15,7 +15,7 @@ contributors: git.MDRashedKhanMenon
 <div class="quick-links">
 	<div class="quick-item pre-installed">
 		<a href="/bn/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.html"><h3>প্রাক ইনস্টলড</h3></a>
-		<p>নপকমার্স টিম এবং উইনহোস্ট দ্বারা তৈরি করা সহজ এবং দ্রুত নোপকমার্স ইনস্টলেশন সমাধান</p>
+		<p>নপকমার্স টিম এবং উইনহোস্ট দ্বারা তৈরি করা সহজ এবং দ্রুত নপকমার্স ইনস্টলেশন সমাধান</p>
 	</div>
 	<div class="quick-item manually">
 		<a href="/bn/installation-and-upgrading/installing-nopcommerce/index.html"><h3>ম্যানুয়ালি ইনস্টল করা</h3></a>
@@ -109,10 +109,10 @@ contributors: git.MDRashedKhanMenon
 <div class="quick-links">
 	<div class="quick-item premium">
 		<a target="_blank" href="https://www.nopcommerce.com/bn/nopcommerce-premium-support-services"><h3>প্রিমিয়াম</h3></a>
-		<p>যারা 24 ঘন্টার মধ্যে পেশাদার সমর্থন পেতে চান তাদের জন্য অর্থ প্রদানের প্রিমিয়াম সহায়তা পরিষেবা সরবরাহ করে নপকমার্স টিম</p>
+		<p>যারা ২৪ ঘন্টার মধ্যে পেশাদার সমর্থন পেতে চান তাদের জন্য অর্থ প্রদানের প্রিমিয়াম সহায়তা পরিষেবা সরবরাহ করে নপকমার্স টিম</p>
 	</div>
 	<div class="quick-item forums">
 		<a target="_blank" href="https://www.nopcommerce.com/bn/boards"><h3>ফোরাম</h3></a>
-		<p>আমরা নতুন প্রশ্ন এবং আলোচনাকে স্বাগত জানাই তাই নোপকমার্স ফোরামে আপনার প্রশ্নটি নির্দ্বিধায় জিজ্ঞাসা করুন</p>
+		<p>আমরা নতুন প্রশ্ন এবং আলোচনাকে স্বাগত জানাই তাই নপকমার্স ফোরামে আপনার প্রশ্নটি নির্দ্বিধায় জিজ্ঞাসা করুন</p>
 	</div>
 </div>
