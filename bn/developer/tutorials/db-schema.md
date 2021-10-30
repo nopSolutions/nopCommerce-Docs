@@ -2,7 +2,7 @@
 title: ডিফল্ট ডাটাবেস স্কিমা
 uid: bn/developer/tutorials/db-schema
 author: git.skoshelev
-contributors: git.AfiaKhanom
+contributors: git.AfiaKhanom, git.MDRashedKhanMenon
 ---
 
 # ডিফল্ট ডাটাবেস স্কিমা
@@ -15,9 +15,9 @@ contributors: git.AfiaKhanom
 
 * [গ্রাহকদের তথ্য](#customers-info)
 * [পণ্যের তথ্য](#products-info)
-  * [পণ্য বৈশিষ্ট্য](#product-attributes)
-  * [টিয়ার মূল্য](#tier-price)
-  * [গুদাম দ্বারা তালিকা](#inventory-by-warehouses)
+* [পণ্য বৈশিষ্ট্য](#product-attributes)
+* [টিয়ার মূল্য](#tier-price)
+* [গুদাম দ্বারা তালিকা](#inventory-by-warehouses)
 * [অর্ডার](#orders)
 * [পরিবহন](#shipments)
 * [ছাড়](#discounts)
@@ -26,7 +26,7 @@ contributors: git.AfiaKhanom
 
 ## গ্রাহকদের তথ্য
 
-![Customers info](_static/db-schema/customers-info.jpg)
+![গ্রাহকদের তথ্য](_static/db-schema/customers-info.jpg)
 
 এই ডায়াগ্রামে টেবিলের একটি সেট দেখানো হয়েছে যাতে মৌলিক গ্রাহকের তথ্য রয়েছে। এটি লিঙ্কগুলির দিক নির্দেশ করে।
 
@@ -34,7 +34,7 @@ contributors: git.AfiaKhanom
 
 ### বৈশিষ্ট্য (গ্রাহকদের তথ্য)
 
-* **Customer** টেবিলে আমাদের তিনটি ক্ষেত্র রয়েছে যা আসলে ফরেন কী হিসাবে সংজ্ঞায়িত করা উচিত কিন্তু বাস্তবে, সেগুলি নয়:
+* **গ্রাহক** টেবিলে আমাদের তিনটি ক্ষেত্র রয়েছে যা আসলে ফরেন কী হিসাবে সংজ্ঞায়িত করা উচিত কিন্তু বাস্তবে, সেগুলি নয়:
     1. AffiliateId
     1. VendorId
     1. RegisteredInStoreId
@@ -52,13 +52,13 @@ contributors: git.AfiaKhanom
 
     এই টেবিলের গঠন নীচে উপস্থাপন করা হয়েছে:
 
-    ![GenericAttribute](_static/db-schema/generic-attribute.jpg)
+    ![জেনেরিক অ্যাট্রিবিউট](_static/db-schema/generic-attribute.jpg)
 
     .উল্লিখিত গ্রাহকের ডেটা ছাড়াও, এই টেবিলটি অন্যান্য সত্তাগুলির জন্য যে কোনও ডেটা সংরক্ষণ করতে পারে। আমরা এই টেবিলটি উদ্দেশ্যমূলকভাবে যুক্ত করেছি যাতে আপনি টেবিলের কাঠামো পরিবর্তন না করে যেকোন সত্তাকে প্রসারিত করতে পারেন।
 
     উপরন্তু, এই টেবিলটি এক্সএমএল ফরম্যাটে বিক্রেতাদের এবং গ্রাহকদের জন্য নির্বাচিত মান সহ কাস্টম **Customer attributes** এবং **Vendor attributes** সংরক্ষণ করে। এটি কেমন দেখাচ্ছে তা বুঝতে নিম্নলিখিত সারিগুলি দেখুন:
 
-    ![Xml](_static/db-schema/xml.jpg)
+    ![এক্সএমএল](_static/db-schema/xml.jpg)
 
     *value* কলাম থেকে এক্সএমএল স্ট্রিং এর উদাহরণে আমরা দেখতে পাই কিভাবে একটি নির্দিষ্ট বিক্রেতার জন্য অ্যাট্রিবিউট মান ঠিকভাবে সংরক্ষণ করা হয়:
 
@@ -70,7 +70,7 @@ contributors: git.AfiaKhanom
 
     কাস্টম গ্রাহকের বৈশিষ্ট্যগুলির বিক্রেতার বৈশিষ্ট্যগুলির মতো একই কাঠামো রয়েছে। নিচের স্ক্রিনশটটি  **Customer attributes** এবং **Vendor attributes** এবং তাদের মানগুলির মধ্যে সম্পর্কের প্রতিনিধিত্ব করে:
 
-    ![Xml](_static/db-schema/attributes.jpg)
+    ![এক্সএমএল](_static/db-schema/attributes.jpg)
 
 ## পণ্যের তথ্য
 
@@ -78,17 +78,17 @@ contributors: git.AfiaKhanom
 
 চিত্রটিতে, আপনি পণ্যের জন্য বেস ডেটা দেখতে পারেন (নীচে পণ্য তথ্য সারণির স্কিমা)। একটি নিয়ম হিসাবে, এই ডেটা ৯৯% ক্ষেত্রে ব্যবহার করা হয়।
 
-![Product table](_static/db-schema/product.png)
+![পণ্য টেবিল](_static/db-schema/product.png)
 
 ### বৈশিষ্ট্য (পণ্যের তথ্য)
 
 স্টোর সেটিংসের উপর নির্ভর করে, এই স্কিমের সাথে অতিরিক্ত টেবিল সংযুক্ত হতে পারে। উদাহরণস্বরূপ, একাধিক গুদামের মধ্যে পণ্যের পরিমাণ বিতরণ করা।
 
-![Product table](_static/db-schema/warehouse.jpg)
+![পণ্য টেবিল](_static/db-schema/warehouse.jpg)
 
 অথবা যদি আপনি পণ্য রিভিউ কার্যকারিতা ব্যবহার করতে চান:
 
-![Product table](_static/db-schema/product-review.jpg)
+![পণ্য টেবিল](_static/db-schema/product-review.jpg)
 
 ### পণ্য বৈশিষ্ট্য
 
@@ -114,7 +114,7 @@ contributors: git.AfiaKhanom
 
 এই চিত্রটিতে, আমরা অর্ডার ডেটা সম্পর্কিত টেবিলগুলি দেখতে পারি। **Order** টেবিলে নিম্নলিখিত কাঠামো রয়েছে:
 
-![order](_static/db-schema/order.png)
+![অর্ডার](_static/db-schema/order.png)
 
 কোন বিষয়ে মন্তব্য করার প্রয়োজন নেই, যেহেতু চিত্র থেকে সবকিছু পরিষ্কার হওয়া উচিত এবং ক্ষেত্রের নামগুলি যথেষ্ট সেলফ-ডেস্ক্রিপটিভ। এটি শুধুমাত্র লক্ষ করা উচিত যে **RewardPointsHistory** টেবিলটি শুধুমাত্র তখনই ব্যবহার করা হয় যদি *Reward points system* স্টোরের জন্য সক্রিয় হয়।
 
@@ -122,9 +122,9 @@ contributors: git.AfiaKhanom
 
 ![পরিবহন](_static/db-schema/shipments.jpg)
 
-ডায়াগ্রামে সমস্ত টেবিলের উদ্দেশ্য, আগের মতো, কোনও প্রশ্ন উত্থাপন করে না। যাইহোক, আসুন কয়েকটি পয়েন্টে মনোযোগ দিন। **ShippingMethod** টেবিল সংযুক্ত প্লাগইনগুলির তালিকা পরিচালনা করতে ব্যবহৃত হয় এবং নির্দিষ্ট শিপিং পদ্ধতিটি **Order** টেবিলের*ShippingRateComputationMethodSystemName* এবং *ShippingMethod* ক্ষেত্রগুলিতে সংরক্ষিত থাকে।
+ডায়াগ্রামে সমস্ত টেবিলের উদ্দেশ্য, আগের মতো, কোনও প্রশ্ন উত্থাপন করে না। যাইহোক, আসুন কয়েকটি পয়েন্টে মনোযোগ দিন। **ShippingMethod** টেবিল সংযুক্ত প্লাগইনগুলির তালিকা পরিচালনা করতে ব্যবহৃত হয় এবং নির্দিষ্ট শিপিং পদ্ধতিটি **Order** টেবিলের *ShippingRateComputationMethodSystemName* এবং *ShippingMethod* ক্ষেত্রগুলিতে সংরক্ষিত থাকে।
 
-**ShipmentItem** টেবিলের*OrderItemId*ক্ষেত্রটি মূলত **OrderItem** টেবিলের একটি রেফারেন্স।
+**ShipmentItem** টেবিলের *OrderItemId* ক্ষেত্রটি মূলত **OrderItem** টেবিলের একটি রেফারেন্স।
 
 ## ছাড়
 
@@ -133,7 +133,7 @@ contributors: git.AfiaKhanom
 উপরের চিত্র থেকে, আমরা দেখতে পাচ্ছি যে ছাড় তিনটি গ্রুপে প্রয়োগ করা যেতে পারে:  **Products**, **Manufacturers**, **Categories**
 এবং প্লাগইন দ্বারা নিয়ন্ত্রিত বিভিন্ন নিয়ম দ্বারা কনফিগার করা যেতে পারে (``IDiscountRequirementRule``)।
 
-**DiscountRequirement**টেবিলে, *InteractionTypeId* ফিল্ডে অবশ্যই ``RequirementGroupInteractionType`` গণনায় উল্লেখিত মানগুলির মধ্যে একটি থাকতে হবে:
+**DiscountRequirement** টেবিলে, *InteractionTypeId* ফিল্ডে অবশ্যই ``RequirementGroupInteractionType`` গণনায় উল্লেখিত মানগুলির মধ্যে একটি থাকতে হবে:
 
 ```csharp
 /// <summary>

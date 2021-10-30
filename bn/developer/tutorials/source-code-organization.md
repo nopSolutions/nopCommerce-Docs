@@ -2,7 +2,7 @@
 title: সোর্স কোড সংগঠন
 uid: bn/developer/tutorials/source-code-organization
 author: git.AndreiMaz
-contributors: git.AfiaKhanom
+contributors: git.AfiaKhanom, git.MDRashedKhanMenon
 ---
 
 # সোর্স কোড সংগঠন
@@ -55,4 +55,4 @@ Nop.Web.MVC.Tests উপস্থাপনা স্তর প্রকল্প
 
 ## টিউটোরিয়াল
 
-- [The Architecture behind the nopCommerce eCommerce Platform](https://www.youtube.com/watch?v=6gLbizzSA9o&list=PLnL_aDfmRHwtJmzeA7SxrpH3-XDY2ue0a)
+- [নপকমার্স ইকমার্স প্ল্যাটফর্মের পিছনে আর্কিটেকচার](https://www.youtube.com/watch?v=6gLbizzSA9o&list=PLnL_aDfmRHwtJmzeA7SxrpH3-XDY2ue0a)

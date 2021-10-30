@@ -2,7 +2,7 @@
 title: একটি প্লাগইন এর মাধ্যমে নপকমার্স এর মৌলিক কার্যকারিতা প্রসারিত করার জন্য একটি গাইড
 uid: bn/developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin
 author: nop.sea
-contributors: git.AfiaKhanom
+contributors: git.AfiaKhanom, git.MDRashedKhanMenon
 ---
 
 # একটি প্লাগইন এর মাধ্যমে নপকমার্স এর মৌলিক কার্যকারিতা প্রসারিত করার জন্য একটি গাইড
@@ -19,29 +19,29 @@ contributors: git.AfiaKhanom
 
 ## প্লাগইন প্রকল্প শুরু করুন
 
-### ধাপ 1: একটি নতুন প্রকল্প তৈরি করুন
+### ধাপ ১: একটি নতুন প্রকল্প তৈরি করুন
 
-নপকমার্স অফিসিয়াল ওয়েবসাইটে যান এবং সর্বশেষ নপকমার্স সোর্স কোড ডাউনলোড করুন। যেহেতু এখনই সর্বশেষ সংস্করণ 4.40, এই ডকুমেন্টেশন v4.40 অনুযায়ী লেখা হয়েছে। আপনার নপকমার্স সমাধানটি আপনার প্রিয় IDE তে খুলুন (মাইক্রোসফট ভিজ্যুয়াল স্টুডিও সুপারিশ করা হয়েছে)। সেখানে আপনি একগুচ্ছ ফোল্ডার দেখতে পাবেন, যদি আপনি প্রকল্পের কাঠামো সম্পর্কে আরো জানতে চান, তাহলে প্রথমে নিবন্ধটি দেখুন ["সোর্স কোড সংগঠন"](xref:bn/developer/tutorials/source-code-organization) । সমাধানের ছাদে আপনি একটি *Plugins* ফোল্ডার দেখতে পাবেন, সেই ফোল্ডারটি প্রসারিত করুন এবং আপনি ডিফল্টরূপে নপকমার্স দিয়ে পাঠানো প্লাগইন প্রকল্পগুলির একটি তালিকা দেখতে পাবেন।
+নপকমার্স অফিসিয়াল ওয়েবসাইটে যান এবং সর্বশেষ নপকমার্স সোর্স কোড ডাউনলোড করুন। যেহেতু এখনই সর্বশেষ সংস্করণ ৪.৪০, এই ডকুমেন্টেশন v৪.৪০ অনুযায়ী লেখা হয়েছে। আপনার নপকমার্স সমাধানটি আপনার প্রিয় IDE তে খুলুন (মাইক্রোসফট ভিজ্যুয়াল স্টুডিও সুপারিশ করা হয়েছে)। সেখানে আপনি একগুচ্ছ ফোল্ডার দেখতে পাবেন, যদি আপনি প্রকল্পের কাঠামো সম্পর্কে আরো জানতে চান, তাহলে প্রথমে নিবন্ধটি দেখুন ["সোর্স কোড সংগঠন"](xref:bn/developer/tutorials/source-code-organization) । সমাধানের ছাদে আপনি একটি *Plugins* ফোল্ডার দেখতে পাবেন, সেই ফোল্ডারটি প্রসারিত করুন এবং আপনি ডিফল্টরূপে নপকমার্স দিয়ে পাঠানো প্লাগইন প্রকল্পগুলির একটি তালিকা দেখতে পাবেন।
 
-![image1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image1.png)
+![ইমেজ১](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image1.png)
 
 নতুন উইজেট প্রকল্প তৈরির জন্য, *Plugins* ফোল্ডারে ডান ক্লিক করুন: Add=>New Project। এর পরে যোগ করুন নতুন প্রকল্প উইন্ডো প্রদর্শিত হবে।
 
-![image2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2.png)
+![ইমেজ২](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2.png)
 
 **Class Library** প্রকল্প টেমপ্লেট নির্বাচন করুন এবং পরবর্তী ধাপে যান, যেখানে আপনাকে প্রকল্পের নাম উল্লেখ করতে হবে।
 
-![image2_1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_1.png)
+![ইমেজ২_১](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_1.png)
 
 নপকমার্স কিছু আদর্শ নামকরণ রূপান্তর অনুসরণ করে, যা আপনি নপকমার্স ডকুমেন্টেশন থেকে আরো তথ্য পেতে পারেন। নপকমার্স এর নামকরণ রূপান্তর অনুসরণ করে আমি আমার প্রকল্পের নাম হিসেবে `Nop.Plugin.Widget.HelloWorld` নির্বাচন করেছি। এবং অবস্থান */source/Plugins* ডিরেক্টরির ভিতরে থাকা উচিত। এখন "Next" ক্লিক করুন।
 
-![image2_2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_2.png)
+![ইমেজ২_২](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_2.png)
 
 এটি প্লাগইন ডিরেক্টরিতে একটি নতুন প্রকল্প তৈরি করা উচিত। এবং আপনি আপনার সল্যুশনে দেখতে পারেন:
 
-![image3](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image3.png)
+![ইমেজ৩](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image3.png)
 
-### ধাপ 2: উইজেট হিসেবে ব্যবহার করার জন্য আপনার নতুন প্রকল্প কনফিগার করুন
+### ধাপ ২: উইজেট হিসেবে ব্যবহার করার জন্য আপনার নতুন প্রকল্প কনফিগার করুন
 
 আমাদের প্রজেক্টে এটি একটি *Plugin*  বা *Widget* হিসাবে ব্যবহার করার জন্য আমাদের কয়েকটি জিনিস কনফিগার করতে হবে।
 
@@ -79,11 +79,11 @@ contributors: git.AfiaKhanom
 
 এটি কি করবে তা হল এই প্রকল্পের সাথে সম্পর্কিত সমস্ত dll ফাইলগুলিকে `Nop.Web/Plugin/{Plugin_Output_Directory}` এ কপি করে, কারণ `Nop.Web` এর ভিতরে *Plugin* ডিরেক্টরি হল সেই জায়গা যেখানে নপকমার্স প্লাগইন এবং উইজেট থেকে অনুসন্ধান করে। অ্যাডমিন প্যানেলে *Plugin* বা *Widget* তালিকায় প্রদর্শন করুন।
 
-### ধাপ 3: একটি plugin.json ফাইল তৈরি করুন
+### ধাপ ৩: একটি plugin.json ফাইল তৈরি করুন
 
 নপকমার্স এ তৈরি করা প্রতিটি *Plugin* বা *Widget* এর জন্য এই ফাইলটি প্রয়োজন। এই ফাইলটিতে আমাদের প্লাগইন সম্পর্কে মেটা তথ্য রয়েছে যা আমাদের প্লাগইন বর্ণনা করে। এতে আমাদের প্লাগইন এর নাম, নপকমার্স এর কোন সংস্করণটি টার্গেট/বিল্ট করা হয়েছে, আমাদের প্লাগইন সম্পর্কে কিছু বর্ণনা, আমাদের প্লাগইন এর সংস্করণ ইত্যাদি তথ্য রয়েছে। তথ্যের জন্য অনুগ্রহ করে নিবন্ধটি দেখুন [plugin.json ফাইল](xref:bn/developer/plugins/plugin_json)।
 
-### ধাপ 4: BasePlugin ক্লাস থেকে প্রসারিত একটি ক্লাস তৈরি করুন
+### ধাপ ৪: BasePlugin ক্লাস থেকে প্রসারিত একটি ক্লাস তৈরি করুন
 
 প্রকৃতপক্ষে আমাদের এমন একটি ক্লাস থাকা দরকার যা `IPlugin` ইন্টারফেসের অন্তর্নিহিত যাতে নপকমার্স আমাদের প্রজেক্টকে প্লাগইন হিসেবে বিবেচনা করে। কিন্তু নপকমার্স এর ইতিমধ্যেই একটি ক্লাস `BasePlugin` রয়েছে যা `IPlugin` ইন্টারফেস থেকে উত্তরাধিকারসূত্রে প্রাপ্ত এবং সেই ইন্টারফেস থেকে সমস্ত মেথড প্রয়োগ করে। সুতরাং, `IPlugin` ইন্টারফেস থেকে উত্তরাধিকারী হওয়ার পরিবর্তে আমরা `BasePlugin` ক্লাস থেকে প্রসারিত করতে পারি। আমাদের প্লাগইন/উইজেট ইনস্টলেশন এবং আনইনস্টলেশন প্রক্রিয়া চলাকালীন যদি আমাদের কিছু যুক্তি থাকে তবে আমরা BasePlugin ক্লাস থেকে আমাদের ক্লাসে `InstallAsync` এবং `UninstallAsync` মেথডটি ওভাররাইড করতে পারি। পরিশেষে ক্লাস এই মত হওয়া উচিত
 
@@ -108,11 +108,11 @@ public class HelloWorldPlugin: BasePlugin
 
 এখন আপনার প্রকল্প তৈরি করুন এবং চালান। অ্যাডমিন প্যানেলে নেভিগেট করুন এবং **Configuration** এর অধীনে একটি **Local plugins** মেনু সেই মেনুতে ক্লিক করুন। এখানে আপনি তালিকাভুক্ত সমস্ত প্লাগইন দেখতে পাবেন যা `Nop.Web/Plugins` ডিরেক্টরিতে উপস্থিত রয়েছে। সেখানে আপনি আপনার নতুন তৈরি প্লাগইন দেখতে পাবেন। যদি আপনি না দেখতে পান তবে **Reload list of plugins** বাটনে ক্লিক করুন, এর পরে এটি আপনার অ্যাপ্লিকেশন পুনরায় চালু করবে এবং উপলব্ধ সমস্ত প্লাগইন তালিকাভুক্ত করবে। এখন আপনি সেই তালিকায় তালিকাভুক্ত আপনার প্লাগইন দেখতে পাবেন। আপনার প্লাগইন সারিতে উপস্থিত সবুজ **Install** বাটনে ক্লিক করুন।
 
-![image5](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image5.png)
+![ইমেজ৫](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image5.png)
 
 এখন আপনি ইনস্টল বোতামে ক্লিক করার পরে, **Restart your application to apply changes** বোতামে ক্লিক করুন। এটি আপনার অ্যাপ্লিকেশন পুনরায় চালু করবে এবং আপনার প্লাগইন ইনস্টল করবে। ইনস্টলেশন সম্পন্ন হওয়ার পর আপনি একটি *Configure* এবং *Edit* বাটন এবং একটি *Uninstall* বাটন দেখতে পাবেন।
 
-![image6](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png) এখন আপনার প্লাগইন ইন্সটল হয়ে গেছে। কিন্তু *Configure* বাটন কাজ করবে না, যেহেতু আমাদের প্লাগিনে কোন কনফিগার পেজ নেই।
+![ইমেজ৬](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image6.png) এখন আপনার প্লাগইন ইন্সটল হয়ে গেছে। কিন্তু *Configure* বাটন কাজ করবে না, যেহেতু আমাদের প্লাগিনে কোন কনফিগার পেজ নেই।
 
 ## আমাদের পাবলিক সাইটে কিছু ইউআই দেখানোর জন্য একটি উইজেট তৈরি করুন
 
@@ -181,12 +181,12 @@ public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
 
 যদি আপনি আপনার প্রকল্পটি তৈরি করেন এবং অ্যাডমিন প্যানেলে যান এবং **Configuration -> Widgets** এ যান। আপনি আপনার উইজেট তালিকাভুক্ত দেখতে পাবেন।
 
-![image7](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
+![ইমেজ৭](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image7.png)
 
 এখানে আপনি লক্ষ্য করতে পারেন যে এই উইজেটটিতে *Configure* বাটন নেই। কারণ আমরা এই উইজেটের জন্য একটি কনফিগারেশন ভিউ ফাইল তৈরি করিনি এবং `BasePlugin` ক্লাস থেকে `GetConfigurationPageUrl` মেথডটি ওভাররাইড করিনি। যেহেতু আমরা ইতিমধ্যেই আমাদের প্লাগইন ইন্সটল করে ফেলেছি তাই আমাদের আবার ইন্সটল করতে হবে না, কিন্তু এখানে আপনি দেখতে পাচ্ছেন যে উইজেটটি এখন সক্রিয় নয়। আমরা *Edit* বাটনে ক্লিক করে এটি সক্রিয় করতে পারি।
 
-![image8](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
+![ইমেজ৮](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image8.png)
 
 এখন আমরা উইজেট সক্রিয় করার পর এখন আমাদের উইজেটটি প্রত্যাশা অনুযায়ী কাজ করা উচিত। যদি আমরা ক্যাটাগরির আগে আমাদের হোম পেজে যাই তাহলে আমাদের অবশ্যই "Hello World" বার্তা দেখতে হবে যেমন হলুদে হাইলাইট করা ছবিতে দেখানো হয়েছে।
 
-![image9](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image9.png)
+![ইমেজ৯](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image9.png)

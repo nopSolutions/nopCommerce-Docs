@@ -13,7 +13,7 @@ contributors: git.AfiaKhanom
 
 ১. **অ্যাডমিন প্যানেল → কনফিগারেশন → সেটিংস → সাধারণ সেটিংস** এ যান।
 
-    ![p2](_static/choose-and-install-a-theme/instal_theme2.png)
+![p2](_static/choose-and-install-a-theme/instal_theme2.png)
 
 ২. **ডিফল্ট স্টোর থিম** ফিল্ডে আপনার নতুন থিম নির্বাচন করুন এবং **সংরক্ষণ করুন** ক্লিক করুন।
 

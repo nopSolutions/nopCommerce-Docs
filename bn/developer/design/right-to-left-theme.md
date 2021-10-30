@@ -2,7 +2,7 @@
 title: ডান থেকে বাম থিম
 uid: bn/developer/design/right-to-left-theme
 author: git.AndreiMaz
-contributors: git.AfiaKhanom
+contributors: git.AfiaKhanom, git.MDRashedKhanMenon
 ---
 
 # ডান থেকে বাম থিম
@@ -11,7 +11,7 @@ contributors: git.AfiaKhanom
 
 নপকমার্স ডিফল্ট পাবলিক স্টোর থিম **DefaultClean** ডান থেকে বাম সংস্করণ স্টাইল শীটের বৈশিষ্ট্য নিয়ে আসে।
 
-থিমটির "বাম থেকে বাম" সংস্করণ সক্ষম করতে, দয়া করে `প্রশাসন → কনফিগারেশন → ভাষাগুলিতে যান, একটি ভাষা **Edit** ক্লিক করুন এবং নিশ্চিত করুন যে **Right-to-Left** বিকল্প সক্ষম হয়েছে|
+থিমটির "বাম থেকে বাম" সংস্করণ সক্ষম করতে, দয়া করে `প্রশাসন → কনফিগারেশন → ভাষাগুলিতে` যান, একটি ভাষা **সম্পাদনা করুন** ক্লিক করুন এবং নিশ্চিত করুন যে **ডান থেকে বাম** বিকল্প সক্ষম হয়েছে|
 
 ![rtm-settings](_static/right-to-left-theme/rtm-settings.png)
 
