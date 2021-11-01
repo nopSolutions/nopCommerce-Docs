@@ -12,4 +12,5 @@ The nopCommerce developer documentation is here to help you through the process 
 * [Developer tutorials](xref:en/developer/tutorials/index)
 * [Creating a nopCommerce plugin](xref:en/developer/plugins/index)
 * [Designer's Guide](xref:en/developer/design/index)
+* [Web API documentation](xref:en/developer/web-api/index)
 * [Copyright notice](xref:en/developer/copyright-notice)

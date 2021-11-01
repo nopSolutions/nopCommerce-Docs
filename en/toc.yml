@@ -564,6 +564,9 @@
           name: Entity events system
           href: developer/design/entity-events-system.md
     - 
+      name: Web API documentation
+      href: developer/web-api/index.md
+    - 
       name: Contribute
       href: developer/contribute/index.md
       items:
