@@ -118,7 +118,7 @@ There are two ways to enable the tax exemption using this plugin:
 
     > [!IMPORTANT]
     > 
-    > You will need a CertCapture account for this feature to work correctly.
+    > You will need a [CertCapture account](https://avlr.co/3bA1P1X) for this feature to work correctly.
 
     * Ensure **Enable exemption certificates** checkbox is on, in that case customers can manage their tax exemption certificates before making a purchase.
     * A new page will be added in the account section
