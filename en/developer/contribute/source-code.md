@@ -17,7 +17,7 @@ Recently we started using Vincent Driessen's branching model (seen here: [http:/
 
 * Production branch: master
 * Development branch: develop
-* Feature and issue branches: Should start with "feature" or "issue". It should be followed by issue ID (according to our Github issue list) and some friendly name (example, "multistore"). Finally, it should look like "feature-34-multistore" or "issue-35-paypal-redirection-bug"
+* Branches for work items (issues): Should start with "issue". It should be followed by issue ID (according to our Github issue list) and some friendly name (example, "multistore"). Finally, it should look like "issue-35-paypal-redirection-bug"
 * Release branches: Should start with "release". It should be followed by version number (example, "3.00"). Finally, it should look like "release-3.00"
 
 ## Forking and submitting pull requests
