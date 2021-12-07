@@ -54,6 +54,7 @@ nopCommerce requires write permissions for the directories and files described b
   - `\wwwroot\bundles\`
   - `\wwwroot\db_backups\`
   - `\wwwroot\files\exportimport\`
+  - `\wwwroot\css`
   - `\wwwroot\images\`
   - `\wwwroot\images\thumbs\`
   - `\wwwroot\images\uploaded`
