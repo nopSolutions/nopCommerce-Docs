@@ -97,24 +97,24 @@ Here you are required to provide an email address and password which then be use
 
 Here you need to provide your information you want to use for this project.
 
-Here you have to choose your database storage. You can use MS SQL Server or MySQL or PostgreSQL. It is your decision which one you want to use.
+Here you have to choose your database storage. You can use `MS SQL Server` or `MySQL` or `PostgreSQL`. It is your decision which one you want to use.
 
-For the sake of this tutorial we will be using the MS SQL Server.
+For the sake of this tutorial we will be using the `MS SQL Server`.
 
 Also you will see the checkbox asking if you want to create a database if not exist, please check the checkbox.
 
-Moving further you need to set up your connection string. For that, you have two options. One is fill form with "SQL Server name" and "Database name". In SQL Server name you need to provide your SQL server's name and in Database name you need to provide a database name you want to create or if you already have one then it will not create but use the existing one. However, you also can choose the option "Enter raw connection string" then you need to write whole connection string by yourself. After that you need to provide your SQL server's credentials for authentication.
+Moving further you need to set up your connection string. For that, you have two options. One is fill form with "**Server name**" and "**Database name**". In "Server name" you need to provide your server's name and in "Database name" you need to provide a database name you want to create or if you already have one then it will not create but use the existing one. However, you also can choose the option "**Enter raw connection string (advanced)**" then you need to write whole connection string by yourself. After that you need to provide your SQL server's credentials for authentication.
 
 After you fill all of this information you need to press "install" button, it will take about 1 minute to complete the installation, then you will be redirected to online shop homepage.
 
 ### 4. How to configure nopCommerce to run on HTTPS
 
-In order to set SSL/HTTPS for your nopCommerce you need to go to the property window of `Nop.Web` project under Presentation folder since it is the startup project for nopCommerce. To open property window right click on `Nop.Web` project and at the bottom of the context menu you will see a menu named "Properties", just click on that menu then a property window will appear. In property window navigate to "Debug" tab.
+In order to set SSL/HTTPS for your nopCommerce you need to go to the property window of `Nop.Web` project under *Presentation* folder since it is the startup project for nopCommerce. To open property window right click on `Nop.Web` project and at the bottom of the context menu you will see a menu named "Properties", just click on that menu then a property window will appear. In property window navigate to "**Debug**" tab.
 
 ![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image3.jpg)
 
-Check the "Enable SSL", and enter the HTTPS URL besides it. Then save this project.
+Check the "**Use SSL**", and enter the HTTPS URL besides it. Then save this project.
 
-Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in you WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called launchSetting.json. Open that file and you will see bunch of configuration setting already written in that file.
+Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in you WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called **launchSetting.json**. Open that file and you will see bunch of configuration setting already written in that file.
 
-Inside that file you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under "sslPort" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:{yourPort}`.
+Inside that file you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under "**sslPort**" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:{yourPort}`.
