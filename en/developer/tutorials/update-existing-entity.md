@@ -29,13 +29,13 @@ Solution Location: Nop.Data.Mapping.Builders.Catalog.CategoryBuilder.cs
 
 But I recommend you to use it only for your own entity classes. In our case, we'll use the migration mechanism instead of mapping class.
 
-Add the following property to the Category class.
+Add the following property to the `Category` class.
 
 ```csharp
 public string SomeNewProperty { get; set; }
 ```
 
-Add the new class (Nop.Data.Migrations.AddSomeNewProperty) with following code:  
+Add the new class `Nop.Data.Migrations.AddSomeNewProperty` with following code:  
 
 ```csharp
 using FluentMigrator;
@@ -43,7 +43,7 @@ using Nop.Core.Domain.Catalog;
 
 namespace Nop.Data.Migrations
 {
-    [NopMigration("2020/05/25 11:24:16:2551770", "Category. Add some new property")]
+    [NopMigration("2020/05/25 11:24:16:2551770", "Category. Add some new property", MigrationProcessType.Installation)]
     public class AddSomeNewProperty: AutoReversingMigration
     {
         /// <summary>Collect the UP migration expressions</summary>
@@ -60,17 +60,20 @@ namespace Nop.Data.Migrations
 
 > [!NOTE]
 > The procedure for updating migrations is carried out during the initialization of the database.
-
-```csharp
-var migrationManager = EngineContext.Current.Resolve<IMigrationManager>();
-migrationManager.ApplyUpMigrations(typeof(NopDbStartup).Assembly);
-```
+>
+>```csharp
+>public virtual void InitializeDatabase()
+>{
+>    var migrationManager = EngineContext.CurrenResolve<IMigrationManager>();
+>    migrationManager.ApplyUpMigrations(typeof(NopDbStartup).Assembly);
+>}
+>```
 
 ## The presentation model
 
 The presentation model is used to transport information from a controller to the view (read more at asp.net/mvc). Models have another purpose; defining requirements.
 
-We configured our database to only store 255 characters for the SomeNewProperty. If we try and save an SomeNewProperty with 300 characters the application will break (or truncate the text). We want the application to protect users from failures the best we can, and our view models help enforce requirements like string length.
+We configured our database to only store 255 characters for the `SomeNewProperty`. If we try and save an `SomeNewProperty` with 300 characters the application will break (or truncate the text). We want the application to protect users from failures the best we can, and our view models help enforce requirements like string length.
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Models\Catalog\CategoryModel.cs
@@ -105,7 +108,7 @@ RuleFor(m => m.SomeNewProperty).Length(0, 255);
 ## The view
 
 ```sh
-File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Views\Category\ _CreateOrUpdate.Info.cshtml
+File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Views\Category\_CreateOrUpdate.Info.cshtml
 Assembly: Nop.Web
 ```
 
@@ -142,9 +145,9 @@ We're going to make three updates to the CategoryController class.
 
 Normally I would write tests for the following code and verify that model mapping is working correctly, but I'll skip unit testing to keep it simple.
 
-In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most case it's not required because it's automatically handled by AutoMapper in the .ToModel() method.
+In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most case it's not required because it's automatically handled by *AutoMapper* in the `.ToModel()` method.
 
-In the public method to save entity (usually: "Create" or "Edit" methods with [HttpPost] attribute)
+In the public method to save entity (usually: "Create" or "Edit" methods with `[HttpPost]` attribute)
 
 ```csharp
 // Edit View Model → Data Model
