@@ -15,17 +15,25 @@ nopCommerce uses the plugins system to extend the functionality of nopCommerce a
 
 As we know both Plugin and widget are for extending the functionality of nopCommerce solution. Well then you may ask "what is the difference between them". Ultimately in nopCommerce you can think widget as a plugin but with extra feature. In order to create widget the process is mostly the same as creating a plugin, but by using widget we can show some UI (User Interface) to nopCommerce public website in some specific areas predefined by nopCommerce which is known as widget-zones. Which we cannot achieve only via plugin. You may think Widget as a Superset of Plugin.
 
+>[!NOTE]
+>All available widget zones can be found in the `Nop.Web.Framework.Infrastructure` namespace:
+>
+>- for the admin panel can be found in the **AdminWidgetZones.cs** file.
+>
+>- for the public store can be found in the **PublicWidgetZones.cs** file.
+
+
 I think you are bit more clear about what widgets and plugins are, when they can be used and what is the benefits of using them. So, now lets go and create a simple widget that shows "Hello World" message to the public site, to understand about how to create a widget in nopCommerce.
 
 ## Initialize Plugin Project
 
 ### Step 1: Create a new project
 
-Go to the nopCommerce official website and download latest nopCommerce source code. Since right now the latest version is 4.40, this documentation is written according to v4.40. Open your nopCommerce solution in your favorite IDE (Microsoft Visual Studio is recommended). There you will see a bunch of folders, If you want to know more about the structure of the project, then first check out the article ["Source code organization"](xref:en/developer/tutorials/source-code-organization). In the roof of the solution you will see a *Plugins* folder, expand that folder and you will see a list of plugin projects shipped with nopCommerce by default.
+Go to the nopCommerce official website and download latest nopCommerce source code. Open your nopCommerce solution in your favorite IDE (Microsoft Visual Studio is recommended). If you want to know more about the structure of the project, then first check out the article ["Source code organization"](xref:en/developer/tutorials/source-code-organization). In the roof of the solution you will see a *Plugins* folder, expand that folder and you will see a list of plugin projects shipped with nopCommerce by default.
 
 ![image1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image1.png)
 
-In order to create new Widget project, Right click on *Plugins* folder: Add=>New Project. After that add new project window will appear.
+In order to create new Widget project, Right click on *Plugins* folder: **Add** -> **New Project**. After that add new project window will appear.
 
 ![image2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2.png)
 
@@ -33,7 +41,7 @@ Select the **Class Library** project template and go to the next step, where you
 
 ![image2_1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_1.png)
 
- nopCommerce follows some standard naming conversion, which you can get more information from nopCommerce documentation. I have choose `Nop.Plugin.Widget.HelloWorld` as my project name by following the naming conversion of nopCommerce. And the location should be inside */source/Plugins* directory. Now click "Next".
+ nopCommerce follows some standard naming conversion, which you can get more information from nopCommerce documentation. I have choose `Nop.Plugin.Widget.HelloWorld` as my project name by following the naming conversion of nopCommerce. And the location should be inside */src/Plugins* directory. Now click **Next**.
 
 ![image2_2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_2.png)
 
@@ -50,7 +58,7 @@ After you create your project successfully open its `.csproj` file, for that rig
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <Copyright>SOME_COPYRIGHT</Copyright>
         <Company>YOUR_COMPANY</Company>
         <Authors>SOME_AUTHORS</Authors>
@@ -85,7 +93,7 @@ This file is required for every *Plugin* or *Widget* we create in nopCommerce. T
 
 ### Step 4: Create a class that extends from BasePlugin Class
 
-Actually we need to have a class that inherent from `IPlugin` interface so that nopCommerce treats our project as plugin. But nopCommerce already has a class `BasePlugin` that inherits  from `IPlugin` interface and implements all methods from that interface. So, instead of inheriting from `IPlugin` interface we can extend from `BasePlugin` class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override `InstallAsync` and `UninstallAsync` method from BasePlugin class to our class. Finally the class should look like this
+Actually we need to have a class that inherent from `IPlugin` interface so that nopCommerce treats our project as plugin. But nopCommerce already has a class `BasePlugin` that inherits  from `IPlugin` interface and implements all methods from that interface. So, instead of inheriting from `IPlugin` interface we can extend from `BasePlugin` class. If we have some logic that needs to be executed during our plugin/widget installation and uninstallation process then we can override `InstallAsync` and `UninstallAsync` method from `BasePlugin` class to our class. Finally the class should look like this
 
 ```cs
 public class HelloWorldPlugin: BasePlugin
@@ -124,7 +132,7 @@ First we need to create a `ViewComponent`. Create a directory *Components* in th
 [ViewComponent(Name = "HelloWorldWidget")]
 public class ExampleWidgetViewComponent: NopViewComponent
 {
-    public IViewComponentResult Invoke(string widgetZone)
+    public IViewComponentResult Invoke(string widgetZone, object additionalData)
     {
         return Content("Hello World");
     }
