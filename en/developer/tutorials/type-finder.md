@@ -44,7 +44,6 @@ In fact, this interface is used in a number of very important aspects of how nop
 1. Searching classes of certain interfaces necessary for the correct launch of the site, such as:
     * ``IStartupTask`` - Initial initialization of the modules and plugins
     * ``INopStartup`` - Configuring services and middleware on application startup
-    * ``IDependencyRegistrar`` - Dependency registration for IoC
     * ``IOrderedMapperProfile`` - Create **AutoMapper** configuration
     * ``IEntityBuilder``, ``INameCompatibility`` - Configure database entity builder for backward compatibility of table naming for **Linq2Db**([nopCommerce Data Access Layer](xref:en/developer/tutorials/source-code-organization#librariesnopdata))
     * ``IRouteProvider`` - Register routes
