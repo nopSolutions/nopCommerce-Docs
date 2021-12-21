@@ -235,6 +235,6 @@ public class RouteProvider : IRouteProvider
 >[!NOTE]
 > To learn more about nopCommerce routing please visit [this page](xref:en/developer/tutorials/register-new-routes)
 
-Now just build your project and run. Login as Administrative user and go to the LocalPlugins menu under Configuration, there you will see your newly created plugin. Install that plugin. After installation is complete you will see a configuration button in your plugin. If you have followed correctly through this tutorial then you will see output something like:
+Now just build your project and run. Login as Admin user and go to the *LocalPlugins* menu under *Configuration*, there you will see your newly created plugin. Install that plugin. After installation is complete you will see a *configuration* button in your plugin. If you have followed correctly through this tutorial then you will see output something like:
 
 ![image2](_static/guide-to-creating-a-page-containing-a-reporting-table-of-datatables/image2.png)
