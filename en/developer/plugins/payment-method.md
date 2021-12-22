@@ -7,7 +7,7 @@ contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 
 # How to code my own payment method
 
-Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
+Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.50](xref:en/developer/plugins/how-to-write-plugin-4.50) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
 
 So actually a payment method is an ordinary plugin which implements an IPaymentMethod interface (Nop.Services.Payments namespace). As you already guessed IPaymentMethod interface is used for creating payment method plugins. It contains some methods which are specific only for payment methods such as ProcessPayment() or GetAdditionalHandlingFee(). So add a new payment plugin project (class library) to solution and let's get started.
 

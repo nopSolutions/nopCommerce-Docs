@@ -7,7 +7,7 @@ contributors: git.exileDev
 
 # How to code my own shipping rate computation method
 
-If customers have some shippable products, they can choose a shipping option during checkout. These shipping options are returned from shipping rate computation methods (such as UPS, USPS, FedEx, etc). Shipping rate computation methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40) before you start coding a new shipping rate computation method. The article will explain to you the required steps for creating a plugin. So actually a shipping rate computation method is an ordinary plugin which implements an **IShippingRateComputationMethod** interface (`Nop.Services.Shipping` namespace). So add a new shipping plugin project (class library) to solution and let's get started.
+If customers have some shippable products, they can choose a shipping option during checkout. These shipping options are returned from shipping rate computation methods (such as UPS, USPS, FedEx, etc). Shipping rate computation methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.50](xref:en/developer/plugins/how-to-write-plugin-4.50) before you start coding a new shipping rate computation method. The article will explain to you the required steps for creating a plugin. So actually a shipping rate computation method is an ordinary plugin which implements an **IShippingRateComputationMethod** interface (`Nop.Services.Shipping` namespace). So add a new shipping plugin project (class library) to solution and let's get started.
 
 ## Controllers, views, models
 

@@ -7,7 +7,8 @@ contributors: git.exileDev, git.DmitriyKulagin, git.cromatido
 
 # Creating a nopCommerce plugin
 
-* [How to write a plugin for nopCommerce 4.40 (and above)](xref:en/developer/plugins/how-to-write-plugin-4.40)
+* [How to write a plugin for nopCommerce 4.50 (and above)](xref:en/developer/plugins/how-to-write-plugin-4.50)
+* [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40)
 * [How to write a plugin for nopCommerce 4.30](xref:en/developer/plugins/how-to-write-plugin-4.30)
 * [How to write a plugin for nopCommerce 4.20](xref:en/developer/plugins/how-to-write-plugin-4.20)
 * [How to write a plugin for nopCommerce 4.10](xref:en/developer/plugins/how-to-write-plugin-4.10)
