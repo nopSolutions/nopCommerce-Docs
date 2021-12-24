@@ -11,12 +11,9 @@ In this tutorial I'll be using the nopCommerce plugin architecture to implement 
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.40](xref:en/developer/plugins/how-to-write-plugin-4.40)
+- [How to write a plugin for nopCommerce 4.50](xref:en/developer/plugins/how-to-write-plugin-4.50)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
-
-> [!NOTE]
-> The practical application of this plugin is questionable, but I couldn't think of a feature that didn't come with nopCommerce and would fit in a reasonable size post. If you use this plugin in a production environment I offer no warranties. I am always interested in success stories and I would be happy to hear that the post provided more than just an educational value.
 
 ## Getting started
 
@@ -31,7 +28,7 @@ Then add references to the **Nop.Web.Framework** projects. This will be enough f
 
 ## The Data Access Layer (A.K.A. Creating new entities in nopCommerce)
 
-Inside of the "domain" namespace we're going to create a public class named ProductViewTrackerRecord. This class extends BaseEntity, but it is otherwise a very boring file. Something to remember is that we do not have navigation properties (relational properties), because Linq2DB framework, which we use to work with databases does not support the navigation properties.
+Inside of the "*domain*" namespace we're going to create a public class named **`ProductViewTrackerRecord`**. This class extends **`BaseEntity`**, but it is otherwise a very simple file. Something to remember is that we do not have navigation properties (relational properties), because *Linq2DB* framework, which we use to work with databases does not support the navigation properties.
 
 ```csharp
 namespace Nop.Plugin.Misc.ProductViewTracker.Domain
@@ -46,8 +43,6 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Domain
     }
 }
 ```
-
-**File Locations**: To figure out where certain files should exist analyze the namespace and create the file accordingly.
 
 The next class to create is the *FluentMigrator* entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
 
@@ -90,32 +85,22 @@ The next important class for us will be the migration class, which creates our t
 
 ```csharp
 using FluentMigrator;
+using Nop.Data.Extensions;
 using Nop.Data.Migrations;
 using Nop.Plugin.Other.ProductViewTracker.Domains;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Migrations
 {
-    [SkipMigrationOnUpdate]
-    [NopMigration("2020/05/27 08:40:55:1687541", "Other.ProductViewTracker base schema")]
+    [NopMigration("2020/05/27 08:40:55:1687541", "Other.ProductViewTracker base schema", MigrationProcessType.Installation)]
     public class SchemaMigration : AutoReversingMigration
     {
-        protected IMigrationManager _migrationManager;
-
-        public SchemaMigration(IMigrationManager migrationManager)
-        {
-            _migrationManager = migrationManager;
-        }
-
         public override void Up()
         {
-            _migrationManager.BuildTable<ProductViewTrackerRecord>(Create);
+            Create.TableFor<ProductViewTrackerRecord>();            
         }
     }
 }
 ```
-
->[!NOTE]
->Pay attention to the **SkipMigrationOnUpdate** attribute, its purpose is described by the name. This attribute allows you to skip migrations when performing the plugin update procedure.
 
 ## Service layer
 
@@ -167,34 +152,41 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Services
 Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
 
 ```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Nop.Core.Configuration;
 using Nop.Core.Infrastructure;
-using Nop.Core.Infrastructure.DependencyManagement;
 using Nop.Plugin.Other.ProductViewTracker.Services;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 {
     /// <summary>
-    /// Dependency registrar
+    /// Represents object for the configuring services on application startup
     /// </summary>
-    public class DependencyRegistrar : IDependencyRegistrar
+    public class NopStartup : INopStartup
     {
         /// <summary>
-        /// Register services and interfaces
+        /// Add and configure any of the middleware
         /// </summary>
         /// <param name="services">Collection of service descriptors</param>
-        /// <param name="typeFinder">Type finder</param>
-        /// <param name="appSettings">App settings</param>
-        public virtual void Register(IServiceCollection services, ITypeFinder typeFinder, AppSettings appSettings)
+        /// <param name="configuration">Configuration of the application</param>
+        public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IProductViewTrackerService, ProductViewTrackerService>();
         }
 
         /// <summary>
-        /// Order of this dependency registrar implementation
+        /// Configure the using of added middleware
         /// </summary>
-        public int Order => 1;
+        /// <param name="application">Builder for configuring an application's request pipeline</param>
+        public void Configure(IApplicationBuilder application)
+        {
+        }
+
+        /// <summary>
+        /// Gets order of this startup configuration implementation
+        /// </summary>
+        public int Order => 3000;
     }
 }
 ```
@@ -270,7 +262,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 
 > [!IMPORTANT]
 >
-> We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
+>We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
 
 ```csharp
 using Nop.Services.Cms;
