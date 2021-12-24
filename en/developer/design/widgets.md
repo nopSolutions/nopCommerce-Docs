@@ -15,6 +15,8 @@ Currently, default nopCommerce installation allows the store admin to embed two 
 
 1. Google Analytics
 1. Nivo Slider
+1. AccessiBe
+1. What3words
 
 ## Google Analytics Widget
 
@@ -30,3 +32,11 @@ To configure Google Analytics Widget, go to `Administration â†’ Configuration â†
 Nivo slider is a nice and clean jquery image slider for your website/homepage to display a number of images scrolling with unique transition effects.
 
 By default, nopCommerce comes with nivo slider integration as a widget (Enabled by default) which allows you to display a number of images scrolling automatically on your homepage.
+
+## accessiBe
+
+This plugin integrates with *accessiBe* - The #1 Fully Automated Web Accessibility Solution for ADA & WCAG Compliance.
+
+## What3words
+
+*What3words* is a proprietary geocode system designed to identify any location with a resolution of about 3 metres (9.8 ft). The system encodes geographic coordinates into three permanently fixed dictionary words. You can use this widget on checkout pages to specify shipping addresses more accurately.
