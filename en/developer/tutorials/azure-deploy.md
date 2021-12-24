@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 ## Step by step guide for automatic deployment of nopCommerce with git on azure
 
-1. **Your own git-repository** You need your own repository, you cannot just build nopCommerce. It's designed to be used with "Publish" function in Visual Studio 2019 as default. I use Bitbucket myself and keep that in sync with official repository.
+1. **Your own git-repository** You need your own repository, you cannot just build nopCommerce. It's designed to be used with "Publish" function in Visual Studio as default. I use Bitbucket myself and keep that in sync with official repository.
 
 1. Setup git on Azure
     - Tutorial: [https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/](https://azure.microsoft.com/documentation/articles/web-sites-publish-source-control/)
@@ -22,7 +22,7 @@ contributors: git.DmitriyKulagin, git.exileDev
     - Install Azure CLI: [https://azure.microsoft.com/documentation/articles/xplat-cli-install/](https://azure.microsoft.com/documentation/articles/xplat-cli-install/)
 
 1. **Get NuGet to work at command line level.** The default behavior of the KUDO script is to check for NuGet packages.
-   - To get access to the `Nuget.exe` file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of NuGet packages" in you Visual Studio 2019, and it will be added to your project automatically.
+   - To get access to the `Nuget.exe` file you could either download from here: [https://docs.nuget.org/consume/command-line-reference](https://docs.nuget.org/consume/command-line-reference). You can also "Enable automatic restore of NuGet packages" in you Visual Studio, and it will be added to your project automatically.
 
    - Ensure that NuGet is in the PATH. Copy the `nuget.exe` file to preferred location (I use `c:/Program Files/Nuget/Nuget.exe`). Add it to PATH environment variable.
    - Confirm that NuGet is in your PATH by starting `cmd.exe` and write *nuget*. you should see the command options.
