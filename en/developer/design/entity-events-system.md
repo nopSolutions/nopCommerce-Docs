@@ -92,7 +92,7 @@ The implementation of this class is moreover the same as the example in the `Ent
 ```cs
 public class MyFirstConsumerClass : IConsumer<EntityUpdatedEvent<Product>>
 {
-    public void HandleEvent(EntityUpdatedEvent<Product> updateEvent)
+    public async Task HandleEventAsync(EntityUpdatedEvent<Product> updateEvent)
     {
         //you can access entity using updateEvent.Entity
         var updatedEntity = updateEvent.Entity;
@@ -135,7 +135,7 @@ The implementation of this class is also the same as in the above example. Here 
 ```cs
 public class MyFirstConsumerClass : IConsumer<EntityDeletedEvent<Product>>
 {
-    public void HandleEvent(EntityDeletedEvent<Product> deleteEvent)
+    public async Task HandleEventAsync(EntityDeletedEvent<Product> deleteEvent)
     {
         //you can access entity using deleteEvent.Entity
         var updatedEntity = deleteEvent.Entity;
