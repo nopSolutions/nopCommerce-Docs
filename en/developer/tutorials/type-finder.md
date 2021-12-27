@@ -12,6 +12,10 @@ contributors: git.mariannk, git.DmitriyKulagin
 This is a very simple interface. It contains only two methods (although one has two overloads). You can see the definition of the interface below:
 
   ```csharp
+/// <summary>
+/// Classes implementing this interface provide information about types 
+/// to various services in the Nop engine.
+/// </summary>
 public interface ITypeFinder
 {
     /// <param name="onlyConcreteClasses">A value indicating whether to find only concrete classes</param>
@@ -53,4 +57,4 @@ In fact, this interface is used in a number of very important aspects of how nop
 
 ## Conclusion
 
-As you can see, the interface is small but very valuable. It would be difficult to implement such a flexible modular structure as it's done in nopCommerce without using the approach implemented through the ITypeFinder interface methods.
+As you can see, the interface is small but very valuable. It would be difficult to implement such a flexible modular structure as it's done in nopCommerce without using the approach implemented through the `ITypeFinder` interface methods.
