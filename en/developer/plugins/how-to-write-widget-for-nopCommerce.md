@@ -16,9 +16,9 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ![image1](_static/how-to-write-a-widget-for-nopCommerce/image1.png)
 
     > [!NOTE]
-    > Do not get confused this directory with the one which exists in `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugins compiled files.
+    > Do not get confused this directory with the one which exists in *Presentation\Nop.Web* directory. The *Plugins* directory in the *Nop.Web* directory contains the plugins compiled files.
 
-    A recommended name for a widget project is `Nop.Plugin.Widgets.{Name}`. `{Name}` is your widget name (for example, "**GoogleAnalytics**"). For example, *Google Analytics widget* has the following name: `Nop.Plugin.Widgets.GoogleAnalytics`. But please note that it's not a requirement. And you can choose any name for a widget. For example, "*MyFirstNopWidget*". The Plugins directory structure of a solution looks like following.
+    A recommended name for a widget project is `Nop.Plugin.Widgets.{Name}`. `{Name}` is your widget name (for example, "**GoogleAnalytics**"). For example, *Google Analytics widget* has the following name: `Nop.Plugin.Widgets.GoogleAnalytics`. But please note that it's not a requirement. And you can choose any name for a widget. For example, "*MyFirstNopWidget*". The *Plugins* directory structure of a solution looks like following.
 
     ![image2](_static/how-to-write-a-widget-for-nopCommerce/image2.png)
 
@@ -27,7 +27,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>net5.0</TargetFramework>
+            <TargetFramework>net6.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
@@ -95,7 +95,7 @@ So let's start:
 
     ![image7](_static/how-to-write-a-widget-for-nopCommerce/image7.png)
 
-1. Create the controller. Add a `Controllers` folder in the new widget, and then add a new controller class. A good practice is to name plugin controllers `Widgets{Name}Controller.cs`. For example, **WidgetsGoogleAnalyticsController**. Of course it's not a requirement to name controllers this way, but just a recommendation. Then create an appropriate action method for configuration page (in admin area). Let's name it "`Configure`". Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
+1. Create the controller. Add a `Controllers` folder in the new widget, and then add a new controller class. A good practice is to name plugin controllers `Widgets{Name}Controller.cs`. For example, **WidgetsGoogleAnalyticsController**. Of course it's not a requirement to name controllers this way, but just a recommendation. Then create an appropriate action method for configuration page (in admin area). Let's name it `Configure`. Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
 
     ```cs
     public async Task<IActionResult> Configure()
