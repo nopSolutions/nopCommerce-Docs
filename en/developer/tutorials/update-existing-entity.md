@@ -43,7 +43,7 @@ using Nop.Core.Domain.Catalog;
 
 namespace Nop.Data.Migrations
 {
-    [NopMigration("2020/05/25 11:24:16:2551770", "Category. Add some new property", MigrationProcessType.Installation)]
+    [NopMigration("2022/01/01 12:00:00:2551770", "Category. Add some new property", UpdateMigrationType.Data, MigrationProcessType.Update)]
     public class AddSomeNewProperty: AutoReversingMigration
     {
         /// <summary>Collect the UP migration expressions</summary>
