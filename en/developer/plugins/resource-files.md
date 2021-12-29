@@ -27,4 +27,4 @@ You can check into more details about this methods by going to its definition in
 }
 ```
 
-If you want to add resource link in the header then you can use ResourceLocation.Head and for footer you can use *ResourceLocation.Footer*.
+If you want to add resource link in the header then you can use **ResourceLocation.Head** and for footer you can use **ResourceLocation.Footer**.
