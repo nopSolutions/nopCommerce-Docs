@@ -7,13 +7,20 @@ contributors: git.skoshelev
 
 # Installing on Linux
 
-This chapter describes how to install the nopCommerce software on Linux system on the example of XUbuntu 20.04:
+This chapter describes how to install the nopCommerce software on Linux system on the example of *XUbuntu 20.04*:
 
-1. [Install and configure software](#install-and-configure-software)
-1. [Get nopCommerce](#get-nopcommerce)
-1. [Create and configure the nopCommerce Web service](#create-the-nopcommerce-service)
-1. [Installation process](#installation-process)
-1. [Troubleshooting](#troubleshooting)
+- [Installing on Linux](#installing-on-linux)
+  - [Install and configure software](#install-and-configure-software)
+    - [Register Microsoft key and feed](#register-microsoft-key-and-feed)
+    - [Install the .NET Core Runtime](#install-the-net-core-runtime)
+    - [Install MySql Server](#install-mysql-server)
+    - [Install nginx](#install-nginx)
+  - [Get nopCommerce](#get-nopcommerce)
+  - [Create the nopCommerce service](#create-the-nopcommerce-service)
+  - [Installation process](#installation-process)
+  - [Troubleshooting](#troubleshooting)
+    - [Gdip](#gdip)
+    - [SSL](#ssl)
 
 ## Install and configure software
 
@@ -23,9 +30,11 @@ Before installing .NET Core, we'll need to register the Microsoft key and instal
 
 Open a terminal and run the following commands:
 
-`wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
+```cmd
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 
-`sudo dpkg -i packages-microsoft-prod.deb`
+sudo dpkg -i packages-microsoft-prod.deb
+```
 
 ![nopCommerce installation](_static/installing-on-linux/register_key.jpg)
 
@@ -33,63 +42,77 @@ Open a terminal and run the following commands:
 
 Update the products available for installation, then install the .NET runtime:
 
-`sudo apt-get update`
+```cmd
+sudo apt-get update
 
-`sudo apt-get install apt-transport-https aspnetcore-runtime-3.1`
+sudo apt-get install apt-transport-https aspnetcore-runtime-3.1
+```
 
 ![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
 
 > [!NOTE]
-> 
-> If you have any error see detail information on the https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager page.
+>
+> If you have any error see detail information on the [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager) page.
 
 You may see all installed .Net Core runtimes by the following command:
 
-`dotnet --list-runtimes`
+```cmd
+dotnet --list-runtimes
+```
 
 ![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
 
 ### Install MySql Server
 
-Install the MySql server 8.0 version
+Install the MySql server 8.0 version:
 
-`sudo apt-get install mysql-server`
+```cmd
+sudo apt-get install mysql-server
+```
 
 ![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
 
-By default, the root password is empty, let's set it
+By default, the root password is empty, let's set it:
 
-`sudo /usr/bin/mysql_secure_installation`
+```cmd
+sudo /usr/bin/mysql_secure_installation
+```
 
 ![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
 
 > [!NOTE]
-> 
+>
 > If you have some problem with configuring root password on your MySql server please read the following articles:
-> https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html and
-https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost.
+> [How to Reset the Root Password](https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html) and
+> [MySQL Error: : 'Access denied for user 'root'@'localhost'](https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost).
 
 ### Install nginx
 
 Install the nginx package:
 
-`sudo apt-get install nginx`
+```cmd
+sudo apt-get install nginx
+```
 
 ![nopCommerce installation](_static/installing-on-linux/install_nginx.jpg)
 
 Run the nginx service:
 
-`sudo systemctl start nginx`
+```cmd
+sudo systemctl start nginx
+```
 
 and check its status:
 
-`sudo systemctl status nginx`
+```cmd
+sudo systemctl status nginx
+```
 
 ![nopCommerce installation](_static/installing-on-linux/status_nginx.jpg)
 
 To configure nginx as a reverse proxy to forward requests to your ASP.NET Core app, modify /etc/nginx/sites-available/default. Open it in a text editor and replace the contents with the following:
 
-```
+```cmd
 # Default server configuration
 #
 server {
@@ -129,50 +152,55 @@ server {
 
 ## Get nopCommerce
 
-Create a directory
+Create a directory:
 
-`mkdir /var/www/nopCommerce440`
+```cmd
+mkdir /var/www/nopCommerce450`
+```
 
 Download and unpack the nopCommerce:
 
-`cd /var/www/nopCommerce440`
+```cmd
+cd /var/www/nopCommerce450
 
-`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.40.4/nopCommerce_4.40.4_NoSource_linux_x64.zip`
+sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.50/nopCommerce_4.50_NoSource_linux_x64.zip
 
-`sudo apt-get install unzip`
+sudo apt-get install unzip
 
-`sudo unzip nopCommerce_4.40.4_NoSource_linux_x64.zip`
+sudo unzip nopCommerce_4.50_NoSource_linux_x64.zip
+```
 
 Create couple directories to run nopCommerce:
 
-`sudo mkdir bin`
+```cmd
+sudo mkdir bin
+sudo mkdir logs
+```
 
-`sudo mkdir logs`
+Change the file permissions:
 
-Change the file permissions
-
-`cd ..`
-
-`sudo chgrp -R www-data nopCommerce440/`
-
-`sudo chown -R www-data nopCommerce440/`
+```cmd
+cd ..
+sudo chgrp -R www-data nopCommerce450/
+sudo chown -R www-data nopCommerce450/
+```
 
 ## Create the nopCommerce service
 
-Create the /etc/systemd/system/nopCommerce440.service file with the following contents:
+Create the */etc/systemd/system/nopCommerce450.service* file with the following contents:
 
-```
+```cmd
 [Unit]
 Description=Example nopCommerce app running on XUbuntu
 
 [Service]
-WorkingDirectory=/var/www/nopCommerce440
-ExecStart=/usr/bin/dotnet /var/www/nopCommerce440/Nop.Web.dll
+WorkingDirectory=/var/www/nopCommerce450
+ExecStart=/usr/bin/dotnet /var/www/nopCommerce450/Nop.Web.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=nopCommerce440-example
+SyslogIdentifier=nopCommerce450-example
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
@@ -181,25 +209,31 @@ Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 WantedBy=multi-user.target
 ```
 
-Start the service
+Start the service:
 
-`sudo systemctl start nopCommerce440.service`
+```cmd
+sudo systemctl start nopCommerce450.service
+```
 
-Check the nopCommerce service status
+Check the nopCommerce service status:
 
-`sudo systemctl status nopCommerce440.service`
+```cmd
+sudo systemctl status nopCommerce450.service
+```
 
 ![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
 
-Restart the nginx server
+Restart the nginx server:
 
-`sudo systemctl restart nginx`
+```cmd
+sudo systemctl restart nginx
+```
 
-**Now everything is ready, you can proceed to install and configure the store**
+Now everything is ready, you can proceed to install and configure the store.
 
 ## Installation process
 
-The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce)
+The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce).
 
 ## Troubleshooting
 
@@ -207,8 +241,10 @@ The further installation process for nopCommerce it does not differ from the ins
 
 *If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception) just install the libgdiplus library*:
 
-*`sudo apt-get install libgdiplus`*
+```cmd
+sudo apt-get install libgdiplus
+```
 
 ### SSL
 
-*If you want to use SSL on your site don't forget set to `true` the `UseHttpXForwardedProto` setting in the **appsettings.json** file*.
+*If you want to use SSL on your site don't forget set to **`true`** the `UseHttpXForwardedProto` setting in the **appsettings.json** file*.
