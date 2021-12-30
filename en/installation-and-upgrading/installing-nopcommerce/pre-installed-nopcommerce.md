@@ -8,7 +8,8 @@ author: git.mariannk
 
 You can use a simple and fast nopCommerce installation solution created by the nopCommerce team in collaboration with our hosting partner, Winhost. Our hosting plan comes with the platform pre-installed. That means you can start working on your website right away.
 
-## Advantages:
+## Advantages
+
 * No need to waste time searching for reliable hosting and choosing an appropriate hosting plan and installing nopCommerce.
 * The pre-installed hosting plan ensures fast and reliable work of nopCommerce.
 * Winhost is offering a 30 day free hosting trial for pre-installed nopCommerce stores.
