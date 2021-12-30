@@ -74,5 +74,5 @@ Click **Install** in order to start the installation process. When the setup pro
 > [!NOTE]
 > The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
 
-> [!NOTE]
-> If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from the `App_Data` directory.
+> [!IMPORTANT]
+> If you want to completely reset a nopCommerce site to its default settings, you can delete the `appsettings.json` file from the `App_Data` directory.
