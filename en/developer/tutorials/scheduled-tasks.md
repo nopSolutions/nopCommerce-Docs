@@ -41,7 +41,7 @@ await _scheduleTaskService.InsertTaskAsync(new ScheduleTask
 ```
 
 > [!IMPORTANT]
-> When insert the new record into **ScheduleTask** database table for new **ScheduleTask**, it is important to keep **Type** column  format **Namespace.TaskClassName, AssemblyName**.
+> When inserting the new record into **ScheduleTask** database table for a new scheduled task, it is important to keep **Type** column format **Namespace.TaskClassName, AssemblyName**.
 
 ## Troubleshooting
 
