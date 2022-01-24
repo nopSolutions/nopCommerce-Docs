@@ -131,17 +131,17 @@ server {
 
 Create a directory
 
-`mkdir /var/www/nopCommerce440`
+`mkdir /var/www/nopCommerce450`
 
 Download and unpack the nopCommerce:
 
-`cd /var/www/nopCommerce440`
+`cd /var/www/nopCommerce450`
 
-`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.40.4/nopCommerce_4.40.4_NoSource_linux_x64.zip`
+`sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.50.0/nopCommerce_4.50.0_NoSource_linux_x64.zip`
 
 `sudo apt-get install unzip`
 
-`sudo unzip nopCommerce_4.40.4_NoSource_linux_x64.zip`
+`sudo unzip nopCommerce_4.50.0_NoSource_linux_x64.zip`
 
 Create couple directories to run nopCommerce:
 
@@ -153,26 +153,26 @@ Change the file permissions
 
 `cd ..`
 
-`sudo chgrp -R www-data nopCommerce440/`
+`sudo chgrp -R www-data nopCommerce450/`
 
-`sudo chown -R www-data nopCommerce440/`
+`sudo chown -R www-data nopCommerce450/`
 
 ## Create the nopCommerce service
 
-Create the /etc/systemd/system/nopCommerce440.service file with the following contents:
+Create the /etc/systemd/system/nopCommerce450.service file with the following contents:
 
 ```
 [Unit]
 Description=Example nopCommerce app running on XUbuntu
 
 [Service]
-WorkingDirectory=/var/www/nopCommerce440
-ExecStart=/usr/bin/dotnet /var/www/nopCommerce440/Nop.Web.dll
+WorkingDirectory=/var/www/nopCommerce450
+ExecStart=/usr/bin/dotnet /var/www/nopCommerce450/Nop.Web.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=nopCommerce440-example
+SyslogIdentifier=nopCommerce450-example
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
@@ -183,11 +183,11 @@ WantedBy=multi-user.target
 
 Start the service
 
-`sudo systemctl start nopCommerce440.service`
+`sudo systemctl start nopCommerce450.service`
 
 Check the nopCommerce service status
 
-`sudo systemctl status nopCommerce440.service`
+`sudo systemctl status nopCommerce450.service`
 
 ![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
 
