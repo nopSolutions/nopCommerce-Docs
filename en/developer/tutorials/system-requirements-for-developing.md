@@ -23,23 +23,23 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 | ---------------------------- | ------------------- |
 | Red Hat Enterprise Linux     | 7+                  |
 | CentOS, Oracle Linux         | 7+                  |
-| Fedora                       | 32+                 |
-| Debian                       | 9+                  |
-| Ubuntu                       | 18.04, 20.04, 20.10 |
+| Fedora                       | 33+                 |
+| Debian                       | 10+                  |
+| Ubuntu                       | 18.04, 20.04+ |
 | Linux Mint                   | 18+                 |
 | OpenSUSE                     | 15+                 |
 | SUSE Enterprise Linux (SLES) | 12 SP2+             |
-| Alpine Linux                 | 3.11+               |
+| Alpine Linux                 | 3.12+               |
 
 * MacOS
 
 | OS       | Version |
 | -------- | ------- |
-| Mac OS X | 10.13+  |
+| Mac OS X | 10.15+  |
 
 > [!NOTE]
 >
-> For more information about supported OS versions please visit [this page](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md)
+> For more information about supported OS versions please visit [this page](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md)
 
 ## 1. Supported Browsers
 
@@ -50,15 +50,15 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 ## 2. Tools Required for Development
 
-Since it is based on Microsoft's .NET 5 we need to install a few tools before starting developing on top of nopCommerce.
+Since it is based on Microsoft's .NET 6 we need to install a few tools before starting developing on top of nopCommerce.
 
-### \.NET 5 runtime & .NET 5 SDK
+### \.NET 6 runtime & .NET 6 SDK
 
-Since nopCommerce 4.40 is based on .NET 5. We need to install [.NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer) and [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.200-windows-x64-installer) before we start development on nopCommerce.
+Since nopCommerce 4.50 is based on .NET 6. We need to install [.NET 6 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.1-windows-hosting-bundle-installer) and [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.101-windows-x64-installer) before we start development on nopCommerce.
 
-### Visual Studio 2019 or Above / Visual Studio Code
+### Visual Studio 2022 or Above / Visual Studio Code
 
-As we know nopCommerce is based on 'Microsoft's .NET 5' and Visual Studio IDE is best for developing  .Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
+As we know nopCommerce is based on 'Microsoft's .NET 6' and Visual Studio IDE is best for developing  .Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
 
 ### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above / PostgreSQL 9.2 or Above
 
