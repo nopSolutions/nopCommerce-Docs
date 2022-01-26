@@ -115,6 +115,9 @@
               name: Manual (Fixed or by weight and by total)
               href: getting-started/configure-shipping/shipping-providers/manual.md
             -
+              name: EasyPost
+              href: getting-started/configure-shipping/shipping-providers/easypost.md
+            -
               name: ShipStation
               href: getting-started/configure-shipping/shipping-providers/shipstation.md
             -
