@@ -61,12 +61,12 @@ Navigate to product details and find this section.
 
 1. Predefined package
 
-    There are common carrier-specific packaging as predefined constants you can use. If you're using this for your packaging, you don’t need to specify the dimensions, just the weight.
+    There are common carrier-specific packaging that you can use as predefined constants. If you use this for your packaging, you don’t need to specify dimensions, just weight.
     [Here](https://www.easypost.com/service-levels-and-parcels) is the full list of predefined packages supported.
     
     > [!NOTE]
     > 
-    > Predefined packages are only used for a single item in the cart with a quantity of 1, otherwise, the dimensions of all items shipped must be specified.
+    > Predefined packages are only used for a single item in the cart with a quantity of 1, otherwise, dimensions of all items shipped must be specified.
 
     * **Predefined package** is the name of predefined package.
 
