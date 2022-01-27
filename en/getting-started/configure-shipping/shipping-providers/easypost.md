@@ -9,24 +9,24 @@ contributors:
 
 ## Configuration
 
-After installing the EasyPost shipping provider you need to configure the integration.
-But first, ensure that the plugin is enabled (**Configuration → Shipping → Shipping providers**). To enable the plugin click **Edit** and check **Is active** checkbox.
+After installing the plugin of EasyPost shipping provider you need to configure the integration.
+But first, ensure that the plugin is enabled (**Configuration → Shipping → Shipping providers**). To do so click **Edit** and check **Is active** checkbox.
 Also, for more accurate work of the plugin, it's recommended to disable all other shipping providers if they are not used.
 
 ![Shipping Providers](_static/easypost/providers-list.png)
 
-To configure EasyPost shipping provider click **Configure** beside the EasyPost option in the list.
+To configure EasyPost shipping provider's plugin click **Configure** beside the EasyPost option in the list.
 
-Follow the instructions on top of the page to [create an account](https://www.easypost.com/signup).
+Follow the instructions on top of the **Configure** page to [create an account](https://www.easypost.com/signup).
 Enter your carrier specific credentials on the [Carrier Account Dashboard](https://www.easypost.com/account/carriers).
-Then configure the plugin, each field's function is annotated when "?" is hovered on.
+Then configure the plugin. Each field's function is annotated when "?" is hovered on.
 
 1. Configure your EasyPost credentials:
 
     ![Configuration Credentials](_static/easypost/configuration-credentials.png)
     
     * **Test mode** is enabled to use test mode for testing purposes.
-    * **API key**: (Test or Production) is required for the plugin to work. You can manage your API Keys from [your account](https://www.easypost.com/account/api-keys).
+    * **API key**: (Test or Production) is required for the plugin to work. You can manage your API Keys from [your EasyPost account](https://www.easypost.com/account/api-keys).
 
 1. Select carriers:
 
@@ -43,12 +43,12 @@ Then configure the plugin, each field's function is annotated when "?" is hovere
     
     ![Configuration Address Verification](_static/easypost/configuration-address-verification.png)
     
-    * **Address verification** is enabled to activate address verification feature. This will automatically make minor corrections to spelling/format if applicable.
-    * **Strict address verification** is enabled to activate strict address verification. In this case any failures cause the whole request to fail and the customer will need to correct and specify the address again.
+    * **Address verification** is enabled to activate address verification feature. It automatically makes minor corrections to spelling/format if applicable.
+    * **Strict address verification** is enabled to activate strict address verification. In this case, any mistakes in a typed address cause the whole request to fail and the customer needs to correct and specify the address again.
 
-1. **Save** plugin configuration.
+1. **Save** the plugin's configuration.
 
-Also, make sure that weight measure (ounce), dimension measure (inches) and currency (USD) are created and the ratio is set correctly in your store. They are required for the plugin to work correctly.
+Also, make sure that weight measure (ounce), dimension measure (inches) and currency (USD) are created and the ratio is set correctly in your store. It is required for the plugin to work correctly.
 You can learn more about measures from [here](xref:en/getting-started/configure-shipping/advanced-configuration/measures) and about currencies from [here](xref:en/user-guide/configuring/setting-up/payments/currencies).
 
 ## Additional product details
@@ -80,11 +80,11 @@ Navigate to product details and find this section.
 
     > [!TIP]
     > 
-    > To get the Harmonized Tariff Schedule number, you’ll need to look up the harmonization code associated with whatever product you are shipping. You can search for them on [hts.usitc.gov](https://hts.usitc.gov/).
+    > To get the Harmonized Tariff Schedule number, you need to look up the harmonization code associated with whatever product you are shipping. You can search for them on [hts.usitc.gov](https://hts.usitc.gov/).
 
 ## Shipments
 
-This plugin allows you to buy labels for your shipments (if this plugin was used as a shipping method for the order) and schedule the pickup of parcels to the carrier directly from the admin area of your store.
+This plugin allows you to buy labels for your shipments (if this plugin is used as a shipping method for an order) and schedule the pickup of parcels to the carrier directly from the admin area of your store.
 
 1. Go to order details and create a shipment. 
 
@@ -104,12 +104,12 @@ This plugin allows you to buy labels for your shipments (if this plugin was used
     > 
     > If you add options or customs form, rates may adjust, because during the checkout the customer selects shipping rate without including these parameters.
 
-1. When shipping internationally, you need to add customs information to your shipment. EasyPost uses this information to automatically generate the necessary customs forms for your shipment. You need to pass customs information whenever you are shipping between two countries.
-   Cpecify customs info and press **Update** button. 
+1. When shipping internationally, you need to add customs information to your shipment. EasyPost uses this information to automatically generate necessary customs' forms for your shipment. You need to pass customs information whenever you are shipping between two countries.
+   Specify customs info and press **Update** button. 
 
     ![Shipment Customs](_static/easypost/shipment-customs.png)
 
-1. When all details are set, or if shipment update is not required, you can buy a label.
+1. When all details are set, or shipment update is not required, you can buy a label.
 
     ![Shipment Rate](_static/easypost/shipment-rate.png)
     
@@ -133,14 +133,14 @@ This plugin allows you to buy labels for your shipments (if this plugin was used
     
     ![Shipment Download](_static/easypost/shipment-download.png)
 
-1. Creating a pickup allows you to schedule a pickup from your carrier from your customer's residence or place of business.
+1. Creating a pickup allows you to schedule a pickup from your carrier, from your customer's residence or place of business.
    Specify instructions, address and date to pick up. Then press **Create pickup** button.
    
     ![Shipment Pickup](_static/easypost/shipment-pickup.png)
    
     ![Shipment Pickup Create](_static/easypost/shipment-pickup-create.png)
 
-    After a pickup is successfully created, it will automatically fetch rates for each carrier that supports scheduled pickups. Then a rate must be selected and purchased before the pickup can be successfully scheduled.
+    After a successfully created pickup, it automatically fetches rates for each carrier that supports scheduled pickups. Then a rate must be selected and purchased before the pickup can be successfully scheduled.
 
 ## Batches
 
@@ -157,23 +157,23 @@ Go to **Sales → EasyPost Batches**.
     ![Batches Add](_static/easypost/batches-add.png)
 
     After you create a batch, you can still add shipments to it. 
-    Also, there may be times when you need to remove a shipment from a batch. You can do that too. For example, a particular shipment may have an invalid address but you may still want to continue on with the rest of the shipments.
-    Change the collection of the shipments as you wish, and then save the batch again.
+    Also, there may be times when you need to remove a shipment from a batch. You can do that too. For example, a particular shipment may have an invalid address but you may still want to continue on with the rest of shipments.
+    Change a collection of shipments as you wish, and then save a batch again.
 
-1. Once all associated shipments have been purchased, you can generate the labels. All the labels for the batch will be in a single file that you download. 
+1. Once all associated shipments have been purchased, you can generate labels. All labels for a batch will be in a single file that you download. 
 
     ![Batches Label](_static/easypost/batches-label.png)
 
     > [!NOTE]
     > 
-    > It takes a little time to create all the labels. The button for downloading the file will appear automatically when the batch status is **Label generated**.
+    > It takes a little time to create all labels. The button for downloading the file will appear automatically when a batch status is **Label generated**.
     
     ![Batches Download](_static/easypost/batches-download.png)
     
     > [!TIP]
     > 
-    > You can also press **Save** button to check the batch status if it is not updated automatically.
+    > You can also press **Save** button to check a batch status if it is not updated automatically.
     
-1. A manifest file can be created to speed up and simplify the carrier pickup process. The manifest is one document that can be scanned to mark all included tracking codes as "Accepted for Shipment" by the carrier.
+1. A manifest file can be created to speed up and simplify a carrier pickup process. The manifest is one document that can be scanned to mark all included tracking codes as "Accepted for Shipment" by a carrier.
 
     ![Batches Manifest](_static/easypost/batches-manifest.png)
