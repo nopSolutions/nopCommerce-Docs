@@ -45,7 +45,7 @@ Update the products available for installation, then install the .NET runtime:
 ```cmd
 sudo apt-get update
 
-sudo apt-get install apt-transport-https aspnetcore-runtime-3.1
+sudo apt-get install apt-transport-https aspnetcore-runtime-6.0
 ```
 
 ![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
