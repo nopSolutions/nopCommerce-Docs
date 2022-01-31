@@ -25,7 +25,7 @@ The *appsettings.json* file is generally used to store the application configura
 
 ## Settings available in the appsettings.json file
 
-### DataConfig
+### ConnectionStrings
 
 The connection to the database is configured through this section.
 
@@ -44,15 +44,59 @@ The connection to the database is configured through this section.
   * [**PostgreSQL**](https://www.postgresql.org/)
 * **SQLCommandTimeout** Sets the wait time (in seconds) before terminating the attempt to execute a command and generating an error. By default, timeout isn't set and a default value for the current provider used. Set **`0`** to use infinite timeout.
 
+### AzureBlobConfig
+
+We can use *Azure Blob Storage* to store blob data. nopCommerce already have feature integrated for that, we just need to set the following information correctly in order to use/enable this feature. Values for these setting can be obtained for *Azure* while you create the storage account.
+
+* **ConnectionString** This setting expects a string value. Here you need to add your `AzureBlobStorage` connection string
+* **ContainerName** Value for this setting is also of type string. In this setting we set the container name for *Azure BLOB storage*.
+* **EndPoint** This setting also expects a string value. Here we need to set the end point for *Azure BLOB storage*.
+* **AppendContainerName** This setting expects a boolean value. Set the value to **`true`** or **`false`** on the basis of whether the Container Name is appended to the `EndPoint` when constructing the url.
+* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to **`true`** if you want to  use the *Windows Azure BLOB storage* for *Data Protection Keys*.
+* **DataProtectionKeysContainerName** This  setting expects a string value. Here you need to set up a Azure  container name for storing *Data Protection Keys* (this container  should be separate from the container used for media and should be  Private)
+* **DataProtectionKeysVaultId (optional)** This setting also expects a string value. Set the `Azure key vault ID` if  you need to encrypt the *Data Protection Keys*
+
 ### CacheConfig
 
-Cache configuration
+Cache configuration.
 
 * **DefaultCacheTime** This setting determines the lifetime of the cached data. The default is **`60`** minutes.
 * **ShortTermCacheTime** In some cases, it is required to cache data for a shorter period of time than the default. These values apply to caching addresses, generic attributes, customers, etc. The default is **`3`** minutes.
 * **BundledFilesCacheTime** This setting is used when the function of combining css and/or js files into one is activated, to control the cache lifetime for them. The default is **`120`** minutes.
 
-#### DistributedCacheConfig
+### CommonConfig
+
+*CommonConfig* contains settings used to configure the behavior of nopCommerce itself. It is a json object and contains some properties settings which can be tweak to change the behavior of nopCommerce.
+
+* **DisplayFullErrorStack** This setting expects a boolean value. Default value is **`false`**. You can set the value to **`true`** if you want to see the full error in the production environment. Which is not what we usually suggest. But if you have a good reason to show full error during production environment then you can do it from this setting. For the development environment this setting is ignored and whatever the value you set for this setting full error will be shown. We can say that this setting is always enabled for development environment.
+* **UserAgentStringsPath** This setting stores the loction/path for `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
+  
+  ```powershell
+  ~/App_Data/browscap.xml
+  ```
+
+    >[!NOTE]
+    > In computing, a user agent is software (a software agent) that is acting on behalf of a user, such as a web browser that "retrieves, renders and facilitates end user interaction with Web content". For more information please visit [UserAgent](https://en.wikipedia.org/wiki/User_agent).
+* **CrawlerOnlyUserAgentStringsPath** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly".
+  
+  ```powershell
+  ~/App_Data/browscap.crawlersonly.xml
+  ```
+
+* **UseSessionStateTempDataProvider** This setting expects a boolean value. Default value for this setting is **`false`**. You might want to set the value to **`true`** if you want to store `TempData` in the session state. By default the cookie-based `TempData` provider is used to store `TempData` in cookies.
+* **MiniProfilerEnabled** This setting activates the *MiniProfiler* performance appraisal tool.
+* **ScheduleTaskRunTimeout** allows you to set up a running schedule task timeout in milliseconds. Set **`null`** to use a default value.
+* **StaticFilesCacheControl** specifies the value of the 'Cache-Control' header for static content (in seconds).
+
+  ```powershell
+  public,max-age=31536000
+  ```
+
+* **SupportPreviousNopcommerceVersions** setting specifies the value indicating whether we should support previous nopCommerce versions. In this case, old URLs, from previous nopCommerce versions, will redirect to new ones. Enable it only if you upgraded from one of the previous nopCommerce versions. Default value is **`true`**.
+* **PluginStaticFileExtensionsBlacklist** Specify the blacklist of the static file extensions for plugin directories.
+* **ServeUnknownFileTypes** setting specifies the value indicating whether to serve files that don't have a recognized content-type. Default value is **`false`**.
+
+### DistributedCacheConfig
 
 A distributed cache is a cache shared by multiple app servers, typically maintained as an external service to the app servers that access it. A distributed cache can improve the performance and scalability of an ASP.NET Core app, especially when the app is hosted by a cloud service or a server farm.
 
@@ -84,18 +128,6 @@ Hosting contains settings used to configure the hosting behavior. It is a json o
 * **ForwardedForHeaderName** This setting expects a string value. Specify a custom HTTP header name for identifying the protocol (HTTP or HTTPS) that a client used to connect to your proxy or load balancer.
 * **KnownProxies** This setting expects a string value. Specify a list of IP addresses (comma separated) to accept forwarded headers.
 
-### AzureBlobConfig
-
-We can use *Azure Blob Storage* to store blob data. nopCommerce already have feature integrated for that, we just need to set the following information correctly in order to use/enable this feature. Values for these setting can be obtained for *Azure* while you create the storage account.
-
-* **ConnectionString** This setting expects a string value. Here you need to add your `AzureBlobStorage` connection string
-* **ContainerName** Value for this setting is also of type string. In this setting we set the container name for *Azure BLOB storage*.
-* **EndPoint** This setting also expects a string value. Here we need to set the end point for *Azure BLOB storage*.
-* **AppendContainerName** This setting expects a boolean value. Set the value to **`true`** or **`false`** on the basis of whether the Container Name is appended to the `EndPoint` when constructing the url.
-* **StoreDataProtectionKeys** This setting  expects a boolean value. Set the value to **`true`** if you want to  use the *Windows Azure BLOB storage* for *Data Protection Keys*.
-* **DataProtectionKeysContainerName** This  setting expects a string value. Here you need to set up a Azure  container name for storing *Data Protection Keys* (this container  should be separate from the container used for media and should be  Private)
-* **DataProtectionKeysVaultId (optional)** This setting also expects a string value. Set the `Azure key vault ID` if  you need to encrypt the *Data Protection Keys*
-
 ### InstallationConfig
 
 It contains settings that used to configure the behavior of nopCommerce during the nopCommerce installation.
@@ -104,51 +136,31 @@ It contains settings that used to configure the behavior of nopCommerce during t
 * **DisabledPlugins** This setting expects a string value. Specify a list of plugins (comma separated) ignored during installation.
 * **InstallRegionalResources** This setting expects a boolean value. This setting enables the selection of additional language resources during installation. The choice of the country determines the settings that will be applied to the store (exchange rates, taxes, units of measurement, etc. regional features).
 
-#### PluginConfig
+### PluginConfig
 
 * **ClearPluginShadowDirectoryOnStartup** This setting expects a boolean value. Set it to **`true`** if you want to clear the `/Plugins/bin` directory during application startup.
 * **CopyLockedPluginAssembilesToSubdirectoriesOnStartup** This setting expects a boolean value. You might want to set the value to **`true`** if you want to copy "locked" assemblies from `/Plugins/bin` directory to temporary subdirectories during application startup.
 * **UseUnsafeLoadAssembly** This setting expects a boolean value. You might want to set the value to **`true`** if you want to load an assembly into the load-from context, bypassing some security checks.
 * **UsePluginsShadowCopy** This setting expects a boolean value. You might want to set the value to **`true`** if you want to copy plugins library to the `/Plugins/bin` directory on application startup.
 
-### CommonConfig
-
-*CommonConfig* contains settings used to configure the behavior of nopCommerce itself. It is a json object and contains some properties settings which can be tweak to change the behavior of nopCommerce.
-
-* **DisplayFullErrorStack** This setting expects a boolean value. Default value is **`false`**. You can set the value to **`true`** if you want to see the full error in the production environment. Which is not what we usually suggest. But if you have a good reason to show full error during production environment then you can do it from this setting. For the development environment this setting is ignored and whatever the value you set for this setting full error will be shown. We can say that this setting is always enabled for development environment.
-* **UserAgentStringsPath** This setting stores the loction/path for `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
-  
-  ```powershell
-  ~/App_Data/browscap.xml
-  ```
-
-    >[!NOTE]
-    > In computing, a user agent is software (a software agent) that is acting on behalf of a user, such as a web browser that "retrieves, renders and facilitates end user interaction with Web content". For more information please visit [UserAgent](https://en.wikipedia.org/wiki/User_agent).
-* **CrawlerOnlyUserAgentStringsPath** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly".
-  
-  ```powershell
-  ~/App_Data/browscap.crawlersonly.xml
-  ```
-
-* **UseSessionStateTempDataProvider** This setting expects a boolean value. Default value for this setting is **`false`**. You might want to set the value to **`true`** if you want to store `TempData` in the session state. By default the cookie-based `TempData` provider is used to store `TempData` in cookies.
-* **MiniProfilerEnabled** This setting activates the *MiniProfiler* performance appraisal tool.
-* **ScheduleTaskRunTimeout** allows you to set up a running schedule task timeout in milliseconds. Set **`null`** to use a default value.
-* **StaticFilesCacheControl** specifies the value of the 'Cache-Control' header for static content (in seconds).
-
-  ```powershell
-  public,max-age=31536000
-  ```
-
-* **SupportPreviousNopcommerceVersions** setting specifies the value indicating whether we should support previous nopCommerce versions. In this case, old URLs, from previous nopCommerce versions, will redirect to new ones. Enable it only if you upgraded from one of the previous nopCommerce versions.
-* **PluginStaticFileExtensionsBlacklist** Specify the blacklist of the static file extensions for plugin directories.
-
 ### WebOptimizer
 
 We use the [WebOptimizer](https://github.com/ligershark/WebOptimizer) tool for minification and bundling of *CSS* and *JavaScript* code, which is an *ASP.NET Core* middleware. Optimization is performed at runtime with server-side and client-side caching for high performance.
 
 * **EnableJavaScriptBundling** This setting expects a boolean value. You can set to **`true`** if you want JS file bundling and minification to be enabled.
-* **JavaScriptBundleSuffix** This setting expects a string value. You can sets a suffix for the js-file name of generated bundles (by default **`.scripts`**).
 * **EnableCssBundling** This setting expects a boolean value. You can set to **`true`** if you want CSS file bundling and minification to be enabled.
+* **JavaScriptBundleSuffix** This setting expects a string value. You can sets a suffix for the js-file name of generated bundles (by default **`.scripts`**).
 * **CssBundleSuffix** This setting expects a string value. You can sets a suffix for the css-file name of generated bundles (by default **`.styles`**).
+* **EnableCaching** This setting expects a boolean value. You can set a value indicating whether server-side caching is enabled (by default **`true`**).
+* **EnableMemoryCache** This setting expects a boolean value. You can set a value indicating whether *Microsoft.Extensions.Caching.Memory.IMemoryCache*
+ based caching is enabled (by default **`true`**).
 * **EnableDiskCache** This setting expects a boolean value. Determines if the pipeline assets are cached to disk. This can speed up application restarts by loading pipline assets from the disk instead of re-executing the pipeline. Can be helpful to disable while in development mode.
+* **EnableTagHelperBundling** This setting expects a boolean value. You can set  whether bundling is enabled (by default **`false`**).
+* **CdnUrl** This setting expects a string value. You can set the CDN url used for TagHelpers (by default **`null`**).
 * **CacheDirectory** This setting expects a string value. Sets the directory where assets will be stored if **EnableDiskCache** is **`true`** (by default **`{ContentRootPath}\\wwwroot\\bundles`**).
+* **AllowEmptyBundle** This setting expects a boolean value. You can set  whether empty bundle is allowed to generate instead of throwing an exception (by default **`true`**).
+* **HttpsCompression** This setting expects a integer value. You can set a value Indicating if files should be compressed for HTTPS requests when the Response Compression middleware is available. The default value is **`2`**. You can choose one of the implementations:
+  * **1** - Opts out of compression over HTTPS.
+  * **2** - Opts into compression over HTTPS.
+    >[!NOTE]
+    > Enabling compression on HTTPS requests for remotely manipulable content may expose security problems.
