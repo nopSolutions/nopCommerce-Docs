@@ -21,6 +21,7 @@ This chapter describes how to install the nopCommerce software on Linux system o
   - [Troubleshooting](#troubleshooting)
     - [Gdip](#gdip)
     - [SSL](#ssl)
+    - [Migrating database from Windows](#migrating-database-from-windows)
 
 ## Install and configure software
 
@@ -248,3 +249,19 @@ sudo apt-get install libgdiplus
 ### SSL
 
 *If you want to use SSL on your site don't forget set to **`true`** the `UseHttpXForwardedProto` setting in the **appsettings.json** file*.
+
+### Migrating database from Windows
+
+If you are trying to migrate MySql database from Windows to Linux you may find that table names are case insensitive on Windows while they are case sensitive on Linux.
+When starting Nop, you will see an error like this: `---> MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'nopkms.Store' doesn't exist`. The table exists, but it's spelled lower-case and nopcommerce query it using upper-case.
+Solution to this problem is to change default configuration file. You need to modify `lower_case_table_names` variable and set it to `1` by ammending configuration file:
+```
+[mysqld]
+lower_case_table_names=1
+```
+You should find configuration file at `/etc/mysql/my.cnf`
+
+This needs to be done **before initializing** database. You can't change this variable after migrating database.
+
+You can check this variable using `show variables where Variable_name='lower_case_table_names'` query.
+
