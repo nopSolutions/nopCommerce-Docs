@@ -7,14 +7,14 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Return requests
 
-Return request feature enables customers to request a return on items previously purchased. These are also known as RMA requests. This option is only available for completed orders. Return requests settings are managed in **Configuration → Settings → Order settings** in the *Return request settings* panel.
+The return request feature enables customers to request a return on items previously purchased. These are also known as RMA requests. This option is only available for completed orders. Return requests settings are managed in **Configuration → Settings → Order settings** in the *Return request settings* panel.
 
 To enable return requests tick the **Enable returns system** checkbox.
 When this option is enabled, a **Return item(s)** button is displayed for completed orders on the order details page in the public store.
 
 To proceed to the return request settings section click [here](#return-request-settings).
 
-In the next sections we will describe how the return request functionality can be used by your customers and how to manage return requests in admin area.
+In the next sections, we will describe how the return request functionality can be used by your customers and how to manage return requests in the admin area.
 
 ## Submit a return request
 To submit a return request, a customer would need to take the following steps:
@@ -25,15 +25,15 @@ To submit a return request, a customer would need to take the following steps:
 1. Click the **Return Item(s)** button beside the completed order that is to be returned. The *Return item(s) from order #* window is displayed, as shown in the following example: 
   ![Return items](_static/return-requests/return-items.jpg)
     * **Qty to return** dropdown list allows selecting the number of items to be returned.
-    * **Return reason** dropdown list allows selecting the reason for requesting a return. For example, wrong product ordered, wrong product received and more. Read [below](#return-request-settings) how to manage return reasons.
-    * **Return action** dropdown list allows selecting the required return action to take. For example, repair product, replace product, issue credit and so on. Read [below](#return-request-settings) how to manage return actions.
+    * **Return reason** dropdown list allows selecting the reason for requesting a return. For example, the wrong product ordered, wrong product received, and more. Read [below](#return-request-settings) how to manage return reasons.
+    * **Return action** dropdown list allows selecting the required return action to take. For example, repair a product, replace a product, issue credit, and so on. Read [below](#return-request-settings) how to manage return actions.
     * Use the **Upload a file** option if you want to attach some additional documents or pictures to your request. 
 	    > [!NOTE]
 	    >
 	    > This option is available only when the **Allow file uploads** checkbox is checked. Read [below](#return-request-settings) how to set this up.
 
     * In the **Comments** field, a customer can enter an optional comment for information purposes.
-1. After using the return request feature, the customer can see the created return requests and its' statuses from the *My Account* page in the public store, by clicking **Return requests**: 
+1. After using the return request feature, the customer can see the created return requests and their statuses from the *My Account* page in the public store, by clicking **Return requests**: 
   ![Return requests public](_static/return-requests/return-requests.jpg)
 
 ## Manage return requests
@@ -51,6 +51,7 @@ The store administrator is allowed to:
 * View the **Customer**. Clicking on the customer email redirects to the associated customer details page.
 * View the **Product**. Clicking on the product name redirects to the associated product details page.
 * Enter the **Quantity** of the returned product.
+* Fill the **Quantity returned to stock** field. It represents a number of items that should be returned to stock.
 * Select the **Return request status**:  
   * *Pending*
   * *Received*
@@ -73,7 +74,7 @@ The store administrator is allowed to:
 ## Return request settings
 To define the return request settings, go to **Configuration → Settings → Order settings**. 
 
-This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from multi-store configuration drop-down list and tick all needed checkboxes at the left side to set custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
+This page enables multi-store configuration, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from the multi-store configuration drop-down list and tick all needed checkboxes on the left side to set a custom value for them. For further details refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
 Go to the *Return request settings* panel:
 ![Return request settings](_static/return-requests/return-request-settings.jpg)
