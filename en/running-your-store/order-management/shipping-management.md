@@ -20,7 +20,7 @@ The top area of the page enables you to search for a shipment by different searc
 * Select the **Warehouse** for shipments sent from a specific warehouse.
 * Click the **Load not delivered** checkbox if you do not want to load already delivered items.
 * Use **Country, State/province, County/region, City** to search by a shipment destination.
-* Click **Load not shipped** checkbox if you do not want to load already shipped items.
+* Click the **Load not shipped** checkbox if you do not want to load already shipped items.
 
 Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print packaging receipts.
 
@@ -44,6 +44,10 @@ In this window you can:
 * Edit the **Date delivered**.
 * **Print packaging slip**.
 * **Delete** the shipment.
+
+If a customer chose the "Pick up in store" shipping method during the checkout process you will be able to mark a shipment as "ready for pickup". On the *View shipment details* page this button looks the following way:
+
+![Shipment details](_static/shipping-management/ready-for-pickup.jpg)
 
 ## Shipping settings
 
