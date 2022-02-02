@@ -45,7 +45,8 @@ Then configure the plugin, each field's function is annotated when "?" is hovere
     * **Commit transactions** is enabled to commit transactions right after they are saved.
     * **Validate address** is enabled to validate address entered.
     * **Tax origin address** is used for tax requests to Avalara services.
-    * **Tax rates by address only** is enabled to get tax rates by the address only (reduces the number of API calls, but may lead to not entirely accurate results).
+    * **Use tax rate tables to estimate** determines whether to use tax rate tables to estimate. This will be used as a default tax calculation for catalog pages and will be adjusted and reconciled to the final transaction tax during checkout. Tax rates are looked up by zip code (US only) in a file that will be periodically updated from the Avalara (see Schedule tasks).
+    * **Tax rates by address only** is shown if the previous setting is unticked. Enable it to get tax rates by the address only (reduces the number of API calls, but may lead to not entirely accurate results).
     
 3. Configure tax exemption settings:
     
