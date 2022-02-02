@@ -9,7 +9,7 @@ contributors: git.sinaislam, git.DmitriyKulagin, git.exileDev
 
 With Scheduled tasks, you can schedule a task to run at certain periods. For example, nopCommerce sends queued emails periodically. The basic steps to create a new task are:
 
-1. Define a class which implements **IScheduleTask** interface. It has only one method that takes no arguments; **ExecuteAsync**. As you guessed this method is invoked when the task should be run.
+1. Define a class that implements the **IScheduleTask** interface. It has only one method that takes no arguments; **ExecuteAsync**. As you guessed this method is invoked when the task should be run.
 
 ```csharp
 public partial class KeepAliveTask : IScheduleTask
@@ -46,4 +46,4 @@ await _scheduleTaskService.InsertTaskAsync(new ScheduleTask
 ## Troubleshooting
 
 - Make sure your store has a valid URL.
-- Restart the application after adding new schedule task.
+- Restart the application after adding a new schedule task.

@@ -156,7 +156,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a < b == c > d;
   ```
 
-- Prefer parentheses to clarify other binary operator (&&, ||, ??) precedence
+- Prefer parentheses to clarify other binary operators (&&, ||, ??) precedence
 
   ```csharp
   //Right
@@ -250,7 +250,7 @@ The style rules in this section concern expression-level preferences, including 
   var anon = new { age, name };
   ```
 
-- Prefer autoproperties over properties with private backing fields
+- Prefer auto-properties over properties with private backing fields
 
   ```csharp
   //Right
@@ -352,7 +352,7 @@ The style rules in this section concern null-checking preferences.
   var v = x == null ? y : x;
   ```
 
-- Prefer to use null-conditional operator when possible
+- Prefer to use a null-conditional operator when possible
 
   ```csharp
   //Right
@@ -1256,7 +1256,7 @@ These formatting rules concern the use of single lines versus separate lines for
   int i = 0; string name = "John";
   ```
 
-- Leave code block on single line
+- Leave code block on a single line
 
   ```csharp
   //Right
@@ -1365,7 +1365,7 @@ These formatting rules concern the use of single lines versus separate lines for
   protected int testField;
   ```
 
-- All other code elements such as variables, method parameters and class fields (except open ones) are named in camelCase notation.
+- All other code elements such as variables, method parameters, and class fields (except open ones) are named in camelCase notation.
 
   ```csharp
   //Right

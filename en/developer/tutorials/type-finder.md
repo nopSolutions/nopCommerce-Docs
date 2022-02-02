@@ -40,9 +40,9 @@ The main default implementation of this interface is the ``WebAppTypeFinder`` cl
 
 Without dwelling on the implementation details of the ``FindClassesOfType`` methods (since they both boils down to the very simple function which code is available at [this link](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Core/Infrastructure/AppDomainTypeFinder.cs#L184)) let's move on to the most important thing.
 
-## So why we need the ITypeFinder interface
+## So why do we need the ITypeFinder interface
 
-In fact, this interface is used in a number of very important aspects of how nopCommerce works:
+This interface is used in some very important aspects of how nopCommerce works:
 
 1. Searching assemblies for configuring the migration mechanism ([How do migrations work?](xref:en/developer/tutorials/migrations))
 1. Searching classes of certain interfaces necessary for the correct launch of the site, such as:

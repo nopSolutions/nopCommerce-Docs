@@ -27,11 +27,11 @@ This document describes a step-by-step guide to building and running a Docker co
     [docker build -t nopcommerce .]
     ```
 
-    This command builds the container according to the instructions described in the "Dockerfile" file. The first launch of the assembly will take a lot of time, since it will require downloading two basic images for .Net Core applications.
+    This command builds the container according to the instructions described in the "Dockerfile" file. The first launch of the assembly will take a lot of time since it will require downloading two basic images for .Net Core applications.
 
-    The first image containing the SDK is required for the intermediate container, which will assemble the application by repairing all the dependencies, and then execute the process of publishing the `Nop.Web` application to a separate directory, from which you will create the resulting container with the name *nopcommerce* later (you can create an image without name, but the name is more convenient. To specify the name of the container during assembly, you must specify the flag [–t], as was done in our case).
+    The first image containing the SDK is required for the intermediate container, which will assemble the application by repairing all the dependencies, and then execute the process of publishing the `Nop.Web` application to a separate directory, from which you will create the resulting container with the name *nopcommerce* later (you can create an image without the name, but the name is more convenient. To specify the name of the container during assembly, you must specify the flag [–t], as was done in our case).
 
-    After installation, if everything went well, executing the next command:
+    After installation, if everything went well, execute the next command:
 
     ```csharp
     [docker images]
@@ -61,7 +61,7 @@ This document describes a step-by-step guide to building and running a Docker co
     > [docker ps]
     > ```
 
-    Since we are launching the docker through a virtual machine, we need to first get an IP address at which we can test the operation of the application. To do this, execute the command, which will start the redirection service and give us the IP address on which we can verify that the application has started.
+    Since we are launching the docker through a virtual machine, we need to first get an IP address at which we can test the operation of the application. To do this, execute the command, which will start the redirection service, and give us the IP address on which we can verify that the application has started.
 
     ```csharp
     [docker-machine ip]
@@ -71,9 +71,9 @@ This document describes a step-by-step guide to building and running a Docker co
 
     ![docker_3](_static/docker/docker_3.png)
 
-    This will be our verification that the container is being created, launched and successfully operating.
+    This will be our verification that the container is being created, launched, and successfully operating.
 
-1. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, ours and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
+1. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, our and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
 
     To begin, stop all containers so as not to interfere. Use the command for this:
 
@@ -115,7 +115,7 @@ This document describes a step-by-step guide to building and running a Docker co
 
 ## Docker Hub
 
-Starting from version nopCommerce 4.20, we publish the completed image on the github service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
+Starting from version nopCommerce 4.20, we publish the completed image on the GitHub service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
 
 ```csharp
 [docker pull nopcommerceteam/nopcommerce:latest]

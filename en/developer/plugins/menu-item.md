@@ -7,11 +7,11 @@ contributors: git.Sandeep911, git.DmitriyKulagin, git.exileDev
 
 # How to add a menu item into the administration area from a plugin
 
-In nopCommerce, administration menu is build from the *sitemap.config* file which is located in *~/Areas/Admin folder*.
+In nopCommerce, the administration menu is built from the *sitemap.config* file which is located in *~/Areas/Admin folder*.
 
-To do the same, you can use following sample code which you need to add in your plugins' `*.cs` file. First, implement *IAdminMenuPlugin* interface in your plugin main class.
+To do the same, you can use the following sample code which you need to add in your plugins' `*.cs` file. First, implement the *IAdminMenuPlugin* interface in your plugin main class.
 
-Then, You can also put any security (ACL) logic to this method. For example, validate whether current customer has "Manage plugins" permission.
+Then, You can also put any security (ACL) logic to this method. For example, validate whether the current customer has "Manage plugins" permission.
 
 ```csharp
  public class CustomPlugin : BasePlugin, IAdminMenuPlugin
