@@ -5,7 +5,7 @@ author: git.AndreiMaz
 contributors: git.a-patel, git.exileDev, git.DmitriyKulagin
 ---
 
-# Creating / Writing your own theme (using current / default theme)
+# Creating / Writing your theme (using current/default theme)
 
 Open your nopCommerce solution or website (web version) in Microsoft Visual Studio - Go to this location:
 
@@ -16,11 +16,11 @@ Open your nopCommerce solution or website (web version) in Microsoft Visual Stud
 
     ![step-1](_static/new-theme/new-theme-step-1.jpg)
 
-1. Now, Right click on the theme → select **COPY**
+1. Now, Right-click on the theme → select **COPY**
 
     ![step-2](_static/new-theme/new-theme-step-2.jpg)
 
-1. Now select "Theme" folder → right click → **PASTE**
+1. Now select the "Theme" folder → right-click → **PASTE**
 
     ![step-3](_static/new-theme/new-theme-step-3.jpg)
 
@@ -28,7 +28,7 @@ Open your nopCommerce solution or website (web version) in Microsoft Visual Stud
 
     ![step-4](_static/new-theme/new-theme-step-4.jpg)
 
-1. Rename it - whatever you like to be the name of your new theme – For an instance, let's say: MyFirstTheme
+1. Rename it - whatever you like to be the name of your new theme – For instance, let's say: MyFirstTheme
 
     ![step-5](_static/new-theme/new-theme-step-5.jpg)
 
@@ -36,12 +36,12 @@ Open your nopCommerce solution or website (web version) in Microsoft Visual Stud
 
     ![step-6](_static/new-theme/new-theme-step-6.jpg)
 
-1. Change the current / existing theme name with your new theme name "MyFirstTheme"
+1. Change the current/existing theme name with your new theme name "MyFirstTheme"
 
     ![step-7](_static/new-theme/new-theme-step-7.jpg)
 
-1. Now, inside your new theme folder **"MyFirstTheme" → Content → Images** add your new images in "images" directory and start updating / customizing your `style.css` according to your requirements.
+1. Now, inside your new theme folder **"MyFirstTheme" → Content → Images** add your new images in the "images" directory and start updating/customizing your `style.css` according to your requirements.
 
-    If you would like to test the changes → Go to Admin section → Apply your new theme → Save change and preview your public store.
+    If you would like to test the changes → Go to the Admin section → Apply your new theme → Save the change and preview your public store.
 
     ![step-8](_static/new-theme/new-theme-step-8.jpg)
