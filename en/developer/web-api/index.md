@@ -17,7 +17,7 @@ The Web API framework provides integrators and developers the means to use web s
 
 ### Frontend methods
 
-The Web API Frontend offers you a way to implement the nopCommerce buying capabilities in any application, whenever it is a website or mobile app.Using the API is essential when sellers want to reach a wider audience and their individual requirements go beyond the standard nopCommerce functionality. The Web API Frontend provides methods that allow using the built-in public store functionality outside of the nopCommerce store. Even if you have customizations in your nopCommerce store you will be able to use this plugin since it is provided with the source code.
+The Web API Frontend offers you a way to implement the nopCommerce buying capabilities in any application, whenever it is a website or mobile app. Using the API is essential when sellers want to reach a wider audience and their requirements go beyond the standard nopCommerce functionality. The Web API Frontend provides methods that allow using the built-in public store functionality outside of the nopCommerce store. Even if you have customizations in your nopCommerce store you will be able to use this plugin since it is provided with the source code.
 
 After installing the plugin you will be able to see a list of the existing API methods using the following Swagger endpoint:
 **`{store location}/api-frontend/index.html`**
@@ -27,7 +27,7 @@ After installing the plugin you will be able to see a list of the existing API m
 
 ### Backend methods
 
-The Web API Backend provides access to all nopCommerce admin area functionality. Meaning, using the Web API Backend methods you can get full control over such functionality as customer management, creating and updating products, sales monitoring, and actually whatever you want to control in the admin area of the nopCommerce store. Use this API to build such applications as CRM and ERP systems, social network integrations and other apps that require accessing the store business processes.
+The Web API Backend provides access to all nopCommerce admin area functionality. Meaning, using the Web API Backend methods you can get full control over such functionality as customer management, creating and updating products, sales monitoring, and actually whatever you want to control in the admin area of the nopCommerce store. Use this API to build such applications as CRM and ERP systems, social network integrations, and other apps that require accessing the store business processes.
 
 After installing the plugin you will be able to see a list of the existing API methods using the following Swagger endpoint:
 **`{store location}/api-backend/index.html`**
@@ -38,7 +38,7 @@ To use the API, the client application should have appropriate permissions (ACL)
 
 ## Authentication
 
-In order to keep transactions on nopCommerce platform safe and secure, all apps connecting with our APIs must authenticate when making API calls.
+To keep transactions on the nopCommerce platform safe and secure, all apps connecting with our APIs must authenticate when making API calls.
 
 To make a web API call from a client such as a mobile application, an API client has to prove its identity. To do this, the API provides an access token with each request in the Authorization header using the Bearer HTTP authorization scheme. This token acts like an electronic key that lets you access the API.
 

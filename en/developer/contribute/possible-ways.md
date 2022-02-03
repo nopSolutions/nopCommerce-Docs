@@ -2,7 +2,7 @@
 title: Possible ways to contribute
 uid: en/developer/contribute/possible-ways
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Possible ways to contribute
@@ -11,7 +11,7 @@ contributors: git.exileDev
 
 * If you have a site, write about us or place a hyperlink
 * Answer a question on our [forums](http://www.nopcommerce.com/boards/).
-* Help us verifying submitted fixes for bugs.
+* Help us verify submitted fixes for bugs.
 * Share an idea for a new feature or a better way to do something on the [forums](http://www.nopcommerce.com/boards/).
 * Create a new language pack.
 * Create a new graphical theme to share with the community.

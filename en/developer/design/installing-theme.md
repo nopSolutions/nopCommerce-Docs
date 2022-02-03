@@ -9,9 +9,9 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 Let's assume you just downloaded a new theme which is in a zip file.
 
-1. Extract the contents of your zip file and copy it under "Themes" folder like shown in the figure below: ![extracting-theme](_static/installing-theme/extracting-theme.jpg)
+1. Extract the contents of your zip file and copy it under the "Themes" folder as shown in the figure below: ![extracting-theme](_static/installing-theme/extracting-theme.jpg)
 1. Go to the admin section (`http://www.yourdomain.com/admin`)
 1. Go to Configuration → Settings → General And Miscellaneous settings
-1. Select new theme from the **Default Store Theme** and click **Save**.
+1. Select a new theme from the **Default Store Theme** and click **Save**.
 
 Now, go to the public store. You should be able to see the new theme on your website.

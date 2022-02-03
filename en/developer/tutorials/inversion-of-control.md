@@ -26,6 +26,6 @@ Inversion of Control and Dependency Injection are two related ways to break apar
     }
 ```
 
-You can create as many dependency registrar classes as you need. Each class implementing **INopStartup** interface has an **Order** property. It allows you to replace existing dependencies. To override nopCommerce dependencies, set the `Order` property to something greater than 0. nopCommerce orders dependency classes and runs them in ascending order. The higher the number the later your objects will be registered.
+You can create as many dependency registrar classes as you need. Each class implementing the **INopStartup** interface has an **Order** property. It allows you to replace existing dependencies. To override nopCommerce dependencies, set the `Order` property to something greater than 0. nopCommerce orders dependency classes and runs them in ascending order. The higher the number the later your objects will be registered.
 
 This way you will register both built-in ASP.NET Core services and your own, the same registration mechanism applies to registering services in plugins.

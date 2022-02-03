@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.skoshelev, git.cromatido
 
 # Plugin with data access
 
-In this tutorial I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development it is very important that you have read, understood, and successfully completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
+In this tutorial, I'll be using the nopCommerce plugin architecture to implement a product view tracker. Before we begin with the development you must read, understood, and completed the tutorials listed below. I'll be skipping over some explanations covered in the previous articles, but you can recap using the links provided.
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
@@ -24,11 +24,11 @@ Add the  `plugin.json` file.
 >[!TIP]
 >For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
-Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**, will be connected automatically
+Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**will be connected automatically
 
 ## The Data Access Layer (A.K.A. Creating new entities in nopCommerce)
 
-Inside of the "*domain*" namespace we're going to create a public class named **`ProductViewTrackerRecord`**. This class extends **`BaseEntity`**, but it is otherwise a very simple file. Something to remember is that we do not have navigation properties (relational properties), because *Linq2DB* framework, which we use to work with databases does not support the navigation properties.
+Inside of the "*domain*" namespace we're going to create a public class named **`ProductViewTrackerRecord`**. This class extends **`BaseEntity`**, but it is otherwise a very simple file. Something to remember is that we do not have navigation properties (relational properties), because the *Linq2DB* framework, which we use to work with databases does not support the navigation properties.
 
 ```csharp
 namespace Nop.Plugin.Misc.ProductViewTracker.Domain
@@ -44,7 +44,7 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Domain
 }
 ```
 
-The next class to create is the *FluentMigrator* entity builder class. Inside of the mapping class we map the columns, table relationships, and the database table.
+The next class to create is the *FluentMigrator* entity builder class. Inside the mapping class, we map the columns, table relationships, and the database table.
 
 ```csharp
 using FluentMigrator.Builders.Create.Table;
@@ -149,7 +149,7 @@ namespace Nop.Plugin.Misc.ProductViewTracker.Services
 
 ## Dependency Injection
 
-Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
+Martin Fowler has written a great description of dependency injection or Inversion of Control. I'm not going to duplicate his work, and you can find his article [here](https://martinfowler.com/articles/injection.html). Dependency injection manages the life cycle of objects and provides instances for dependent objects to use. First, we need to configure the dependency container so it understands which objects it will control and what rules might apply to the creation of those objects.
 
 ```csharp
 using Microsoft.AspNetCore.Builder;
@@ -262,7 +262,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 
 > [!IMPORTANT]
 >
->We implement our plugin as a widget. In this case we won't need to edit a cshtml file.
+>We implement our plugin as a widget. In this case, we won't need to edit a `cshtml` file.
 
 ```csharp
 using Nop.Services.Cms;

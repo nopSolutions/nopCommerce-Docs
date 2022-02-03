@@ -23,23 +23,23 @@ The `Nop.Data` project contains a set of classes and functions for reading from 
 
 ## `\Libraries\Nop.Services`
 
-This project contains a set of core services, business logic, validations or calculations related with the data if needed. Some people call it *Business Access Layer* (BAL).
+This project contains a set of core services, business logic, validations, or calculations related to the data if needed. Some people call it *Business Access Layer* (BAL).
 
 ## Projects into `\Plugins\` solution folder
 
-`Plugins` is a *Visual Studio* solution folder that contains plugin projects. Physically it's located in the root of your solution. But plugins DLLs are automatically copied in `\Presentation\Nop.Web\Plugins` directory which is used for already deployed plugins because the build output paths of all plugins are set to `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}`. This allows plugins to contain some external files, such as static content (CSS or JS files) without having to copy files between projects to be able to run the project.
+`Plugins` is a *Visual Studio* solution folder that contains plugin projects. Physically it's located at the root of your solution. But plugins DLLs are automatically copied in the `\Presentation\Nop.Web\Plugins` directory which is used for already deployed plugins because the build output paths of all plugins are set to `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}`. This allows plugins to contain some external files, such as static content (CSS or JS files) without having to copy files between projects to be able to run the project.
 
 ## `\Presentation\Nop.Web`
 
-`Nop.Web` is an MVC web application project, a presentation layer for public store which also contains administration panel included as an area. If you haven't used `ASP.NET`  before, please find more info [here](http://www.asp.net/). This is the application that you actually run. It is the startup project of the application.
+`Nop.Web` is an MVC web application project, a presentation layer for the public store which also contains an administration panel included as an area. If you haven't used `ASP.NET`  before, please find more info [here](http://www.asp.net/). This is the application that you run. It is the startup project of the application.
 
 ## `\Presentation\Nop.Web.Framework`
 
-`Nop.Web.Framework` is a class library project containing some common presentation things for `Nop.Web` project.
+`Nop.Web.Framework` is a class library project containing some common presentation things for the `Nop.Web` project.
 
 ## `\Test\Nop.Tests`
 
-`Nop.Tests` is a class library project containing some common test classes and helpers for other test projects. It does not have any test. Read more about UNIT testing in nopCommerce in the following article: [UNIT testing](xref:en/developer/tutorials/unit-tests).
+`Nop.Tests` is a class library project containing some common test classes and helpers for other test projects. It does not have any tests. Read more about UNIT testing in nopCommerce in the following article: [UNIT testing](xref:en/developer/tutorials/unit-tests).
 
 ### `\Nop.Core.Tests`
 

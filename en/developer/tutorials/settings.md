@@ -7,7 +7,7 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 # Settings API
 
-Like any other website platforms nopCommerce has settings such as "Store name" or "One page checkout enabled". There are two ways to manage settings in nopCommerce.
+Like any other website platform, nopCommerce has settings such as "Store name" or "One page checkout enabled". There are two ways to manage settings in nopCommerce.
 
 You can use **GetSettingByKeyAsync** and **SetSettingAsync** methods of **ISettingService** implementation for loading and saving individual settings.
 

@@ -7,11 +7,11 @@ contributors: git.mariannk
 
 # Default database schema
 
-In this article, we will look at the database schema that is installed during initial installation and which remains unchanged in 90% cases.
+In this article, we will look at the database schema that is installed during initial installation and which remains unchanged in 90% of cases.
 
 We won't bring the entire schema as a whole but will describe the default installation that provides for the creation of 126 tables.
 
-To understand such a scheme easily let's split it into component parts. Below, we grouped the tables in the most natural and understandable way:
+To understand such a scheme easily let's split it into parts. Below, we grouped the tables most naturally and understandably:
 
 * [Customers info](#customers-info)
 * [Products info](#products-info)
@@ -56,7 +56,7 @@ We won't delve into the purpose of tables and fields, since their names are self
 
     Besides the mentioned customer data, this table can store any data for other entities as well. We added this table on purpose so that you could extend any entity without changing the structure of the tables.
 
-    Additionally, this table stores custom **Customer attributes** and **Vendor attributes** with the chosen values for vendors and customers in the XML format. See the following rows to understand how it looks like:
+    Additionally, this table stores custom **Customer attributes** and **Vendor attributes** with the chosen values for vendors and customers in the XML format. See the following rows to understand what it looks like:
 
     ![Xml](_static/db-schema/xml.jpg)
 
@@ -104,7 +104,7 @@ If you use tier pricing for products you should also pay attention to the follow
 
 ### Inventory by warehouses
 
-Despite the fact that this feature is not used often, it might be useful to give a scheme for accounting for goods in a particular warehouse:
+Although this feature is not used often, it might be useful to give a scheme for accounting for goods in a particular warehouse:
 
 ![Inventory by warehouses](_static/db-schema/stock-quantity-history.jpg)
 
@@ -116,7 +116,7 @@ In this diagram, we can see the tables related to the order data. The **Order** 
 
 ![order](_static/db-schema/order.png)
 
-There is no need to comment on anything, since everything should be clear from the diagram and the names of the fields are self-descriptive enough. It should only be noted that the **RewardPointsHistory** table is used only if the *Reward points system* is activated for the store.
+There is no need to comment on anything since everything should be clear from the diagram and the names of the fields are self-descriptive enough. It should only be noted that the **RewardPointsHistory** table is used only if the *Reward points system* is activated for the store.
 
 ## Shipments
 
@@ -181,7 +181,7 @@ public enum ShoppingCartType
 
 ## Addresses
 
-Perhaps you will also be interested in the table schema involved in storing addresses, both delivery and the customer addresses:
+Perhaps you will also be interested in the table schema involved in storing addresses, both delivery, and the customer addresses:
 
 ![addresses](_static/db-schema/addresses.jpg)
 
