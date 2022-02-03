@@ -118,6 +118,9 @@ To configure localization settings go to **Configuration  → Settings  → Gene
 * Tick the checkbox **Load all search engine friendly names on startup** to load all search engine friendly names on application startup. When enabled, all slugs (search engine-friendly names) will be loaded on application startup. The application start will be slower, but then all pages could be opened much faster. Not recommended to enable it when you have a large catalog (several thousand entities).
 * Tick the checkbox **Use images for language selection** to use images instead of language names.
 * Tick the checkbox **SEO friendly URLs with multiple languages enabled** to allow SEO friendly URLs for all languages. When enabled, your URLs will be `http://www.yourStore.com/en/` or `http://www.yourStore.com/ru/` (SEO friendly).
+  > [!NOTE]
+  >
+  > You must restart the application after the **SEO friendly URLs with multiple languages enabled**  setting is updated. Otherwise, it can cause errors.
 * Tick the checkbox **Automatically detect language** for detecting language based on customer browser settings.
 
 ## Localize entities
