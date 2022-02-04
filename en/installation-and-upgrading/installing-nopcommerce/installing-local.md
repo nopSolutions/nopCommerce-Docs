@@ -57,8 +57,8 @@ nopCommerce requires write permissions for the directories and files described b
   - `\wwwroot\images\`
   - `\wwwroot\images\thumbs\`
   - `\wwwroot\images\uploaded`
-  - `\App_Data\Plugins.json` (after installation)
-  - `\App_Data\dataSettings.json` (after installation)
+  - `\App_Data\plugins.json` (after installation)
+  - `\App_Data\appsettings.json` (or dataSettings.json for earlier versions; after installation)
 
 - **For nopCommerce versions 2.00-3.90:**
   - `\App_Data\`
