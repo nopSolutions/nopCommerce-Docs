@@ -28,6 +28,11 @@ To add a new language click **Add new**. In the *Add a new language* window, def
 
 * The **Name** of the new language.
 * The **Language culture** - a specific language code (for example, de-AT for Austrian German).
+
+  > [!NOTE]
+  >
+  > When updating the **Language culture** field please make sure the appropriate CLDR package is installed for this culture. You can set CLDR for the specified culture in the *Localization* panel of the **Configuration → Settings → General Settings** page.
+
 * The **Unique SEO code** - a two-letter language SEO code used to generate URLs like `http://www.yourstore.com/en/` when you have more than one published language.
 
   > [!NOTE]
