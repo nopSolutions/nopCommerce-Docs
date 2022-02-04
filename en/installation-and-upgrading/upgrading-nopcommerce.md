@@ -22,13 +22,13 @@ Follow the next steps:
   >
   > Don't forget to read the `Readme.txt` file provided with the upgrade script. Sometimes it contains important notes regarding upgrading to the newest version.
 
-1. Remove all files from the previous version except JSON files in the 'App_Data' directory such as `dataSettings.json` (Settings.txt in oldest versions), `plugins.json` (InstalledPlugins.txt in oldest versions), `appsettings.json`, move them to the safe place.
+1. Remove all files from the previous version except JSON files in the 'App_Data' directory such as `appsettings.json` and  `plugins.json`. These files should be saved since we will use them later. For earlier versions: if such files as `dataSettings.json`, `Settings.txt` or `InstalledPlugins.txt` exist save them as well.
 1. Upload the new site files (get the latest version [here](https://www.nopcommerce.com/download-nopcommerce)).
 1. Ensure that everything is OK.
 
 > [!NOTE]
 >
-> As you deploy, make sure that the target `dataSettings.json` (or `Settings.txt`) and `plugins.json` (or `InstalledPlugins.txt`) files are updated as per latest nopCommerce version, so that the production site continues to point to the production database.
+> As you deploy, make sure that the target `appsettings.json` is updated as per the latest nopCommerce version so that the production site continues to point to the production database. In earlier nopCommerce versions it can be `dataSettings.json` and `Settings.txt` files. Also, make sure that the `plugins.json` (`InstalledPlugins.txt`) file is also updated per the latest nopCommerce version.
 
 > [!NOTE]
 > If you stored your pictures on the file system, then also backup them (`\wwwroot\Images\`) and copy back after the upgrade.

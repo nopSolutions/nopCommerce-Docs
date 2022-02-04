@@ -116,4 +116,4 @@ Click **Install** in order to start the installation process. When the setup pro
 > If you are're using nopCommerce 3.90 and below ensure that your application pool is set to *Integrated* mode.
 
 > [!NOTE]
-> If you want to completely reset a nopCommerce site to its default settings, you can delete the `dataSettings.json` file from `App_Data` directory.
+> If you want to completely reset a nopCommerce site to its default settings, you can delete the **ConnectionStrings** section from the `dataSettings.json` file located in the `App_Data` directory. You can even delete the whole `dataSettings.json` file but note that, in this case, on the next run it will be recovered with default values so you can lose your settings.
