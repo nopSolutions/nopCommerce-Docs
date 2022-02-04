@@ -90,6 +90,9 @@
             -
               name: PayPal Smart Payment Buttons
               href: getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
+            -
+              name: PayPal Commerce
+              href: getting-started/configure-payments/payment-methods/paypal-commerce.md
         -
           name: Advanced configuration
           href: getting-started/configure-payments/advanced-configuration/index.md

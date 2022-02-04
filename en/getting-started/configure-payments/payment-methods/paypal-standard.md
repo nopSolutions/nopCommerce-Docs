@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 PayPal Standard is the easiest way to securely accept credit card and PayPal payments online.
 
-To configure the PayPal Standard plugin go to **Configuration → Payment methods**. Then find the **PayPal Smart Payment Buttons** payment method in the payment method list:
+To configure the PayPal Standard plugin go to **Configuration → Payment methods**. Then find the **PayPal Standard** payment method in the payment method list:
 
 ![List](_static/paypal-standard/list.jpg)
 
