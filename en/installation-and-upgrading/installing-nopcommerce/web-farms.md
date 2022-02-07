@@ -26,12 +26,17 @@ nopCommerce supports both ways and handles content replication by using Distribu
 First of all, you have to configure the initial settings of your web farm in IIS and add the first instance of your nopCommerce store there. Then you have to configure a few settings in the nopCommerce admin area in order to allow nopCommerce to work with web farms:
 
 1. Go to **Configuration → Settings → All settings (advanced)**. Find the **mediasettings.useabsoluteimagepath** setting and change its value to *false*
+
+  > [!NOTE]
+  >
+  > Since nopCommerce 4.50, changing the **mediasettings.useabsoluteimagepath** setting is not required
+
 1. Go to **Configuration → Settings → App settings** and find the *Distributed cache configuration* tab. Tick the **Use distributed cache** checkbox and choose the option you prefer:
 
    - *Redis*. In this case, you just need to enter the **Connection string** to your Redis server below
    - *SQL Server*. In this case, you need to prepare a new table in your database using the "sql-cache create" command first. Read more about it in Microsoft docs [here](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-5.0#distributed-sql-server-cache). Then fill in the **Connection string**, **Schema name**, and **Table name** fields
 
-1. Since our web farm utilizes Application Request Routing (ARR) to control traffic using a proxy server, tick the **Use HTTP_X_FORWARDED_PROTO** checkbox
+1. Since our web farm utilizes Application Request Routing (ARR) to control traffic using a proxy server, tick the **Use proxy servers** checkbox
 1. Click the **Save** button. The nopCommerce application will be restarted
 
 ## Web farm configuration
@@ -42,7 +47,7 @@ Since a web farm hosts multiple instances of an application, you need to choose 
 
 The rule should look the following way:
 
-```
+```xml
 <rule name="Admin Area" enabled="true" patternSyntax="ECMAScript" stopProcessing="true">
     <match url="^(admin(/.*)?)$|^(lib_npm/.+)$" />
     <conditions logicalGrouping="MatchAll" trackAllCaptures="false">
@@ -58,7 +63,7 @@ Where `wf.local` is the address of your primary instance.
 
 After you set up the web farm you need to configure a load balancing rule in the **Application Request Routing** section. Add the condition which prevents handling requests intended for the primary node (admin area requests in our case):
 
-```
+```xml
 <rule name="ARR_wf-local_loadbalance" enabled="true" patternSyntax="ECMAScript" stopProcessing="true">
     <match url=".*" ignoreCase="false" />
     <conditions logicalGrouping="MatchAll" trackAllCaptures="false">
@@ -89,7 +94,6 @@ When you start configuration of file replication please make sure that the follo
 - /Plugins
 - /Themes
 - /wwwroot
-
 
 > [!NOTE]
 >
