@@ -45,14 +45,14 @@ Update the products available for installation, then install the .NET runtime:
 ```cmd
 sudo apt-get update
 
-sudo apt-get install apt-transport-https aspnetcore-runtime-3.1
+sudo apt-get install -y apt-transport-https aspnetcore-runtime-6.0
 ```
 
-![nopCommerce installation](_static/installing-on-linux/net_core.jpg)
+![nopCommerce installation](_static/installing-on-linux/net_core.png)
 
 > [!NOTE]
 >
-> If you have any error see detail information on the [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#troubleshoot-the-package-manager) page.
+> If you have any error see detail information on the [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/dotnet/core/install/linux-ubuntu) page.
 
 You may see all installed .Net Core runtimes by the following command:
 
@@ -60,7 +60,7 @@ You may see all installed .Net Core runtimes by the following command:
 dotnet --list-runtimes
 ```
 
-![nopCommerce installation](_static/installing-on-linux/list_runtimes.jpg)
+![nopCommerce installation](_static/installing-on-linux/list_runtimes.png)
 
 ### Install MySql Server
 
@@ -119,7 +119,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
 
-    server_name   nopCommerce-430.com;
+    server_name   nopCommerce-450.com;
 
     location / {
     proxy_pass         http://localhost:5000;
@@ -155,7 +155,7 @@ server {
 Create a directory:
 
 ```cmd
-mkdir /var/www/nopCommerce450`
+mkdir /var/www/nopCommerce450
 ```
 
 Download and unpack the nopCommerce:
@@ -221,7 +221,7 @@ Check the nopCommerce service status:
 sudo systemctl status nopCommerce450.service
 ```
 
-![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.jpg)
+![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.png)
 
 Restart the nginx server:
 
