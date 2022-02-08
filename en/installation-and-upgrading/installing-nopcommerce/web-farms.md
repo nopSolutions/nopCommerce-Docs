@@ -27,10 +27,6 @@ First of all, you have to configure the initial settings of your web farm in IIS
 
 1. Go to **Configuration → Settings → All settings (advanced)**. Find the **mediasettings.useabsoluteimagepath** setting and change its value to *false*
 
-  > [!NOTE]
-  >
-  > Since nopCommerce 4.50, changing the **mediasettings.useabsoluteimagepath** setting is not required
-
 1. Go to **Configuration → Settings → App settings** and find the *Distributed cache configuration* tab. Tick the **Use distributed cache** checkbox and choose the option you prefer:
 
    - *Redis*. In this case, you just need to enter the **Connection string** to your Redis server below
