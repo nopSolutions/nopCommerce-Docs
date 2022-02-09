@@ -49,6 +49,12 @@ Then click **Import**, choose the file and click the **Import from Excel** butto
 
 ![product catalog](_static/import-export-products/product_catalog.png)
 
+## Importing products with images hosted on external resources
+
+Sometimes it is necessary to import products with images that are hosted on external resources. nopCommerce supports such scenario. But this option is disabled by default for security purposes. You can enable it on the **"Catalog settings"** page in the administration area. Just enabled the **"Export/import products. Allow download images"** setting.
+
+There is an address validation code provided by the .NET platform in this image loading method. This mechanism doesn't always correctly determine the correctness of addresses despite their full compliance with the [RFC3986](https://datatracker.ietf.org/doc/html/rfc3986) specification. Our recommendation is to avoid using special characters such as **^** or **~** in URLs. So please ensure that all specified URLs contain Latin chars only.
+
 ## Setting up import/export
 
 The following section describes import/export settings: [Export/import](xref:en/running-your-store/catalog/catalog-settings#exportimport).
