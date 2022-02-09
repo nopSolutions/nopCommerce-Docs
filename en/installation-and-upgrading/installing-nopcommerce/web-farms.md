@@ -53,7 +53,7 @@ The rule should look the following way:
 </rule>
 ```
 
-Where `wf.local` is the address of your primary instance.
+Where `admin.wf.local` is the address of your primary instance.
 
 ### Load balancing rules
 
