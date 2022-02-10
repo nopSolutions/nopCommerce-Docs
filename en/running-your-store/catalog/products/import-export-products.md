@@ -55,6 +55,15 @@ Sometimes it is necessary to import products with images that are hosted on exte
 
 There is an address validation code provided by the .NET platform in this image loading method. This mechanism doesn't always correctly determine the correctness of addresses despite their full compliance with the [RFC3986](https://datatracker.ietf.org/doc/html/rfc3986) specification. Our recommendation is to avoid using special characters such as **^** or **~** in URLs. So please ensure that all specified URLs contain Latin chars only.
 
+## Importing product with categories and manufacturers
+
+The task of importing of categories and manufacturers is specific because a product can belong to multiple categories or manufacturers. Each new value in this cell must be separated by the **;** character. Please avoid usage of space for formatting even though they should be ignored by the algorithm (eg 1;2;3 is better than 1; 2; 3).
+
+The **Categories** and **Manufacturers** columns can contain both the identifiers of the corresponding objects and their names (you can use only one approach, or mix both options, at your discretion). If you want to import categories by name, you may specify the name only or the entire category name hierarchy. In this case, the parent category is separated from the child by the symbols **>>**. For example “Computers >> Desktops;”
+
+Importing categories and manufacturers by name is case sensitive, i.e. “**T**est category/manufacturer **n**ame” is not the same as “**t**est category/manufacturer **N**ame”
+
+
 ## Setting up import/export
 
 The following section describes import/export settings: [Export/import](xref:en/running-your-store/catalog/catalog-settings#exportimport).
