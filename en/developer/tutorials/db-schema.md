@@ -23,6 +23,7 @@ To understand such a scheme easily let's split it into parts. Below, we grouped 
 * [Discounts](#discounts)
 * [Shopping cart](#shopping-cart)
 * [Addresses](#addresses)
+* [Database naming convention](#database-naming-convention)
 
 ## Customers info
 
@@ -186,3 +187,9 @@ Perhaps you will also be interested in the table schema involved in storing addr
 ![addresses](_static/db-schema/addresses.jpg)
 
 As you understand, the standard installation includes much more tables. We don't describe them all, since many of them have no connections and serve only for a specific purpose, while others are used very rarely.
+
+## Database naming convention
+
+You may have noticed that the database uses a mixed approach to naming of tables and columns (with _ char, without _, CamelCase). Long time ago we used _ char. But now we've completely switched to using **CamelCase** notation. But we decide not to change names of the existing tables or columns because many of our users already could write a huge amount of their custom scripts that would inevitably stop working.
+
+For backward compatibility with the new standards, we added the `INameCompatibility` interface which allows you to redefine the names of tables and columns for the correct mapping of objects with tables created according to the old naming standards. You can see the complete list of overrides in the [`BaseNameCompatibility`](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Data/Mapping/BaseNameCompatibility.cs) class from the `Nop.Data.Mapping` namespace.
