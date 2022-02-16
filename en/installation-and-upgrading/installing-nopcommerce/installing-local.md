@@ -9,7 +9,7 @@ contributors: git.IvanIvanIvanov, git.mariannk
 
 This chapter describes how to download nopCommerce software, upload it to your server, define the file permissions, and install it on your system. You may also watch the screencast about nopCommerce installation on our [YouTube channel](https://www.youtube.com/watch?v=L7NGodeB9sQ).
 
-Before you begin the install, ensure that your web host have the [minimum requirements to run nopCommerce](xref:en/installation-and-upgrading/technology-and-system-requirements).
+Before you begin the install, ensure that your web host meets the [minimum requirements to run nopCommerce](xref:en/installation-and-upgrading/technology-and-system-requirements).
 
 > [!NOTE]
 > For more information on hosting selection guidelines, visit [this page](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
