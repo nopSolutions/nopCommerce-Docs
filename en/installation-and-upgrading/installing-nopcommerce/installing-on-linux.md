@@ -7,7 +7,7 @@ contributors: git.skoshelev
 
 # Installing on Linux
 
-This chapter describes how to install the nopCommerce software on Linux system on the example of *XUbuntu 20.04*:
+This chapter describes how to install the nopCommerce software on Linux system on the example of *Xubuntu 20.04*:
 
 - [Installing on Linux](#installing-on-linux)
   - [Install and configure software](#install-and-configure-software)
@@ -24,7 +24,7 @@ This chapter describes how to install the nopCommerce software on Linux system o
 
 ## Install and configure software
 
-Before installing .NET Core, we'll need to register the Microsoft key and install required dependencies. This needs to be done once per machine.
+Before installing .NET Core, we'll need to register the Microsoft key and install the required dependencies. This needs to be done once per machine.
 
 ### Register Microsoft key and feed
 
@@ -52,9 +52,9 @@ sudo apt-get install -y apt-transport-https aspnetcore-runtime-6.0
 
 > [!NOTE]
 >
-> If you have any error see detail information on the [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/dotnet/core/install/linux-ubuntu) page.
+> If you have an error, see the detailed information on the [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/dotnet/core/install/linux-ubuntu) page.
 
-You may see all installed .Net Core runtimes by the following command:
+You can see all installed .Net Core runtimes by the following command:
 
 ```cmd
 dotnet --list-runtimes
@@ -72,7 +72,7 @@ sudo apt-get install mysql-server
 
 ![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
 
-By default, the root password is empty, let's set it:
+By default, the root password is empty; let's set it:
 
 ```cmd
 sudo /usr/bin/mysql_secure_installation
@@ -82,9 +82,9 @@ sudo /usr/bin/mysql_secure_installation
 
 > [!NOTE]
 >
-> If you have some problem with configuring root password on your MySql server please read the following articles:
+> If you have a problem with configuring root password on your MySql server, please read the following articles:
 > [How to Reset the Root Password](https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html) and
-> [MySQL Error: : 'Access denied for user 'root'@'localhost'](https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost).
+> [MySQL Error: 'Access denied for user 'root'@'localhost'](https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost).
 
 ### Install nginx
 
@@ -158,7 +158,7 @@ Create a directory:
 mkdir /var/www/nopCommerce450
 ```
 
-Download and unpack the nopCommerce:
+Download and unpack nopCommerce:
 
 ```cmd
 cd /var/www/nopCommerce450
@@ -191,7 +191,7 @@ Create the */etc/systemd/system/nopCommerce450.service* file with the following 
 
 ```cmd
 [Unit]
-Description=Example nopCommerce app running on XUbuntu
+Description=Example nopCommerce app running on Xubuntu
 
 [Service]
 WorkingDirectory=/var/www/nopCommerce450
@@ -229,17 +229,17 @@ Restart the nginx server:
 sudo systemctl restart nginx
 ```
 
-Now everything is ready, you can proceed to install and configure the store.
+Now that everything is ready, you can proceed to install and configure the store.
 
 ## Installation process
 
-The further installation process for nopCommerce it does not differ from the installation process on Windows, you can see the instruction by [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce).
+The further installation process for nopCommerce is the same as the installation process on Windows; you can see the instruction following [this link](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-windows#install-nopcommerce).
 
 ## Troubleshooting
 
 ### Gdip
 
-*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception) just install the libgdiplus library*:
+*If you have a problem with loading images in the RichText Box (The type initializer for 'Gdip' threw an exception), just install the libgdiplus library*:
 
 ```cmd
 sudo apt-get install libgdiplus
@@ -247,4 +247,4 @@ sudo apt-get install libgdiplus
 
 ### SSL
 
-*If you want to use SSL on your site don't forget set to **`true`** the `UseHttpXForwardedProto` setting in the **appsettings.json** file*.
+*If you want to use SSL on your site, don't forget to set the `UseHttpXForwardedProto` setting to **`true`** in the **appsettings.json** file*.
