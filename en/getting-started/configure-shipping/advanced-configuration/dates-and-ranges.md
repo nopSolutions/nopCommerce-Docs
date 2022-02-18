@@ -17,26 +17,26 @@ Delivery dates are time ranges displaying approximate delivery time to a custome
 
 ![Delivery dates](_static/dates-and-ranges/delivery-dates.png)
 
-Click **Add new**. The *Add a new delivery date* window is displayed:
+Click **Add new**. The *Add a new delivery date* window will be displayed:
 
 ![Add new](_static/dates-and-ranges/delivery-dates-add-new.png)
 
-* In the **Name** field, enter the name of the new delivery date, usually, it is a date range.
+* In the **Name** field, enter the name of the new delivery date; usually, it is a date range.
 * In the **Display order** field, enter the display order of this delivery date. 1 represents the top of the list.
 
 Click the **Save** button.
 
 ### Product availability ranges panel
 
-Here you can set up product availability ranges. This options will be displayed on the product editing page.
+Here, you can set up product availability ranges. These options will be displayed on the product editing page.
 
 ![Availability ranges](_static/dates-and-ranges/avialability-ranges.png)
 
-Click **Add new** to add your own range. The *Add a new product availability range* window is displayed:
+Click **Add new** to add your own range. The *Add a new product availability range* window will be displayed:
 
 ![Add new availability ranges](_static/dates-and-ranges/avialability-ranges-add-new.png)
 
-* In the **Name** field enter name of new range, for example, 2 months.
+* In the **Name** field, enter the name of the new range, for example, 2 months.
 * In the **Display order** field, enter the display order of this availability range. 1 represents the top of the list.
 
 Click the **Save** button.
