@@ -14,7 +14,7 @@ If you are a novice in nopCommerce, follow the steps below to set your store up 
 - [Configure general store settings](xref:en/getting-started/advanced-configuration/your-store-information)
 - [Configure payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
 - [Configure shipping options](xref:en/getting-started/configure-shipping/index)
-- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them [separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list), offers and so on.
+- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them [separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list) and offers, and more.
 
 ## 2. Create a catalog and add products
 
