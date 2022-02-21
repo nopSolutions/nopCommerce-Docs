@@ -172,7 +172,7 @@ Click **Save** to save the changes. The footer will be updated accordingly.
 According to the terms of the nopCommerce license, without purchasing the *Copyright removal key*:
 
 - You may NOT remove or hide the "Powered by nopCommerce" statement that appears at the bottom of each page within a nopCommerce-powered website
-- When users click on the "powered by nopCommerce" text it must direct them to https://www.nopcommerce.com. The "Powered by nopCommerce" link must be in the same format, unedited, as delivered in the program source code. This obligation shall also apply to any copies or derivative works!
+- When users click the "powered by nopCommerce" text it must direct them to https://www.nopcommerce.com. The "Powered by nopCommerce" link must be in the same format, unedited, as delivered in the program source code. This obligation shall also apply to any copies or derivative works!
 - The copyright notice at the footer of your store (website) must remain intact, unedited and clearly visible. Please do NOT attempt to edit, remove or hide the copyright notice in any way.
 
 Upon purchase of a "copyright removal key" you are permitted to remove the "Powered by nopCommerce" statement.
