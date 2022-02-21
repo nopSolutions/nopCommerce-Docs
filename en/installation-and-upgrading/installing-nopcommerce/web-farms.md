@@ -7,7 +7,7 @@ contributors: git.mariannk, git.AndreiMaz
 
 # Load balancing and web farms in nopCommerce
 
-Load balancing is the distribution of a workload across many nodes. It is typically used for balancing HTTP traffic over multiple servers acting together as a web front-end.
+Load balancing is the distribution of a workload across many nodes. It is typically used for balancing HTTP traffic over multiple servers acting together as a web front end.
 
 There are several ways to configure load balancing in nopCommerce:
 
