@@ -18,7 +18,7 @@ Since the version 4.20 you can automatically upload favicons through the admin a
 
 1. Click the green button **Upload icons archive**, the file selection dialog will be opened: ![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Here you need to copy the path to your icons (it vary depends on the store and the virtual directory). For example: `/icons/icons_0`.
 
-1. There are several options for what to upload, depending on how friendly your site favicons should be for different devices:
+1. There are several options for what to upload, depending on how friendly your site favicons should be for various devices:
 
    - The most complete option is to use one of the favicon generators. In this manual, we will show an example of using a [RealFaviconGenerator](https://realfavicongenerator.net/). Thanks to this service, uploading the full favicon package will be carried out in a few clicks.
 
