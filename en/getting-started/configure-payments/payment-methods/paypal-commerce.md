@@ -78,7 +78,7 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
 
       * Tick the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page instead of the default checkout button.
 
-      * Tick the **Display buttons on product details** to display PayPal buttons on product details pages, clicking on them matches the behavior of the default 'Add to cart' button.
+      * Tick the **Display buttons on product details** to display PayPal buttons on product details pages, clicking them matches the behavior of the default 'Add to cart' button.
 
       * Tick the **Display Pay Later messages** box to take advantage of the pay later messaging feature on your website. The message is displayed on the product and checkout pages, showing how much the customer is paying in four installments.
 
@@ -109,7 +109,7 @@ You can limit any payment method to store and customer role. This means that the
     * In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
         > [!Important]
-        > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+        > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
     * Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option just leave this field empty.
 
