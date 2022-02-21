@@ -60,7 +60,7 @@ In the *Store information* panel fill the following details:
 In the *Database information* panel you need to enter the following info:
 
 - **Database**: here you can select either Microsoft SQL Server or MySQL. Choose the first one if you installing nopCommerce on Windows.
-- **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
+- **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and more.
 - **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
 - **Server name**: this is the IP, URL, or server name of your database. Get your server name from the hosting control panel.
 - **Database name**: this is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
