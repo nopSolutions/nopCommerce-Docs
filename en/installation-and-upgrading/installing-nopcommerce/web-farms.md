@@ -11,7 +11,7 @@ Load balancing is the distribution of a workload across many nodes. It is typica
 
 There are several ways to configure load balancing in nopCommerce:
 
-1. You use cloud-based auto-scaling appliances like Microsoft's Azure Web Apps. Please find more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure).
+1. Use cloud-based autoscaling appliances like Microsoft's Azure Web Apps. Please find more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure).
 1. Configure load balancing with IIS web farms. This approach is described below.
 
 We highly recommend you read [this tutorial](https://docs.microsoft.com/en-us/iis/web-hosting/scenario-build-a-web-farm-with-iis-servers/overview-build-a-web-farm-with-iis-servers) from Microsoft before you start configuring a web farm for nopCommerce. So Microsoft suggests two ways to build a web farm with IIS servers:
