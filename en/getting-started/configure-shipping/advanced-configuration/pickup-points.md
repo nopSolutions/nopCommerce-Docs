@@ -11,7 +11,7 @@ Pickup point is an option providing customers the flexibility to select a point 
 
 > [!NOTE]
 > 
-> This option is available only when the checkbox **"Pick up in store" enabled** is ticked on the shipping settings page (**Configuration → Settings → Shipping settings**).
+> This option is available only when the checkbox **"Pick up in store" enabled** is selected on the shipping settings page (**Configuration → Settings → Shipping settings**).
 
 To manage pickup point providers:
 
@@ -19,7 +19,7 @@ Go to **Configuration → Shipping → Pickup points**, the *Pickup point provid
 
 ![Pickup point providers](_static/pickup-points/pickup-point-providers.jpg)
 
-By default, only one **Pickup in store** option is available. Make sure the pickup point provider is active. If not click the **Edit** button and tick the checkbox in the **Is active** column. Then save the changes by clicking the **Update** button.
+By default, only one **Pickup in store** option is available. Make sure the pickup point provider is active. If not click the **Edit** button and select the checkbox in the **Is active** column. Then save the changes by clicking the **Update** button.
 
 To edit existing pickup points or add new click **Configure** in the grid. The *Configure - Pickup in store* page will be opened:
 
