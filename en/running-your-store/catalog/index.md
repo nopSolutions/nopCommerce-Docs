@@ -32,7 +32,7 @@ subcategories:
 	![Categories](_static/index/categories.jpg)
 	*To do this use the **Include in top menu** checkbox on the category edit page.*
 
-- Add the most interesting categories to the homepage. These categories will be first what a customer sees when visiting your store:
+- Add the most interesting categories to the home page. These categories will be first what a customer sees when visiting your store:
 	![Homepage categories](_static/index/homepage-categories.jpg)
 	*To do this use the **Show on home page** checkbox on the category edit page.*
 
