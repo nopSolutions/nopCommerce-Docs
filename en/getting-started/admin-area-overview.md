@@ -67,6 +67,6 @@ On some pages, the switch has a **Settings** button beside. You can use it to se
 
 ![dashboard6](_static/admin-area-overview/dashboard6.png)
 
-Click **Settings** to see a list of the available settings. Tick the checkboxes of the **desired setting**. The added settings will then be displayed in the **Basic** mode.
+Click **Settings** to see a list of the available settings. Select the checkboxes of the **desired setting**. The added settings will then be displayed in the **Basic** mode.
 
 ![dashboard7](_static/admin-area-overview/dashboard7.png)
