@@ -29,7 +29,7 @@ From the **Current exchange rate provider** dropdown list, select the exchange r
 > 
 > By default in nopCommerce there is only one exchange rate provider available - ECB. To get live rates from ECB you should select EUR as a primary exchange rate currency.
 
- Tick the **Auto update enabled** checkbox, to enable receiving an automatic update of currency rates every hour.
+ Select the **Auto update enabled** checkbox, to enable receiving an automatic update of currency rates every hour.
 
  Click **Save**.
 
@@ -52,7 +52,7 @@ Define the currency settings:
 * Enter the exchange **Rate** against the primary exchange rate of the currency.
 * From the **Display locale** dropdown list, select the display locale for currency values.
 * Enter **Custom formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in the public store, number of decimal places and so on.
-* In the **Limited to stores** select a pre-created store from drop-down list. Leave the field empty in case this functionality is not required.
+* In the **Limited to stores** select a precreated store from drop-down list. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
 	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
