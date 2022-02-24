@@ -92,7 +92,7 @@ In the *SEO* panel, define the following details:
 
 - **Search engine friendly page name** - the name of the page used by search engines. If you leave the field blank, then the category page URL would be formed using the category name. If you enter custom-seo-page-name, then the following custom URL will be used: `http://www.yourStore.com/custom-seo-page-name`.
 
-- **Meta title** specifies the title of the web page. It is a code which is inserted into the header of your web page:
+- **Meta title** specifies the title of the webpage. It is a code which is inserted into the header of your web page:
 
     ```html
     <head>
