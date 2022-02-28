@@ -92,7 +92,7 @@ You can limit any payment method to store and customer role. This means that the
 
 1. You can set up the following limits:
 
-   - In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+   - In the **Limited to customer roles** field choose one or several customer roles, that is, administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
      > [!IMPORTANT]
      >
