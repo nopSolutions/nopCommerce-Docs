@@ -37,7 +37,7 @@ Follow the next steps:
 > If you stored your pictures on the file system, then also backup them (`\wwwroot\Images\`) and copy back after the upgrade.
 
 > [!NOTE]
-> **(upgrading from 3.X to 4.X)**: If you want to upgrade from a version 3.90 to the latest version, you would need to install 4.00 first (over the existing database), run the 3.90 to 4.00 migration SQL script, and then upgrade to 4.10, 4.20 etc.
+> **(upgrading from 3.X to 4.X)**: If you want to upgrade from a version 3.90 to the latest version, you would need to install 4.00 first (over the existing database), run the 3.90 to 4.00 migration SQL script, and then upgrade to 4.10, 4.20, and further.
 
 ## Troubleshooting
 
