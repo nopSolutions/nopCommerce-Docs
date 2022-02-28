@@ -43,7 +43,7 @@ The sidebar can be easily collapsed by clicking the "hamburger" icon next to the
 
 ![dashboard3](_static/admin-area-overview/search.jpg)
 
-On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line auto-suggests the options, proceed directly to the required one.
+On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line automatically suggests the options, proceed directly to the required one.
 
 ### System menu
 
