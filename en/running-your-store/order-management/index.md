@@ -7,9 +7,9 @@ contributors: git.exileDev, git.mariannk
 
 # Order management
 
-Order management functionality is the "hub" of your store: all operational data, such as orders, payments, and shipment processing, inventory updates, return requests, is collected and managed here.
+Order management functionality is the "hub" of your store: all operational data, such as orders, payments, shipment processing, inventory updates, return requests, are collected and managed here.
 
-Learn how to get the best out of the order management in the following chapters:
+Learn how to get the most out of the order management in the following chapters:
 
 * [Orders](xref:en/running-your-store/order-management/orders)
 * [Shipping management](xref:en/running-your-store/order-management/shipping-management)
