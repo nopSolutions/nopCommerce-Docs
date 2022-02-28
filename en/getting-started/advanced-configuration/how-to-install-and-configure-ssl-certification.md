@@ -17,7 +17,7 @@ What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates
 3. On the last step, you need to set up your nopCommerce store in admin area. To do this go to the **Configuration → Stores** page. Select the store you want to set up and click the **Edit** button beside it. The *Edit store details* window will be displayed, as follows:
   ![Store](_static/how-to-install-and-configure-ssl-certification/store.jpg)
   - Enter your **Store URL** with the 'https://' prefix.
-  - Tick the **SSL enabled** checkbox.
+  - Select the **SSL enabled** checkbox.
     > [!WARNING]
     >
     > Do not enable it until you have SSL certificate installed on the server.
