@@ -27,12 +27,12 @@ First of all, you have to configure the initial settings of your web farm in IIS
 
 1. Go to **Configuration → Settings → All settings (advanced)**. Find the **mediasettings.useabsoluteimagepath** setting and change its value to *false*
 
-1. Go to **Configuration → Settings → App settings** and find the *Distributed cache configuration* tab. Tick the **Use distributed cache** checkbox and choose the option you prefer:
+1. Go to **Configuration → Settings → App settings** and find the *Distributed cache configuration* tab. Select the **Use distributed cache** checkbox and choose the option you prefer:
 
    - *Redis*. In this case, you just need to enter the **Connection string** to your Redis server below
    - *SQL Server*. In this case, you need to prepare a new table in your database using the "sql-cache create" command first. Read more about it in Microsoft docs [here](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-5.0#distributed-sql-server-cache). Then fill in the **Connection string**, **Schema name**, and **Table name** fields
 
-1. Since our web farm utilizes Application Request Routing (ARR) to control traffic using a proxy server, tick the **Use proxy servers** checkbox
+1. Since our web farm utilizes Application Request Routing (ARR) to control traffic using a proxy server, select the **Use proxy servers** checkbox
 1. Click the **Save** button. The nopCommerce application will be restarted
 
 ## Web farm configuration
@@ -93,4 +93,4 @@ When you start configuration of file replication please make sure that the follo
 
 > [!NOTE]
 >
-> All actions that assume restarting the nopCommerce application (for example, plugin installation, updating of the app settings, etc.), require manual restarting of all application pools related to the web farm.
+> All actions that assume restarting the nopCommerce application (for example, plugin installation, updating of the app settings), require manual restarting of all application pools related to the web farm.
