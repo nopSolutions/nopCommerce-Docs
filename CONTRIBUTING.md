@@ -1,6 +1,6 @@
-# Contribute to nopCommerce documentation
+# Contribute to the nopCommerce documentation
 
-This document covers the process for contributing to the articles and code samples that are hosted on the [nopCommerce documentation site](http://docs.nopcommerce.com). Typo corrections and new articles are welcome contributions.
+This document covers the process of contributing to the articles and code samples hosted on the [nopCommerce documentation site](http://docs.nopcommerce.com). Typo corrections and new articles are welcome contributions.
 
 ## How to make a simple correction or suggestion
 
@@ -14,7 +14,7 @@ If you use Visual Studio Code to contribute to the nopCommerce documentation, yo
 
 Structuring rules:
 
-- All resources related to the article (images, videos, etc.) should be stored in a separate folder. For example:
+- All resources related to an article (such as images, videos) should be stored in a separate folder. For example:
 
     ```sh
     _static/[topic_file_name]/[Resource_name].png
@@ -40,17 +40,17 @@ Test your changes with the [DocFX command-line tool](https://dotnet.github.io/do
 
 ## Forking and submitting pull requests
 
-If you want to contribute some changes to nopCommerce documentation (article fix or some new post), then you should follow the next approach. Here is a short list of steps to contribute:
+If you want to contribute some changes to the nopCommerce documentation (article fix or new post), then you should follow the approach below. Here is a short list of steps to contribute:
 
 - First of all, you have to create a fork. Please find more about repository forking on GitHub at [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/).
 - Clone it locally.
-- Create a new branch from "master". Please always create a new branch for each contribution. You should create it from our "master" branch only.
+- Create a new branch from "master." Please always create a new branch for each contribution. You should create it from our "master" branch only.
 - Write the code and push back to your GitHub fork.
-- Create pull request. Please read more about it at [https://help.github.com/articles/using-pull-requests/](https://help.github.com/articles/using-pull-requests/). And please always sync with our repository before doing it.
+- Create a pull request. Please read more about it at [https://help.github.com/articles/using-pull-requests/](https://help.github.com/articles/using-pull-requests/). And please always sync with our repository before doing it.
 
 ## Redirects
 
-If you delete an article, change its file name, or move it to a different folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [web.config file](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/web.config).
+If you delete an article, change its file name or move it to another folder, create a redirect so that people who bookmarked the article don't receive a 404 Not Found error. Add redirects to the [web.config file](https://github.com/nopSolutions/nopCommerce-Docs/blob/master/web.config).
 
 ## Microsoft writing style guide
 
@@ -62,13 +62,13 @@ Articles are written in [DocFx-flavored Markdown](https://dotnet.github.io/docfx
 
 ## nopCommerce documentation style guide
 
-Please follow the following simple rules to make the docs consistent and easy to read. These rules are conventions to ensure a homogeneous style throughout the entire document.
+Please follow these simple rules to make the docs consistent and easy to read. These rules are conventions to ensure a homogeneous style throughout the document.
 
 ### Images and screenshots
 
 Do not use images to publish source code.
 
-This restriction reduce the size of the repository.
+This restriction reduces the size of the repository.
 
 As an optional step, ensure that any images and screenshots used in the documentation are compressed, which helps with file size and page load performance. A few popular tools include TinyPNG (using the [TinyPNG website](https://tinypng.com/) or the [TinyPNG API](https://tinypng.com/developers)) or the [Image Optimizer](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ImageOptimizer) Visual Studio extension.
 
@@ -80,7 +80,7 @@ Internal links should use the uid of the target article with an xref link (link 
 <xref:uid_of_the_topic>
 ```
 
-If the title of the article is unsuitable for link text (for example, a word or phrase in a sentence is the link text), specify the xref link and link text with the following:
+If the title of the article is unsuitable for link text (for example, a word or phrase in a sentence is a link text), specify the xref link and link text with the following:
 
 ```md
 [link text](xref:uid_of_the_topic)
@@ -106,25 +106,25 @@ If the anchor is in another document, use the uid and the anchor name like this:
 
 ### Markup and styles
 
-Topics should use standard Markdown and should avoid inline HTML, including styles.
+Topics should use standard Markdown and avoid inline HTML, including styles.
 
 #### How to highlight
 
 1. Use `**double asterisks**` for strong emphasis, which will be rendered as bold. Use this style to highlight admin area paths, fields, buttons. For example:
 
-	* To configure Avalara tax provider go to **Configuration → Tax providers**
-	* Assign appropriate code from drop-down list in **Tax category** field
+	* To configure the Avalara tax provider, go to **Configuration → Tax providers**
+	* Assign appropriate code from the dropdown list in the **Tax category** field
 	* Click **Configure** beside the Avalara tax provider option in the list
 
-1. Use `*surrounding asterisks*` for emphasis, which will be rendered as italics. Use this style to highlight page titles, panel names, types. For example:
+1. Use `*surrounding asterisks*` for emphasis, which will be rendered as italic. Use this style to highlight page titles, panel names, types. For example:
 
-	* To search for customers, in the *Customers* window enter one or more of the following search criteria
-	* On the *Orders* panel you can view the customer's orders details
+	* To search for customers, in the *Customers* window, enter one or more of the following search criteria
+	* In the *Orders* panel, you can view the customer's orders details
 	* Since we have two product types, *Simple* and *Grouped (product with variants)*, we have two appropriate product templates
 
-1. Highlight file paths and names the following way: `_ViewImports.cshtml`. You can do this using \`these ticks\`. 
+1. Highlight file paths and names as follows: `_ViewImports.cshtml`. You can do this using \`these ticks\`. 
 
-1. Make articles readable and easy to understand. Use headers, notes, tips, lists, screenshots and other tools to make the article understandable.
+1. Make articles readable and easy to understand. Use headers, notes, tips, lists, screenshots, and other tools to make the article comprehensible.
 	* 	# this is a huge header #
 		## this is a smaller header ##
 	* 	
@@ -144,13 +144,13 @@ Inline code should be surrounded by `ticks`, and multi-line code samples should 
 This is a code block
 ```
 
-Try to break code lines so that the code blocks do not have horizontal scroll bars.
+Try to break code lines so that the code blocks have no horizontal scroll bars.
 
 ### Writing style
 	
-1. Write headers, button and field names as it's presented in nopCommerce admin area or public site. Don't use capital letters unnecessarily as well as CAPSLOCK key. For example:
-	* If you are reffering to a message template list page write: **Content management → Message templates** and not **Content Management → Message Templates**
-	* Use **Edit** button but not **EDIT** button
+1. Write headers and button and field names as presented in the nopCommerce admin area or public site. Don't use capital letters and the CAPSLOCK key unnecessarily. For example:
+	* If you are referring to a message template list page, write: **Content management → Message templates** and not **Content Management → Message Templates**
+	* Use the **Edit** button, not the **EDIT** button
 	* Follow correct brand name spelling: **PayPal Smart Payment Buttons**
 
 1. Use the existing quotes style: "correct" or 'correct'. But these are incorrect:
@@ -158,4 +158,4 @@ Try to break code lines so that the code blocks do not have horizontal scroll ba
 	* «Incorrect»
 	* ‘Incorrect’
 
-1. If you have any doubts regarding article styling just see how it's already done on other documentation pages.
+1. If you have any doubts regarding article styling, just see how it's already done on other documentation pages.

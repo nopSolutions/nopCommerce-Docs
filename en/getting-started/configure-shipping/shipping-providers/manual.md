@@ -20,7 +20,7 @@ Go to **Configuration → Shipping → Shipping providers**. The *Shipping provi
 Enable the manual shipping rate computation method, as follows:
 
 * In the **Manual (fixed or by weight and by total)** row, click the **Edit** button.
-* In the **Is active** column, check the checkbox.
+* In the **Is active** column, select the checkbox.
 * Click the **Update** button. The *false* option becomes *true*.
 
 Click the **Configure** button beside the Manual (fixed or by weight and by total) option in the list.
@@ -91,7 +91,7 @@ Define the following information:
 * **Store** in which the calculated fees will be applied. Choose * to apply the rules to all stores.
 * **Warehouse** from which the shipping will be done. Choose * to apply the rules to all warehouses.
 * **Country, State/province, Zip** of a shipment destination.
-* Select a **Shipping method** from the list of pre-created options. Use **Manage shipping methods** on the top to add/remove shipping methods or proceed to the [Configure shipping methods](#configure-shipping-methods) section to learn more.
+* Select a **Shipping method** from the list of precreated options. Use **Manage shipping methods** on the top to add/remove shipping methods or proceed to the [Configure shipping methods](#configure-shipping-methods) section to learn more.
 * Create your weight configuration by filling **Order weight from** and **Order weight to** fields. If the customer's shipment weight falls into this range, the additional cost will be fixed and will be calculated according to this record.
 * Configure the pricing rules for this record using fields **Order subtotal from, Order subtotal to, Additional fixed cost, Lower weight limit, Rate per weight unit, Charge percentage (of subtotal)** fields.
 * Define the **Transit days** field which defines the number of days of delivery.
@@ -104,7 +104,7 @@ Click **Save**.
 
 > [!NOTE]
 > 
-> If you wish to limit your customers only to methods configured on that screen tick the **Limit shipping methods to configured ones** checkbox on the bottom of the page.
+> If you wish to limit your customers only to methods configured on that screen select the **Limit shipping methods to configured ones** checkbox on the bottom of the page.
 
 
 ## Configure shipping methods
@@ -188,7 +188,7 @@ To disable the **Next day air** option for Canada click the **Shipping method re
   ![Estimation](_static/manual/estimate-product-page.jpg)
     > [!TIP]
     >
-    > By the way, you can disable shipping estimation by unticking the **Estimate shipping enabled (cart page)** and **Estimate shipping enabled (product page)** checkboxes on the **Configuration → Settings → Shipping settings** page.
+    > By the way, you can disable shipping estimation by clearing the **Estimate shipping enabled (cart page)** and **Estimate shipping enabled (product page)** checkboxes on the **Configuration → Settings → Shipping settings** page.
 
     When the customer proceeds for the shipping details the following options will be displayed:
     ![Estimation USA](_static/manual/estimation-popup-usa.jpg)

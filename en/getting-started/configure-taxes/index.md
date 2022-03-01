@@ -23,11 +23,11 @@ In the *Common* panel:
 * Set **Tax based on** to **Shipping address**.
 
 In the *VAT* panel:
-* Tick **EU VAT enabled**. This will ensure that tax is charged only for shipments within the EU.
+* Select **EU VAT enabled**. This will ensure that tax is charged only for shipments within the EU.
 * Select the **Country** your shop is in.
-* If applicable, tick *Allow VAT exemption*. This will ensure that your VAT registered customers who are shipping within the EU but outside the country in which the store is located will not be charged VAT.
-* Tick the **Assume VAT always valid** checkbox to skip VAT validation. Entered VAT numbers will always be valid. It will be a client's responsibility to provide the correct VAT number. 
-* If you checked **Allow VAT exemption**, then you might want to tick the "**Use web service**" and "**Notify admin when a new VAT number is submitted**" checkboxes too.
+* If applicable, select *Allow VAT exemption*. This will ensure that your VAT registered customers who are shipping within the EU but outside the country in which the store is located will not be charged VAT.
+* Select the **Assume VAT always valid** checkbox to skip VAT validation. Entered VAT numbers will always be valid. It will be a client's responsibility to provide the correct VAT number. 
+* If you selected **Allow VAT exemption**, then you might want to select the "**Use web service**" and "**Notify admin when a new VAT number is submitted**" checkboxes too.
 
 Click the **Save** button.
 
