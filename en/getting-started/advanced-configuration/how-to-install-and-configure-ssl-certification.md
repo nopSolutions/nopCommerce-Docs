@@ -6,7 +6,7 @@ author: git.mariannk
 
 # How to install and configure SSL certification
 
-What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates validate your website's identity and encrypt the information visitors send to (or receive from) your site. When you have an SSL certificate protecting your website, your customers can rest assured that the information they enter on any secured page is private and can't be viewed by cyber crooks.
+What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates validate your website's identity, and encrypt the information visitors send to, or receive from, your site. When you have an SSL certificate protecting your website, your customers can rest assured that the information they enter on any secured page is private and can't be viewed by cybercrooks.
 
 ## How to get an SSL certificate
 
@@ -17,7 +17,7 @@ What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates
 3. In the last step, you need to set up your nopCommerce store in the admin area. To do this, go to the **Configuration → Stores** page. Select the store you want to set up and click the **Edit** button beside it. The *Edit store details* window will be displayed as follows:
   ![Store](_static/how-to-install-and-configure-ssl-certification/store.jpg)
   - Enter your **Store URL** with the 'https://' prefix.
-  - Tick the **SSL enabled** checkbox.
+  - Select the **SSL enabled** checkbox.
     > [!WARNING]
     >
     > Do not enable it until you have an SSL certificate installed on the server.

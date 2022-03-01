@@ -10,7 +10,7 @@ contributors:
 ## Configuration
 
 After installing the plugin of EasyPost shipping provider you need to configure the integration.
-But first, ensure that the plugin is enabled (**Configuration → Shipping → Shipping providers**). To do so click **Edit** and check **Is active** checkbox.
+But first, ensure that the plugin is enabled (**Configuration → Shipping → Shipping providers**). To do so click **Edit** and select the **Is active** checkbox.
 Also, for more accurate work of the plugin, it's recommended to disable all other shipping providers if they are not used.
 
 ![Shipping Providers](_static/easypost/providers-list.png)

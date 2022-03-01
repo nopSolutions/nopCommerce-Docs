@@ -13,7 +13,7 @@ In nopCommerce you can choose how the top menu and footer will be displayed. You
 In the Default Clean theme the top menu looks the following way:
 ![Default Clean theme top menu](_static/top-menu-and-footer/top-menu.jpg)
 
-As you can see in displays the store categories. Please note, if you want a category to be displayed in the top menu you should tick the **Include in top menu** checkbox on the category edit page. For more details, read below. 
+As you can see in displays the store categories. Please note, if you want a category to be displayed in the top menu you should select the **Include in top menu** checkbox on the category edit page. For more details, read below. 
 
 You can include the following items in the top menu:
 - Categories
@@ -28,7 +28,7 @@ To include a category in the top menu, go to the category edit page in admin are
 
 ![Edit category details](_static/top-menu-and-footer/category-details.jpg)
 
-Tick the **Include in top menu** checkbox and click **Save**.
+Select the **Include in top menu** checkbox and click **Save**.
 
 > [!NOTE]
 >
@@ -40,7 +40,7 @@ To include a topic in the top menu, go to the topic edit page in admin area: cho
 
 ![Edit topic details](_static/top-menu-and-footer/topic-details-top-menu.jpg)
 
-Tick the **Include in top menu** checkbox and click **Save**.
+Select the **Include in top menu** checkbox and click **Save**.
 
 ### Links to the site sections
 
@@ -83,7 +83,7 @@ To include a topic in the footer, go to the topic edit page in admin area: choos
 
 ![Edit topic details](_static/top-menu-and-footer/topic-details-footer.jpg)
 
-Choose where you want the topic link to be displayed. You can tick one or more checkboxes:
+Choose where you want the topic link to be displayed. You can select one or more checkboxes:
 * **Include in footer (column 1)**
 * **Include in footer (column 2)**
 * **Include in footer (column 3)**
@@ -103,7 +103,7 @@ Choose the items you want to be displayed in the footer from the following list:
 * **Display "Sitemap"**
 	> [!NOTE]
 	>
-	> The "Sitemap" menu item will be displayed only when the **Sitemap enabled** checkbox is ticked on the **Configuration → Settings → General settings** page (*Sitemap* panel).
+	> The "Sitemap" menu item will be displayed only when the **Sitemap enabled** checkbox is selected on the **Configuration → Settings → General settings** page (*Sitemap* panel).
 
 * **Display "Contact us"**
 * **Display "Search"**
@@ -141,7 +141,7 @@ Choose the items you want to be displayed in the footer from the following list:
 * **Display "Apply for vendor account"**
 	> [!NOTE]
 	>
-	> The "Apply for vendor account" menu item will be displayed only when the **Allow customers to apply for vendor account** checkbox is ticked on the **Configuration → Settings → Vendor settings** page (*Common* panel).
+	> The "Apply for vendor account" menu item will be displayed only when the **Allow customers to apply for vendor account** checkbox is selected on the **Configuration → Settings → Vendor settings** page (*Common* panel).
 
 Click **Save** to save the changes.
 
@@ -161,7 +161,7 @@ If you want to enable/disable the RSS link in the footer you need to enable/disa
 
 ### Newsletter
 
-The newsletter block is displayed in the footer by default. To hide this block go to **Configuration → Settings → Customer settings**. Proceed to the *Account* panel and tick the **Hide newsletter box** checkbox, as follows:
+The newsletter block is displayed in the footer by default. To hide this block go to **Configuration → Settings → Customer settings**. Proceed to the *Account* panel and select the **Hide newsletter box** checkbox, as follows:
 
 ![Newsletter box settings](_static/top-menu-and-footer/newsletter-settings.jpg)
 
@@ -172,7 +172,7 @@ Click **Save** to save the changes. The footer will be updated accordingly.
 According to the terms of the nopCommerce license, without purchasing the *Copyright removal key*:
 
 - You may NOT remove or hide the "Powered by nopCommerce" statement that appears at the bottom of each page within a nopCommerce-powered website
-- When users click on the "powered by nopCommerce" text it must direct them to https://www.nopcommerce.com. The "Powered by nopCommerce" link must be in the same format, unedited, as delivered in the program source code. This obligation shall also apply to any copies or derivative works!
+- When users click the "powered by nopCommerce" text it must direct them to https://www.nopcommerce.com. The "Powered by nopCommerce" link must be in the same format, unedited, as delivered in the program source code. This obligation shall also apply to any copies or derivative works!
 - The copyright notice at the footer of your store (website) must remain intact, unedited and clearly visible. Please do NOT attempt to edit, remove or hide the copyright notice in any way.
 
 Upon purchase of a "copyright removal key" you are permitted to remove the "Powered by nopCommerce" statement.
