@@ -18,7 +18,7 @@ Follow the next steps to configure `PayPal Commerce`:
 
 ### 1. Activate the payment method
 
-To do this click the **Edit** button in the plugin row on the payment method list page. Activate the plugin by ticking the **Is active** checkbox. Click the **Update** button. Your changes will be saved.
+To do this click the **Edit** button in the plugin row on the payment method list page. Activate the plugin by selecting the **Is active** checkbox. Click the **Update** button. Your changes will be saved.
 
 ### 2. Create a PayPal account
 
@@ -62,7 +62,7 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
     ![Configure](_static/paypal-commerce/configure.jpg)
 
 1. Define the following settings on the *Configure - PayPal Commerce* page:
-    * **Specify API credentials manually** - determine if you need to manually set credentials. Check this option if you already have an application created or if you want to use sandbox mode. Otherwise, the plugin will be set up automatically and you will be able to start accepting PayPal payments in your store after completing your PayPal registration.
+    * **Specify API credentials manually** - determine if you need to manually set credentials. Select this option if you already have an application created or if you want to use sandbox mode. Otherwise, the plugin will be set up automatically and you will be able to start accepting PayPal payments in your store after completing your PayPal registration.
 
         ![Auto configure](_static/paypal-commerce/auto-configure.jpg)
 
@@ -76,19 +76,20 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
   
     On this panel define the display settings:
 
-      * Tick the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page instead of the default checkout button.
+      * Select the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page instead of the default checkout button.
 
-      * Tick the **Display buttons on product details** to display PayPal buttons on product details pages, clicking them matches the behavior of the default 'Add to cart' button.
 
-      * Tick the **Display Pay Later messages** box to take advantage of the pay later messaging feature on your website. The message is displayed on the product and checkout pages, showing how much the customer is paying in four installments.
+      * Select the **Display buttons on product details** to display PayPal buttons on product details pages, clicking them matches the behavior of the default 'Add to cart' button.
+
+      * Select the **Display Pay Later messages** box to take advantage of the pay later messaging feature on your website. The message is displayed on the product and checkout pages, showing how much the customer is paying in four installments.
 
         ![Pay Later messages](_static/paypal-commerce/pay_later.jpg)
 
-      * Tick the **Display logo in header links** checkbox to display PayPal logo in header links. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
-        * If the previous checkbox is ticked the **Logo source code** field is displayed. In this field, enter source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
+      * Select the **Display logo in header links** checkbox to display PayPal logo in header links. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
+        * If the previous checkbox is selected the **Logo source code** field is displayed. In this field, enter source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
 
-      * Tick the **Display logo in footer** checkbox to display PayPal logo in the footer. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
-        * If the previous checkbox is ticked the **Logo source code** field is displayed. In this field, enter source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
+      * Select the **Display logo in footer** checkbox to display PayPal logo in the footer. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
+        * If the previous checkbox is selected the **Logo source code** field is displayed. In this field, enter source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
 
 Click **Save** to save the plugin settings.
 
@@ -106,7 +107,7 @@ You can limit any payment method to store and customer role. This means that the
 
 1. You can set up the following limits:
 
-    * In the **Limited to customer roles** field choose one or several customer roles i.e. administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+    * In the **Limited to customer roles** field choose one or several customer roles, that is, administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
         > [!Important]
         > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).

@@ -14,7 +14,7 @@ If you are a novice in nopCommerce, follow the steps below to set your store up 
 - [Configure general store settings](xref:en/getting-started/advanced-configuration/your-store-information)
 - [Configure payment methods](xref:en/getting-started/configure-payments/payment-methods/index)
 - [Configure shipping options](xref:en/getting-started/configure-shipping/index)
-- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them [separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list), offers and so on.
+- Configure users list: create [different groups](xref:en/running-your-store/customer-management/customer-roles) of users, give them [separate access to areas of your site](xref:en/running-your-store/customer-management/access-control-list) and offers, and more.
 
 ## 2. Create a catalog and add products
 
@@ -35,7 +35,7 @@ You can add products manually one by one or import your catalog from an xml file
 
 ### Define product variations
 
-What if your products are variable, for example, you sell sneakers in different colors and sizes? In nopCommerce you can set up specification and product attributes to manage this.
+What if your products are variable, for example, you sell sneakers in various colors and sizes? In nopCommerce you can set up specification and product attributes to manage this.
 
 * [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants)
 
@@ -86,7 +86,7 @@ In nopCommerce, you can offer your customers [additional products](xref:en/runni
 
 ### Email campaigns
 
-Create [email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns) to easily and quickly reach your target audience with special offers, news, educational content, and so on.
+Create [email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns) to easily and quickly reach your target audience with special offers, news, educational content, and more.
 
 ## 5. nopCommerce special features for stores of any kind
 

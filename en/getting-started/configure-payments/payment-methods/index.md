@@ -19,7 +19,7 @@ For the payment method development details, refer to the [document](xref:en/deve
 
 ![methods](_static/index/payment-methods.jpg)
 
-To activate a payment method, click **Edit** beside the required method, tick the **Is active** checkbox and click **Update**. The **Is active** option changes from *false* to *true*.
+To activate a payment method, select **Edit** beside the required method, tick the **Is active** checkbox and click **Update**. The **Is active** option changes from *false* to *true*.
 
  Different payment methods support different options. There are **4 payment options** that can supported by a payment method or not:
 
