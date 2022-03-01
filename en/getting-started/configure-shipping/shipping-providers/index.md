@@ -15,7 +15,7 @@ If you sell shippable products, you will need to set up shipping methods for you
 
 If you decide to define and use your own shipping methods, the shipping rates for these methods should be entered manually. If you decide to use the shipping methods provided by the carrier companies like UPS or Shipstation, the shipping rates for these methods will need to be obtained from the respective carrier companies.
 
-All shipment options are implemented as plugins and can be found and installed in *Local plugins* section (**Configuration → Plugins → Local plugins**).
+All shipment options are implemented as plugins and can be found and installed in the *Local plugins* section (**Configuration → Plugins → Local plugins**).
 
 Learn how to set up the required shipment options in the following chapters:
 * [Manual (fixed or by weight and by total)](xref:en/getting-started/configure-shipping/shipping-providers/manual)
