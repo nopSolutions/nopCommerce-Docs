@@ -35,7 +35,7 @@ You can add products manually one by one or import your catalog from an xml file
 
 ### Define product variations
 
-What if your products are variable, for example, you sell sneakers in different colors and sizes? In nopCommerce you can set up specification and product attributes to manage this.
+What if your products are variable, for example, you sell sneakers in various colors and sizes? In nopCommerce you can set up specification and product attributes to manage this.
 
 * [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants)
 

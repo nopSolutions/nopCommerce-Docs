@@ -7,8 +7,8 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 
 # Product tags
 
-Product tags are keywords for product identification. They are used to sort the products by a certain feature and to enable a specific, narrow product search.
-For example, if you sell apparel, and you want to create tags for T-shirts, it can be "t-shirt", "cotton", "polo", etc.
+Product tags are keywords for product identification. They are used to sort products by a certain feature and enable a specific, narrow product search.
+For example, if you sell apparel and want to create tags for T-shirts, they can be, for example, "t-shirt," "cotton," "polo."
 
 To edit product tags that are displayed in the public store, go to **Catalog → Product tags**.
 
@@ -22,13 +22,13 @@ You can add tags on the Edit product details page when adding or editing a produ
 
 ![Add tags](_static/product-tags/product_tags2.png)
 
-Enter tags separating them by comma. Once the tags are created, they can be used for other products as well. The more products are associated with a particular tag, the larger it will look in the *Popular tags* area, displayed in the sidebar of the catalog page:
+Enter tags, separating them by commas. Once the tags are created, they can be used for other products as well. The more products are associated with a particular tag, the larger it will look in the *Popular tags* area displayed on the sidebar of the catalog page:
 
 ![Popular tags](_static/product-tags/popular_tags.png)
 
 ## Setting up product tags
 
-The following section describes product tags settings: [Tags](xref:en/running-your-store/catalog/catalog-settings#tags).
+The following section describes product tag settings: [Tags](xref:en/running-your-store/catalog/catalog-settings#tags).
 
 ## See also
 

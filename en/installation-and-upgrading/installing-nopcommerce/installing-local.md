@@ -16,7 +16,7 @@ Before you begin the install, ensure that your web host have the [minimum requir
 
 There are several options available when downloading nopCommerce. In order to determine which option to download, you need to decide how you will use it. The following options are available:
 
-1. **Web (no source)**. This option is available for users who do not wish/need to develop any custom code. This is a pre-compiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately. With this option, users can still modify the look and feel or user interface (UI) of their site to suit their needs, but they do not have to worry about development.
+1. **Web (no source)**. This option is available for users who do not wish/need to develop any custom code. This is a precompiled version of nopCommerce that can simply be uploaded to your hosting provider and used immediately. With this option, users can still modify the look and feel or user interface (UI) of their site to suit their needs, but they do not have to worry about development.
 1. **Source code**. This option contains a full Visual Studio solution. It is for users who wish to customize the code within nopCommerce. It contains all the source code used to develop nopCommerce and must be opened in Visual Studio. It also includes scripts to build and compile the solution to upload to your hosting provider.
 1. **Upgrade script**. The upgrade script option is for users who have a nopCommerce installation already in place. The script will upgrade your current installation to the latest version.
 
@@ -89,23 +89,23 @@ In the *Store information* panel fill the following details:
 - **Admin user email**: this is the email address for the first admin of the site.
 - **Admin user password**: you will need to supply a password for the admin account.
 - **Confirm the password**: confirm the admin user password.
-- **Country**: select the country from the dropdown list. It allows pre-configuring your store based on the country you selected. For example:
-  - download and pre-install a language pack from the official site
-  - pre-configure some settings (e.g. PangV or "Display tax/shipping info" settings for Germany)
-  - pre-configure some shipping details, VAT settings, currencies, measures, etc
-- **Create sample data**: check this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
+- **Country**: select the country from the dropdown list. It allows preconfiguring your store based on the country you selected. For example:
+  - download and preinstall a language pack from the official site
+  - preconfigure some settings (for example, PangV or "Display tax/shipping info" settings for Germany)
+  - preconfigure some shipping details, VAT settings, currencies, measures, and more.
+- **Create sample data**: select this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so they no longer appear on your site.
 
 In the *Database information* panel you need to enter the following info:
 
 - **Database**: here you can select either Microsoft SQL Server or MySQL.
 - **Create database if it doesn't exist**: it is recommended that you create your database and database user beforehand to ensure a successful installation. Simply create a database instance and add the database user to it. The installation process will create all the tables, stored procedures, and so on.
-- **Enter raw connection string (advanced)**: check this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
+- **Enter raw connection string (advanced)**: select this checkbox if you want to enter a **Connection string** instead of filling the connection fields.
 - **Server name**: this is the IP, URL, or server name of your database. Get your server name from the database management system or from the hosting control panel.
 - **Database name**: this is the name of the database used by nopCommerce. If you opted to create your database ahead of time, use the name you gave your database here.
-- **Use integrated Windows authentication**: if you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. In this case don't chack this option. If you are using a development environment, you can select Windows authentication. In this case tick this checkbox. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.
+- **Use integrated Windows authentication**: if you are installing at a hosting provider, you can use your SQL Server account and supply the credentials you created with your database. In this case don't select this option. If you are using a development environment, you can select Windows authentication. In this case select this checkbox. If you are using Windows authentication, the account hosting the application pool in IIS must be a user in the database.
 - **SQL Username**: enter your database user login.
 - **SQL Password**: ener your database user password.
-- **Specify custom collation**: this is an advanced setting and should be left unchecked.
+- **Specify custom collation**: this is an advanced setting and should be left clear.
 
 Click **Install** in order to start the installation process. When the setup process is complete, your new site's home page is displayed.
 

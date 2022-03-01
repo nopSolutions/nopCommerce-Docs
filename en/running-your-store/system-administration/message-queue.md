@@ -7,17 +7,17 @@ contributors: git.exileDev, git.mariannk
 
 # Message queue
 
-Emails are not sent immediately in nopCommerce. They are queued. Message queue contains all emails that are already sent or not yet sent.
+Emails are not sent immediately in nopCommerce. They are queued. A message queue contains all emails already sent or not yet sent.
 
-To load the message queue, from the **System** menu, select **Message queue**. The *Message queue* window is displayed, as follows:
+To load the message queue, in the **System** menu, select **Message queue**. The *Message queue* window will be displayed as follows:
 ![Message queue](_static/message-queue/message-queue.png)
 
 Enter one or more of the following criteria to search for messages:
-  * From the **Start date** field, select the start date.
-  * From the **End date** field, select the end date.
+  * In the **Start date** field, select the start date.
+  * In the **End date** field, select the end date.
   * In the **From address** field, enter the source address of a message.
   * In the **To address** field, enter the target address of a message.
-  * Tick the **Load not sent emails only** checkbox, to only load emails that have not been sent yet.
+  * Select the **Load not sent emails only** checkbox to only load emails that have not been sent yet.
   * In the **Maximum send attempts** field, enter the maximum number of attempts to send a message.
   * In the **Go directly to email #** field, enter the email number and click **Go** to display the required email.
 
@@ -27,13 +27,13 @@ On this page, you can click the **Delete selected** button to delete selected em
 
 ## Message queue item details
 
-To view the message queue item details click the **Edit** button beside the message. The *Edit message queue item* window will be displayed:
+To view the message queue item details, click the **Edit** button beside the message. The *Edit message queue item* window will be displayed:
 
 ![Message queue item details](_static/message-queue/edit.jpg)
 
-In this window you can delete the message by clicking the **Delete** button. Or you can requeue the message using the **Requeue** button.
+In this window, you can delete the message by clicking the **Delete** button. Or you can requeue the message using the **Requeue** button.
 
-On this page you can edit the following message details:
+On this page, you can edit the following message details:
 
 * **From** email address.
 * **From name**.
@@ -45,7 +45,7 @@ On this page you can edit the following message details:
 * **Bcc** email address.
 * Email message **Subject**.
 * Email message **Body**.
-* Tick the **Send immediately** checkbox to send this message immediately.
-* Enter the number of **Sent attempts**. This is the number of times to attempt to send this message.
+* Select the **Send immediately** checkbox to send this message immediately.
+* Enter the number of **Sent attempts**. This is the number of attempts to send this message.
 
 Click **Save** or **Save and continue edit** to save the message details. 

@@ -29,7 +29,7 @@ From the **Current exchange rate provider** dropdown list, select the exchange r
 > 
 > By default in nopCommerce there is only one exchange rate provider available - ECB. To get live rates from ECB you should select EUR as a primary exchange rate currency.
 
- Tick the **Auto update enabled** checkbox, to enable receiving an automatic update of currency rates every hour.
+ Select the **Auto update enabled** checkbox, to enable receiving an automatic update of currency rates every hour.
 
  Click **Save**.
 
