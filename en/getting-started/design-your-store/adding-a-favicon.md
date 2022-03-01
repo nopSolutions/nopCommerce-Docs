@@ -18,14 +18,14 @@ Since the version 4.20 you can automatically upload favicons through the admin a
 
 1. Click the green button **Upload icons archive**, the file selection dialog will be opened: ![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Here you need to copy the path to your icons (it vary depends on the store and the virtual directory). For example: `/icons/icons_0`.
 
-1. There are several options for what to upload, depending on how friendly your site favicons should be for different devices:
+1. There are several options for what to upload, depending on how friendly your site favicons should be for various devices:
 
    - The most complete option is to use one of the favicon generators. In this manual, we will show an example of using a [RealFaviconGenerator](https://realfavicongenerator.net/). Thanks to this service, uploading the full favicon package will be carried out in a few clicks.
 
       * Go to this generator main page where you will be invited to choose a picture for the favicon 
       ![realfavicongenerator](_static/adding-a-favicon/realfavicongenerator.png)
 
-      * After selecting a picture and clicking **Continue with this picture**, you will be redirected to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, etc. The service will automatically show display examples. You can customize them to your needs or leave the default ones.
+      * After selecting a picture and clicking **Continue with this picture**, you will be redirected to the next page. Here you can adjust the display settings of favicons for specific devices and applications - iOS Web Clip, Android Chrome, Windows Metro, macOS Safari, and others. The service will automatically show display examples. You can customize them to your needs or leave the default ones.
 
       * At the bottom of the same page you can find the **Favicon Generator Options** panel. 
       ![favicon_generator_options](_static/adding-a-favicon/favicon_generator_options.png)
@@ -34,7 +34,7 @@ Since the version 4.20 you can automatically upload favicons through the admin a
 
          - In the **Version/Refresh** tab, select the option depending on whether your site is already in production. The setting description will help you with this. ![favicon_version](_static/adding-a-favicon/favicon_version.png)
 
-         - In the **Additional files** tab it is necessary to check the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
+         - In the **Additional files** tab it is necessary to select the option to generate an html file in the package. ![favicon_additional_fields](_static/adding-a-favicon/favicon_additional_fields.png)
 
       * Now all settings are set, click the button to generate. ![generate_button](_static/adding-a-favicon/generate_button.png)
 

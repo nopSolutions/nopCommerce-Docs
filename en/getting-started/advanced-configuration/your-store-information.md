@@ -24,7 +24,7 @@ Configure your main store details, as follows:
 
   > [!IMPORTANT]
   >
-  > Tick this option only after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
+  > Only select this option after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
 
   > [!TIP]
   >

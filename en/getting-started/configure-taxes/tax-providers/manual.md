@@ -21,7 +21,7 @@ Choose **Fixed rate** configuration using the switcher in the top of the page.
 
 ![Configure](_static/manual/configure.jpg)
 
-On this page you can see the pre-created tax categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
+On this page you can see the precreated tax categories. Click **Edit** beside each category and enter the percentage rates. Then click the **Update** button.
 
 Make sure your products have a tax category assigned to them on their [product pages](xref:en/running-your-store/catalog/products/add-products).
 
@@ -29,7 +29,7 @@ Make sure your products have a tax category assigned to them on their [product p
 
 > [!NOTE]
 >
-> This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
+> This section shows only precreated tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
 
 ## By country
 
@@ -42,7 +42,7 @@ Define the new tax rate, as follows:
 * Select the **Store** for which the rate is defined. Select an * to apply this rate to all stores.
 * Select the **Country** for which the tax rate is defined.
 * Select the **State/province** for which the tax rate is defined. If an asterisk (*) is selected, this tax rate will apply to all customers from the selected country regardless of the state.
-* Enter **Zip** code of an area for which the tax rate is defined. If this field is empty, then this tax rate will apply to all customers from the selected country or state regardless of the zip code.
+* Enter **Zip** Code of an area for which the tax rate is defined. If this field is empty, then this tax rate will apply to all customers from the selected country or state regardless of the ZIP Code.
 * Select the **Tax category** for which to apply the tax rate.
 * In the **Percentage** field, enter the required percentage.
 
@@ -52,7 +52,7 @@ Click **Add tax rate**. The new tax rate is displayed, as follows:
 
 > [!NOTE]
 >
-> This section shows only pre-created tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
+> This section shows only precreated tax categories. Click the **Manage tax categories** button to edit tax categories or read how to manage tax categories here: [configure tax categories](#configure-tax-categories).
 
 ## Configure tax categories
 
