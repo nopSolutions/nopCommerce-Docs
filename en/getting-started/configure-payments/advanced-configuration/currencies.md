@@ -51,8 +51,8 @@ Define the currency settings:
 * **Currency code**. For a list of currency codes, go to: https://en.wikipedia.org/wiki/ISO_4217
 * Enter the exchange **Rate** against the primary exchange rate of the currency.
 * From the **Display locale** dropdown list, select the display locale for currency values.
-* Enter **Custom formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in the public store, number of decimal places and so on.
-* In the **Limited to stores** select a precreated store from drop-down list. Leave the field empty in case this functionality is not required.
+* Enter **Custom formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in the public store, number of decimal places and more.
+* In the **Limited to stores** select a pre-created store from drop-down list. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
 	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
