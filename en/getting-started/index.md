@@ -86,7 +86,7 @@ In nopCommerce, you can offer your customers [additional products](xref:en/runni
 
 ### Email campaigns
 
-Create [email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns) to easily and quickly reach your target audience with special offers, news, educational content, and so on.
+Create [email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns) to easily and quickly reach your target audience with special offers, news, educational content, and more.
 
 ## 5. nopCommerce special features for stores of any kind
 
