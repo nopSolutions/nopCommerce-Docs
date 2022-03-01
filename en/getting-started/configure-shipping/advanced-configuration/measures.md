@@ -9,15 +9,15 @@ contributors: git.exileDev, git.mariannk
 
 This section describes how to add new units of weights and dimensions.
 
-To add new dimensions or weights:
+To add new dimension or weight units:
 
-Go to **Configuration → Shipping → Measures**. The *Dimensions* and *Weight* sections are expanded, as follows:
+Go to **Configuration → Shipping → Measures**. The *Dimensions* and *Weight* sections will be expanded as follows:
 
 ![dimensions](_static/measures/dimensions.png)
 
 ![weights](_static/measures/weights.png)
 
-In the bottom of the section define the following new unit details:
+At the bottom of the section, define the following new unit details:
 * **Name** of the new dimension (weight) unit.
 * **System keyword** for this unit.
 * **Ratio to primary dimension (weight)** unit.
@@ -25,10 +25,10 @@ In the bottom of the section define the following new unit details:
 
 Then click **Add new record**.
 
-The new dimension (weight) unit is added to the *Dimensions* (*Weights*) table.
+The new dimension (weight) unit will be added to the *Dimensions* (*Weights*) table.
 
 > [!NOTE]
 > 
-> You can set the primary dimension (weight) by clicking **Mark as primary dimension (weight)**.
+> You can set the primary dimension (weight) unit by clicking **Mark as primary dimension (weight)**.
 
-Click **Edit** beside the measure to edit its details, as described above.
+Click **Edit** beside the measure to edit its details as described above.
