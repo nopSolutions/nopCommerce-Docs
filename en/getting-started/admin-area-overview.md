@@ -7,19 +7,19 @@ contributors: git.rajupaladiya, git.exileDev, git.DmitriyKulagin, git.IvanIvanIv
 
 # nopCommerce interface
 
-This chapter covers the basics of nopCommerce interface.
+This chapter covers the basics of the nopCommerce interface.
 
-Once logged in, you should see the **Administration** hyperlink at the top of your website. Or you can simply add `/admin` to the end of your site's URL to open the admin area. For example: `www.example.com/admin`.
+Once logged in, you should see the **Administration** hyperlink at the top of your website. Or you can simply add `/admin` to the end of your site's URL to open the admin area. For example, `www.example.com/admin`.
 
-The first screen that is displayed after logging in the nopCommerce administration area is the *Dashboard*:
+The first screen displayed after logging in to the nopCommerce administration area is the *Dashboard*:
 
 ![dashboard](_static/admin-area-overview/dashboard.png)
 
 The dashboard has the following sections:
 
-* **nopCommerce news** is a section where important news, sales, and promotions information from nopCommerce are shown.
+* **nopCommerce news** is a section that shows important news, sales and promotions information from nopCommerce.
 
-* **Common statistics** of your webstore which includes numbers of orders, pending return requests, registered customers and low stock products.
+* **Common statistics** of your webstore, which includes numbers of orders, pending return requests, registered customers, and low-stock products.
 
 * Other sections showing the vital statistics of your webstore: **orders, new customers, order totals, incomplete orders, latest orders, popular search keywords, bestsellers by quantity, bestsellers by amount**: 
 
@@ -35,7 +35,7 @@ The dashboard sections are easily collapsed by clicking the ![item](_static/admi
 
 ![Sidebar](_static/admin-area-overview/sidebar.jpg)
 
-The sidebar is placed on the left of each page in the administration area. It allows you to navigate through nopCommerce administrator's functionality.
+The sidebar is placed on the left of each page in the administration area. It allows you to navigate through the nopCommerce administrator's functionality.
 
 The sidebar can be easily collapsed by clicking the "hamburger" icon next to the logo ![dashboard2](_static/admin-area-overview/hamburger.jpg)
 
@@ -43,27 +43,27 @@ The sidebar can be easily collapsed by clicking the "hamburger" icon next to the
 
 ![dashboard3](_static/admin-area-overview/search.jpg)
 
-On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line automatically suggests the options, proceed directly to the required one.
+On the top of the sidebar, there is a search field. Start typing a name of a section you want to navigate to, the search line automatically suggests the options, proceed you directly to the required one.
 
 ### System menu
 
 ![dashboard4](_static/admin-area-overview/menu.jpg)
 
-This part of the interface shows the name of a logged-in user, logout button, public store link and a small menu from which a user can select to clear cache or restart application.
+This part of the interface shows the name of a logged-in user, the logout button, the public store link, and a small menu from which a user can select to clear cache or restart the application.
 
 ## Basic and advanced modes
 
-On some pages in the administration area you will see the following switch:
+On some pages in the administration area, you will see the following switch:
 
 ![dashboard5](_static/admin-area-overview/dashboard5.png)
 
 This two-position *Basic-Advanced* switch allows you to switch between page display modes.
 
-For the convenience of use, we made the **Basic** mode where the most frequent settings are shown.
+For the convenience of use, we created the **Basic** mode where the most frequent settings are shown.
 
-If you cannot find a required setting on a page, switch to the **Advanced** mode to see all available settings.
+If you cannot find the required setting on the page, switch to the **Advanced** mode to see all available settings.
 
-On some pages, the switch has a **Settings** button beside. You can use it to set up the basic mode according to your needs by adding/removing the required settings.
+On some pages, the switch has a **Settings** button beside it. You can use it to set up the basic mode according to your needs by adding/removing the required settings.
 
 ![dashboard6](_static/admin-area-overview/dashboard6.png)
 
