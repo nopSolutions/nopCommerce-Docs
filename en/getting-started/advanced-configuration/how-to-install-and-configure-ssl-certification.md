@@ -6,7 +6,7 @@ author: git.mariannk
 
 # How to install and configure SSL certification
 
-What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates validate your website's identity, and encrypt the information visitors send to, or receive from, your site. When you have an SSL certificate protecting your website, your customers can rest assured that the information they enter on any secured page is private and can't be viewed by cybercrooks.
+What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates validate your website's identity and encrypt the information visitors send to (or receive from) your site. When you have an SSL certificate protecting your website, your customers can rest assured that the information they enter on any secured page is private and can't be viewed by cyber crooks.
 
 ## How to get an SSL certificate
 
