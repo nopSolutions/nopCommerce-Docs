@@ -13,7 +13,7 @@ To use **ShipStation** integration plugin please follow these steps:
 ![Shipping rate methods](_static/shipstation/shipping-rate-methods.jpg)
     * Enable this method, as follows:
         * In the ShipStation row, click the **Edit** button.
-        * In the **Is active** column, check the checkbox.
+        * In the **Is active** column, select the checkbox.
         * Click the **Update** button. The false option becomes **true**.
     * Click the **Configure** button beside the ShipStation option in the list. The *Configure - ShipStation* window is displayed, as follows: ![Configure page](_static/shipstation/shipstation-configure.jpg)
 1. Enter the following information obtained from the ShipStation provider:
@@ -27,4 +27,4 @@ To use **ShipStation** integration plugin please follow these steps:
     > [!Important] 
     > Do not use the ShipStation or nopCommerce user credentials for this fields.
 
-    * Check the **Pass dimensions** checkbox if sending dimensions to the ShipStation server is needed. When this parameter is activated, the additional parameter **Packing type** appears. This parameter is responsible for the type of data sent. ![Packing type](_static/shipstation/packing-type.jpg)
+    * Select the **Pass dimensions** checkbox if sending dimensions to the ShipStation server is needed. When this parameter is activated, the additional parameter **Packing type** appears. This parameter is responsible for the type of data sent. ![Packing type](_static/shipstation/packing-type.jpg)

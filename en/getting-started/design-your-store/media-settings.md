@@ -20,10 +20,10 @@ In the *Common* panel define the settings, as follows:
   > 
   > It is recommended to make a backup of the database before clicking the **Change** button.
 - In the **Maximum image size** field, enter the maximum image size (meaning, the longest side) allowed for image upload (in pixels).
-- Tick **Multiple thumb directories** to have multiple thumb directories. It is useful when your hosting company has limitations on the amount of files per directory.
+- Select **Multiple thumb directories** to have multiple thumb directories. It is useful when your hosting company has limitations on the amount of files per directory.
 - In the **Default image quality (0 - 100)** enter the quality of uploaded images. Once changed you have to manually delete all already generated thumbs.
-- Tick **Import product images using hash** to use HASHBYTES to compare pictures with uploaded products. Please note that this functionality is not supported by some databases.
-- Tick **Picture zoom** to enable picture zoom on the product details page.
+- Select **Import product images using hash** to use HASHBYTES to compare pictures with uploaded products. Please note that this functionality is not supported by some databases.
+- Select **Picture zoom** to enable picture zoom on the product details page.
 
 In the *Product* panel define the settings, as follows:
 - In the **Product detail image size** field, enter the default size for the product detail images in pixels.
@@ -39,7 +39,7 @@ In the *Other pages* panel define the settings, as follows:
 - In the **Mini-shopping cart thumbnail image** size field, enter the default size (in pixels) of the product thumbnail images displayed in the mini-shopping cart block.
 - In the **Avatar image size** field, enter the default size for the avatar images.
 
-This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from *Multi-store configuration drop-down* list and tick all needed checkboxes at the left side to set custom value for them.
+This page enables **multi-store configuration**, it means that the same settings can be defined for all stores, or differ from store to store. If you want to manage settings for a certain store, choose its name from *Multi-store configuration drop-down* list and select all needed checkboxes at the left side to set custom value for them.
 
 ## Tutorials
 
