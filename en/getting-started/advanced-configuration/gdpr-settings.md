@@ -19,7 +19,7 @@ To enable GDPR settings on your nopCommerce store go to **Administration → Con
 
 ![Configure](_static/gdpr-settings/configure.jpg)
 
-Then tick the **GDPR enabled** checkbox. Additional settings will allow you to capture a log of the following activities:
+Then select the **GDPR enabled** checkbox. Additional settings will allow you to capture a log of the following activities:
 
 * **Log "accept privacy policy" consent**.
 * **Log "newsletter" consent**.

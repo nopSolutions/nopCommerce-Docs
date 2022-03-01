@@ -7,7 +7,7 @@ contributors: git.exileDev
 
 # Nivo slider plugin
 
-Nivo slider widget plugin allows you to display a slider on the homepage of your store.
+Nivo slider widget plugin allows you to display a slider on the home page of your store.
 
 ## Configure the Nivo slider plugin
 
@@ -19,7 +19,7 @@ Click **Edit** beside the Nivo slider plugin. The window is expanded, as follows
 
 ![Nivo Edit](_static/nivo-slider/nivo-slider-edit.png)
 
-Tick the **Is active** checkbox, to enable the plugin. 
+Select the **Is active** checkbox, to enable the plugin. 
 
 Click **Configure**. The *Configure – Nivo slider* window is displayed, as follows:
 
@@ -34,5 +34,5 @@ Perform the following for each slide you would like to upload:
 
 Click **Save**. 
 
-Now you can go to the homepage of your public store and the updated image slider:
+Now you can go to the home page of your public store and the updated image slider:
 ![Homepage](_static/nivo-slider/homepage.jpg)

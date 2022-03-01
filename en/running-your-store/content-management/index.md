@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Content management
 
-Content management is a set of processes and technologies that support the collection, managing, and publishing of information on your site. nopCommerce allows you to use all tools needed to make your online store more informative and make communication between you and your customers better.
+Content management is a set of processes and technologies that support the collection, managing, and publishing of the information on your site. nopCommerce allows you to use all the tools needed to make your online store more informative and your communication with customers better.
 
 ## Learn more
 
