@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 This section will cover the configuration process of shipping and handling multiple warehouses in nopCommerce. It will include both manual shipping configuration and setting up shipping via API of individual shipping providers like UPS and Shipstation.
 
-Please note that nopCommerce offers integration with third-party shipping services and optimizations. They can be found in the nopCommerce [marketplace](http://www.nopcommerce.com/marketplace) and in the [technology partners](http://www.nopcommerce.com/technology-partners) section.
+Please note that nopCommerce offers integration with third-party shipping services and optimizations. They can be found in the nopCommerce [marketplace](http://www.nopcommerce.com/marketplace) and the [technology partners](http://www.nopcommerce.com/technology-partners) section.
 
 ## See also
 
