@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp
 
 # Configure payments
 
-**Payments** is the core of eCommerce. This section will cover global store settings that allow payments to be received.
+**Payments** is the core of e-commerce. This section will cover global store settings that allow payments to be received.
 
 > [!NOTE]
 > 

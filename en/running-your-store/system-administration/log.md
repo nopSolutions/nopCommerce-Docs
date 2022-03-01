@@ -7,17 +7,17 @@ contributors: git.exileDev, git.mariannk
 
 # Log
 
-The system log report displays a list of all the errors, warnings and information messages that were created in the system. To view the log go to **System → Log**. The *Log* window is displayed, as follows:
+The system log report displays a list of all the errors, warnings, and information messages created in the system. To view the log, go to **System → Log**. The *Log* window will be displayed as follows:
 
 ![Log](_static/log/log.png)
 
-A log item include the log type, description of the error and date. You can click the **Delete selected** button to remove the selected log items or click the **Clear log** button to clear all log.
+A log item includes the log type, description of the error, and date. You can click the **Delete selected** button to remove the selected log items or click the **Clear log** button to clear the entire log.
 
-To search for the system log enter one or more of the following information:
-  * From the **Created from** field, select the start date for the search.
-  * From the **Created to** field, select the end date for the search.
-  * In the **Message** field, select the message or part of the message to search by.
-  * From the **Log level** dropdown list, select the type of log information to display, as follows:
+To search for a system log, enter one or more of the following pieces of information:
+  * In the **Created from** field, select the start date for the search.
+  * In the **Created to** field, select the end date for the search.
+  * In the **Message** field, select the message or its fragment to search by.
+  * From the **Log level** dropdown list, select the type of log information to display as follows:
     * *All*
     * *Debug*
     * *Information*

@@ -7,7 +7,7 @@ contributors: git.exileDev, git.dunaenko, git.mariannk
 
 # Products
 
-Adding and setting up products is one of the most important tasks for a shop owner. You need to define product types, sort your products into categories, add different product options and appealing product images, define product tags and other SEO parameters. All this will help you make the product search and comparison easy for customers, resulting in more purchases.
+Adding and setting up products are among the most important tasks for a shop owner. You need to define product types, sort your products into categories, add various product options and appealing product images, define product tags and other SEO parameters. All these will help you make the product search and comparison easy for customers, resulting in more purchases.
 
 Adding products also includes some important internal settings, such as inventory and shipping parameters.
 
