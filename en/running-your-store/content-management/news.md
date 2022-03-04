@@ -75,7 +75,7 @@ This page enables multi-store configuration; it means that the same settings can
 
 Define the following *Common* settings:
 * Select the **News enabled** checkbox to enable the news functionality in your store.
-* Select the **Show on home page** to display your news items on your store home page.
+* Select **Show on home page** to display your news items on your store home page.
 * Enter the **Number of items to display** on the home page.
 * Enter the **News archive page size**. It's the number of news displayed on one page.
 * Select **Display news RSS feed link in the browser address bar** to enable the news RSS feed link in customers' browser address bar.
