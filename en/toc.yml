@@ -24,11 +24,14 @@
           name: Installing on Windows
           href: installation-and-upgrading/installing-nopcommerce/installing-on-windows.md
         -
+          name: Installing on Linux
+          href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+        -
           name: Installing on Microsoft Azure
           href: installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.md
         -
-          name: Installing on Linux
-          href: installation-and-upgrading/installing-nopcommerce/installing-on-linux.md
+          name: Load balancing and web farms in nopCommerce
+          href: installation-and-upgrading/installing-nopcommerce/web-farms.md
         -
           name: Pre-installed nopCommerce
           href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md
@@ -87,6 +90,9 @@
             -
               name: PayPal Smart Payment Buttons
               href: getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
+            -
+              name: PayPal Commerce
+              href: getting-started/configure-payments/payment-methods/paypal-commerce.md
         -
           name: Advanced configuration
           href: getting-started/configure-payments/advanced-configuration/index.md
@@ -111,6 +117,9 @@
             -
               name: Manual (Fixed or by weight and by total)
               href: getting-started/configure-shipping/shipping-providers/manual.md
+            -
+              name: EasyPost
+              href: getting-started/configure-shipping/shipping-providers/easypost.md
             -
               name: ShipStation
               href: getting-started/configure-shipping/shipping-providers/shipstation.md
@@ -175,6 +184,9 @@
         -
           name: External authentication methods
           href: getting-started/advanced-configuration/external-authentication-methods.md
+        -
+          name: Multi-factor authentication
+          href: getting-started/advanced-configuration/multi-factor-authentication.md
         -
           name: Configure analytics
           href: getting-started/advanced-configuration/configure-analytics.md
@@ -320,11 +332,11 @@
           name: Email campaigns
           href: running-your-store/promotional-tools/email-campaigns.md
         -
-          name: SendinBlue integration
+          name: Sendinblue integration
           href: running-your-store/promotional-tools/sendinblue-integration/index.md
           items: 
             -
-              name: Set up SendinBlue plugin
+              name: Set up Sendinblue plugin
               href: running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin.md
             -
               name: Recover abandoned carts
@@ -409,17 +421,17 @@
           name: Source code organization
           href: developer/tutorials/source-code-organization.md
         - 
-          name: Architecture of nopCommerce 4.20 and under
-          href: developer/tutorials/architecture-of-nopCommerce-4.20-and-under.md
+          name: Default database schema
+          href: developer/tutorials/db-schema.md
+        - 
+          name: Architecture of nopCommerce
+          href: developer/tutorials/architecture-of-nopCommerce.md
         - 
           name: Instruction on how to start developing on nopCommerce
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
         - 
           name: Updating an existing entity. How to add a new property
           href: developer/tutorials/update-existing-entity.md
-        - 
-          name: The nopCommerce data access layer
-          href: developer/tutorials/data-access-layer.md
         - 
           name: Entity events and how they work
           href: developer/tutorials/entity-event.md
@@ -433,7 +445,7 @@
           name: How do migrations work?
           href: developer/tutorials/migrations.md
         - 
-          name: A guide to expanding the functionality of the basic functions of nopCommerce through a plugin
+          name: A guide to expand the basic functionality of nopCommerce through a plugin
           href: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin.md
         - 
           name: Data validation
@@ -447,6 +459,9 @@
         - 
           name: Settings API
           href: developer/tutorials/settings.md
+        - 
+          name: How and when to use the ITypeFinder interface
+          href: developer/tutorials/type-finder.md
         - 
           name: Description of the web.config file in project
           href: developer/tutorials/description-of-the-web-config-file-in-project.md
@@ -462,12 +477,30 @@
         - 
           name: Guide to creating a page containing a reporting table of DataTables
           href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
+        - 
+          name: Content Security Policy (CSP) Headers
+          href: developer/tutorials/csp-headers.md
+        - 
+          name: The settings from the appsettings.json file
+          href: developer/tutorials/appsettings-json-file.md
+        - 
+          name: Description of plugin system
+          href: developer/tutorials/description-of-plugin-system.md
+        - 
+          name: UNIT testing
+          href: developer/tutorials/unit-tests.md
     - 
       name: Creating a nopCommerce plugin
       href: developer/plugins/index.md
       items:
         - 
-          name: How to write a plugin for nopCommerce 4.30 (and above)
+          name: How to write a plugin for nopCommerce 4.50 (and above)
+          href: developer/plugins/how-to-write-plugin-4.50.md
+        - 
+          name: How to write a plugin for nopCommerce 4.40
+          href: developer/plugins/how-to-write-plugin-4.40.md
+        - 
+          name: How to write a plugin for nopCommerce 4.30
           href: developer/plugins/how-to-write-plugin-4.30.md
         - 
           name: How to write a plugin for nopCommerce 4.20
@@ -536,6 +569,12 @@
         - 
           name: Contributing a theme
           href: developer/design/contributing-theme.md
+        - 
+          name: Entity events system
+          href: developer/design/entity-events-system.md
+    - 
+      name: Web API documentation
+      href: developer/web-api/index.md
     - 
       name: Contribute
       href: developer/contribute/index.md

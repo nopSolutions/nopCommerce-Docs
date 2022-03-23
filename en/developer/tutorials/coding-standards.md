@@ -118,7 +118,7 @@ The style rules in this section concern modifier preferences, including requirin
 
 - Prefer the specified ordering:
 
-	*`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
+    *`public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent`*
 
   ```csharp
   //Right
@@ -156,7 +156,7 @@ The style rules in this section concern parentheses preferences, including the u
   var v = a < b == c > d;
   ```
 
-- Prefer parentheses to clarify other binary operator (&&, ||, ??) precedence
+- Prefer parentheses to clarify other binary operators (&&, ||, ??) precedence
 
   ```csharp
   //Right
@@ -250,7 +250,7 @@ The style rules in this section concern expression-level preferences, including 
   var anon = new { age, name };
   ```
 
-- Prefer autoproperties over properties with private backing fields
+- Prefer auto-properties over properties with private backing fields
 
   ```csharp
   //Right
@@ -308,7 +308,7 @@ The style rules in this section concern expression-level preferences, including 
 
   ```csharp
   //Right
-  return expr ? "hello" : "world"
+  return expr ? "hello" : "world";
   ```
 
   ```csharp
@@ -352,7 +352,7 @@ The style rules in this section concern null-checking preferences.
   var v = x == null ? y : x;
   ```
 
-- Prefer to use null-conditional operator when possible
+- Prefer to use a null-conditional operator when possible
 
   ```csharp
   //Right
@@ -576,7 +576,7 @@ These style rules concern the syntax around null checking, including using throw
   this.s = s;
   ```
 
-- Refer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
+- Prefer to use the conditional coalescing operator (?.) when invoking a lambda expression, instead of performing a null check
 
   ```csharp
   //Right
@@ -612,7 +612,7 @@ This style rule concerns the use of curly braces { } to surround code blocks.
 
 These formatting rules concern the sorting and display of *`using`* directives and *`Imports`* statements.
 
-- Sort System.* *`using`* directives alphabetically, and place them before other using directives.
+- Sort `System.*` *`using`* directives alphabetically, and place them before other using directives.
 
   ```csharp
   //Right
@@ -1256,7 +1256,7 @@ These formatting rules concern the use of single lines versus separate lines for
   int i = 0; string name = "John";
   ```
 
-- Leave code block on single line
+- Leave code block on a single line
 
   ```csharp
   //Right
@@ -1365,7 +1365,7 @@ These formatting rules concern the use of single lines versus separate lines for
   protected int testField;
   ```
 
-- All other code elements such as variables, method parameters and class fields (except open ones) are named in camelCase notation.
+- All other code elements such as variables, method parameters, and class fields (except open ones) are named in camelCase notation.
 
   ```csharp
   //Right

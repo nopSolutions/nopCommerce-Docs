@@ -7,7 +7,7 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 # Choose and install a theme
 
-After downloading a new theme which is in a zip file, extract the contents of your zip file and copy it to the **Themes** folder like shown on the picture below:
+After downloading a new theme, which is in a zip file, extract the contents of your zip file and copy them to the **Themes** folder as shown in the picture below:
 
 ![p1](_static/choose-and-install-a-theme/instal_theme1.jpg)
 

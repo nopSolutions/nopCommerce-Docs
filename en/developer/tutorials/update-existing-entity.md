@@ -27,15 +27,15 @@ Assembly: Nop.Data
 Solution Location: Nop.Data.Mapping.Builders.Catalog.CategoryBuilder.cs
 ```
 
-But I recommend you to use it only for your own entity classes. In our case, we'll use the migration mechanism instead of mapping class.
+But I recommend you to use it only for your entity classes. In our case, we'll use the migration mechanism instead of the mapping class.
 
-Add the following property to the Category class.
+Add the following property to the `Category` class.
 
 ```csharp
 public string SomeNewProperty { get; set; }
 ```
 
-Add the new class (Nop.Data.Migrations.AddSomeNewProperty) with following code:  
+Add the new class `Nop.Data.Migrations.AddSomeNewProperty` with following code:  
 
 ```csharp
 using FluentMigrator;
@@ -43,7 +43,7 @@ using Nop.Core.Domain.Catalog;
 
 namespace Nop.Data.Migrations
 {
-    [NopMigration("2020/05/25 11:24:16:2551770", "Category. Add some new property")]
+    [NopMigration("2022/01/01 12:00:00:2551770", "Category. Add some new property", UpdateMigrationType.Data, MigrationProcessType.Update)]
     public class AddSomeNewProperty: AutoReversingMigration
     {
         /// <summary>Collect the UP migration expressions</summary>
@@ -59,25 +59,21 @@ namespace Nop.Data.Migrations
 ```
 
 > [!NOTE]
-> Since migrations appeared only in the nopCommerce 4.30, it does not implement the update procedure call. Therefore, you need to add the following code to the method **ApplicationBuilderExtensions.StartEngine**
-
-```csharp
-var migrationManager = EngineContext.Current.Resolve<IMigrationManager>();
-migrationManager.ApplyUpMigrations();
-```
-
-> The specified code should be added before the lines:
-
-```csharp
-//update plugins
-pluginService.UpdatePlugins();
-```
+> The procedure for updating migrations is carried out during the initialization of the database.
+>
+>```csharp
+>public virtual void InitializeDatabase()
+>{
+>    var migrationManager = EngineContext.CurrenResolve<IMigrationManager>();
+>    migrationManager.ApplyUpMigrations(typeof(NopDbStartup).Assembly);
+>}
+>```
 
 ## The presentation model
 
 The presentation model is used to transport information from a controller to the view (read more at asp.net/mvc). Models have another purpose; defining requirements.
 
-We configured our database to only store 255 characters for the SomeNewProperty. If we try and save an SomeNewProperty with 300 characters the application will break (or truncate the text). We want the application to protect users from failures the best we can, and our view models help enforce requirements like string length.
+We configured our database to only store 255 characters for the `SomeNewProperty`. If we try and save a `SomeNewProperty` with 300 characters the application will break (or truncate the text). We want the application to protect users from failures the best we can, and our view models help enforce requirements like string length.
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Models\Catalog\CategoryModel.cs
@@ -102,7 +98,7 @@ Add the property to our view model.
 public string SomeNewProperty { get; set; }
 ```
 
-The requirements code will be added in the constructor of the validator.
+The requirements code will be added to the constructor of the validator.
 
 ```csharp
 //I think this code can speak for itself
@@ -112,11 +108,11 @@ RuleFor(m => m.SomeNewProperty).Length(0, 255);
 ## The view
 
 ```sh
-File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Views\Category\ _CreateOrUpdate.Info.cshtml
+File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Views\Category\_CreateOrUpdate.Info.cshtml
 Assembly: Nop.Web
 ```
 
-Views contain the html for displaying model data. Place this html under the "PictureId" section.
+Views contain the HTML for displaying model data. Place this HTML under the "PictureId" section.
 
 ```csharp
 <div class="form-group">
@@ -132,7 +128,7 @@ Views contain the html for displaying model data. Place this html under the "Pic
 
 ## The controller
 
-In this case the controller is responsible for mapping the domain data model to our view model and vice versa. The reason I choose the category model to update is because of the simplicity. I want this to be an introduction to the nopCommerce platform and I would like to keep it as simple as possible.
+In this case, the controller is responsible for mapping the domain data model to our view model and vice versa. The reason I choose the category model to update is because of its simplicity. I want this to be an introduction to the nopCommerce platform and I would like to keep it as simple as possible.
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Controllers\CategoryController.cs
@@ -149,9 +145,9 @@ We're going to make three updates to the CategoryController class.
 
 Normally I would write tests for the following code and verify that model mapping is working correctly, but I'll skip unit testing to keep it simple.
 
-In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most case it's not required because it's automatically handled by AutoMapper in the .ToModel() method.
+In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most cases, it's not required because it's automatically handled by *AutoMapper* in the `.ToModel()` method.
 
-In the public method to save entity (usually: "Create" or "Edit" methods with [HttpPost] attribute)
+In the public method to save entity (usually: "Create" or "Edit" methods with `[HttpPost]` attribute)
 
 ```csharp
 // Edit View Model → Data Model
@@ -160,6 +156,6 @@ category.SomeNewProperty = model.SomeNewProperty;
 
 ## Troubleshooting
 
-* Recreate the database. Either your own custom SQL script or use the nopCommerce installer.
+* Recreate the database. Either your custom SQL script or use the nopCommerce installer.
 * Stop the development web server between schema changes.
 * Post a detailed comment on [our forums](http://www.nopcommerce.com/boards/).

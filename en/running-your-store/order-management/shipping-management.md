@@ -7,32 +7,32 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Shipping management
 
-To search for and view shipments go to **Sales → Shipments**.
+To search for shipments and view them, go to **Sales → Shipments**.
 
 ## Shipment list
 
 ![Shipment list](_static/shipping-management/order-shipment-list.jpg)
 
-The top area of the page enables you to search for a shipment by different search criteria:
+The top area of the page enables you to search for a shipment by various search criteria:
 
 * **Start date** and **End date** for shipments created between these dates.
-* Enter the **Tracking number** if you want to find shipments with a certain tracking number.
+* Enter the **Tracking number** if you want to find shipment with a certain tracking number.
 * Select the **Warehouse** for shipments sent from a specific warehouse.
 * Click the **Load not delivered** checkbox if you do not want to load already delivered items.
 * Use **Country, State/province, County/region, City** to search by a shipment destination.
-* Click **Load not shipped** checkbox if you do not want to load already shipped items.
+* Click the **Load not shipped** checkbox if you do not want to load already shipped items.
 
 Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print packaging receipts.
 
-In the list of shipments, a store owner can view all items of a shipment by clicking on ![expand](_static/shipping-management/order-shipment-expand.png) in the first column of the shipment.
+In the list of shipments, a store owner can view all items of a shipment by clicking ![expand](_static/shipping-management/order-shipment-expand.png) in the first column of the shipment.
 
 ## Shipment details
 
-If click on **View**, the *View shipment details* window will be opened, as follows:
+If you click **View**, the *View shipment details* window will be opened as follows:
 
 ![Shipment details](_static/shipping-management/shipment-details.jpg)
 
-In this window you can:
+In this window, you can:
 
 * Proceed to the order.
 * Set a **Tracking number** for the shipment.
@@ -45,9 +45,13 @@ In this window you can:
 * **Print packaging slip**.
 * **Delete** the shipment.
 
+If a customer chose the "Pick up in store" shipping method during the checkout process, you will be able to mark the shipment as "ready for pickup". On the *View shipment details* page, this button looks as follows:
+
+![Shipment details](_static/shipping-management/ready-for-pickup.jpg)
+
 ## Shipping settings
 
-To set up shipping visit the [Configure shipping](xref:en/getting-started/configure-shipping/index) section.
+To set up shipping, visit the [Configure shipping](xref:en/getting-started/configure-shipping/index) section.
 
 ## See also
 

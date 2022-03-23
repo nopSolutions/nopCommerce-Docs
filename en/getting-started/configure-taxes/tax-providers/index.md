@@ -11,7 +11,7 @@ To define tax rate providers go to **Configuration → Tax providers**.
 
 ![Tax providers](_static/index/tax-providers.png)
 
-Only one tax rate provider can be used for tax calculation. Adding new tax providers is recommended only for advanced users.
+Only one tax rate provider can be used for tax calculation. Adding new tax providers is only recommended for advanced users.
 To select the default tax provider click the **Mark as primary provider** button.
 
 > [!TIP]

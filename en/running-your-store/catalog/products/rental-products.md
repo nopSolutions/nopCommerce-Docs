@@ -7,36 +7,36 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.IvanIvanIvanov
 
 # Rental products
 
-The rental products functionality is useful when you want to create a website allows customers to book rooms and hotels. This feature is also can be used for a website that offers clothes such as wedding dresses, camping stuff, children toys and more for rent.
+The rental products functionality is useful when you want to create a website allowing customers to book rooms and hotels. This feature can also be used for a website that offers such clothes as wedding dresses, camping equipment, children's toys, and more for rent.
 
 ## Example
 
-Let's say you wish to create a website provides wedding dresses for rent. 
+Let's say you wish to create a website providing wedding dresses for rent. 
 
 Which functionality will be useful in this case?
 
-- One of the most important feature is to allow customers to choose *rent period*. In nopCommerce, it is allowed to choose the start date and end date, as on the screenshot below:
+- One of the most important features is to allow customers to choose the *rent period*. In nopCommerce, it is allowed to choose the start date and end date, as on the screenshot below:
 	![Rental example](_static/rental-products/example.jpg)
 
-- nopCommerce also allows the store administrator to chose *rental period* and *rental period length*. For example, you want to give the wedding dress for rent for 3 days minimum. In this case a customer will see the following on the product details page:
+- nopCommerce also allows the store administrator to choose the *rental period* and *rental period length*. For example, you want to give a wedding dress for rent for 3 days minimum. In this case, a customer will see the following on the product details page:
 	![Rental period](_static/rental-products/period.jpg)
 
-- Use *checkout attributes* to allow a customer to specify return time when a carrier should pick up the dress:
+- Use *checkout attributes* to allow customers to specify the return time when a carrier should pick up the dress:
 	![Rental example](_static/rental-products/time.jpg)
 	Read more about checkout attributes [here](xref:en/running-your-store/order-management/checkout-attributes).
 
-If you already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products) learn how to make this product rental in the section below.
+If you have already learned how to set up a [common product](xref:en/running-your-store/catalog/products/add-products), learn how to make this product rental in the section below.
 
 ## Set up a rental product
 
-To create a rental product, go to **Catalog → Products**. Click **Add new**, fill up the common product fields and tick the corresponding checkbox in the *Rental* panel.
+To create a rental product, go to **Catalog → Products**. Click **Add new**, fill in the common product fields, and select the corresponding checkbox in the *Rental* panel.
 
 ![Rental panel](_static/rental-products/rental.png)
 
 Define the following details:
 
 - **Rental period length** is a rental cycle length, minimum billing period. Price is specified for this period.
-- **Rental period** in *Days*, *Weeks*, *Months* or *Years*. It defines units time rental period will be measured in.
+- **Rental period** in *Days*, *Weeks*, *Months* or *Years*. It defines the time units of the rental period.
 
 When buying rental products, customers have to specify the rental period in the public store. The amount to be paid is calculated automatically.
 

@@ -9,39 +9,19 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 ## Uploading your store logo
 
-In order to upload your store logo in a nopCommerce website, there are basically 2 methods:
+To upload your store logo to a nopCommerce website, there are 2 methods:
 
 ### First Method
 
+Upload your logo through the admin area. See how to do this in the [Uploading your logo](xref:en/getting-started/design-your-store/uploading-your-logo) article.
+
+### Second method
+
 1. Go to nopCommerce root folder `/Themes/YOUR THEME/Content/images/`
-1. Look for logo.gif image file
-1. Replace the `logo.gif` with your store logo and name it as `logo.gif` (with same width:310px and height:60px)
+1. Look for logo.png image file
+1. Replace the `logo.png` with your store logo and name it as `logo.png` (with same width:250px and height:50px)
 
-### Second Method
-
-1. Save your store logo in this location : nopCommerce root folder `/Themes/YOUR THEME/Content/images/`
-1. Go to nopCommerce root folder `/Views/Shared/Header.cshtml`
-1. Open `Header.cshtml` file
-1. Look for this code at the top:
-
-    ```csharp
-    var logoPath = "~/Themes/" + currentThemeName + "/Content/images/logo.gif";
-    ```
-
-    You can mention the path of your custom logo here.
-
-    > [!NOTE]
-    > 
-    > In the above mentioned css code: logo.gif is the name of the store logo image file
-
-1. Change logo.gif with `YourLogo.gif/jpg/png`
-1. Save changes to the `Header.cshtml` file
-
-> [!IMPORTANT]
-> 
-> You might have to refresh the browser or delete history or cookies of your browser in order to see the changes (new store logo).
-
-If you wish to make changes in stylesheet in regard to the logo, look for the following code in your `styles.css`:
+If you wish to make changes in the stylesheet regarding the logo, look for the following code in your `styles.css`:
 
 ```css
 .header-logo {
@@ -59,9 +39,12 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
 }
 ```
 
+> [!IMPORTANT]
+> You might have to clear the browser cache (or refresh the page using Ctrl+F5 keys) to see the changes (new store logo).
+
 ## How to change a layout
 
-1. If you would like to customize / make changes in the base layout (i.e. `_Root.cshtml`) of your nopCommerce website. Please look for this css code in your `style.css`
+1. If you would like to customize/make changes in the base layout (i.e. `_Root.cshtml`) of your nopCommerce website look for this CSS code in your `styles.css` file
 
     ```css
     .master-wrapper-content {
@@ -81,7 +64,7 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
     }
     ```
 
-1. If you would like to customize / make changes in the layout of `_ColumnOne.cshtml`. Please look for this css code in your `style.css`
+1. If you would like to customize/make changes in the layout of `_ColumnOne.cshtml`. Please look for this CSS code in your `style.css`
 
     ```css
     .center-1 {
@@ -89,10 +72,10 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
     }
     ```
 
-1. If you would like to customize / make changes in the layout of `_ColumnTwo.cshtml`. Please look for this css code in your `style.css`
+1. If you would like to customize/make changes in the layout of `_ColumnTwo.cshtml`. Please look for this CSS code in your `style.css`
 
     ```css
-        .center-2, .side-2 {
+    .center-2, .side-2 {
         margin: 0 0 50px;
     }
     .side-2:after {
@@ -102,14 +85,14 @@ If you wish to make changes in stylesheet in regard to the logo, look for the fo
     }
     ```
 
-## How to make changes in header menu (top menu)
+## How to make changes in the header menu (top menu)
 
-1. If you would like to customize/make changes in header menu (top menu) of your nopCommerce website, please go to the following location:
+1. If you would like to customize/make changes in the header menu (top menu) of your nopCommerce website, please go to the following location:
 
     Go to nopCommerce root folder `/Views/Shared/Components/TopMenu/Default.cshtml`
 1. Open file `Default.cshtml` - You can add or remove menu items in `<li>` according to your requirements.
 
-## How to make changes in footer (or footer links)
+## How to make changes in the footer (or footer links)
 
 1. If you would like to customize/make changes in a footer (or footer links) of your nopCommerce website, please go to the following location:
 

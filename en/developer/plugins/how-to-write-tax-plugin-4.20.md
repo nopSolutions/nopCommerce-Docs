@@ -7,22 +7,22 @@ contributors: git.nopsg, git.DmitriyKulagin, git.cromatido
 
 # How to write a Tax Plugin for nopCommerce
 
-To extend nopCommerce functionality, plugins are used. There are various types of plugins like "PickupInStore" and "PayPal Standard" which are already contained in the nopCommerce distro. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If you haven't found one, then you are at the right place because this article will guide you through the process of creating plugin, especially tax plugin, according to your need.
+To extend nopCommerce functionality, plugins are used. There are various types of plugins like "PickupInStore" and "PayPal Standard" which are already contained in the nopCommerce distro. You can also search various plugins on the [nopCommerce official site](https://www.nopcommerce.com/marketplace) to see if someone has already created a plugin that suits your needs. If you haven't found one, then you are at the right place because this article will guide you through the process of creating a plugin, especially a tax plugin, according to your need.
 
 ## The plugin structure, required files, and locations
 
-1. Start by creating a new "Class Library" project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already resides.
+1. Start by creating a new "Class Library" project in the solution. It is recommended to place your plugin in the **Plugins** directory, located in the root folder of the source, where other plugins and widgets already reside.
 
     ![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
 
     > [!NOTE]
-    > Do not get confused this directory with the one which exists in `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugins compiled files.
+    > Do not get confused this directory with the one which exists in the `Presentation\Nop.Web` directory. The Plugins directory in the Nop.Web directory contains the plugin's compiled files.
 
-    A recommended name for a plugin project is `Nop.Plugin.{Group}.{Name}`. `{Group}` is your plugin group (for example, `Payment` or `Shipping`). `{Name}` is your plugin name (for example, `FixedOrByCountryStateZip`). For example, `FixedOrByCountryStateZip` tax plugin has the following name: `Nop.Plugin.Tax.FixedOrByCountryStateZip`. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyFirstTaxPlugin`. The Plugins directory structure of a solution looks like following.
+    A recommended name for a plugin project is `Nop.Plugin.{Group}.{Name}`. `{Group}` is your plugin group (for example, `Payment` or `Shipping`). `{Name}` is your plugin name (for example, `FixedOrByCountryStateZip`). For example, `FixedOrByCountryStateZip` tax plugin has the following name: `Nop.Plugin.Tax.FixedOrByCountryStateZip`. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyFirstTaxPlugin`. The Plugins directory structure of a solution looks like the following.
 
     ![image2](_static/how-to-write-a-tax-plugin-4.20/image2.png)
 
-1. Once the plugin project is created, the **.csproj** file content should be updated using any available text editor application. Replace the content with following one:
+1. Once the plugin project is created, the **.csproj** file content should be updated using any available text editor application. Replace the content with the following one:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -55,38 +55,38 @@ To extend nopCommerce functionality, plugins are used. There are various types o
     > [!NOTE]
     > The **PLUGIN_OUTPUT_DIRECTORY** should be replace by the plugin name, for example, `Tax.FixedOrByCountryStateZip`.
 
-1. After updating the **.csproj** file, `plugin.json` file should be added which is required for plugin.  This file contains meta information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+1. After updating the **.csproj** file, the `plugin.json` file should be added which is required for the plugin.  This file contains meta-information describing your plugin. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
-1. The last required step is to create a class which implements `BasePlugin` (`Nop.Core.Plugins` namespace) and `ITaxProvider` interface (`Nop.Services.Tax` namespace). **ITaxProvider** implements `GetTaxRate` method which returns type **CalculateTaxResult** (contains tax rate, errors if any and Boolean success status) based on the custom logic, usually based on the customer address.
+1. The last required step is to create a class that implements `BasePlugin` (`Nop.Core.Plugins` namespace) and `ITaxProvider` interface (`Nop.Services.Tax` namespace). **ITaxProvider** implements the `GetTaxRate` method which returns type **CalculateTaxResult** (contains tax rate, errors if any, and `Boolean` success status) based on the custom logic, usually based on the customer address.
 
-## Handling requests. Controllers, models and views
+## Handling requests. Controllers, models, and views
 
 Now you can see the plugin by going to **Admin area** → **Configuration** → **Local Plugins**.
 
 ![image4](_static/how-to-write-a-tax-plugin-4.20/image4.png)
 
-When a plugin/widget is installed, you will see **Uninstall** button. It is a good practice that you uninstall plugins/widgets which are not necessary for performance improvement.
+When a plugin/widget is installed, you will see the **Uninstall** button. It is a good practice that you uninstall plugins/widgets which are not necessary for performance improvement.
 
 ![image5](_static/how-to-write-a-tax-plugin-4.20/image5.png)
 
-There will be **Install** and **Delete** button when a plugin/widget is not installed or uninstalled.
+There will be the **Install** and **Delete** buttons when a plugin/widget is not installed or uninstalled.
 
 > [!NOTE]
 > Deleting will remove physical files from the server.
 
 But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
 
-What we need to do now is create a controller, a model, a view and a view component.
+What we need to do now is create a controller, a model, a view, and a view component.
 
 * MVC controllers are responsible for responding to requests made against an `ASP.NET MVC` website. Each browser request is mapped to a particular controller.
 * A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an `ASP.NET MVC` application.
-* A view component which implements **NopViewComponent** which contains logic and codes to render a view.
+* A view component that implements **NopViewComponent** which contains logic and codes to render a view.
 * An MVC model contains all of your application logic that is not contained in a view or a controller.
 
 So let's start:
 
-* **Create the model**. Add a `Models` folder in the new plugin, and then add a new model class which fits your need.
-* **Create the view**. Add a `Views` folder in the new plugin, and then add a `.cshtml` file named `Configure.cshtml`. Set **Build Action** property of the view file is set to **Content**, and the **Copy to Output Directory** property is set to **Copy always**. Note that configuration page should use *_ConfigurePlugin* layout.
+* **Create the model**. Add a `Models` folder in the new plugin, and then add a new model class that fits your need.
+* **Create the view**. Add a `Views` folder in the new plugin, and then add a `.cshtml` file named `Configure.cshtml`. Set **Build Action** property of the view file is set to **Content**, and the **Copy to Output Directory** property is set to **Copy always**. Note that the configuration page should use the *_ConfigurePlugin* layout.
 
 ```html
 @model Nop.Plugin.Tax.FixedOrByCountryStateZip.Models.ConfigurationModel
@@ -148,7 +148,7 @@ So let's start:
 
 ![image6](_static/how-to-write-a-tax-plugin-4.20/image6.png)
 
-* **Create the controller**. Add a `Controllers` folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers **{Group}{Name}Controller.cs**. For example, `FixedOrByCountryStateZipController`. Of course it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for configuration page (in admin area). Let's name it `Configure`. Prepare a model class and pass it to the following view using a physical view path: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**.
+* **Create the controller**. Add a `Controllers` folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers **{Group}{Name}Controller.cs**. For example, `FixedOrByCountryStateZipController`. Of course, it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for the configuration page (in the admin area). Let's name it `Configure`. Prepare a model class and pass it to the following view using a physical view path: **~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml**.
 
 ```cs
 public IActionResult Configure()
@@ -196,7 +196,7 @@ public IActionResult Configure()
 ```
 
 For example, open `FixedOrByCountryStateZip` plugin and look at its implementation of `FixedOrByCountryStateZipController`.
-Then for each plugin which has a configuration page you should specify a configuration url. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration url:
+Then for each plugin that has a configuration page, you should specify a configuration URL. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration URL:
 
 ```cs
 public override string GetConfigurationPageUrl()
@@ -205,9 +205,9 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-Where *{CONTROLLER_NAME}* is a name of your controller and *{ACTION_NAME}* is a name of action (usually it's `Configure`).
+Where *{CONTROLLER_NAME}* is the name of your controller and *{ACTION_NAME}* is the name of the action (usually it's `Configure`).
 
-For assigning different tax rate according to the customer address, a new table is required which records all data related to tax. For this purpose, `Domain` folder is added where we add a class which extends **BaseEntity** class. In this case `TaxRate.cs`
+For assigning different tax rates according to the customer address, a new table is required which records all data related to tax. For this purpose, the `Domain` folder is added where we add a class that extends the **BaseEntity** class. In this case `TaxRate.cs`
 
 ![image7](_static/how-to-write-a-tax-plugin-4.20/image7.png)
 
@@ -223,7 +223,7 @@ public override void Configure(EntityTypeBuilder<TaxRate> builder)
 }
 ```
 
-Object Context class implements **DbContext** class (`Microsoft.EntityFrameworkCore` namespace) and **IDbContext** interface (`Nop.Data` namespace). This `IDbContext` interface consists of methods related to table creation, deletion and other custom actions like executing a raw SQL query according to the model which was previously added in `Domain` folder.
+Object Context class implements **DbContext** class (`Microsoft.EntityFrameworkCore` namespace) and **IDbContext** interface (`Nop.Data` namespace). This `IDbContext` interface consists of methods related to table creation, deletion, and other custom actions like executing a raw SQL query according to the model which was previously added in the `Domain` folder.
 
 ```cs
 public class CountryStateZipObjectContext : DbContext, IDbContext
@@ -499,7 +499,7 @@ public partial class CountryStateZipService : ICountryStateZipService
 }
 ```
 
-The last thing, we need is to register the services and configure plugin DB context on application startup. For this, **Infrastructure** folder is added which contains classes – `DependencyRegister` and `PluginDbStartup`.
+The last thing, we need is to register the services and configure plugin DB context on application startup. For this, the **Infrastructure** folder is added which contains classes – `DependencyRegister` and `PluginDbStartup`.
 
 **DependencyRegister** class implements `IDependencyRegister` interface (`Nop.Core.Infrastructure.DependencyManagement` namespace) which has `Register` method.
 
@@ -573,7 +573,7 @@ public class PluginDbStartup : INopStartup
 
 ## Handling "Install" and "Uninstall" methods
 
-This step is optional. Some plugins can require additional logic during its installation. For example, a plugin can insert new locale resources or add necessary tables or settings values. So open your `BasePlugin` implementation and override the following methods:
+This step is optional. Some plugins can require additional logic during their installation. For example, a plugin can insert new locale resources or add necessary tables or settings values. So open your `BasePlugin` implementation and override the following methods:
 
 * `Install`. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
 

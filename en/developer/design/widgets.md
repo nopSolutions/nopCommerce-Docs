@@ -7,14 +7,16 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 # Widgets (Designer's Guide)
 
-> A widget is a stand-alone application that can be embedded into third party sites by any user on a page. It's a small application that can be installed and executed within a web page by an end user. (Wikipedia).
+> A widget is a stand-alone application that can be embedded into third-party sites by any user on a page. It's a small application that can be installed and executed within a web page by an end-user. (Wikipedia).
 
-In nopCommerce, a widget plugin allows you to embed 3rd party code/application in public store in certain areas (for example, head tag, after body tag, left column block and right column block).
+In nopCommerce, a widget plugin allows you to embed 3rd party code/application in a public store in certain areas (for example, head tag, after the body tag, left column block, and right column block).
 
 Currently, default nopCommerce installation allows the store admin to embed two widget plugins:
 
 1. Google Analytics
 1. Nivo Slider
+1. AccessiBe
+1. What3words
 
 ## Google Analytics Widget
 
@@ -27,6 +29,14 @@ To configure Google Analytics Widget, go to `Administration â†’ Configuration â†
 
 ## Nivo Slider
 
-Nivo slider is a nice and clean jquery image slider for your website/homepage to display a number of images scrolling with unique transition effects.
+Nivo slider is a nice and clean jquery image slider for your website/homepage to display several images scrolling with unique transition effects.
 
-By default, nopCommerce comes with nivo slider integration as a widget (Enabled by default) which allows you to display a number of images scrolling automatically on your homepage.
+By default, nopCommerce comes with Nivo slider integration as a widget (Enabled by default) which allows you to display several images scrolling automatically on your homepage.
+
+## accessiBe
+
+This plugin integrates with *accessiBe* - The #1 Fully Automated Web Accessibility Solution for ADA & WCAG Compliance.
+
+## What3words
+
+*What3words* is a proprietary geocode system designed to identify any location with a resolution of about 3 meters (9.8 ft). The system encodes geographic coordinates into three permanently fixed dictionary words. You can use this widget on checkout pages to specify shipping addresses more accurately.
