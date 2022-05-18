@@ -248,3 +248,7 @@ sudo apt-get install libgdiplus
 ### SSL
 
 *If you want to use SSL on your site, don't forget to set the `UseHttpXForwardedProto` setting to **`true`** in the **appsettings.json** file*.
+
+## See also
+
+* [Running nopCommerce on Linux VPS. Part 2](https://www.nopcommerce.com/running-nopcommerce-on-linux-vps-part-2)
