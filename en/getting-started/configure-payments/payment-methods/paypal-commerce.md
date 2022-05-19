@@ -42,7 +42,7 @@ Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/re
 
 ### 3. Set up the Paypal Developer Dashboard
 
-1. Log into the [Developer Dashboard](https://developer.paypal.com/developer/applications) with your PayPal account credentials.
+1. Log into the [Developer Dashboard](https://developer.paypal.com/developer/applications?partner_id=9JJPJNNPQ7PZ8) with your PayPal account credentials.
 
 1. In **My Apps & Credentials**, use the toggle to switch between live and sandbox testing apps.
     ![My Apps & Credentials](_static/paypal-commerce/my-apps.jpg)
