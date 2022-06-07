@@ -121,9 +121,6 @@
               name: EasyPost
               href: getting-started/configure-shipping/shipping-providers/easypost.md
             -
-              name: ShipStation
-              href: getting-started/configure-shipping/shipping-providers/shipstation.md
-            -
               name: UPS
               href: getting-started/configure-shipping/shipping-providers/ups.md
         -
