@@ -11,15 +11,11 @@ This document describes a step-by-step guide to building and running a Docker co
 
 1. **Preparing for the deployment of virtual Docker** in Windows environment.
 
-    You need to download and install the [Kitematic](https://kitematic.com/) application. This program will allow us to deploy a Linux virtual machine in VirtualBox with Docker installed and manage it from our main computer. After the first launch, we choose that we will work through VirtualBox and wait until the application installs and starts the virtual machine.
+    First, we need to install Docker on our PC. We will use [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Windows, it's help as to build and share containerized applications and microservices. The Docker Desktop also available for Linux and Mac.
 
-1. **Run the command shell** to the Docker via the [Kitematic](https://kitematic.com/)  interface. To do this, simply click on the inconspicuous button in the interface.
+    After installing and running the application, you will have access to all the possibilities of containerization. Further, we will do all the work in PowerShell, since the command mode will be the same in any environment.
 
-    ![docker_1](_static/docker/docker_1.png)
-
-    All further work will take place in the familiar PowerShell window.
-
-1. **We collect the Docker container**. For the convenience of executing commands, go to the directory where Dockerfile is located (the root directory of the nopCommerce source files).
+2. **We collect the Docker container**. For the convenience of executing commands, go to the directory where Dockerfile is located (the root directory of the nopCommerce source files).
 
     The command that we need:
 
@@ -43,12 +39,12 @@ This document describes a step-by-step guide to building and running a Docker co
 
     This is a list of all loaded containers, among which we can easily see our container, it is created and ready to go.
 
-1. **Run and test the container.**
+3. **Run and test the container.**
 
     First, let's start the container with the command:
 
-    ```csharp
-    [docker run -d -p 80:80 nopcommerce]
+    ```bash
+    docker run -d -p 80:80 nopcommerce
     ```
 
     This command will launch our container in the background (flag [-d]) and set port 80 from the container to port 80 of the host machine (flag [–p]).
@@ -57,66 +53,50 @@ This document describes a step-by-step guide to building and running a Docker co
     >
     > You can view the list of running containers using the next command:
     >
-    > ```csharp
-    > [docker ps]
+    > ```bash
+    > docker ps
     > ```
 
-    Since we are launching the docker through a virtual machine, we need to first get an IP address at which we can test the operation of the application. To do this, execute the command, which will start the redirection service, and give us the IP address on which we can verify that the application has started.
-
-    ```csharp
-    [docker-machine ip]
-    ```
-
-    Having clicked on this address, we should see the page with the installation of nopCommerce.
+    On the browser we should see the page with the installation of nopCommerce.
 
     ![docker_3](_static/docker/docker_3.png)
 
     This will be our verification that the container is being created, launched, and successfully operating.
 
-1. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, our and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
-
-    To begin, stop all containers so as not to interfere. Use the command for this:
-
-    ```csharp
-    [docker stop $ (docker ps -a -q)]
-    ```
+4. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, our and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
 
     To deploy container composition, use the command:
 
-    ```csharp
-    [docker-compose up -d]
+    ```bash
+    docker-compose up -d
     ```
 
-    This command uses the docker-compose.yml file for deployment, which describes the creation of two containers "nopcommerce_web" and "nopcommerce_database", which provide a bundle of applications and a database. Now we will get the IP address for the tests by executing the command:
+    This command uses the docker-compose.yml file for deployment, which describes the creation of two containers "nopcommerce_web" and "nopcommerce_database", which provide a bundle of applications and a database. 
 
-    ```csharp
-    [docker-machine ip]
-    ```
+    And by opening the page on the browser we will be able to test everything we want. To connect to the database server, we use the following data (as described in the docker-compose.yml file):
 
-    And by opening the page at this address in the browser, we will be able to test everything we want. To connect to the database server, we use the following data (as described in the docker-compose.yml file):
-
-    ```csharp
+    ```bash
     Server name: nopcommerce_mssql_server
     User: sa
     Password: nopCommerce_db_password
     ```
 
-1. After testing is complete, you can remove all containers so that they do not interfere next time. Two commands will help to execute it:
+5. After testing is complete, you can remove all containers so that they do not interfere next time. Two commands will help to execute it:
 
-    ```csharp
-    [docker stop $ (docker ps -a -q)]
+    ```bash
+    docker stop $ (docker ps -a -q)
     ```
 
     and
 
-    ```csharp
-    [docker system prune -a]
+    ```bash
+    docker system prune -a
     ```
 
 ## Docker Hub
 
 Starting from version nopCommerce 4.20, we publish the completed image on the GitHub service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
 
-```csharp
-[docker pull nopcommerceteam/nopcommerce:latest]
+```bash
+docker pull nopcommerceteam/nopcommerce:latest
 ```
