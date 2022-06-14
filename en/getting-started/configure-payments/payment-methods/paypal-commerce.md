@@ -22,19 +22,35 @@ To do this, click the **Edit** button in the plugin row on the payment method li
 
 ### 2. Create a PayPal account
 
-If you already have a PayPal account, just proceed to the [next section](#3-set-up-the-paypal-developer-dashboard).
+If you already have a PayPal account, just proceed to the [next section](#3-set-up-the-paypal-developer-dashboard). If you don't then register a Business account. You have two options to do this: you can register an account on the PayPal website or you can you can do this from the plugin configuration page. Let's briefly consider both options:
 
-Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Just click the **Sign up** button there:
+#### Register an account on the PayPal website
 
-![Sign up page](_static/paypal-commerce/sign-up-page.jpg)
+1. Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Just click the **Sign up** button there:
 
-Then fill in the information about yourself and your business:
+    ![Sign up page](_static/paypal-commerce/sign-up-page.png)
+1. Then fill in the information about yourself and your business:
 
-![Sign up form](_static/paypal-commerce/sign-up-form.jpg)
+    ![Sign up form](_static/paypal-commerce/sign-up-form.png)
 
 > [!NOTE]
 >
 > If you already have an account, you will be redirected to the authorization.
+
+#### Register an account from the plugin configuration page
+
+1. Open the PayPal Commerce configuration page in the admin area. You will see the following form:
+    ![PayPal Commerce configuration page](_static/paypal-commerce/auto-configure.jpg)
+
+1. Enter your email address and let PayPal check everything out by clicking the **Save** button.
+
+1. If everything is OK, you will see the following green notification and a newly added **Sign up for PayPal** button:
+    ![When email is already entered](_static/paypal-commerce/configure-entered-email.png)
+
+1. Click this button and you will see the following pop-up window allowing you to fill in some data and register an account:
+    ![PayPal Commerce configuration page](_static/paypal-commerce/popup-form-first-page.png)
+    
+    You should pass through a few steps to fill in all the required data. The last one will ask you to confirm your email to activate your account.
 
 ### 3. Set up the Paypal Developer Dashboard
 
