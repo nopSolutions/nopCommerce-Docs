@@ -24,21 +24,17 @@ To do this, click the **Edit** button in the plugin row on the payment method li
 
 If you already have a PayPal account, just proceed to the [next section](#3-set-up-the-paypal-developer-dashboard).
 
-Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Then fill in the information about yourself and your business:
+Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Just click the **Sign up** button there:
 
-![Step 1](_static/paypal-commerce/signUp1step.png)
+![Sign up page](_static/paypal-commerce/sign-up-page.jpg)
+
+Then fill in the information about yourself and your business:
+
+![Sign up form](_static/paypal-commerce/sign-up-form.jpg)
 
 > [!NOTE]
 >
 > If you already have an account, you will be redirected to the authorization.
-
-![Step 2](_static/paypal-commerce/signUp2step.png)
-
-![Step 3](_static/paypal-commerce/signUp3step.png)
-
-![Step 4](_static/paypal-commerce/signUp4step.png)
-
-![Step 5](_static/paypal-commerce/signUp5step.png)
 
 ### 3. Set up the Paypal Developer Dashboard
 
