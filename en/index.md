@@ -98,18 +98,18 @@ The nopCommerce documentation is here to help you through the process of setting
 	</div>
 	<div class="quick-item plugins">
 		<a href="/en/getting-started/advanced-configuration/plugins-in-nopcommerce.html"><h3>Plugins</h3></a>
-		<p>Use built-in plugins to reach your marketing goals: <a href="/en/running-your-store/promotional-tools/sendinblue-integration/index.html">Sendinblue</a>, <a href="/en/running-your-store/promotional-tools/facebook-pixel.html">Facebook Pixel</a>. Find dozens of nopCommerce plugins on the <a target="_blank" href="https://www.nopcommerce.com/en/marketplace">marketplace</a></p>
+		<p>Use built-in plugins to reach your marketing goals: <a href="/en/running-your-store/promotional-tools/sendinblue-integration/index.html">Sendinblue</a>, <a href="/en/running-your-store/promotional-tools/facebook-pixel.html">Facebook Pixel</a>. Find dozens of nopCommerce plugins on the <a target="_blank" href="https://www.nopcommerce.com/marketplace">marketplace</a></p>
 	</div>
 </div>
 
 <h2 class="click-links-title">Support</h2>
 <div class="quick-links">
 	<div class="quick-item premium">
-		<a target="_blank" href="https://www.nopcommerce.com/en/nopcommerce-premium-support-services"><h3>Premium</h3></a>
-		<p>The nopCommerce team provides paid premium support services for those who want to get professional support within 24 hours</p>
+		<a target="_blank" href="https://www.nopcommerce.com/nopcommerce-premium-support-services"><h3>Premium</h3></a>
+		<p>The nopCommerce team provides paid <a target="_blank" href="https://www.nopcommerce.com/nopcommerce-premium-support-services">premium support services</a> for those who want to get professional support within 24 hours</p>
 	</div>
 	<div class="quick-item forums">
-		<a target="_blank" href="https://www.nopcommerce.com/en/boards"><h3>Forums</h3></a>
-		<p>We welcome new questions and discussion so feel free to ask your question on the nopCommerce forums</p>
+		<a target="_blank" href="https://www.nopcommerce.com/boards"><h3>Forums</h3></a>
+		<p>We welcome new questions and discussion so feel free to ask your question on the nopCommerce <a target="_blank" href="https://www.nopcommerce.com/boards">forums</a></p>
 	</div>
 </div>
