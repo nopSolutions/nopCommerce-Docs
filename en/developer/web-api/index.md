@@ -19,8 +19,8 @@ The Web API framework provides integrators and developers the means to use web s
 
 The Web API Frontend offers you a way to implement the nopCommerce buying capabilities in any application, whenever it is a website or mobile app. Using the API is essential when sellers want to reach a wider audience and their requirements go beyond the standard nopCommerce functionality. The Web API Frontend provides methods that allow using the built-in public store functionality outside of the nopCommerce store. Even if you have customizations in your nopCommerce store you will be able to use this plugin since it is provided with the source code.
 
-After installing the plugin you will be able to see a list of the existing API methods using the following Swagger endpoint:
-**`{store location}/api-frontend/index.html`**
+After installing the plugin you will be able to see a list of the existing API methods using the following Swagger UI endpoint:
+**`{store location}/api/index.html`**
 
 > [!TIP]
 > You can't use multi-factor authentication (MFA) through the Frontend API.
@@ -29,8 +29,12 @@ After installing the plugin you will be able to see a list of the existing API m
 
 The Web API Backend provides access to all nopCommerce admin area functionality. Meaning, using the Web API Backend methods you can get full control over such functionality as customer management, creating and updating products, sales monitoring, and actually whatever you want to control in the admin area of the nopCommerce store. Use this API to build such applications as CRM and ERP systems, social network integrations, and other apps that require accessing the store business processes.
 
-After installing the plugin you will be able to see a list of the existing API methods using the following Swagger endpoint:
-**`{store location}/api-backend/index.html`**
+After installing the plugin you will be able to see a list of the existing API methods using the following Swagger UI endpoint:
+**`{store location}/api/index.html`**
+
+> [!IMPORTANT]
+> After installing the backend and frontend APIs, switching between them is implemented directly through the Swagger UI page in the dropdown list of available definitions.
+> ![image](./_static/index/SwaggerUI_1.png)
 
 #### Scopes and permissions
 
