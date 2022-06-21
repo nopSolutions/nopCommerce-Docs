@@ -3,10 +3,16 @@
 var common = require('./common.js');
 var extension = require('./conceptual.extension.js')
 var util = require('./statictoc.util.js');
+var banner = require('./banner.js');
 
 exports.transform = function (model) {
   if (extension && extension.preTransform) {
     model = extension.preTransform(model);
+  }
+
+  //adds the isDeveloperSection property required to display a course banner to the model
+  if (banner && banner.preTransform) {
+    model = banner.preTransform(model);
   }
 
   model._disableToc = model._disableToc || !model._tocPath || (model._navPath === model._tocPath);

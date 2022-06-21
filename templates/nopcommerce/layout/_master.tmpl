@@ -39,6 +39,9 @@
           {{/_disableAffix}}
             <article class="content wrap" id="_content" data-uid="{{uid}}">
                 {{!body}}
+                {{#isDeveloperSection}}
+                  {{>partials/banner}}
+                {{/isDeveloperSection}}
             </article>
           </div>
           {{^_disableAffix}}

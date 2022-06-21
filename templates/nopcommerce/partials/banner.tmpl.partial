@@ -1,0 +1,10 @@
+<div class="course-banner">
+    <a target="_blank" href="https://www.nopcommerce.com/training?utm_source=docs_nopcommerce&utm_medium=documentation&utm_campaign=course&utm_content=Developers_Guide">
+        <div class="course-banner-left"></div>
+        <div class="course-banner-center">
+            <div class="course-banner-title"><span>nopCommerce training course</span></div>
+            <div class="course-banner-description"><span>Start developing your skills and become a Certified Developer</span></div>
+        </div>
+        <div class="course-banner-right"></div>
+    </a> 
+</div>

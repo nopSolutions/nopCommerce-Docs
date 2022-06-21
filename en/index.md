@@ -113,3 +113,9 @@ The nopCommerce documentation is here to help you through the process of setting
 		<p>We welcome new questions and discussion so feel free to ask your question on the nopCommerce <a target="_blank" href="https://www.nopcommerce.com/boards">forums</a></p>
 	</div>
 </div>
+<div class="quick-links">
+	<div class="quick-item course">
+		<a target="_blank" href="https://www.nopcommerce.com/training?utm_source=docs_nopcommerce&utm_medium=documentation&utm_campaign=course&utm_content"><h3>Training course</h3></a>
+		<p>nopCommerce <a target="_blank" href="https://www.nopcommerce.com/training?utm_source=docs_nopcommerce&utm_medium=documentation&utm_campaign=course&utm_content">online course</a> for developers. Get the practical and technical skills you need to run and customize nopCommerce websites</p>
+	</div>
+</div>
