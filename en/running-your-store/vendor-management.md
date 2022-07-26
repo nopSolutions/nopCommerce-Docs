@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 *Vendors* represent a special category of customers that should be considered separately.
 
-nopCommerce has tools for *multi-vendor* and drop shipping that enable you to sell online without having to keep stocks or ship orders. In this case, each product is assigned to a particular vendor whose details (including email address) are stored.
+nopCommerce has tools for [multi-vendor](https://www.nopcommerce.com/multi-vendor-marketplace) and drop shipping that enable you to sell online without having to keep stocks or ship orders. In this case, each product is assigned to a particular vendor whose details (including email address) are stored.
 
 Whenever an order is placed, an email is sent to the vendor of each product in the order. The email includes the products, quantities, and more information if required. The vendor ships the item to the customer on behalf of the merchant, who typically pays each of their vendors at the end of the month.
 
