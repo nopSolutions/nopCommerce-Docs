@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.dunaenko, git.mariannk
 
 # Managing customers
 
-The customer list contains details of all existing customers and allows adding new ones. In nopCommerce, customers include all users, such as administrators, vendors, and buyers. To manage customers, go to **Customers → Customers**. The following window will be displayed:
+The customer list contains details of all existing customers and allows adding new ones. The customer list contains details of all existing customers and allows adding new ones. This and other customer management configurations makes nopCommerce an eCommerce platform with built-in [omnichannel feature](https://www.nopCommerce.com/omnichannel-commerce). In nopCommerce, customers include all users, such as administrators, vendors, and buyers. In nopCommerce, customers include all users, such as administrators, vendors, and buyers. To manage customers, go to **Customers → Customers**. The following window will be displayed:
 
 ![Customers](_static/managing-customers/customers.png)
 
