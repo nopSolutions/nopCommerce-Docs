@@ -142,7 +142,7 @@ In the *Catalog* panel, define the following vendor settings:
 * **Allow search by vendor** to customers on an advanced search page.
 * Choose whether to **Show vendor on product details page** (if associated).
 * Choose whether to **Show vendor name on order details page** (if associated).
-* **Number of vendors to display** in the vendor navigation block in the admin area.
+* **Number of vendors to display** in the vendor navigation block in the public store.
 
 ### Vendor attributes
 
