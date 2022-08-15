@@ -527,6 +527,9 @@
           name: How to add a menu item into the administration area from a plugin
           href: developer/plugins/menu-item.md
         - 
+          name: How to add a menu item into the my account area from a plugin
+          href: developer/plugins/account-section-menu-item.md
+        - 
           name: Adding CSS and JS resource files into nopCommerce plugin
           href: developer/plugins/resource-files.md
         - 
