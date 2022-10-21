@@ -177,7 +177,7 @@ Edit the attribute value details as follows:
 
 If the previous setting is *Associated to product*, the following fields will be displayed:
 
-- **Associated product** allows you to choose the product assotiated to this attribute. Use the **Associate a product** button to choose a product.
+- **Associated product** allows you to choose the product associated to this attribute. Use the **Associate a product** button to choose a product.
 
 > [!NOTE]
 >
