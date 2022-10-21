@@ -12,8 +12,7 @@ Products are the basis of an online store, and product management is a very impo
 The most important components of product management in nopCommerce are adding products, manufacturers, setting up product categories to make navigation easy, adding good product descriptions and appealing pictures, listing all possible product variants, defining product tags to make product search quick and effective.
 
 ## A catalog on the example of a live store
-In the following examples, we will use our demo store based on the "Nop Venture Theme" by Nop-Templates. Please find more about this third-party theme [here](https://www.nopcommerce.com/nop-venture-theme-14-plugins-nop-templatescom).
-To see the full demo store, visit the [demo site](https://frontend.nopcommerce.com/?choosetheme=2). 
+In the following examples, we will use our demo store based on the "Nop Venture Theme" by Nop-Templates. Please find more about this third-party theme [here](https://www.nopcommerce.com/nop-venture-theme-14-plugins-nop-templatescom). 
 
 There are some tips to help you create a well-designed catalog for your customers.
 
