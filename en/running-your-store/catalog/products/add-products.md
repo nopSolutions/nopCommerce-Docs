@@ -191,7 +191,7 @@ If the previous setting is *Associated to product*, the following fields will be
 - In the **Price adjustment** field, enter the price applied when choosing this attribute value. For example, '10' to add 10 dollars. Or 10% if **Price adjustment. Use percentage** is selected.
 - Select **Price adjustment. Use percentage**, which determines whether to apply a percentage to the product. If not enabled, a fixed value is used.
 - Use the **Weight adjustment** field to specify the weight adjustment applied when choosing this attribute value.
-- Specify the **Cost** field. The attribute value cost is the cost of all components that make up this value. This may be either the purchase price if the components are bought from thrird-party suppliers or the combined cost of materials and manufacturing processes if the component is made in-house.
+- Specify the **Cost** field. The attribute value cost is the cost of all components that make up this value. This may be either the purchase price if the components are bought from third-party suppliers or the combined cost of materials and manufacturing processes if the component is made in-house.
 - Select the **Is pre-selected** field if this attribute value should be preselected for the customer.
 - Enter the **Display order** of the attribute value. 1 represents the first item in the attribute value list.
 - Choose a **Picture** associated to this attribute value. This picture will replace the main product image when this product attribute value is clicked (selected).
