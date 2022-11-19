@@ -163,11 +163,11 @@ Download and unpack nopCommerce:
 ```cmd
 cd /var/www/nopCommerce450
 
-sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.50.3/nopCommerce_4.50.3_NoSource_linux_x64.zip
+sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.50.4/nopCommerce_4.50.4_NoSource_linux_x64.zip
 
 sudo apt-get install unzip
 
-sudo unzip nopCommerce_4.50.3_NoSource_linux_x64.zip
+sudo unzip nopCommerce_4.50.4_NoSource_linux_x64.zip
 ```
 
 Create couple directories to run nopCommerce:
