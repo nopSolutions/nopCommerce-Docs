@@ -24,7 +24,7 @@ The nopCommerce documentation is here to help you through the process of setting
 </div>
 <div class="quick-links">
  <div class="quick-item cloud-hosting">
-  <a href="/en/installation-and-upgrading/installing-nopcommerce/everleap-fully-managed-hosting"><h3>Private cloud</h3></a>
+  <a href="/en/installation-and-upgrading/installing-nopcommerce/everleap-fully-managed-hosting.html"><h3>Private cloud</h3></a>
   <p>Get a customized hosting infrastructure with the <a href="https://www.nopcommerce.com/private-cloud-hosting-solution?utm_source=docs_nopcommerce&utm_medium=documentation&utm_campaign=everleap-managed-solution">Fully-managed Private Cloud hosting</a> for mission-critical nopCommerce websites
 </p>
  </div>
