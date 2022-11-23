@@ -35,6 +35,9 @@
         -
           name: Pre-installed nopCommerce
           href: installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce.md
+        -
+          name: Fully-Managed Private Cloud Hosting by Everleap
+          href: installation-and-upgrading/installing-nopcommerce/everleap-fully-managed-hosting.md
     - 
       name: Upgrading nopCommerce
       href: installation-and-upgrading/upgrading-nopcommerce.md

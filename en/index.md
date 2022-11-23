@@ -22,7 +22,13 @@ The nopCommerce documentation is here to help you through the process of setting
 		<p>Choose a <a href="/en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company.html">hosting company</a> and install nopCommerce <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-local.html">locally</a>, on <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-windows.html">Windows</a>, <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure.html">Microsoft Azure</a> or <a href="/en/installation-and-upgrading/installing-nopcommerce/installing-on-linux.html">Linux</a></p>
 	</div>
 </div>
-
+<div class="quick-links">
+ <div class="quick-item cloud-hosting">
+  <a href="/en/installation-and-upgrading/installing-nopcommerce/everleap-fully-managed-hosting"><h3>Private cloud</h3></a>
+  <p>Get a customized hosting infrastructure with the <a href="https://www.nopcommerce.com/private-cloud-hosting-solution?utm_source=docs_nopcommerce&utm_medium=documentation&utm_campaign=everleap-managed-solution">Fully-managed Private Cloud hosting</a> for mission-critical nopCommerce websites
+</p>
+ </div>
+</div>
 
 <h2 class="click-links-title">Get started</h2>
 <div class="quick-links">

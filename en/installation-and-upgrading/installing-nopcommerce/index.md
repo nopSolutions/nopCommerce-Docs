@@ -16,3 +16,4 @@ Choose one of the following options:
 - [Installing on Microsoft Azure](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure)
 - [Installing on Linux](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-linux)
 - [Pre-installed nopCommerce](xref:en/installation-and-upgrading/installing-nopcommerce/pre-installed-nopcommerce)
+- [Fully-Managed Private Cloud Hosting by Everleap](xref:en/installation-and-upgrading/installing-nopcommerce/everleap-fully-managed-hosting)

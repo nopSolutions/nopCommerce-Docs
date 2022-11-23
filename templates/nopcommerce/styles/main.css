@@ -459,6 +459,11 @@ pre {
   background-position: 5px 1px;
   padding-left: 50px;
 }
+.quick-item.cloud-hosting h3 {
+  background-image: url(images/cloud-hosting.png);
+  background-position: 5px 1px;
+  padding-left: 50px;
+}
 .quick-item.manually h3 {
   background-image: url(images/customization-services.png);
   background-position: 0px 1px;
