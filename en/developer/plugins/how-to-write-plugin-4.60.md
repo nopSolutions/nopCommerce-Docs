@@ -162,19 +162,27 @@ public override async Task InstallAsync()
 
 Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
 
-If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following `RouteProvider` class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by *PayPal* plugin):
+If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following `RouteProvider` class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PayPalCommerceWebhook/WebhookHandler` URL :
 
 ```csharp
-public partial class RouteProvider : IRouteProvider
-{
-    public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
+public class RouteProvider : IRouteProvider
     {
-        //PDT
-        endpointRouteBuilder.MapControllerRoute("Plugin.Payments.PayPalStandard.PDTHandler", "Plugins/PaymentPayPalStandard/PDTHandler",
-                new { controller = "PaymentPayPalStandard", action = "PDTHandler" });
+        /// <summary>
+        /// Register routes
+        /// </summary>
+        /// <param name="endpointRouteBuilder">Route builder</param>
+        public void RegisterRoutes(IEndpointRouteBuilder endpointRouteBuilder)
+        {
+            endpointRouteBuilder.MapControllerRoute(PayPalCommerceDefaults.WebhookRouteName,
+                "Plugins/PayPalCommerce/Webhook",
+                new { controller = "PayPalCommerceWebhook", action = "WebhookHandler" });
+        }
+
+        /// <summary>
+        /// Gets a priority of route provider
+        /// </summary>
+        public int Priority => 0;
     }
-    public int Priority => -1;
-}
 ```
 
 ## Upgrading nopCommerce may break plugins
