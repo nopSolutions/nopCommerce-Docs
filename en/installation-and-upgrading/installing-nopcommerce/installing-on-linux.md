@@ -45,10 +45,8 @@ Update the products available for installation, then install the .NET runtime:
 ```cmd
 sudo apt-get update
 
-sudo apt-get install -y apt-transport-https aspnetcore-runtime-6.0
+sudo apt-get install -y apt-transport-https aspnetcore-runtime-7.0
 ```
-
-![nopCommerce installation](_static/installing-on-linux/net_core.png)
 
 > [!NOTE]
 >
@@ -59,8 +57,6 @@ You can see all installed .Net Core runtimes by the following command:
 ```cmd
 dotnet --list-runtimes
 ```
-
-![nopCommerce installation](_static/installing-on-linux/list_runtimes.png)
 
 ### Install MySql Server
 
@@ -119,7 +115,7 @@ server {
     listen 80 default_server;
     listen [::]:80 default_server;
 
-    server_name   nopCommerce-450.com;
+    server_name   nopCommerce.com;
 
     location / {
     proxy_pass         http://localhost:5000;
@@ -155,19 +151,19 @@ server {
 Create a directory:
 
 ```cmd
-mkdir /var/www/nopCommerce450
+mkdir /var/www/nopCommerce
 ```
 
 Download and unpack nopCommerce:
 
 ```cmd
-cd /var/www/nopCommerce450
+cd /var/www/nopCommerce
 
-sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.50.4/nopCommerce_4.50.4_NoSource_linux_x64.zip
+sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.60.0/nopCommerce_4.60.0_NoSource_linux_x64.zip
 
 sudo apt-get install unzip
 
-sudo unzip nopCommerce_4.50.4_NoSource_linux_x64.zip
+sudo unzip nopCommerce_4.60.0_NoSource_linux_x64.zip
 ```
 
 Create couple directories to run nopCommerce:
@@ -181,26 +177,26 @@ Change the file permissions:
 
 ```cmd
 cd ..
-sudo chgrp -R www-data nopCommerce450/
-sudo chown -R www-data nopCommerce450/
+sudo chgrp -R www-data nopCommerce/
+sudo chown -R www-data nopCommerce/
 ```
 
 ## Create the nopCommerce service
 
-Create the */etc/systemd/system/nopCommerce450.service* file with the following contents:
+Create the */etc/systemd/system/nopCommerce.service* file with the following contents:
 
 ```cmd
 [Unit]
 Description=Example nopCommerce app running on Xubuntu
 
 [Service]
-WorkingDirectory=/var/www/nopCommerce450
-ExecStart=/usr/bin/dotnet /var/www/nopCommerce450/Nop.Web.dll
+WorkingDirectory=/var/www/nopCommerce
+ExecStart=/usr/bin/dotnet /var/www/nopCommerce/Nop.Web.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=nopCommerce450-example
+SyslogIdentifier=nopCommerce-example
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
@@ -212,13 +208,13 @@ WantedBy=multi-user.target
 Start the service:
 
 ```cmd
-sudo systemctl start nopCommerce450.service
+sudo systemctl start nopCommerce.service
 ```
 
 Check the nopCommerce service status:
 
 ```cmd
-sudo systemctl status nopCommerce450.service
+sudo systemctl status nopCommerce.service
 ```
 
 ![nopCommerce installation](_static/installing-on-linux/status_nopCommerce.png)
@@ -247,4 +243,4 @@ sudo apt-get install libgdiplus
 
 ### SSL
 
-*If you want to use SSL on your site, don't forget to set the `UseHttpXForwardedProto` setting to **`true`** in the **appsettings.json** file*.
+*If you want to use SSL on your site, don't forget to set the `UseProxy` setting to **`true`** in the **appsettings.json** file*.
