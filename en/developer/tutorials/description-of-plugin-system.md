@@ -20,7 +20,7 @@ nopCommerce already has several plugins pre-built and available to use out of th
 
 ![image4](_static/description-of-plugin-system/image4.png)
 
-Here you can see three tabs. **All tab** contains all themes and extensions, **Themes tab** contains all nopCommerce themes which are for nopCommerce website skin, and lastly **Extensions tab** where we can find plugins. So go to the Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. On the right side, you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use the plugin, on its download page, so don't forget to read those descriptions.
+Here you can see three tabs. **All** tab contains all themes and extensions, **Themes** tab contains all nopCommerce themes which are for nopCommerce website skin, and lastly **Extensions** tab where we can find plugins. So go to the Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. On the right side, you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use the plugin, on its download page, so don't forget to read those descriptions.
 
 ## Interface `IPlugin`
 

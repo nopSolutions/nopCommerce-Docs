@@ -19,7 +19,7 @@ So, this tutorial will show you how to create a table that displays information 
 
 ## Create a nopCommerce plugin project
 
-I am assuming that you already know where and how to create a nopCommerce plugin project and configure the project according to nopCommerce standards. If you don't know then you can visit [this page](xref:en/developer/plugins/how-to-write-plugin-4.50) link to know how to create and configure the nopCommerce plugin project.
+I am assuming that you already know where and how to create a nopCommerce plugin project and configure the project according to nopCommerce standards. If you don't know then you can visit [this page](xref:en/developer/plugins/how-to-write-plugin-4.60) link to know how to create and configure the nopCommerce plugin project.
 
 If you have followed the above-provided link to create and configure your plugin project then you may end up with a folder structure like this.
 

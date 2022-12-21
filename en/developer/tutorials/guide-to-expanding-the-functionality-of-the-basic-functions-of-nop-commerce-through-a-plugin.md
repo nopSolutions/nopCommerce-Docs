@@ -57,7 +57,7 @@ After you create your project successfully open its `.csproj` file, for that rig
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
         <Copyright>SOME_COPYRIGHT</Copyright>
         <Company>YOUR_COMPANY</Company>
         <Authors>SOME_AUTHORS</Authors>
@@ -128,7 +128,6 @@ As previously mentioned, *Widget* is the same as a plugin but with extra feature
 First, we need to create a `ViewComponent`. Create a directory *Components* in the root of the project and create a **`ViewComponent`** class. We need to extend this class from the `NopViewComponent` base class.
 
 ```cs
-[ViewComponent(Name = "HelloWorldWidget")]
 public class ExampleWidgetViewComponent: NopViewComponent
 {
     public IViewComponentResult Invoke(string widgetZone, object additionalData)
@@ -138,7 +137,7 @@ public class ExampleWidgetViewComponent: NopViewComponent
 }
 ```
 
-Now go to class one that extends from `BasePlugin` we have previously created and is inherent from the `IWidgetPlugin` interface. This interface has two function declaration `GetWidgetZones` and `GetWidgetViewComponentName` which we need to implement in our class.
+Now go to class one that extends from `BasePlugin` we have previously created and is inherent from the `IWidgetPlugin` interface. This interface has two function declaration `GetWidgetZones` and `GetWidgetViewComponent` which we need to implement in our class.
 
 ```cs
 public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
@@ -149,13 +148,13 @@ public class HelloWorldPlugin: BasePlugin, IWidgetPlugin
     public bool HideInWidgetList => false;
 
     /// <summary>
-    /// Gets a name of a view component for displaying widget
+    /// Gets a type of a view component for displaying widget
     /// </summary>
     /// <param name="widgetZone">Name of the widget zone</param>
-    /// <returns>View component name</returns>
-    public string GetWidgetViewComponentName(string widgetZone)
+    /// <returns>View component type</returns>
+    public Type GetWidgetViewComponent(string widgetZone)
     {
-        return "HelloWorldWidget";
+        return typeof(ExampleWidgetViewComponent);
     }
     
     /// <summary>
