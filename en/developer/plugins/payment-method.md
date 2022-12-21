@@ -7,7 +7,7 @@ contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 
 # How to code my payment method
 
-Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.50](xref:en/developer/plugins/how-to-write-plugin-4.50) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
+Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.60](xref:en/developer/plugins/how-to-write-plugin-4.60) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
 
 So actually a payment method is an ordinary plugin that implements an **`IPaymentMethod`** interface (*Nop.Services.Payments namespace*). As you already guessed *IPaymentMethod* interface is used for creating payment method plugins. It contains some methods which are specific only for payment methods such as `ProcessPaymentAsync()` or `GetAdditionalHandlingFeeAsync()`. So, add a new payment plugin project (*class library*) to the solution, and let's get started.
 
@@ -21,22 +21,22 @@ The first thing you need to do is create a controller. This controller is respon
 
 ## Public view component.GetPublicViewComponent
 
-Then you have to create a view component for displaying the plugin in the public store. This view component and an appropriate view will define how your customers will see the payment information page during checkout. First, let's create a view component class. It should be placed in the *`/Components`* folder. Look how it's done for *PayPalStandard* plugin:
+Then you have to create a view component for displaying the plugin in the public store. This view component and an appropriate view will define how your customers will see the payment information page during checkout. First, let's create a view component class. It should be placed in the *`/Components`* folder. Look how it's done for *PayPalCommerce* plugin:
 
 ```csharp
-[ViewComponent(Name = "PaymentPayPalStandard")]
-public class PaymentPayPalStandardViewComponent : NopViewComponent
+public class PaymentInfoViewComponent : NopViewComponent
 {
-    public IViewComponentResult Invoke()
+    public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
     {
-        return View("~/Plugins/Payments.PayPalStandard/Views/PaymentInfo.cshtml");
+        ...
+        return View("~/Plugins/Payments.PayPalCommerce/Views/PaymentInfo.cshtml", model);
     }
 }
 ```
 
 **Invoke** method returns an appropriate `PaymentInfo` view from the */Views* folder of your plugin. Note that we use our custom NopViewComponent class as a base class instead of the existing built-in ViewComponent.
 
-Then let's create the `PaymentInfo` view which shows payment information. For the *PayPalStandard* plugin this view is pretty simple. There we just render text saying that a customer will be redirected to the payment page. But it's possible to create a more complex view component if needed. For example, if you want to collect customer's information on the payment information page look how it's already done in the `PayPalDirect` payment plugin.
+Then let's create the `PaymentInfo` view which shows payment information. There we just render text saying that a customer will be redirected to the payment page. But it's possible to create a more complex view component if needed. For example, if you want to collect customer's information on the payment information page look how it's already done in the `PayPalDirect` payment plugin.
 
 ## Payment processing
 
@@ -94,12 +94,11 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
     ```
 
 - **GetPaymentMethodDescriptionAsync**. This method gets a payment method description that will be displayed on checkout pages in the public store.
-- **GetPublicViewComponentName**. This method should return the name of the view component used to display public information for customers. We have created an appropriate view component in the previous step. For example:
 
     ```csharp
-    public string GetPublicViewComponentName()
+    public async Task<string> GetPaymentMethodDescriptionAsync()
     {
-        viewComponentName = "CheckMoneyOrder";
+        return await _localizationService.GetResourceAsync("Plugins.Payment.CheckMoneyOrderPaymentMethodDescription");
     }
     ```
 

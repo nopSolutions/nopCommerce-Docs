@@ -42,14 +42,7 @@ We won't delve into the purpose of tables and fields, since their names are self
 
     This is done intentionally so as not to overload the system with unnecessary connections, since these fields are not used in every online store.
 
-* Some of the user data is stored in the **GenericAttribute** table. By default, in this table we store the following data:
-  * First name
-  * Last name
-  * Gender
-  * Date of birthday
-  * Company
-  * Customer Address
-  * Phone
+* Some of the user data is stored in the **GenericAttribute** table. You can find all of them at `\src\Libraries\Nop.Core\Domain\Customers\NopCustomerDefaults.cs`.
 
     The structure of this table is presented below:
 
@@ -63,9 +56,9 @@ We won't delve into the purpose of tables and fields, since their names are self
 
     On the example of the XML string from the *Value* column we can see how exactly the attribute values are stored for a certain vendor:
 
-      ```csharp
+    ```csharp
     <Attributes><VendorAttribute ID="2"><VendorAttributeValue><Value>1</Value></VendorAttributeValue></VendorAttribute></Attributes>
-      ```
+    ```
 
     As you can see the vendor with ID 1 has only one vendor attribute filled. This attribute has ID 2 and its value is 1.
 
@@ -190,6 +183,6 @@ As you understand, the standard installation includes much more tables. We don't
 
 ## Database naming convention
 
-You may have noticed that the database uses a mixed approach to naming of tables and columns (with _ char, without _, CamelCase). Long time ago we used _ char. But now we've completely switched to using **CamelCase** notation. But we decide not to change names of the existing tables or columns because many of our users already could write a huge amount of their custom scripts that would inevitably stop working.
+You may have noticed that the database uses a mixed approach to naming of tables and columns (with `_` char, without `_`, CamelCase). Long time ago we used `_` char. But now we've completely switched to using **CamelCase** notation. But we decide not to change names of the existing tables or columns because many of our users already could write a huge amount of their custom scripts that would inevitably stop working.
 
 For backward compatibility with the new standards, we added the `INameCompatibility` interface which allows you to redefine the names of tables and columns for the correct mapping of objects with tables created according to the old naming standards. You can see the complete list of overrides in the [BaseNameCompatibility](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Data/Mapping/BaseNameCompatibility.cs) class from the `Nop.Data.Mapping` namespace.

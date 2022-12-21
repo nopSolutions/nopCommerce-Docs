@@ -11,7 +11,7 @@ In this tutorial, I'll be using the nopCommerce plugin architecture to implement
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.50](xref:en/developer/plugins/how-to-write-plugin-4.50)
+- [How to write a plugin for nopCommerce 4.60](xref:en/developer/plugins/how-to-write-plugin-4.60)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
@@ -209,7 +209,6 @@ using Nop.Web.Models.Catalog;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Components
 {
-    [ViewComponent(Name = "ProductViewTracker")]
     public class ProductViewTrackerViewComponent : NopViewComponent
     {
         private readonly ICustomerService _customerService;
@@ -280,13 +279,13 @@ namespace Nop.Plugin.Other.ProductViewTracker
         public bool HideInWidgetList => true;
 
         /// <summary>
-        /// Gets a name of a view component for displaying widget
+        /// Gets a type of a view component for displaying widget
         /// </summary>
         /// <param name="widgetZone">Name of the widget zone</param>
-        /// <returns>View component name</returns>
-        public string GetWidgetViewComponentName(string widgetZone)
+        /// <returns>View component type</returns>
+        public Type GetWidgetViewComponent(string widgetZone)
         {
-            return "ProductViewTracker";
+            return typeof(ProductViewTrackerViewComponent);
         }
 
         /// <summary>

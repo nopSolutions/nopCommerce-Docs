@@ -13,7 +13,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 1. First thing you need to do is to create a new *`Class Library`* project in the solution. It's a good practice to place all plugins into the `\Plugins` directory in the root of your solution (do not mix up with `\Plugins` subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into the `Plugins` solution folder.
 
-    A recommended name for a plugin project is **`Nop.Plugin.{Group}.{Name}`**. **`{Group}`** is your plugin group (for example, *Payment* or *Shipping*). **`{Name}`** is your plugin name (for example, *PayPalStandard*). For example, the PayPal Standard payment plugin has the following name: **`Nop.Plugin.Payments.PayPalStandard`**. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyGreatPlugin`.
+    A recommended name for a plugin project is **`Nop.Plugin.{Group}.{Name}`**. **`{Group}`** is your plugin group (for example, *Payment* or *Shipping*). **`{Name}`** is your plugin name (for example, *PayPalCommerce*). For example, the PayPal Commerce payment plugin has the following name: **`Nop.Plugin.Payments.PayPalCommerce`**. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyGreatPlugin`.
 
     ![p1](_static/how-to-write-plugin-4.60/write_plugin_4.60_1.jpg)
 

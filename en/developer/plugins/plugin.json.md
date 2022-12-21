@@ -13,18 +13,15 @@ contributors: git.cromatido
 
 ```json
 {
-    "Group": "Payment methods",
-    "FriendlyName": "PayPal Standard",
-    "SystemName": "Payments.PayPalStandard",
-    "Version": "1.49",
-    "SupportedVersions": [ "4.20" ],
-    "Author": "nopCommerce team",
-    "DisplayOrder": 1,
-    "FileName": "Nop.Plugin.Payments.PayPalStandard.dll",
-    "Description": "This plugin allows paying with PayPal Standard",
-    "LimitedToStores":"",
-    "LimitedToCustomerRoles":"",
-    "DependsOnSystemNames":"",
+  "Group": "Payment methods",
+  "FriendlyName": "PayPal Commerce",
+  "SystemName": "Payments.PayPalCommerce",
+  "Version": "1.16",
+  "SupportedVersions": [ "4.60" ],
+  "Author": "nopCommerce team",
+  "DisplayOrder": -1,
+  "FileName": "Nop.Plugin.Payments.PayPalCommerce.dll",
+  "Description": ""
 }
 ```
 
@@ -59,31 +56,31 @@ contributors: git.cromatido
 - The  **FixedOrByCountryStateZip** plugin has the following `plugin.json` file:
 
   ```json
-  {
-      "Group": "Tax Providers",
-      "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
-      "SystemName": "Tax. FixedOrByCountryStateZip",
-      "Version": "1.29",
-      "SupportedVersions": [ "4.20" ],
-      "Author": "nopCommerce team ",
-      "DisplayOrder": 1,
-      "FileName": "Nop.Plugin.Tax. FixedOrByCountryStateZip.dll",
-      "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes "
-  }
+    {
+        "Group": "Tax providers",
+        "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
+        "SystemName": "Tax.FixedOrByCountryStateZip",
+        "Version": "1.44",
+        "SupportedVersions": [ "4.60" ],
+        "Author": "nopCommerce team",
+        "DisplayOrder": 1,
+        "FileName": "Nop.Plugin.Tax.FixedOrByCountryStateZip.dll",
+        "Description": "This plugin allow to configure fix tax rates or tax rates by countries, states and zip codes"
+    }
   ```
 
 - The **Google Analytics** widget has the following *plugin.json* file:
 
   ```json
-      {
-          "Group": "Widgets",
-          "FriendlyName": "Google Analytics ",
-          "SystemName": "Widgets.GoogleAnalytics",
-          "Version": "1.62",
-          "SupportedVersions": [ "4.30" ],
-          "Author": "nopCommerce team, Nicolas Muniere",
-          "DisplayOrder": 1,
-          "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",
-          "Description": "This plugin integrates with Google Analytics. It   keeps track of statistics about the visitors and eCommerce conversion   on your website"
-      }
+    {
+        "Group": "Widgets",
+        "FriendlyName": "Google Analytics",
+        "SystemName": "Widgets.GoogleAnalytics",
+        "Version": "1.76",
+        "SupportedVersions": [ "4.60" ],
+        "Author": "nopCommerce team, Nicolas Muniere",
+        "DisplayOrder": 1,
+        "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",
+        "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about    the visitors and ecommerce conversion on your website"
+    }
   ```

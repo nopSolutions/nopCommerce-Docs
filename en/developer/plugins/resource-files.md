@@ -9,21 +9,21 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 To load resource files correctly you need to add its references into your plugin's view files.
 
-You can use `Html.AddScriptParts()` or `Html.AddCssFileParts()` helper methods.
+You can use `_nopHtmlHelper.AddScriptParts()` or `_nopHtmlHelper.AddCssFileParts()` helper methods by `INopHtmlHelper`.
 
-- `Html.AddCssFileParts()`
-- `Html.AddScriptParts()`
+- `_nopHtmlHelper.AddCssFileParts()`
+- `_nopHtmlHelper.AddScriptParts()`
 
 You can check into more details about this methods by going to its definition in your nopCommerce projects.
 
 ```csharp
 @{
      //Loading CSS file
-     Html.AddCssFileParts(ResourceLocation.Head, "~/Plugins/{PluginName}/Content/{CSSFileName.Css}");
+     _nopHtmlHelper.AddCssFileParts(ResourceLocation.Head, "~/Plugins/{PluginName}/Content/{CSSFileName.Css}", excludeFromBundle = false);
 
      //Loading js file
      //Third parameter value indicating whether to exclude this script from bundling
-     Html.AddScriptParts(ResourceLocation.Footer, "~/Plugins/{PluginName}/Scripts/{JSFileName.js}", true);
+     _nopHtmlHelper.AddScriptParts(ResourceLocation.Footer, "~/Plugins/{PluginName}/Scripts/{JSFileName.js}", excludeFromBundle: true);
 }
 ```
 

@@ -27,7 +27,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>net6.0</TargetFramework>
+            <TargetFramework>net7.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
