@@ -2,6 +2,7 @@
 title: Send an order confirmation email
 uid: en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email
 author: git.mariannk
+contributors: git.DmitriyKulagin
 ---
 
 # Send an order confirmation email
@@ -11,7 +12,8 @@ In this tutorial, you will learn how to create an order confirmation email templ
 ## Before getting started
 
 You will need the following:
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7). 
+
+* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 * Make sure that Sendinblue [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled in your account.
 * Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
 
@@ -98,6 +100,7 @@ In the *Drag & Drop Editor*, select your desired block that will display the ord
 ![Items](_static/send-an-order-confirmation-email/items.jpg)
 
 Now add the variables to your email template. In the example above, we have added:
+
 * `{{ item.name }}` - the name of the item
 * `{{ item.quantity }}` - the quantity of the item
 * `{{ item.price | floatformat: 2 }}` - the price of the item
@@ -115,6 +118,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 ## Creating the order confirmation workflow
 
 > [!NOTE]
+>
 > A customer has to be identified by their email address to trigger the workflow, that is, a customer should be logged in to their account on your nopCommerce store or enter their email address during checkout.
 
 Navigate to the [Automation](https://automation.sendinblue.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) tab of your Sendinblue account.
@@ -122,17 +126,22 @@ Navigate to the [Automation](https://automation.sendinblue.com/?tap_a=30591-fb13
 Click **+ CREATE A NEW WORKFLOW**, then select **Product Purchase** and follow the steps.
 
 1. **Step 1/3** — An event happens
-	* Select *Custom Event (Track Event)*.
-	* Type `order_completed`.
-	* Click **NEXT**.
-2. **Step 2/3** — Add a delay
-	* Choose a delay. For example, 5 seconds.
-	* Click **NEXT**.
-3. **Step 3/3** — Send an email
-	* From the dropdown list, select the email template you have just created and activated.
-	* Select **Use my event data to customize the email**.
-	* Select **The event data which triggered the workflow**.
-	* Click **FINISH**.
+
+   * Select *Custom Event (Track Event)*.
+   * Type `order_completed`.
+   * Click **NEXT**.
+
+1. **Step 2/3** — Add a delay
+
+   * Choose a delay. For example, 5 seconds.
+   * Click **NEXT**.
+
+1. **Step 3/3** — Send an email
+
+   * From the dropdown list, select the email template you have just created and    activated.
+   * Select **Use my event data to customize the email**.
+   * Select **The event data which triggered the workflow**.
+   * Click **FINISH**.
 
 ![Create workflow](_static/send-an-order-confirmation-email/create-workflow.gif)
 
@@ -153,4 +162,5 @@ The email received by Jean Blue at jean.blue@sendinblue.com will look like this:
 ![Email](_static/send-an-order-confirmation-email/email.jpg)
 
 ## Learn more
+
 * [Recover abandoned carts](xref:en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts)

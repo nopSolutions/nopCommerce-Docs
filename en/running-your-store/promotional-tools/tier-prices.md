@@ -13,7 +13,7 @@ Tier prices can be applied to a product on the product edit page. Go to **Catalo
 ![Tier prices](_static/tier-prices/tier.png)
 
 > [!NOTE]
-> 
+>
 > You need to save the product before you can add tier prices for the product page.
 
 ## Adding tier prices
@@ -32,7 +32,7 @@ You can now view the updated product details page in the public store:
 
 ![Tier price example](_static/tier-prices/TierPriceExample.jpg)
 
-When a customer adds a certain quantity of a product to their cart, the price will automatically change to reflect the discount. 
+When a customer adds a certain quantity of a product to their cart, the price will automatically change to reflect the discount.
 
 ## Tutorials
 

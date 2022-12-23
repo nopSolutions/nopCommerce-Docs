@@ -69,7 +69,7 @@ In the *Mappings* panel, define the following category information:
     > [!NOTE]
     >
     > Note that only discounts of the *assigned to categories* type are visible here. After discounts are mapped to the category, they are applied to all products in this category.
-
+    >
     > [!NOTE]
     >
     > If you want to use discounts, make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.

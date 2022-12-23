@@ -22,9 +22,10 @@ Select the required roles beside the *Permission* items. The selected roles will
 Click **Save**.
 
 > [!TIP]
-> 
+>
 > Example: We need a role called *Content manager*. The *Content manager* must have access to new products and manufacturers management, editing reviews on the site, blogs, campaigns, and no access to shopping carts.
 > To do this:
+>
 > 1. Create a **Customer role** called *Content manager* on the **Customers → Customer roles** page.
 > 1. In the ACL, select the checkboxes next to the following permissions: *Access admin area, Admin area. Manage blog, Admin area. Manage campaigns, Admin area. Manage forums, Admin area. Manage news, Admin area. Manage newsletter subscribers, Public store. Allow navigation, Public store. Display prices*.
 > 1. Save the changes.

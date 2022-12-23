@@ -18,6 +18,7 @@ Click **Add new** to add a new customer role. The *Add a new customer role* wind
 ![Add a new customer role](_static/customer-roles/customerroles2.png)
 
 Define the following information:
+
 * **Name** of the customer role.
 * Select **Active** to make this role active.
 * Select the **Free shipping** checkbox to enable customers with this role to get free shipping on their orders.
@@ -26,7 +27,7 @@ Define the following information:
   * *Including tax*
   * *Excluding tax*
 * Select the **Enable password lifetime** to force customers to change their passwords after a specified time.
-* **Purchased with product**. Click the **Choose product** button to choose a special product. A customer is added to this customer role once this product is purchased (paid). 
+* **Purchased with product**. Click the **Choose product** button to choose a special product. A customer is added to this customer role once this product is purchased (paid).
   > [!NOTE]
   >
   > In the case of refund or order cancellation, you must manually remove a customer from this role.

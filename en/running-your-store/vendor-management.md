@@ -43,18 +43,19 @@ In the *Vendor info* panel, define the following vendor's details:
 * **Admin comment** — an optional comment or information for internal use.
 
 > [!NOTE]
-> 
-> Some vendor message templates, such as *OrderPaid.VendorNotification* and *OrderPlaced.VendorNotification*, are disabled by default. See how to change this in the [Message templates](xref:en/running-your-store/content-management/message-templates) section. 
+>
+> Some vendor message templates, such as *OrderPaid.VendorNotification* and *OrderPlaced.VendorNotification*, are disabled by default. See how to change this in the [Message templates](xref:en/running-your-store/content-management/message-templates) section.
 
 ### Vendor attributes
 
-When you create some additional vendor attributes, the *Vendor attributes* panel will be displayed as well. 
+When you create some additional vendor attributes, the *Vendor attributes* panel will be displayed as well.
 
 A store owner is able to create attributes for a vendor, much like for a product. This would allow multi-vendor stores to collect and display more information about a vendor to customers.
 
  Learn more about vendor attributes and how to create them in the [Vendor attributes](#vendor-attributes) section below.
 
 ### Address (optional)
+
 In the *Address (optional)* panel, enter the vendor's address.
 
 ![Address (optional)](_static/vendor-management/address.jpg)
@@ -90,7 +91,7 @@ Create a new customer or click **Edit** beside a customer record you want to ass
 
 * In the *Customer info* panel, ensure the *Vendors* customer role is selected in the **Customer roles** field.
   > [!NOTE]
-  > 
+  >
   > A vendor customer account cannot belong to the default *Administrators* customer role.
 
 * In the *Customer info* panel, find the **Manager of vendor** field. Select the vendor record created previously.
@@ -100,9 +101,8 @@ Create a new customer or click **Edit** beside a customer record you want to ass
 After the vendor's customer account is set up, the vendor can use this customer account to manage products, orders, shipments and view reports. The *Administration* link at the top of the public store will be displayed after logging in.
 
 > [!TIP]
-> 
+>
 > [YouTube tutorial: Managing vendors](https://www.youtube.com/watch?v=MH6r6tqfLF8&list=PLnL_aDfmRHwsbhj621A-RFb1KnzeFxYz4&index=9)
-
 
 ## Vendor settings
 
@@ -111,15 +111,16 @@ This section describes how to define the vendor settings of your store. This inc
 Go to **Configuration → Settings → Vendor settings**.
 
 This page enables multi-store configuration; it means that the same settings can be defined for all stores or differ from store to store. If you want to manage settings for a certain store, choose its name from the multi-store configuration dropdown list and select all the checkboxes needed on the left to set custom values for them. For further details, refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
-	
+
 ### Common
 
 In the *Common* panel, define the following vendor settings:
 ![Common](_static/vendor-management/vendorsettings1.png)
 
 * **Allow customers to apply for vendor account**. Firstly, a vendor request is filled by a user, thus creating a vendor account. Then, the request is presented to the store owner (via email notification) to be accepted.
+
   > [!NOTE]
-  > 
+  >
   > A store owner has to add an appropriate customer record to the "Vendors" role manually in order to grant access to the admin area. Read about it in the [Assigning a vendor to a customer record](#assigning-a-vendor-to-a-customer-record) section above.
 
   * If the previous checkbox is selected, you can select **Terms of service** to require vendors to accept terms of service during registration.
@@ -144,25 +145,27 @@ In the *Catalog* panel, define the following vendor settings:
 * Choose whether to **Show vendor name on order details page** (if associated).
 * **Number of vendors to display** in the vendor navigation block in the admin area.
 
-### Vendor attributes
+### *Vendor attributes*
 
 You can create any number of vendor attributes, such as business name or website.
 
 ![Vendor attributes](_static/vendor-management/vendorsettings3.png)
 
 #### Add a new attribute
+
 Click **Add new** to create a new vendor attribute and its values. The *Add new vendor attribute* window will be displayed as follows:
 
 ![Add new](_static/vendor-management/vendorsettings4.png)
 
 In the *Attribute info* panel, define the following information:
+
 * **Name** — the name of the vendor attribute.
 * **Required** — when an attribute is required, vendors must choose an appropriate attribute value before they can continue.
 * From the **Control type** dropdown list, select the required method for displaying the attribute value: *Drop-down list, Radio button list, Checkbox, Textbox, Multiline textbox, Read-only checkbox*.
 * **Display order** — the vendor attribute display order.
 
 > [!NOTE]
-> 
+>
 > Dropdown lists, radio lists, checkboxes, and read-only checkboxes require the store owner to define values. Textbox and multiline textbox control types do not require the store owner to define values since vendors will be required to fill these textbox fields.
 
 Click **Save and continue edit** to proceed to the *Values* panel.

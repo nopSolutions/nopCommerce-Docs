@@ -52,7 +52,7 @@ If you already have a PayPal account, just proceed to the [next section](#3-set-
 1. Click this button and you will see the following pop-up window allowing you to fill in some data and register an account:
 
     ![PayPal Commerce configuration page](_static/paypal-commerce/popup-form-first-page.png)
-    
+
     You should pass through a few steps to fill in all the required data. The last one will ask you to confirm your email to activate your account.
 
 ### 3. Set up the Paypal Developer Dashboard

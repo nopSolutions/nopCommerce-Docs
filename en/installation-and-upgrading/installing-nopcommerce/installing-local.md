@@ -2,7 +2,7 @@
 title: Installing local
 uid: en/installation-and-upgrading/installing-nopcommerce/installing-local
 author: git.AndreiMaz
-contributors: git.IvanIvanIvanov, git.mariannk
+contributors: git.IvanIvanIvanov, git.mariannk, git.DmitriyKulagin
 ---
 
 # Installing local
@@ -110,10 +110,13 @@ In the *Database information* panel, you need to enter the following info:
 Click **Install** to start the installation process. When the setup process is complete, your new site's home page will be displayed.
 
 > [!NOTE]
+>
 > The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
-
+>
 > [!NOTE]
+>
 > If you are using nopCommerce 3.90 or below, ensure that your application pool is set to the *Integrated* mode.
-
+>
 > [!NOTE]
+>
 > If you want to completely reset a nopCommerce site to its default settings, you can delete the **ConnectionStrings** section from the `dataSettings.json` file located in the `App_Data` directory. You can even delete the whole `dataSettings.json` file but note that in this case, it will be recovered on the next run with default values, so you can lose your settings.

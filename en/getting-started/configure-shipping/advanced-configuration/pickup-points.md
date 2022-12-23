@@ -2,7 +2,7 @@
 title: Pickup points
 uid: en/getting-started/configure-shipping/advanced-configuration/pickup-points
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.exileDev, git.mariannk, git.DmitriyKulagin
 ---
 
 # Pickup points
@@ -10,7 +10,7 @@ contributors: git.exileDev, git.mariannk
 Pickup point is an option providing customers the flexibility to select where they can receive parcels.
 
 > [!NOTE]
-> 
+>
 > This option is only available when the checkbox **"Pick up in store" enabled** is selected on the shipping settings page (**Configuration → Settings → Shipping settings**).
 
 To manage pickup point providers:

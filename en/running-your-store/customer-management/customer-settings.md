@@ -28,6 +28,7 @@ To define customer settings, go to **Configuration → Settings → Customer set
 ![common](_static/customer-settings/customersettings1.png)
 
 Define the common customer settings as follows:
+
 * Select the **Registration method** as follows:
   * **Standard account creation**: users are enabled to register; no approval is required.
   * **Email validation is required after registration**: users are enabled to register; however, they must accept the confirmation email sent to them before their account is approved.
@@ -43,10 +44,10 @@ Define the common customer settings as follows:
 * Choose whether to **Allow customers to select time zone** in the public store on the accounts page. Otherwise, the default time zone is used.
 * Select the **Default store time zone** from the dropdown list.
    > [!NOTE]
-   > 
+   >
    > The current time zone is displayed automatically.
- 
- * Select the **Allow customers to remove associations** to allow customers to remove external authentication associations.
+
+* Select the **Allow customers to remove associations** to allow customers to remove external authentication associations.
 
 ## Password and security
 
@@ -59,7 +60,7 @@ Define the common customer settings as follows:
   * *Hashed*
   * *Encrypted*
   > [!NOTE]
-  > 
+  >
   > This setting is for storing customers' passwords and will only be applied to newly registered customers.
 
 * In **Password lifetime**, enter the number of days for password expiration.
@@ -76,10 +77,10 @@ Define the common customer settings as follows:
 
 ![Account](_static/customer-settings/account.jpg)
 
-* Select the **'Usernames' enabled** checkbox to enable using usernames for login and registration instead of emails. 
+* Select the **'Usernames' enabled** checkbox to enable using usernames for login and registration instead of emails.
   > [!NOTE]
   >
-  > It is not recommended to change this option in the production environment. 
+  > It is not recommended to change this option in the production environment.
   
   When the **'Usernames' enabled** checkbox is selected, the following options will be displayed:
   * **Allow customers to change their usernames**: select this option if customers are allowed to change their usernames.
@@ -117,6 +118,7 @@ Define the common customer settings as follows:
 * Select the **Show customers join date** checkbox if required.
 
 ## Customer form fields
+
 In the *Customer form fields* panel, define whether the following form fields are enabled in the system:
 
 ![customerformfields](_static/customer-settings/customersettings5.png)
@@ -136,15 +138,17 @@ In the *Customer form fields* panel, define whether the following form fields ar
 * **'Phone number' enabled.** When enabled, you can also decide whether this field should be required.
 * **'Fax number' enabled.** When enabled, you can also decide whether this field should be required.
 * Select the **'Accept privacy policy' enabled** checkbox to request customers to accept the privacy policy during the registration.
-* Select the **'Newsletter' enabled** checkbox to offer customers a newsletter subscription during the registration. 
+* Select the **'Newsletter' enabled** checkbox to offer customers a newsletter subscription during the registration.
   * When the **'Newsletter' enabled** checkbox is selected, the **Newsletter ticked by default** checkbox will be displayed. This automatically sets the 'Newsletter' checkbox on the registration page as selected.
 
-### Custom customer attributes 
+### Custom customer attributes
+
 If the default form fields are not enough for your requirements, you can manage additional customer attributes using this table. Customer attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout attributes](xref:en/running-your-store/order-management/checkout-attributes).
 
 ![Custom customer attributes](_static/customer-settings/customersettings6.png)
 
 ## Address form fields
+
 In the *Address form fields* panel, a store owner can manage the address form fields available during the registration. You can select which fields are enabled and required among the following:
 
 ![Address form fields](_static/customer-settings/customersettings7.png)
@@ -161,8 +165,9 @@ In the *Address form fields* panel, a store owner can manage the address form fi
 * **'Fax number' enabled.** When enabled, you can also decide whether this field should be required.
 
 ### Custom address attributes
+
 > [!NOTE]
-> 
+>
 > If the default address fields are not enough for your requirements, you can manage additional address attributes using this table. Address attributes are created in the same manner as checkout attributes. For further details, refer to [Checkout Attributes](xref:en/running-your-store/order-management/checkout-attributes).
 
 ![Custom address attributes](_static/customer-settings/customersettings8.png)

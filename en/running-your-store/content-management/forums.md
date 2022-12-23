@@ -10,7 +10,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 A forum is an online discussion site where people can hold conversations in the form of posted messages. A forum may contain a number of subforums, each having several topics.
 
 > [!NOTE]
-> 
+>
 > In nopCommerce, forums are disabled by default. To enable forums, go to **Configuration → Settings → Forum settings** and select the **Forums enabled** checkbox. The "Forums" link should be displayed in the menu in the public store (top menu or footer in the default theme).
 
 To manage forum groups and forums (inside forum groups), go to **Content management → Forums**.
@@ -50,9 +50,11 @@ To access forum settings, go to **Configuration → Settings → Forum settings*
 This page enables multi-store configuration; it means that the same settings can be defined for all stores or differ from store to store. If you want to manage settings for a certain store, choose its name from the multi-store configuration dropdown list and select all the checkboxes needed on the left to set custom values for them. For further details, refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
 ### Common
+
 ![Common settings](_static/forums/common.jpg)
 
 Define the following forum settings in the *Common* panel:
+
 - Enable forums by selecting the **Forums enabled** checkbox.
 - Select the **Relative date and time formatting** checkbox to enable the relative date and time (for example, 2 hours ago, 1 day ago).
 - You can give an opportunity to specify customers' signatures by selecting **Signature enabled**.
@@ -61,13 +63,15 @@ Define the following forum settings in the *Common* panel:
   - Simple textbox.
   - BBCode editor.
   > [!NOTE]
-  > 
+  >
   > It is not recommended to change the forum editor type in the production environment.
 
 ### Permissions
+
 ![Permissions settings](_static/forums/permissions.jpg)
 
 Define the following forum settings in the *Permissions* panel:
+
 - **Allow guests to create posts**.
 - **Allow guests to create topics**.
 - **Allow customers to edit posts**.
@@ -80,18 +84,22 @@ Define the following forum settings in the *Permissions* panel:
   - Select the **Notify about private messages** if a customer should be notified via email about a new private message.
 
 ### Page sizes
+
 ![Page sizes settings](_static/forums/page-sizes.jpg)
 
 Define the following forum settings in the *Page sizes* panel:
+
 - **Topics page size** — the page size for topics in forums, for example, '10' topics per page.
 - **Posts page size** — the page size for posts in topics, for example, '10' posts per page.
 - **Search results page size** — the page size for search results, for example, '10' results per page.
 - **Active discussions page size** – the page size for the active discussions page, for example, '10' results per page.
 
 ### Feeds
+
 ![Feeds settings](_static/forums/feeds.jpg)
 
 Define the following forum settings in the *Feeds* panel:
+
 - Select the **Forum feeds enabled** checkbox to enable RSS feeds for each forum.
 - In the **Forum feed count** field, set the number of topics to be included in each feed.
 - Select the **Active discussions feed enabled** checkbox to enable RSS feeds for active discussion topics.

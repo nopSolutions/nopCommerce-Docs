@@ -18,7 +18,9 @@ Click **Add new** and fill in the information about the new blog post.
 ![Add a new blog post](_static/blog/add-new.jpg)
 
 ### Info
+
 In the *Info* panel, define the following blog post details:
+
 * If more than one language is enabled, from the **Language** dropdown list, select the language of this blog post. Customers will only see blog posts in their selected language.
 * Enter the **Title** of this blog post.
 * Enter the **Body** text of this blog post.
@@ -31,24 +33,25 @@ In the *Info* panel, define the following blog post details:
 * Enter the **Start date** and **End date** for displaying this blog post in Coordinated Universal Time (UTC).
 
  > [!NOTE]
- > 
+ >
  > You can leave these fields empty if you do not want to define the blog post's start and end dates.
 
-- Choose the stores in the **Limited to stores** field to enable this blog post for specific stores only. Leave the field empty in case this functionality is not required.
+* Choose the stores in the **Limited to stores** field to enable this blog post for specific stores only. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+ > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 While editing an existing blog post or after clicking the **Save and continue edit** button for a new one, you can click the **Preview** button in the top right to see how the blog post will appear on the site.
 
 ### SEO
+
 In the *SEO* panel, define the following blog post details:
 ![SEO for blog posts](_static/blog/blog4.jpg)
 
-- Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the blog post.
-- Override the page title in the **Meta title** field (the default title is the title of the blog post).
-- Enter **Meta keywords** to be added to the blog post's header. They represent a brief and concise list of the most important themes on the page.
-- Enter **Meta description** to be added to the blog post's header. The meta description tag is a brief and concise summary of the page content.
+* Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the blog post.
+* Override the page title in the **Meta title** field (the default title is the title of the blog post).
+* Enter **Meta keywords** to be added to the blog post's header. They represent a brief and concise list of the most important themes on the page.
+* Enter **Meta description** to be added to the blog post's header. The meta description tag is a brief and concise summary of the page content.
 
 ## Manage blog comments
 
@@ -70,6 +73,7 @@ This page enables multi-store configuration; it means that the same settings can
 ### Common
 
 Define the following *Common* settings:
+
 * Select the **Blog enabled** checkbox to enable the blog functionality in your store.
 * In the **Posts page size** field, set the number of posts per page.
 * In the **Number of tags (cloud)** field, enter the number of tags that appear in the tag cloud.
@@ -78,6 +82,7 @@ Define the following *Common* settings:
 ### Blog comments
 
 Define the following *Blog comments* settings:
+
 * Select the **Allow guests to leave comments** checkbox to enable nonregistered users to add comments to the blog.
 * Select the **Blog comments must be approved** checkbox if blog comments must be approved by the administrator.
 * Select the **Notify about new blog comments** checkbox to notify the store owner about new blog comments.

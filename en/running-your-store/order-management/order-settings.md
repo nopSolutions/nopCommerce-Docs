@@ -7,13 +7,14 @@ contributors: git.DmitriyKulagin, git.exileDev, git.mariannk
 
 # Order settings
 
-To define order settings, go to **Configuration → Settings → Order settings**. The *Order settings* window will be displayed. 
+To define order settings, go to **Configuration → Settings → Order settings**. The *Order settings* window will be displayed.
 
 This page enables multi-store configuration; it means that the same settings can be defined for all stores or differ from store to store. If you want to manage settings for a certain store, choose its name from the multi-store configuration dropdown list and select all the checkboxes needed on the left to set custom values for them. For further details, refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
 In this window, you can define the following order settings:
 
 ## Checkout
+
 Define the following settings in the *Checkout* panel:
 ![Checkout](_static/order-settings/checkout.jpg)
 
@@ -28,6 +29,7 @@ Define the following settings in the *Checkout* panel:
 * **Display "Pickup in store" on "Shipping method" page** or on the shipping address page.
 
 ## Order totals
+
 Define the following settings in the *Order totals* panel:
 ![Totals](_static/order-settings/totals.jpg)
 
@@ -37,6 +39,7 @@ Define the following settings in the *Order totals* panel:
 * **Auto update order totals** to have the order totals automatically updated on editing an order in the admin area (currently in BETA testing).
 
 ## Common
+
 Define the following settings in the *Common* panel:
 ![Common](_static/order-settings/common.jpg)
 
@@ -48,6 +51,7 @@ Define the following settings in the *Common* panel:
 * **Allow admins to buy "Call for price" products** to allow administrators (in impersonation mode) to buy products marked as "Call for price."
 
 ## PDF invoice
+
 Define the following settings in the *PDF invoice* panel:
 ![PDF invoice](_static/order-settings/pdf-invoice.jpg)
 
@@ -60,6 +64,7 @@ Define the following settings in the *PDF invoice* panel:
 > Learn how to set up PDF in the [PDF settings](xref:en/getting-started/advanced-configuration/pdf-settings) chapter.
 
 ## Gift cards
+
 Define the following settings in the *Gift cards* panel:
 ![Gift cards](_static/order-settings/gift-cards.jpg)
 
@@ -69,6 +74,7 @@ Define the following settings in the *Gift cards* panel:
 * **Delete gift card usage history after order cancellation** to delete gift card usage history after an order is canceled.
 
 ## Return request settings
+
 In the *Return request settings* panel, you can set up return requests. For more details, see the [Return request settings](xref:en/running-your-store/order-management/return-requests#return-request-settings) section.
 
 ## See also

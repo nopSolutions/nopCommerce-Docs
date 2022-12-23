@@ -2,6 +2,7 @@
 title: Sendinblue integration
 uid: en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin
 author: git.mariannk
+contributors: git.DmitriyKulagin
 ---
 
 # Set up Sendinblue plugin
@@ -38,6 +39,7 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
 ### What data is synced?
 
 The following form fields are synced as contact attributes:
+
 * EMAIL
 * FIRSTNAME
 * LASTNAME
@@ -62,6 +64,7 @@ The following form fields are synced as contact attributes:
 > For the sync, note that these form fields need to be enabled for customers. Go to **Configuration → Settings → Customer settings → Customer form fields**.
 
 Order data is synced as transactional attributes:
+
 * ORDER_ID: ID of the order
 * ORDER_PRICE: amount of the order
 * ORDER_DATE: date of the order
@@ -93,16 +96,19 @@ You should then be able to see the email notification list. This lists all the t
 ![Notification list](_static/set-up-sendinblue-plugin/email-list.jpg)
 
 For each template, you can:
+
 * Choose if it is active or inactive.
 * Choose between the default nopCommerce template and a Sendinblue template. To do this:
-	1. Click the **Edit** button
-	1. From the dropdown, choose your template
-	1. Click **Update**
+
+ 1. Click the **Edit** button
+ 1. From the dropdown, choose your template
+ 1. Click **Update**
+
 * Edit its content.
 
 > [!NOTE]
 >
-> If you *have selected* the **Sendinblue email template**, then click **Edit template** to edit the content of your template on your Sendinblue account. 
+> If you *have selected* the **Sendinblue email template**, then click **Edit template** to edit the content of your template on your Sendinblue account.
 If you *haven't selected* the **Sendinblue email template**, then clicking **Edit template** will redirect you to the message template edit page in the nopCommerce admin area. Read more about the message template editing process [here](xref:en/running-your-store/content-management/message-templates). You can also send a test email from that page to check the content. Note that an email credit will be used for each test email.
 
 ## Sending SMS

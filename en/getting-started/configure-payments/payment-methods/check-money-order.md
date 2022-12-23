@@ -38,22 +38,22 @@ You can limit any payment method to store and customer role. This means that the
 
 1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case, it's **Check/money order**. To find it faster, use the *Search* panel at the top of the page and search by **Plugin name** or **Group** using the *Payment methods* option.
 
-![Plugins](_static/check-money-order/plugin.jpg)
+   ![Plugins](_static/check-money-order/plugin.jpg)
 
 1. Click the **Edit** button, and the *Edit plugin details* window will be displayed as follows:
 
-![Plugins](_static/check-money-order/edit.jpg)
+   ![Plugins](_static/check-money-order/edit.jpg)
 
-2. You can set up the following limits:
+1. You can set up the following limits:
 
-	* In the **Limited to customer roles** field, choose one or several customer roles, that is, administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
+   * In the **Limited to customer roles** field, choose one or several customer roles, that is, administrators, vendors, guests, who will be able to use this plugin. If you don't need this option just leave this field empty.
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+      > [!Important]
+      > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
 
-	* Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option, just leave this field empty.
+   * Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option, just leave this field empty.
 
-		> [!Important]
-		> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+      > [!Important]
+      > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
-	Click **Save**.
+ Click **Save**.

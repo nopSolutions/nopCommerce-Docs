@@ -2,6 +2,7 @@
 title: Installing on Windows
 uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-windows
 author: git.mariannk
+contributors: git.DmitriyKulagin
 ---
 
 # Installing on Windows
@@ -72,7 +73,9 @@ In the *Database information* panel, you need to enter the following info:
 Click **Install** to start the installation process. When the setup process is complete, your new site's home page will be displayed.
 
 > [!NOTE]
+>
 > The **Restart installation** button at the bottom of the installation page enables you to restart the installation process in case anything goes wrong.
-
+>
 > [!IMPORTANT]
+>
 > If you want to completely reset a nopCommerce site to its default settings, you can delete the `appsettings.json` file from the `App_Data` directory.

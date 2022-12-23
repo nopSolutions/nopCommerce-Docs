@@ -2,7 +2,7 @@
 title: Nivo slider
 uid: en/getting-started/design-your-store/nivo-slider
 author: git.AndreiMaz
-contributors: git.exileDev
+contributors: git.exileDev, git.DmitriyKulagin
 ---
 
 # Nivo slider plugin
@@ -19,7 +19,7 @@ Click **Edit** beside the Nivo slider plugin. The window will be expanded as fol
 
 ![Nivo Edit](_static/nivo-slider/nivo-slider-edit.png)
 
-Select the **Is active** checkbox to enable the plugin. 
+Select the **Is active** checkbox to enable the plugin.
 
 Click **Configure**. The *Configure – Nivo slider* window will be displayed as follows:
 
@@ -32,7 +32,7 @@ Perform the following for each slide you would like to upload:
 * In the **Image alternate text** field, enter the alternate text that will be added to the image.
 * In the **URL** field, enter the required URL or leave it empty if you do not want the picture to be clickable.
 
-Click **Save**. 
+Click **Save**.
 
 Now you can go to the home page of your public store and the updated image slider:
 ![Homepage](_static/nivo-slider/homepage.jpg)

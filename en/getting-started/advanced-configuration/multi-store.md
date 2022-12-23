@@ -54,7 +54,7 @@ Once the installation and technical setup are done, you can manage your stores f
 ![Stores window](_static/multi-store/mainstore.png)
 
 > [!NOTE]
-> 
+>
 > By default, only one store is created.
 
 To set up several stores, click **Add new** and define the following store settings:
@@ -68,7 +68,7 @@ To set up several stores, click **Add new** and define the following store setti
   > [!IMPORTANT]
   >
   > Only select this option after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
-
+  >
   > [!TIP]
   >
   > Read more about setting SSL up in the following chapter: [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification).
@@ -89,7 +89,7 @@ The two stores have now been configured using a single nopCommerce installation:
 * www.store2.com
 
 > [!NOTE]
-> 
+>
 > The multi-store solution (distinction of stores by HTTP_HOST) does not work for sites in virtual directories on the same domain.
 
 For example, you cannot have one store on `http://www.site.com/store1` and the second store on `http://www.site.com/store2` since the HTTP_HOST value for both sites is the same (`www.site.com`).

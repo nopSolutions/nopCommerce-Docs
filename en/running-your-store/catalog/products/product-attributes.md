@@ -18,7 +18,7 @@ To define product attributes, go to **Catalog → Attributes → Product attribu
 ![Product attributes](_static/product-attributes/product_attributes.png)
 
 > [!NOTE]
-> 
+>
 > By default, there are no product attributes precreated in nopCommerce.
 
 ## Adding product attributes
@@ -32,7 +32,7 @@ In the *Add a new product attribute* window, fill the **Name** and **Description
 Click **Save and continue edit** to proceed to the *Predefined values* editing panel.
 
 > [!TIP]
-> 
+>
 > [YouTube tutorial: Adding a product with color attributes](https://youtu.be/QihipwQ61YU)
 
 ## Adding predefined values
@@ -54,12 +54,12 @@ In the *Add a new value* window, define:
 After filling the fields, click **Save**.
 
 > [!TIP]
-> 
-> It's not necessary to create attribute values when adding the product attribute; you can create them later when applying a certain product attribute to the product. 
+>
+> It's not necessary to create attribute values when adding the product attribute; you can create them later when applying a certain product attribute to the product.
 > Once the attributes and values are set, they can be grouped and managed in the *Product attributes* panel on the product edit page.
-
+>
 > [!NOTE]
-> 
+>
 > Some store owners prefer to highlight products differentiated by attributes and create a separate product with each specific attribute (for example, separately listed blue T-shirts and red T-shirts). In this case, we recommend creating a grouped product (shirts, as in the example) in order for all the variations to be displayed on the same page once the grouped product is being viewed by a customer. Read more about [grouped products](xref:en/running-your-store/catalog/products/grouped-products-variants).
 
 ## Used by products panel

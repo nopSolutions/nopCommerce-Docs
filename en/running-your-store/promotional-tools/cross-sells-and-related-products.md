@@ -12,7 +12,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.IvanIvanIvanov, git.mariannk
 You can set up cross-sells and related products when creating or editing a product on the product edit page. Go to **Catalog → Products**, select a product, and click **Edit**. Find the *Cross-sells* and *Related products* panels.
 
 > [!NOTE]
-> 
+>
 > You need to save the product before you can add cross-sells and related products.
 
 ## Cross-sells

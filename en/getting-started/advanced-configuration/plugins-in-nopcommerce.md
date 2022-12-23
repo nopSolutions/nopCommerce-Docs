@@ -16,7 +16,7 @@ The plugins on the marketplace can be sorted by category, version, name or ratin
 The plugins available on the marketplace are developed by the nopCommerce team, solution partners or third-party vendors.
 
 > [!NOTE]
-> 
+>
 > Plugins labeled "By nopCommerce team" are developed by the nopCommerce team and distributed freely. Third-party services connectors are developed within the *technology partnership program*; they are subject to the nopCommerce [premium support services](http://www.nopcommerce.com/nopcommerce-premium-support-services) and distributed freely as well.
 
 ## To install a plugin
@@ -26,7 +26,7 @@ The plugins available on the marketplace are developed by the nopCommerce team, 
     * Upload the plugin or theme using the **Upload plugin or theme** button indicating the path to the location of the archive with the plugin in your local storage.
 
     > [!TIP]
-    > 
+    >
     > You can download more nopCommerce plugins in our [extensions directory](https://www.nopcommerce.com/marketplace).
 
     ![Upload plugin](_static/plugins-in-nopcommerce/plugin-upload.png)
@@ -37,7 +37,7 @@ The plugins available on the marketplace are developed by the nopCommerce team, 
 1. The plugin will be displayed in the plugins list (**Configuration → Local plugins**).
 
     > [!NOTE]
-    > 
+    >
     > If you're running nopCommerce in medium trust, then it's recommended to clear your `\Plugins\bin\` directory.
 
 ## To configure a plugin
@@ -68,5 +68,5 @@ The plugins available on the marketplace are developed by the nopCommerce team, 
 
 ## Tutorials
 
-- [Installing a plugin (for versions 3.90 - 4.10)](https://youtu.be/eLDsSm-4gKA)
-- [Managing access to plugins per customer role](https://www.youtube.com/watch?v=52lVVpQ3Qag)
+* [Installing a plugin (for versions 3.90 - 4.10)](https://youtu.be/eLDsSm-4gKA)
+* [Managing access to plugins per customer role](https://www.youtube.com/watch?v=52lVVpQ3Qag)

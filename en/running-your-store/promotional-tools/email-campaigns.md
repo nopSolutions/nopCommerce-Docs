@@ -16,7 +16,7 @@ Use your subscribers list to create email campaigns to easily and quickly reach 
 There are several examples of email marketing campaigns you can use for your store: start with a welcome email that thanks for the subscription, regularly send out announcements, news regarding your company, coupons for future purchasing, and much more.
 
 > [!NOTE]
-> 
+>
 > There are no campaigns available by default, so you can create them from scratch in order to follow your own marketing strategy.
 
 To manage campaigns, go to **Promotions → Campaigns**.
@@ -57,7 +57,6 @@ Then enter your email address in the **Send test email to** field and click **Se
 
 After you make sure that everything is OK, send your campaign to customers using the **Send mass email** button.
 
-
 ## Newsletter subscribers
 
 During registration, a customer can select the *Newsletter* option to receive a newsletter from your store:
@@ -78,6 +77,7 @@ You can click **Import from CSV** to import subscriber lists in CSV format. Ensu
 ## Searching for the subscribers
 
 On the *Newsletter subscribers* page, you can find certain subscribers using the following fields for search:
+
 - Enter the **Email** of the subscriber to find or leave this field empty to load all the newsletter subscribers registered in the system.
 - Specify **Start date** and **End date** when a customer subscribed.
 - From the **Active** dropdown list, choose between *Active* and *Not active* subscribers or load *All*.

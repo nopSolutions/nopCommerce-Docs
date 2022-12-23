@@ -2,7 +2,7 @@
 title: Schedule tasks
 uid: en/running-your-store/system-administration/schedule-tasks
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.exileDev, git.mariannk, git.DmitriyKulagin
 ---
 
 # Schedule tasks
@@ -16,6 +16,7 @@ To edit a scheduled task, click the **Edit** button beside the task. The window 
 ![Schedule tasks - Edit](_static/schedule-tasks/schedule-tasks-edit.png)
 
 You can edit the scheduled task as follows:
+
 * Edit the **Name**.
 * Edit the number of **Seconds (run period)**. A task period should not exceed 24 days.
 * Select the **Enabled** checkbox in order to enable the task.

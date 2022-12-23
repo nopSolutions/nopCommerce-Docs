@@ -29,14 +29,17 @@ Follow the next steps:
 > [!NOTE]
 >
 > As you deploy, make sure that the target `appsettings.json` is updated as per the latest nopCommerce version so that the production site continues to point to the production database. In earlier nopCommerce versions it can be `dataSettings.json` and `Settings.txt` files. Also, make sure that the `plugins.json` (`InstalledPlugins.txt`) file is also updated per the latest nopCommerce version.
-
+>
 > [!NOTE]
+>
 >If you're upgrading nopCommerce to version 4.50 from one of the previous versions, please ensure that your connection string contains one of the following parameters: `Encrypt=false` or `TrustServerCertificate=True` (depending on your server requirements). You can manually add these parameters to your connection string in the \App_Data\appsettings.json file. This step is caused by the `Microsoft.Data.SqlClient` library that changed the default value of the `Encrypt` option from `false` to `true`.
-
+>
 > [!NOTE]
+>
 > If you stored your pictures on the file system, then also backup them (`\wwwroot\Images\`) and copy back after the upgrade.
-
+>
 > [!NOTE]
+>
 > **(upgrading from 3.X to 4.X)**: If you want to upgrade from a version 3.90 to the latest version, you would need to install 4.00 first (over the existing database), run the 3.90 to 4.00 migration SQL script, and then upgrade to 4.10, 4.20, and further.
 
 ## Troubleshooting

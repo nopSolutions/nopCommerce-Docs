@@ -2,7 +2,7 @@
 title: Manufacturers
 uid: en/running-your-store/catalog/manufacturers
 author: git.AndreiMaz
-contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk
+contributors: git.exileDev, git.DmitriyKulagin, git.dunaenko, git.mariannk, git.DmitriyKulagin
 ---
 
 # Manufacturers
@@ -66,7 +66,7 @@ In the *Mappings* panel, define the following details:
     > [!NOTE]
     >
     > Note that only discounts of the *assigned to manufacturers* type are visible here. After discounts are mapped to the manufacturer, they will be applied to all products by this manufacturer.
-
+    >
     > [!NOTE]
     >
     > If you want to use discounts, make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.

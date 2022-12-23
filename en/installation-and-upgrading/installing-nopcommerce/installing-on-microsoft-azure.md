@@ -33,7 +33,7 @@ Azure has support for multiple instances since version 3.70. It's great for any 
   * For version 3.90 (and below), you also have to enable Redis as our distributed session management. Please open the `web.config` file. Find and uncomment the **sessionState** element. Specify its attributes (such as *host*, *accessKey*, etc.) pointing to your Redis server.
 * Recommended settings of the `appsettings.json` file to improve stability:
   * **UsePluginsShadowCopy** - set it to *`false`* to prevent the problem with IIS pool recycle and horizontal scaling.
-* Ensure that the nopCommerce schedule tasks are run on one instance at a time. To configure this : 
+* Ensure that the nopCommerce schedule tasks are run on one instance at a time. To configure this :
   * For version 3.90 (and below), open the `web.config` file, find the **WebFarms** element, and set its **MultipleInstancesEnabled** attribute to *`true`*. If you use Microsoft Azure Websites (not cloud services), then set the **RunOnAzureWebsites** attribute to *`true`* as well.
   * For newer versions no configuration change is required because the task runner uses the distributed cache to ensure that tasks will run on one instance at a time.
 

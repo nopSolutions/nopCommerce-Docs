@@ -2,7 +2,7 @@
 title: Grouped products (variants)
 uid: en/running-your-store/catalog/products/grouped-products-variants
 author: git.AndreiMaz
-contributors: git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk
+contributors: git.exileDev, git.dunaenko, git.IvanIvanIvanov, git.mariannk, git.DmitriyKulagin
 ---
 
 # Grouped products (variants)
@@ -31,7 +31,7 @@ To create a grouped product, go to **Catalog → Products**. There are several s
     ![variants](_static/grouped-products-variants/variants.png)
 
 > [!NOTE]
-> 
+>
 > - In the public store, a customer sees a separate **Add to cart** button for each associated product on the *grouped* product details page.
 > - A *simple* product can only be associated with one *grouped* product.
 > - *Grouped* products are **not orderable directly**. However, *simple* products are associated with them. For example, a customer cannot order the Creative Sound Card product directly. Instead, they must order an OEM or Retail version of the Creative Sound Card. In this case, the *grouped* product is the Creative Sound Card, and there are two associated *simple* products for this *grouped* product: OEM and Retail, each with potentially different prices.

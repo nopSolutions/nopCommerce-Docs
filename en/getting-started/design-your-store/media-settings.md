@@ -14,10 +14,11 @@ To define the media settings, go to **Configuration → Settings → Media setti
 ![p1](_static/media-settings/media_sett_1.png)
 
 In the *Common* panel, define the settings as follows:
+
 - Click the **Change** button above the **Pictures are stored into** option to choose between database or file system.
 
   > [!NOTE]
-  > 
+  >
   > It is recommended to make a backup of the database before clicking the **Change** button.
 - In the **Maximum image size** field, enter the maximum image size (meaning, the longest side) allowed for image upload (in pixels).
 - Select **Multiple thumb directories** to have multiple thumb directories. It is useful when your hosting company has limitations on the amount of files per directory.
@@ -26,12 +27,14 @@ In the *Common* panel, define the settings as follows:
 - Select **Picture zoom** to enable picture zoom on the product details page.
 
 In the *Product* panel, define the settings as follows:
+
 - In the **Product detail image size** field, enter the default size for the product detail images in pixels.
 - In the **Product thumbnail image size (catalog)** field, enter the default size for the product thumbnail images  displayed on the category or manufacturer pages in pixels.
 - In the **Product thumbnail image size (product page)** field, enter the default size for the product thumbnail images (in pixels) displayed on the product details page (used when you have more than one product image).
 - In the **Associated product image size** field, enter the default size for the associated product images in pixels. Associated products are a part of grouped products.
 
 In the *Other pages* panel, define the settings as follows:
+
 - In the **Category thumbnail image size** field, enter the default size for the product thumbnail images on the category pages in pixels.
 - In the **Manufacturer thumbnail image size** field, enter the default size for the product thumbnail images on the manufacturer pages in pixels.
 - In the **Vendor thumbnail image size** field, enter the default size for the product thumbnail images on the vendor pages in pixels.

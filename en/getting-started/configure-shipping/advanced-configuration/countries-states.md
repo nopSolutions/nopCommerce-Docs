@@ -14,7 +14,7 @@ To define the countries and states, go to **Configuration → Countries**.
 ![countries](_static/countries-states/countries1_1.png)
 
 > [!TIP]
-> 
+>
 > By default, all the countries are uploaded. You can *publish* and *unpublish* countries by selecting them and clicking the corresponding buttons at the top of the page.
 
 ## Add a new country
@@ -34,13 +34,13 @@ In the *country info* panel, define the following country settings:
 * Select the **Subject to VAT** checkbox to indicate whether customers in this country are charged the EU VAT (the European Union value added tax).
 
 > [!NOTE]
-> 
+>
 > This field is only used when the EU VAT option is enabled on the tax settings page (Configuration → Settings → Tax settings).
 
 * To tie a certain store to a country, select the required stores in the **Limited to stores** field, as follows:
 
 > [!NOTE]
-> 
+>
 > This list is only used when you have several stores configured. For further details, refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
 * Select the **Published** checkbox to enable this country to be visible for new account registrations and creation of shipping and billing addresses.
@@ -53,7 +53,7 @@ Click **Save**.
 In the *State and provinces* panel, you can add states and provinces of the country.
 
 > [!TIP]
-> 
+>
 > By default, the states of the USA are added.
 
 ![addcountry2](_static/countries-states/states.jpg)
@@ -78,5 +78,5 @@ You can export a list of states of all the countries that were added to the syst
 ![Export/import](_static/countries-states/export-import.jpg)
 
 > [!NOTE]
-> 
+>
 > The imported file should have the same format as the exported one.

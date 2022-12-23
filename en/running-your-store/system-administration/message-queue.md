@@ -13,13 +13,14 @@ To load the message queue, in the **System** menu, select **Message queue**. The
 ![Message queue](_static/message-queue/message-queue.png)
 
 Enter one or more of the following criteria to search for messages:
-  * In the **Start date** field, select the start date.
-  * In the **End date** field, select the end date.
-  * In the **From address** field, enter the source address of a message.
-  * In the **To address** field, enter the target address of a message.
-  * Select the **Load not sent emails only** checkbox to only load emails that have not been sent yet.
-  * In the **Maximum send attempts** field, enter the maximum number of attempts to send a message.
-  * In the **Go directly to email #** field, enter the email number and click **Go** to display the required email.
+
+* In the **Start date** field, select the start date.
+* In the **End date** field, select the end date.
+* In the **From address** field, enter the source address of a message.
+* In the **To address** field, enter the target address of a message.
+* Select the **Load not sent emails only** checkbox to only load emails that have not been sent yet.
+* In the **Maximum send attempts** field, enter the maximum number of attempts to send a message.
+* In the **Go directly to email #** field, enter the email number and click **Go** to display the required email.
 
 Click **Search** to load the message queue matching the criteria.
 
@@ -48,4 +49,4 @@ On this page, you can edit the following message details:
 * Select the **Send immediately** checkbox to send this message immediately.
 * Enter the number of **Sent attempts**. This is the number of attempts to send this message.
 
-Click **Save** or **Save and continue edit** to save the message details. 
+Click **Save** or **Save and continue edit** to save the message details.

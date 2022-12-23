@@ -44,7 +44,7 @@ There are a few elements on the shopping cart page. Some of them can be disabled
 > [!NOTE]
 >
 > In case you don't want to allow customers to add a certain product to shopping cart, select the **Disable buy button** checkbox in the *Prices* panel of the product edit page. Read more about adding a product in the [Add products](xref:en/running-your-store/catalog/products/add-products) chapter.
-
+>
 > [!NOTE]
 >
 > Check out our [marketplace](http://www.nopcommerce.com/marketplace) for plugins that help you manage abandoned carts and recover lost sales.

@@ -14,15 +14,15 @@ You can find these options in **Catalog → Products** on the main page, top lef
 
 ## Exporting products
 
- You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button, you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**. 
- 
+ You can export products in XML or Excel formats by clicking the **Export** button. After clicking the **Export** button, you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**.
+
 ![Exporting product](_static/import-export-products/exporting_product.png)
 
  If you don't need to download all the products, use the *Search* panel to find the required products or/and checkboxes to select the needed products. A file with the products you have chosen will be downloaded. The file will consist of all the products' characteristics from product editing page panels (Product info, SEO, Pictures, and more).
 
 > [!NOTE]
-> 
-> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details, click + next to your product in the table. 
+>
+> If you use product attributes, an exported Excel table will be grouped by rows. To view attribute details, click + next to your product in the table.
 > ![Simple product](_static/import-export-products/simple_product.png)
 
 ## Importing products
@@ -30,7 +30,7 @@ You can find these options in **Catalog → Products** on the main page, top lef
 If you do not want to add all the products to your catalog manually, you can use the import option.
 
 > [!NOTE]
-> 
+>
 > Before you start importing, you should download a table template for import in Excel format, as it was described in the [exporting products](#exporting-products) section. For accurate and correct import of your products, it's crucial to name all the columns in the table properly (exactly as in the downloaded table).
 
 It is not mandatory to fill all the table fields. The product will be created based on the filled fields.
@@ -62,7 +62,6 @@ The task of importing categories and manufacturers is specific because a product
 The **Categories** and **Manufacturers** columns can contain both the identifiers of the corresponding objects and their names (you can use one approach or mix both options at your discretion). If you want to import categories by name, you may specify the name only or the entire category name hierarchy. In this case, the parent category will be separated from the child category by the **>>** symbols. For example, “Computers >> Desktops;”
 
 Importing categories and manufacturers by name is case sensitive, that is, “**T**est category/manufacturer **n**ame” is not the same as “**t**est category/manufacturer **N**ame”
-
 
 ## Setting up import/export
 

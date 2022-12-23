@@ -61,7 +61,7 @@ Click **Save** to save the changes.
 > [!NOTE]
 >
 > Since language cultures are only loaded when the application is starting, you have to restart the application once a language is added or deleted.
-
+>
 > [!NOTE]
 >
 > After adding a new language, you will be able to import and export string resources using the **Import resources**

@@ -21,7 +21,7 @@ Define the *Security* settings as follows:
 * In the **Encryption private key** field, enter the encryption private key used for storing sensitive data. Click **Change** at any time to change this key. All sensitive data are encrypted using this private key.
 
 > [!NOTE]
-> 
+>
 > It is recommended to make a backup of your database before you change the encryption key. Sensitive data include all credit card information (only when this credit card information is stored in the store database).
 
 ## CAPTCHA
@@ -32,7 +32,8 @@ Define the *CAPTCHA* settings as follows:
 ![CAPTCHA](_static/security-settings/captcha.jpg)
 
 This panel will reveal the following settings when **CAPTCHA enabled** is selected:
-* **Type of reCAPTCHA**: choose reCAPTCHA v2 or reCAPTCHA v3. The difference between them is that reCAPTCHA v2 shows the "I'm not a robot" checkbox, whereas reCAPTCHA v3 is invisible to customers. Read more about [reCAPTCHA v2](https://developers.google.com/recaptcha/docs/display) and [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3).
+
+* **Type of reCAPTCHA**: choose `reCAPTCHA v2` or `reCAPTCHA v3`. The difference between them is that reCAPTCHA v2 shows the "I'm not a robot" checkbox, whereas reCAPTCHA v3 is invisible to customers. Read more about [reCAPTCHA v2](https://developers.google.com/recaptcha/docs/display) and [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3).
 * **reCAPTCHA v3 score threshold** is enabled when reCAPTCHA v3 is selected. Read more about the score threshold [here](https://developers.google.com/recaptcha/docs/v3).
 * Show CAPTCHA on the **login** page.
 * Show CAPTCHA on the **registration** page.
@@ -49,5 +50,5 @@ This panel will reveal the following settings when **CAPTCHA enabled** is select
 * Enter the reCAPTCHA **private key**.
 
 > [!NOTE]
-> 
+>
 > Dropped support for Recaptcha v1.

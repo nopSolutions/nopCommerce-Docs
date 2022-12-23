@@ -2,7 +2,7 @@
 title: Avalara
 uid: en/getting-started/configure-taxes/tax-providers/avalara
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk, git.RomanovM
+contributors: git.exileDev, git.mariannk, git.RomanovM, git.DmitriyKulagin
 ---
 
 # Avalara tax provider
@@ -12,7 +12,7 @@ contributors: git.exileDev, git.mariannk, git.RomanovM
 After installing the Avalara tax provider, you need to configure the integration.
 
 > [!NOTE]
-> 
+>
 > Make sure that the plugin is installed and selected as "Enabled" (**Configuration → Local plugins**). To enable the plugin, click **Edit** and select the **Is enabled** checkbox.
 
 ![Local plugins](_static/avalara/local-plugins.png)
@@ -39,7 +39,7 @@ Then configure the plugin; each field's function will be annotated when "?" is h
     * **Enable logging** enables logging of all requests to the Avalara services.
 
 2. Configure tax calculation settings:
-    
+
     ![Configuration Tax](_static/avalara/avalara-configuration-tax-calculation.png)
 
     * **Commit transactions** is enabled to commit transactions right after they are saved.
@@ -47,21 +47,21 @@ Then configure the plugin; each field's function will be annotated when "?" is h
     * **Tax origin address** is used for tax requests to the Avalara services.
     * **Use tax rate tables to estimate** determines whether to use tax rate tables to estimate. This will be used as a default tax calculation for catalog pages and adjusted and reconciled to the final transaction tax during checkout. Tax rates are looked up by ZIP Code (US only) in a file periodically updated by Avalara (see Schedule tasks).
     * **Tax rates by address only** is shown if the previous setting is clear. Enable it to get tax rates by the address only (reduces the number of API calls but may bias results).
-    
+
 3. Configure tax exemption settings:
-    
+
     ![Configuration Exemption](_static/avalara/avalara-configuration-exemption.png)
-    
+
     * **Enable exemption certificates** is enabled to activate tax exemption certificates.
     * **Limited to customer roles** is used to restrict customers who have access to this functionality.
     * **Auto validate certificates** is enabled to automatically validate new uploaded/created certificates.
     * **Allow edit info** is enabled to allow customers to edit their info (such as name, phone, address) when managing certificates.
     * **Display 'No valid certificates' message** is enabled to display a message that there are no valid certificates for the customer on the order confirmation page.
-    
+
     ![Configuration Exemption None](_static/avalara/avalara-configuration-exemption-none.png)
 
     > [!TIP]
-    > 
+    >
     > This message text can be edited in the language resources.
 
 4. **Save** and click the **Test connection** button to perform the test connection.
@@ -112,13 +112,13 @@ There are two ways to enable the tax exemption using this plugin:
     * Click **Save**
 
     > [!NOTE]
-    > 
+    >
     > It is not necessary to select **Tax exempt** checkbox: assigning **Entity use code** is enough.
 
-2. Activate the exemption certificates feature: 
+2. Activate the exemption certificates feature:
 
     > [!IMPORTANT]
-    > 
+    >
     > You will need a [CertCapture account](https://avlr.co/3bA1P1X) for this feature to work correctly.
 
     * Ensure that the **Enable exemption certificates** checkbox is on; in that case, customers will be able to manage their tax exemption certificates before making a purchase.

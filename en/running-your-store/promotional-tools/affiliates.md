@@ -2,7 +2,7 @@
 title: Affiliates
 uid: en/running-your-store/promotional-tools/affiliates
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov, git.mariannk
+contributors: git.rajupaladiya, git.exileDev, git.IvanIvanIvanov, git.mariannk, git.DmitriyKulagin
 ---
 
 # Affiliates
@@ -42,12 +42,10 @@ Define the affiliate details:
 
 If you click **Save and continue edit**, you will see two more panels where you can check how effective this affiliate is:
 
-* The *Affiliated customers* panel shows a list of all affiliated customers.
-* The *Affiliated orders* panel shows a list of all affiliated orders. When an affiliated customer places an order, you can see the order in this panel.
+- The *Affiliated customers* panel shows a list of all affiliated customers.
+- The *Affiliated orders* panel shows a list of all affiliated orders. When an affiliated customer places an order, you can see the order in this panel.
 
 ## See also
 
 - [Order management](xref:en/running-your-store/order-management/index)
 - [Customer management](xref:en/running-your-store/customer-management/index)
-
-

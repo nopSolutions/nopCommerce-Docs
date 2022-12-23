@@ -2,7 +2,7 @@
 title: Currencies
 uid: en/getting-started/configure-payments/advanced-configuration/currencies
 author: git.AndreiMaz
-contributors: git.exileDev, git.ivkadp, git.mariannk
+contributors: git.exileDev, git.ivkadp, git.mariannk, git.DmitriyKulagin
 ---
 
 # Currencies
@@ -26,7 +26,7 @@ To define currency settings, go to **Configuration → Currencies**.
 From the **Current exchange rate provider** dropdown list, select the exchange rate provider that will be used to get live rates.
 
 > [!NOTE]
-> 
+>
 > By default, there is only one exchange rate provider available in nopCommerce — ECB. To get live rates from ECB, you should select EUR as the primary exchange rate currency.
 
  Select the **Auto update enabled** checkbox to enable receiving an automatic update of currency rates every hour.
@@ -34,7 +34,7 @@ From the **Current exchange rate provider** dropdown list, select the exchange r
  Click **Save**.
 
 > [!NOTE]
-> 
+>
 > By default, all the currency rates are updated once per hour. You can change currency rates updating settings in **System → Schedule tasks**; choose **Update currency exchange rates**.
 
 ![Schedule task](_static/currencies/tasks.jpg)
@@ -48,14 +48,14 @@ Click the **Add new** button.
 Define the currency settings:
 
 * Currency **Name**.
-* **Currency code**. For a list of currency codes, go to: https://en.wikipedia.org/wiki/ISO_4217
+* **Currency code**. For a list of currency codes, go to: <https://en.wikipedia.org/wiki/ISO_4217>
 * Enter the exchange **Rate** against the primary exchange rate of the currency.
 * From the **Display locale** dropdown list, select the display locale for currency values.
 * Enter **Custom formatting** to be applied to the currency values. In this field, you can specify any symbols for the currency displaying in the public store, the number of decimal places and more.
 * In the **Limited to stores**, select a pre-created store from the dropdown list. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-	> In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+ > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
 
 * From the **Rounding type** dropdown list, choose one of the types of rounding:
   * *Default rounding*

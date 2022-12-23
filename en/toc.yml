@@ -96,6 +96,9 @@
             -
               name: PayPal Commerce
               href: getting-started/configure-payments/payment-methods/paypal-commerce.md
+            -
+              name: PayPal Zettle
+              href: getting-started/configure-payments/payment-methods/paypal-zettle.md
         -
           name: Advanced configuration
           href: getting-started/configure-payments/advanced-configuration/index.md

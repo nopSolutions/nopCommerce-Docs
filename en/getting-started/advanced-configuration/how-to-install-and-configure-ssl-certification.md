@@ -2,6 +2,7 @@
 title: How to install and configure SSL certification
 uid: en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification
 author: git.mariannk
+contributors: git.DmitriyKulagin
 ---
 
 # How to install and configure SSL certification
@@ -16,8 +17,9 @@ What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates
 
 3. In the last step, you need to set up your nopCommerce store in the admin area. To do this, go to the **Configuration → Stores** page. Select the store you want to set up and click the **Edit** button beside it. The *Edit store details* window will be displayed as follows:
   ![Store](_static/how-to-install-and-configure-ssl-certification/store.jpg)
-  - Enter your **Store URL** with the 'https://' prefix.
-  - Select the **SSL enabled** checkbox.
+
+- Enter your **Store URL** with the `https://` prefix.
+- Select the **SSL enabled** checkbox.
     > [!WARNING]
     >
     > Do not enable it until you have an SSL certificate installed on the server.
@@ -28,7 +30,7 @@ What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates
 
 A common problem is when the SSL certificate is not installed on the server or there are problems with the SSL configuration. At the same time, the **SSL enabled** setting was activated in the store (as we have done in the previous section).
 
-**Affected versions**: All 
+**Affected versions**: All
 
 **Solution**:
 Run the following SQL Query:
@@ -43,7 +45,7 @@ Mixed content occurs when a site operates over the SSL security protocol, but so
 
 When using a load balancer, similar problems can arise due to the fact that it communicates with the application over HTTP.
 
-**Affected versions**: 4.20 and below 
+**Affected versions**: 4.20 and below
 
 **Solutions**:
 
@@ -55,7 +57,7 @@ When using a load balancer, similar problems can arise due to the fact that it c
   
 - Make sure your website is listening on port 443 on the hosting server.
 
-**Affected versions**: All 
+**Affected versions**: All
 
 **Solutions**:
 
@@ -78,7 +80,7 @@ When using a load balancer, similar problems can arise due to the fact that it c
 
 When an unauthorized user tries to log in or visit the shopping cart, the site enters an infinite redirection loop.
 
-**Affected versions**: All 
+**Affected versions**: All
 
 **Solutions**:
 

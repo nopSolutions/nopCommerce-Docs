@@ -2,6 +2,7 @@
 title: Recover abandoned carts
 uid: en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts
 author: git.mariannk
+contributors: git.DmitriyKulagin
 ---
 
 # Recover abandoned carts
@@ -11,7 +12,8 @@ In this tutorial, you will learn how to create abandoned cart email and how to s
 ## Before getting started
 
 You will need the following:
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7). 
+
+* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 * Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled on your account.
 * Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
 
@@ -69,6 +71,7 @@ In the *Drag & Drop Editor*, select your desired block that will display the aba
 ![Email editor](_static/recover-abandoned-carts/items.jpg)
 
 Now add the variables to your email template. In the example above, we have added:
+
 * `{{ item.name }}` - the name of the item
 * `{{ item.quantity }}` - the quantity of the item
 * `{{ item.price | floatformat: 2 }}` - the price of the item
@@ -119,7 +122,6 @@ To add the link of the abandoned cart, select the **Call-To-Action (CTA)** butto
 
 Once your design is complete, click the green **Save & Quit** button. Then click the **Save & Activate** button.
 
-
 ## Creating the abandoned cart workflow
 
 > [!NOTE]
@@ -135,9 +137,9 @@ At the *Send an email* step, select the email template you have just created and
 
 When your workflow is complete, click on **DONE** to save and activate it.
 
-Feel free to read this tutorials to help you creating the workflow: 
-* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?tap_a=30591-fb13f0&tap_s=840216-5153c7)
+Feel free to read this tutorials to help you creating the workflow:
 
+* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?tap_a=30591-fb13f0&tap_s=840216-5153c7)
 
 ## Example
 
@@ -153,6 +155,6 @@ The email received by Jean Blue will look like this:
 
 ![Cart example](_static/recover-abandoned-carts/email.jpg)
 
-
 ## Learn more
+
 * [Send an order confirmation email](xref:en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email)

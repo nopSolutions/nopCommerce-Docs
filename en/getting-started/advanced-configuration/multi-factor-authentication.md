@@ -2,6 +2,7 @@
 title: Multi-factor authentication
 uid: en/getting-started/advanced-configuration/multi-factor-authentication
 author: git.mariannk
+contributors: git.DmitriyKulagin
 ---
 
 # Multifactor authentication
@@ -43,9 +44,9 @@ On this page, you can also search for customers by email using the *Search* pane
 To understand how the multifactor authentication works in nopCommerce, see the diagram above.
 
 - The **2FA configured** scheme represents the process when 2FA is already configured by a customer.
+![How it works](_static/multi-factor-authentication/2FA_configured.jpg)
 - The **2FA setup** scheme represents the process when a 2FA setup is needed to be done by a customer.
-
-![How it works](_static/multi-factor-authentication/diagram.jpg)
+![How it works](_static/multi-factor-authentication/2FA_setup.jpg)
 
 ## Multifactor authentication page in public store
 

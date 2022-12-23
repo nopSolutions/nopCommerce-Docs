@@ -36,7 +36,7 @@ Click the **Edit** button beside a shipping method and enter the **Rate** and **
 Click **Update**.
 
 > [!NOTE]
-> 
+>
 > You can add/remove shipping methods in the *Shipping methods window* accessed by clicking ![button](_static/manual/manual-shipping-manage-button.png) and restrict some methods for chosen countries by clicking ![restrictions](_static/manual/manual-shipping-restrictions.png) on the top.
 
 ## Configure rate by weight/total
@@ -77,10 +77,10 @@ For example, if you have the following shipping conditions:
   * Lower weight limit: **2**
   * Rate per weight unit: **3**
   
-	> [!NOTE] 
-	> 
-	> An additional weight will be charged proportionally; 
-	> for example, for 2.1 pounds, $15 + (0.1 * 6)= $15.6 will be charged
+ > [!NOTE]
+ >
+ > An additional weight will be charged proportionally;
+ > for example, for 2.1 pounds, $15 + (0.1 * 6)= $15.6 will be charged
 
 To add a new shipping rule, click **Add record**. The *Add new record* window will be displayed:
 
@@ -97,15 +97,14 @@ Define the following information:
 * Define the **Transit days** field, which defines the number of days for delivery.
 
 > [!NOTE]
-> 
+>
 > Make sure that the setting **Configuration → Settings → Shipping settings → Consider associated products dimensions and weight** is true.
 
 Click **Save**.
 
 > [!NOTE]
-> 
+>
 > If you wish to limit your customers only to methods configured on that screen select the **Limit shipping methods to configured ones** checkbox on the bottom of the page.
-
 
 ## Configure shipping methods
 
@@ -132,7 +131,7 @@ Define the following fields for a new record:
 Click **Save**.
 
 > [!NOTE]
-> 
+>
 > You can click **Edit** in the *Shipping methods* window to edit existing shipping methods as described above.
 
 ## Shipping method restrictions
@@ -153,30 +152,32 @@ Click **Save**.
 
 ## Example
 
-Let's say you have a store located in the USA that ships within the USA and to Canada. You set up three shipping methods available: 
-- **Ground** that allows shipping by land transport.
-- **Next day air** that provides one-day air shipping.
-- **2nd day air** allowing two-days air shipping.
+Let's say you have a store located in the USA that ships within the USA and to Canada. You set up three shipping methods available:
+
+* **Ground** that allows shipping by land transport.
+* **Next day air** that provides one-day air shipping.
+* **2nd day air** allowing two-days air shipping.
 
 > [!TIP]
 >
 > You can add your own shipping methods by clicking the **Manage shipping methods** button on the *Configure - Manual (Fixed or By Weight and By Total)* page.
 
-Then, let's say the shipping fee depends on the order total and shipping address. For example: 
-- If a customer pays $150 for their order, we provide free shipping by the **Ground** method within the USA only. If the order total is less than $150, we will charge $10. The delivery within the USA will take 5 days.
-- For Canada, a customer should make an order worth $250 to have free shipping by the **Ground** method. If the order total is less than $250, we will charge $20. The delivery will take 7 days in this case.
-- If a customer needs a **Next day air** delivery, it will cost $60 for the USA. Let's say you wish to disable the **Next day air** option for Canada. 
-- If a customer is ready to wait one more day, we suggest to use **2nd day air** shipping, which costs $40 both for the USA and Canada.
+Then, let's say the shipping fee depends on the order total and shipping address. For example:
+
+* If a customer pays $150 for their order, we provide free shipping by the **Ground** method within the USA only. If the order total is less than $150, we will charge $10. The delivery within the USA will take 5 days.
+* For Canada, a customer should make an order worth $250 to have free shipping by the **Ground** method. If the order total is less than $250, we will charge $20. The delivery will take 7 days in this case.
+* If a customer needs a **Next day air** delivery, it will cost $60 for the USA. Let's say you wish to disable the **Next day air** option for Canada.
+* If a customer is ready to wait one more day, we suggest to use **2nd day air** shipping, which costs $40 both for the USA and Canada.
 
 Considering all the requirements above, we will set up the payment method on the *Configure - Manual (Fixed or By Weight and By Total)* page as follows:
 
-- **Ground** method
+* **Ground** method
   ![Configuration Ground](_static/manual/configuration-ground.jpg)
 
-- **Next day air** method
+* **Next day air** method
   ![Configuration Next day air](_static/manual/configuration-nextday.jpg)
 
-- **2nd day air** method
+* **2nd day air** method
   ![Configuration 2nd day air](_static/manual/configuration-2ndday.jpg)
 
 To disable the **Next day air** option for Canada, click the **Shipping method restrictions** button and fill the *Shipping method restrictions* as follows:
