@@ -38,6 +38,8 @@ The top panel on the page sets up *Search*:
   - If you want the price range to be entered manually, select the **Search page. Enter price range manually** checkbox.
     - If the setting above is enabled, enter the **Search page. Price 'from'**.
     - And the **Search page. Price 'to'**.
+- If the **Allow customers to search with manufacturer name** is enabled, customers can search by manufacturer name.
+- If the **Allow customers to search with category name** is enabled, customers can search by category name.
 
 ## Product reviews
 
@@ -187,6 +189,8 @@ The *Catalog pages* panel enables you to set:
 - **Enable manufacturer filtering** to enable the manufacturer filtering on catalog pages.
 - **Enable price range filtering** to enable the price range filtering on catalog pages.
 - **Enable specification attribute filtering** on the catalog pages if needed. If turned off, the specification attribute filtering won't be displayed on the catalog pages even if you have such attributes created.
+- **Display all pictures on catalog pages** - On the pages of the catalog it becomes possible to view all the pictures of the product.
+- **Display 'From' prices** - Check to display 'From' prices on catalog pages. This will display the minimum possible price of a product based on price adjustments of attributes and combinations instead of the fixed base price. If enabled, it is also recommended to enable setting 'Cache product prices'. But please note that it can affect performance if you use some complex discounts, discount requirement rules, etc.
 
 ## Tags
 

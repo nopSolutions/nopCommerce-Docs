@@ -16,7 +16,10 @@ Starting from version 4.20, you can automatically upload favicons through the ad
 1. To upload favicons, go to **Configuration → Settings → General settings.** The *Favicon and app icons* panel will be displayed:
 ![settings_block](_static/adding-a-favicon/settings_block.png)
 
-1. Click the green **Upload icons archive** button; the file selection dialog will be opened: ![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog.png) Here, you need to copy the path to your icons (it varies depending on the store and virtual directory). For example, `/icons/icons_0`.
+1. Click the green **Upload single icon or icons archive** button; the file selection dialog will be opened:
+![file_selection_dialog](_static/adding-a-favicon/file_selection_dialog0.png)
+
+   Here, you need to copy the path to your icons (it varies depending on the store and virtual directory). For example, `/icons/icons_0`.
 
 1. There are several options for what to upload, depending on how friendly your site favicons should be for various devices:
 
@@ -62,7 +65,7 @@ Starting from version 4.20, you can automatically upload favicons through the ad
 
       1. Save this package. Your favicon package is ready.
 
-1. Return to the admin area with a prepared favicon package to upload. Select the desired file and click **Upload icons archive**. ![upload_package](_static/adding-a-favicon/file_selection_dialog.png)
+1. Return to the admin area with a prepared favicon package to upload. Select the desired file and click **Upload single icon or icons archive**. ![upload_package](_static/adding-a-favicon/file_selection_dialog.png)
 
 1. Ensure your package is successfully uploaded. ![success](_static/adding-a-favicon/success.png)
 

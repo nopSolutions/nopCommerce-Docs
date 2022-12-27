@@ -17,6 +17,8 @@ The first screen displayed after logging in to the nopCommerce administration ar
 
 The dashboard has the following sections:
 
+* **Start accepting orders** is a section that contains all the main topics related to setting up your store. This wizard will literally take you "by the hand" through the administration panel and tell you how everything works.
+
 * **nopCommerce news** is a section that shows important news, sales and promotions information from nopCommerce.
 
 * **Common statistics** of your webstore, which includes numbers of orders, pending return requests, registered customers, and low-stock products.

@@ -125,20 +125,37 @@ Define product-specific shipping details in the *Shipping* panel:
 
 Define the inventory settings for the product as described [here](xref:en/running-your-store/order-management/inventory-management).
 
-## Pictures
+## Multimedia
+
+On this panel you can add all media content related to the current product.
+
+### Pictures
 
 In the *Pictures* panel, you can add the product pictures.
 
-- In the *Add a new picture* area, click **Upload a file** to select a new picture you want to upload to your product page.
+![Multimedia pictures](_static/add-product-for-beginners/multimedia-pictures.jpg)
+
+You can upload multiple image files at once using the **Upload files** button.
+After the pictures are uploaded, you can set the following values for each of them:
+
 - In the **Alt** field, enter a value for the "alt" attribute of the "img" HTML element. If empty, the default rule will be used (for example, product name).
 - In the **Title** field, enter a value for the "title" attribute of the "img" HTML element. If empty, the default rule will be used (for example, product name).
 - Define the **Display order** of the image on the product page. 1 represents the top of the list.
 
-Click **Add product picture** to save the picture.
-
+> [!NOTE]
+>
+> To upload pictures in *.svg format you will need to activate the following setting
+> ![Setting svg](_static/add-product-for-beginners/svg_setting.jpg)
+>
 > [!TIP]
 >
 > [YouTube tutorial: Importing mass product images](https://www.youtube.com/watch?v=9BUqR_OGiq4)
+
+### Videos
+
+On the "Video" tab, you can add links to embedded videos from any video hosts such as *YouTube* or *Vimeo*.
+
+![Multimedia videos](_static/add-product-for-beginners/multimedia-videos.jpg)
 
 ## Product attributes
 

@@ -23,6 +23,8 @@ To search for customers, in the *Customers* window, enter one or more of the fol
 - **Zip code**, if enabled in the [customer settings](xref:en/running-your-store/customer-management/customer-settings).
 - **IP address**.
 - **Customer roles** — you can select one or more customer roles to be displayed.
+- **Registration date from** and **Registration date to**
+- **Last activity from** and **Last activity to**
 
 > [!NOTE]
 >

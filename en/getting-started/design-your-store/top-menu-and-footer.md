@@ -166,6 +166,7 @@ Enter your social media links:
 
 - **Facebook page URL**
 - **Twitter page URL**
+- **YouTube channel URL**
 - **Instagram page URL**
 
 If you want to enable/disable the RSS link in the footer, you need to enable/disable news accordingly on the **Configuration → Settings → News settings** page (*Common* panel).
