@@ -16,15 +16,17 @@ Click **Edit** beside the default store to configure it.
 
 ![editstore](_static/your-store-information/Store-Edit.png)
 
+## Info
+
 Configure your main store details as follows:
 
 * Define the **Store name**.
 * Enter your **Store URL**.
-* Select the **SSL enabled** checkbox if your store is SSL secured. SSL (Secure Sockets Layer) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is the industry standard used by millions of websites to protect online transactions with their customers.
+* Press the button **SSL** if your store is SSL secured. SSL (Secure Sockets Layer) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is the industry standard used by millions of websites to protect online transactions with their customers.
 
   > [!IMPORTANT]
   >
-  > Only select this option after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
+  > Only press this button after you have installed the SSL certificate on your server. Otherwise, you won't be able to access your site and will have to manually edit the appropriate record in your database ([Store] table).
   >
   > [!TIP]
   >
@@ -37,6 +39,12 @@ Configure your main store details as follows:
 * Define the **Company address**.
 * Set your **Company phone number**.
 * In the **Company VAT** field, enter the VAT number of your company (used in the EU).
+
+## SEO
+
+The store owner can localize the main website keyword, meta title, and meta description for each store.
+
+![SEO](_static/your-store-information/SEO.png)
 
 ## See also
 

@@ -7,6 +7,10 @@ contributors:
 
 # EasyPost shipping provider
 
+> [!Important]
+>
+> This plugin is currently deprecated and, starting from version 4.60.
+
 ## Configuration
 
 After installing the plugin of the EasyPost shipping provider you need to configure the integration.

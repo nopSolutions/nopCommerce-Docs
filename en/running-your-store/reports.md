@@ -80,6 +80,7 @@ This report represents the total orders summary. To generate a report, you can u
 - **Category** to search in a specific category.
 - **Manufacturer** to search by a specific manufacturer.
 - **Billing country** to filter by order billing country.
+- **Vendor** to search by a specific vendor.
 - **Product** to search by a specific product.
 - **Group by** for grouping by time periods. When this option is set to "Day," it will display a list of dates for a selected period (start/end date). For example, "Nov 8th, 2020," "Nov 7th, 2020," etc. When it is set to "Week", it will display a list of weeks (for example, "December 7th, 2020 - December 12th, 2020," etc.). When it is set to "Month", it will display a list of months (for example, "December 2020," "November 2020," etc.).
 

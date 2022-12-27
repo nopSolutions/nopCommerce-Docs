@@ -185,6 +185,9 @@
           name: Localization
           href: getting-started/advanced-configuration/localization.md
         -
+          name: Custom HTML
+          href: getting-started/advanced-configuration/custom-html.md
+        -
           name: External authentication methods
           href: getting-started/advanced-configuration/external-authentication-methods.md
         -
@@ -202,6 +205,9 @@
         -
           name: Security settings
           href: getting-started/advanced-configuration/security-settings.md
+        -
+          name: robots.txt settings
+          href: getting-started/advanced-configuration/robots-txt.md
         -
           name: PDF settings
           href: getting-started/advanced-configuration/pdf-settings.md

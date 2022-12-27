@@ -24,6 +24,7 @@ Then select the **GDPR enabled** checkbox. Additional settings will allow you to
 * **Log "accept privacy policy" consent**.
 * **Log "newsletter" consent**.
 * **Log user profile changes**.
+* **Delete inactive customers after months** - The default value is 36 months.
 
 You can add consents on your nopCommerce site by clicking the **Add consent** button in the *Consents* panel:
 

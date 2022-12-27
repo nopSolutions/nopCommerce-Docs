@@ -171,7 +171,7 @@ In the *Product page* panel, you can set the following options:
   > [!NOTE]
   >
   > Note that the **Allow only existing attribute combinations** option should be enabled for a product.
-
+  
 ## Catalog pages
 
 ![Catalog pages](_static/catalog-settings/catalog-pages.jpg)
@@ -191,6 +191,10 @@ The *Catalog pages* panel enables you to set:
 - **Enable specification attribute filtering** on the catalog pages if needed. If turned off, the specification attribute filtering won't be displayed on the catalog pages even if you have such attributes created.
 - **Display all pictures on catalog pages** - On the pages of the catalog it becomes possible to view all the pictures of the product.
 - **Display 'From' prices** - Check to display 'From' prices on catalog pages. This will display the minimum possible price of a product based on price adjustments of attributes and combinations instead of the fixed base price. If enabled, it is also recommended to enable setting 'Cache product prices'. But please note that it can affect performance if you use some complex discounts, discount requirement rules, etc.
+
+> [!TIP]
+>
+> To display a short description of the product on the catalog pages you need to activate this setting -  `catalogsettings.showshortdescriptiononcatalogpages`
 
 ## Tags
 
@@ -234,6 +238,10 @@ In the *Export/import* panel, you can define:
 - Select the **Export/import products. Allow splitting file** checkbox if you want to import products from individual optimal-size files automatically created from the main file. This function will help you import a large amount of data with a smaller delay.
 - Select the **Export/import related entities using name** checkbox if related entities should be exported/imported using names.
 - Select the **Export/import products with "limited to stores"** checkbox if products should be exported/imported with their "limited to stores" properties.
+
+> [!NOTE]
+>
+> When you have two or more languages, Export/Import to Excel/XML supports multilingual data.
 
 ## Product sorting
 

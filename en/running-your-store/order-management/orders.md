@@ -33,9 +33,17 @@ To search for orders, enter one or more of the following search criteria:
 * **Order notes** — search in order notes. Leave empty to load all orders.
 * **Go directly to order #** — enter the order number and click **Go** to display the required order.
 
-> [!NOTE]
+### Export orders
+
+You can export orders to an external file by clicking the **Export** button at the top of the page. After clicking the **Export** button, you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**.
+
+### Import orders
+
+You can import orders from Excel by clicking the **Import**, choose the file, and click the **Import from Excel** button. Imported orders are distinguished by order GUID. If the order GUID already exists, then its details will be updated.
+
+> [!WARNING]
 >
-> You can export orders to an external file by clicking the **Export** button at the top of the page. After clicking the **Export** button, you will see the dropdown menu enabling you to **Export to XML (all found)** or **Export to XML (selected)** and **Export to Excel (all found)** or **Export to Excel (selected)**.
+> Import requires a lot of memory resources. That's why it's not recommended to import more than 500 - 1,000 records at once. If you have more records, it's better to split them to multiple Excel files and import separately.
 
 ## Order details
 

@@ -46,6 +46,7 @@ This panel will reveal the following settings when **CAPTCHA enabled** is select
 * Show CAPTCHA on the **product reviews** page.
 * Show CAPTCHA on the **apply for vendor account** page.
 * Show CAPTCHA on the **forum** page.
+* Show CAPTCHA on the **guest checkout** page.
 * Enter the reCAPTCHA **public key**.
 * Enter the reCAPTCHA **private key**.
 

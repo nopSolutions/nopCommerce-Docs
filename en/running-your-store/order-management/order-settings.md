@@ -49,6 +49,7 @@ Define the following settings in the *Common* panel:
 * **Complete order when delivered** to set order status to "Complete" only when its shipping status is "Delivered." Otherwise, the "Shipped" status will be enough.
 * **Export orders with products**.
 * **Allow admins to buy "Call for price" products** to allow administrators (in impersonation mode) to buy products marked as "Call for price."
+* **Show product thumbnail in order details page** to show product thumbnail in order details page.
 
 ## PDF invoice
 
@@ -57,6 +58,7 @@ Define the following settings in the *PDF invoice* panel:
 
 * **To Attach PDF invoice ("order placed" email)**.
 * **To Attach PDF invoice ("order paid" email)**.
+* **Attach PDF invoice ("order processing" email)**.
 * **To Attach PDF invoice ("order completed" email)**.
 
 > [!TIP]

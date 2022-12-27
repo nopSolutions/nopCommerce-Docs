@@ -23,6 +23,7 @@ The top area of the page enables you to search for discounts by various search c
 - **Discount type**.
 - **Coupon code**.
 - **Discount name** is a full discount name or its fragment.
+- **Is Active**.
 
 > [!NOTE]
 >
@@ -36,6 +37,7 @@ To add a new discount, go to **Promotions → Discounts** and click **Add new**.
 
 This page is available in two modes: advanced and basic. Stay in the basic mode, which only displays the main fields, or switch to the advanced mode displaying all the available fields.
 
+- Select the **Is active** checkbox if you want to set active this discount.
 - Enter the **Name** of the discount.
 - From the **Discount type** dropdown list, assign the discount to the required option as follows:
   - *Assigned to order total*: these discounts are applied to the entire customer order (order total).
