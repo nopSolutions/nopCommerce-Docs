@@ -108,7 +108,7 @@ Now we should save the synchronization settings and **start** it.
 
 You can limit any payment method to store and customer role. This means that the method will be available to certain stores or customer roles only. You can do this from the *plugin list* page.
 
-1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case, it's **PayPal Commerce**. To find it faster, use the *Search* panel in the top of the page and search by **Plugin name** or **Group** using the *Payment methods* option.
+1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case, it's **PayPal Zettle**. To find it faster, use the *Search* panel in the top of the page and search by **Plugin name** or **Group** using the *Payment methods* option.
 
     ![Plugins](_static/paypal-zettle/plugins.jpg)
 
