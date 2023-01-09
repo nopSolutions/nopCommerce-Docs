@@ -591,6 +591,9 @@
       name: Web API documentation
       href: developer/web-api/index.md
     - 
+      name: Mobile app documentation
+      href: developer/mobile-app/index.md
+    - 
       name: Contribute
       href: developer/contribute/index.md
       items:
