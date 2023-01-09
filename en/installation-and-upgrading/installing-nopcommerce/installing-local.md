@@ -47,7 +47,7 @@ nopCommerce requires written permissions for the directories and files described
 - **For nopCommerce versions 4.00 and above:**
   - `\App_Data\`
   - `\bin\`
-  - `\log\`
+  - `\Logs\`
   - `\Plugins\`
   - `\Plugins\bin\`
   - `\wwwroot\bin\`
