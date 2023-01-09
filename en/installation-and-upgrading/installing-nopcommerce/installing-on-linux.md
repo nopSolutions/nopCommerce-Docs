@@ -2,7 +2,7 @@
 title: Installing on Linux
 uid: en/installation-and-upgrading/installing-nopcommerce/installing-on-linux
 author: git.AndreiMaz
-contributors: git.skoshelev
+contributors: git.skoshelev, git.DmitriyKulagin
 ---
 
 # Installing on Linux
@@ -21,6 +21,7 @@ This chapter describes how to install the nopCommerce software on Linux system o
   - [Troubleshooting](#troubleshooting)
     - [Gdip](#gdip)
     - [SSL](#ssl)
+  - [See also](#see-also)
 
 ## Install and configure software
 
@@ -244,3 +245,7 @@ sudo apt-get install libgdiplus
 ### SSL
 
 *If you want to use SSL on your site, don't forget to set the `UseProxy` setting to **`true`** in the **appsettings.json** file*.
+
+## See also
+
+- [Running nopCommerce on Linux VPS. Part 2](https://www.nopcommerce.com/running-nopcommerce-on-linux-vps-part-2)
