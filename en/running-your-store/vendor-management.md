@@ -143,7 +143,7 @@ In the *Catalog* panel, define the following vendor settings:
 * **Allow search by vendor** to customers on an advanced search page.
 * Choose whether to **Show vendor on product details page** (if associated).
 * Choose whether to **Show vendor name on order details page** (if associated).
-* **Number of vendors to display** in the vendor navigation block in the admin area.
+* **Number of vendors to display** in the vendor navigation block in the public store.
 
 ### *Vendor attributes*
 
@@ -184,4 +184,4 @@ In the *Add a new attribute value* window, define the following information:
 
 You can edit and remove attribute values by clicking the corresponding buttons beside the attribute values in the *Values* panel.
 
-Click **Save**. The new attribute will be displayed in the public store.
+Click **Save**. The new attribute will be displayed in the *Edit vendor details* page.
