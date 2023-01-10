@@ -36,7 +36,7 @@ To set up your reward point program, define these settings:
 ![Reward points earning](_static/reward-points/settings-earning.jpg)
 
 - In the **Points for purchases** field, specify the number of points granted for purchases.
-- In the **Purchases points validity** field, specify the number of days the points awarded for purchases will be valid.
+- In the **Purchases points validity** field, specify the number of days the points awarded for purchases will be valid. The default value is `45` days. If you specify a value of `0`, then the reward points will expire indefinitely.
 - In the **Minimum order total** field, specify the minimum order total (excluding shipping cost) to award points for purchases.
 - In the **Points for registration** field, specify the number of points granted for customer registration.
 - In the **Registration points validity** field, specify the number of days the points awarded for registration will be valid.
