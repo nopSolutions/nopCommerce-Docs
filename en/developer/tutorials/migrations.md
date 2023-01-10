@@ -36,7 +36,7 @@ And to solve the last problem, we need to deal with the second framework from th
 > [!NOTE]
 > Fluent Migrator is a migration framework for .NET much like Ruby on Rails Migrations. *Migrations* are a structured way to alter your database schema and are an alternative to creating lots of SQL scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, test database, and production database). Database schema changes are described in classes written in C#. These classes can be checked into a version control system.
 
-The detailed plan of adding your entities is described in the following article: [Plugin with data access](xref:en/developer/plugins/how-to-write-plugin-4.30). Therefore, we will remain only on general theoretical points:
+The detailed plan of adding your entities is described in the following article: [Plugin with data access](xref:en/developer/plugins/how-to-write-plugin-4.60). Therefore, we will remain only on general theoretical points:
 
 1. Migrations are supported at the level of the nopCommerce code itself.
 1. You can create any migrations inherited from the abstract class **MigrationBase**.
@@ -45,3 +45,7 @@ The detailed plan of adding your entities is described in the following article:
 1. You can create a table in the database in two ways:
     * Use **Create.Table** method in the **Up** method of your migration class and specify all details using the extension methods.
     * Use **IMigrationManager.BuildTable\<T\>** method in the **Up** method of your migration class and specify all details, if needed, using the implementation of the **IEntityBuilder** and **INameCompatibility** interfaces (in nopCommerce we use this approach).
+
+> [!IMPORTANT]
+>
+> In order to run new migrations you have to increase the version in your plugin.json file.
