@@ -7,7 +7,7 @@ contributors: git.DmitriyKulagin
 
 # Advanced configuration
 
-* [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification)
+* [How to install and configure SSL certificates](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificates)
 * [Your store information](xref:en/getting-started/advanced-configuration/your-store-information)
 * [GDPR settings](xref:en/getting-started/advanced-configuration/gdpr-settings)
 * [Localization](xref:en/getting-started/advanced-configuration/localization)

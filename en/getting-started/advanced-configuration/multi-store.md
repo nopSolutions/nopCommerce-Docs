@@ -71,7 +71,7 @@ To set up several stores, click **Add new** and define the following store setti
   >
   > [!TIP]
   >
-  > Read more about setting SSL up in the following chapter: [How to install and configure SSL certification](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification).
+  > Read more about setting SSL up in the following chapter: [How to install and configure SSL certificates](xref:en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificates).
 
 * The **HOST values** field is a list of possible HTTP_HOST values of your store (for example, `store1.com`, `www.store1.com`). Filling this field is only required when you have a multi-store solution to determine the current store. This field enables distinguishing requests to distinct URLs and determines the current store. You can also see the current HTTP_HOST value in **System → System information**.
 * In the **Default language** field, choose the default language of your store. You may also leave it unselected. In this case, the first found one (with the lowest display order) will be used.

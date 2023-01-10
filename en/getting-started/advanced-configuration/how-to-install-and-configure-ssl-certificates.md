@@ -1,11 +1,11 @@
 ﻿---
-title: How to install and configure SSL certification
-uid: en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification
+title: How to install and configure SSL certificates
+uid: en/getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificates
 author: git.mariannk
 contributors: git.DmitriyKulagin
 ---
 
-# How to install and configure SSL certification
+# How to install and configure SSL certificates
 
 What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates validate your website's identity and encrypt the information visitors send to (or receive from) your site. When you have an SSL certificate protecting your website, your customers can rest assured that the information they enter on any secured page is private and can't be viewed by cyber crooks.
 
@@ -16,7 +16,7 @@ What is an SSL certificate? SSL stands for Secure Socket Layer. SSL certificates
 2. Then, you need to install the SSL certificate you bought on your server. The way you do this depends on the server. For more instructions and recommendations, you should refer to the SSL Certificate Provider guideline or your server documentation. In this article, I will just provide you with a link to such guideline by GoDaddy: [Install SSL certificates](https://www.godaddy.com/help/install-ssl-certificates-16623).
 
 3. In the last step, you need to set up your nopCommerce store in the admin area. To do this, go to the **Configuration → Stores** page. Select the store you want to set up and click the **Edit** button beside it. The *Edit store details* window will be displayed as follows:
-  ![Store](_static/how-to-install-and-configure-ssl-certification/store.jpg)
+  ![Store](_static/how-to-install-and-configure-ssl-certificates/store.jpg)
 
 - Enter your **Store URL** with the `https://` prefix.
 - Select the **SSL enabled** checkbox.

@@ -176,8 +176,8 @@
       href: getting-started/advanced-configuration/index.md
       items:
         -
-          name: How to install and configure SSL certification
-          href: getting-started/advanced-configuration/how-to-install-and-configure-ssl-certification.md
+          name: How to install and configure SSL certificates
+          href: getting-started/advanced-configuration/how-to-install-and-configure-ssl-certificates.md
         -
           name: Your store information
           href: getting-started/advanced-configuration/your-store-information.md
