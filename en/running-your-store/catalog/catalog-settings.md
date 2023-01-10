@@ -249,6 +249,9 @@ In the *Product sorting* panel, you can define:
 
 - Select the **Allow product sorting** checkbox to enable a product sorting option on the categories and manufacturers pages. You can activate/deactivate sorting by *Position*, *Name*, *Price*, and *Date of creation*.
 
+  > [!NOTE]
+  > Selecting the value "Position" means that there will be no restrictions on the sorting of products.
+
   ![product_sorting](_static/catalog-settings/product_sorting.jpg)
 
   You can edit the **Display order** and **Is active** property of each option by clicking the **Edit** button.
