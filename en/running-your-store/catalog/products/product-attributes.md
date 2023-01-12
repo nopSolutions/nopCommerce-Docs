@@ -61,6 +61,10 @@ After filling the fields, click **Save**.
 > [!NOTE]
 >
 > Some store owners prefer to highlight products differentiated by attributes and create a separate product with each specific attribute (for example, separately listed blue T-shirts and red T-shirts). In this case, we recommend creating a grouped product (shirts, as in the example) in order for all the variations to be displayed on the same page once the grouped product is being viewed by a customer. Read more about [grouped products](xref:en/running-your-store/catalog/products/grouped-products-variants).
+>
+> [!WARNING]
+>
+> Adding new or updating existing "Predefined values" does not affect products that already have the attribute.
 
 ## Used by products panel
 
