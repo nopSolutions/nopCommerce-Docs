@@ -75,20 +75,26 @@ Navigate to **Configuration → Tax categories**.
 
 At the top right of the page, you will see the branded **Avalara tax codes** button. Clicking it will show the following dropdown menu:
 
+> [!IMPORTANT]
+> The **Avalara tax codes** button will only be displayed if the *Avalara* plugin is selected as the main tax provider on the *Configuration → Tax providers page*.
+
 ![Tax categories](_static/avalara/tax-categories.jpg)
 
 * **Export tax codes to Avalara** – exports all codes from your store to your AvaTax backend.
 * **Import Avalara system tax codes** – imports all AvaTax tax codes from Avalara.
+    ![Tax categories import](_static/avalara/tax-categories-import.jpg)
 * **Delete Avalara system tax codes** – deletes all codes exported from Avalara.
 
 ## Assign an AvaTax system tax code to an item
 
 1. Go to **Catalog → Products**.
 1. Select a product to open the product details screen and click **Edit**.
-1. On the product details screen, in the **Price** panel, assign the appropriate code from the dropdown list in the **Tax category** field.
+1. On the **Product Details** screen, in the **Price** panel, assign the appropriate code from the dropdown list in the **Tax category** field.
 
     ![Product tax category](_static/avalara/product-tax-category.png)
-1. **IMPORTANT:** Ensure that **SKU** is entered for better navigation in the AvaTax backend.
+
+    > [!IMPORTANT]
+    > Ensure that **SKU** is entered for better navigation in the AvaTax backend.
 1. Click **Save**.
 1. To see a listing of all available AvaTax system tax codes, visit [http://taxcode.avatax.avalara.com](http://taxcode.avatax.avalara.com).
 
