@@ -100,7 +100,7 @@ The nopCommerce documentation is here to help you through the process of setting
 <div class="quick-links">
 	<div class="quick-item analytics">
 		<a href="/en/getting-started/advanced-configuration/configure-analytics.html"><h3>Analytics</h3></a>
-		<p>Learn how effective your markenting strategy is using the <a href="/en/getting-started/advanced-configuration/configure-analytics.html">Google analytics</a> and see your store statistics on the <a href="/en/running-your-store/reports.html">reports</a> panel</p>
+		<p>Learn how effective your marketing strategy is using the <a href="/en/getting-started/advanced-configuration/configure-analytics.html">Google analytics</a> and see your store statistics on the <a href="/en/running-your-store/reports.html">reports</a> panel</p>
 	</div>
 	<div class="quick-item plugins">
 		<a href="/en/getting-started/advanced-configuration/plugins-in-nopcommerce.html"><h3>Plugins</h3></a>
