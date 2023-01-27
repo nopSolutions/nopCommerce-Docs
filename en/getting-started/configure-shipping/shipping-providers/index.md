@@ -20,5 +20,4 @@ All shipment options are implemented as plugins and can be found and installed i
 Learn how to set up the required shipment options in the following chapters:
 
 * [Manual (fixed or by weight and by total)](xref:en/getting-started/configure-shipping/shipping-providers/manual)
-* [EasyPost](xref:en/getting-started/configure-shipping/shipping-providers/easypost)
 * [UPS](xref:en/getting-started/configure-shipping/shipping-providers/ups)
