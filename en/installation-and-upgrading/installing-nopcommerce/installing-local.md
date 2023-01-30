@@ -120,4 +120,4 @@ Click **Install** to start the installation process. When the setup process is c
 >
 > [!NOTE]
 >
-> If you want to completely reset a nopCommerce site to its default settings, you can delete the **ConnectionStrings** section from the `dataSettings.json` file located in the `App_Data` directory. You can even delete the whole `dataSettings.json` file but note that in this case, it will be recovered on the next run with default values, so you can lose your settings.
+> If you want to completely reset a nopCommerce site to its default settings, you can delete the **ConnectionStrings** section from the `appsettings.json` (or `dataSettings.json` for earlier versions) file located in the `App_Data` directory. You can even delete this whole file but note that in this case, it will be recovered on the next run with default values, so you can lose your settings.
