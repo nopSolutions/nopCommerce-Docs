@@ -1152,7 +1152,7 @@ These formatting rules concern the use of space characters to format code.
 
   ```csharp
   //Wrong
-  int[] x = new int[] { 1,2,3,4,5 }
+  int[] x = new int[] { 1,2,3,4,5 };
   ```
 
 - Remove space before a comma
