@@ -1,5 +1,5 @@
 ---
-title: Web API documentation
+title: Mobile app documentation
 uid: en/developer/mobile-app/index
 author: git.DmitriyKulagin
 contributors: git.DmitriyKulagin
