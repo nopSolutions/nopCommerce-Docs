@@ -18,12 +18,12 @@
   {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
   {{#_enableSearch}}<meta property="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
   {{#_enableNewTab}}<meta property="docfx:newtab" content="true">{{/_enableNewTab}}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7490022-8"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRDMWZ6J3B"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-7490022-8');
+    gtag('config', 'G-GRDMWZ6J3B');
   </script>
   <script>
     /*! loadCSS. [c]2017 Filament Group, Inc. MIT License
