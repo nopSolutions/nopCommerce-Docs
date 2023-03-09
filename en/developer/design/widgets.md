@@ -15,7 +15,6 @@ Currently, default nopCommerce installation allows the store admin to embed few 
 
 1. Google Analytics
 1. Nivo Slider
-1. AccessiBe
 1. What3words
 1. Facebook Pixel
 
