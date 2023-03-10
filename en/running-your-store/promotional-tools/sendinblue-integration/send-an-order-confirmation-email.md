@@ -47,17 +47,16 @@ The following variables can be included directly within your Sendinblue template
 
 | Order data | Shipping address data | Billing address data |
 | ------------- | ------------- | ------------- |
-| {{ params.affiliation }} | {{ params.shipping.firstname }} | {{ params.billing.firstname }} |
-| {{ params.currency }} | {{ params.shipping.lastname }} | {{ params.billing.lastname }} |
-| {{ params.date }} | {{ params.shipping.company }} | {{ params.billing.company }} |
-| {{ params.discount }} | {{ params.shipping.phone }} | {{ params.billing.phone }} |
-| {{ params.id }} | {{ params.shipping.address1 }} | {{ params.billing.address1 }} |
-| {{ params.revenue }} | {{ params.shipping.address2 }} | {{ params.billing.address2 }} |
-| {{ params.shipping }} | {{ params.shipping.city }} | {{ params.billing.city }} |
-| {{ params.subtotal }} | {{ params.shipping.country }} | {{ params.billing.country }} |
-| {{ params.tax }} | {{ params.shipping.state }} | {{ params.billing.state }} |
-| {{ params.total_before_tax }} | {{ params.shipping.zipcode }} | {{ params.billing.zipcode }} |
-| {{ params.url }} |
+| {{ params.url }} | {{ params.shipping_address.firstname }} | {{ params.billing_address.firstname }} |
+| {{ params.currency }} | {{ params.shipping_address.lastname }} | {{ params.billing_address.lastname }} |
+| {{ params.date }} | {{ params.shipping_address.company }} | {{ params.billing_address.company }} |
+| {{ params.discount }} | {{ params.shipping_address.phone }} | {{ params.billing_address.phone }} |
+| {{ params.id }} | {{ params.shipping_address.address1 }} | {{ params.billing_address.address1 }} |
+| {{ params.revenue }} | {{ params.shipping_address.address2 }} | {{ params.billing_address.address2 }} |
+| {{ params.shipping }} | {{ params.shipping_address.city }} | {{ params.billing_address.city }} |
+| {{ params.subtotal }} | {{ params.shipping_address.country }} | {{ params.billing_address.country }} |
+| {{ params.tax }} | {{ params.shipping_address.state }} | {{ params.billing_address.state }} |
+| {{ params.total_before_tax }} | {{ params.shipping_address.zipcode }} | {{ params.billing_address.zipcode }} |
 
 In the *Drag & Drop Editor*, select your desired block that will display the order information, then add your variables.
 
