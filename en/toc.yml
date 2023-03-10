@@ -496,6 +496,9 @@
           name: Description of plugin system
           href: developer/tutorials/description-of-plugin-system.md
         - 
+          name: Description of permission
+          href: developer/tutorials/permissions.md
+        - 
           name: UNIT testing
           href: developer/tutorials/unit-tests.md
     - 

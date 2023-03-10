@@ -33,3 +33,4 @@ The following is a list of common questions asked by developers working with nop
 * [Content Security Policy (CSP) Headers](xref:en/developer/tutorials/csp-headers)
 * [Description settings from appsettings.json file](xref:en/developer/tutorials/appsettings-json-file)
 * [Description of plugin system](xref:en/developer/tutorials/description-of-plugin-system)
+* [Description of permission](xref:en/developer/tutorials/permissions)
