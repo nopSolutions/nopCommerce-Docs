@@ -73,17 +73,57 @@ To download please visit [www.nopcommerce.com](https://www.nopcommerce.com/downl
 
 Since we are downloading nopCommerce for development purposes so we need to download the one that says "Package with source code" which contains all source code of nopCommerce. To download nopCommerce you need to be logged in or register a new account. Now you can download nopCommerce as a RAR file, and extract it to your desired folder location.
 
-### Step 2: Open nopCommerce solution in Microsoft Visual Studio
+### Step 2: Open nopCommerce solution
 
-Open the folder. Inside that folder, you will see a bunch of files and folders which contain all of the sources code for nopCommerce.
+* Open in Microsoft Visual Studio
 
-![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
+  Open the folder. Inside that folder, you will see a bunch of files and folders which contain all of the sources code for nopCommerce.
 
-In there you will also see a solution file with an extension of `.sln`, please double click that solution file to open the nopCommerce project in your Microsoft Visual Studio.
+  ![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
 
-### Step 3: Running nopCommerce project using Microsoft Visual Studio
+  In there you will also see a solution file with an extension of `.sln`, please double click that solution file to open the nopCommerce project in your Microsoft Visual Studio.
 
-nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box. So, now you can run a project using Microsoft Visual Studio by hitting ctrl+F5 or just F5 to run a project in debugging mode, or you can run using a physical button with a play icon in Microsoft Visual Studio. After you run the project for the first time you will see an installation page like below:
+* Open in Visual Studio Code
+
+  When starting, specify the root directory:
+
+  ![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image4.jpg)
+
+### Step 3: Running nopCommerce project
+
+nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box.
+
+* Run Microsoft Visual Studio
+
+  So, now you can run a project using *Microsoft Visual Studio* by hitting `ctrl+F5` or just `F5` to run a project in debugging mode, or you can run using a physical button with a play icon in *Microsoft Visual Studio*.
+
+* Run Visual Studio Code
+
+  The **launch.json** file is used to set up the debugger in *Visual Studio Code*. This file contains information about how the project will be launched. When you first start *Visual Studio Code*, it will generate this file according to the standard template along the path `.vscode/launch.json`.
+
+  In addition to the *launch.json* file, configure launch settings using the launchSettings.json file. The advantage of the **launchSettings.json** file is that it allows settings to be shared between *Visual Studio Code*, the full version of *Visual Studio*. And this file is already shipped with the nopCommerce source code. We just need to specify which profile we will use when starting the project.
+
+  ```json
+  "launchSettingsProfile": "Nop.Web",
+  ```
+
+  > [!NOTE]
+  >
+  > Only profiles with `"commandName": "Project"` are supported. The `"IIS Express"` profile cannot be used in this case.
+
+  By default, the project will run at `https://localhost:5001` because it is listed first in the profile. If you want to change this and not use SSL, then you need to specify this in the settings of the **launch.json** file:
+
+  ```json
+  "serverReadyAction": {
+      "action": "openExternally",
+      "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+      "uriFormat": "http://localhost:%s"
+  },
+  ```
+
+  So, now you can run a project using *Visual Studio Code* by hitting `ctrl+F5` or just `F5` to run a project in debugging mode.
+
+After you run the project for the first time you will see an installation page like below:
 
 ![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/nop_install.jpg)
 
@@ -109,12 +149,29 @@ After you fill in all of this information you need to press the "install" button
 
 ### 4. How to configure nopCommerce to run on HTTPS
 
-To set SSL/HTTPS for your nopCommerce you need to go to the property window of the `Nop.Web` project under the *Presentation* folder since it is the startup project for nopCommerce. To open the property window right-click on the `Nop.Web` project and at the bottom of the context menu you will see a menu named "Properties", just click on that menu then a property window will appear. In the property, window navigate to the "**Debug**" tab.
+* Microsoft Visual Studio
 
-![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image3.jpg)
+  To set SSL/HTTPS for your nopCommerce you need to go to the property window of the `Nop.Web` project under the *Presentation* folder since it is the startup project for nopCommerce. To open the property window right-click on the `Nop.Web` project and at the bottom of the context menu you will see a menu named "Properties", just click on that menu then a property window will appear. In the property, window navigate to the "**Debug**" tab.
 
-Check the "**Use SSL**", and enter the HTTPS URL beside it. Then save this project.
+  ![image3](_static/instruction-on-how-to-start-developing-on-nopcommerce/image3.jpg)
 
-Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in your WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called **launchSetting.json**. Open that file and you will see a bunch of configuration settings already written in that file.
+  Check the "**Use SSL**", and enter the HTTPS URL beside it. Then save this project.
 
-Inside that file, you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under the "**sslPort**" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:{yourPort}`.
+  Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in your WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called **launchSetting.json**. Open that file and you will see a bunch of configuration settings already written in that file.
+
+  Inside that file, you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under the "**sslPort**" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:{yourPort}`.
+
+* Visual Studio Code
+
+To launch the project via the *SSL* protocol, you need to make sure that the following setting is specified in the **launch.json** file:
+
+```json
+"serverReadyAction": {
+  "action": "openExternally",
+  "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+}
+```
+
+> [!NOTE]
+>
+> Settings in **launch.json** will take precedence over settings in **launchSettings.json**, so for example, if args is already set to something other than an empty string/array in launch.json then the launchSettings.json content will be ignored.
