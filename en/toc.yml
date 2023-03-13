@@ -440,10 +440,7 @@
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
         - 
           name: Updating an existing entity. How to add a new property
-          href: developer/tutorials/update-existing-entity.md
-        - 
-          name: Entity events and how they work
-          href: developer/tutorials/entity-event.md
+          href: developer/tutorials/update-existing-entity.md        
         - 
           name: Inversion of control and dependency injection
           href: developer/tutorials/inversion-of-control.md
