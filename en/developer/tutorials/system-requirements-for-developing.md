@@ -53,15 +53,19 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 ## 2. Tools Required for Development
 
-Since it is based on Microsoft's .NET 6 we need to install a few tools before starting developing on top of nopCommerce.
+Since it is based on Microsoft's .NET 7 we need to install a few tools before starting developing on top of nopCommerce.
 
 ### .NET 7 runtime & .NET 7 SDK
 
-Since nopCommerce 4.60 is based on .NET 7. We need to install [.NET 7 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.1-windows-x64-installer) and [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.101-windows-x64-installer) before we start development on nopCommerce.
+Since nopCommerce 4.60 is based on .NET 7. We need to install [.NET 7 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.3-windows-x64-installer) and [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.201-windows-x64-installer) before we start development on nopCommerce.
 
 ### Visual Studio 2022 or Above / Visual Studio Code
 
-As we know nopCommerce is based on 'Microsoft's .NET 7' and Visual Studio IDE is best for developing  .Net based Applications. Since .NET Core is platform independent so we can develop and deploy .Net based application on any platform but visual studio is not available in other platforms than window. So we can use Visual Studio Code as the alternative of Visual Studio for developing on Windows as well as in other platform.
+As we know, nopCommerce is based on "Microsoft .NET 7" and *Visual Studio IDE* is best for developing .Net based applications. Since .NET Core is platform independent, we can develop and deploy a .Net based application on any platform. But we can use *Visual Studio Code* as an alternative to *Visual Studio* for developing on Windows as well as other platforms.
+
+> [!NOTE]
+>
+> If you are using *Visual Studio Code*, you will need to install the **C# for Visual Studio Code (powered by OmniSharp)** extension.
 
 ### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above / PostgreSQL 9.2 or Above
 
