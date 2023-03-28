@@ -130,12 +130,12 @@ The approach that focuses on the fact that the functions of the application are 
 
 Frameworks & Libraries used:
 
-- Flutter SDK 3.3.9
-- Dart SDK 2.18.5
-- flutter_riverpod: 2.1.1
-- go_router: 5.2.3
-- flutter_secure_storage: 7.0.0
-- dio: 4.0.6
+- Flutter SDK 3.7.8
+- Dart SDK 2.19.5
+- flutter_riverpod: 2.3.2
+- go_router: 6.5.0
+- flutter_secure_storage: 8.0.0
+- dio: 5.1.0
 
 ## App architecture
 
@@ -182,6 +182,7 @@ Full paths for routes:
     accountrewardpoints => /account/accountRewardPoints
     accountchangepassword => /account/accountChangePassword
     accountproductreviews => /account/accountProductReviews
+    accountreturnrequests => /account/accountReturnRequests
     returnrequest => /account/returnRequest/:id
 ```
 
@@ -203,7 +204,7 @@ Use the [dart-dio](https://openapi-generator.tech/docs/generators/dart-dio) gene
   "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "6.0.1",
+    "version": "6.4.0",
     "generators": {
         "frontend": {
             "input-spec": "swagger.json",
@@ -240,3 +241,31 @@ It is necessary that the OpenAPI schema *swagger.json* be in the directory with 
     frontend_api: # <- nopCommerce generated api library
         path: lib/frontend_api
     ```
+
+## Localization
+
+To localize the interface of the application itself, you need to place a file with locales in the `\lib\localization` folder. It is important that the file name is in the following format:
+
+`intl_`**{your_language_code_from_server}**`.arb`
+
+As a basis, you can take the *intl_en.arb* file already in the kit and translate its resources into the target language.
+
+Run the following command in a terminal to generate the required resource files for localization.
+
+```bash
+flutter gen-l10n
+```
+
+You can make sure that all the necessary resources are generated correctly in the `.dart_tool\flutter_gen\gen_l10n` path.
+
+![image](./_static/index/localization.png)
+
+> [!WARNING]
+>
+> Do not make any changes to this file as this part of the code is auto-generated. All localization changes should be made strictly in the `intl_`**{your_language_code_from_server}**`.arb` file located along the path `\lib\localization`.
+
+Now, when switching the language in the application settings, the application interface will also be localized.
+
+> [!IMPORTANT]
+>
+> The language code that will be embedded in the name of the localization file must match the one added on your server. Otherwise, the interface will be localized by the default locales (i.e. `en`).
