@@ -32,7 +32,7 @@ Here you can see three tabs. **All** tab contains all themes and extensions, **T
 string GetConfigurationPageUrl()
 ```
 
-This should return the URL for configuration view. When we install the plugin we will see a `Configuration` button, so if we implement this method in our class then the string value we return to form this method will be used as the URL for that `configuration` button.
+This should return the URL for configuration view. When we install the plugin we will see a `Configuration` button, so if we implement this method in our class then the string value we return to from this method will be used as the URL for that `configuration` button.
 
 ### Property `PluginDescriptor`
 
