@@ -38,7 +38,7 @@ Follow these steps to configure `PayPal Zettle`.
 
 1. Configure the PayPal Zettle plugin
 
-    Open the PayPal Commerce configuration page in the admin area. You will see the following form:
+    Open the PayPal Zettle configuration page in the admin area. You will see the following form:
 
    ![Configure plugin](_static/paypal-zettle/configure_plugin.jpg)
 
