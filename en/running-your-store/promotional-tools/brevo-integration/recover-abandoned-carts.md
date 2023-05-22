@@ -1,35 +1,35 @@
 ---
 title: Recover abandoned carts
-uid: en/running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts
+uid: en/running-your-store/promotional-tools/brevo-integration/recover-abandoned-carts
 author: git.mariannk
 contributors: git.DmitriyKulagin
 ---
 
 # Recover abandoned carts
 
-In this tutorial, you will learn how to create abandoned cart email and how to set up the workflow to recover lost sales. You will also learn which nopCommerce order data is compatible with the Sendinblue platform.
+In this tutorial, you will learn how to create abandoned cart email and how to set up the workflow to recover lost sales. You will also learn which nopCommerce order data is compatible with the Brevo platform.
 
 ## Before getting started
 
 You will need the following:
 
-* Sendinblue account credentials. If you don't have one, [sign up for free](https://app.sendinblue.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
-* Make sure that Sendinblue's [*New Template Language*](https://help.sendinblue.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled on your account.
-* Follow [these steps](xref:en/running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin) to set up the Sendinblue plugin.
+* Brevo account credentials. If you don't have one, [sign up for free](https://app.brevo.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
+* Make sure that Brevo's [*New Template Language*](https://help.brevo.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled on your account.
+* Follow [these steps](xref:en/running-your-store/promotional-tools/brevo-integration/set-up-brevo-plugin) to set up the brevo plugin.
 
 ## Create an abandoned cart email template
 
-First, log into your Sendinblue account then go to the Automation platform > [Email Templates](https://my.sendinblue.com/camp/lists/template?tap_a=30591-fb13f0&tap_s=840216-5153c7). Click on the **New Template** button at the top right.
+First, log into your Brevo account then go to the Automation platform > [Email Templates](https://my.brevo.com/camp/lists/template?tap_a=30591-fb13f0&tap_s=840216-5153c7). Click on the **New Template** button at the top right.
 
 The email template can be personalized with several types of data:
 
-* [contact attributes saved in your Sendinblue list](#personalize-your-email-with-contact-attributes)
+* [contact attributes saved in your Brevo list](#personalize-your-email-with-contact-attributes)
 * [abandoned item details](#personalize-your-email-with-the-abandoned-items-details)
 * [abandoned cart details](#personalize-your-email-with-the-abandoned-cart-details)
 
 ### Personalize your email with contact attributes
 
-Let's start by [personalizing with contact attributes](https://help.sendinblue.com/hc/en-us/articles/360001008200?tap_a=30591-fb13f0&tap_s=840216-5153c7).
+Let's start by [personalizing with contact attributes](https://help.brevo.com/hc/en-us/articles/360001008200?tap_a=30591-fb13f0&tap_s=840216-5153c7).
 
 In the example below, we have included a personalization of:
 
@@ -37,7 +37,7 @@ In the example below, we have included a personalization of:
 * the recipient's last name using {{ contact.LASTNAME }}
 
 > [!NOTE]
-> FIRSTNAME and LASTNAME should be existing attributes in your Sendinblue account.
+> FIRSTNAME and LASTNAME should be existing attributes in your Brevo account.
 
 ![Attribute personalization](_static/recover-abandoned-carts/attribute-personalization.gif)
 
@@ -45,7 +45,7 @@ Now let's personalize the email template with order variables such as the name o
 
 ### Personalize your email with the abandoned items details
 
-The following variables may be included directly from a dynamic list within your Sendinblue template content:
+The following variables may be included directly from a dynamic list within your Brevo template content:
 
 | Items data | Insert this placeholder in your template |
 | ------------- | ------------- |
@@ -88,7 +88,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 
 ### Personalize your email with the abandoned cart details
 
-The following variables may be included directly within your Sendinblue template content:
+The following variables may be included directly within your Brevo template content:
 
 | Cart details | Insert this placeholder |
 | ------------- | ------------- |
@@ -107,7 +107,7 @@ The following variables may be included directly within your Sendinblue template
 
 In the *Drag & Drop Editor*, select your desired block that will display the abandoned cart information then add the order variables you want.
 
-We recommend formatting numbers by using [floatformat](https://help.sendinblue.com/hc/en-us/articles/360000268730?tap_a=30591-fb13f0&tap_s=840216-5153c7). In the example below, we have added:
+We recommend formatting numbers by using [floatformat](https://help.brevo.com/hc/en-us/articles/360000268730?tap_a=30591-fb13f0&tap_s=840216-5153c7). In the example below, we have added:
 
 * `{{ params.currency }}` - the currency of the abandoned cart
 * `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the abandoned cart
@@ -127,7 +127,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 > [!NOTE]
 > A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
 
-Navigate to the [Automation](https://automation.sendinblue.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) tab of your Sendinblue account.
+Navigate to the [Automation](https://automation.brevo.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) tab of your Brevo account.
 
 Click on **+ CREATE A NEW WORKFLOW**, then select **Detailed Abandoned Cart** and follow the steps.
 
@@ -139,11 +139,11 @@ When your workflow is complete, click on **DONE** to save and activate it.
 
 Feel free to read this tutorials to help you creating the workflow:
 
-* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.sendinblue.com/hc/en-us/articles/360002761299?tap_a=30591-fb13f0&tap_s=840216-5153c7)
+* [Recovering abandoned carts: automatically send the emails (step 3)](https://help.brevo.com/hc/en-us/articles/360002761299?tap_a=30591-fb13f0&tap_s=840216-5153c7)
 
 ## Example
 
-Let's say that customer Jean Blue jean.blue@sendinblue.com has visited your store but the following 3 items have been left in the cart.
+Let's say that customer Jean Blue jean.blue@brevo.com has visited your store but the following 3 items have been left in the cart.
 
 ![Cart example](_static/recover-abandoned-carts/cart-example.jpg)
 
@@ -157,4 +157,4 @@ The email received by Jean Blue will look like this:
 
 ## Learn more
 
-* [Send an order confirmation email](xref:en/running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email)
+* [Send an order confirmation email](xref:en/running-your-store/promotional-tools/brevo-integration/send-an-order-confirmation-email)

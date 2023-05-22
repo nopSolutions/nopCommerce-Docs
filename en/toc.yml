@@ -341,18 +341,18 @@
           name: Email campaigns
           href: running-your-store/promotional-tools/email-campaigns.md
         -
-          name: Sendinblue integration
-          href: running-your-store/promotional-tools/sendinblue-integration/index.md
+          name: Brevo integration
+          href: running-your-store/promotional-tools/brevo-integration/index.md
           items: 
             -
-              name: Set up Sendinblue plugin
-              href: running-your-store/promotional-tools/sendinblue-integration/set-up-sendinblue-plugin.md
+              name: Set up Brevo plugin
+              href: running-your-store/promotional-tools/brevo-integration/set-up-brevo-plugin.md
             -
               name: Recover abandoned carts
-              href: running-your-store/promotional-tools/sendinblue-integration/recover-abandoned-carts.md
+              href: running-your-store/promotional-tools/brevo-integration/recover-abandoned-carts.md
             -
               name: Send an order confirmation email
-              href: running-your-store/promotional-tools/sendinblue-integration/send-an-order-confirmation-email.md
+              href: running-your-store/promotional-tools/brevo-integration/send-an-order-confirmation-email.md
         -
           name: Facebook Pixel
           href: running-your-store/promotional-tools/facebook-pixel.md

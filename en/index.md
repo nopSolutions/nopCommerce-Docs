@@ -104,7 +104,7 @@ The nopCommerce documentation is here to help you through the process of setting
 	</div>
 	<div class="quick-item plugins">
 		<a href="/en/getting-started/advanced-configuration/plugins-in-nopcommerce.html"><h3>Plugins</h3></a>
-		<p>Use built-in plugins to reach your marketing goals: <a href="/en/running-your-store/promotional-tools/sendinblue-integration/index.html">Sendinblue</a>, <a href="/en/running-your-store/promotional-tools/facebook-pixel.html">Facebook Pixel</a>. Find dozens of nopCommerce plugins on the <a target="_blank" href="https://www.nopcommerce.com/marketplace">marketplace</a></p>
+		<p>Use built-in plugins to reach your marketing goals: <a href="/en/running-your-store/promotional-tools/brevo-integration/index.html">Brevo</a>, <a href="/en/running-your-store/promotional-tools/facebook-pixel.html">Facebook Pixel</a>. Find dozens of nopCommerce plugins on the <a target="_blank" href="https://www.nopcommerce.com/marketplace">marketplace</a></p>
 	</div>
 </div>
 

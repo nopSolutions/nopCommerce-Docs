@@ -18,5 +18,5 @@ Learn more in the following chapters:
 - [Tier prices](xref:en/running-your-store/promotional-tools/tier-prices)
 - [Cross-sells and related products](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products)
 - [Email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns)
-- [Sendinblue integration](xref:en/running-your-store/promotional-tools/sendinblue-integration/index)
+- [Brevo integration](xref:en/running-your-store/promotional-tools/brevo-integration/index)
 - [Facebook Pixel](xref:en/running-your-store/promotional-tools/facebook-pixel)
