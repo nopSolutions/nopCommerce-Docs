@@ -29,7 +29,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 ## Supported web servers
 
 * Internet Information Service (IIS) 7.0 or above
-* For nopCommerce 4.60: Install .NET 7 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.1-windows-x64-installer)).
+* For nopCommerce 4.60: Install .NET 7 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.5-windows-hosting-bundle-installer)).
 * For nopCommerce 4.50: Install .NET 6 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.1-windows-hosting-bundle-installer)).
 * For nopCommerce 4.40: Install .NET 5 runtime ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer)).
 * For nopCommerce 4.30: Install .NET Core 3.1 runtime ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.3-windows-hosting-bundle-installer)).
@@ -51,7 +51,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 * Google Chrome 1.x
 * Apple Safari 2.x
 
-**For nopCommerce 4.60 or above: MS Visual Studio 2022 (version 17.5 or above). And don't forget to install .NET 7 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.201-windows-x64-installer)). Required for developers who want to edit the source code.**
+**For nopCommerce 4.60 or above: MS Visual Studio 2022 (version 17.5 or above). And don't forget to install .NET 7 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.302-windows-x64-installer)). Required for developers who want to edit the source code.**
 
 **For nopCommerce 4.50: MS Visual Studio 2022 (version 17.0 or above). And don't forget to install .NET 6 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)). Required for developers who want to edit the source code.**
 
