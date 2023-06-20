@@ -130,12 +130,12 @@ The approach that focuses on the fact that the functions of the application are 
 
 Frameworks & Libraries used:
 
-- Flutter SDK 3.7.8
-- Dart SDK 2.19.5
-- flutter_riverpod: 2.3.2
-- go_router: 6.5.0
+- Flutter SDK 3.10.5
+- Dart SDK 3.0.2
+- flutter_riverpod: 2.3.6
+- go_router: 7.1.1
 - flutter_secure_storage: 8.0.0
-- dio: 5.1.0
+- dio: 5.1.2
 
 ## App architecture
 
@@ -204,7 +204,7 @@ Use the [dart-dio](https://openapi-generator.tech/docs/generators/dart-dio) gene
   "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "6.4.0",
+    "version": "6.6.0",
     "generators": {
         "frontend": {
             "input-spec": "swagger.json",
