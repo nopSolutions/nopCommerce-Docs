@@ -23,7 +23,7 @@ Since nopCommerce completely switched to .Net Core (version 4.10) and became a c
 > [!NOTE]
 > Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers.
 
-In nopCommerce, Linq2DB is used as a database-access level. Currently, nopCommerce supports two of the most popular databases: MS SQL Server and MySQL Server. If we analyze the code, we can easily see that each database is supported by its class that implements the INopDataProvider interface. But if you do not plan to create your database access provider, you can ignore the implementation details at all. For most development tasks, understanding just a few points will be sufficient:
+In nopCommerce, Linq2DB is used as a database-access level. Currently, nopCommerce supports three of the most popular databases: MS SQL Server, MySQL Server, and PostgreSQL. If we analyze the code, we can easily see that each database is supported by its class that implements the INopDataProvider interface. But if you do not plan to create your database access provider, you can ignore the implementation details at all. For most development tasks, understanding just a few points will be sufficient:
 
 1. You need an object corresponding to the table in the database (POCO class).
 1. All work with table data is carried out through the IRepository `<TEntity>` interface. You do not even need to take care of its placement into the IoC, since it is registered through a call to the appropriate factory method.
