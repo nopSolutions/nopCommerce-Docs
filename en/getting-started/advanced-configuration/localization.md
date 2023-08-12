@@ -18,7 +18,7 @@ To see or edit the installed languages, go to **Configuration → Languages**:
 
 > [!NOTE]
 >
-> You can download new language packs from the official [Marketplace](http://www.nopcommerce.com/marketplace).
+> You can download new language packs from the official [Translations](https://www.nopcommerce.com/en/translations).
 
 ## Adding a new language
 
