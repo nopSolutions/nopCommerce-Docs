@@ -18,7 +18,7 @@ You can check into more details about this methods by going to its definition in
 
 ```js
 //Loading CSS file
-@NopHtml.AddCssFileParts(ResourceLocation.Head, "~/Plugins/{PluginName}/Content/{CSSFileName.Css}", excludeFromBundle = false);
+@NopHtml.AddCssFileParts("~/Plugins/{PluginName}/Content/{CSSFileName.Css}", excludeFromBundle: false);
 
 //Loading js file
 //Third parameter value indicating whether to exclude this script from bundling
