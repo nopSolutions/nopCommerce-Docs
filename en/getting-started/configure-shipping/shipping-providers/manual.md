@@ -75,7 +75,7 @@ For example, if you have the following shipping conditions:
   * Order weight to: **99999**
   * Additional fixed cost: **15**
   * Lower weight limit: **2**
-  * Rate per weight unit: **3**
+  * Rate per weight unit: **6**
   
  > [!NOTE]
  >
