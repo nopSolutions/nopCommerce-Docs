@@ -204,7 +204,7 @@ Use the [dart-dio](https://openapi-generator.tech/docs/generators/dart-dio) gene
   "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "6.6.0",
+    "version": "7.0.0-beta",
     "generators": {
         "frontend": {
             "input-spec": "swagger.json",
@@ -218,6 +218,14 @@ Use the [dart-dio](https://openapi-generator.tech/docs/generators/dart-dio) gene
   }
 }
 ```
+
+> [!NOTE]
+>
+> To update the generator version, run the following command:
+>
+> ```bash
+> openapi-generator-cli version-manager list
+>```
 
 It is necessary that the OpenAPI schema *swagger.json* be in the directory with the generator installed.
 
