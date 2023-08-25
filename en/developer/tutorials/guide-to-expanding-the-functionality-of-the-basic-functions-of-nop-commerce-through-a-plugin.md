@@ -40,7 +40,7 @@ Select the **Class Library** project template and go to the next step, where you
 
 ![image2_1](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_1.png)
 
- nopCommerce follows some standard naming conversion, which you can get more information from nopCommerce documentation. I have chosen `Nop.Plugin.Widget.HelloWorld` as my project name by following the naming conversion of nopCommerce. And the location should be inside the */src/Plugins* directory. Now click **Next**.
+ nopCommerce follows some standard naming convention, which you can get more information from nopCommerce documentation. I have chosen `Nop.Plugin.Widget.HelloWorld` as my project name by following the naming convention of nopCommerce. And the location should be inside the */src/Plugins* directory. Now click **Next**.
 
 ![image2_2](_static/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin/image2_2.png)
 
