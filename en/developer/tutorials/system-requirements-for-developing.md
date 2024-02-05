@@ -53,7 +53,7 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 ## 2. Tools Required for Development
 
-Since it is based on Microsoft's .NET 7 we need to install a few tools before starting developing on top of nopCommerce.
+Since it is based on Microsoft's .NET 7 we need to install a few tools before starting development on top of nopCommerce.
 
 ### .NET 7 runtime & .NET 7 SDK
 
@@ -69,7 +69,7 @@ As we know, nopCommerce is based on "Microsoft .NET 7" and *Visual Studio IDE* i
 
 ### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above / PostgreSQL 9.2 or Above
 
-Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB  is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. And you may choose between MS SQL Server, MySql server and PostgreSQL.
+Starting from the 4.30 version, nopCommerce uses Linq2DB as an ORM Framework. Linq2DB is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. You may choose between MS SQL Server, MySql server, and PostgreSQL.
 
 > [!NOTE]
 >
@@ -77,4 +77,4 @@ Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB 
 
 ### Internet Information Service (IIS) 7.0 or above
 
-For hosting nopCommerce app/project we can use IIS. Which is Microsoft technology used to host Microsoft web based applications on windows. But you are not limited for hosting your nopCommerce in windows only you can host nopCommerce in Linux and MacOS too. As you may know you that IIS is not supported in other platform then windows. So, you can use other tools like Apache or Nginx to host your application on Linux server.
+One option for hosting a nopCommerce app/project is IIS, a Microsoft technology that hosts web-based applications on Windows. However, nopCommerce can also run on Linux and MacOS, which do not support IIS. In that case, you can use alternative tools like Apache or Nginx to host your application on a Linux server.
