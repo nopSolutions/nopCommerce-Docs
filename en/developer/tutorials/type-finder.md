@@ -1,11 +1,11 @@
 ---
-title: How and when to use the ITypeFinder interface
+title: ITypeFinder Interface
 uid: en/developer/tutorials/type-finder
 author: git.skoshelev
 contributors: git.mariannk, git.DmitriyKulagin
 ---
 
-# How and when to use the ITypeFinder interface
+# ITypeFinder Interface
 
 ## ITypeFinder
 
@@ -38,7 +38,7 @@ public interface ITypeFinder
 
 The main default implementation of this interface is the ``WebAppTypeFinder`` class. In turn ``WebAppTypeFinder`` only slightly extends the ``AppDomainTypeFinder`` class, which essentially does all the work of searching for types. But we use the derived class since it extends the scope of the search for types to all assemblies from the **\Bin** directory, while the main class works with assemblies from the current application domain only.
 
-Without dwelling on the implementation details of the ``FindClassesOfType`` methods (since they both boils down to the very simple function which code is available at [this link](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Core/Infrastructure/AppDomainTypeFinder.cs#L184)) let's move on to the most important thing.
+Without dwelling on the implementation details of the ``FindClassesOfType`` methods (since they both boil down to the very simple function which code is available at [this link](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Core/Infrastructure/AppDomainTypeFinder.cs#L184)) let's move on to the most important thing about this interface.
 
 ## So why do we need the ITypeFinder interface
 
@@ -51,7 +51,7 @@ This interface is used in some very important aspects of how nopCommerce works:
     * ``IOrderedMapperProfile`` - Create **AutoMapper** configuration
     * ``IEntityBuilder``, ``INameCompatibility`` - Configure database entity builder for backward compatibility of table naming for **Linq2Db**([nopCommerce Data Access Layer](xref:en/developer/tutorials/source-code-organization#librariesnopdata))
     * ``IRouteProvider`` - Register routes
-    * ``IConsumer<T>`` - Register handlers for internal events such as changes of database entities
+    * ``IConsumer<T>`` - Register handlers for internal events such as changes in database entities
     * ``IExternalAuthenticationRegistrar`` - Register and configure external authentication methods
 1. Searching for a suitable shipment tracker in real-time
 

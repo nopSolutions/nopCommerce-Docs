@@ -1,21 +1,21 @@
 ---
-title: Instruction on how to start developing on nopCommerce
+title: Getting Started with nopCommerce Development
 uid: en/developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce
 author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# Instruction on how to start developing on nopCommerce
+# Getting Started with nopCommerce Development
 
 nopCommerce is an open-source Microsoft ASP.NET-based eCommerce solution. This is a basic guide for developers on how to start developing on nopCommerce.
 
 ## 1. Tools Required for Development
 
-You can learn about technology and system requirement from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article.
+You can learn about technology and system requirements from the **"[Tools Required for Development](xref:en/developer/tutorials/system-requirements-for-developing#2-tools-required-for-development)"** article.
 
 ## 2. Stack of technologies used in nopCommerce
 
-The best part of nopCommerce is that its source code is fully customizable and its pluggable architecture makes it easy to develop custom functionality and follow any business requirements by using a plugin system. It follows well-known software architectures, patterns, and best security practices. And above all of that, it runs on the latest technologies to offer the best experience possible to end-users. So, to achieve all of this nopCommerce uses a stack of technologies in its architecture.
+The best part of nopCommerce is that its source code is fully customizable and its pluggable architecture makes it easy to develop custom functionality and follow any business requirements by using a plugin system. It follows well-known software architectures, patterns, and best security practices. And above all that, it runs on the latest technologies to offer the best experience possible to end-users. So, to achieve all of this nopCommerce uses a stack of technologies in its architecture.
 
 * Application Layer
   * Razor View Engine
@@ -24,9 +24,6 @@ The best part of nopCommerce is that its source code is fully customizable and i
   * JQuery
 
     It is a javascript library used to extend the UI & UX functionality of HTML pages.
-  * Kendo UI
-
-    Kendo UI is a comprehensive HTML5 user interface framework for building interactive and high-performance websites and applications
 
 * Business Layer
   * Fluent Validation
@@ -34,21 +31,21 @@ The best part of nopCommerce is that its source code is fully customizable and i
     It is a validation library for .NET that uses a fluent interface and lambda expressions for building validation rules.
   * AutoMapper
 
-    AutoMapper is a simple library that helps us to transform one object type to another. It is a convention-based object-to-object mapper that requires very little configuration.
+    AutoMapper is a simple library that helps us to transform one object type into another. It is a convention-based object-to-object mapper that requires very little configuration.
   * ASP.NET Core internal dependency injection
 
     ASP IOC manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.
   * Linq2DB
 
-    Linq2DB is an open-source ORM framework for .NET applications. It is a .NET Foundation project. It enables developers to work with data using objects of domain-specific classes without focusing on the underlying database tables and columns where this data is stored. So, it is the bridge between Business Layer and Data Layer.
+    Linq2DB is an open-source ORM framework for .NET applications. It is a .NET Foundation project. It enables developers to work with data using objects of domain-specific classes without focusing on the underlying database tables and columns where this data is stored. So, it is the bridge between the Business Layer and the Data Layer.
   * FluentMigrator
 
-    Fluent Migrator is a migration framework for .NET. Migrations are a structured way to alter your database schema and are an alternative to creating lots of SQL scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, the test database, and the production database). Database schema changes are described in classes written in C# that can be checked into a version control system.
+    Fluent Migrator is a migration framework for .NET. Migrations are a structured way to alter the database schema and are an alternative to creating lots of SQL scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, the test database, and the production database). Database schema changes are described in classes written in C# that can be checked in to a version control system.
 * Data Layer
   * Microsoft SQL Server
 
     SQL Server is Microsoft's full-featured relational database management system (RDBMS).
-  * MySQL Server
+  * MySQL
 
     MySQL is the world's most popular open-source database. With its proven performance, reliability, and ease of use, MySQL has become the leading database choice for web-based applications.
   * PostgreSQL
@@ -56,32 +53,32 @@ The best part of nopCommerce is that its source code is fully customizable and i
     PostgreSQL is a powerful, open-source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
   * Redis (cache)
 
-    Redis is an open-source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. So, in nopCommerce Redis is used to store old data as an in-memory cache dataset. Which boosts the speed and performance of an application.
+    Redis is an open-source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. In nopCommerce, Redis is used to store old data as an in-memory cache dataset. Which boosts the speed and performance of an application.
   * Microsoft Azure(Optional)
 
     Azure is a public cloud computing platform with solutions including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) that can be used for services such as analytics, virtual computing, storage, networking, and much more.
 
 ## 3. How to download the project and run it on the local machine
 
-Before we begin to work with nopCommerce we need to ensure that our local machine is configured and need to ensure that all of our tools required to develop in nopCommerce are installed properly and working correctly. Now, let us go to step-by-step instructions on how to download and run nopCommerce on our local machine.
+Before we begin to work with nopCommerce we need to ensure that our local machine is configured and all the required tools are installed properly and working correctly. Now, let us go to step-by-step instructions on how to download and run nopCommerce on our local machine.
 
 ### Step 1: Download nopCommerce source code
 
-To download please visit [www.nopcommerce.com](https://www.nopcommerce.com/download-nopcommerce). There you can see two download buttons one with a source code and one without source code as shown in the picture below.
+To download please visit [www.nopcommerce.com](https://www.nopcommerce.com/download-nopcommerce). There you can see two download buttons one with a source code and one without a source code as shown in the picture below.
 
 ![image1](_static/instruction-on-how-to-start-developing-on-nopcommerce/image1.png)
 
-Since we are downloading nopCommerce for development purposes so we need to download the one that says "Package with source code" which contains all source code of nopCommerce. To download nopCommerce you need to be logged in or register a new account. Now you can download nopCommerce as a RAR file, and extract it to your desired folder location.
+Since we are downloading nopCommerce for development purposes we need to download the one that says "Package with source code" which contains the source code of nopCommerce. To download nopCommerce you need to be logged in or register a new account. Now you can download nopCommerce as a RAR file, and extract it to your desired folder location.
 
 ### Step 2: Open nopCommerce solution
 
 * Open in Microsoft Visual Studio
 
-  Open the folder. Inside that folder, you will see a bunch of files and folders which contain all of the sources code for nopCommerce.
+  Open the folder. Inside that folder, you will see a bunch of files and folders that form the source code for nopCommerce.
 
   ![image2](_static/instruction-on-how-to-start-developing-on-nopcommerce/image2.png)
 
-  In there you will also see a solution file with an extension of `.sln`, please double click that solution file to open the nopCommerce project in your Microsoft Visual Studio.
+  There, you will also see a solution file with the `.sln` extension, double click that solution file to open the nopCommerce project in your Microsoft Visual Studio.
 
 * Open in Visual Studio Code
 
@@ -89,19 +86,19 @@ Since we are downloading nopCommerce for development purposes so we need to down
 
   ![image4](_static/instruction-on-how-to-start-developing-on-nopcommerce/image4.jpg)
 
-### Step 3: Running nopCommerce project
+### Step 3: Running the nopCommerce project
 
-nopCommerce does not require you to have any further configuration just to run the project. nopCommerce is ready to run out of the box.
+nopCommerce does not require you to have any further configuration to run the project. nopCommerce is ready to run out of the box.
 
 * Run Microsoft Visual Studio
 
-  So, now you can run a project using *Microsoft Visual Studio* by hitting `ctrl+F5` or just `F5` to run a project in debugging mode, or you can run using a physical button with a play icon in *Microsoft Visual Studio*.
+  So, now you can run a project using *Microsoft Visual Studio* by hitting `ctrl+F5` or just `F5` to run a project in debugging mode, or you can run using a button with a play icon in *Microsoft Visual Studio*.
 
 * Run Visual Studio Code
 
   The **launch.json** file is used to set up the debugger in *Visual Studio Code*. This file contains information about how the project will be launched. When you first start *Visual Studio Code*, it will generate this file according to the standard template along the path `.vscode/launch.json`.
 
-  In addition to the *launch.json* file, configure launch settings using the launchSettings.json file. The advantage of the **launchSettings.json** file is that it allows settings to be shared between *Visual Studio Code*, the full version of *Visual Studio*. And this file is already shipped with the nopCommerce source code. We just need to specify which profile we will use when starting the project.
+  In addition to the *launch.json* file, configure launch settings using the launchSettings.json file. The advantage of the **launchSettings.json** file is that it allows settings to be shared between *Visual Studio Code* and the full version of *Visual Studio*. This file is already shipped with the nopCommerce source code. We just need to specify which profile we will use when starting the project.
 
   ```json
   "launchSettingsProfile": "Nop.Web",
@@ -121,7 +118,7 @@ nopCommerce does not require you to have any further configuration just to run t
   },
   ```
 
-  So, now you can run a project using *Visual Studio Code* by hitting `ctrl+F5` or just `F5` to run a project in debugging mode.
+  Now you can run a project using *Visual Studio Code* by hitting `ctrl+F5` or just `F5` to run a project in debugging mode.
 
 After you run the project for the first time you will see an installation page like below:
 
@@ -139,7 +136,7 @@ Here you need to provide the information you want to use for this project.
 
 Here you have to choose your database storage. You can use `MS SQL Server` or `MySQL` or `PostgreSQL`. It is your decision which one you want to use.
 
-For the sake of this tutorial, we will be using the `MS SQL Server`.
+For the sake of this tutorial, we will be using `MS SQL Server`.
 
 Also, you will see the checkbox asking if you want to create a database if not exist, please check the checkbox.
 
@@ -157,7 +154,7 @@ After you fill in all of this information you need to press the "install" button
 
   Check the "**Use SSL**", and enter the HTTPS URL beside it. Then save this project.
 
-  Now run your project again and navigate to the given URL and you can see that now it is running on SSL/HTTPS. So this is the one way for configuring HTTPS in your WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project inside there you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties there you will find a JSON file called **launchSetting.json**. Open that file and you will see a bunch of configuration settings already written in that file.
+  Now run your project again and navigate to the given URL and you can see that it is running on SSL/HTTPS now. So this is the one way for configuring HTTPS in your WebProject but there is also another way to configure SSL. For that go to your `Nop.Web` project and expand the project, you will see a virtual file named "Properties" in your project structure just below "Dependencies". Inside Properties you will find a JSON file called **launchSetting.json**. Open that file and you will see a bunch of configuration settings already written in that file.
 
   Inside that file, you may have a section as shown in the figure above. So to enable SSL you just need to replace 0 under the "**sslPort**" property to the port you want to run for SSL connection, make sure the port is available. To test, run your project and navigate to `https://localhost:{yourPort}`.
 

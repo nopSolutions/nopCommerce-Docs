@@ -9,7 +9,7 @@ contributors: git.exileDev, git.DmitriyKulagin
 
 Like any other website platform, nopCommerce has settings such as "Store name" or "One page checkout enabled". There are two ways to manage settings in nopCommerce.
 
-You can use **GetSettingByKeyAsync** and **SetSettingAsync** methods of **ISettingService** implementation for loading and saving individual settings.
+1. You can use **GetSettingByKeyAsync** and **SetSettingAsync** methods of **ISettingService** implementation for loading and saving individual settings.
 
 ```csharp
 var setting = await GetSettingByKeyAsync<string>(key);
@@ -17,7 +17,7 @@ var setting = await GetSettingByKeyAsync<string>(key);
 await _settingService.SetSettingAsync(key, value);
 ```
 
- The preferred approach for handling settings in nopCommerce is to create a new implementation of the **ISettings** interface. Each setting will be represented by a C# property and developers should rely on setting classes to be injected via the constructor when they are required. Below is an example settings class.
+2. The preferred approach for handling settings in nopCommerce is to create a new implementation of the **ISettings** interface. Each setting will be represented by a C# property and developers should rely on setting classes to be injected via the constructor when they are required. Below is an example settings class.
 
 ```csharp
 public partial class MediaSettings : ISettings

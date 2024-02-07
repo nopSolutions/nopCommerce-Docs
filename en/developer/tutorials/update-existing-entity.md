@@ -1,11 +1,11 @@
 ---
-title: Updating an existing entity. How to add a new property.
+title: Updating an Existing Entity (how to add a new property)
 uid: en/developer/tutorials/update-existing-entity
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Updating an existing entity. How to add a new property
+# Updating an existing entity (How to add a new property)
 
 This tutorial covers how to add a property to the "Category" entity that ships with the nopCommerce source code.
 
@@ -27,7 +27,7 @@ Assembly: Nop.Data
 Solution Location: Nop.Data.Mapping.Builders.Catalog.CategoryBuilder.cs
 ```
 
-But I recommend you to use it only for your entity classes. In our case, we'll use the migration mechanism instead of the mapping class.
+But we recommend you to use it only for your entity classes. In our case, we'll use the migration mechanism instead of the mapping class.
 
 Add the following property to the `Category` class.
 
@@ -93,7 +93,6 @@ Add the property to our view model.
 
 ```csharp
 // The NopResourceDisplayName provides the "key" used during localization
-// Keep an eye out for more about localization in future blogs
 [NopResourceDisplayName("Admin.Catalog.Categories.Fields.SomeNewProperty")]
 public string SomeNewProperty { get; set; }
 ```
@@ -128,13 +127,12 @@ Views contain the HTML for displaying model data. Place this HTML under the "Pic
 
 ## The controller
 
-In this case, the controller is responsible for mapping the domain data model to our view model and vice versa. The reason I choose the category model to update is because of its simplicity. I want this to be an introduction to the nopCommerce platform and I would like to keep it as simple as possible.
+In this case, the controller is responsible for mapping the domain data model to our view model and vice versa. The reason we chose the category model to update is because of its simplicity.
 
 ```sh
 File System Location: [Project Root]\Presentation\Nop.Web\Areas\Admin\Controllers\CategoryController.cs
 Assembly: Nop.Admin
-Solution Location:
-Nop.Web.Areas.Admin.Controllers.CategoryController.cs
+Solution Location: Nop.Web.Areas.Admin.Controllers.CategoryController.cs
 ```
 
 We're going to make three updates to the CategoryController class.
@@ -143,7 +141,7 @@ We're going to make three updates to the CategoryController class.
 * Create View Model → Data Model
 * Edit View Model → Data Model
 
-Normally I would write tests for the following code and verify that model mapping is working correctly, but I'll skip unit testing to keep it simple.
+Normally we would write tests for the following code and verify that model mapping is working correctly, but we'll skip unit testing for now to keep it simple.
 
 In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most cases, it's not required because it's automatically handled by *AutoMapper* in the `.ToModel()` method.
 

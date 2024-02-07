@@ -1,11 +1,11 @@
 ---
-title: How to deploy nopCommerce to Azure
+title: Deploy nopCommerce to an Azure VM
 uid: en/developer/tutorials/azure-publish
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# How to deploy nopCommerce to Azure
+# Deploy nopCommerce to an Azure VM
 
 ## Create a VM on Azure
 
@@ -20,14 +20,14 @@ This instruction of the steps required to set up an Azure virtual machine to hos
 
 1. Select *Windows Server 2016 VM* in the *Get Started* category or any Windows Server 2016 in the Compute category, such as **Windows Server 2016 Datacenter**
 1. Complete the required fields to configure the new VM.
-    - Username/password. You will need it to access the VM. This is the admin account for connecting on VM by RDP.
+    - Username/password. You will need it to access the VM. This is the admin account for connecting to the VM by RDP.
     - Resource group. This is the name of the "virtual folder" that contains all resources created for this VM. You can delete all the resources created during this process by deleting the resource group.
 
 ### Configure components and features on the VM
 
 1. DNS-name:
     - From the [Azure portal](https://portal.azure.com/), navigate to the Overview page of your virtual machine.
-    - Under DNS name, click **Configure**
+    - Under the DNS name, click **Configure**
     - Provide a globally unique DNS name. (A green tick appears when the name is validated.)
     - Click **Save** to save the configuration.
 
@@ -59,7 +59,7 @@ This instruction of the steps required to set up an Azure virtual machine to hos
 
     ![azure-publish_5](_static/azure-publish/azure-publish_5.png)
 
-1. When prompted, confirm the additional installation of *IIS Management Console*.
+1. When prompted, confirm the additional installation of the *IIS Management Console*.
 1. Press **Next** three times to progress to the *Web Server Role (IIS) --> Roles Services section*
 1. Select **Management** Service, which is required to enable Web Deploy (through port 8172). When prompted, confirm the additional installation of ASP.NET 4.6.
 
@@ -69,7 +69,7 @@ This instruction of the steps required to set up an Azure virtual machine to hos
 
     ![azure-publish_7](_static/azure-publish/azure-publish_7.png)
 
-    Once installation completes:
+    Once installation is completed:
     - IIS is installed and running with an internal firewall rule created for port 80.
     - Web Management Service is installed with an internal firewall rule created for port 8172.
 
@@ -88,10 +88,10 @@ On a new Azure VM, default security rules prevent executables from being downloa
 1. Launch Internet Explorer.
 1. Accept default security settings.
 1. [Download](https://www.microsoft.com/download/details.aspx?id=43717) *WebDeploy_amd64_en-US.msi*
-1. Follow installation steps for Web Deploy
+1. Follow the installation steps for Web Deploy
 1. Choose the Complete option to install all components
 
-### Install last version [NET Core SDK](https://www.microsoft.com/net/download/all)
+### Install the latest version [NET Core SDK](https://www.microsoft.com/net/download/all)
 
 ### Install package [.NET Core Windows Server Hosting](https://www.microsoft.com/net/download/all)
 
@@ -113,7 +113,7 @@ Now everything is ready to publish the project.
 
 ## Publish nopCommerce to an Azure VM from Microsoft Visual Studio
 
-Publishing the nopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, there will be described the minimum requirements to run the publication. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
+Publishing the nopCommerce application is no different from publishing any other ASP.NET Core application. Therefore, the minimum requirements to run the publication will be described. More details can be found [here](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure).
 
 ## Publish project `Nop.Web`
 
@@ -141,12 +141,12 @@ You have now published your web app to an Azure virtual machine.
 
 ## Potential problems and solutions
 
-To [more](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) accurately understand what the problem is, you need to enable logging - enabled stdoutLog in `web.config`:
+To [more](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) accurately investigate any problem, you need to enable logging - enabled stdoutLog in `web.config`:
 
 ```sh
 stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout"
 ```
 
-## IIS not able to locate the web.config
+### IIS not being able to locate the web.config
 
-Solution:  [support.microsoft.com](http://support.microsoft.com/kb/942055)
+A possible solution can be found at:  [support.microsoft.com](http://support.microsoft.com/kb/942055)

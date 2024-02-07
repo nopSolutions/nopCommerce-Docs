@@ -1,17 +1,17 @@
 ---
-title: Description of permission
+title: Extending Permissions
 uid: en/developer/tutorials/permissions
 author: git.DmitriyKulagin
 contributors: git.DmitriyKulagin
 ---
 
-# Description of permission
+# Extending Permissions
 
-**Permissions** are an important element of application resource security. With their help, you can restrict access to a particular part of the application, or vice versa, provide the necessary rights to read/change a specific area.
+**Permissions** are an important element of application resource security. With their help, you can restrict access to a particular part of the application, or vice versa, providing the necessary rights to read/change a specific area.
 
 All available permissions to control the scope are in the *Access Control List (ACL)* section.
 
-Like any other changes in the application, it is recommended to make through plugins. So let's look at adding permissions via an abstract plugin. This tutorial aims to show you how to manage permissions, but creating the plugin itself is out of the scope of this article.
+Like any other changes in the application, it is recommended to be made through plugins. So let's look at adding permissions via an abstract plugin. This tutorial aims to show you how to manage permissions, for learning about creating the plugin itself check out [this page](xref:en/developer/plugins/index).
 
 ## Adding a custom permission
 
@@ -78,7 +78,7 @@ if (await _permissionService.AuthorizeAsync(WebApiBackendPermissionProvider.Acce
     return;
 ```
 
-That's essentially all, it remains only to add that after installing the plugin, you can see the permission you added in the **ACL** section.
+That's essentially all, after installing the plugin, you can see the permission you added in the **ACL** section.
 
 ## See also
 

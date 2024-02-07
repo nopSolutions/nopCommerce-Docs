@@ -11,39 +11,39 @@ With Scheduled tasks, you can schedule a task to run at certain periods. For exa
 
 1. Define a class that implements the **IScheduleTask** interface. It has only one method that takes no arguments; **ExecuteAsync**. As you guessed this method is invoked when the task should be run.
 
-```csharp
-public partial class KeepAliveTask : IScheduleTask
-{
-    private readonly StoreHttpClient _storeHttpClient;
-    public KeepAliveTask(StoreHttpClient storeHttpClient)
+    ```csharp
+    public partial class KeepAliveTask : IScheduleTask
     {
-        _storeHttpClient = storeHttpClient;
+        private readonly StoreHttpClient _storeHttpClient;
+        public KeepAliveTask(StoreHttpClient storeHttpClient)
+        {
+            _storeHttpClient = storeHttpClient;
+        }
+        public async System.Threading.Tasks.Task ExecuteAsync()
+        {
+            await _storeHttpClient.KeepAliveAsync();
+        }
     }
-    public async System.Threading.Tasks.Task ExecuteAsync()
-    {
-        await _storeHttpClient.KeepAliveAsync();
-    }
-}
-```
+    ```
 
 1. To schedule a task the developer should insert a new **ScheduleTask** record into the appropriate database table. You can use **IScheduleTaskService** for inserting such a record.
 
-```csharp
-await _scheduleTaskService.InsertTaskAsync(new ScheduleTask
-{
-    Name = "Keep alive",
-    Seconds = 300,
-    Type = "Nop.Services.Common.KeepAliveTask, Nop.Services",
-    Enabled = true,
-    LastEnabledUtc = lastEnabledUtc,
-    StopOnError = false
-});
-```
+    ```csharp
+    await _scheduleTaskService.InsertTaskAsync(new ScheduleTask
+    {
+        Name = "Keep alive",
+        Seconds = 300,
+        Type = "Nop.Services.Common.KeepAliveTask, Nop.Services",
+        Enabled = true,
+        LastEnabledUtc = lastEnabledUtc,
+        StopOnError = false
+    });
+    ```
 
 > [!IMPORTANT]
-> When inserting the new record into **ScheduleTask** database table for a new scheduled task, it is important to keep **Type** column format **Namespace.TaskClassName, AssemblyName**.
+> When inserting the new record into the **ScheduleTask** database table for a new scheduled task, it is important to keep the **Type** column format as **Namespace.TaskClassName, AssemblyName**.
 
 ## Troubleshooting
 
 - Make sure your store has a valid URL.
-- Restart the application after adding a new schedule task.
+- Restart the application after adding a new scheduled task.

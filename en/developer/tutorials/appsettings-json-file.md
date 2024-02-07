@@ -1,11 +1,11 @@
 ---
-title: The settings from the appsettings.json file
+title: Settings in appsettings.json
 uid: en/developer/tutorials/appsettings-json-file
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin, git.mariannk
 ---
 
-# The settings from the appsettings.json file
+# Settings in appsettings.json
 
 ## Overview
 
@@ -21,7 +21,7 @@ If you have worked on the *ASP.NET Core* project previously or you are familiar 
 >[!NOTE]
 >You can also edit this file from the **Configuration → Settings → App settings** page.
 
-The *appsettings.json* file is generally used to store the application configuration settings such as database connection strings, any application scope global variables, and much other information. Actually, in *ASP.NET Core*, the application configuration settings can be stored in different configurations sources such as *appsettings.json* file, **`appsettings.{EnvironmentName}.json`** file (where the `{Environment}` is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information), etc.
+The *appsettings.json* file is generally used to store the application configuration settings such as database connection strings, any application scope global variables, and much other information. Actually, in *ASP.NET Core*, the application configuration settings can be stored in different configuration sources such as *appsettings.json* file, **`appsettings.{EnvironmentName}.json`** file (where the `{Environment}` is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information), etc.
 
 ## Settings available in the appsettings.json file
 
@@ -46,7 +46,7 @@ The connection to the database is configured through this section.
 
 ### AzureBlobConfig
 
-We can use *Azure Blob Storage* to store blob data. nopCommerce already has a feature integrated for that, we just need to set the following information correctly to use/enable this feature. Values for these settings can be obtained for *Azure* while you create the storage account.
+We can use *Azure Blob Storage* to store blob data. nopCommerce already has a feature integrated for that, we just need to set the following information correctly to use this feature. Values for these settings can be obtained for *Azure* while you create the storage account.
 
 * **ConnectionString** This setting expects a string value. Here you need to add your `AzureBlobStorage` connection string
 * **ContainerName** Value for this setting is also of type string. In this setting, we set the container name for *Azure BLOB storage*.
@@ -66,10 +66,10 @@ Cache configuration.
 
 ### CommonConfig
 
-*CommonConfig* contains settings used to configure the behavior of nopCommerce itself. It is a JSON object and contains some properties settings which can be tweaked to change the behavior of nopCommerce.
+*CommonConfig* contains settings used to configure the behavior of nopCommerce itself. It is a JSON object and contains some settings that can be tweaked to change the behavior of nopCommerce.
 
 * **DisplayFullErrorStack** This setting expects a boolean value. The default value is **`false`**. You can set the value to **`true`** if you want to see the full error in the production environment. Which is not what we usually suggest. But if you have a good reason to show full error during the production environment then you can do it from this setting. For the development environment this setting is ignored and whatever the value you set for this setting full error will be shown. We can say that this setting is always enabled for a development environment.
-* **UserAgentStringsPath** This setting stores the location/path for the `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
+* **UserAgentStringsPath** This setting stores the path to the `Browscap.xml` file, `Browscap.xml` is, as the filename might indicate, a browser capabilities database. It's essentially a list of all known browsers and bots, along with their default capabilities and limitations.
   
   ```powershell
   ~/App_Data/browscap.xml
@@ -159,7 +159,7 @@ We use the [WebOptimizer](https://github.com/ligershark/WebOptimizer) tool for m
 * **CdnUrl** This setting expects a string value. You can set the CDN URL used for TagHelpers (by default **`null`**).
 * **CacheDirectory** This setting expects a string value. Sets the directory where assets will be stored if **EnableDiskCache** is **`true`** (by default **`{ContentRootPath}\\wwwroot\\bundles`**).
 * **AllowEmptyBundle** This setting expects a boolean value. You can set whether the empty bundle is allowed to generate instead of throwing an exception (by default **`true`**).
-* **HttpsCompression** This setting expects a integer value. You can set a value Indicating if files should be compressed for HTTPS requests when the Response Compression middleware is available. The default value is **`2`**. You can choose one of the implementations:
+* **HttpsCompression** This setting expects an integer value. You can set a value Indicating if files should be compressed for HTTPS requests when the Response Compression middleware is available. The default value is **`2`**. You can choose one of the implementations:
   * **1** - Opts out of compression over HTTPS.
   * **2** - Opts into compression over HTTPS.
     >[!NOTE]

@@ -1,11 +1,11 @@
 ---
-title: Description of the web.config file in project
+title: Settings in web.config
 uid: en/developer/tutorials/description-of-the-web-config-file-in-project
 author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin
 ---
 
-# Description of the web.config file in the project
+# Settings in web.config
 
 ## What is the web.config file
 
@@ -93,9 +93,9 @@ Here nopCommerce is using the `<remove>` element to remove the WebDAVModule modu
 </handlers>
 ```
 
-Handlers are Internet IIS components that are configured to process requests to specific content, typically to generate a response for the requested resource. For example, an ASP.NET Web page is one type of handler. You can use handlers to process requests to any resource that needs to return information to users that is not a static file.
+Handlers are IIS components that are configured to process requests to specific content, typically to generate a response for the requested resource. For example, an ASP.NET Web page is one type of handler. You can use handlers to process requests to any resource that needs to return information to users that is not a static file.
 
-The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clear>` elements, each of which defines a handler mapping for the application. The `<add>` element adds a handler to the collection of handlers, `<remove>` element removes references of handler from the handler's collection, and `<clear>` element removes all references of handlers from the handlers collection. Here in the above code  "WebDAV" handler is removed and the handler for module `AspNetCoreModuleV2` is added.
+The `<handlers>` element contains a collection of `<add>`, `<remove>`, and `<clear>` elements, each of which defines a handler mapping for the application. The `<add>` element adds a handler to the collection of handlers, the `<remove>` element removes references of the handler from the handler's collection, and the `<clear>` element removes all references of handlers from the handlers collection. Here in the above code  "WebDAV" handler is removed and the handler for module `AspNetCoreModuleV2` is added.
 
 ```xml
 <aspNetCore requestTimeout="23:00:00" processPath="%LAUNCHER_PATH%" arguments="%LAUNCHER_ARGS%" forwardWindowsAuthToken="false" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" startupTimeLimit="3600" hostingModel="InProcess"/>
@@ -125,7 +125,7 @@ The `<handlers>` element contains a collection of `<add>`, `<remove>` and `<clea
 
 The `<customHeaders>` element of the `<httpProtocol>` element specifies custom HTTP headers that IIS will return in HTTP responses from the Web server.
 
-HTTP headers are names and value pairs that are returned in responses from a Web server. Custom response headers are sent to the client together with the default HTTP header. Unlike redirect response headers, which are returned in responses only when redirection occurs, custom response headers are returned in every response.
+HTTP headers are name and value pairs that are returned in responses from a Web server. Custom response headers are sent to the client together with the default HTTP header. Unlike redirect response headers, which are returned in responses only when redirection occurs, custom response headers are returned in every response.
 
 ## Configure the redirect rules in IIS
 
@@ -133,7 +133,7 @@ We can add other configurations additional to the above configurations. Here we 
 
 A redirect rule enables more than one URL to point to a single Web page. There may be several reasons why you want to redirect a request from one server to another. For example, maybe your company name is changed and you may want to register a new domain for your company and move your website to a new domain, so in that case, you may want to redirect all requests from your old domain to a new domain.
 
-For our website to be able to use redirect rules, we need to install a URL rewrite module which is an extension to IIS.
+For our website to be able to use redirect rules, we need to install the "URL rewrite" module which is an extension to IIS.
 
 For demonstration purposes, let's say we have to redirect a request from our old site to our new site, for that we need to write the following rules in our `web.config` file.
 
@@ -156,7 +156,7 @@ For demonstration purposes, let's say we have to redirect a request from our old
 
 Here we need to replace [RULE NAME], [OLD URL], and [NEW URL] with the appropriate information.
 
-* [RULE NAME] can be any that thing like describes what this rule is doing
+* [RULE NAME] can be anything that describes what this rule is doing
 * [OLD URL] is the old URL you want to redirect from.
 * [NEW URL] is the new URL you want to redirect to.
 
@@ -164,7 +164,7 @@ Here we need to replace [RULE NAME], [OLD URL], and [NEW URL] with the appropria
 <match url="(.*)" />
 ```
 
-The above element refers that this rule will match all URL strings.
+The above element states that this rule will match all URL strings.
 
 ```xml
 <add input="{HTTP_HOST}{REQUEST_URI}" pattern="[OLD URL]" />

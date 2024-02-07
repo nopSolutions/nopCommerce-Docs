@@ -1,17 +1,17 @@
 ---
-title: Default database schema
+title: Default Database Schema
 uid: en/developer/tutorials/db-schema
 author: git.skoshelev
 contributors: git.mariannk
 ---
 
-# Default database schema
+# Default Database Schema
 
 In this article, we will look at the database schema that is installed during initial installation and which remains unchanged in 90% of cases.
 
 We won't bring the entire schema as a whole but will describe the default installation that provides for the creation of 126 tables.
 
-To understand such a scheme easily let's split it into parts. Below, we grouped the tables most naturally and understandably:
+To understand such a schema easily let's split it into parts. Below, we grouped the tables most naturally and understandably:
 
 * [Customers info](#customers-info)
 * [Products info](#products-info)
@@ -76,7 +76,7 @@ In the diagram, you can see the base data for the product (the schema of the pro
 
 ### Features (Products info)
 
-Depending on the store settings, additional tables may be connected to this scheme. For example, to distribute product quantity among multiple warehouses.
+Depending on the store settings, additional tables may be connected to this schema. For example, to distribute product quantity among multiple warehouses.
 
 ![Product table](_static/db-schema/warehouse.jpg)
 
@@ -86,19 +86,19 @@ Or if you want to use the product reviews functionality:
 
 ### Product attributes
 
-Then let's consider the scheme of attributes and their combinations presented below:
+Then let's consider the schema of attributes and their combinations presented below:
 
 ![Product attributes](_static/db-schema/product-attributes.jpg)
 
 ### Tier price
 
-If you use tier pricing for products you should also pay attention to the following scheme:
+If you use tier pricing for products you should also pay attention to the following schema:
 
 ![Tier price](_static/db-schema/tier-price.jpg)
 
 ### Inventory by warehouses
 
-Although this feature is not used often, it might be useful to give a scheme for accounting for goods in a particular warehouse:
+Although this feature is not used often, it might be useful to give a schema for accounting for goods in a particular warehouse:
 
 ![Inventory by warehouses](_static/db-schema/stock-quantity-history.jpg)
 
@@ -149,11 +149,11 @@ public enum RequirementGroupInteractionType
 
 ## Shopping cart
 
-Another important part of the store is a shopping cart. In our case the scheme of this mechanism is very simple:
+Another important part of the store is a shopping cart. In our case the schema of this mechanism is very simple:
 
 ![Shopping cart](_static/db-schema/shopping-cart-item.jpg)
 
-The only thing worth noting is that this scheme is also used for a wishlist. To separate these two types, the *ShoppingCartTypeId* field is used. The values in this field must match the values from the **ShoppingCartType** enumeration:
+The only thing worth noting is that this schema is also used for a wishlist. To separate these two types, the *ShoppingCartTypeId* field is used. The values in this field must match the values from the **ShoppingCartType** enumeration:
 
 ```csharp
 /// <summary>
@@ -175,7 +175,7 @@ public enum ShoppingCartType
 
 ## Addresses
 
-Perhaps you will also be interested in the table schema involved in storing addresses, both delivery, and the customer addresses:
+Perhaps you will also be interested in the table schema involved in storing addresses, both delivery and customer addresses:
 
 ![addresses](_static/db-schema/addresses.jpg)
 
@@ -183,6 +183,6 @@ As you understand, the standard installation includes much more tables. We don't
 
 ## Database naming convention
 
-You may have noticed that the database uses a mixed approach to naming of tables and columns (with `_` char, without `_`, CamelCase). Long time ago we used `_` char. But now we've completely switched to using **CamelCase** notation. But we decide not to change names of the existing tables or columns because many of our users already could write a huge amount of their custom scripts that would inevitably stop working.
+You may have noticed that the database uses a mixed approach to the naming of tables and columns (with `_` char, without `_`, CamelCase). A long time ago we used `_` char. But now we've completely switched to using **PascalCase** notation. We chose not to change the names of the existing tables or columns, as many of our users had already written custom scripts that would break otherwise.
 
-For backward compatibility with the new standards, we added the `INameCompatibility` interface which allows you to redefine the names of tables and columns for the correct mapping of objects with tables created according to the old naming standards. You can see the complete list of overrides in the [BaseNameCompatibility](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Data/Mapping/BaseNameCompatibility.cs) class from the `Nop.Data.Mapping` namespace.
+To maintain backward compatibility with the new standards, we introduced the `INameCompatibility` interface. It lets you rename the tables and columns to map the objects correctly with the tables that follow the old naming standards. The [BaseNameCompatibility](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Libraries/Nop.Data/Mapping/BaseNameCompatibility.cs) class in the `Nop.Data.Mapping` namespace has the full list of overrides.

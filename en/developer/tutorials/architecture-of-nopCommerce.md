@@ -17,53 +17,53 @@ This document provides a comprehensive architectural overview of the nopCommerce
 
 ## Overview of nopCommerce Architecture
 
-nopCommerce is one of the most popular and successful `Dot NET based` open-source `E-Commerce` solution. The success of nopCommerce is not only because it contains most of the features required by modern E-Commerce solution out of the box and its UI is highly customizable and User friendly, but also because the nopCommerce solution is equally organized and developer-friendly. The main strength of nopCommerce is its flexible, extendable architecture and well-organized source code. The nopCommerce architecture is very close to the onion architecture. Which is mainly focused on controlling the code coupling. According to this architecture, all code can depend on layers more central, but code cannot depend on layers further out from the core.  In other words, all coupling is toward the center.
+nopCommerce is one of the most popular and successful `Dot NET based` open-source `E-Commerce` solutions. The success of nopCommerce is not only because it contains most of the features required by a modern E-Commerce solution, out of the box and its UI is highly customizable and User friendly, but also because the nopCommerce solution is equally organized and developer-friendly. The main strength of nopCommerce is its flexible, extendable architecture and well-organized source code. The nopCommerce architecture is very close to the onion architecture. Which is mainly focused on controlling the code coupling. According to this architecture, all code can depend on layers more central, but code cannot depend on layers further out from the core. In other words, all coupling is toward the center.
 
 ![nopCommerceArchitecturalDiagram](_static/architecture-of-nopCommerce/nopCommerceArchitecture.png)
 
-This means projects can only have a dependency on the other projects which reside inward from the current project. For example, if you see the above diagram `Nop.Data` project can depend on the `Nop.Core` project and can have `Nop.Core` and dependency, but `Nop.Core` cannot depend on `Nop.Data` similarly `Nop.Services` can have `Nop.Data` and `Nop.Core` and it's a dependency but neither `Nop.Core` nor `Nop.Data` can have `Nop.Service` as their dependency. This means projects can only have another project as dependency only if it resides inward or more center from the layer current project resides. Which is the key for code decoupling. The main feature/advantage of this approach/architecture is that, now if we want to test the Application Core then we can do so even if we do not have any `UI` for our application Because the Application core does not depend on `UI layer`. Or we can change our `UI framework` from `Razor` view engine and `JQuery` to `Angular` or `React` or `Vue` without affecting our Application Core and can use the same core to build Mobile Application or Desktop Application. And all of this without changing a bit of code in our Application Core.
+This means projects can only have a dependency on the other projects that reside inward from the current project. For example, if you see the above diagram `Nop.Data` project can depend on the `Nop.Core` project and can have `Nop.Core` as a dependency, but `Nop.Core` cannot depend on `Nop.Data` similarly `Nop.Services` can have `Nop.Data` and `Nop.Core` as it's dependencies but neither `Nop.Core` nor `Nop.Data` can have `Nop.Service` as their dependency. This means projects can only have another project as a dependency only if it resides inward or more center from the layer the current project resides. Which is the key to code decoupling. The main advantage of this approach/architecture is that, now if we want to test the Application Core then we can do so even if we do not have any `UI` for our application. Because the Application core does not depend on `UI layer`. Or we can change our `UI framework` from `Razor` view engine and `JQuery` to `Angular` or `React` or `Vue` without affecting our Application Core and can use the same core to build Mobile Applications or Desktop Applications. All of this without changing a bit of code in our Application Core.
 
-## Explain projects in nopCommerce Solution
+## Projects in nopCommerce Solution
 
 ### Application Core
 
-This is the innermost layer in the nopCommerce architecture system. It is the core of the application. All the data access logic and Business class reside inside this layer. In the nopCommerce solution, we can find all of the projects for this layer inside the "Libraries" directory. According to nopCommerce architecture, this layer contains further three layers/projects.
+This is the innermost layer in the nopCommerce architecture. It is the core of the application. All the data access logic and business logic classes reside inside this layer. In the nopCommerce solution, we can find all of the projects for this layer inside the "Libraries" directory. This layer contains three projects.
 
 #### Nop.Core
 
-This project contains a set of core classes for nopCommerce. This project is at the center of architecture. This project does not have any dependencies on other projects in the solution. This project contains core classes that are shared with the entire solution like Domain Entities, Caching, Events, and other Helper classes.
+This project contains a set of core classes for nopCommerce. This project is at the center of the architecture and does not have any dependencies on other projects in the solution. This project contains core classes that are shared with the entire solution like Domain Entities, Caching, Events, and other Helper classes.
 
 #### Nop.Data
 
-This project lives right after the `Nop.Core` project. So, this project has a dependency on to project that lives towards the middle from this project in the architecture that is `Nop.Core` project. Besides the `Nop.Core` project it does not have any dependency on any other project in the solution. The `Nop.Data` project contains a set of classes and functions for reading from and writing to a database or other data store. It helps separate data-access logic from your business objects.
+The `Nop.Data` project depends on the `Nop.Core` project, which is in the middle of the architecture. It does not depend on any other project in the solution. The `Nop.Data` project has classes and functions for reading and writing to a database or other data store. It separates data-access logic from business objects.
 
 #### Nop.Services
 
-In nopCommerce architecture, this is the outermost layer of Application Core. This project has a dependency on all other projects that belong to Application Core. This project contains a set of core services, business logic, validations, or calculations related to the data if needed. Some people call it Business Access Layer (BAL). This layer acts as a data access layer for all other layers outside of this layer. This layer contains service classes and follows a repository pattern to expose its features/functionalities. nopCommerce is using this approach to decouple the core to the other layer that lives outside the core layer. With this, if we want to change the logic for the Application core then it does not break other layers that depend on the Application core or at least minimizes the code changes in other layers depending on the Application Core. This approach is also ideal for construction dependency injection.
+The `Nop.Services` project is the outermost layer of the Application Core in nopCommerce architecture. It depends on the other two projects in the Application Core. It has core services, business logic, validations, and calculations for the data. Some people call it the Business Access Layer (BAL) or Business Logic Layer (BLL). It serves as the facade for all the other layers. It has service classes and uses a repository pattern to expose its features and functionalities. This approach decouples the core from the other layer outside the core. It also prevents or reduces code changes in the other layers if the logic for the Application Core changes. This approach is ideal for dependency injection.
 
 ### UI Layer
 
-This layer resides outside the "Application Core". In the nopCommerce solution, we can find all of the projects for this layer inside the "Presentation" directory. All the presentation logic and UI resides in this layer. This is the layer where the UI which users can interact with presents. In nopCommerce, this layer has further two layers.
+This layer resides outside the "Application Core". In the nopCommerce solution, we can find all of the projects for this layer inside the "Presentation" directory. All the presentation logic and UI resides in this layer. This is the layer where the UI which users can interact with, presents. In nopCommerce, this layer breaks into two other layers.
 
 #### Nop.Web.Framework
 
-This layer is the inner layer of the "Presentation layer" this layer has a dependency on the "Application Core" layer. This project is a class library project. This project acts as a "Framework" for the presentation layer. It contains shared logic that is used by the both nopCommerce "public Website" and "Admin panel".
+The `Nop.Web.Framework` project is the inner layer of the Presentation layer and depends on the Application Core layer. It is a class library project that serves as a framework for the Presentation layer. It has shared logic for both the nopCommerce public website and the admin panel.
 
 #### Nop.Web
 
-In nopCommerce architecture, this is the outermost layer of the "Presentation Layer". This project contains the actual E-Commerce front-end website User Interface. It is the actual website with which users can interact. This is an "Asp .NET Core" application. This project has a dependency on `Nop.Web.Framework` and "Application Core". It depends upon `Nop.Web.Framework` for the common logic that is shared between this and "Admin" and depends upon "Application Core" for the data access and data manipulations.
+The `Nop.Web` project is the outermost layer of the Presentation layer in nopCommerce architecture. It has the E-Commerce front-end website user interface that users can interact with. It is an ASP.NET Core application that depends on `Nop.Web.Framework` and the Application Core. It uses `Nop.Web.Framework` for the shared logic between this and the Admin panel. It uses the Application Core for data access and manipulation.
 
 #### Admin
 
-In nopCommerce it belongs in the same layer as the `Nop.Web` project. This lives inside the `Nop.Web` project as an area. It is also the UI(User Interface), but this part of the Presentation contains UI for the Admin panel. Admin panel is where all the contents for a public website are maintained and from where we can monitor the activities of our public website. A public website can be accessed without any restriction but the "Admin panel" required some Authentication and Authorization to access it since it contains information that only the site admin has the right to access.
+In nopCommerce, it belongs in the same layer as the `Nop.Web` project. This lives inside the `Nop.Web` project as an area. It is also a UI(User Interface), but this part of the Presentation contains UI for the Admin panel. Admin panel is where all the contents for a public website are maintained and from where we can monitor the activities of our public website. A public website can be accessed without any restriction but the "Admin panel" requires some Authentication and Authorization to access it since it contains information that only the site admin has the right to access.
 
 ### Test Layer
 
-This layer resides in the same layer as the "Presentation Layer", right outside the "Application Core" This layer is all about testing the different parts of the application. Testing in nopCommerce is easy and more reliable due to the architecture it follows for its system design. In the nopCommerce solution, we can find all of the directories for this layer inside the "Tests" directory. nopCommerce uses **NUnit** package for *Unit Testing*.
+This layer resides in the same layer as the "Presentation Layer", right outside the "Application Core" This layer is all about testing the different parts of the application. Testing in nopCommerce is easy and more reliable due to the architecture it follows for its system design. In the nopCommerce solution, we can find all of the projects for this layer inside the "Tests" directory. nopCommerce uses **NUnit** testing framework for *Unit Testing*.
 
 #### Nop.Tests
 
-This layer is the inner layer of the "Test layer" this layer has a dependency on the "Application Core" layer. This project contains the core logic for testing.
+This layer is the inner layer of the "Test layer" and has a dependency on the "Application Core" layer. This project contains the core logic for testing.
 
 #### Nop.Core.Tests
 
