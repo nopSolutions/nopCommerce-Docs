@@ -418,85 +418,82 @@
       href: developer/tutorials/index.md
       items:
         - 
-          name: System requirements for developing
+          name: System Requirements for Development
           href: developer/tutorials/system-requirements-for-developing.md
         - 
-          name: Configuring code style
-          href: developer/tutorials/code-style.md
-        - 
-          name: Coding standards
+          name: Coding Standards
           href: developer/tutorials/coding-standards.md
-        - 
-          name: Source code organization
-          href: developer/tutorials/source-code-organization.md
-        - 
-          name: Default database schema
-          href: developer/tutorials/db-schema.md
         - 
           name: Architecture of nopCommerce
           href: developer/tutorials/architecture-of-nopCommerce.md
         - 
-          name: Instruction on how to start developing on nopCommerce
+          name: Source Code Organization
+          href: developer/tutorials/source-code-organization.md
+        - 
+          name: Getting Started with nopCommerce Development
           href: developer/tutorials/instruction-on-how-to-start-developing-on-nopcommerce.md
         - 
-          name: Updating an existing entity. How to add a new property
+          name: Default Database Schema
+          href: developer/tutorials/db-schema.md
+        - 
+          name: Updating an Existing Entity (how to add a new property)
           href: developer/tutorials/update-existing-entity.md        
         - 
-          name: Inversion of control and dependency injection
-          href: developer/tutorials/inversion-of-control.md
-        - 
-          name: How do I register new routes?
-          href: developer/tutorials/register-new-routes.md
-        - 
-          name: How do migrations work?
+          name: Database Migrations
           href: developer/tutorials/migrations.md
         - 
-          name: A guide to expand the basic functionality of nopCommerce through a plugin
+          name: Inversion of Control and Dependency Injection
+          href: developer/tutorials/inversion-of-control.md
+        - 
+          name: Registering New Routes
+          href: developer/tutorials/register-new-routes.md
+        - 
+          name: Introduction to Plugin System
+          href: developer/tutorials/description-of-plugin-system.md
+        - 
+          name: Develop a New Plugin
           href: developer/tutorials/guide-to-expanding-the-functionality-of-the-basic-functions-of-nop-commerce-through-a-plugin.md
         - 
-          name: Data validation
+          name: Using DataTables
+          href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
+        - 
+          name: Data Validation
           href: developer/tutorials/data-validation.md
         - 
-          name: Scheduled tasks
-          href: developer/tutorials/scheduled-tasks.md
-        - 
-          name: Exposing and handling events
+          name: Exposing and Handling Events
           href: developer/tutorials/events.md
         - 
           name: Settings API
           href: developer/tutorials/settings.md
         - 
-          name: How and when to use the ITypeFinder interface
-          href: developer/tutorials/type-finder.md
+          name: Settings in appsettings.json
+          href: developer/tutorials/appsettings-json-file.md
         - 
-          name: Description of the web.config file in project
+          name: Settings in web.config
           href: developer/tutorials/description-of-the-web-config-file-in-project.md
         - 
-          name: Step by step to deploy on Azure with GIT and automatic builds
+          name: Extending Permissions
+          href: developer/tutorials/permissions.md
+        - 
+          name: Scheduled tasks
+          href: developer/tutorials/scheduled-tasks.md
+        - 
+          name: ITypeFinder Interface
+          href: developer/tutorials/type-finder.md
+        - 
+          name: Deployment on Azure with Git and Automatic Builds
           href: developer/tutorials/azure-deploy.md
         - 
-          name: Docker
+          name: Using Docker
           href: developer/tutorials/docker.md
         - 
-          name: How to deploy nopCommerce to Azure
+          name: Deploy nopCommerce to an Azure VM
           href: developer/tutorials/azure-publish.md
-        - 
-          name: Guide to creating a page containing a reporting table of DataTables
-          href: developer/tutorials/guide-to-creating-a-page-containing-a-reporting-table-of-datatables.md
         - 
           name: Content Security Policy (CSP) Headers
           href: developer/tutorials/csp-headers.md
         - 
-          name: The settings from the appsettings.json file
-          href: developer/tutorials/appsettings-json-file.md
-        - 
-          name: Description of plugin system
-          href: developer/tutorials/description-of-plugin-system.md
-        - 
-          name: Description of permission
-          href: developer/tutorials/permissions.md
-        - 
-          name: UNIT testing
+          name: Unit Testing
           href: developer/tutorials/unit-tests.md
     - 
       name: Creating a nopCommerce plugin
