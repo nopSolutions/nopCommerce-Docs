@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin
 
 ## What Brevo is
 
-[Brevo](https://www.brevo.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) is an all-in-one digital marketing toolbox capable of taking care of the entirety of your marketing needs. Brevo empowers to build and grow relationships using email campaigns, SMS messages, and sophisticated automation of marketing workflows.
+[Brevo](https://get.brevo.com/5f897rrc6cwa) is an all-in-one digital marketing toolbox capable of taking care of the entirety of your marketing needs. Brevo empowers to build and grow relationships using email campaigns, SMS messages, and sophisticated automation of marketing workflows.
 
 The Brevo integration for nopCommerce allows a store owner to:
 
