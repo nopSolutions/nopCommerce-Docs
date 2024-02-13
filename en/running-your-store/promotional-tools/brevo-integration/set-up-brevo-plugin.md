@@ -21,9 +21,9 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
 1. Click the **Configure** button. You will see the *Configure - Brevo* window:
 ![Configure - Brevo](_static/set-up-brevo-plugin/configure-window.jpg)
 
-1. You will need to create a free Brevo account using [this link](https://app.brevo.com/account/login/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
+1. You will need to create a free Brevo account using [this link](https://get.brevo.com/5f897rrc6cwa).
 
-1. Enter your **API v3 key** from your Brevo account on the [SMTP & API](https://account.brevo.com/advanced/api/?tap_a=30591-fb13f0&tap_s=840216-5153c7) page.
+1. Enter your **API v3 key** from your Brevo account on the [SMTP & API](https://account.brevo.com/advanced/api/) page.
 
 1. Click the **Save** button.
 
@@ -88,7 +88,7 @@ Go to the **Transactional emails** panel to send your transactional emails via b
 ![Sending transactional emails](_static/set-up-brevo-plugin/email-panel.jpg)
 
 1. Select the **Use Brevo SMTP** checkbox.
-1. Paste your SMTP password, which can be found [here](https://account.brevo.com/advanced/api?tap_a=30591-fb13f0&tap_s=840216-5153c7).
+1. Paste your SMTP password, which can be found [here](https://account.brevo.com/advanced/api).
 1. From the dropdown list, select the sender you wish to send your emails from.
 1. Click the **Save** button.
 
