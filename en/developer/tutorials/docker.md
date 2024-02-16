@@ -1,21 +1,21 @@
 ---
-title: Docker
+title: Using Docker
 uid: en/developer/tutorials/docker
 author: git.AndreiMaz
 contributors: git.exileDev, git.DmitriyKulagin
 ---
 
-# Docker
+# Using Docker
 
-This document describes a step-by-step guide to building and running a Docker container.
+This document is a step-by-step guide to building and running a Docker container.
 
-1. **Preparing for the deployment of virtual Docker** in Windows environment.
+1. **Install Docker** in Windows environment.
 
-    First, we need to install Docker on our PC. We will use [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Windows, it's help as to build and share containerized applications and microservices. The Docker Desktop also available for Linux and Mac.
+    First, we need to install Docker on our PC. We will use [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Windows, it helps us to build and share containerized applications and microservices. The Docker Desktop is also available for Linux and Mac.
 
     After installing and running the application, you will have access to all the possibilities of containerization. Further, we will do all the work in PowerShell, since the command mode will be the same in any environment.
 
-2. **We collect the Docker container**. For the convenience of executing commands, go to the directory where Dockerfile is located (the root directory of the nopCommerce source files).
+2. **Build the Docker container**. For the convenience of executing commands, go to the directory where `Dockerfile` is located (the root directory of the nopCommerce source files).
 
     The command that we need:
 
@@ -33,13 +33,13 @@ This document describes a step-by-step guide to building and running a Docker co
     [docker images]
     ```
 
-    We should see something similar to this:
+    We should see something similar to the following image:
 
     ![docker_2](_static/docker/docker_2.png)
 
-    This is a list of all loaded containers, among which we can easily see our container, it is created and ready to go.
+    This is a list of all loaded containers, among which we can easily see our container, it is created and is ready to go.
 
-3. **Run and test the container.**
+3. **Run and test the container**
 
     First, let's start the container with the command:
 
@@ -57,13 +57,13 @@ This document describes a step-by-step guide to building and running a Docker co
     > docker ps
     > ```
 
-    On the browser we should see the page with the installation of nopCommerce.
+    On the browser, we should see the installation page of nopCommerce.
 
     ![docker_3](_static/docker/docker_3.png)
 
     This will be our verification that the container is being created, launched, and successfully operating.
 
-4. But to **fully test** the operation of the application in this way will only work if you have a SQL server that our container can access. But, as a rule, our and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
+4. But to **fully test** the operation of the application in this way will only work if you have an SQL server that our container can access. But, as a rule, our and user environments are limited, so we have prepared a layout file that will allow you to deploy the nopCommerce container in conjunction with the container containing the SQL server.
 
     To deploy container composition, use the command:
 
@@ -81,7 +81,7 @@ This document describes a step-by-step guide to building and running a Docker co
     Password: nopCommerce_db_password
     ```
 
-5. After testing is complete, you can remove all containers so that they do not interfere next time. Two commands will help to execute it:
+5. After testing is complete, you can remove all containers so that they do not interfere next time. Two commands will help to accomplish this:
 
     ```bash
     docker stop $ (docker ps -a -q)
@@ -95,7 +95,7 @@ This document describes a step-by-step guide to building and running a Docker co
 
 ## Docker Hub
 
-Starting from version nopCommerce 4.20, we publish the completed image on the GitHub service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
+Starting from nopCommerce version 4.20, we publish the completed image on the GitHub service, you can check the available versions by [this link](https://hub.docker.com/r/nopcommerceteam/nopcommerce), or download the latest version with the following command:
 
 ```bash
 docker pull nopcommerceteam/nopcommerce:latest

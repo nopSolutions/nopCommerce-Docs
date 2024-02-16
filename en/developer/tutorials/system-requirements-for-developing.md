@@ -1,11 +1,11 @@
 ---
-title: System requirements for developing
+title: System Requirements for Development
 uid: en/developer/tutorials/system-requirements-for-developing
 author: nop.sea
 contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 ---
 
-# System requirements for developing
+# System Requirements for Development
 
 ## Operating System
 

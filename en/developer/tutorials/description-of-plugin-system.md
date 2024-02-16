@@ -1,11 +1,11 @@
 ﻿---
-title: Description of plugin system
+title: Introduction to Plugin System
 uid: en/developer/tutorials/description-of-plugin-system
 author: git.nopsg
 contributors: git.nopsg, git.DmitriyKulagin
 ---
 
-# Description of plugin system
+# Introduction to Plugin System
 
 ## How to initialize a new Plugin system (How to create a new plugin project)
 
@@ -16,11 +16,11 @@ nopCommerce uses a plugins system to extend the functionality of the nopCommerce
 
 ## How to Search and use plugins from the nopCommerce store
 
-nopCommerce already has several plugins pre-built and available to use out of the box. You can also search and find several plugins already available from the nopCommerce official store and see if someone has already created a plugin that suits your needs. If not then you always can build your won plugin according to your requirement. But here let's see how to find and use plugins from the nopCommerce store. For that nopCommerce has a marketplace where we can find different themes and plugins. You can visit to go to the [nopCommerce Marketplace](https://www.nopcommerce.com/marketplace).
+nopCommerce already has several plugins pre-built and available to use, out of the box. You can also search and find several plugins already available from the nopCommerce official marketplace and see if someone has already created a plugin that suits your needs. If not, then you always can build your own plugin according to your requirements. But here let's see how to find and use plugins from the nopCommerce store. For that nopCommerce has a marketplace where we can find different themes and plugins. You can find it at [nopCommerce Marketplace](https://www.nopcommerce.com/marketplace).
 
 ![image4](_static/description-of-plugin-system/image4.png)
 
-Here you can see three tabs. **All** tab contains all themes and extensions, **Themes** tab contains all nopCommerce themes which are for nopCommerce website skin, and lastly **Extensions** tab where we can find plugins. So go to the Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. On the right side, you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use the plugin, on its download page, so don't forget to read those descriptions.
+Here you can see three tabs. The **All** tab contains all themes and extensions, the **Themes** tab contains all nopCommerce themes which are for nopCommerce website skin, and lastly, the **Extensions** tab where we can find plugins. So go to the Extensions tab. Here you can find all free and commercial plugins. To find a specific plugin you want, you can search from here. On the right side, you can find the filtration section from where you can narrow down your filtering. After you find your searched plugin just download and install. Each plugin has a full description about how to use the plugin, on its download page, so don't forget to read those descriptions.
 
 ## Interface `IPlugin`
 
@@ -32,7 +32,7 @@ Here you can see three tabs. **All** tab contains all themes and extensions, **T
 string GetConfigurationPageUrl()
 ```
 
-This should return the URL for configuration view. When we install the plugin we will see a `Configuration` button, so if we implement this method in our class then the string value we return to from this method will be used as the URL for that `configuration` button.
+This should return the URL for the configuration view. When we install the plugin we will see a `Configuration` button, so if we implement this method in our class then the string value we return to from this method will be used as the URL for that `configuration` button.
 
 ### Property `PluginDescriptor`
 
@@ -72,11 +72,11 @@ The method is used to update the plugin to the specified version.
 Task PreparePluginToUninstallAsync()
 ```
 
-This method will be invoked when we click the `UninstallAsync` button for the plugin. Code inside this method will be executed before the nopCommerce uninstalls the plugin from the system. In this method, we may want to write the logic to validate our plugin from uninstallation. For example, here we can check if there are other plugins which are depending on the plugin we are trying to uninstall. If so we may not want users to uninstall the plugin until the plugin depending on the current plugin is uninstalled.
+This method will be invoked when we click the `UninstallAsync` button for the plugin. Code inside this method will be executed before the nopCommerce uninstalls the plugin from the system. In this method, we may want to write the logic to validate our plugin for uninstallation. For example, here we can check if there are other plugins which are depending on the plugin we are trying to uninstall. If so we may not want users to uninstall the plugin until the plugin depending on the current plugin is uninstalled.
 
 ## Class `PluginDescriptor`
 
-This class as the name implies holds the information that describes the plugin. If you compare the *properties* from this class to *key* from the **plugin.json** file, you will see a similar structure. That is because this class **PluginDescriptor.cs** is used to map that **plugin.json** file to C# class so that the information provided in **plugin.json** can be used by nopCommerce. Except for those properties `PluginDescriptor` class contains some more properties and helper methods.
+This class as the name implies holds the information that describes the plugin. If you compare the *properties* from this class to *key* from the **plugin.json** file, you will see a similar structure. That is because this class **PluginDescriptor.cs** is used to map that **plugin.json** file to a C# class so that the information provided in **plugin.json** can be used by nopCommerce. Except for those properties `PluginDescriptor` class contains some more properties and helper methods.
 
 ### Property `Installed`
 
@@ -92,7 +92,7 @@ This property is used to verify if a plugin is installed in our nopCommerce appl
 public virtual Type PluginType { get; set; }
 ```
 
-It is used to get or set the type of the plugin. This type reference the class that implements the `IPlugin` interface in the plugin project.
+It is used to get or set the type of the plugin. This type references the class that implements the `IPlugin` interface in the plugin project.
 
 ### Property `OriginalAssemblyFile`
 
@@ -108,7 +108,7 @@ It is used to get or set the original assembly file that a shadow copy was made 
 public virtual Assembly ReferencedAssembly { get; set; }
 ```
 
-It is to gets or set the assembly that has been shadow copied that is active in the application.
+It is to get or set the assembly that has been shadow copied that is active in the application.
 
 ### Property `ShowInPluginsList`
 
@@ -132,7 +132,7 @@ This method takes *json string* as input and parses the *json string* to type `P
 public virtual void Save()
 ```
 
-It is to save plugin description from `PluginDescriptor` to the **plugin.json** file.
+It is to save the plugin description from `PluginDescriptor` to the **plugin.json** file.
 
 ### Method `CompareTo`
 
@@ -140,7 +140,7 @@ It is to save plugin description from `PluginDescriptor` to the **plugin.json** 
 public int CompareTo(PluginDescriptor other)
 ```
 
-It compares the current instance of `PluginDescriptor` with other instances of `PluginDescriptor` supplied in parameter by comparing the property *FriendlyName* And returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified parameter.
+It compares the current instance of `PluginDescriptor` with other instances of `PluginDescriptor` supplied as the parameter by comparing the property *FriendlyName* And returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified parameter.
 
 ### Method `Instance`
 

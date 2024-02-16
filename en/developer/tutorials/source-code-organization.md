@@ -1,5 +1,5 @@
 ---
-title: Source code organization
+title: Source Code Organization
 uid: en/developer/tutorials/source-code-organization
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
@@ -7,11 +7,11 @@ contributors: git.DmitriyKulagin, git.exileDev
 
 # Source code organization
 
-This document is a developer's guide to the structure of a nopCommerce solution and is intended to help new developers learn the source code. First of all, nopCommerce is an open-source application, so you can download it for free from [GitHub](https://github.com/nopSolutions/nopCommerce). Projects and folders are listed in the order in which they are sorted in *Visual Studio*. We recommend that you open your nopCommerce solution in *Visual Studio* and view projects and files as you read this document.
+This document is a developer's guide to the structure of the nopCommerce solution and is intended to help new developers learn the source code. First of all, nopCommerce is an open-source application, so you can download it for free from [GitHub](https://github.com/nopSolutions/nopCommerce). Projects and folders are listed in the order in which they are sorted in *Visual Studio*. We recommend that you open your nopCommerce solution in *Visual Studio* and view projects and files as you read this document.
 
 ![Source code organization](_static/source-code-organization/structure_of_projects.jpg)
 
-Most of the projects, directories, and files are named so that you can get a rough idea of their purpose. For example, I don't even have to look inside the project called `Nop.Plugin.Payments.PayPalStandard` to guess what it does.
+Most of the projects, directories, and files are named so that you can get a rough idea of their purpose. For example, you don't even have to look inside the project called `Nop.Plugin.Payments.PayPalStandard` to guess what it does.
 
 ## `\Libraries\Nop.Core`
 
@@ -25,7 +25,7 @@ The `Nop.Data` project contains a set of classes and functions for reading from 
 
 This project contains a set of core services, business logic, validations, or calculations related to the data if needed. Some people call it *Business Access Layer* (BAL).
 
-## Projects into `\Plugins\` solution folder
+## Projects in the `\Plugins\` solution folder
 
 `Plugins` is a *Visual Studio* solution folder that contains plugin projects. Physically it's located at the root of your solution. But plugins DLLs are automatically copied in the `\Presentation\Nop.Web\Plugins` directory which is used for already deployed plugins because the build output paths of all plugins are set to `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}`. This allows plugins to contain some external files, such as static content (CSS or JS files) without having to copy files between projects to be able to run the project.
 
@@ -39,7 +39,7 @@ This project contains a set of core services, business logic, validations, or ca
 
 ## `\Test\Nop.Tests`
 
-`Nop.Tests` is a class library project containing some common test classes and helpers for other test projects. It does not have any tests. Read more about UNIT testing in nopCommerce in the following article: [UNIT testing](xref:en/developer/tutorials/unit-tests).
+`Nop.Tests` is a class library project containing some common test classes and helpers for other test projects. It does not have any tests itself. Read more about UNIT testing in nopCommerce in the following article: [UNIT testing](xref:en/developer/tutorials/unit-tests).
 
 ### `\Nop.Core.Tests`
 

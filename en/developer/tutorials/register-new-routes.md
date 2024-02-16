@@ -1,11 +1,11 @@
 ---
-title: How do I register new routes?
+title: Registering New Routes
 uid: en/developer/tutorials/register-new-routes
 author: git.AndreiMaz
 contributors: git.DmitriyKulagin, git.exileDev
 ---
 
-# Register new routes
+# Registering New Routes
 
 [ASP.NET Core routing](https://docs.microsoft.com/aspnet/core/fundamentals/routing) is responsible for mapping incoming browser requests to particular MVC controller actions. nopCommerce has an `IRouteProvider` interface which is used for route registration during application startup. All main routes are registered in the `RouteProvider` and `GenericUrlRouteProvider` classes located in the *`Nop.Web`* project.
 

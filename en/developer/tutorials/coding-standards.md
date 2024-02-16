@@ -6,8 +6,12 @@ contributors: git.DmitriyKulagin
 ---
 
 # Coding Standards
+nopCommerce has specific coding guidelines that developers should follow when creating source code. The [.editorconfig](https://github.com/nopSolutions/nopCommerce/blob/develop/.editorconfig) file in Visual Studio helps to enforce the desired code style.
 
 There are three supported .NET coding convention categories:
+- Language conventions
+- Formating conventions
+- Naming conventions
 
 ## Language conventions
 
@@ -977,7 +981,7 @@ These formatting rules concern the use of space characters to format code.
   }
   ```
 
-- Place a space character after the colon for bases or interfaces in a type   declaration
+- Place a space character after the colon for bases or interfaces in a type declaration
 
   ```csharp
   //Right
@@ -1321,7 +1325,7 @@ These formatting rules concern the use of single lines versus separate lines for
   public class someClass;
   ```
 
-- Assigned to the parameter of a generic type a descriptive name in the notation   PascalCase, unless enough of a letter and a descriptive name has no practical   value
+- Use a descriptive name in PascalCase for the parameter of a generic type, unless a single letter is sufficient and a descriptive name adds no value.
 
   ```csharp
   //Right

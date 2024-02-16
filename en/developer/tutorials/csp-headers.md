@@ -7,7 +7,7 @@ contributors: git.nopsg, git.DmitriyKulagin
 
 # Content Security Policy (CSP) Headers
 
-Content-Security-Policy is the name of an HTTP response header that modern browsers use to enhance the security of the document (or web page). The HTTP Content Security Policy response header gives website admins a sense of control by giving them the authority to restrict the resources such as JavaScript and CSS a user is allowed to load within the site. In other words, you can whitelist your site's content sources. Although it is primarily used as an HTTP response header, you can also apply it via a meta tag.
+Content-Security-Policy is the name of an HTTP response header that modern browsers use to enhance the security of a document (or web page). The HTTP Content Security Policy response header gives website admins a sense of control by giving them the authority to restrict the resources such as JavaScript and CSS a user is allowed to load within the site. In other words, you can whitelist your site's content sources. Although it is primarily used as an HTTP response header, you can also apply it via a meta tag.
 
 ```html
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://img.nopcommerce.com; object-src 'none'; script-src 'self'; style-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
@@ -17,17 +17,17 @@ To add this custom meta tag, you can go to `www.yourStore.com/Admin/Setting/Gene
 
 ![custom CSP head tag image](_static/csp-headers/custom-csp-head-tag.png)
 
-Content Security Policy protects against **Cross Site Scripting (XSS)** and other forms of attacks such as **ClickJacking**. Although it doesn't eliminate their possibility, it can sure minimize the damage. Compatibility isn't a problem as most of the major browsers support CSP. It is not supported in Internet Explorer.
+Content Security Policy protects against **Cross Site Scripting (XSS)** and other forms of attacks such as **ClickJacking**. Although it doesn't eliminate their possibility, it can surely minimize the damage. Compatibility isn't a problem as most of the major browsers support CSP. It is not supported in Internet Explorer.
 
 To test your browser if it supports CSP or not, you can follow this [link](https://content-security-policy.com/browser-test/).
 
 ## CSP Directive Reference
 
-The **Content-Security-Policy** header value is made up of one or more directives (defined below), multiple directives are separated with a *semicolon (;)*
+The **Content-Security-Policy** header value is made up of one or more directives (defined below), and multiple directives are separated with a *semicolon (;)*
 
 ### default-src
 
-The *default-src* directive defines the default policy for fetching resources such as JavaScript, Images, CSS, Fonts, AJAX requests, Frames, HTML5 Media. Not all directives fall back to *default-src*.
+The *default-src* directive defines the default policy for fetching resources such as JavaScript, Images, CSS, Fonts, AJAX requests, Frames, and HTML5 Media. Not all directives fall back to *default-src*.
 
 ```html
 default-src 'self' cdn.nopcommerce.com;
@@ -59,7 +59,7 @@ img-src 'self' img.nopcommerce.com;
 
 ### connect-src
 
-Applies to *XMLHttpRequest (AJAX), WebSocket or EventSource*. If not allowed the browser emulates a **400** HTTP status code.
+Applies to *XMLHttpRequest (AJAX), WebSocket, or EventSource*. If not allowed the browser emulates a **400** HTTP status code.
 
 ```html
 connect-src 'self';
@@ -75,7 +75,7 @@ font-src font.nopcommerce.com;
 
 ### object-src
 
-Defines valid sources of plugins, eg `<object>`, `<embed>` or `<applet>`.
+Defines valid sources of plugins, eg `<object>`, `<embed>`, or `<applet>`.
 
 ```html
 object-src 'self';
@@ -99,7 +99,7 @@ frame-src 'self';
 
 ### sandbox
 
-Enables a sandbox for the requested resource similar to the *iframe sandbox* attribute. The sandbox applies the same-origin policy, prevents popups, plugins, and script execution is blocked. You can keep the sandbox value empty to keep all restrictions in place, or add values: *allow-forms allow-same-origin allow-scripts allow-popups, allow-modals, allow-orientation-lock, allow-pointer-lock, allow-presentation, allow-popups-to-escape-sandbox*, and *allow-top-navigation*
+Enables a sandbox for the requested resource similar to the *iframe sandbox* attribute. The sandbox applies the same-origin policy and prevents popups, plugins, and script execution. You can keep the sandbox value empty to keep all restrictions in place, or add values: *allow-forms allow-same-origin allow-scripts allow-popups, allow-modals, allow-orientation-lock, allow-pointer-lock, allow-presentation, allow-popups-to-escape-sandbox*, and *allow-top-navigation*
 
 ```html
 sandbox allow-forms allow-scripts;
@@ -201,13 +201,13 @@ This policy allows images, scripts, AJAX, and CSS from the same origin, and does
 
 Based on the browser, the CSP error messages may differ.
 
-In chrome developer tools, we can see the following message.
+In Chrome developer tools, we can see the following message.
 
 ```js
 Refused to load the script 'script-uri' because it violates the following Content Security Policy directive: "your CSP directive".
 ```
 
-In firefox developer tools are as follows.
+In Firefox developer tools are as follows.
 
 ```js
 Content Security Policy: A violation occurred for a report-only CSP policy ("An attempt to execute inline scripts has been blocked"). The behavior was allowed, and a CSP report was sent.
