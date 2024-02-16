@@ -137,6 +137,10 @@ Frameworks & Libraries used:
 - flutter_secure_storage: 8.0.0
 - dio: 5.1.2
 
+> [!IMPORTANT]
+>
+> For correct operation of the application, it is recommended to use the package versions specified in the configuration.
+
 ## App architecture
 
 The application architecture is built according to generally accepted standards, described in the [Android documentation](https://developer.android.com/topic/architecture). Since the project uses the Riverpod state management system, the architecture has been extended and looks like this:
