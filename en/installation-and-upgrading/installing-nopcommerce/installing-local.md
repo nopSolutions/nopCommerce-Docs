@@ -46,7 +46,6 @@ nopCommerce requires written permissions for the directories and files described
 
 - **For nopCommerce versions 4.00 and above:**
   - `\App_Data\`
-  - `\bin\`
   - `\Logs\`
   - `\Plugins\`
   - `\Plugins\bin\`
@@ -57,6 +56,7 @@ nopCommerce requires written permissions for the directories and files described
   - `\wwwroot\images\`
   - `\wwwroot\images\thumbs\`
   - `\wwwroot\images\uploaded`
+  - '\wwwroot\sitemaps'
   - `\App_Data\DataProtectionKeys\`
   - `\App_Data\plugins.json` (after installation)
   - `\App_Data\appsettings.json` (or dataSettings.json for earlier versions; after installation)
