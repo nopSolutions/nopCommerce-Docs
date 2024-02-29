@@ -14,4 +14,3 @@ The nopCommerce developer documentation is here to help you through the process 
 * [Designer's Guide](xref:en/developer/design/index)
 * [Web API documentation](xref:en/developer/web-api/index)
 * [Mobile app documentation](xref:en/developer/mobile-app/index)
-* [Copyright notice](xref:en/developer/copyright-notice)

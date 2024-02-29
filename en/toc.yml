@@ -597,9 +597,6 @@
         - 
           name: Working with source code and contributions
           href: developer/contribute/source-code.md
-    - 
-      name: Copyright notice
-      href: developer/copyright-notice.md
 - 
   name: Contribute
   href: https://github.com/nopSolutions/nopCommerce-Docs/blob/master/CONTRIBUTING.md
