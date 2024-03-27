@@ -13,13 +13,13 @@ In this tutorial, you will learn how to create an order confirmation email templ
 
 You will need the following:
 
-* Brevo account credentials. If you don't have one, [sign up for free](https://app.brevo.com/account/register/?tap_a=30591-fb13f0&tap_s=840216-5153c7).
-* Make sure that Brevo [*New Template Language*](https://help.brevo.com/hc/en-us/articles/360000659260?tap_a=30591-fb13f0&tap_s=840216-5153c7) for emails is enabled in your account.
+* Brevo account credentials. If you don't have one, [sign up for free](https://get.brevo.com/v70whp).
+* Make sure that Brevo [*New Template Language*](https://get.brevo.com/eg4z2v) for emails is enabled in your account.
 * Follow [these steps](xref:en/running-your-store/promotional-tools/brevo-integration/set-up-brevo-plugin) to set up the brevo plugin.
 
 ## Create the order confirmation email template
 
-First, log in to your Brevo account, then go to the Automation platform > [Email Templates](https://my.brevo.com/camp/lists/template?tap_a=30591-fb13f0&tap_s=840216-5153c7). Click the **New Template** button in the top right.
+First, log in to your Brevo account, then go to the Automation platform > [Email Templates](https://get.brevo.com/e8j7a). Click the **New Template** button in the top right.
 
 The email template can be personalized with several types of data:
 
@@ -29,7 +29,7 @@ The email template can be personalized with several types of data:
 
 ### Personalize your email with contact attributes
 
-Let's start by personalizing with [contact attributes](https://help.brevo.com/hc/en-us/articles/360001008200?tap_a=30591-fb13f0&tap_s=840216-5153c7).
+Let's start by personalizing with [contact attributes](https://get.brevo.com/bynyff).
 
 In the example below, we have included personalization of:
 
@@ -60,7 +60,7 @@ The following variables can be included directly within your Brevo template cont
 
 In the *Drag & Drop Editor*, select your desired block that will display the order information, then add your variables.
 
-We recommend formatting numbers using [floatformat](https://help.brevo.com/hc/en-us/articles/360000268730?tap_a=30591-fb13f0&tap_s=840216-5153c7). In the example below, we have added:
+We recommend formatting numbers using [floatformat](https://get.brevo.com/ogcn5b). In the example below, we have added:
 
 * `{{ params.currency | floatformat: 2 }}` - the currency of the order
 * `{{ params.subtotal | floatformat: 2 }}` - the subtotal of the order
@@ -120,7 +120,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 >
 > A customer has to be identified by their email address to trigger the workflow, that is, a customer should be logged in to their account on your nopCommerce store or enter their email address during checkout.
 
-Navigate to the [Automation](https://automation.brevo.com/?tap_a=30591-fb13f0&tap_s=840216-5153c7) tab of your Brevo account.
+Navigate to the [Automation](https://get.brevo.com/tvl7ng) tab of your Brevo account.
 
 Click **+ CREATE A NEW WORKFLOW**, then select **Product Purchase** and follow the steps.
 
@@ -148,7 +148,7 @@ When your workflow is complete, click **DONE** to save and activate it.
 
 ## Example
 
-Let's say that customer Jean Blue jean.blue@brevo.com has purchased the following 3 items from your store.
+Let's say that customer Jean Blue <jean.blue@brevo.com> has purchased the following 3 items from your store.
 
 ![Order items](_static/send-an-order-confirmation-email/order-items.jpg)
 
@@ -156,7 +156,7 @@ Your template will look like this:
 
 ![Template](_static/send-an-order-confirmation-email/template.jpg)
 
-The email received by Jean Blue at jean.blue@brevo.com will look like this:
+The email received by Jean Blue at <jean.blue@brevo.com> will look like this:
 
 ![Email](_static/send-an-order-confirmation-email/email.jpg)
 
