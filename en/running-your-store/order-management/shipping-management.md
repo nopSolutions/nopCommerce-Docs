@@ -21,8 +21,9 @@ The top area of the page enables you to search for a shipment by various search 
 * Click the **Load not delivered** checkbox if you do not want to load already delivered items.
 * Use **Country, State/province, County/region, City** to search by a shipment destination.
 * Click the **Load not shipped** checkbox if you do not want to load already shipped items.
+* Check the **Load not ready for pickup** checkbox if you want to load items that are not ready for pickup.
 
-Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print packaging receipts.
+Select certain shipments to **Set as shipped (selected)** or **Set as delivered (selected)** or **Set as ready for pickup (selected)**. You can also **Print packaging slips (selected)** or **Print Packaging slips (all)** to print packaging receipts.
 
 In the list of shipments, a store owner can view all items of a shipment by clicking ![expand](_static/shipping-management/order-shipment-expand.png) in the first column of the shipment.
 

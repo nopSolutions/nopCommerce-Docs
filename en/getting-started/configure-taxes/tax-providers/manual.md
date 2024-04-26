@@ -17,7 +17,11 @@ To manage tax categories, click the **Manage tax categories** button at the top 
 
 ## Fixed rate
 
-Choose **Fixed rate** configuration using the switcher at the top of the page.
+Click the button **By country** at the top of the page to switch the editor to **Fixed rate** mode.
+
+![Configure](_static/manual/configure-confirm.jpg)
+
+Please note that the tax rules will be applied those that are displayed on the configuration page when switching between *Fixed rate* and *By country* modes.
 
 ![Configure](_static/manual/configure.jpg)
 
@@ -33,7 +37,7 @@ Make sure your products have a tax category assigned to them on their [product p
 
 ## By country
 
-Choose the **By country** configuration using the switcher at the top of the page.
+Click the button **Fixed rate** at the top of the page to switch the editor to **By country** mode.
 
 ![By country](_static/manual/tax-by-country.png)
 

@@ -27,7 +27,7 @@ The following screenshot shows how a customer sees a shopping cart page in the p
 There are a few elements on the shopping cart page. Some of them can be disabled if needed:
 
 1. The button in the **Remove** column allows removing an item from the shopping cart.
-1. The **Update shopping cart** button allows a customer to change a product's quantity by entering the appropriate number in the **Qty** field.
+1. The button in the **Qty.** column allows a customer to change a product's quantity by entering the appropriate number in the **Qty** field.
 1. The **Continue shopping** button allows a customer to proceed to the catalog.
 1. The **Estimate shipping** button allows a customer to estimate shipping. After clicking this button, the following pop-up window will be displayed:
   ![Estimate shipping](_static/shopping-carts-and-wishlists/estimate-shipping.jpg)
