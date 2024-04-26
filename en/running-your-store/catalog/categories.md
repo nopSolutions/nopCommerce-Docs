@@ -56,7 +56,6 @@ In the *Display* panel, define the following category information:
     - If the setting above is enabled, enter the **Price 'from'**.
     - And the **Price 'to'**.
 - **Display order** — the order number for displaying the category. This display number is used to sort categories in the public store (ascending). The category with the display order 1 will be placed at the top of the list.
-- The **Category template** filed is visible if you have custom category templates installed on the **System → Templates** page. This template defines how this category (and its products) will be displayed.
 
 ### Mappings
 

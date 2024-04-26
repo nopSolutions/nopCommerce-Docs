@@ -107,9 +107,9 @@ Sharing options in the *Share* panel allow to set up an opportunity for shoppers
 - Select the **Show a share button** to display a share button on the product details page. When this field is selected, the **Share button code** field will be displayed.
 - The **Share button code** field displays the page's button code.
 
-  > [!TIP]
+  > [!NOTE]
   >
-  > By default, the AddThis service is used ([http://www.addthis.com/](http://www.addthis.com/)).
+  > By default, the ShareThis service is used ([https://sharethis.com/](https://sharethis.com/)).
 
 This is what share links look like:
 ![Share](_static/catalog-settings/zzz.png)
@@ -143,7 +143,7 @@ The *Additional sections* panel allows you to set the following options:
 - Select the **'Recently viewed products' enabled** checkbox to enable customers to see products recently viewed in your store.
   - In the **Number of 'Recently viewed products'** field, enter the number of recently viewed products to be displayed when the previous checkbox is selected.
 - Select the **'New products' page enabled** checkbox if you want the 'New products' page to be enabled in the store.
-  - In the **Number of products on 'New products' page** field, enter the number of recently added products to display when the *'New products' page enabled* is selected.
+  - In the **'New products' page. Page size options** field, enter the number of recently added products to display when the *'New products' page enabled* is selected.
 - Select the **Display the date for a pre-order availability** checkbox if needed.
 
 ## Product fields
@@ -156,6 +156,7 @@ In the *Product fields* panel, you can set the following options:
 - **Show SKU on catalog pages**.
 - **Show GTIN** in the public store.
 - **Show manufacturer part number** in the public store.
+- **Show short description on catalog pages** in the public store.
 
 ## Product page
 
@@ -163,6 +164,10 @@ In the *Product fields* panel, you can set the following options:
 
 In the *Product page* panel, you can set the following options:
 
+- **Product URL structure type**. Possible values:
+  - /Product
+  - /Category/Product
+  - /Manufacturer/Product
 - **Show "free shipping" icon** for products with this option enabled.
 - **Allow viewing of unpublished product details page**. In this case, SEO will not be affected, and search crawlers will index the page, even though a product is temporarily unpublished and invisible to customers. Note that a store owner always has access to unpublished products.
 - Select the **Discontinued message for unpublished products** checkbox to display the "a product has been discontinued" message when customers try to access details pages of unpublished products.
