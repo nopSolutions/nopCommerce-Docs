@@ -17,18 +17,19 @@ In order to run nopCommerce, you will need the following installed on your serve
   * Windows Server 2012 R2 or above
 
 * Linux
-  * Red Hat 7 / CentOS 7 or above
-  * Fedora 33 or above or
-  * Debian 10 or above / Ubuntu 18.04 or above / Linux Mint 18 or above
-  * OpenSUSE 15 or above / SUSE Enterprise 12 SP2 or above
-  * Alpine Linux 3.15 or above
+  * Red Hat 8 or above
+  * Fedora 38 or above or
+  * Debian 11 or above / Ubuntu 20.04 or above
+  * OpenSUSE 15 or above / SUSE Enterprise 12 SP5 or above
+  * Alpine Linux 3.16 or above
 
 * macOS
-  * macOS X 10.15 or above
+  * macOS X 12.0 or above
 
 ## Supported web servers
 
 * Internet Information Service (IIS) 7.0 or above
+* For nopCommerce 4.70: Install .NET 8 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.4-windows-hosting-bundle-installer)).
 * For nopCommerce 4.60: Install .NET 7 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.5-windows-hosting-bundle-installer)).
 * For nopCommerce 4.50: Install .NET 6 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.1-windows-hosting-bundle-installer)).
 * For nopCommerce 4.40: Install .NET 5 runtime ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer)).
@@ -50,6 +51,8 @@ In order to run nopCommerce, you will need the following installed on your serve
 * Mozilla Firefox 2.0 and above
 * Google Chrome 1.x
 * Apple Safari 2.x
+
+**For nopCommerce 4.70 or above: MS Visual Studio 2022 (version 17.9 or above). And don't forget to install .NET 8 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.204-windows-x64-installer)). Required for developers who want to edit the source code.**
 
 **For nopCommerce 4.60 or above: MS Visual Studio 2022 (version 17.5 or above). And don't forget to install .NET 7 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.302-windows-x64-installer)). Required for developers who want to edit the source code.**
 
