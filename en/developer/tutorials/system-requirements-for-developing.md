@@ -22,21 +22,21 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 | OS                           | Version             |
 | ---------------------------- | ------------------- |
-| Red Hat Enterprise Linux     | 7+                  |
-| CentOS, Oracle Linux         | 7+                  |
-| Fedora                       | 33+                 |
-| Debian                       | 10+                 |
-| Ubuntu                       | 18.04               |
-| Linux Mint                   | 18+                 |
+| Red Hat Enterprise Linux     | 8+                  |
+| Fedora                       | 38+                 |
+| Debian                       | 11+                 |
+| Ubuntu                       | 20.04+               |
 | OpenSUSE                     | 15+                 |
-| SUSE Enterprise Linux (SLES) | 12 SP2+             |
-| Alpine Linux                 | 3.15+               |
+| SUSE Enterprise Linux (SLES) | 12 SP5+             |
+| Alpine Linux                 | 3.16+               |
+
+Other distributions are supported at best effort, per [.NET Support and Compatibility for Linux Distributions](https://github.com/dotnet/core/blob/main/linux-support.md).
 
 * MacOS
 
 | OS       | Version |
 | -------- | ------- |
-| Mac OS X | 10.15+  |
+| Mac OS X | 12.0+  |
 
 > [!NOTE]
 >
@@ -53,11 +53,11 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 ## 2. Tools Required for Development
 
-Since it is based on Microsoft's .NET 7 we need to install a few tools before starting development on top of nopCommerce.
+Since it is based on Microsoft's .NET 8 we need to install a few tools before starting development on top of nopCommerce.
 
 ### .NET 8 runtime & .NET 8 SDK
 
-Since nopCommerce 4.70 is based on .NET 8. We need to install [.NET 8 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-8.0.4-windows-x64-installer) and [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.204-windows-x64-installer) before we start development on nopCommerce.
+Since nopCommerce 4.70 is based on .NET 8. We need to install [.NET 8 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.4-windows-x64-installer) and [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.204-windows-x64-installer) before we start development on nopCommerce.
 
 ### Visual Studio 2022 or Above / Visual Studio Code
 

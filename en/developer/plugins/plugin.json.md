@@ -16,8 +16,8 @@ contributors: git.cromatido
   "Group": "Payment methods",
   "FriendlyName": "PayPal Commerce",
   "SystemName": "Payments.PayPalCommerce",
-  "Version": "1.16",
-  "SupportedVersions": [ "4.60" ],
+  "Version": "4.70.1",
+  "SupportedVersions": [ "4.70" ],
   "Author": "nopCommerce team",
   "DisplayOrder": -1,
   "FileName": "Nop.Plugin.Payments.PayPalCommerce.dll",
@@ -31,7 +31,7 @@ contributors: git.cromatido
 
 - **SystemName**. It is used by nopCommerce to identify the plugin uniquely, so it needs to be unique from all other plugins. We cannot register more than one plugin with the same `SystemName`.
 
-- **Version**. This is the version number of the plugin, you can set this to any value you like. This number is used to identify which version of the plugin is currently installed in the nopCommerce application.
+- **Version**. This is the version number of the plugin, you can set this to any value you like. This number is used to identify which version of the plugin is currently installed in the nopCommerce application. However, we recommend sticking to the following format - `"{nopCommerce_version_number}.{build_number}"`.
 
 - **SupportedVersions**. It is an array of strings. It contains one or more than one version of nopCommerce that this plugin is supported on or we can say this plugin is a target for. During development ensure that the current version of nopCommerce in which you are developing this plugin is included in this list, otherwise, it will not be loaded in the plugin list.
 
@@ -60,8 +60,8 @@ contributors: git.cromatido
         "Group": "Tax providers",
         "FriendlyName": "Manual (Fixed or By Country/State/Zip)",
         "SystemName": "Tax.FixedOrByCountryStateZip",
-        "Version": "1.44",
-        "SupportedVersions": [ "4.60" ],
+        "Version": "4.70.1",
+        "SupportedVersions": [ "4.70" ],
         "Author": "nopCommerce team",
         "DisplayOrder": 1,
         "FileName": "Nop.Plugin.Tax.FixedOrByCountryStateZip.dll",
@@ -76,8 +76,8 @@ contributors: git.cromatido
         "Group": "Widgets",
         "FriendlyName": "Google Analytics",
         "SystemName": "Widgets.GoogleAnalytics",
-        "Version": "1.76",
-        "SupportedVersions": [ "4.60" ],
+        "Version": "4.70.1",
+        "SupportedVersions": [ "4.70" ],
         "Author": "nopCommerce team, Nicolas Muniere",
         "DisplayOrder": 1,
         "FileName": "Nop.Plugin.Widgets.GoogleAnalytics.dll",

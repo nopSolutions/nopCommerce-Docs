@@ -42,20 +42,22 @@ using FluentMigrator;
 using Nop.Core.Domain.Catalog;
 
 namespace Nop.Data.Migrations
+
+[NopSchemaMigration("2024-04-20 00:00:00", "Category. Add some new property")]
+public class AddSomeNewProperty: ForwardOnlyMigration
 {
-    [NopMigration("2022/01/01 12:00:00:2551770", "Category. Add some new property", UpdateMigrationType.Data, MigrationProcessType.Update)]
-    public class AddSomeNewProperty: AutoReversingMigration
+    /// <summary>
+    /// Collect the UP migration expressions
+    /// </summary>
+    public override void Up()
     {
-        /// <summary>Collect the UP migration expressions</summary>
-        public override void Up()
-        {
-            Create.Column(nameof(Category.SomeNewProperty))
-            .OnTable(nameof(Category))
-            .AsString(255)
-            .Nullable();
-        }
+        var categoryTableName = nameof(Category);
+        if (!Schema.Table(categoryTableName).Column(nameof(Category.SomeNewProperty)).Exists())
+            Alter.Table(categoryTableName)
+                .AddColumn(nameof(Category.SomeNewProperty)).AsInt32().AsString(255).Nullable();
     }
 }
+
 ```
 
 > [!NOTE]

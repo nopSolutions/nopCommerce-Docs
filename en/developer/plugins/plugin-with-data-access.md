@@ -11,7 +11,7 @@ In this tutorial, I'll be using the nopCommerce plugin architecture to implement
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.60](xref:en/developer/plugins/how-to-write-plugin-4.60)
+- [How to write a plugin for nopCommerce 4.70](xref:en/developer/plugins/how-to-write-plugin-4.70)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
@@ -32,15 +32,14 @@ Inside of the "*domain*" namespace we're going to create a public class named **
 
 ```csharp
 namespace Nop.Plugin.Misc.ProductViewTracker.Domain
+
+public class ProductViewTrackerRecord : BaseEntity
 {
-    public class ProductViewTrackerRecord : BaseEntity
-    {
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public int CustomerId { get; set; }
-        public string IpAddress { get; set; }
-        public bool IsRegistered { get; set; }
-    }
+    public int ProductId { get; set; }
+    public string ProductName { get; set; }
+    public int CustomerId { get; set; }
+    public string IpAddress { get; set; }
+    public bool IsRegistered { get; set; }
 }
 ```
 
@@ -56,27 +55,26 @@ using Nop.Data.Extensions;
 using System.Data;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Mapping.Builders
+
+public class ProductViewTrackerRecordBuilder : NopEntityBuilder<ProductViewTrackerRecord>
 {
-    public class ProductViewTrackerRecordBuilder : NopEntityBuilder<ProductViewTrackerRecord>
+    /// <summary>
+    /// Apply entity configuration
+    /// </summary>
+    /// <param name="table">Create table expression builder</param>
+    public override void MapEntity(CreateTableExpressionBuilder table)
     {
-        /// <summary>
-        /// Apply entity configuration
-        /// </summary>
-        /// <param name="table">Create table expression builder</param>
-        public override void MapEntity(CreateTableExpressionBuilder table)
-        {
-            //map the primary key (not necessary if it is Id field)
-            table.WithColumn(nameof(ProductViewTrackerRecord.Id)).AsInt32().PrimaryKey()
-            //map the additional properties as foreign keys
-            .WithColumn(nameof(ProductViewTrackerRecord.ProductId)).AsInt32().ForeignKey<Product>(onDelete: Rule.Cascade)
-            .WithColumn(nameof(ProductViewTrackerRecord.CustomerId)).AsInt32().ForeignKey<Customer>(onDelete: Rule.Cascade)
-            //avoiding truncation/failure
-            //so we set the same max length used in the product name
-            .WithColumn(nameof(ProductViewTrackerRecord.ProductName)).AsString(400)
-            //not necessary if we don't specify any rules
-            .WithColumn(nameof(ProductViewTrackerRecord.IpAddress)).AsString()
-            .WithColumn(nameof(ProductViewTrackerRecord.IsRegistered)).AsInt32();
-        }
+        //map the primary key (not necessary if it is Id field)
+        table.WithColumn(nameof(ProductViewTrackerRecord.Id)).AsInt32().PrimaryKey()
+        //map the additional properties as foreign keys
+        .WithColumn(nameof(ProductViewTrackerRecord.ProductId)).AsInt32().ForeignKey<Product>(onDelete: Rule.Cascade)
+        .WithColumn(nameof(ProductViewTrackerRecord.CustomerId)).AsInt32().ForeignKey<Customer>(onDelete: Rule.Cascade)
+        //avoiding truncation/failure
+        //so we set the same max length used in the product name
+        .WithColumn(nameof(ProductViewTrackerRecord.ProductName)).AsString(400)
+        //not necessary if we don't specify any rules
+        .WithColumn(nameof(ProductViewTrackerRecord.IpAddress)).AsString()
+        .WithColumn(nameof(ProductViewTrackerRecord.IsRegistered)).AsInt32();
     }
 }
 ```
@@ -90,14 +88,13 @@ using Nop.Data.Migrations;
 using Nop.Plugin.Other.ProductViewTracker.Domains;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Migrations
+
+[NopSchemaMigration("2020/05/27 08:40:55:1687541", "Other.ProductViewTracker base schema", MigrationProcessType.Installation)]
+public class SchemaMigration : ForwardOnlyMigration
 {
-    [NopMigration("2020/05/27 08:40:55:1687541", "Other.ProductViewTracker base schema", MigrationProcessType.Installation)]
-    public class SchemaMigration : AutoReversingMigration
+    public override void Up()
     {
-        public override void Up()
-        {
-            Create.TableFor<ProductViewTrackerRecord>();            
-        }
+        Create.TableFor<ProductViewTrackerRecord>();            
     }
 }
 ```
@@ -112,37 +109,35 @@ using Nop.Plugin.Other.ProductViewTracker.Domains;
 using System;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Services
+
+public interface IProductViewTrackerService
 {
-    public interface IProductViewTrackerService
-    {
-        /// <summary>
-        /// Logs the specified record.
-        /// </summary>
-        /// <param name="record">The record.</param>
-        void Log(ProductViewTrackerRecord record);
-    }
+    /// <summary>
+    /// Logs the specified record.
+    /// </summary>
+    /// <param name="record">The record.</param>
+    void Log(ProductViewTrackerRecord record);
 }
 
-namespace Nop.Plugin.Misc.ProductViewTracker.Services
-{
-    public class ProductViewTrackerService : IProductViewTrackerService
-    {
-        private readonly IRepository<ProductViewTrackerRecord> _productViewTrackerRecordRepository;
-        public ProductViewTrackerService(IRepository<ProductViewTrackerRecord> productViewTrackerRecordRepository)
-        {
-            _productViewTrackerRecordRepository = productViewTrackerRecordRepository;
-        }
 
-        /// <summary>
-        /// Logs the specified record.
-        /// </summary>
-        /// <param name="record">The record.</param>
-        public virtual void Log(ProductViewTrackerRecord record)
-        {
-            if (record == null)
-                throw new ArgumentNullException(nameof(record));
-            _productViewTrackerRecordRepository.Insert(record);
-        }
+namespace Nop.Plugin.Misc.ProductViewTracker.Services
+
+public class ProductViewTrackerService : IProductViewTrackerService
+{
+    private readonly IRepository<ProductViewTrackerRecord> _productViewTrackerRecordRepository;
+    public ProductViewTrackerService(IRepository<ProductViewTrackerRecord> productViewTrackerRecordRepository)
+    {
+        _productViewTrackerRecordRepository = productViewTrackerRecordRepository;
+    }
+    /// <summary>
+    /// Logs the specified record.
+    /// </summary>
+    /// <param name="record">The record.</param>
+    public virtual void Log(ProductViewTrackerRecord record)
+    {
+        if (record == null)
+            throw new ArgumentNullException(nameof(record));
+        _productViewTrackerRecordRepository.Insert(record);
     }
 }
 ```
@@ -159,35 +154,32 @@ using Nop.Core.Infrastructure;
 using Nop.Plugin.Other.ProductViewTracker.Services;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
+
+/// <summary>
+/// Represents object for the configuring services on application startup
+/// </summary>
+public class NopStartup : INopStartup
 {
     /// <summary>
-    /// Represents object for the configuring services on application startup
+    /// Add and configure any of the middleware
     /// </summary>
-    public class NopStartup : INopStartup
+    /// <param name="services">Collection of service descriptors</param>
+    /// <param name="configuration">Configuration of the application</param>
+    public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
     {
-        /// <summary>
-        /// Add and configure any of the middleware
-        /// </summary>
-        /// <param name="services">Collection of service descriptors</param>
-        /// <param name="configuration">Configuration of the application</param>
-        public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddScoped<IProductViewTrackerService, ProductViewTrackerService>();
-        }
-
-        /// <summary>
-        /// Configure the using of added middleware
-        /// </summary>
-        /// <param name="application">Builder for configuring an application's request pipeline</param>
-        public void Configure(IApplicationBuilder application)
-        {
-        }
-
-        /// <summary>
-        /// Gets order of this startup configuration implementation
-        /// </summary>
-        public int Order => 3000;
+        services.AddScoped<IProductViewTrackerService, ProductViewTrackerService>();
     }
+    /// <summary>
+    /// Configure the using of added middleware
+    /// </summary>
+    /// <param name="application">Builder for configuring an application's request pipeline</param>
+    public void Configure(IApplicationBuilder application)
+    {
+    }
+    /// <summary>
+    /// Gets order of this startup configuration implementation
+    /// </summary>
+    public int Order => 3000;
 }
 ```
 
@@ -208,51 +200,46 @@ using Nop.Web.Framework.Components;
 using Nop.Web.Models.Catalog;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Components
+
+public class ProductViewTrackerViewComponent : NopViewComponent
 {
-    public class ProductViewTrackerViewComponent : NopViewComponent
+    private readonly ICustomerService _customerService;
+    private readonly IProductService _productService;
+    private readonly IProductViewTrackerService _productViewTrackerService;
+    private readonly IWorkContext _workContext;
+    public ProductViewTrackerViewComponent(ICustomerService customerService,
+        IProductService productService,
+        IProductViewTrackerService productViewTrackerService,
+        IWorkContext workContext)
     {
-        private readonly ICustomerService _customerService;
-        private readonly IProductService _productService;
-        private readonly IProductViewTrackerService _productViewTrackerService;
-        private readonly IWorkContext _workContext;
-
-        public ProductViewTrackerViewComponent(ICustomerService customerService,
-            IProductService productService,
-            IProductViewTrackerService productViewTrackerService,
-            IWorkContext workContext)
-        {
-            _customerService = customerService;
-            _productService = productService;
-            _productViewTrackerService = productViewTrackerService;
-            _workContext = workContext;
-        }
-
-        public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
-        {
-            if (!(additionalData is ProductDetailsModel model))
-                return Content("");
-
-            //Read from the product service
-            var productById = await _productService.GetProductByIdAsync(model.Id);
-            //If the product exists we will log it
-            if (productById != null)
-            {
-                var currentCustomer = await _workContext.CurrentCustomerAsync();
-                //Setup the product to save
-                var record = new ProductViewTrackerRecord
-                {
-                    ProductId = model.Id,
-                    ProductName = productById.Name,
-                    CustomerId = currentCustomer.Id,
-                    IpAddress = currentCustomer.LastIpAddress,
-                    IsRegistered = await _customerService.Async(currentCustomer)
-                };
-                //Map the values we're interested in to our new entity
-                _productViewTrackerService.Log(record);
-            }
-
+        _customerService = customerService;
+        _productService = productService;
+        _productViewTrackerService = productViewTrackerService;
+        _workContext = workContext;
+    }
+    public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
+    {
+        if (!(additionalData is ProductDetailsModel model))
             return Content("");
+        //Read from the product service
+        var productById = await _productService.GetProductByIdAsync(model.Id);
+        //If the product exists we will log it
+        if (productById != null)
+        {
+            var currentCustomer = await _workContext.CurrentCustomerAsync();
+            //Setup the product to save
+            var record = new ProductViewTrackerRecord
+            {
+                ProductId = model.Id,
+                ProductName = productById.Name,
+                CustomerId = currentCustomer.Id,
+                IpAddress = currentCustomer.LastIpAddress,
+                IsRegistered = await _customerService.Async(currentCustomer)
+            };
+            //Map the values we're interested in to our new entity
+            _productViewTrackerService.Log(record);
         }
+        return Content("");
     }
 }
 ```
@@ -270,32 +257,29 @@ using Nop.Web.Framework.Infrastructure;
 using System.Collections.Generic;
 
 namespace Nop.Plugin.Other.ProductViewTracker
+
+public class ProductViewTrackerPlugin : BasePlugin, IWidgetPlugin
 {
-    public class ProductViewTrackerPlugin : BasePlugin, IWidgetPlugin
+    /// <summary>
+    /// Gets a value indicating whether to hide this plugin on the widget list page in the admin area
+    /// </summary>
+    public bool HideInWidgetList => true;
+    /// <summary>
+    /// Gets a type of a view component for displaying widget
+    /// </summary>
+    /// <param name="widgetZone">Name of the widget zone</param>
+    /// <returns>View component type</returns>
+    public Type GetWidgetViewComponent(string widgetZone)
     {
-        /// <summary>
-        /// Gets a value indicating whether to hide this plugin on the widget list page in the admin area
-        /// </summary>
-        public bool HideInWidgetList => true;
-
-        /// <summary>
-        /// Gets a type of a view component for displaying widget
-        /// </summary>
-        /// <param name="widgetZone">Name of the widget zone</param>
-        /// <returns>View component type</returns>
-        public Type GetWidgetViewComponent(string widgetZone)
-        {
-            return typeof(ProductViewTrackerViewComponent);
-        }
-
-        /// <summary>
-        /// Gets widget zones where this widget should be rendered
-        /// </summary>
-        /// <returns>Widget zones</returns>
-        public Task<IList<string>> GetWidgetZonesAsync()
-        {
-            return Task.FromResult<IList<string>>(new List<string> { PublicWidgetZones.ProductDetailsTop });
-        }
+        return typeof(ProductViewTrackerViewComponent);
+    }
+    /// <summary>
+    /// Gets widget zones where this widget should be rendered
+    /// </summary>
+    /// <returns>Widget zones</returns>
+    public Task<IList<string>> GetWidgetZonesAsync()
+    {
+        return Task.FromResult<IList<string>>(new List<string> { PublicWidgetZones.ProductDetailsTop });
     }
 }
 ```
