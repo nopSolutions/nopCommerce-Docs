@@ -497,7 +497,10 @@
       href: developer/plugins/index.md
       items:
         - 
-          name: How to write a plugin for nopCommerce 4.60 (and above)
+          name: How to write a plugin for nopCommerce 4.70 (and above)
+          href: developer/plugins/how-to-write-plugin-4.70.md
+        - 
+          name: How to write a plugin for nopCommerce 4.60
           href: developer/plugins/how-to-write-plugin-4.60.md
         - 
           name: How to write a plugin for nopCommerce 4.50

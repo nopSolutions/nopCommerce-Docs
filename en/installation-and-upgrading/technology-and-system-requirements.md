@@ -29,6 +29,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 ## Supported web servers
 
 * Internet Information Service (IIS) 7.0 or above
+* For nopCommerce 4.70: Install .NET 8 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.4-windows-hosting-bundle-installer)).
 * For nopCommerce 4.60: Install .NET 7 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.5-windows-hosting-bundle-installer)).
 * For nopCommerce 4.50: Install .NET 6 runtime ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.1-windows-hosting-bundle-installer)).
 * For nopCommerce 4.40: Install .NET 5 runtime ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.3-windows-hosting-bundle-installer)).
@@ -51,19 +52,21 @@ In order to run nopCommerce, you will need the following installed on your serve
 * Google Chrome 1.x
 * Apple Safari 2.x
 
-**For nopCommerce 4.60 or above: MS Visual Studio 2022 (version 17.5 or above). And don't forget to install .NET 7 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.302-windows-x64-installer)). Required for developers who want to edit the source code.**
+**For nopCommerce 4.70 or above: MS Visual Studio 2022 (version 17.9 or above). And don't forget to install .NET 8 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.204-windows-x64-installer)). Required for developers who want to edit the source code.**
 
-**For nopCommerce 4.50: MS Visual Studio 2022 (version 17.0 or above). And don't forget to install .NET 6 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)). Required for developers who want to edit the source code.**
+*For nopCommerce 4.60 or above: MS Visual Studio 2022 (version 17.5 or above). And don't forget to install .NET 7 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.302-windows-x64-installer)). Required for developers who want to edit the source code.*
 
-**For nopCommerce 4.40 or above: MS Visual Studio 2019 (version 16.9 or above). And don't forget to install .NET 5 SDK ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.408-windows-x64-installer)). Required for developers who want to edit the source code.**
+*For nopCommerce 4.50: MS Visual Studio 2022 (version 17.0 or above). And don't forget to install .NET 6 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)). Required for developers who want to edit the source code.*
 
-**For nopCommerce 4.30: MS Visual Studio 2019 (version 16.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.426-windows-x64-installer)). Required for developers who want to edit the source code.**
+*For nopCommerce 4.40 or above: MS Visual Studio 2019 (version 16.9 or above). And don't forget to install .NET 5 SDK ([download](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.408-windows-x64-installer)). Required for developers who want to edit the source code.*
 
-**For nopCommerce 4.20 or above: MS Visual Studio 2017 (version 15.9 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit the source code.**
+*For nopCommerce 4.30: MS Visual Studio 2019 (version 16.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.426-windows-x64-installer)). Required for developers who want to edit the source code.*
 
-**For nopCommerce 4.10: MS Visual Studio 2017 (version 15.7 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit the source code.**
+*For nopCommerce 4.20 or above: MS Visual Studio 2017 (version 15.9 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit the source code.*
 
-**For nopCommerce 4.00 or below: MS Visual Studio 2017 (version 15.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit the source code.**
+*For nopCommerce 4.10: MS Visual Studio 2017 (version 15.7 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit the source code.*
+
+*For nopCommerce 4.00 or below: MS Visual Studio 2017 (version 15.3 or above). And don't forget to install .NET Core SDK ([download](https://dotnet.microsoft.com/download)). Required for developers who want to edit the source code.*
 
 > [!NOTE]
 > If you're installing nopCommerce on Windows and going to use the multi-store feature with SSL, then Windows Server 2012 with IIS 8 is required because it supports SNI (Server Name Indication).

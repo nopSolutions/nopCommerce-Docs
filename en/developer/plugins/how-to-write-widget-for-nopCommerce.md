@@ -27,7 +27,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>net7.0</TargetFramework>
+            <TargetFramework>net8.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
@@ -39,6 +39,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
             <OutDir>$(OutputPath)</OutDir>
             <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
             <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+            <ImplicitUsings>enable</ImplicitUsings>
         </PropertyGroup>
         <ItemGroup>
             <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
