@@ -51,7 +51,7 @@ Go to **Configuration → Tax providers**. Select the **Manual (fixed or by coun
 
 ![Tax providers](_static/index/tax-providers.jpg)
 
-Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. At the top of the page, you will see the switch. Choose **Fixed rate** there.
+Click **Configure** in the **Manual (fixed or by country/state/zip)** provider line to edit tax rates. At the top of the page, you will see the button. Click on the button to switch to the **Fixed rate** mode.
 
 ![Configure](_static/index/configure.jpg)
 

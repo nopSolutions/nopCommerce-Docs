@@ -154,6 +154,7 @@ To set up the report, enter one or more of the following search criteria:
 - **End date** for the search.
 - **Order status**, such as *All*, *Pending*, *Processing*, *Complete* or *Cancelled*.
 - **Payment status**, such as *All*, *Pending*, *Authorized*, *Paid*, *Refunded*, *Partially refunded* or *Voided*.
+- **Store** if you want to select one of your stores.
 
 Then click **Run report**.
 

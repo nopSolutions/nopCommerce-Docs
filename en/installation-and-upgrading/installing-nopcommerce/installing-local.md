@@ -98,6 +98,7 @@ In the *Store information* panel, fill the following details:
   - preconfigure some settings (for example, PangV or "Display tax/shipping info" settings for Germany)
   - preconfigure some shipping details, VAT settings, currencies, measures, and more.
 - **Create sample data**: select this checkbox if you would like sample products to be created. This is recommended so you can start working with your site before adding any of your own products. You can always delete these items later, or unpublish them so that they no longer appear on your site.
+- **Subscribe to nopCommerce newsletter**: select this checkbox if you want to subscribe to nopCommerce newsletter during installation.
 
 In the *Database information* panel, you need to enter the following info:
 

@@ -98,6 +98,33 @@ At the top right of the page, you will see the branded **Avalara tax codes** but
 1. Click **Save**.
 1. To see a listing of all available AvaTax system tax codes, visit [http://taxcode.avatax.avalara.com](http://taxcode.avatax.avalara.com).
 
+## Item Classification
+
+Managed Tariff Code Classification is an Avalara service that assigns Harmonized System (HS) tariff codes to your product catalog. Once Avalara has classified the items you sell, include tariff codes in AvaTax calculations automatically or export them for use in your own business application.
+
+Customs authorities use Harmonized System (HS) tariff codes to calculate tariff rates for all internationally traded products. Unlike sales and use tax codes, tariff codes aren't universal. Assign fully qualified tariff codes to the products that you sell internationally to calculate customs duties and import taxes.
+
+In AvaTax, parent products are classified with a tariff code and any child SKUs inherit that classification.
+
+1. Activate the *Item Classification* functionality on the tab with the same name.
+1. Specify for which countries HS classification codes are to be obtained.
+1. Save the settings using the **Save** button.
+
+    ![Item classification](_static/avalara/item-classification.png)
+
+1. Go to the **Item Classification settings** in your Avalara personal account.
+    ![Item classification avalara](_static/avalara/item-classification-avalara.png)
+
+1. Specify the endpoint address for the webhook - `{your.store.url}/avalara/item-classification-webhook`
+
+    ![Item classification endpoint](_static/avalara/item-classification-endpoint.png)
+
+1. Go to the plugin configuration page again and specify which products should be sent for classification.
+
+    ![Item classification sync](_static/avalara/item-classification-sync.png)
+
+1. Click the **Sync now** button to start the process of sending products for classification. After receiving a response from Avalara service, the table will be filled with the received values (You need to update the tables manually). After that the received classification code values will be transferred to calculate tax rates.
+
 ## Validate a customer address
 
 1. Ensure **Validate address** checkbox is on; in that case, the address will be validated automatically.

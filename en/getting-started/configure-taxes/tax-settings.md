@@ -19,6 +19,7 @@ First of all define **common** tax settings:
   * **Billing address**. When this option is selected, the tax is based on the customer's billing address. If the billing address is unknown, the default address is used (entered below).
   * **Shipping address**. When this option is selected, the tax is based on the customer's shipping address. If the shipping address is unknown, the default address is used (entered below).
   * **Default address**. When this option is selected, the tax is based on the default address that is entered below.
+* **Automatically detect country by IP address** When this setting is enabled, if the customer's billing/shipping address is not already set, the country of address used for tax calculation will be determined automatically by the GEO service (by IP address).
 * Choose the **Default tax category** for products. It will be pre-selected on the *Add new product* page.
 * **Tax based on pickup point address** checkbox defines if a pickup point address should be used for tax calculation when the pickup point is chosen.
 * Select the **Prices include tax** checkbox to indicate whether entered prices include tax.

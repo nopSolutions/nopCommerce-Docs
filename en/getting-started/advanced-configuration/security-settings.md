@@ -43,6 +43,7 @@ This panel will reveal the following settings when **CAPTCHA enabled** is select
 * Show CAPTCHA on the **email product to a friend** page.
 * Show CAPTCHA on the **blog page (comments)**.
 * Show CAPTCHA on the **news page (comments)**.
+* Show CAPTCHA on the **newsletter block**.
 * Show CAPTCHA on the **product reviews** page.
 * Show CAPTCHA on the **apply for vendor account** page.
 * Show CAPTCHA on the **forum** page.

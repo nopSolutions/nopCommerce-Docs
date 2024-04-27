@@ -83,8 +83,13 @@ Cache configuration.
   ~/App_Data/browscap.crawlersonly.xml
   ```
 
+* **CrawlerOnlyAdditionalUserAgentStringsPath** This setting stores the location/path for `additional.crawlers.xml`. It stores user agents only for "Сrawlers".
+  
+  ```powershell
+  ~/App_Data/additional.crawlers.xml
+  ```
+
 * **UseSessionStateTempDataProvider** This setting expects a boolean value. The default value for this setting is **`false`**. You might want to set the value to **`true`** if you want to store `TempData` in the session state. By default, the cookie-based `TempData` provider is used to store `TempData` in cookies.
-* **MiniProfilerEnabled** This setting activates the *MiniProfiler* performance appraisal tool.
 * **ScheduleTaskRunTimeout** allows you to set up a running schedule task timeout in milliseconds. Set **`null`** to use a default value.
 * **StaticFilesCacheControl** specifies the value of the 'Cache-Control' header for static content (in seconds).
 
@@ -92,9 +97,12 @@ Cache configuration.
   public,max-age=31536000
   ```
 
-* **SupportPreviousNopcommerceVersions** setting specifies the value indicating whether we should support previous nopCommerce versions. In this case, old URLs, from previous nopCommerce versions, will redirect to new ones. Enable it only if you upgraded from one of the previous nopCommerce versions. The default value is **`true`**.
 * **PluginStaticFileExtensionsBlacklist** Specify the blacklist of the static file extensions for plugin directories.
 * **ServeUnknownFileTypes** setting specifies the value indicating whether to serve files that don't have a recognized content type. The default value is **`false`**.
+* **UseAutofac**. The value indicating whether to use *Autofac IoC container*. If disabled, then the default *.Net IoC container* will be used.
+* **PermitLimit**. Maximum number of permit counters that can be allowed in a window (1 minute). Must be set to a value `> 0` by the time these options are passed to the constructor of `FixedWindowRateLimiter`. If set to **`0`** than limitation is off.
+* **QueueCount**. Maximum cumulative permit count of queued acquisition requests. Must be set to a value `>= 0` by the time these options are passed to the constructor of `FixedWindowRateLimiter`. If set to **`0`** than Queue is off.
+* **RejectionStatusCode**. Default status code to set on the response when a request is rejected.
 
 ### DistributedCacheConfig
 
@@ -104,9 +112,9 @@ A distributed cache is a cache shared by multiple app servers, typically maintai
   * **Memory** This is a framework-provided implementation of `IDistributedCache` that stores items in memory. The Distributed Memory Cache isn't a distributed cache. Cached items are stored by the app instance on the server where the app is running.
   * **SQL Server** The Distributed SQL Server Cache implementation allows the distributed cache to use a SQL Server database as its backing store. To create a SQL Server cached item table in a SQL Server instance, you can use the SQL-cache tool. The tool creates a table with the name and schema that you specify. It is recommended to use a separate database for this purpose.
   
-  ```sh
-  dotnet sql-cache create "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DistCache;Integrated Security=True;" dbo nopCache
-  ```
+    ```sh
+    dotnet sql-cache create "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DistCache;Integrated   Security=True;" dbo nopCache
+    ```
 
   * **Redis** nopCommerce supports *Redis* out of the box. To enable the *Redis* in our application we must set the appropriate value for the following settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
 * **Enabled** This setting expects a boolean value. Set the value to **`true`** if you want to enable `Distributed cache`. The system uses In-Memory caching, so this setting is used to indicate whether we should use `Distributed Cache` for caching, instead of the default `in-memory caching`. So, use this setting if you want to use for example *Redis* for caching.
@@ -118,6 +126,8 @@ A distributed cache is a cache shared by multiple app servers, typically maintai
 
 * **SchemaName (optional)** This setting is only used in conjunction with `SQL Server`.
 * **TableName (optional)** This setting is only used in conjunction with `SQL Server`. SQL Server database name.
+* **InstanceName (optional)** Specify the instance name (by default "nopCommerce").
+* **PublishIntervalMs (optional)** Specify the interval to publish key change events, in milliseconds.
 
 ### HostingConfig
 
@@ -127,6 +137,7 @@ Hosting contains settings used to configure the hosting behavior. It is a JSON o
 * **ForwardedProtoHeaderName** This setting expects a string value. Specify a custom HTTP header name to determine the originating IP address (e.g., **`CF-Connecting-IP`**, **`X-ProxyUser-Ip`**).
 * **ForwardedForHeaderName** This setting expects a string value. Specify a custom HTTP header name for identifying the protocol (HTTP or HTTPS) that a client used to connect to your proxy or load balancer.
 * **KnownProxies** This setting expects a string value. Specify a list of IP addresses (comma separated) to accept forwarded headers.
+* **KnownNetworks** This setting expects a string value. Specify a list of IP CIDR notations (comma separated) to accept forwarded headers. e.g. 172.64.0.0/13,162.158.0.0/15
 
 ### InstallationConfig
 

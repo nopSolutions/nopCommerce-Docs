@@ -26,12 +26,14 @@ To access your account at UPS, use a username, a password, and an **XML license 
 1. Click **Configure** beside the UPS (United Parcel Service) option in the list.
     The *Configure – UPS (United Parcel Service)* window will be displayed as follows: ![Configure page](_static/ups/ups-configure.jpg)
 
+    > [!WARNING]
+    > Beginning in June of 2024, you will no longer be able to transact with UPS APIs using an access key for authentication and are required to update your security model to OAuth 2.0
+
 1. Enter the following information obtained from the UPS provider:
     * Select the **Use sandbox** checkbox to use the testing environment.
+    * Enter the **Client ID** obtained from the provider.
+    * Enter your **Client secret** obtained from the provider.
     * Enter the **Account number** of the UPS provider.
-    * Enter the **Access Key** obtained from the provider.
-    * Enter your **Username** obtained from the provider.
-    * Enter the **Password** obtained from the provider
     * Select your required **UPS Customer Classification** as follows:
         * Rates Associated With Shipper Number
         * Daily Rates

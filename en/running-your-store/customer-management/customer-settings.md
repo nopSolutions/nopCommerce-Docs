@@ -53,7 +53,7 @@ Define the common customer settings as follows:
 
 ![password](_static/customer-settings/customersettings2.png)
 
-* Set the **Password minimum length, Password must have at least one lowercase, Password must have at least one uppercase, Password must have at least one non alphanumeric character, Password must have at least one digit** to change password complexity.
+* Set the **Password minimum length, Password maximum length, Password must have at least one lowercase, Password must have at least one uppercase, Password must have at least one non alphanumeric character, Password must have at least one digit** to change password complexity.
 * **Unduplicated passwords number** is a number of passwords that mustn't be the same as the previous ones.
 * Select the **Default password format** as follows:
   * *Clear*
@@ -72,6 +72,7 @@ Define the common customer settings as follows:
 * Enter the **Maximum login failures** number. Set 0 to disable this feature.
 * In **Lockout time (login failures)**, enter the number of minutes to lockout users.
 * Select the **Force entering email twice** checkbox if you want your customers to enter email twice during the registration.
+* **Force multi-factor authentication**. Force activation of multi-factor authentication for customer roles specified in Access control list (at least one MFA provider must be active).
 
 ## Account
 
@@ -124,6 +125,7 @@ In the *Customer form fields* panel, define whether the following form fields ar
 ![customerformfields](_static/customer-settings/customersettings5.png)
 
 * **'Gender' enabled**
+* **'Neutral' option enabled**. If this option is enabled, you will be able to specify one of three gender options: - Male, female, neutral (as per German laws).
 * **'First name' enabled**. When enabled, you can also decide whether this field should be required.
 * **'Last name' enabled**. When enabled, you can also decide whether this field should be required.
 * **'Date of Birth' enabled.** When enabled, you can also decide whether this field should be required and enter a minimum allowed age (for example, to ensure that a customer is above 18).

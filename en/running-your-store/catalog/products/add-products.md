@@ -95,7 +95,6 @@ In the *Price* panel, define:
     > If you want to use discounts, make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
 
 - Whether the product is exempted from tax by selecting **Tax exempt**. Otherwise, from the **Tax category** dropdown list, select the required tax classification for this product. Tax categories can be configured by the store owner in  the **Configuration → Tax → Tax categories**.
-- The product as **Telecommunications, broadcasting, and electronic services** to apply special tax rules used in the European Union.
 - Set up [tier prices](xref:en/running-your-store/promotional-tools/tier-prices) if required.
 
 ## Shipping

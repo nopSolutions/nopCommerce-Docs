@@ -25,10 +25,23 @@ Define the following email account information:
 * In the **Email display name** field, enter the displayed name for outgoing emails of your store. Example: "Your store sales department."
 * In the **Host** field, enter the host name of IP address of your email server.
 * In the **Port** field, enter the SMTP port of your email server.
-* In the **User** field, enter the user name of your email server.
-* In the **Password** field, enter the password of your email server.
 * Select the **SSL** checkbox to use Security Sockets Layer to encrypt the SMTP connection.
-* Select the **Use default credentials** checkbox to use default credentials for the connection.
+* In the **Max number of emails** field, enter the maximum number of emails sent at one time.
+* Choose the **Authentication method** that will be used to identify the client when connecting to the SMTP server.
+  * *No authentication* (no additional fields)
+  * *NTLM (the default network credentials)*
+  * *Login/Password*
+    * In the **User** field, enter the user name of your email server.
+    * In the **Password** field, enter the password of your email server.
+  * *Google (OAuth2)*
+  ![Email account - Google](_static/email-accounts/email-accounts-google.png)
+    * The **Client ID**. Public identifier for application.
+    * The **Client Secret**. The secret known only to the application and the authorization server.
+  * *Microsoft (OAuth2)*
+  ![Email account - Microsoft](_static/email-accounts/email-accounts-microsoft.png)
+    * The **Tenant identifier** can be a GUID (the ID of your Microsoft Entra instance), domain name or one of placeholders: "organizations", "consumers", "common".
+    * The **Client ID**. Public identifier for application.
+    * The **Client Secret**. The secret known only to the application and the authorization server.
 
 Click **Save**. The window will be expanded as follows:
 
