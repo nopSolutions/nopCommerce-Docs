@@ -53,6 +53,7 @@ In the *Display* panel, define the following details:
     - If the setting above is enabled, enter the **Price 'from'**.
     - And the **Price 'to'**.
 - **Display Order** — the order number for displaying the manufacturer. This display number is used to sort manufacturers in the public store (ascending). The manufacturer with the display order 1 will be placed at the top of the list.
+- The **Manufacturer template** filed is visible if you have custom manufacturer templates installed on the **System → Templates** page. This template defines how this manufacturer (and its products) will be displayed.
 
 ### Mappings
 
