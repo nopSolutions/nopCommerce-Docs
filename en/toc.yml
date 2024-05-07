@@ -353,6 +353,9 @@
         -
           name: Facebook Pixel
           href: running-your-store/promotional-tools/facebook-pixel.md
+        -
+          name: Omnisend integration
+          href: running-your-store/promotional-tools/omnisend.md
     -
       name: Content management
       href: running-your-store/content-management/index.md

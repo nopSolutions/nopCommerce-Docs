@@ -2,7 +2,7 @@
 title: Running your store
 uid: en/running-your-store/index
 author: git.AndreiMaz
-contributors: git.exileDev, git.dunaenko, git.mariannk
+contributors: git.exileDev, git.dunaenko, git.mariannk, git.DmitriyKulagin
 ---
 
 # Running your store
@@ -14,4 +14,4 @@ contributors: git.exileDev, git.dunaenko, git.mariannk
 * [Promotional tools](xref:en/running-your-store/promotional-tools/index)
 * [Search engine optimization](xref:en/running-your-store/search-engine-optimization)
 * [Reports](xref:en/running-your-store/reports)
-* [System administration](xref:en/running-your-store/system-administration/index)
+* [System administration](xref:en/running-your-store/system-administration/index
