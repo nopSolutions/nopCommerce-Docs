@@ -8,7 +8,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.DanWithArduino
 
 ## Define the UPS Real Time Shipping Calculations
 
-1. Create a UPS user account via [UPS.com](UPS.com "UPS.com"), then go to [developer.ups.com](developer.ups.com), and create an app to receive the following:
+1. Create a UPS user account via [UPS.com](https://www.ups.com/), then go to [developer.ups.com](https://developer.ups.com/), and create an app to receive the following:
    * Client ID
    * Client Secret
      > [!NOTE]
