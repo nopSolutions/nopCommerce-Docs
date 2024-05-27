@@ -34,9 +34,9 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
    To use Omnisend with nopCommerce, you will need to [create an account](https://your.omnisend.com/g1K9y2) with Omnisend. You can start with the free plan to explore platform features, no credit card needed.
 
    > [!NOTE]
-   > If you have been using Omnisend and already have an account connected to another store, make sure to [create a new empty store](https://support.omnisend.com/en/articles/3022953-managing-multiple-stores#register-a-new-store-under-the-owners-account) first.
+   > If you have been using Omnisend and already have an account connected to another store, make sure to [create a new empty store](https://support.omnisend.com/en/articles/3022953-managing-multiple-stores?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGdTU12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1#register-a-new-store-under-the-owners-account) first.
 
-1. To connect Omnisend to your store: [Log into](https://app.omnisend.com/login) your Omnisend account.
+1. To connect Omnisend to your store: [Log into](https://app.omnisend.com/login?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGf2o12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1) your Omnisend account.
 
 1. Click *Connect store* in the dashboard or in your account navigation menu
 ![Connect store - Omnisend](_static/omnisend/connect-store.jpg)
@@ -48,6 +48,24 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
 
 1. Go to the **Synchronization** panel to synchronize your nopCommerce customers and products with your Omnisend account.
 ![Sync](_static/omnisend/sync.jpg)
+
+### What features are supported?
+
+* [Email](https://support.omnisend.com/en/articles/6070131-building-an-email-campaign?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGqRM12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1) and [SMS campaigns](https://support.omnisend.com/en/articles/1918472-sms-in-campaigns?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGqQs12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1).
+* [Omnisend Signup forms](https://support.omnisend.com/en/articles/1061792-types-of-signup-forms?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVJfyY12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1).
+* [Other 3rd party integrations](https://support.omnisend.com/en/collections/35918-integrations-with-3rd-party-apps?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGM2w12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1).
+* These Automation workflows:
+  * [Order Confirmation](https://support.omnisend.com/en/articles/1421803-order-confirmation-automation?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMw012dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1) (Paid for Order and Placed order events),
+  * [Cancellation Confirmation](https://support.omnisend.com/en/articles/1649441-cancellation-confirmation-automation?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMyw12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1) (Order Cancelled event),
+  * [Birthday](https://support.omnisend.com/en/articles/1061790-birthday-email-automation?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMRM12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1),
+  * [Welcome email](https://support.omnisend.com/en/articles/1061818-welcome-email-automation?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMTk12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1),
+  * [Contact enters/exits segment](https://support.omnisend.com/en/articles/2398171-contact-enters-exits-a-segment-automation?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMQI12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1),
+  * [Browse Abandonment](https://support.omnisend.com/en/articles/1692754-browse-abandonment?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMXU12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1),
+  * [Product Abandonment](https://support.omnisend.com/en/articles/1690227-product-abandonment?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGMSM12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1),
+  * [Abandoned Checkout & Abandoned Cart](https://support.omnisend.com/en/articles/6659889-abandoned-cart-and-abandoned-checkout?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGJx812dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1).
+* [Segmentation](https://support.omnisend.com/en/articles/5945163-using-omnisend-segmentation?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGJzE12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1). Most of the filters in the segmentation are available, except the order statuses events: Paid for order, Cancelled order, Had order shipped, Had partially shipped order, Refunded order, Had partially refunded order. However, you can still  utilize 'Placed order' filter.
+* [Live activity](https://support.omnisend.com/en/articles/1689912-live-view-tracking-store-activity?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGJwY12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1).
+* Adding your [Brand Assets](https://support.omnisend.com/en/articles/6099524-brand-assets-management?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGJ3w12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1).
 
 ### What data is synced?
 
