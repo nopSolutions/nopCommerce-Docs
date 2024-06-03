@@ -14,4 +14,4 @@ contributors: git.exileDev, git.dunaenko, git.mariannk, git.DmitriyKulagin
 * [Promotional tools](xref:en/running-your-store/promotional-tools/index)
 * [Search engine optimization](xref:en/running-your-store/search-engine-optimization)
 * [Reports](xref:en/running-your-store/reports)
-* [System administration](xref:en/running-your-store/system-administration/index
+* [System administration](xref:en/running-your-store/system-administration/index)

@@ -2,7 +2,7 @@
 title: Reports
 uid: en/running-your-store/reports
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.exileDev, git.mariannk, git.DmitriyKulagin
 ---
 
 # Reports
@@ -207,3 +207,7 @@ Then click **Run report**.
 ## Tutorials
 
 - [Running reports in nopCommerce](https://www.youtube.com/watch?v=IbfoppTG9tM)
+
+## See also
+
+- [Microsoft Power BI](xref:en/running-your-store/reports/microsoft-power-bi)
