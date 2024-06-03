@@ -262,6 +262,16 @@
         -
           name: Catalog settings
           href: running-your-store/catalog/catalog-settings.md
+        -
+          name: Full-text search
+          href: running-your-store/catalog/full-text-search/index.md
+          items:
+            -
+              name: Elasticsearch
+              href: running-your-store/catalog/full-text-search/elasticsearch-configure.md
+            -
+              name: Lucene
+              href: running-your-store/catalog/full-text-search/lucene-configure.md
     -
       name: Order management
       href: running-your-store/order-management/index.md
