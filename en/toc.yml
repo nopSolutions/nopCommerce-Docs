@@ -394,6 +394,10 @@
     -
       name: Reports
       href: running-your-store/reports.md
+      items:
+        -
+          name: Microsoft Power BI
+          href: running-your-store/reports/microsoft-power-bi.md
     -
       name: System administration
       href: running-your-store/system-administration/index.md
