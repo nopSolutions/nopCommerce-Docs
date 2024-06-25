@@ -33,7 +33,9 @@ This section describes how to integrate Elasticsearch into your store.
 1. Go to admin area > configuration > local plugins. Upload the plugin archive using the "Upload plugin or theme" plugin.
 1. Scroll down through the list of plugins to find the newly installed plugin. Click on the "Install" button to install the plugin.
 
-You can find more information about how to install plugins [here](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html)
+You can find more information about how to install plugins [here](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html).
+
+The Elasticsearch must be configured for correct work of the plugin. Find more about the Elasticsearch installation process [here](https://www.elastic.co/downloads/elasticsearch).
 
 > [!NOTE]
 > The plugin belongs to the **Search provider** group. Use the **Group** field in the search panel to filter plugins for faster navigation.
