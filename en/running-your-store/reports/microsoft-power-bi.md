@@ -235,6 +235,15 @@ After this, all the reports described in this article will be available to you.
 
 ## Troubleshooting
 
+### Issue - The request body must contain the following parameter: 'client_assertion' or 'client_secret'
+
+If you encounter this error during the authorization process of your application, then to solve this problem you need to follow several steps described below:
+
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com/), select your app in **App registrations**, and then select **Authentication**.
+1. In **Advanced settings** > **Allow public client flows** > **Enable the following mobile and desktop flows:**, select **Yes**.
+
+![Allow_public_client_flows](_static/microsoft-power-bi/Allow_public_client_flows.png)
+
 ### Checking the correct connection and settings (in case of problems)
 
 - To verify that the gateway is correctly connected to your data source, you can check the connection status in the **Manage connections and gateways** section.
