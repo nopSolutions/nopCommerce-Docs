@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 > [!Important]
 >
-> This plugin is currently deprecated and, starting from version 4.60, has been replaced by the [**PayPal Zettle**](xref:en/getting-started/configure-payments/payment-methods/paypal-zettle) plugin.
+> This plugin is currently deprecated and, starting from version 4.40.4, has been replaced by the [**PayPal Commerce**](xref:en/getting-started/configure-payments/payment-methods/paypal-commerce) plugin.
 
 PayPal Standard is the easiest way to securely accept credit card and PayPal payments online.
 
