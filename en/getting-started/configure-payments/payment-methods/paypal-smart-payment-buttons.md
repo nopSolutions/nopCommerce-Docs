@@ -9,7 +9,7 @@ contributors: git.DmitriyKulagin
 
 > [!Important]
 >
-> This plugin is currently deprecated and, starting from version 4.40.4, has been replaced by the [**PayPal Commerce**](xref:en/getting-started/configure-payments/payment-methods/paypal-commerce) plugin.
+> This plugin is currently deprecated and has been replaced by the [**PayPal Commerce**](xref:en/getting-started/configure-payments/payment-methods/paypal-commerce) plugin.
 
 PayPal Checkout with Smart Payment Buttons gives your buyers a simplified and secure checkout experience. PayPal intelligently presents the most relevant payment types to your shoppers automatically, making it easier for them to complete their purchases using such methods as Pay with Venmo, PayPal Credit, credit card payments, iDEAL, Bancontact, Sofort, and other payment types.
 
