@@ -109,15 +109,15 @@ Cache configuration.
 A distributed cache is a cache shared by multiple app servers, typically maintained as an external service to the app servers that access it. A distributed cache can improve the performance and scalability of an ASP.NET Core app, especially when the app is hosted by a cloud service or a server farm.
 
 * **DistributedCacheType** You can choose one of the implementations:
-  * **Memory** This is a framework-provided implementation of `IDistributedCache` that stores items in memory. The Distributed Memory Cache isn't a distributed cache. Cached items are stored by the app instance on the server where the app is running.
-  * **SQL Server** The Distributed SQL Server Cache implementation allows the distributed cache to use a SQL Server database as its backing store. To create a SQL Server cached item table in a SQL Server instance, you can use the SQL-cache tool. The tool creates a table with the name and schema that you specify. It is recommended to use a separate database for this purpose.
+  * **Memory**  - This is a framework-provided implementation of `IDistributedCache` that stores items in memory. The Distributed Memory Cache isn't a distributed cache. Cached items are stored by the app instance on the server where the app is running.
+  * **SQL Server**  - The Distributed SQL Server Cache implementation allows the distributed cache to use a SQL Server database as its backing store. To create a SQL Server cached item table in a SQL Server instance, you can use the SQL-cache tool. The tool creates a table with the name and schema that you specify. It is recommended to use a separate database for this purpose.
   
     ```sh
     dotnet sql-cache create "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DistCache;Integrated   Security=True;" dbo nopCache
     ```
 
-  * **Redis** nopCommerce supports *Redis* out of the box. To enable the *Redis* in your application you must set the corresponding settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
-  * **Redis Synchronized Memory** nopCommerce version 4.70 introduces a new way of caching with synchronization through the message mechanism in *Redis*. This option has very high performance since the cache itself is stored in memory and *Redis* is used only as a synchronizer. To enable this option in your application you must set the same settings as and for the base *Redis* cache.
+  * **Redis** - nopCommerce supports *Redis* out of the box. To enable the *Redis* in your application you must set the corresponding settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
+  * **Redis Synchronized Memory**  - nopCommerce version 4.70 introduces a new way of caching with synchronization through the message mechanism in *Redis*. This option has very high performance since the cache itself is stored in memory and *Redis* is used only as a synchronizer. To enable this option in your application you must set the same settings as and for the base *Redis* cache.
   
 * **Enabled** This setting expects a boolean value. Set the value to **`true`** if you want to enable `Distributed cache`. The system uses In-Memory caching, so this setting is used to indicate whether we should use `Distributed Cache` for caching, instead of the default `in-memory caching`. So, use this setting if you want to use for example *Redis* for caching.
 * **ConnectionString (optional)** This setting is only used in conjunction with *Redis* or *SQL Server*. This setting expects a string value. The default value for this setting is
