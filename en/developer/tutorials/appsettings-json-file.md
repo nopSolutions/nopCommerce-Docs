@@ -25,7 +25,7 @@ The *appsettings.json* file is generally used to store the application configura
 
 ## Settings available in the appsettings.json file
 
-### ConnectionStrings
+### DataConfig
 
 The connection to the database is configured through this section.
 
@@ -43,6 +43,7 @@ The connection to the database is configured through this section.
   * [**MySql**](https://www.mysql.com/)
   * [**PostgreSQL**](https://www.postgresql.org/)
 * **SQLCommandTimeout** Sets the wait time (in seconds) before terminating the attempt to execute a command and generating an error. By default, timeout isn't set and a default value for the current provider is used. Set **`0`** to use an infinite timeout.
+* **WithNoLock** Indicates whether to add NoLock hint to SELECT statements (Reltates to SQL Server only)
 
 ### AzureBlobConfig
 
@@ -61,8 +62,7 @@ We can use *Azure Blob Storage* to store blob data. nopCommerce already has a fe
 Cache configuration.
 
 * **DefaultCacheTime** This setting determines the lifetime of the cached data. The default is **`60`** minutes.
-* **ShortTermCacheTime** In some cases, it is required to cache data for a shorter period than the default. These values apply to caching addresses, generic attributes, customers, etc. The default is **`3`** minutes.
-* **BundledFilesCacheTime** This setting is used when the function of combining CSS and/or js files into one is activated, to control the cache lifetime for them. The default is **`120`** minutes.
+* **LinqDisableQueryCache** Indicates whether to disable LINQ expressions caching for queries. This cache reduces time, required for query parsing but have several side-effects. For example, cached LINQ expressions could contain references to external objects as parameters, which could lead to memory leaks if those objects are not used anymore by other code. Or cache access synchronization could lead to bigger latencies than it saves.
 
 ### CommonConfig
 
@@ -116,7 +116,9 @@ A distributed cache is a cache shared by multiple app servers, typically maintai
     dotnet sql-cache create "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DistCache;Integrated   Security=True;" dbo nopCache
     ```
 
-  * **Redis** nopCommerce supports *Redis* out of the box. To enable the *Redis* in our application we must set the appropriate value for the following settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
+  * **Redis** nopCommerce supports *Redis* out of the box. To enable the *Redis* in your application you must set the corresponding settings. For more information about [Redis](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache).
+  * **Redis Synchronized Memory** nopCommerce version 4.70 introduces a new way of caching with synchronization through the message mechanism in *Redis*. This option has very high performance since the cache itself is stored in memory and *Redis* is used only as a synchronizer. To enable this option in your application you must set the same settings as and for the base *Redis* cache.
+  
 * **Enabled** This setting expects a boolean value. Set the value to **`true`** if you want to enable `Distributed cache`. The system uses In-Memory caching, so this setting is used to indicate whether we should use `Distributed Cache` for caching, instead of the default `in-memory caching`. So, use this setting if you want to use for example *Redis* for caching.
 * **ConnectionString (optional)** This setting is only used in conjunction with *Redis* or *SQL Server*. This setting expects a string value. The default value for this setting is
 
@@ -149,10 +151,7 @@ It contains settings that are used to configure the behavior of nopCommerce duri
 
 ### PluginConfig
 
-* **ClearPluginShadowDirectoryOnStartup** This setting expects a boolean value. Set it to **`true`** if you want to clear the `/Plugins/bin` directory during application startup.
-* **CopyLockedPluginAssembilesToSubdirectoriesOnStartup** This setting expects a boolean value. You might want to set the value to **`true`** if you want to copy "locked" assemblies from `/Plugins/bin` directory to temporary subdirectories during application startup.
 * **UseUnsafeLoadAssembly** This setting expects a boolean value. You might want to set the value to **`true`** if you want to load an assembly into the load-from context, bypassing some security checks.
-* **UsePluginsShadowCopy** This setting expects a boolean value. You might want to set the value to **`true`** if you want to copy the plugins library to the `/Plugins/bin` directory on application startup.
 
 ### WebOptimizer
 
