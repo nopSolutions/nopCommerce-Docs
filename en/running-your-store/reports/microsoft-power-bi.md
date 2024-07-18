@@ -151,7 +151,7 @@ The following will describe the necessary and sufficient steps to set up the Pow
 1. Launch the **Gateway**, to do this, launch the **On-premises data gateway** application.
 1. Enter the email address for your account that you used when you signed up for the Power BI service.
 
-   > [NOTE]
+   > [!NOTE]
    > Your account is stored in the **Azure AD** tenant.
 
    ![OnPremisses_data_gateway](_static/microsoft-power-bi/OnPremisses_data_gateway.png)
