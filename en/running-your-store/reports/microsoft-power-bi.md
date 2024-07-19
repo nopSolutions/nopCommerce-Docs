@@ -185,7 +185,7 @@ The following will describe the necessary and sufficient steps to set up the Pow
    ![Azure_portal](_static/microsoft-power-bi/Azure_portal.png)
 
 1. Go to the plugin configuration page and paste the resulting **Application ID**.
-   > [WARNING]
+   > [!WARNING]
    > Publishing a report is only possible if you use an MSSQL database. Connection configurations with other types of databases are not currently supported.
 
 ## Publish reports
@@ -252,11 +252,15 @@ If you encounter this error during the authorization process of your application
 
 - Connecting to the gateway
 
+   You need to make sure that the gateway is linked to your server. The machine name is indicated in the "Device" column.
    ![Connecting_to_the_gateway](_static/microsoft-power-bi/Connecting_to_the_gateway.png)
 
 - Connecting to the database
 
    ![Connecting_to_the_database](_static/microsoft-power-bi/Connecting_to_the_database.png)
+
+   You can check your connection, which server and database it is configured to.
+   ![Connection_Gateway](_static/microsoft-power-bi/Connection_Gateway.png)
 
 - (Optional) To verify that your data binding to the gateway settings are correct, log into your Power BI account and open your dataset settings.
 
@@ -264,6 +268,7 @@ If you encounter this error during the authorization process of your application
 
 - Check the connection to gateway from the drop-down list:
 
+   If the status column says "Running on [Your_Server_Name]", then the connection to the gateway is configured correctly. You can check the details in the "Actions" column.
    ![Check_gateway_connection](_static/microsoft-power-bi/Check_gateway_connection.png)
 
 ## View reports
@@ -275,7 +280,7 @@ Published reports can be viewed in several ways:
 
 Let's take a closer look at the second scenario, since it is part of the integration.
 
-[TIP]> More information about Power BI embedded analytics can be found [here](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
+[!TIP]> More information about Power BI embedded analytics can be found [here](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
 
 The process for viewing reports is similar to the publishing process. After successful user verification, all reports in your Workspace will be available in the **View reports** panel of the plugin.
 
