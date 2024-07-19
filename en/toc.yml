@@ -82,11 +82,11 @@
           href: getting-started/configure-payments/payment-methods/index.md
           items:
             -
-              name: Check/money order
-              href: getting-started/configure-payments/payment-methods/check-money-order.md
+              name: PayPal Commerce
+              href: getting-started/configure-payments/payment-methods/paypal-commerce.md
             -
-              name: Credit card (manual processing)
-              href: getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
+              name: PayPal Zettle
+              href: getting-started/configure-payments/payment-methods/paypal-zettle.md
             -
               name: PayPal Standard
               href: getting-started/configure-payments/payment-methods/paypal-standard.md
@@ -94,11 +94,11 @@
               name: PayPal Smart Payment Buttons
               href: getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons.md
             -
-              name: PayPal Commerce
-              href: getting-started/configure-payments/payment-methods/paypal-commerce.md
+              name: Check/money order
+              href: getting-started/configure-payments/payment-methods/check-money-order.md
             -
-              name: PayPal Zettle
-              href: getting-started/configure-payments/payment-methods/paypal-zettle.md
+              name: Credit card (manual processing)
+              href: getting-started/configure-payments/payment-methods/credit-card-manual-processing.md
         -
           name: Advanced configuration
           href: getting-started/configure-payments/advanced-configuration/index.md

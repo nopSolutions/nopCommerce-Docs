@@ -33,9 +33,9 @@ Click **Configure** beside a payment method to set it up.
 
 ## See also
 
-* [Check/money order](xref:en/getting-started/configure-payments/payment-methods/check-money-order)
-* [Credit card (manual processing)](xref:en/getting-started/configure-payments/payment-methods/credit-card-manual-processing)
-* [PayPal Standard](xref:en/getting-started/configure-payments/payment-methods/paypal-standard)
-* [PayPal Smart Payment Buttons](xref:en/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons)
 * [PayPal Commerce](xref:en/getting-started/configure-payments/payment-methods/paypal-commerce)
 * [PayPal Zettle](xref:en/getting-started/configure-payments/payment-methods/paypal-zettle)
+* [PayPal Standard](xref:en/getting-started/configure-payments/payment-methods/paypal-standard)
+* [PayPal Smart Payment Buttons](xref:en/getting-started/configure-payments/payment-methods/paypal-smart-payment-buttons)
+* [Check/money order](xref:en/getting-started/configure-payments/payment-methods/check-money-order)
+* [Credit card (manual processing)](xref:en/getting-started/configure-payments/payment-methods/credit-card-manual-processing)
