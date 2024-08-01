@@ -6,7 +6,7 @@ author: git.DmitriyKulagin
 
 # Omnisend integration
 
-This section describes how to integrate the Omnisend plugin into your store.
+This section describes how to integrate the Omnisend plugin into your store. The plugin supports all versions of nopCommerce, including minor versions from 4.30 to 4.70.
 
 ## What the Omnisend is
 
