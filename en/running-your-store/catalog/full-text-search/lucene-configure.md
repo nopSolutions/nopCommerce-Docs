@@ -1,5 +1,5 @@
 ---
-title: Full-text search based on Elasticsearch
+title: Full-text search based on Lucene
 uid: en/running-your-store/catalog/catalog-settings/full-text-search/lucene-configure
 author: git.exileDev
 ---
