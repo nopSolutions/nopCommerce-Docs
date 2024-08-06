@@ -62,6 +62,7 @@ Click the **Configure** button beside the Elastic search provider option in the 
     > [!NOTE]
     > You may also manually click the "Rebuild index" button to start reindexing.
 1. Enter the **Result limit**, if necessary. The Result limit is the maximum number of result matches that will be retrieved from the Elasticsearch server for search queries.
+1. Enter additional delimiter characters to split a search query into terms. Please note that search queries are always splitted by space, in addition to the entered delimiters.
 1. Click the **Save** button
 
 > [!NOTE]
