@@ -15,24 +15,24 @@ Please get the official integration with Dynamics 365 [here](https://www.nopcomm
 
 ## What the Dynamics 365 plugin does
 
-Dynamics 365 plugin for nopCommerce allows the store owner:
+Dynamics 365 plugin for nopCommerce allows the store owner to synchronize the following data between your nopCommerce store and Dynamics 365:
 
-- Synchronize contacts - performs synchronization of customers subscribed to the newsletter.
-- Synchronize products.
-- Synchronize orders.
+- Contacts.
+- Products.
+- Orders.
 
 ## Connecting to Microsoft Dataverse
 
-To connect to a Dataverse environment you need the URL to the environment and credential information for a user account with access to that environment.
+To synchronize your store’s data to Dynamics 365, you need to connect to a Dataverse environment which requires the URL to the environment and credential information for a user account with access to that environment. To connect to Microsoft Dataverse, you can either use credentials for an ordinary user or create an app user through Microsoft Entra ID.
 
-While you could achieve these scenarios using credentials for an ordinary user, that user account would need to use a paid license. This isn't the recommended approach.
+Using credentials for an ordinary user, isn’t the recommended approach as it would need a paid license.
 
-In these cases you can create a special application user which is bound to an Microsoft Entra ID registered application and use a key secret configured for the app. Another benefit of this approach is that it doesn't consume a paid license.
+To overcome this limitation, you can create a special application user that is bound to a Microsoft Entra ID registered application and use a key secret configured for the app. Another benefit of this approach is that it doesn't require a paid license.
 
 When you create client applications that use Dataverse web services you need to authenticate to gain access to data. OAuth is the preferred means to authenticate because it provides access to all web services.
 
 > [!NOTE]
-> Client applications must support the use of OAuth to access data using the Web API.
+> Client applications must support using of OAuth to access data using the Web API.
 > OAuth requires an identity provider for authentication. For Dataverse, the identity provider is Microsoft Entra ID.
 
 ### Requirements to connect as an app
@@ -70,8 +70,8 @@ Registering your application establishes a trust relationship between your app a
 
 ### Configure application
 
-1. On the **Overview** page under **Essentials**, select the **Add a Redirect URI link**. Set the redirect URI by first selecting **Add a platform**, enter a URI value, and then select **Configure**. Use a URI value of "<http://localhost>".
-1. On the **Overview** page of your newly created app, hover the cursor over the **Application (client) ID** value, and select the copy to clipboard icon to copy the ID value. Record the value somewhere. You need to specify this value later
+1. On the **Overview** page under **Essentials**, select the **Add a Redirect URI link**. Set the redirect URI by first selecting **Add a platform**, entering a URI value, and then selecting **Configure**. Use a URI value of "<http://localhost>".
+1. On the **Overview** page of your newly created app, hover the cursor over the **Application (client) ID** value, and select the copy to clipboard icon to copy the ID value. Record the value somewhere. You need to specify this value later.
 1. Add credentials. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime.
 
     ![image](./_static/app_client_secrets.png)
@@ -95,7 +95,7 @@ Registering your application establishes a trust relationship between your app a
 
     ![image](./_static/api_permission.png)
 
-1. Also granted admin consent for your organization since without admin consent the connection might raise errors.
+1. Also, grant admin consent for your organization since without admin consent the connection might raise errors.
 
     ![image](./_static/request_api_permission.png)
 
@@ -120,13 +120,14 @@ Follow these steps to create an app user and bind it to your app registration.
 
     ![image](./_static/environment_business_unit.png)
 
-1. In the end, a notification pops confirming that Power Apps is linked with our client application successfully.
+1. In the end, a notification pops up confirming that Power Apps is linked with our client application successfully.
 
 ![image](./_static/environment_app_user_successfull.png)
 
 ## Dynamics 365 Sales and Business Central integration setup
 
-Dynamics 365 Sales enables salespeople to build strong relationships with their customers, take action based on analytics, and close deals faster. Use Dynamics 365 Sales to track your accounts and contacts and analyze sales.  It also allows you to create marketing lists and campaigns, and even track service cases associated with specific accounts.
+The Microsoft Dynamics 365 plugin by nopCommerce supports synchronization with two main Dynamics 365 applications - Business Central and Sales.
+Dynamics 365 Business Central is a complete ERP solution for managing finances, operations, and inventory. Dynamics 365 Sales is a CRM solution that offers sales process automation, customer behavior insights, and sales performance tracking.
 
 ![image](./_static/sales_hub.png)
 
@@ -167,9 +168,9 @@ Choose **Sign in with administrator user**.
 
 ![image](./_static/dataverse_connection_setup_3.png)
 
-You can check this link in [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
+You can check this link in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments).
 
-After Sign in with administrator user turns green and bold, choose **Next**.
+After *Sign in with administrator user* turns green and bold, choose **Next**.
 
 ![image](./_static/dataverse_connection_setup_3_1.png)
 
@@ -226,7 +227,7 @@ For example, **Sales Order – Microsoft Dynamics 365 Sales**:
 
 ### Currency
 
-In order for the synchronization of the nopCommerce plugin with Dataverse to work correctly, it is necessary that the currencies of Business Central and Dataverse coincide. you must make sure of this by going to the following settings.
+Ensure that Business Central and Dataverse currencies match to avoid synchronization errors. Make sure of this by going to the following settings.
 
 ![image](./_static/currencies.png)
 
@@ -240,7 +241,7 @@ The Dynamics 365 plugin is an out-of-the-box nopCommerce plugin. You can find it
 
 ![Find the plugin](_static/plugin_list.png)
 
-Install the plugin using the **Install** button if it is uninstalled.
+Install the plugin using the **Install** button if it is not installed.
 
 ## How to configure the plugin
 
@@ -254,7 +255,7 @@ Click the **Save** button.
 
 ![Find the plugin](_static/plugin_connected.png)
 
-Go to the **Synchronization** panel to synchronize your nopCommerce customers, products and orders with your Dynamics 365 environment.
+Go to the **Synchronization** panel to synchronize your nopCommerce customers, products, and orders with your Dynamics 365 environment.
 
 ## Contacts sync
 
@@ -264,7 +265,7 @@ The plugin implements the initial import of all existing contacts. It is perform
 
 ## Products sync
 
-The plugin implements import of products. Synchronization of two types of products is supported:
+The plugin implements the import of products. Synchronization of two types of products is supported:
 
 - Simple products
 - Group product
@@ -274,7 +275,7 @@ The plugin implements import of products. Synchronization of two types of produc
 In the plugin track a number of events to notify the Dynamics 365 service:
 
 - Create product.
-- Changing a product (increasing the quantity, add image, etc.).
+- Changing a product (increasing the quantity, adding images, etc.).
 
 ## Orders sync
 
