@@ -239,15 +239,14 @@ The organization’s base currency in Dynamics 365 Sales can only be set when th
 
 This section describes how to integrate the Dynamics 365 service into your store.
 
-1. Purchase the integration at [here](https://www.nopcommerce.com/).
+1. Purchase the integration [here](https://www.nopcommerce.com/).
 1. Download the plugin archive.
-1. Go to admin area > configuration > local plugins.
-1. Upload the plugin archive using the "Upload plugin or theme" plugin.
-1. Scroll down through the list of plugins to find the newly installed plugin.
+1. Go to **Admin area > Configuration > Local plugins**.
+1. Upload the plugin archive using the "Upload plugin or theme" button.
+1. Scroll down the list of plugins to find the newly uploaded plugin.
+1. Click on the **Install** button to install the plugin.
 
 ![Find the plugin](_static/plugin_list.png)
-
-Install the plugin using the **Install** button if it is not installed.
 
 ## How to configure the plugin
 
