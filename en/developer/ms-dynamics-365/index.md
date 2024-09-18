@@ -17,7 +17,7 @@ Please get the official integration with Dynamics 365 [here](https://www.nopcomm
 
 Dynamics 365 plugin for nopCommerce allows the store owner to synchronize the following data between your nopCommerce store and Dynamics 365:
 
-- Contacts.
+- Customers.
 - Products.
 - Orders.
 
