@@ -280,7 +280,8 @@ Published reports can be viewed in several ways:
 
 Let's take a closer look at the second scenario, since it is part of the integration.
 
-[!TIP]> More information about Power BI embedded analytics can be found [here](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
+> [!TIP]
+> More information about Power BI embedded analytics can be found [here](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
 
 The process for viewing reports is similar to the publishing process. After successful user verification, all reports in your Workspace will be available in the **View reports** panel of the plugin.
 
