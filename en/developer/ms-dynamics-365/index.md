@@ -254,13 +254,22 @@ Click the **Configure** button. You will see the *Configure - Dynamics 365* wind
 
 ![Find the plugin](_static/plugin_disconnected.png)
 
-To use Dynamics 365 with nopCommerce, you will first need to register and set up your account in MS Dynamics 365 as described earlier and enter all the necessary settings in the fields on the plugin configuration form.
+To use Dynamics 365 with nopCommerce, you will first need to register and set up your account in MS Dynamics 365 as described earlier and enter all the necessary settings in the fields on the plugin configuration form:
+
+- **Application (client) ID**. The registered client ID on Azure portal.
+- **Client secret**. Client secret for Application ID. A secret string that the application uses to prove its identity when requesting a token.
+- **Environment URL**. Direct URL of Dataverse instance to connect too.
+- **Currency code**. Displays the primary currency code of the your store.
+- **Enable auto synchronization**. Determine whether to enable auto synchronization. If disabled, synchronization must be started manually on this page.
+- **Auto synchronization period**. Set the period (in minutes) for auto synchronization.
 
 Click the **Save** button.
 
 ![Find the plugin](_static/plugin_connected.png)
 
 Go to the **Synchronization** panel to synchronize your nopCommerce customers, products, and orders with your Dynamics 365 environment.
+
+![Find the plugin](_static/plugin_connected_sync.png)
 
 ## Contacts sync
 
