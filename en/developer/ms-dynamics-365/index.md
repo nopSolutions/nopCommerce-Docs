@@ -264,7 +264,7 @@ Go to the **Synchronization** panel to synchronize your nopCommerce customers, p
 
 ## Contacts sync
 
-The plugin implements the initial import of all existing contacts. It is performed when the user has just installed the plugin and wants to import all existing store contacts into Dynamics 365. Then, adding and editing customers is performed automatically according to the corresponding event.
+The plugin implements the initial import of all existing contacts (customers). It is performed when the user has just installed the plugin and wants to import all existing store contacts into Dynamics 365. Then, adding and editing customers is performed automatically according to the corresponding event.
 
 ![image](_static/sales_hub_contacts.png)
 
