@@ -75,7 +75,7 @@ On the discount details page, you can add all the discount info and list the pro
 
 ### Plugin installation
 
-This section describes how to integrate the Dynamics 365 service into your store.
+This section describes how to integrate the Omnibus Directive plugin into your store.
 
 1. Purchase the integration [here](https://www.nopcommerce.com/).
 1. Download the plugin archive.
