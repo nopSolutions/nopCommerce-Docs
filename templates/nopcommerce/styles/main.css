@@ -603,7 +603,12 @@ pre {
 
 .course-banner .course-banner-center .course-banner-description {
   font-size: 14px;
-} 
+}
+
+.mark, mark {
+  padding: 0!important;
+}
+
 
 /* MEDIA */
 
