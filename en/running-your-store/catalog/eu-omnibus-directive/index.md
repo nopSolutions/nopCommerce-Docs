@@ -77,7 +77,7 @@ On the discount details page, you can add all the discount info and list the pro
 
 This section describes how to integrate the Omnibus Directive plugin into your store.
 
-1. Purchase the integration [here](https://www.nopcommerce.com/).
+1. Purchase the integration [here](https://www.nopcommerce.com/omnibus-directive).
 1. Download the plugin archive.
 1. Go to **Admin area > Configuration > Local plugins**.
 1. Upload the plugin archive using the "Upload plugin or theme" button.

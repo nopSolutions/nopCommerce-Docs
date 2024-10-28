@@ -263,6 +263,9 @@
           name: Catalog settings
           href: running-your-store/catalog/catalog-settings.md
         -
+          name: EU Omnibus Directive 
+          href: running-your-store/catalog/eu-omnibus-directive/index.md
+        -
           name: Full-text search
           href: running-your-store/catalog/full-text-search/index.md
           items:
