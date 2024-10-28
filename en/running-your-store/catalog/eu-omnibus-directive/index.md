@@ -9,7 +9,7 @@ contributors: git.AndreiMaz, git.exileDev
 
 ## Introduction
 
-Please get Omnibus Directive integration [here](https://www.nopcommerce.com).
+Please get Omnibus Directive integration [here](https://www.nopcommerce.com/omnibus-directive).
 
 ### What is Omnibus?
 
