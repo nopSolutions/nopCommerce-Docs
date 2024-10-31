@@ -15,7 +15,7 @@ Please get the official integration with Dynamics 365 [here](https://www.nopcomm
 
 ## What the Dynamics 365 plugin does
 
-Dynamics 365 plugin for nopCommerce allows the store owner to synchronize the following data between your nopCommerce store and Dynamics 365:
+The Dynamics 365 plugin for nopCommerce allows the store owner to unidirectionally synchronise the following data between your nopCommerce store and Dynamics 365:
 
 - Customers.
 - Products.
@@ -70,7 +70,7 @@ Registering your application establishes a trust relationship between your app a
 
 ### Configure application
 
-1. On the **Overview** page under **Essentials**, select the **Add a Redirect URI link**. Set the redirect URI by first selecting **Add a platform**, entering a URI value, and then selecting **Configure**. Use a URI value of "<http://localhost>".
+1. On the **Overview** page under **Essentials**, select the **Add a Redirect URI link**. Set the redirect URI by first selecting **Add a platform**, entering a URI value, and then selecting **Configure**. Use a URI value of `http://localhost`.
 1. On the **Overview** page of your newly created app, hover the cursor over the **Application (client) ID** value, and select the copy to clipboard icon to copy the ID value. Record the value somewhere. You need to specify this value later.
 1. Add credentials. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime.
 
@@ -257,9 +257,12 @@ Click the **Configure** button. You will see the *Configure - Dynamics 365* wind
 To use Dynamics 365 with nopCommerce, you will first need to register and set up your account in MS Dynamics 365 as described earlier and enter all the necessary settings in the fields on the plugin configuration form:
 
 - **Application (client) ID**. The registered client ID on Azure portal.
+- **Directory (tenant) ID**. The registered tenat ID on Azure portal.
 - **Client secret**. Client secret for Application ID. A secret string that the application uses to prove its identity when requesting a token.
 - **Environment URL**. Direct URL of Dataverse instance to connect too.
 - **Currency code**. Displays the primary currency code of the your store.
+    > [!NOTE]
+    > If you change the primary currency of the store, the plugin settings will be updated only after you save them.
 - **Enable auto synchronization**. Determine whether to enable auto synchronization. If disabled, synchronization must be started manually on this page.
 - **Auto synchronization period**. Set the period (in minutes) for auto synchronization.
 
