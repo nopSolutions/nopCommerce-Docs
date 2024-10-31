@@ -156,6 +156,23 @@ On the "Video" tab, you can add links to embedded videos from any video hosts su
 
 ![Multimedia videos](_static/add-product-for-beginners/multimedia-videos.jpg)
 
+#### YouTube Embed Link
+
+1. Find your video on YouTube and click the "Share" button.
+1. Choose "Embed" from the pop-up menu.
+  ![youtube video share](_static/add-product-for-beginners/youtube_share_embed.png)
+1. Copy the link enclosed in quotation marks.
+  ![youtube video share copy](_static/add-product-for-beginners/youtube_share_embed_copy.png)
+1. Paste this link into the "Embed video URL" field as described above. Note that videos must be either Public or Unlisted to be embedded; Private videos cannot be embedded.
+
+#### Vimeo Embed Link
+
+1. Locate your video on Vimeo and click the "Share" button.
+  ![vimeo video share](_static/add-product-for-beginners/vimeo_share.png)
+1. Copy the link enclosed in quotation marks.
+  ![vimeo video share](_static/add-product-for-beginners/vimeo_share_embed_copy.png)
+1. Paste this link into the "Embed video URL" field as described above.
+
 ## Product attributes
 
 In the *Product attributes* panel, you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes).
