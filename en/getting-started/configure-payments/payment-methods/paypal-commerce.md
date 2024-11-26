@@ -37,15 +37,17 @@ It doesn't matter whether you already have a PayPal business account, or only a 
 
     ![PayPal Commerce Onboarding completed](_static/paypal-commerce/onboarding-completed.png)
 
-    Here you will see notifications about successful connection, if there are warnings or errors, refer to **System → Log** to find out more details.
-    There will also be the status of the account connection process, if any of the steps is not completed, log into your PayPal personal account and complete this step.
-    If you connected a sandbox account, there will also be a reminder about the need to create a production account after completing the testing.
+   Here you will see notifications about successful connection, if there are warnings or errors, refer to **System → Log** to find out more details.
+
+   There will also be the status of the account connection process, if any of the steps is not completed, log into your PayPal personal account and complete this step.
+
+   If you connected a sandbox account, there will also be a reminder about the need to create a production account after completing the testing.
 
 1. In case you already have REST API App created in your PayPal account and want to continue using it, you should select **Specify API credentials manually** checkbox and specify the credentials in the fields below as follows:
 
     ![PayPal Commerce Credentials](_static/paypal-commerce/credentials.png)
 
-### 1. Configure the plugin
+### 2. Configure the plugin
 
 1. Find the **PayPal Commerce** payment method on the **Configuration → Payment methods** page and click **Configure**, you'll see the following settings block:
     
@@ -63,7 +65,7 @@ It doesn't matter whether you already have a PayPal business account, or only a 
     * Select the **Use Alternative Payments Methods** to enable alternative payments methods in your store. With alternative payment methods, customers across the globe can pay with their bank accounts, wallets, and other local payment methods. For example, a customer in the Netherlands might want to pay using iDEAL, which is used by more than half of consumers in the Netherlands for online purchases, whereas a customer in Belgium on the same website might want to pay using Bancontact, a popular payment method there. The plugin automatically will render all eligible buttons in a single location by default.
     * Select the **Use Vault** to enable PayPal Vault. It allows to securely store customers payment information and use it in subsequent transactions without customers having to re-enter payment details.
     * Select the **Skip 'Confirm Order' page** to skip this step during checkout so that after approving the payment on PayPal site, customers will redirected directly to the 'Order Completed' page.
-    * Select the **Use shipment tracking** to use the package tracking. To automatically sync the shipment status with PayPal, specify the tracking number and carrier when creating or editing the shipment in the admin area.
+    * Select the **Use shipment tracking** to use the package tracking. To automatically sync the shipment status with PayPal, specify the tracking number and carrier when creating or editing the shipment in the admin area:
     
       ![Shipment](_static/paypal-commerce/shipment.png)
 
@@ -89,7 +91,7 @@ It doesn't matter whether you already have a PayPal business account, or only a 
 >
 > You don't need to activate the plugin, it'll be enabled immediately after installation. If for some reason you don't intend to use it in your store, you can disable it on **Configuration → Local plugins** page.
 
-### 1. Configure PayPal Pay Later Messaging
+### 3. Configure PayPal Pay Later Messaging
 
 PayPal offers short-term, interest-free payments and other special financing options that buyers can use to buy now and pay later, while sellers get paid up-front. Pay Later offers vary depending on the country. With Pay Later offers, sellers can give shoppers increased buying power and flexibility to spread the cost of their purchases over time.
 For more information about Pay Later, see [Buy now, pay later](https://www.paypal.com/digital-wallet/ways-to-pay/buy-now-pay-later).
