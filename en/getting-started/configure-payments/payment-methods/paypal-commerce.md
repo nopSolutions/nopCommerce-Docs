@@ -1,111 +1,106 @@
 ﻿---
 title: PayPal Commerce
 uid: en/getting-started/configure-payments/payment-methods/paypal-commerce
-author: git.DmitriyKulagin
+author: git.RomanovM
+contributors: git.DmitriyKulagin
 ---
 
 # PayPal Commerce
 
-`PayPal Commerce` gives your buyers a simplified and secure checkout experience. PayPal intelligently presents the most relevant payment types to your shoppers automatically, making it easier for them to complete their purchases using such methods as Pay with Venmo, PayPal Credit, credit card payments, iDEAL, Bancontact, Sofort, and other payment types.
+`PayPal Commerce` gives your buyers a simplified and secure checkout experience. PayPal intelligently presents the most relevant payment types to your shoppers automatically, making it easier for them to complete their purchases using such methods as Credit Card payments, Apple Pay, Google Pay, PayPal Credit, Venmo, iDEAL, Bancontact, and other payment types.
 
 ## Configure the payment method
 
-To configure the `PayPal Commerce` plugin, go to **Configuration → Payment methods**. Then find the **PayPal Commerce** payment method in the payment method list:
+To configure the `PayPal Commerce` plugin, go to **Configuration → Payment methods**. Then find the **PayPal** payment method on this page. This will not be difficult to do as it's our recommended payment method.
 
-![List](_static/paypal-commerce/list.jpg)
+![List](_static/paypal-commerce/list.png)
 
 Follow these steps to configure `PayPal Commerce`:
 
-### 1. Activate the payment method
+### 1. Connect PayPal account
 
-To do this, click the **Edit** button in the plugin row on the payment method list page. Activate the plugin by selecting the **Is active** checkbox. Click the **Update** button. Your changes will be saved.
-
-### 2. Create a PayPal account
-
-If you already have a PayPal account, just proceed to the [next section](#3-set-up-the-paypal-developer-dashboard). If you don't then register a Business account. You have two options to do this: you can register an account on the PayPal website or you can do this from the plugin configuration page. Let's briefly consider both options:
-
-#### Register an account on the PayPal website
-
-1. Register a Business account on [PayPal](https://www.paypal.com/us/webapps/mpp/referral/paypal-business-account2?partner_id=9JJPJNNPQ7PZ8). Just click the **Sign up** button there:
-
-    ![Sign up page](_static/paypal-commerce/sign-up-page.png)
-1. Then fill in the information about yourself and your business:
-
-    ![Sign up form](_static/paypal-commerce/sign-up-form.png)
-
-> [!NOTE]
->
-> If you already have an account, you will be redirected to the authorization.
-
-#### Register an account from the plugin configuration page
+It doesn't matter whether you already have a PayPal business account, or only a personal one, or none at all, the connecting starts the same way:
 
 1. Open the PayPal Commerce configuration page in the admin area. You will see the following form:
 
-    ![PayPal Commerce configuration page](_static/paypal-commerce/auto-configure.jpg)
+    ![PayPal Commerce Onboarding](_static/paypal-commerce/onboarding.png)
 
-1. Enter your email address and let PayPal check everything out by clicking the **Save** button.
+1. Select the type of account you want to connect, production or sandbox. If you want to test the plugin first, enable **Use sandbox** setting.
 
-1. If everything is OK, you will see the following green notification and a newly added **Sign up for PayPal** button:
+1. Click **Sign up for PayPal** button and you will see the following pop-up window allowing you to fill in some data and connect an account:
 
-    ![When email is already entered](_static/paypal-commerce/configure-entered-email.png)
+    ![PayPal Commerce Onboarding Popup](_static/paypal-commerce/popup-form-first-page.png)
 
-1. Click this button and you will see the following pop-up window allowing you to fill in some data and register an account:
+    You will need to go through few steps to fill in all the required details, the number of details will vary depending on whether you are creating a new account, connecting an existing one, or converting a personal account to a business.
 
-    ![PayPal Commerce configuration page](_static/paypal-commerce/popup-form-first-page.png)
+1. Once you are done and approved to use PayPal payments, go back to the plugin configuration page and refresh it. You will see the following form:
 
-    You should pass through a few steps to fill in all the required data. The last one will ask you to confirm your email to activate your account.
+    ![PayPal Commerce Onboarding completed](_static/paypal-commerce/onboarding-completed.png)
 
-### 3. Set up the Paypal Developer Dashboard
+    Here you will see notifications about successful connection, if there are warnings or errors, refer to **System → Log** to find out more details.
+    There will also be the status of the account connection process, if any of the steps is not completed, log into your PayPal personal account and complete this step.
+    If you connected a sandbox account, there will also be a reminder about the need to create a production account after completing the testing.
 
-1. Log into the [Developer Dashboard](https://developer.paypal.com/developer/applications?partner_id=9JJPJNNPQ7PZ8) with your PayPal account credentials.
+1. In case you already have REST API App created in your PayPal account and want to continue using it, you should select **Specify API credentials manually** checkbox and specify the credentials in the fields below as follows:
 
-1. In **My Apps & Credentials**, use the toggle to switch between live and sandbox testing apps.
-    ![My Apps & Credentials](_static/paypal-commerce/my-apps.jpg)
-  
-1. Navigate to the *REST API apps* section and click **Create App**.
-    ![Create App](_static/paypal-commerce/rest.jpg)
+    ![PayPal Commerce Credentials](_static/paypal-commerce/credentials.png)
 
-1. Type a name for your app and click **Create App**. The app details page will open and display your credentials.
+### 1. Configure the plugin
 
-1. Copy and save the **Client ID** and **Secret** for your app.
-
-1. Review your app details and save your app if you made any changes.
-
-### 4. Configure the payment method in nopCommerce
-
-1. Find the **PayPal Commerce** payment method on the **Configuration → Payment methods** page and click **Configure**. The *Configure - PayPal Commerce* page will be displayed as follows:
-    ![Configure](_static/paypal-commerce/configure.jpg)
-
-1. Define the following settings on the *Configure - PayPal Commerce* page:
-    * **Specify API credentials manually** - determine if you need to manually set credentials. Select this option if you already have an application created or if you want to use sandbox mode. Otherwise, the plugin will be set up automatically and you will be able to start accepting PayPal payments in your store after completing your PayPal registration.
-
-        ![Auto configure](_static/paypal-commerce/auto-configure.jpg)
-
-    * **Use sandbox** if you want to test the payment method first.
-    * Enter the **Client ID** you saved in the previous steps.
-    * Enter the **Secret** you saved in the previous steps.
+1. Find the **PayPal Commerce** payment method on the **Configuration → Payment methods** page and click **Configure**, you'll see the following settings block:
+    
+    ![PayPal Commerce Configuration](_static/paypal-commerce/configuration.png)
+    
     * Choose the **Payment type** to either capture payment immediately or authorize payment for an order after order creation.
+    * Select the **Use Custom Card Fields** to enable Advanced Credit and Debit Card Payments in your store. This is a PCI compliant solution to accept debit and credit card payments directly on your store without the need for customers to redirect to third-party sites.
+    * Select the **Use Apple Pay** to enable Apple Pay in your store. Before getting started in sandbox/production environment verify any domain names in your environment that will show an Apple Pay button. Apple Pay transactions only work on a domain and site registered to you.
+    
+        1. [Download](https://paypalobjects.com/devdoc/apple-pay/well-known/apple-developer-merchantid-domain-association) the domain association file for your environment. 
+        1. Host the file on your site for each domain and subdomain you want to register, at */.well-known/apple-developer-merchantid-domain-association*.
+        1. Log into the PayPal Merchant Account, go to **Payment Methods**, then select the **Manage** link in the **Apple Pay** section and **Add Domain** there.
 
-1. Then proceed to the *PayPal Prominently* panel:
-    ![Create App](_static/paypal-commerce/display.jpg)
+    * Select the **Use Google Pay** to enable Google Pay in your store.
+    * Select the **Use Alternative Payments Methods** to enable alternative payments methods in your store. With alternative payment methods, customers across the globe can pay with their bank accounts, wallets, and other local payment methods. For example, a customer in the Netherlands might want to pay using iDEAL, which is used by more than half of consumers in the Netherlands for online purchases, whereas a customer in Belgium on the same website might want to pay using Bancontact, a popular payment method there. The plugin automatically will render all eligible buttons in a single location by default.
+    * Select the **Use Vault** to enable PayPal Vault. It allows to securely store customers payment information and use it in subsequent transactions without customers having to re-enter payment details.
+    * Select the **Skip 'Confirm Order' page** to skip this step during checkout so that after approving the payment on PayPal site, customers will redirected directly to the 'Order Completed' page.
+    * Select the **Use shipment tracking** to use the package tracking. To automatically sync the shipment status with PayPal, specify the tracking number and carrier when creating or editing the shipment in the admin area.
+    
+      ![Shipment](_static/paypal-commerce/shipment.png)
+
+1. Then proceed to the *Feature PayPal Prominently* panel:
+    
+    ![PayPal Commerce Configuration](_static/paypal-commerce/display-settings.png)
   
     On this panel, define the display settings:
 
-      * Select the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page instead of the default checkout button.
+      * Select the **Display buttons on shopping cart** checkbox to display PayPal buttons on the shopping cart page in addition to the default checkout button.
 
-      * Select the **Display buttons on product details** to display PayPal buttons on product details pages; clicking them matches the behavior of the default 'Add to cart' button.
+      * Select the **Display buttons on product details** checkbox to display PayPal buttons on product details pages allowing buyers to complete a purchase without going through the full checkout process.
 
-      * Select the **Display Pay Later messages** box to take advantage of the pay later messaging feature on your website. The message is displayed on the product and checkout pages, showing how much the customer is paying in four installments.
-
-        ![Pay Later messages](_static/paypal-commerce/pay_later.jpg)
-
-      * Tick the **Display logo in header links** checkbox to display a PayPal logo in the header links. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
+      * Select the **Display logo in header links** checkbox to display a PayPal logo in the header links. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
         * If the previous checkbox is selected, the **Logo source code** field is displayed. In this field, enter the source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
 
-      * Tick the **Display logo in footer** checkbox to display a PayPal logo in the footer. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
+      * Select the **Display logo in footer** checkbox to display a PayPal logo in the footer. These logos and banners are a great way to let your buyers know that you choose PayPal to securely process their payments.
         * If the previous checkbox is selected, the **Logo source code** field is displayed. In this field, enter the source code of the logo. Find more logos and banners on PayPal Logo Center. You can also modify the code to fit correctly into your theme and site style.
 
-Click **Save** to save the plugin settings.
+1. Click **Save** to save the plugin settings.
+
+> [!NOTE]
+>
+> You don't need to activate the plugin, it'll be enabled immediately after installation. If for some reason you don't intend to use it in your store, you can disable it on **Configuration → Local plugins** page.
+
+### 1. Configure PayPal Pay Later Messaging
+
+PayPal offers short-term, interest-free payments and other special financing options that buyers can use to buy now and pay later, while sellers get paid up-front. Pay Later offers vary depending on the country. With Pay Later offers, sellers can give shoppers increased buying power and flexibility to spread the cost of their purchases over time.
+For more information about Pay Later, see [Buy now, pay later](https://www.paypal.com/digital-wallet/ways-to-pay/buy-now-pay-later).
+
+1. Click the **Pay Later** link on the **Configuration → PayPal Commerce** menu item, you'll see the following configurator:
+
+    ![PayPal Commerce Pay Later](_static/paypal-commerce/pay-later-settings.png)
+
+    Here you can customize your Pay Later messaging.
+
+1. Click **Publish Shanges** to save the configuration.
 
 ## Limit to stores and customer roles
 
@@ -113,11 +108,11 @@ You can limit any payment method to store and customer role. This means that the
 
 1. Go to **Configuration → Local plugins**. Find the plugin you want to limit. In our case, it's **PayPal Commerce**. To find it faster, use the *Search* panel in the top of the page and search by **Plugin name** or **Group** using the *Payment methods* option.
 
-    ![Plugins](_static/paypal-commerce/plugins.jpg)
+    ![Local Plugins](_static/paypal-commerce/local-plugins.png)
 
 1. Click the **Edit** button, and the *Edit plugin details* window will be displayed as follows:
 
-    ![Edit](_static/paypal-commerce/edit.jpg)
+    ![Edit plugin](_static/paypal-commerce/edit-plugin.png)
 
 1. You can set up the following limits:
 
@@ -130,5 +125,5 @@ You can limit any payment method to store and customer role. This means that the
 
         > [!Important]
         > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
-
-    Click **Save**.
+        
+1. Click **Save**.    
