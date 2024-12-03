@@ -185,3 +185,37 @@ In the *Add a new attribute value* window, define the following information:
 You can edit and remove attribute values by clicking the corresponding buttons beside the attribute values in the *Values* panel.
 
 Click **Save**. The new attribute will be displayed in the *Edit vendor details* page.
+
+## Vendor reviews
+
+The catalog on the vendor detail page shows reviews that have been aggregated to calculate the overall rating for each vendor. You'll find the list of reviews on the vendor page, which is created by aggregating reviews of all the vendor's products, sorted by date.
+
+![Vendor reviews](_static/vendor-management/vendor_reviews.png)
+
+> [!NOTE]
+>
+> The default number of reviews on a vendor reviews page is 6. You can change this value in the *VendorProductReviewsPageSize* setting.
+
+## Allow customers to PM vendors (private messages)
+
+Currently customers can contact vendors (`vendorsettings.allowcustomerstocontactvendors` setting).
+
+However, it is possible to send private messages to vendors. To do this, you need to select on the vendor details page to which customer the private message will be sent.
+
+![Customer for PM](_static/vendor-management/customer_for_pm.png)
+
+You can only choose one customer.
+
+![Vendor private message choose](_static/vendor-management/vendor_pm_choose.png)
+
+If the *forumsettings.allowprivatemessages* setting is **true**, then an additional button for sending a private message will appear in the catalog on the vendor page.
+
+![Vendor private message](_static/vendor-management/vendor_pm.png)
+
+You can now fill out the form below to send a private message.
+
+![Vendor send private message](_static/vendor-management/vendor_pm_send.png)
+
+> [!NOTE]
+>
+> Currently, customers can contact suppliers via a contact form. (`vendorsettings.allowcustomerstocontactvendors` setting).

@@ -38,7 +38,7 @@ The nopCommerce documentation is here to help you through the process of setting
 	</div>
 	<div class="quick-item design">
 		<a href="/en/getting-started/design-your-store/index.html"><h3>Design</h3></a>
-		<p>Make the best design for your store. Learn about <a href="/en/getting-started/design-your-store/choose-and-install-a-theme.html">themes</a>, <a href="/en/getting-started/design-your-store/nivo-slider.html">homepage slider</a>. Know how to <a href="/en/getting-started/design-your-store/uploading-your-logo.html">upload a logo</a> and <a href="/en/getting-started/design-your-store/media-settings.html">set up media</a></p>
+		<p>Make the best design for your store. Learn about <a href="/en/getting-started/design-your-store/choose-and-install-a-theme.html">themes</a>, <a href="/en/getting-started/design-your-store/swiper.html">homepage slider</a>. Know how to <a href="/en/getting-started/design-your-store/uploading-your-logo.html">upload a logo</a> and <a href="/en/getting-started/design-your-store/media-settings.html">set up media</a></p>
 	</div>
 </div>
 <div class="quick-links">

@@ -21,6 +21,7 @@ The top area of the page enables you to search for discounts by various search c
 
 - **Start date** and **End date** for discounts created between these dates.
 - **Discount type**.
+- **Vendor** to search by a specific vendor.
 - **Coupon code**.
 - **Discount name** is a full discount name or its fragment.
 - **Is Active**.
@@ -47,7 +48,8 @@ This page is available in two modes: advanced and basic. Stay in the basic mode,
   - *Assigned to manufacturers*: after this discount is created, the store owner can assign it to a manufacturer on the manufacturer edit page or add the manufacturer in the *Applied to manufacturer* panel, which will be displayed below after you save the new discount. This enables applying the discount to all products by this manufacturer.
   - *Assigned to shipping*: these discounts are applied to the shipping fee.
   - *Assigned to order subtotal*: these discounts are applied to order subtotal values.
-
+- Select **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**.
+  The only support disocunt type for vendors will be "Assigned to products". No other discount types could be created. Then a vendor will be able to assigned his own products only to this discounts (the "Applied to products" tab).
 - Select the **Use percentage** checkbox if you want to apply a percentage discount.
   - If the previous checkbox is selected, the **Discount percentage** field will be displayed.
   - You can also set the **Maximum discount amount**. Leave this field empty to allow any discount amount. If you're using *Assigned to products* discount type, then it will be applied to each product separately.

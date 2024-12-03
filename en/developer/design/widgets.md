@@ -14,7 +14,7 @@ In nopCommerce, a widget plugin allows you to embed 3rd party code/application i
 Currently, default nopCommerce installation allows the store admin to embed few widget plugins:
 
 1. Google Analytics
-1. Nivo Slider
+1. Swiper
 1. What3words
 1. Facebook Pixel
 
@@ -27,11 +27,11 @@ Google Analytics is a free website stats tool from Google. It keeps track of sta
 
 To configure Google Analytics Widget, go to `Administration → Configuration → Widgets`, click on **Configure** against **Google Analytics** and add your Google Analytics code.
 
-## Nivo Slider
+## Swiper
 
-Nivo slider is a nice and clean jquery image slider for your website/homepage to display several images scrolling with unique transition effects.
+Swiper is a nice and clean jquery image slider for your website/homepage to display several images scrolling with unique transition effects.
 
-By default, nopCommerce comes with Nivo slider integration as a widget (Enabled by default) which allows you to display several images scrolling automatically on your homepage.
+By default, nopCommerce comes with Swiper integration as a widget (Enabled by default) which allows you to display several images scrolling automatically on your homepage.
 
 ## What3words
 

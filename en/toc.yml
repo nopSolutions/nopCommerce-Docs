@@ -65,8 +65,8 @@
           name: Adding a favicon
           href: getting-started/design-your-store/adding-a-favicon.md
         -
-          name: Nivo slider
-          href: getting-started/design-your-store/nivo-slider.md
+          name: Swiper widget
+          href: getting-started/design-your-store/swiper.md
         -
           name: Top menu & footer
           href: getting-started/design-your-store/top-menu-and-footer.md
@@ -226,6 +226,9 @@
             -
               name: Add products
               href: running-your-store/catalog/products/add-products.md
+            -
+              name: Bulk edit products
+              href: running-your-store/catalog/products/bulk-edit-products.md
             -
               name: Product attributes
               href: running-your-store/catalog/products/product-attributes.md
@@ -517,7 +520,10 @@
       href: developer/plugins/index.md
       items:
         - 
-          name: How to write a plugin for nopCommerce 4.70 (and above)
+          name: How to write a plugin for nopCommerce 4.80 (and above)
+          href: developer/plugins/how-to-write-plugin-4.80.md
+        - 
+          name: How to write a plugin for nopCommerce 4.70
           href: developer/plugins/how-to-write-plugin-4.70.md
         - 
           name: How to write a plugin for nopCommerce 4.60

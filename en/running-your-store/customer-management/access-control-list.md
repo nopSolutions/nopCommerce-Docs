@@ -17,7 +17,9 @@ To manage the access control list, go to **Configuration → Access control list
 
 ![Access control list](_static/access-control-list/acl.png)
 
-Select the required roles beside the *Permission* items. The selected roles will have access to the selected actions accordingly.
+Click **Edit** and select the required roles beside the *Permission* items. The selected roles will have access to the selected actions accordingly.
+
+![Access control list](_static/access-control-list/acl_edit.png)
 
 Click **Save**.
 
@@ -27,5 +29,5 @@ Click **Save**.
 > To do this:
 >
 > 1. Create a **Customer role** called *Content manager* on the **Customers → Customer roles** page.
-> 1. In the ACL, select the checkboxes next to the following permissions: *Access admin area, Admin area. Manage blog, Admin area. Manage campaigns, Admin area. Manage forums, Admin area. Manage news, Admin area. Manage newsletter subscribers, Public store. Allow navigation, Public store. Display prices*.
+> 1. In the access control list, add the desired customer roles for the following permissions: *Access Admin Area, Admin Area. Manage Blog, Admin Area. Manage Campaigns, Admin Area. Manage Forums, Admin Area. Manage News, Admin Area. Manage Newsletter Subscribers, Public Store. Allow Navigation, Public Store. Display Prices*.
 > 1. Save the changes.

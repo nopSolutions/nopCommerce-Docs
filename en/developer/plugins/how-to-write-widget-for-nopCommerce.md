@@ -7,7 +7,7 @@ contributors: git.nopsg, git.DmitriyKulagin, git.cromatido
 
 # How to write a widget for nopCommerce
 
-To extend nopCommerce functionality, widgets are used. There are various types of widgets like [NivoSlider](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.NivoSlider) and [Google Analytics](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics) which are already contained in the nopCommerce's repo. nopCommerce marketplace already contains various widgets (both free and paid) which may meet your requirement(s). If you have not found one, then you are at the right place because this article will guide you through the process of creating a widget according to your need.
+To extend nopCommerce functionality, widgets are used. There are various types of widgets like [Swiper](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.Swiper) and [Google Analytics](https://github.com/nopSolutions/nopCommerce/tree/master/src/Plugins/Nop.Plugin.Widgets.GoogleAnalytics) which are already contained in the nopCommerce's repo. nopCommerce marketplace already contains various widgets (both free and paid) which may meet your requirement(s). If you have not found one, then you are at the right place because this article will guide you through the process of creating a widget according to your need.
 
 ## The widget structure, required files, and locations
 
@@ -27,7 +27,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>net8.0</TargetFramework>
+            <TargetFramework>net9.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
@@ -35,20 +35,20 @@ To extend nopCommerce functionality, widgets are used. There are various types o
             <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
             <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>
             <RepositoryType>Git</RepositoryType>
-            <OutputPath>..\..\Presentation\Nop.Web\Plugins\WIDGET_OUTPUT_DIRECTORY</OutputPath>
+            <OutputPath>$(SolutionDir)\Presentation\Nop.Web\Plugins\WIDGET_OUTPUT_DIRECTORY</OutputPath>
             <OutDir>$(OutputPath)</OutDir>
             <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
             <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
             <ImplicitUsings>enable</ImplicitUsings>
         </PropertyGroup>
         <ItemGroup>
-            <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
-            <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.csproj" />
+            <ProjectReference Include="$(SolutionDir)\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+            <ClearPluginAssemblies Include="$(SolutionDir)\Build\ClearPluginAssemblies.csproj" />
         </ItemGroup>
         <!-- This target execute after "Build" target -->
         <Target Name="NopTarget" AfterTargets="Build">
             <!-- Delete unnecessary libraries from plugins path -->
-            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
+            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(OutDir)" Targets="NopClear" />
         </Target>
     </Project>
     ```

@@ -14,6 +14,7 @@ Adding products also includes some important internal settings, such as inventor
 Learn how to create products in nopCommerce in the following chapters:
 
 - [Adding products](xref:en/running-your-store/catalog/products/add-products)
+- [Bulk edit products](xref:en/running-your-store/catalog/products/bulk-edit-products)
 - [Product attributes](xref:en/running-your-store/catalog/products/product-attributes)
 - [Specification attributes](xref:en/running-your-store/catalog/products/specification-attributes)
 - [Downloadable products](xref:en/running-your-store/catalog/products/downloadable-products)

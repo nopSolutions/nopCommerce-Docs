@@ -1,8 +1,8 @@
 ---
 title: How to write a plugin for nopCommerce
-uid: en/developer/plugins/how-to-write-plugin-4.70
-author: git.AndreiMaz
-contributors: git.DmitriyKulagin, git.tgondar
+uid: en/developer/plugins/how-to-write-plugin-4.80
+author: git.DmitriyKulagin
+contributors: git.DmitriyKulagin
 ---
 
 # How to write a plugin for nopCommerce
@@ -15,14 +15,14 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
     A recommended name for a plugin project is **`Nop.Plugin.{Group}.{Name}`**. **`{Group}`** is your plugin group (for example, *Payment* or *Shipping*). **`{Name}`** is your plugin name (for example, *PayPalCommerce*). For example, the PayPal Commerce payment plugin has the following name: **`Nop.Plugin.Payments.PayPalCommerce`**. But please note that it's not a requirement. And you can choose any name for a plugin. For example, `MyGreatPlugin`.
 
-    ![p1](_static/how-to-write-plugin-4.70/write_plugin_4.70_1.jpg)
+    ![p1](_static/how-to-write-plugin-4.80/write_plugin_4.80_1.jpg)
 
 1. Once the plugin project is created you have to open its `.csproj` file in any text editor and replace its content with the following one:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
-            <TargetFramework>net8.0</TargetFramework>
+            <TargetFramework>net9.0</TargetFramework>
             <Copyright>SOME_COPYRIGHT</Copyright>
             <Company>YOUR_COMPANY</Company>
             <Authors>SOME_AUTHORS</Authors>
@@ -30,20 +30,20 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
             <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
             <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>
             <RepositoryType>Git</RepositoryType>
-            <OutputPath>..\..\Presentation\Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY</OutputPath>
+            <OutputPath>$(SolutionDir)\Presentation\Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY</OutputPath>
             <OutDir>$(OutputPath)</OutDir>
             <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
             <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
             <ImplicitUsings>enable</ImplicitUsings>
         </PropertyGroup>
         <ItemGroup>
-            <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
-            <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
+            <ProjectReference Include="$(SolutionDir)\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+            <ClearPluginAssemblies Include="$(SolutionDir)\Build\ClearPluginAssemblies.proj" />
         </ItemGroup>
         <!-- This target executes after "Build" target -->
         <Target Name="NopTarget" AfterTargets="Build">
             <!-- Delete unnecessary libraries from plugins path -->
-            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\$(OutDir)" Targets="NopClear" />
+            <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(OutDir)" Targets="NopClear" />
         </Target>
     </Project>
     ```
@@ -140,7 +140,7 @@ Once you have installed your plugin and added the configuration method you will 
 
 For example, the project structure of the *PayPalCommerce* plugin looks like the image below:
 
-![p3](_static/how-to-write-plugin-4.70/write_plugin_4.70_3.jpg)
+![p3](_static/how-to-write-plugin-4.80/write_plugin_4.80_3.jpg)
 
 ## Handling "InstallAsync", "UninstallAsync" and "UpdateAsync" methods
 

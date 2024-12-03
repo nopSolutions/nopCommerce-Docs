@@ -32,6 +32,7 @@ To overcome this limitation, you can create a special application user that is b
 When you create client applications that use Dataverse web services you need to authenticate to gain access to data. OAuth is the preferred means to authenticate because it provides access to all web services.
 
 > [!NOTE]
+>
 > Client applications must support using of OAuth to access data using the Web API.
 > OAuth requires an identity provider for authentication. For Dataverse, the identity provider is Microsoft Entra ID.
 
@@ -84,7 +85,9 @@ Registering your application establishes a trust relationship between your app a
         - Microsoft recommends that you set an expiration value of less than 12 months.
     - Select **Add**.
 
-    > [!NOTE] Record the secret's value for use in your client application code.
+    > [!NOTE]
+    >
+    > Record the secret's value for use in your client application code.
     > This secret value is never displayed again after you leave this page.
 
 1. Then switch to **Manage > Manifest** where we can see many properties. Our concern here is **allowPublicClient**. Set *allowPublicClient* to *true* and **save**.
@@ -140,6 +143,7 @@ Choose **Settings -> Advanced settings** in Business Central.
 ![image](./_static/advanced_settings.png)
 
 > [!NOTE]
+>
 > Choose **Settings -> Assisted setup** in Business Central.
 > You can also find the "Connect with other systems" settings group to learn more about integration options.
 > ![image](./_static/assisted_setup.png)
@@ -219,6 +223,7 @@ For example, **Sales Order – Microsoft Dynamics 365 Sales**:
 ![image](./_static/sales_connection_setup_6.png)
 
 > [!NOTE]
+>
 > To ensure that the integration process works correctly, make sure that the following lines are present in the settings on the "All Solutions" page:
 > ![image](./_static/sales_connection_setup_7.png)
 >
@@ -262,6 +267,7 @@ To use Dynamics 365 with nopCommerce, you will first need to register and set up
 - **Environment URL**. Direct URL of Dataverse instance to connect too.
 - **Currency code**. Displays the primary currency code of the your store.
     > [!NOTE]
+    >
     > If you change the primary currency of the store, the plugin settings will be updated only after you save them.
 - **Enable auto synchronization**. Determine whether to enable auto synchronization. If disabled, synchronization must be started manually on this page.
 - **Auto synchronization period**. Set the period (in minutes) for auto synchronization.
@@ -313,4 +319,5 @@ The diagram below shows the relationship between order status changes in the nop
 ![Find the plugin](_static/Dynamics_365_Order_status.png)
 
 > [!NOTE]
+>
 > There is a limitation on deleting orders with a Paid status; such paid orders cannot be deleted from the Dynamics 365 system.

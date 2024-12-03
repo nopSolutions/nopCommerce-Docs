@@ -53,15 +53,15 @@ Other distributions are supported at best effort, per [.NET Support and Compatib
 
 ## 2. Tools Required for Development
 
-Since it is based on Microsoft's .NET 8 we need to install a few tools before starting development on top of nopCommerce.
+Since it is based on Microsoft's .NET 9 we need to install a few tools before starting development on top of nopCommerce.
 
-### .NET 8 runtime & .NET 8 SDK
+### .NET 9 runtime & .NET 9 SDK
 
-Since nopCommerce 4.70 is based on .NET 8. We need to install [.NET 8 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.4-windows-x64-installer) and [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.204-windows-x64-installer) before we start development on nopCommerce.
+Since nopCommerce 4.80 is based on .NET 9. We need to install [.NET 9 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-9.0.0-windows-x64-installer) and [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.100-windows-x64-installer) before we start development on nopCommerce.
 
 ### Visual Studio 2022 or Above / Visual Studio Code
 
-As we know, nopCommerce is based on "Microsoft .NET 8" and *Visual Studio IDE* is best for developing .Net based applications. Since .NET Core is platform independent, we can develop and deploy a .Net based application on any platform. But we can use *Visual Studio Code* as an alternative to *Visual Studio* for developing on Windows as well as other platforms.
+As we know, nopCommerce is based on "Microsoft .NET 9" and *Visual Studio IDE* is best for developing .Net based applications. Since .NET Core is platform independent, we can develop and deploy a .Net based application on any platform. But we can use *Visual Studio Code* as an alternative to *Visual Studio* for developing on Windows as well as other platforms.
 
 > [!NOTE]
 >

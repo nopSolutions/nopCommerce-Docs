@@ -15,6 +15,10 @@ To configure the `PayPal Commerce` plugin, go to **Configuration → Payment met
 
 ![List](_static/paypal-commerce/list.png)
 
+Also, access to the plugin configuration is available from the navigation menu.
+
+![List](_static/paypal-commerce/list_2.png)
+
 Follow these steps to configure `PayPal Commerce`:
 
 ### 1. Connect PayPal account
@@ -50,14 +54,14 @@ It doesn't matter whether you already have a PayPal business account, or only a 
 ### 2. Configure the plugin
 
 1. Find the **PayPal Commerce** payment method on the **Configuration → Payment methods** page and click **Configure**, you'll see the following settings block:
-    
+
     ![PayPal Commerce Configuration](_static/paypal-commerce/configuration.png)
-    
+
     * Choose the **Payment type** to either capture payment immediately or authorize payment for an order after order creation.
     * Select the **Use Custom Card Fields** to enable Advanced Credit and Debit Card Payments in your store. This is a PCI compliant solution to accept debit and credit card payments directly on your store without the need for customers to redirect to third-party sites.
     * Select the **Use Apple Pay** to enable Apple Pay in your store. Before getting started in sandbox/production environment verify any domain names in your environment that will show an Apple Pay button. Apple Pay transactions only work on a domain and site registered to you.
-    
-        1. [Download](https://paypalobjects.com/devdoc/apple-pay/well-known/apple-developer-merchantid-domain-association) the domain association file for your environment. 
+
+        1. [Download](https://paypalobjects.com/devdoc/apple-pay/well-known/apple-developer-merchantid-domain-association) the domain association file for your environment.
         1. Host the file on your site for each domain and subdomain you want to register, at */.well-known/apple-developer-merchantid-domain-association*.
         1. Log into the PayPal Merchant Account, go to **Payment Methods**, then select the **Manage** link in the **Apple Pay** section and **Add Domain** there.
 
@@ -66,11 +70,11 @@ It doesn't matter whether you already have a PayPal business account, or only a 
     * Select the **Use Vault** to enable PayPal Vault. It allows to securely store customers payment information and use it in subsequent transactions without customers having to re-enter payment details.
     * Select the **Skip 'Confirm Order' page** to skip this step during checkout so that after approving the payment on PayPal site, customers will redirected directly to the 'Order Completed' page.
     * Select the **Use shipment tracking** to use the package tracking. To automatically sync the shipment status with PayPal, specify the tracking number and carrier when creating or editing the shipment in the admin area:
-    
+
       ![Shipment](_static/paypal-commerce/shipment.png)
 
 1. Then proceed to the *Feature PayPal Prominently* panel:
-    
+
     ![PayPal Commerce Configuration](_static/paypal-commerce/display-settings.png)
   
     On this panel, define the display settings:
@@ -127,5 +131,5 @@ You can limit any payment method to store and customer role. This means that the
 
         > [!Important]
         > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
-        
-1. Click **Save**.    
+
+1. Click **Save**.

@@ -57,7 +57,7 @@ After you create your project successfully open its `.csproj` file, for that rig
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <Copyright>SOME_COPYRIGHT</Copyright>
         <Company>YOUR_COMPANY</Company>
         <Authors>SOME_AUTHORS</Authors>
@@ -65,20 +65,20 @@ After you create your project successfully open its `.csproj` file, for that rig
         <PackageProjectUrl>PACKAGE_PROJECT_URL</PackageProjectUrl>
         <RepositoryUrl>REPOSITORY_URL</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
-        <OutputPath>..\..\Presentation\Nop.Web\Plugins\{PLUGIN_OUTPUT_DIRECTORY}</OutputPath>
+        <OutputPath>$(SolutionDir)\Presentation\Nop.Web\Plugins\{PLUGIN_OUTPUT_DIRECTORY}</OutputPath>
         <OutDir>$(OutputPath)</OutDir>
         <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your    project. You need to set this parameter to true if your plugin has a nuget package to ensure that   the dlls copied from the NuGet cache to the output of your project-->
         <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
-        <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
+        <ProjectReference Include="$(SolutionDir)\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+        <ClearPluginAssemblies Include="$(SolutionDir)\Build\ClearPluginAssemblies.proj" />
     </ItemGroup>
     <!-- This target execute after "Build" target -->
     <Target Name="NopTarget" AfterTargets="Build">
         <!-- Delete unnecessary libraries from plugins path -->
-        <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(MSBuildProjectDirectory)\ $(OutDir)" Targets="NopClear" />
+        <MSBuild Projects="@(ClearPluginAssemblies)" Properties="PluginPath=$(OutDir)" Targets="NopClear" />
     </Target>
 </Project>
 ```

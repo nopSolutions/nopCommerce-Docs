@@ -11,13 +11,15 @@ Message templates define the layout, content, and formatting of automated messag
 
 There are several message templates available in nopCommerce by default to notify users and the store owner about order statuses and more. To access message templates, go to **Content management → Message templates**.
 
-![MessageTemplate1](_static/message-templates/list.jpg)
+![MessageTemplate1](_static/message-templates/list.png)
 
 Filtering:
 
 * You can search for message templates by keywords or store. Keywords are used to search in the name, body or subject of a message template. The list of available stores is shown if you have more than one store and the **Performance → Ignore "limit per store" rules (sitewide)** setting on the *Catalog settings* page is not active.
 
-* You can also filter message templates by "Is active".
+* **Email account**. This drop-down list appears if the store has two or more email accounts.
+
+* You can also filter message templates by **Is active**.
 
 ## Edit a message template
 

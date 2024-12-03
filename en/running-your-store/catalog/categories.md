@@ -22,7 +22,7 @@ Search for a category in the *Search* panel by entering the **Category name** or
 
 To add a new category, click the **Add new** button at the top of the page. The *Add a new category* window will be displayed.
 
-![Add a new category](_static/categories/add-new.jpg)
+![Add a new category](_static/categories/add-new.png)
 
 This page is available in two modes: **advanced** and **basic**. Switch to the basic mode, which only displays the main fields, or use the advanced mode displaying all the available fields.
 
@@ -34,6 +34,7 @@ In the *Category info* panel, define the following category information:
 - **Description** — a description of the category. Use the editor for layout and fonts.
 - If this category is a subcategory, select the **Parent category** from the dropdown list. The new category will be placed under this category in the public store.
 - **Picture** — an image representing the category. Upload the image from your device.
+- **Restrict from vendors** - Check to restrict vendors from adding products to this category. This option is useful when you have multi-vendors enabled in your store. Once enabled vendors won't see this category on the "Add product" or "Edit product" pages in admin area.
 
 ### Display
 

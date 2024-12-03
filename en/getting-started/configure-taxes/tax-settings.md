@@ -57,6 +57,8 @@ In the *Payment* panel, select the **Payment method additional fee is taxable** 
 Then set up the VAT in the *VAT* panel:
 
 * Select the **EU VAT enabled** checkbox to indicate that European Union Value Added Tax is enabled. When this option is selected, customers will be requested for the *Company VAT number* during registration or on the customer account details page. This VAT number can be automatically validated through a web service, if the **Use web service** checkbox is ticked, or manually on the customer details page in the administration area by the store owner.
+* **EU VAT enabled for guests**  - Check to enable EU VAT (the European Union Value Added Tax) for guest customers. They will have to enter it during the checkout at the billing address step.
+* **VAT number required** - Check if 'EU VAT number' is required.
 * **Your shop country**: from the dropdown list, select the country where your store is located.
 * **Allow VAT exemption**: select this checkbox to exempt eligible VAT registered customers from VAT.
 * **Assume VAT always valid**: select this checkbox to skip VAT validation. Entered VAT numbers will always be valid. It is the client's responsibility to provide the current VAT number.
