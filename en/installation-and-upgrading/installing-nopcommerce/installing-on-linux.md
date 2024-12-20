@@ -7,11 +7,11 @@ contributors: git.skoshelev, git.DmitriyKulagin
 
 # Installing on Linux
 
-This chapter describes how to install the nopCommerce software on Linux system on the example of *Xubuntu 20.04*:
+This chapter describes how to install the nopCommerce software on Linux system on the example of *Xubuntu 22.04*:
 
 - [Installing on Linux](#installing-on-linux)
   - [Install and configure software](#install-and-configure-software)
-    - [Register Microsoft key and feed](#register-microsoft-key-and-feed)
+    - [Add the .Net repository](#add-the-net-repository)
     - [Install the .NET Core Runtime](#install-the-net-core-runtime)
     - [Install MySql Server](#install-mysql-server)
     - [Install nginx](#install-nginx)
@@ -25,19 +25,17 @@ This chapter describes how to install the nopCommerce software on Linux system o
 
 ## Install and configure software
 
-Before installing .NET Core, we'll need to register the Microsoft key and install the required dependencies. This needs to be done once per machine.
+.NET is available in the Ubuntu .NET backports package repository.
 
-### Register Microsoft key and feed
+### Add the .Net repository
 
 Open a terminal and run the following commands:
 
 ```cmd
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-
-sudo dpkg -i packages-microsoft-prod.deb
+sudo add-apt-repository ppa:dotnet/backports
 ```
 
-![nopCommerce installation](_static/installing-on-linux/register_key.jpg)
+![nopCommerce installation](_static/installing-on-linux/add_repository.png)
 
 ### Install the .NET Core Runtime
 
@@ -46,12 +44,12 @@ Update the products available for installation, then install the .NET runtime:
 ```cmd
 sudo apt-get update
 
-sudo apt-get install -y apt-transport-https aspnetcore-runtime-8.0
+sudo apt-get install -y aspnetcore-runtime-9.0
 ```
 
 > [!NOTE]
 >
-> If you have an error, see the detailed information on the [Install the .NET SDK or the .NET Runtime on Ubuntu](https://docs.microsoft.com/dotnet/core/install/linux-ubuntu) page.
+> If you have an error, see the detailed information on the [Install .NET SDK or .NET Runtime on Ubuntu](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install) page.
 
 You can see all installed .Net Core runtimes by the following command:
 
@@ -64,18 +62,29 @@ dotnet --list-runtimes
 Install the MySql server 8.0 version:
 
 ```cmd
-sudo apt-get install mysql-server
+sudo apt-get install mysql-server-8.0
 ```
 
-![nopCommerce installation](_static/installing-on-linux/install_mysql.jpg)
+![nopCommerce installation](_static/installing-on-linux/install_mysql.png)
 
-By default, the root password is empty; let's set it:
+By default, the root password is empty; let's set it. Run the following command to access the MySQL prompt:
 
 ```cmd
-sudo /usr/bin/mysql_secure_installation
+sudo mysql
 ```
 
-![nopCommerce installation](_static/installing-on-linux/config_mysql.jpg)
+Run the following ALTER USER command to switch the root user’s authentication method to mysql_native_password, which uses a password. Replace ‘password’ with your desired new password, and make sure to keep the single quotes around the password:
+
+```cmd
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+> [!NOTE]
+> It’s important to choose a strong, unique password for your MySQL root user. A strong password should be at least 12 characters long, include a mix of uppercase and lowercase letters, numbers, and special characters.
+
+Type **exit** and press Enter to exit the MySQL prompt.
+
+![nopCommerce installation](_static/installing-on-linux/config_mysql.png)
 
 > [!NOTE]
 >
@@ -91,7 +100,7 @@ Install the nginx package:
 sudo apt-get install nginx
 ```
 
-![nopCommerce installation](_static/installing-on-linux/install_nginx.jpg)
+![nopCommerce installation](_static/installing-on-linux/install_nginx.png)
 
 Run the nginx service:
 
@@ -105,7 +114,7 @@ and check its status:
 sudo systemctl status nginx
 ```
 
-![nopCommerce installation](_static/installing-on-linux/status_nginx.jpg)
+![nopCommerce installation](_static/installing-on-linux/status_nginx.png)
 
 To configure nginx as a reverse proxy to forward requests to your ASP.NET Core app, modify /etc/nginx/sites-available/default. Open it in a text editor and replace the contents with the following:
 
@@ -152,7 +161,7 @@ server {
 Create a directory:
 
 ```cmd
-mkdir /var/www/nopCommerce
+sudo mkdir /var/www/nopCommerce
 ```
 
 Download and unpack nopCommerce:
@@ -160,11 +169,11 @@ Download and unpack nopCommerce:
 ```cmd
 cd /var/www/nopCommerce
 
-sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.70.5/nopCommerce_4.70.5_NoSource_linux_x64.zip
+sudo wget https://github.com/nopSolutions/nopCommerce/releases/download/release-4.80.0/nopCommerce_4.80.0_NoSource_linux_x64.zip
 
 sudo apt-get install unzip
 
-sudo unzip nopCommerce_4.70.5_NoSource_linux_x64.zip
+sudo unzip nopCommerce_4.80.0_NoSource_linux_x64.zip
 ```
 
 Create couple directories to run nopCommerce:
