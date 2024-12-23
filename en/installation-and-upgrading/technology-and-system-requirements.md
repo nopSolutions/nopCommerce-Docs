@@ -17,14 +17,16 @@ In order to run nopCommerce, you will need the following installed on your serve
   * Windows Server 2012 R2 or above
 
 * Linux
-  * Red Hat 8 or above
+  * Red Hat Enterprise Linux 8 or above
   * Fedora 40 or above or
-  * Debian 12 or above / Ubuntu 22.04 or above
-  * OpenSUSE 15 or above / SUSE Enterprise 12 SP5 or above
+  * Debian 12 or above
+  * Ubuntu 22.04 or above
+  * openSUSE Leap 15.5 or above
+  * SUSE Enterprise Linux 15.5 or above
   * Alpine Linux 3.19 or above
 
 * macOS
-  * macOS X 13.0 or above
+  * macOS 13.0 or above
 
 >[!NOTE]
 >
@@ -54,8 +56,8 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 * Microsoft Edge. Microsoft Internet Explorer 9 and above (IE6 and IE7 were supported in versions prior to 3.60, IE8 was supported in versions prior to 4.10)
 * Mozilla Firefox 2.0 and above
-* Google Chrome 1.x
-* Apple Safari 2.x
+* Google Chrome 1.x and above
+* Apple Safari 12.x and above
 
 **For nopCommerce 4.80 or above: MS Visual Studio 2022 (version 17.12 or above). And don't forget to install .NET 9 SDK ([download](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.100-windows-x64-installer)). Required for developers who want to edit the source code.**
 
