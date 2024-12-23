@@ -244,7 +244,7 @@ The organization’s base currency in Dynamics 365 Sales can only be set when th
 
 This section describes how to integrate the Dynamics 365 service into your store.
 
-1. Purchase the integration [here](https://www.nopcommerce.com/).
+1. Purchase the integration [here](https://www.nopcommerce.com/en/microsoft-dynamics-365).
 1. Download the plugin archive.
 1. Go to **Admin area > Configuration > Local plugins**.
 1. Upload the plugin archive using the "Upload plugin or theme" button.
@@ -269,6 +269,8 @@ To use Dynamics 365 with nopCommerce, you will first need to register and set up
     > [!NOTE]
     >
     > If you change the primary currency of the store, the plugin settings will be updated only after you save them.
+- **Image sync enabled**. Determine whether to synchronize images of the selected products by default.
+- **Check Dynamics product exists enabled**. When this setting is enabled, when synchronizing orders, the presence of records in Dataverse about the products included in the order will be checked. ATTENTION: this will significantly increase traffic and negatively affect performance.
 - **Enable auto synchronization**. Determine whether to enable auto synchronization. If disabled, synchronization must be started manually on this page.
 - **Auto synchronization period**. Set the period (in minutes) for auto synchronization.
 

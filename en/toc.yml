@@ -614,6 +614,9 @@
       name: Mobile app documentation
       href: developer/mobile-app/index.md
     - 
+      name: Microsoft Dynamics 365
+      href: developer/ms-dynamics-365/index.md
+    - 
       name: Contribute
       href: developer/contribute/index.md
       items:
