@@ -122,7 +122,7 @@ To configure localization settings, go to **Configuration  → Settings  → Gen
 * Select the **Load all localized properties on startup** checkbox to load all localized properties on the application startup. When enabled, all localized properties (such as localized product properties) will be loaded on the application startup. The application start will be slower, but then all pages can be opened much faster. It's only used with two or more languages enabled. It is not recommended to enable it when you have a large catalog (several thousand localized entities).
 * Select the **Load all search engine friendly names on startup** checkbox to load all search engine friendly names (slugs) on the application startup. When enabled, all slugs will be loaded on the application startup. The application start will be slower, but then all pages can be opened much faster. It is not recommended to enable it when you have a large catalog (several thousand entities).
 * Select the **Use images for language selection** checkbox to use images instead of language names.
-* Select the **SEO friendly URLs with multiple languages enabled** checkbox to allow SEO-friendly URLs for all languages. When enabled, your URLs will be `http://www.yourStore.com/en/` or `http://www.yourStore.com/ru/` (SEO-friendly).
+* Select the **SEO friendly URLs with multiple languages enabled** checkbox to allow SEO-friendly URLs for all languages. When enabled, your URLs will be `http://www.yourStore.com/en/` or `http://www.yourStore.com/fr/` (SEO-friendly).
   > [!NOTE]
   >
   > You must restart the application after the **SEO friendly URLs with multiple languages enabled**  setting is updated. Otherwise, it can cause errors.
