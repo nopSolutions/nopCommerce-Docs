@@ -295,7 +295,7 @@ The plugin implements the import of products. Synchronization of two types of pr
 - Simple products
 - Group product
 
-![image](_static/sales_hub_contacts.png)
+![image](_static/sales_hub_products.png)
 
 In the plugin track a number of events to notify the Dynamics 365 service:
 
