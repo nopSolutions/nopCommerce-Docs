@@ -43,7 +43,7 @@ The connection to the database is configured through this section.
   * [**MySql**](https://www.mysql.com/)
   * [**PostgreSQL**](https://www.postgresql.org/)
 * **SQLCommandTimeout** Sets the wait time (in seconds) before terminating the attempt to execute a command and generating an error. By default, timeout isn't set and a default value for the current provider is used. Set **`0`** to use an infinite timeout.
-* **WithNoLock** Indicates whether to add NoLock hint to SELECT statements (Reltates to SQL Server only)
+* **WithNoLock** Indicates whether to add NoLock hint to SELECT statements (Relates to SQL Server only)
 
 ### AzureBlobConfig
 
