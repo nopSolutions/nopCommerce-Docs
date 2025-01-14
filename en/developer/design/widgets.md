@@ -15,7 +15,6 @@ Currently, default nopCommerce installation allows the store admin to embed few 
 
 1. Google Analytics
 1. Swiper
-1. What3words
 1. Facebook Pixel
 
 ## Google Analytics Widget
@@ -32,10 +31,6 @@ To configure Google Analytics Widget, go to `Administration â†’ Configuration â†
 Swiper is a nice and clean jquery image slider for your website/homepage to display several images scrolling with unique transition effects.
 
 By default, nopCommerce comes with Swiper integration as a widget (Enabled by default) which allows you to display several images scrolling automatically on your homepage.
-
-## What3words
-
-*What3words* is a proprietary geocode system designed to identify any location with a resolution of about 3 meters (9.8 ft). The system encodes geographic coordinates into three permanently fixed dictionary words. You can use this widget on checkout pages to specify shipping addresses more accurately.
 
 ## Facebook Pixel
 
