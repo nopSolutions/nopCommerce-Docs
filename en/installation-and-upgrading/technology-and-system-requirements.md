@@ -9,7 +9,7 @@ contributors: git.IvanIvanIvanov, git.rajupaladiya, git.exileDev, git.DmitriyKul
 
 In order to run nopCommerce, you will need the following installed on your server/computer:
 
-## Supported operation systems
+## Supported operating systems
 
 * Windows
   * Windows 10 Client (1607 or above)
@@ -30,7 +30,7 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 >[!NOTE]
 >
-> Find a complete list of supported operation systems [here](https://github.com/dotnet/core/blob/main/release-notes/9.0/supported-os.md).
+> Find a complete list of supported operating systems [here](https://github.com/dotnet/core/blob/main/release-notes/9.0/supported-os.md).
 
 ## Supported web servers
 
