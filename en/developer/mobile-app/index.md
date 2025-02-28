@@ -133,7 +133,7 @@ Frameworks & Libraries used:
 - Flutter SDK 3.24.5
 - Dart SDK 3.5.4
 - flutter_riverpod: 2.5.1
-- go_router: 14.16.2
+- go_router: 14.6.2
 - flutter_secure_storage: 9.2.2
 - dio: 5.7.0
 
