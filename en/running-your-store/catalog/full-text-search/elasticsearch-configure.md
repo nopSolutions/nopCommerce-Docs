@@ -12,6 +12,9 @@ Elasticsearch is a search engine based on the Lucene library. It provides a dist
 
 Our integration provides a strongly-typed API and query DSL to interact with the Elasticsearch server. The plugin includes high-level operations for products, such as bulk indexing, update operations, and search.
 
+> [!NOTE]
+> The integration is based on the v8 .NET client for use with Elasticsearch 8.x versions
+
 ## Available features
 
 Here is a list of supported features:
