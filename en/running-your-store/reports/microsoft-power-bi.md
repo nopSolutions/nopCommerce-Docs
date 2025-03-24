@@ -144,6 +144,9 @@ This section describes how to integrate the Power BI service into your store.
 The following will describe the necessary and sufficient steps to set up the Power BI integration with nopCommerce.
 
 1. [Register](https://app.powerbi.com/singleSignOn) or [log in](https://app.powerbi.com/home) to the Power BI service. The account must be your company’s account.
+
+### Power BI Gateway
+
 1. [Install](https://powerbi.microsoft.com/en-us/gateway/) a standard gateway **Power BI Gateway**.
 
    ![Install_Gateway](_static/microsoft-power-bi/Install_Gateway.png)
@@ -168,21 +171,51 @@ The following will describe the necessary and sufficient steps to set up the Pow
 
    ![Check_Gateway](_static/microsoft-power-bi/Check_Gateway.png)
 
-1. Next, you need to register your new application in **Azure Active Directory** to [access Power BI apps](https://app.powerbi.com/apps).
+### Register your app
 
-1. Sign in to Power BI. You will be prompted to select an account, sign in with the user that belongs to your Power BI tenant. The Azure AD application is registered under this user.
+Registering your application in Microsoft Entra establishes a trust relationship between your app and the Microsoft identity platform.
 
-   ![App_registration](_static/microsoft-power-bi/App_registration.png)
+Follow these steps to create the app registration:
 
-1. Register your Azure AD application with Azure. The Azure AD app sets permissions on Power BI REST resources and allows access to the [Power BI REST API](https://learn.microsoft.com/en-us/rest/api/power-bi/). You can always change these settings later.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
 
-   ![App_registration_2](_static/microsoft-power-bi/App_registration_2.png)
+1. If you have access to multiple tenants, use the *Settings* icon  in the top menu to switch to the tenant in which you want to register the application.
 
-1. Your Azure AD app **Application ID** is displayed in the **Summary** box. Copy this value for later use.
+1. Browse to **Identity > Applications > App registrations** and select *New registration*.
 
-1. Review your application in the Azure portal. The application with the **Application ID** that was just given to you should be displayed.
+1. Enter a meaningful **Name** for your.
 
-   ![Azure_portal](_static/microsoft-power-bi/Azure_portal.png)
+1. Under **Supported account types**, specify who can use the application. We recommend you select *Accounts in this organizational directory only* for your applications.
+
+1. Select **Register** to complete the app registration.
+
+   ![Azure_portal](_static/microsoft-power-bi/register_app.png)
+
+1. The application's **Overview** page is displayed. Record the **Application (client) ID**, which uniquely identifies your application and is used in your plugin settings as part of validating the security tokens it receives from the Microsoft identity platform.
+
+   ![Azure_portal](_static/microsoft-power-bi/app_id.png)
+
+   > [!IMPORTANT]
+   > New app registrations are hidden to users by default. When you're ready for users to see the app on their My Apps page you can enable it. To enable the app, in the Microsoft Entra admin center navigate to **Identity > Applications > Enterprise applications** and select the app. Then on the **Properties** page, set **Visible to users?** to *Yes*.
+   > ![Azure_portal](_static/microsoft-power-bi/properties.png)
+
+1. Grant admin consent. To add permissions to your Azure AD app, follow these steps:
+
+   - From the left, under *Manage*, select **API permissions**.
+   - Select **Add a permission**.
+      > ![Azure_portal](_static/microsoft-power-bi/request_api.png)
+   - In the Request API permissions window, select Power BI Service.
+   - Select **Delegated permissions**. A list of APIs is displayed.
+      > ![Azure_portal](_static/microsoft-power-bi/delegated_permission.png)
+
+   - Expand the API you want to add permissions to, and select the permissions you want to add to it.
+   - Select **Add permissions**.
+      > ![Azure_portal](_static/microsoft-power-bi/all_permission.png)
+
+1. From the left, under Manage, select **Authentication**.
+
+1. In **Advanced settings** > **Allow public client flows** > **Enable the following mobile and desktop flows:**, select **Yes**.
+   > ![Allow_public_client_flows](_static/microsoft-power-bi/Allow_public_client_flows.png)
 
 1. Go to the plugin configuration page and paste the resulting **Application ID**.
    > [!WARNING]
