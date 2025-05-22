@@ -282,4 +282,4 @@ public async System.Threading.Tasks.Task TearDown()
 }
 ```
 
-That's it, our test class is ready. As I promised at the beginning, you can find the entire class at [this link](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Tests/Nop.Tests/Nop.Services.Tests/Tasks/ScheduleTaskServiceTests.cs) and the commit with its addition by [this link](https://github.com/nopSolutions/nopCommerce/commit/81c31e1ee754f771ddfdc26e9b95a729e38b2d29).
+That's it, our test class is ready. As I promised at the beginning, you can find the entire class at [this link](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Tests/Nop.Tests/Nop.Services.Tests/ScheduleTasks/ScheduleTaskServiceTests.cs) and the commit with its addition by [this link](https://github.com/nopSolutions/nopCommerce/commit/81c31e1ee754f771ddfdc26e9b95a729e38b2d29).
