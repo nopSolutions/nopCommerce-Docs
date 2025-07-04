@@ -281,3 +281,108 @@ Now, when switching the language in the application settings, the application in
 > [!IMPORTANT]
 >
 > The language code that will be embedded in the name of the localization file must match the one added on your server. Otherwise, the interface will be localized by the default locales (i.e. `en`).
+
+## Designing the user interface
+
+To maintain a unified and consistent look across devices, we harnessed the potential of design tokens provided by Material 3. These tokens allow for storing styles, fonts, and animation values, enabling us to use the same style values in both design files and code.
+
+Using tokens provides several advantages:
+
+- Consistency: Tokens ensure consistent design across screens and components.
+- Theming: Easily switch between light/dark/dynamic themes by swapping the ColorScheme or ThemeData.
+- Maintainability: Change the look of the entire app from one place (no need to search and replace color codes).
+- Design/Dev collaboration: Tokens serve as a bridge between Figma and Flutter.
+
+### Integrating Tokens from Design Tools
+
+[Material Theme Builder](https://m3.material.io/theme-builder) allows designers to create custom themes and export tokens in multiple formats, including Flutter code.
+
+You don’t need an existing project - the theme will be generated from scratch by the plugin. So, download the plugin and launch it in Figma:
+
+![image](./_static/index/material_theme_builder.png)
+
+Click **“Create Theme**:
+![image](./_static/index/create_theme.png)
+
+A theme with default colors will be generated. Go to the **Custom** tab:
+
+![image](./_static/index/custom_colors.png)
+
+Here you need to select the base colors for the entire scheme. You can enter them manually, for example, if your brand colors are already defined. On the **Dynamic** tab, you can upload an image and extract colors from it. It is recommended to use the service [https://coolors.co/](https://coolors.co/) to generate harmonious colors.
+
+Сlick **Start the generator**:
+
+![image](./_static/index/make_colors.png)
+
+You can delete the extra blocks until only 3 remain, and then press the spacebar to generate variations.
+
+Replace the colors in the palette and click **Export**:
+
+![image](./_static/index/export_colors.png)
+
+> [!IMPORTANT]
+>
+> Be aware that you can’t edit the created palette later. If you close and reopen the plugin, your colors will reset to default.
+
+Then select **Export Material Tokens (DSP):**
+
+![image](./_static/index/export_material_tokens.png)
+
+You’ll get a folder with the following contents:
+
+- `data` folder
+- `dsp.json`
+
+In the `Themes > nopCommerce` folder, copy only the `data` folder. Leave the `dsp.json` file unchanged, as it’s includes custom `build_params` that refer to a custom configuration file `custom_config.js`. This custom config file is used to generate `font-size` in the desired format.
+
+![image](./_static/index/nop_theme_struct.png)
+
+You'll also notice that the theme folder includes `assets`, `dist`, and `fonts` subfolders. The `assets` and `dist` folders are generated automatically by the Adobe XD library (only the `custom_config.js` file was manually added there). The `fonts` folder contains the necessary fonts.
+
+Now we need to regenerate the `style_dictionary.dart` file from the `dist` folder. This file contains constants linked to the palette colors and fonts. As noted in the file itself—**do not edit it manually**.
+
+![image](./_static/index/style_dictionary.png)
+
+Next, you'll need the **Adobe XD extension for VS Code**. This extension generates a Dart file using the [Style Dictionary library](https://amzn.github.io/style-dictionary/#/README). Technically, you can do without Adobe XD, but it's more convenient to do it through the extension interface.
+
+![image](./_static/index/adobe_xd.png)
+
+Once installed, you can open the extension by clicking the **XD** button at the bottom of the VS Code window:
+
+![image](./_static/index/open_adobe_xd.png)
+
+To load a new DSP package, click the **box icon** at the top:
+
+![image](./_static/index/load_dsp.png)
+
+In the window that appears, choose **Edit package**:
+
+![image](./_static/index/edit_package.png)
+
+Then click **Select folder**:
+
+![image](./_static/index/select_folder.png)
+
+Choose the folder with the theme `nopCommerce` and click **Load package**:
+
+![image](./_static/index/load_package.png)
+
+You should now see the tokens and, if everything went well, the colors you selected in Figma.
+
+Next, we need to regenerate the `StyleDictionary` class, which is used to create the color scheme. To do this, click **Start editing**:
+
+![image](./_static/index/start_editing.png)
+
+Without changing anything, click **Finish editing**:
+
+![image](./_static/index/finish_editing.png)
+
+If you see the following message afterward, everything went correctly:
+
+![image](./_static/index/tokens_compiled.png)
+
+That’s it — restart the application and enjoy your new color scheme.
+
+> [!NOTE]
+>
+> By the way, keep an eye on the fonts. Even though you see **Roboto** in Figma, they might magically download as **Google Sans**.
