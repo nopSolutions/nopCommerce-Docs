@@ -301,7 +301,7 @@ You don’t need an existing project - the theme will be generated from scratch 
 
 ![image](./_static/index/material_theme_builder.png)
 
-Click **“Create Theme**:
+Click **Create Theme**:
 ![image](./_static/index/create_theme.png)
 
 A theme with default colors will be generated. Go to the **Custom** tab:
