@@ -90,7 +90,7 @@ Name: **Adobe XD**\
 Id: adobe.xd\
 Description: The new Adobe XD Extension for Visual Studio Code allows developers to visually map design sources, created in XD and available in Creative Cloud Libraries, to platform-specific code using design tokens. DesignOps teams will be able to create shareable Design System Packages (DSPs) that contain all the information developers need to consume while coding, including code snippets and documentation. \
 Publisher: Adobe\
-VS Marketplace Link: <https://marketplace.visualstudio.com/items?itemName=Adobe.xd>
+VsixHub Link: <https://www.vsixhub.com/vsix/41158/>
 
 ## Start development and customization
 
