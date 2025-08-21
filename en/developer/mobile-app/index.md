@@ -86,12 +86,6 @@ Description: Dart language support and debugger for Visual Studio Code.\
 Publisher: Dart Code\
 VS Marketplace Link: <https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code>
 
-Name: **Adobe XD**\
-Id: adobe.xd\
-Description: The new Adobe XD Extension for Visual Studio Code allows developers to visually map design sources, created in XD and available in Creative Cloud Libraries, to platform-specific code using design tokens. DesignOps teams will be able to create shareable Design System Packages (DSPs) that contain all the information developers need to consume while coding, including code snippets and documentation. \
-Publisher: Adobe\
-VsixHub Link: <https://www.vsixhub.com/vsix/41158/>
-
 ## Start development and customization
 
 Open the source code from the archive that you will receive after purchasing the application in the Visual Studio Code editor.
@@ -130,12 +124,12 @@ The approach that focuses on the fact that the functions of the application are 
 
 Frameworks & Libraries used:
 
-- Flutter SDK 3.24.5
-- Dart SDK 3.5.4
-- flutter_riverpod: 2.5.1
-- go_router: 14.6.2
-- flutter_secure_storage: 9.2.2
-- dio: 5.7.0
+- Flutter SDK 3.35.1
+- Dart SDK 3.9.0
+- flutter_riverpod: 2.6.1
+- go_router: 16.1.0
+- flutter_secure_storage: 9.2.4
+- dio: 5.9.0
 
 > [!IMPORTANT]
 >
@@ -154,40 +148,41 @@ For navigation in the application, the [go_router](https://pub.dev/packages/go_r
 The navigation map in the app looks like this:
 
 ```bash
-Full paths for routes:
-    splash => /splash
-    home => /home
-    catalog => /catalog
-    category => /catalog/category/:id
-    manufacturer => /catalog/manufacturer/:id
-    vendor => /catalog/vendor/:id
-    productsbytag => /catalog/productsByTag/:id
-    productsearch => /catalog/productSearch/:q
-    product => /catalog/product/:id
-    review => /catalog/product/:id/review
-    addreview => /catalog/product/:id/addReview
-    cart => /cart
-    checkout => /cart/checkout
-    account => /account
-    logincheckout => /account/logincheckout
-    login => /account/login
-    forgotpassword => /account/login/forgotPassword
-    register => /account/register
-    settings => /account/settings
-    contactus => /account/contactUs
-    wishlist => /account/wishlist
-    accountinfo => /account/accountInfo
-    accountaddresses => /account/accountAddresses
-    createupdateaddress => /account/accountAddresses/createUpdateAddress/:id
-    accountorders => /account/accountOrders
-    orderdetails => /account/accountOrders/orderDetails/:id
-    accountdownloadableproducts => /account/accountDownloadableProducts
-    accountbackinstock => /account/accountBackInStock
-    accountrewardpoints => /account/accountRewardPoints
-    accountchangepassword => /account/accountChangePassword
-    accountproductreviews => /account/accountProductReviews
-    accountreturnrequests => /account/accountReturnRequests
-    returnrequest => /account/returnRequest/:id
+├─/splash (SplashScreen)
+└─ (ShellRoute)
+  ├─/home 
+  ├─/catalog 
+  │ ├─/catalog/category/:id (CategoryDetailsScreen)
+  │ ├─/catalog/manufacturer/:id (ManufacturerDetailsScreen)
+  │ ├─/catalog/vendor/:id (VendorDetailsScreen)
+  │ ├─/catalog/productsByTag/:id (ProductsByTagScreen)
+  │ ├─/catalog/productSearch/:q (ProductsSearchScreen)
+  │ └─/catalog/product/:id (ProductDetailsScreen)
+  │   ├─/catalog/product/:id/review (ProductReviewScreen)
+  │   └─/catalog/product/:id/addReview 
+  ├─/cart 
+  │ └─/cart/checkout 
+  └─/account 
+    ├─/account/logincheckout 
+    ├─/account/login 
+    │ └─/account/login/forgotPassword (ForgotPasswordScreen)
+    ├─/account/register 
+    ├─/account/settings 
+    ├─/account/contactUs 
+    ├─/account/wishlist (WishlistScreen)
+    ├─/account/accountInfo (AccountInfoScreen)
+    ├─/account/accountAddresses (AccountAddressesScreen)
+    │ └─/account/accountAddresses/createUpdateAddress/:id teAddressScreen)
+    ├─/account/accountOrders (AccountOrdersScreen)
+    │ └─/account/accountOrders/orderDetails/:id (OrderDetailsScreen)
+    ├─/account/accountDownloadableProducts nloadableProductsScreen)
+    ├─/account/accountBackInStock (AccountBackInStockScreen)
+    ├─/account/accountRewardPoints (AccountRewardPointsScreen)
+    ├─/account/accountChangePassword (AccountChangePassword)
+    ├─/account/accountProductReviews (AccountProductReviewsScreen)
+    ├─/account/accountGdprTools (AccountGdprToolsScreen)
+    ├─/account/accountReturnRequests (AccountReturnRequestsScreen)
+    └─/account/returnRequest/:id (ReturnRequestScreen)
 ```
 
 ## Web API client generation
@@ -208,7 +203,7 @@ Use the [dart-dio](https://openapi-generator.tech/docs/generators/dart-dio) gene
   "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "7.10.0",
+    "version": "7.14.0",
     "generators": {
         "frontend": {
             "input-spec": "swagger.json",
@@ -244,7 +239,7 @@ It is necessary that the OpenAPI schema *swagger.json* be in the directory with 
     ```bash
     cd frontend_api
     flutter pub get  
-    flutter pub run build_runner build -d
+    dart run build_runner build -d
     ```
 
     As a result, we get a ready-made package, which will be located where you specified in  the configuration file or console command. It remains to include it in *pubspec.yaml*:
@@ -268,7 +263,7 @@ Run the following command in a terminal to generate the required resource files 
 flutter gen-l10n
 ```
 
-You can make sure that all the necessary resources are generated correctly in the `.dart_tool\flutter_gen\gen_l10n` path.
+You can make sure that all the necessary resources are generated correctly in the `lib\localization\generated\i18n` path.
 
 ![image](./_static/index/localization.png)
 
@@ -295,94 +290,116 @@ Using tokens provides several advantages:
 
 ### Integrating Tokens from Design Tools
 
-[Material Theme Builder](https://m3.material.io/theme-builder) allows designers to create custom themes and export tokens in multiple formats, including Flutter code.
+**Material Theme Builder** (MTB) is a designer/developer tool for creating Material Design 3 (M3) color & type tokens and exporting them as code (Flutter, Compose, Android XML, design tokens, etc.). It helps you produce coordinated light/dark `ColorScheme`s from a seed/brand color, preview components, and export ready-to-use artifacts for implementation.
 
-You don’t need an existing project - the theme will be generated from scratch by the plugin. So, download the plugin and launch it in Figma:
+#### Generate a color scheme
 
-![image](./_static/index/material_theme_builder.png)
+1. Open the **[Material Theme Builder](https://m3.material.io/theme-builder)**.
 
-Click **Create Theme**:
-![image](./_static/index/create_theme.png)
+1. Pick a seed / primary color
 
-A theme with default colors will be generated. Go to the **Custom** tab:
+   - Enter a hex value, use the color picker, or use an eyedropper. The seed (primary) color is the single starting point from which tonal palettes are generated.
 
-![image](./_static/index/custom_colors.png)
+     ![image](./_static/index/color-picker.png)
 
-Here you need to select the base colors for the entire scheme. You can enter them manually, for example, if your brand colors are already defined. On the **Dynamic** tab, you can upload an image and extract colors from it. It is recommended to use the service [https://coolors.co/](https://coolors.co/) to generate harmonious colors.
+   - You can also enable *dynamic color* input (wallpaper/image) or import an image to extract colors — MTB will derive tonal palettes from that source.
 
-Сlick **Start the generator**:
+     ![image](./_static/index/source-image.png)
 
-![image](./_static/index/make_colors.png)
+1. Choose or tweak secondary / tertiary / error / neutral colors
 
-You can delete the extra blocks until only 3 remain, and then press the spacebar to generate variations.
+   MTB shows slots for common roles (secondary, tertiary, error, neutral, etc.). You can accept automatically-generated values or override specific role colors (enter hex values manually). The builder keeps role relationships consistent with M3 rules.
 
-Replace the colors in the palette and click **Export**:
+   ![image](./_static/index/core-colors.png)
 
-![image](./_static/index/export_colors.png)
+   Here you need to select the base colors for the entire scheme. You can enter them manually, for example, if your brand colors are already defined. On the **Dynamic** panel, you can upload an image and extract colors from it. It is recommended to use the service [https://coolors.co/](https://coolors.co/) to generate harmonious colors.
 
-> [!IMPORTANT]
+   Сlick **Start the generator**:
+
+   ![image](./_static/index/make_colors.png)
+
+   You can delete the extra blocks until only 3 remain, and then press the spacebar to generate variations.
+
+1. Switch between Light and Dark previews
+
+   Toggle Light/Dark to immediately see both schemes;
+
+   ![image](./_static/index/light-scheme.png)
+
+   MTB generates paired light/dark `ColorScheme`s so contrast & visual hierarchy are preserved across brightness modes.
+
+   ![image](./_static/index/dark-scheme.png)
+
+1. Preview components and surfaces
+
+   The builder has live previews (app bars, buttons, chips, cards, list items, navigation bars, dialogs). Use them to validate how your palette behaves on surfaces, text, icons, and interactive controls.
+
+   ![image](./_static/index/preview-components.gif)
+
+1. Use color-matching / harmonization
+
+   If you have brand colors that clash with generated tonal palettes, MTB offers color-matching or harmonization modes that nudge palettes to harmonize with brand hues while still following M3 tonal rules. This is useful when starting from multiple brand colors.
+
+   ![image](./_static/index/extended-colors.png)
+
+1. Typography
+
+   Select base font family. MTB can produce tokens for typography (weights, sizes, line heights) to accompany your color tokens.
+
+   ![image](./_static/index/choose-fonts.png)
+
+1. Export
+
+    Choose the export format - **Flutter (Dart)**, then export/download a ZIP with code artifacts and token files. For Flutter, the builder typically generates `theme.dart` that you can drop into your project.
+
+    ![image](./_static/index/export.png)
+
+#### Overview of the theme.dart file
+
+Once you've created your color palette in *Material Theme Builder* and exported it, you'll get a `theme.dart` file. This file is the starting point for styling your app. Typically, its main content is two `ColorScheme` objects:
+
+- `lightScheme`: Defines a set of colors for your app's light theme (e.g. background, text, and accent colors in light mode).
+
+- `darkScheme`: Defines the same colors for your dark theme.
+
+These schemes are generated based on the seed color you choose and ensure a harmonious and consistent color combination throughout your app, following the principles of Material Design 3.
+
+#### Integration `theme.dart` into the project
+
+To keep your project structure organized, it is recommended to store theme-related files in a separate directory.
+
+Peplace the generated `ColorScheme` objects from `theme.dart` into - `lib/themes/material_theme.dart`.
+
+As your design system grows, you may need to introduce custom tokens (e.g., specific brand colors, semantic states). Use extensions. This code demonstrates which extension tokens are used in the mobile application.
+
+```dart
+ThemeData theme(ColorScheme colorScheme) => ThemeData(
+        useMaterial3: true,
+        brightness: colorScheme.brightness,
+        colorScheme: colorScheme,
+        textTheme: textTheme.apply(
+          bodyColor: colorScheme.onSurface,
+          displayColor: colorScheme.onSurface,
+        ),
+        scaffoldBackgroundColor: colorScheme.surface,
+        canvasColor: colorScheme.surface,
+        // defailt extensions - BEGIN
+        extensions: [
+          CustomColors(
+            subTextColor: colorScheme.onSurfaceVariant,
+            ratingStarColor: colorScheme.secondary,
+            pictureIndicatorColor: colorScheme.surfaceContainerHighest,
+            pictureIndicatorCurrentColor: colorScheme.primary,
+            inStockColor: colorScheme.tertiary,
+            outOfStockColor: colorScheme.error,
+          ),
+        ],
+        // defailt extensions - END
+      );
+```
+
+>[!NOTE]
 >
-> Be aware that you can’t edit the created palette later. If you close and reopen the plugin, your colors will reset to default.
-
-Then select **Export Material Tokens (DSP):**
-
-![image](./_static/index/export_material_tokens.png)
-
-You’ll get a folder with the following contents:
-
-- `data` folder
-- `dsp.json`
-
-In the `Themes > nopCommerce` folder, copy only the `data` folder. Leave the `dsp.json` file unchanged, as it’s includes custom `build_params` that refer to a custom configuration file `custom_config.js`. This custom config file is used to generate `font-size` in the desired format.
-
-![image](./_static/index/nop_theme_struct.png)
-
-You'll also notice that the theme folder includes `assets`, `dist`, and `fonts` subfolders. The `assets` and `dist` folders are generated automatically by the Adobe XD library (only the `custom_config.js` file was manually added there). The `fonts` folder contains the necessary fonts.
-
-Now we need to regenerate the `style_dictionary.dart` file from the `dist` folder. This file contains constants linked to the palette colors and fonts. As noted in the file itself—**do not edit it manually**.
-
-![image](./_static/index/style_dictionary.png)
-
-Next, you'll need the **Adobe XD extension for VS Code**. This extension generates a Dart file using the [Style Dictionary library](https://amzn.github.io/style-dictionary/#/README). Technically, you can do without Adobe XD, but it's more convenient to do it through the extension interface.
-
-![image](./_static/index/adobe_xd.png)
-
-Once installed, you can open the extension by clicking the **XD** button at the bottom of the VS Code window:
-
-![image](./_static/index/open_adobe_xd.png)
-
-To load a new DSP package, click the **box icon** at the top:
-
-![image](./_static/index/load_dsp.png)
-
-In the window that appears, choose **Edit package**:
-
-![image](./_static/index/edit_package.png)
-
-Then click **Select folder**:
-
-![image](./_static/index/select_folder.png)
-
-Choose the folder with the theme `nopCommerce` and click **Load package**:
-
-![image](./_static/index/load_package.png)
-
-You should now see the tokens and, if everything went well, the colors you selected in Figma.
-
-Next, we need to regenerate the `StyleDictionary` class, which is used to create the color scheme. To do this, click **Start editing**:
-
-![image](./_static/index/start_editing.png)
-
-Without changing anything, click **Finish editing**:
-
-![image](./_static/index/finish_editing.png)
-
-If you see the following message afterward, everything went correctly:
-
-![image](./_static/index/tokens_compiled.png)
+> You can use the entire contents of the `theme.dart` file, but don't forget to include the default extensions that are available in the `custom_color_scheme.dart` file.
 
 That’s it — restart the application and enjoy your new color scheme.
-
-> [!NOTE]
->
-> By the way, keep an eye on the fonts. Even though you see **Roboto** in Figma, they might magically download as **Google Sans**.
