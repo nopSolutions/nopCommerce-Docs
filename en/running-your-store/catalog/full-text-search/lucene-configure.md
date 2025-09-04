@@ -50,6 +50,9 @@ Click the **Configure** button beside the Lucene search provider option in the l
     * The "**Fuzzy**" search is based on the Levenshtein Distance (For example, searches for a "roam" term will find terms like "foam" and "roams").
     * The "**Contains**" search looks for 0 or more characters based on the wildcard searches with "*" at the end (For example, to search for "test", "tests", or "tester", you can use the "test" term).
     * The "**None**" option is based on exact matching.
+1. Choose a rule for matching terms in a search query:
+    * The "**Should**" operator - terms should appear in a field of the matching product, but are optional
+    * The "**Must**" operator - terms must appear in a field of the matching product.
 1. Set up the behavior of updating the search index documents. Check the **Immediately update indexes** to immediately apply changes for the mapped product (for example, their names or descriptions were changed). Otherwise, the reindexing will be scheduled.
     > [!NOTE]
     > You may also manually click the "Rebuild index" button to start reindexing.
