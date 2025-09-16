@@ -74,6 +74,59 @@ There are a few elements on the wishlist page:
 >
 > In case you don't want to allow a customer to add a certain product to wishlist, select the **Disable wishlist button** checkbox in the *Prices* panel of the product edit page. Read more about adding a product in the [Add products](xref:en/running-your-store/catalog/products/add-products) chapter.
 
+### Multiple wishlist
+
+Registered customers can create and manage multiple wishlists, allowing for better organization of desired products. By default, each customer has a "Wishlist" which cannot be renamed or deleted.
+
+Core concepts:
+* **Default Wishlist:** Every registered customer has one default wishlist named "Wishlist". This list is permanent and cannot be altered or removed.
+* **Custom Wishlist:** Registered users can create additional, personalized wishlists. These can be named, managed, and deleted by the user.
+
+User scenarios:
+
+1. Viewing Wishlists
+  ![Viewing Wishlists](_static/shopping-carts-and-wishlists/viewing-wishlists.png)
+
+   * Upon navigating to the main Wishlist page, the products contained within the default "Wishlist" are displayed.
+   * A list of all created custom wishlists is also visible on this page.
+   * Selecting a custom wishlist will update the view to display only the products contained within that specific list.
+
+1. Creating a Custom Wishlist
+   ![image](_static/shopping-carts-and-wishlists/add-custom-wishlist.png)
+   * Only registered users have the ability to create new wishlists.
+   * On the main Wishlist page, an option to "Create New Wishlist" is available.
+   * Users can provide a custom name for their new wishlist.
+
+1. Deleting a Custom Wishlist
+   ![image](_static/shopping-carts-and-wishlists/delete-custom-wishlist.png)
+   * When viewing the contents of a custom wishlist, a "Delete" button will be present.
+   * A confirmation prompt will be displayed to the user before the wishlist is permanently deleted.
+   > [!NOTE]
+   > The default "Wishlist" cannot be deleted.
+
+1. Adding Products to a Wishlist
+
+   The process for adding products to a wishlist (e.g., by clicking a 'heart' icon on a product or catalog page) differs based on whether the user has created custom wishlists.
+
+    **Scenario 1: No Custom Wishlists Exist**
+    * When a user adds a product to their wishlist, it is automatically added to the default "Wishlist".
+
+    **Scenario 2: At Least One Custom Wishlist Exists**
+    ![image](_static/shopping-carts-and-wishlists/add-to-list.png)
+    * The product is still immediately added to the default "Wishlist".
+    * Following the addition, a notification will appear, confirming the product has been added. This notification will contain a link, such as "Move it to a custom wishlist".
+    * Clicking this link opens a pop-up window where the user can:
+      *   Select an existing custom wishlist to move the product to.
+      *   Choose to create a new wishlist, which will then contain the product.
+    * After selecting a destination, the user can be redirected to the chosen wishlist or continue shopping.
+
+1. Moving Products Between Wishlists
+  ![image](_static/shopping-carts-and-wishlists/move-to-list.png)
+   * This functionality is available only when a user has created at least one custom wishlist.
+   * On the Wishlist page, each product item will feature a dropdown menu.
+   * This menu lists all available wishlists (including the default "Wishlist").
+   * Selecting a wishlist from the dropdown will move the product from its current list to the selected one.
+
 ## Shopping cart and wishlist settings
 
 To change the shopping cart and wishlist settings, go to the **Configuration → Settings → Shopping cart settings** page.
@@ -114,6 +167,8 @@ In the *Wishlist* panel, you can define:
 * **Show product images on wishlist** to display product images in customers' wishlists.
 * **Allow customers to email their wishlist** to friends. When this field is enabled, the following field will be displayed:
   * **Allow guests to email their wishlist** to friends.
+* **Allow multiple wishlists** specifies whether customers can use multiple wishlists.
+  * **Maximum number of custom wishlists** indicates the number of custom wishlists a customer can use.
 * **Allow 'out of stock' items to be added to the wishlist**.
 * Select the **Move items from wishlist to cart** checkbox to move products from wishlist to the cart when clicking the "Add to cart" button. Otherwise, they are copied.
 * **Display wishlist after adding a product** to display the wishlist page immediately after a product is added to the wishlist. When this checkbox is clear, the customer will remain on the page, where the product was added to the wishlist.
