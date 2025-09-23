@@ -13,6 +13,71 @@ To define catalog settings, go to **Configuration → Settings → Catalog setti
 
 This page enables multi-store configuration; it means that the same settings can be defined for all stores or differ from store to store. If you want to manage settings for a certain store, choose its name from the multi-store configuration dropdown list and select all the checkboxes needed on the left to set custom values for them. For further details, refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
+## Artificial Intelligence
+
+This functionality integrates *Artificial Intelligence (AI)* services directly into the platform to automate the creation of product descriptions and Search Engine Optimization (SEO) meta tags, including Meta Title, Meta Description, and Meta Keywords.
+
+The feature is built into the core application and supports three popular AI service providers:
+- DeepSeek
+- Gemini
+- ChatGPT
+
+> [!NOTE]
+> 
+> Only one provider can be active at a time.
+
+All related settings can be found on the *Catalog settings* page in the **Artificial Intelligence** section.
+
+![AI](_static/catalog-settings/ai_settings.png)
+
+Key configuration options include:
+
+  *   **Enable artificial intelligence**: You can enable or disable the entire AI generation functionality. You can also independently enable or disable the generation of SEO fields.
+  *   **Provider type**: A dropdown menu allows you to choose which of the three supported AI providers will be used for content generation.
+  *   **Prompt Templates - AI query to generate[..]**: The templates for all API requests sent to the AI service can be edited. This allows advanced users to customize and fine-tune the prompts to better suit their specific needs.
+
+### Generating Product Descriptions
+
+1. Navigate to the product edit page. The **"Generate description with AI"** button is located directly beneath the product description editor.
+
+    ![AI](_static/catalog-settings/ai_product_description.png)    
+
+1. Clicking the button opens a configuration window.
+
+     ![AI](_static/catalog-settings/ai_product_description_generate.png)      
+
+    Here, you can adjust the parameters that will be sent to the AI service to generate the description. The following fields are mandatory:
+    *  **Product name**
+    *  **Target language**
+    *  **Features and keywords**
+    *  **Tone of voice**
+    *  You can also provide any **Special instructions** to guide the AI.
+
+1.  Click the **"Generate description with AI"** button in the pop-up window to send the request.
+    *   **On Success**: The generated text will be displayed in the window. You can then **Save** it directly to the product description field or **Copy to the clipboard**. If you are not satisfied with the result, you can click the "Generate" button again to get a new version.
+
+    ![AI](_static/catalog-settings/ai_product_description_generated.png)      
+
+    *   **On Failure**: If an error occurs during generation, an error message will be displayed instead of the text, often including a link to the log file for troubleshooting.
+
+    ![AI](_static/catalog-settings/ai_product_description_generated_fail.png)  
+
+### Generating SEO Meta Tags
+
+1.  In the SEO section of the product edit page, each meta tag block contains a **"Generate meta tags with AI"** button.
+
+    ![AI](_static/catalog-settings/ai_product_seo.png) 
+
+1.  Clicking this button will automatically generate content for all SEO fields that are:
+    *   Enabled for generation in the settings.
+    *   Currently empty (the tool will not overwrite existing, manually entered data).
+
+> [!IMPORTANT]
+> 
+> If you make changes to fields that are used as a basis for generation (e.g., the product name or short description) and do not save them, the system will prompt you to save your changes before sending the request to the AI service.
+>
+> ![AI](_static/catalog-settings/ai_product_seo_alert.png) 
+
 ## Set up a search
 
 ![Search](_static/catalog-settings/search.jpg)
