@@ -43,11 +43,7 @@ Once the feature is enabled, using it is very straightforward. A new button will
 ![Translation](_static/translation/pretranslate.png)
 
 1.  Click the **"Pre-translate"** button.
-2.  If the translation is successful, a confirmation message will appear.
-
-    ![Translation](_static/translation/translate_complete.png)
-
-1.  The localized fields for other languages will be populated with the translated text.
+1.  If the translation is successful, a confirmation message will appear. The localized fields for other languages will be populated with the translated text.
 
     ![Translation](_static/translation/translate.png)
 
