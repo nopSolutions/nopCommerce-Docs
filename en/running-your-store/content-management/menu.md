@@ -21,8 +21,9 @@ From this page, you can either edit an existing menu or create a new one.
 ## Creating and Managing Menus
 
 When creating a new menu, you must specify its location using the **Menu type**:
-*   **Main menu**: The primary navigation bar.
-*   **Footer**: The navigation links in the site's footer.
+
+- **Main menu**: The primary navigation bar.
+- **Footer**: The navigation links in the site's footer.
 
 ![Menu](_static/menu/add_menu.png)
 
@@ -52,28 +53,29 @@ This parameter determines the behavior and available settings for the menu item.
 
 ![Menu](_static/menu/menu_item_type.png)
 
-*   **Standard page**: Links to a predefined system page with a pre-configured route.
-*   **Category**:
-    *   Display all categories (in a grid or list layout).
-    *   Display a single category (as a grid, list, or simple link).
-*   **Manufacturer**:
-    *   Display all manufacturers (in a grid or list layout).
-    *   Link to the "All manufacturers" page.
-    *   Link to a specific manufacturer's page.
-*   **Product**: Links directly to a selected product page.
-*   **Vendor**:
-    *   Display all vendors (in a grid or list layout).
-    *   Link to the "All vendors" page.
-    *   Link to a specific vendor's page.
-*   **Topic (page)**: Links to a selected topic page.
-*   **Custom link**: A simple link where you manually specify the Text and URL.
-*   **Text without link**: Displays non-clickable text. This is useful for parent-level items that serve as headers and do not need to link anywhere.
+- **Standard page**: Links to a predefined system page with a pre-configured route.
+- **Category**:
+  - Display all categories (in a grid or list layout).
+    - Display a single category (as a grid, list, or simple link).
+- **Manufacturer**:
+  - Display all manufacturers (in a grid or list layout).
+  - Link to the "All manufacturers" page.
+  - Link to a specific manufacturer's page.
+- **Product**: Links directly to a selected product page.
+- **Vendor**:
+  - Display all vendors (in a grid or list layout).
+  - Link to the "All vendors" page.
+  - Link to a specific vendor's page.
+- **Topic (page)**: Links to a selected topic page.
+- **Custom link**: A simple link where you manually specify the Text and URL.
+- **Text without link**: Displays non-clickable text. This is useful for parent-level items that serve as headers and do not need to link anywhere.
 
 ### Additional Settings for Grid/List Layouts
+
 For menu items that use a grid or list template (e.g., displaying all categories), the following options are available:
 
-*   **Number of elements per row (grid)**: Sets the maximum number of items to display in a single row of the grid.
-*   **Number of subcategories per category item (grid)**: Sets the maximum number of sub-category links to display within each grid tile.
-*   **Maximum number of elements**: Sets the total maximum number of child items to display.
+- **Number of elements per row (grid)**: Sets the maximum number of items to display in a single row of the grid.
+- **Number of subcategories per category item (grid)**: Sets the maximum number of sub-category links to display within each grid tile.
+- **Maximum number of elements**: Sets the total maximum number of child items to display.
 
 ![Menu](_static/menu/menu_items_add_grid.png)
