@@ -47,6 +47,9 @@ The connection to the database is configured through this section.
 
 ### AzureBlobConfig
 
+>[!IMPORTANT]
+>This settings section is relevant for version 4.80 and below. For nopCommerce version 4.90 and above, [Azure settings are described here](xref:en/developer/plugins/cloudflare-images).
+
 We can use *Azure Blob Storage* to store blob data. nopCommerce already has a feature integrated for that, we just need to set the following information correctly to use this feature. Values for these settings can be obtained for *Azure* while you create the storage account.
 
 * **ConnectionString** This setting expects a string value. Here you need to add your `AzureBlobStorage` connection string
@@ -97,7 +100,6 @@ Cache configuration.
   public,max-age=31536000
   ```
 
-* **PluginStaticFileExtensionsBlacklist** Specify the blacklist of the static file extensions for plugin directories.
 * **ServeUnknownFileTypes** setting specifies the value indicating whether to serve files that don't have a recognized content type. The default value is **`false`**.
 * **UseAutofac**. The value indicating whether to use *Autofac IoC container*. If disabled, then the default *.Net IoC container* will be used.
 * **PermitLimit**. Maximum number of permit counters that can be allowed in a window (1 minute). Must be set to a value `> 0` by the time these options are passed to the constructor of `FixedWindowRateLimiter`. If set to **`0`** than limitation is off.
@@ -162,8 +164,7 @@ We use the [WebOptimizer](https://github.com/ligershark/WebOptimizer) tool for m
 * **JavaScriptBundleSuffix** This setting expects a string value. You can set a suffix for the js-file name of generated bundles (by default **`.scripts`**).
 * **CssBundleSuffix** This setting expects a string value. You can set a suffix for the CSS-file name of generated bundles (by default **`.styles`**).
 * **EnableCaching** This setting expects a boolean value. You can set a value indicating whether server-side caching is enabled (by default **`true`**).
-* **EnableMemoryCache** This setting expects a boolean value. You can set a value indicating whether *Microsoft.Extensions.Caching.Memory.IMemoryCache*
- based caching is enabled (by default **`true`**).
+* **EnableMemoryCache** This setting expects a boolean value. You can set a value indicating whether *Microsoft.Extensions.Caching.Memory.IMemoryCache* based caching is enabled (by default **`true`**).
 * **EnableDiskCache** This setting expects a boolean value. Determines if the pipeline assets are cached to disk. This can speed up application restarts by loading pipeline assets from the disk instead of re-executing the pipeline. Can be helpful to disable while in development mode.
 * **EnableTagHelperBundling** This setting expects a boolean value. You can set whether bundling is enabled (by default **`false`**).
 * **CdnUrl** This setting expects a string value. You can set the CDN URL used for TagHelpers (by default **`null`**).
@@ -174,3 +175,4 @@ We use the [WebOptimizer](https://github.com/ligershark/WebOptimizer) tool for m
   * **2** - Opts into compression over HTTPS.
     >[!NOTE]
     > Enabling compression on HTTPS requests for remotely manipulable content may expose security problems.
+* **MemoryCacheTimeToLive** If *EnableMemoryCache* memory caching is enabled, control how long an entry is stored in memory. Default is 60 minutes.

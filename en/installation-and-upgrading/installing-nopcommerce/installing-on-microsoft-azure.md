@@ -21,14 +21,20 @@ There are three ways to deploy nopCommerce on Microsoft Azure:
     >
     > If you get the error "HTTP Error 500.32 - ANCM Failed to Load dll," it might be that the platform has to be changed to 64bit (through Azure: **App Settings - Settings - Configuration - General settings - Platform settings - Platform**).
 
-Once the site is deployed, you have to install nopCommerce. Please read more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/index).
+Once the site is deployed, you have to install nopCommerce. Please [read more about it here](xref:en/installation-and-upgrading/installing-nopcommerce/index).
 
 Azure has support for multiple instances since version 3.70. It's great for any application scalability. Now you should not worry about whether your site can handle many visitors. So what exactly has been done to support multiple instances in Azure and web farms?
 
-* **BLOB storage account support in Microsoft Azure**. Please learn more about storage accounts in Azure [here](https://azure.microsoft.com/documentation/articles/storage-introduction/). *How to configure:*
+* **BLOB storage account support in Microsoft Azure**. Please learn more about [storage accounts in Azure here](https://azure.microsoft.com/documentation/articles/storage-introduction/). *How to configure:*
   * Once your BLOB storage is set up in Azure, open your `appsettings.json` (or `web.config` in previous versions) file, find the **AzureBlobStorage** element and specify your BLOB storage connection string, container, endpoint.
+    >[!IMPORTANT]
+    >These settings are valid for nopCommerce version 4.80 and below.
+  * Once you have configured BLOB storage in Azure, open the **Azure Blob Storage** plugin configuration page and specify the BLOB storage connection string, container, and endpoint.
+    >[!IMPORTANT]
+    >These settings are relevant for nopCommerce version 4.90 and above.
+
 * **Distributed caching and session management support**. Supported options are SQL Server and Redis. To configure SQL Server, see [DistributedCacheConfig](https://docs.nopcommerce.com/en/developer/tutorials/appsettings-json-file.html#distributedcacheconfig) section for more details. Following description assumes that [Redis](http://redis.io/) has been chosen as a caching server (already available in Azure, Amazon, other cloud hosting companies). *How to configure:*
-  * First, you have to install and setup Redis. Please find more about how to use Redis in Azure [here](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache/).
+  * First, you have to install and setup Redis. Please find more about [how to use Redis in Azure here](https://azure.microsoft.com/documentation/articles/cache-dotnet-how-to-use-azure-redis-cache/).
   * Once it's done you have to configure it in nopCommerce. In order to enable caching in Redis open `appsettings.json` file. Find the **DistributedCacheConfig** config section. There, set **DistributedCacheType** to Redis and **Enabled** to *`true`* and then specify **ConnectionString** pointing to your Redis server (configured in the first step).
   * For version 3.90 (and below), you also have to enable Redis as our distributed session management. Please open the `web.config` file. Find and uncomment the **sessionState** element. Specify its attributes (such as *host*, *accessKey*, etc.) pointing to your Redis server.
 * Recommended settings of the `appsettings.json` file to improve stability (for nopCommerce 4.50 and below):
@@ -43,4 +49,4 @@ The further installation process for nopCommerce is the same as the installation
 
 ## Web farms
 
-You can also configure load balancing with IIS web farms. Please read more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/web-farms).
+You can also configure load balancing with IIS web farms. Please [read more about it here](xref:en/installation-and-upgrading/installing-nopcommerce/web-farms).
