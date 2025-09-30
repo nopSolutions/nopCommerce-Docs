@@ -54,7 +54,6 @@ You can edit the following fields:
 - **Date of birth**.
 - **Company name**.
 - **Is tax exempt** indicates whether the customer is exempted from taxes.
-- Choose appropriate stores in the **Newsletter** multiselect to subscribe the customer to a store newsletter.
 - **Customer roles** — one or multiple customer roles. Note that any role that needs to log in to the system (for example, administrator, vendor) should have the "Registered" customer role among others. You can set up customer roles in the [Customer roles](xref:en/running-your-store/customer-management/customer-roles) section.
 - From the **Manager of vendor** dropdown list, if required, select a vendor associated with this customer account. When associated, this customer will be able to log in to the selected vendor portal and manage its products and orders. Note that if you have a vendor associated with this customer, you should ensure this customer record is in the [Vendors](xref:en/running-your-store/vendor-management) list.
 - Select the **Active** checkbox to activate the customer.

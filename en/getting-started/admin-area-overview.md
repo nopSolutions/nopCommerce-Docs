@@ -27,7 +27,7 @@ The dashboard has the following sections:
 
 ![Stats](_static/admin-area-overview/stats.jpg)
 
-Learn more about these reports [here](xref:en/running-your-store/reports).
+Learn more about [these reports here](xref:en/running-your-store/reports).
 
 The dashboard sections are easily collapsed by clicking the ![item](_static/admin-area-overview/item.png) icon.
 
@@ -35,7 +35,7 @@ The dashboard sections are easily collapsed by clicking the ![item](_static/admi
 
 ### Sidebar
 
-![Sidebar](_static/admin-area-overview/sidebar.jpg)
+![Sidebar](_static/admin-area-overview/sidebar.png)
 
 The sidebar is placed on the left of each page in the administration area. It allows you to navigate through the nopCommerce administrator's functionality.
 

@@ -13,7 +13,7 @@ The most important components of product management in nopCommerce are adding pr
 
 ## A catalog on the example of a live store
 
-In the following examples, we will use our demo store based on the "Nop Venture Theme" by Nop-Templates. Please find more about this third-party theme [here](https://www.nopcommerce.com/nop-venture-theme-14-plugins-nop-templatescom).
+In the following examples, we will use our demo store based on the "Nop Venture Theme" by Nop-Templates. Please find more about this [third-party theme here](https://www.nopcommerce.com/nop-venture-theme-14-plugins-nop-templatescom).
 
 There are some tips to help you create a well-designed catalog for your customers.
 
@@ -52,4 +52,5 @@ To learn how to create a category, visit the [Categories](xref:en/running-your-s
 - [Manufacturers](xref:en/running-your-store/catalog/manufacturers)
 - [Attributes](xref:en/running-your-store/catalog/products/product-attributes)
 - [Products](xref:en/running-your-store/catalog/products/index)
+- [YMM (Year-Make-Model) Filter](xref:en/running-your-store/catalog/ymm)
 - [Catalog settings](xref:en/running-your-store/catalog/catalog-settings)

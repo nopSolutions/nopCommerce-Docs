@@ -7,7 +7,8 @@ contributors: git.exileDev, git.DmitriyKulagin, git.cromatido
 
 # Creating a nopCommerce plugin
 
-* [How to write a plugin for nopCommerce 4.80 (and above)](xref:en/developer/plugins/how-to-write-plugin-4.80)
+* [How to write a plugin for nopCommerce 4.90](xref:en/developer/plugins/how-to-write-plugin-4.90)
+* [How to write a plugin for nopCommerce 4.80](xref:en/developer/plugins/how-to-write-plugin-4.80)
 * [How to write a plugin for nopCommerce 4.70](xref:en/developer/plugins/how-to-write-plugin-4.70)
 * [How to write a plugin for nopCommerce 4.60](xref:en/developer/plugins/how-to-write-plugin-4.60)
 * [How to write a plugin for nopCommerce 4.50](xref:en/developer/plugins/how-to-write-plugin-4.50)
@@ -19,6 +20,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.cromatido
 * [How to write a plugin for nopCommerce 3.90 (and previous versions)](xref:en/developer/plugins/how-to-write-plugin-3.90)
 * [How to code my own payment method](xref:en/developer/plugins/payment-method)
 * [How to code my own shipping rate computation method](xref:en/developer/plugins/shipping-plugin)
+* [Cloudflare Images](xref:en/developer/plugins/cloudflare-images)
 * [Plugin with data access](xref:en/developer/plugins/plugin-with-data-access)
 * [Plugin with data access 4.20 and below](xref:en/developer/plugins/plugin-with-data-access-4.20)
 * [How to add a menu item into the administration area from a plugin](xref:en/developer/plugins/menu-item)

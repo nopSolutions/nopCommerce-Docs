@@ -94,7 +94,7 @@ Whether you want to give a shot to a small project or you are to start a marketp
 
 ### Multi-store
 
-nopCommerce enables you to run more than one store using one interface from a single nopCommerce installation and manage all admin operations from a single panel. Learn [here](xref:en/getting-started/advanced-configuration/multi-store) how to set up several stores.
+nopCommerce enables you to run more than one store using one interface from a single nopCommerce installation and manage all admin operations from a single panel. [Learn here](xref:en/getting-started/advanced-configuration/multi-store) how to set up several stores.
 
 - [Multi-store](xref:en/getting-started/advanced-configuration/multi-store)
 

@@ -9,11 +9,11 @@ contributors: git.exileDev, git.DmitriyKulagin, git.mariannk
 
 This section describes how to set the media details of your store. This includes defining products, variants and avatar image sizes, and more.
 
-To define the media settings, go to **Configuration → Settings → Media settings**. The *Media settings* window will be displayed:
-
-![p1](_static/media-settings/media_sett_1.png)
+To define the media settings, go to **Configuration → Settings → Media settings**.
 
 In the *Common* panel, define the settings as follows:
+
+![p1](_static/media-settings/media_sett_common.png)
 
 - Click the **Change** button above the **Pictures are stored into** option to choose between database or file system.
 
@@ -29,6 +29,8 @@ In the *Common* panel, define the settings as follows:
 
 In the *Product* panel, define the settings as follows:
 
+![p1](_static/media-settings/media_sett_product.png)
+
 - In the **Product detail image size** field, enter the default size for the product detail images in pixels.
 - In the **Product thumbnail image size (catalog)** field, enter the default size for the product thumbnail images  displayed on the category or manufacturer pages in pixels.
 - In the **Product thumbnail image size (product page)** field, enter the default size for the product thumbnail images (in pixels) displayed on the product details page (used when you have more than one product image).
@@ -36,6 +38,8 @@ In the *Product* panel, define the settings as follows:
 - **Default image** - You can select a default image that will be shown in the public store for products that do not have images.
 
 In the *Other pages* panel, define the settings as follows:
+
+![p1](_static/media-settings/media_sett_other.png)
 
 - In the **Category thumbnail image size** field, enter the default size for the product thumbnail images on the category pages in pixels.
 - In the **Manufacturer thumbnail image size** field, enter the default size for the product thumbnail images on the manufacturer pages in pixels.

@@ -12,7 +12,7 @@ The return request feature enables customers to request a return on items previo
 To enable return requests, select the **Enable returns system** checkbox.
 When this option is enabled, a **Return item(s)** button is displayed for completed orders on the order details page in the public store.
 
-To proceed to the return request settings section, click [here](#return-request-settings).
+To proceed to the [return request settings section, click here](#return-request-settings).
 
 In the next sections, we will describe how the return request functionality can be used by your customers and how to manage return requests in the admin area.
 

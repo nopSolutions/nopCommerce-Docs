@@ -16,6 +16,7 @@ Content management is a set of processes and technologies that support the colle
 - [Forums](xref:en/running-your-store/content-management/forums)
 - [Polls](xref:en/running-your-store/content-management/polls)
 - [Topics (pages)](xref:en/running-your-store/content-management/topics-pages)
+- [Menu](xref:en/running-your-store/content-management/menu)
 - [Message templates](xref:en/running-your-store/content-management/message-templates)
 - [SEO](xref:en/running-your-store/search-engine-optimization)
 - [Email campaigns](xref:en/running-your-store/promotional-tools/email-campaigns)

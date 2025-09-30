@@ -7,7 +7,7 @@ contributors: git.Sandeep911, git.exileDev, git.DmitriyKulagin
 
 # How to code my payment method
 
-Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.70](xref:en/developer/plugins/how-to-write-plugin-4.70) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
+Payment methods are implemented as plugins in nopCommerce. We recommend you read [How to write a plugin for nopCommerce 4.90](xref:en/developer/plugins/how-to-write-plugin-4.90) before you start coding a new payment method. It will explain to you what the required steps are for creating a plugin.
 
 So actually a payment method is an ordinary plugin that implements an **`IPaymentMethod`** interface (*Nop.Services.Payments namespace*). As you already guessed *IPaymentMethod* interface is used for creating payment method plugins. It contains some methods which are specific only for payment methods such as `ProcessPaymentAsync()` or `GetAdditionalHandlingFeeAsync()`. So, add a new payment plugin project (*class library*) to the solution, and let's get started.
 
@@ -26,10 +26,9 @@ Then you have to create a view component for displaying the plugin in the public
 ```csharp
 public class PaymentInfoViewComponent : NopViewComponent
 {
-    public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
+    public IViewComponentResult Invoke(string widgetZone, object additionalData)
     {
-        ...
-        return View("~/Plugins/Payments.PayPalCommerce/Views/PaymentInfo.cshtml", model);
+        return View("~/Plugins/Payments.PayPalCommerce/Views/Public/PaymentInfo.cshtml");
     }
 }
 ```
@@ -66,7 +65,7 @@ public class CheckMoneyOrderPaymentProcessor : BasePlugin, IPaymentMethod
     }
     ```
 
-- **ProcessPaymentAsync**. This method is always invoked right before a customer places an order. Use it when you need to process payment before an order is stored in a database. For example, capture or authorize credit card. Usually, this method is used when a customer is not redirected to a third-party site for completing payment and all payments are handled on your site (for example, *PayPal Direct*).
+- **ProcessPaymentAsync**. This method is always invoked right before a customer places an order. Use it when you need to process payment before an order is stored in a database. For example, capture or authorize credit card. Usually, this method is used when a customer is not redirected to a third-party site for completing payment and all payments are handled on your site (for example, *PayPalCommerce*).
 
     ```csharp
     public Task<ProcessPaymentResult> ProcessPaymentAsync(ProcessPaymentRequest processPaymentRequest)

@@ -141,7 +141,6 @@ In the *Customer form fields* panel, define whether the following form fields ar
 * **'Fax number' enabled.** When enabled, you can also decide whether this field should be required.
 * Select the **'Accept privacy policy' enabled** checkbox to request customers to accept the privacy policy during the registration.
 * Select the **'Newsletter' enabled** checkbox to offer customers a newsletter subscription during the registration.
-  * When the **'Newsletter' enabled** checkbox is selected, the **Newsletter ticked by default** checkbox will be displayed. This automatically sets the 'Newsletter' checkbox on the registration page as selected.
 
 ### Custom customer attributes
 

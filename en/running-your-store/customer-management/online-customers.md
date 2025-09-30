@@ -11,8 +11,9 @@ The Online customers section enables store owners to view customers that were on
 
 To access this window, go to **Customers → Online customers**.
 
-![Online customers](_static/online-customers/list.jpg)
+![Online customers](_static/online-customers/list.png)
 
+The store owner can filter users by **Customer roles**.
 The *Online customers* window includes the following columns:
 
 - **Customer info** — you can view and edit customer information by clicking the link.

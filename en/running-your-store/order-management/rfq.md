@@ -1,5 +1,5 @@
 ---
-title: Requests for quote
+title: Requests for quote (RFQ)
 uid: en/running-your-store/order-management/rfq
 author: git.DmitriyKulagin
 contributors: git.DmitriyKulagin

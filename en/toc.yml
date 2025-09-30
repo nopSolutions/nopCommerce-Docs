@@ -266,6 +266,9 @@
           name: Catalog settings
           href: running-your-store/catalog/catalog-settings.md
         -
+          name: YMM (Year-Make-Model) Filter 
+          href: running-your-store/catalog/ymm.md
+        -
           name: EU Omnibus Directive 
           href: running-your-store/catalog/eu-omnibus-directive/index.md
         -
@@ -288,6 +291,9 @@
         -
           name: Shipping management
           href: running-your-store/order-management/shipping-management.md
+        -
+          name: Requests for quote (RFQ)
+          href: running-your-store/order-management/rfq.md
         -
           name: Return requests
           href: running-your-store/order-management/return-requests.md
@@ -391,6 +397,9 @@
         -
           name: Topics (pages)
           href: running-your-store/content-management/topics-pages.md
+        -
+          name: Menu
+          href: running-your-store/content-management/menu.md
         -
           name: Message templates
           href: running-your-store/content-management/message-templates.md
@@ -520,7 +529,10 @@
       href: developer/plugins/index.md
       items:
         - 
-          name: How to write a plugin for nopCommerce 4.80 (and above)
+          name: How to write a plugin for nopCommerce 4.90
+          href: developer/plugins/how-to-write-plugin-4.90.md
+        - 
+          name: How to write a plugin for nopCommerce 4.80
           href: developer/plugins/how-to-write-plugin-4.80.md
         - 
           name: How to write a plugin for nopCommerce 4.70
@@ -555,6 +567,9 @@
         - 
           name: How to code my own shipping rate computation method
           href: developer/plugins/shipping-plugin.md
+        - 
+          name: Cloudflare Images
+          href: developer/plugins/cloudflare-images.md
         - 
           name: Plugin with data access
           href: developer/plugins/plugin-with-data-access.md

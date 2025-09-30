@@ -13,6 +13,7 @@ Learn how to get the most out of the order management in the following chapters:
 
 * [Orders](xref:en/running-your-store/order-management/orders)
 * [Shipping management](xref:en/running-your-store/order-management/shipping-management)
+* [Requests for quote (RFQ)](xref:en/running-your-store/order-management/rfq)
 * [Return requests](xref:en/running-your-store/order-management/return-requests)
 * [Shopping carts and wishlists](xref:en/running-your-store/order-management/shopping-carts-and-wishlists)
 * [Inventory management](xref:en/running-your-store/order-management/inventory-management)
