@@ -61,7 +61,7 @@ Since it is based on Microsoft's .NET 9 we need to install a few tools before st
 
 ### .NET 9 runtime & .NET 9 SDK
 
-Since nopCommerce 4.80 is based on .NET 9. We need to install [.NET 9 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-9.0.0-windows-x64-installer) and [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.100-windows-x64-installer) before we start development on nopCommerce.
+Since nopCommerce 4.90 is based on .NET 9. We need to install [.NET 9 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-9.0.0-windows-x64-installer) and [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.100-windows-x64-installer) before we start development on nopCommerce.
 
 ### Visual Studio 2022 or Above / Visual Studio Code
 
