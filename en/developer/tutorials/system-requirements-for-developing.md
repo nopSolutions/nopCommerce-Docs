@@ -13,22 +13,22 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 | OS                | Version       |
 | ----------------- | ------------- |
-| Windows 11        | 24H2 (IoT), 24H2 (E), 24H2, 23H2, 22H2 (E) |
-| Windows 10 Client | 22H2, 21H2 (E), 21H2 (IoT), 1809 (E), 1607 (E) |
-| Windows Server    | 23H2, 2022, 2019, 2016, 2012-R2, 2012 |
-| Nano Server       | 2022, 2019 |
+| Windows 11        | 25H2, 24H2 (IoT), 24H2 (E), 24H2, 23H2|
+| Windows 10 Client | 21H2 (E), 21H2 (IoT), 1809 (E), 1607 (E) |
+| Windows Server    | 2025, 23H2, 2022, 2019, 2016 |
+| Nano Server       | 2025, 2022, 2019 |
 
 ### Linux
 
 | OS                           | Version             |
 | ---------------------------- | ------------------- |
-| Red Hat Enterprise Linux     | 9, 8                |
-| Fedora                       | 40                  |
-| Debian                       | 12                  |
-| Ubuntu                       | 24.10, 24.04, 22.04 |
-| openSUSE Leap                | 15.6, 15.5          |
-| SUSE Enterprise Linux        | 15.6, 15.5          |
-| Alpine Linux                 | 3.20, 3.19          |
+| Red Hat Enterprise Linux     | 10, 9, 8            |
+| Fedora                       | 42, 41              |
+| Debian                       | 13, 12              |
+| Ubuntu                       | 25.10, 24.04, 22.04 |
+| openSUSE Leap                | 16.0, 15.6          |
+| SUSE Enterprise Linux        | 16.0, 15.6          |
+| Alpine Linux                 | 3.22, 3.21, 3.20    |
 
 Other distributions are supported at best effort, per [.NET Support and Compatibility for Linux Distributions](https://github.com/dotnet/core/blob/main/linux.md).
 
@@ -36,7 +36,7 @@ Other distributions are supported at best effort, per [.NET Support and Compatib
 
 | OS       | Version    |
 | -------- | ---------- |
-| macOS    | 15, 14, 13 |
+| macOS    | 26, 15, 14 |
 
 > [!NOTE]
 >

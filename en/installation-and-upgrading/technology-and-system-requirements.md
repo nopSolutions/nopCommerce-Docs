@@ -13,20 +13,20 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 * Windows
   * Windows 10 Client (1607 or above)
-  * Windows 11 (22H2 (E) or above)
-  * Windows Server 2012 R2 or above
+  * Windows 11 (23H2 or above)
+  * Windows Server 2016 or above
 
 * Linux
   * Red Hat Enterprise Linux 8 or above
-  * Fedora 40 or above or
+  * Fedora 41 or above or
   * Debian 12 or above
   * Ubuntu 22.04 or above
-  * openSUSE Leap 15.5 or above
-  * SUSE Enterprise Linux 15.5 or above
-  * Alpine Linux 3.19 or above
+  * openSUSE Leap 15.6 or above
+  * SUSE Enterprise Linux 15.6 or above
+  * Alpine Linux 3.20 or above
 
 * macOS
-  * macOS 13.0 or above
+  * macOS 14.0 or above
 
 >[!NOTE]
 >
