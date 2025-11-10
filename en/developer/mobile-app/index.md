@@ -403,3 +403,32 @@ ThemeData theme(ColorScheme colorScheme) => ThemeData(
 > You can use the entire contents of the `theme.dart` file, but don't forget to include the default extensions that are available in the `custom_color_scheme.dart` file.
 
 That’s it — restart the application and enjoy your new color scheme.
+
+## Publishing to the Google Play Store
+
+The process for releasing your Flutter app on the Google Play Store involves preparing, building, and then uploading your application to the Google Play Console.
+
+Key Steps:
+
+1. Sign Up for a Google Play Developer Account: You'll need to register for a developer account.
+1. Prepare the App for Release: This includes configuring the app's name, icon, and version number in the `pubspec.yaml` file and setting up necessary permissions.
+1. Sign the Application: You must generate an upload keystore and sign your app with it to verify your identity.
+1. Build the Release Version: Use the `flutter build appbundle` command to create an Android App Bundle (*.aab*) of your application.
+1. Publish on the Google Play Console: Create a new app listing in your Play Console, fill out all the required store listing details (title, description, screenshots, privacy policy), and upload your *.aab* file for review.
+
+Official Documentation: [Build and release an Android app](https://docs.flutter.dev/deployment/android)
+
+## Publishing to the Apple App Store
+
+Deploying to the Apple App Store requires enrolling in the Apple Developer Program and using Xcode to manage the final steps of the process.
+
+Key Steps:
+
+1. Enroll in the Apple Developer Program: This is a paid annual subscription that grants you access to publish on the App Store.
+1. Configure the Project in Xcode: Open the `ios` folder of your project in Xcode to set up the Bundle ID, version number, and code signing settings.
+1. Create an App Store Connect Listing: Log in to App Store Connect to create a new app record. Here, you will enter all the metadata for your app, such as its name, description, screenshots, keywords, and privacy information.
+1. Build and Archive the App: Use Xcode to create a build archive (*.ipa*) of your application.
+1. Upload to App Store Connect: Upload the archived build using Xcode or the Transporter tool.
+1. Submit for Review: Once the build is processed and all metadata is complete, you can submit the app to Apple for review.
+
+Official Documentation: [Build and release an iOS app](https://docs.flutter.dev/deployment/ios)
