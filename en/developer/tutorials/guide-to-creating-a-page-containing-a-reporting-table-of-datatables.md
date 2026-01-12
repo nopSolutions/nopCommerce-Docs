@@ -102,6 +102,42 @@ public class CustomersByCountry : ICustomersByCountry
 
  We implemented the method of the interface that retrieves data from the database. We used this approach so that we'll be able to use dependency injection techniques to inject this service into the controller.
 
+### Infrastructure/PluginNopStartup.cs
+
+To register our interface and its implementation in the dependency injection (DI) container, we need to create a class that implements the INopStartup interface. This interface includes two methods and one property. Our primary focus is on implementing the ConfigureServices method, where we will register our interface with the DI container.
+
+```cs
+/// <summary>
+/// Represents object for the configuring services on application startup
+/// </summary>
+public class PluginNopStartup : INopStartup
+{
+    /// <summary>
+    /// Add and configure any of the middleware
+    /// </summary>
+    /// <param name="services">Collection of service descriptors</param>
+    /// <param name="configuration">Configuration of the application</param>
+    public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+    {
+        //register custom services
+        services.AddScoped<ICustomersByCountry, CustomersByCountry>();
+    }
+
+    /// <summary>
+    /// Configure the using of added middleware
+    /// </summary>
+    /// <param name="application">Builder for configuring an application's request pipeline</param>
+    public void Configure(IApplicationBuilder application)
+    {
+    }
+
+    /// <summary>
+    /// Gets order of this startup configuration implementation
+    /// </summary>
+    public int Order => 3000;
+}
+```
+
 ### Controllers/CustomersByCountryController.cs
 
 Now let's create a controller class. A good practice to name plugin controllers is like *{Group}{Name}Controller.cs*. For example, TutorialCustomersByCountryController, here *{Tutorial}{CustomersByCountry}Controller*. But remember that it is not a requirement to name the controller with *{Group}{Name}* it is just the recommended way by nopCommerce for naming but the Controller part in the name is the requirement of .Net MVC.
