@@ -110,6 +110,12 @@ Now everything is ready to run the application:
 flutter run
 ```
 
+> [!IMPORTANT]
+>
+> Make sure the `paymentSettings.BypassPaymentMethodSelectionIfOnlyOne` setting is disabled.
+>
+> Another general recommendation for checkout flow settings: do not enable settings that disable or skip steps (for example, `ordersettings.disablebillingaddresscheckoutstep`). Such settings will have no effect in the mobile app.
+
 ## Project structure
 
 A mobile application developed on Flutter carries the functions of interacting with a public store using the Web API (Frontend). All the main processes of user interaction with the application are presented in the diagram below:
