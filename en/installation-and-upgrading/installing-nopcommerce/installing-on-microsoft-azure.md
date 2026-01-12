@@ -39,6 +39,18 @@ Azure has support for multiple instances since version 3.70. It's great for any 
   * For version 3.90 (and below), you also have to enable Redis as our distributed session management. Please open the `web.config` file. Find and uncomment the **sessionState** element. Specify its attributes (such as *host*, *accessKey*, etc.) pointing to your Redis server.
 * Recommended settings of the `appsettings.json` file to improve stability (for nopCommerce 4.50 and below):
   * **UsePluginsShadowCopy** - set it to *`false`* to prevent the problem with IIS pool recycle and horizontal scaling.
+* **Configure Azure monitoring agents as crawlers (nopCommerce 4.70 and above)**. When using Azure Traffic Manager endpoint monitoring (for example, when the Path is set to `/`) or Azure App Service **Always On**, their requests to the root URL can create a new guest customer on each call. To avoid this, configure these user agents as crawlers in the `additional.crawlers.xml` file (see the `CrawlerOnlyAdditionalUserAgentStringsPath` setting in `appsettings.json`):
+
+  ```xml
+  <browscapitem name="Azure Traffic Manager Endpoint Monitor"> <!-- Azure Traffic Manager -->
+    <item name="Crawler" value="true" />
+  </browscapitem>
+
+  <browscapitem name="AlwaysOn"> <!-- Azure AppService AlwaysOn -->
+    <item name="Crawler" value="true" />
+  </browscapitem>
+  ```
+
 * Ensure that the nopCommerce schedule tasks are run on one instance at a time. To configure this :
   * For version 3.90 (and below), open the `web.config` file, find the **WebFarms** element, and set its **MultipleInstancesEnabled** attribute to *`true`*. If you use Microsoft Azure Websites (not cloud services), then set the **RunOnAzureWebsites** attribute to *`true`* as well.
   * For newer versions no configuration change is required because the task runner uses the distributed cache to ensure that tasks will run on one instance at a time.
