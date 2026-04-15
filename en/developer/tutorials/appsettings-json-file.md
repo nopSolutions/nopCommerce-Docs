@@ -138,8 +138,8 @@ A distributed cache is a cache shared by multiple app servers, typically maintai
 Hosting contains settings used to configure the hosting behavior. It is a JSON object and contains some properties settings which can be tweaked to change the behavior for hosting.
 
 * **UseProxy** This setting expects a boolean value. Enable this setting to apply forwarded headers to their matching fields on the current HTTP request.
-* **ForwardedProtoHeaderName** This setting expects a string value. Specify a custom HTTP header name to determine the originating IP address (e.g., **`CF-Connecting-IP`**, **`X-ProxyUser-Ip`**).
-* **ForwardedForHeaderName** This setting expects a string value. Specify a custom HTTP header name for identifying the protocol (HTTP or HTTPS) that a client used to connect to your proxy or load balancer.
+* **ForwardedProtoHeaderName** This setting expects a string value. Specify a custom HTTP header name for identifying the protocol (HTTP or HTTPS) that a client used to connect to your proxy or load balancer.
+* **ForwardedForHeaderName** This setting expects a string value. Specify a custom HTTP header name to determine the originating IP address (e.g., **`CF-Connecting-IP`**, **`X-ProxyUser-Ip`**).
 * **KnownProxies** This setting expects a string value. Specify a list of IP addresses (comma separated) to accept forwarded headers.
 * **KnownNetworks** This setting expects a string value. Specify a list of IP CIDR notations (comma separated) to accept forwarded headers. e.g. 172.64.0.0/13,162.158.0.0/15
 
