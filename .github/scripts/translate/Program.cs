@@ -201,10 +201,10 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private const int ChunkThreshold = 24_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
-        .GenerativeModel(
-            model: Model.Gemini15Flash,
-            systemInstruction: SystemPrompt.Text
-        );
+    .GenerativeModel(
+        model: Model.Gemini15Flash,
+        systemInstruction: new Content(SystemPrompt.Text)
+    );;
 
     // Polly：遇到 429 / 503 / quota 時指數退避重試，最多 4 次
     private readonly AsyncRetryPolicy _retryPolicy = Policy
