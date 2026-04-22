@@ -9,7 +9,7 @@ on:
       force_retranslate:
         description: '強制重新翻譯（覆蓋已存在的 zh-Hant 檔案）'
         required: false
-        default: 'true'
+        default: 'false'
       specific_file:
         description: '只翻譯單一檔案或目錄（例如：en/getting-started/index.md 或 en/developer/plugins）'
         required: false
