@@ -704,22 +704,26 @@ public class Translator
                 var enChars = cleanOriginal.Count(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
                 // 統計譯文中文字元數量
                 var zhChars = cleanTranslated.Count(c => c >= 0x4E00 && c <= 0x9FFF);
-                // 統計譯文英文字元數量（理想上應該大幅減少）
+                // 統計譯文英文字元數量
                 var enCharsTranslated = cleanTranslated.Count(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 
                 if (enChars > 50)
                 {
                     // 條件 1：譯文完全沒有中文
                     var noZh = zhChars < 10;
-                    // 條件 2：譯文英文仍佔大宗（超過 60%），代表翻譯不全
-                    // 注意：英文術語、類別名不可避免，所以用 60% 而非 100%
-                    var totalChars = zhChars + enCharsTranslated;
-                    var enRatio = totalChars > 0 ? (double)enCharsTranslated / totalChars : 0;
-                    var tooManyEn = enChars > 200 && enRatio > 0.6;
 
-                    if (noZh || tooManyEn)
+                    // 條件 2：譯文英文字元相比原文幾乎沒有減少（翻譯根本沒發生）
+                    // 正常翻譯後英文字元應大幅減少（保留技術術語仍會少 50% 以上）
+                    var enReductionRatio = enChars > 0 ? (double)(enChars - enCharsTranslated) / enChars : 1.0;
+                    var notTranslated = enChars > 300 && enReductionRatio < 0.3; // 英文減少不到 30%
+
+                    // 條件 3：譯文裡還有英文 ## 標題（最強信號：章節根本沒翻）
+                    var hasEnglishHeadings = Regex.IsMatch(cleanTranslated, @"(?m)^#{1,6} [A-Z][a-z]");
+
+                    if (noZh || notTranslated || hasEnglishHeadings)
                     {
-                        Console.WriteLine($"  ⚠️ 偵測到翻譯不全（原文英文:{enChars} → 譯文英文:{enCharsTranslated} 中文:{zhChars} 英文比:{enRatio:P0}），觸發重試...");
+                        var reason = noZh ? "無中文" : notTranslated ? $"英文減少量不足({enReductionRatio:P0})" : "含英文標題";
+                        Console.WriteLine($"  ⚠️ 偵測到翻譯不全（{reason}，原文英文:{enChars} 譯文英文:{enCharsTranslated} 中文:{zhChars}），觸發重試...");
                         throw new Exception("Translation failed: Chinese output insufficient relative to English input.");
                     }
                 }
@@ -792,6 +796,8 @@ public class Translator
             2. 不要輸出 <<<INPUT>>>、<<<END>>> 這兩個標記。
             3. 不要自行新增 YAML front matter（即 --- 開頭與結尾的區塊），除非原文本身就有。
             4. 不要在輸出開頭或結尾加上多餘的 --- 分隔線。
+            5. 所有英文的 ## 章節標題、段落說明、清單項目都必須翻譯成繁體中文，不得保留英文原文。
+            6. 程式碼區塊（``` 包住的部分）以外，絕對不允許出現整段英文句子或英文段落。
             """;
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
