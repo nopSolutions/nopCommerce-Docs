@@ -2,7 +2,7 @@ name: Sync Upstream & Auto Translate to zh-Hant
 
 on:
   schedule:
-    # 這會在 UTC 00:10 和 12:10 執行 
+    # 這會在 UTC 00:10 和 12:10 執行
     # 對應台灣時間 08:10 和 20:10
     - cron: '10 0,12 * * *'
   workflow_dispatch:
@@ -162,8 +162,8 @@ jobs:
           git push origin auto-translate --force
           echo "✅ auto-translate branch 已推送"
 
-          # 2. 切回 master，拉取最新（你可能在翻譯期間 push 了程式碼修改）
-          git checkout master
+          # 2. 切回 master，明確指定 origin 避免與 upstream 衝突
+          git checkout -B master origin/master
           git pull origin master
 
           # 3. 合併翻譯結果（zh-Hant/ 和 .last-upstream-sync 不會跟你的 .cs/.yml 衝突）
