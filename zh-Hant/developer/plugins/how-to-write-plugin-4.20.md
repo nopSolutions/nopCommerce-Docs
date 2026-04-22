@@ -1,19 +1,19 @@
 ---
-標題: 如何為 nopCommerce 編寫外掛
+標題: 如何編寫 nopCommerce 外掛
 uid: zh-Hant/developer/plugins/how-to-write-plugin-4.20
 作者: git.AndreiMaz
 貢獻者: git.Kevat, git.exileDev, git.DmitriyKulagin, git.cromatido
 ---
 
-# 如何為 nopCommerce 4.20 編寫外掛
+# 如何編寫 nopCommerce 4.20 外掛
 
-外掛（Plugin）用於擴充 nopCommerce 的功能。nopCommerce 擁有多種類型的外掛，例如付款方式（如 PayPal）、稅率提供程序、配送方式計算方法（如 UPS、USP、FedEx）、小部件（如「線上客服」區塊）等等。nopCommerce 本身已經隨附了許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各類外掛，看看是否已經有人開發了符合您需求的外掛。如果沒有，本文將引導您完成建立自訂外掛的流程。
+外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有多種型別的外掛。例如：付款方式（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USP、FedEx）、小部件（如「線上客服」區塊）等等。nopCommerce 本身已經隨附了許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否已經有人開發出符合您需求的外掛。如果沒有，這篇文章將指導您完成建立自己外掛的過程。
 
-## 外掛結構、必要檔案與位置
+## 外掛結構、必要檔案與存放位置
 
-1. 您首先需要做的是在解決方案中建立一個新的「類別庫 (Class Library)」專案。建議將所有外掛放置在解決方案根目錄的 `\Plugins` 資料夾中（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，後者是用於存放已部署的外掛）。將所有外掛放入「Plugins」解決方案資料夾是一個良好的做法（您可以[在此處](http://msdn.microsoft.com/library/sx2027y2.aspx)找到更多關於解決方案資料夾的資訊）。
+1. 您需要做的第一件事是在方案中建立一個新的「類別庫 (Class Library)」專案。一個良好的做法是將所有外掛放置在您方案根目錄的 `\Plugins` 資料夾中（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，該目錄用於已部署的外掛）。將所有外掛放置在「Plugins」方案資料夾中是一個良好的習慣（您可以在[此處](http://msdn.microsoft.com/library/sx2027y2.aspx)找到更多關於方案資料夾的資訊）。
 
-    外掛專案的建議命名方式為「Nop.Plugin.{Group}.{Name}」。其中 {Group} 是您的外掛群組（例如「Payment」或「Shipping」），{Name} 是您的外掛名稱（例如「PayPalStandard」）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如「MyGreatPlugin」。
+    外掛專案的建議命名方式為「Nop.Plugin.{Group}.{Name}」。{Group} 是您的外掛類別（例如「Payment」或「Shipping」）。{Name} 是您的外掛名稱（例如「PayPalStandard」）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求。您可以為外掛選擇任何名稱，例如「MyGreatPlugin」。
 
     ![p1](_static/how-to-write-plugin-4.20/write_plugin_4.20_1.jpg)
 
@@ -100,15 +100,12 @@ So let's start:
 
 Then for each plugin that has a configuration page, you should specify a configuration URL. A base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration URL:
 
+```csharp
+public override string GetConfigurationPageUrl()
+{
+    return $"{_webHelper.GetStoreLocation()}Admin/{CONTROLLER_NAME}/{ACTION_NAME}";
+}
 ```
-    ```csharp
-    public override string GetConfigurationPageUrl()
-    {
-        return $"{_webHelper.GetStoreLocation()}Admin/{CONTROLLER_NAME}/{ACTION_NAME}";
-    }
-    ```
-
-    ```
 
 Where *{CONTROLLER_NAME}* is the name of your controller and *{ACTION_NAME}* is the name of the action (usually it's "Configure").
 
@@ -133,21 +130,18 @@ This step is optional. Some plugins can require additional logic during plugin i
 
 For example, overridden "Install" method should include the following method call: *base.Install()*. The "Install" method of the PayPalStandard plugin looks like the code below
 
-```
-    ```csharp
-    public override void Install()
+```csharp
+public override void Install()
+{
+    var settings = new PayPalStandardPaymentSettings()
     {
-        var settings = new PayPalStandardPaymentSettings()
-        {
-            UseSandbox = true
-        };
-        _settingService.SaveSetting(settings);
-        ...
-        base.Install();
-    }
-    ```
-
-    ```
+        UseSandbox = true
+    };
+    _settingService.SaveSetting(settings);
+    ...
+    base.Install();
+}
+```
 
 > [!TIP]
 > The list of installed plugins is located in `\App_Data\Plugins.json`. The list is created during installation.
@@ -158,27 +152,26 @@ Here we will have a look at how to register plugin routes. ASP.NET Core routing 
 
 1. If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by PayPal plugin):
 
-```
-    ```csharp
-    public partial class RouteProvider : IRouteProvider
+```csharp
+public partial class RouteProvider : IRouteProvider
+{
+    public void RegisterRoutes(IRouteBuilder routeBuilder)
     {
-        public void RegisterRoutes(IRouteBuilder routeBuilder)
-        {
-             routeBuilder.MapRoute("Plugin.Payments.PayPalStandard.PDTHandler", "Plugins/PaymentPayPalStandard/PDTHandler",
-                new { controller = "PaymentPayPalStandard", action = "PDTHandler" });
-        }
-        public int Priority => -1;
+         routeBuilder.MapRoute("Plugin.Payments.PayPalStandard.PDTHandler", "Plugins/PaymentPayPalStandard/PDTHandler",
+            new { controller = "PaymentPayPalStandard", action = "PDTHandler" });
     }
-    ```
+    public int Priority => -1;
+}
+```
 
-## 升級 nopCommerce 可能導致外掛失效
+## 升級 nopCommerce 可能會導致外掛失效
 
-某些外掛可能會過時，並無法再與新版本的 nopCommerce 相容。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新的版本可用。許多外掛開發者會升級其外掛以適應新版本，但有些則不會，導致其外掛因 nopCommerce 的改進而變得過時。不過在大多數情況下，您可以直接開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位。
+某些外掛可能會過時，並無法再與新版本的 nopCommerce 搭配使用。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新版本可用。許多外掛作者會為了適應新版本而升級其外掛，但有些則不會，因此他們的外掛會隨著 nopCommerce 的改進而變得不再適用。但在大多數情況下，您可以直接開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位。
 
 ## 結論
 
-希望這能幫助您開始使用 nopCommerce，並為您建立更複雜的外掛做好準備。
+希望這能協助您開始使用 nopCommerce，並為開發更複雜的外掛做好準備。
 
-## 外掛模板
+## 外掛範本
 
-您可以使用我們為 nopCommerce 新外掛提供的 Visual Studio 模板。這能為開發者節省大量時間，因為他們不需要手動完成所有初始步驟，例如建立資料夾（Controllers、Views、Models 等）、建立其他必要檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContex、plugin.json 等）、設定組態以及新增專案參考等。請點選[此處](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)查看模板內容與安裝說明。
+您可以使用我們為 nopCommerce 新外掛提供的 Visual Studio 範本。這可以為開發人員節省大量時間，因為他們不必手動執行所有初始步驟。例如建立資料夾（Controllers、Views、Models 等）、其他必要的檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContext、plugin.json 等）、設定、專案參考等。請在[此處](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)找到範本及其安裝說明。
