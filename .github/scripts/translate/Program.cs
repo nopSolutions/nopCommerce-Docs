@@ -814,8 +814,8 @@ public class Translator
         if (finishReason?.ToString()?.Contains("MaxTokens", StringComparison.OrdinalIgnoreCase) == true ||
             finishReason?.ToString()?.Contains("MAX_TOKENS", StringComparison.OrdinalIgnoreCase) == true)
         {
-            throw new OutputTruncatedException(
-                $"Gemini 輸出被截斷（finishReason={finishReason}），此段落太大需要再切細。已輸出 {text.Length} 字元。");
+            throw new Exception(
+                $"Gemini 輸出被截斷（finishReason={finishReason}），段落太大。已輸出 {text.Length} 字元。");
         }
 
         // 清除 Gemini 可能回吐的 prompt 分隔標記
@@ -875,7 +875,7 @@ public class Translator
 
         foreach (var line in section.Split('\n'))
         {
-            if (_reCodeBlockFence.IsMatch(line))
+            if (Regex.IsMatch(line, @"^(```|~~~)"))
                 inCodeBlock = !inCodeBlock;
 
             sb.AppendLine(line);
@@ -1002,6 +1002,3 @@ public static class SystemPrompt
 
 // ── QuotaExhaustedException ───────────────────────────────────────────────────
 public class QuotaExhaustedException(string message) : Exception(message);
-
-// ── OutputTruncatedException ─────────────────────────────────────────────────
-public class OutputTruncatedException(string message) : Exception(message);
