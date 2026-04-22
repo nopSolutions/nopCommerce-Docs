@@ -160,7 +160,7 @@ public class PlaceholderContext
 public class Translator(string apiKey, string sourceDir, string targetDir, bool force)
 {
     private const int CooldownMs = 4_000;
-    private const int ChunkThreshold = 24_000;
+    private const int ChunkThreshold = 8_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
         .GenerativeModel(model: "gemini-3.1-flash-lite-preview");
@@ -526,7 +526,17 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
     private async Task<string> CallGeminiAsync(string content)
     {
-        var prompt = $"{SystemPrompt.Text}\n\n【提醒】[[PROTECT_NNNN]] 格式是佔位符請原樣保留，但佔位符前後的所有英文說明文字，包括步驟說明、列表項目、Important/Note/Tip 區塊，都必須翻譯成繁體中文，一句都不能遺漏。\n\n翻譯以下內容：\n\n{content}";
+        var prompt = $"""
+            {SystemPrompt.Text}
+
+            【目前任務】
+            正在翻譯技術文件的其中一個段落。即使段落中包含大量佔位符 [[PROTECT_NNNN]]，仍需將佔位符之間的所有英文說明文字完整翻譯成繁體中文，禁止原文輸出。
+
+            待翻譯內容：
+            ---
+            {content}
+            ---
+            """;
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
         if (string.IsNullOrWhiteSpace(text))
@@ -554,7 +564,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private static List<string> SplitSafely(string content)
     {
         var rawSections = Regex
-            .Split(content, @"(?=^## )", RegexOptions.Multiline)
+            .Split(content, @"(?=^#{2,3} )", RegexOptions.Multiline)
             .Where(s => s.Trim().Length > 0)
             .ToList();
 
@@ -760,13 +770,12 @@ public static class SystemPrompt
         - 不要加任何說明、前言、或額外的 ``` 包裝
         - 保持原始換行與空行結構不變
 
-        【重要：翻譯完整性】
-        - 程式碼區塊（``` 包住的部分）以外的所有英文文字，無論長短，都必須翻譯成繁體中文
-        - 就算段落中有大量程式碼，程式碼以外的說明文字仍然必須翻譯
-        - 絕對不可以把英文段落原樣輸出，除非整段都是程式碼
-        - 如果你不確定某段文字是否需要翻譯，預設就是翻譯
-        - 有序列表（1. 2. 3.）和無序列表（* -）中的說明文字，必須全部翻譯
-        - Important / Note / Tip 提示區塊內的文字，必須翻譯
+        【翻譯嚴格準則】
+        1. 必須逐句翻譯：除了程式碼區塊（```）以外，所有英文句子、標題、清單、提示區塊（> [!IMPORTANT]、> [!NOTE]、> [!TIP]）都必須翻譯成繁體中文
+        2. 禁止原文輸出：絕對禁止因為段落過長或內容包含技術詞彙而直接輸出原文
+        3. 佔位符規則：[[PROTECT_NNNN]] 原樣保留，但其前後的英文說明文字必須翻譯
+        4. 即使是技術說明：程式碼區塊外的文字，就算包含技術術語也請翻譯其說明部分
+        5. 有序列表（1. 2. 3.）和無序列表（- *）中的所有說明文字，全部翻譯
         """;
 }
 
