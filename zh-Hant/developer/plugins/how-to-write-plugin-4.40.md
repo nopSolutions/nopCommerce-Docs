@@ -7,17 +7,17 @@ uid: zh-Hant/developer/plugins/how-to-write-plugin-4.40
 
 # 如何為 nopCommerce 編寫外掛
 
-外掛（Plugin）用於擴充 nopCommerce 的功能。nopCommerce 擁有多種類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USP、FedEx）、小部件（如「即時聊天」區塊）等等。nopCommerce 本身已經隨附了許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否有人已經建立了符合您需求的外掛。如果沒有，本文將引導您完成建立外掛的過程。
+外掛（Plugin）用於擴充 nopCommerce 的功能。nopCommerce 擁有多種類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USP、FedEx）、小部件（如「線上客服」區塊）等等。nopCommerce 本身已內建許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否已經有人開發了符合您需求的外掛。如果沒有，本文將引導您完成開發外掛的流程。
 
 ## 外掛結構、必要檔案與位置
 
-1. 您需要做的第一件事是在解決方案中建立一個新的 *`Class Library`* 專案。將所有外掛放在解決方案根目錄的 `\Plugins` 目錄中是一個好習慣（不要與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄搞混，後者是用於已部署的外掛）。將所有外掛放在 `Plugins` 解決方案資料夾中也是一種良好的做法。
+1. 您首先需要做的是在方案中建立一個新的 *`Class Library`*（類別庫）專案。將所有外掛放置在方案根目錄的 `\Plugins` 資料夾是一個良好的實踐（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，後者是用於存放已部署外掛的地方）。將所有外掛放置在 `Plugins` 方案資料夾中是一個良好的習慣。
 
-    建議的外掛專案名稱為 **`Nop.Plugin.{Group}.{Name}`**。**`{Group}`** 是您的外掛群組（例如 *Payment* 或 *Shipping*）。**`{Name}`** 是您的外掛名稱（例如 *PayPalStandard*）。例如，PayPal Standard 付款外掛的名稱如下：**`Nop.Plugin.Payments.PayPalStandard`**。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如 `MyGreatPlugin`。
+    外掛專案建議的命名格式為 **`Nop.Plugin.{Group}.{Name}`**。**`{Group}`** 是您的外掛組別（例如 *Payment* 或 *Shipping*）。**`{Name}`** 是您的外掛名稱（例如 *PayPalStandard*）。例如，PayPal Standard 付款外掛的名稱為：**`Nop.Plugin.Payments.PayPalStandard`**。但請注意，這並非強制要求，您可以為外掛選擇任何名稱。例如，`MyGreatPlugin`。
 
     ![p1](_static/how-to-write-plugin-4.40/write_plugin_4.40_1.jpg)
 
-1. 一旦建立外掛專案，您必須使用任何文字編輯器開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
+1. 建立外掛專案後，您必須使用任何文字編輯器開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -108,12 +108,14 @@ So let's start:
 
 Then for each plugin that has a configuration page, you should specify a configuration URL. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration URL:
 
+```
 ```csharp
 public override string GetConfigurationPageUrl()
 {
     return $"{_webHelper.GetStoreLocation()}Admin/{CONTROLLER_NAME}/{ACTION_NAME}";
 }
 ```
+    ```
 
 Where **{CONTROLLER_NAME}** is the name of your controller and **{ACTION_NAME}** is the name of the action (usually it's `Configure`).
 
@@ -139,6 +141,7 @@ This step is optional. Some plugins can require additional logic during plugin i
 
 For example, overridden `InstallAsync` method should include the following method call: *`base.Install()`*. The `InstallAsync` method of the *PayPalStandard* plugin looks like the code below
 
+```
 ```csharp
 public override async Task InstallAsync()
 {
@@ -154,6 +157,7 @@ public override async Task InstallAsync()
     await base.InstallAsync();
 }
 ```
+    ```
 
 > [!TIP]
 > The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
@@ -164,6 +168,7 @@ Here we will have a look at how to register plugin routes. ASP.NET Core routing 
 
 If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following `RouteProvider` class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by *PayPal* plugin):
 
+```
 ```csharp
 public partial class RouteProvider : IRouteProvider
 {
@@ -177,14 +182,14 @@ public partial class RouteProvider : IRouteProvider
 }
 ```
 
-## 升級 nopCommerce 可能會導致外掛失效
+## 升級 nopCommerce 可能導致外掛失效
 
-有些外掛可能會過時，無法再與較新版本的 nopCommerce 搭配使用。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新的版本可用。許多外掛開發者會更新其外掛以適應新版本，但有些則不會，隨著 nopCommerce 的改進，這些外掛將會被淘汰。但在大多數情況下，您可以簡單地開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位。
+有些外掛可能會過時，並無法再與較新版本的 nopCommerce 相容。如果您在升級到較新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新的版本可用。許多外掛開發者會更新其外掛以適應新版本，但有些則不會，導致其外掛隨著 nopCommerce 的改進而淘汰。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
 
 ## 結論
 
-希望這篇文章能幫助您入門 nopCommerce，並為您建立更複雜的外掛做好準備。
+希望這能協助您上手 nopCommerce，並為您建立更複雜的外掛做好準備。
 
 ## 外掛範本
 
-您可以使用我們為新 nopCommerce 外掛提供的 Visual Studio 範本。這可以為開發者節省大量時間，因為他們現在不必手動執行所有初始步驟。例如建立資料夾（Controllers、Views、Models 等）、其他必要檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContex、plugin.json 等）、設定、專案參考等。請點選[此處](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)查看範本與安裝說明。
+您可以使用我們為 nopCommerce 新外掛提供的 Visual Studio 範本。它可以為開發者節省大量時間，因為開發者不再需要手動完成所有初始步驟，例如建立資料夾（Controllers、Views、Models 等）、建立其他必要的檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContext、plugin.json 等）、設定、專案參考等。請點選[此處](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)查看範本與安裝說明。
