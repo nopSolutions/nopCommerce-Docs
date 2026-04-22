@@ -506,25 +506,15 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         {
             try
             {
-                var translated = await CallGeminiAsync(content, forceful: false);
-
-                // 驗證翻譯完整性：若仍有大量英文句子，用更強的 prompt 重試一次
-                if (HasSignificantEnglish(content, translated))
-                {
-                    Console.WriteLine("  ⚠️  偵測到未翻譯段落，使用加強模式重試...");
-                    translated = await CallGeminiAsync(content, forceful: true);
-                }
-
-                return translated;
+                return await CallGeminiAsync(content);
             }
             catch (Exception ex) when (ex.Message.Contains("429") || ex.Message.Contains("quota"))
             {
                 Console.WriteLine($"  ⚠️  429 Too Many Requests，等待 {QuotaWaitMs / 1000} 秒後重試一次...");
                 await Task.Delay(QuotaWaitMs);
-
                 try
                 {
-                    return await CallGeminiAsync(content, forceful: false);
+                    return await CallGeminiAsync(content);
                 }
                 catch (Exception retryEx) when (retryEx.Message.Contains("429") || retryEx.Message.Contains("quota"))
                 {
@@ -534,38 +524,14 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         });
     }
 
-    private async Task<string> CallGeminiAsync(string content, bool forceful)
+    private async Task<string> CallGeminiAsync(string content)
     {
-        var prompt = forceful
-            ? $"{SystemPrompt.Text}\n\n【緊急提醒】\n- [[PROTECT_NNNN]] 是佔位符，原樣保留即可\n- 佔位符前後的所有英文說明文字，都必須翻譯成繁體中文\n- 程式碼區塊以外的英文，一個字都不能漏\n\n翻譯以下內容：\n\n{content}"
-            : $"{SystemPrompt.Text}\n\n注意：[[PROTECT_NNNN]] 格式是佔位符請原樣保留，但佔位符前後的所有英文說明文字都必須翻譯成繁體中文。\n\n翻譯以下內容：\n\n{content}";
-
+        var prompt = $"{SystemPrompt.Text}\n\n【提醒】[[PROTECT_NNNN]] 格式是佔位符請原樣保留，但佔位符前後的所有英文說明文字，包括步驟說明、列表項目、Important/Note/Tip 區塊，都必須翻譯成繁體中文，一句都不能遺漏。\n\n翻譯以下內容：\n\n{content}";
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
         if (string.IsNullOrWhiteSpace(text))
             throw new Exception("Gemini 回傳空內容");
         return text;
-    }
-
-    /// <summary>
-    /// 檢查翻譯後內容是否仍有大量未翻譯的英文文字。
-    /// 方法：移除佔位符和程式碼區塊後，計算英文單字佔所有單字的比例。
-    /// </summary>
-    private static bool HasSignificantEnglish(string original, string translated)
-    {
-        // 移除佔位符和程式碼區塊
-        var strip = new Regex(@"\[\[PROTECT_\d+\]\]|```[\s\S]*?```|`[^`]+`", RegexOptions.Multiline);
-        var cleaned = strip.Replace(translated, " ");
-
-        // 計算英文單字數（3字母以上，排除常見縮寫如 nopCommerce、URL 等）
-        var englishWords = Regex.Matches(cleaned, @"\b[A-Za-z]{4,}\b").Count;
-        var totalTokens = Regex.Matches(cleaned, @"\S+").Count;
-
-        if (totalTokens < 20) return false;
-
-        // 英文單字超過總 token 的 25% 且超過 30 個，視為翻譯不完整
-        double ratio = (double)englishWords / totalTokens;
-        return ratio > 0.25 && englishWords > 30;
     }
 
     private async Task<string> TranslateInChunksAsync(string content)
