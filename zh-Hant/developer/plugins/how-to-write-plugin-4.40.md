@@ -7,17 +7,17 @@ uid: zh-Hant/developer/plugins/how-to-write-plugin-4.40
 
 # 如何為 nopCommerce 編寫外掛
 
-外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有多種外掛類型。例如，付款提供程序（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USPS、FedEx）、小部件（如「線上客服」區塊）以及許多其他類型。nopCommerce 本身已內建許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否已有他人開發了符合您需求的外掛。如果沒有，本文將引導您完成建立自訂外掛的流程。
+外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有幾種類型的外掛。例如，付款提供程序（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USPS、FedEx）、小部件（如「即時聊天」區塊）以及許多其他類型。nopCommerce 本身已經內建了許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否有人已經開發出符合您需求的外掛。如果沒有，本文將引導您完成建立自己的外掛的過程。
 
-## 外掛結構、必要檔案與存放位置
+## 外掛結構、必要檔案與位置
 
-1. 首先，您需要在方案中建立一個新的 *`Class Library`*（類別庫）專案。建議將所有外掛放在方案根目錄的 `\Plugins` 資料夾中（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，後者用於存放已部署的外掛）。同時，建議將所有外掛歸類到方案的 `Plugins` 資料夾中。
+1. 您需要做的第一件事是在方案中建立一個新的 *`Class Library`* 專案。將所有外掛放置在方案根目錄的 `\Plugins` 資料夾中是一種良好的實踐（請勿與 `\Nop.Web` 資料夾下的 `\Plugins` 子目錄混淆，後者用於已部署的外掛）。將所有外掛放在方案的「Plugins」資料夾中也是一種好的做法。
 
-    外掛專案的推薦命名格式為 **`Nop.Plugin.{Group}.{Name}`**。**`{Group}`** 是您的外掛群組（例如 *Payments* 或 *Shipping*）。**`{Name}`** 是您的外掛名稱（例如 *PayPalStandard*）。例如，PayPal Standard 付款外掛的名稱為：**`Nop.Plugin.Payments.PayPalStandard`**。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如 `MyGreatPlugin`。
+    推薦的外掛專案命名格式為 **`Nop.Plugin.{Group}.{Name}`**。**`{Group}`** 是您的外掛群組（例如 *Payment* 或 *Shipping*）。**`{Name}`** 是您的外掛名稱（例如 *PayPalStandard*）。例如，PayPal Standard 付款外掛的名稱為：**`Nop.Plugin.Payments.PayPalStandard`**。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如 `MyGreatPlugin`。
 
     ![p1](_static/how-to-write-plugin-4.40/write_plugin_4.40_1.jpg)
 
-1. 當外掛專案建立完成後，您必須使用任何文字編輯器開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
+1. 建立外掛專案後，您必須在任何文字編輯器中開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -48,65 +48,51 @@ uid: zh-Hant/developer/plugins/how-to-write-plugin-4.40
     ```
 
     > [!TIP]
-    > Where **PLUGIN_OUTPUT_DIRECTORY** should be replaced with the plugin name, for example, `Payments.PayPalStandard`.
+    > 其中 **PLUGIN_OUTPUT_DIRECTORY** 應替換為外掛名稱，例如 `Payments.PayPalStandard`。
     >
-    > We do it this way to be able to use a new approach to add third-party references which were introduced in .NET Core. But it's not required. Moreover, references from already referenced libraries will be loaded automatically. So it is very convenient.
+    > 我們這樣做是為了能夠使用 .NET Core 引入的添加第三方參考的新方法。雖然這不是必需的，但自動載入已參考函式庫的參考非常方便。
 
-1. The next step is creating a `plugin.json` file required for each plugin. This file contains meta-information describing your plugin. Just copy this file from any other existing plugin and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:zh-Hant/developer/plugins/plugin_json)
+1. 下一個步驟是建立每個外掛都必須具備的 `plugin.json` 檔案。此檔案包含描述您外掛的中繼資訊。只需從任何現有的外掛複製此檔案並根據您的需求進行修改即可。有關 `plugin.json` 檔案的資訊，請參閱 [plugin.json 檔案](xref:zh-Hant/developer/plugins/plugin_json)。
 
-1. The last required step is to create a class that implements **`IPlugin`** interface (`Nop.Services.Plugins` namespace). nopCommerce has **`BasePlugin`** class which already implements some `IPlugin` methods and allows you to avoid source code duplication. nopCommerce also provides you with some specific interfaces derived from `IPlugin`. For example, we have the `IPaymentMethod` interface which is used for creating new payment method plugins. It contains some methods which are specific only for payment methods such as *`ProcessPayment()`* or *`GetAdditionalHandlingFee()`*. Currently, nopCommerce has the following specific plugin interfaces:
+1. 最後一個必要步驟是建立一個實作 **`IPlugin`** 介面（位於 `Nop.Services.Plugins` 命名空間）的類別。nopCommerce 提供了 **`BasePlugin`** 類別，它已經實作了一些 `IPlugin` 方法，讓您可以避免原始碼重複。nopCommerce 還提供了一些衍生自 `IPlugin` 的特定介面。例如，我們有用於建立新付款方式外掛的 `IPaymentMethod` 介面。它包含一些僅適用於付款方式的方法，例如 *`ProcessPayment()`* 或 *`GetAdditionalHandlingFee()`*。目前，nopCommerce 具有以下特定的外掛介面：
 
-   - **IPaymentMethod**. These plugins are used for payment processing.
-   - **IShippingRateComputationMethod**. These plugins are used for retrieving accepted delivery methods and appropriate shipping rates. For example, UPS, UPS, FedEx, etc.
-   - **IPickupPointProvider**. These plugins are used for providing pickup points.
-   - **ITaxProvider**. Tax providers are used for getting tax rates.
-   - **IExchangeRateProvider**. Used for getting currency exchange rate.
-   - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
-   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
-   - **IMultiFactorAuthenticationMethod**. Used for creating multi-factor authentication methods such as *GoogleAuthenticator*, etc.
+   - **IPaymentMethod**：這些外掛用於處理付款。
+   - **IShippingRateComputationMethod**：這些外掛用於擷取可用的配送方式和相應的運費計算。例如 UPS、FedEx 等。
+   - **IPickupPointProvider**：這些外掛用於提供取貨點。
+   - **ITaxProvider**：稅務提供程序用於獲取稅率。
+   - **IExchangeRateProvider**：用於獲取貨幣匯率。
+   - **IDiscountRequirementRule**：允許您建立新的折扣規則，例如「顧客的結帳國家/地區必須是……」。
+   - **IExternalAuthenticationMethod**：用於建立外部驗證方式，例如 Facebook、Twitter、OpenID 等。
+   - **IMultiFactorAuthenticationMethod**：用於建立多重驗證方式，例如 *GoogleAuthenticator* 等。
      >[!NOTE]
-     > This is a new interface, since version 4.40 we provide the corresponding infrastructure for MFA integrations out of the box.
-
-   - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on your site's left column.
-   - **IMiscPlugin**. If your plugin doesn't fit any of the interfaces above.
+     > 這是一個新的介面，自 4.40 版本起，我們開箱即用地提供了對應的 MFA 整合基礎架構。
+   - **IWidgetPlugin**。它允許您建立小部件。小部件會呈現在您網站的某些區塊中。例如，它可以是您網站左側欄中的「即時交談」區塊。
+   - **IMiscPlugin**。如果您的外掛不適用於上述任何介面，請使用此介面。
 
 > [!IMPORTANT]
-> After each project build, clean the solution before making changes. Some resources will be cached and can lead to developer insanity.
+> 在每次建置專案後，進行任何變更前，請先清理方案（Clean Solution）。某些資源會被快取，這可能會導致開發人員陷入混亂。
 >
-> You may need to rebuild your solution after adding your plugin. If you do not see DLLs for your plugin under `Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY`, you need to rebuild your solution. nopCommerce will not list your plugin in the *Local Plugins* page if your DLLs do not exist in the correct folder in `Nop.Web`.
+> 新增外掛後，您可能需要重新建置您的方案。如果您在 `Nop.Web\Plugins\PLUGIN_OUTPUT_DIRECTORY` 下沒有看到外掛的 DLL 檔案，您需要重新建置您的方案。如果 DLL 檔案不存在於 `Nop.Web` 的正確資料夾中，nopCommerce 將不會在*在地化外掛（Local Plugins）*頁面中列出您的外掛。
 
-## Handling requests. Controllers, models, and views
+## 處理請求。控制器、模型與檢視
 
-Now you can see the plugin by going to **Admin area → Configuration → Local Plugins**. But as you guessed our plugin does nothing. It does not even have a user interface for its configuration. Let's create a page to configure the plugin.
+現在，您可以前往 **後台管理 → 設定 → 本地外掛** 查看該外掛。但正如您所料，我們的外掛目前什麼功能都沒有。它甚至沒有用於設定的使用者介面。讓我們建立一個頁面來設定此外掛。
 
-What we need to do now is create a controller, a model, and a view.
+我們現在需要做的是建立一個控制器 (Controller)、一個模型 (Model) 和一個檢視 (View)。
 
-1. MVC controllers are responsible for responding to requests made against an ASP.NET Core MVC website. Each browser request is mapped to a particular controller.
-1. A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an `ASP.NET Core MVC` application.
-1. An MVC model contains all of your application logic that is not contained in a view or a controller.
+1. MVC 控制器負責回應對 ASP.NET Core MVC 網站發出的請求。每個瀏覽器請求都會對應到特定的控制器。
+1. 檢視包含傳送到瀏覽器的 HTML 標記與內容。在開發 `ASP.NET Core MVC` 應用程式時，檢視就等同於一個網頁。
+1. MVC 模型包含所有未包含在檢視或控制器中的應用程式邏輯。
 
-You can find more information about the MVC pattern [here](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-5.0).
+您可以找到更多關於 MVC 模式的資訊 [here](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-5.0)。
 
-So let's start:
+那麼讓我們開始吧：
 
-- **Create the model**. Add a **Models** folder in the new plugin, and then add a new model class that fits your need.
-- **Create the view**. Add a **Views** folder in the new plugin, and then add a cshtml file named `Configure.cshtml`. Set **"Build Action"** property of the view file is set to **"Content"**, and the **"Copy to Output Directory"** property is set to **"Copy always"**. Note that the configuration page should use the `_ConfigurePlugin` layout.
-- Also make sure that you have the `_ViewImports.cshtml` file into your \Views directory. You can just copy it from any other existing plugin.
-- **Create the controller**. Add a **Controllers** folder in the new plugin, and then add a new controller class. A good practice is to name plugin controllers `{Group}{Name}Controller.cs`. For example, PaymentPayPalStandardController. Of course, it's not a requirement to name controllers this way (but just a recommendation). Then create an appropriate action method for the configuration page (in the admin area). Let's name it *`Configure`*. Prepare a model class and pass it to the following view using a physical view path: `~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`.
-- Use the following attributes for your action method:
-
-    ```csharp
-    [AutoValidateAntiforgeryToken]
-    [AuthorizeAdmin] //confirms access to the admin panel
-    [Area(AreaNames.Admin)] //specifies the area containing a controller or action
-    ```
-
-    > [!TIP]
-    > You can also add these attributes directly to the controller. In this case, there is no need to tag each method with them.
-
-    For example, open `PayPalStandard` payment plugin and look at its implementation of `PaymentPayPalStandardController`.
-
-Then for each plugin that has a configuration page, you should specify a configuration URL. Base class named `BasePlugin` has `GetConfigurationPageUrl` method which returns a configuration URL:
+- **建立模型**。在新的外掛中加入一個 **Models** 資料夾，然後新增一個符合您需求的模型類別。
+- **建立檢視**。在新的外掛中加入一個 **Views** 資料夾，然後新增一個名為 `Configure.cshtml` 的 cshtml 檔案。將該檢視檔案的 **「建置動作」 (Build Action)** 屬性設定為 **「內容」 (Content)**，並將 **「複製到輸出目錄」 (Copy to Output Directory)** 屬性設定為 **「永遠複製」 (Copy always)**。請注意，設定頁面應使用 `_ConfigurePlugin` 版面配置。
+- 同時請確保您的 \Views 目錄中有 `_ViewImports.cshtml` 檔案。您可以直接從任何其他現有的外掛中複製它。
+- **建立控制器**。在新的外掛中加入一個 **Controllers** 資料夾，然後新增一個控制器類別。一個良好的做法是將外掛控制器命名為 `{Group}{Name}Controller.cs`。例如：PaymentPayPalStandardController。當然，這並非強制性要求（僅為建議）。接著，為設定頁面（在後台管理區域）建立適當的動作方法。讓我們將其命名為 *`Configure`*。準備一個模型類別，並使用實體檢視路徑將其傳遞給檢視：`~/Plugins/{PluginOutputDirectory}/Views/Configure.cshtml`。
+- 為您的動作方法使用以下屬性：
 
 ```csharp
 public override string GetConfigurationPageUrl()
@@ -115,29 +101,29 @@ public override string GetConfigurationPageUrl()
 }
 ```
 
-Where **{CONTROLLER_NAME}** is the name of your controller and **{ACTION_NAME}** is the name of the action (usually it's `Configure`).
+其中 **{CONTROLLER_NAME}** 是您的控制器名稱，而 **{ACTION_NAME}** 是動作名稱（通常為 `Configure`）。
 
-Once you have installed your plugin and added the configuration method you will find a link to configure your plugin under **Admin → Configuration → Local Plugins**.
+一旦安裝了外掛並加入了設定方法，您就會在 **後台管理 → 設定 → 本地外掛** 下方找到連結來設定您的外掛。
 
 > [!TIP]
-> The easiest way to complete the steps described above is by opening any other plugin and copying these files into your plugin project. Then just rename appropriate classes and directories.
+> 完成上述步驟最簡單的方法是打開任何其他外掛，並將這些檔案複製到您的外掛專案中。然後只需重新命名適當的類別與目錄即可。
 
-For example, the project structure of the *PayPalStandard* plugin looks like the image below:
+例如，*PayPalStandard* 外掛的專案結構如下圖所示：
 
 ![p3](_static/how-to-write-plugin-4.40/write_plugin_4.40_3.jpg)
 
-## Handling "InstallAsync", "UninstallAsync" and "UpdateAsync" methods
+## 處理 "InstallAsync"、"UninstallAsync" 與 "UpdateAsync" 方法
 
-This step is optional. Some plugins can require additional logic during plugin installation. For example, a plugin can insert new locale resources. So open your `IPlugin` implementation (in most cases it'll be derived from the `BasePlugin` class) and override the following methods:
+此步驟為選填。有些外掛在安裝過程中可能需要額外的邏輯。例如，外掛可能需要插入新的在地化資源。因此，請開啟您的 `IPlugin` 實作（大多數情況下會繼承自 `BasePlugin` 類別）並覆寫下列方法：
 
-1. **InstallAsync**. This method will be invoked during plugin installation. You can initialize any settings here, insert new locale resources, or create some new database tables (if required).
-1. **UninstallAsync**. This method will be invoked during plugin uninstallation.
-1. **UpdateAsync**. This method will be invoked during plugin update (when its version is changed in the `plugin.json` file).
+1. **InstallAsync**。此方法將在外掛安裝期間被呼叫。您可以在此初始化任何設定、插入新的在地化資源，或建立新的資料庫資料表（如有需要）。
+1. **UninstallAsync**。此方法將在外掛解除安裝期間被呼叫。
+1. **UpdateAsync**。此方法將在外掛更新期間（當其版本在 `plugin.json` 檔案中變更時）被呼叫。
 
 > [!IMPORTANT]
-> If you override one of these methods, do not hide its base implementation.
+> 如果您覆寫了這些方法之一，請勿隱藏其基礎實作。
 
-For example, overridden `InstallAsync` method should include the following method call: *`base.Install()`*. The `InstallAsync` method of the *PayPalStandard* plugin looks like the code below
+例如，覆寫後的 `InstallAsync` 方法應包含下列方法呼叫：*`base.Install()`*。*PayPalStandard* 外掛的 `InstallAsync` 方法如下方程式碼所示：
 
 ```csharp
 public override async Task InstallAsync()
@@ -156,13 +142,13 @@ public override async Task InstallAsync()
 ```
 
 > [!TIP]
-> The list of installed plugins is located in `\App_Data\plugins.json`. The list is created during installation.
+> 已安裝外掛的清單位於 `\App_Data\plugins.json`。該清單是在安裝過程中建立的。
 
-## Routes
+## 路由
 
-Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
+在這裡，我們將了解如何註冊外掛路由。ASP.NET Core 路由負責將傳入的瀏覽器請求映射到特定的 MVC 控制器動作。您可以找到更多關於路由的資訊 [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing)。請遵循以下步驟：
 
-If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following `RouteProvider` class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by *PayPal* plugin):
+如果您需要新增自訂路由，請建立 `RouteProvider.cs` 檔案。它會將外掛路由通知 nopCommerce 系統。例如，以下的 `RouteProvider` 類別新增了一個路由，您可以透過開啟網頁瀏覽器並前往 `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` 這個網址（由 *PayPal* 外掛使用）來存取它：
 
 ```csharp
 public partial class RouteProvider : IRouteProvider
@@ -179,12 +165,12 @@ public partial class RouteProvider : IRouteProvider
 
 ## 升級 nopCommerce 可能會導致外掛失效
 
-有些外掛可能會過時，無法再與較新版本的 nopCommerce 相容。如果您在升級至新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新的版本可用。許多外掛開發者會更新其外掛以適應新版本，但有些則不會，因此其外掛可能會隨著 nopCommerce 的改進而變得過時。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
+部分外掛可能會過期，導致無法在較新版本的 nopCommerce 中運作。如果您在升級至新版本後遇到問題，請刪除該外掛，並前往 nopCommerce 官方網站查看是否有更新的版本可用。許多外掛開發者會更新其外掛以適應新版本，然而，部分開發者可能不會進行更新，導致其外掛隨著 nopCommerce 的改進而變得過時。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案，並更新 **SupportedVersions** 欄位即可。
 
 ## 結論
 
-希望這篇文章能幫助您開始使用 nopCommerce，並為開發更複雜的外掛做好準備。
+希望這能幫助您開始使用 nopCommerce，並為您構建更複雜的外掛做好準備。
 
 ## 外掛範本
 
-您可以使用我們為 nopCommerce 新外掛提供的 Visual Studio 範本。這可以為開發者節省大量時間，因為開發者無需再手動執行所有初始步驟，例如建立資料夾（Controllers、Views、Models 等）、建立其他必要檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContext、plugin.json 等）、設定、專案參考等。請點選[這裡](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)取得範本與安裝說明。
+您可以針對新的 nopCommerce 外掛使用我們的 Visual Studio 範本。這可以為開發人員節省大量時間，因為現在他們不必手動執行所有的初始步驟。例如資料夾建立（Controllers、Views、Models 等）、其他必要檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContext、plugin.json 等）、設定、專案參考等。請參閱該連結以及安裝說明 [here](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
