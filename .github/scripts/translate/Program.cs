@@ -178,7 +178,7 @@ public class PlaceholderContext
 public class Translator
 {
     private const int CooldownMs = 4_000;
-    private const int ChunkThreshold = 25_000;
+    private const int ChunkThreshold = 8_000;
     private const string ModelName = "gemini-3.1-flash-lite-preview";
 
     // 429 專用：等待 66 秒後重試一次，若還是 429 則切換 key
@@ -696,7 +696,6 @@ public class Translator
             {
                 var translated = await CallGeminiAsync(content);
 
-                // 如果內容超過 200 字但完全沒有中文字元，視為翻譯失敗觸發重試
                 // 移除佔位符後再判斷，避免「只有佔位符」的段落誤觸發
                 var cleanOriginal   = _rePlaceholder.Replace(content,    "").Trim();
                 var cleanTranslated = _rePlaceholder.Replace(translated, "").Trim();
@@ -705,12 +704,24 @@ public class Translator
                 var enChars = cleanOriginal.Count(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
                 // 統計譯文中文字元數量
                 var zhChars = cleanTranslated.Count(c => c >= 0x4E00 && c <= 0x9FFF);
+                // 統計譯文英文字元數量（理想上應該大幅減少）
+                var enCharsTranslated = cleanTranslated.Count(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 
-                // 原文有足夠英文（>50 字元）但譯文幾乎沒有中文（不到 10 字），視為翻譯失敗
-                if (enChars > 50 && zhChars < 10)
+                if (enChars > 50)
                 {
-                    Console.WriteLine($"  ⚠️ 偵測到翻譯不全（原文英文字元：{enChars}，譯文中文字元：{zhChars}），觸發重試...");
-                    throw new Exception("Translation failed: Chinese output insufficient relative to English input.");
+                    // 條件 1：譯文完全沒有中文
+                    var noZh = zhChars < 10;
+                    // 條件 2：譯文英文仍佔大宗（超過 60%），代表翻譯不全
+                    // 注意：英文術語、類別名不可避免，所以用 60% 而非 100%
+                    var totalChars = zhChars + enCharsTranslated;
+                    var enRatio = totalChars > 0 ? (double)enCharsTranslated / totalChars : 0;
+                    var tooManyEn = enChars > 200 && enRatio > 0.6;
+
+                    if (noZh || tooManyEn)
+                    {
+                        Console.WriteLine($"  ⚠️ 偵測到翻譯不全（原文英文:{enChars} → 譯文英文:{enCharsTranslated} 中文:{zhChars} 英文比:{enRatio:P0}），觸發重試...");
+                        throw new Exception("Translation failed: Chinese output insufficient relative to English input.");
+                    }
                 }
 
                 return translated;
