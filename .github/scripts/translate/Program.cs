@@ -552,19 +552,24 @@ public class Translator
         string translated;
         try
         {
+            // 先在整篇層面做 Placeholder 保護（保護 code block、URL 等）
+            var ctx = new PlaceholderContext();
+            var protectedContent = ctx.Extract(content);
+
             string raw;
-            if (content.Length > ChunkThreshold)
+            if (protectedContent.Length > ChunkThreshold)
             {
-                // 大檔案：先按標題切段，每段再獨立翻譯（內部會自動處理截斷）
-                raw = await TranslateInChunksAsync(content);
+                // 大檔案：按標題切段，每段獨立翻譯
+                raw = await TranslateInChunksAsync(protectedContent);
             }
             else
             {
-                // 小檔案：整篇一次處理，若被截斷會自動對半切
-                raw = await TranslateChunkWithAutoSplit(content);
+                // 小檔案：整篇一次翻
+                raw = await TranslateWithRetryAsync(protectedContent);
             }
 
-            translated = PostProcess(raw);
+            // 先還原 placeholder，再做 PostProcess
+            translated = PostProcess(ctx.Restore(raw));
         }
         catch (QuotaExhaustedException)
         {
@@ -832,145 +837,30 @@ public class Translator
         for (int i = 0; i < sections.Count; i++)
         {
             Console.WriteLine($"    段落 {i + 1}/{sections.Count}（{sections[i].Length:N0} 字元）...");
-
-            var translated = await TranslateChunkWithAutoSplit(sections[i]);
-            results.Add(translated);
-
+            results.Add(await TranslateWithRetryAsync(sections[i]));
             if (i < sections.Count - 1)
                 await Task.Delay(CooldownMs);
         }
-        // 用單換行合併（各段已包含自己的結尾換行，不額外插入空行以免破壞格式）
-        return string.Join("\n", results);
-    }
-
-    /// <summary>
-    /// 翻譯單一 chunk。如果 Gemini 輸出被截斷（MAX_TOKENS），自動對半切再分別翻譯。
-    /// 只要內容還能切開就會持續切，直到每段都能翻譯成功。
-    /// </summary>
-    private async Task<string> TranslateChunkWithAutoSplit(string chunk)
-    {
-        var ctx = new PlaceholderContext();
-        var protectedChunk = ctx.Extract(chunk);
-
-        try
-        {
-            var rawTranslated = await TranslateWithRetryAsync(protectedChunk);
-            return ctx.Restore(rawTranslated);
-        }
-        catch (OutputTruncatedException)
-        {
-            // 嘗試對半切
-            var subChunks = SplitInHalf(chunk);
-
-            // 切不開了（只剩一段），無法再處理
-            if (subChunks.Count < 2)
-            {
-                throw new Exception(
-                    $"段落無法再切小（{chunk.Length} 字元但切不出有意義的兩段），" +
-                    $"Gemini 無法一次翻完這段內容。");
-            }
-
-            Console.WriteLine($"    🔀 輸出被截斷，自動對半切割後重翻（{chunk.Length} → {subChunks[0].Length} + {subChunks[1].Length} 字元）...");
-
-            var subResults = new List<string>();
-            for (int j = 0; j < subChunks.Count; j++)
-            {
-                subResults.Add(await TranslateChunkWithAutoSplit(subChunks[j]));
-                if (j < subChunks.Count - 1)
-                    await Task.Delay(CooldownMs);
-            }
-            return string.Join("\n", subResults);
-        }
-    }
-
-    // SplitInHalf 與 SplitOnBlankLines 共用的 code block 偵測
-    private static readonly Regex _reCodeBlockFence = new(
-        @"^(```|~~~)", RegexOptions.Compiled);
-
-    /// <summary>
-    /// 在空行處將內容大致對半切開。
-    /// </summary>
-    private static List<string> SplitInHalf(string content)
-    {
-        var lines = content.Split('\n');
-        int midPoint = lines.Length / 2;
-        bool inCodeBlock = false;
-
-        // 從中間點往兩邊找最近的空行（不在 code block 內的）
-        int bestSplit = -1;
-        for (int offset = 0; offset < lines.Length / 2; offset++)
-        {
-            foreach (var candidate in new[] { midPoint + offset, midPoint - offset })
-            {
-                if (candidate < 1 || candidate >= lines.Length) continue;
-
-                // 計算到 candidate 行為止的 code block 狀態
-                inCodeBlock = false;
-                for (int k = 0; k < candidate; k++)
-                {
-                    if (_reCodeBlockFence.IsMatch(lines[k]))
-                        inCodeBlock = !inCodeBlock;
-                }
-
-                if (!inCodeBlock && lines[candidate].Trim().Length == 0)
-                {
-                    bestSplit = candidate;
-                    break;
-                }
-            }
-            if (bestSplit >= 0) break;
-        }
-
-        // 找不到合適的空行就硬切中間
-        if (bestSplit < 0)
-            bestSplit = midPoint;
-
-        var first = string.Join("\n", lines.Take(bestSplit)).TrimEnd();
-        var second = string.Join("\n", lines.Skip(bestSplit)).TrimStart();
-
-        var result = new List<string> { first, second }
-            .Where(s => s.Trim().Length > 0)
-            .ToList();
-
-        // 防禦：如果切完後最大的一段仍然等於原本內容（代表沒切小），視為無法切割
-        if (result.Count > 0 && result.Max(s => s.Length) >= content.TrimEnd().Length)
-            return new List<string>();
-
-        return result;
+        return string.Join("\n\n", results);
     }
 
     private static List<string> SplitSafely(string content)
     {
-        // 第一步：用 ## / ### 標題作為切割點
+        // 用 ## / ### 標題作為切割點，每個章節獨立翻譯（不合併）
         var rawSections = Regex
             .Split(content, @"(?=^#{2,3} )", RegexOptions.Multiline)
             .Where(s => s.Trim().Length > 0)
             .ToList();
 
-        // 第二步：合併過小的段落到前一段（避免碎片化）
-        var merged = new List<string>();
-        foreach (var section in rawSections)
-        {
-            if (merged.Count > 0 && merged[^1].Length + section.Length <= ChunkThreshold)
-            {
-                // 前一段 + 當前段合併後仍不超過上限，就合併
-                merged[^1] += "\n" + section;
-            }
-            else
-            {
-                merged.Add(section);
-            }
-        }
-
-        // 第三步：超過上限的大段落，在空行處切開
         var result = new List<string>();
-        foreach (var section in merged)
+        foreach (var section in rawSections)
         {
             if (section.Length <= ChunkThreshold)
             {
                 result.Add(section);
                 continue;
             }
+            // 超過上限的大段落，在空行處切開
             var subChunks = SplitOnBlankLines(section);
             result.AddRange(subChunks);
         }
