@@ -10,7 +10,7 @@ on:
         required: false
         default: 'false'
       specific_file:
-        description: '只翻譯單一檔案（例如：en/getting-started/index.md）'
+        description: '只翻譯單一檔案或目錄（例如：en/getting-started/index.md 或 en/developer/plugins）'
         required: false
         default: ''
 
