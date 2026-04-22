@@ -718,16 +718,13 @@ public class Translator
                     var noZh = zhChars < 10;
 
                     // 條件 2：譯文英文字元相比原文幾乎沒有減少（翻譯根本沒發生）
-                    // 正常翻譯後英文字元應大幅減少（保留技術術語仍會少 50% 以上）
+                    // 正常翻譯後英文字元應大幅減少（保留術語仍會減少 40% 以上）
                     var enReductionRatio = enChars > 0 ? (double)(enChars - enCharsTranslated) / enChars : 1.0;
-                    var notTranslated = enChars > 300 && enReductionRatio < 0.3; // 英文減少不到 30%
+                    var notTranslated = enChars > 300 && enReductionRatio < 0.4;
 
-                    // 條件 3：譯文裡還有英文 ## 標題（最強信號：章節根本沒翻）
-                    var hasEnglishHeadings = Regex.IsMatch(cleanTranslated, @"(?m)^#{1,6} [A-Z][a-z]");
-
-                    if (noZh || notTranslated || hasEnglishHeadings)
+                    if (noZh || notTranslated)
                     {
-                        var reason = noZh ? "無中文" : notTranslated ? $"英文減少量不足({enReductionRatio:P0})" : "含英文標題";
+                        var reason = noZh ? "無中文" : $"英文減少量不足({enReductionRatio:P0})";
                         Console.WriteLine($"  ⚠️ 偵測到翻譯不全（{reason}，原文英文:{enChars} 譯文英文:{enCharsTranslated} 中文:{zhChars}），觸發重試...");
                         throw new Exception("Translation failed: Chinese output insufficient relative to English input.");
                     }
