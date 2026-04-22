@@ -7,17 +7,17 @@ uid: zh-Hant/developer/plugins/how-to-write-plugin-4.20
 
 # 如何為 nopCommerce 4.20 編寫外掛
 
-外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有多種不同類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送方式計算（如 UPS、USP、FedEx）、小部件（如「線上交談」區塊）以及許多其他類型。nopCommerce 預設已內建許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否已經有人開發了符合您需求的外掛。如果沒有，本文將引導您完成建立外掛的過程。
+外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有多種不同類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USP、FedEx）、小部件（如「線上客服」區塊）等等。nopCommerce 本身已預先安裝了許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否有人已經開發出符合您需求的外掛。如果沒有，本文將引導您完成建立外掛的過程。
 
-## 外掛結構、必要檔案與存放位置
+## 外掛的結構、必要檔案與位置
 
-1. 首先，您需要在解決方案中建立一個新的「類別庫 (Class Library)」專案。將所有外掛放置在解決方案根目錄下的 `\Plugins` 資料夾是一個良好的實踐（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，後者用於已部署的外掛）。將所有外掛放置在「Plugins」解決方案資料夾中是一個良好的習慣（關於解決方案資料夾的更多資訊，請參閱[此處](http://msdn.microsoft.com/library/sx2027y2.aspx)）。
+1. 首先，您需要在解決方案中建立一個新的「類別庫 (Class Library)」專案。建議將所有外掛放置在解決方案根目錄下的 `\Plugins` 資料夾中（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，該目錄是用於存放已部署的外掛）。將所有外掛歸類在「Plugins」解決方案資料夾中是一個良好的習慣（關於解決方案資料夾的更多資訊，請參閱[此處](http://msdn.microsoft.com/library/sx2027y2.aspx)）。
 
-    建議的外掛專案命名方式為 "Nop.Plugin.{Group}.{Name}"。{Group} 是您的外掛類別（例如 "Payment" 或 "Shipping"）。{Name} 是您的外掛名稱（例如 "PayPalStandard"）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如 "MyGreatPlugin"。
+    外掛專案的建議命名格式為「Nop.Plugin.{Group}.{Name}」。其中 {Group} 為您的外掛類別（例如「Payment」或「Shipping」），{Name} 為您的外掛名稱（例如「PayPalStandard」）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求。您可以為外掛選擇任何名稱，例如「MyGreatPlugin」。
 
     ![p1](_static/how-to-write-plugin-4.20/write_plugin_4.20_1.jpg)
 
-1. 外掛專案建立完成後，您必須使用任何文字編輯器開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
+1. 建立外掛專案後，您必須使用任何文字編輯器開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -166,12 +166,12 @@ public partial class RouteProvider : IRouteProvider
 
 ## 升級 nopCommerce 可能導致外掛失效
 
-某些外掛可能會過時，且無法再與較新版本的 nopCommerce 相容。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站，查看是否有更新的版本可用。許多外掛作者會更新其外掛以適應新版本，但並非所有人皆會如此，因此有些外掛可能會隨著 nopCommerce 的改進而變得過時。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
+某些外掛可能會過時，無法再與較新版本的 nopCommerce 相容。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站，查看是否有更新的版本可用。許多外掛作者會更新其外掛以適應新版本，然而，有些作者可能不會更新，導致其外掛隨著 nopCommerce 的改進而變得不再適用。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
 
 ## 結論
 
-希望這能幫助您開始使用 nopCommerce，並準備好建置更複雜的外掛。
+希望這能協助您開始使用 nopCommerce，並為開發更複雜的外掛做好準備。
 
 ## 外掛範本
 
-您可以為新的 nopCommerce 外掛使用我們的 Visual Studio 範本。它可以為開發人員節省大量時間，因為開發人員不再需要手動執行所有初始步驟。例如：建立資料夾（Controllers、Views、Models 等）、建立其他必要檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContex、plugin.json 等）、進行組態設定、加入專案參考等。請在[此處](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)找到範本及其安裝說明。
+您可以使用我們為 nopCommerce 新外掛提供的 Visual Studio 範本。這可以為開發人員節省大量時間，因為他們不需要手動執行所有的初始步驟，例如建立資料夾（Controllers、Views、Models 等）、建立其他必要檔案（DependencyRegistrar.cs、_ViewImports.cshtml、ObjectContext、plugin.json 等）、進行設定以及專案參考等。請在此處[查看範本及其安裝說明](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)。
