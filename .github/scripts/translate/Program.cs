@@ -226,10 +226,7 @@ public class Translator
     private static GenerativeModel CreateModel(string apiKey)
     {
         return new GoogleAI(apiKey)
-            .GenerativeModel(
-                model: ModelName,
-                systemInstruction: new Content(SystemPrompt.Text)
-            );
+            .GenerativeModel(model: ModelName);
     }
 
     /// <summary>
@@ -770,6 +767,7 @@ public class Translator
     private async Task<string> CallGeminiAsync(string content)
     {
         var prompt = $"""
+            {SystemPrompt.Text}
             【任務示範】
             即使段落中包含 [[PROTECT_NNNN]]，也必須翻譯其前後的說明。
             輸入：The [[PROTECT_0001]] is a plugin interface.
@@ -791,10 +789,11 @@ public class Translator
 
         // 偵測輸出是否被截斷（finishReason 不是 STOP）
         var finishReason = response.Candidates?.FirstOrDefault()?.FinishReason;
-        if (finishReason == FinishReason.MaxTokens)
+        if (finishReason?.ToString()?.Contains("MaxTokens", StringComparison.OrdinalIgnoreCase) == true ||
+            finishReason?.ToString()?.Contains("MAX_TOKENS", StringComparison.OrdinalIgnoreCase) == true)
         {
             throw new OutputTruncatedException(
-                $"Gemini 輸出被截斷（finishReason=MAX_TOKENS），此段落太大需要再切細。已輸出 {text.Length} 字元。");
+                $"Gemini 輸出被截斷（finishReason={finishReason}），此段落太大需要再切細。已輸出 {text.Length} 字元。");
         }
 
         // 清除 Gemini 可能回吐的 prompt 分隔標記
