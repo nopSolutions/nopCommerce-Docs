@@ -163,7 +163,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private const int ChunkThreshold = 24_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
-        .GenerativeModel(model: "gemini-3.1-flash-lite");
+        .GenerativeModel(model: "gemini-3.1-flash-lite-preview");
 
     private readonly AsyncRetryPolicy _retryPolicy = Policy
         .Handle<Exception>(ex =>
@@ -208,6 +208,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         Console.WriteLine($"\n📚 找到 {files.Count} 個 .md 檔案\n{new string('─', 55)}");
 
         int success = 0, skipped = 0, failed = 0;
+        int consecutiveFailures = 0;
+        const int MaxConsecutiveFailures = 20;
 
         for (int i = 0; i < files.Count; i++)
         {
@@ -232,7 +234,23 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             }
 
             var result = await TranslateFileAsync(sourcePath, targetPath);
-            if (result) success++; else failed++;
+            if (result)
+            {
+                success++;
+                consecutiveFailures = 0;
+            }
+            else
+            {
+                failed++;
+                consecutiveFailures++;
+                if (consecutiveFailures >= MaxConsecutiveFailures)
+                {
+                    Console.WriteLine($"\n⛔ 連續失敗 {MaxConsecutiveFailures} 次，今日 API quota 可能已耗盡，提早結束。");
+                    Console.WriteLine($"   已成功：{success}  已略過：{skipped}  失敗：{failed}");
+                    Console.WriteLine($"   下次排程執行時會繼續補翻剩餘檔案。");
+                    break;
+                }
+            }
 
             if (i < files.Count - 1)
                 await Task.Delay(CooldownMs);
@@ -327,6 +345,13 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         }
         catch (Exception ex)
         {
+            // 404 表示模型不存在，繼續重試也沒用，立刻終止整個程式
+            if (ex.Message.Contains("404") || ex.Message.Contains("NOT_FOUND") || ex.Message.Contains("not found for API"))
+            {
+                Console.Error.WriteLine($"\n⛔ 致命錯誤：模型不存在或 API 版本不支援，請確認模型名稱。");
+                Console.Error.WriteLine($"   錯誤訊息：{ex.Message[..Math.Min(200, ex.Message.Length)]}");
+                Environment.Exit(2);
+            }
             Console.WriteLine($"  ❌ 翻譯失敗：{ex.Message}");
             return false;
         }
