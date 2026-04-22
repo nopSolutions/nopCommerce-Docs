@@ -163,7 +163,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private const int ChunkThreshold = 24_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
-        .GenerativeModel(model: "gemini-flash-latest");
+        .GenerativeModel(model: "gemini-3.1-flash-lite");
 
     private readonly AsyncRetryPolicy _retryPolicy = Policy
         .Handle<Exception>(ex =>
@@ -454,37 +454,139 @@ public static class SystemPrompt
         8. 內容中出現 [[PROTECT_NNNN]] 格式的佔位符，請原樣保留，不要翻譯、不要移除
 
         【術語對照表（務必統一使用）】
+        ── 核心架構 ──
         Plugin              → 外掛
-        Widget              → 區塊
+        Widget              → 小部件
         Theme               → 佈景主題
-        Store               → 商店
-        Catalog             → 商品目錄
-        Customer            → 顧客
-        Order               → 訂單
-        Vendor              → 供應商
-        Shipping            → 配送
-        Payment             → 付款
-        Discount            → 折扣
-        Tax                 → 稅率
-        Warehouse           → 倉庫
-        Newsletter          → 電子報
-        Reward Points       → 紅利點數
+        Middleware          → 中介軟體
+        Scheduled Task      → 排程工作
+        Event               → 事件
         Dependency Injection → 依賴注入
         Entity              → 實體
         Repository          → 儲存庫
         Service             → 服務
+        Factory             → 工廠（指 ModelFactory 等類別）
+        Mapping             → 映射（指 AutoMapper 或 DB Mapping）
+        Cache               → 快取
+
+        ── 商店管理 ──
+        Store               → 商店
         Admin panel         → 後台管理
         Storefront          → 前台網站
+        Multi-store         → 多商店
+        Maintenance         → 維護模式
+        Activity Log        → 活動日誌
+        ACL                 → 權限控制（Access Control List）
         SEO                 → SEO（不翻譯）
-        Cache               → 快取
-        Middleware          → 中介軟體
-        Scheduled Task      → 排程工作
-        Event               → 事件
+
+        ── 商品目錄 ──
+        Catalog             → 商品目錄
+        Category            → 分類（與 Catalog 商品目錄區隔）
+        Manufacturer        → 製造商
         Attribute           → 屬性
         Specification       → 規格
-        AJAX Cart           → AJAX 購物車
+        Product Tag         → 商品標籤
+        Product Review      → 商品評論
         Bundled Products    → 組合商品
-        Message Template    → 訊息範本
+        Downloadable Product → 可下載商品
+        Recurring Product   → 定期購商品
+        Rental Product      → 租借商品
+        Back-in-stock       → 補貨通知
+        Pre-order           → 預購
+        SKU                 → SKU（不翻譯）
+        Inventory           → 庫存
+
+        ── 顧客與訂單 ──
+        Customer            → 顧客
+        Customer Role       → 顧客角色
+        Order               → 訂單
+        Order Status        → 訂單狀態
+        Payment Status      → 付款狀態
+        Shipment            → 出貨單
+        Return Request      → 退貨申請
+        Shopping Cart       → 購物車
+        AJAX Cart           → AJAX 購物車
+        Wishlist            → 願望清單
+        Checkout            → 結帳
+        Pickup Point        → 取貨點
+
+        ── 配送與付款 ──
+        Shipping            → 配送
+        Shipping Method     → 配送方式
+        Payment             → 付款
+        Warehouse           → 倉庫
+        Vendor              → 供應商
+        Drop shipping       → 直運
+
+        ── 行銷與促銷 ──
+        Discount            → 折扣
+        Coupon Code         → 優惠碼
+        Tier Price          → 階梯價格（依數量變動的價格）
+        Gift Card           → 禮品卡
+        Reward Points       → 紅利點數
+        Affiliate           → 推廣夥伴
+        Cross-sell          → 交叉銷售
+        Up-sell             → 向上銷售
+        Newsletter          → 電子報
+
+        ── 內容管理 ──
+        Topic               → 內容頁面（nopCommerce 特有稱呼）
+        Message Template    → 訊息範本（主要指自動發出的 Email）
+        Blog                → 部落格
+        News                → 最新消息
+        Poll                → 投票
+        Forum               → 論壇
+
+        ── 財務 ──
+        Tax                 → 稅率
+        Tax Category        → 稅率類別
+        Currency            → 貨幣
+        Exchange Rate       → 匯率
+
+        ── 系統與在地化 ──
+        Language            → 語言
+        Localization        → 在地化
+        Multi-Factor Authentication → 多重驗證
+        Request for Quote   → 報價申請
+        Mega Menu           → 大型選單
+        Cookie Consent      → Cookie 同意聲明
+        GDPR Compliance     → GDPR 合規性
+        Privacy Settings    → 隱私設定
+
+        ── AI 與智慧化 ──
+        AI Integration      → AI 整合
+        AI Assistant        → AI 助手
+        Semantic Search     → 語意搜尋
+        AI-generated Content → AI 生成內容
+        Vector Database     → 向量資料庫
+
+        ── 無頭電商與 API ──
+        Web API             → Web API（不翻譯）
+        Headless Commerce   → 無頭電商
+        Swagger             → Swagger（不翻譯）
+        JWT                 → JWT（不翻譯）
+        Webhook             → Webhook（不翻譯）
+
+        ── 效能與技術 ──
+        Redis Cache         → Redis 快取
+        Distributed Cache   → 分散式快取
+        Response Compression → 回應壓縮
+        Lazy Loading        → 延遲載入
+        Bundling & Minification → 合併與縮減
+        WebP Support        → WebP 支援
+        Multi-tenant        → 多租戶
+
+        ── 介面與體驗 ──
+        One-page Checkout   → 一頁式結帳
+        Multi-step Checkout → 多步驟結帳
+        Responsive Admin    → 回應式管理後台
+        Dark Mode           → 深色模式
+
+        ── 配送與付款（補充）──
+        Real-time Shipping Rate → 即時運費計算
+        Payment Provider    → 付款提供程序
+        Tax Provider        → 稅務提供程序
+        Shipping Provider   → 配送提供程序
 
         【輸出規則】
         - 直接輸出翻譯後的完整 Markdown 內容
