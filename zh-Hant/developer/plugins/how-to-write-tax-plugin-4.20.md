@@ -7,22 +7,22 @@ uid: zh-Hant/developer/plugins/how-to-write-tax-plugin-4.20
 
 # 如何為 nopCommerce 編寫稅務外掛
 
-為了擴充 nopCommerce 的功能，我們使用外掛。nopCommerce 發行版中已經包含了各種不同類型的外掛，例如「門市取貨 (PickupInStore)」和「PayPal 標準版 (PayPal Standard)」。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否有人已經建立了符合您需求的外掛。如果您找不到合適的，那麼您來對地方了，因為本文將引導您根據需求完成建立外掛（特別是稅務外掛）的過程。
+為了擴充 nopCommerce 的功能，我們使用外掛。nopCommerce 發行版中已經包含多種類型的外掛，例如「門市取貨 (PickupInStore)」和「PayPal 標準 (PayPal Standard)」。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各類外掛，看看是否已經有人開發出符合您需求的外掛。如果您尚未找到合適的，那麼您來對地方了，因為本文將引導您根據需求完成外掛（特別是稅務外掛）的開發流程。
 
 ## 外掛結構、必要檔案與位置
 
-1. 首先，在方案中建立一個新的「類別庫 (Class Library)」專案。建議將您的外掛放置在原始碼根目錄下的 **Plugins** 資料夾中，其他外掛和小部件也皆位於此處。
+1. 首先在方案中建立一個新的「類別庫 (Class Library)」專案。建議將您的外掛放置在原始碼根目錄下的 **Plugins** 資料夾中，其他外掛和小部件也都是存放在此。
 
     ![image1](_static/how-to-write-a-tax-plugin-4.20/image1.png)
 
     > [!NOTE]
-    > 請勿將此目錄與存在於 `Presentation\Nop.Web` 目錄下的目錄混淆。Nop.Web 目錄中的 Plugins 資料夾包含外掛編譯後的檔案。
+    > 請勿將此目錄與 `Presentation\Nop.Web` 目錄中存在的同名目錄混淆。`Nop.Web` 目錄中的 Plugins 資料夾包含的是外掛編譯後的檔案。
 
-    外掛專案的建議命名格式為 `Nop.Plugin.{Group}.{Name}`。`{Group}` 是您的外掛群組（例如 `Payment` 或 `Shipping`）。`{Name}` 是您的外掛名稱（例如 `FixedOrByCountryStateZip`）。例如，`FixedOrByCountryStateZip` 稅率外掛的名稱為：`Nop.Plugin.Tax.FixedOrByCountryStateZip`。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如 `MyFirstTaxPlugin`。方案的 Plugins 目錄結構如下所示。
+    外掛專案的建議命名方式為 `Nop.Plugin.{Group}.{Name}`。`{Group}` 是您的外掛群組（例如 `Payment` 或 `Shipping`）。`{Name}` 是您的外掛名稱（例如 `FixedOrByCountryStateZip`）。例如，`FixedOrByCountryStateZip` 稅率外掛的完整名稱為：`Nop.Plugin.Tax.FixedOrByCountryStateZip`。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如 `MyFirstTaxPlugin`。方案中的 Plugins 目錄結構如下所示。
 
     ![image2](_static/how-to-write-a-tax-plugin-4.20/image2.png)
 
-1. 建立外掛專案後，應使用任何可用的文字編輯器應用程式更新 **.csproj** 檔案內容。請將其內容替換為以下內容：
+1. 建立外掛專案後，請使用任何可用的文字編輯器應用程式更新 **.csproj** 檔案內容。將其內容替換為以下程式碼：
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -190,9 +190,9 @@ public IActionResult Configure()
 * Use the following attributes for your action method:
 
 ```cs
-[AuthorizeAdmin] // 確認存取後台管理
-[Area(AreaNames.Admin)] // 指定包含控制器或動作的區域
-[AdminAntiForgery] // 有助於防止惡意指令碼提交偽造的頁面請求。
+[AuthorizeAdmin] //確認是否擁有後台管理存取權限
+[Area(AreaNames.Admin)] //指定包含控制器或動作的區域
+[AdminAntiForgery] //協助防止惡意指令碼提交偽造的頁面請求。
 ```
 
 For example, open `FixedOrByCountryStateZip` plugin and look at its implementation of `FixedOrByCountryStateZipController`.
@@ -219,6 +219,7 @@ public override void Configure(EntityTypeBuilder<TaxRate> builder)
     builder.ToTable(nameof(TaxRate));
     builder.HasKey(rate => rate.Id);
 
+---
     builder.Property(rate => rate.Percentage).HasColumnType("decimal(18, 4)");
 }
 ```
@@ -241,7 +242,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     /// <summary>
     /// 進一步設定模型
     /// </summary>
-    /// <param name="modelBuilder">模型建構器</param>
+    /// <param name="modelBuilder">模型產生器</param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new TaxRateMap());
@@ -253,7 +254,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     #region Methods
 
     /// <summary>
-    /// 建立一個可用於查詢與儲存實體執行個體的 DbSet
+    /// 建立一個可用於查詢和儲存實體執行個體的 DbSet
     /// </summary>
     /// <typeparam name="TEntity">實體型別</typeparam>
     /// <returns>給定實體型別的集合</returns>
@@ -263,7 +264,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     }
 
     /// <summary>
-    /// 產生用於建立當前模型所有資料表的 SQL 指令碼
+    /// 產生用於為目前模型建立所有資料表的指令碼
     /// </summary>
     /// <returns>SQL 指令碼</returns>
     public virtual string GenerateCreateScript()
@@ -277,7 +278,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     /// <typeparam name="TQuery">查詢型別</typeparam>
     /// <param name="sql">原始 SQL 查詢</param>
     /// <param name="parameters">要指派給參數的值</param>
-    /// <returns>代表原始 SQL 查詢的 IQueryable</returns>
+    /// <returns>表示原始 SQL 查詢的 IQueryable</returns>
     public virtual IQueryable<TQuery> QueryFromSql<TQuery>(string sql, params object[] parameters) where TQuery : class
     {
         throw new NotImplementedException();
@@ -289,7 +290,7 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     /// <typeparam name="TEntity">實體型別</typeparam>
     /// <param name="sql">原始 SQL 查詢</param>
     /// <param name="parameters">要指派給參數的值</param>
-    /// <returns>代表原始 SQL 查詢的 IQueryable</returns>
+    /// <returns>表示原始 SQL 查詢的 IQueryable</returns>
     public virtual IQueryable<TEntity> EntityFromSql<TEntity>(string sql, params object[] parameters) where TEntity : BaseEntity
     {
         throw new NotImplementedException();
@@ -299,10 +300,10 @@ public class CountryStateZipObjectContext : DbContext, IDbContext
     /// 對資料庫執行給定的 SQL
     /// </summary>
     /// <param name="sql">要執行的 SQL</param>
-    /// <param name="doNotEnsureTransaction">true - 不確保建立交易；false - 確保建立交易。</param>
-    /// <param name="timeout">命令使用的逾時時間。請注意，命令逾時與連接逾時不同，後者通常在資料庫連接字串中設定</param>
+    /// <param name="doNotEnsureTransaction">true - 不確保交易建立；false - 確保交易建立。</param>
+    /// <param name="timeout">用於指令的逾時時間。請注意，指令逾時與連接逾時不同，後者通常在資料庫連接字串中設定</param>
     /// <param name="parameters">與 SQL 一起使用的參數</param>
-    /// <returns>受影響的資料列數</returns>
+    /// <returns>受影響的資料列數目</returns>
     public virtual int ExecuteSqlCommand(RawSqlString sql, bool doNotEnsureTransaction = false, int? timeout = null, params object[] parameters)
     {
         using (var transaction = Database.BeginTransaction())
@@ -372,8 +373,9 @@ public partial interface ICountryStateZipService
     /// <returns>稅率</returns>
     TaxRate GetTaxRateById(int taxRateId);
 
+---
     /// <summary>
-    /// 新增一筆稅率
+    /// 插入稅率
     /// </summary>
     /// <param name="taxRate">稅率</param>
     void InsertTaxRate(TaxRate taxRate);
@@ -404,7 +406,7 @@ public partial class CountryStateZipService : ICountryStateZipService
     /// <summary>
     /// 建構函式
     /// </summary>
-    /// <param name="eventPublisher">事件發佈者</param>
+    /// <param name="eventPublisher">事件發布者</param>
     /// <param name="cacheManager">快取管理員</param>
     /// <param name="taxRateRepository">稅率儲存庫</param>
     public CountryStateZipService(IEventPublisher eventPublisher,
@@ -438,7 +440,7 @@ public partial class CountryStateZipService : ICountryStateZipService
     /// <summary>
     /// 取得所有稅率
     /// </summary>
-    /// <returns>稅率列表</returns>
+    /// <returns>稅率</returns>
     public virtual IPagedList<TaxRate> GetAllTaxRates(int pageIndex = 0, int pageSize = int.MaxValue)
     {
         var key = string.Format(ModelCacheEventConsumer.TAXRATE_ALL_KEY, pageIndex, pageSize);
@@ -466,7 +468,7 @@ public partial class CountryStateZipService : ICountryStateZipService
     }
 
     /// <summary>
-    /// 新增稅率
+    /// 插入稅率
     /// </summary>
     /// <param name="taxRate">稅率</param>
     public virtual void InsertTaxRate(TaxRate taxRate)
@@ -517,10 +519,10 @@ public class DependencyRegistrar : IDependencyRegistrar
         builder.RegisterType<FixedOrByCountryStateZipTaxProvider>().As<ITaxProvider>().InstancePerLifetimeScope();
         builder.RegisterType<CountryStateZipService>().As<ICountryStateZipService>().InstancePerLifetimeScope();
 
-        //資料內容物件
+        //資料內容相關
         builder.RegisterPluginDataContext<CountryStateZipObjectContext>("nop_object_context_tax_country_state_zip");
 
-        //使用我們的自訂內容物件覆寫必要的儲存庫
+        //使用自定義內容覆寫必要的儲存庫
         builder.RegisterType<EfRepository<TaxRate>>().As<IRepository<TaxRate>>()
             .WithParameter(ResolvedParameter.ForNamed<IDbContext>("nop_object_context_tax_country_state_zip"))
             .InstancePerLifetimeScope();
@@ -541,7 +543,7 @@ public class PluginDbStartup : INopStartup
     /// <summary>
     /// 加入並設定任何中介軟體
     /// </summary>
-    /// <param name="services">服務描述元集合</param>
+    /// <param name="services">服務描述項集合</param>
     /// <param name="configuration">應用程式配置</param>
     public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
     {
@@ -553,15 +555,15 @@ public class PluginDbStartup : INopStartup
     }
 
     /// <summary>
-    /// 設定已加入中介軟體的使用方式
+    /// 設定所加入中介軟體的使用方式
     /// </summary>
-    /// <param name="application">用於設定應用程式請求管線的建置器</param>
+    /// <param name="application">用於設定應用程式要求管線的建構器</param>
     public void Configure(IApplicationBuilder application)
     {
     }
 
     /// <summary>
-    /// 取得此啟動設定實作的執行順序
+    /// 取得此啟動設定實作的順序
     /// </summary>
     public int Order => 11;
 }
@@ -592,17 +594,17 @@ public override void Install()
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.TaxCategoryName", "稅率類別");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Rate", "稅率");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Store", "商店");
-    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Store.Hint", "若選擇星號，則此稅率將適用於所有商店。");
+    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Store.Hint", "如果選擇星號，則此稅率將適用於所有商店。");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Country", "國家/地區");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Country.Hint", "國家/地區。");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.StateProvince", "州/省");
-    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.StateProvince.Hint", "若選擇星號，則此稅率將適用於來自該國家/地區的所有顧客，而不論其所屬州/省為何。");
+    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.StateProvince.Hint", "如果選擇星號，則此稅率將適用於來自該國家/地區的所有顧客，而不論其所在州別為何。");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Zip", "郵遞區號");
-    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Zip.Hint", "郵遞區號。若郵遞區號為空，則此稅率將適用於來自該國家/地區或州/省的所有顧客，而不論其郵遞區號為何。");
+    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Zip.Hint", "郵遞區號。如果留空，則此稅率將適用於來自該國家/地區或州/省的所有顧客，而不論其郵遞區號為何。");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.TaxCategory", "稅率類別");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.TaxCategory.Hint", "稅率類別。");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Percentage", "百分比");
-    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Percentage.Hint", "稅率。");
+    _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.Fields.Percentage.Hint", "稅率百分比。");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.AddRecord", "新增稅率");
     _localizationService.AddOrUpdatePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.AddRecordTitle", "新稅率");
 
@@ -647,10 +649,10 @@ public override void Uninstall()
     _localizationService.DeletePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.AddRecord");
     _localizationService.DeletePluginLocaleResource("Plugins.Tax.FixedOrByCountryStateZip.AddRecordTitle");
 
-```
+```csharp
     base.Uninstall();
 }
 ```
 
 > [!IMPORTANT]
-> 如果您覆寫了這些方法中的其中一個，請務必呼叫其基礎實作，即 base.Install() 與 base.Uninstall()，請勿將其隱藏。
+> 如果您覆寫了這些方法，請勿隱藏其基礎實作 - base.Install() 與 base.Uninstall()。
