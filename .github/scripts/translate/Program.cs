@@ -201,10 +201,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private const int ChunkThreshold = 24_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
-    .GenerativeModel(
-        model: Model.Gemini15Flash,
-        systemInstruction: new Content(SystemPrompt.Text)
-    );;
+        .GenerativeModel(model: Model.Gemini15Flash);
 
     // Polly：遇到 429 / 503 / quota 時指數退避重試，最多 4 次
     private readonly AsyncRetryPolicy _retryPolicy = Policy
@@ -326,8 +323,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     {
         return await _retryPolicy.ExecuteAsync(async () =>
         {
-            // 改進 #3：SystemInstruction 已含完整指令，User Prompt 只需最簡指令
-            var response = await _model.GenerateContent($"翻譯：\n\n{content}");
+            var response = await _model.GenerateContent($"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}");
             var text = response.Text;
             if (string.IsNullOrWhiteSpace(text))
                 throw new Exception("Gemini 回傳空內容");
