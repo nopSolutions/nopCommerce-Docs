@@ -7,29 +7,29 @@ uid: zh-Hant/developer/plugins/how-to-write-plugin-3.90
 
 # 如何為 nopCommerce 3.90（及更早版本）編寫外掛
 
-> 在電腦運算中，外掛（Plugin）是一組能為大型軟體應用程式新增特定功能的軟體組件（Wikipedia）。
+> 在計算領域中，外掛（plugin）是一組能為大型軟體應用程式增加特定功能的軟體元件（維基百科）。
 
-外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有多種類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送運費計算方式（如 UPS、USPS、FedEx）、小部件（如「線上客服」區塊）以及許多其他功能。nopCommerce 本身已內建許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋，看看是否有人已經製作了符合您需求的外掛。如果沒有，本文將引導您完成建立自訂外掛的過程。
+外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有幾種類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送運費計算方式（如 UPS、USPS、FedEx）、小部件（如「線上客服」區塊）等等。nopCommerce 本身已內建許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否有人已經製作出符合您需求的外掛。如果沒有，本文將引導您完成建立自訂外掛的過程。
 
-## 外掛結構、必要檔案與存放位置
+## 外掛的結構、必要檔案與存放位置
 
-1. 您首先需要做的是在方案中建立一個新的「類別庫（Class Library）」專案。將所有外掛放置在方案根目錄的 `\Plugins` 資料夾中是一個良好的習慣（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，該目錄用於存放已部署的外掛）。將所有外掛放置在「Plugins」方案資料夾中也是一個良好的做法（您可以[此處](http://msdn.microsoft.com/library/sx2027y2.aspx)找到關於方案資料夾的更多資訊）。
+1. 您需要做的第一件事是在方案中建立一個新的「類別庫（Class Library）」專案。將所有外掛放置在方案根目錄的 `\Plugins` 資料夾中是一種良好的實踐（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，後者用於存放已部署的外掛）。將所有外掛放入「Plugins」方案資料夾中也是一種良好的做法（您可以在[此處](http://msdn.microsoft.com/library/sx2027y2.aspx)找到關於方案資料夾的更多資訊）。
 
-    外掛專案的建議命名方式為「Nop.Plugin.{Group}.{Name}」。其中 {Group} 是您的外掛群組（例如，「Payments」或「Shipping」）。{Name} 是您的外掛名稱（例如，「PayPalStandard」）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制規定，您可以為外掛選擇任何名稱。例如，「MyGreatPlugin」。
+    建議的外掛專案命名方式為「Nop.Plugin.{Group}.{Name}」。其中 {Group} 是您的外掛組別（例如「Payment」或「Shipping」），{Name} 是您的外掛名稱（例如「PayPalStandard」）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求，您可以為外掛選擇任何名稱，例如「MyGreatPlugin」。
 
     ![p1](_static/how-to-write-plugin-3.90/write_plugin_3.90_4.jpg)
 
-1. 建立外掛專案後，請更新專案的建置輸出路徑。將其設定為 `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}`。例如，Authorize.NET 付款外掛的輸出路徑為：`..\..\Presentation\Nop.Web\Plugins\Payments.AuthorizeNet`。完成此設定後，相關的外掛 DLL 將會自動複製到 `\Presentation\Nop.Web\Plugins` 目錄中，而 nopCommerce 核心會自動搜尋該目錄以載入有效的外掛。但請注意，這同樣非強制規定，您可以為外掛選擇任何輸出目錄名稱。
+1. 建立外掛專案後，請更新專案的建置輸出路徑。將其設定為 `..\..\Presentation\Nop.Web\Plugins\{Group}.{Name}`。例如，Authorize.NET 付款外掛的輸出路徑為：`..\..\Presentation\Nop.Web\Plugins\Payments.AuthorizeNet`。完成後，適當的外掛 DLL 將會自動複製到 `\Presentation\Nop.Web\Plugins` 目錄中，nopCommerce 核心會搜尋該目錄以找出有效的外掛。但請注意，這同樣不是強制要求的，您可以為外掛選擇任何輸出目錄名稱。
 
     ![p1](_static/how-to-write-plugin-3.90/write_plugin_3.90_1.jpg)
 
     - 在「專案（Project）」選單中，點擊「屬性（Properties）」。
-    - 點擊「建置（Build）」索引標籤。
-    - 點擊輸出路徑框旁的「瀏覽（Browse）」按鈕，並選擇一個新的建置輸出目錄。
+    - 點擊「建置（Build）」頁籤。
+    - 點擊輸出路徑框旁邊的「瀏覽（Browse）」按鈕，並選擇一個新的建置輸出目錄。
 
-    您應該對所有現有的組態（「Debug」和「Release」）執行上述步驟。
+    您應該針對所有現有的設定（「Debug」與「Release」）執行上述步驟。
 
-1. 下一步是建立每個外掛都必須具備的 `Description.txt` 檔案。此檔案包含描述您外掛的中繼資訊。只需從任何其他現有的外掛複製此檔案，並根據您的需求進行修改即可。例如，PayPal Standard 付款外掛擁有以下的 `Description.txt` 檔案：
+1. 下一步是為每個外掛建立必要的 `Description.txt` 檔案。此檔案包含描述您外掛的元資訊（meta-information）。只需從任何其他現有的外掛複製此檔案，並根據您的需求進行修改即可。例如，PayPal Standard 付款外掛擁有以下 `Description.txt` 檔案：
 
     ```txt
     Group: Payment methods
@@ -154,6 +154,7 @@ This step is optional. Some plugins can require additional logic during plugin i
 
 For example, the project structure of the Authorize.NET plugin looks like the image below
 
+```
 ```csharp
 public override void Install()
 {
@@ -170,12 +171,12 @@ public override void Install()
 ```
 
 > [!TIP]
-> 已安裝外掛的清單位於 `\App_Data\InstalledPlugins.txt`。此清單是在安裝過程中建立的。
+> 已安裝外掛的列表位於 `\App_Data\InstalledPlugins.txt`。該列表是在安裝過程中建立的。
 
 ## 升級 nopCommerce 可能會導致外掛失效
 
-有些外掛可能會過時，導致無法在較新版本的 nopCommerce 中運作。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新版本可用。許多外掛開發者會為了適應新版本而升級其外掛，但有些則不會，隨著 nopCommerce 的改進，這些外掛將會被淘汰。但在大多數情況下，您只需開啟相應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
+有些外掛可能會過時，無法在較新版本的 nopCommerce 中運作。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新的版本可用。許多外掛開發者會更新他們的外掛以適應新版本，但有些則不會，因此他們的外掛會隨著 nopCommerce 的改進而變得過時。但在大多數情況下，您只需開啟適當的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
 
 ## 結論
 
-希望這能協助您開始使用 nopCommerce，並為開發更複雜的外掛做好準備。
+希望這能幫助您開始使用 nopCommerce，並為您構建更精緻的外掛做好準備。
