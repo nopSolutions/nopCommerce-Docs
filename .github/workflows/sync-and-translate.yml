@@ -1,4 +1,4 @@
-name: Sync Upstream & Auto Translate to zh-Hant
+name: Sync Upstream & Auto Translate
 
 on:
   schedule:
@@ -6,13 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       force_retranslate:
-        description: '強制重新翻譯（覆蓋已存在的 zh-Hant 檔案）'
+        description: '強制重新翻譯'
         required: false
         default: 'false'
-      specific_file:
-        description: '只翻譯單一檔案（例如：en/getting-started/index.md）'
-        required: false
-        default: ''
 
 jobs:
   sync-and-translate:
@@ -25,98 +21,42 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup .NET 8
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
-      - name: Clean build
-        run: dotnet clean .github/scripts/translate/translate.csproj || true
-
-      - name: Restore NuGet packages
-        run: dotnet restore .github/scripts/translate/translate.csproj
-
-      - name: Configure git
+      - name: Add upstream & fetch
         run: |
+          git remote add upstream [https://github.com/nopSolutions/nopCommerce-Docs.git](https://github.com/nopSolutions/nopCommerce-Docs.git) || true
+          git fetch upstream master
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Add upstream remote & fetch
-        run: |
-          git remote add upstream https://github.com/nopSolutions/nopCommerce-Docs.git || true
-          git fetch upstream master
+      - name: Merge Upstream
+        run: git merge upstream/master --no-edit -X theirs || true
 
-      - name: Check for upstream changes
-        id: check_changes
-        run: |
-          if [ -f ".last-upstream-sync" ]; then
-            LAST_SYNC=$(cat .last-upstream-sync)
-          else
-            LAST_SYNC=$(git rev-parse upstream/master~1)
-          fi
-
-          CURRENT_UPSTREAM=$(git rev-parse upstream/master)
-          echo "last_sync=$LAST_SYNC" >> $GITHUB_OUTPUT
-          echo "current_upstream=$CURRENT_UPSTREAM" >> $GITHUB_OUTPUT
-
-          FORCE="${{ github.event.inputs.force_retranslate }}"
-          SPECIFIC="${{ github.event.inputs.specific_file }}"
-
-          if [ "$LAST_SYNC" = "$CURRENT_UPSTREAM" ] && [ "$FORCE" != "true" ] && [ -z "$SPECIFIC" ]; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "✅ 上游沒有新變動，跳過"
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "🔄 準備執行翻譯"
-          fi
-
-      - name: Merge upstream into en/
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          git merge upstream/master --no-edit --allow-unrelated-histories -X theirs || true
-
-      - name: Run C# translator
-        if: steps.check_changes.outputs.has_changes == 'true'
+      - name: Run Translator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          ARGS="--source-dir en --target-dir zh-Hant --api-key $GEMINI_API_KEY"
-
-          if [ -n "${{ github.event.inputs.specific_file }}" ]; then
-            ARGS="$ARGS --specific-file ${{ github.event.inputs.specific_file }}"
+          # 檢查專案檔路徑是否存在
+          PROJECT_PATH=".github/scripts/translate/translate.csproj"
+          if [ ! -f "$PROJECT_PATH" ]; then
+            echo "❌ 找不到專案檔於 $PROJECT_PATH"
+            exit 1
           fi
+          
+          dotnet run --project $PROJECT_PATH -c Release -- \
+            --source-dir en --target-dir zh-Hant \
+            --api-key $GEMINI_API_KEY \
+            ${{ github.event.inputs.force_retranslate == 'true' && '--force' || '' }}
 
-          if [ "${{ github.event.inputs.force_retranslate }}" = "true" ]; then
-            ARGS="$ARGS --force"
-          fi
-
-          dotnet run \
-            --project .github/scripts/translate/translate.csproj \
-            --configuration Release \
-            -- $ARGS
-
-      - name: Update last sync marker
-        if: steps.check_changes.outputs.has_changes == 'true'
+      - name: Commit & Push
         run: |
-          echo "${{ steps.check_changes.outputs.current_upstream }}" > .last-upstream-sync
-
-      - name: Commit & push
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          git add zh-Hant/ .last-upstream-sync en/
-
-          if git diff --staged --quiet; then
-            echo "✅ 沒有新的變更需要 commit"
-          else
-            SHORT=$(echo "${{ steps.check_changes.outputs.current_upstream }}" | cut -c1-7)
-            git commit -m "🌐 自動翻譯更新 [upstream: ${SHORT}]
-
-            - 同步上游 nopCommerce-Docs 變更
-            - 翻譯新增/修改的 .md 為繁體中文 → zh-Hant/
-            - 翻譯引擎：Google Gemini 1.5 Flash"
-
+          git add zh-Hant/ en/
+          if ! git diff --staged --quiet; then
+            git commit -m "🌐 自動翻譯更新: 同步上游並更新繁體中文文件"
             git push origin master
-            echo "✅ 推送完成"
           fi
