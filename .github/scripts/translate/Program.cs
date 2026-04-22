@@ -537,8 +537,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private async Task<string> CallGeminiAsync(string content, bool forceful)
     {
         var prompt = forceful
-            ? $"{SystemPrompt.Text}\n\n【緊急提醒】以下內容中，程式碼區塊（```包住的部分）以外的所有英文文字，你必須全部翻譯成繁體中文，一句都不能遺漏。包括列表說明、Important/Note/Tip 區塊、步驟說明等。\n\n翻譯以下內容：\n\n{content}"
-            : $"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}";
+            ? $"{SystemPrompt.Text}\n\n【緊急提醒】\n- [[PROTECT_NNNN]] 是佔位符，原樣保留即可\n- 佔位符前後的所有英文說明文字，都必須翻譯成繁體中文\n- 程式碼區塊以外的英文，一個字都不能漏\n\n翻譯以下內容：\n\n{content}"
+            : $"{SystemPrompt.Text}\n\n注意：[[PROTECT_NNNN]] 格式是佔位符請原樣保留，但佔位符前後的所有英文說明文字都必須翻譯成繁體中文。\n\n翻譯以下內容：\n\n{content}";
 
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
@@ -548,21 +548,24 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     }
 
     /// <summary>
-    /// 檢查翻譯後內容是否仍有大量未翻譯的英文句子。
-    /// 方法：計算程式碼區塊外的長英文句子數量（超過 8 個英文單字的句子）。
+    /// 檢查翻譯後內容是否仍有大量未翻譯的英文文字。
+    /// 方法：移除佔位符和程式碼區塊後，計算英文單字佔所有單字的比例。
     /// </summary>
     private static bool HasSignificantEnglish(string original, string translated)
     {
-        // 移除程式碼區塊後再比較
-        var stripCode = new Regex(@"```[\s\S]*?```", RegexOptions.Multiline);
-        var strippedTranslated = stripCode.Replace(translated, "");
+        // 移除佔位符和程式碼區塊
+        var strip = new Regex(@"\[\[PROTECT_\d+\]\]|```[\s\S]*?```|`[^`]+`", RegexOptions.Multiline);
+        var cleaned = strip.Replace(translated, " ");
 
-        // 計算長英文句子數（超過 8 個連續英文單字）
-        var englishSentencePattern = new Regex(@"(?:[A-Za-z]+\s+){8,}[A-Za-z]+");
-        var matches = englishSentencePattern.Matches(strippedTranslated);
+        // 計算英文單字數（3字母以上，排除常見縮寫如 nopCommerce、URL 等）
+        var englishWords = Regex.Matches(cleaned, @"\b[A-Za-z]{4,}\b").Count;
+        var totalTokens = Regex.Matches(cleaned, @"\S+").Count;
 
-        // 超過 3 句長英文句子就視為翻譯不完整
-        return matches.Count > 3;
+        if (totalTokens < 20) return false;
+
+        // 英文單字超過總 token 的 25% 且超過 30 個，視為翻譯不完整
+        double ratio = (double)englishWords / totalTokens;
+        return ratio > 0.25 && englishWords > 30;
     }
 
     private async Task<string> TranslateInChunksAsync(string content)
