@@ -14,7 +14,7 @@ var targetOption = new Option<string>(
 
 var apiKeyOption = new Option<string>(
     "--api-key", () => Environment.GetEnvironmentVariable("GEMINI_API_KEY") ?? "",
-    "Gemini API Key");
+    "Gemini API Key（多組以逗號分隔）");
 
 var specificFileOption = new Option<string>(
     "--specific-file", () => "", "只翻譯單一檔案（選填）");
@@ -48,6 +48,38 @@ return await rootCommand.InvokeAsync(args);
 // ── PlaceholderContext ─────────────────────────────────────────────────────────
 public class PlaceholderContext
 {
+    // 預編譯的 Regex（class 級別共用，避免每次呼叫重建）
+    private static readonly Regex _reFencedCodeBlock = new(
+        @"(```|~~~)[^\n]*\n[\s\S]*?\n\1[ \t]*(?:\n|$)",
+        RegexOptions.Compiled | RegexOptions.Multiline);
+
+    private static readonly Regex _reYamlFrontMatter = new(
+        @"\A---\n([\s\S]*?)\n---[ \t]*\n?",
+        RegexOptions.Compiled);
+
+    private static readonly Regex _reUidLine = new(
+        @"^\s*uid\s*:",
+        RegexOptions.Compiled);
+
+    private static readonly Regex _reLiquidTag = new(
+        @"\{%-?[\s\S]*?-?%\}|\{\{[\s\S]*?\}\}",
+        RegexOptions.Compiled);
+
+    private static readonly Regex _reHtmlTag = new(
+        @"<[a-zA-Z/][^>]*?>",
+        RegexOptions.Compiled);
+
+    private static readonly Regex _reMarkdownLink = new(
+        @"(!?)\[([^\]]*)\]\(([^)]+)\)",
+        RegexOptions.Compiled);
+
+    // 常見英文佔位連結文字（Gemini 翻譯不穩定，整塊保護）
+    private static readonly HashSet<string> _placeholderLinkWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "", "here", "this", "link", "this link", "click here",
+        "read more", "more", "see here", "see"
+    };
+
     private readonly Dictionary<string, string> _map = new();
     private int _counter;
 
@@ -63,16 +95,17 @@ public class PlaceholderContext
 
     public string Restore(string content)
     {
-        foreach (var (placeholder, original) in _map)
-            content = content.Replace(placeholder, original);
+        // 反向順序還原：最後 Store 的先還原，避免嵌套 placeholder 的替換順序問題
+        // 用 ToList + for 迴圈反向走，避免 Reverse() 產生中間集合
+        var entries = _map.ToList();
+        for (int i = entries.Count - 1; i >= 0; i--)
+        {
+            content = content.Replace(entries[i].Key, entries[i].Value);
+        }
         return content;
     }
 
-    private string NextPlaceholder()
-    {
-        var key = $"[[PROTECT_{_counter++:D4}]]";
-        return key;
-    }
+    private string NextPlaceholder() => $"[[PROTECT_{_counter++:D4}]]";
 
     private string Store(string original)
     {
@@ -82,14 +115,7 @@ public class PlaceholderContext
     }
 
     private string ProtectFencedCodeBlocks(string content)
-    {
-        return Regex.Replace(
-            content,
-            @"(```|~~~)[^\n]*\n[\s\S]*?\n\1",
-            m => Store(m.Value),
-            RegexOptions.Multiline
-        );
-    }
+        => _reFencedCodeBlock.Replace(content, m => Store(m.Value));
 
     private string ProtectYamlFrontMatter(string content)
     {
@@ -97,24 +123,20 @@ public class PlaceholderContext
         bool hasCrLf = content.Contains("\r\n");
         content = content.Replace("\r\n", "\n");
 
-        content = Regex.Replace(
-            content,
-            @"\A---\n([\s\S]*?)\n---[ \t]*\n?",
-            m =>
+        content = _reYamlFrontMatter.Replace(content, m =>
+        {
+            var body = m.Groups[1].Value;
+            var lines = body.Split('\n');
+            var processed = lines.Select(line =>
             {
-                var body = m.Groups[1].Value;
-                var lines = body.Split('\n');
-                var processed = lines.Select(line =>
-                {
-                    // uid 整行保護（key 與值都不能動）
-                    if (Regex.IsMatch(line, @"^\s*uid\s*:"))
-                        return Store(line);
-                    // 其他所有 key 完整交給 AI 翻譯（key 名稱與值都可翻）
-                    return line;
-                });
-                return $"---\n{string.Join("\n", processed)}\n---\n";
-            }
-        );
+                // uid 整行保護（key 與值都不能動）
+                if (_reUidLine.IsMatch(line))
+                    return Store(line);
+                // 其他所有 key 完整交給 AI 翻譯（key 名稱與值都可翻）
+                return line;
+            });
+            return $"---\n{string.Join("\n", processed)}\n---\n";
+        });
 
         if (hasCrLf)
             content = content.Replace("\n", "\r\n");
@@ -123,70 +145,106 @@ public class PlaceholderContext
     }
 
     private string ProtectLiquidTags(string content)
-    {
-        return Regex.Replace(
-            content,
-            @"\{%-?[\s\S]*?-?%\}|\{\{[\s\S]*?\}\}",
-            m => Store(m.Value)
-        );
-    }
+        => _reLiquidTag.Replace(content, m => Store(m.Value));
 
     private string ProtectHtmlTags(string content)
-    {
-        return Regex.Replace(
-            content,
-            @"<[a-zA-Z/][^>]*?>",
-            m => Store(m.Value)
-        );
-    }
+        => _reHtmlTag.Replace(content, m => Store(m.Value));
 
     private string ProtectMarkdownUrls(string content)
     {
-        return Regex.Replace(
-            content,
-            @"(!?)\[([^\]]*)\]\(([^)]+)\)",
-            m =>
-            {
-                var isImage  = m.Groups[1].Value == "!";
-                var textPart = m.Groups[2].Value;
-                var url      = m.Groups[3].Value;
+        return _reMarkdownLink.Replace(content, m =>
+        {
+            var isImage  = m.Groups[1].Value == "!";
+            var textPart = m.Groups[2].Value;
+            var url      = m.Groups[3].Value;
 
-                // 圖片：整塊保護（alt 不翻譯）
-                if (isImage)
-                    return Store(m.Value);
+            // 圖片：整塊保護（alt 不翻譯）
+            if (isImage)
+                return Store(m.Value);
 
-                // 連結文字為空或是常見的英文佔位詞（here/this/link/click here 等）
-                // 這類文字 Gemini 翻譯結果不穩定，整塊保護讓結構不被破壞
-                var trimmed = textPart.Trim();
-                var placeholderWords = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
-                {
-                    "", "here", "this", "link", "this link", "click here",
-                    "read more", "more", "see here", "see"
-                };
-                if (placeholderWords.Contains(trimmed))
-                {
-                    return Store(m.Value);
-                }
+            // 連結文字為空或是常見的英文佔位詞（here/this/link/click here 等）
+            // 這類文字 Gemini 翻譯結果不穩定，整塊保護讓結構不被破壞
+            if (_placeholderLinkWords.Contains(textPart.Trim()))
+                return Store(m.Value);
 
-                // 一般連結：只保護 URL，讓 Gemini 翻譯文字部分
-                return $"[{textPart}]({Store(url)})";
-            }
-        );
+            // 一般連結：只保護 URL，讓 Gemini 翻譯文字部分
+            return $"[{textPart}]({Store(url)})";
+        });
     }
 }
 
 
 // ── Translator ────────────────────────────────────────────────────────────────
-public class Translator(string apiKey, string sourceDir, string targetDir, bool force)
+public class Translator
 {
     private const int CooldownMs = 4_000;
-    private const int ChunkThreshold = 5_000;
+    private const int ChunkThreshold = 25_000;
+    private const string ModelName = "gemini-3.1-flash-lite-preview";
 
-    private readonly GenerativeModel _model = new GoogleAI(apiKey)
-        .GenerativeModel(model: "gemini-3.1-flash-lite-preview");
-
-    // 429 專用：等待 66 秒後重試一次，若還是 429 則視為今日 quota 耗盡
+    // 429 專用：等待 66 秒後重試一次，若還是 429 則切換 key
     private const int QuotaWaitMs = 66_000;
+
+    private readonly string _sourceDir;
+    private readonly string _targetDir;
+    private readonly bool _force;
+
+    // ── 多 Key 輪替 ──
+    private readonly List<string> _apiKeys;
+    private int _currentKeyIndex;
+    private GenerativeModel _model;
+
+    public Translator(string apiKeyCsv, string sourceDir, string targetDir, bool force)
+    {
+        _sourceDir = sourceDir;
+        _targetDir = targetDir;
+        _force = force;
+
+        // 解析逗號分隔的 API keys（單組或多組皆可）
+        _apiKeys = (apiKeyCsv ?? "")
+            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Distinct()
+            .ToList();
+
+        if (_apiKeys.Count == 0)
+        {
+            Console.Error.WriteLine("❌ 沒有提供 GEMINI_API_KEY");
+            Environment.Exit(1);
+        }
+
+        Console.WriteLine($"🔑 已載入 {_apiKeys.Count} 組 API Key");
+
+        _currentKeyIndex = 0;
+        _model = CreateModel(_apiKeys[_currentKeyIndex]);
+    }
+
+    private static string MaskKey(string key)
+    {
+        if (string.IsNullOrEmpty(key)) return "(empty)";
+        return key.Length <= 10 ? "..." : $"{key[..8]}...{key[^4..]}";
+    }
+
+    private static GenerativeModel CreateModel(string apiKey)
+    {
+        return new GoogleAI(apiKey)
+            .GenerativeModel(
+                model: ModelName,
+                systemInstruction: new Content(SystemPrompt.Text)
+            );
+    }
+
+    /// <summary>
+    /// 切換到下一組 API Key。回傳 true 表示成功切換，false 表示所有 key 都用完了。
+    /// </summary>
+    private bool SwitchToNextKey()
+    {
+        _currentKeyIndex++;
+        if (_currentKeyIndex >= _apiKeys.Count)
+            return false;
+
+        Console.WriteLine($"\n  🔄 切換到第 {_currentKeyIndex + 1}/{_apiKeys.Count} 組 API Key（{MaskKey(_apiKeys[_currentKeyIndex])}）");
+        _model = CreateModel(_apiKeys[_currentKeyIndex]);
+        return true;
+    }
 
     private readonly AsyncRetryPolicy _retryPolicy = Policy
         .Handle<Exception>(ex =>
@@ -234,7 +292,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         else
         {
             files = Directory
-                .EnumerateFiles(sourceDir, "*.md", SearchOption.AllDirectories)
+                .EnumerateFiles(_sourceDir, "*.md", SearchOption.AllDirectories)
                 .OrderBy(f => f)
                 .ToList();
         }
@@ -249,20 +307,20 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         int success = 0, skipped = 0, failed = 0;
         int consecutiveFailures = 0;
-        const int MaxConsecutiveFailures = 20;
-        const int PushEvery = 1; // 每翻成功 1 個就 push 一次
+        const int MaxConsecutiveFailures = 5;   // 連續 5 次翻譯失敗就停（可能是 API 有系統性問題）
+        const int PushEvery = 1; // 每翻成功 1 個就 push，避免程式中斷時浪費已翻譯的 token
         bool earlyStop = false;
         var failedFiles = new List<string>();
 
         for (int i = 0; i < files.Count; i++)
         {
             var sourcePath = files[i];
-            var relPath    = Path.GetRelativePath(sourceDir, sourcePath);
-            var targetPath = Path.Combine(targetDir, relPath);
+            var relPath    = Path.GetRelativePath(_sourceDir, sourcePath);
+            var targetPath = Path.Combine(_targetDir, relPath);
 
             Console.WriteLine($"\n[{i + 1}/{files.Count}] {relPath}");
 
-            if (!force && File.Exists(targetPath))
+            if (!_force && File.Exists(targetPath))
             {
                 // 若來源比目標新（上游有更新），自動重翻
                 var sourceTime = File.GetLastWriteTimeUtc(sourcePath);
@@ -284,7 +342,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             catch (QuotaExhaustedException ex)
             {
                 Console.WriteLine($"\n⛔ {ex.Message}");
-                Console.WriteLine($"   今日已成功：{success}  已略過：{skipped}");
+                Console.WriteLine($"   今日已成功：{success}  已略過：{skipped}（使用了 {_currentKeyIndex + 1}/{_apiKeys.Count} 組 Key）");
                 Console.WriteLine($"   已翻好的檔案將會 commit，明天排程會繼續補翻。");
                 earlyStop = true;
                 break;
@@ -300,11 +358,23 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 failed++;
                 failedFiles.Add(sourcePath);
                 consecutiveFailures++;
+
+                // 保護 1：連續失敗過多
                 if (consecutiveFailures >= MaxConsecutiveFailures)
                 {
-                    Console.WriteLine($"\n⛔ 連續失敗 {MaxConsecutiveFailures} 次，今日 API quota 可能已耗盡，提早結束。");
+                    Console.WriteLine($"\n⛔ 連續失敗 {MaxConsecutiveFailures} 次，提早結束以節省 API 配額。");
                     Console.WriteLine($"   已成功：{success}  已略過：{skipped}  失敗：{failed}");
-                    Console.WriteLine($"   下次排程執行時會繼續補翻剩餘檔案。");
+                    Console.WriteLine($"   失敗的檔案清單會寫入 .translation-failed.txt，下次排程會重試。");
+                    earlyStop = true;
+                    break;
+                }
+
+                // 保護 2：整體失敗率過高（至少嘗試 10 個之後才檢查）
+                var attempted = success + failed;
+                if (attempted >= 10 && (double)failed / attempted > 0.5)
+                {
+                    Console.WriteLine($"\n⛔ 失敗率過高（{failed}/{attempted} = {(double)failed / attempted:P0}），提早結束以節省 token。");
+                    Console.WriteLine($"   已成功：{success}  已略過：{skipped}  失敗：{failed}");
                     earlyStop = true;
                     break;
                 }
@@ -329,7 +399,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         Console.WriteLine($"✅ 成功：{success}  ⏭️  略過：{skipped}  ❌ 失敗：{failed}");
 
         // 寫入失敗清單，方便手動補翻
-        var failedListPath = Path.Combine(targetDir, ".translation-failed.txt");
+        var failedListPath = Path.Combine(_targetDir, ".translation-failed.txt");
         if (failedFiles.Count > 0)
         {
             await File.WriteAllLinesAsync(failedListPath, failedFiles, new UTF8Encoding(false));
@@ -347,23 +417,57 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         if (!earlyStop && failed > 0) Environment.Exit(1);
 
         // 複製非 .md 檔案（圖片、PDF 等），來源比目標新才複製
-        await CopyNonMarkdownFilesAsync();
+        CopyNonMarkdownFiles();
     }
+
+    private static int _consecutivePushFailures = 0;
+    private const int MaxPushFailures = 3;
 
     private static async Task PushProgressAsync(int count)
     {
+        // 連續 push 失敗超過上限，不再嘗試（避免浪費時間，翻譯結果保留在本地）
+        if (_consecutivePushFailures >= MaxPushFailures)
+        {
+            if (_consecutivePushFailures == MaxPushFailures)
+            {
+                Console.WriteLine($"\n  🚫 已連續 {MaxPushFailures} 次 push 失敗，後續不再嘗試中途推送。翻譯結果保留在本地，由 workflow 最後統一推送。");
+                _consecutivePushFailures++; // 只印一次提示
+            }
+            return;
+        }
+
         Console.WriteLine($"\n  💾 中途儲存：已完成 {count} 個，推送至 GitHub...");
+
+        // 在 auto-translate branch 上，只有 workflow 自己在操作
+        // 不需要 pull，直接 add → commit → push --force
+
+        try { await RunGitAsync("add zh-Hant/"); }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"  ⚠️  git add 失敗，跳過本次推送：{ex.Message}");
+            _consecutivePushFailures++;
+            return;
+        }
+
+        try { await RunGitAsync($"commit -m \"🌐 翻譯進度：已完成 {count} 個檔案\""); }
+        catch
+        {
+            Console.WriteLine("  ℹ️  沒有新變更需要 commit");
+            return; // 沒東西 commit 不算失敗
+        }
+
         try
         {
-            await RunGitAsync("add zh-Hant/");
-            await RunGitAsync($"commit -m \"🌐 翻譯進度：已完成 {count} 個檔案\"");
-            await RunGitAsync("pull origin master --rebase");
-            await RunGitAsync("push origin master");
+            await RunGitAsync("push origin auto-translate --force");
             Console.WriteLine($"  ✅ 中途推送成功");
+            _consecutivePushFailures = 0; // 成功就歸零
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"  ⚠️  中途推送失敗（不影響繼續翻譯）：{ex.Message}");
+            Console.WriteLine($"  ⚠️  push 失敗：{ex.Message}");
+            _consecutivePushFailures++;
+            if (_consecutivePushFailures >= MaxPushFailures)
+                Console.WriteLine($"  🚫 已連續 {MaxPushFailures} 次 push 失敗，後續將停止中途推送。");
         }
     }
 
@@ -384,10 +488,10 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         }
     }
 
-    private async Task CopyNonMarkdownFilesAsync()
+    private void CopyNonMarkdownFiles()
     {
         var nonMdFiles = Directory
-            .EnumerateFiles(sourceDir, "*", SearchOption.AllDirectories)
+            .EnumerateFiles(_sourceDir, "*", SearchOption.AllDirectories)
             .Where(f => !f.EndsWith(".md", StringComparison.OrdinalIgnoreCase))
             .OrderBy(f => f)
             .ToList();
@@ -399,8 +503,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         foreach (var sourcePath in nonMdFiles)
         {
-            var relPath    = Path.GetRelativePath(sourceDir, sourcePath);
-            var targetPath = Path.Combine(targetDir, relPath);
+            var relPath    = Path.GetRelativePath(_sourceDir, sourcePath);
+            var targetPath = Path.Combine(_targetDir, relPath);
 
             // 來源比目標新（或目標不存在）才複製
             if (File.Exists(targetPath))
@@ -428,7 +532,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         }
 
         Console.WriteLine($"  📁 複製：{copied}  略過：{skipped}");
-        await Task.CompletedTask;
     }
 
     private async Task<bool> TranslateFileAsync(string sourcePath, string targetPath)
@@ -455,16 +558,13 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             string raw;
             if (content.Length > ChunkThreshold)
             {
-                // 大檔案：先切段，每段獨立建立 PlaceholderContext（避免 placeholder 跨段錯亂）
+                // 大檔案：先按標題切段，每段再獨立翻譯（內部會自動處理截斷）
                 raw = await TranslateInChunksAsync(content);
             }
             else
             {
-                // 小檔案：整篇一次處理
-                var ctx = new PlaceholderContext();
-                var protectedContent = ctx.Extract(content);
-                var rawChunk = await TranslateWithRetryAsync(protectedContent);
-                raw = ctx.Restore(rawChunk);
+                // 小檔案：整篇一次處理，若被截斷會自動對半切
+                raw = await TranslateChunkWithAutoSplit(content);
             }
 
             translated = PostProcess(raw);
@@ -499,6 +599,24 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         return true;
     }
 
+    // PostProcess 用到的預編譯 Regex
+    private static readonly Regex _reHeadFrontMatter = new(
+        @"\A---\n[\s\S]*?\n---[ \t]*\n?", RegexOptions.Compiled);
+    private static readonly Regex _reFakeFrontMatter = new(
+        @"(?m)^---\n(?:[^\n]*:[^\n]*\n)+---[ \t]*\n?", RegexOptions.Compiled);
+    private static readonly Regex _reConsecutiveDashes = new(
+        @"(?m)^---[ \t]*\n(?=---[ \t]*\n)", RegexOptions.Compiled);
+    private static readonly Regex _reDashBeforeHeading = new(
+        @"(?m)^---[ \t]*\n(?=#{1,6} )", RegexOptions.Compiled);
+    private static readonly Regex _reBlankLineBeforeHeading = new(
+        @"(?m)^(?<prev>[^\n].*)\n(?=#{1,6} )", RegexOptions.Compiled);
+    private static readonly Regex _reBlankLineBeforeAlert = new(
+        @"(?m)^(?<prev>[^>\n].*)\n(?=> \[!)", RegexOptions.Compiled);
+    private static readonly Regex _reXrefEn = new(
+        @"xref:en/", RegexOptions.Compiled);
+    private static readonly Regex _reUidEn = new(
+        @"(uid:\s*)en/", RegexOptions.Compiled);
+
     /// <summary>
     /// 翻譯完成後的後處理：
     /// 1. 移除 Gemini 在分段翻譯時擅自插入的額外 YAML front matter 區塊（非檔案開頭的 --- ... ---）
@@ -516,70 +634,62 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         // 1. 先抽出「檔案開頭」的合法 front matter（以 \A--- 開頭）
         //    暫時保留，避免後續步驟誤刪
         string? headFrontMatter = null;
-        var headMatch = Regex.Match(content, @"\A---\n[\s\S]*?\n---[ \t]*\n?");
+        var headMatch = _reHeadFrontMatter.Match(content);
         if (headMatch.Success)
         {
             headFrontMatter = headMatch.Value;
-            content = content.Substring(headMatch.Length);
+            content = content[headMatch.Length..];
         }
 
         // 2. 移除「中間位置」Gemini 擅自生成的偽 front matter 區塊
         //    特徵：以 --- 獨立一行開頭，內含至少一行 key: value，以 --- 獨立一行結尾
-        content = Regex.Replace(
-            content,
-            @"(?m)^---\n(?:[^\n]*:[^\n]*\n)+---[ \t]*\n?",
-            ""
-        );
+        content = _reFakeFrontMatter.Replace(content, "");
 
         // 3. 移除 Gemini 從 prompt 結構吐回的「成對孤立 ---」
         //    只在它們與區塊邊界相鄰時移除，避免誤刪合法的 Markdown 水平分隔線。
-        //    a. 連續出現的 ---（例：---\n---）→ 全部移除
-        content = Regex.Replace(content, @"(?m)^---[ \t]*\n(?=---[ \t]*\n)", "");
-        //    b. 緊貼在標題行之前的獨立 ---（如 ---\n## 路由）→ 移除
-        //       合法的水平分隔線後面通常是空行或段落，不會緊接 #/## 標題
-        content = Regex.Replace(content, @"(?m)^---[ \t]*\n(?=#{1,6} )", "");
+        content = _reConsecutiveDashes.Replace(content, "");
+        content = _reDashBeforeHeading.Replace(content, "");
 
-        // 3.5 確保段落結構正確：以下這些區塊前必須有空行才能正確渲染
-        //     a. 標題行（##、###）前需要空行
-        content = Regex.Replace(
-            content,
-            @"(?m)^(?<prev>[^\n].*)\n(?=#{1,6} )",
-            "${prev}\n\n"
-        );
-        //     b. 區塊引用（> [!IMPORTANT]、> [!NOTE]、> [!TIP]）前需要空行
-        content = Regex.Replace(
-            content,
-            @"(?m)^(?<prev>[^>\n].*)\n(?=> \[!)",
-            "${prev}\n\n"
-        );
+        // 3.5 確保段落結構正確：標題與區塊引用前要有空行
+        content = _reBlankLineBeforeHeading.Replace(content, "${prev}\n\n");
+        content = _reBlankLineBeforeAlert.Replace(content, "${prev}\n\n");
 
-        // 4. 還原首段 front matter
+        // 4. 在「還原 headFrontMatter 之前」先對它做 xref/uid + key 翻譯
+        //    這樣後續只要把處理好的 headFrontMatter 貼回去即可，避免切片位移 bug
+        if (headFrontMatter != null)
+        {
+            headFrontMatter = _reXrefEn.Replace(headFrontMatter, "xref:zh-Hant/");
+            headFrontMatter = _reUidEn.Replace(headFrontMatter, "$1zh-Hant/");
+            headFrontMatter = Regex.Replace(headFrontMatter, @"(?m)^author:(?=\s|$)", "作者:");
+            headFrontMatter = Regex.Replace(headFrontMatter, @"(?m)^contributors:(?=\s|$)", "貢獻者:");
+            headFrontMatter = Regex.Replace(headFrontMatter, @"(?m)^title:(?=\s|$)", "標題:");
+        }
+
+        // 5. body 部分也做 xref/uid 替換（針對內文中的 xref:en/...、uid: en/...）
+        content = _reXrefEn.Replace(content, "xref:zh-Hant/");
+        content = _reUidEn.Replace(content, "$1zh-Hant/");
+
+        // 6. 還原 headFrontMatter
         if (headFrontMatter != null)
             content = headFrontMatter + content;
-
-        // 5. xref / uid 的 en → zh-Hant
-        content = Regex.Replace(content, @"xref:en/", "xref:zh-Hant/");
-        content = Regex.Replace(content, @"(uid:\s*)en/", "$1zh-Hant/");
-
-        // 6. 首段 front matter 內的 key 名稱翻成中文
-        content = Regex.Replace(
-            content,
-            @"\A(---\n[\s\S]*?)\n---",
-            m =>
-            {
-                var fm = m.Groups[1].Value;
-                fm = Regex.Replace(fm, @"(?m)^author:(?=\s|$)", "作者:");
-                fm = Regex.Replace(fm, @"(?m)^contributors:(?=\s|$)", "貢獻者:");
-                fm = Regex.Replace(fm, @"(?m)^title:(?=\s|$)", "標題:");
-                return $"{fm}\n---";
-            }
-        );
 
         if (hasCrLf)
             content = content.Replace("\n", "\r\n");
 
         return content;
     }
+
+    // 高頻使用的 Regex（每次翻譯都會跑）
+    private static readonly Regex _rePlaceholder = new(
+        @"\[\[PROTECT_\d+\]\]", RegexOptions.Compiled);
+    private static readonly Regex _reInputMarker = new(
+        @"<<<INPUT>>>\s*\n?", RegexOptions.Compiled);
+    private static readonly Regex _reEndMarker = new(
+        @"<<<END>>>\s*\n?", RegexOptions.Compiled);
+    private static readonly Regex _reMarkdownFenceStart = new(
+        @"\A\s*```(?:markdown|md)?\s*\n", RegexOptions.Compiled);
+    private static readonly Regex _reMarkdownFenceEnd = new(
+        @"\n\s*```\s*\z", RegexOptions.Compiled);
 
     private async Task<string> TranslateWithRetryAsync(string content)
     {
@@ -591,8 +701,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
                 // 如果內容超過 200 字但完全沒有中文字元，視為翻譯失敗觸發重試
                 // 移除佔位符後再判斷，避免「只有佔位符」的段落誤觸發
-                var cleanOriginal   = Regex.Replace(content,    @"\[\[PROTECT_\d+\]\]", "").Trim();
-                var cleanTranslated = Regex.Replace(translated, @"\[\[PROTECT_\d+\]\]", "").Trim();
+                var cleanOriginal   = _rePlaceholder.Replace(content,    "").Trim();
+                var cleanTranslated = _rePlaceholder.Replace(translated, "").Trim();
 
                 // 統計原文中「需翻譯的英文字母字元」數量
                 var enChars = cleanOriginal.Count(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
@@ -608,9 +718,21 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
                 return translated;
             }
+            catch (Exception ex) when (IsInvalidKeyError(ex))
+            {
+                // 當前這組 key 無效（被撤銷、格式錯誤、權限不足），直接切下一組
+                Console.WriteLine($"  ⚠️  API Key 無效：{ex.Message[..Math.Min(80, ex.Message.Length)]}");
+                if (SwitchToNextKey())
+                {
+                    return await CallGeminiAsync(content);
+                }
+                throw new QuotaExhaustedException(
+                    $"所有 {_apiKeys.Count} 組 API Key 都無效或已耗盡，請檢查 GEMINI_API_KEY 設定。");
+            }
             catch (Exception ex) when (ex.Message.Contains("429") || ex.Message.Contains("quota"))
             {
-                Console.WriteLine($"  ⚠️  429 Too Many Requests，等待 {QuotaWaitMs / 1000} 秒後重試一次...");
+                // 先等一下再試一次（可能是短暫的速率限制，不是日配額用完）
+                Console.WriteLine($"  ⚠️  429 Too Many Requests，等待 {QuotaWaitMs / 1000} 秒後重試...");
                 await Task.Delay(QuotaWaitMs);
                 try
                 {
@@ -618,16 +740,42 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 }
                 catch (Exception retryEx) when (retryEx.Message.Contains("429") || retryEx.Message.Contains("quota"))
                 {
-                    throw new QuotaExhaustedException("今日 API 免費 quota 已耗盡，請明天再試。");
+                    // 這組 key 的日配額確定用完了，嘗試切換下一組
+                    if (SwitchToNextKey())
+                    {
+                        // 切換成功，用新 key 重試
+                        return await CallGeminiAsync(content);
+                    }
+                    // 所有 key 都用完了
+                    throw new QuotaExhaustedException(
+                        $"所有 {_apiKeys.Count} 組 API Key 的今日配額皆已耗盡，請明天再試。");
                 }
             }
         });
     }
 
+    /// <summary>
+    /// 判斷是否為 API Key 無效的錯誤（認證/授權失敗）。
+    /// </summary>
+    private static bool IsInvalidKeyError(Exception ex)
+    {
+        var msg = ex.Message;
+        return msg.Contains("API_KEY_INVALID")
+            || msg.Contains("API key not valid")
+            || msg.Contains("PERMISSION_DENIED")
+            || msg.Contains("401")
+            || msg.Contains("403");
+    }
+
+    // Gemini Flash Lite 的 output 上限是 8192 tokens，設定到最大值
+    private static readonly GenerationConfig _generationConfig = new()
+    {
+        MaxOutputTokens = 8192
+    };
+
     private async Task<string> CallGeminiAsync(string content)
     {
         var prompt = $"""
-            {SystemPrompt.Text}
             【任務示範】
             即使段落中包含 [[PROTECT_NNNN]]，也必須翻譯其前後的說明。
             輸入：The [[PROTECT_0001]] is a plugin interface.
@@ -642,14 +790,26 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             3. 不要自行新增 YAML front matter（即 --- 開頭與結尾的區塊），除非原文本身就有。
             4. 不要在輸出開頭或結尾加上多餘的 --- 分隔線。
             """;
-        var response = await _model.GenerateContent(prompt);
+        var response = await _model.GenerateContent(prompt, _generationConfig);
         var text = response.Text;
         if (string.IsNullOrWhiteSpace(text))
             throw new Exception("Gemini 回傳空內容");
 
+        // 偵測輸出是否被截斷（finishReason 不是 STOP）
+        var finishReason = response.Candidates?.FirstOrDefault()?.FinishReason;
+        if (finishReason == FinishReason.MaxTokens)
+        {
+            throw new OutputTruncatedException(
+                $"Gemini 輸出被截斷（finishReason=MAX_TOKENS），此段落太大需要再切細。已輸出 {text.Length} 字元。");
+        }
+
         // 清除 Gemini 可能回吐的 prompt 分隔標記
-        text = Regex.Replace(text, @"<<<INPUT>>>\s*\n?", "");
-        text = Regex.Replace(text, @"<<<END>>>\s*\n?", "");
+        text = _reInputMarker.Replace(text, "");
+        text = _reEndMarker.Replace(text, "");
+
+        // 清除 Gemini 有時外包的 markdown fence（如 ```markdown ... ```）
+        text = _reMarkdownFenceStart.Replace(text, "");
+        text = _reMarkdownFenceEnd.Replace(text, "");
 
         return text;
     }
@@ -663,13 +823,9 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         {
             Console.WriteLine($"    段落 {i + 1}/{sections.Count}（{sections[i].Length:N0} 字元）...");
 
-            // 每段獨立建立 PlaceholderContext，避免跨段 placeholder 編號衝突/錯亂
-            var ctx = new PlaceholderContext();
-            var protectedChunk = ctx.Extract(sections[i]);
-            var rawTranslated = await TranslateWithRetryAsync(protectedChunk);
-            var restoredChunk = ctx.Restore(rawTranslated);
+            var translated = await TranslateChunkWithAutoSplit(sections[i]);
+            results.Add(translated);
 
-            results.Add(restoredChunk);
             if (i < sections.Count - 1)
                 await Task.Delay(CooldownMs);
         }
@@ -677,15 +833,128 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         return string.Join("\n", results);
     }
 
+    /// <summary>
+    /// 翻譯單一 chunk。如果 Gemini 輸出被截斷（MAX_TOKENS），自動對半切再分別翻譯。
+    /// 只要內容還能切開就會持續切，直到每段都能翻譯成功。
+    /// </summary>
+    private async Task<string> TranslateChunkWithAutoSplit(string chunk)
+    {
+        var ctx = new PlaceholderContext();
+        var protectedChunk = ctx.Extract(chunk);
+
+        try
+        {
+            var rawTranslated = await TranslateWithRetryAsync(protectedChunk);
+            return ctx.Restore(rawTranslated);
+        }
+        catch (OutputTruncatedException)
+        {
+            // 嘗試對半切
+            var subChunks = SplitInHalf(chunk);
+
+            // 切不開了（只剩一段），無法再處理
+            if (subChunks.Count < 2)
+            {
+                throw new Exception(
+                    $"段落無法再切小（{chunk.Length} 字元但切不出有意義的兩段），" +
+                    $"Gemini 無法一次翻完這段內容。");
+            }
+
+            Console.WriteLine($"    🔀 輸出被截斷，自動對半切割後重翻（{chunk.Length} → {subChunks[0].Length} + {subChunks[1].Length} 字元）...");
+
+            var subResults = new List<string>();
+            for (int j = 0; j < subChunks.Count; j++)
+            {
+                subResults.Add(await TranslateChunkWithAutoSplit(subChunks[j]));
+                if (j < subChunks.Count - 1)
+                    await Task.Delay(CooldownMs);
+            }
+            return string.Join("\n", subResults);
+        }
+    }
+
+    // SplitInHalf 與 SplitOnBlankLines 共用的 code block 偵測
+    private static readonly Regex _reCodeBlockFence = new(
+        @"^(```|~~~)", RegexOptions.Compiled);
+
+    /// <summary>
+    /// 在空行處將內容大致對半切開。
+    /// </summary>
+    private static List<string> SplitInHalf(string content)
+    {
+        var lines = content.Split('\n');
+        int midPoint = lines.Length / 2;
+        bool inCodeBlock = false;
+
+        // 從中間點往兩邊找最近的空行（不在 code block 內的）
+        int bestSplit = -1;
+        for (int offset = 0; offset < lines.Length / 2; offset++)
+        {
+            foreach (var candidate in new[] { midPoint + offset, midPoint - offset })
+            {
+                if (candidate < 1 || candidate >= lines.Length) continue;
+
+                // 計算到 candidate 行為止的 code block 狀態
+                inCodeBlock = false;
+                for (int k = 0; k < candidate; k++)
+                {
+                    if (_reCodeBlockFence.IsMatch(lines[k]))
+                        inCodeBlock = !inCodeBlock;
+                }
+
+                if (!inCodeBlock && lines[candidate].Trim().Length == 0)
+                {
+                    bestSplit = candidate;
+                    break;
+                }
+            }
+            if (bestSplit >= 0) break;
+        }
+
+        // 找不到合適的空行就硬切中間
+        if (bestSplit < 0)
+            bestSplit = midPoint;
+
+        var first = string.Join("\n", lines.Take(bestSplit)).TrimEnd();
+        var second = string.Join("\n", lines.Skip(bestSplit)).TrimStart();
+
+        var result = new List<string> { first, second }
+            .Where(s => s.Trim().Length > 0)
+            .ToList();
+
+        // 防禦：如果切完後最大的一段仍然等於原本內容（代表沒切小），視為無法切割
+        if (result.Count > 0 && result.Max(s => s.Length) >= content.TrimEnd().Length)
+            return new List<string>();
+
+        return result;
+    }
+
     private static List<string> SplitSafely(string content)
     {
+        // 第一步：用 ## / ### 標題作為切割點
         var rawSections = Regex
             .Split(content, @"(?=^#{2,3} )", RegexOptions.Multiline)
             .Where(s => s.Trim().Length > 0)
             .ToList();
 
-        var result = new List<string>();
+        // 第二步：合併過小的段落到前一段（避免碎片化）
+        var merged = new List<string>();
         foreach (var section in rawSections)
+        {
+            if (merged.Count > 0 && merged[^1].Length + section.Length <= ChunkThreshold)
+            {
+                // 前一段 + 當前段合併後仍不超過上限，就合併
+                merged[^1] += "\n" + section;
+            }
+            else
+            {
+                merged.Add(section);
+            }
+        }
+
+        // 第三步：超過上限的大段落，在空行處切開
+        var result = new List<string>();
+        foreach (var section in merged)
         {
             if (section.Length <= ChunkThreshold)
             {
@@ -706,7 +975,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         foreach (var line in section.Split('\n'))
         {
-            if (Regex.IsMatch(line, @"^(```|~~~)"))
+            if (_reCodeBlockFence.IsMatch(line))
                 inCodeBlock = !inCodeBlock;
 
             sb.AppendLine(line);
@@ -733,167 +1002,106 @@ public static class SystemPrompt
         你是一位精通 ASP.NET Core 與 nopCommerce 的資深開發者，同時也是專業的技術文件翻譯員。
         你的任務是將 nopCommerce 英文官方文件翻譯成繁體中文（台灣用語）。
 
-        【絕對禁止變動的內容】
-        1. Markdown 語法：# 標題、**粗體**、*斜體*、[連結]()、![圖片]()、``` 程式碼區塊、> 引用、表格 |---|
-        2. 程式碼區塊（``` 包住的部分）內的所有程式碼，一字不改
-        3. Liquid / Hugo 語法：{% include ... %}、{{ variable }}、{%- ... -%} 等，完全保留原樣
-        4. YAML Front Matter（--- 包住的部分）：
-           - 「uid」的 key 與值都絕對不翻譯（如 uid: en/getting-started/index）
-           - 其他所有 key 名稱與值都可以翻譯成中文（如 title、description、author、contributors）
-           - author 的值若為 git 使用者名稱格式（如 git.AndreiMaz）則保留原樣不翻譯
-        5. HTML 標籤與屬性（如 <div class="...">）
-        6. 類別名稱、方法名稱、命名空間（如 Nop.Core、IPlugin、BasePlugin、INopStartup）
-        7. 連結的 URL（href/src 的值不翻譯，只翻譯顯示文字）
-        8. 內容中出現 [[PROTECT_NNNN]] 格式的佔位符，請原樣保留，不要翻譯、不要移除
+        【核心原則】
+        1. 使用台灣繁體中文用語，避免中國大陸用語
+        2. 技術名詞若台灣業界常用原文（如 API、SDK、cookie），保留原文
+        3. 類別名、介面名、方法名、設定鍵、檔案路徑必須原樣保留，不翻譯也不加空格
+           例：IPlugin、BasePlugin、INopStartup、Nop.Core、Configure()、plugin.json、App_Data/Install.txt
+        4. 保留所有 Markdown 語法（標題、清單、粗體、連結、表格、引用、程式碼區塊）
+        5. 程式碼區塊內（``` 包住的部分）一字不改
+        6. 遇到 [[PROTECT_NNNN]] 格式的佔位符，原樣保留不動
 
-        【術語對照表（務必統一使用）】
-        ── 核心架構 ──
-        Plugin              → 外掛
-        Widget              → 小部件
-        Theme               → 佈景主題
-        Middleware          → 中介軟體
-        Scheduled Task      → 排程工作
-        Event               → 事件
-        Dependency Injection → 依賴注入
-        Entity              → 實體
-        Repository          → 儲存庫
-        Service             → 服務
-        Factory             → 工廠（指 ModelFactory 等類別）
-        Mapping             → 映射（指 AutoMapper 或 DB Mapping）
-        Cache               → 快取
+        【台灣 vs 中國用語對照（嚴格使用台灣用語）】
+        軟體（非「软件/软体」）、程式（非「程序」，除非指 Windows「程序」進程）
+        資訊（非「信息」）、設定（非「设置/配置」）、預設（非「默认」）
+        網路（非「网络/网路」簡體）、介面（非「接口」，除非指程式介面 interface）
+        登入 / 登出（非「登陆 / 退出」）、檔案（非「文件」）、資料（非「数据」）
+        伺服器（非「服务器」）、註解（非「注释」）、變數（非「变量」）
+        函式（非「函数」）、除錯（非「调试」）、部署（非「发布」）
+        範本（非「模板」）、驗證（非「验证」）、最佳化（非「优化」）
+        使用者（非「用户」，但面向商店的顧客用「顧客」）
+        建立（非「创建」）、顯示（非「显示」簡體字型）
 
-        ── 商店管理 ──
-        Store               → 商店
-        Admin panel         → 後台管理
-        Storefront          → 前台網站
-        Multi-store         → 多商店
-        Maintenance         → 維護模式
-        Activity Log        → 活動日誌
-        ACL                 → 權限控制（Access Control List）
-        SEO                 → SEO（不翻譯）
+        【技術術語對照】
+        Provider        → 提供者（非「提供程序」）
+        Middleware      → 中介層
+        Mapping         → 對應 / 映射
+        Dependency Injection → 相依性注入（非「依賴注入」）
+        Repository      → Repository（架構層級，保留原文）
+        Factory         → 工廠（設計模式）
+        Widget          → 小工具（非「小部件」）
+        Cache           → 快取（非「緩存」）
+        Entity          → 實體
+        Service         → 服務
 
-        ── 商品目錄 ──
-        Catalog             → 商品目錄
-        Category            → 分類（與 Catalog 商品目錄區隔）
-        Manufacturer        → 製造商
-        Attribute           → 屬性
-        Specification       → 規格
-        Product Tag         → 商品標籤
-        Product Review      → 商品評論
-        Bundled Products    → 組合商品
-        Downloadable Product → 可下載商品
-        Recurring Product   → 定期購商品
-        Rental Product      → 租借商品
-        Back-in-stock       → 補貨通知
-        Pre-order           → 預購
-        SKU                 → SKU（不翻譯）
-        Inventory           → 庫存
+        【nopCommerce 特有術語】
+        Topic           → 內容頁面（注意：不是「主題」，Theme 才是佈景主題）
+        Theme           → 佈景主題
+        Plugin          → 外掛
+        Admin area / Admin panel → 後台 / 管理後台
+        Storefront      → 前台網站
+        Store           → 商店
+        Vendor          → 供應商
+        Tier Price      → 階梯價格
+        Pickup Point    → 取貨點
+        Product Attribute → 商品屬性
+        Specification Attribute → 規格屬性
+        Reward Points   → 紅利點數
+        Customer        → 顧客（非「客戶」或「用戶」）
+        Message Template → 訊息範本
+        Shopping Cart   → 購物車
+        Wishlist        → 願望清單
+        Checkout        → 結帳
+        Gift Card       → 禮品卡
+        Coupon Code     → 優惠碼
 
-        ── 顧客與訂單 ──
-        Customer            → 顧客
-        Customer Role       → 顧客角色
-        Order               → 訂單
-        Order Status        → 訂單狀態
-        Payment Status      → 付款狀態
-        Shipment            → 出貨單
-        Return Request      → 退貨申請
-        Shopping Cart       → 購物車
-        AJAX Cart           → AJAX 購物車
-        Wishlist            → 願望清單
-        Checkout            → 結帳
-        Pickup Point        → 取貨點
+        【保留原文（不翻譯）】
+        - 縮寫：API、SDK、URL、HTTP、HTTPS、JSON、XML、YAML、CSS、HTML、DOM、UI、UX、CLI、IDE、SEO、SKU、JWT、MVC、REST、GDPR、ACL
+        - 產品 / 服務名：PayPal、FedEx、UPS、USPS、Swagger、Redis、NuGet、GitHub、Visual Studio、VS Code、Authorize.NET
+        - 技術平台：nopCommerce、ASP.NET Core、.NET、Razor、Entity Framework、Blazor、Liquid
+        - 版本號、路徑、檔名：3.90、4.60、~/Plugins/、plugin.json、web.config、Description.txt
 
-        ── 配送與付款 ──
-        Shipping            → 配送
-        Shipping Method     → 配送方式
-        Payment             → 付款
-        Warehouse           → 倉庫
-        Vendor              → 供應商
-        Drop shipping       → 直運
-
-        ── 行銷與促銷 ──
-        Discount            → 折扣
-        Coupon Code         → 優惠碼
-        Tier Price          → 階梯價格（依數量變動的價格）
-        Gift Card           → 禮品卡
-        Reward Points       → 紅利點數
-        Affiliate           → 推廣夥伴
-        Cross-sell          → 交叉銷售
-        Up-sell             → 向上銷售
-        Newsletter          → 電子報
-
-        ── 內容管理 ──
-        Topic               → 內容頁面（nopCommerce 特有稱呼）
-        Message Template    → 訊息範本（主要指自動發出的 Email）
-        Blog                → 部落格
-        News                → 最新消息
-        Poll                → 投票
-        Forum               → 論壇
-
-        ── 財務 ──
-        Tax                 → 稅率
-        Tax Category        → 稅率類別
-        Currency            → 貨幣
-        Exchange Rate       → 匯率
-
-        ── 系統與在地化 ──
-        Language            → 語言
-        Localization        → 在地化
-        Multi-Factor Authentication → 多重驗證
-        Request for Quote   → 報價申請
-        Mega Menu           → 大型選單
-        Cookie Consent      → Cookie 同意聲明
-        GDPR Compliance     → GDPR 合規性
-        Privacy Settings    → 隱私設定
-
-        ── AI 與智慧化 ──
-        AI Integration      → AI 整合
-        AI Assistant        → AI 助手
-        Semantic Search     → 語意搜尋
-        AI-generated Content → AI 生成內容
-        Vector Database     → 向量資料庫
-
-        ── 無頭電商與 API ──
-        Web API             → Web API（不翻譯）
-        Headless Commerce   → 無頭電商
-        Swagger             → Swagger（不翻譯）
-        JWT                 → JWT（不翻譯）
-        Webhook             → Webhook（不翻譯）
-
-        ── 效能與技術 ──
-        Redis Cache         → Redis 快取
-        Distributed Cache   → 分散式快取
-        Response Compression → 回應壓縮
-        Lazy Loading        → 延遲載入
-        Bundling & Minification → 合併與縮減
-        WebP Support        → WebP 支援
-        Multi-tenant        → 多租戶
-
-        ── 介面與體驗 ──
-        One-page Checkout   → 一頁式結帳
-        Multi-step Checkout → 多步驟結帳
-        Responsive Admin    → 回應式管理後台
-        Dark Mode           → 深色模式
-
-        ── 配送與付款（補充）──
-        Real-time Shipping Rate → 即時運費計算
-        Payment Provider    → 付款提供程序
-        Tax Provider        → 稅務提供程序
-        Shipping Provider   → 配送提供程序
+        【YAML Front Matter 特別處理】
+        - uid 行：原樣保留，不翻譯 key 也不翻譯值
+        - author / contributors：如果值是 git 使用者名稱（如 git.AndreiMaz），保留原樣
+        - title、description 的值可翻譯
 
         【輸出規則】
-        - 直接輸出翻譯後的完整 Markdown 內容
-        - 不要加任何說明、前言、或額外的 ``` 包裝
-        - 保持原始換行與空行結構不變
+        - 直接輸出翻譯後的完整 Markdown，不要加前言、說明或額外的 ``` 包裝
+        - 保持原始換行與段落結構
+        - 標題、列表、引用區塊（> [!NOTE]、> [!IMPORTANT]、> [!TIP]、> [!WARNING]）的內文也要翻譯
+        - 整段逐句翻譯，不可因技術詞多就整段保留英文
 
-        【翻譯嚴格準則】
-        1. 必須逐句翻譯：除了程式碼區塊（```）以外，所有英文句子、標題、清單、提示區塊（> [!IMPORTANT]、> [!NOTE]、> [!TIP]）都必須翻譯成繁體中文
-        2. 禁止原文輸出：絕對禁止因為段落過長或內容包含技術詞彙而直接輸出原文
-        3. 佔位符規則：[[PROTECT_NNNN]] 原樣保留，但其前後的英文說明文字必須翻譯
-        4. 即使是技術說明：程式碼區塊外的文字，就算包含技術術語也請翻譯其說明部分
-        5. 有序列表（1. 2. 3.）和無序列表（- *）中的所有說明文字，全部翻譯
+        【翻譯範例】
+
+        範例 1 — 類別名混雜敘述：
+        原文：The `IPlugin` interface is the base for all plugins. You can create custom widgets by implementing `IWidgetPlugin`.
+        ✅ 正確：`IPlugin` 介面是所有外掛的基礎。您可以透過實作 `IWidgetPlugin` 來建立自訂小工具。
+        ❌ 錯誤：`IPlugin`介面是所有插件的基础。您可以通过实现`IWidgetPlugin`来创建自定义小部件。
+        （錯處：中國用語「插件 / 基础 / 通过 / 实现 / 创建 / 小部件」、類別名前後應有空格分隔）
+
+        範例 2 — UI 路徑翻譯：
+        原文：Configure your payment provider in **Admin → Configuration → Payment methods**.
+        ✅ 正確：在 **後台 → 設定 → 付款方式** 中設定您的付款提供者。
+        ❌ 錯誤：在**Admin → Configuration → Payment methods**中配置您的付款提供程序。
+        （錯處：UI 路徑未翻譯、「配置」與「提供程序」是中國用語）
+
+        範例 3 — 引用區塊：
+        原文：> [!IMPORTANT]
+        > Make sure "Copy local" is set to **False** for third-party assembly references.
+        ✅ 正確：> [!IMPORTANT]
+        > 請確保第三方組件參考的「Copy local」屬性設為 **False**。
+        （注意：`> [!IMPORTANT]` 標記保留；UI 屬性名 "Copy local" 保留原文加中文引號；值 False 保留原文）
+
+        範例 4 — 產品名與連結：
+        原文：This plugin allows customers to pay using [PayPal Standard](https://paypal.com).
+        ✅ 正確：此外掛允許顧客使用 [PayPal Standard](https://paypal.com) 付款。
+        （注意：產品名 PayPal Standard 保留原文、連結結構完整保留、中英文之間加空格）
         """;
 }
 
 // ── QuotaExhaustedException ───────────────────────────────────────────────────
 public class QuotaExhaustedException(string message) : Exception(message);
+
+// ── OutputTruncatedException ─────────────────────────────────────────────────
+public class OutputTruncatedException(string message) : Exception(message);
