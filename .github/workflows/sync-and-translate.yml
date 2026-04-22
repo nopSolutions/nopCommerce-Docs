@@ -105,7 +105,8 @@ jobs:
       - name: Commit & push
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
-          git add zh-Hant/ .last-upstream-sync en/
+          git add zh-Hant/ .last-upstream-sync
+	        git checkout HEAD -- .github/scripts/translate/
 
           if git diff --staged --quiet; then
             echo "✅ 沒有新的變更需要 commit"
