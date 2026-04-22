@@ -2,8 +2,9 @@ name: Sync Upstream & Auto Translate to zh-Hant
 
 on:
   schedule:
-    # 台灣時間 00:10 = UTC 時間 16:10 (前一天)
-    - cron: '10 16 * * *'
+    # 這會在 UTC 00:10 和 12:10 執行
+    # 對應台灣時間 08:10 和 20:10
+    - cron: '10 0,12 * * *'
   workflow_dispatch:
     inputs:
       force_retranslate:
