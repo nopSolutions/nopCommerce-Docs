@@ -481,16 +481,53 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
     /// <summary>
     /// 翻譯完成後的後處理：
-    /// 1. xref:en/ → xref:zh-Hant/
-    /// 2. uid: en/ → uid: zh-Hant/
+    /// 1. 移除 Gemini 在分段翻譯時擅自插入的額外 YAML front matter 區塊（非檔案開頭的 --- ... ---）
+    /// 2. 移除 Gemini 偶爾吐回的成對孤立 --- 分隔線（來自 prompt 裡的 ---\n{content}\n--- 結構）
+    /// 3. xref:en/ → xref:zh-Hant/
+    /// 4. uid: en/ → uid: zh-Hant/
+    /// 5. 將首段 front matter 的 key 名稱翻成中文
     /// </summary>
     private static string PostProcess(string content)
     {
+        // 先統一換行方便 regex 處理
+        bool hasCrLf = content.Contains("\r\n");
+        content = content.Replace("\r\n", "\n");
+
+        // 1. 先抽出「檔案開頭」的合法 front matter（以 \A--- 開頭）
+        //    暫時保留，避免後續步驟誤刪
+        string? headFrontMatter = null;
+        var headMatch = Regex.Match(content, @"\A---\n[\s\S]*?\n---[ \t]*\n?");
+        if (headMatch.Success)
+        {
+            headFrontMatter = headMatch.Value;
+            content = content.Substring(headMatch.Length);
+        }
+
+        // 2. 移除「中間位置」Gemini 擅自生成的偽 front matter 區塊
+        //    特徵：以 --- 獨立一行開頭，內含至少一行 key: value，以 --- 獨立一行結尾
+        content = Regex.Replace(
+            content,
+            @"(?m)^---\n(?:[^\n]*:[^\n]*\n)+---[ \t]*\n?",
+            ""
+        );
+
+        // 3. 移除 Gemini 從 prompt 結構吐回的「成對孤立 ---」
+        //    只在它們與區塊邊界相鄰時移除，避免誤刪合法的 Markdown 水平分隔線。
+        //    a. 連續出現的 ---（例：---\n---）→ 全部移除
+        content = Regex.Replace(content, @"(?m)^---[ \t]*\n(?=---[ \t]*\n)", "");
+        //    b. 緊貼在標題行之前的獨立 ---（如 ---\n## 路由）→ 移除
+        //       合法的水平分隔線後面通常是空行或段落，不會緊接 #/## 標題
+        content = Regex.Replace(content, @"(?m)^---[ \t]*\n(?=#{1,6} )", "");
+
+        // 4. 還原首段 front matter
+        if (headFrontMatter != null)
+            content = headFrontMatter + content;
+
+        // 5. xref / uid 的 en → zh-Hant
         content = Regex.Replace(content, @"xref:en/", "xref:zh-Hant/");
         content = Regex.Replace(content, @"(uid:\s*)en/", "$1zh-Hant/");
 
-        // 只在 YAML front matter 內翻譯特定 key 名稱
-        // 條件：行首、完整 key 名稱、後接空白或行尾（避免誤中 author_name: 等）
+        // 6. 首段 front matter 內的 key 名稱翻成中文
         content = Regex.Replace(
             content,
             @"\A(---\n[\s\S]*?)\n---",
@@ -503,6 +540,9 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 return $"{fm}\n---";
             }
         );
+
+        if (hasCrLf)
+            content = content.Replace("\n", "\r\n");
 
         return content;
     }
@@ -558,17 +598,25 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             即使段落中包含 [[PROTECT_NNNN]]，也必須翻譯其前後的說明。
             輸入：The [[PROTECT_0001]] is a plugin interface.
             輸出：[[PROTECT_0001]] 是一個外掛介面。
-            【目前任務內容】
-            ---
+            【目前任務內容】（以下 <<<INPUT>>> 與 <<<END>>> 之間為待翻譯內容，這兩個標記本身不是內容，也不要輸出）
+            <<<INPUT>>>
             {content}
-            ---
+            <<<END>>>
             【最終提醒】
-            請直接輸出繁體中文翻譯後的 Markdown。禁止保留任何原始英文句子。
+            1. 請直接輸出繁體中文翻譯後的 Markdown。禁止保留任何原始英文句子。
+            2. 不要輸出 <<<INPUT>>>、<<<END>>> 這兩個標記。
+            3. 不要自行新增 YAML front matter（即 --- 開頭與結尾的區塊），除非原文本身就有。
+            4. 不要在輸出開頭或結尾加上多餘的 --- 分隔線。
             """;
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
         if (string.IsNullOrWhiteSpace(text))
             throw new Exception("Gemini 回傳空內容");
+
+        // 清除 Gemini 可能回吐的 prompt 分隔標記
+        text = Regex.Replace(text, @"<<<INPUT>>>\s*\n?", "");
+        text = Regex.Replace(text, @"<<<END>>>\s*\n?", "");
+
         return text;
     }
 
