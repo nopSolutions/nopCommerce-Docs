@@ -210,6 +210,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         int success = 0, skipped = 0, failed = 0;
         int consecutiveFailures = 0;
         const int MaxConsecutiveFailures = 20;
+        bool earlyStop = false;
 
         for (int i = 0; i < files.Count; i++)
         {
@@ -248,6 +249,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                     Console.WriteLine($"\n⛔ 連續失敗 {MaxConsecutiveFailures} 次，今日 API quota 可能已耗盡，提早結束。");
                     Console.WriteLine($"   已成功：{success}  已略過：{skipped}  失敗：{failed}");
                     Console.WriteLine($"   下次排程執行時會繼續補翻剩餘檔案。");
+                    earlyStop = true;
                     break;
                 }
             }
@@ -259,7 +261,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         Console.WriteLine($"\n{new string('─', 55)}");
         Console.WriteLine($"✅ 成功：{success}  ⏭️  略過：{skipped}  ❌ 失敗：{failed}");
 
-        if (failed > 0) Environment.Exit(1);
+        // earlyStop 時正常結束（讓 workflow 繼續執行 commit），否則有失敗才報錯
+        if (!earlyStop && failed > 0) Environment.Exit(1);
 
         // 複製非 .md 檔案（圖片、PDF 等），來源比目標新才複製
         await CopyNonMarkdownFilesAsync();
