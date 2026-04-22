@@ -7,28 +7,28 @@ uid: zh-Hant/developer/plugins/plugin-with-data-access
 
 # 具有資料存取功能的外掛
 
-在本教學中，我將使用 nopCommerce 外掛架構來實作一個商品瀏覽追蹤器。在開始開發之前，您必須先閱讀、理解並完成下方列出的教學課程。我將跳過先前文章中已涵蓋的部分解釋，但您可以透過提供的連結進行回顧。
+在本教學課程中，我將使用 nopCommerce 外掛架構來實作商品檢視追蹤器。在開始開發之前，您必須閱讀、理解並完成以下列出的教學課程。我將跳過先前文章中涵蓋的一些解釋，但您可以透過提供的連結進行回顧。
 
-- [開發者教學](xref:zh-Hant/developer/tutorials/index)
+- [開發者教學課程](xref:zh-Hant/developer/tutorials/index)
 - [更新現有實體。如何新增屬性。](xref:zh-Hant/developer/tutorials/update-existing-entity)
 - [如何為 nopCommerce 4.90 編寫外掛](xref:zh-Hant/developer/plugins/how-to-write-plugin-4.90)
 
-我們將從資料存取層開始編碼，接著進入服務層，最後以依賴注入作為結尾。
+我們將從資料存取層開始編碼，接著進入服務層，最後以依賴注入結束。
 
-## 開始準備
+## 開始使用
 
 建立一個新的類別庫專案「Nop.Plugin.Misc.ProductViewTracker」。
 
 新增 `plugin.json` 檔案。
 
->[!TIP]
->關於 `plugin.json` 檔案的資訊，請參閱 [plugin.json 檔案](xref:zh-Hant/developer/plugins/plugin_json)。
+> [!TIP]
+> 有關 `plugin.json` 檔案的資訊，請參閱 [plugin.json 檔案](xref:zh-Hant/developer/plugins/plugin_json)。
 
-接著新增對 **Nop.Web.Framework** 專案的參考。這樣就足夠了，因為其他依賴項（例如 **Nop.Core** 和 **Nop.Data**）會自動連接。
+然後新增對 **Nop.Web.Framework** 專案的參考。這樣對我們來說就足夠了，因為其他依賴項（例如 **Nop.Core** 和 **Nop.Data**）將會自動連線。
 
 ## 資料存取層（亦即在 nopCommerce 中建立新實體）
 
-在 "*domain*" 命名空間內，我們將建立一個名為 **`ProductViewTrackerRecord`** 的公開類別。此類別繼承自 **`BaseEntity`**，除此之外它是一個非常簡單的檔案。需要記住的一點是，我們沒有導覽屬性（關聯屬性），因為我們用來處理資料庫的 *Linq2DB* 框架不支援導覽屬性。
+在 "*domain*" 命名空間內，我們將建立一個名為 **`ProductViewTrackerRecord`** 的公開類別。此類別繼承自 **`BaseEntity`**，除此之外它是一個非常簡單的檔案。需要記住的一點是，我們沒有導覽屬性（關聯屬性），因為我們用於操作資料庫的 *Linq2DB* 框架不支援導覽屬性。
 
 ```csharp
 namespace Nop.Plugin.Misc.ProductViewTracker.Domain
@@ -43,7 +43,7 @@ public class ProductViewTrackerRecord : BaseEntity
 }
 ```
 
-接下來要建立的類別是 *FluentMigrator* 實體建構器類別。在映射類別中，我們會映射欄位、資料表關係以及資料庫資料表。
+下一個要建立的類別是 *FluentMigrator* 實體建構器類別。在映射類別中，我們會映射欄位、資料表關聯以及資料庫資料表。
 
 ```csharp
 using FluentMigrator.Builders.Create.Table;
@@ -79,7 +79,7 @@ public class ProductViewTrackerRecordBuilder : NopEntityBuilder<ProductViewTrack
 }
 ```
 
-接下來對我們重要的類別是遷移類別，它會在資料庫中直接建立我們的資料表。您可以在外掛中建立任意數量的遷移，唯一需要留意的是遷移的版本。我們特別建立了 **NopMigration** 屬性來讓您更輕鬆地處理。透過在此處標示最完整且準確的檔案建立日期，您幾乎可以確保遷移編號的唯一性。
+下一個對我們來說很重要的類別是遷移類別，它會直接在資料庫中建立我們的資料表。您可以在您的外掛中建立任意數量的遷移，唯一需要留意的是遷移的版本。我們特別建立了 **NopMigration** 屬性來讓您更輕鬆地使用。透過在此處標示最完整且準確的檔案建立日期，您可以實質上保證遷移編號的唯一性。
 
 ```csharp
 using FluentMigrator;
@@ -101,7 +101,7 @@ public class SchemaMigration : ForwardOnlyMigration
 
 ## 服務層
 
-服務層負責連接資料存取層與表現層。由於在程式碼中混淆任何類型的職責是不好的做法，因此每一層都需要隔離。服務層以商業邏輯包裝資料層，而表現層則依賴於服務層。由於我們的任務非常小，我們的服務層除了與儲存庫通訊之外不做任何事情（在 nopCommerce 中，儲存庫充當物件內容的門面）。
+服務層連線了資料存取層與呈現層。由於在程式碼中共享任何類型的責任都是不好的做法，因此每一層都需要被隔離。服務層使用業務邏輯封裝了資料層，而呈現層則依賴於服務層。因為我們的任務非常簡單，所以我們的服務層除了與儲存庫溝通之外什麼都不做（在 nopCommerce 中，儲存庫作為物件內容的門面）。
 
 ```csharp
 using Nop.Data;
@@ -144,7 +144,7 @@ public class ProductViewTrackerService : IProductViewTrackerService
 
 ## 依賴注入
 
-Martin Fowler 對依賴注入或控制反轉有很棒的描述。我不會重複他的工作，您可以[在此處找到他的文章](https://martinfowler.com/articles/injection.html)。依賴注入管理物件的生命週期，並為依賴物件提供可使用的實例。首先，我們需要設定依賴容器，以便它了解將控制哪些物件，以及建立這些物件時可能適用的規則。
+Martin Fowler 對依賴注入或控制反轉進行了極佳的描述。我不會重複他的工作，您可以在[這裡找到他的文章](https://martinfowler.com/articles/injection.html)。依賴注入管理物件的生命週期，並為依賴物件提供可使用的實例。首先，我們需要設定依賴容器，以便它了解它將控制哪些物件，以及建立這些物件時可能適用的規則。
 
 ```csharp
 using Microsoft.AspNetCore.Builder;
@@ -183,9 +183,9 @@ public class NopStartup : INopStartup
 }
 ```
 
-在上面的程式碼中，我們註冊了不同類型的物件，以便稍後將它們注入到控制器、服務和儲存庫中。現在我們已經涵蓋了新主題，我將帶回一些舊主題，以便我們完成這個外掛。
+在上面的程式碼中，我們註冊了不同類型的物件，以便稍後可以將它們注入到控制器、服務和儲存庫中。現在我們已經介紹了新的主題，我將帶回一些舊的主題，以便我們完成這個外掛。
 
-## 檢視元件 (View component)
+## 檢視元件 (View Component)
 
 讓我們建立一個檢視元件：
 
@@ -248,7 +248,7 @@ public class ProductViewTrackerViewComponent : NopViewComponent
 
 > [!IMPORTANT]
 >
->我們將外掛實作為小部件。在這種情況下，我們不需要編輯 `cshtml` 檔案。
+> 我們將外掛實作為一個小部件。在這種情況下，我們不需要編輯 `cshtml` 檔案。
 
 ```csharp
 using Nop.Services.Cms;
