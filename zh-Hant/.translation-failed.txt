@@ -1,0 +1,2 @@
+en/developer/plugins/how-to-write-widget-for-nopCommerce.md
+en/developer/web-api/index.md
