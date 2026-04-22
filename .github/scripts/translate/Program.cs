@@ -160,7 +160,7 @@ public class PlaceholderContext
 public class Translator(string apiKey, string sourceDir, string targetDir, bool force)
 {
     private const int CooldownMs = 4_000;
-    private const int ChunkThreshold = 8_000;
+    private const int ChunkThreshold = 5_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
         .GenerativeModel(model: "gemini-3.1-flash-lite-preview");
@@ -506,7 +506,16 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         {
             try
             {
-                return await CallGeminiAsync(content);
+                var translated = await CallGeminiAsync(content);
+
+                // 如果內容超過 200 字但完全沒有中文字元，視為翻譯失敗觸發重試
+                if (content.Length > 50 && !translated.Any(c => c >= 0x4E00 && c <= 0x9FFF))
+                {
+                    Console.WriteLine("  ⚠️ 偵測到翻譯結果未包含中文，觸發自動重試...");
+                    throw new Exception("Translation failed: No Chinese characters detected.");
+                }
+
+                return translated;
             }
             catch (Exception ex) when (ex.Message.Contains("429") || ex.Message.Contains("quota"))
             {
@@ -529,13 +538,15 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         var prompt = $"""
             {SystemPrompt.Text}
 
-            【目前任務】
-            正在翻譯技術文件的其中一個段落。即使段落中包含大量佔位符 [[PROTECT_NNNN]]，仍需將佔位符之間的所有英文說明文字完整翻譯成繁體中文，禁止原文輸出。
+            【現在開始翻譯以下段落】
+            請將內容中的英文完整翻譯為繁體中文。
+            注意：[[PROTECT_NNNN]] 是必須保留的程式碼或標籤佔位符，請不要更動它，但必須翻譯它前後的說明文字。
 
-            待翻譯內容：
-            ---
+            --- START ---
             {content}
-            ---
+            --- END ---
+
+            【再次提醒】請務必檢查是否還有漏掉的英文。禁止直接輸出英文原文，請輸出完整的繁體中文翻譯結果。
             """;
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
