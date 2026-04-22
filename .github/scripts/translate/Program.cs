@@ -185,12 +185,31 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         if (!string.IsNullOrWhiteSpace(specificFile))
         {
-            if (!File.Exists(specificFile))
+            if (Directory.Exists(specificFile))
             {
-                Console.Error.WriteLine($"❌ 找不到指定檔案：{specificFile}");
-                Environment.Exit(1);
+                // 指定目錄：翻譯該目錄下所有 .md
+                files = Directory
+                    .EnumerateFiles(specificFile, "*.md", SearchOption.AllDirectories)
+                    .OrderBy(f => f)
+                    .ToList();
+                if (files.Count == 0)
+                {
+                    Console.Error.WriteLine($"❌ 指定目錄下沒有找到任何 .md 檔案：{specificFile}");
+                    Environment.Exit(1);
+                }
+                Console.WriteLine($"📂 指定目錄：{specificFile}（共 {files.Count} 個檔案）");
             }
-            files = [specificFile];
+            else if (File.Exists(specificFile))
+            {
+                // 指定單一檔案
+                files = [specificFile];
+            }
+            else
+            {
+                Console.Error.WriteLine($"❌ 找不到指定的檔案或目錄：{specificFile}");
+                Environment.Exit(1);
+                return;
+            }
         }
         else
         {
