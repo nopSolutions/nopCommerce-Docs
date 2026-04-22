@@ -509,10 +509,15 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 var translated = await CallGeminiAsync(content);
 
                 // 如果內容超過 200 字但完全沒有中文字元，視為翻譯失敗觸發重試
-                if (content.Length > 50 && !translated.Any(c => c >= 0x4E00 && c <= 0x9FFF))
+                // 移除佔位符後再判斷，避免「只有佔位符」的段落誤觸發
+                var cleanOriginal   = Regex.Replace(content,    @"\[\[PROTECT_\d+\]\]", "").Trim();
+                var cleanTranslated = Regex.Replace(translated, @"\[\[PROTECT_\d+\]\]", "").Trim();
+                if (cleanOriginal.Length > 10 &&
+                    Regex.IsMatch(cleanOriginal, "[a-zA-Z]{3,}") &&
+                    !cleanTranslated.Any(c => c >= 0x4E00 && c <= 0x9FFF))
                 {
-                    Console.WriteLine("  ⚠️ 偵測到翻譯結果未包含中文，觸發自動重試...");
-                    throw new Exception("Translation failed: No Chinese characters detected.");
+                    Console.WriteLine("  ⚠️ 偵測到翻譯結果未包含中文（原文含有需翻譯文字），觸發重試...");
+                    throw new Exception("Translation failed: No Chinese characters despite translatable input.");
                 }
 
                 return translated;
@@ -537,16 +542,16 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     {
         var prompt = $"""
             {SystemPrompt.Text}
-
-            【現在開始翻譯以下段落】
-            請將內容中的英文完整翻譯為繁體中文。
-            注意：[[PROTECT_NNNN]] 是必須保留的程式碼或標籤佔位符，請不要更動它，但必須翻譯它前後的說明文字。
-
-            --- START ---
+            【任務示範】
+            即使段落中包含 [[PROTECT_NNNN]]，也必須翻譯其前後的說明。
+            輸入：The [[PROTECT_0001]] is a plugin interface.
+            輸出：[[PROTECT_0001]] 是一個外掛介面。
+            【目前任務內容】
+            ---
             {content}
-            --- END ---
-
-            【再次提醒】請務必檢查是否還有漏掉的英文。禁止直接輸出英文原文，請輸出完整的繁體中文翻譯結果。
+            ---
+            【最終提醒】
+            請直接輸出繁體中文翻譯後的 Markdown。禁止保留任何原始英文句子。
             """;
         var response = await _model.GenerateContent(prompt);
         var text = response.Text;
