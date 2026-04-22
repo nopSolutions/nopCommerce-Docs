@@ -118,34 +118,35 @@ public class PlaceholderContext
     /// </summary>
     private string ProtectYamlFrontMatter(string content)
     {
-        return Regex.Replace(
+        // 統一換行符，確保 regex 能正確匹配
+        bool hasCrLf = content.Contains("\r\n");
+        content = content.Replace("\r\n", "\n");
+
+        content = Regex.Replace(
             content,
-            @"^---\n([\s\S]*?)\n---",
+            @"\A---\n([\s\S]*?)\n---[ \t]*\n?",
             m =>
             {
                 var body = m.Groups[1].Value;
-
-                // 逐行處理
                 var lines = body.Split('\n');
                 var processed = lines.Select(line =>
                 {
-                    // uid 整行保護
                     if (Regex.IsMatch(line, @"^\s*uid\s*:"))
                         return Store(line);
-
-                    // 其他 key（含縮排）：保護 "key:" 部分，value 照原樣留給 AI
-                    // 例如: "title: Getting Started" → "[[PROTECT_0001]] Getting Started"
                     return Regex.Replace(
                         line,
                         @"^(\s*[\w\.\-]+\s*:)",
                         keyPart => Store(keyPart.Value)
                     );
                 });
-
-                return $"---\n{string.Join("\n", processed)}\n---";
-            },
-            RegexOptions.Multiline
+                return $"---\n{string.Join("\n", processed)}\n---\n";
+            }
         );
+
+        if (hasCrLf)
+            content = content.Replace("\n", "\r\n");
+
+        return content;
     }
 
     /// <summary>保護 Liquid / Hugo 標籤：{% ... %} 與 {{ ... }}。</summary>
