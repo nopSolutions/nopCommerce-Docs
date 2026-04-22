@@ -767,12 +767,6 @@ public class Translator
             || msg.Contains("403");
     }
 
-    // Gemini Flash Lite 的 output 上限是 8192 tokens，設定到最大值
-    private static readonly GenerationConfig _generationConfig = new()
-    {
-        MaxOutputTokens = 8192
-    };
-
     private async Task<string> CallGeminiAsync(string content)
     {
         var prompt = $"""
@@ -790,7 +784,7 @@ public class Translator
             3. 不要自行新增 YAML front matter（即 --- 開頭與結尾的區塊），除非原文本身就有。
             4. 不要在輸出開頭或結尾加上多餘的 --- 分隔線。
             """;
-        var response = await _model.GenerateContent(prompt, _generationConfig);
+        var response = await _model.GenerateContent(prompt);
         var text = response.Text;
         if (string.IsNullOrWhiteSpace(text))
             throw new Exception("Gemini 回傳空內容");
