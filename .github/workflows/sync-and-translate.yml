@@ -2,7 +2,7 @@ name: Sync Upstream & Auto Translate to zh-Hant
 
 on:
   schedule:
-    # 這會在 UTC 00:10 和 12:10 執行
+    # 這會在 UTC 00:10 和 12:10 執行 
     # 對應台灣時間 08:10 和 20:10
     - cron: '10 0,12 * * *'
   workflow_dispatch:
@@ -15,6 +15,11 @@ on:
         description: '只翻譯單一檔案或目錄（例如：en/getting-started/index.md 或 en/developer/plugins）'
         required: false
         default: ''
+
+# 同一時間只能跑一個翻譯 workflow，避免多個實例互相衝突
+concurrency:
+  group: translate
+  cancel-in-progress: false
 
 jobs:
   sync-and-translate:
@@ -85,6 +90,13 @@ jobs:
             echo "🔄 準備執行翻譯"
           fi
 
+      # ── 在獨立 branch 上工作，避免與手動 push 到 master 的修改衝突 ──
+      - name: Create translation branch
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git checkout -B auto-translate origin/master
+          echo "📌 已切到 auto-translate branch（基於最新 master）"
+
       - name: Merge upstream into en/
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
@@ -116,13 +128,14 @@ jobs:
         run: |
           echo "${{ steps.check_changes.outputs.current_upstream }}" > .last-upstream-sync
 
-      - name: Commit & push
+      - name: Commit translation results
         if: steps.check_changes.outputs.has_changes == 'true'
+        id: commit_translation
         run: |
           git add zh-Hant/ .last-upstream-sync
 
           if git diff --staged --quiet; then
-            echo "✅ 沒有新的變更需要 commit"
+            echo "ℹ️  本次沒有新的 staged 變更（可能 C# 程式已中途 commit 過）"
           else
             SHORT=$(echo "${{ steps.check_changes.outputs.current_upstream }}" | cut -c1-7)
             git commit -m "🌐 自動翻譯更新 [upstream: ${SHORT}]
@@ -130,8 +143,30 @@ jobs:
             - 同步上游 nopCommerce-Docs 變更
             - 翻譯新增/修改的 .md 為繁體中文 → zh-Hant/
             - 翻譯引擎：Google Gemini Flash"
-
-            git pull origin master --rebase
-            git push origin master
-            echo "✅ 推送完成"
           fi
+
+          # 判斷 auto-translate 是否比 origin/master 超前（有 commit 要 merge）
+          git fetch origin master
+          AHEAD=$(git rev-list --count origin/master..HEAD)
+          echo "auto-translate 比 master 超前 ${AHEAD} 個 commit"
+          if [ "$AHEAD" = "0" ]; then
+            echo "has_new_commits=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_new_commits=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Push & merge to master
+        if: steps.commit_translation.outputs.has_new_commits == 'true'
+        run: |
+          # 1. 推送翻譯分支
+          git push origin auto-translate --force
+          echo "✅ auto-translate branch 已推送"
+
+          # 2. 切回 master，拉取最新（你可能在翻譯期間 push 了程式碼修改）
+          git checkout master
+          git pull origin master
+
+          # 3. 合併翻譯結果（zh-Hant/ 和 .last-upstream-sync 不會跟你的 .cs/.yml 衝突）
+          git merge auto-translate --no-edit -m "🔀 合併翻譯結果 (auto-translate → master)"
+          git push origin master
+          echo "✅ 翻譯結果已合併到 master"
