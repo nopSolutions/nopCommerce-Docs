@@ -165,14 +165,15 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
         .GenerativeModel(model: "gemini-3.1-flash-lite-preview");
 
+    // 429 專用：等待 66 秒後重試一次，若還是 429 則視為今日 quota 耗盡
+    private const int QuotaWaitMs = 66_000;
+
     private readonly AsyncRetryPolicy _retryPolicy = Policy
         .Handle<Exception>(ex =>
-            ex.Message.Contains("429") ||
             ex.Message.Contains("503") ||
-            ex.Message.Contains("quota") ||
             ex.Message.Contains("RESOURCE_EXHAUSTED"))
         .WaitAndRetryAsync(
-            retryCount: 4,
+            retryCount: 2,
             sleepDurationProvider: attempt => TimeSpan.FromSeconds(Math.Pow(2, attempt) * 5),
             onRetry: (ex, wait, attempt, _) =>
                 Console.WriteLine($"  ⏳ 第 {attempt} 次重試，等待 {wait.TotalSeconds:F0} 秒... ({ex.Message[..Math.Min(60, ex.Message.Length)]})")
@@ -234,7 +235,20 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 Console.WriteLine("  🔄 來源已更新，重新翻譯...");
             }
 
-            var result = await TranslateFileAsync(sourcePath, targetPath);
+            var result = false;
+            try
+            {
+                result = await TranslateFileAsync(sourcePath, targetPath);
+            }
+            catch (QuotaExhaustedException ex)
+            {
+                Console.WriteLine($"\n⛔ {ex.Message}");
+                Console.WriteLine($"   今日已成功：{success}  已略過：{skipped}");
+                Console.WriteLine($"   已翻好的檔案將會 commit，明天排程會繼續補翻。");
+                earlyStop = true;
+                break;
+            }
+
             if (result)
             {
                 success++;
@@ -346,6 +360,11 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             translated = ctx.Restore(raw);
             translated = PostProcess(translated);
         }
+        catch (QuotaExhaustedException)
+        {
+            // 往上拋，由 RunAsync 處理 earlyStop
+            throw;
+        }
         catch (Exception ex)
         {
             // 404 表示模型不存在，繼續重試也沒用，立刻終止整個程式
@@ -397,11 +416,34 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     {
         return await _retryPolicy.ExecuteAsync(async () =>
         {
-            var response = await _model.GenerateContent($"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}");
-            var text = response.Text;
-            if (string.IsNullOrWhiteSpace(text))
-                throw new Exception("Gemini 回傳空內容");
-            return text;
+            try
+            {
+                var response = await _model.GenerateContent($"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}");
+                var text = response.Text;
+                if (string.IsNullOrWhiteSpace(text))
+                    throw new Exception("Gemini 回傳空內容");
+                return text;
+            }
+            catch (Exception ex) when (ex.Message.Contains("429") || ex.Message.Contains("quota"))
+            {
+                // 429：等 66 秒後重試一次
+                Console.WriteLine($"  ⚠️  429 Too Many Requests，等待 {QuotaWaitMs / 1000} 秒後重試一次...");
+                await Task.Delay(QuotaWaitMs);
+
+                try
+                {
+                    var response = await _model.GenerateContent($"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}");
+                    var text = response.Text;
+                    if (string.IsNullOrWhiteSpace(text))
+                        throw new Exception("Gemini 回傳空內容");
+                    return text;
+                }
+                catch (Exception retryEx) when (retryEx.Message.Contains("429") || retryEx.Message.Contains("quota"))
+                {
+                    // 重試後還是 429 → 今日 quota 耗盡
+                    throw new QuotaExhaustedException("今日 API 免費 quota 已耗盡，請明天再試。");
+                }
+            }
         });
     }
 
@@ -638,3 +680,6 @@ public static class SystemPrompt
         - 保持原始換行與空行結構不變
         """;
 }
+
+// ── QuotaExhaustedException ───────────────────────────────────────────────────
+public class QuotaExhaustedException(string message) : Exception(message);
