@@ -202,7 +202,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private const int ChunkThreshold = 24_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
-        .GenerativeModel(model: "gemini-flash-latest");
+        .GenerativeModel(model: "gemini-1.5-flash-latest");;
 
     // Polly：遇到 429 / 503 / quota 時指數退避重試，最多 4 次
     private readonly AsyncRetryPolicy _retryPolicy = Policy
@@ -282,14 +282,14 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     private async Task<bool> TranslateFileAsync(string sourcePath, string targetPath)
     {
         string content;
-        try { content = await File.ReadAllTextAsync(sourcePath, Encoding.UTF8); }
+        try { content = await File.ReadAllTextAsync(sourcePath, new UTF8Encoding(false)); }
         catch (Exception ex) { Console.WriteLine($"  ❌ 讀取失敗：{ex.Message}"); return false; }
 
         if (content.Trim().Length < 10)
         {
             Console.WriteLine("  ⏭️  內容過短，略過");
             Directory.CreateDirectory(Path.GetDirectoryName(targetPath)!);
-            await File.WriteAllTextAsync(targetPath, content, Encoding.UTF8);
+            await File.WriteAllTextAsync(targetPath, content, new UTF8Encoding(false));
             return true;
         }
 
@@ -307,6 +307,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 : await TranslateWithRetryAsync(protected_content);
 
             translated = ctx.Restore(raw);
+            translated = PostProcess(translated);
         }
         catch (Exception ex)
         {
@@ -315,9 +316,21 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         }
 
         Directory.CreateDirectory(Path.GetDirectoryName(targetPath)!);
-        await File.WriteAllTextAsync(targetPath, translated, Encoding.UTF8);
+        await File.WriteAllTextAsync(targetPath, translated, new UTF8Encoding(false));
         Console.WriteLine($"  ✅ → {targetPath}");
         return true;
+    }
+
+    /// <summary>
+    /// 翻譯完成後的後處理：
+    /// 1. xref:en/ → xref:zh-Hant/
+    /// 2. uid: en/ → uid: zh-Hant/
+    /// </summary>
+    private static string PostProcess(string content)
+    {
+        content = Regex.Replace(content, @"xref:en/", "xref:zh-Hant/");
+        content = Regex.Replace(content, @"(uid:\s*)en/", "$1zh-Hant/");
+        return content;
     }
 
     private async Task<string> TranslateWithRetryAsync(string content)
