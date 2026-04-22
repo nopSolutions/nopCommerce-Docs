@@ -2,13 +2,14 @@ name: Sync Upstream & Auto Translate to zh-Hant
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    # 台灣時間 00:10 = UTC 時間 16:10 (前一天)
+    - cron: '10 16 * * *'
   workflow_dispatch:
     inputs:
       force_retranslate:
         description: '強制重新翻譯（覆蓋已存在的 zh-Hant 檔案）'
         required: false
-        default: 'false'
+        default: 'true'
       specific_file:
         description: '只翻譯單一檔案或目錄（例如：en/getting-started/index.md 或 en/developer/plugins）'
         required: false
