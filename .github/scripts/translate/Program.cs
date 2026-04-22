@@ -506,33 +506,63 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         {
             try
             {
-                var response = await _model.GenerateContent($"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}");
-                var text = response.Text;
-                if (string.IsNullOrWhiteSpace(text))
-                    throw new Exception("Gemini 回傳空內容");
-                return text;
+                var translated = await CallGeminiAsync(content, forceful: false);
+
+                // 驗證翻譯完整性：若仍有大量英文句子，用更強的 prompt 重試一次
+                if (HasSignificantEnglish(content, translated))
+                {
+                    Console.WriteLine("  ⚠️  偵測到未翻譯段落，使用加強模式重試...");
+                    translated = await CallGeminiAsync(content, forceful: true);
+                }
+
+                return translated;
             }
             catch (Exception ex) when (ex.Message.Contains("429") || ex.Message.Contains("quota"))
             {
-                // 429：等 66 秒後重試一次
                 Console.WriteLine($"  ⚠️  429 Too Many Requests，等待 {QuotaWaitMs / 1000} 秒後重試一次...");
                 await Task.Delay(QuotaWaitMs);
 
                 try
                 {
-                    var response = await _model.GenerateContent($"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}");
-                    var text = response.Text;
-                    if (string.IsNullOrWhiteSpace(text))
-                        throw new Exception("Gemini 回傳空內容");
-                    return text;
+                    return await CallGeminiAsync(content, forceful: false);
                 }
                 catch (Exception retryEx) when (retryEx.Message.Contains("429") || retryEx.Message.Contains("quota"))
                 {
-                    // 重試後還是 429 → 今日 quota 耗盡
                     throw new QuotaExhaustedException("今日 API 免費 quota 已耗盡，請明天再試。");
                 }
             }
         });
+    }
+
+    private async Task<string> CallGeminiAsync(string content, bool forceful)
+    {
+        var prompt = forceful
+            ? $"{SystemPrompt.Text}\n\n【緊急提醒】以下內容中，程式碼區塊（```包住的部分）以外的所有英文文字，你必須全部翻譯成繁體中文，一句都不能遺漏。包括列表說明、Important/Note/Tip 區塊、步驟說明等。\n\n翻譯以下內容：\n\n{content}"
+            : $"{SystemPrompt.Text}\n\n翻譯以下內容：\n\n{content}";
+
+        var response = await _model.GenerateContent(prompt);
+        var text = response.Text;
+        if (string.IsNullOrWhiteSpace(text))
+            throw new Exception("Gemini 回傳空內容");
+        return text;
+    }
+
+    /// <summary>
+    /// 檢查翻譯後內容是否仍有大量未翻譯的英文句子。
+    /// 方法：計算程式碼區塊外的長英文句子數量（超過 8 個英文單字的句子）。
+    /// </summary>
+    private static bool HasSignificantEnglish(string original, string translated)
+    {
+        // 移除程式碼區塊後再比較
+        var stripCode = new Regex(@"```[\s\S]*?```", RegexOptions.Multiline);
+        var strippedTranslated = stripCode.Replace(translated, "");
+
+        // 計算長英文句子數（超過 8 個連續英文單字）
+        var englishSentencePattern = new Regex(@"(?:[A-Za-z]+\s+){8,}[A-Za-z]+");
+        var matches = englishSentencePattern.Matches(strippedTranslated);
+
+        // 超過 3 句長英文句子就視為翻譯不完整
+        return matches.Count > 3;
     }
 
     private async Task<string> TranslateInChunksAsync(string content)
