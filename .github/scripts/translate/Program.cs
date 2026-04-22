@@ -432,15 +432,22 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         string translated;
         try
         {
-            var ctx = new PlaceholderContext();
-            var protected_content = ctx.Extract(content);
+            string raw;
+            if (content.Length > ChunkThreshold)
+            {
+                // 大檔案：先切段，每段獨立建立 PlaceholderContext（避免 placeholder 跨段錯亂）
+                raw = await TranslateInChunksAsync(content);
+            }
+            else
+            {
+                // 小檔案：整篇一次處理
+                var ctx = new PlaceholderContext();
+                var protectedContent = ctx.Extract(content);
+                var rawChunk = await TranslateWithRetryAsync(protectedContent);
+                raw = ctx.Restore(rawChunk);
+            }
 
-            var raw = protected_content.Length > ChunkThreshold
-                ? await TranslateInChunksAsync(protected_content)
-                : await TranslateWithRetryAsync(protected_content);
-
-            translated = ctx.Restore(raw);
-            translated = PostProcess(translated);
+            translated = PostProcess(raw);
         }
         catch (QuotaExhaustedException)
         {
@@ -512,12 +519,17 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 // 移除佔位符後再判斷，避免「只有佔位符」的段落誤觸發
                 var cleanOriginal   = Regex.Replace(content,    @"\[\[PROTECT_\d+\]\]", "").Trim();
                 var cleanTranslated = Regex.Replace(translated, @"\[\[PROTECT_\d+\]\]", "").Trim();
-                if (cleanOriginal.Length > 10 &&
-                    Regex.IsMatch(cleanOriginal, "[a-zA-Z]{3,}") &&
-                    !cleanTranslated.Any(c => c >= 0x4E00 && c <= 0x9FFF))
+
+                // 統計原文中「需翻譯的英文字母字元」數量
+                var enChars = cleanOriginal.Count(c => (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+                // 統計譯文中文字元數量
+                var zhChars = cleanTranslated.Count(c => c >= 0x4E00 && c <= 0x9FFF);
+
+                // 原文有足夠英文（>50 字元）但譯文幾乎沒有中文（不到 10 字），視為翻譯失敗
+                if (enChars > 50 && zhChars < 10)
                 {
-                    Console.WriteLine("  ⚠️ 偵測到翻譯結果未包含中文（原文含有需翻譯文字），觸發重試...");
-                    throw new Exception("Translation failed: No Chinese characters despite translatable input.");
+                    Console.WriteLine($"  ⚠️ 偵測到翻譯不全（原文英文字元：{enChars}，譯文中文字元：{zhChars}），觸發重試...");
+                    throw new Exception("Translation failed: Chinese output insufficient relative to English input.");
                 }
 
                 return translated;
@@ -568,13 +580,19 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         for (int i = 0; i < sections.Count; i++)
         {
             Console.WriteLine($"    段落 {i + 1}/{sections.Count}（{sections[i].Length:N0} 字元）...");
-            // 段落失敗直接往上拋，由 TranslateFileAsync 刪除目標檔案並標記為失敗
-            // 下次排程會從頭重翻，不留半成品
-            results.Add(await TranslateWithRetryAsync(sections[i]));
+
+            // 每段獨立建立 PlaceholderContext，避免跨段 placeholder 編號衝突/錯亂
+            var ctx = new PlaceholderContext();
+            var protectedChunk = ctx.Extract(sections[i]);
+            var rawTranslated = await TranslateWithRetryAsync(protectedChunk);
+            var restoredChunk = ctx.Restore(rawTranslated);
+
+            results.Add(restoredChunk);
             if (i < sections.Count - 1)
                 await Task.Delay(CooldownMs);
         }
-        return string.Join("\n\n", results);
+        // 用單換行合併（各段已包含自己的結尾換行，不額外插入空行以免破壞格式）
+        return string.Join("\n", results);
     }
 
     private static List<string> SplitSafely(string content)
