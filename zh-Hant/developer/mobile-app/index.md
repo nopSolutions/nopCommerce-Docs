@@ -1,48 +1,41 @@
 ---
-標題: Mobile app documentation
+標題: 行動應用程式說明文件
 uid: zh-Hant/developer/mobile-app/index
 作者: git.DmitriyKulagin
 貢獻者: git.DmitriyKulagin
 ---
 
-# 行動應用程式文件
+# 行動應用程式說明文件
 
 ## 簡介
 
-nopCommerce 團隊提供了一款 [iOS 與 Android 行動應用程式](https://www.nopcommerce.com/ecommerce-mobile-app)。這將為您的企業帶來巨大的價值。該行動應用程式已完全就緒，您可以立即開始銷售您的商品與服務。與 nopCommerce 平台一樣，此行動應用程式提供原始碼，並提供無限的自訂選項。此外，它還能與您的線上商店設計與功能無縫結合。無需任何程式設計或設計技能，即可將應用程式與您的 nopCommerce 商店整合、設定其內容與功能、發佈至 Google Play 商店與 App Store，並管理其工作流程。
+nopCommerce 團隊提供了 [iOS 與 Android 行動應用程式](https://www.nopcommerce.com/ecommerce-mobile-app)。這將為您的業務帶來巨大的價值。該行動應用程式已準備就緒，您可以立即開始銷售您的商品與服務。與 nopCommerce 平台一樣，此行動應用程式附帶原始程式碼，並提供無限的自訂選項。此外，它還能無縫適應您的線上商店設計與功能。將此應用程式整合到您的 nopCommerce 商店、設定其內容與功能、發布至 Google Play Store 和 App Store，以及管理其工作流程，完全不需要程式設計或設計技能。
 
-以下是其他幾項重要功能，將確保您能高效地啟動、自訂與維護您的行動電子商務：
+以下是其他一些重要的功能，將確保您能有效地啟動、自訂與維護行動電商：
 
-- 使用最新版本的 Flutter 與 Dart 建置
-
+- 使用最新版本的 Flutter 與 Dart 建構
 - 相容於 Android 與 iOS
-
 - 使用 Riverpod（狀態管理）功能
-
-- 易於使用的 UI 與精美的 Material Design 3
-
-- 權杖驗證（Token-Based Authentication）
-
-- 國際化支援
-
-- 深色與淺色佈景主題支援
-
+- 易於使用的 UI 與美觀的 Material design 3
+- 基於 Token 的身份驗證
+- 支援國際化
+- 支援深色與淺色佈景主題
 - 免費圖示
 
 ## 設定
 
-透過「nopCommerce 行動應用程式」外掛，以及「Web API Frontend」外掛，您可以管理部分應用程式設定。
+透過「nopCommerce 行動應用程式」外掛，加上「Web API Frontend」外掛，可以管理部分應用程式設定。
 
 ![image](./_static/index/app_plugin.png)
 
-可使用下列功能：
+可以使用以下功能：
 
-1. 可以將特定設定傳輸至行動應用程式。這樣做的目的是為了避免開放所有應用程式設定的存取權限。如果您需要額外的設定，必須確保它們在行動應用程式中受到支援。
-1. 主畫面上的滑桿（Slider）控制。您還可以指定使用者點擊每個滑桿圖片後將前往的商品頁面。
+1. 可以將特定設定轉移到行動應用程式。這樣做是有目的的，以免開放所有應用程式設定的存取權限。如果您需要額外設定，必須確保行動應用程式支援這些設定。
+1. 主畫面上的輪播圖（Slider）控制。您還可以指定使用者點擊每個輪播圖圖片後將跳轉到的商品。
 
 ## Visual Studio Code
 
-推薦的 Flutter 開發環境是 [Android Studio](https://developer.android.com/studio)。一個方便的替代方案是 VS Studio Code 編輯器，下方列出了協助您舒適地進行程式碼開發的基本設定，以及開發與偵錯所需的擴充功能。
+Flutter 建議的開發環境是 [Android Studio](https://developer.android.com/studio)。一個方便的替代方案是 VS Studio Code 編輯器，下方列出了協助您舒適地編寫程式碼的基本設定，以及開發與偵錯所需的擴充功能集。
 
 ### 編輯器設定
 
@@ -72,31 +65,31 @@ nopCommerce 團隊提供了一款 [iOS 與 Android 行動應用程式](https://w
 
 ### 擴充功能
 
-開發時，您需要安裝以下擴充功能：
+進行開發時，您需要安裝以下擴充功能：
 
 名稱：**Flutter**\
 ID：Dart-Code.flutter\
 描述：Visual Studio Code 的 Flutter 支援與偵錯工具。\
-發佈者：Dart Code\
+發布者：Dart Code\
 VS Marketplace 連結：<https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter>
 
 名稱：**Dart**\
 ID：Dart-Code.dart-code\
 描述：Visual Studio Code 的 Dart 語言支援與偵錯工具。\
-發佈者：Dart Code\
+發布者：Dart Code\
 VS Marketplace 連結：<https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code>
 
 ## 開始開發與自訂
 
-在 Visual Studio Code 編輯器中，開啟您購買應用程式後所收到的壓縮檔中的原始碼。
+在購買應用程式後，請使用 Visual Studio Code 編輯器開啟從壓縮檔中取得的原始程式碼。
 
-在程式碼編輯器中開啟專案後，系統會立即提示您下載所包含的程式庫。您也可以透過在終端機中執行以下指令自行下載：
+在程式碼編輯器中開啟專案後，系統會立即提示您下載內含的程式庫。您也可以透過在終端機中執行以下指令自行下載：
 
 ```bash
 flutter pub get
 ```
 
-現在，您需要指定連接到伺服器以存取 API 的端點。此設定位於 `lib\constants\app_constants.dart` 檔案中：
+現在，您需要指定連接到伺服器的端點（Endpoint）以存取 API。此設定位於 `lib\constants\app_constants.dart` 檔案中：
 
 ```dart
 class AppConstants {
@@ -112,17 +105,17 @@ flutter run
 
 > [!IMPORTANT]
 >
-> 請確保 `paymentSettings.BypassPaymentMethodSelectionIfOnlyOne` 設定已停用。
+> 請確保停用 `paymentSettings.BypassPaymentMethodSelectionIfOnlyOne` 設定。
 >
-> 關於結帳流程設定的另一項通用建議：請勿啟用會停用或跳過步驟的設定（例如 `ordersettings.disablebillingaddresscheckoutstep`）。這類設定在行動應用程式中將不會產生任何作用。
+> 關於結帳流程設定的另一項一般建議：請勿啟用會停用或跳過步驟的設定（例如 `ordersettings.disablebillingaddresscheckoutstep`）。這類設定在行動應用程式中將不會產生任何作用。
 
 ## 專案結構
 
-在 Flutter 上開發的行動應用程式承載了使用 Web API (Frontend) 與公開商店互動的功能。下圖呈現了使用者與應用程式互動的所有主要流程：
+在 Flutter 上開發的行動應用程式負責透過 Web API (Frontend) 與前台網站進行互動的功能。使用者與應用程式互動的所有主要流程如下圖所示：
 
 ![image](./_static/index/app_flow.png)
 
-我們採用以應用程式功能作為根資料夾的方式。在這些資料夾內，我們以子資料夾的形式描述該功能所特有的架構層。因此，所有與該功能相關的內容都位於同一個資料夾中，這大大簡化了對程式碼的理解。
+我們將採用以應用程式功能作為根資料夾的方法。在此資料夾內，我們以子資料夾的形式描述該特定功能所固有的架構層。因此，所有與我們感興趣的功能相關的內容都位於同一個資料夾中，這大大簡化了對程式碼的理解。
 
 ![image](./_static/index/app_structure.png)
 
@@ -139,19 +132,19 @@ flutter run
 
 > [!IMPORTANT]
 >
-> 為確保應用程式正常運作，建議使用設定中指定的套件版本。
+> 為確保應用程式正常運作，建議使用設定檔中指定的套件版本。
 
 ## 應用程式架構
 
-應用程式架構是根據 [Android 文件](https://developer.android.com/topic/architecture) 中描述的公認標準所建立的。由於專案使用 Riverpod 狀態管理系統，該架構經過擴充，如下所示：
+應用程式架構是根據 [Android 文件](https://developer.android.com/topic/architecture) 中描述的公認標準所建構。由於專案使用 Riverpod 狀態管理系統，因此架構經過擴充，看起來如下：
 
 ![image](./_static/index/app_arch.png)
 
 ## 導航 - go_router
 
-應用程式中的導航使用了 [go_router](https://pub.dev/packages/go_router) 程式庫。它是一個建置在 [Flutter Router API](https://api.flutter.dev/flutter/widgets/Router-class.html) 之上的宣告式路由系統。
+應用程式中的導航使用 [go_router](https://pub.dev/packages/go_router) 程式庫。這是一個建立在 [Flutter Router API](https://api.flutter.dev/flutter/widgets/Router-class.html) 之上的宣告式路由系統。
 
-應用程式中的導航圖如下所示：
+應用程式中的導航地圖如下所示：
 
 ```bash
 ├─/splash (SplashScreen)
@@ -193,9 +186,9 @@ flutter run
 
 ## Web API 用戶端產生
 
-安裝 [OpenAPI Generator](https://openapi-generator.tech/)（需要 [Node.js](https://nodejs.org/en/download/)）。
+安裝 [OpenAPI Generator](https://openapi-generator.tech/) (需要 [Node.js](https://nodejs.org/en/download/))。
 
-若要更新 OpenAPI Generator 的版本，請使用下列指令並從提供的清單中選擇最新的穩定版本。
+若要更新 OpenAPI Generator 版本，請使用下列指令，並從提供的列表中選擇最新的穩定版本。
 
 ```bash
 openapi-generator-cli version-manager list
@@ -406,35 +399,35 @@ ThemeData theme(ColorScheme colorScheme) => ThemeData(
 
 >[!NOTE]
 >
-> 您可以使用 `theme.dart` 檔案中的全部內容，但請別忘了包含 `custom_color_scheme.dart` 檔案中可用的預設擴充功能。
+> 您可以使用 `theme.dart` 檔案的全部內容，但請別忘了包含 `custom_color_scheme.dart` 檔案中可用的預設擴充功能。
 
-這樣就可以了 — 重新啟動應用程式並享受您的新配色方案。
+就這樣 — 重新啟動應用程式並享受您的新配色方案。
 
-## 發佈至 Google Play 商店
+## 發布至 Google Play Store
 
-在 Google Play 商店發佈您的 Flutter 應用程式的過程包括準備、建置，然後將您的應用程式上傳至 Google Play Console。
-
-關鍵步驟：
-
-1. 註冊 Google Play 開發者帳號：您需要註冊一個開發者帳號。
-1. 準備應用程式以供發佈：這包括在 `pubspec.yaml` 檔案中設定應用程式名稱、圖示、版本號，以及設定必要的權限。
-1. 簽署應用程式：您必須產生一個上傳金鑰庫（keystore）並使用它來簽署您的應用程式，以驗證您的身分。
-1. 建置發佈版本：使用 `flutter build appbundle` 指令來建立應用程式的 Android App Bundle (*.aab*)。
-1. 在 Google Play Console 發佈：在您的 Play Console 中建立新的應用程式項目，填寫所有必要的商店資訊（標題、描述、截圖、隱私權政策），並上傳您的 *.aab* 檔案以供審核。
-
-官方文件：[建置並發佈 Android 應用程式](https://docs.flutter.dev/deployment/android)
-
-## 發佈至 Apple App Store
-
-部署至 Apple App Store 需要加入 Apple 開發者計畫（Apple Developer Program），並使用 Xcode 來處理流程的最後步驟。
+在 Google Play Store 上發布 Flutter 應用程式的流程包括準備、建構，然後將應用程式上傳至 Google Play Console。
 
 關鍵步驟：
 
-1. 加入 Apple 開發者計畫：這是一項付費年度訂閱，讓您獲得在 App Store 發佈的權限。
+1. 註冊 Google Play 開發者帳戶：您需要註冊開發者帳戶。
+1. 準備發布應用程式：這包括在 `pubspec.yaml` 檔案中設定應用程式名稱、圖示與版本號，並設定必要的權限。
+1. 簽署應用程式：您必須產生一個上傳金鑰儲存庫（Upload Keystore）並使用它簽署您的應用程式，以驗證您的身份。
+1. 建構發布版本：使用 `flutter build appbundle` 指令來建立應用程式的 Android App Bundle (*.aab*)。
+1. 在 Google Play Console 上發布：在您的 Play Console 中建立新的應用程式列表，填寫所有必要的商店列表詳細資訊（標題、描述、截圖、隱私權政策），並上傳您的 *.aab* 檔案以供審核。
+
+官方文件：[建構並發布 Android 應用程式](https://docs.flutter.dev/deployment/android)
+
+## 發布至 Apple App Store
+
+部署至 Apple App Store 需要加入 Apple Developer Program 並使用 Xcode 來管理流程的最後步驟。
+
+關鍵步驟：
+
+1. 加入 Apple Developer Program：這是一項付費年度訂閱，讓您擁有在 App Store 上發布的權限。
 1. 在 Xcode 中設定專案：在 Xcode 中開啟專案的 `ios` 資料夾，以設定 Bundle ID、版本號與程式碼簽署設定。
-1. 建立 App Store Connect 項目：登入 App Store Connect 以建立新的應用程式記錄。在此，您將輸入應用程式的所有中繼資料，例如名稱、描述、截圖、關鍵字與隱私資訊。
-1. 建置並歸檔應用程式：使用 Xcode 建立應用程式的建置存檔 (*.ipa*)。
-1. 上傳至 App Store Connect：使用 Xcode 或 Transporter 工具上傳歸檔後的組建。
-1. 提交審核：當組建處理完畢且所有中繼資料填寫完成後，即可將應用程式提交給 Apple 審核。
+1. 建立 App Store Connect 列表：登入 App Store Connect 以建立新的應用程式記錄。您將在此輸入應用程式的所有元資料，例如名稱、描述、截圖、關鍵字與隱私權資訊。
+1. 建構並封存應用程式：使用 Xcode 建立應用程式的建構封存檔 (*.ipa*)。
+1. 上傳至 App Store Connect：使用 Xcode 或 Transporter 工具上傳已封存的建構檔。
+1. 提交審核：一旦建構檔處理完畢且所有元資料完成，您就可以提交應用程式給 Apple 進行審核。
 
-官方文件：[建置並發佈 iOS 應用程式](https://docs.flutter.dev/deployment/ios)
+官方文件：[建構並發布 iOS 應用程式](https://docs.flutter.dev/deployment/ios)
