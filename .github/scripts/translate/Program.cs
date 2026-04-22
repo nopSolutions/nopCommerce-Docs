@@ -374,6 +374,22 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     {
         content = Regex.Replace(content, @"xref:en/", "xref:zh-Hant/");
         content = Regex.Replace(content, @"(uid:\s*)en/", "$1zh-Hant/");
+
+        // 只在 YAML front matter 內翻譯特定 key 名稱
+        // 條件：行首、完整 key 名稱、後接空白或行尾（避免誤中 author_name: 等）
+        content = Regex.Replace(
+            content,
+            @"\A(---\n[\s\S]*?)\n---",
+            m =>
+            {
+                var fm = m.Groups[1].Value;
+                fm = Regex.Replace(fm, @"(?m)^author:(?=\s|$)", "作者:");
+                fm = Regex.Replace(fm, @"(?m)^contributors:(?=\s|$)", "貢獻者:");
+                fm = Regex.Replace(fm, @"(?m)^title:(?=\s|$)", "標題:");
+                return $"{fm}\n---";
+            }
+        );
+
         return content;
     }
 
