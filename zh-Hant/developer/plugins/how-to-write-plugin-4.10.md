@@ -7,19 +7,19 @@ uid: zh-Hant/developer/plugins/how-to-write-plugin-4.10
 
 # 如何為 nopCommerce 4.10 編寫外掛
 
-> 在計算領域中，外掛（plugin）是一組軟體元件，能為大型軟體應用程式增加特定功能（摘自 Wikipedia）。
+> 在計算領域中，外掛（plugin）是一組能為大型軟體應用程式增加特定功能的軟體組件（資料來源：維基百科）。
 
-外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有數種類型的外掛。例如：付款方式（如 PayPal）、稅務提供程序、配送運費計算方式（如 UPS、USPS、FedEx）、小部件（如「線上客服」區塊）等等。nopCommerce 本身已預先安裝了許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 搜尋各種外掛，看看是否有人已經開發出符合您需求的外掛。如果沒有，本文將引導您完成建立個人外掛的流程。
+外掛用於擴充 nopCommerce 的功能。nopCommerce 擁有多種類型的外掛。例如，付款方式（如 PayPal）、稅務提供程序、配送方式計算方法（如 UPS、USPS、FedEx）、小部件（如「即時對話」區塊）以及其他許多類型。nopCommerce 本身已內建許多不同的外掛。您也可以在 [nopCommerce 官方網站](https://www.nopcommerce.com/marketplace) 上搜尋各種外掛，看看是否有人已經建立符合您需求的外掛。如果沒有，本文將引導您完成建立外掛的過程。
 
 ## 外掛結構、必要檔案與存放位置
 
-1. 您首先需要做的是在解決方案中建立一個新的「類別庫（Class Library）」專案。將所有外掛放置於解決方案根目錄的 `\Plugins` 目錄是一個良好的做法（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，該目錄是用於已部署的外掛）。將所有外掛放置在「Plugins」解決方案資料夾中也是良好的做法（您可以[在此](http://msdn.microsoft.com/library/sx2027y2.aspx)找到更多關於解決方案資料夾的資訊）。
+1. 首先，您需要在方案（Solution）中建立一個新的「類別庫」（Class Library）專案。一個良好的做法是將所有外掛放在方案根目錄下的 `\Plugins` 資料夾中（請勿與位於 `\Nop.Web` 目錄下的 `\Plugins` 子目錄混淆，該目錄是用於存放已部署的外掛）。將所有外掛放入「Plugins」方案資料夾也是一種良好的習慣（您可以[在此](http://msdn.microsoft.com/library/sx2027y2.aspx)找到更多關於方案資料夾的資訊）。
 
-    建議的外掛專案命名格式為 "Nop.Plugin.{群組}.{名稱}"。{群組} 是您的外掛類別（例如 "Payment" 或 "Shipping"）。{名稱} 是您的外掛名稱（例如 "PayPalStandard"）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求。您可以為外掛選擇任何名稱，例如 "MyGreatPlugin"。
+    建議的外掛專案命名方式為「Nop.Plugin.{Group}.{Name}」。{Group} 是您的外掛分組（例如，「Payment」或「Shipping」）。{Name} 是您的外掛名稱（例如，「PayPalStandard」）。例如，PayPal Standard 付款外掛的名稱為：Nop.Plugin.Payments.PayPalStandard。但請注意，這並非強制要求。您可以為外掛選擇任何名稱，例如「MyGreatPlugin」。
 
     ![p1](_static/how-to-write-plugin-4.10/write_plugin_4.10_1.jpg)
 
-1. 一旦建立了外掛專案，您必須在任何文字編輯器中開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
+1. 外掛專案建立完成後，您必須在任何文字編輯器中開啟其 `.csproj` 檔案，並將其內容替換為以下內容：
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -131,13 +131,13 @@ public override void Install()
 ```
 
 > [!TIP]
-> 已安裝外掛的清單位於 `\App_Data\installedPlugins.json`。該清單是在安裝過程中建立的。
+> 已安裝外掛的清單位於 `\App_Data\installedPlugins.json` 中。此清單是在安裝過程中建立的。
 
-## 路由（Routes）
+## 路由
 
-在此我們將探討如何註冊外掛路由。ASP.NET Core 路由負責將傳入的瀏覽器請求對應到特定的 MVC 控制器動作（Action）。您可以在[此](https://docs.microsoft.com/aspnet/core/fundamentals/routing)找到更多關於路由的資訊。請依照下列步驟操作：
+在這裡，我們將探討如何註冊外掛路由。ASP.NET Core 路由負責將傳入的瀏覽器請求映射到特定的 MVC 控制器動作（Action）。您可以在[此處](https://docs.microsoft.com/aspnet/core/fundamentals/routing)找到更多關於路由的資訊。請按照下列步驟操作：
 
-- 如果您需要新增自訂路由，請建立 `RouteProvider.cs` 檔案。它會將外掛路由資訊通知 nopCommerce 系統。例如，以下的 RouteProvider 類別新增了一個路由，透過瀏覽器存取 `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` 網址即可觸發（PayPal 外掛使用此方式）：
+- 如果您需要新增自定義路由，請建立 `RouteProvider.cs` 檔案。它會將外掛路由資訊通知 nopCommerce 系統。例如，以下的 RouteProvider 類別新增了一個新路由，可以透過開啟網頁瀏覽器並導向 `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` 網址來存取（由 PayPal 外掛使用）：
 
     ```csharp
     public partial class RouteProvider : IRouteProvider
@@ -159,8 +159,8 @@ public override void Install()
 
 ## 升級 nopCommerce 可能會導致外掛失效
 
-部分外掛可能會過時，無法再與較新版本的 nopCommerce 相容。如果您在升級到新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站查看是否有更新版本可用。許多外掛開發者會更新其外掛以適應新版本，但有些則不會，隨著 nopCommerce 的改進，這些外掛將變得過時。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
+某些外掛可能會變得過時，無法再與較新版本的 nopCommerce 搭配使用。如果您在升級到較新版本後遇到問題，請刪除該外掛，並造訪 nopCommerce 官方網站，查看是否有更新的版本可用。許多外掛作者會更新其外掛以適應新版本，但有些則不會，隨著 nopCommerce 的改進，這些外掛將會過時。但在大多數情況下，您只需開啟對應的 `plugin.json` 檔案並更新 **SupportedVersions** 欄位即可。
 
 ## 結論
 
-希望這篇文章能幫助您開始使用 nopCommerce，並為開發更複雜的外掛做好準備。
+希望這能協助您開始使用 nopCommerce，並為開發更複雜的外掛做好準備。
