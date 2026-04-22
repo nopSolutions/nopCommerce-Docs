@@ -1,15 +1,15 @@
 ---
-標題: 如何從外掛將選單項目新增至後台管理區
+標題: 如何從外掛將選單項目新增至後台管理區域
 uid: zh-Hant/developer/plugins/menu-item
 作者: git.AndreiMaz
 貢獻者: git.Sandeep911, git.DmitriyKulagin, git.exileDev
 ---
 
-# 如何從外掛將選單項目新增至後台管理區（適用於 4.80 及以上版本）
+# 如何從外掛將選單項目新增至後台管理區域（適用於 4.80 及以上版本）
 
-若要新增選單項目，您應該使用 **AdminMenuCreatedEvent** 事件。您可以使用以下程式碼範例，將其新增至您的外掛 `*.cs` 檔案中。
+若要新增選單項目，您應該使用 **AdminMenuCreatedEvent** 事件。您可以使用下列程式碼範例，並將其加入至您的外掛 `*.cs` 檔案中。
 
-此外，您也可以在此方法中加入任何安全性（權限控制，即 ACL）邏輯。例如，驗證目前的顧客是否擁有「管理外掛」的權限。
+此外，您也可以在此方法中加入任何安全性（權限控制）邏輯。例如，驗證目前的顧客是否具有「管理外掛」的權限。
 
 ```csharp
 public class EventConsumer: IConsumer<AdminMenuCreatedEvent>
@@ -44,9 +44,9 @@ public class EventConsumer: IConsumer<AdminMenuCreatedEvent>
 
 > [!NOTE]
 >
-> 在 nopCommerce 4.70 及以下版本中，後台管理選單是透過位於 *~/Areas/Admin* 資料夾中的 *sitemap.config* 檔案所建構的。
+> 在 nopCommerce 4.70 及更早的版本中，後台管理選單是透過位於 *~/Areas/Admin 資料夾* 中的 *sitemap.config* 檔案所建立。
 >
-> 若要達成同樣的效果，您可以使用以下範例程式碼，將其新增至您外掛的 `*.cs` 檔案中。首先，請在您的外掛主類別中實作 *IAdminMenuPlugin* 介面。
+> 若要達成相同的目的，您可以使用下列範例程式碼，將其加入至您的外掛 `*.cs` 檔案中。首先，請在您的外掛主類別中實作 *IAdminMenuPlugin* 介面。
 >
 >```csharp
 > public class CustomPlugin : BasePlugin, IAdminMenuPlugin
