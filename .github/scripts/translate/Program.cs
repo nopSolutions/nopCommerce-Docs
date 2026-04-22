@@ -144,12 +144,32 @@ public class PlaceholderContext
     {
         return Regex.Replace(
             content,
-            @"(!?\[[^\]]*\])\(([^)]+)\)",
+            @"(!?)\[([^\]]*)\]\(([^)]+)\)",
             m =>
             {
-                var textPart = m.Groups[1].Value;
-                var url      = m.Groups[2].Value;
-                return $"{textPart}({Store(url)})";
+                var isImage  = m.Groups[1].Value == "!";
+                var textPart = m.Groups[2].Value;
+                var url      = m.Groups[3].Value;
+
+                // 圖片：整塊保護（alt 不翻譯）
+                if (isImage)
+                    return Store(m.Value);
+
+                // 連結文字為空或是常見的英文佔位詞（here/this/link/click here 等）
+                // 這類文字 Gemini 翻譯結果不穩定，整塊保護讓結構不被破壞
+                var trimmed = textPart.Trim();
+                var placeholderWords = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+                {
+                    "", "here", "this", "link", "this link", "click here",
+                    "read more", "more", "see here", "see"
+                };
+                if (placeholderWords.Contains(trimmed))
+                {
+                    return Store(m.Value);
+                }
+
+                // 一般連結：只保護 URL，讓 Gemini 翻譯文字部分
+                return $"[{textPart}]({Store(url)})";
             }
         );
     }
@@ -518,6 +538,20 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         //    b. 緊貼在標題行之前的獨立 ---（如 ---\n## 路由）→ 移除
         //       合法的水平分隔線後面通常是空行或段落，不會緊接 #/## 標題
         content = Regex.Replace(content, @"(?m)^---[ \t]*\n(?=#{1,6} )", "");
+
+        // 3.5 確保段落結構正確：以下這些區塊前必須有空行才能正確渲染
+        //     a. 標題行（##、###）前需要空行
+        content = Regex.Replace(
+            content,
+            @"(?m)^(?<prev>[^\n].*)\n(?=#{1,6} )",
+            "${prev}\n\n"
+        );
+        //     b. 區塊引用（> [!IMPORTANT]、> [!NOTE]、> [!TIP]）前需要空行
+        content = Regex.Replace(
+            content,
+            @"(?m)^(?<prev>[^>\n].*)\n(?=> \[!)",
+            "${prev}\n\n"
+        );
 
         // 4. 還原首段 front matter
         if (headFrontMatter != null)
