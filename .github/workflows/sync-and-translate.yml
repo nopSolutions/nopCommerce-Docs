@@ -129,6 +129,7 @@ jobs:
             - 翻譯新增/修改的 .md 為繁體中文 → zh-Hant/
             - 翻譯引擎：Google Gemini Flash"
 
+            git pull origin master --rebase
             git push origin master
             echo "✅ 推送完成"
           fi
