@@ -46,26 +46,13 @@ return await rootCommand.InvokeAsync(args);
 
 
 // ── PlaceholderContext ─────────────────────────────────────────────────────────
-/// <summary>
-/// 翻譯前將「絕對不能動」的結構抽出換成佔位符，翻譯後再還原。
-///
-/// 保護順序（從最外層到最內層）：
-///   1. Fenced code blocks  (``` ... ```)
-///   2. YAML Front Matter   (--- ... ---)  — uid 的值整行保護；title/description 的值留給 AI 翻譯
-///   3. Liquid / Hugo 標籤  ({% ... %} / {{ ... }})
-///   4. HTML 標籤           (<tag ...> / </tag>)
-///   5. Markdown 圖片/連結 URL 部分  (![alt](URL) 的 URL)
-/// </summary>
 public class PlaceholderContext
 {
     private readonly Dictionary<string, string> _map = new();
     private int _counter;
 
-    // ---- 公開入口 ----
-
     public string Extract(string content)
     {
-        // 順序很重要：先保護 code block，再保護其他
         content = ProtectFencedCodeBlocks(content);
         content = ProtectYamlFrontMatter(content);
         content = ProtectLiquidTags(content);
@@ -76,13 +63,10 @@ public class PlaceholderContext
 
     public string Restore(string content)
     {
-        // 反向還原（雖然佔位符本身是全局唯一的，順序不影響正確性，但語意上反向較清晰）
         foreach (var (placeholder, original) in _map)
             content = content.Replace(placeholder, original);
         return content;
     }
-
-    // ---- 私有輔助 ----
 
     private string NextPlaceholder()
     {
@@ -97,10 +81,8 @@ public class PlaceholderContext
         return key;
     }
 
-    /// <summary>保護 fenced code block（``` 或 ~~~）整塊，包含語言標記。</summary>
     private string ProtectFencedCodeBlocks(string content)
     {
-        // 匹配 ```(lang)?\n ... \n``` 或 ~~~(lang)?\n ... \n~~~
         return Regex.Replace(
             content,
             @"(```|~~~)[^\n]*\n[\s\S]*?\n\1",
@@ -109,13 +91,6 @@ public class PlaceholderContext
         );
     }
 
-    /// <summary>
-    /// 保護 YAML Front Matter (--- ... ---)。
-    /// 規則：
-    ///   - uid 的值整行保護（key + value 一起）
-    ///   - 其他 key 的「key:」部分保護，value 留給 AI 翻譯
-    ///   - 這樣 title/description 的值仍可被翻譯
-    /// </summary>
     private string ProtectYamlFrontMatter(string content)
     {
         // 統一換行符，確保 regex 能正確匹配（處理 BOM 與 \r\n）
@@ -149,10 +124,8 @@ public class PlaceholderContext
         return content;
     }
 
-    /// <summary>保護 Liquid / Hugo 標籤：{% ... %} 與 {{ ... }}。</summary>
     private string ProtectLiquidTags(string content)
     {
-        // {%- ... -%} / {% ... %} / {{ ... }}
         return Regex.Replace(
             content,
             @"\{%-?[\s\S]*?-?%\}|\{\{[\s\S]*?\}\}",
@@ -160,7 +133,6 @@ public class PlaceholderContext
         );
     }
 
-    /// <summary>保護 HTML 標籤（開/關/自閉合）。</summary>
     private string ProtectHtmlTags(string content)
     {
         return Regex.Replace(
@@ -170,11 +142,6 @@ public class PlaceholderContext
         );
     }
 
-    /// <summary>
-    /// 保護 Markdown 連結與圖片的 URL 部分，但保留顯示文字讓 AI 翻譯。
-    /// [顯示文字](URL) → [顯示文字](PLACEHOLDER)
-    /// ![alt](URL)     → ![alt](PLACEHOLDER)
-    /// </summary>
     private string ProtectMarkdownUrls(string content)
     {
         return Regex.Replace(
@@ -182,8 +149,8 @@ public class PlaceholderContext
             @"(!?\[[^\]]*\])\(([^)]+)\)",
             m =>
             {
-                var textPart = m.Groups[1].Value;   // [顯示文字] 或 ![alt]
-                var url      = m.Groups[2].Value;   // URL
+                var textPart = m.Groups[1].Value;
+                var url      = m.Groups[2].Value;
                 return $"{textPart}({Store(url)})";
             }
         );
@@ -194,17 +161,12 @@ public class PlaceholderContext
 // ── Translator ────────────────────────────────────────────────────────────────
 public class Translator(string apiKey, string sourceDir, string targetDir, bool force)
 {
-    // Gemini Flash 免費版：15 RPM → 每次請求後固定冷卻 4 秒
     private const int CooldownMs = 4_000;
-
-    // 改進 #4：調升切片閾值，充分利用 Gemini 1.5 Flash 的長上下文能力
-    // （原 8,000 → 24,000）
     private const int ChunkThreshold = 24_000;
 
     private readonly GenerativeModel _model = new GoogleAI(apiKey)
         .GenerativeModel(model: "gemini-flash-latest");
 
-    // Polly：遇到 429 / 503 / quota 時指數退避重試，最多 4 次
     private readonly AsyncRetryPolicy _retryPolicy = Policy
         .Handle<Exception>(ex =>
             ex.Message.Contains("429") ||
@@ -257,7 +219,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
             Console.WriteLine($"\n[{i + 1}/{files.Count}] {relPath}");
 
-            // 跳過已翻譯的檔案（除非 --force）
             if (!force && File.Exists(targetPath))
             {
                 Console.WriteLine("  ⏭️  已存在，略過（用 --force 可強制重翻）");
@@ -268,7 +229,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             var result = await TranslateFileAsync(sourcePath, targetPath);
             if (result) success++; else failed++;
 
-            // 固定冷卻，避免超過 15 RPM
             if (i < files.Count - 1)
                 await Task.Delay(CooldownMs);
         }
@@ -298,7 +258,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         string translated;
         try
         {
-            // 改進 #1：先抽取佔位符，翻譯後再還原
             var ctx = new PlaceholderContext();
             var protected_content = ctx.Extract(content);
 
@@ -321,7 +280,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         return true;
     }
 
-        /// <summary>
+    /// <summary>
     /// 翻譯完成後的後處理：
     /// 1. xref:en/ → xref:zh-Hant/
     /// 2. uid: en/ → uid: zh-Hant/
@@ -345,7 +304,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         });
     }
 
-    // 改進 #4：智慧型切片 — 不在 code block 中間切斷
     private async Task<string> TranslateInChunksAsync(string content)
     {
         var sections = SplitSafely(content);
@@ -369,15 +327,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         return string.Join("\n\n", results);
     }
 
-    /// <summary>
-    /// 智慧型切片：
-    /// 1. 優先在 ## 標題處切
-    /// 2. 確保切點不在 fenced code block 內部
-    /// 3. 單一段落超過閾值時，進一步在空行處切
-    /// </summary>
     private static List<string> SplitSafely(string content)
     {
-        // 先按 ## 標題粗切
         var rawSections = Regex
             .Split(content, @"(?=^## )", RegexOptions.Multiline)
             .Where(s => s.Trim().Length > 0)
@@ -391,8 +342,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 result.Add(section);
                 continue;
             }
-
-            // 段落仍過大：在空行處進一步切，但避免切在 code block 內
             var subChunks = SplitOnBlankLines(section);
             result.AddRange(subChunks);
         }
@@ -407,13 +356,11 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         foreach (var line in section.Split('\n'))
         {
-            // 追蹤是否在 fenced code block 內
             if (Regex.IsMatch(line, @"^(```|~~~)"))
                 inCodeBlock = !inCodeBlock;
 
             sb.AppendLine(line);
 
-            // 只在非 code block 內、空行處、且已累積足夠長度時才切
             if (!inCodeBlock && line.Trim().Length == 0 && sb.Length >= ChunkThreshold)
             {
                 chunks.Add(sb.ToString().TrimEnd());
@@ -426,7 +373,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         return chunks.Where(c => c.Trim().Length > 0).ToList();
     }
-
 }
 
 
