@@ -106,7 +106,7 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git add zh-Hant/ .last-upstream-sync
-	        git checkout HEAD -- .github/scripts/translate/
+          git checkout HEAD -- .github/scripts/translate/
 
           if git diff --staged --quiet; then
             echo "✅ 沒有新的變更需要 commit"
@@ -116,7 +116,7 @@ jobs:
 
             - 同步上游 nopCommerce-Docs 變更
             - 翻譯新增/修改的 .md 為繁體中文 → zh-Hant/
-            - 翻譯引擎：Google Gemini 1.5 Flash"
+            - 翻譯引擎：Google Gemini Flash"
 
             git push origin master --force
             echo "✅ 推送完成"
