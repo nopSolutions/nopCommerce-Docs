@@ -5,36 +5,36 @@ uid: zh-Hant/developer/plugins/plugin-with-data-access-4.20
 貢獻者: git.DmitriyKulagin, git.rodolphito, git.exileDev, git.cromatido
 ---
 
-# 具備資料存取功能的外掛 (4.20 版本及以下)
+# 具備資料存取功能的外掛 (4.20 與更早版本)
 
-在本教學中，我將使用 nopCommerce 的外掛架構來實作一個商品瀏覽追蹤器。在開始開發之前，請務必先閱讀、理解並成功完成下方列出的教學課程。我將跳過先前文章中已涵蓋的部分解釋，但您可以透過提供的連結進行回顧。
+在本教學中，我將使用 nopCommerce 外掛架構來實作一個商品瀏覽追蹤器。在開始開發之前，請務必先閱讀、理解並順利完成以下列出的教學課程。我將略過先前文章中已涵蓋的部分說明，但您可以使用下方提供的連結進行複習。
 
-- [開發者教學](xref:zh-Hant/developer/tutorials/index)
-- [更新現有實體：如何新增屬性](xref:zh-Hant/developer/tutorials/update-existing-entity)
+- [開發人員教學課程](xref:zh-Hant/developer/tutorials/index)
+- [更新現有實體。如何新增屬性。](xref:zh-Hant/developer/tutorials/update-existing-entity)
 - [如何為 nopCommerce 4.20 編寫外掛](xref:zh-Hant/developer/plugins/how-to-write-plugin-4.20)
 
-我們將從資料存取層開始編碼，接著進入服務層，最後完成依賴注入的部分。
+我們將從資料存取層開始編寫程式碼，接著進入服務層，最後以依賴注入作為結尾。
 
 > [!NOTE]
-> 這個外掛的實際應用價值值得商榷，但我一時想不出一個 nopCommerce 尚未內建且適合在此篇幅中展示的功能。如果您在生產環境中使用此功能，我不提供任何保證。我對成功案例很感興趣，若得知這篇文章提供的價值不僅僅是教學性質，我會感到非常高興。
+> 這個外掛的實際應用價值值得商榷，但我一時想不出一個 nopCommerce 尚未內建且適合在篇幅適中的文章中介紹的功能。如果您在生產環境中使用此功能，我不提供任何保證。我一直對成功案例很感興趣，若您能告訴我這篇文章不僅僅具有教學價值，我會感到非常高興。
 
-## 開始準備
+## 入門指南
 
 建立一個新的類別庫專案「Nop.Plugin.Other.ProductViewTracker」。
 
 ![plugin-with-data-access_1](_static/plugin-with-data-access/plugin-with-data-access_1.jpg)
 
-新增以下資料夾以及 `plugin.json` 檔案。
+新增下列資料夾與 `plugin.json` 檔案。
 
 ![plugin-with-data-access_2](_static/plugin-with-data-access/plugin-with-data-access_2.jpg)
 
-關於 `plugin.json` 檔案的詳細資訊，請參閱 [plugin.json 檔案](xref:zh-Hant/developer/plugins/plugin_json)。
+關於 `plugin.json` 檔案的資訊，請參閱 [plugin.json 檔案](xref:zh-Hant/developer/plugins/plugin_json)。
 
 然後新增對下列專案的參考：Nop.Core、Nop.Data、Nop.Web.Framework
 
-## 資料存取層 (亦即在 nopCommerce 中建立新實體)
+## 資料存取層（亦即在 nopCommerce 中建立新實體）
 
-在「domain」命名空間內，我們將建立一個名為 ProductViewTrackerRecord 的公開類別。此類別繼承自 BaseEntity，除此之外它是一個非常簡單的檔案。有一點要記住的是，所有屬性都標記為 virtual，這並非為了好玩。由於 Entity Framework 實例化與追蹤類別的方式，資料庫實體必須使用虛擬屬性。還有一點要注意的是，我們沒有導覽屬性（關聯屬性），我稍後會再詳細說明。
+在「domain」命名空間內，我們將建立一個名為 `ProductViewTrackerRecord` 的公開類別。此類別繼承自 `BaseEntity`，除此之外它是一個非常簡單的檔案。請記住，所有的屬性都被標記為 `virtual`，這並非為了好玩。由於 Entity Framework 實例化與追蹤類別的方式，資料庫實體必須使用虛擬屬性。另外需要注意的是，我們沒有導覽屬性（關聯屬性），我稍後會再詳細說明。
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Domain
@@ -50,7 +50,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Domain
 }
 ```
 
-**檔案位置**：要找出特定檔案應該存在的位置，請分析命名空間並據此建立檔案。
+**檔案位置**：若要確認特定檔案應放置的位置，請分析命名空間並據此建立檔案。
 
 下一個要建立的是 Entity Framework 映射類別。在映射類別中，我們會映射欄位、資料表關聯以及資料庫資料表。
 
@@ -81,7 +81,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-下一個類別是資料存取層中最複雜且最重要的類別。Entity Framework 的 Object Context 是一個傳遞類別，它提供我們資料庫存取權限，並協助追蹤實體狀態（例如新增、更新、刪除）。此 Context 也用於產生資料庫結構描述或更新現有的結構描述。在自訂的 Context 類別中，我們無法參考先前存在的實體，因為那些類型已經與另一個 Object Context 關聯。這也是為什麼我們的追蹤記錄中沒有複雜導覽屬性的原因。
+下一個類別是資料存取層中最複雜且最重要的類別。Entity Framework 的 Object Context 是一個傳遞類別，它賦予我們資料庫存取權，並協助追蹤實體狀態（例如新增、更新、刪除）。此 Context 也用於產生資料庫結構描述或更新現有的結構描述。在自訂的 Context 類別中，我們無法參考先前存在的實體，因為這些型別已經與另一個 Object Context 關聯。這也是為什麼在追蹤記錄中沒有複雜導覽屬性的原因。
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Data
@@ -177,9 +177,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Data
 }
 ```
 
-## 應用程式啟動 (Application Startup)
+## 應用程式啟動
 
-這部分負責註冊我們在上一步建立的記錄物件 Context。
+此部分負責註冊我們在上一步中建立的記錄 Object Context。
 
 ```csharp
 using Microsoft.AspNetCore.Builder;
@@ -226,9 +226,9 @@ namespace Nop.Plugin.Misc.RepCred.Infrastructure
 }
 ```
 
-## 服務層 (Service layer)
+## 服務層
 
-服務層連接了資料存取層與表現層。由於在程式碼中共享任何類型的職責是不好的做法，因此每一層都需要被隔離。服務層以商業邏輯封裝了資料層，而表現層則依賴於服務層。由於我們的任務非常簡單，服務層除了與儲存庫通訊外不做其他事（在 nopCommerce 中，儲存庫扮演了 Object Context 門面 Facade 的角色）。
+服務層連接了資料存取層與呈現層。由於在程式碼中共享任何類型的職責是不好的做法，因此每個層級都需要隔離。服務層使用業務邏輯包裝資料層，而呈現層則依賴服務層。由於我們的任務非常簡單，我們的服務層除了與儲存庫溝通之外不做任何事（在 nopCommerce 中，儲存庫扮演 Object Context 的門面角色）。
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Services
@@ -267,9 +267,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Services
 }
 ```
 
-## 依賴注入 (Dependency Injection)
+## 依賴注入
 
-Martin Fowler 針對依賴注入或控制反轉 (Inversion of Control) 撰寫了精彩的說明。我不會重複他的工作，您可以在此找到他的文章。依賴注入管理物件的生命週期，並為相依物件提供可使用的實例。首先，我們需要設定依賴容器，讓它了解要控制哪些物件，以及建立這些物件時適用的規則。
+Martin Fowler 對依賴注入或控制反轉撰寫了很棒的說明。我不會重覆他的內容，您可以在此找到他的文章。依賴注入管理物件的生命週期，並為依賴物件提供可使用的實例。首先，我們需要設定依賴容器，讓它了解將要控制哪些物件，以及建立這些物件時可能適用的規則。
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
@@ -297,9 +297,9 @@ namespace Nop.Plugin.Other.ProductViewTracker.Infrastructure
 }
 ```
 
-在上述程式碼中，我們註冊了不同類型的物件，以便稍後將其注入控制器、服務與儲存庫中。現在我們已經涵蓋了新主題，我將帶回一些舊主題，以便完成此外掛。
+在上面的程式碼中，我們註冊了不同型別的物件，以便稍後將它們注入控制器、服務與儲存庫中。既然我們已經涵蓋了新主題，我將帶回一些舊主題，以便完成這個外掛。
 
-## 檢視元件 (View component)
+## 檢視元件 (View Component)
 
 讓我們建立一個檢視元件：
 
@@ -343,7 +343,7 @@ namespace Nop.Plugin.Other.ProductViewTracker.Components
 }
 ```
 
-## 外掛安裝程式 (Plugin installer)
+## 外掛安裝程式
 
 ```csharp
 namespace Nop.Plugin.Other.ProductViewTracker
@@ -371,7 +371,7 @@ namespace Nop.Plugin.Other.ProductViewTracker
 
 ## 使用方式
 
-追蹤程式碼應新增至 `ProductTemplate.Simple.cshtml` 和 `ProductTemplate.Grouped.cshtml` 檔案中。這些是商品範本檔案。
+追蹤程式碼應新增至 `ProductTemplate.Simple.cshtml` 與 `ProductTemplate.Grouped.cshtml` 檔案中。這些檔案是商品範本。
 
 ```csharp
 @await Component.InvokeAsync("ProductViewTrackerIndex", new { productId = Model.Id })
