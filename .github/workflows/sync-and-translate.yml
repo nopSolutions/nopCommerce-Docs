@@ -64,9 +64,20 @@ jobs:
           FORCE="${{ github.event.inputs.force_retranslate }}"
           SPECIFIC="${{ github.event.inputs.specific_file }}"
 
-          if [ "$LAST_SYNC" = "$CURRENT_UPSTREAM" ] && [ "$FORCE" != "true" ] && [ -z "$SPECIFIC" ]; then
+          # 檢查 zh-Hant/ 是否有缺少對應的翻譯檔案
+          MISSING=0
+          for f in $(find en -name "*.md" 2>/dev/null); do
+            target="zh-Hant/${f#en/}"
+            if [ ! -f "$target" ]; then
+              MISSING=1
+              echo "缺少翻譯：$target"
+              break
+            fi
+          done
+
+          if [ "$LAST_SYNC" = "$CURRENT_UPSTREAM" ] && [ "$FORCE" != "true" ] && [ -z "$SPECIFIC" ] && [ "$MISSING" = "0" ]; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "✅ 上游沒有新變動，跳過"
+            echo "✅ 上游沒有新變動且無缺少翻譯，跳過"
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "🔄 準備執行翻譯"
@@ -118,6 +129,6 @@ jobs:
             - 翻譯新增/修改的 .md 為繁體中文 → zh-Hant/
             - 翻譯引擎：Google Gemini Flash"
 
-            git push origin master --force
+            git push origin master
             echo "✅ 推送完成"
           fi
