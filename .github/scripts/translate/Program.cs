@@ -211,6 +211,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         int success = 0, skipped = 0, failed = 0;
         int consecutiveFailures = 0;
         const int MaxConsecutiveFailures = 20;
+        const int PushEvery = 1; // 每翻成功 1 個就 push 一次
         bool earlyStop = false;
 
         for (int i = 0; i < files.Count; i++)
@@ -269,7 +270,18 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             }
 
             if (i < files.Count - 1)
-                await Task.Delay(CooldownMs);
+            {
+                // 記錄 API 完成時間，push 利用冷卻時間執行，結束後補足剩餘冷卻
+                var apiDoneAt = DateTime.UtcNow;
+
+                if (result && success % PushEvery == 0)
+                    await PushProgressAsync(success);
+
+                var elapsed = (int)(DateTime.UtcNow - apiDoneAt).TotalMilliseconds;
+                var remaining = CooldownMs - elapsed;
+                if (remaining > 0)
+                    await Task.Delay(remaining);
+            }
         }
 
         Console.WriteLine($"\n{new string('─', 55)}");
@@ -280,6 +292,40 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         // 複製非 .md 檔案（圖片、PDF 等），來源比目標新才複製
         await CopyNonMarkdownFilesAsync();
+    }
+
+    private static async Task PushProgressAsync(int count)
+    {
+        Console.WriteLine($"\n  💾 中途儲存：已完成 {count} 個，推送至 GitHub...");
+        try
+        {
+            await RunGitAsync("add zh-Hant/");
+            await RunGitAsync($"commit -m \"🌐 翻譯進度：已完成 {count} 個檔案\"");
+            await RunGitAsync("pull origin master --rebase");
+            await RunGitAsync("push origin master");
+            Console.WriteLine($"  ✅ 中途推送成功");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"  ⚠️  中途推送失敗（不影響繼續翻譯）：{ex.Message}");
+        }
+    }
+
+    private static async Task RunGitAsync(string args)
+    {
+        var psi = new System.Diagnostics.ProcessStartInfo("git", args)
+        {
+            RedirectStandardOutput = true,
+            RedirectStandardError  = true,
+            UseShellExecute        = false,
+        };
+        using var proc = System.Diagnostics.Process.Start(psi)!;
+        await proc.WaitForExitAsync();
+        if (proc.ExitCode != 0)
+        {
+            var err = await proc.StandardError.ReadToEndAsync();
+            throw new Exception($"git {args} 失敗：{err.Trim()}");
+        }
     }
 
     private async Task CopyNonMarkdownFilesAsync()
