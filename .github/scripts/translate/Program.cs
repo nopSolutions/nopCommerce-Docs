@@ -221,9 +221,16 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
             if (!force && File.Exists(targetPath))
             {
-                Console.WriteLine("  ⏭️  已存在，略過（用 --force 可強制重翻）");
-                skipped++;
-                continue;
+                // 若來源比目標新（上游有更新），自動重翻
+                var sourceTime = File.GetLastWriteTimeUtc(sourcePath);
+                var targetTime = File.GetLastWriteTimeUtc(targetPath);
+                if (sourceTime <= targetTime)
+                {
+                    Console.WriteLine("  ⏭️  已存在且無更新，略過");
+                    skipped++;
+                    continue;
+                }
+                Console.WriteLine("  🔄 來源已更新，重新翻譯...");
             }
 
             var result = await TranslateFileAsync(sourcePath, targetPath);
@@ -289,6 +296,9 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     {
         content = Regex.Replace(content, @"xref:en/", "xref:zh-Hant/");
         content = Regex.Replace(content, @"(uid:\s*)en/", "$1zh-Hant/");
+        // YAML front matter key 名稱翻譯（僅限 front matter 內）
+        content = Regex.Replace(content, @"(?m)^author:", "作者:");
+        content = Regex.Replace(content, @"(?m)^contributors:", "貢獻者:");
         return content;
     }
 
