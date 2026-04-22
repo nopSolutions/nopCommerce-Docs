@@ -32,6 +32,9 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Clean build
+        run: dotnet clean .github/scripts/translate/translate.csproj || true
+
       - name: Restore NuGet packages
         run: dotnet restore .github/scripts/translate/translate.csproj
 
