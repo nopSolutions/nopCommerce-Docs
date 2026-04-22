@@ -213,6 +213,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         const int MaxConsecutiveFailures = 20;
         const int PushEvery = 1; // 每翻成功 1 個就 push 一次
         bool earlyStop = false;
+        var failedFiles = new List<string>();
 
         for (int i = 0; i < files.Count; i++)
         {
@@ -258,6 +259,7 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
             else
             {
                 failed++;
+                failedFiles.Add(sourcePath);
                 consecutiveFailures++;
                 if (consecutiveFailures >= MaxConsecutiveFailures)
                 {
@@ -286,6 +288,21 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
 
         Console.WriteLine($"\n{new string('─', 55)}");
         Console.WriteLine($"✅ 成功：{success}  ⏭️  略過：{skipped}  ❌ 失敗：{failed}");
+
+        // 寫入失敗清單，方便手動補翻
+        var failedListPath = Path.Combine(targetDir, ".translation-failed.txt");
+        if (failedFiles.Count > 0)
+        {
+            await File.WriteAllLinesAsync(failedListPath, failedFiles, new UTF8Encoding(false));
+            Console.WriteLine($"\n📋 失敗清單已寫入：{failedListPath}");
+            foreach (var f in failedFiles)
+                Console.WriteLine($"   - {f}");
+        }
+        else if (File.Exists(failedListPath))
+        {
+            // 全部成功就刪掉舊的失敗清單
+            File.Delete(failedListPath);
+        }
 
         // earlyStop 時正常結束（讓 workflow 繼續執行 commit），否則有失敗才報錯
         if (!earlyStop && failed > 0) Environment.Exit(1);
@@ -421,6 +438,12 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
                 Environment.Exit(2);
             }
             Console.WriteLine($"  ❌ 翻譯失敗：{ex.Message}");
+            // 刪除半成品，下次排程會重新翻譯
+            if (File.Exists(targetPath))
+            {
+                File.Delete(targetPath);
+                Console.WriteLine($"  🗑️  已刪除半成品，下次排程重翻");
+            }
             return false;
         }
 
@@ -501,17 +524,11 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         for (int i = 0; i < sections.Count; i++)
         {
             Console.WriteLine($"    段落 {i + 1}/{sections.Count}（{sections[i].Length:N0} 字元）...");
-            try
-            {
-                results.Add(await TranslateWithRetryAsync(sections[i]));
-                if (i < sections.Count - 1)
-                    await Task.Delay(CooldownMs);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"  ⚠️  段落翻譯失敗，保留原文：{ex.Message}");
-                results.Add(sections[i]);
-            }
+            // 段落失敗直接往上拋，由 TranslateFileAsync 刪除目標檔案並標記為失敗
+            // 下次排程會從頭重翻，不留半成品
+            results.Add(await TranslateWithRetryAsync(sections[i]));
+            if (i < sections.Count - 1)
+                await Task.Delay(CooldownMs);
         }
         return string.Join("\n\n", results);
     }
@@ -724,6 +741,14 @@ public static class SystemPrompt
         - 直接輸出翻譯後的完整 Markdown 內容
         - 不要加任何說明、前言、或額外的 ``` 包裝
         - 保持原始換行與空行結構不變
+
+        【重要：翻譯完整性】
+        - 程式碼區塊（``` 包住的部分）以外的所有英文文字，無論長短，都必須翻譯成繁體中文
+        - 就算段落中有大量程式碼，程式碼以外的說明文字仍然必須翻譯
+        - 絕對不可以把英文段落原樣輸出，除非整段都是程式碼
+        - 如果你不確定某段文字是否需要翻譯，預設就是翻譯
+        - 有序列表（1. 2. 3.）和無序列表（* -）中的說明文字，必須全部翻譯
+        - Important / Note / Tip 提示區塊內的文字，必須翻譯
         """;
 }
 
