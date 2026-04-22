@@ -106,13 +106,11 @@ public class PlaceholderContext
                 var lines = body.Split('\n');
                 var processed = lines.Select(line =>
                 {
+                    // uid 整行保護（key 與值都不能動）
                     if (Regex.IsMatch(line, @"^\s*uid\s*:"))
                         return Store(line);
-                    return Regex.Replace(
-                        line,
-                        @"^(\s*[\w\.\-]+\s*:)",
-                        keyPart => Store(keyPart.Value)
-                    );
+                    // 其他所有 key 完整交給 AI 翻譯（key 名稱與值都可翻）
+                    return line;
                 });
                 return $"---\n{string.Join("\n", processed)}\n---\n";
             }
@@ -244,6 +242,56 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         Console.WriteLine($"✅ 成功：{success}  ⏭️  略過：{skipped}  ❌ 失敗：{failed}");
 
         if (failed > 0) Environment.Exit(1);
+
+        // 複製非 .md 檔案（圖片、PDF 等），來源比目標新才複製
+        await CopyNonMarkdownFilesAsync();
+    }
+
+    private async Task CopyNonMarkdownFilesAsync()
+    {
+        var nonMdFiles = Directory
+            .EnumerateFiles(sourceDir, "*", SearchOption.AllDirectories)
+            .Where(f => !f.EndsWith(".md", StringComparison.OrdinalIgnoreCase))
+            .OrderBy(f => f)
+            .ToList();
+
+        if (nonMdFiles.Count == 0) return;
+
+        int copied = 0, skipped = 0;
+        Console.WriteLine($"\n📁 複製非 .md 檔案...");
+
+        foreach (var sourcePath in nonMdFiles)
+        {
+            var relPath    = Path.GetRelativePath(sourceDir, sourcePath);
+            var targetPath = Path.Combine(targetDir, relPath);
+
+            // 來源比目標新（或目標不存在）才複製
+            if (File.Exists(targetPath))
+            {
+                var sourceTime = File.GetLastWriteTimeUtc(sourcePath);
+                var targetTime = File.GetLastWriteTimeUtc(targetPath);
+                if (sourceTime <= targetTime)
+                {
+                    skipped++;
+                    continue;
+                }
+            }
+
+            try
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(targetPath)!);
+                File.Copy(sourcePath, targetPath, overwrite: true);
+                Console.WriteLine($"  📄 {relPath}");
+                copied++;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ⚠️  複製失敗 {relPath}：{ex.Message}");
+            }
+        }
+
+        Console.WriteLine($"  📁 複製：{copied}  略過：{skipped}");
+        await Task.CompletedTask;
     }
 
     private async Task<bool> TranslateFileAsync(string sourcePath, string targetPath)
@@ -251,6 +299,8 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
         string content;
         try { content = await File.ReadAllTextAsync(sourcePath, new UTF8Encoding(false)); }
         catch (Exception ex) { Console.WriteLine($"  ❌ 讀取失敗：{ex.Message}"); return false; }
+        // 移除 BOM，確保 YAML front matter regex 能正確匹配
+        content = content.TrimStart('\uFEFF');
 
         if (content.Trim().Length < 10)
         {
@@ -296,9 +346,6 @@ public class Translator(string apiKey, string sourceDir, string targetDir, bool 
     {
         content = Regex.Replace(content, @"xref:en/", "xref:zh-Hant/");
         content = Regex.Replace(content, @"(uid:\s*)en/", "$1zh-Hant/");
-        // YAML front matter key 名稱翻譯（僅限 front matter 內）
-        content = Regex.Replace(content, @"(?m)^author:", "作者:");
-        content = Regex.Replace(content, @"(?m)^contributors:", "貢獻者:");
         return content;
     }
 
@@ -398,9 +445,9 @@ public static class SystemPrompt
         2. 程式碼區塊（``` 包住的部分）內的所有程式碼，一字不改
         3. Liquid / Hugo 語法：{% include ... %}、{{ variable }}、{%- ... -%} 等，完全保留原樣
         4. YAML Front Matter（--- 包住的部分）：
-           - 所有「鍵名」(key) 絕對不翻譯：uid、title、author、description、ms.date 等
-           - 「uid」的值（如 developer/tutorials/index）絕對不翻譯
-           - 「title」和「description」的值可以翻譯成中文
+           - 「uid」的 key 與值都絕對不翻譯（如 uid: en/getting-started/index）
+           - 其他所有 key 名稱與值都可以翻譯成中文（如 title、description、author、contributors）
+           - author 的值若為 git 使用者名稱格式（如 git.AndreiMaz）則保留原樣不翻譯
         5. HTML 標籤與屬性（如 <div class="...">）
         6. 類別名稱、方法名稱、命名空間（如 Nop.Core、IPlugin、BasePlugin、INopStartup）
         7. 連結的 URL（href/src 的值不翻譯，只翻譯顯示文字）
