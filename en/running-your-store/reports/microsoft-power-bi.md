@@ -6,7 +6,7 @@ author: git.DmitriyKulagin
 
 # Microsoft Power BI
 
-Please get the official integration with Power BI [here](https://www.nopcommerce.com/microsoft-power-bi).
+Please [get the official integration with Power BI](https://www.nopcommerce.com/microsoft-power-bi).
 
 ## Introduction
 
@@ -20,7 +20,7 @@ Learn more about [Power BI](https://learn.microsoft.com/en-us/power-bi/fundament
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset. A report can have a single visual or pages full of visuals.
 
 > [!TIP]
-> Since the plugin comes with the source code, you can add new reports or change the data model, customizing the integration for your specific requirements. You can find out more about how reports are created [here](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-experience).
+> Since the plugin comes with the source code, you can add new reports or change the data model, customizing the integration for your specific requirements. You can [find out more about how reports are created](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-experience).
 
 The basic plugin package includes 13 reports covering different analytical aspects of the available information. A detailed description of each of them is presented below.
 
@@ -133,7 +133,7 @@ A report that provides an advanced product search option.
 
 This section describes how to integrate the Power BI service into your store.
 
-1. Purchase the integration at [here](https://www.nopcommerce.com/microsoft-power-bi).
+1. [Purchase the integration](https://www.nopcommerce.com/microsoft-power-bi).
 1. Download the plugin archive.
 1. Go to admin area > configuration > local plugins.
 1. Upload the plugin archive using the "Upload plugin or theme" plugin.
@@ -273,7 +273,7 @@ After this, all the reports described in this article will be available to you.
 If you encounter this error during the authorization process of your application, then to solve this problem you need to follow several steps described below:
 
 1. In the [Microsoft Entra admin center](https://entra.microsoft.com/), select your app in **App registrations**, and then select **Authentication**.
-1. In **Advanced settings** > **Allow public client flows** > **Enable the following mobile and desktop flows:**, select **Yes**.
+1. In **Settings** > **Allow public client flows**, select **Enabled**.
 
 ![Allow_public_client_flows](_static/microsoft-power-bi/Allow_public_client_flows.png)
 
@@ -314,7 +314,7 @@ Published reports can be viewed in several ways:
 Let's take a closer look at the second scenario, since it is part of the integration.
 
 > [!TIP]
-> More information about Power BI embedded analytics can be found [here](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
+> More information about [Power BI embedded analytics](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
 
 The process for viewing reports is similar to the publishing process. After successful user verification, all reports in your Workspace will be available in the **View reports** panel of the plugin.
 
