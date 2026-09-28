@@ -141,6 +141,11 @@
           href: getting-started/advanced-configuration/multi-store.md
         - name: Security settings
           href: getting-started/advanced-configuration/security-settings.md
+        - name: SMS providers
+          href: getting-started/advanced-configuration/sms-providers/index.md
+          items:
+            - name: Twilio
+              href: getting-started/advanced-configuration/sms-providers/twilio.md
         - name: robots.txt settings
           href: getting-started/advanced-configuration/robots-txt.md
         - name: PDF settings
@@ -186,6 +191,8 @@
           href: running-your-store/catalog/catalog-settings.md
         - name: YMM (Year-Make-Model) Filter
           href: running-your-store/catalog/ymm.md
+        - name: Price lists
+          href: running-your-store/catalog/price-lists.md
         - name: EU Omnibus Directive
           href: running-your-store/catalog/eu-omnibus-directive/index.md
         - name: Full-text search

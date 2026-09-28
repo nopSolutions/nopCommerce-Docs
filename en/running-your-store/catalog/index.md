@@ -53,4 +53,5 @@ To learn how to create a category, visit the [Categories](xref:en/running-your-s
 - [Attributes](xref:en/running-your-store/catalog/products/product-attributes)
 - [Products](xref:en/running-your-store/catalog/products/index)
 - [YMM (Year-Make-Model) Filter](xref:en/running-your-store/catalog/ymm)
+- [Price lists](xref:en/running-your-store/catalog/price-lists)
 - [Catalog settings](xref:en/running-your-store/catalog/catalog-settings)

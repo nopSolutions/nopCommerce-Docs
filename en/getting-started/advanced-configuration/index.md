@@ -19,6 +19,7 @@ contributors: git.DmitriyKulagin
 * [Plugins in nopCommerce](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce)
 * [Multi-store](xref:en/getting-started/advanced-configuration/multi-store)
 * [Security settings](xref:en/getting-started/advanced-configuration/security-settings)
+* [SMS providers](xref:en/getting-started/advanced-configuration/sms-providers/index)
 * [robots.txt settings](xref:en/getting-started/advanced-configuration/robots-txt)
 * [PDF settings](xref:en/getting-started/advanced-configuration/pdf-settings)
 * [All settings](xref:en/getting-started/advanced-configuration/all-settings)
