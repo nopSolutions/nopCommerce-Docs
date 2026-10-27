@@ -21,3 +21,4 @@ Learn more in the following chapters:
 - [Brevo integration](xref:en/running-your-store/promotional-tools/brevo-integration/index)
 - [Facebook Pixel](xref:en/running-your-store/promotional-tools/facebook-pixel)
 - [Omnisend integration](xref:en/running-your-store/promotional-tools/omnisend)
+- [Reminders](xref:en/running-your-store/promotional-tools/reminders)

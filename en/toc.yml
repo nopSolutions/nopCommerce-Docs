@@ -274,6 +274,8 @@
           href: running-your-store/promotional-tools/facebook-pixel.md
         - name: Omnisend integration
           href: running-your-store/promotional-tools/omnisend.md
+        - name: Reminders
+          href: running-your-store/promotional-tools/reminders.md
     - name: Content management
       href: running-your-store/content-management/index.md
       items:
