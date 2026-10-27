@@ -40,6 +40,7 @@ If you wish to make changes in the stylesheet regarding the logo, look for the f
 ```
 
 > [!IMPORTANT]
+>
 > You might have to clear the browser cache (or refresh the page using Ctrl+F5 keys) to see the changes (new store logo).
 
 ## How to change a layout

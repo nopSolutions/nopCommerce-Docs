@@ -39,7 +39,7 @@ In the *Info* panel, define the following blog post details:
 * Choose the stores in the **Limited to stores** field to enable this blog post for specific stores only. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
- > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+ > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 While editing an existing blog post or after clicking the **Save and continue edit** button for a new one, you can click the **Preview** button in the top right to see how the blog post will appear on the site.
 

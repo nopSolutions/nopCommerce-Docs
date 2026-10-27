@@ -34,6 +34,7 @@ Install the plugin using the **Install** button if it is uninstalled. Then enabl
    To use Omnisend with nopCommerce, you will need to [create an account](https://your.omnisend.com/g1K9y2) with Omnisend. You can start with the free plan to explore platform features, no credit card needed.
 
    > [!NOTE]
+   >
    > If you have been using Omnisend and already have an account connected to another store, make sure to [create a new empty store](https://support.omnisend.com/en/articles/3022953-managing-multiple-stores?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGdTU12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1#register-a-new-store-under-the-owners-account) first.
 
 1. To connect Omnisend to your store: [Log into](https://app.omnisend.com/login?irclickid=VWt1B4VIXxyPTkbVXw2OtWsaUkHVGf2o12dV0g0&irpartnerid=5274744&irprogramid=21260&irgwc=1) your Omnisend account.
@@ -77,6 +78,7 @@ The following store data will now be synced to Omnisend:
 * Abandoned cart-related events
 
 > [!NOTE]
+>
 > Manual synchronization should be performed only once, with multiple synchronization, batch insert will report data insert errors. Further synchronization will go automatically and will not require the participation of an administrator
 
 ## Contacts sync
@@ -113,6 +115,7 @@ The plugin implements import of categories and products.
 When you click the **Sync products** button, the synchronization process is performed.
 
 > [!NOTE]
+>
 > If there are many categories (>300), the user will be shown a warning that the import may take a long time.
 
 In addition to the initial import, real-time synchronization of products is implemented, but only changes in the `StockQuantity` parameter are tracked to keep the product status (*inStock*, *outOfStock*, *notAvailable*) up to date.

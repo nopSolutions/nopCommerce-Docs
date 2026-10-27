@@ -28,9 +28,11 @@ Azure has support for multiple instances since version 3.70. It's great for any 
 * **BLOB storage account support in Microsoft Azure**. Please learn more about [storage accounts in Azure here](https://azure.microsoft.com/documentation/articles/storage-introduction/). *How to configure:*
   * Once your BLOB storage is set up in Azure, open your `appsettings.json` (or `web.config` in previous versions) file, find the **AzureBlobStorage** element and specify your BLOB storage connection string, container, endpoint.
     >[!IMPORTANT]
+    >
     >These settings are valid for nopCommerce version 4.80 and below.
   * Once you have configured BLOB storage in Azure, open the **Azure Blob Storage** plugin configuration page and specify the BLOB storage connection string, container, and endpoint.
     >[!IMPORTANT]
+    >
     >These settings are relevant for nopCommerce version 4.90 and above.
 
 * **Distributed caching and session management support**. Supported options are SQL Server and Redis. To configure SQL Server, see [DistributedCacheConfig](https://docs.nopcommerce.com/en/developer/tutorials/appsettings-json-file.html#distributedcacheconfig) section for more details. Following description assumes that [Redis](http://redis.io/) has been chosen as a caching server (already available in Azure, Amazon, other cloud hosting companies). *How to configure:*

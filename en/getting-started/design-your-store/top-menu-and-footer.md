@@ -8,6 +8,7 @@ contributors: git.DmitriyKulagin
 # Top menu & footer
 
 > [!WARNING]
+>
 > This article is relevant for nopCommerce versions 4.80 and below. The new menu generation method, available starting with nopCommerce 4.90, is described in article [Menu](xref:en/running-your-store/content-management/menu).
 
 In nopCommerce, you can choose how the top menu and footer will be displayed. You can include the most important and interesting links in the top menu to attract more customers and add service links to the footer to provide the current store information to your clients.
@@ -168,11 +169,13 @@ To customize the **Follow us** block of the footer, go to **Configuration → Se
 Enter your social media links:
 
 - **Facebook page URL**
-- **Twitter page URL**
+- **X page URL**
 - **YouTube channel URL**
-- **Instagram page URL**
-
-If you want to enable/disable the RSS link in the footer, you need to enable/disable news accordingly on the **Configuration → Settings → News settings** page (*Common* panel).
+- **Instagram URL**
+- **TikTok URL**
+- **Snapchat URL**
+- **Pinterest URL**
+- **Tumblr URL**
 
 ### Newsletter
 

@@ -2,7 +2,7 @@
 title: Shipping settings
 uid: en/getting-started/configure-shipping/shipping-settings
 author: git.AndreiMaz
-contributors: git.rajupaladiya, git.exileDev, git.mariannk
+contributors: git.rajupaladiya, git.exileDev, git.mariannk, git.DmitriyKulagin
 ---
 
 # Shipping settings
@@ -49,12 +49,12 @@ Define your shipping settings in the *Notifications* panel as follows:
 
     > [!NOTE]
     >
-    >   Note: to be enabled, this feature must be supported by the shipment computation method.
+    > Note: to be enabled, this feature must be supported by the shipment computation method.
 
 * Tick **Display shipment events (store owners)**, to enable store owners to view shipment events on their shipment details page.
     > [!NOTE]
     >
-    >   Note: to be enabled, this feature must be supported by the shipment computation method as well.
+    > Note: to be enabled, this feature must be supported by the shipment computation method as well.
 
 Then define the *checkout* settings:
 

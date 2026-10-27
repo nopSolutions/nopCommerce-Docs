@@ -11,7 +11,7 @@ In this tutorial, I'll be using the nopCommerce plugin architecture to implement
 
 - [Developer tutorials](xref:en/developer/tutorials/index)
 - [Updating an existing entity. How to add a new property.](xref:en/developer/tutorials/update-existing-entity)
-- [How to write a plugin for nopCommerce 4.90](xref:en/developer/plugins/how-to-write-plugin-4.90)
+- [How to write a plugin for nopCommerce 5.00](xref:en/developer/plugins/how-to-write-plugin-5.00)
 
 We will start coding with the data access layer, move on to the service layer, and finally end on dependency injection.
 
@@ -21,8 +21,9 @@ Create a new class library project "Nop.Plugin.Misc.ProductViewTracker".
 
 Add the  `plugin.json` file.
 
->[!TIP]
->For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
+> [!TIP]
+>
+> For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
 
 Then add references to the **Nop.Web.Framework** projects. This will be enough for us, as other dependencies, such as **Nop.Core** and **Nop.Data**will be connected automatically
 
@@ -89,7 +90,7 @@ using Nop.Plugin.Other.ProductViewTracker.Domains;
 
 namespace Nop.Plugin.Other.ProductViewTracker.Migrations
 
-[NopSchemaMigration("2020/05/27 08:40:55:1687541", "Other.ProductViewTracker base schema", MigrationProcessType.Installation)]
+[NopSchemaMigration("2020-05-27 08:40:55:1687541", "Other.ProductViewTracker base schema", MigrationProcessType.Installation)]
 public class SchemaMigration : ForwardOnlyMigration
 {
     public override void Up()
@@ -248,7 +249,7 @@ public class ProductViewTrackerViewComponent : NopViewComponent
 
 > [!IMPORTANT]
 >
->We implement our plugin as a widget. In this case, we won't need to edit a `cshtml` file.
+> We implement our plugin as a widget. In this case, we won't need to edit a `cshtml` file.
 
 ```csharp
 using Nop.Services.Cms;

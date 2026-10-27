@@ -23,6 +23,7 @@ After installing the plugin you will be able to see a list of the existing API m
 **`{store location}/api/index.html`**
 
 > [!TIP]
+>
 > You can't use multi-factor authentication (MFA) through the Frontend API.
 
 ### Backend methods
@@ -33,6 +34,7 @@ After installing the plugin you will be able to see a list of the existing API m
 **`{store location}/api/index.html`**
 
 > [!IMPORTANT]
+>
 > After installing the backend and frontend APIs, switching between them is implemented directly through the Swagger UI page in the dropdown list of available definitions.
 > ![image](./_static/index/SwaggerUI_1.png)
 

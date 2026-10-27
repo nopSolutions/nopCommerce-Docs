@@ -55,6 +55,22 @@ In the *Display* panel, define the following details:
 - **Display Order** — the order number for displaying the manufacturer. This display number is used to sort manufacturers in the public store (ascending). The manufacturer with the display order 1 will be placed at the top of the list.
 - The **Manufacturer template** filed is visible if you have custom manufacturer templates installed on the **System → Templates** page. This template defines how this manufacturer (and its products) will be displayed.
 
+### GPSR
+
+In the *GPSR* panel, define the following details:
+
+- **Physical address** — the physical address of the manufacturer. This field is required for products sold in the EU to comply with the EU General Product Safety Regulation (Regulation (EU) 2023/988).
+- **Electronic address** — the electronic address (e.g., email) of the manufacturer for contacting purposes.
+- **Responsible person name** — the name of the natural or legal person established in the EU who is responsible for ensuring compliance with the GPSR requirements. This is required when the manufacturer is not established in the EU.
+- **Responsible person physical address** — the physical address of the responsible person.
+- **Responsible person electronic address** — the electronic address (e.g., email) of the responsible person for contacting purposes.
+
+![GPSR](_static/manufacturers/gpsr.png)
+
+> [!NOTE]
+>
+> The GPSR (General Product Safety Regulation) requires that every product offer in the EU includes clear identification and contact details of the manufacturer. If the manufacturer is not established in the EU, a Responsible Person must be designated who is based in the EU and can be contacted by consumers and authorities regarding product safety.
+
 ### Mappings
 
 ![Mappings](_static/manufacturers/mappings.png)

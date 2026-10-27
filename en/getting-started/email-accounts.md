@@ -23,6 +23,7 @@ Define the following email account information:
 
 * In the **Email address** field, enter the email address for all outgoing emails of your store. Example: `sales@yourstore.com`.
   > [!NOTE]
+  >
   > Some of the email providers may not use this setting unless this email address is added as an sending email alias/account in the email account which you're using for authentication.
 * In the **Email display name** field, enter the displayed name for outgoing emails of your store. Example: "Your store sales department."
 * In the **Host** field, enter the host name of IP address of your email server.

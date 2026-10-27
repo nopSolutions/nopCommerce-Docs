@@ -2,7 +2,7 @@
 title: Load balancing and web farms in nopCommerce
 uid: en/installation-and-upgrading/installing-nopcommerce/web-farms
 author: git.exileDev
-contributors: git.mariannk, git.AndreiMaz
+contributors: git.mariannk, git.AndreiMaz, git.DmitriyKulagin
 ---
 
 # Load balancing and web farms in nopCommerce
@@ -11,7 +11,7 @@ Load balancing is the distribution of a workload across many nodes. It is typica
 
 There are several ways to configure load balancing in nopCommerce:
 
-1. Use cloud-based autoscaling appliances like Microsoft's Azure Web Apps. Please find more about it [here](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure).
+1. Use cloud-based autoscaling appliances like Microsoft's Azure Web Apps. Please [find more about it here](xref:en/installation-and-upgrading/installing-nopcommerce/installing-on-microsoft-azure).
 1. Configure load balancing with IIS web farms. This approach is described below.
 
 We highly recommend you to read [this tutorial](https://docs.microsoft.com/en-us/iis/web-hosting/scenario-build-a-web-farm-with-iis-servers/overview-build-a-web-farm-with-iis-servers) by Microsoft before you start configuring a web farm for nopCommerce. So Microsoft suggests two ways to build a web farm with IIS servers:
@@ -30,7 +30,7 @@ First of all, you have to configure the initial settings of your web farm in IIS
 1. Go to **Configuration → Settings → App settings** and find the *Distributed cache configuration* tab. Select the **Use distributed cache** checkbox and choose the option you prefer:
 
    - *Redis*. In this case, you just need to enter the **Connection string** to your Redis server below
-   - *SQL Server*. In this case, you need to prepare a new table in your database using the "sql-cache create" command first. Read more about it in Microsoft docs [here](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-5.0#distributed-sql-server-cache). Then fill in the **Connection string**, **Schema name**, and **Table name** fields
+   - *SQL Server*. In this case, you need to prepare a new table in your database using the "sql-cache create" command first. Read more about it in [Microsoft docs](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-5.0#distributed-sql-server-cache). Then fill in the **Connection string**, **Schema name**, and **Table name** fields
 
 1. Since our web farm utilizes Application Request Routing (ARR) to control traffic using a proxy server, select the **Use proxy servers** checkbox
 1. Click the **Save** button. The nopCommerce application will be restarted.

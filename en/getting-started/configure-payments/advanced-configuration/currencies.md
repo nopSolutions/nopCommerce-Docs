@@ -55,7 +55,7 @@ Define the currency settings:
 * In the **Limited to stores**, select a pre-created store from the dropdown list. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
- > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 * From the **Rounding type** dropdown list, choose one of the types of rounding:
   * *Default rounding*

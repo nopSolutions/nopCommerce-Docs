@@ -11,7 +11,7 @@ contributors: git.DmitriyKulagin
 
 This section describes how to integrate the Dynamics 365 plugin into your store.
 
-Please get the official integration with Dynamics 365 [here](https://www.nopcommerce.com/microsoft-dynamics-365).
+Please get the [official integration with Dynamics 365](https://www.nopcommerce.com/microsoft-dynamics-365).
 
 ## What the Dynamics 365 plugin does
 
@@ -152,6 +152,7 @@ The integration with Business Central is through Dataverse, and there are many d
 Therefore, you must first configure the connection to Dataverse.
 
 > [!WARNING]
+>
 > Do not try to connect to *Dynamics 365 Sales* first.
 
 ![image](./_static/dataverse_connection_setup.png)
@@ -244,7 +245,7 @@ The organization’s base currency in Dynamics 365 Sales can only be set when th
 
 This section describes how to integrate the Dynamics 365 service into your store.
 
-1. Purchase the integration [here](https://www.nopcommerce.com/microsoft-dynamics-365).
+1. [Purchase the integration](https://www.nopcommerce.com/microsoft-dynamics-365).
 1. Download the plugin archive.
 1. Go to **Admin area > Configuration > Local plugins**.
 1. Upload the plugin archive using the "Upload plugin or theme" button.

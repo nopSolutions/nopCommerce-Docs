@@ -2,6 +2,7 @@
 title: Microsoft Power BI
 uid: en/running-your-store/reports/microsoft-power-bi
 author: git.DmitriyKulagin
+contributors: git.DmitriyKulagin
 ---
 
 # Microsoft Power BI
@@ -20,6 +21,7 @@ Learn more about [Power BI](https://learn.microsoft.com/en-us/power-bi/fundament
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset. A report can have a single visual or pages full of visuals.
 
 > [!TIP]
+>
 > Since the plugin comes with the source code, you can add new reports or change the data model, customizing the integration for your specific requirements. You can [find out more about how reports are created](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-experience).
 
 The basic plugin package includes 13 reports covering different analytical aspects of the available information. A detailed description of each of them is presented below.
@@ -33,6 +35,7 @@ The Sales Summary is a commonly used report that shows detailed sales data for y
 For all cards in the report, several filtering fields are available - here and henceforth we will call them general filters.
 
 > [!TIP]
+>
 > Each element of the report, be it a table, graph, or chart, is interactive and can act as an additional filter for the overall summary of information.
 
 The Sales Summary report has few sections, or “cards”, that display different sales information for your selected date range.
@@ -155,6 +158,7 @@ The following will describe the necessary and sufficient steps to set up the Pow
 1. Enter the email address for your account that you used when you signed up for the Power BI service.
 
    > [!NOTE]
+   >
    > Your account is stored in the **Azure AD** tenant.
 
    ![OnPremisses_data_gateway](_static/microsoft-power-bi/OnPremisses_data_gateway.png)
@@ -196,6 +200,7 @@ Follow these steps to create the app registration:
    ![Azure_portal](_static/microsoft-power-bi/app_id.png)
 
    > [!IMPORTANT]
+   >
    > New app registrations are hidden to users by default. When you're ready for users to see the app on their My Apps page you can enable it. To enable the app, in the Microsoft Entra admin center navigate to **Identity > Applications > Enterprise applications** and select the app. Then on the **Properties** page, set **Visible to users?** to *Yes*.
    > ![Azure_portal](_static/microsoft-power-bi/properties.png)
 
@@ -219,6 +224,7 @@ Follow these steps to create the app registration:
 
 1. Go to the plugin configuration page and paste the resulting **Application ID**.
    > [!WARNING]
+   >
    > Publishing a report is only possible if you use an MSSQL database. Connection configurations with other types of databases are not currently supported.
 
 ## Publish reports
@@ -314,11 +320,13 @@ Published reports can be viewed in several ways:
 Let's take a closer look at the second scenario, since it is part of the integration.
 
 > [!TIP]
+>
 > More information about [Power BI embedded analytics](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-analytics-power-bi).
 
 The process for viewing reports is similar to the publishing process. After successful user verification, all reports in your Workspace will be available in the **View reports** panel of the plugin.
 
 > [!WARNING]
+>
 > Each time you view reports, you must go through a user authorization process, this is due to the fact that the Power BI service issues an access token for a limited time.
 > ![Report_list](_static/microsoft-power-bi/Report_list.png)
 

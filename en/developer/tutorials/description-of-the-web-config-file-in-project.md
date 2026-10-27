@@ -152,6 +152,7 @@ For demonstration purposes, let's say we have to redirect a request from our old
 ```
 
 > [!NOTE]
+>
 > By using this rule we can redirect all pages of an old domain name to the same page on a new domain name.
 
 Here we need to replace [RULE NAME], [OLD URL], and [NEW URL] with the appropriate information.

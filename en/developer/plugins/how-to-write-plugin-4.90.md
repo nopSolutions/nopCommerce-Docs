@@ -63,7 +63,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
    - **ITaxProvider**. Tax providers are used for getting tax rates.
    - **IExchangeRateProvider**. Used for getting currency exchange rate.
    - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
-   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
+   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, X (Twitter), OpenID, etc.
    - **IMultiFactorAuthenticationMethod**. Used for creating multi-factor authentication methods such as *GoogleAuthenticator*, etc.
      >[!NOTE]
      > This is a new interface, since version 4.40 we have provided the corresponding infrastructure for MFA integrations out of the box.
@@ -241,4 +241,4 @@ Hopefully, this will get you started with nopCommerce and prepare you to build m
 
 ## Plugin template
 
-You can use our Visual Studio template for new nopCommerce plugins. It can save a lot of time for developers because now they don't have to do manually all the initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (PluginNopStartup.cs, _ViewImports.cshtml, ObjectContex, plugin.json, configuration, project references, etc). Please find it and [installation instructions here](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+You can use [our Visual Studio template](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/) for new nopCommerce plugins. It can save a lot of time for developers because now they don't have to do manually all the initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (PluginNopStartup.cs, _ViewImports.cshtml, ObjectContex, plugin.json, configuration, project references, etc).

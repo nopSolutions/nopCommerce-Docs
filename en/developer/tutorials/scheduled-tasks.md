@@ -41,6 +41,7 @@ With Scheduled tasks, you can schedule a task to run at certain periods. For exa
     ```
 
 > [!IMPORTANT]
+>
 > When inserting the new record into the **ScheduleTask** database table for a new scheduled task, it is important to keep the **Type** column format as **Namespace.TaskClassName, AssemblyName**.
 
 ## Troubleshooting

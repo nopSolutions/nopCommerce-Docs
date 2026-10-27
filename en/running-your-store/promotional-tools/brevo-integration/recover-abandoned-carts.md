@@ -37,6 +37,7 @@ In the example below, we have included a personalization of:
 * the recipient's last name using {{ contact.LASTNAME }}
 
 > [!NOTE]
+>
 > FIRSTNAME and LASTNAME should be existing attributes in your Brevo account.
 
 ![Attribute personalization](_static/recover-abandoned-carts/attribute-personalization.gif)
@@ -103,6 +104,7 @@ The following variables may be included directly within your Brevo template cont
 | Link to cart | {{ params.url }} |
 
 > [!NOTE]
+>
 > Items shown in the link to cart page will be different based on where the session is opened from. For example, let's say a customer is browsing from their laptop. If they click on the abandoned cart email from their phone, it will not show their abandoned cart.
 
 In the *Drag & Drop Editor*, select your desired block that will display the abandoned cart information then add the order variables you want.
@@ -125,6 +127,7 @@ Once your design is complete, click the green **Save & Quit** button. Then click
 ## Creating the abandoned cart workflow
 
 > [!NOTE]
+>
 > A customer has to be identified by their email address to trigger the workflow, i.e. a customer should be logged into their account on your nopCommerce store or input their email address during checkout.
 
 Navigate to the [Automation](https://get.brevo.com/tvl7ng) tab of your Brevo account.

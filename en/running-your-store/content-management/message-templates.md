@@ -54,7 +54,7 @@ Edit the message template details as follows:
 * Choose the stores in the **Limited to stores** field if the message template is for specific stores only. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 Click **Save**.
 

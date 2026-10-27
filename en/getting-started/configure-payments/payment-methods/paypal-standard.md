@@ -25,7 +25,7 @@ You can edit the payment method name, which will be displayed for customers in t
 
 To use the **PayPal Standard** plugin as a payment method, please follow these steps:
 
-1. Register a Business account on www.paypal.com. Follow the link [https://www.paypal.com/bizsignup/](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
+1. Register a Business account on [https://www.paypal.com/bizsignup](https://www.paypal.com/bizsignup/). Then fill in the information about yourself and your business:
 
     ![step1](_static/paypal-standard/signUp1step.png)
 
@@ -100,13 +100,13 @@ You can limit any payment method to store and customer role. This means that the
 
      > [!IMPORTANT]
      >
-     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore ACL rules (sitewide)**. Read more about the [access control list](xref:en/running-your-store/customer-management/access-control-list).
 
    - Use the **Limited to stores** option to limit this plugin to a certain store. If you have multiple stores, choose one or several from the list. If you don't use this option, just leave this field empty.
 
      > [!IMPORTANT]
      >
-     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+     > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
    - Click **Save**.
 

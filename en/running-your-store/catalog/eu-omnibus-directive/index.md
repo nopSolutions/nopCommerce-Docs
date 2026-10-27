@@ -2,20 +2,20 @@
 title: EU Omnibus Directive
 uid: en/running-your-store/catalog/eu-omnibus-directive/index
 author: git.exileDev
-contributors: git.AndreiMaz, git.exileDev
+contributors: git.AndreiMaz, git.exileDev, git.DmitriyKulagin
 ---
 
 # EU Omnibus Directive
 
 ## Introduction
 
-Please get Omnibus Directive integration [here](https://www.nopcommerce.com/omnibus-directive).
+Please get [Omnibus Directive integration](https://www.nopcommerce.com/omnibus-directive).
 
 ### What is Omnibus?
 
 The Directive (EU) 2019/2161, also known as the [Omnibus Directive](https://eur-lex.europa.eu/eli/dir/2019/2161/oj), is a European Union directive aimed at strengthening consumer rights and promoting greater transparency by implementing sanctions to enforce these rights. The main objective of the Omnibus Directive is to enhance consumer protection rights across the entire European Union, and it applies to all e-commerce stores.
 
-### Key Points of the Omnibus Directive:
+### Key Points of the Omnibus Directive
 
 * Any price reduction must be displayed on the e-commerce website by showing both the previous price and the current price after the discount.
 * The lowest price recorded during the 30 days preceding the promotion must be used as the reference for applying the reduction.
@@ -43,6 +43,7 @@ On the configuration page, you can enable history refresh, configure timeframe, 
 Click the "Refresh price history data" button, and the plugin will calculate and save the normal prices (in historical data). This might take a moment depending on the amount of products, so please be patient. It’s recommended to do this after the plugin installation or when you start a new discount campaign.
 
 > [!NOTE]
+>
 > The plugin only supports standard discounts. Discounts with personalized coupon codes are not supported.
 
 The price history data is refreshed automatically every 24 hours for published products or instantly for a product when its price is changed (a product is created or edited).
@@ -59,6 +60,7 @@ The price history data is refreshed automatically every 24 hours for published p
 The plugin automatically clears outdated price history data every 24 hours (history data that dates back earlier than the configured price calculation timeframe).
 
 > [!NOTE]
+>
 > The schedule task does not delete a price history record that precedes the configured price calculation timeframe because it is taken as the initial price.
 
 ![Product list](_static/product-list.png)
@@ -77,11 +79,11 @@ On the discount details page, you can add all the discount info and list the pro
 
 This section describes how to integrate the Omnibus Directive plugin into your store.
 
-1. Purchase the integration [here](https://www.nopcommerce.com/omnibus-directive).
+1. [Purchase the integration](https://www.nopcommerce.com/omnibus-directive).
 1. Download the plugin archive.
 1. Go to **Admin area > Configuration > Local plugins**.
 1. Upload the plugin archive using the "Upload plugin or theme" button.
 1. Scroll down the list of plugins to find the newly uploaded plugin.
 1. Click on the **Install** button to install the plugin.
 
-Please find more information about how to install plugins [here](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html).
+Please find more [information about how to install plugins](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html).

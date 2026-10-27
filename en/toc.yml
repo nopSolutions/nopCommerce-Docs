@@ -146,6 +146,12 @@
           items:
             - name: Twilio
               href: getting-started/advanced-configuration/sms-providers/twilio.md
+        - name: ChatGPT shopping
+          href: getting-started/advanced-configuration/chatgpt-shopping.md
+        - name: Google AI Commerce Search
+          href: getting-started/advanced-configuration/google-ai-commerce-search.md
+        - name: PunchOut
+          href: getting-started/advanced-configuration/punchout.md
         - name: robots.txt settings
           href: getting-started/advanced-configuration/robots-txt.md
         - name: PDF settings
@@ -370,6 +376,8 @@
     - name: Creating a nopCommerce plugin
       href: developer/plugins/index.md
       items:
+        - name: How to write a plugin for nopCommerce 5.00
+          href: developer/plugins/how-to-write-plugin-5.00.md
         - name: How to write a plugin for nopCommerce 4.90
           href: developer/plugins/how-to-write-plugin-4.90.md
         - name: How to write a plugin for nopCommerce 4.80

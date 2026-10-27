@@ -34,7 +34,7 @@ Define the *CAPTCHA* settings as follows:
 This panel will reveal the following settings when **CAPTCHA enabled** is selected:
 
 * **Type of reCAPTCHA**: choose `reCAPTCHA v2` or `reCAPTCHA v3`. The difference between them is that reCAPTCHA v2 shows the "I'm not a robot" checkbox, whereas reCAPTCHA v3 is invisible to customers. Read more about [reCAPTCHA v2](https://developers.google.com/recaptcha/docs/display) and [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3).
-* **reCAPTCHA v3 score threshold** is enabled when reCAPTCHA v3 is selected. Read more about the score threshold [here](https://developers.google.com/recaptcha/docs/v3).
+* **reCAPTCHA v3 score threshold** is enabled when reCAPTCHA v3 is selected. Read [more about the score threshold](https://developers.google.com/recaptcha/docs/v3).
 * Show CAPTCHA on the **login** page.
 * Show CAPTCHA on the **registration** page.
 * Show CAPTCHA on the **forgot password** page.

@@ -76,6 +76,7 @@ Navigate to **Configuration → Tax categories**.
 At the top right of the page, you will see the branded **Avalara tax codes** button. Clicking it will show the following dropdown menu:
 
 > [!IMPORTANT]
+>
 > The **Avalara tax codes** button will only be displayed if the *Avalara* plugin is selected as the main tax provider on the *Configuration → Tax providers page*.
 
 ![Tax categories](_static/avalara/tax-categories.jpg)
@@ -94,6 +95,7 @@ At the top right of the page, you will see the branded **Avalara tax codes** but
     ![Product tax category](_static/avalara/product-tax-category.png)
 
     > [!IMPORTANT]
+    >
     > Ensure that **SKU** is entered for better navigation in the AvaTax backend.
 1. Click **Save**.
 1. To see a listing of all available AvaTax system tax codes, visit [http://taxcode.avatax.avalara.com](http://taxcode.avatax.avalara.com).

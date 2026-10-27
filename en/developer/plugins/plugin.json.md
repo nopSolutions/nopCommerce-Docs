@@ -47,6 +47,7 @@ contributors: git.cromatido
 - **DependsOnSystemNames** - The list of plugins' system names that this plugin depends on.
 
 > [!TIP]
+>
 > After you edit your **plugin.json** file's content you need to set its `Copy to Output Directory` property value to `Copy if newer`.
 > ![image3](_static/plugin.json/plugin_json_0.jpg)
 > It is required because we need this file to be copied to the compiled directory from where nopCommerce can access this file to display our plugin in the plugin list in the admin panel.

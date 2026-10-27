@@ -2,7 +2,7 @@
 title: Unit Testing
 uid: en/developer/tutorials/unit-tests
 author: git.skoshelev
-contributors: git.mariannk
+contributors: git.mariannk, git.DmitriyKulagin
 ---
 
 # Unit Testing
@@ -17,15 +17,15 @@ In this article, we will get acquainted with the features of testing in the nopC
 
 ## Features overview
 
-![tests-project](_static/unit-tests/tests-project.jpg)
+![tests-project](_static/unit-tests/tests-project.png)
 
 In the screenshot, you can see the structure of the `Nop.Tests` project. The folders such as `Nop.Core.Tests` contain tests for the corresponding projects of the solution. The other files are responsible for the auxiliary and base classes. Let's look at the `BaseNopTest` class.
 
 ### BaseNopTest
 
-This is the main abstract class that exposes the IoC container for tests and allows us to use all the advantages of DI.
+This is the main static class that exposes the IoC container for tests and allows us to use all the advantages of DI.
 
-![base-nop-test](_static/unit-tests/base-nop-test.jpg)
+![base-nop-test](_static/unit-tests/base-nop-test.png)
 
 This class contains two methods available for child classes:
 
@@ -59,6 +59,7 @@ public partial interface IScheduleTaskService
 As you can see this is a simple interface. But at the same time, it allows nopCommerce to perform very important tasks such as sending email messages to customers. So we need to be sure that it works properly. Next, we will write tests for each of the interface methods.
 
 > [!NOTE]
+>
 > We don't use **TDD** but we are not against this approach. The reliability of the functionality is important for us, not a specific approach to testing.
 
 ## ScheduleTaskServiceTests class
@@ -208,6 +209,7 @@ using NUnit.Framework;
 ```
 
 > [!NOTE]
+>
 > We have to delete all changes made by a test from the database. In our case, we use the `DeleteTaskAsync` method for this purpose. Also, note that it should be done just before we call test methods such as `task.Should().BeNull();`, `task2.Name.Should().NotBe(_task.Name);` etc. because if the test fails, the database will contain data that can affect other testing processes.
 
 Then let's test the two remaining methods:
@@ -282,4 +284,7 @@ public async System.Threading.Tasks.Task TearDown()
 }
 ```
 
-That's it, our test class is ready. As I promised at the beginning, you can find the entire class at [this link](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Tests/Nop.Tests/Nop.Services.Tests/ScheduleTasks/ScheduleTaskServiceTests.cs) and the commit with its addition by [this link](https://github.com/nopSolutions/nopCommerce/commit/81c31e1ee754f771ddfdc26e9b95a729e38b2d29).
+That's it, our test class is ready! As promised at the beginning, you can find all the materials via the links below:
+
+* **[Full Source Code: ScheduleTaskServiceTests](https://github.com/nopSolutions/nopCommerce/blob/develop/src/Tests/Nop.Tests/Nop.Services.Tests/ScheduleTasks/ScheduleTaskServiceTests.cs)** — the final version of the test class in the repository.
+* **[Git Commit](https://github.com/nopSolutions/nopCommerce/commit/81c31e1ee754f771ddfdc26e9b95a729e38b2d29)** — the exact commit showing all additions and changes.

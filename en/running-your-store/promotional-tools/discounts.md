@@ -129,7 +129,7 @@ Often, you need to sell more items of a certain product. In this case, to encour
 - The **Discount type** is *Assigned to products*. In the *Applied to products* panel, you can add them; here, it will be an "Oversized T-shirt."
 - We want our customers to get a 50% discount on the 2nd T-shirt.
 - This discount can be used once per customer, so the **Maximum discounted quantity** is 1.
-- You can set up requirements for the product quantity in the *Requirements* panel. Add a requirement type *Customer has all of these products* and add a T-shirt with a quantity 2. This requirement type can be downloaded as a plugin [here](https://www.nopcommerce.com/en/has-all-products-discount-requirement-rule).     Read about how to install plugins in the [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) section.
+- You can set up requirements for the product quantity in the *Requirements* panel. Add a requirement type *Customer has all of these products* and add a T-shirt with a quantity 2. This requirement type can be [downloaded as a plugin](https://www.nopcommerce.com/en/has-all-products-discount-requirement-rule). Read about how to install plugins in the [Plugins](xref:en/getting-started/advanced-configuration/plugins-in-nopcommerce) section.
 
 ![Buy one item and get 50% on the second](_static/discounts/buy_2.png)
 

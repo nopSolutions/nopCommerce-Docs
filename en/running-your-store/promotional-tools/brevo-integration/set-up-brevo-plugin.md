@@ -88,7 +88,7 @@ Go to the **Transactional emails** panel to send your transactional emails via b
 ![Sending transactional emails](_static/set-up-brevo-plugin/email-panel.jpg)
 
 1. Select the **Use Brevo SMTP** checkbox.
-1. Paste your SMTP password, which can be found [here](https://account.brevo.com/advanced/api).
+1. Paste your SMTP password, which can be found in [brevo account page](https://account.brevo.com/advanced/api).
 1. From the dropdown list, select the sender you wish to send your emails from.
 1. Click the **Save** button.
 
@@ -109,7 +109,7 @@ For each template, you can:
 > [!NOTE]
 >
 > If you *have selected* the **Brevo email template**, then click **Edit template** to edit the content of your template on your Brevo account.
-If you *haven't selected* the **Brevo email template**, then clicking **Edit template** will redirect you to the message template edit page in the nopCommerce admin area. Read more about the message template editing process [here](xref:en/running-your-store/content-management/message-templates). You can also send a test email from that page to check the content. Note that an email credit will be used for each test email.
+If you *haven't selected* the **Brevo email template**, then clicking **Edit template** will redirect you to the message template edit page in the nopCommerce admin area. Read more about the [message template editing process](xref:en/running-your-store/content-management/message-templates). You can also send a test email from that page to check the content. Note that an email credit will be used for each test email.
 
 ## Sending SMS
 

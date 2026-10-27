@@ -62,7 +62,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
    - **ITaxProvider**. Tax providers are used for getting tax rates.
    - **IExchangeRateProvider**. Used for getting currency exchange rate.
    - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
-   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
+   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, X (Twitter), OpenID, etc.
    - **IMultiFactorAuthenticationMethod**. Used for creating multi-factor authentication methods such as *GoogleAuthenticator*, etc.
      >[!NOTE]
      > This is a new interface, since version 4.40 we provide the corresponding infrastructure for MFA integrations out of the box.
@@ -85,7 +85,7 @@ What we need to do now is create a controller, a model, and a view.
 1. A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an `ASP.NET Core MVC` application.
 1. An MVC model contains all of your application logic that is not contained in a view or a controller.
 
-You can find more information about the MVC pattern [here](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-6.0).
+You can find more information about the [MVC pattern](https://docs.microsoft.com/aspnet/core/mvc/overview?view=aspnetcore-6.0).
 
 So let's start:
 
@@ -160,7 +160,7 @@ public override async Task InstallAsync()
 
 ## Routes
 
-Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
+Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about [routing](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
 
 If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following `RouteProvider` class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PayPalCommerceWebhook/WebhookHandler` URL :
 
@@ -195,4 +195,4 @@ Hopefully, this will get you started with nopCommerce and prepare you to build m
 
 ## Plugin template
 
-You can use our Visual Studio template for new nopCommerce plugins. It can save a lot of time for developers because now they don't have to do manually all initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (PluginNopStartup.cs, _ViewImports.cshtml, ObjectContex, plugin.json etc), configuration, project references, etc). Please find it and installation instructions [here](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/)
+You can use [our Visual Studio template](https://github.com/nopSolutions/nopCommerce-plugin-template-VS/) for new nopCommerce plugins. It can save a lot of time for developers because now they don't have to do manually all initial steps. Such as folders creation (Controllers, Views, Models etc.), other required files (PluginNopStartup.cs, _ViewImports.cshtml, ObjectContex, plugin.json etc), configuration, project references, etc).

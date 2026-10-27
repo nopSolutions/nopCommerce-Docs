@@ -30,7 +30,7 @@ On this page, you can click the **Delete selected** button to delete selected em
 
 To view the message queue item details, click the **Edit** button beside the message. The *Edit message queue item* window will be displayed:
 
-![Message queue item details](_static/message-queue/edit.jpg)
+![Message queue item details](_static/message-queue/edit.png)
 
 In this window, you can delete the message by clicking the **Delete** button. Or you can requeue the message using the **Requeue** button.
 

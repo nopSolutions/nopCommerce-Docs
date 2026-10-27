@@ -12,6 +12,7 @@ This chapter describes how to download nopCommerce software, upload it to your s
 Before you begin the installation, ensure that your web host meets the [minimum requirements to run nopCommerce](xref:en/installation-and-upgrading/technology-and-system-requirements).
 
 > [!NOTE]
+>
 > For more information on hosting selection guidelines, visit [this page](xref:en/installation-and-upgrading/installing-nopcommerce/choose-a-hosting-company).
 
 ## Download nopCommerce

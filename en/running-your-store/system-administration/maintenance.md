@@ -63,6 +63,10 @@ In the *Database backups* panel, click the **Backup now** button to create a dat
 
 ![Maintenance](_static/maintenance/delete_image_thumbs.png)
 
+## Clear search history
+
+![Maintenance](_static/maintenance/clear_search_history.png)
+
 ## Tutorials
 
 [Overview of system maintenance options](https://www.youtube.com/watch?v=CNgTJZoWHTA)

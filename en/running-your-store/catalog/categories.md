@@ -78,12 +78,12 @@ In the *Mappings* panel, define the following category information:
 - In the **Limited to customer roles** field, choose the customer roles that will be able to see the category in the catalog. Leave this field empty if this option is not required, and the category can be seen by everyone.
     > [!NOTE]
     >
-    > In order to use this functionality, you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+    > In order to use this functionality, you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about the [access control list](xref:en/running-your-store/customer-management/access-control-list).
 
 - Choose the stores in the **Limited to stores** field if the category is sold in specific stores. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 ### SEO
 

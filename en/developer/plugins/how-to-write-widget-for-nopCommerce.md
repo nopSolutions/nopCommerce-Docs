@@ -16,6 +16,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ![image1](_static/how-to-write-a-widget-for-nopCommerce/image1.png)
 
     > [!NOTE]
+    >
     > Do not get confused this directory with the one which exists in *Presentation\Nop.Web* directory. The *Plugins* directory in the *Nop.Web* directory contains the plugin's compiled files.
 
     A recommended name for a widget project is `Nop.Plugin.Widgets.{Name}`. `{Name}` is your widget name (for example, "**GoogleAnalytics**"). For example, *Google Analytics widget* has the following name: `Nop.Plugin.Widgets.GoogleAnalytics`. But please note that it's not a requirement. And you can choose any name for a widget. For example, "*MyFirstNopWidget*". The *Plugins* directory structure of a solution looks like the following.
@@ -54,6 +55,7 @@ To extend nopCommerce functionality, widgets are used. There are various types o
     ```
 
     > [!NOTE]
+    >
     > The **WIDGET_OUTPUT_DIRECTORY** should be replace by the plugin name, for example *Widgets.GoogleAnalytics*.
 
 1. After updating the *.csproj* file, the **plugin.json** file should be added which is required for a widget.  This file contains meta-information describing your widget. Just copy this file from any other existing plugin/widget and modify it for your needs. For information about the `plugin.json` file, please see [plugin.json file](xref:en/developer/plugins/plugin_json).
@@ -151,7 +153,7 @@ So let's start:
     }
     ```
 
-    You can find a list of public widget zones from this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) and admin widget zones following this [link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs).
+    You can find [a list of public widget zones from this link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/PublicWidgetZones.cs) and [admin widget zones following this link](https://github.com/nopSolutions/nopCommerce/blob/master/src/Presentation/Nop.Web.Framework/Infrastructure/AdminWidgetZones.cs).
     In addition to `GetWidgetZonesAsync`, **IWidgetPlugin** has `GetWidgetViewComponentName` method which returns ViewComponent name. It accepts "*widgetZone*" name as parameter and can be used to render different view based on the selected widget zone.
 
     ```cs
@@ -192,4 +194,5 @@ This step is optional. Some widgets can require additional logic during their in
     ```
 
     > [!IMPORTANT]
+    >
     > If you override one of these methods, do not hide its base implementation - **base.InstallAsync()** and **base.UninstallAsync()** which has been marked in the above images.

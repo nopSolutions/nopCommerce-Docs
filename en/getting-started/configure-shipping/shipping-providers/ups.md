@@ -12,6 +12,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.DanWithArduino
    * Client ID
    * Client Secret
      > [!NOTE]
+     >
      > This is to use UPS OAuth, which is required for all new accounts after June 2023, and all accounts after June 2024
 
      ![Shipping rate methods](_static/ups/ups-apps-configuration.jpg)
@@ -41,6 +42,7 @@ contributors: git.exileDev, git.DmitriyKulagin, git.DanWithArduino
    The *Configure – UPS (United Parcel Service)* window will be displayed as follows: ![Configure page](_static/ups/ups-configure.jpg)
 
    > [!WARNING]
+   >
    > Beginning in June of 2024, you will no longer be able to transact with UPS APIs using an access key for authentication and are required to update your security model to OAuth 2.0
 
 7. Enter the following information obtained from the UPS provider, and choose the options that are relevant to your store:

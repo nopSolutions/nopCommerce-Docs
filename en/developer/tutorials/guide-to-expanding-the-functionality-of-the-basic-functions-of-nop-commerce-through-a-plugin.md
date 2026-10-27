@@ -16,6 +16,7 @@ nopCommerce uses the plugins system to extend the functionality of the admin pan
 As we know both plugins and widgets are for extending the functionality of the nopCommerce solution. Well, then you may ask "What is the difference between them". Ultimately in nopCommerce, you can think of widgets as a plugin but with an extra feature. To create a widget the process is mostly the same as creating a plugin, but by using widgets we can show some UI (User Interface) to the nopCommerce public website in some specific areas predefined by nopCommerce which are known as widget-zones. Which we cannot achieve only via a plugin. You may think of a Widget as a subset of a Plugin.
 
 >[!NOTE]
+>
 >All available widget zones can be found in the `Nop.Web.Framework.Infrastructure` namespace:
 >
 >- The admin panel widget-zones can be found in the **AdminWidgetZones.cs** file.
@@ -57,7 +58,7 @@ After you create your project successfully open its `.csproj` file, for that rig
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <Copyright>SOME_COPYRIGHT</Copyright>
         <Company>YOUR_COMPANY</Company>
         <Authors>SOME_AUTHORS</Authors>

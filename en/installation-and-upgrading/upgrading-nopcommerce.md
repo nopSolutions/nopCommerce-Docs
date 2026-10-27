@@ -23,7 +23,7 @@ Follow the next steps:
   > Don't forget to read the `Readme.txt` file provided with the upgrade script. Sometimes it contains important notes regarding upgrading to the newest version.
 
 1. Remove all files from the previous version except JSON files in the 'App_Data' directory such as `appsettings.json` and  `plugins.json`. These files should be saved since we will use them later. For earlier versions: if such files as `dataSettings.json`, `Settings.txt` or `InstalledPlugins.txt` exist save them as well.
-1. Upload the new site files (get the latest version [here](https://www.nopcommerce.com/download-nopcommerce)).
+1. Upload the new site files (get the [latest version](https://www.nopcommerce.com/download-nopcommerce)).
 1. Ensure that everything is OK.
 
 > [!NOTE]

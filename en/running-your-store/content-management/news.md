@@ -9,18 +9,22 @@ contributors: git.DmitriyKulagin, git.exileDev, git.ivkadp, git.mariannk
 
 nopCommerce allows you to post news in your store. There can be any important tidings, like nopCommerce latest release information, your company updates, and more.
 
+In nopCommerce, the feature is implemented as the *News* plugin (system name *Misc.News*), available since nopCommerce 5.00. The plugin belongs to the *Misc* group.
+
+## How it works
+
 News will be displayed in your store on the home page or in the site footer menu.
 
 ![p1](_static/news/news_1.png)
 
 To manage news, go to **Content management → News items**. The list of all news will be displayed as follows:
-![News](_static/news/list.jpg)
+![News](_static/news/list.png)
 
 ## Adding news
 
 To add a new news item, click the **Edit** button and fill in the information about the news item.
 
-![Adding news](_static/news/add-new.jpg)
+![Adding news](_static/news/add-new.png)
 
 ### Info
 
@@ -42,7 +46,7 @@ In the *Info* panel, define the following news item details:
 
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 - Select the **Published** checkbox to publish this news item in your store.
 
@@ -51,7 +55,7 @@ While editing an existing news item or after clicking the **Save and continue ed
 ### SEO
 
 In the *SEO* panel, define the following news item details:
-![SEO for news item](_static/news/seo.jpg)
+![SEO for news item](_static/news/seo.png)
 
 - Define the **Search engine friendly page name**. For example, enter "the-best-news" to make your URL `http://yourStore.com/the-best-news`. Leave this field empty to generate it automatically based on the title of the news item.
 - Override the page title in the **Meta title** field (the default title is the title of the news item).
@@ -62,18 +66,20 @@ In the *SEO* panel, define the following news item details:
 
 To manage news comments, go to **Content management → News comments**.
 
-![News comments](_static/news/news-comments.jpg)
+![News comments](_static/news/news-comments.png)
 
 Use the **Approve selected** button to approve the selected comments and **Disapprove selected** to disapprove ones.
 You can also edit or delete a comment. If deleted, the comment will be removed from the system.
 
 ## News settings
 
-You can manage news settings in **Configuration → Settings → News settings**. This page is available in 2 modes: *advanced* and *basic*.
+To configure the plugin, go to **Configuration → Local plugins** and click **Configure** beside *News*.
+
+This page is available in 2 modes: *advanced* and *basic*.
 
 This page enables multi-store configuration; it means that the same settings can be defined for all stores or differ from store to store. If you want to manage settings for a certain store, choose its name from the multi-store configuration dropdown list and select all the checkboxes needed on the left to set custom values for them. For further details, refer to [Multi-store](xref:en/getting-started/advanced-configuration/multi-store).
 
-![News settings](_static/news/news-settings.jpg)
+![News settings](_static/news/news-settings.png)
 
 ### Common
 
@@ -84,6 +90,9 @@ Define the following *Common* settings:
 - Enter the **Number of items to display** on the home page.
 - Enter the **News archive page size**. It's the number of news displayed on one page.
 - Select **Display news RSS feed link in the browser address bar** to enable the news RSS feed link in customers' browser address bar.
+- Select the **Sitemap includes news items** if you want to include news items in sitemap.
+- Select the **sitemap.xml includes news items** if you want to include news items in sitemap.xml file.
+- Select the **Show CAPTCHA on news page (comments)** to show CAPTCHA on news page when writing a comment.
 
 ### News comments
 

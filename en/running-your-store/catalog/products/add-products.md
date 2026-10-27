@@ -50,14 +50,18 @@ Start by filling in general information in the *Product info* panel:
 - Set up the **Product type** as *Simple* or *Grouped*. Read more about product types in the [Grouped products (variants)](xref:en/running-your-store/catalog/products/grouped-products-variants) chapter.
 - The **Product template** field is visible if you have custom product templates installed on the **System → Templates** page.
 - Select **Visible individually** if you want the product to be in the catalog or search results; otherwise, the product will be hidden in the catalog and only accessible from a grouped product details page.
+- Select **Age verification** if the product is subject to an age restriction. The customer's age is then verified against the minimum age specified for the **'Date of Birth' enabled** field in **Configuration → Settings → Customer settings**, so make sure that field is enabled and its **Minimum age to purchase** value is set appropriately (for example, to check that a customer is over 18). Read more about how to configure the date of birth field in the [Customer settings](xref:en/running-your-store/customer-management/customer-settings) section.
+    > [!NOTE]
+    >
+    > When the customer's date of birth cannot be verified, the product cannot be purchased.
 - Choose **Customer roles** that will be able to see the product in the catalog. Leave this field empty if this option is not required and the product can be seen by everyone.
     > [!NOTE]
     >
-    > In order to use this functionality, you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+    > In order to use this functionality, you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about the [access control list](xref:en/running-your-store/customer-management/access-control-list).
 - Choose the stores in the **Limited to stores** field if the product is sold in specific stores. Leave the field empty in case this functionality is not required.
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 - **Vendor**. You can manage [vendors](xref:en/running-your-store/vendor-management) in **Customers → Vendors**.
 - **Require other products** is to define whether the product requires other products. In case it does, select the **Required product IDs**, entering them separated by commas, and ensure that there are no circular references, for example, A requires B, B requires A. Choose to **Automatically add these products to the cart** if required.
@@ -73,10 +77,14 @@ In the *Price* panel, define:
 - **Price** in a predefined currency.
     > [!NOTE]
     >
-    > You can change the store currency in **Configuration → Currencies**. Read more about currencies [here](xref:en/getting-started/configure-payments/advanced-configuration/currencies).
+    > You can change the store currency in **Configuration → Currencies**. Read more about [currencies](xref:en/getting-started/configure-payments/advanced-configuration/currencies).
 
 - **Old price**. If it is larger than zero, it becomes visible in the public store and displayed beside the new price for comparison.
 - **Product cost**, the sum of all costs associated with the production of the product or service. This is not displayed to customers.
+- **Price lists**. Choose the price lists that apply to this product. A price list defines how the product price is changed (percentage or amount increase/decrease, or a fixed price) and which customer roles it is applied to. You can manage price lists in **Catalog → Price lists**, where a **Manual price** can also be set for each product to override the calculated value.
+    > [!NOTE]
+    >
+    > If several active price lists apply to the same product, the **Price list strategy** setting in **Configuration → Settings → Catalog settings** defines which price is used. With the *Minimal price* strategy, all matching price lists are applied and the lowest calculated price is taken. With the *Use by priority* strategy, price lists are applied in the order of their priority values, and the price of the first applicable price list is taken.
 - **Disable buy button**. This can be useful for products "upon request."
 - **Disable wishlist button**.
 - **Available for pre-order** if the product is not in the store yet, but you want to allow customers to order it. The *Pre-order* button will be displayed to replace the standard *Add to cart* button in the public store. When this option is selected, the **Pre-order availability start date** field will be displayed. Enter the availability start date of the product in UTC. The *Pre-order* button will be changed to *Add to cart* when this date comes.
@@ -89,7 +97,7 @@ In the *Price* panel, define:
   - **Unit of product** — the measure of the previously entered value.
   - **Reference amount** — the base amount.
   - **Reference unit** — the measure of the previously entered value.
-- **Discounts**. Learn how to set up discounts [here](xref:en/running-your-store/promotional-tools/discounts).
+- **Discounts**. Learn how to [set up discounts](xref:en/running-your-store/promotional-tools/discounts).
     > [!NOTE]
     >
     > If you want to use discounts, make sure the **Ignore discounts (sitewide)** setting is disabled in the **Configuration → Settings → Catalog settings → Performance** panel.
@@ -122,7 +130,7 @@ Define product-specific shipping details in the *Shipping* panel:
 
 ## Inventory
 
-Define the inventory settings for the product as described [here](xref:en/running-your-store/order-management/inventory-management).
+Define the [inventory settings for the product as described here](xref:en/running-your-store/order-management/inventory-management).
 
 ## Multimedia
 
@@ -173,9 +181,36 @@ On the "Video" tab, you can add links to embedded videos from any video hosts su
   ![vimeo video share](_static/add-product-for-beginners/vimeo_share_embed_copy.png)
 1. Paste this link into the "Embed video URL" field as described above.
 
+### 3D model
+
+This feature enables uploading and displaying 3D models within the product image gallery. It provides customers with an interactive way to explore products, including functionality such as model rotation.
+
+#### File Requirements
+
+Store owners must prepare 3D model files in the **.GLB** format.
+
+The following 3D design and editing software can be used to create compatible models:
+
+- Maya
+- Blender
+- 3ds Max
+- ZBrush
+- Substance Painter
+- Photoshop
+
+Supports only **one** `.GLB` file per product.
+
+![3d model](_static/add-product-for-beginners/multimedia_3d.png)
+
+All uploaded `.GLB` files are stored in the `\Nop.Web\wwwroot\images\3d\` directory. A placeholder file is used if no custom model is uploaded.
+
+> [!NOTE]
+>
+> Additional global configurations for this feature are available on the [Media settings](xref:en/getting-started/design-your-store/media-settings) page.
+
 ## Product attributes
 
-In the *Product attributes* panel, you can add product attributes. Learn more about product attributes and how to create them [here](xref:en/running-your-store/catalog/products/product-attributes).
+In the *Product attributes* panel, you can add product attributes. Learn more about [product attributes and how to create them](xref:en/running-your-store/catalog/products/product-attributes).
 
 ![Product attributes](_static/add-product-for-beginners/product_attributes2.png)
 
@@ -276,7 +311,7 @@ To generate all possible combinations, use the **Generate all possible combinati
 
 ## Specification attributes
 
-Specification attributes are product features, such as screen size or number of USB ports, visible on a product details page. Specification attributes can be used for filtering products on the category details page. Read more about specification attributes [here](xref:en/running-your-store/catalog/products/specification-attributes).
+Specification attributes are product features, such as screen size or number of USB ports, visible on a product details page. Specification attributes can be used for filtering products on the category details page. Read more about [specification attributes](xref:en/running-your-store/catalog/products/specification-attributes).
 
 > [!NOTE]
 >
@@ -321,11 +356,11 @@ Define the following SEO parameters for the product page:
 - **Meta keywords** — a brief and concise list of the most important themes (keywords and key phrases) related to the product. These words will be added to the product page header.
 - **Meta description** — a brief description of the product that will be added to the product page header.
 
-Read more about SEO [here](xref:en/running-your-store/search-engine-optimization).
+Read more about [SEO](xref:en/running-your-store/search-engine-optimization).
 
 ## Related products and cross-sells
 
-Set up related products and cross-sells as described [here](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products).
+Set up [related products and cross-sells as described here](xref:en/running-your-store/promotional-tools/cross-sells-and-related-products).
 
 ## Purchased with orders
 

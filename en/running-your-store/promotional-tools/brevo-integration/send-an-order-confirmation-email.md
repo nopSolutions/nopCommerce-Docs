@@ -37,6 +37,7 @@ In the example below, we have included personalization of:
 * the recipient's last name using `{{ contact.LASTNAME }}`
 
 > [!NOTE]
+>
 > FIRSTNAME and LASTNAME should be existing attributes in your Brevo account.
 
 ![Attribute personalization](_static/send-an-order-confirmation-email/attribute-personalization.gif)

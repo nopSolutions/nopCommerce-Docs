@@ -37,6 +37,16 @@ In the *Product* panel, define the settings as follows:
 - In the **Associated product image size** field, enter the default size for the associated product images in pixels. Associated products are a part of grouped products.
 - **Default image** - You can select a default image that will be shown in the public store for products that do not have images.
 
+In the *Product 3D models* panel, define the settings as follows:
+
+![p1](_static/media-settings/media_sett_3d.png)
+
+- **Camera control**: Enables or disables user interaction with the camera, allowing customers to manually orbit and pan around the model.
+- **Zoom**: Allows users to zoom in and out to view the fine details of the product.
+- **Auto-rotate**: Enables automatic rotation of the 3D model when the page loads, drawing attention to the interactive element.
+- **Lazy loading**: Delays loading the 3D viewer and asset files until the user interacts with the gallery, improving initial page load speed.
+- **Upload size limit**: Defines the maximum allowed file size for `.GLB` uploads to prevent server overload and optimize performance.
+
 In the *Other pages* panel, define the settings as follows:
 
 ![p1](_static/media-settings/media_sett_other.png)

@@ -12,6 +12,7 @@ contributors: git.nopsg, git.DmitriyKulagin, git.mariannk
 This article contains the description of the *appsettings.json* file. In this article, we will explain what settings are available in this file, what they are used for, and how to use these settings to change the functionality/behavior of the nopCommerce project.
 
 >[!IMPORTANT]
+>
 >All settings can be overridden in environment variables.
 
 ## The appsettings.json file overview
@@ -19,6 +20,7 @@ This article contains the description of the *appsettings.json* file. In this ar
 If you have worked on the *ASP.NET Core* project previously or you are familiar with `ASP.NET Core` then you might have used the *appsettings.json* file and have some understanding of what this file is and what this file is used for.
 
 >[!NOTE]
+>
 >You can also edit this file from the **Configuration → Settings → App settings** page.
 
 The *appsettings.json* file is generally used to store the application configuration settings such as database connection strings, any application scope global variables, and much other information. Actually, in *ASP.NET Core*, the application configuration settings can be stored in different configuration sources such as *appsettings.json* file, **`appsettings.{EnvironmentName}.json`** file (where the `{Environment}` is the application's current hosting environments such as Development, Staging or Production), `User Secrets` (where we used to store sensitive information), etc.
@@ -31,6 +33,7 @@ The connection to the database is configured through this section.
 
 * **ConnectionString** This setting expects a string value.
   >[!NOTE]
+  >
   >The connection string will have a format specific to the selected database provider.
   > For example connection string for **SqlServer** look like this:
   >
@@ -48,6 +51,7 @@ The connection to the database is configured through this section.
 ### AzureBlobConfig
 
 >[!IMPORTANT]
+>
 >This settings section is relevant for version 4.80 and below. For nopCommerce version 4.90 and above, [Azure settings are described here](xref:en/developer/plugins/cloudflare-images).
 
 We can use *Azure Blob Storage* to store blob data. nopCommerce already has a feature integrated for that, we just need to set the following information correctly to use this feature. Values for these settings can be obtained for *Azure* while you create the storage account.
@@ -79,6 +83,7 @@ Cache configuration.
   ```
 
     >[!NOTE]
+    >
     > In computing, a user agent is software (a software agent) that is acting on behalf of a user, such as a web browser that "retrieves, renders and facilitates end-user interaction with Web content". For more information please visit [UserAgent](https://en.wikipedia.org/wiki/User_agent).
 * **CrawlerOnlyUserAgentStringsPath** This setting stores the location/path for `browscap.crawlersonly.xml`. It stores user agents only for "CrawlerOnly".
   
@@ -174,5 +179,6 @@ We use the [WebOptimizer](https://github.com/ligershark/WebOptimizer) tool for m
   * **1** - Opts out of compression over HTTPS.
   * **2** - Opts into compression over HTTPS.
     >[!NOTE]
+    >
     > Enabling compression on HTTPS requests for remotely manipulable content may expose security problems.
 * **MemoryCacheTimeToLive** If *EnableMemoryCache* memory caching is enabled, control how long an entry is stored in memory. Default is 60 minutes.

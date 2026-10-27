@@ -19,7 +19,7 @@ Go to **Configuration → Settings → All settings (advanced)**. The *All setti
 
 ![All settings](_static/all-settings/allsettings.png)
 
-## Add a new setting 
+## Add a new setting
 
 You can add a new setting using the *Add new record* panel at the bottom of the page. Define the following fields for the new setting:
 
@@ -34,4 +34,3 @@ Click **Add new record** to add this setting.
 To edit the existing setting, click the **Edit** button in the setting line. You will be able to edit the **Setting name** and its **Value**. Then click **Update** to save the changes.
 
 ![Edit setting](_static/all-settings/edit.jpg)
-

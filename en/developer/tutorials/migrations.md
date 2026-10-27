@@ -12,6 +12,7 @@ The work with the database was significantly reworked in the nopCommerce version
 
 1. Simplify the understanding and maintenance of the code.
     > [!NOTE]
+    >
     > During the code refactoring, we found and corrected several inaccuracies affecting both performance and functionality.
 1. Full control over the queries and the moment of their execution (which positively affects the performance of the entire solution).
 1. Possibility to simplify the migration process to any database framework (most importantly).
@@ -21,6 +22,7 @@ Since nopCommerce completely switched to .Net Core (version 4.10) and became a c
 ## Linq2DB
 
 > [!NOTE]
+>
 > Started from 4.30 version nopCommerce uses Linq2DB as an ORM Framework. Linq2DB is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers.
 
 In nopCommerce, Linq2DB is used as a database-access level. Currently, nopCommerce supports three of the most popular databases: MS SQL Server, MySQL, and PostgreSQL. If we analyze the code, we can easily see that each database is supported by its class that implements the INopDataProvider interface. But if you do not plan to create your database access provider, you can ignore the implementation details altogether. For most development tasks, understanding just a few points will be sufficient:
@@ -34,6 +36,7 @@ To address the last issue, we need to deal with the second framework from the bu
 ## FluentMigrator
 
 > [!NOTE]
+>
 > Fluent Migrator is a migration framework for .NET much like Ruby on Rails Migrations. *Migrations* are a structured way to alter your database schema and are an alternative to creating lots of SQL scripts that have to be run manually by every developer involved. Migrations solve the problem of evolving a database schema for multiple databases (for example, the developer's local database, test database, and production database). Database schema changes are described in classes written in C#. These classes can be checked into a version control system.
 
 The detailed plan for adding your entities is described in the following article: [Plugin with data access](xref:en/developer/plugins/how-to-write-plugin-4.70). Therefore, we will remain only on general theoretical points:

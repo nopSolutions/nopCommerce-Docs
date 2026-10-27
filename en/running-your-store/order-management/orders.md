@@ -11,7 +11,7 @@ To view and manage orders, go to **Sales → Orders**. The orders page lists all
 
 The top area of the page enables a store owner to search for orders. Enter specific search criteria and use a variety of filters to find any order placed in the store. Whenever a search is completed, the results of the search will be displayed in the lower half of the screen. You can click **View** to view the order details.
 
-![Order list](_static/orders/search.jpg)
+![Order list](_static/orders/search.png)
 
 ## Search for orders
 

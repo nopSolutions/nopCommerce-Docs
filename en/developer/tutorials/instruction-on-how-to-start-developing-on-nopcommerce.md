@@ -29,9 +29,9 @@ The best part of nopCommerce is that its source code is fully customizable and i
   * Fluent Validation
 
     It is a validation library for .NET that uses a fluent interface and lambda expressions for building validation rules.
-  * AutoMapper
+  * Mapster
 
-    AutoMapper is a simple library that helps us to transform one object type into another. It is a convention-based object-to-object mapper that requires very little configuration.
+    Mapster is a simple library that helps us to transform one object type into another. It is a convention-based object-to-object mapper that requires very little configuration.
   * ASP.NET Core internal dependency injection
 
     ASP IOC manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.

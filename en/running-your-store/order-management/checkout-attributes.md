@@ -46,7 +46,7 @@ In the *Attribute info* panel, define the following information:
 - **Limited to stores** enables you to limit the attribute to one or more stores.
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+  > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 Click **Save and continue edit** to proceed to the *Attribute values* panel (if applicable).
 

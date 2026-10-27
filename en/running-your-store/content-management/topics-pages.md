@@ -41,12 +41,12 @@ In the *Display* panel, define the following topic details:
 * From the **Customer roles** dropdown list, select a customer role or roles that can access this topic.
   > [!NOTE]
   >
-  > In order to use this functionality, you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about the access control list [here](xref:en/running-your-store/customer-management/access-control-list).
+  > In order to use this functionality, you have to disable the following setting: **Configuration → Catalog settings → Ignore ACL rules (sitewide)**. Read more about the [access control list](xref:en/running-your-store/customer-management/access-control-list).
 
 * In the **Limited to stores** dropdown list, select stores in which the topic will be displayed.
   > [!NOTE]
   >
- > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about multi-store functionality [here](xref:en/getting-started/advanced-configuration/multi-store).
+ > In order to use this functionality, you have to disable the following setting: **Catalog settings → Ignore "limit per store" rules (sitewide)**. Read more about [multi-store functionality](xref:en/getting-started/advanced-configuration/multi-store).
 
 * Use the **Accessible when store closed** field to make this topic accessible when the store is closed.
 * Select the topic's **Display order**. For example, 1 represents the first item in a list.

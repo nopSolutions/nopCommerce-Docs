@@ -2,20 +2,16 @@
 title: Integrating Jotform AI Agent
 uid: en/getting-started/advanced-configuration/jotform
 author: git.skoshelev
-contributors: git.skoshelev
+contributors: git.skoshelev, git.DmitriyKulagin
 ---
 
 # Integrating Jotform AI Agent into a nopCommerce Store
-
----
 
 ## What are Jotform AI Agent?
 
 [Jotform AI Agent](https://www.jotform.com/ai/agents/?partner=nopCommerce) are powerful customer service tools that provide real-time assistance. Jotform AI Agent isn't just a chatbot. It can answer questions about shipping times, return policies, and product availability instantly, reducing bounce rates during off-hours. It can recommend products based on user input, and guide users to specific product pages within your nopCommerce store.
 
 By offering personalized conversations and 24/7 availability, they enhance customer satisfaction and streamline your support workflows, leading to better retention and higher sales.
-
----
 
 ## First Steps to Get Started
 

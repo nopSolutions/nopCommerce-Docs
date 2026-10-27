@@ -267,6 +267,7 @@ public class RouteProvider : IRouteProvider
 ```
 
 >[!NOTE]
+>
 > To learn more about nopCommerce routing please visit [this page](xref:en/developer/tutorials/register-new-routes)
 
 Now just build your project and run it. Log in as an Admin user and go to the *LocalPlugins* menu under *Configuration*, there you will see your newly created plugin. Install that plugin. After installation is complete you will see a *configuration* button in your plugin. If you have followed correctly through this tutorial then you will see the output, something like the image below:

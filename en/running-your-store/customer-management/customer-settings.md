@@ -73,6 +73,28 @@ Define the common customer settings as follows:
 * In **Lockout time (login failures)**, enter the number of minutes to lockout users.
 * Select the **Force entering email twice** checkbox if you want your customers to enter email twice during the registration.
 * **Force multi-factor authentication**. Force activation of multi-factor authentication for customer roles specified in Access control list (at least one MFA provider must be active).
+* Select the **'Login by phone' enabled** checkbox to allow customers to sign in to the store with a phone number instead of an email address or a username.
+  ![password](_static/customer-settings/customersettings3.png)
+
+  > [!IMPORTANT]
+  >
+  > This feature has the following prerequisites, all of them are defined on the same *Customer settings* page:
+  >
+  > * **'Phone number' enabled** and **'Phone number' required** in the *Customer form fields* panel. Otherwise, customers will not be able to specify the number the code is sent to.
+  > * A configured and enabled SMS provider, since the verification code is sent as an SMS message. Read more about it in the [Twilio SMS provider](xref:en/getting-started/advanced-configuration/sms-providers/twilio) chapter.
+
+  When the **'Login by phone' enabled** checkbox is selected, the following options will be displayed:
+
+  * **OTP code time to live**: the time (in seconds) during which the one-time password (OTP) code remains valid. Set to 0 if the code should not expire.
+  * **OTP code send attempts**: the maximum number of times a customer can request a new code for the same phone number.
+  * **OTP code verification attempts**: the number of failed attempts allowed for OTP code verification.
+  * **OTP code resend time**: the time (in minutes) that must pass before a customer can request the code again.
+  * **OTP code length**: the number of digits in the generated code.
+
+  > [!NOTE]
+  >
+  > The verification code is sent by SMS and is valid only once. If the code has expired, the number of attempts to send it is exceeded, or the code is requested again before **OTP code resend time** has passed, the customer is asked to request a new one.
+* **Phone number validation is enabled**. This setting ensures that numbers entered by customers always follow a consistent format and can be used for verification.
 
 ## Account
 

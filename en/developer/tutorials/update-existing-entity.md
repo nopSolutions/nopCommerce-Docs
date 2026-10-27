@@ -61,6 +61,7 @@ public class AddSomeNewProperty: ForwardOnlyMigration
 ```
 
 > [!NOTE]
+>
 > The procedure for updating migrations is carried out during the initialization of the database.
 >
 >```csharp
@@ -145,7 +146,7 @@ We're going to make three updates to the CategoryController class.
 
 Normally we would write tests for the following code and verify that model mapping is working correctly, but we'll skip unit testing for now to keep it simple.
 
-In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most cases, it's not required because it's automatically handled by *AutoMapper* in the `.ToModel()` method.
+In the appropriate methods ("Create", "Edit", or "PrepareSomeModel") add the code to set this property. In most cases, it's not required because it's automatically handled by *Mapster* in the `.ToModel()` method.
 
 In the public method to save entity (usually: "Create" or "Edit" methods with `[HttpPost]` attribute)
 

@@ -13,7 +13,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
 
 ## The plugin structure, required files, and locations
 
-1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into the `\Plugins` directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into the "Plugins" solution folder (you can find more information about solution folders [here](http://msdn.microsoft.com/library/sx2027y2.aspx)).
+1. First thing you need to do is to create a new "Class Library" project in the solution. It's a good practice to place all plugins into the `\Plugins` directory in the root of your solution (do not mix up with \Plugins subdirectory located in `\Nop.Web` directory which is used for already deployed plugins). It's a good practice to place all plugins into the "Plugins" solution folder (you can find more information about [solution folders](http://msdn.microsoft.com/library/sx2027y2.aspx)).
 
     A recommended name for a plugin project is "Nop.Plugin.{Group}.{Name}". {Group} is your plugin group (for example, "Payment" or "Shipping"). {Name} is your plugin name (for example, "PayPalStandard"). For example, the PayPal Standard payment plugin has the following name: Nop.Plugin.Payments.PayPalStandard. But please note that it's not a requirement. And you can choose any name for a plugin. For example, "MyGreatPlugin".
 
@@ -56,7 +56,7 @@ Plugins are used to extend the functionality of nopCommerce. nopCommerce has sev
    - **ITaxProvider**. Tax providers are used for getting tax rates.
    - **IExchangeRateProvider**. Used for getting currency exchange rate.
    - **IDiscountRequirementRule**. Allows you to create new discount rules such as "Billing country of a customer should be…"
-   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, Twitter, OpenID, etc.
+   - **IExternalAuthenticationMethod**. Used for creating external authentication methods such as Facebook, X (Twitter), OpenID, etc.
    - **IWidgetPlugin**. It allows you to create widgets. Widgets are rendered on some parts of your site. For example, it can be a "Live chat" block on your site's left column.
    - **IMiscPlugin**. If your plugin doesn't fit any of the interfaces above.
 
@@ -73,7 +73,7 @@ What we need to do now is create a controller, a model, and a view.
 - A view contains the HTML markup and content that is sent to the browser. A view is the equivalent of a page when working with an ASP.NET MVC application.
 - An MVC model contains all of your application logic that is not contained in a view or a controller.
 
-You can find more information about the MVC pattern [here](http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
+You can find more information about the [MVC pattern](http://www.asp.net/mvc/tutorials/older-versions/overview/understanding-models-views-and-controllers-cs).
 
 So let's start:
 
@@ -135,7 +135,7 @@ public override void Install()
 
 ## Routes
 
-Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about routing [here](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
+Here we will have a look at how to register plugin routes. ASP.NET Core routing is responsible for mapping incoming browser requests to particular MVC controller actions. You can find more information about [routing](https://docs.microsoft.com/aspnet/core/fundamentals/routing). So follow the next steps:
 
 - If you need to add some custom route, then create the `RouteProvider.cs` file. It informs the nopCommerce system about plugin routes. For example, the following RouteProvider class adds a new route which can be accessed by opening your web browser and navigating to `http://www.yourStore.com/Plugins/PaymentPayPalStandard/PDTHandler` URL (used by PayPal plugin):
 

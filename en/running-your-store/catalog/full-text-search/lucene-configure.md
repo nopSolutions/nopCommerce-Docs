@@ -2,11 +2,12 @@
 title: Full-text search based on Lucene
 uid: en/running-your-store/catalog/catalog-settings/full-text-search/lucene-configure
 author: git.exileDev
+contributors: git.DmitriyKulagin
 ---
 
 # Full-text search based on Lucene
 
-Please get the Full-Text Search plugin based on Lucene [here](https://www.nopcommerce.com/full-text-search-lucene?utm_source=docs.nopcommerce&utm_medium=documentation&utm_campaign=full-text-search-lucene).
+Please get the [Full-Text Search plugin based on Lucene](https://www.nopcommerce.com/full-text-search-lucene?utm_source=docs.nopcommerce&utm_medium=documentation&utm_campaign=full-text-search-lucene).
 
 [Apache Lucene™](https://lucene.apache.org/) is a high-performance, full-featured search engine library written entirely in Java. It is a technology suitable for nearly any application that requires structured search, full-text search, faceting, nearest-neighbor search across high-dimensionality vectors, spell correction, or query suggestions.
 
@@ -33,9 +34,10 @@ This section describes how to integrate the Lucene plugin into your store.
 1. Upload the plugin archive using the "Upload plugin or theme" plugin.
 1. Scroll down through the list of plugins to find the newly installed plugin. Click on the "Install" button to install the plugin.
 
-You can find more information about how to install plugins [here](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html)
+You can find more information about [how to install plugins](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html)
 
 > [!NOTE]
+>
 > The plugin belongs to the **Search provider** group. Use the **Group** field in the search panel to filter plugins for faster navigation.
 
 ![Local plugins](_static/local-plugins-lucene.png)
@@ -55,6 +57,7 @@ Click the **Configure** button beside the Lucene search provider option in the l
     * The "**Must**" operator - terms must appear in a field of the matching product.
 1. Set up the behavior of updating the search index documents. Check the **Immediately update indexes** to immediately apply changes for the mapped product (for example, their names or descriptions were changed). Otherwise, the reindexing will be scheduled.
     > [!NOTE]
+    >
     > You may also manually click the "Rebuild index" button to start reindexing.
 1. Enter the **Result limit**, if necessary. The Result limit is the maximum number of result matches that will be retrieved from the index for search queries.
 1. Enter additional delimiter characters to split a search query into terms. Please note that search queries are always splitted by space, in addition to the entered delimiters.
@@ -62,4 +65,5 @@ Click the **Configure** button beside the Lucene search provider option in the l
 1. Click the **Save** button
 
 > [!NOTE]
+>
 > To toggle the plugin state, use the "**Enable**" or "**Disable**" buttons. They are displayed depending on the current state.

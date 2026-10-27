@@ -80,6 +80,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 ```
 
 > [!NOTE]
+>
 > It’s important to choose a strong, unique password for your MySQL root user. A strong password should be at least 12 characters long, include a mix of uppercase and lowercase letters, numbers, and special characters.
 
 Type **exit** and press Enter to exit the MySQL prompt.

@@ -85,8 +85,8 @@ Add another store by clicking the **Add new** button on the **Configuration → 
 
 The two stores have now been configured using a single nopCommerce installation:
 
-* www.store1.com
-* www.store2.com
+* `www.store1.com`
+* `www.store2.com`
 
 > [!NOTE]
 >

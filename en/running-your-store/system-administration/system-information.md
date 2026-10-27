@@ -2,7 +2,7 @@
 title: System information
 uid: en/running-your-store/system-administration/system-information
 author: git.AndreiMaz
-contributors: git.exileDev, git.mariannk
+contributors: git.exileDev, git.mariannk, git.DmitriyKulagin
 ---
 
 # System information

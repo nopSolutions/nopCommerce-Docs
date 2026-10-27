@@ -11,12 +11,12 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 ### Windows
 
-| OS                | Version       |
-| ----------------- | ------------- |
-| Windows 11        | 25H2, 24H2 (IoT), 24H2 (E), 24H2, 23H2|
+| OS                | Version                                  |
+| ----------------- | ---------------------------------------- |
+| Windows 11        | 25H2, 24H2 (IoT), 24H2 (E), 24H2, 23H2   |
 | Windows 10 Client | 21H2 (E), 21H2 (IoT), 1809 (E), 1607 (E) |
-| Windows Server    | 2025, 23H2, 2022, 2019, 2016 |
-| Nano Server       | 2025, 2022, 2019 |
+| Windows Server    | 2025, 23H2, 2022, 2019, 2016             |
+| Nano Server       | 2025, 2022, 2019                         |
 
 ### Linux
 
@@ -40,7 +40,7 @@ Other distributions are supported at best effort, per [.NET Support and Compatib
 
 > [!NOTE]
 >
-> Find a complete list of supported operation systems [here](https://github.com/dotnet/core/blob/main/release-notes/9.0/supported-os.md).
+> Find a complete [list of supported operation systems](https://github.com/dotnet/core/blob/main/release-notes/9.0/supported-os.md).
 >
 > [!IMPORTANT]
 >
@@ -59,9 +59,9 @@ Other distributions are supported at best effort, per [.NET Support and Compatib
 
 Since it is based on Microsoft's .NET 9 we need to install a few tools before starting development on top of nopCommerce.
 
-### .NET 9 runtime & .NET 9 SDK
+### .NET 10 runtime & .NET 10 SDK
 
-Since nopCommerce 4.90 is based on .NET 9. We need to install [.NET 9 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-9.0.0-windows-x64-installer) and [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.100-windows-x64-installer) before we start development on nopCommerce.
+Since nopCommerce 5.00 is based on .NET 10. We need to install [.NET 10 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-10.0.12-windows-x64-installer) and [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-10.0.401-windows-x64-installer) before we start development on nopCommerce.
 
 ### Visual Studio 2022 or Above / Visual Studio Code
 
@@ -69,7 +69,7 @@ As we know, nopCommerce is based on "Microsoft .NET 9" and *Visual Studio IDE* i
 
 > [!NOTE]
 >
-> If you are using *Visual Studio Code*, you will need to install the **C# for Visual Studio Code (powered by OmniSharp)** extension.
+> If you are using *Visual Studio Code*, you will need to install the **C# Dev Kit** official C# extension from Microsoft.
 
 ### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above / PostgreSQL 9.2 or Above
 

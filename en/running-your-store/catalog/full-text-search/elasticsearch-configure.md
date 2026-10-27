@@ -2,17 +2,19 @@
 title: Full-text search based on Elasticsearch
 uid: en/running-your-store/catalog/catalog-settings/full-text-search/elasticsearch-configure
 author: git.exileDev
+contributors: git.DmitriyKulagin
 ---
 
 # Full-text search based on Elasticsearch
 
-Please get the official integration with Elasticsearch [here](https://www.nopcommerce.com/full-text-search-elasticsearch?utm_source=docs.nopcommerce&utm_medium=documentation&utm_campaign=full-text-search-elasticsearch).
+Please get the [official integration with Elasticsearch](https://www.nopcommerce.com/full-text-search-elasticsearch?utm_source=docs.nopcommerce&utm_medium=documentation&utm_campaign=full-text-search-elasticsearch).
 
 Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
 
 Our integration provides a strongly-typed API and query DSL to interact with the Elasticsearch server. The plugin includes high-level operations for products, such as bulk indexing, update operations, and search.
 
 > [!NOTE]
+>
 > The integration is based on the v8 .NET client for use with Elasticsearch 8.x versions
 
 ## Available features
@@ -36,11 +38,12 @@ This section describes how to integrate Elasticsearch into your store.
 1. Go to admin area > configuration > local plugins. Upload the plugin archive using the "Upload plugin or theme" plugin.
 1. Scroll down through the list of plugins to find the newly installed plugin. Click on the "Install" button to install the plugin.
 
-You can find more information about how to install plugins [here](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html).
+You can find more information about [how to install plugins](https://docs.nopcommerce.com/getting-started/advanced-configuration/plugins-in-nopcommerce.html).
 
-The Elasticsearch must be configured for correct work of the plugin. Find more about the Elasticsearch installation process [here](https://www.elastic.co/downloads/elasticsearch).
+The Elasticsearch must be configured for correct work of the plugin. Find more about the [Elasticsearch installation process](https://www.elastic.co/downloads/elasticsearch).
 
 > [!NOTE]
+>
 > The plugin belongs to the **Search provider** group. Use the **Group** field in the search panel to filter plugins for faster navigation.
 
 ![Local plugins](_static/local-plugins-elasticsearch.png)
@@ -67,6 +70,7 @@ Click the **Configure** button beside the Elastic search provider option in the 
     * The "**Must**" operator - terms must appear in a field of the matching product.
 1. Set up the behavior of updating the search index documents. Check the **Immediately update indexes** to immediately apply changes for the mapped product (for example, their names or descriptions were changed). Otherwise, the reindexing will be scheduled.
     > [!NOTE]
+    >
     > You may also manually click the "Rebuild index" button to start reindexing.
 1. Enter the **Result limit**, if necessary. The Result limit is the maximum number of result matches that will be retrieved from the Elasticsearch server for search queries.
 1. Enter additional delimiter characters to split a search query into terms. Please note that search queries are always splitted by space, in addition to the entered delimiters.
@@ -74,4 +78,5 @@ Click the **Configure** button beside the Elastic search provider option in the 
 1. Click the **Save** button
 
 > [!NOTE]
+>
 > To toggle the plugin state, use the "**Enable**" or "**Disable**" buttons. They are displayed depending on the current state.

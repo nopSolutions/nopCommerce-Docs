@@ -12,6 +12,7 @@ contributors: git.nopsg, git.DmitriyKulagin
 nopCommerce uses a plugins system to extend the functionality of the nopCommerce store. Plugins are a set of independent programs or components that can be added to an existing system to extend some specific functionality and also can be removed from the system without affecting the main system during the process.
 
 > [!NOTE]
+>
 > For more information about how to create a plugin you can visit [**this page**.](xref:en/developer/plugins/index)
 
 ## How to Search and use plugins from the nopCommerce store
