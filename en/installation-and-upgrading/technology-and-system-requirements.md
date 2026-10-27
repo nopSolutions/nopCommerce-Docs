@@ -19,18 +19,18 @@ In order to run nopCommerce, you will need the following installed on your serve
 * Linux
   * Red Hat Enterprise Linux 8 or above
   * Fedora 41 or above or
-  * Debian 12 or above
+  * Debian 13 or above
   * Ubuntu 22.04 or above
-  * openSUSE Leap 15.6 or above
-  * SUSE Enterprise Linux 15.6 or above
-  * Alpine Linux 3.20 or above
+  * openSUSE Leap 16 or above
+  * SUSE Enterprise Linux 15.7 or above
+  * Alpine Linux 3.21 or above
 
 * macOS
-  * macOS 14.0 or above
+  * macOS 15.0 or above
 
 >[!NOTE]
 >
-> Find a complete [list of supported operating systems here](https://github.com/dotnet/core/blob/main/release-notes/9.0/supported-os.md).
+> Find a complete [list of supported operating systems here](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md).
 
 ## Supported web servers
 
@@ -50,9 +50,9 @@ In order to run nopCommerce, you will need the following installed on your serve
 
 ## Supported databases
 
-* MS SQL Server 2012 or above
-* MySql Server 5.7 or above (starting from nopCommerce 4.30)
-* PostgreSQL 9.5 or above (starting from nopCommerce 4.40)
+* MS SQL Server 2018 or above
+* MySql Server 8 or above (starting from nopCommerce 4.30)
+* PostgreSQL 15 or above (starting from nopCommerce 4.40)
 
 ## Supported browsers
 
