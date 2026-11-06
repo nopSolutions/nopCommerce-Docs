@@ -55,6 +55,7 @@ Define the following general settings:
 
 - **Is active** — enable or disable the plugin. The plugin is disabled by default; when it is disabled, nopCommerce responds to incoming setup requests with the *Service Unavailable* error.
 - **Time to expire** — the time in hours after which the PunchOut session will expire (24 hours by default).
+- **Unit of measure code** - the unit of measure code for PunchOut session.
 - **Restricted customer roles** — select customer roles that will not have access to the PunchOut feature. If no role is selected, all customers will have access. By default, the *Administrators* role is restricted.
 
 Click **Save** to save the changes.
@@ -68,13 +69,14 @@ In the **Identity** section, manage the senders allowed to connect to your store
 ![PunchOut](_static/punchout/configure_identity.png)
 
 - Use the search field to filter identities by the identity value.
-- The grid lists the **Identity** and **Shared secret hash** columns. Both values can be edited inline.
+- The grid lists the **Identity** and **Shared secret hash** columns. Both values can be edited inline. When you change the value in the "Shared secret hash" column, you are, in effect, entering a new secret key that will then be hashed.
 - Use the **Edit** and **Delete** buttons to manage the identities.
 - In the *Add new record* block, enter the **Identity** and **Shared secret** of the procurement system and click the **Add new record** button.
 
 > [!IMPORTANT]
 >
 > The shared secret is stored as a SHA-256 hash. Provide the identity and shared secret to your procurement system administrator, so the same credentials can be configured on the procurement system side.
+> ![PunchOut](_static/punchout/punchout_shared_secret_authentication_flow.png)
 
 ## The PunchOut session on the storefront
 
