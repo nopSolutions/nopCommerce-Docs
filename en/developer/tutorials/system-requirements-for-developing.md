@@ -13,7 +13,7 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 
 | OS                | Version                                  |
 | ----------------- | ---------------------------------------- |
-| Windows 11        | 25H2, 24H2 (IoT), 24H2 (E), 24H2, 23H2   |
+| Windows 11        | 26H1, 25H2, 24H2 (IoT), 24H2 (E), 24H2, 23H2 (E)   |
 | Windows 10 Client | 21H2 (E), 21H2 (IoT), 1809 (E), 1607 (E) |
 | Windows Server    | 2025, 23H2, 2022, 2019, 2016             |
 | Nano Server       | 2025, 2022, 2019                         |
@@ -23,12 +23,12 @@ contributors: git.RomanovM, git.DmitriyKulagin, git.skoshelev
 | OS                           | Version             |
 | ---------------------------- | ------------------- |
 | Red Hat Enterprise Linux     | 10, 9, 8            |
-| Fedora                       | 42, 41              |
-| Debian                       | 13, 12              |
-| Ubuntu                       | 25.10, 24.04, 22.04 |
-| openSUSE Leap                | 16.0, 15.6          |
-| SUSE Enterprise Linux        | 16.0, 15.6          |
-| Alpine Linux                 | 3.22, 3.21, 3.20    |
+| Fedora                       | 44, 43              |
+| Debian                       | 13                  |
+| Ubuntu                       | 26.04, 24.04, 22.04 |
+| openSUSE Leap                | 16.0                |
+| SUSE Enterprise Linux        | 16.0, 15.7          |
+| Alpine Linux                 | 3.24, 3.23, 3.22, 3.21    |
 
 Other distributions are supported at best effort, per [.NET Support and Compatibility for Linux Distributions](https://github.com/dotnet/core/blob/main/linux.md).
 
@@ -36,17 +36,25 @@ Other distributions are supported at best effort, per [.NET Support and Compatib
 
 | OS       | Version    |
 | -------- | ---------- |
-| macOS    | 26, 15, 14 |
+|iOS	|27, 26, 18	|
+|iPadOS	|27, 26, 18	|
+|macOS	|27, 26, 15	|
+|tvOS	|27, 26	    |
+
+### Android
+| OS       | Version    |
+| -------- | ---------- |
+|Android   |17, 16, 15, 14|
 
 > [!NOTE]
 >
-> Find a complete [list of supported operation systems](https://github.com/dotnet/core/blob/main/release-notes/9.0/supported-os.md).
+> Find a complete [list of supported operation systems](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md).
 >
 > [!IMPORTANT]
 >
 > The **Windows Client 7 SP1, 8.1** operating systems are no longer supported, starting with .NET 7.0.
 >
-> For more information about supported OS versions please visit [this page](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md).
+> For more information about supported OS versions please visit [this page](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md).
 
 ## Supported Browsers
 
@@ -57,21 +65,21 @@ Other distributions are supported at best effort, per [.NET Support and Compatib
 
 ## Tools Required for Development
 
-Since it is based on Microsoft's .NET 9 we need to install a few tools before starting development on top of nopCommerce.
+Since it is based on Microsoft's .NET 10 we need to install a few tools before starting development on top of nopCommerce.
 
 ### .NET 10 runtime & .NET 10 SDK
 
 Since nopCommerce 5.00 is based on .NET 10. We need to install [.NET 10 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-10.0.12-windows-x64-installer) and [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-10.0.401-windows-x64-installer) before we start development on nopCommerce.
 
-### Visual Studio 2022 or Above / Visual Studio Code
+### Visual Studio Visual Studio 2026 (v18.0) or Above / Visual Studio Code
 
-As we know, nopCommerce is based on "Microsoft .NET 9" and *Visual Studio IDE* is best for developing .Net based applications. Since .NET Core is platform independent, we can develop and deploy a .Net based application on any platform. But we can use *Visual Studio Code* as an alternative to *Visual Studio* for developing on Windows as well as other platforms.
+As we know, nopCommerce is based on "Microsoft .NET 10" and *Visual Studio IDE* is best for developing .Net based applications. Since .NET Core is platform independent, we can develop and deploy a .Net based application on any platform. But we can use *Visual Studio Code* as an alternative to *Visual Studio* for developing on Windows as well as other platforms.
 
 > [!NOTE]
 >
 > If you are using *Visual Studio Code*, you will need to install the **C# Dev Kit** official C# extension from Microsoft.
 
-### Microsoft SQL Server 2012 or Above / MySql Server 5.7 or Above / PostgreSQL 9.2 or Above
+### Microsoft SQL Server 2016 or Above / MySql Server 8 or Above / PostgreSQL 15 or Above
 
 Starting from the 4.30 version, nopCommerce uses *Linq2DB* as an ORM Framework. *Linq2DB* is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It can map .Net objects to various numbers of Database providers. You may choose between MS SQL Server, MySql Server, and PostgreSQL.
 
